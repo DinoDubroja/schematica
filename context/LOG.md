@@ -781,3 +781,30 @@ fresh-chat behavior audit. No drawing assets or accepted schematic rules changed
 **Current evidence:** DIRECTION.md already calls for predefined drawing preferences that users can modify and save, while personal customization, storage, and distribution remain open. The installed personal workflow currently depends on its owner's Agents collection. Moving that workflow alone would not make it usable by another Schematica user.
 
 **Assistant proposal, not implementation approval:** develop a portable Preferences workflow with Schematica as its initial bundled use. Separate the reusable procedure, Schematica's shipped defaults/examples, and each user's customizations. Reuse the project's existing preference and example-save procedures instead of creating a competing copy. User storage, discovery outside Schematica, update behavior, and package/install boundaries still need a concrete reviewed design. No skill relocation, new package, personal-instruction migration, or adoption of these proposed mechanics is authorized by this clarification. Routine context capture is authorized separately.
+
+<a id="terminal-circuit-examples"></a>
+
+## 08-11-2026 - Terminal circles with surrounding circuitry
+
+**User request and approval:** the user asked to add surrounding circuitry to the
+input/output terminal example and show incorrect omission or solid fill. A chat
+preview compared the same RC circuit with hollow terminals, omitted circles and
+solid-filled circles. The user accepted that preview and explicitly requested
+saving it and updating the preference and repository examples.
+
+**Implemented:** [G-SYMBOL-02](../preferences/symbols/signal-terminal-circles/RULE.md)
+explicitly rejects both incorrect terminal treatments. Its Good/Bad comparison
+keeps one hollow-terminal circuit in the left cell and both labeled Bad variants
+in the right cell at the same scale. All three internal junction dots remain
+solid and correct. The accepted 12-times terminal outer diameter, matching outline,
+10-times junction diameter and 0.65 pt wire width are retained. The RC topology,
+ground/component shapes, spacing and font choices provide illustrative context;
+they are not new general preferences. Editable source, both SVG themes, PNGs,
+rule evidence, index and generated Symbols gallery are synchronized.
+
+**Verification:** the source compiles, all three circuit geometries match the
+reviewed preview up to page placement, and marker ratios and wire widths pass
+numeric checks. SVG paths and PNG pixels agree with the compiled source. Both
+display themes were visually inspected. Gallery freshness, local references,
+anchors and scoped diff checks pass. Publication and live-page inspection are
+reported in the task result. Unrelated concurrent context work is preserved.

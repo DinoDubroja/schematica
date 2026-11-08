@@ -25,7 +25,7 @@ When no accepted preference applies, use the task and relevant examples to make 
 | [G-CONNECTION-03: Unconnected wire crossings](connections/unconnected-crossings/RULE.md) | Drawing or reviewing unconnected crossings; keywords "straight wire crossing", "bridged wire crossing" or "wire bridges" | Named straight/default and bridged variants together in Good, gap in Bad; editable source |
 | [G-CONNECTION-04: Wire thickness](connections/wire-thickness/RULE.md) | Selecting or changing schematic wire weight | Accepted 0.65 pt default at native drawing scale; marker proportions preserved; Good visual and editable source |
 | [G-SYMBOL-01: Power supply arrow symbols](symbols/power-supply-arrows/RULE.md) | Drawing or changing supply connections | Accepted rule, good/bad visuals, editable source, and user correction |
-| [G-SYMBOL-02: Input/output terminal circles](symbols/signal-terminal-circles/RULE.md) | Drawing or changing exposed signal ports | Accepted hollow circles with outer diameter 12 times wire width and matching outline thickness; good visual and editable source |
+| [G-SYMBOL-02: Input/output terminal circles](symbols/signal-terminal-circles/RULE.md) | Drawing or changing exposed signal ports | Accepted hollow circles with outer diameter 12 times wire width and matching outline; RC Good/Bad examples and editable source |
 
 Select by the feature being drawn or reviewed, not by the style name. A style may point directly to a rule ID, but must not copy a competing version of the rule. Only entries explicitly marked accepted are active defaults.
 
