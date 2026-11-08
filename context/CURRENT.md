@@ -47,3 +47,7 @@ Review the gallery and new recreations, then continue collecting references. Fig
 Continue correcting the output-stage example or reviewing supplied references normally; the first visual preference is ready for user review. The agent should notice reusable lessons, propose their scope, and maintain the visual bank within approved saves. Preserve the distinction between a user-confirmed rule, an inferred candidate, and a current-drawing adjustment. Verify synchronization separately; network errors have blocked pushes from this drawing session.
 
 For reasoning and scope changes, consult [LOG.md](LOG.md). For drawing details, read selected example records and actual available previews rather than treating descriptions as images.
+
+## Integration exploration - 08-11-2026
+
+The user requested a broader review of existing solutions that could serve Schematica's goals. The [candidate comparison](LOG.md#existing-solutions) records 12 distinct tool families, sources, integration routes, effort, and exclusions. The assistant shortlist is VisioCirkit's editor/agent utilities, Lcapy, PGFPlots, Playwright visual comparisons, and ELK/libavoid for later layout work. These are proposals; no dependencies were installed, imports tested, or implementation authorized. The next proposed step is a small comparison using a structured voltage divider and a copy of the output-stage trial. Preserve current drawing and preference-bank work. Remote inspection failed during research, so synchronization has not been established by this review.
