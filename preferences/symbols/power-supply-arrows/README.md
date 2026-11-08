@@ -3,7 +3,7 @@
 
 Use arrows to identify power-supply connections.
 
-## ✅ Good
+## ![Good](../../assets/good-label.svg)
 
 <!-- preference-good:start -->
 <a href="good-light.svg#gh-light-mode-only"><img src="good-light.svg" alt="Positive and negative supply connections use arrows." width="480"></a>
@@ -12,7 +12,7 @@ Use arrows to identify power-supply connections.
 
 [PNG](good.png) · [Light SVG](good-light.svg) · [Dark SVG](good-dark.svg)
 
-## ❌ Bad
+## ![Bad](../../assets/bad-label.svg)
 
 Supply connections shown as circles obscure their distinct role.
 

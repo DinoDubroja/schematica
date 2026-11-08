@@ -20,6 +20,7 @@ When no accepted preference applies, use the task and relevant examples to make 
 
 | ID and preference | Read when | Evidence available |
 | --- | --- | --- |
+| [G-CONNECTION-01: Junction dots](connections/junction-dots/RULE.md) | Drawing or changing wire-junction markers | Accepted rule, explicit user request, good/bad size comparison, and editable source; new visual size awaiting user review |
 | [G-SYMBOL-01: Power supply arrow symbols](symbols/power-supply-arrows/RULE.md) | Drawing or changing supply connections | Accepted rule, good/bad visuals, editable source, and user correction |
 | [G-SYMBOL-02: Input/output terminal circles](symbols/signal-terminal-circles/RULE.md) | Drawing or changing exposed signal ports | Accepted rule, good visual, editable source, and user correction |
 

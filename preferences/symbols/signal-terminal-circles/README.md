@@ -3,7 +3,7 @@
 
 Use hollow circles for exposed signal inputs and outputs.
 
-## ✅ Good
+## ![Good](../../assets/good-label.svg)
 
 <!-- preference-good:start -->
 <a href="good-light.svg#gh-light-mode-only"><img src="good-light.svg" alt="Input and output wires end in hollow signal-terminal circles." width="480"></a>

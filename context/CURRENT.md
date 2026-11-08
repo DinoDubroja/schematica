@@ -57,3 +57,11 @@ For reasoning and scope changes, consult [LOG.md](LOG.md). For drawing details, 
 The user requested a broader review of existing solutions that could serve Schematica's goals. The [candidate comparison](LOG.md#existing-solutions) records 12 distinct tool families, sources, integration routes, effort, and exclusions. The assistant shortlist is VisioCirkit's editor/agent utilities, Lcapy, PGFPlots, Playwright visual comparisons, and ELK/libavoid for later layout work. These are proposals; no dependencies were installed, imports tested, or implementation authorized. The next proposed step is a small comparison using a structured voltage divider and a copy of the output-stage trial. Preserve current drawing and preference-bank work. Remote inspection failed during research, so synchronization has not been established by this review.
 
 Preference-bank refinement (08-11-2026): the agreed migration is authorized and implemented; see [the result and verification](LOG.md#preference-bank-migration). The existing AOE collection work continues independently.
+
+Preference presentation and junction dots (08-11-2026): implemented the user's
+request for colored Good/Bad words without icons and a new
+[Connections / Junction dots](../preferences/connections/junction-dots/RULE.md)
+preference. Solid dots use a diameter five times the wire width; the assistant
+selected that ratio and category within the request. Both supply examples are
+corrected; the new comparison and size await user visual review. See
+[the decision and checks](LOG.md#junction-dots-and-labels).

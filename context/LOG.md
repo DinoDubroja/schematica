@@ -425,3 +425,29 @@ This changes the assistant's recommended sequence but does not authorize impleme
 **Revised recommended next step:** compare the supplied references for recurring geometry, typography, relative proportions, layout relationships, and exceptions. Measure representative features across multiple examples, normalize screenshot scale, and use original vector dimensions where available. Distinguish measured observations from chosen implementation defaults; screenshot pixels alone cannot establish original physical point sizes. Define concrete values or ranges, units, scope, evidence, and scale behavior, then encode them in a shared LaTeX/CircuitikZ preset and inspect a small calibration figure. Adaptive layout remains conditional guidance rather than a fixed coordinate template. This does not require recreating all 29 figures.
 
 The clarification refines the earlier faster alternative: a screenshot/reference gallery alone is insufficient for reproducible rendering. A numeric preset is the missing deliverable. No new preset, numeric rule, source-image import, or redraw was created during this discussion, and the previous rough time estimate has not been validated by a calibration run.
+
+<a id="junction-dots-and-labels"></a>
+
+## 08-11-2026 - Colored evaluation words and junction-dot preference
+
+**Status:** user explicitly requested implementation and saving the new preference.
+The user requested green Good / red Bad wording without checkmarks or crosses,
+identified both supply illustrations' junction dots as too small, and asked for
+a style/size rule with suitable categorization.
+
+Implemented shared transparent word labels, updated the gallery authoring contract
+and validator, and added [Connections](../preferences/connections/README.md).
+[G-CONNECTION-01](../preferences/connections/junction-dots/RULE.md) specifies solid
+circles in the wire color, centered on the junction, with diameter five times the
+wire width. The ratio and category are assistant-selected implementations of the
+request; user review of the new visual size remains pending. Both supply examples
+use the enlarged dots. A new equal-scale Good/Bad comparison isolates dot size.
+Hollow signal-terminal dimensions and historical collection drawings are unchanged.
+
+**Verification:** both changed TeX sources compiled; all ten active preference
+SVGs match compiled geometry, and all five PNG downloads match the PDF raster
+pixels with transparency. Fifteen gallery/navigation checks passed, including
+repeatability, nested-category label/link rebasing, inactive exclusion, missing
+reference failures, and unchanged historical example files. Light/dark exports
+and rendered colored labels were visually inspected. User review of the new size
+is still pending. GitHub synchronization is verified separately at delivery.

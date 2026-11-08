@@ -10,6 +10,11 @@ Schematica is in development. We are building a library of examples and drawing 
 
 <!-- preference-gallery:start level=3 -->
 
+### [Connections](preferences/connections/README.md)
+
+<a href="preferences/connections/README.md#gh-light-mode-only"><img src="preferences/connections/junction-dots/good-light.svg" alt="Three-way and four-way connected wire junctions with solid dots five times the wire width." width="480"></a>
+<a href="preferences/connections/README.md#gh-dark-mode-only"><img src="preferences/connections/junction-dots/good-dark.svg" alt="Three-way and four-way connected wire junctions with solid dots five times the wire width." width="480"></a>
+
 ### [Symbols](preferences/symbols/README.md)
 
 <a href="preferences/symbols/README.md#gh-light-mode-only"><img src="preferences/symbols/power-supply-arrows/good-light.svg" alt="Positive and negative supply connections use arrows." width="480"></a>

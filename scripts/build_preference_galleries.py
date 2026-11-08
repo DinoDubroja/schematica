@@ -159,16 +159,24 @@ class Builder:
         if re.search(r'```|~~~|\]\[|^\s*\[[^\]]+\]:', visual, re.M):
             raise GalleryError(f'{page}: unsupported code fence or reference-style link in visual section')
         good = section(visual, 'good')
-        if not re.search(r'^## ✅ Good\s*$', visual, re.M):
-            raise GalleryError(f'{page}: missing ✅ Good heading')
         examples = re.split(r'^## ', visual, flags=re.M)[1:]
+        labels = []
         for example in examples:
-            if not (example.startswith('✅ Good') or example.startswith('❌ Bad')):
-                raise GalleryError(f'{page}: expected Good or Bad example heading')
+            heading = example.splitlines()[0].strip()
+            match = re.fullmatch(r'!\[(Good|Bad)\]\(([^)]+)\)', heading)
+            if not match:
+                raise GalleryError(f'{page}: expected a colored Good or Bad label heading')
+            label, url = match.groups()
+            expected = self.root / 'preferences/assets' / f'{label.lower()}-label.svg'
+            if local_target(url, page) != (expected, ''):
+                raise GalleryError(f'{page}: use the shared {label} label asset')
+            labels.append(label)
             urls = refs(example)
             if not all(any(urlsplit(u).path.endswith(s) for u in urls)
                        for s in ('-light.svg', '-dark.svg', '.png')):
                 raise GalleryError(f'{page}: each example needs light/dark SVG and PNG links')
+        if labels not in (['Good'], ['Good', 'Bad']):
+            raise GalleryError(f'{page}: expected one Good example followed by at most one Bad example')
         for theme in ('light', 'dark'):
             if f'#gh-{theme}-mode-only' not in good or f'-{theme}.svg' not in good:
                 raise GalleryError(f'{page}: good preview missing {theme} theme')

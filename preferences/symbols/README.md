@@ -9,14 +9,14 @@ Distinct symbols for supplies and signal terminals.
 
 Use arrows to identify power-supply connections.
 
-### ✅ Good
+### ![Good](../assets/good-label.svg)
 
 <a href="power-supply-arrows/good-light.svg#gh-light-mode-only"><img src="power-supply-arrows/good-light.svg" alt="Positive and negative supply connections use arrows." width="480"></a>
 <a href="power-supply-arrows/good-dark.svg#gh-dark-mode-only"><img src="power-supply-arrows/good-dark.svg" alt="Positive and negative supply connections use arrows." width="480"></a>
 
 [PNG](power-supply-arrows/good.png) · [Light SVG](power-supply-arrows/good-light.svg) · [Dark SVG](power-supply-arrows/good-dark.svg)
 
-### ❌ Bad
+### ![Bad](../assets/bad-label.svg)
 
 Supply connections shown as circles obscure their distinct role.
 
@@ -31,7 +31,7 @@ Supply connections shown as circles obscure their distinct role.
 
 Use hollow circles for exposed signal inputs and outputs.
 
-### ✅ Good
+### ![Good](../assets/good-label.svg)
 
 <a href="signal-terminal-circles/good-light.svg#gh-light-mode-only"><img src="signal-terminal-circles/good-light.svg" alt="Input and output wires end in hollow signal-terminal circles." width="480"></a>
 <a href="signal-terminal-circles/good-dark.svg#gh-dark-mode-only"><img src="signal-terminal-circles/good-dark.svg" alt="Input and output wires end in hollow signal-terminal circles." width="480"></a>

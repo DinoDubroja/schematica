@@ -36,7 +36,10 @@ for future work. The earlier page/assets remain in Git history, not as active ru
 [README.md](README.md) shows a focused reconstruction, not historical screenshots
 or the full trial. Only supply endpoints differ between Good and Bad; the rejected
 feature is the supply-circle substitution. The images illustrate the accepted rule;
-their detailed dimensions and typography are not separately approved defaults.
+their detailed dimensions and typography are not separately approved defaults,
+except for junction-dot proportions now governed by
+[G-CONNECTION-01](../../connections/junction-dots/RULE.md). Both illustrations were
+updated together after the user's [size correction](../../../context/LOG.md#junction-dots-and-labels).
 
 Compile [drawing.tex](drawing.tex) into an ignored build directory. Page 1 is Good,
 page 2 Bad, on equal canvases. Export each with [export_svg.py](../../../scripts/export_svg.py)

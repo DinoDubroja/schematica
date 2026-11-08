@@ -17,6 +17,10 @@ schematica/
 ├── preferences/
 │   ├── README.md                     # Category previews
 │   ├── GENERAL.md                    # Agent index, precedence, inactive proposals
+│   ├── assets/                       # Shared colored Good/Bad word labels
+│   ├── connections/
+│   │   ├── README.md
+│   │   └── junction-dots/            # RULE, visual README, source and images
 │   └── symbols/
 │       ├── README.md                 # Combined rule presentations
 │       ├── power-supply-arrows/
@@ -39,8 +43,12 @@ schematica/
   human `README.md`, and an authoritative `RULE.md`. Keep stable ID, status, decision
   date, exact instruction, scope, exceptions, evidence, and asset provenance in `RULE.md`.
   Link precedence in [GENERAL.md](../preferences/GENERAL.md); do not copy it.
-- Individual READMEs use simple titles, a required **✅ Good** illustration, an optional
-  **❌ Bad** illustration, a useful short description, downloads, and navigation.
+- Individual READMEs use simple titles, a required **Good** illustration, an optional
+  **Bad** illustration, a useful short description, downloads, and navigation.
+  Show only the word Good in green and Bad in red, without checkmarks or crosses.
+  Use the shared transparent word-label SVGs in `preferences/assets/`, with matching
+  Good/Bad alt text, so the color survives GitHub Markdown rendering. Both colors
+  must remain readable on light and dark backgrounds; no boxes, badges or icons.
   Identify the deficient feature, not the entire circuit. Avoid before/after framing.
   Keep operational explanations and identifiers/status out of human galleries.
 - A category contains rules or subcategories, not a mixture. A category of rules
@@ -78,7 +86,9 @@ Authoring contract (HTML comments are hidden in rendered READMEs):
 
 - A leaf README wraps its title, description, examples and downloads between
   `<!-- preference-visual:start -->` and `<!-- preference-visual:end -->`.
-  Use a level-one title and level-two Good/Bad headings. Wrap just the paired
+  Use a level-one title and level-two colored label-image headings, for example
+  `## ![Good](../../assets/good-label.svg)` (and `bad-label.svg` for Bad).
+  Keep the relative path correct for the leaf's depth. Wrap just the paired
   light/dark image links of the good example in `<!-- preference-good:start -->`
   and `<!-- preference-good:end -->`. Navigation stays outside the visual section.
 - A category README declares `<!-- preference-representative: path/to/README.md -->`,
