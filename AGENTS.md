@@ -1,5 +1,17 @@
 # Working on Schematica
 
+## Resume and keep context
+
+Start project work by reading [the current checkpoint](context/CURRENT.md), then [the project direction](DIRECTION.md) and the relevant workflow or collection documents. Use [the context log](context/LOG.md) selectively for decisions, reasoning, and approval history. Verify recorded state against the actual checkout; an old note or completed authorization is not a new instruction to execute it again.
+
+Routine project context logging is authorized. Update `context/CURRENT.md` and `context/LOG.md` after meaningful decisions, corrections, results, or blockers and before handoff, including during discussion. No repeated approval is needed for these notes and their routine commits and pushes. Explicit read-only requests and instructions not to log take precedence. Reread notes before editing to preserve concurrent updates.
+
+Keep user-approved decisions, assistant proposals, authorization to implement, completed work, and verification distinct. Record provisional ideas without promoting them into product direction or style rules. Context logging does not authorize drawings, imports, feature implementation, or changes to personal preferences. Keep domain detail in its existing authoritative document and link it from the checkpoint.
+
+Keep these public notes limited to publication-suitable project information. Do not copy private chats, account details, personal paths, or working screenshots. Follow the commit instructions below for authorized context checkpoints; report if notes remain local rather than synchronized. On another device, synchronize safely before relying on the notes.
+
+This is the project's self-contained adoption of the shared [project context workflow](https://github.com/DinoDubroja/project-workflow/blob/main/PROJECT_CONTEXT.md). Recovery must work from this checkout even when the shared workflow, personal instructions, and old chats are unavailable.
+
 ## Select the relevant workflow and style
 
 - When starting or resuming a collection, adding references, recording user feedback, consolidating a style, or preserving a generated example, read [Schematica examples](skills/schematica-examples/SKILL.md). The same workflow applies to new collections from other sources.
@@ -26,4 +38,4 @@ Once the user authorizes implementing or saving a change, handle the relevant ch
 - Include only the approved work; preserve unrelated changes and keep private material out.
 - Report what was committed and pushed, or explain any blocker.
 
-Discussion and approval of draft wording alone do not authorize saving or publishing it.
+Discussion and approval of draft wording alone do not authorize saving or publishing product changes or examples. The routine context notes authorized above may record that discussion with its actual status.
