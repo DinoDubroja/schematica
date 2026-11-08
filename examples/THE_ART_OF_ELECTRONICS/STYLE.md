@@ -4,7 +4,7 @@ Illustration style under development from selected examples in *The Art of Elect
 
 [Browse the visual gallery](README.md). This document provides detailed guidance and example selection for agents.
 
-**Collection status:** collecting. Twenty-nine reference records are saved: five have LaTeX source, light/dark SVG previews, PNG downloads, captions, and browsing pages; twenty-four have captions and observations, with recreation pending. The example guide below identifies each record and its available assets. The shared drawing patterns below remain provisional. A first practical output-stage trial has been drawn and refined separately; it is not yet a saved collection example or evidence of a fully validated style. See [the current checkpoint](../../context/CURRENT.md).
+**Collection status:** collecting. Thirty-one reference records are saved: five have LaTeX source, light/dark SVG previews, PNG downloads, captions, and browsing pages; twenty-six have captions and observations, with recreation pending. The example guide below identifies each record and its available assets. The shared drawing patterns below remain provisional. A first practical output-stage trial has been drawn and refined separately; it is not yet a saved collection example or evidence of a fully validated style. See [the current checkpoint](../../context/CURRENT.md).
 
 ## Purpose
 
@@ -20,7 +20,7 @@ Read [general schematic preferences](../../preferences/GENERAL.md) before this g
 
 None currently. Inherit every applicable accepted general preference. A reference image or provisional observation does not implicitly override it. If an exception is approved, record the general rule ID, exact replacement behavior, scope, and decision/evidence here; do not copy the full general rule into this guide.
 
-The five completed previews can be inspected from this checkout without the source book. The twenty-four pending references are text records only; their source screenshots were inspected in the collecting chat and are not saved as repository previews. Read the selected record's recreation and review status; availability is not the same as user approval of the recreation. Do not claim to have seen an image based only on its record.
+The five completed previews can be inspected from this checkout without the source book. The twenty-six pending references are text records only; their source screenshots were inspected in the collecting chat and are not saved as repository previews. Read the selected record's recreation and review status; availability is not the same as user approval of the recreation. Do not claim to have seen an image based only on its record.
 
 ## Confirmed preferences
 
@@ -91,6 +91,8 @@ Use concise annotations and clear leaders. A dashed trace needs an understood me
 | [Figure 4.87: Laboratory dc amplifier](fig-04-87-laboratory-dc-amplifier/EXAMPLE.md) | Complex project schematics; explicitly liked for this role | Main signal chain, auxiliary offset circuit, boxed controls, connectors, and meter | Caption and observations; source/preview pending |
 | [Figure 4.105: Power-source output amplifier](fig-04-105-power-source-amplifier/EXAMPLE.md) | Transformer-coupled power circuitry and a long feedback path | Winding-polarity dots, heat-sink/rating labels, and an output receptacle | Caption and observations; source/preview pending |
 | [Figure 5.64: Inherently differential signals](fig-05-64-differential-signals/EXAMPLE.md) | Combining schematics, alternative sources, and physical interconnects | Bridge panel beside shielded twisted pair, XLR connector, and receiver requirements | Caption and observations; source/preview pending |
+| [Figure 5.77: Instrumentation amplifier](fig-05-77-instrumentation-amplifier/EXAMPLE.md) | Paired input stages, sense/ref terminals, and scoped equations | A brace ties gain equations to the first stage rather than the full circuit | Caption and observations; source/preview pending |
+| [Figure 5.78: Signal guarding](fig-05-78-signal-guarding/EXAMPLE.md) | Multi-panel guard circuits and mixed abstraction levels | Five unequal panels, shield/guard distinctions, and partial IC internals | Caption and observations; source/preview pending |
 
 Figures 1.7 and 1.43 received positive feedback on their recreated appearance. The new recreations of Figures 1.1, 1.6, and 1.11 were compiled and visually checked by the assistant on 08-11-2026; user review is pending. All five use editable TikZ paths inside a CircuitikZ environment, not semantic native-component examples. Their implementation details are not all approved style rules.
 
@@ -102,9 +104,9 @@ Use transparent SVG by default in chat and on GitHub, with ink appropriate to th
 
 ## Open questions and next step
 
-Latest addition: Figures 4.105 and 5.64, explicitly requested after the earlier wrap-up on 08-11-2026. Both are recorded. The following are options for further work, not authorization to start drawings or another batch.
+Latest addition: Figures 5.77 and 5.78, explicitly requested on 08-11-2026. Both are recorded. Image-only references and optional PNG previews are under discussion; the workflow change is not implemented. The following are options for further work, not authorization to start drawings or another batch.
 
-- Review the three newly completed recreations and continue collecting supplied examples. Twenty-four further figures are recorded; their recreations await an explicit drawing request.
+- Review the three newly completed recreations and continue collecting supplied examples. Twenty-six further figures are recorded; their recreations await an explicit drawing request.
 - Review the proposed shared patterns and establish useful drawing parameters from evidence.
 - Add coverage for larger practical circuits and quantitative plots.
 - Continue the separate output-stage trial's review and preservation discussion. Its initial feedback and refinements are in [the trial checkpoint](../../context/LOG.md#output-stage-trial); saving it as an example remains unapproved.
