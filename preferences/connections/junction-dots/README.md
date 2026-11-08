@@ -1,7 +1,7 @@
 <!-- preference-visual:start -->
 # Junction dots
 
-Use solid circles in the wire color, with a diameter seven times the wire width.
+Use solid circles in the wire color, with a diameter ten times the wire width.
 
 <!-- preference-comparison:start -->
 <table>
@@ -12,8 +12,8 @@ Use solid circles in the wire color, with a diameter seven times the wire width.
 <tr>
 <td align="center" valign="top">
 <!-- preference-good:start -->
-<a href="good-light.svg#gh-light-mode-only"><img src="good-light.svg?v=7" alt="Three-way and four-way connected wire junctions with solid dots seven times the wire width." width="360"></a>
-<a href="good-dark.svg#gh-dark-mode-only"><img src="good-dark.svg?v=7" alt="Three-way and four-way connected wire junctions with solid dots seven times the wire width." width="360"></a>
+<a href="good-light.svg#gh-light-mode-only"><img src="good-light.svg?v=10" alt="Three-way and four-way connected wire junctions with solid dots ten times the wire width." width="360"></a>
+<a href="good-dark.svg#gh-dark-mode-only"><img src="good-dark.svg?v=10" alt="Three-way and four-way connected wire junctions with solid dots ten times the wire width." width="360"></a>
 <!-- preference-good:end -->
 </td>
 <td align="center" valign="top">
@@ -24,7 +24,7 @@ Use solid circles in the wire color, with a diameter seven times the wire width.
 </td>
 </tr>
 <tr>
-<td valign="top">Solid dots with diameter 7 times the wire width.</td>
+<td valign="top">Solid dots with diameter 10 times the wire width.</td>
 <td valign="top">Undersized dots make connected junctions harder to distinguish.</td>
 </tr>
 <tr>

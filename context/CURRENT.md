@@ -63,7 +63,8 @@ Preference-bank refinement (08-11-2026): the agreed migration is authorized and 
 Preference presentation and junction dots (08-11-2026): implemented the user's
 request for colored Good/Bad words without icons and a new
 [Connections / Junction dots](../preferences/connections/junction-dots/RULE.md)
-preference. The user subsequently requested Good/Bad side by side and a 7:1
-junction diameter-to-wire-width trial. Both supply examples and the junction
-comparison now use that size; visual approval remains pending. See
-[the refinement and checks](LOG.md#side-by-side-seven-width-junctions).
+preference. After reviewing a 10:1 preview in chat, the user explicitly accepted
+that junction diameter-to-wire-width ratio and requested updating the preference
+and examples. Both supply illustrations and the junction comparison now use 10:1,
+with Good/Bad side by side. The earlier 7:1 trial is superseded. See
+[the approval and checks](LOG.md#ten-width-junction-adoption).

@@ -7,7 +7,7 @@ Clear wire junctions and connectivity.
 
 ## [Junction dots](junction-dots/README.md)
 
-Use solid circles in the wire color, with a diameter seven times the wire width.
+Use solid circles in the wire color, with a diameter ten times the wire width.
 
 <table>
 <tr>
@@ -16,8 +16,8 @@ Use solid circles in the wire color, with a diameter seven times the wire width.
 </tr>
 <tr>
 <td align="center" valign="top">
-<a href="junction-dots/good-light.svg#gh-light-mode-only"><img src="junction-dots/good-light.svg?v=7" alt="Three-way and four-way connected wire junctions with solid dots seven times the wire width." width="360"></a>
-<a href="junction-dots/good-dark.svg#gh-dark-mode-only"><img src="junction-dots/good-dark.svg?v=7" alt="Three-way and four-way connected wire junctions with solid dots seven times the wire width." width="360"></a>
+<a href="junction-dots/good-light.svg#gh-light-mode-only"><img src="junction-dots/good-light.svg?v=10" alt="Three-way and four-way connected wire junctions with solid dots ten times the wire width." width="360"></a>
+<a href="junction-dots/good-dark.svg#gh-dark-mode-only"><img src="junction-dots/good-dark.svg?v=10" alt="Three-way and four-way connected wire junctions with solid dots ten times the wire width." width="360"></a>
 </td>
 <td align="center" valign="top">
 <a href="junction-dots/bad-light.svg#gh-light-mode-only"><img src="junction-dots/bad-light.svg" alt="The same connected junctions with undersized dots." width="360"></a>
@@ -25,7 +25,7 @@ Use solid circles in the wire color, with a diameter seven times the wire width.
 </td>
 </tr>
 <tr>
-<td valign="top">Solid dots with diameter 7 times the wire width.</td>
+<td valign="top">Solid dots with diameter 10 times the wire width.</td>
 <td valign="top">Undersized dots make connected junctions harder to distinguish.</td>
 </tr>
 <tr>

@@ -506,3 +506,26 @@ Revised recommendation: permit a complete image-reference example consisting of 
 **Authoritative documentation:** skills/schematica-examples/SKILL.md owns collection and saves; its references/example-record.md owns example files/status; scripts/PRESENTATION.md owns export/display. Currently they still describe screenshots as working inputs and LaTeX/SVG as the completed-example route. This revised approach exists in these proposal notes only. On approval, update those sources, collection availability wording, and relevant human pages together. Do not silently broaden the accepted general-preference gallery asset contract or begin bulk screenshot publication. Numeric AOE style extraction remains a separate outstanding task.
 
 Relative links, record/selection counts, pending asset status, unchanged existing drawings, and scoped diff are checked before committing this capture. Concurrent preference-bank edits are preserved; use the gallery check without regenerating their work. Remote synchronization must be verified separately.
+
+<a id="ten-width-junction-adoption"></a>
+
+## 08-11-2026 - Ten-width junction dots accepted
+
+**Status:** accepted and explicitly authorized for preference/example updates.
+The user first requested a chat-only 10:1 preview, leaving the saved 7:1 setting
+unchanged. After viewing an equal-scale 7x/10x comparison, the user said, "10x
+looks better. Let's use that and update the preference and examples."
+
+[G-CONNECTION-01](../preferences/connections/junction-dots/RULE.md) now adopts a
+solid dot diameter ten times the wire width (6.5 pt diameter for 0.65 pt wires).
+The accepted index, junction Good example, both supply illustrations, and generated
+galleries are updated. Good remains left and Bad right. The intentionally undersized
+junction Bad example stays unchanged; hollow signal terminals keep their dimensions.
+This supersedes the 5:1 and 7:1 trials, without revising unrelated reference drawings.
+
+**Verification:** both edited TeX sources compiled. All six updated junction dots
+measure 10:1 in the PDF geometry; the PNG exports match compiled raster pixels.
+The light and dark images were visually inspected for complete wires, round solid
+dots, preserved terminal shapes and readable labels. Gallery generation and its
+read-only check passed. Source/exports and the deliberately undersized Bad example
+remain consistent. Synchronization is verified separately at delivery.
