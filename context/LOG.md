@@ -238,3 +238,9 @@ Verification: all five sources compiled successfully. Exported vector geometry m
 Live GitHub verification showed all five dark SVGs loaded in automatic dark mode and all five light SVGs loaded with an explicit light site theme while the system remained dark. Backgrounds are transparent, labels/captions remain readable, and exactly one version is shown per figure. GitHub's theme fragments are placed on image links to follow its site setting. Main README-to-gallery, gallery-to-example, PNG access, and return navigation were exercised. The original automatic theme with default light/dark palettes was restored. This verification covers The Art of Electronics gallery, not the concurrently developed preference gallery.
 
 No drawing geometry, technical content, original captions, or provisional style patterns were changed. Screenshots, compiler output, and chat-preview wrappers remain working artifacts outside versioned example content. Review the three figures in chat, then continue the collection or practical trial within the user's chosen scope.
+
+<a id="collection-resumed-after-svg"></a>
+
+## 08-11-2026 - Resume The Art of Electronics collection
+
+The user said the revised inline presentation "looks good" and chose to resume building The Art of Electronics style by sending more examples. This records positive visual feedback on the displayed result; it does not make every drawing detail a general style rule. Continue the existing collection workflow: preserve supplied captions and explicit comments, treat uncommented references as liked overall, and distinguish observations from confirmed preferences. No new reference or recreation was supplied in this message.
