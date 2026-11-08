@@ -8,6 +8,26 @@ mark omissions; distinguish proposed and implemented structure.
 Whenever a Git push fails, provide a copy-paste PowerShell one-liner for the
 appropriate fix or retry, using the exact repository path, remote, and branch.
 
+## Recurring cloud-chat access failures
+
+The user has already configured network/access settings and reports that these
+recurring failures arise in cloud chats; continuing in a local project chat is
+their established workaround. Retain this context instead of restarting setup advice.
+
+When attachment downloads, Git operations, or project-file access fail with
+network/permission errors in a cloud chat, identify the environment limitation
+briefly and suggest continuing the same task in the local project chat with the
+repository attached. Do not repeatedly suggest enabling network access, changing
+configuration, or asking the user to locate/re-upload/sort existing attachments.
+A disabled-network flag describes the active session; it does not prove the
+user's saved settings are wrong.
+
+Preserve completed work, approvals, attachment references and outstanding steps
+in the current checkpoint so the user need not explain the task again. Provide a
+short handoff when needed. Verify the required access in the local chat before
+claiming the blocker is resolved. Do not change execution security settings or
+retry blocked transfers repeatedly as a substitute for this handoff.
+
 ## Corrections and suggestions
 
 Continue the current illustration through corrections across messages. Apply steering

@@ -602,7 +602,7 @@ The user authorized resolving the transfer issue and rejected manually locating/
 
 A fresh one-image transfer through the current supported helpers failed before copying bytes with `hosted apps tools/list request failed: DNS`. Independent diagnostics showed thread and socket creation working, localhost resolving, and both `github.com` and `chatgpt.com` failing name resolution. The active execution environment reports `CODEX_SANDBOX_NETWORK_DISABLED=1`: command networking is explicitly disabled. This is a confirmed execution-permission blocker, not evidence of missing attachment files or a system-wide internet outage.
 
-The user-facing next step is to enable Allow network access in the app's Configuration settings while retaining Workspace write, then retry the same original-image import. This agent cannot change its own sandbox permissions. If the setting is already enabled, the effective session policy still needs investigation; do not claim that a settings change or restart has succeeded without a fresh transfer test. No original screenshots were imported. Repository publishing also remains blocked by command networking; no redundant push was attempted during this diagnosis.
+**Superseded by [the user correction](#cloud-chat-local-handoff):** the earlier user-facing next step was to enable Allow network access in the app's Configuration settings while retaining Workspace write, then retry the same original-image import. This agent cannot change its own sandbox permissions. If the setting is already enabled, the effective session policy still needs investigation; do not claim that a settings change or restart has succeeded without a fresh transfer test. No original screenshots were imported. Repository publishing also remains blocked by command networking; no redundant push was attempted during this diagnosis.
 
 <a id="separate-junction-and-crossing-rules"></a>
 
@@ -637,3 +637,14 @@ identical. Gallery generation and freshness pass; rule/index/example links and a
 resolve, including discovery of the keyword through the general preference index. The accepted conventions are user-reviewed; final
 new asset review by the user and live GitHub theme rendering remain unverified.
 The historical examples and unrelated concurrent context edits are outside scope.
+
+<a id="cloud-chat-local-handoff"></a>
+## Recurring cloud-chat failures: local-project-chat handoff - 08-11-2026
+
+**User correction and explicit save authorization:** network/access settings are already configured; the user has encountered this repeatedly and identifies cloud chats as the recurring cause. Agents must recognize the pattern, stop recommending the same settings changes, and suggest continuing in the local project chat. The user's established workaround takes precedence over the previous generic setup advice.
+
+**Implemented:** [chat behavior](../agents/BEHAVIOR.md#recurring-cloud-chat-access-failures) now records this instruction. The disabled-network observation remains a valid description of the active executor, but is not proof that the user's saved configuration is wrong. The settings-change recommendation in the earlier diagnosis is superseded. Do not require manual screenshot collection or claim the local handoff has been tested when it has not.
+
+The original-image import remains authorized and unfinished. Preserve the existing collection, approvals, source references and no-style-generalization boundary when continuing locally. The first-release audit is complete; its proposed implementation is not authorized by this correction.
+
+**Scope:** saved in the repository's agent instructions, which are reached from root AGENTS.md. Applying the same already-approved rule to the personal cross-project Agents collection remains pending because that directory is outside this session's writable scope. The local project chat should add it to the existing general instructions and update their affected summary/map as required, without asking the user to restate the rule. No personal instruction file was changed here.
