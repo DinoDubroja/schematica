@@ -1,5 +1,15 @@
 # Context log
 
+<a id="resistor-convention-and-proportions"></a>
+
+## 08-11-2026 - Resistor convention and body proportions
+
+**User decision:** European rectangular resistors are the default; US zigzag resistors remain an option. This selects the convention, not the aspect ratios or visual appearance of either symbol.
+
+**Current discussion:** define the appearance of both variants separately. The next in-chat comparison keeps body length, lead length and line weight equal while showing body length-to-height ratios of 2:1, 2.5:1 and 3:1 for each convention. These are unselected proposals. Outline weight, corners, zigzag count/spacing and eventual size still need review.
+
+**Authorization and status:** discussion previews and routine context capture only. No accepted preference rule, permanent illustration, gallery change or historical redraw is authorized by this choice. Preserve the convention decision while continuing the appearance review.
+
 Concise project history, with proposals, decisions, implementation, and verification kept distinct. [CURRENT.md](CURRENT.md) is the maintained starting point. Dates below identify recorded checkpoints; earlier discussion is summarized where an exact event date is not established. User statements are summarized unless quoted.
 
 ## 08-11-2026 — Product direction and approval boundary
