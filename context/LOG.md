@@ -85,3 +85,9 @@ Editable TeX and SVG/PNG/PDF exports are available as working artifacts in the i
 The default compiler could not load its bundle in this session. Using an existing local Tectonic cache and available sans-serif fonts allowed compilation. This establishes this drawing's renderability on the current machine, not general portability of the runtime. Git synchronization encountered a network name-resolution failure; check the actual remote before assuming this checkpoint is available on another device.
 
 Next: obtain user feedback on the trial, make requested refinements, offer a concrete preservation step when useful, and then resume example collection. A positive reaction alone does not authorize publication of the drawing.
+
+### First user feedback and terminal/typography revision
+
+**Status:** first rendering liked overall; requested revision implemented and exported; collection preservation not yet authorized.
+
+The user called the result "pretty good" and asked for hollow black terminal circles and slightly smaller component-value text. The revision uses six unfilled black circles for the input/output and exposed supply terminals, with wires ending at their boundaries. Component values, including the offset potentiometer, changed from 10 pt to 9 pt; transistor identifiers and other annotations retain their sizes. One nearby resistor label moved to clear the trim supply label. The source compiles, all supplied values and transistor identifiers remain present, the six unfilled black terminal paths and reduced value font size were checked in the PDF, and the rendering was visually inspected. The delivered ZIP was updated in place. These are drawing-specific changes, not approved global style rules.

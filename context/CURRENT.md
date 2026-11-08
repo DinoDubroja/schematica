@@ -6,7 +6,7 @@ Updated: 08-11-2026. Read this first when resuming; verify the checkout before a
 
 Develop The Art of Electronics illustration style through examples, then test it on a new practical circuit and observe the agent's preservation behavior. Project scope includes schematics, conceptual diagrams, waveforms, plots, equations, and integrated figures; see [DIRECTION.md](../DIRECTION.md).
 
-The reusable context setup and independent recovery audit are complete. The user subsequently selected a first practical style trial: redraw their supplied hand-drawn output stage in the current The Art of Electronics style, review the result, then continue collecting examples. The first rendering is complete and awaiting user feedback. Routine context updates and their commits/pushes are authorized under [AGENTS.md](../AGENTS.md); adding this trial to the permanent example collection still needs the user's approval.
+The reusable context setup and independent recovery audit are complete. The user selected a first practical style trial: redraw their supplied hand-drawn output stage in the current The Art of Electronics style, review the result, then continue collecting examples. They rated the first rendering positively and requested hollow black terminal circles and slightly smaller component values. That revision is complete: six exposed terminals use unfilled black circles, and value text is reduced from 10 pt to 9 pt. Routine context updates and their commits/pushes are authorized under [AGENTS.md](../AGENTS.md); adding this trial to the permanent example collection still needs the user's approval.
 
 ## What exists
 
