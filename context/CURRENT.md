@@ -6,7 +6,7 @@ Updated: 08-11-2026. Read this first when resuming; verify the checkout before a
 
 Develop The Art of Electronics illustration style through examples, then test it on a new practical circuit and observe the agent's preservation behavior. Project scope includes schematics, conceptual diagrams, waveforms, plots, equations, and integrated figures; see [DIRECTION.md](../DIRECTION.md).
 
-The reusable context setup and independent recovery audit are complete. Resume discussion/example collection; choose a specific new drawing with the user before making it. No pending recreation, practical test circuit, or unresolved design parameter has been selected for implementation. Routine context updates and their commits/pushes are authorized under [AGENTS.md](../AGENTS.md).
+The reusable context setup and independent recovery audit are complete. The user subsequently selected a first practical style trial: redraw their supplied hand-drawn output stage in the current The Art of Electronics style, review the result, then continue collecting examples. The first rendering is complete and awaiting user feedback. Routine context updates and their commits/pushes are authorized under [AGENTS.md](../AGENTS.md); adding this trial to the permanent example collection still needs the user's approval.
 
 ## What exists
 
@@ -15,6 +15,7 @@ The reusable context setup and independent recovery audit are complete. Resume d
 - The two drawings are visual recreations using TikZ paths inside CircuitikZ, not yet semantic native-component templates. Liking their appearance did not approve every implementation detail or make the style complete.
 - The collection workflow and first records were saved in commit `88e9231`. Earlier validation recorded successful compilation and fresh-session collection discovery. These are historical results, not a new test of all rendering tools on another device.
 - Original screenshots, the source book PDF, earlier experiments, and the prematurely built package are outside the repository. Their existence does not make them approved project content. A repo-only session cannot visually inspect the three pending references without access to their source.
+- The output-stage trial uses native CircuitikZ devices and has editable TeX, SVG, PNG, and PDF exports. Working artifacts are in the ignored `build/aoe-output-stage-test/` directory on the creating machine, with a downloadable ZIP delivered separately. These artifacts have not been added to the versioned collection and are not synchronized by Git. See [the trial checkpoint](LOG.md#output-stage-trial).
 
 ## Current checkpoint verification
 
@@ -22,7 +23,7 @@ On 08-11-2026 an independent read-only session recovered the objective, five rec
 
 ## Open decisions
 
-- Which reference to add or recreate next, and which practical circuit to use for the first new-style trial.
+- User feedback on the first output-stage trial, whether to preserve it as an example, and which reference to collect next.
 - Which observed patterns become confirmed rules; exact typography, spacing, line weights, symbol proportions, and quantitative plot conventions remain unsettled.
 - Personal customization and storage, distribution as a plugin, and generalization beyond electronics remain to be designed.
 - Difference-only storage for intermediate drawings remains undecided. The present workflow uses complete files for selected useful revisions.
@@ -31,6 +32,6 @@ On 08-11-2026 an independent read-only session recovered the objective, five rec
 
 ## Next useful step
 
-Continue The Art of Electronics collection from the [style guide](../examples/THE_ART_OF_ELECTRONICS/STYLE.md): accept the user's next reference or propose one specific pending recreation. Figure 1.6 is an assistant recommendation for circuit-and-equation coverage, not a user-selected task; its visual source would be needed before recreation. A bare request to continue is not approval to invent a new circuit or finalize the style. Preserve incoming examples within the established collection scope and use the workflow for any additional approval needed.
+Review the output-stage rendering with the user, apply requested refinements, and offer to preserve a useful accepted result with its feedback. Then continue collecting supplied references. Do not promote this unreviewed trial or its implementation choices into confirmed style rules. Figure 1.6 remains an earlier assistant suggestion, not a selected recreation.
 
 For reasoning and scope changes, consult [LOG.md](LOG.md). For drawing details, read selected example records and actual available previews rather than treating descriptions as images.

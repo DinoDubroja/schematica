@@ -69,3 +69,19 @@ Implementation authority: the user requested, “Set up the reusable context log
 The first test attempt could not read files because the isolated test configuration omitted the configured Windows execution setting. Restoring that setting for the test process allowed the read-only audit to finish; no global settings were changed. The successful run's tool trace used only repository content, and a before/after hash check found all 20 project files unchanged. Entry-point links and the updated personal reading routes were also checked. Raw test evidence remains a local working artifact, not a dependency for resumption.
 
 This validates recovery of project context in a fresh session. It does not validate a full new-circuit drawing/review cycle, every future logging action, a second machine's installed tools, or independent execution with the original computer offline.
+
+<a id="output-stage-trial"></a>
+
+## 08-11-2026 - First practical output-stage style trial
+
+**Status:** drawing authorized and rendered; user review and permanent collection preservation pending.
+
+The user requested one test of the current The Art of Electronics style using a screenshot of their hand-drawn output stage, before continuing to add reference examples. This selected the practical trial previously left open. The request authorized a faithful redraw, not circuit redesign or adoption of new global style rules.
+
+The drawing uses native CircuitikZ components, preserving the supplied connections, eight transistor identifiers, component values, offset trim, optional resistor/short annotation, and current annotation. The existing divider and leading-edge-detector previews informed monochrome treatment, typography, symbols, and label clearance. The first rendering was inspected and refined for trimmer orientation, resistor spacing, ground symbols, and label clearance. TeX compiled to one page; the exports' identifiers and value counts were checked, and the connections were compared visually with the sketch. No circuit simulation or electrical performance validation was performed.
+
+Editable TeX and SVG/PNG/PDF exports are available as working artifacts in the ignored `build/aoe-output-stage-test/` directory and were packaged for delivery. They are not yet versioned collection assets. The original screenshot remains a working input. The shared style guide and reference collection were not changed.
+
+The default compiler could not load its bundle in this session. Using an existing local Tectonic cache and available sans-serif fonts allowed compilation. This establishes this drawing's renderability on the current machine, not general portability of the runtime. Git synchronization encountered a network name-resolution failure; check the actual remote before assuming this checkpoint is available on another device.
+
+Next: obtain user feedback on the trial, make requested refinements, offer a concrete preservation step when useful, and then resume example collection. A positive reaction alone does not authorize publication of the drawing.
