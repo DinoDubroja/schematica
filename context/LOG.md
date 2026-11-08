@@ -830,3 +830,19 @@ reported in the task result. Unrelated concurrent context work is preserved.
 **Verified:** Codex's refreshed skill list no longer discovers the general `preferences` skill, while `schematica-examples` remains enabled in both a project context and an unrelated local context. All 136 tracked Schematica files outside context notes are byte-for-byte unchanged from the cleanup baseline, including the existing preference and example workflow sources/assets. The personal index/summary changes match the intended removal; unrelated graph records and general instructions are preserved. This is cleanup and discovery verification, not a new drawing-quality or fresh-prompt behavior test.
 
 **Next scope:** continue developing Schematica preferences and examples through actual use and scoped approved saves. A new universal workflow, a replacement skill, and distribution/storage architecture are deferred. Routine context updates from other chats remain separate and are preserved.
+
+<a id="schematica-preferences-download-proposal"></a>
+
+## 08-11-2026 - Proposed Schematica Preferences & Examples entry point and download
+
+**User request:** provide a concrete proposal for making the existing preferences-and-examples workflow easy to invoke and include with the Schematica download. This is proposal work only; the prior general cross-project workflow remains deferred.
+
+**Inspected state:** the existing skill already applies preferences, handles example collections and corrections, and suggests approved saves. Its installed name is `schematica-examples`, its display name is Schematica Examples, and implicit invocation is enabled. The skill resolves its physical location and uses the rest of the repository. No installation guide/helper was found in the checkout. Copying only the skill directory would omit its referenced library.
+
+**Assistant proposal, not approved:** evolve that same skill under the name `schematica-preferences`, with display name Schematica Preferences & Examples. Document explicit `$schematica-preferences` invocation and natural requests such as "Let's review Schematica's preferences" and "Add this example to Schematica". Scope natural matching to Schematica use. Preserve the existing review, suggestion and scoped-save behavior and accepted preference/example content. Update dependent links and migrate the existing local registration without retaining a duplicate skill.
+
+Include the full project library with the download, a short README quick start, root `INSTALL.md`, and `scripts/install-codex.ps1`. The first tested target is local Codex on Windows. The helper connects Codex to the skill in the chosen download, checks for conflicting installations, and provides verification/removal instructions. Users retain that folder; moving it requires reconnecting it. Installation does not install drawing tools or establish rendering readiness.
+
+Make ordinary installed use independent of personal instructions and development-chat history. Approved saves belong to the user's selected copy. Repository-development logging, commit and push permissions must remain bound to separately authorized maintenance, not inherited by installation. A universal preference service, plugin-directory release and automatic customization migration remain outside this proposal.
+
+**Proposed validation/review:** test registration and file resolution from a separate extracted copy, explicit and natural invocation, and preservation of the current library and approval boundaries. Present the installation guide and working entry point for user review. Estimated implementation effort: 30-45 minutes. No rename, installer, registration migration or workflow changes have been authorized or performed in this discussion.
