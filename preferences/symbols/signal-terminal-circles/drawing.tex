@@ -1,4 +1,5 @@
-% Focused preference illustration; incidental dimensions are not general rules.
+% G-SYMBOL-02: outer terminal diameter 12 times wire width; outline equals wire width.
+% Remaining spacing, absolute wire width and typography are illustrative.
 % Compile with XeLaTeX or Tectonic into an ignored build directory.
 \documentclass{article}
 \usepackage[paperwidth=7cm,paperheight=3.5cm,margin=0pt]{geometry}
@@ -7,17 +8,16 @@
 \usepackage{fontspec}
 \IfFontExistsTF{TeX Gyre Heros}{\setmainfont{TeX Gyre Heros}}{\setmainfont{Arial}}
 \usepackage{tikz}
-\usetikzlibrary{arrows.meta}
-\tikzset{terminal/.style={circle,draw,fill=none,inner sep=0pt,minimum size=5pt},
- supply/.style={-{Stealth[length=2.2mm,width=1.6mm]}}}
 
 \begin{document}
 \noindent\begin{tikzpicture}[x=1cm,y=1cm,line width=0.65pt,line cap=round,
  font=\fontsize{11}{12}\selectfont]
 \path[use as bounding box] (0,-1.6) rectangle (6.9,1.6);
-\node[terminal] (I) at (0.9,0) {};
-\node[terminal] (O) at (5.9,0) {};
-\draw (I.east)--(2.7,0) (4.1,0)--(O.west);
+% Centerline radius 5.5 widths plus half the outline gives outer radius 6 widths.
+\draw[fill=none] (0.9,0) circle[radius=5.5\pgflinewidth]
+                 (5.9,0) circle[radius=5.5\pgflinewidth];
+\draw ([xshift=6\pgflinewidth]0.9,0)--(2.7,0)
+      (4.1,0)--([xshift=-6\pgflinewidth]5.9,0);
 \node at (1.7,0.6) {input};
 \node at (5.1,0.6) {output};
 \end{tikzpicture}

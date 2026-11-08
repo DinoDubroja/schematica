@@ -38,12 +38,13 @@ Use arrows to identify power-supply connections.
 
 ## [Input/output terminal circles](signal-terminal-circles/README.md)
 
-Use hollow circles for exposed signal inputs and outputs.
+Use hollow circles for exposed signal inputs and outputs, with an outer diameter
+twelve times the wire width and an outline matching the wire thickness.
 
 ### ![Good](../assets/good-label.svg)
 
-<a href="signal-terminal-circles/good-light.svg#gh-light-mode-only"><img src="signal-terminal-circles/good-light.svg" alt="Input and output wires end in hollow signal-terminal circles." width="480"></a>
-<a href="signal-terminal-circles/good-dark.svg#gh-dark-mode-only"><img src="signal-terminal-circles/good-dark.svg" alt="Input and output wires end in hollow signal-terminal circles." width="480"></a>
+<a href="signal-terminal-circles/good-light.svg#gh-light-mode-only"><img src="signal-terminal-circles/good-light.svg?v=12" alt="Input and output wires end in hollow circles with outer diameter twelve times wire width and outline equal to wire thickness." width="480"></a>
+<a href="signal-terminal-circles/good-dark.svg#gh-dark-mode-only"><img src="signal-terminal-circles/good-dark.svg?v=12" alt="Input and output wires end in hollow circles with outer diameter twelve times wire width and outline equal to wire thickness." width="480"></a>
 
 [PNG](signal-terminal-circles/good.png) · [Light SVG](signal-terminal-circles/good-light.svg) · [Dark SVG](signal-terminal-circles/good-dark.svg)
 

@@ -657,3 +657,30 @@ The user wants the shortest path to release readiness. Current inspection confir
 **Assistant proposal, not implementation approval:** continue execution in the local project chat; verify required access and complete the already-authorized original-image gallery work there. The first development milestone is a reusable numeric AOE preset demonstrated by a new Norton-equivalent explanation. This requires explicitly ending the user's earlier pause on style consolidation. Stop at that first visual result for review; use approved corrections to tune the preset and propose missing general preferences. Then test a practical amplifier and a circuit/waveform figure from fresh prompts, plus the amplifier with only general defaults. Save accepted synthetic good examples with prompts, sources and both preview themes. Use those same reviews to develop ground, typography, spacing and label-placement preferences.
 
 Finish the gallery/showcase and one documented, tested installation route, including dependencies, user overrides, license/distribution decisions, and a clean-environment first-prompt check. Existing original pictures remain valid references without recreations. The release gate is reviewed visual/technical quality on the small test set and successful use by a fresh user, not collection completeness by LaTeX recreation or a fixed quota of preferences. No new drawing, preset, rule, package or release was created by this proposal.
+
+<a id="twelve-width-terminal-circles"></a>
+
+## 08-11-2026 - Twelve-width input/output terminal circles
+
+**User decision and authorization:** the chat preview compared 8, 10 and 12 times
+wire width as the visible outer diameter of hollow terminal circles, with circle
+outlines equal to wire thickness and a fixed 10-times junction dot for reference.
+The user selected C and explicitly requested using 12 times wire width and updating
+the preference and examples. This adds a size to the existing signal-terminal
+rule; it is not a new independent rule or a change to junction dots.
+
+**Implemented:** [G-SYMBOL-02](../preferences/symbols/signal-terminal-circles/RULE.md)
+now specifies visible outer diameter, outline thickness, hollow interior and
+wire attachment at the circle edge. Its prior exclusion of terminal dimensions
+is superseded. Both input/output circles in the focused example, editable LaTeX,
+transparent SVG themes, PNG and generated Symbols gallery are updated. Existing
+typography and layout are retained. The agent index identifies the accepted size.
+The 8/10 comparison alternatives were not automatically labelled Bad; only the
+chosen size was adopted. Historical source examples were not redrawn.
+
+**Verification:** compilation passed. Rendered input/output outer diameters are
+12.00006 and 12.00008 times wire width (rounding tolerance); their outlines equal
+wire thickness and remain unfilled. Both SVGs match compiled geometry, and the
+transparent PNG matches the PDF pixels. Light/dark previews were visually checked.
+Gallery freshness, local links and anchors pass. Live GitHub theme rendering was
+not rechecked; publication status is verified separately in the task result.

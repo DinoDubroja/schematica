@@ -24,7 +24,7 @@ When no accepted preference applies, use the task and relevant examples to make 
 | [G-CONNECTION-02: Explicit wire junctions](connections/explicit-wire-junctions/RULE.md) | Drawing or reviewing electrical branch connections, including T-junctions and four-way junctions | Required connection markers; both aligned and staggered layouts accepted; Good/Bad visuals and editable source |
 | [G-CONNECTION-03: Unconnected wire crossings](connections/unconnected-crossings/RULE.md) | Drawing or reviewing crossings without electrical connection, or applying the keyword "wire bridges" | Plain crossings by default; keyword-selected bridge variant; gaps rejected; Good/Bad visuals and editable source |
 | [G-SYMBOL-01: Power supply arrow symbols](symbols/power-supply-arrows/RULE.md) | Drawing or changing supply connections | Accepted rule, good/bad visuals, editable source, and user correction |
-| [G-SYMBOL-02: Input/output terminal circles](symbols/signal-terminal-circles/RULE.md) | Drawing or changing exposed signal ports | Accepted rule, good visual, editable source, and user correction |
+| [G-SYMBOL-02: Input/output terminal circles](symbols/signal-terminal-circles/RULE.md) | Drawing or changing exposed signal ports | Accepted hollow circles with outer diameter 12 times wire width and matching outline thickness; good visual and editable source |
 
 Select by the feature being drawn or reviewed, not by the style name. A style may point directly to a rule ID, but must not copy a competing version of the rule. Only entries explicitly marked accepted are active defaults.
 
