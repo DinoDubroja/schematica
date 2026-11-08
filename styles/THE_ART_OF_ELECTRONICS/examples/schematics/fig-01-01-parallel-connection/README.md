@@ -20,4 +20,4 @@ Paul Horowitz and Winfield Hill, *The Art of Electronics*, third edition (2015),
 
 ---
 
-[← Gallery](../../../) · [Next: Voltage divider →](../../mixed/fig-01-06-voltage-divider/)
+[← Category](../README.md) · [Showcase](../../../README.md) · [Next: Voltage divider →](../../mixed/fig-01-06-voltage-divider/)

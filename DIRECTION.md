@@ -8,13 +8,13 @@ It should come with consistent, predefined drawing preferences. Users should be 
 
 ## Development approach
 
-- Recreate selected good schematics in CircuitikZ so the examples themselves provide guidance.
+- Preserve selected source images with their captions as visual references; recreate selected favorites in CircuitikZ when an editable drawing or theme-aware SVG is wanted.
 - Compare examples from the same circuit category, infer recurring design patterns, and document the agreed lessons.
 - Use realistic circuits and functional subsystems for demonstrations.
 - Provide prompts and inputs users can run with and without Schematica to compare results themselves.
 - Document useful examples and conclusions as development progresses.
 
-Present schematics inline using transparent, theme-aware SVG by default in chat. GitHub galleries also display SVG, selecting light or dark ink for the active site theme. Keep PNGs as convenient downloads. Explicit requests for another format or save location take precedence.
+Present generated and recreated schematics inline using transparent, theme-aware SVG by default in chat and GitHub. Keep PNG exports as convenient downloads. Original reference images may display directly as PNG with their original background; no recreation or theme conversion is required. Explicit requests for another format or save location take precedence.
 
 ## Style collections
 
@@ -24,9 +24,9 @@ Each source/style has a collection under `styles/`. [INDEX.md](styles/INDEX.md) 
 
 Examples live under each collection's `examples/<category>/<example>/`. Existing categories are `schematics`, `plots`, and `mixed`; create other guides or categories only when supported by content. Keep mixed figures intact in one folder and link them from all relevant domain guides. General preferences remain outside `styles/` and apply only within their stated scope; explicit style exceptions belong in the relevant domain guide, or `STYLE.md` when shared, with discovery links from `STYLE.md`.
 
-Each collection also has a short `README.md` visual gallery for people. The main README links to that gallery, and each developed example has its own `README.md` with the picture, a brief explanation, caption/source information, and links to its files. Detailed agent guidance stays in `STYLE.md`, the applicable domain guides, and `EXAMPLE.md`. The main README presents available work; public installation or invocation instructions belong there only once the user-facing workflow is established.
+Each collection has a short `README.md` showcase of selected highlights, linking to `examples/README.md` and category galleries for all references. The user chooses showcase favorites; existing SVGs can serve as temporary highlights. Each example with a saved image has its own `README.md` with the picture, a brief explanation, caption/source information, and file links. Detailed agent guidance stays in `STYLE.md`, domain guides, and `EXAMPLE.md`. Public installation or invocation instructions belong in the main README only once that workflow is established.
 
-Each example has an `EXAMPLE.md` record with its caption, source, feedback, distinctive lessons, and review status. A developed visual example includes editable LaTeX source, transparent light/dark SVG previews, and a PNG rendered from the same source. A caption/feedback-only record may preserve an incoming reference while recreation awaits authorization, but must be identified as pending rather than presented as a completed gallery example. Original screenshots are working inputs, not repository deliverables. Captions belong with examples in the repository.
+Each example has an `EXAMPLE.md` record with caption, source, feedback, and accurate asset/review status. An original image saved within the approved scope is a complete visual reference: retain its bytes in `reference.png` (or its original format) and show it on its human page. An optional recreation adds editable LaTeX, transparent light/dark SVGs, and a PNG export alongside the original. Records without saved images remain discoverable as notes, explicitly marked as unavailable for visual inspection. Saving images does not authorize generalizing their style, adopting rules, or recreating them.
 
 Reference examples and generated examples use the same record format. Origin is distinct from evaluation: either origin may have useful, deficient, or still-unreviewed aspects. Recreating a book figure does not change its reference origin.
 

@@ -31,7 +31,7 @@ Schematic and qualitative plot guidance, supported by examples. Five recreated f
 <a href="styles/THE_ART_OF_ELECTRONICS/#gh-light-mode-only"><img src="styles/THE_ART_OF_ELECTRONICS/examples/mixed/fig-01-06-voltage-divider/preview-light.svg" alt="Voltage divider with voltage annotations and its equation. Open The Art of Electronics gallery." width="660"></a>
 <a href="styles/THE_ART_OF_ELECTRONICS/#gh-dark-mode-only"><img src="styles/THE_ART_OF_ELECTRONICS/examples/mixed/fig-01-06-voltage-divider/preview-dark.svg" alt="Voltage divider with voltage annotations and its equation. Open The Art of Electronics gallery." width="660"></a>
 
-[Browse the gallery →](styles/THE_ART_OF_ELECTRONICS/)
+[Showcase →](styles/THE_ART_OF_ELECTRONICS/) · [All examples →](styles/THE_ART_OF_ELECTRONICS/examples/README.md)
 
 ---
 

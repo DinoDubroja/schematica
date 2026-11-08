@@ -6,7 +6,9 @@ A growing collection of electronics illustrations from Paul Horowitz and Winfiel
 
 [Shared style](STYLE.md) · [Schematics](SCHEMATICS.md) · [Plots and signal sketches](PLOTS.md)
 
-Open a figure below for SVG and PNG downloads, editable LaTeX, and the original caption. The [full inventory](STYLE.md#example-guide) also lists references awaiting recreation, grouped by schematic, plot, or mixed form.
+**[Browse all examples →](examples/README.md)**
+
+Five current highlights, with SVG/PNG downloads, editable LaTeX, and original captions. The selection can change as favorites are chosen.
 
 ### [Parallel connection · Figure 1.1](examples/schematics/fig-01-01-parallel-connection/)
 
@@ -53,4 +55,4 @@ Matching circuit labels and waveform panels connect structure to behavior.
 
 ---
 
-[Style guide and collection notes](STYLE.md) · [← Schematica](../../)
+[Browse all examples](examples/README.md) · [Style guide](STYLE.md) · [← Schematica](../../)

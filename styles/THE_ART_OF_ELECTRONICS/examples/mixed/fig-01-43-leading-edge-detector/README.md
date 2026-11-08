@@ -20,4 +20,4 @@ Paul Horowitz and Winfield Hill, *The Art of Electronics*, third edition (2015),
 
 ---
 
-[← Gallery](../../../) · [Previous: Thévenin equivalent circuit](../../schematics/fig-01-11-thevenin-equivalent/)
+[← Category](../README.md) · [Showcase](../../../README.md) · [Previous: Thévenin equivalent circuit](../../schematics/fig-01-11-thevenin-equivalent/)

@@ -4,7 +4,7 @@
 - **Source:** Paul Horowitz and Winfield Hill, *The Art of Electronics*, third edition (2015), Figure 4.87. Printed page not supplied.
 - **Received:** 08-11-2026, in the ongoing AOE collection session.
 - **User feedback:** “Figure 4.87 nice example of more complex project schematic”. This explicitly endorses its usefulness as a reference for a more complex project schematic; it does not approve every individual convention as a general rule.
-- **Review and assets:** source screenshot visually inspected. Caption, feedback, and observations are recorded; editable source and repository previews are unavailable. Recreation is pending. The screenshot remains a working input outside the repository.
+- **Review and assets:** source screenshot visually inspected. Caption, feedback, and observations are recorded; editable source and repository previews are unavailable. Recreation is optional and has not been requested. The original image is not saved in the repository.
 
 ## Original caption
 

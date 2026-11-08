@@ -20,4 +20,4 @@ Paul Horowitz and Winfield Hill, *The Art of Electronics*, third edition (2015),
 
 ---
 
-[← Gallery](../../../) · [Previous: Parallel connection](../../schematics/fig-01-01-parallel-connection/) · [Next: Adjustable voltage divider →](../fig-01-07-adjustable-divider/)
+[← Category](../README.md) · [Showcase](../../../README.md) · [Previous: Parallel connection](../../schematics/fig-01-01-parallel-connection/) · [Next: Adjustable voltage divider →](../fig-01-07-adjustable-divider/)

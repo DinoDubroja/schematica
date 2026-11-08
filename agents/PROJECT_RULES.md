@@ -34,16 +34,20 @@ schematica/
 ├── styles/
 │   ├── INDEX.md                     # Select a source/style and available domains
 │   └── THE_ART_OF_ELECTRONICS/
-│       ├── README.md                # Human overview and gallery
+│       ├── README.md                # Selected SVG highlights
 │       ├── STYLE.md                 # Shared guidance, routing, status, inventory
 │       ├── SCHEMATICS.md            # Existing circuit guidance
 │       ├── PLOTS.md                 # Existing qualitative waveform guidance
 │       └── examples/
+│           ├── README.md            # Browse all categories
 │           ├── schematics/
+│           │   ├── README.md
 │           │   └── …
 │           ├── plots/
+│           │   ├── README.md
 │           │   └── …
 │           └── mixed/
+│               ├── README.md
 │               └── …
 ├── scripts/
 │   ├── build_preference_galleries.py
@@ -60,11 +64,34 @@ cues. Link general preferences and shared guidance instead of duplicating them.
 Record domain-specific exceptions in their domain guide and link them from `STYLE.md`;
 cross-domain exceptions belong in `STYLE.md`. Preserve provisional/accepted status.
 
-The collection `README.md` is the short human overview and visual gallery. Keep
-example records/assets under `examples/<category>/<example>/` within that collection.
+The collection `README.md` is a short showcase of roughly three to six selected
+highlights, preferably existing theme-aware SVGs. The user chooses favorites;
+temporary selections must not be described as their confirmed favorites. Link
+prominently to `examples/README.md`, then category READMEs covering all records.
+Keep unavailable images explicit and link their notes without broken previews.
+
+Keep example records/assets under `examples/<category>/<example>/` within that collection.
 Store each complete mixed figure once; multiple guides can link to it. Categories
 describe the main form, not asset availability or review status. Create only guides
 and categories with real content. Writing guidance remains absent until collected.
+
+Reference-image pages may display an original PNG directly; a saved image is a
+complete reference without a recreation. Preserve its original bytes/background
+and provenance. Optional LaTeX and SVG recreations stay beside that original.
+Follow [PRESENTATION.md](../scripts/PRESENTATION.md) for each asset type. Collection
+and organization do not authorize new style inference or changes to accepted rules.
+
+Leaf category galleries show available examples with short titles/descriptions and
+links to full pages; keep text-only records in a clearly labeled notes list. Around
+eight visual examples, review useful subdivisions. When a category has children,
+show one available representative preview and link per child rather than every
+descendant. If a child has no image, show a link and honest status. Organization
+may proceed within delegated scope; do not create empty categories or duplicate
+examples. Keep these maintenance instructions out of human galleries.
+
+Source-style galleries are authored Markdown. No new generator or automatic
+reorganization is required. The preference-gallery builder below owns only the
+general-preference galleries and retains their separate visual requirements.
 
 For a move, rebase links from the containing file, including cross-category examples,
 gallery navigation, instruction routes, and export command destinations. Update

@@ -1,8 +1,31 @@
 # Figure presentation
 
-LaTeX is the editable source. SVG is the default display format in chat and on
-GitHub. Keep `preview.png` as a convenient download. Captions stay with the
-figure and as readable, attributed text in its record.
+For generated/recreated drawings, LaTeX is the editable source and SVG is the
+default display format in chat and on GitHub. Keep `preview.png` as a convenient
+download. Original reference images have their own supported path below.
+Captions stay with the figure and as readable, attributed text in its record.
+
+## Original reference images
+
+Save an authorized source image unchanged as `reference.png`, retaining its actual
+format/extension if different. Preserve the supplied background and caption; do
+not crop, invert, remove the background, or convert it just to enter the gallery.
+An original PNG with its white background is valid on both site themes. It is a
+complete reference image, not an SVG fallback or an unfinished recreation.
+
+Use a linked image on its example page, with accessible alt text and a suitable
+display width; the link opens the full-resolution original:
+
+```html
+<a href="reference.png"><img src="reference.png" alt="Three-op-amp instrumentation amplifier, Figure 5.77." width="840"></a>
+```
+
+In a category gallery, link the image to the example page instead. Preserve the
+source attribution and readable caption there, with a download and navigation.
+Do not feed the raster through `export_svg.py` or wrap it in a nominal SVG.
+Optional theme variants are separate derived files, only when requested; retain
+the original. A later recreation adds the vector assets below without replacing
+the reference image. Do not require every reference to have a recreation.
 
 ## Export
 
@@ -57,7 +80,11 @@ use a raster preview only as an identified fallback or at the user's request.
 
 ## Check before delivery
 
-- Compare the exported geometry and captions with the compiled source.
+- For an imported reference, compare the saved bytes with the supplied original,
+  inspect image identity/caption, and verify readable presentation on both backgrounds.
+  If the original is inaccessible, retain a clearly labeled text record; do not
+  add a broken image link or claim the import or visual review succeeded.
+- For generated/recreated drawings, compare exported geometry and captions with the compiled source.
 - Inspect every changed figure in light and dark presentation: readable ink,
   transparent background, intact labels, and no missing or clipped content.
 - On GitHub, check both explicit site themes and confirm one variant is visible,

@@ -4,7 +4,7 @@
 - **Source:** Paul Horowitz and Winfield Hill, *The Art of Electronics*, third edition (2015), Figure 4.63. Printed page not supplied.
 - **Received:** 08-11-2026, in the ongoing AOE collection session.
 - **User feedback:** supplied without additional comments; recorded as liked overall under the collection convention. No specific feature approval is inferred.
-- **Review and assets:** source screenshot visually inspected. Caption, displayed relationships, and observations are recorded; editable source and repository previews are unavailable. Recreation is pending. The screenshot remains a working input outside the repository.
+- **Review and assets:** source screenshot visually inspected. Caption, displayed relationships, and observations are recorded; editable source and repository previews are unavailable. Recreation is optional and has not been requested. The original image is not saved in the repository.
 
 ## Original caption
 

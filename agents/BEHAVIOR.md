@@ -40,7 +40,9 @@ anything not tested. Never claim to have visually inspected an unavailable previ
 
 ## Presenting illustrations
 
-Display schematics inline as transparent, theme-aware SVG by default. Follow
+Display generated and recreated schematics inline as transparent, theme-aware SVG
+by default. Display saved original reference images in their original format and
+background when browsing the collection. Follow
 [the presentation procedure](../scripts/PRESENTATION.md) for chat and GitHub.
 Honor explicit format requests. If the client cannot display inline SVG, say so and
 provide the SVG, identifying any necessary raster fallback.

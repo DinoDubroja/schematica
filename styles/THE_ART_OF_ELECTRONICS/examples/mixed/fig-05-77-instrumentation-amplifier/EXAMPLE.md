@@ -4,7 +4,9 @@
 - **Source:** Paul Horowitz and Winfield Hill, *The Art of Electronics*, third edition (2015), Figure 5.77. Printed page not supplied.
 - **Received:** 08-11-2026, with an explicit request to add this and Figure 5.78 to the collection list.
 - **User feedback:** no feature-specific comments on the figure; recorded as liked overall under the collection convention. The accompanying workflow questions concern image storage and preview formats.
-- **Review and assets:** source screenshot visually inspected. Caption, equations, and observations are recorded; editable source and repository previews are unavailable. Recreation is pending under the current workflow; the proposed image-only alternative is not yet implemented. The screenshot remains a working input outside the repository.
+- **Review and assets:** source screenshot visually inspected. Caption, equations, and observations are recorded; editable source and repository previews are unavailable. Recreation is optional and has not been requested. The original image is not saved in the repository. Original PNG import was authorized on 08-11-2026, but the download failed because this machine could not resolve the image host. Import and visual-page completion remain outstanding; no new style inference is authorized.
+
+- **Import source:** user-supplied `image(20261108-150805).png` (49,916 bytes reported by the source service). This filename identifies the intended original; the file has not been downloaded or hash-verified here. Obtain it from the supplied attachment or the user's saved original, not a substitute found online.
 
 ## Original caption
 

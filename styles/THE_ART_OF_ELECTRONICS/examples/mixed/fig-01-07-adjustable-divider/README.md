@@ -20,4 +20,4 @@ Paul Horowitz and Winfield Hill, *The Art of Electronics*, third edition (2015),
 
 ---
 
-[← Gallery](../../../) · [Previous: Voltage divider](../fig-01-06-voltage-divider/) · [Next: Thévenin equivalent circuit →](../../schematics/fig-01-11-thevenin-equivalent/)
+[← Category](../README.md) · [Showcase](../../../README.md) · [Previous: Voltage divider](../fig-01-06-voltage-divider/) · [Next: Thévenin equivalent circuit →](../../schematics/fig-01-11-thevenin-equivalent/)

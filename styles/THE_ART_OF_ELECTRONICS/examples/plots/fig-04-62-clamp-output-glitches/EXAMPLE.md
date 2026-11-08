@@ -4,7 +4,7 @@
 - **Source:** Paul Horowitz and Winfield Hill, *The Art of Electronics*, third edition (2015), Figure 4.62. Printed page not supplied.
 - **Received:** 08-11-2026, in the ongoing AOE collection session, together with Figure 4.61.
 - **User feedback:** no comment specifically addressed this figure; recorded as liked overall under the collection convention. The accompanying praise of complexity explicitly concerned Figure 4.87.
-- **Review and assets:** source waveform screenshot visually inspected. Caption and observations are recorded; editable source and repository previews are unavailable. Recreation is pending. The screenshot remains a working input outside the repository.
+- **Review and assets:** source waveform screenshot visually inspected. Caption and observations are recorded; editable source and repository previews are unavailable. Recreation is optional and has not been requested. The original image is not saved in the repository.
 
 ## Original caption
 

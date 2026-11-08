@@ -20,4 +20,4 @@ Paul Horowitz and Winfield Hill, *The Art of Electronics*, third edition (2015),
 
 ---
 
-[← Gallery](../../../) · [Previous: Adjustable voltage divider](../../mixed/fig-01-07-adjustable-divider/) · [Next: Leading-edge detector →](../../mixed/fig-01-43-leading-edge-detector/)
+[← Category](../README.md) · [Showcase](../../../README.md) · [Previous: Adjustable voltage divider](../../mixed/fig-01-07-adjustable-divider/) · [Next: Leading-edge detector →](../../mixed/fig-01-43-leading-edge-detector/)
