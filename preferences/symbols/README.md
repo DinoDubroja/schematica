@@ -16,12 +16,12 @@ Use arrows to identify power-supply connections.
 </tr>
 <tr>
 <td align="center" valign="top">
-<a href="power-supply-arrows/good-light.svg#gh-light-mode-only"><img src="power-supply-arrows/good-light.svg" alt="Positive and negative supply connections use arrows." width="360"></a>
-<a href="power-supply-arrows/good-dark.svg#gh-dark-mode-only"><img src="power-supply-arrows/good-dark.svg" alt="Positive and negative supply connections use arrows." width="360"></a>
+<a href="power-supply-arrows/good-light.svg#gh-light-mode-only"><img src="power-supply-arrows/good-light.svg?v=7" alt="Positive and negative supply connections use arrows." width="360"></a>
+<a href="power-supply-arrows/good-dark.svg#gh-dark-mode-only"><img src="power-supply-arrows/good-dark.svg?v=7" alt="Positive and negative supply connections use arrows." width="360"></a>
 </td>
 <td align="center" valign="top">
-<a href="power-supply-arrows/bad-light.svg#gh-light-mode-only"><img src="power-supply-arrows/bad-light.svg" alt="Avoid hollow circles at the positive and negative supply connections." width="360"></a>
-<a href="power-supply-arrows/bad-dark.svg#gh-dark-mode-only"><img src="power-supply-arrows/bad-dark.svg" alt="Avoid hollow circles at the positive and negative supply connections." width="360"></a>
+<a href="power-supply-arrows/bad-light.svg#gh-light-mode-only"><img src="power-supply-arrows/bad-light.svg?v=7" alt="Avoid hollow circles at the positive and negative supply connections." width="360"></a>
+<a href="power-supply-arrows/bad-dark.svg#gh-dark-mode-only"><img src="power-supply-arrows/bad-dark.svg?v=7" alt="Avoid hollow circles at the positive and negative supply connections." width="360"></a>
 </td>
 </tr>
 <tr>

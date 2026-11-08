@@ -12,8 +12,8 @@ Use solid circles in the wire color, with a diameter seven times the wire width.
 <tr>
 <td align="center" valign="top">
 <!-- preference-good:start -->
-<a href="good-light.svg#gh-light-mode-only"><img src="good-light.svg" alt="Three-way and four-way connected wire junctions with solid dots seven times the wire width." width="360"></a>
-<a href="good-dark.svg#gh-dark-mode-only"><img src="good-dark.svg" alt="Three-way and four-way connected wire junctions with solid dots seven times the wire width." width="360"></a>
+<a href="good-light.svg#gh-light-mode-only"><img src="good-light.svg?v=7" alt="Three-way and four-way connected wire junctions with solid dots seven times the wire width." width="360"></a>
+<a href="good-dark.svg#gh-dark-mode-only"><img src="good-dark.svg?v=7" alt="Three-way and four-way connected wire junctions with solid dots seven times the wire width." width="360"></a>
 <!-- preference-good:end -->
 </td>
 <td align="center" valign="top">
