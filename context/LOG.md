@@ -771,3 +771,13 @@ and anchors resolve, the existing discovery route reaches the behavior/procedure
 and gallery freshness checks pass. This is a documentation update based on the
 user-reviewed chat demonstration, not a new test of every host or an independent
 fresh-chat behavior audit. No drawing assets or accepted schematic rules changed.
+
+<a id="preferences-skill-distribution-scope"></a>
+
+## 08-11-2026 - Preferences workflow and Schematica distribution
+
+**User clarification:** the Preferences workflow was intended to be documented in Schematica and potentially included when users download the project. Cross-project reuse is also welcome. The personal Preferences skill installed outside this repository earlier in the conversation is an existing result, not the agreed Schematica distribution design.
+
+**Current evidence:** DIRECTION.md already calls for predefined drawing preferences that users can modify and save, while personal customization, storage, and distribution remain open. The installed personal workflow currently depends on its owner's Agents collection. Moving that workflow alone would not make it usable by another Schematica user.
+
+**Assistant proposal, not implementation approval:** develop a portable Preferences workflow with Schematica as its initial bundled use. Separate the reusable procedure, Schematica's shipped defaults/examples, and each user's customizations. Reuse the project's existing preference and example-save procedures instead of creating a competing copy. User storage, discovery outside Schematica, update behavior, and package/install boundaries still need a concrete reviewed design. No skill relocation, new package, personal-instruction migration, or adoption of these proposed mechanics is authorized by this clarification. Routine context capture is authorized separately.
