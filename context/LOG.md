@@ -341,3 +341,15 @@ The user sent Figure 1.67, Voltage multipliers, followed by Figure 1.68, Regulat
 Figure 1.67 adds stacked A/B/C circuit comparisons, circuit-name annotations, transformers, polarized capacitor symbols, and dashed external loads. Figure 1.68 adds a diamond bridge layout, a regulator block with internal terminal labels, and hollow exposed power-output connections. That last feature is recorded as evidence for a possible future scope discussion; it does not silently override the accepted supply-arrow rule or broaden the signal-terminal rule. No GND-symbol preference was adopted.
 
 The agent collection index and style guide now distinguish seven records from five completed visual examples. No empty gallery pages were created; original screenshots and PDFs remain working inputs outside the repository. The five existing drawings and preference-bank assets are unchanged. A later chat needs the source images to inspect or recreate the two pending figures; the text records do not provide visual access. Collection can continue while recreation remains pending.
+
+<a id="aoe-five-additional-references"></a>
+
+## 08-11-2026 - Five further AOE references collected
+
+**Status:** reference capture completed within the ongoing collection authorization. Four supplied screenshots contain five figures: 1.83 and 1.84 together, then 1.139, 2.25, and 2.29. Each was visually inspected. No recreation or new general rule is authorized by this capture.
+
+The user provided no additional comments. Records therefore mark each example liked overall under the existing collection convention, and distinguish observed features from specific user endorsement. Original captions are preserved, with print line-break hyphenation normalized. The [style guide](../examples/THE_ART_OF_ELECTRONICS/STYLE.md#example-guide) links all twelve records and distinguishes the five completed drawings from seven pending references.
+
+The batch adds an expressive spark/BOOM annotation, straight and curved current-path arrows, a probe outline combined with a circuit model and amplifier block, bias-divider/transistor layout, and signed voltage-shift annotations beside qualitative input/output signals. The two inductive-kick figures are separate records cross-linked as related references. The probe caption is retained as supplied; no unseen attenuation network is invented. Plain supply leads and open wire endings in source figures remain recorded observations, not implicit exceptions to general preferences. No GND, typography, annotation, or waveform convention was promoted into a new default.
+
+Only records, selection indexes, and context are changed. Source screenshots remain working inputs outside the repository; no placeholder gallery pages or drawings are created. The existing five completed visual examples and preference-bank assets remain unchanged. A later visual recreation needs the source image, not just its description. Link checks and the preference-gallery check are required before committing this capture; remote synchronization remains subject to the existing network limitation.
