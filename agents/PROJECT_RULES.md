@@ -49,6 +49,9 @@ schematica/
   Use the shared transparent word-label SVGs in `preferences/assets/`, with matching
   Good/Bad alt text, so the color survives GitHub Markdown rendering. Both colors
   must remain readable on light and dark backgrounds; no boxes, badges or icons.
+  When both examples exist, place Good on the left and Bad on the right in equal
+  columns, at the same drawing scale. Align the images above their captions and
+  download links. A Good-only example keeps its single presentation.
   Identify the deficient feature, not the entire circuit. Avoid before/after framing.
   Keep operational explanations and identifiers/status out of human galleries.
 - A category contains rules or subcategories, not a mixture. A category of rules
@@ -86,9 +89,15 @@ Authoring contract (HTML comments are hidden in rendered READMEs):
 
 - A leaf README wraps its title, description, examples and downloads between
   `<!-- preference-visual:start -->` and `<!-- preference-visual:end -->`.
-  Use a level-one title and level-two colored label-image headings, for example
-  `## ![Good](../../assets/good-label.svg)` (and `bad-label.svg` for Bad).
-  Keep the relative path correct for the leaf's depth. Wrap just the paired
+  Use a level-one title. A Good-only page uses a level-two colored label-image
+  heading: `## ![Good](../../assets/good-label.svg)`.
+  For Good/Bad pairs, wrap an HTML table in `<!-- preference-comparison:start -->`
+  / `<!-- preference-comparison:end -->`. Use four rows with two equal columns:
+  shared word-label images (`<img src="..." alt="Good">` / `alt="Bad"`),
+  drawing images, captions, and download links. Use HTML links inside the table
+  so GitHub renders them reliably. Good is left; Bad is right. Wrap the Bad image
+  pair in matching `preference-bad:start` / `preference-bad:end` comments.
+  Keep all relative paths correct for the leaf's depth. Wrap just the paired
   light/dark image links of the good example in `<!-- preference-good:start -->`
   and `<!-- preference-good:end -->`. Navigation stays outside the visual section.
 - A category README declares `<!-- preference-representative: path/to/README.md -->`,

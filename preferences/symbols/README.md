@@ -9,21 +9,30 @@ Distinct symbols for supplies and signal terminals.
 
 Use arrows to identify power-supply connections.
 
-### ![Good](../assets/good-label.svg)
-
-<a href="power-supply-arrows/good-light.svg#gh-light-mode-only"><img src="power-supply-arrows/good-light.svg" alt="Positive and negative supply connections use arrows." width="480"></a>
-<a href="power-supply-arrows/good-dark.svg#gh-dark-mode-only"><img src="power-supply-arrows/good-dark.svg" alt="Positive and negative supply connections use arrows." width="480"></a>
-
-[PNG](power-supply-arrows/good.png) · [Light SVG](power-supply-arrows/good-light.svg) · [Dark SVG](power-supply-arrows/good-dark.svg)
-
-### ![Bad](../assets/bad-label.svg)
-
-Supply connections shown as circles obscure their distinct role.
-
-<a href="power-supply-arrows/bad-light.svg#gh-light-mode-only"><img src="power-supply-arrows/bad-light.svg" alt="Avoid hollow circles at the positive and negative supply connections." width="480"></a>
-<a href="power-supply-arrows/bad-dark.svg#gh-dark-mode-only"><img src="power-supply-arrows/bad-dark.svg" alt="Avoid hollow circles at the positive and negative supply connections." width="480"></a>
-
-[PNG](power-supply-arrows/bad.png) · [Light SVG](power-supply-arrows/bad-light.svg) · [Dark SVG](power-supply-arrows/bad-dark.svg)
+<table>
+<tr>
+<th align="left" width="50%"><img src="../assets/good-label.svg" alt="Good"></th>
+<th align="left" width="50%"><img src="../assets/bad-label.svg" alt="Bad"></th>
+</tr>
+<tr>
+<td align="center" valign="top">
+<a href="power-supply-arrows/good-light.svg#gh-light-mode-only"><img src="power-supply-arrows/good-light.svg" alt="Positive and negative supply connections use arrows." width="360"></a>
+<a href="power-supply-arrows/good-dark.svg#gh-dark-mode-only"><img src="power-supply-arrows/good-dark.svg" alt="Positive and negative supply connections use arrows." width="360"></a>
+</td>
+<td align="center" valign="top">
+<a href="power-supply-arrows/bad-light.svg#gh-light-mode-only"><img src="power-supply-arrows/bad-light.svg" alt="Avoid hollow circles at the positive and negative supply connections." width="360"></a>
+<a href="power-supply-arrows/bad-dark.svg#gh-dark-mode-only"><img src="power-supply-arrows/bad-dark.svg" alt="Avoid hollow circles at the positive and negative supply connections." width="360"></a>
+</td>
+</tr>
+<tr>
+<td valign="top">Arrows identify the supply connections.</td>
+<td valign="top">Circles obscure the distinct role of supply connections.</td>
+</tr>
+<tr>
+<td><a href="power-supply-arrows/good.png">PNG</a> · <a href="power-supply-arrows/good-light.svg">Light SVG</a> · <a href="power-supply-arrows/good-dark.svg">Dark SVG</a></td>
+<td><a href="power-supply-arrows/bad.png">PNG</a> · <a href="power-supply-arrows/bad-light.svg">Light SVG</a> · <a href="power-supply-arrows/bad-dark.svg">Dark SVG</a></td>
+</tr>
+</table>
 
 [Editable LaTeX](power-supply-arrows/drawing.tex)
 

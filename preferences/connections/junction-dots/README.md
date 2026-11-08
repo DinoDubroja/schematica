@@ -1,25 +1,38 @@
 <!-- preference-visual:start -->
 # Junction dots
 
-Use solid circles in the wire color, with a diameter five times the wire width.
+Use solid circles in the wire color, with a diameter seven times the wire width.
 
-## ![Good](../../assets/good-label.svg)
-
+<!-- preference-comparison:start -->
+<table>
+<tr>
+<th align="left" width="50%"><img src="../../assets/good-label.svg" alt="Good"></th>
+<th align="left" width="50%"><img src="../../assets/bad-label.svg" alt="Bad"></th>
+</tr>
+<tr>
+<td align="center" valign="top">
 <!-- preference-good:start -->
-<a href="good-light.svg#gh-light-mode-only"><img src="good-light.svg" alt="Three-way and four-way connected wire junctions with solid dots five times the wire width." width="480"></a>
-<a href="good-dark.svg#gh-dark-mode-only"><img src="good-dark.svg" alt="Three-way and four-way connected wire junctions with solid dots five times the wire width." width="480"></a>
+<a href="good-light.svg#gh-light-mode-only"><img src="good-light.svg" alt="Three-way and four-way connected wire junctions with solid dots seven times the wire width." width="360"></a>
+<a href="good-dark.svg#gh-dark-mode-only"><img src="good-dark.svg" alt="Three-way and four-way connected wire junctions with solid dots seven times the wire width." width="360"></a>
 <!-- preference-good:end -->
-
-[PNG](good.png) · [Light SVG](good-light.svg) · [Dark SVG](good-dark.svg)
-
-## ![Bad](../../assets/bad-label.svg)
-
-Undersized dots make connected junctions harder to distinguish at normal viewing size.
-
-<a href="bad-light.svg#gh-light-mode-only"><img src="bad-light.svg" alt="The same connected junctions with undersized dots." width="480"></a>
-<a href="bad-dark.svg#gh-dark-mode-only"><img src="bad-dark.svg" alt="The same connected junctions with undersized dots." width="480"></a>
-
-[PNG](bad.png) · [Light SVG](bad-light.svg) · [Dark SVG](bad-dark.svg)
+</td>
+<td align="center" valign="top">
+<!-- preference-bad:start -->
+<a href="bad-light.svg#gh-light-mode-only"><img src="bad-light.svg" alt="The same connected junctions with undersized dots." width="360"></a>
+<a href="bad-dark.svg#gh-dark-mode-only"><img src="bad-dark.svg" alt="The same connected junctions with undersized dots." width="360"></a>
+<!-- preference-bad:end -->
+</td>
+</tr>
+<tr>
+<td valign="top">Solid dots with diameter 7 times the wire width.</td>
+<td valign="top">Undersized dots make connected junctions harder to distinguish.</td>
+</tr>
+<tr>
+<td><a href="good.png">PNG</a> · <a href="good-light.svg">Light SVG</a> · <a href="good-dark.svg">Dark SVG</a></td>
+<td><a href="bad.png">PNG</a> · <a href="bad-light.svg">Light SVG</a> · <a href="bad-dark.svg">Dark SVG</a></td>
+</tr>
+</table>
+<!-- preference-comparison:end -->
 
 [Editable LaTeX](drawing.tex)
 <!-- preference-visual:end -->

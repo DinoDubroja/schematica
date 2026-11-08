@@ -161,24 +161,39 @@ class Builder:
         if re.search(r'```|~~~|\]\[|^\s*\[[^\]]+\]:', visual, re.M):
             raise GalleryError(f'{page}: unsupported code fence or reference-style link in visual section')
         good = section(visual, 'good')
-        examples = re.split(r'^## ', visual, flags=re.M)[1:]
-        labels = []
-        for example in examples:
+        examples = []
+        if '<!-- preference-comparison:start -->' in visual:
+            comparison = section(visual, 'comparison')
+            rows = re.findall(r'<tr>\s*(.*?)\s*</tr>', comparison, re.S)
+            cells = [re.findall(r'<t[hd]\b[^>]*>(.*?)</t[hd]>', row, re.S) for row in rows]
+            if len(cells) != 4 or any(len(row) != 2 for row in cells):
+                raise GalleryError(f'{page}: comparison needs four rows of two columns: labels, images, captions, downloads')
+            for index, label in enumerate(('Good', 'Bad')):
+                match = re.fullmatch(r'\s*<img src="([^"]+)" alt="' + label + r'">\s*', cells[0][index])
+                if not match:
+                    raise GalleryError(f'{page}: comparison must place Good left and Bad right')
+                preview = section(visual, label.lower())
+                if preview not in cells[1][index]:
+                    raise GalleryError(f'{page}: {label} preview must be in its image column')
+                examples.append((label, match[1], '\n'.join(row[index] for row in cells)))
+        else:
+            single = re.split(r'^## ', visual, flags=re.M)[1:]
+            if len(single) != 1:
+                raise GalleryError(f'{page}: use one Good section or a side-by-side comparison table')
+            example = single[0]
             heading = example.splitlines()[0].strip()
-            match = re.fullmatch(r'!\[(Good|Bad)\]\(([^)]+)\)', heading)
+            match = re.fullmatch(r'!\[Good\]\(([^)]+)\)', heading)
             if not match:
-                raise GalleryError(f'{page}: expected a colored Good or Bad label heading')
-            label, url = match.groups()
+                raise GalleryError(f'{page}: expected a colored Good label heading')
+            examples.append(('Good', match[1], example))
+        for label, url, example in examples:
             expected = self.root / 'preferences/assets' / f'{label.lower()}-label.svg'
             if local_target(url, page) != (expected, ''):
                 raise GalleryError(f'{page}: use the shared {label} label asset')
-            labels.append(label)
             urls = refs(example)
             if not all(any(urlsplit(u).path.endswith(s) for u in urls)
                        for s in ('-light.svg', '-dark.svg', '.png')):
                 raise GalleryError(f'{page}: each example needs light/dark SVG and PNG links')
-        if labels not in (['Good'], ['Good', 'Bad']):
-            raise GalleryError(f'{page}: expected one Good example followed by at most one Bad example')
         for theme in ('light', 'dark'):
             if f'#gh-{theme}-mode-only' not in good or f'-{theme}.svg' not in good:
                 raise GalleryError(f'{page}: good preview missing {theme} theme')

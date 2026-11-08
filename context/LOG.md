@@ -455,3 +455,26 @@ on GitHub in its active dark theme: colored words load, one SVG variant is visib
 per example, and the larger dots are present. Light presentation was checked locally.
 The anchor validator follows GitHub's image-only heading behavior. Commit/push
 synchronization was verified against the remote branch.
+
+<a id="side-by-side-seven-width-junctions"></a>
+
+## 08-11-2026 - Side-by-side comparisons and seven-width junction trial
+
+**Status:** user-requested refinement implemented for visual review. The user
+asked to show Good/Bad next to each other and to try dots with diameter seven
+times the wire width. Good is on the left and Bad on the right, with equal image
+scale, aligned image rows, captions and downloads. Single Good examples remain
+single. This layout is recorded in the gallery authoring contract and validator.
+
+The [junction rule](../preferences/connections/junction-dots/RULE.md) and both
+supply illustrations use the requested 7:1 trial (4.55 pt diameter for 0.65 pt
+wires). The earlier assistant-chosen 5:1 setting is superseded for this review.
+The trial does not claim final visual approval or change signal-terminal size.
+
+**Verification:** both sources compiled and the rendered dot-to-wire ratio is
+7:1. All ten SVGs match compiled geometry and all five PNGs match PDF pixels.
+Seventeen gallery checks passed, including nested-category link rebasing,
+repeatability, missing assets, reversed labels and malformed comparison columns.
+Both light and dark junction comparisons and the light supply comparison were
+visually reviewed at matching scale; historical example files are unchanged.
+The user-requested size remains a visual trial awaiting feedback.
