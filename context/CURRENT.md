@@ -4,7 +4,7 @@ Updated: 08-11-2026. Read this first when resuming; verify the checkout before a
 
 ## Objective and mode
 
-Current collection focus: the user liked the revised inline presentation and is sending more The Art of Electronics references. Resume example collection using the existing workflow; see [the continuation note](LOG.md#collection-resumed-after-svg).
+Current collection focus: the user supplied Figures 1.67 (Voltage multipliers) and 1.68 (Regulated dc power supply) without additional comments. Their captions and visual observations are recorded under The Art of Electronics; the collection now has seven reference records, five recreated and two awaiting a drawing request. Continue collecting and reviewing examples normally. See [the new references](LOG.md#aoe-figures-167-168).
 
 Develop The Art of Electronics illustration style through reference examples and practical drawing trials, including the agent's preservation behavior. Project scope includes schematics, conceptual diagrams, waveforms, plots, equations, and integrated figures; see [DIRECTION.md](../DIRECTION.md).
 
@@ -20,7 +20,7 @@ The approved preference-bank migration is implemented: [Symbols gallery](../pref
 ## What exists
 
 - The [example collection workflow](../skills/schematica-examples/SKILL.md), [collection index](../examples/INDEX.md), and [The Art of Electronics style guide](../examples/THE_ART_OF_ELECTRONICS/STYLE.md) are implemented. The collection is still developing; shared visual patterns are provisional.
-- All five references have editable LaTeX, transparent light/dark SVG previews, PNG downloads, captions, detailed records, and human browsing pages. Start at [the gallery](../examples/THE_ART_OF_ELECTRONICS/README.md); `STYLE.md` remains the agent's detailed guide. The main README shows available examples and omits unestablished installation/invocation instructions.
+- Seven AOE reference records are saved. Five have editable LaTeX, transparent light/dark SVG previews, PNG downloads, captions, and human browsing pages; Figures 1.67 and 1.68 have captions and observations only. Their source images were inspected in the collecting chat and are not available as repository previews. Start at [the gallery](../examples/THE_ART_OF_ELECTRONICS/README.md) for completed drawings and [the style guide](../examples/THE_ART_OF_ELECTRONICS/STYLE.md) for all records.
 - All five drawings are visual recreations using TikZ paths inside CircuitikZ, not semantic native-component templates. Figures 1.7 and 1.43 retain their previously reviewed source and PNG unchanged. The assistant checked the three new recreations against the book; user review is pending. Appearance approval does not approve every implementation detail or make the style complete.
 - The collection workflow and first records were saved in commit `88e9231`. Earlier validation recorded successful compilation and fresh-session collection discovery. These are historical results, not a new test of all rendering tools on another device.
 - Original screenshots, the source book PDF, earlier experiments, and the prematurely built package remain outside the repository. Their existence does not make them approved project content. A repo-only session can now visually inspect all five saved recreations without the book.

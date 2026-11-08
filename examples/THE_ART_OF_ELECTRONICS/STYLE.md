@@ -4,7 +4,7 @@ Illustration style under development from selected examples in *The Art of Elect
 
 [Browse the visual gallery](README.md). This document provides detailed guidance and example selection for agents.
 
-**Collection status:** collecting. All five reference examples have LaTeX source, light/dark SVG previews, PNG downloads, captions, and browsing pages. The shared drawing patterns below remain provisional. A first practical output-stage trial has been drawn and refined separately; it is not yet a saved collection example or evidence of a fully validated style. See [the current checkpoint](../../context/CURRENT.md).
+**Collection status:** collecting. Seven reference records are saved: five have LaTeX source, light/dark SVG previews, PNG downloads, captions, and browsing pages; Figures 1.67 and 1.68 have captions and observations, with recreation pending. The shared drawing patterns below remain provisional. A first practical output-stage trial has been drawn and refined separately; it is not yet a saved collection example or evidence of a fully validated style. See [the current checkpoint](../../context/CURRENT.md).
 
 ## Purpose
 
@@ -20,7 +20,7 @@ Read [general schematic preferences](../../preferences/GENERAL.md) before this g
 
 None currently. Inherit every applicable accepted general preference. A reference image or provisional observation does not implicitly override it. If an exception is approved, record the general rule ID, exact replacement behavior, scope, and decision/evidence here; do not copy the full general rule into this guide.
 
-All five previews can be inspected from this checkout without the source book. Read the selected record's recreation and review status; availability is not the same as user approval of the recreation. Do not claim to have seen an image based only on its record.
+The five completed previews can be inspected from this checkout without the source book. Figures 1.67 and 1.68 are text records only; their source screenshots were inspected in the collecting chat and are not saved as repository previews. Read the selected record's recreation and review status; availability is not the same as user approval of the recreation. Do not claim to have seen an image based only on its record.
 
 ## Confirmed preferences
 
@@ -67,6 +67,8 @@ Use concise annotations and clear leaders. A dashed trace needs an understood me
 | [Figure 1.7: Adjustable voltage divider](fig-01-07-adjustable-divider/EXAMPLE.md) | Adjustable elements, alternate implementations, or signals at terminals | Small input signals, control labels, and curved annotations | LaTeX, SVG, PNG, caption, and feedback |
 | [Figure 1.11: Thévenin equivalent circuit](fig-01-11-thevenin-equivalent/EXAMPLE.md) | Explaining equivalence or reducing a conceptual network | An irregular network beside its compact equivalent | LaTeX, SVG, PNG, caption, and feedback |
 | [Figure 1.43: Leading-edge detector](fig-01-43-leading-edge-detector/EXAMPLE.md) | Explaining signals at several points of a circuit | Matched A/B/C labels, stacked waveforms, and a time-constant annotation | LaTeX, SVG, PNG, caption, and feedback |
+| [Figure 1.67: Voltage multipliers](fig-01-67-voltage-multipliers/EXAMPLE.md) | Comparing related circuits; transformers, polarized capacitors, and external loads | Three stacked panels, bracket-like circuit-name annotations, and dashed loads | Caption and observations; source/preview pending |
+| [Figure 1.68: Regulated dc power supply](fig-01-68-regulated-dc-power-supply/EXAMPLE.md) | Mixing explicit circuitry with a functional block | Diamond bridge layout, internal block-terminal labels, and exposed output connections | Caption and observations; source/preview pending |
 
 Figures 1.7 and 1.43 received positive feedback on their recreated appearance. The new recreations of Figures 1.1, 1.6, and 1.11 were compiled and visually checked by the assistant on 08-11-2026; user review is pending. All five use editable TikZ paths inside a CircuitikZ environment, not semantic native-component examples. Their implementation details are not all approved style rules.
 
@@ -78,7 +80,7 @@ Use transparent SVG by default in chat and on GitHub, with ink appropriate to th
 
 ## Open questions and next step
 
-- Review the three newly completed recreations and continue collecting supplied examples.
+- Review the three newly completed recreations and continue collecting supplied examples. Figures 1.67 and 1.68 are recorded; their recreations await an explicit drawing request.
 - Review the proposed shared patterns and establish useful drawing parameters from evidence.
 - Add coverage for larger practical circuits and quantitative plots.
 - Continue the separate output-stage trial's review and preservation discussion. Its initial feedback and refinements are in [the trial checkpoint](../../context/LOG.md#output-stage-trial); saving it as an example remains unapproved.

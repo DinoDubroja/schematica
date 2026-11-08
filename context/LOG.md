@@ -329,3 +329,15 @@ cannot be verified in this session. Local light/dark rendering and the existing 
 link convention were checked; no new GitHub UI behavior is claimed. The migration is
 ready locally for synchronization when connectivity is restored. User review of the
 revised presentation remains pending; unrelated approvals/open decisions are unchanged.
+
+<a id="aoe-figures-167-168"></a>
+
+## 08-11-2026 - AOE Figures 1.67 and 1.68 collected
+
+**Status:** incoming references captured under the ongoing collection authorization. Both source screenshots were visually inspected; captions and observations are saved. No recreation or new general preference is approved or implemented by this save.
+
+The user sent Figure 1.67, Voltage multipliers, followed by Figure 1.68, Regulated dc power supply, without additional comments. Per the existing collection convention, each is recorded as liked overall, without claiming specific feature endorsement. See [Figure 1.67](../examples/THE_ART_OF_ELECTRONICS/fig-01-67-voltage-multipliers/EXAMPLE.md) and [Figure 1.68](../examples/THE_ART_OF_ELECTRONICS/fig-01-68-regulated-dc-power-supply/EXAMPLE.md) for verbatim captions, source attribution, asset status, and provisional observations.
+
+Figure 1.67 adds stacked A/B/C circuit comparisons, circuit-name annotations, transformers, polarized capacitor symbols, and dashed external loads. Figure 1.68 adds a diamond bridge layout, a regulator block with internal terminal labels, and hollow exposed power-output connections. That last feature is recorded as evidence for a possible future scope discussion; it does not silently override the accepted supply-arrow rule or broaden the signal-terminal rule. No GND-symbol preference was adopted.
+
+The agent collection index and style guide now distinguish seven records from five completed visual examples. No empty gallery pages were created; original screenshots and PDFs remain working inputs outside the repository. The five existing drawings and preference-bank assets are unchanged. A later chat needs the source images to inspect or recreate the two pending figures; the text records do not provide visual access. Collection can continue while recreation remains pending.
