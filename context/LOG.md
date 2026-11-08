@@ -575,3 +575,11 @@ Updated the human galleries, cross-example navigation, entry points, collection/
 ## 08-11-2026 - Copy-paste command after a failed push
 
 The user requested a simple standing instruction: whenever a Git push fails, provide a PowerShell one-liner for the appropriate fix or retry. Saved in [chat behavior](../agents/BEHAVIOR.md), using the exact repository path, remote, and branch. The attempted addition to the personal Agents instructions was rejected by automatic approval settings because that location is outside the allowed project write scope; the personal instruction was not saved. This repository rule is the local fallback, not a claim of global adoption. The current Schematica retry is a normal push of main to origin, without staging unrelated edits or force-pushing.
+
+<a id="all-examples-visible"></a>
+
+## 08-11-2026 - Every collected example must have a visible picture
+
+**User clarification:** "I wanted all of the examples visible, and I don't see pictures for all of the examples." The intended result is a compact showcase of selected SVG favorites with deeper category galleries displaying pictures for every collected example. Text-only inventory links do not fulfill that requirement. The earlier two-image pilot is not the completion target for this work.
+
+**Actual state:** checked the saved collection: 31 records, five with images and 26 without. The correction is to preserve the remaining supplied originals as image references and display every example in the appropriate category gallery, subdividing crowded galleries as already delegated. No LaTeX recreation or new style generalization is required or authorized. Original white backgrounds are acceptable. Source-image access was blocked during the prior import attempt and must be resolved before the full visual gallery can be completed. No additional images were imported during this clarification.
