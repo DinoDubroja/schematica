@@ -391,3 +391,15 @@ The [style guide](../examples/THE_ART_OF_ELECTRONICS/STYLE.md#example-guide) now
 The collection now contains 29 reference records: 5 completed recreations and 24 pending. Indexes and the current checkpoint are updated. No new drawings, screenshot archive, general preferences, or style exceptions are created. Original images remain working references outside the repository. The existing visual gallery and drawings remain unchanged; source images are needed for future visual recreation.
 
 Relative-link, count, selection-table, pending-asset, gallery, and scoped-diff checks are run before commit. Fetch still fails with `getaddrinfo() thread failed to start`; the final push outcome must be reported separately. This completes the requested two-example addition without starting further drawing or consolidation work.
+
+<a id="aoe-representative-recreation-proposal"></a>
+
+## 08-11-2026 - Proposed representative recreation phase
+
+**Status:** assistant proposal awaiting user approval. The user asked, "What do you suggest we do next. Recreate and document all examples?" No new recreation or bulk redraw was requested or started. The actual collection has 29 caption/observation records and 5 completed visual recreations; the other 24 records are not reusable visual examples yet.
+
+Recommendation: begin with Figure 4.7 to establish reusable op-amp/resistor/capacitor symbols, typography, line weights, spacing, feedback routing, and paired-panel composition. Implement with native CircuitikZ components and meaningful TikZ structure where appropriate, rather than another coordinate trace. Compare with the reference, review with the user, and save the resulting editable source, light/dark previews, human page, and corrections through the existing workflow. Estimate 15–25 minutes for this first recreation, followed by user review; this estimate is not a completed runtime check.
+
+Next, apply the emerging style to the existing hand-drawn output-stage trial to test transfer to the user's own circuit. Further representative candidates cover Figure 4.62 (waveforms), Figure 5.64 (physical/circuit combinations), Figure 4.105 (power stage and transformers), and Figure 4.87 (complex project schematic, explicitly liked). Expand the remaining collection according to missing features and practical use. Review rules as they emerge; source observations do not automatically become accepted preferences. Recreating all remaining figures in one batch is not recommended before the first style/reuse test.
+
+The proposal uses the established example structure; no new folder organization, permanent rule, drawing, or style exception is introduced. Existing general preferences continue to apply unless the user explicitly requests faithful-source treatment or approves a scoped exception. These context notes preserve the proposal only; execution awaits a decision.

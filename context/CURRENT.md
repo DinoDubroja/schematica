@@ -6,6 +6,8 @@ Updated: 08-11-2026. Read this first when resuming; verify the checkout before a
 
 Current collection focus: after the earlier wrap-up, the user explicitly requested adding Figures 5.64 and 4.105. Both references are recorded with captions and provisional observations. The AOE collection now has twenty-nine reference records: five recreated and twenty-four awaiting a drawing request. Figure 4.87 remains explicitly liked as a more complex project schematic. No new drawings or general rules were adopted. See [the latest addition](LOG.md#aoe-power-source-differential-signals).
 
+Proposed next phase (08-11-2026): recreate a representative set one at a time, beginning with Figure 4.7, then test the resulting style on the existing hand-drawn output-stage example. Broader candidates are Figures 4.62, 5.64, 4.105, and 4.87. The user asked whether all examples should be recreated; this is an assistant recommendation awaiting approval, not authorization to redraw the collection. See [the proposed sequence](LOG.md#aoe-representative-recreation-proposal).
+
 Develop The Art of Electronics illustration style through reference examples and practical drawing trials, including the agent's preservation behavior. Project scope includes schematics, conceptual diagrams, waveforms, plots, equations, and integrated figures; see [DIRECTION.md](../DIRECTION.md).
 
 The user authorized the full gallery plan: add human browsing pages, simplify the main README, finish Figures 1.1, 1.6, and 1.11 as LaTeX/PNG recreations, check navigation, and push. The implementation is complete; user review of the gallery and those three recreations is pending. See [the gallery checkpoint](LOG.md#gallery-completion).
