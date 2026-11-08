@@ -110,4 +110,4 @@ Latest authorized work (08-11-2026): a curated SVG showcase and category browsin
 - Add coverage for larger practical circuits and quantitative plots.
 - Continue the separate output-stage trial's review and preservation discussion. Its initial feedback and refinements are in [the trial checkpoint](../../context/LOG.md#output-stage-trial); saving it as an example remains unapproved.
 
-Collection can continue before consolidation is complete. Use the shared [workflow](../../skills/schematica-examples/SKILL.md) to resume; this file records the current state, not approval to perform every suggested next step.
+Collection can continue before consolidation is complete. Use the shared [workflow](../../skills/schematica-preferences/SKILL.md) to resume; this file records the current state, not approval to perform every suggested next step.

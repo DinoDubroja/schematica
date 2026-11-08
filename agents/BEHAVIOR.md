@@ -10,6 +10,9 @@ appropriate fix or retry, using the exact repository path, remote, and branch.
 
 ## Recurring cloud-chat access failures
 
+This section concerns the project's established development chats. It does not
+describe a new user's environment or require a downloaded copy to use cloud chats.
+
 The user has already configured network/access settings and reports that these
 recurring failures arise in cloud chats; continuing in a local project chat is
 their established workaround. Retain this context instead of restarting setup advice.
@@ -28,6 +31,35 @@ short handoff when needed. Verify the required access in the local chat before
 claiming the blocker is resolved. Do not change execution security settings or
 retry blocked transfers repeatedly as a substitute for this handoff.
 
+## Guided preferences sessions
+
+The user may start Schematica Preferences with only a topic, such as amplifiers
+and operational-amplifier symbols. Help them choose a manageable starting point.
+Use the topic, relevant saved guidance and current conversation to suggest one
+useful first step and ask a short question, for example: "Would you like to start
+by comparing a few op-amp symbols?" If no topic is given, ask what they want to
+work on. Do not require a form, a completed specification or a saved rule to begin.
+
+Once the user asks for options, produce a small, relevant visual comparison
+directly in chat. For example, "Yes, show me a few op-amp symbols" authorizes
+those previews. It does not require another permission round for temporary
+rendering files. If the first request already specifies the comparison, make it
+without asking where to start. Preserve circuit meaning and vary the intended
+visual choices; use neutral labels for alternatives not yet judged.
+
+Let the user choose, mix or correct options and continue refining the same
+preview in chat. Use [the presentation procedure](../scripts/PRESENTATION.md#chat)
+and keep temporary rendering artifacts outside the permanent preference/example
+library. A preview request does not implement or adopt a rule, edit accepted
+assets, add a gallery entry, or publish work.
+
+At a useful checkpoint, state the specific preference/example that could be
+saved and its scope. A choice such as "B looks good" is visual feedback;
+"save B as the default op-amp symbol" authorizes that clearly scoped save.
+Honor any save scope already approved; do not ask again for the same action.
+Resume the conversation when saving is deferred. This is a guided conversation,
+not a mandatory sequence for every drawing or correction.
+
 ## Corrections and suggestions
 
 Continue the current illustration through corrections across messages. Apply steering
@@ -44,14 +76,17 @@ At a useful checkpoint, propose concise wording, scope, reason, supporting evide
 and a destination. Group related suggestions; finish the requested correction first
 unless a material conflict needs clarification. Do not manufacture a suggestion for
 every output or repeat a declined one without new evidence or a user request.
-Use the [example workflow](../skills/schematica-examples/SKILL.md#agent-suggestions)
+Use the [preferences and examples workflow](../skills/schematica-preferences/SKILL.md#agent-suggestions)
 to record the decision and carry out an approved save.
 
 ## Authorization
 
 Follow the current request and established scoped approvals. Explicit instructions
-to implement or save an adequately specified change authorize its necessary assets,
-index updates, validation, commits, and pushes. Do not ask again for routine steps.
+to implement or save an adequately specified change authorize its necessary local
+assets, index updates and validation. In an established project-maintenance scope,
+continue its authorized context updates, commits and pushes. A downloaded copy or
+ordinary preference save does not itself authorize Git operations or publication.
+Do not ask again for routine steps already covered by the user's scope.
 Discussion, draft wording, praise, silence, and a local correction alone do not authorize
 permanent guidance or publication. Ask only about material missing choices or scope
 expansion; keep tentative ideas inactive while the user continues working.

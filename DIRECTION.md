@@ -30,7 +30,7 @@ Each example has an `EXAMPLE.md` record with caption, source, feedback, and accu
 
 Reference examples and generated examples use the same record format. Origin is distinct from evaluation: either origin may have useful, deficient, or still-unreviewed aspects. Recreating a book figure does not change its reference origin.
 
-The [collection workflow](skills/schematica-examples/SKILL.md) supports starting, resuming, adding examples, and reviewing a style. It preserves enough state for a fresh chat to continue without the original conversation.
+The [collection workflow](skills/schematica-preferences/SKILL.md) supports starting, resuming, adding examples, and reviewing a style. It preserves enough state for a fresh chat to continue without the original conversation.
 
 ## Learn through use
 
@@ -42,4 +42,9 @@ The agent should notice useful preservation opportunities so the user need not m
 
 The first collection is The Art of Electronics. Five reference recreations have editable LaTeX, SVG previews, PNG downloads, captions, and browsing pages; the [style guide](styles/THE_ART_OF_ELECTRONICS/STYLE.md) tracks all collected references and their asset availability. The shared style remains provisional. A separate practical output-stage trial has been drawn and refined after initial feedback, but it has not been approved for the permanent collection; see [the current checkpoint](context/CURRENT.md).
 
-Personal customization and storage, plugin distribution, and generalization to other artifact domains remain to be designed. Difference-only storage for intermediate versions is also undecided. Start with complete files for selected useful revisions.
+The first local installation route bundles the preferences-and-examples skill with
+the complete library; see [installation and use](INSTALL.md). A user explores options
+in chat and saves approved changes in their selected copy. Automated preservation of
+personal changes across package upgrades, plugin distribution and generalization to
+other artifact domains remain to be designed. Difference-only storage for intermediate
+versions is also undecided. Start with complete files for selected useful revisions.

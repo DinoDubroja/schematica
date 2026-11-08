@@ -24,4 +24,5 @@ authoritative homes, hierarchy, README markers, generation, and validation.
    [documented command](../../../agents/PROJECT_RULES.md#deterministic-gallery-generation).
 6. Read back the rule/evidence, inspect the illustrations, verify source/export
    agreement, both themes, navigation, inheritance, and `--check`. Preserve concurrent
-   work and finish the scoped context update, commit and push per project rules.
+   work. Finish the local save; context updates, commits and pushes follow only
+   when separately covered by the current maintenance/publication authorization.

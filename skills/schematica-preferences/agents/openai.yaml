@@ -1,0 +1,6 @@
+interface:
+  display_name: "Schematica Preferences & Examples"
+  short_description: "Explore visual preferences and examples in chat"
+  default_prompt: "Use $schematica-preferences to help me choose a topic and explore visual options in chat before saving any preferences or examples."
+policy:
+  allow_implicit_invocation: true

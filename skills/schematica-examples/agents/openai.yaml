@@ -1,6 +1,0 @@
-interface:
-  display_name: "Schematica Examples"
-  short_description: "Collect examples and develop electronics styles"
-  default_prompt: "Use $schematica-examples to start or resume an electronics illustration style collection."
-policy:
-  allow_implicit_invocation: true

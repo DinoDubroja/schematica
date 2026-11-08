@@ -1,19 +1,33 @@
 ---
-name: schematica-examples
-description: Use whenever creating, editing, or reviewing a Schematica illustration, and when starting or resuming an electronics example collection. Apply shared preferences and explicit style exceptions, collect references, track corrections, and proactively suggest reusable general or style-specific lessons. Suggestions are automatic within Schematica use; saving active rules or example assets requires the user's scoped approval. Does not authorize unrequested drawings or publication merely because a result is liked.
+name: schematica-preferences
+description: Guide Schematica preferences and example sessions from a topic through in-chat visual options, refinement and approved saves. Use for requests such as "start Schematica Preferences", "work on Schematica's op-amp symbols" or "add this example to Schematica", and when creating, editing or reviewing a Schematica illustration. Apply existing preferences and styles. Scope this workflow to Schematica; general personal preferences and unrelated electronics questions do not activate it.
 ---
 
-# Schematica examples
+# Schematica Preferences & Examples
 
-Turn supplied examples and ordinary drawing feedback into a reusable style collection. Support a new source as readily as an existing collection; The Art of Electronics is the first collection, not a special case in this workflow.
+Help the user explore a topic, compare visual options in chat, refine a choice and,
+when authorized, preserve its preference or example. Follow the
+[guided session behavior](../../agents/BEHAVIOR.md#guided-preferences-sessions)
+when starting or resuming exploration. A broad topic calls for a useful suggested
+starting point; a concrete request for previews calls for the previews.
+
+Support new source collections as readily as existing ones. The Art of Electronics
+is the first collection, not a special case. Ordinary Schematica drawing work also
+uses this workflow without requiring a separate preferences session.
 
 ## Find the collection in a fresh chat
 
 Resolve this skill directory to its physical location first if it is installed through a symlink or Windows junction. The Schematica repository is two levels above that physical directory. For example, Python's `Path(skill_file).resolve().parents[2]` finds it from `SKILL.md`. Relative links below refer to that physical location, not the installed alias.
 
-Read the repository's [AGENTS.md](../../AGENTS.md), [general preference index](../../preferences/GENERAL.md) and applicable `RULE.md` files/README visuals, then [styles/INDEX.md](../../styles/INDEX.md). Match the user's full source/style name to a collection. Read its `STYLE.md`, including shared guidance, explicit exception links, status and next steps, then the applicable domain guides it links and only example records needed for the request. Select domains independently; a mixed circuit/waveform task may need both schematic and plot guidance. A planned or absent domain guide does not supply rules. General preferences apply even without a named style. Follow their precedence and treat inferred/proposed rules as inactive. Do not require the old chat to resume.
+Read [chat behavior](../../agents/BEHAVIOR.md), the [general preference index](../../preferences/GENERAL.md) and applicable `RULE.md` files/README visuals, then [styles/INDEX.md](../../styles/INDEX.md). Match the user's full source/style name to a collection. Read its `STYLE.md`, including shared guidance, explicit exception links, status and next steps, then the applicable domain guides it links and only example records needed for the request. Select domains independently; a mixed circuit/waveform task may need both schematic and plot guidance. A planned or absent domain guide does not supply rules. General preferences apply even without a named style. Follow their precedence and treat inferred/proposed rules as inactive. Do not require an old chat, personal instruction folder or project-development checkpoint for ordinary use.
 
 If the user explicitly selects another Schematica checkout, use that checkout after verifying its index. If no repository can be located, ask for the checkout rather than silently creating a second library. Never put user examples inside the installed skill directory.
+
+Approved saves belong to that selected library. Follow its organization/validation
+rules when saving; installation alone authorizes no context logging, Git operations
+or publication. Read the repository's [AGENTS.md](../../AGENTS.md) development route
+only when the user is working on the Schematica project itself. Historical project
+approvals do not transfer to a downloaded copy or a new user's session.
 
 ## Scope and corrections
 
@@ -42,8 +56,9 @@ or background service is needed. After discussing a useful lesson:
 
 1. Check accepted rules and the inactive queue in [GENERAL.md](../../preferences/GENERAL.md).
    Classify the destination as general, named style, or current example.
-2. Record pending/deferred/rejected proposals there with existing evidence links, or
-   retain discussion in authorized context. Keep their actual decision status.
+2. Keep pending/deferred/rejected proposals in the conversation unless recording
+   them is authorized. Within an authorized collection/context scope, record them
+   with evidence links and their actual decision status; no proposed rule is active.
 3. Save approved general guidance using [the preference record procedure](references/preference-record.md).
    Put domain-specific style rules/exceptions in the relevant domain guide (linked from `STYLE.md`), shared style guidance in `STYLE.md`, and local feedback in `EXAMPLE.md`
    (or context for an unsaved example). Link evidence in both directions when available.
@@ -113,4 +128,7 @@ Preserve relevant prompt/feedback context rather than copying entire private cha
   Check navigation from showcase through all examples, category, example, and back.
   Review GitHub's selected site themes when accessible and report unverified parts.
   Do not redraw accepted figures for metadata or navigation changes.
-- Follow repository instructions for checks, commits, and pushes within the approved scope. Report any limitation, including whether fresh-chat discovery and real drawing behavior have actually been tested.
+- Complete local checks and report the save. Commit, push or update development
+  notes only within separately established maintenance/publication authorization.
+  Report any limitation, including whether fresh-chat discovery and real drawing
+  behavior have actually been tested.

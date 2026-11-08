@@ -4,6 +4,20 @@ Beautiful, useful electronics illustrations with LaTeX: schematics, conceptual d
 
 Schematica is in development. We are building a library of examples and drawing guidance to help AI agents produce consistent results from the first prompt.
 
+## Start Schematica Preferences
+
+[Install for Codex on Windows](INSTALL.md). The download includes the workflow,
+preferences, styles and examples together. Keep the extracted folder: Codex connects
+to that copy, where your approved changes are saved.
+
+Start with `$schematica-preferences` or write naturally:
+"Let's work on Schematica's amplifier and op-amp symbols."
+
+The agent helps choose a starting point, shows requested visual options in chat,
+and refines them with you. A choice is feedback; saving a preference or example
+needs your instruction. You can also ask directly for a comparison or continue
+an existing example. [Workflow details](skills/schematica-preferences/SKILL.md).
+
 ## Preferences
 
 [Browse all preferences](preferences/README.md).

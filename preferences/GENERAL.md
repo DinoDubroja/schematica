@@ -1,6 +1,6 @@
 # General schematic preferences
 
-Agent index and precedence for shared Schematica preferences. Read this file before a style guide, then read the applicable `RULE.md` files listed below and their README visuals. Each `RULE.md` is authoritative for its rule; this index does not duplicate its text. Apply each rule only to its stated scope. Humans can [browse the visual gallery](README.md). The [example workflow](../skills/schematica-examples/SKILL.md#agent-suggestions) describes how suggestions become accepted guidance.
+Agent index and precedence for shared Schematica preferences. Read this file before a style guide, then read the applicable `RULE.md` files listed below and their README visuals. Each `RULE.md` is authoritative for its rule; this index does not duplicate its text. Apply each rule only to its stated scope. Humans can [browse the visual gallery](README.md). The [example workflow](../skills/schematica-preferences/SKILL.md#agent-suggestions) describes how suggestions become accepted guidance.
 
 ## Apply preferences
 

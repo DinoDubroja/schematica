@@ -4,7 +4,7 @@
 
 `AGENTS.md` is the short reading entry point. [BEHAVIOR.md](BEHAVIOR.md) owns
 interaction in chat. This file owns organization and maintenance; the
-[example workflow](../skills/schematica-examples/SKILL.md) owns collection/save
+[preferences and examples workflow](../skills/schematica-preferences/SKILL.md) owns collection/save
 procedures. Link these sources instead of duplicating their instructions.
 
 ```text
@@ -212,11 +212,17 @@ Review GitHub theme behavior when available; report any unverified part.
 
 ## Context and synchronization
 
+This section applies to authorized maintenance of the shared Schematica project.
+Ordinary installed use follows the skill and chat behavior; an approved local
+preference/example save does not grant context logging, Git or publication authority.
+Past project approvals are historical evidence, not permissions for a new user's copy.
+
 On resume, read [CURRENT.md](../context/CURRENT.md), relevant decisions in
 [LOG.md](../context/LOG.md), and actual repository state. Keep a concise current
 checkpoint and append consequential decisions/results automatically, including during
-discussion and before handoff. Routine context logging and its scoped commits/pushes
-are authorized; explicit read-only/no-log requests take precedence.
+discussion and before handoff. Within the established project-maintenance scope,
+routine context logging and its scoped commits/pushes remain authorized; explicit
+read-only/no-log requests take precedence.
 
 Keep proposals, confirmed decisions, implementation authorization, completed work,
 and verification distinct. Logging never authorizes drawings, imports, feature work,
