@@ -4,11 +4,20 @@ Beautiful, useful electronics illustrations with LaTeX: schematics, conceptual d
 
 Schematica is in development. We are building a library of examples and drawing guidance to help AI agents produce consistent results from the first prompt.
 
+## Preferences
+
+[Browse all preferences](preferences/README.md).
+
+<!-- preference-gallery:start level=3 -->
+
+### [Symbols](preferences/symbols/README.md)
+
+<a href="preferences/symbols/README.md#gh-light-mode-only"><img src="preferences/symbols/power-supply-arrows/good-light.svg" alt="Positive and negative supply connections use arrows." width="480"></a>
+<a href="preferences/symbols/README.md#gh-dark-mode-only"><img src="preferences/symbols/power-supply-arrows/good-dark.svg" alt="Positive and negative supply connections use arrows." width="480"></a>
+
+<!-- preference-gallery:end -->
+
 ## Explore the examples
-
-### [General schematic preferences](preferences/README.md)
-
-Accepted conventions with visual examples and before/after comparisons, shared across drawing styles.
 
 ### [The Art of Electronics](examples/THE_ART_OF_ELECTRONICS/)
 

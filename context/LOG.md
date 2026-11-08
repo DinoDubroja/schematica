@@ -278,3 +278,54 @@ The proposed gallery builder reads the designated visual content of individual r
 The user asked for the exact location of project rules, required folder trees when proposing files/organization (already specified in personal preferences), and asked whether gallery maintenance means deterministic code or agent judgment. Revised proposed location: `agents/PROJECT_RULES.md` beside `agents/BEHAVIOR.md`; retain root `AGENTS.md` as entry point. The existing personal folder-tree preference was read; no duplicate preference or personal-instruction edit is needed.
 
 Point five proposes one deterministic Python file, `scripts/build_preference_galleries.py`, using the saved folder structure and individual rule README visual sections to regenerate marked category/main README gallery sections. It adjusts relative links/headings, uses selected representative good examples for category previews, preserves content outside generated sections, and provides a read-only check mode for stale outputs or missing required assets. The agent runs it after an approved rule/example/category edit before validation and commit. It has no LLM call or organizational judgment. The existing agent workflow reviews whether more than eight entries warrant subcategories, proposes names/groupings and representative examples, obtains applicable approval, and then updates the structure and runs the builder. This does not propose a second autonomous organization system, new scheduled task, or always-running service.
+
+<a id="preference-bank-migration"></a>
+
+## 08-11-2026 - Preference-bank migration authorized and implemented
+
+**Status:** explicitly authorized for implementation, validation, scoped commits and
+pushes. This supersedes the earlier awaiting-approval statuses in the preference
+refinement, review and gallery-builder entries. Source: the user's implementation
+instruction, including "Proceed within this scope without another approval round."
+
+Root AGENTS remains the short entry point. [Chat behavior](../agents/BEHAVIOR.md) and
+[project rules](../agents/PROJECT_RULES.md) now own interaction and maintenance
+respectively. The existing collection workflow links them. The original combined
+G-SYMBOL-01 is split into [supply arrows](../preferences/symbols/power-supply-arrows/RULE.md)
+(retaining G-SYMBOL-01) and [signal terminals](../preferences/symbols/signal-terminal-circles/RULE.md)
+(G-SYMBOL-02). Earlier combined-rule history remains valid as provenance; current
+scope is defined by the two independent records. The retired page and comparison
+assets remain available in Git history. No ground convention was added.
+
+Each rule has a minimal visual README and an authoritative RULE record. Good supply
+arrows versus bad supply circles and good hollow signal terminals replace the combined
+before/after display. New focused illustrations have editable TeX and derived SVG/PNG;
+they are not historical screenshots or the full output-stage trial. Category galleries
+and main navigation are assembled by one deterministic Python builder with a read-only
+check mode. Agents choose categories and representatives; more than eight entries
+prompts review, never automatic reorganization. Pending proposals stay inactive.
+
+**Verification:** 17 acceptance checks passed: current/stale generation, read-only
+check behavior, repeatability, manual-content/CRLF preservation, nested categories,
+explicit representatives, heading/link rebasing, inactive-status exclusion, missing
+image/anchor rejection, required Good visuals, duplicate IDs/markers and unknown-status
+rejection, unchanged examples, source/export agreement, and navigation across 31
+documents. The existing workflow passes its frontmatter validator; UI metadata remains
+consistent. `git diff --check` passed.
+
+Both new TeX sources compiled offline using the existing package cache copied into
+ignored build space. All six SVGs match the compiled PDF geometry; all three transparent
+PNG downloads match its raster pixels. Light/dark renders were visually inspected:
+complete labels, hollow interiors, contrast and aligned supply panels. A fresh read-only
+repo-only session recovered context, authorization, rule inheritance, local-correction
+boundaries, and the nine-entry review policy without contradictions. Its tentative
+clipping observation was resolved: equal canvases/bounding boxes, aligned rails and
+label positions, and no nontransparent edge pixels. All 33 existing example files are
+byte-for-byte unchanged. Concurrent context edits remain outside migration staging.
+
+**Synchronization limitation:** GitHub fetch and push connectivity checks fail with
+`getaddrinfo() thread failed to start`. Remote state and live GitHub theme selection
+cannot be verified in this session. Local light/dark rendering and the existing theme
+link convention were checked; no new GitHub UI behavior is claimed. The migration is
+ready locally for synchronization when connectivity is restored. User review of the
+revised presentation remains pending; unrelated approvals/open decisions are unchanged.

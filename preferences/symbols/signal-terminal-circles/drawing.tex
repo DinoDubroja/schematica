@@ -1,0 +1,24 @@
+% Focused preference illustration; incidental dimensions are not general rules.
+% Compile with XeLaTeX or Tectonic into an ignored build directory.
+\documentclass{article}
+\usepackage[paperwidth=7cm,paperheight=3.5cm,margin=0pt]{geometry}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\usepackage{fontspec}
+\IfFontExistsTF{TeX Gyre Heros}{\setmainfont{TeX Gyre Heros}}{\setmainfont{Arial}}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\tikzset{terminal/.style={circle,draw,fill=none,inner sep=0pt,minimum size=5pt},
+ supply/.style={-{Stealth[length=2.2mm,width=1.6mm]}}}
+
+\begin{document}
+\noindent\begin{tikzpicture}[x=1cm,y=1cm,line width=0.65pt,line cap=round,
+ font=\fontsize{11}{12}\selectfont]
+\path[use as bounding box] (0,-1.6) rectangle (6.9,1.6);
+\node[terminal] (I) at (0.9,0) {};
+\node[terminal] (O) at (5.9,0) {};
+\draw (I.east)--(2.7,0) (4.1,0)--(O.west);
+\node at (1.7,0.6) {input};
+\node at (5.1,0.6) {output};
+\end{tikzpicture}
+\end{document}

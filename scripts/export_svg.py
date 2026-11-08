@@ -1,7 +1,7 @@
 """Export transparent light/dark SVGs from one compiled monochrome drawing.
 
 Requires PyMuPDF. Compile drawing.tex first; see PRESENTATION.md for usage.
-The existing LaTeX and PNG are never modified.
+The existing LaTeX is never modified; PNG export is opt-in.
 """
 
 import argparse
@@ -18,11 +18,18 @@ ET.register_namespace("xlink", XLINK)
 INK = {"light": "#231f20", "dark": "#e6edf3"}
 
 
-def export(pdf: Path, destination: Path, title: str, description: str) -> None:
+def export(pdf: Path, destination: Path, title: str, description: str,
+           page: int | None = None, stem: str = "preview", png: bool = False) -> None:
+    if not stem or Path(stem).name != stem or any(c in stem for c in '/\\:'):
+        raise ValueError("Stem must be a simple filename without a path")
     with fitz.open(pdf) as document:
-        if len(document) != 1:
+        if page is None and len(document) != 1:
             raise ValueError("Expected one figure on one PDF page")
-        root = ET.fromstring(document[0].get_svg_image(text_as_path=True))
+        selected = 0 if page is None else page - 1
+        if selected < 0 or selected >= len(document):
+            raise ValueError("Page number is outside the PDF")
+        root = ET.fromstring(document[selected].get_svg_image(text_as_path=True))
+        raster = document[selected].get_pixmap(matrix=fitz.Matrix(3, 3), alpha=True) if png else None
     if root.findall(f".//{{{SVG}}}image"):
         raise ValueError("Expected vector paths, not embedded raster images")
     # Refuse to recolor multicolor figures or intentional white masks. Such
@@ -49,7 +56,9 @@ def export(pdf: Path, destination: Path, title: str, description: str) -> None:
                 if node.get(attribute) and node.get(attribute) != "none":
                     node.set(attribute, ink)
         content = ET.tostring(themed, encoding="unicode") + "\n"
-        (destination / f"preview-{theme}.svg").write_text(content, encoding="utf-8", newline="\n")
+        (destination / f"{stem}-{theme}.svg").write_text(content, encoding="utf-8", newline="\n")
+    if raster is not None:
+        raster.save(destination / f"{stem}.png")
 
 
 if __name__ == "__main__":
@@ -58,5 +67,8 @@ if __name__ == "__main__":
     parser.add_argument("destination", type=Path)
     parser.add_argument("--title", required=True)
     parser.add_argument("--description", required=True)
+    parser.add_argument("--page", type=int, help="One-based PDF page (required for multi-page sources)")
+    parser.add_argument("--stem", default="preview", help="Output basename, e.g. good or bad")
+    parser.add_argument("--png", action="store_true", help="Also export a transparent PNG from the selected page")
     args = parser.parse_args()
-    export(args.pdf, args.destination, args.title, args.description)
+    export(args.pdf, args.destination, args.title, args.description, args.page, args.stem, args.png)

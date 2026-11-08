@@ -17,7 +17,17 @@ This writes `preview-light.svg` and `preview-dark.svg` from the same PDF, keepin
 geometry and typography identical. Glyphs are vector paths, so viewing does not
 require the drawing's fonts. Both backgrounds are transparent; only ink changes.
 The helper handles monochrome figures and rejects raster content or additional
-colors that need a deliberate mapping. It does not alter LaTeX or PNG files.
+colors that need a deliberate mapping. By default it does not alter LaTeX or PNG files.
+
+For preference examples, add `--stem good` (or `bad`) to name the SVG pair,
+and `--png` to explicitly write its matching transparent PNG. Add `--page 1`
+or `--page 2` when one source contains multiple example pages. For example:
+
+```text
+python scripts/export_svg.py build/power-supply-arrows/drawing.pdf preferences/symbols/power-supply-arrows --page 1 --stem good --png --title "Power supply arrow symbols" --description "Positive and negative supply connections use arrows."
+```
+
+Without these options, existing single-figure exports behave as before.
 
 ## GitHub
 

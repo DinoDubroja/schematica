@@ -18,7 +18,7 @@ Present schematics inline using transparent, theme-aware SVG by default in chat.
 
 ## Example collections
 
-General conventions live in a [visual preference bank](preferences/README.md), separate from source-specific styles. The [agent index](preferences/GENERAL.md) selects relevant pages and defines precedence; each preference page holds one authoritative rule with its scope, evidence, and visible example or before/after comparison. Ordinary corrections can develop this bank through agent suggestions and scoped user approval. Styles inherit general preferences unless they declare an explicit exception.
+General conventions live in a [visual preference bank](preferences/README.md), separate from source-specific styles. The [agent index](preferences/GENERAL.md) selects relevant pages and defines precedence; each rule folder separates its authoritative `RULE.md` (scope and evidence) from a minimal visual `README.md` with a good example and an optional bad example. Category galleries assemble those presentations; [project rules](agents/PROJECT_RULES.md) define their maintenance. Ordinary corrections can develop this bank through agent suggestions and scoped user approval. Styles inherit general preferences unless they declare an explicit exception.
 
 Each style has a collection under `examples/`. `INDEX.md` routes agents to relevant `STYLE.md` documents; each style document explains shared patterns and helps select particular examples. Agents inspect relevant rendered examples and their context rather than reading the entire library on every task.
 

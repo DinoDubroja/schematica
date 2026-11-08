@@ -1,6 +1,6 @@
 # General schematic preferences
 
-Agent index and precedence for shared Schematica preferences. Read this file before a style guide, then read the applicable preference pages listed below, including their visuals. Each preference page is authoritative for its rule; this index does not duplicate its text. Apply each rule only to its stated scope. Humans can [browse the visual gallery](README.md). The [example workflow](../skills/schematica-examples/SKILL.md#agent-suggestions) describes how suggestions become accepted guidance.
+Agent index and precedence for shared Schematica preferences. Read this file before a style guide, then read the applicable `RULE.md` files listed below and their README visuals. Each `RULE.md` is authoritative for its rule; this index does not duplicate its text. Apply each rule only to its stated scope. Humans can [browse the visual gallery](README.md). The [example workflow](../skills/schematica-examples/SKILL.md#agent-suggestions) describes how suggestions become accepted guidance.
 
 ## Apply preferences
 
@@ -20,7 +20,8 @@ When no accepted preference applies, use the task and relevant examples to make 
 
 | ID and preference | Read when | Evidence available |
 | --- | --- | --- |
-| [G-SYMBOL-01: Supply and signal terminals](supply-and-signal-terminals/README.md) | Drawing or changing supply connections or exposed signal ports | Accepted rule, before/after illustrations, editable source, and user correction |
+| [G-SYMBOL-01: Power supply arrow symbols](symbols/power-supply-arrows/RULE.md) | Drawing or changing supply connections | Accepted rule, good/bad visuals, editable source, and user correction |
+| [G-SYMBOL-02: Input/output terminal circles](symbols/signal-terminal-circles/RULE.md) | Drawing or changing exposed signal ports | Accepted rule, good visual, editable source, and user correction |
 
 Select by the feature being drawn or reviewed, not by the style name. A style may point directly to a rule ID, but must not copy a competing version of the rule. Only entries explicitly marked accepted are active defaults.
 
@@ -30,6 +31,6 @@ None currently. This section is inactive: entries here must not be applied as ac
 
 Keep a concise entry when a meaningful suggestion has actually been presented during an authorized Schematica session. Record its stable ID, proposed scope (general, named style, or current example), exact proposed rule, reason, supporting example/correction, and status (`proposed`, `deferred`, or `rejected`). Mark an assistant inference as an inference. Link to existing evidence rather than copying entire discussions or duplicating drawings.
 
-After approval, move the rule to its authoritative destination: one visual preference page for an accepted general rule, the selected `STYLE.md` for a style-specific rule/exception, or the example record for local feedback. Maintain the index and gallery links after that save. Retain a short decision reference so the same rejected suggestion is not repeatedly offered. A repeated pattern, positive reaction, or unanswered proposal is not approval. Explicit instructions to save a clearly scoped rule are sufficient; do not ask again.
+After approval, move the rule to its authoritative destination: one `RULE.md` and visual `README.md` for an accepted general rule, the selected `STYLE.md` for a style-specific rule/exception, or the example record for local feedback. Follow [project maintenance](../agents/PROJECT_RULES.md#deterministic-gallery-generation) to update the index and rebuild galleries after that save. Retain a short decision reference so the same rejected suggestion is not repeatedly offered. A repeated pattern, positive reaction, or unanswered proposal is not approval. Explicit instructions to save a clearly scoped rule are sufficient; do not ask again.
 
 Saving guidance does not require revising historical examples. Offer any broader redraw separately. Keep future sections such as layout, typography, routing, and annotations evidence-driven; do not fill them with unreviewed defaults merely to complete a checklist.

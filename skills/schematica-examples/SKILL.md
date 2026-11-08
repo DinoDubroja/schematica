@@ -11,46 +11,49 @@ Turn supplied examples and ordinary drawing feedback into a reusable style colle
 
 Resolve this skill directory to its physical location first if it is installed through a symlink or Windows junction. The Schematica repository is two levels above that physical directory. For example, Python's `Path(skill_file).resolve().parents[2]` finds it from `SKILL.md`. Relative links below refer to that physical location, not the installed alias.
 
-Read the repository's [AGENTS.md](../../AGENTS.md), [general preference index](../../preferences/GENERAL.md) and applicable preference pages/visuals, then [examples/INDEX.md](../../examples/INDEX.md). Match the user's full source/style name to a collection. Read its `STYLE.md`, including explicit exceptions, status and next steps, then only example records needed for the request. General preferences apply even without a named style. Follow their precedence and treat inferred/proposed rules as inactive. Do not require the old chat to resume.
+Read the repository's [AGENTS.md](../../AGENTS.md), [general preference index](../../preferences/GENERAL.md) and applicable `RULE.md` files/README visuals, then [examples/INDEX.md](../../examples/INDEX.md). Match the user's full source/style name to a collection. Read its `STYLE.md`, including explicit exceptions, status and next steps, then only example records needed for the request. General preferences apply even without a named style. Follow their precedence and treat inferred/proposed rules as inactive. Do not require the old chat to resume.
 
 If the user explicitly selects another Schematica checkout, use that checkout after verifying its index. If no repository can be located, ask for the checkout rather than silently creating a second library. Never put user examples inside the installed skill directory.
 
-## Establish scope once
+## Scope and corrections
 
-Identify whether the user wants to collect, discuss, recreate, use, review, or save an example. Follow existing explicit authorization. An explicit request to create or save a sufficiently identified collection/example permits that work; do not ask for the same approval again.
+Follow [chat behavior](../../agents/BEHAVIOR.md) for authorization, continuing one
+example through corrections, and when to suggest preservation. Identify whether the
+task is collecting, discussing, recreating, using, reviewing, or saving. An authorized
+collection session covers its incoming references, captions, feedback, and index
+updates; recreations and broader publication depend on the actual approved scope.
 
-If the destination or save scope is not established, propose the collection and what will be saved once. An authorized collection session can save incoming examples, supplied captions, explicit feedback, and index updates without prompting for every item. Drawing recreations, wider revisions, and unrelated publication remain subject to the actual authorized scope.
-
-Discussion, proposed wording, praise, silence, and a collection's saved status do not independently authorize changes. On resume, recover content and next steps from files; assess authorization from the current request and relevant established instructions.
-
-## Continue one example through corrections
-
-Keep the current example open for review across messages. The user may send corrections while implementation or rendering is underway; apply relevant steering at the next safe step, preserve completed work, and rerender only affected outputs. Answer status or workflow questions briefly, then continue the authorized work. Do not require the user to finish the preferences workflow before reviewing the circuit.
-
-Record the concrete change, its reason, the reviewed revision, and whether it applies only to this drawing or expresses a wider preference. Preserve earlier feedback as history and mark superseded interpretations explicitly. For an example not yet approved for the collection, keep concise feedback and proposed lessons in the authorized project context; do not silently publish its source or image. Once preservation is approved, consolidate relevant evidence into its example record and link the context to it.
+Record the concrete change, its reason, reviewed revision, and local versus wider
+scope. Keep unsaved-example feedback in authorized context notes; consolidate it into
+the example record after preservation is approved. Mark superseded interpretations.
 
 <a id="agent-suggestions"></a>
 
 ## Agent suggestions
 
-This workflow is active by default during every Schematica drawing, correction, review, and collection session. It does not require a separate prompt or run as an unattended background task. The agent must have access to this updated workflow; do not claim that unavailable or older installations have adopted it.
+Suggestion interaction is active during ordinary Schematica use as specified in
+[BEHAVIOR.md](../../agents/BEHAVIOR.md#corrections-and-suggestions); no separate command
+or background service is needed. After discussing a useful lesson:
 
-1. **Notice:** after a meaningful correction, repeated choice, or clearly liked/disliked feature, consider whether there is a reusable lesson. Do not manufacture a proposal for every message or infer approval of an entire drawing from praise of one detail.
-2. **Classify:** distinguish an explicit user statement from an agent inference, and classify the scope as general, one named style, or only the current example. Check accepted rules and pending/declined suggestions before proposing anything. A local numerical adjustment is not automatically a universal parameter.
-3. **Propose:** at a useful review checkpoint, give concise rule wording, scope, reason, supporting example/correction, and intended destination. Group related suggestions and prioritize those likely to prevent repeat errors. Finish the requested correction before asking about permanent adoption unless a material conflict requires clarification.
-4. **Record the decision:** keep pending/deferred/rejected suggestions in the inactive section of [general preferences](../../preferences/GENERAL.md), with links to existing evidence. When the current session authorizes routine context logging, the project log may retain the discussion and decision history; this does not turn a suggestion into a rule. An unanswered or praised proposal remains pending. Do not repeat a declined suggestion without new evidence or a user request.
-5. **Save accepted guidance:** with explicit scoped approval, put general rules in their authoritative visual preference pages, named-style rules/exceptions in the relevant `STYLE.md`, and example-local changes in `EXAMPLE.md` (or current context for an unsaved example). Follow [the visual preference record](references/preference-record.md), retain stable IDs, and update `preferences/GENERAL.md` and the human gallery as indexes. Link evidence in both directions when the evidence record exists. Rule approval covers the agreed illustrative assets and routine page/index updates; do not ask permission for each file. Publishing additional source material or redrawing historical work needs its own applicable authorization.
-6. **Check use:** before delivery, check the current request, applicable accepted general rules, explicit style exceptions, technical meaning, and relevant previews. During later examples, notice counterexamples and propose a narrower rule or an explicit exception rather than silently weakening accepted guidance.
-
-Suggested wording: "This correction may be useful beyond this drawing. Proposed [general/style] rule: ... Evidence: ... Save it in ...?" Use natural language and omit the prompt when nothing useful emerged or the scope is already approved.
+1. Check accepted rules and the inactive queue in [GENERAL.md](../../preferences/GENERAL.md).
+   Classify the destination as general, named style, or current example.
+2. Record pending/deferred/rejected proposals there with existing evidence links, or
+   retain discussion in authorized context. Keep their actual decision status.
+3. Save approved general guidance using [the preference record procedure](references/preference-record.md).
+   Put named-style rules/exceptions in `STYLE.md` and local feedback in `EXAMPLE.md`
+   (or context for an unsaved example). Link evidence in both directions when available.
+4. Follow [project rules](../../agents/PROJECT_RULES.md) for category/README maintenance,
+   gallery generation, validation, and synchronization. Before delivery, check the
+   current request, applicable accepted rules, explicit style exceptions, technical
+   meaning, and relevant previews. Propose narrower rules or explicit exceptions when
+   counterexamples appear rather than silently weakening existing guidance.
 
 ## Build the visual preference bank
 
-Use the same suggestion workflow during ordinary drawing work; do not require a separate preference-building session. Keep meaningful proposed lessons and feedback in the authorized project context/inactive queue while the user continues working. Applying a correction to the current drawing does not activate a global rule.
-
-For an accepted general rule, follow [the visual preference record](references/preference-record.md). Reuse an existing rule/page when it fits instead of creating a duplicate. Save one authoritative README with the rule, scope, decision/evidence, and visible examples. Two supplied images, selected earlier/later renders, or a clearly labeled focused reconstruction can illustrate a comparison. Retain only relevant approved assets, preserve provenance, and explain the specific feature that is preferred or deficient.
-
-Handle filenames, source/preview consistency, indexes, gallery navigation, pending status, and rule conflicts as part of the authorized save. Keep accepted preferences stable during experiments. Record explicit exceptions in styles; do not silently change a shared rule because one style or local request differs. When there is no new reusable lesson, complete the drawing without manufacturing a suggestion.
+Follow [the preference record procedure](references/preference-record.md). Reuse a
+matching rule instead of duplicating it. [PROJECT_RULES.md](../../agents/PROJECT_RULES.md#preference-hierarchy)
+defines the hierarchy and README/RULE split. Keep accepted preferences stable during
+experiments, and leave pending proposals out of accepted galleries.
 
 ## Start or add to a collection
 
@@ -78,9 +81,7 @@ The index chooses styles; the style guide chooses examples. Avoid loading all co
 
 ## Preserve a generated example
 
-During ordinary Schematica work, notice clear positive feedback, a useful correction, or a result demonstrating a new capability. When preservation would help future work, offer once to save the specific result and lesson, naming the destination and useful context. Do not offer every routine output, repeat a declined offer, or label an unreviewed result good.
-
-If the user already explicitly asks to save the result, carry out that request without a second permission question. Otherwise wait for approval before saving. An approval to retain one result does not authorize unrelated style changes.
+Use [BEHAVIOR.md](../../agents/BEHAVIOR.md) for preservation suggestions and approval boundaries.
 
 Save the final source and preview with an `EXAMPLE.md` containing:
 
@@ -99,7 +100,7 @@ Preserve relevant prompt/feedback context rather than copying entire private cha
 
 - Read the saved records back. Check captions, attribution, links, asset availability, review status, and the index-to-style-to-example reading path. Also check the human path from the main README through the collection gallery to each example, its image/source, and back. Keep public READMEs brief and focused on available work; do not introduce unestablished installation or invocation instructions.
 - Check the general-preferences-to-style reading route, explicit exceptions, rule/evidence links, and separation of accepted rules from pending suggestions. Confirm that a local correction has not silently become a universal rule.
-- For a visual preference, check main README -> preference gallery -> preference page -> images/source/back links, plus agent index -> authoritative rule. Inspect before/after images at the same scale and in their documented display themes; verify the named difference, preserved technical meaning, and accurate approval/provenance labels. Do not call a text-only placeholder a completed visual preference.
+- For a visual preference, check main README -> categories -> rule README -> images/source/back links, plus agent index -> RULE.md. Run the gallery builder and its `--check` mode per [project rules](../../agents/PROJECT_RULES.md#deterministic-gallery-generation). Inspect good/bad images at the same scale and in their documented display themes; verify the named difference, preserved technical meaning, and accurate approval/provenance labels. Do not call a text-only placeholder a completed visual preference.
 - Confirm new screenshots, temporary PDFs, build output, and unrelated material have not entered the repository.
 - Keep source, SVG previews, and PNG synchronized. Check both light and dark presentation, including GitHub's selected site theme. If only metadata or display packaging changed, do not redraw an already accepted figure unnecessarily; preserve unchanged source and PNG files.
 - Follow repository instructions for checks, commits, and pushes within the approved scope. Report any limitation, including whether fresh-chat discovery and real drawing behavior have actually been tested.
