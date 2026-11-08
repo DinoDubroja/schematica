@@ -77,6 +77,16 @@ before implementing or saving them. Approval of a preview's appearance does not
 by itself authorize repository changes or adoption as a permanent preference.
 Explicit implementation or saving instructions authorize the stated scope.
 
+For every new or revised preference rule, always show an in-chat preview of how
+its human repository page will actually be documented and displayed: the title,
+concise proposed rule wording, illustrations, captions and comparison layout.
+Do this during refinement and before saving, without requiring another reminder.
+Include green Good and red Bad headings in the rule preview. Mark unaccepted
+content as a draft; if no Bad example has been defined, retain the heading and
+state that honestly in the draft rather than inventing a rejection or labeling
+unreviewed alternatives as bad. An authorized save must preserve the reviewed
+wording, grouping and presentation within its approved scope.
+
 For Good/Bad comparisons, keep Good green on the left and Bad red on the right,
 without checkmarks or crosses. Group accepted alternatives within Good, label
 each clearly, identify the default, and use the same drawing scale.
