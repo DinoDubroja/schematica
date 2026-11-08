@@ -14,7 +14,11 @@ Include practical schematics, conceptual circuits, abstract diagrams, waveforms,
 
 ## Use this style
 
-Read the shared guidance, then select relevant examples from the guide below. View available previews and read their captions and feedback; inspect LaTeX when useful for construction. Select by the drawing problem, including annotations and composition, not only by circuit category.
+Read [general schematic preferences](../../preferences/GENERAL.md) before this guide, then select relevant examples below. View available previews and read their captions and feedback; inspect LaTeX when useful for construction. Select by the drawing problem, including annotations and composition, not only by circuit category.
+
+### Explicit exceptions to general preferences
+
+None currently. Inherit every applicable accepted general preference. A reference image or provisional observation does not implicitly override it. If an exception is approved, record the general rule ID, exact replacement behavior, scope, and decision/evidence here; do not copy the full general rule into this guide.
 
 All five previews can be inspected from this checkout without the source book. Read the selected record's recreation and review status; availability is not the same as user approval of the recreation. Do not claim to have seen an image based only on its record.
 

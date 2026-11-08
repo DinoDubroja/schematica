@@ -32,9 +32,12 @@ Keep the human page short: title, visible PNG, a useful sentence about the drawi
 - **Caption and explanation:** keep the supplied original caption verbatim, with attribution, immediately with the picture. Normalize line wrapping and typographic ligatures without changing meaning. Preserve associated explanation when supplied; identify summaries or additions separately.
 - **What it demonstrates:** describe the concrete drawing and its distinctive contribution beyond shared style rules.
 - **Inferred lessons:** observations to consider, distinguished from explicit feedback and confirmed shared rules.
+- **Preference scope and decisions:** for a useful correction or lesson, identify general, named-style, or example-local scope; record proposed/accepted/deferred/rejected status, a short decision/date, the reviewed revision, and a link to the authoritative rule or pending proposal. Distinguish the user's statement from the agent's interpretation. Approval of a local edit is not approval of a general rule or of asset publication.
 - **Use and limits:** when this example is useful, when its conventions do not apply, and any known implementation limitations.
 
 Generated examples additionally need the style/reference versions used, useful feedback and corrections, and the accepted result. Include concise before/after explanations and links to approved retained iterations when those teach something useful. Do not reconstruct missing prompts as though they were exact transcripts.
+
+Continue the same record as the example develops. Keep consequential corrections and their reasons, explicitly supersede mistaken interpretations, and preserve only the intermediate assets included in the approved scope. One example can support both general and style-specific lessons without copying the drawing into separate collections. Until an example is approved for preservation, use the authorized project context for its feedback instead of creating a permanent example record.
 
 ## Collection-level state
 

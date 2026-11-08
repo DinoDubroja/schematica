@@ -8,7 +8,9 @@ Develop The Art of Electronics illustration style through reference examples and
 
 The user authorized the full gallery plan: add human browsing pages, simplify the main README, finish Figures 1.1, 1.6, and 1.11 as LaTeX/PNG recreations, check navigation, and push. The implementation is complete; user review of the gallery and those three recreations is pending. See [the gallery checkpoint](LOG.md#gallery-completion).
 
-In a separate drawing discussion, the current proposal is a style-independent preferences layer and an agent-led suggestion workflow. The user corrected the output-stage revision: changing signal terminals to hollow circles should not have changed supply-rail arrows. Supply arrows are a general preference across styles, with explicit style exceptions possible. The delivered trial still needs its supply arrows restored; its 9 pt component values remain the requested refinement. The proposed preference/workflow changes are not implemented. Routine context updates and their commits/pushes remain authorized under [AGENTS.md](../AGENTS.md); adding the trial to the permanent example collection still needs approval.
+The user approved a style-independent preferences layer and an agent-led suggestion workflow. [General preferences](../preferences/GENERAL.md), explicit style inheritance, automatic suggestions during Schematica use, and continued correction of one example are implemented and checked. The output-stage trial's four supply arrows are restored; its two signal terminals remain hollow black circles and values remain 9 pt. The delivered ZIP was updated in place. Routine context updates and their commits/pushes remain authorized under [AGENTS.md](../AGENTS.md); adding the trial to the permanent example collection still needs approval.
+
+The latest request extends the proposal: a bank of general preferences where every preference is visible to humans, with README images and optional before/after or good/bad comparisons, developed seamlessly through ordinary work. The visual-bank extension is not yet implemented; propose its organization and approval boundaries while completing the already authorized foundation. See [the implementation and visual-bank discussion](LOG.md#general-preferences-implementation).
 
 ## What exists
 
@@ -28,7 +30,7 @@ The later gallery update compiled all three new standalone sources, compared the
 ## Open decisions
 
 - User review of the gallery and three newly completed recreations, and which reference to collect next.
-- Review of the shared-preferences proposal, the output-stage supply-arrow correction, and whether to preserve the trial as an example.
+- Review of the proposed visual preference bank and whether to preserve the output-stage trial as an example.
 - Which observed patterns become confirmed rules; exact typography, spacing, line weights, symbol proportions, and quantitative plot conventions remain unsettled.
 - Personal customization and storage, distribution as a plugin, and generalization beyond electronics remain to be designed.
 - Difference-only storage for intermediate drawings remains undecided. The present workflow uses complete files for selected useful revisions.
@@ -39,6 +41,6 @@ The later gallery update compiled all three new standalone sources, compared the
 
 Review the gallery and new recreations, then continue collecting references. Figure 1.6 was explicitly selected and completed as part of the three missing examples, superseding its earlier status as an assistant-only suggestion.
 
-In the parallel drawing discussion, review the proposal for shared preferences, explicit style overrides, evidence from examples/corrections, and proactive agent suggestions. Implementation approval is pending. Include restoration of the output-stage supply arrows in that proposed scope. Preserve the distinction between a user-confirmed general principle, an inferred candidate, and permission to save permanent guidance.
+Continue correcting the output-stage example as the user supplies feedback and review the proposed visual preference bank. Preserve the distinction between a user-confirmed principle, an inferred candidate, and permission to publish example assets. Changes to permanent visual-bank organization await approval of the expanded proposal. Verify synchronization separately; network errors have blocked pushes from this drawing session.
 
 For reasoning and scope changes, consult [LOG.md](LOG.md). For drawing details, read selected example records and actual available previews rather than treating descriptions as images.

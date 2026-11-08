@@ -1,6 +1,6 @@
 # Example collections
 
-Read the relevant style guide, then select examples by the illustration feature needed. Do not read the entire library on every task.
+Read [general schematic preferences](../preferences/GENERAL.md) first, then the relevant style guide and examples selected by the illustration feature needed. Styles inherit shared preferences unless they declare an explicit exception. Do not read the entire library on every task.
 
 For visual browsing, open [The Art of Electronics gallery](THE_ART_OF_ELECTRONICS/README.md).
 
