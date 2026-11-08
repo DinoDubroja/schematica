@@ -13,7 +13,7 @@ The user reported white rectangles around the saved examples in chat and on GitH
 
 The user approved a style-independent preferences layer and an agent-led suggestion workflow. [General preferences](../preferences/GENERAL.md), explicit style inheritance, automatic suggestions during Schematica use, and continued correction of one example are implemented and checked. The output-stage trial's four supply arrows are restored; its two signal terminals remain hollow black circles and values remain 9 pt. The delivered ZIP was updated in place. Routine context updates and their commits/pushes remain authorized under [AGENTS.md](../AGENTS.md); adding the trial to the permanent example collection still needs approval.
 
-The latest request extends the proposal: a bank of general preferences where every preference is visible to humans, with README images and optional before/after or good/bad comparisons, developed seamlessly through ordinary work. The visual-bank extension is not yet implemented; propose its organization and approval boundaries while completing the already authorized foundation. See [the implementation and visual-bank discussion](LOG.md#general-preferences-implementation).
+The user approved the visual preference bank, starting with the supply-arrow correction. The [preference gallery](../preferences/README.md) and [G-SYMBOL-01 page](../preferences/supply-and-signal-terminals/README.md) are implemented, with focused before/after illustrations, editable source, and an authoritative rule page. The general index now selects pages rather than duplicating rule text; the ordinary suggestion workflow maintains the bank. The comparison compiled successfully; both theme renders, all new assets, navigation links, and agent reading routes were checked. Live browser/theme selection remains unverified because the headless browser could not launch. This does not publish the full output-stage trial or choose a GND convention. See [the visual-bank checkpoint](LOG.md#visual-preference-bank).
 
 ## What exists
 
@@ -33,7 +33,7 @@ The later gallery update compiled all three new standalone sources, compared the
 ## Open decisions
 
 - User review of the gallery and three newly completed recreations, and which reference to collect next.
-- Review of the proposed visual preference bank and whether to preserve the output-stage trial as an example.
+- User review of the first visual preference page, further examples/corrections for the bank, and whether to preserve the full output-stage trial as an example.
 - Which observed patterns become confirmed rules; exact typography, spacing, line weights, symbol proportions, and quantitative plot conventions remain unsettled.
 - Personal customization and storage, distribution as a plugin, and generalization beyond electronics remain to be designed.
 - Difference-only storage for intermediate drawings remains undecided. The present workflow uses complete files for selected useful revisions.
@@ -44,6 +44,6 @@ The later gallery update compiled all three new standalone sources, compared the
 
 Review the gallery and new recreations, then continue collecting references. Figure 1.6 was explicitly selected and completed as part of the three missing examples, superseding its earlier status as an assistant-only suggestion.
 
-Continue correcting the output-stage example as the user supplies feedback and review the proposed visual preference bank. Preserve the distinction between a user-confirmed principle, an inferred candidate, and permission to publish example assets. Changes to permanent visual-bank organization await approval of the expanded proposal. Verify synchronization separately; network errors have blocked pushes from this drawing session.
+Continue correcting the output-stage example or reviewing supplied references normally; the first visual preference is ready for user review. The agent should notice reusable lessons, propose their scope, and maintain the visual bank within approved saves. Preserve the distinction between a user-confirmed rule, an inferred candidate, and a current-drawing adjustment. Verify synchronization separately; network errors have blocked pushes from this drawing session.
 
 For reasoning and scope changes, consult [LOG.md](LOG.md). For drawing details, read selected example records and actual available previews rather than treating descriptions as images.

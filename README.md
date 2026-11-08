@@ -6,6 +6,10 @@ Schematica is in development. We are building a library of examples and drawing 
 
 ## Explore the examples
 
+### [General schematic preferences](preferences/README.md)
+
+Accepted conventions with visual examples and before/after comparisons, shared across drawing styles.
+
 ### [The Art of Electronics](examples/THE_ART_OF_ELECTRONICS/)
 
 Five recreated figures, from abstract connections to circuits with signal diagrams. Each includes an image, editable LaTeX, and the original caption.

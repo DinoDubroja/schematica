@@ -18,6 +18,8 @@ Present schematics inline using transparent, theme-aware SVG by default in chat.
 
 ## Example collections
 
+General conventions live in a [visual preference bank](preferences/README.md), separate from source-specific styles. The [agent index](preferences/GENERAL.md) selects relevant pages and defines precedence; each preference page holds one authoritative rule with its scope, evidence, and visible example or before/after comparison. Ordinary corrections can develop this bank through agent suggestions and scoped user approval. Styles inherit general preferences unless they declare an explicit exception.
+
 Each style has a collection under `examples/`. `INDEX.md` routes agents to relevant `STYLE.md` documents; each style document explains shared patterns and helps select particular examples. Agents inspect relevant rendered examples and their context rather than reading the entire library on every task.
 
 Each collection also has a short `README.md` visual gallery for people. The main README links to that gallery, and each developed example has its own `README.md` with the picture, a brief explanation, caption/source information, and links to its files. Detailed agent guidance stays in `STYLE.md` and `EXAMPLE.md`. The main README presents available work; public installation or invocation instructions belong there only once the user-facing workflow is established.

@@ -14,7 +14,7 @@ This is the project's self-contained adoption of the shared [project context wor
 
 ## Select the relevant workflow and style
 
-- When creating, editing, or reviewing a Schematica illustration, read [general preferences](preferences/GENERAL.md) first, then [the collection index](examples/INDEX.md), the selected `STYLE.md`, and relevant example records/previews. General preferences also apply when no named style is selected. Read LaTeX sources when helpful; do not treat examples without a preview as visually inspected.
+- When creating, editing, or reviewing a Schematica illustration, read [the general preference index](preferences/GENERAL.md) and the applicable preference pages/visuals first, then [the collection index](examples/INDEX.md), the selected `STYLE.md`, and relevant example records/previews. General preferences also apply when no named style is selected. Read LaTeX sources when helpful; do not treat examples without a preview as visually inspected.
 - Read [Schematica examples](skills/schematica-examples/SKILL.md) when starting/resuming a collection, drawing or reviewing an illustration, recording feedback, consolidating guidance, or preserving an example. Its [agent suggestion workflow](skills/schematica-examples/SKILL.md#agent-suggestions) is active by default whenever Schematica is used; no separate command is needed. Use the same workflow for other source collections.
 - Before presenting a drawing, check applicable accepted general preferences, explicit style exceptions, and the current request. Proposed rules are not active defaults. Preserve electrical meaning and check the scope of each requested change.
 - During drawing and review, read the workflow's **Preserve a generated example** section when a result or correction seems worth retaining. Offer a concrete saving proposal without waiting for the user to remember documentation. Do not repeatedly offer a declined example.
@@ -24,6 +24,8 @@ This is the project's self-contained adoption of the shared [project context wor
 At useful checkpoints, proactively propose which examples and lessons to preserve, with concise wording and a suggested location. Save agreed content after approval. Keep inferred design patterns provisional until confirmed, and distinguish good examples, bad examples, and cases still under review.
 
 Classify a reusable lesson as general, style-specific, or local to an example. Suggest useful rules without waiting for a manual invocation, but do not turn every correction into a proposal or interrupt every render. Keep accepted guidance separate from pending suggestions. The user may continue correcting the same example while the workflow is being developed; retain those corrections and their actual approval scope.
+
+Maintain the [visual preference bank](preferences/README.md) when a general rule is approved: one authoritative preference README with its scope, decision/evidence, and visible example or comparison, plus links from the agent index and human gallery. Follow the workflow's visual-preference procedure for assets, draft status, and checks. Handle routine organization within the approved scope without asking the user to name files or invoke a special mode.
 
 Keep captions with example records in the repository. Original screenshots are temporary working inputs. Save editable source, transparent light/dark SVG previews, and its rendered PNG as drawing assets, and keep origin, user feedback, and recreation status distinct. Use full source names in collection titles.
 
