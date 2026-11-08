@@ -88,6 +88,8 @@ def anchors(text: str) -> set[str]:
     result = set(re.findall(r'\b(?:id|name)=[\"\x27]([^\"\x27]+)', text))
     counts: dict[str, int] = {}
     for heading in re.findall(r'^#{1,6}\s+(.+?)\s*#*$', text, re.M):
+        # GitHub omits image alt text when generating heading anchors.
+        heading = re.sub(r'!\[[^\]]*\]\([^)]*\)', '', heading)
         heading = re.sub(r'\[([^\]]+)\]\([^)]*\)', r'\1', heading)
         slug = re.sub(r'[^\w\- ]', '', heading.lower()).replace(' ', '-')
         n = counts.get(slug, 0)

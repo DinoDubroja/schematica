@@ -450,4 +450,8 @@ pixels with transparency. Fifteen gallery/navigation checks passed, including
 repeatability, nested-category label/link rebasing, inactive exclusion, missing
 reference failures, and unchanged historical example files. Light/dark exports
 and rendered colored labels were visually inspected. User review of the new size
-is still pending. GitHub synchronization is verified separately at delivery.
+is still pending. The published Connections gallery was also visually inspected
+on GitHub in its active dark theme: colored words load, one SVG variant is visible
+per example, and the larger dots are present. Light presentation was checked locally.
+The anchor validator follows GitHub's image-only heading behavior. Commit/push
+synchronization was verified against the remote branch.
