@@ -746,3 +746,28 @@ reported in the task result.
 **Boundary:** the user separately requested a proposal for default in-chat
 presentation behavior and explicitly said not to document it yet. That proposal
 stays in the chat; BEHAVIOR.md and the in-chat presentation procedure are unchanged.
+
+<a id="default-in-chat-presentation"></a>
+
+## 08-11-2026 - Default in-chat presentation
+
+**User authorization:** after reviewing the proposed behavior, the user explicitly
+requested saving it in BEHAVIOR.md and updating the presentation procedure so the
+reviewed in-chat preview style becomes Schematica's default. This supersedes the
+proposal-only boundary in the preceding crossing-layout entry.
+
+**Implemented:** [BEHAVIOR.md](../agents/BEHAVIOR.md#presenting-illustrations)
+owns the default delivery and discussion/approval behavior. The existing
+[presentation procedure](../scripts/PRESENTATION.md#chat) explains native inline
+rendering, source-faithful SVG, transparent/theme-aware presentation, concise labels,
+Good/Bad grouping at equal scale, meaningful optional controls, preview working
+files, explicit export requests and capability fallbacks. Direction links to the
+behavior owner and distinguishes previews from authorized saved examples. Existing
+AGENTS and skill routes already reach both documents; no new instruction hierarchy
+or mandatory private plugin dependency was introduced.
+
+**Verification:** the changed documents were read back for consistency, local links
+and anchors resolve, the existing discovery route reaches the behavior/procedure,
+and gallery freshness checks pass. This is a documentation update based on the
+user-reviewed chat demonstration, not a new test of every host or an independent
+fresh-chat behavior audit. No drawing assets or accepted schematic rules changed.

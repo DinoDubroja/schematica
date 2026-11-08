@@ -14,7 +14,7 @@ It should come with consistent, predefined drawing preferences. Users should be 
 - Provide prompts and inputs users can run with and without Schematica to compare results themselves.
 - Document useful examples and conclusions as development progresses.
 
-Present generated and recreated schematics inline using transparent, theme-aware SVG by default in chat and GitHub. Keep PNG exports as convenient downloads. Original reference images may display directly as PNG with their original background; no recreation or theme conversion is required. Explicit requests for another format or save location take precedence.
+Present illustrations and visual comparisons directly in chat by default, using native visual capabilities and transparent, theme-aware SVG for generated drawings; follow [chat behavior](agents/BEHAVIOR.md#presenting-illustrations). Explicit requests for another format or destination take precedence. Authorized saved examples retain PNG downloads alongside their source and SVGs. Original reference images may display directly in their original format and background; no recreation or theme conversion is required.
 
 ## Style collections
 

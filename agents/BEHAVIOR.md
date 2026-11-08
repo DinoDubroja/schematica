@@ -63,9 +63,29 @@ anything not tested. Never claim to have visually inspected an unavailable previ
 
 ## Presenting illustrations
 
-Display generated and recreated schematics inline as transparent, theme-aware SVG
-by default. Display saved original reference images in their original format and
-background when browsing the collection. Follow
-[the presentation procedure](../scripts/PRESENTATION.md) for chat and GitHub.
-Honor explicit format requests. If the client cannot display inline SVG, say so and
-provide the SVG, identifying any necessary raster fallback.
+Present Schematica illustrations, visual explanations and design comparisons
+directly in the conversation unless the user requests another output format or
+destination. This is the normal workflow and requires no special keyword.
+
+Use the chat's native visual capabilities: crisp, scalable drawings, transparent
+backgrounds, colors that remain readable in light and dark themes, and concise
+labels. Add interactive controls when they help the user explore a meaningful
+choice.
+
+During discussion, show proposed visual changes in chat and refine them there
+before implementing or saving them. Approval of a preview's appearance does not
+by itself authorize repository changes or adoption as a permanent preference.
+Explicit implementation or saving instructions authorize the stated scope.
+
+For Good/Bad comparisons, keep Good green on the left and Bad red on the right,
+without checkmarks or crosses. Group accepted alternatives within Good, label
+each clearly, identify the default, and use the same drawing scale.
+
+Honor explicit requests for files, exports or saved destinations. If native
+in-chat presentation is unavailable, explain the limitation and use the closest
+supported preview. Display saved original reference images in their original
+format and background when browsing the collection.
+
+Follow [the presentation procedure](../scripts/PRESENTATION.md#chat) for rendering,
+comparison layout, preview checks and authorized exports. Preview working files
+support the conversation; they do not constitute preservation in the repository.
