@@ -4,6 +4,8 @@ Updated: 08-11-2026. Read this first when resuming; verify the checkout before a
 
 ## Objective and mode
 
+Wire weight and crossing presentation (08-11-2026): the user selected B (0.65 pt), now accepted as [G-CONNECTION-04](../preferences/connections/wire-thickness/RULE.md). The [unconnected-crossing page](../preferences/connections/unconnected-crossings/README.md) presents **straight wire crossing (default)** and **bridged wire crossing** together as named accepted variants; both names are instruction keywords and **wire bridges** remains an alias. The rejected gap example sits below. The gallery builder supports this layout while retaining existing Good/Bad comparisons. See [decision, implementation and checks](LOG.md#wire-width-and-crossing-variants).
+
 Terminal-circle size (08-11-2026): the user selected C from the 8/10/12 comparison and explicitly authorized adopting a visible outer diameter of 12 times wire width. [G-SYMBOL-02](../preferences/symbols/signal-terminal-circles/RULE.md) and both input/output examples now specify hollow circles with outlines equal to wire thickness. Source, SVG themes and PNG are updated and locally verified; the separate 10-times junction-dot rule is unchanged. See [approval and checks](LOG.md#twelve-width-terminal-circles).
 
 Fastest release path proposed (08-11-2026): [focused pass](LOG.md#first-release-fast-path), starting in the local project chat with a reusable AOE preset and Norton-equivalent drawing as the first visual review milestone, followed by two fresh-prompt cases and a generic-default pass. Five general preferences are now accepted. Style consolidation and new trials remain proposed pending the user's go-ahead; the original-image import is already authorized.

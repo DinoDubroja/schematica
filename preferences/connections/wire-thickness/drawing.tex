@@ -1,0 +1,16 @@
+% G-CONNECTION-04: accepted 0.65 pt wire weight at native drawing scale.
+\documentclass{article}
+\usepackage[paperwidth=4cm,paperheight=2.8cm,margin=0pt]{geometry}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\usepackage{tikz}
+\begin{document}
+\noindent\begin{tikzpicture}[x=1cm,y=1cm,line width=0.65pt,line cap=round]
+\path[use as bounding box] (0,0) rectangle (4,2.8);
+\draw[fill=none] (0.6,1.9) circle[radius=5.5\pgflinewidth]
+                 (3.4,1.9) circle[radius=5.5\pgflinewidth];
+\draw ([xshift=6\pgflinewidth]0.6,1.9)--([xshift=-6\pgflinewidth]3.4,1.9);
+\draw (2,1.9)--(2,0.65)--(3.1,0.65);
+\fill (2,1.9) circle[radius=5\pgflinewidth];
+\end{tikzpicture}
+\end{document}

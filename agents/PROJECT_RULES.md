@@ -22,7 +22,8 @@ schematica/
 │   │   ├── README.md
 │   │   ├── explicit-wire-junctions/  # Required connection markers
 │   │   ├── junction-dots/            # RULE, visual README, source and images
-│   │   └── unconnected-crossings/    # Plain crossings and wire bridges
+│   │   ├── unconnected-crossings/    # Named straight and bridged variants
+│   │   └── wire-thickness/          # Default wire weight
 │   └── symbols/
 │       ├── README.md                 # Combined rule presentations
 │       ├── power-supply-arrows/
@@ -116,6 +117,10 @@ Installed skill junctions must still resolve to the authoritative repository wor
   When both examples exist, place Good on the left and Bad on the right in equal
   columns, at the same drawing scale. Align the images above their captions and
   download links. A Good-only example keeps its single presentation.
+  When a rule has named accepted variants, they may share a table under Good,
+  with their names/keywords as column headings and `(default)` on the default
+  choice. Keep a rejected example separately below that table. These are choices
+  within one rule, not new preference categories.
   Identify the deficient feature, not the entire circuit. Avoid before/after framing.
   Keep operational explanations and identifiers/status out of human galleries.
 - A category contains rules or subcategories, not a mixture. A category of rules
@@ -164,6 +169,14 @@ Authoring contract (HTML comments are hidden in rendered READMEs):
   Keep all relative paths correct for the leaf's depth. Wrap just the paired
   light/dark image links of the good example in `<!-- preference-good:start -->`
   and `<!-- preference-good:end -->`. Navigation stays outside the visual section.
+- For two named accepted variants, use a level-two colored Good heading followed
+  by a table inside `<!-- preference-variants:start -->` / `<!-- preference-variants:end -->`.
+  Use four rows of two columns: names/keywords, images, captions, downloads.
+  Put `(default)` only in the left heading. Keep `preference-good` around its
+  paired images, and use `preference-alternative` around the right image pair.
+  Both variants need light/dark SVG and PNG links. An optional Bad example below
+  has a level-two colored Bad heading, its `preference-bad` image pair, caption
+  and downloads. Do not combine variants and comparison markers in one leaf.
 - A category README declares `<!-- preference-representative: path/to/README.md -->`,
   pointing to an accepted descendant rule selected by the agent/user. Omit it only
   for categories with no accepted rules. It also contains exactly one
@@ -181,6 +194,9 @@ Authoring contract (HTML comments are hidden in rendered READMEs):
   The builder validates every accepted RULE/README and rendered parent README,
   and requires both SVG themes and a PNG in each Good/Bad section.
   It does not prove image/source agreement or judge visual quality.
+
+When changing the builder, run `python -m unittest discover -s tests` for gallery
+propagation, variants, legacy layouts, validation failures and preservation checks.
 
 ## Validate an approved change
 

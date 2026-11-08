@@ -71,12 +71,14 @@ Use solid circles in the wire color, with a diameter ten times the wire width.
 
 ## [Unconnected wire crossings](unconnected-crossings/README.md)
 
-Use uninterrupted crossing wires without a junction circle when there is no connection.
+Both styles show crossing wires without a connection. Use either name as a keyword.
+
+### ![Good](../assets/good-label.svg)
 
 <table>
 <tr>
-<th align="left" width="50%"><img src="../assets/good-label.svg" alt="Good"></th>
-<th align="left" width="50%"><img src="../assets/bad-label.svg" alt="Bad"></th>
+<th align="left" width="50%">straight wire crossing (default)</th>
+<th align="left" width="50%">bridged wire crossing</th>
 </tr>
 <tr>
 <td align="center" valign="top">
@@ -84,30 +86,43 @@ Use uninterrupted crossing wires without a junction circle when there is no conn
 <a href="unconnected-crossings/good-dark.svg#gh-dark-mode-only"><img src="unconnected-crossings/good-dark.svg" alt="Two uninterrupted wires cross without a junction circle; they are electrically separate." width="210"></a>
 </td>
 <td align="center" valign="top">
-<a href="unconnected-crossings/bad-light.svg#gh-light-mode-only"><img src="unconnected-crossings/bad-light.svg" alt="A gap is incorrectly used to depict a crossing between electrically separate, continuous wires." width="210"></a>
-<a href="unconnected-crossings/bad-dark.svg#gh-dark-mode-only"><img src="unconnected-crossings/bad-dark.svg" alt="A gap is incorrectly used to depict a crossing between electrically separate, continuous wires." width="210"></a>
+<a href="unconnected-crossings/bridge-light.svg#gh-light-mode-only"><img src="unconnected-crossings/bridge-light.svg" alt="A semicircular bridge marks an unconnected crossing, selected by bridged wire crossing or wire bridges." width="210"></a>
+<a href="unconnected-crossings/bridge-dark.svg#gh-dark-mode-only"><img src="unconnected-crossings/bridge-dark.svg" alt="A semicircular bridge marks an unconnected crossing, selected by bridged wire crossing or wire bridges." width="210"></a>
 </td>
 </tr>
 <tr>
-<td valign="top">Default: straight crossing, no junction circle.</td>
-<td valign="top">Do not use a gap to indicate an unconnected crossing.</td>
+<td valign="top">Uninterrupted wires; no junction circle.</td>
+<td valign="top">Semicircular bridge; no junction circle. Also accepts <strong>wire bridges</strong>.</td>
 </tr>
 <tr>
 <td><a href="unconnected-crossings/good.png">PNG</a> · <a href="unconnected-crossings/good-light.svg">Light SVG</a> · <a href="unconnected-crossings/good-dark.svg">Dark SVG</a></td>
-<td><a href="unconnected-crossings/bad.png">PNG</a> · <a href="unconnected-crossings/bad-light.svg">Light SVG</a> · <a href="unconnected-crossings/bad-dark.svg">Dark SVG</a></td>
+<td><a href="unconnected-crossings/bridge.png">PNG</a> · <a href="unconnected-crossings/bridge-light.svg">Light SVG</a> · <a href="unconnected-crossings/bridge-dark.svg">Dark SVG</a></td>
 </tr>
 </table>
 
-### Wire bridges
+### ![Bad](../assets/bad-label.svg)
 
-Request **wire bridges** to use this accepted alternative at unconnected crossings.
+Do not use a gap to indicate an unconnected crossing.
 
-<a href="unconnected-crossings/bridge-light.svg#gh-light-mode-only"><img src="unconnected-crossings/bridge-light.svg" alt="A semicircular wire bridge marks an unconnected crossing, selected by the keyword wire bridges." width="210"></a>
-<a href="unconnected-crossings/bridge-dark.svg#gh-dark-mode-only"><img src="unconnected-crossings/bridge-dark.svg" alt="A semicircular wire bridge marks an unconnected crossing, selected by the keyword wire bridges." width="210"></a>
+<a href="unconnected-crossings/bad-light.svg#gh-light-mode-only"><img src="unconnected-crossings/bad-light.svg" alt="A gap is incorrectly used to depict a crossing between electrically separate, continuous wires." width="210"></a>
+<a href="unconnected-crossings/bad-dark.svg#gh-dark-mode-only"><img src="unconnected-crossings/bad-dark.svg" alt="A gap is incorrectly used to depict a crossing between electrically separate, continuous wires." width="210"></a>
 
-[PNG](unconnected-crossings/bridge.png) · [Light SVG](unconnected-crossings/bridge-light.svg) · [Dark SVG](unconnected-crossings/bridge-dark.svg)
+[PNG](unconnected-crossings/bad.png) · [Light SVG](unconnected-crossings/bad-light.svg) · [Dark SVG](unconnected-crossings/bad-dark.svg)
 
 [Editable LaTeX](unconnected-crossings/drawing.tex)
+
+## [Wire thickness](wire-thickness/README.md)
+
+Use 0.65 pt wires at the drawing's native scale, retaining the junction and terminal proportions.
+
+### ![Good](../assets/good-label.svg)
+
+<a href="wire-thickness/good-light.svg#gh-light-mode-only"><img src="wire-thickness/good-light.svg" alt="A 0.65 pt wire with a marked branch junction, an unmarked bend and hollow input/output terminals." width="210"></a>
+<a href="wire-thickness/good-dark.svg#gh-dark-mode-only"><img src="wire-thickness/good-dark.svg" alt="A 0.65 pt wire with a marked branch junction, an unmarked bend and hollow input/output terminals." width="210"></a>
+
+[PNG](wire-thickness/good.png) · [Light SVG](wire-thickness/good-light.svg) · [Dark SVG](wire-thickness/good-dark.svg)
+
+[Editable LaTeX](wire-thickness/drawing.tex)
 
 <!-- preference-gallery:end -->
 

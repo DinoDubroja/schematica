@@ -12,8 +12,9 @@ hollow interior. Set its diameter to **ten times the wire stroke width** and
 keep that proportion consistent throughout a drawing, including after scaling.
 
 For example, a 0.65 pt wire uses a 6.5 pt diameter dot (3.25 pt radius).
-The ten-to-one ratio is the accepted default; the example's absolute wire width
-is not a universal line-weight rule. In TikZ, a filled circle with `radius=5\pgflinewidth`
+The ten-to-one ratio is the accepted default; the base wire weight is specified
+separately by [G-CONNECTION-04](../wire-thickness/RULE.md).
+In TikZ, a filled circle with `radius=5\pgflinewidth`
 implements this proportion when the current line width is the wire width.
 With CircuitikZ, set the junction-node dimensions to the same visible diameter;
 verify the rendered size rather than relying on a package default.

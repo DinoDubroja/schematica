@@ -684,3 +684,33 @@ wire thickness and remain unfilled. Both SVGs match compiled geometry, and the
 transparent PNG matches the PDF pixels. Light/dark previews were visually checked.
 Gallery freshness, local links and anchors pass. Live GitHub theme rendering was
 not rechecked; publication status is verified separately in the task result.
+
+<a id="wire-width-and-crossing-variants"></a>
+
+## 08-11-2026 - Wire thickness and named crossing variants
+
+**User decision and requested correction:** the user chose B from the equal-scale
+wire comparison (0.40/0.65/0.90 pt), adopting 0.65 pt. They also requested placing
+the bridge beside the default straight crossing in the same table, with the names
+"straight wire crossing" and "bridged wire crossing" serving as keywords and
+"(default)" identifying the default. This refines presentation within the existing
+crossing rule; it does not combine connected and unconnected wire rules.
+
+**Implemented:** [G-CONNECTION-04](../preferences/connections/wire-thickness/RULE.md)
+owns the source-scale default and references the accepted marker proportions.
+The focused Good illustration reproduces B. Existing examples already use this
+wire width. Junction and terminal rules now point to the wire-weight owner.
+[G-CONNECTION-03](../preferences/connections/unconnected-crossings/RULE.md) documents
+both named selectors; the earlier "wire bridges" selector is retained as an alias.
+Its unchanged straight/bridge drawings share a two-column table under Good;
+the rejected gap is a separate Bad example below. The gallery builder and authoring
+contract now support named accepted variants with one designated default, without
+weakening the previous Good/Bad presentation requirements.
+
+**Verification:** the wire source compiles and matches the reviewed B geometry;
+rendered wire weight and marker ratios were checked against the compiled output.
+Both SVG themes and PNG are derived from that source. Gallery checks cover named
+variants, previous Good-only and Good/Bad layouts, inactive rules, missing assets
+and anchors, malformed tables, nested categories, link rebasing, repeatability,
+and preservation of manual text. The crossing drawing assets are unchanged.
+Final visual inspection and publication status are reported at task completion.

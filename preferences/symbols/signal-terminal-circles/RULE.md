@@ -14,7 +14,8 @@ Use the wire's ink color and stroke width for the circle outline. Set the visibl
 Keep this proportion consistent throughout the drawing, including after scaling.
 
 For example, a 0.65 pt wire uses a 7.8 pt outer diameter and a 0.65 pt outline.
-The absolute wire width is illustrative, not a universal line-weight default.
+The base wire weight is specified separately by
+[G-CONNECTION-04](../../connections/wire-thickness/RULE.md).
 For a TikZ stroked circle, `radius=5.5\pgflinewidth` gives the required outer
 diameter when its outline uses the wire width. The visible outer radius is
 `6\pgflinewidth`; terminate the attached wire at that edge without entering the
@@ -50,8 +51,8 @@ does not change the separate junction-dot size. See
 [README.md](README.md) shows a focused reconstruction of input and output terminals,
 not historical screenshots or a complete circuit. No bad example is needed to
 communicate this rule. The example now uses the approved outer-diameter and
-outline proportions for both input and output terminals. Remaining spacing,
-absolute wire width and typography are illustrative, not additional defaults.
+outline proportions for both input and output terminals. Its wire width follows
+G-CONNECTION-04; remaining spacing and typography are illustrative.
 
 Compile [drawing.tex](drawing.tex) into an ignored build directory and export with
 [export_svg.py](../../../scripts/export_svg.py), `--page 1 --stem good --png`;
