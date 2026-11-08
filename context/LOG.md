@@ -594,3 +594,12 @@ The all-originals download was attempted through the supported transfer helper a
 The audit found zero saved generated examples, three accepted general preferences, qualitative AOE guidance without a shared numeric preset, and no tracked public installation/dependency/release package. It recommends three new AOE trials plus a generic-default pass, followed by approved examples/preferences and a clean installation test. See the audit for acceptance criteria and limitations.
 
 Validation for this audit: preference-gallery freshness/local-reference check passed; the repository-wide check found 67 Markdown files and 671 local references with no errors. All 31 records, 20 existing drawing/source assets, and caption/observation bodies remain unchanged. No new compile or external-install validation was performed.
+
+<a id="attachment-network-diagnosis"></a>
+## Attachment-transfer connection diagnosis - 08-11-2026
+
+The user authorized resolving the transfer issue and rejected manually locating/sorting screenshots as an unnecessary burden. The original attachments have been located; manual collection is not the required next step.
+
+A fresh one-image transfer through the current supported helpers failed before copying bytes with `hosted apps tools/list request failed: DNS`. Independent diagnostics showed thread and socket creation working, localhost resolving, and both `github.com` and `chatgpt.com` failing name resolution. The active execution environment reports `CODEX_SANDBOX_NETWORK_DISABLED=1`: command networking is explicitly disabled. This is a confirmed execution-permission blocker, not evidence of missing attachment files or a system-wide internet outage.
+
+The user-facing next step is to enable Allow network access in the app's Configuration settings while retaining Workspace write, then retry the same original-image import. This agent cannot change its own sandbox permissions. If the setting is already enabled, the effective session policy still needs investigation; do not claim that a settings change or restart has succeeded without a fresh transfer test. No original screenshots were imported. Repository publishing also remains blocked by command networking; no redundant push was attempted during this diagnosis.
