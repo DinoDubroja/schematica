@@ -11,7 +11,7 @@ Turn supplied examples and ordinary drawing feedback into a reusable style colle
 
 Resolve this skill directory to its physical location first if it is installed through a symlink or Windows junction. The Schematica repository is two levels above that physical directory. For example, Python's `Path(skill_file).resolve().parents[2]` finds it from `SKILL.md`. Relative links below refer to that physical location, not the installed alias.
 
-Read the repository's [AGENTS.md](../../AGENTS.md), [general preference index](../../preferences/GENERAL.md) and applicable `RULE.md` files/README visuals, then [examples/INDEX.md](../../examples/INDEX.md). Match the user's full source/style name to a collection. Read its `STYLE.md`, including explicit exceptions, status and next steps, then only example records needed for the request. General preferences apply even without a named style. Follow their precedence and treat inferred/proposed rules as inactive. Do not require the old chat to resume.
+Read the repository's [AGENTS.md](../../AGENTS.md), [general preference index](../../preferences/GENERAL.md) and applicable `RULE.md` files/README visuals, then [styles/INDEX.md](../../styles/INDEX.md). Match the user's full source/style name to a collection. Read its `STYLE.md`, including shared guidance, explicit exception links, status and next steps, then the applicable domain guides it links and only example records needed for the request. Select domains independently; a mixed circuit/waveform task may need both schematic and plot guidance. A planned or absent domain guide does not supply rules. General preferences apply even without a named style. Follow their precedence and treat inferred/proposed rules as inactive. Do not require the old chat to resume.
 
 If the user explicitly selects another Schematica checkout, use that checkout after verifying its index. If no repository can be located, ask for the checkout rather than silently creating a second library. Never put user examples inside the installed skill directory.
 
@@ -40,7 +40,7 @@ or background service is needed. After discussing a useful lesson:
 2. Record pending/deferred/rejected proposals there with existing evidence links, or
    retain discussion in authorized context. Keep their actual decision status.
 3. Save approved general guidance using [the preference record procedure](references/preference-record.md).
-   Put named-style rules/exceptions in `STYLE.md` and local feedback in `EXAMPLE.md`
+   Put domain-specific style rules/exceptions in the relevant domain guide (linked from `STYLE.md`), shared style guidance in `STYLE.md`, and local feedback in `EXAMPLE.md`
    (or context for an unsaved example). Link evidence in both directions when available.
 4. Follow [project rules](../../agents/PROJECT_RULES.md) for category/README maintenance,
    gallery generation, validation, and synchronization. Before delivery, check the
@@ -57,14 +57,14 @@ experiments, and leave pending proposals out of accepted galleries.
 
 ## Start or add to a collection
 
-1. Reuse a matching collection if one exists. Otherwise use a readable full name for `examples/<COLLECTION>/`, such as `THE_ART_OF_ELECTRONICS`. Create only the needed files.
-2. Create or update `STYLE.md` with purpose, source, collection status, confirmed preferences, provisional patterns, an example guide, unresolved questions, and the next useful step. Add its link and selection cues to `examples/INDEX.md`. Maintain a separate collection `README.md` for human browsing: a short introduction and clickable previews with titles and one-line descriptions. Link the main README to this gallery, keeping detailed guidance in `STYLE.md`.
-3. Give each example a stable descriptive folder name. For a numbered source figure, use a name such as `fig-01-07-adjustable-divider`; for new generated work, use the subject rather than a book figure number. Check for duplicates before adding.
+1. Reuse a matching collection if one exists. Otherwise use a readable full name for `styles/<COLLECTION>/`, such as `THE_ART_OF_ELECTRONICS`. Create only the needed files.
+2. Create or update `STYLE.md` with purpose, source, collection status, shared preferences, provisional patterns, domain-guide links, an example inventory, unresolved questions, and the next useful step. Put domain-specific guidance and selection cues in guides such as `SCHEMATICS.md` or `PLOTS.md` only when there is actual content; do not create placeholder guides. Keep shared guidance in one place and link it. Add the collection link and available-domain cues to `styles/INDEX.md`. Maintain a separate collection `README.md` for human browsing: a short introduction, links to available guides, and clickable previews with titles and one-line descriptions. Link the main README to this gallery.
+3. Store each example once under `styles/<COLLECTION>/examples/<category>/<example>/`. Choose its main form: `schematics` includes conceptual connection diagrams and circuit comparisons; `plots` holds standalone plots/signals; `mixed` combines circuit, waveform, equation, physical, or block-diagram content. Ordinary component labels and annotations alone do not make a schematic mixed. Keep complete mixed figures together and link them from all relevant guides. Create only categories with content; proposed writing guidance does not justify an empty `writing/` folder. Give each example a stable descriptive folder name. For a numbered source figure, use a name such as `fig-01-07-adjustable-divider`; for new generated work, use the subject rather than a book figure number. Check for duplicates before adding.
 4. Follow [the example record format](references/example-record.md). Save `EXAMPLE.md` with the original supplied caption, source reference, a description, user feedback, inferred lessons, and accurate asset/review status. Preserve important associated explanations with clear attribution.
 5. Screenshots and original PDFs are working references. Do not commit them as finished drawings or establish a separate permanent screenshot archive by default. Captions are repository content, alongside the example. Source information should identify the work and figure without depending on a private machine path.
 6. When a recreation is authorized and ready, keep `drawing.tex`, `preview-light.svg`, `preview-dark.svg`, and `preview.png` together. Compile and inspect the rendered figure, preserve technical meaning, and verify that the preview represents the saved source. Add an example `README.md` showing the appropriate SVG immediately, a brief useful description, original caption/source information, and links to both SVGs, the PNG, LaTeX, detailed record, and collection gallery. Long captions may be expandable but remain in the repository. Use the [presentation procedure](../../scripts/PRESENTATION.md): SVG is the default in chat and GitHub, with transparent backgrounds and theme-appropriate ink; PNG remains a download. Verify both themes and the source/export match. Do not claim a visual recreation is a reusable semantic CircuitikZ implementation unless it actually is.
 7. If no recreation exists, save the caption and feedback record with recreation marked pending in the agent index/guide. Do not present it as a completed gallery example, fabricate a preview, or leave a broken asset link. Tell the user which material remains unavailable for visual use; follow the actual authorization for completing it.
-8. Update the style's example guide and current next steps. Report what was captured briefly, including what remains pending.
+8. Update the style's example inventory, relevant domain selection links, and current next steps. Report what was captured briefly, including what remains pending.
 
 When examples are submitted to this workflow without additional comments, record that the user likes the example overall. Specific praise identifies a feature; it does not approve every detail as a general rule. Preserve explicit comments separately from inferred observations.
 
@@ -73,11 +73,11 @@ When examples are submitted to this workflow without additional comments, record
 Collection and consolidation are separate activities. Adding examples does not require finishing a style. When asked to review the collection:
 
 - Compare relevant examples, identifying recurring choices, meaningful exceptions, and each example's additional contribution.
-- Put collection-specific guidance in its `STYLE.md`; route approved cross-style preferences to [general preferences](../../preferences/GENERAL.md). Keep detailed captions and feedback with the examples and link inferred patterns to supporting evidence.
+- Put collection-specific guidance in its owning domain guide, or `STYLE.md` when shared across domains; route approved cross-style preferences to [general preferences](../../preferences/GENERAL.md). Keep detailed captions and feedback with the examples and link inferred patterns to supporting evidence.
 - Keep candidate rules labelled provisional until confirmed. State coverage gaps instead of extending a few examples into unsupported book-wide claims.
 - Propose the next targeted example or a new practical drawing to test the style. After user review, record the resulting state and next step so another chat can continue.
 
-The index chooses styles; the style guide chooses examples. Avoid loading all collections, source files, and previews on routine tasks. Actually inspect selected images when visual comparison is needed.
+The index chooses styles; `STYLE.md` selects available domain guides; domain guides select examples. `STYLE.md` keeps the complete inventory. Mixed examples have one record and can be linked from several guides. Avoid loading all collections, source files, and previews on routine tasks. Actually inspect selected images when visual comparison is needed.
 
 ## Preserve a generated example
 
@@ -98,7 +98,7 @@ Preserve relevant prompt/feedback context rather than copying entire private cha
 
 ## Finish the authorized save
 
-- Read the saved records back. Check captions, attribution, links, asset availability, review status, and the index-to-style-to-example reading path. Also check the human path from the main README through the collection gallery to each example, its image/source, and back. Keep public READMEs brief and focused on available work; do not introduce unestablished installation or invocation instructions.
+- Read the saved records back. Check captions, attribution, links, asset availability, review status, and the index-to-style-to-domain-to-example reading path. Also check the human path from the main README through the collection gallery to each example, its image/source, and back. Keep public READMEs brief and focused on available work; do not introduce unestablished installation or invocation instructions.
 - Check the general-preferences-to-style reading route, explicit exceptions, rule/evidence links, and separation of accepted rules from pending suggestions. Confirm that a local correction has not silently become a universal rule.
 - For a visual preference, check main README -> categories -> rule README -> images/source/back links, plus agent index -> RULE.md. Run the gallery builder and its `--check` mode per [project rules](../../agents/PROJECT_RULES.md#deterministic-gallery-generation). Inspect good/bad images at the same scale and in their documented display themes; verify the named difference, preserved technical meaning, and accurate approval/provenance labels. Do not call a text-only placeholder a completed visual preference.
 - Confirm new screenshots, temporary PDFs, build output, and unrelated material have not entered the repository.

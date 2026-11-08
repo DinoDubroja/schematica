@@ -2,6 +2,10 @@
 
 Use the same format for reference and generated examples. Omit sections that have no content; do not create empty placeholders or assets.
 
+## Location
+
+Store the complete record and its assets once at `styles/<COLLECTION>/examples/<category>/<example>/`. Categories describe the figure's main form, not approval or asset status. A mixed example stays intact and can be linked from several domain guides. Use the collection workflow for category selection; create no empty categories.
+
 ## Files
 
 ```text
@@ -45,4 +49,4 @@ Continue the same record as the example develops. Keep consequential corrections
 
 ## Collection-level state
 
-Keep continuation state in `STYLE.md`: current collection/review status, example availability, open questions, and next useful action. The top-level index needs only enough information to choose a collection. Maintain a separate `README.md` gallery for people, with previews linking to the example pages. These files are not complete transcripts or records of blanket authorization.
+Keep continuation state in `STYLE.md`: current collection/review status, example availability, open questions, and next useful action. Put domain-specific guidance and selection links in the relevant domain guide, and keep shared guidance in `STYLE.md`. The top-level `styles/INDEX.md` needs only enough information to choose a collection and see its available domains. Maintain a separate `README.md` gallery for people, with previews linking to the example pages. These files are not complete transcripts or records of blanket authorization.

@@ -31,11 +31,46 @@ schematica/
 │           ├── README.md
 │           ├── RULE.md
 │           └── .
+├── styles/
+│   ├── INDEX.md                     # Select a source/style and available domains
+│   └── THE_ART_OF_ELECTRONICS/
+│       ├── README.md                # Human overview and gallery
+│       ├── STYLE.md                 # Shared guidance, routing, status, inventory
+│       ├── SCHEMATICS.md            # Existing circuit guidance
+│       ├── PLOTS.md                 # Existing qualitative waveform guidance
+│       └── examples/
+│           ├── schematics/
+│           │   └── …
+│           ├── plots/
+│           │   └── …
+│           └── mixed/
+│               └── …
 ├── scripts/
 │   ├── build_preference_galleries.py
 │   └── .
 └── .
 ```
+
+## Style collections
+
+Keep one collection per source/style under `styles/`. `INDEX.md` selects a collection;
+its `STYLE.md` owns shared guidance, links to available domain guides, current status,
+and the full example inventory. Domain guides own their specific rules and selection
+cues. Link general preferences and shared guidance instead of duplicating them.
+Record domain-specific exceptions in their domain guide and link them from `STYLE.md`;
+cross-domain exceptions belong in `STYLE.md`. Preserve provisional/accepted status.
+
+The collection `README.md` is the short human overview and visual gallery. Keep
+example records/assets under `examples/<category>/<example>/` within that collection.
+Store each complete mixed figure once; multiple guides can link to it. Categories
+describe the main form, not asset availability or review status. Create only guides
+and categories with real content. Writing guidance remains absent until collected.
+
+For a move, rebase links from the containing file, including cross-category examples,
+gallery navigation, instruction routes, and export command destinations. Update
+historical Markdown links while retaining historical decisions and clearly marked old
+paths. Verify all records/assets survived and drawing/image hashes are unchanged.
+Installed skill junctions must still resolve to the authoritative repository workflow.
 
 ## Preference hierarchy
 

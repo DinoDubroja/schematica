@@ -10,7 +10,7 @@ Compile `drawing.tex` to a one-page PDF in the ignored `build/` directory using
 Tectonic or a suitable LaTeX installation. With Python and PyMuPDF available:
 
 ```text
-python scripts/export_svg.py build/<example>/drawing.pdf examples/<collection>/<example> --title "Figure title" --description "Accessible description of the drawing."
+python scripts/export_svg.py build/<example>/drawing.pdf styles/<collection>/examples/<category>/<example> --title "Figure title" --description "Accessible description of the drawing."
 ```
 
 This writes `preview-light.svg` and `preview-dark.svg` from the same PDF, keeping

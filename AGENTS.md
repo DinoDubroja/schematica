@@ -6,8 +6,8 @@ Consult [the log](context/LOG.md) selectively for relevant decisions and authori
 Verify recorded state against the checkout and preserve concurrent work.
 
 For drawings and reviews, read [the preference index](preferences/GENERAL.md),
-applicable `RULE.md` files and their visuals, then [the collection index](examples/INDEX.md),
-the selected `STYLE.md`, and relevant example records/previews.
+applicable `RULE.md` files and their visuals, then [the collection index](styles/INDEX.md),
+the selected `STYLE.md`, the applicable domain guides it links, and relevant example records/previews.
 Use [the example workflow](skills/schematica-examples/SKILL.md) for collection,
 drawing, corrections, suggestions, and approved saves.
 
