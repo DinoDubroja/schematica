@@ -5,6 +5,9 @@ During longer work, report meaningful findings or blockers rather than routine a
 For file-organization decisions, show a compact folder tree with relevant branches and
 mark omissions; distinguish proposed and implemented structure.
 
+Whenever a Git push fails, provide a copy-paste PowerShell one-liner for the
+appropriate fix or retry, using the exact repository path, remote, and branch.
+
 ## Corrections and suggestions
 
 Continue the current illustration through corrections across messages. Apply steering
