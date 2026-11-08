@@ -808,3 +808,15 @@ numeric checks. SVG paths and PNG pixels agree with the compiled source. Both
 display themes were visually inspected. Gallery freshness, local references,
 anchors and scoped diff checks pass. Publication and live-page inspection are
 reported in the task result. Unrelated concurrent context work is preserved.
+
+<a id="preferences-general-setup-cleanup"></a>
+
+## 08-11-2026 - Remove the general Preferences setup and focus on Schematica
+
+**User decision and authorization:** the user explicitly approved the proposed cleanup and project-note update, with the existing Schematica preferences and examples workflow kept intact. Focus on that workflow now; defer a general cross-project workflow until experience produces something the user likes and chooses to preserve. This supersedes the broader development proposal in [the earlier distribution discussion](#preferences-skill-distribution-scope).
+
+**Implemented:** removed the five files of the personal general-purpose Preferences skill, its Codex installation link, and only its added personal instruction route, summary sentence and relationship-map records. The earlier personal instruction collection remains in place. The general workflow was not copied into Schematica or retained as another active package. Two empty source directories remain because local automatic approval review blocked the forced removal needed for their read-only attributes; no skill files remain in them.
+
+**Verified:** Codex's refreshed skill list no longer discovers the general `preferences` skill, while `schematica-examples` remains enabled in both a project context and an unrelated local context. All 136 tracked Schematica files outside context notes are byte-for-byte unchanged from the cleanup baseline, including the existing preference and example workflow sources/assets. The personal index/summary changes match the intended removal; unrelated graph records and general instructions are preserved. This is cleanup and discovery verification, not a new drawing-quality or fresh-prompt behavior test.
+
+**Next scope:** continue developing Schematica preferences and examples through actual use and scoped approved saves. A new universal workflow, a replacement skill, and distribution/storage architecture are deferred. Routine context updates from other chats remain separate and are preserved.
