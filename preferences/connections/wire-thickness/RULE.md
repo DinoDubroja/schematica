@@ -13,9 +13,10 @@ Keep the wire weight consistent within a schematic. Apply
 The point value is a drawing-source dimension, not a fixed screen-pixel width.
 Uniformly resizing the whole illustration scales its wires and markers together.
 When changing the wire width, preserve the proportions owned by
-[G-CONNECTION-01: Junction dots](../junction-dots/RULE.md) and
-[G-SYMBOL-02: Input/output terminal circles](../../symbols/signal-terminal-circles/RULE.md).
-Do not leave the marker sizes fixed while changing the wire weight.
+[G-CONNECTION-01: Junction dots](../junction-dots/RULE.md),
+[G-SYMBOL-02: Input/output terminal circles](../../symbols/signal-terminal-circles/RULE.md)
+and [G-SYMBOL-03: Circuit ground and protective earth](../../symbols/ground-symbols/RULE.md).
+Do not leave these marker or ground-symbol sizes fixed while changing the wire weight.
 
 ## Exceptions and exclusions
 

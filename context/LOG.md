@@ -850,3 +850,15 @@ Include the full project library with the download, a short README quick start, 
 Make ordinary installed use independent of personal instructions and development-chat history. Approved saves belong to the user's selected copy. Repository-development logging, commit and push permissions must remain bound to separately authorized maintenance, not inherited by installation. A universal preference service, plugin-directory release and automatic customization migration remain outside this proposal.
 
 **Proposed validation/review:** test registration and file resolution from a separate extracted copy, explicit and natural invocation, and preservation of the current library and approval boundaries. Present the installation guide and working entry point for user review. Estimated implementation effort: 30-45 minutes. No rename, installer, registration migration or workflow changes have been authorized or performed in this discussion.
+
+<a id="ground-symbols-25-widths"></a>
+
+## 08-11-2026 - Ground symbols at 25 times wire width
+
+**User decision and authorization:** after reviewing symbol-only proportions, the user chose A2 (single bar), B1 (open 2:1 triangle) and D1 (compact three-line earth). The user then explicitly requested: "Yes, let's use 25× wire width and save the preference and examples in the repo. Keep A2 and B1 for circuit ground and D1 for PE earth."
+
+**Saved:** [G-SYMBOL-03](../preferences/symbols/ground-symbols/RULE.md) defines those roles, common centre-line width W = 25 wire strokes, wire-matched outlines, the triangle's W/2 height, and PE bars W, 2W/3, W/3 separated by W/6. Both circuit-ground forms are accepted without a preferred default. The isolated sample stem is W; connecting-wire length remains a layout choice. The unsaved 26w proposal is superseded. The preference index, wire-width cross-reference and Symbols gallery include the new rule.
+
+The [Good example](../preferences/symbols/ground-symbols/README.md) shows all three accepted standalone symbols side by side at equal scale, with their roles labeled. LaTeX, transparent light/dark SVGs and a PNG share the same source. No surrounding circuitry or new Bad variant was added; unselected options were not labeled Bad. Existing examples and unrelated workflow work are outside this save.
+
+**Verification:** compiled source dimensions, matching strokes, rounded ends/joins, hollow triangle, exact SVG/source geometry, PNG/source pixels, and transparent light/dark presentation checked locally. Gallery generation, local links and scoped differences checked before committing. Live GitHub presentation and remote synchronization are verified separately before the final report.

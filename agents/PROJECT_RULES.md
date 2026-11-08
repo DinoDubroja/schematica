@@ -26,6 +26,7 @@ schematica/
 │   │   └── wire-thickness/          # Default wire weight
 │   └── symbols/
 │       ├── README.md                 # Combined rule presentations
+│       ├── ground-symbols/           # Circuit ground and protective earth
 │       ├── power-supply-arrows/
 │       │   ├── README.md             # Human presentation
 │       │   ├── RULE.md               # Authoritative rule and evidence

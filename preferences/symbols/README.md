@@ -1,9 +1,24 @@
 # Symbols
 
-Distinct symbols for supplies and signal terminals.
+Distinct symbols for supplies, signal terminals, circuit ground and protective earth.
 
 <!-- preference-representative: power-supply-arrows/README.md -->
 <!-- preference-gallery:start level=2 -->
+
+## [Circuit ground and protective earth](ground-symbols/README.md)
+
+Use a single bar or an open triangle for circuit ground. Reserve the three-line symbol for PE/earth. Set the common symbol width to 25 times the wire thickness, with matching strokes.
+
+### ![Good](../assets/good-label.svg)
+
+<a href="ground-symbols/good-light.svg#gh-light-mode-only"><img src="ground-symbols/good-light.svg" alt="Three standalone symbols at equal scale: single-bar and open-triangle circuit grounds, and three-line protective earth." width="480"></a>
+<a href="ground-symbols/good-dark.svg#gh-dark-mode-only"><img src="ground-symbols/good-dark.svg" alt="Three standalone symbols at equal scale: single-bar and open-triangle circuit grounds, and three-line protective earth." width="480"></a>
+
+The triangle is twice as wide as it is high. PE bars have lengths in a 3:2:1 ratio, with equal spacing of one sixth of the longest bar. Dimensions follow stroke centre lines.
+
+[PNG](ground-symbols/good.png) · [Light SVG](ground-symbols/good-light.svg) · [Dark SVG](ground-symbols/good-dark.svg)
+
+[Editable LaTeX](ground-symbols/drawing.tex)
 
 ## [Power supply arrow symbols](power-supply-arrows/README.md)
 
