@@ -91,3 +91,15 @@ Next: obtain user feedback on the trial, make requested refinements, offer a con
 **Status:** first rendering liked overall; requested revision implemented and exported; collection preservation not yet authorized.
 
 The user called the result "pretty good" and asked for hollow black terminal circles and slightly smaller component-value text. The revision uses six unfilled black circles for the input/output and exposed supply terminals, with wires ending at their boundaries. Component values, including the offset potentiometer, changed from 10 pt to 9 pt; transistor identifiers and other annotations retain their sizes. One nearby resistor label moved to clear the trim supply label. The source compiles, all supplied values and transistor identifiers remain present, the six unfilled black terminal paths and reduced value font size were checked in the PDF, and the rendering was visually inspected. The delivered ZIP was updated in place. These are drawing-specific changes, not approved global style rules.
+
+### Correction and proposal for shared schematic preferences
+
+**Status:** user clarified the intended symbol distinction and requested a proposal; implementation pending.
+
+The user rejected applying the hollow-circle change to supply rails: supply connections should retain arrows, while signal input/output terminals use hollow circles. This corrects the preceding revision's interpretation; that revision's successful rendering checks did not establish that the requested scope was followed. The current delivered drawing has not yet been repaired.
+
+The user wants general preferences that apply regardless of the chosen style, explicit style-specific overrides, and a workflow that develops guidance from multiple examples and corrections. Agents should proactively suggest useful additions instead of waiting for the user to manage documentation.
+
+The assistant's proposal is a shared `preferences/GENERAL.md` containing accepted defaults and a clearly inactive proposal section; existing example records hold feedback and selected before/after evidence, with scope and links to the applicable rules. Existing style guides declare only explicit exceptions. Extend the existing collection workflow and agent entry point to read general guidance before the selected style, classify feedback as general/style/local, propose useful rules with evidence, and check applicable rules before delivery. New inferred rules require review; rejected suggestions should not be repeated without new evidence. Current task requirements take precedence, then explicit style exceptions, then shared defaults; visual preferences cannot alter circuit connectivity or technical meaning.
+
+The proposed implementation includes restoring supply arrows in the trial, updating discovery/reading routes and the example record format, and checking inheritance and explicit exceptions on small cases. No preference file, style rule, or workflow definition has been changed by this proposal checkpoint.

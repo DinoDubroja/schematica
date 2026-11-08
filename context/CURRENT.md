@@ -6,7 +6,7 @@ Updated: 08-11-2026. Read this first when resuming; verify the checkout before a
 
 Develop The Art of Electronics illustration style through examples, then test it on a new practical circuit and observe the agent's preservation behavior. Project scope includes schematics, conceptual diagrams, waveforms, plots, equations, and integrated figures; see [DIRECTION.md](../DIRECTION.md).
 
-The reusable context setup and independent recovery audit are complete. The user selected a first practical style trial: redraw their supplied hand-drawn output stage in the current The Art of Electronics style, review the result, then continue collecting examples. They rated the first rendering positively and requested hollow black terminal circles and slightly smaller component values. That revision is complete: six exposed terminals use unfilled black circles, and value text is reduced from 10 pt to 9 pt. Routine context updates and their commits/pushes are authorized under [AGENTS.md](../AGENTS.md); adding this trial to the permanent example collection still needs the user's approval.
+The current task is to propose a style-independent preferences layer and an agent-led suggestion workflow. The user corrected the output-stage revision: changing signal terminals to hollow circles should not have changed supply-rail arrows. Supply arrows are a general preference across styles, with explicit style exceptions possible. The delivered trial still needs its supply arrows restored; its 9 pt component values remain the requested refinement. The proposed preference/workflow changes are not implemented. Routine context updates and their commits/pushes remain authorized under [AGENTS.md](../AGENTS.md); adding the trial to the permanent example collection still needs approval.
 
 ## What exists
 
@@ -32,6 +32,6 @@ On 08-11-2026 an independent read-only session recovered the objective, five rec
 
 ## Next useful step
 
-Review the output-stage rendering with the user, apply requested refinements, and offer to preserve a useful accepted result with its feedback. Then continue collecting supplied references. Do not promote this unreviewed trial or its implementation choices into confirmed style rules. Figure 1.6 remains an earlier assistant suggestion, not a selected recreation.
+Review the proposal for shared preferences, explicit style overrides, evidence from examples/corrections, and proactive agent suggestions. Implementation approval is pending. Include restoration of the output-stage supply arrows in the proposed implementation scope. Preserve the distinction between a user-confirmed general principle, an inferred candidate, and permission to save permanent guidance. Figure 1.6 remains an earlier assistant suggestion, not a selected recreation.
 
 For reasoning and scope changes, consult [LOG.md](LOG.md). For drawing details, read selected example records and actual available previews rather than treating descriptions as images.
