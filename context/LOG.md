@@ -379,3 +379,15 @@ The batch adds dense op-amp/discrete composition, long feedback paths, shared de
 The [style guide](../examples/THE_ART_OF_ELECTRONICS/STYLE.md#example-guide) now links twenty-seven references: five completed drawings and twenty-two caption/observation records awaiting recreation. The collection index and current checkpoint agree; the direction overview now distinguishes completed recreations from all references. Original screenshots remain working inputs outside the repository; text-only records do not provide visual access. The human gallery, five existing drawings, and accepted preferences are unchanged.
 
 **Verification:** all new relative links and pending-asset declarations passed; inventory and selection table both contain 27 records with 5 drawing sources. Preference-gallery generation and read-only check both passed without gallery changes. No drawing source or image changed. Scoped diff checks passed before commit. Remote fetch still fails with `getaddrinfo() thread failed to start`; synchronization must be verified separately. Resume by selecting references from the guide, adding examples, or requesting a specific drawing/review; the pause authorizes no new work by itself.
+
+<a id="aoe-power-source-differential-signals"></a>
+
+## 08-11-2026 - Two additional AOE references collected
+
+**Status:** completed within the user's explicit request, "Letss add this two additional examples", after the earlier wrap-up. Both supplied screenshots were visually inspected. Figure 5.64 is one record containing both panels; Figure 4.105 is a separate record. No feature-specific comments accompanied this batch, so the existing liked-overall convention applies.
+
+[Figure 5.64](../examples/THE_ART_OF_ELECTRONICS/fig-05-64-differential-signals/EXAMPLE.md) adds a strain-gauge bridge beside an illustration of alternative balanced sources, shielded twisted pair, a 3-pin XLR connector, and a differential receiver. [Figure 4.105](../examples/THE_ART_OF_ELECTRONICS/fig-04-105-power-source-amplifier/EXAMPLE.md) adds a power stage with two transformers, winding-polarity dots, heat-sink/rating annotations, a long feedback route, and an output receptacle. Captions and source labels are preserved; observations remain provisional. No XLR pin assignment, transformer ratio, or circuit validation is inferred.
+
+The collection now contains 29 reference records: 5 completed recreations and 24 pending. Indexes and the current checkpoint are updated. No new drawings, screenshot archive, general preferences, or style exceptions are created. Original images remain working references outside the repository. The existing visual gallery and drawings remain unchanged; source images are needed for future visual recreation.
+
+Relative-link, count, selection-table, pending-asset, gallery, and scoped-diff checks are run before commit. Fetch still fails with `getaddrinfo() thread failed to start`; the final push outcome must be reported separately. This completes the requested two-example addition without starting further drawing or consolidation work.
