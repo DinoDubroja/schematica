@@ -6,6 +6,6 @@ For visual browsing, open [The Art of Electronics gallery](THE_ART_OF_ELECTRONIC
 
 | Collection | Use for | Current state |
 | --- | --- | --- |
-| [The Art of Electronics](THE_ART_OF_ELECTRONICS/STYLE.md) | Circuit layouts, conceptual diagrams, signal sketches, multipanel comparisons, annotated physical/circuit/block illustrations | Collecting; twelve reference records: five with LaTeX/SVG/PNG and gallery pages, seven awaiting recreation; shared patterns provisional |
+| [The Art of Electronics](THE_ART_OF_ELECTRONICS/STYLE.md) | Circuit layouts, circuit-and-equation figures, signal sketches, annotated physical/circuit/block illustrations, and dense power stages | Collecting; sixteen reference records: five with LaTeX/SVG/PNG and gallery pages, eleven awaiting recreation; shared patterns provisional |
 
 To start, resume, add examples, or preserve a useful generated result, use the [collection workflow](../skills/schematica-examples/SKILL.md). New sources receive their own collections; the workflow is shared.

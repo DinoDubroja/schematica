@@ -4,7 +4,7 @@ Illustration style under development from selected examples in *The Art of Elect
 
 [Browse the visual gallery](README.md). This document provides detailed guidance and example selection for agents.
 
-**Collection status:** collecting. Twelve reference records are saved: five have LaTeX source, light/dark SVG previews, PNG downloads, captions, and browsing pages; seven have captions and observations, with recreation pending (Figures 1.67, 1.68, 1.83, 1.84, 1.139, 2.25, and 2.29). The shared drawing patterns below remain provisional. A first practical output-stage trial has been drawn and refined separately; it is not yet a saved collection example or evidence of a fully validated style. See [the current checkpoint](../../context/CURRENT.md).
+**Collection status:** collecting. Sixteen reference records are saved: five have LaTeX source, light/dark SVG previews, PNG downloads, captions, and browsing pages; eleven have captions and observations, with recreation pending. The example guide below identifies each record and its available assets. The shared drawing patterns below remain provisional. A first practical output-stage trial has been drawn and refined separately; it is not yet a saved collection example or evidence of a fully validated style. See [the current checkpoint](../../context/CURRENT.md).
 
 ## Purpose
 
@@ -20,7 +20,7 @@ Read [general schematic preferences](../../preferences/GENERAL.md) before this g
 
 None currently. Inherit every applicable accepted general preference. A reference image or provisional observation does not implicitly override it. If an exception is approved, record the general rule ID, exact replacement behavior, scope, and decision/evidence here; do not copy the full general rule into this guide.
 
-The five completed previews can be inspected from this checkout without the source book. The seven pending references are text records only; their source screenshots were inspected in the collecting chat and are not saved as repository previews. Read the selected record's recreation and review status; availability is not the same as user approval of the recreation. Do not claim to have seen an image based only on its record.
+The five completed previews can be inspected from this checkout without the source book. The eleven pending references are text records only; their source screenshots were inspected in the collecting chat and are not saved as repository previews. Read the selected record's recreation and review status; availability is not the same as user approval of the recreation. Do not claim to have seen an image based only on its record.
 
 ## Confirmed preferences
 
@@ -74,6 +74,10 @@ Use concise annotations and clear leaders. A dashed trace needs an understood me
 | [Figure 1.139: Oscilloscope probe](fig-01-139-oscilloscope-probe/EXAMPLE.md) | Combining a physical object, circuit model, and functional block | Probe outline, grouped scope input, and stacked model labels | Caption and observations; source/preview pending |
 | [Figure 2.25: AC-coupled emitter follower](fig-02-25-ac-coupled-emitter-follower/EXAMPLE.md) | Transistor layout, bias dividers, and coupling capacitors | Subscripted identifiers and orderly vertical branches | Caption and observations; source/preview pending |
 | [Figure 2.29: Complementary followers](fig-02-29-complementary-followers/EXAMPLE.md) | Combining a transistor circuit with local signal sketches | Signed voltage-shift annotations and input/output waveforms | Caption and observations; source/preview pending |
+| [Figure 2.64: Differential amplifier performance](fig-02-64-differential-amplifier-performance/EXAMPLE.md) | Combining a schematic with performance equations | Mirrored transistor pair, polarity labels, and three adjacent equations | Caption and observations; source/preview pending |
+| [Figure 2.66: Single-ended dc amplifier](fig-02-66-single-ended-dc-amplifier/EXAMPLE.md) | Differential-pair composition with asymmetric connections | Central current source and grounded reference input | Caption and observations; source/preview pending |
+| [Figure 2.68: Loudspeaker amplifier](fig-02-68-loudspeaker-amplifier/EXAMPLE.md) | Combining a circuit, physical load, and thermal annotation | Loudspeaker icon, heat-sink fins, and local input waveform | Caption and observations; source/preview pending |
+| [Figure 2.78: Sziklai-pair power stage](fig-02-78-sziklai-pair-power-stage/EXAMPLE.md) | Dense practical power-stage layout and part labels | Stacked identifiers/part numbers, bias adjustment, and continuation leads | Caption and observations; source/preview pending |
 
 Figures 1.7 and 1.43 received positive feedback on their recreated appearance. The new recreations of Figures 1.1, 1.6, and 1.11 were compiled and visually checked by the assistant on 08-11-2026; user review is pending. All five use editable TikZ paths inside a CircuitikZ environment, not semantic native-component examples. Their implementation details are not all approved style rules.
 
@@ -85,7 +89,7 @@ Use transparent SVG by default in chat and on GitHub, with ink appropriate to th
 
 ## Open questions and next step
 
-- Review the three newly completed recreations and continue collecting supplied examples. Seven further figures are recorded; their recreations await an explicit drawing request.
+- Review the three newly completed recreations and continue collecting supplied examples. Eleven further figures are recorded; their recreations await an explicit drawing request.
 - Review the proposed shared patterns and establish useful drawing parameters from evidence.
 - Add coverage for larger practical circuits and quantitative plots.
 - Continue the separate output-stage trial's review and preservation discussion. Its initial feedback and refinements are in [the trial checkpoint](../../context/LOG.md#output-stage-trial); saving it as an example remains unapproved.
