@@ -8,6 +8,10 @@
 
 **Current discussion:** define the appearance of both variants separately. The next in-chat comparison keeps body length, lead length and line weight equal while showing body length-to-height ratios of 2:1, 2.5:1 and 3:1 for each convention. These are unselected proposals. Outline weight, corners, zigzag count/spacing and eventual size still need review.
 
+**Further user proposal:** passive-component line weights and source outlines should equal wire thickness; this is not intended to cover op-amp outlines. The user asks whether dimensions should generally be normalized to wire thickness, as junction dots already are.
+
+**Assistant recommendation, pending review:** use wire-relative dimensions for default symbol geometry together with intrinsic aspect ratios. Distinguish overall drawing scale from changing stroke weight: rigid coupling enlarges every dependent dimension when wires become heavier. A nominal wire-width reference could retain normalized geometry while permitting a separate weight adjustment; existing dot and terminal rules remain tied to actual wire width unless explicitly revised. Keep text/layout flexible, define visible-outline versus path dimensions, and inspect different shapes at final output size. No normalization policy or new line-weight rule has been adopted.
+
 **Authorization and status:** discussion previews and routine context capture only. No accepted preference rule, permanent illustration, gallery change or historical redraw is authorized by this choice. Preserve the convention decision while continuing the appearance review.
 
 Concise project history, with proposals, decisions, implementation, and verification kept distinct. [CURRENT.md](CURRENT.md) is the maintained starting point. Dates below identify recorded checkpoints; earlier discussion is summarized where an exact event date is not established. User statements are summarized unless quoted.
