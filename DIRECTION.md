@@ -1,6 +1,6 @@
 # Project direction
 
-Schematica aims to enable AI agents to automatically create beautiful, useful electronic schematics with CircuitikZ from text prompts, sketches, or screenshots. It is intended for engineering documentation, papers, teaching, and in-chat discussions with ChatGPT or other AI agents.
+Schematica aims to enable AI agents to automatically create beautiful, useful electronics illustrations with CircuitikZ and TikZ from text prompts, sketches, or screenshots. Its scope includes schematics, conceptual diagrams, waveforms, plots, equations, and combinations of these. It is intended for engineering documentation, papers, teaching, and in-chat discussions with ChatGPT or other AI agents.
 
 It should be available for anyone to use in their agent environment and work well from the first prompt.
 
@@ -16,4 +16,24 @@ It should come with consistent, predefined drawing preferences. Users should be 
 
 During discussions, present schematics inline by default, blending into the chat where supported. Explicit requests for another format or save location take precedence.
 
-How personal preferences are stored and how multiple templates would be managed remain open decisions.
+## Example collections
+
+Each style has a collection under `examples/`. `INDEX.md` routes agents to relevant `STYLE.md` documents; each style document explains shared patterns and helps select particular examples. Agents inspect relevant rendered examples and their context rather than reading the entire library on every task.
+
+Each example has an `EXAMPLE.md` record with its caption, source, feedback, distinctive lessons, and review status. Developed examples also have editable LaTeX source and a PNG preview. Original screenshots are working inputs, not repository deliverables. Captions belong with examples in the repository.
+
+Reference examples and generated examples use the same record format. Origin is distinct from evaluation: either origin may have useful, deficient, or still-unreviewed aspects. Recreating a book figure does not change its reference origin.
+
+The [collection workflow](skills/schematica-examples/SKILL.md) supports starting, resuming, adding examples, and reviewing a style. It preserves enough state for a fresh chat to continue without the original conversation.
+
+## Learn through use
+
+Generate new illustrations using a developing style, review them with the user, and iterate. When a result or correction has reusable value, offer to document the specific example and lesson. Save after approval, including the relevant prompt, feedback, and useful intermediate versions. A positive reaction alone is not permission to save or publish.
+
+The agent should notice useful preservation opportunities so the user need not manage documentation manually. The user controls what becomes lasting guidance. Agreed collection scope can cover routine incoming examples without repeated permission requests.
+
+## Current limits and later work
+
+The first collection is The Art of Electronics. Its five reference records include two existing visual recreations; the shared style is provisional and has not yet been validated on a new practical circuit.
+
+Personal customization and storage, plugin distribution, and generalization to other artifact domains remain to be designed. Difference-only storage for intermediate versions is also undecided. Start with complete files for selected useful revisions.
