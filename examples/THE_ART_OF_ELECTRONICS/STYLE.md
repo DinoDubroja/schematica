@@ -4,7 +4,7 @@ Illustration style under development from selected examples in *The Art of Elect
 
 [Browse the visual gallery](README.md). This document provides detailed guidance and example selection for agents.
 
-**Collection status:** collecting. Sixteen reference records are saved: five have LaTeX source, light/dark SVG previews, PNG downloads, captions, and browsing pages; eleven have captions and observations, with recreation pending. The example guide below identifies each record and its available assets. The shared drawing patterns below remain provisional. A first practical output-stage trial has been drawn and refined separately; it is not yet a saved collection example or evidence of a fully validated style. See [the current checkpoint](../../context/CURRENT.md).
+**Collection status:** collecting. Twenty-seven reference records are saved: five have LaTeX source, light/dark SVG previews, PNG downloads, captions, and browsing pages; twenty-two have captions and observations, with recreation pending. The example guide below identifies each record and its available assets. The shared drawing patterns below remain provisional. A first practical output-stage trial has been drawn and refined separately; it is not yet a saved collection example or evidence of a fully validated style. See [the current checkpoint](../../context/CURRENT.md).
 
 ## Purpose
 
@@ -20,7 +20,7 @@ Read [general schematic preferences](../../preferences/GENERAL.md) before this g
 
 None currently. Inherit every applicable accepted general preference. A reference image or provisional observation does not implicitly override it. If an exception is approved, record the general rule ID, exact replacement behavior, scope, and decision/evidence here; do not copy the full general rule into this guide.
 
-The five completed previews can be inspected from this checkout without the source book. The eleven pending references are text records only; their source screenshots were inspected in the collecting chat and are not saved as repository previews. Read the selected record's recreation and review status; availability is not the same as user approval of the recreation. Do not claim to have seen an image based only on its record.
+The five completed previews can be inspected from this checkout without the source book. The twenty-two pending references are text records only; their source screenshots were inspected in the collecting chat and are not saved as repository previews. Read the selected record's recreation and review status; availability is not the same as user approval of the recreation. Do not claim to have seen an image based only on its record.
 
 ## Confirmed preferences
 
@@ -78,6 +78,17 @@ Use concise annotations and clear leaders. A dashed trace needs an understood me
 | [Figure 2.66: Single-ended dc amplifier](fig-02-66-single-ended-dc-amplifier/EXAMPLE.md) | Differential-pair composition with asymmetric connections | Central current source and grounded reference input | Caption and observations; source/preview pending |
 | [Figure 2.68: Loudspeaker amplifier](fig-02-68-loudspeaker-amplifier/EXAMPLE.md) | Combining a circuit, physical load, and thermal annotation | Loudspeaker icon, heat-sink fins, and local input waveform | Caption and observations; source/preview pending |
 | [Figure 2.78: Sziklai-pair power stage](fig-02-78-sziklai-pair-power-stage/EXAMPLE.md) | Dense practical power-stage layout and part labels | Stacked identifiers/part numbers, bias adjustment, and continuation leads | Caption and observations; source/preview pending |
+| [Figure 3.111: Low-power piezo driver](fig-03-111-piezo-driver/EXAMPLE.md) | Dense mixed op-amp/discrete circuitry and detailed ratings | Perimeter feedback, shared device leaders, and paired signal/return terminals | Caption and observations; source/preview pending |
+| [Figure 4.7: Amplifiers for ac signals](fig-04-07-ac-signal-amplifiers/EXAMPLE.md) | Comparing capacitor placement in related op-amp circuits | Stacked A/B panels with an adjacent cutoff equation | Caption and observations; source/preview pending |
+| [Figure 4.13: FET-bipolar current source](fig-04-13-fet-bipolar-current-source/EXAMPLE.md) | Annotated control circuits and thermal details | Voltage-span/current arrows, alternative-device text, and a dashed device outline | Caption and observations; source/preview pending |
+| [Figure 4.29: Voltage regulator](fig-04-29-voltage-regulator/EXAMPLE.md) | Composite-device grouping and horizontal power paths | Darlington boundary, port specification stacks, and compensation label | Caption and observations; source/preview pending |
+| [Figure 4.58: Op-amp peak trackers](fig-04-58-peak-trackers/EXAMPLE.md) | Multi-op-amp feedback routing and circuit comparisons | Stacked alternatives with storage nodes and distinct diode/feedback paths | Caption and observations; source/preview pending |
+| [Figure 4.61: Active clamp](fig-04-61-active-clamp/EXAMPLE.md) | A direct signal path with a supporting control branch | Compact clamp circuit paired with Figure 4.62 | Caption and observations; source/preview pending |
+| [Figure 4.62: Clamp output glitches](fig-04-62-clamp-output-glitches/EXAMPLE.md) | Qualitative nonideal behavior and overlapping signals | Direct waveform labels, dashed transition markers, and curved glitch leaders | Caption and observations; source/preview pending |
+| [Figure 4.63: Active full-wave rectifier](fig-04-63-active-full-wave-rectifier/EXAMPLE.md) | Conditional explanations and symbolic component ratios | Braced node annotation, curved leader, and an output relationship | Caption and observations; source/preview pending |
+| [Figure 4.73: Split-supply generator](fig-04-73-split-supply-generator/EXAMPLE.md) | Explicit op-amp supplies and an output-defined reference node | Follower output marked as ground and capacitor polarity between rails | Caption and observations; source/preview pending |
+| [Figure 4.80: Single-supply photometer](fig-04-80-single-supply-photometer/EXAMPLE.md) | Sensor-to-readout composition and instrument annotations | Photodiode light/current arrows and separate meter/readout scales | Caption and observations; source/preview pending |
+| [Figure 4.87: Laboratory dc amplifier](fig-04-87-laboratory-dc-amplifier/EXAMPLE.md) | Complex project schematics; explicitly liked for this role | Main signal chain, auxiliary offset circuit, boxed controls, connectors, and meter | Caption and observations; source/preview pending |
 
 Figures 1.7 and 1.43 received positive feedback on their recreated appearance. The new recreations of Figures 1.1, 1.6, and 1.11 were compiled and visually checked by the assistant on 08-11-2026; user review is pending. All five use editable TikZ paths inside a CircuitikZ environment, not semantic native-component examples. Their implementation details are not all approved style rules.
 
@@ -89,7 +100,9 @@ Use transparent SVG by default in chat and on GitHub, with ink appropriate to th
 
 ## Open questions and next step
 
-- Review the three newly completed recreations and continue collecting supplied examples. Eleven further figures are recorded; their recreations await an explicit drawing request.
+Collection paused at the user's request on 08-11-2026. The following are options for resuming, not instructions to start another batch now.
+
+- Review the three newly completed recreations and continue collecting supplied examples. Twenty-two further figures are recorded; their recreations await an explicit drawing request.
 - Review the proposed shared patterns and establish useful drawing parameters from evidence.
 - Add coverage for larger practical circuits and quantitative plots.
 - Continue the separate output-stage trial's review and preservation discussion. Its initial feedback and refinements are in [the trial checkpoint](../../context/LOG.md#output-stage-trial); saving it as an example remains unapproved.

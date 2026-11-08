@@ -38,6 +38,6 @@ The agent should notice useful preservation opportunities so the user need not m
 
 ## Current limits and later work
 
-The first collection is The Art of Electronics. All five references have editable LaTeX, SVG previews, PNG downloads, captions, and browsing pages. The shared style remains provisional. A separate practical output-stage trial has been drawn and refined after initial feedback, but it has not been approved for the permanent collection; see [the current checkpoint](context/CURRENT.md).
+The first collection is The Art of Electronics. Five reference recreations have editable LaTeX, SVG previews, PNG downloads, captions, and browsing pages; the [style guide](examples/THE_ART_OF_ELECTRONICS/STYLE.md) tracks all collected references and their asset availability. The shared style remains provisional. A separate practical output-stage trial has been drawn and refined after initial feedback, but it has not been approved for the permanent collection; see [the current checkpoint](context/CURRENT.md).
 
 Personal customization and storage, plugin distribution, and generalization to other artifact domains remain to be designed. Difference-only storage for intermediate versions is also undecided. Start with complete files for selected useful revisions.
