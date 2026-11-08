@@ -4,7 +4,7 @@ Illustration style under development from selected examples in *The Art of Elect
 
 [Browse the visual gallery](README.md). This document provides detailed guidance and example selection for agents.
 
-**Collection status:** collecting. All five reference examples have LaTeX source, PNG previews, captions, and browsing pages. The shared drawing patterns below remain provisional. A first practical output-stage trial has been drawn and refined separately; it is not yet a saved collection example or evidence of a fully validated style. See [the current checkpoint](../../context/CURRENT.md).
+**Collection status:** collecting. All five reference examples have LaTeX source, light/dark SVG previews, PNG downloads, captions, and browsing pages. The shared drawing patterns below remain provisional. A first practical output-stage trial has been drawn and refined separately; it is not yet a saved collection example or evidence of a fully validated style. See [the current checkpoint](../../context/CURRENT.md).
 
 ## Purpose
 
@@ -62,19 +62,19 @@ Use concise annotations and clear leaders. A dashed trace needs an understood me
 
 | Example | Select when | Distinctive contribution | Available assets |
 | --- | --- | --- | --- |
-| [Figure 1.1: Parallel connection](fig-01-01-parallel-connection/EXAMPLE.md) | Explaining connectivity independently of components | Generic shapes sharing two terminals | LaTeX, PNG, caption, and feedback |
-| [Figure 1.6: Voltage divider](fig-01-06-voltage-divider/EXAMPLE.md) | Combining a circuit with voltage relationships and an equation | Voltage-span annotations beside an equation | LaTeX, PNG, caption, and feedback |
-| [Figure 1.7: Adjustable voltage divider](fig-01-07-adjustable-divider/EXAMPLE.md) | Adjustable elements, alternate implementations, or signals at terminals | Small input signals, control labels, and curved annotations | LaTeX, PNG, caption, and feedback |
-| [Figure 1.11: Thévenin equivalent circuit](fig-01-11-thevenin-equivalent/EXAMPLE.md) | Explaining equivalence or reducing a conceptual network | An irregular network beside its compact equivalent | LaTeX, PNG, caption, and feedback |
-| [Figure 1.43: Leading-edge detector](fig-01-43-leading-edge-detector/EXAMPLE.md) | Explaining signals at several points of a circuit | Matched A/B/C labels, stacked waveforms, and a time-constant annotation | LaTeX, PNG, caption, and feedback |
+| [Figure 1.1: Parallel connection](fig-01-01-parallel-connection/EXAMPLE.md) | Explaining connectivity independently of components | Generic shapes sharing two terminals | LaTeX, SVG, PNG, caption, and feedback |
+| [Figure 1.6: Voltage divider](fig-01-06-voltage-divider/EXAMPLE.md) | Combining a circuit with voltage relationships and an equation | Voltage-span annotations beside an equation | LaTeX, SVG, PNG, caption, and feedback |
+| [Figure 1.7: Adjustable voltage divider](fig-01-07-adjustable-divider/EXAMPLE.md) | Adjustable elements, alternate implementations, or signals at terminals | Small input signals, control labels, and curved annotations | LaTeX, SVG, PNG, caption, and feedback |
+| [Figure 1.11: Thévenin equivalent circuit](fig-01-11-thevenin-equivalent/EXAMPLE.md) | Explaining equivalence or reducing a conceptual network | An irregular network beside its compact equivalent | LaTeX, SVG, PNG, caption, and feedback |
+| [Figure 1.43: Leading-edge detector](fig-01-43-leading-edge-detector/EXAMPLE.md) | Explaining signals at several points of a circuit | Matched A/B/C labels, stacked waveforms, and a time-constant annotation | LaTeX, SVG, PNG, caption, and feedback |
 
 Figures 1.7 and 1.43 received positive feedback on their recreated appearance. The new recreations of Figures 1.1, 1.6, and 1.11 were compiled and visually checked by the assistant on 08-11-2026; user review is pending. All five use editable TikZ paths inside a CircuitikZ environment, not semantic native-component examples. Their implementation details are not all approved style rules.
 
 ## Review a new illustration
 
-Check technical correctness, typography, symbol proportions, spacing, line weights, and label clearance against selected references. Check that panel labels agree and that the PNG represents the saved LaTeX source. Preserve the new task's actual circuit and signals rather than copying example values or topology as defaults.
+Check technical correctness, typography, symbol proportions, spacing, line weights, and label clearance against selected references. Check that panel labels agree and that the SVG and PNG exports represent the saved LaTeX source. Preserve the new task's actual circuit and signals rather than copying example values or topology as defaults.
 
-Follow the repository's inline SVG presentation guidance when showing work in chat. The saved PNG is for stable browsing and visual inspection; the caption remains readable text in the example record.
+Use transparent SVG by default in chat and on GitHub, with ink appropriate to the active theme; retain the PNG for convenient downloads and visual inspection. Follow the [presentation procedure](../../scripts/PRESENTATION.md), including light/dark checks. The caption remains readable text in the example record.
 
 ## Open questions and next step
 

@@ -9,10 +9,14 @@ Use the same format for reference and generated examples. Omit sections that hav
 ├── README.md         # Human page when a visual example is ready
 ├── EXAMPLE.md        # Detailed record and agent guidance
 ├── drawing.tex       # Editable drawing
-├── preview.png       # Rendered from that source
+├── preview-light.svg # Transparent, dark ink for light presentation
+├── preview-dark.svg  # Same geometry, light ink for dark presentation
+├── preview.png       # Convenient download from the same source
 └── iterations/       # Only for selected, approved instructive versions
     └── <version>/
         ├── drawing.tex
+        ├── preview-light.svg
+        ├── preview-dark.svg
         └── preview.png
 ```
 
@@ -20,7 +24,7 @@ Pending references may have only `EXAMPLE.md`; mark them pending in the style gu
 
 ## README.md contents
 
-Keep the human page short: title, visible PNG, a useful sentence about the drawing, and links to the full image, editable LaTeX, detailed record, and gallery. Preserve the original caption and source with the picture; a long caption can use an expandable section. Link the collection gallery to this page rather than directly to the detailed agent record.
+Keep the human page short: title, visible theme-appropriate SVG, a useful sentence about the drawing, and links to the full image, editable LaTeX, detailed record, and gallery. Preserve the original caption and source with the picture; a long caption can use an expandable section. Link the collection gallery to this page rather than directly to the detailed agent record.
 
 ## EXAMPLE.md contents
 
@@ -28,7 +32,7 @@ Keep the human page short: title, visible PNG, a useful sentence about the drawi
 - **Source:** book/author/edition/figure/page for a reference, or the prompt and relevant inputs for generated work. A redraw is still a reference example.
 - **User feedback:** specific praise or criticism, or liked overall. Identify whether feedback is a quotation or a summary.
 - **Recreation and review:** say whether source/preview exist, what was visually reviewed, and what remains pending. Record the actual scope of approval.
-- **Preview:** embed `![Descriptive figure text](preview.png)` only when present. Link to the editable source alongside it.
+- **Preview:** embed the light/dark SVG pair only when present, following [the presentation procedure](../../../scripts/PRESENTATION.md). Link to both SVGs, the retained PNG download, and editable source alongside it.
 - **Caption and explanation:** keep the supplied original caption verbatim, with attribution, immediately with the picture. Normalize line wrapping and typographic ligatures without changing meaning. Preserve associated explanation when supplied; identify summaries or additions separately.
 - **What it demonstrates:** describe the concrete drawing and its distinctive contribution beyond shared style rules.
 - **Inferred lessons:** observations to consider, distinguished from explicit feedback and confirmed shared rules.

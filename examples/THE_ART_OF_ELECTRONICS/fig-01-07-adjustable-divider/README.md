@@ -2,11 +2,12 @@
 
 # Adjustable voltage divider
 
-<a href="preview.png"><img src="preview.png" alt="Two adjustable voltage divider arrangements with small input signal sketches and control annotations." width="735"></a>
+<a href="preview-light.svg#gh-light-mode-only"><img src="preview-light.svg" alt="Two adjustable voltage divider arrangements with small input signal sketches and control annotations." width="735"></a>
+<a href="preview-dark.svg#gh-dark-mode-only"><img src="preview-dark.svg" alt="Two adjustable voltage divider arrangements with small input signal sketches and control annotations." width="735"></a>
 
 Small waveform sketches describe the input locally; the two panels compare ways to control the output.
 
-[Open PNG](preview.png) · [LaTeX source](drawing.tex) · [Example notes](EXAMPLE.md)
+SVG: [light](preview-light.svg) / [dark](preview-dark.svg) · [PNG](preview.png) · [LaTeX source](drawing.tex) · [Example notes](EXAMPLE.md)
 
 <details>
 <summary>Original caption and source</summary>

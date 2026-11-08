@@ -7,7 +7,10 @@
 
 [Gallery page](README.md) · [Editable LaTeX source](drawing.tex)
 
-![Two adjustable voltage divider arrangements with small input signal sketches, volume labels, and resistor annotations.](preview.png)
+<a href="preview-light.svg#gh-light-mode-only"><img src="preview-light.svg" alt="Two adjustable voltage divider arrangements with small input signal sketches, volume labels, and resistor annotations." width="735"></a>
+<a href="preview-dark.svg#gh-dark-mode-only"><img src="preview-dark.svg" alt="Two adjustable voltage divider arrangements with small input signal sketches, volume labels, and resistor annotations." width="735"></a>
+
+SVG: [light](preview-light.svg) / [dark](preview-dark.svg) · [PNG download](preview.png)
 
 ## Original caption
 
@@ -34,3 +37,5 @@ The user specifically wanted small squiggly signal representations near inputs t
 Select for adjustable elements, small signal annotations, or paired circuit alternatives. The source uses editable TikZ paths inside a `circuitikz` environment, including traced symbol geometry. It is a visual reference implementation, not yet a component-based reusable circuit template.
 
 The font is TeX Gyre Heros, a portable approximation to the reference typography. Compile the standalone source with Tectonic or XeLaTeX with CircuitikZ and `tgheros` available. Keep temporary build products outside the example folder. The saved source and preview are preserved from the reviewed recreation.
+
+Transparent light/dark SVG previews are derived from the same compiled source. SVG is the default for chat and GitHub; the original PNG remains available as a download. This presentation update does not change the drawing or its review status.

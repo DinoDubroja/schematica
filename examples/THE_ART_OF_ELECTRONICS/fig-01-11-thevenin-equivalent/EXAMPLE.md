@@ -7,7 +7,10 @@
 
 [Gallery page](README.md) · [Editable LaTeX source](drawing.tex)
 
-![An irregular resistor and source network beside its compact two-terminal equivalent.](preview.png)
+<a href="preview-light.svg#gh-light-mode-only"><img src="preview-light.svg" alt="An irregular resistor and source network beside its compact two-terminal equivalent." width="776"></a>
+<a href="preview-dark.svg#gh-dark-mode-only"><img src="preview-dark.svg" alt="An irregular resistor and source network beside its compact two-terminal equivalent." width="776"></a>
+
+SVG: [light](preview-light.svg) / [dark](preview-dark.svg) · [PNG download](preview.png)
 
 ## Original caption
 
@@ -34,3 +37,5 @@ The user emphasized the value of circuits that illustrate a concept. The example
 Select for network equivalence, simplification, or abstract circuit topology. The angled layout is appropriate to this explanation, not a default for every schematic.
 
 The source uses editable TikZ paths inside CircuitikZ to preserve the reference topology and geometry. It is a visual recreation, not a semantic component template or an electrical simulation. Wires meet hollow terminal boundaries without filling their interiors. TeX Gyre Heros approximates the book's typography. Compile with Tectonic or XeLaTeX with CircuitikZ and `tgheros` available. The PNG is rendered from that source, including the original caption; keep temporary build products outside the example folder.
+
+Transparent light/dark SVG previews are derived from the same compiled source. SVG is the default for chat and GitHub; the original PNG remains available as a download. This presentation update does not change the drawing or its review status.

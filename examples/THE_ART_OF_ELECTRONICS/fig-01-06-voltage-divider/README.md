@@ -2,11 +2,12 @@
 
 # Voltage divider
 
-<a href="preview.png"><img src="preview.png" alt="A resistor divider with input and output voltage spans and the divider equation." width="780"></a>
+<a href="preview-light.svg#gh-light-mode-only"><img src="preview-light.svg" alt="A resistor divider with input and output voltage spans and the divider equation." width="780"></a>
+<a href="preview-dark.svg#gh-dark-mode-only"><img src="preview-dark.svg" alt="A resistor divider with input and output voltage spans and the divider equation." width="780"></a>
 
 Voltage spans and the nearby equation explain the circuit together, with very little annotation.
 
-[Open PNG](preview.png) · [LaTeX source](drawing.tex) · [Example notes](EXAMPLE.md)
+SVG: [light](preview-light.svg) / [dark](preview-dark.svg) · [PNG](preview.png) · [LaTeX source](drawing.tex) · [Example notes](EXAMPLE.md)
 
 <details>
 <summary>Original caption and source</summary>

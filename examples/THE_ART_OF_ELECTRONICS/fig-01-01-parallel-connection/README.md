@@ -2,11 +2,12 @@
 
 # Parallel connection
 
-<a href="preview.png"><img src="preview.png" alt="Two abstract shapes connected in parallel between terminals A and B." width="540"></a>
+<a href="preview-light.svg#gh-light-mode-only"><img src="preview-light.svg" alt="Two abstract shapes connected in parallel between terminals A and B." width="540"></a>
+<a href="preview-dark.svg#gh-dark-mode-only"><img src="preview-dark.svg" alt="Two abstract shapes connected in parallel between terminals A and B." width="540"></a>
 
 Two unspecified branches share the same terminals. The diagram explains connectivity without choosing particular components.
 
-[Open PNG](preview.png) · [LaTeX source](drawing.tex) · [Example notes](EXAMPLE.md)
+SVG: [light](preview-light.svg) / [dark](preview-dark.svg) · [PNG](preview.png) · [LaTeX source](drawing.tex) · [Example notes](EXAMPLE.md)
 
 <details>
 <summary>Original caption and source</summary>

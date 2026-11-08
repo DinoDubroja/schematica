@@ -25,13 +25,13 @@ At useful checkpoints, proactively propose which examples and lessons to preserv
 
 Classify a reusable lesson as general, style-specific, or local to an example. Suggest useful rules without waiting for a manual invocation, but do not turn every correction into a proposal or interrupt every render. Keep accepted guidance separate from pending suggestions. The user may continue correcting the same example while the workflow is being developed; retain those corrections and their actual approval scope.
 
-Keep captions with example records in the repository. Original screenshots are temporary working inputs. Save editable source and its rendered PNG as drawing assets, and keep origin, user feedback, and recreation status distinct. Use full source names in collection titles.
+Keep captions with example records in the repository. Original screenshots are temporary working inputs. Save editable source, transparent light/dark SVG previews, and its rendered PNG as drawing assets, and keep origin, user feedback, and recreation status distinct. Use full source names in collection titles.
 
-Maintain the human browsing path when saving examples: main `README.md` → collection `README.md` gallery → example `README.md` with a visible PNG, caption/source information, and source links. Keep prose brief and detailed guidance in `STYLE.md` / `EXAMPLE.md`. A metadata-only record is pending, not a finished visual example. Keep unestablished installation and invocation instructions out of the main README. Check both human navigation and agent selection routes after changes.
+Maintain the human browsing path when saving examples: main `README.md` → collection `README.md` gallery → example `README.md` with a visible SVG, caption/source information, and source links. Keep prose brief and detailed guidance in `STYLE.md` / `EXAMPLE.md`. A metadata-only record is pending, not a finished visual example. Keep unestablished installation and invocation instructions out of the main README. Check both human navigation and agent selection routes after changes.
 
-## Show schematics inline by default
+## Present figures as SVG by default
 
-During discussions, display schematics directly in chat, using SVG with a transparent background and theme-aware colors where supported. Explicit requests for another format or save location take precedence.
+Display schematics directly in chat as transparent SVG with theme-aware ink. Use transparent light/dark SVG variants in GitHub galleries and example pages, retaining PNGs as downloads. Follow the [presentation procedure](scripts/PRESENTATION.md) for exports, embedding, and checks in both themes. Do not silently substitute PNG in chat; disclose an unsupported client and provide the SVG, with an identified raster fallback only when needed. Explicit requests for another format or save location take precedence.
 
 ## Manage commits and pushes
 

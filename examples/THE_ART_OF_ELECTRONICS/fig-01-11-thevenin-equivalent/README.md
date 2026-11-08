@@ -2,11 +2,12 @@
 
 # Thévenin equivalent circuit
 
-<a href="preview.png"><img src="preview.png" alt="A resistor and source network beside its compact two-terminal equivalent." width="776"></a>
+<a href="preview-light.svg#gh-light-mode-only"><img src="preview-light.svg" alt="A resistor and source network beside its compact two-terminal equivalent." width="776"></a>
+<a href="preview-dark.svg#gh-dark-mode-only"><img src="preview-dark.svg" alt="A resistor and source network beside its compact two-terminal equivalent." width="776"></a>
 
 Angled branches expose the network topology, while a small equivalent circuit makes the central idea easy to compare.
 
-[Open PNG](preview.png) · [LaTeX source](drawing.tex) · [Example notes](EXAMPLE.md)
+SVG: [light](preview-light.svg) / [dark](preview-dark.svg) · [PNG](preview.png) · [LaTeX source](drawing.tex) · [Example notes](EXAMPLE.md)
 
 <details>
 <summary>Original caption and source</summary>

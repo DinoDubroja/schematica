@@ -7,7 +7,10 @@
 
 [Gallery page](README.md) · [Editable LaTeX source](drawing.tex)
 
-![Two abstract shapes connected in parallel between terminals A and B.](preview.png)
+<a href="preview-light.svg#gh-light-mode-only"><img src="preview-light.svg" alt="Two abstract shapes connected in parallel between terminals A and B." width="540"></a>
+<a href="preview-dark.svg#gh-dark-mode-only"><img src="preview-dark.svg" alt="Two abstract shapes connected in parallel between terminals A and B." width="540"></a>
+
+SVG: [light](preview-light.svg) / [dark](preview-dark.svg) · [PNG download](preview.png)
 
 ## Original caption
 
@@ -33,3 +36,5 @@ The user identified this as a useful example for more abstract diagrams. This is
 Select for abstract connectivity or topology explanations. Original screenshots remain working inputs rather than saved drawing outputs.
 
 The source uses editable TikZ paths inside CircuitikZ to preserve the reference geometry. It is a visual recreation, not a native-component template. TeX Gyre Heros approximates the book's typography. Compile the standalone source with Tectonic or XeLaTeX with CircuitikZ and `tgheros` available. The PNG is rendered from that source, including the original caption; keep temporary build products outside the example folder.
+
+Transparent light/dark SVG previews are derived from the same compiled source. SVG is the default for chat and GitHub; the original PNG remains available as a download. This presentation update does not change the drawing or its review status.

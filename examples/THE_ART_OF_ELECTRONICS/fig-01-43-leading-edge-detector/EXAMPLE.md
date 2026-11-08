@@ -7,7 +7,10 @@
 
 [Gallery page](README.md) · [Editable LaTeX source](drawing.tex)
 
-![A leading-edge detector circuit with points A, B, and C matched to three waveform panels and a time-constant annotation.](preview.png)
+<a href="preview-light.svg#gh-light-mode-only"><img src="preview-light.svg" alt="A leading-edge detector circuit with points A, B, and C matched to three waveform panels and a time-constant annotation." width="564"></a>
+<a href="preview-dark.svg#gh-dark-mode-only"><img src="preview-dark.svg" alt="A leading-edge detector circuit with points A, B, and C matched to three waveform panels and a time-constant annotation." width="564"></a>
+
+SVG: [light](preview-light.svg) / [dark](preview-dark.svg) · [PNG download](preview.png)
 
 ## Original caption
 
@@ -34,3 +37,5 @@ The user explicitly expanded Schematica's scope to include graphs and symbolic r
 Select for combined circuit-and-waveform illustrations. The specific values, signal shapes, and dashed trace belong to this example; do not carry them into a new circuit without checking its behavior. The drawing preserves the reference geometry and is not a numerical simulation.
 
 The source uses editable TikZ paths inside a `circuitikz` environment, including traced symbol geometry. It is a visual reference implementation, not yet a semantic component-based template. Typography uses TeX Gyre Heros as a close substitute. Compile with Tectonic or XeLaTeX with CircuitikZ and `tgheros` available; keep build products outside the example folder. The source and preview are preserved from the reviewed recreation.
+
+Transparent light/dark SVG previews are derived from the same compiled source. SVG is the default for chat and GitHub; the original PNG remains available as a download. This presentation update does not change the drawing or its review status.
