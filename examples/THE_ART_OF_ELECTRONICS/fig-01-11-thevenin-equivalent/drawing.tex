@@ -1,0 +1,395 @@
+% One-to-one reference recreation of The Art of Electronics, 3rd edition.
+% Figure 1.11: Thevenin equivalent circuit.
+% Editable reference recreation; shared style rules remain under review.
+% The original layout, connection points, annotation placement and waveform
+% Bezier geometry are transcribed into editable TikZ paths. No embedded image.
+% Symbols are drawn as paths to preserve the source geometry, not native components.
+% Coordinates are in PDF points (1 bp = 1/72 inch), increasing downward.
+% Typography uses portable TeX Gyre Heros, fitted to the reference text widths;
+% it is a close substitute for the book's Helvetica / Helvetica Neue.
+% Compile with Tectonic or XeLaTeX. Change FigureScale to resize everything.
+\documentclass[border=0bp]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{tgheros}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{circuitikz}
+\usepackage{textcomp}
+\newcommand{\FigureScale}{1}
+\definecolor{AoEInk}{rgb}{0.137,0.122,0.125}
+% x, y, point size, font style, reference text width, editable text.
+\newcommand{\FigureLabel}[6]{%
+  \node[anchor=base west,inner sep=0,outer sep=0] at (#1,#2)
+    {\resizebox{#5bp}{\height}{\fontsize{#3bp}{#3bp}\selectfont#4#6}};
+}
+\begin{document}
+\begin{circuitikz}[x=1bp,y=-1bp,scale=\FigureScale,transform shape,
+  draw=AoEInk,text=AoEInk,line cap=butt,line join=miter]
+\path[use as bounding box] (0,0) rectangle (194,140);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (76.193,29.912)
+  -- (76.193,38.262)
+  -- (78.118,39.417)
+  -- (73.993,41.768)
+  -- (78.118,44.137)
+  -- (73.993,46.487)
+  -- (78.118,48.856)
+  -- (73.993,51.205)
+  -- (76.193,52.438)
+  -- (76.193,67.649);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (175.066,93.34)
+  -- (175.066,101.124);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (175.066,58.596)
+  -- (175.066,65.112)
+  -- (176.991,66.266)
+  -- (172.866,68.6169)
+  -- (176.991,70.987)
+  -- (172.866,73.336)
+  -- (176.991,75.705)
+  -- (172.866,78.055)
+  -- (175.067,79.287)
+  -- (175.067,84.563);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (134.29,48.243)
+  -- (112.209,56.2509)
+  -- (111.754,58.45)
+  -- (108.173,55.3329)
+  -- (107.3,60.0089)
+  -- (103.72,56.8929)
+  -- (102.847,61.5689)
+  -- (99.266,58.451)
+  -- (98.83,60.9359)
+  -- (77.475,68.381);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (37.054,59.4049)
+  -- (32.12,71.3529)
+  -- (33.429,73.1759)
+  -- (28.71,73.7009)
+  -- (31.559,77.5099)
+  -- (26.841,78.0329)
+  -- (29.689,81.8419)
+  -- (24.971,82.3659)
+  -- (26.503,84.3689)
+  -- (18.449,103.564);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (135.07,77.9479)
+  -- (132.113,84.2029)
+  -- (133.33,86.0889)
+  -- (128.59,86.3769)
+  -- (131.246,90.3239)
+  -- (126.505,90.6099)
+  -- (129.162,94.5569)
+  -- (124.422,94.8439)
+  -- (125.853,96.9219)
+  -- (122.098,104.7499);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (89.878,18.278)
+  -- (66.613,36.1389)
+  -- (66.833,38.373)
+  -- (62.486,36.463)
+  -- (63.044,41.187)
+  -- (58.698,39.275)
+  -- (59.256,43.9999)
+  -- (54.91,42.089)
+  -- (55.233,44.59)
+  -- (38.646,57.1689);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (107.131,5.0309)
+  -- (96.161,13.5049);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (112.9,104.814)
+  -- (121.944,104.814)
+  -- (124.12,100.299);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (77.536,104.814)
+  -- (105.62,104.814);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (5.44,104.809)
+  -- (27.511,104.8099)
+  -- (28.67,102.8909)
+  -- (31.02,107.0159)
+  -- (33.389,102.8909)
+  -- (35.739,107.0159)
+  -- (38.108,102.8909)
+  -- (40.458,107.0159)
+  -- (41.693,104.814)
+  -- (69.741,104.814);
+\path[draw=none,fill=AoEInk]
+  (20.03,105.016)
+  .. controls (20.03,105.924) and (19.294,106.66) .. (18.385,106.66)
+  .. controls (17.479,106.66) and (16.745,105.924) .. (16.745,105.016)
+  .. controls (16.745,104.107) and (17.479,103.369) .. (18.385,103.369)
+  .. controls (19.294,103.369) and (20.03,104.107) .. (20.03,105.016);
+\path[draw=none,fill=AoEInk]
+  (52.915,105.016)
+  .. controls (52.915,105.924) and (52.179,106.66) .. (51.27,106.66)
+  .. controls (50.364,106.66) and (49.63,105.924) .. (49.63,105.016)
+  .. controls (49.63,104.107) and (50.364,103.369) .. (51.27,103.369)
+  .. controls (52.179,103.369) and (52.915,104.107) .. (52.915,105.016);
+\path[draw=none,fill=AoEInk]
+  (91.278,105.016)
+  .. controls (91.278,105.924) and (90.542,106.66) .. (89.633,106.66)
+  .. controls (88.727,106.66) and (87.993,105.924) .. (87.993,105.016)
+  .. controls (87.993,104.107) and (88.727,103.369) .. (89.633,103.369)
+  .. controls (90.542,103.369) and (91.278,104.107) .. (91.278,105.016);
+\path[draw=none,fill=AoEInk]
+  (137.175,76.336)
+  .. controls (137.175,77.244) and (136.44,77.981) .. (135.531,77.981)
+  .. controls (134.624,77.981) and (133.891,77.244) .. (133.891,76.336)
+  .. controls (133.891,75.428) and (134.624,74.689) .. (135.531,74.689)
+  .. controls (136.44,74.689) and (137.175,75.428) .. (137.175,76.336);
+\path[draw=none,fill=AoEInk]
+  (171.114,23.071)
+  .. controls (171.114,23.979) and (170.378,24.716) .. (169.469,24.716)
+  .. controls (168.563,24.716) and (167.83,23.979) .. (167.83,23.071)
+  .. controls (167.83,22.163) and (168.563,21.424) .. (169.469,21.424)
+  .. controls (170.378,21.424) and (171.114,22.163) .. (171.114,23.071);
+\path[draw=none,fill=AoEInk]
+  (137.08,48.024)
+  .. controls (137.08,48.932) and (136.344,49.669) .. (135.435,49.669)
+  .. controls (134.529,49.669) and (133.795,48.932) .. (133.795,48.024)
+  .. controls (133.795,47.116) and (134.529,46.378) .. (135.435,46.378)
+  .. controls (136.344,46.378) and (137.08,47.116) .. (137.08,48.024);
+\path[draw=none,fill=AoEInk]
+  (109.804,3.945)
+  .. controls (109.804,4.853) and (109.069,5.59) .. (108.16,5.59)
+  .. controls (107.253,5.59) and (106.52,4.853) .. (106.52,3.945)
+  .. controls (106.52,3.037) and (107.253,2.299) .. (108.16,2.299)
+  .. controls (109.069,2.299) and (109.804,3.037) .. (109.804,3.945);
+\path[draw=none,fill=AoEInk]
+  (77.432,28.624)
+  .. controls (77.432,29.532) and (76.696,30.269) .. (75.787,30.269)
+  .. controls (74.881,30.269) and (74.147,29.532) .. (74.147,28.624)
+  .. controls (74.147,27.716) and (74.881,26.978) .. (75.787,26.978)
+  .. controls (76.696,26.978) and (77.432,27.716) .. (77.432,28.624);
+\path[draw=none,fill=AoEInk]
+  (39.277,58.166)
+  .. controls (39.277,59.074) and (38.541,59.811) .. (37.632,59.811)
+  .. controls (36.726,59.811) and (35.992,59.074) .. (35.992,58.166)
+  .. controls (35.992,57.258) and (36.726,56.519) .. (37.632,56.519)
+  .. controls (38.541,56.519) and (39.277,57.258) .. (39.277,58.166);
+\path[draw=none,fill=AoEInk]
+  (77.835,69.114)
+  .. controls (77.835,70.022) and (77.099,70.759) .. (76.19,70.759)
+  .. controls (75.284,70.759) and (74.55,70.022) .. (74.55,69.114)
+  .. controls (74.55,68.206) and (75.284,67.468) .. (76.19,67.468)
+  .. controls (77.099,67.468) and (77.835,68.206) .. (77.835,69.114);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (5.448,104.984)
+  .. controls (5.448,106.052) and (4.583,106.917) .. (3.517,106.917)
+  .. controls (2.448,106.917) and (1.581,106.052) .. (1.581,104.984)
+  .. controls (1.581,103.915) and (2.448,103.05) .. (3.517,103.05)
+  .. controls (4.583,103.05) and (5.448,103.915) .. (5.448,104.984);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (69.881,102.844)
+  -- (69.881,107.344);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (72.506,100.469)
+  -- (72.506,109.531);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (74.944,102.719)
+  -- (74.944,107.219);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (77.319,100.469)
+  -- (77.319,109.594);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (113.198,102.844)
+  -- (113.198,107.344);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (110.573,100.469)
+  -- (110.573,109.531);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (108.135,102.719)
+  -- (108.135,107.219);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (105.76,100.469)
+  -- (105.76,109.594);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (133.216,66.251)
+  -- (137.716,66.251);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (130.841,63.626)
+  -- (139.904,63.626);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (133.091,61.188)
+  -- (137.591,61.188);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (130.841,58.813)
+  -- (139.966,58.813);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (172.905,92.872)
+  -- (177.405,92.872);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (170.53,90.247)
+  -- (179.592,90.247);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (172.78,87.809)
+  -- (177.28,87.809);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (170.53,85.434)
+  -- (179.655,85.434);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (59.368,89.55)
+  -- (63.039,92.1541);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (58.949,86.035)
+  -- (66.342,91.277);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (62.195,85.349)
+  -- (65.866,87.951);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (61.733,82.11)
+  -- (69.176,87.389);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (52.358,60.091)
+  -- (51.097,64.411);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (55.542,58.546)
+  -- (53.004,67.246);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (57.252,61.39)
+  -- (55.993,65.71);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (60.162,59.894)
+  -- (57.605,68.654);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (86.983,14.308)
+  -- (92.411,21.52);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (90.317,14.773)
+  -- (93.031,18.185);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (90.861,11.36)
+  -- (96.289,18.571);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (94.35,11.438)
+  -- (97.164,15.16);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (89.725,104.872)
+  -- (89.725,76.233)
+  -- (99.712,76.233)
+  -- (103.724,76.234)
+  -- (104.883,74.314)
+  -- (107.234,78.439)
+  -- (109.602,74.314)
+  -- (111.953,78.439)
+  -- (114.322,74.314)
+  -- (116.671,78.439)
+  -- (117.906,76.238)
+  -- (135.455,76.238);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (135.443,46.779)
+  -- (127.251,33.678)
+  -- (124.732,33.822)
+  -- (126.944,29.622)
+  -- (122.192,29.845)
+  -- (124.404,25.645)
+  -- (119.653,25.868)
+  -- (121.865,21.668)
+  -- (119.622,21.723)
+  -- (109.068,5.029);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (168.145,22.891)
+  -- (145.223,16.282)
+  -- (143.358,17.982)
+  -- (142.428,13.328)
+  -- (138.878,16.495)
+  -- (137.95,11.841)
+  -- (134.402,15.008)
+  -- (133.472,10.353)
+  -- (131.765,11.808)
+  -- (109.644,4.297);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (168.597,24.046)
+  -- (158.689,31.354)
+  -- (159.017,33.856)
+  -- (154.668,31.959)
+  -- (155.238,36.681)
+  -- (150.888,34.784)
+  -- (151.456,39.504)
+  -- (147.106,37.607)
+  -- (147.326,39.839)
+  -- (136.712,47.658);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (65.1,84.679)
+  -- (75.042,70.498);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (51.759,103.713)
+  -- (60.768,90.86);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (58.683,64.169)
+  -- (74.457,68.579);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (39.241,58.732)
+  -- (51.509,62.163);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (135.415,58.708)
+  -- (135.415,49.737);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (135.415,74.89)
+  -- (135.415,66.403);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (170.943,23.155)
+  -- (180.953,23.155);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (176.985,103.058)
+  .. controls (176.985,104.126) and (176.121,104.991) .. (175.054,104.991)
+  .. controls (173.985,104.991) and (173.118,104.126) .. (173.118,103.058)
+  .. controls (173.118,101.989) and (173.985,101.124) .. (175.054,101.124)
+  .. controls (176.121,101.124) and (176.985,101.989) .. (176.985,103.058);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (176.985,56.663)
+  .. controls (176.985,57.73) and (176.121,58.596) .. (175.054,58.596)
+  .. controls (173.985,58.596) and (173.118,57.73) .. (173.118,56.663)
+  .. controls (173.118,55.594) and (173.985,54.728) .. (175.054,54.728)
+  .. controls (176.121,54.728) and (176.985,55.594) .. (176.985,56.663);
+\path[draw=AoEInk,line width=0.5bp,fill=none]
+  (184.82,23.103)
+  .. controls (184.82,24.17) and (183.956,25.036) .. (182.889,25.036)
+  .. controls (181.82,25.036) and (180.953,24.17) .. (180.953,23.103)
+  .. controls (180.953,22.034) and (181.82,21.168) .. (182.889,21.168)
+  .. controls (183.956,21.168) and (184.82,22.034) .. (184.82,23.103);
+
+% Labels and original caption. Each text string remains editable.
+\FigureLabel{50.468}{82.945}{7}{\itshape }{4.277}{V}
+\FigureLabel{54.672}{84.6949}{5.25}{}{2.919}{1}
+\FigureLabel{53.358}{54.923}{7}{\itshape }{4.277}{V}
+\FigureLabel{57.635}{56.673}{5.25}{}{2.919}{2}
+\FigureLabel{81.38}{8.367}{7}{\itshape }{4.277}{V}
+\FigureLabel{85.657}{10.117}{5.25}{}{2.919}{3}
+\FigureLabel{70.69}{115.925}{7}{\itshape }{4.277}{V}
+\FigureLabel{74.686}{117.675}{5.25}{}{2.919}{4}
+\FigureLabel{106.69}{115.924}{7}{\itshape }{4.277}{V}
+\FigureLabel{110.967}{117.674}{5.25}{}{2.919}{5}
+\FigureLabel{142.602}{64.635}{7}{\itshape }{4.277}{V}
+\FigureLabel{146.824}{66.385}{5.25}{}{2.919}{6}
+\FigureLabel{161.146}{81.257}{7}{}{4.2}{=}
+\FigureLabel{30.3573}{115.9252}{7}{\itshape }{4.795}{R}
+\FigureLabel{35.191}{117.675}{5.25}{}{2.919}{1}
+\FigureLabel{179.767}{71.2569}{7}{\itshape }{4.795}{R}
+\FigureLabel{184.864}{73.007}{5.25}{}{6.0863}{Th}
+\FigureLabel{182.082}{89.59}{7}{\itshape }{4.277}{V}
+\FigureLabel{186.648}{91.34}{5.25}{}{6.0863}{Th}
+\FigureLabel{16.4013}{75.879}{7}{\itshape }{4.795}{R}
+\FigureLabel{21.339}{77.629}{5.25}{}{2.919}{2}
+\FigureLabel{81.024}{48.922}{7}{\itshape }{4.795}{R}
+\FigureLabel{85.975}{50.672}{5.25}{}{2.919}{3}
+\FigureLabel{49.223}{36.322}{7}{\itshape }{4.795}{R}
+\FigureLabel{54.018}{38.072}{5.25}{}{2.919}{4}
+\FigureLabel{97.091}{51.967}{7}{\itshape }{4.795}{R}
+\FigureLabel{102.023}{53.717}{5.25}{}{2.919}{5}
+\FigureLabel{105.979}{70.9869}{7}{\itshape }{4.795}{R}
+\FigureLabel{110.925}{72.737}{5.25}{}{2.919}{6}
+\FigureLabel{132.625}{96.5659}{7}{\itshape }{4.795}{R}
+\FigureLabel{137.607}{98.3159}{5.25}{}{2.919}{7}
+\FigureLabel{126.002}{24.7}{7}{\itshape }{4.795}{R}
+\FigureLabel{130.942}{26.45}{5.25}{}{2.919}{8}
+\FigureLabel{136.689}{8.076}{7}{\itshape }{4.795}{R}
+\FigureLabel{141.644}{9.826}{5.25}{}{2.919}{9}
+\FigureLabel{154.022}{44.922}{7}{\itshape }{4.795}{R}
+\FigureLabel{158.855}{46.672}{5.25}{}{5.7041}{10}
+\FigureLabel{17.135}{134.716}{7.9701}{\bfseries }{44.2803}{Figure\ 1.11.}
+\FigureLabel{65.4203}{134.716}{7.9701}{}{112.121}{The\ Th\'evenin\ equivalent\ circuit.}
+\end{circuitikz}
+\end{document}

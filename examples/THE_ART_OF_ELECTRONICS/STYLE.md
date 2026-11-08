@@ -2,7 +2,9 @@
 
 Illustration style under development from selected examples in *The Art of Electronics*, third edition, Paul Horowitz and Winfield Hill (2015).
 
-**Collection status:** collecting. Five reference examples are documented; two have LaTeX source and PNG previews. The shared drawing patterns below are provisional. This is not a complete description of the book or a style validated on new practical circuits.
+[Browse the visual gallery](README.md). This document provides detailed guidance and example selection for agents.
+
+**Collection status:** collecting. All five reference examples have LaTeX source, PNG previews, captions, and browsing pages. The shared drawing patterns below remain provisional. A first practical output-stage trial has been drawn and refined separately; it is not yet a saved collection example or evidence of a fully validated style. See [the current checkpoint](../../context/CURRENT.md).
 
 ## Purpose
 
@@ -14,7 +16,7 @@ Include practical schematics, conceptual circuits, abstract diagrams, waveforms,
 
 Read the shared guidance, then select relevant examples from the guide below. View available previews and read their captions and feedback; inspect LaTeX when useful for construction. Select by the drawing problem, including annotations and composition, not only by circuit category.
 
-Three records currently have no visual asset in the repository. Their descriptions help selection, but are not a substitute for inspecting the original supplied reference or book figure when visual detail matters. Do not claim to have seen an image based only on its record.
+All five previews can be inspected from this checkout without the source book. Read the selected record's recreation and review status; availability is not the same as user approval of the recreation. Do not claim to have seen an image based only on its record.
 
 ## Confirmed preferences
 
@@ -56,13 +58,13 @@ Use concise annotations and clear leaders. A dashed trace needs an understood me
 
 | Example | Select when | Distinctive contribution | Available assets |
 | --- | --- | --- | --- |
-| [Figure 1.1: Parallel connection](fig-01-01-parallel-connection/EXAMPLE.md) | Explaining connectivity independently of components | Generic shapes sharing two terminals | Caption and feedback; recreation pending |
-| [Figure 1.6: Voltage divider](fig-01-06-voltage-divider/EXAMPLE.md) | Combining a circuit with voltage relationships and an equation | Voltage-span annotations beside an equation | Caption and feedback; recreation pending |
+| [Figure 1.1: Parallel connection](fig-01-01-parallel-connection/EXAMPLE.md) | Explaining connectivity independently of components | Generic shapes sharing two terminals | LaTeX, PNG, caption, and feedback |
+| [Figure 1.6: Voltage divider](fig-01-06-voltage-divider/EXAMPLE.md) | Combining a circuit with voltage relationships and an equation | Voltage-span annotations beside an equation | LaTeX, PNG, caption, and feedback |
 | [Figure 1.7: Adjustable voltage divider](fig-01-07-adjustable-divider/EXAMPLE.md) | Adjustable elements, alternate implementations, or signals at terminals | Small input signals, control labels, and curved annotations | LaTeX, PNG, caption, and feedback |
-| [Figure 1.11: Thevenin equivalent circuit](fig-01-11-thevenin-equivalent/EXAMPLE.md) | Explaining equivalence or reducing a conceptual network | An irregular network beside its compact equivalent | Caption and feedback; recreation pending |
+| [Figure 1.11: Thévenin equivalent circuit](fig-01-11-thevenin-equivalent/EXAMPLE.md) | Explaining equivalence or reducing a conceptual network | An irregular network beside its compact equivalent | LaTeX, PNG, caption, and feedback |
 | [Figure 1.43: Leading-edge detector](fig-01-43-leading-edge-detector/EXAMPLE.md) | Explaining signals at several points of a circuit | Matched A/B/C labels, stacked waveforms, and a time-constant annotation | LaTeX, PNG, caption, and feedback |
 
-The two recreations received positive feedback on appearance. They are editable TikZ paths inside a CircuitikZ environment, not yet semantic native-component examples. Their implementation details are not all approved style rules.
+Figures 1.7 and 1.43 received positive feedback on their recreated appearance. The new recreations of Figures 1.1, 1.6, and 1.11 were compiled and visually checked by the assistant on 08-11-2026; user review is pending. All five use editable TikZ paths inside a CircuitikZ environment, not semantic native-component examples. Their implementation details are not all approved style rules.
 
 ## Review a new illustration
 
@@ -72,9 +74,9 @@ Follow the repository's inline SVG presentation guidance when showing work in ch
 
 ## Open questions and next step
 
-- Continue collecting supplied examples, or choose one of the three pending figures for an authorized recreation.
+- Review the three newly completed recreations and continue collecting supplied examples.
 - Review the proposed shared patterns and establish useful drawing parameters from evidence.
 - Add coverage for larger practical circuits and quantitative plots.
-- Then test the style on a new practical circuit and observe whether the agent offers to preserve a useful result after feedback.
+- Continue the separate output-stage trial's review and preservation discussion. Its initial feedback and refinements are in [the trial checkpoint](../../context/LOG.md#output-stage-trial); saving it as an example remains unapproved.
 
 Collection can continue before consolidation is complete. Use the shared [workflow](../../skills/schematica-examples/SKILL.md) to resume; this file records the current state, not approval to perform every suggested next step.

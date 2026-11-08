@@ -5,7 +5,7 @@
 - **User feedback:** liked overall; the small input signal sketches were specifically praised as useful schematic annotations.
 - **Recreation:** source and rendered preview available. The user gave positive feedback on the recreation's appearance. This does not approve all implementation details as reusable style rules.
 
-[Editable LaTeX source](drawing.tex)
+[Gallery page](README.md) · [Editable LaTeX source](drawing.tex)
 
 ![Two adjustable voltage divider arrangements with small input signal sketches, volume labels, and resistor annotations.](preview.png)
 

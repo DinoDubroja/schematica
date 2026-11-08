@@ -6,14 +6,21 @@ Use the same format for reference and generated examples. Omit sections that hav
 
 ```text
 <example>/
-├── EXAMPLE.md
-├── drawing.tex       # When a drawing exists
+├── README.md         # Human page when a visual example is ready
+├── EXAMPLE.md        # Detailed record and agent guidance
+├── drawing.tex       # Editable drawing
 ├── preview.png       # Rendered from that source
 └── iterations/       # Only for selected, approved instructive versions
     └── <version>/
         ├── drawing.tex
         └── preview.png
 ```
+
+Pending references may have only `EXAMPLE.md`; mark them pending in the style guide rather than calling them completed gallery examples.
+
+## README.md contents
+
+Keep the human page short: title, visible PNG, a useful sentence about the drawing, and links to the full image, editable LaTeX, detailed record, and gallery. Preserve the original caption and source with the picture; a long caption can use an expandable section. Link the collection gallery to this page rather than directly to the detailed agent record.
 
 ## EXAMPLE.md contents
 
@@ -31,4 +38,4 @@ Generated examples additionally need the style/reference versions used, useful f
 
 ## Collection-level state
 
-Keep continuation state in `STYLE.md`: current collection/review status, example availability, open questions, and next useful action. The top-level index needs only enough information to choose a collection. Neither file is a complete transcript or a record of blanket authorization.
+Keep continuation state in `STYLE.md`: current collection/review status, example availability, open questions, and next useful action. The top-level index needs only enough information to choose a collection. Maintain a separate `README.md` gallery for people, with previews linking to the example pages. These files are not complete transcripts or records of blanket authorization.

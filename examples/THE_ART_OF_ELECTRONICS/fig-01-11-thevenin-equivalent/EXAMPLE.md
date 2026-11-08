@@ -1,9 +1,13 @@
-# Thevenin equivalent circuit
+# Thévenin equivalent circuit
 
-- **Origin:** reference.
+- **Origin:** reference; recreated in LaTeX.
 - **Source:** Paul Horowitz and Winfield Hill, *The Art of Electronics*, third edition (2015), Figure 1.11, printed page 9 (PDF page 42).
 - **User feedback:** specifically liked as a circuit illustrating a concept rather than a practical circuit.
-- **Recreation:** pending. This record has no LaTeX source or PNG preview yet.
+- **Recreation:** editable source and PNG completed on 08-11-2026 under the user's explicit request to finish the three missing examples. Compiled and visually checked against the book by the assistant; user review of this recreation is pending. The original reference feedback remains distinct from review of the recreation.
+
+[Gallery page](README.md) · [Editable LaTeX source](drawing.tex)
+
+![An irregular resistor and source network beside its compact two-terminal equivalent.](preview.png)
 
 ## Original caption
 
@@ -27,4 +31,6 @@ The user emphasized the value of circuits that illustrate a concept. The example
 
 ## Use and limits
 
-Select for network equivalence, simplification, or abstract circuit topology. The angled layout is appropriate to this explanation, not a default for every schematic. Inspect the supplied reference or book figure for visual details until a recreation is available.
+Select for network equivalence, simplification, or abstract circuit topology. The angled layout is appropriate to this explanation, not a default for every schematic.
+
+The source uses editable TikZ paths inside CircuitikZ to preserve the reference topology and geometry. It is a visual recreation, not a semantic component template or an electrical simulation. Wires meet hollow terminal boundaries without filling their interiors. TeX Gyre Heros approximates the book's typography. Compile with Tectonic or XeLaTeX with CircuitikZ and `tgheros` available. The PNG is rendered from that source, including the original caption; keep temporary build products outside the example folder.

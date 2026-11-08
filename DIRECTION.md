@@ -20,7 +20,9 @@ During discussions, present schematics inline by default, blending into the chat
 
 Each style has a collection under `examples/`. `INDEX.md` routes agents to relevant `STYLE.md` documents; each style document explains shared patterns and helps select particular examples. Agents inspect relevant rendered examples and their context rather than reading the entire library on every task.
 
-Each example has an `EXAMPLE.md` record with its caption, source, feedback, distinctive lessons, and review status. Developed examples also have editable LaTeX source and a PNG preview. Original screenshots are working inputs, not repository deliverables. Captions belong with examples in the repository.
+Each collection also has a short `README.md` visual gallery for people. The main README links to that gallery, and each developed example has its own `README.md` with the picture, a brief explanation, caption/source information, and links to its files. Detailed agent guidance stays in `STYLE.md` and `EXAMPLE.md`. The main README presents available work; public installation or invocation instructions belong there only once the user-facing workflow is established.
+
+Each example has an `EXAMPLE.md` record with its caption, source, feedback, distinctive lessons, and review status. A developed visual example includes editable LaTeX source and a PNG rendered from it. A caption/feedback-only record may preserve an incoming reference while recreation awaits authorization, but must be identified as pending rather than presented as a completed gallery example. Original screenshots are working inputs, not repository deliverables. Captions belong with examples in the repository.
 
 Reference examples and generated examples use the same record format. Origin is distinct from evaluation: either origin may have useful, deficient, or still-unreviewed aspects. Recreating a book figure does not change its reference origin.
 
@@ -34,6 +36,6 @@ The agent should notice useful preservation opportunities so the user need not m
 
 ## Current limits and later work
 
-The first collection is The Art of Electronics. Its five reference records include two existing visual recreations; the shared style is provisional and has not yet been validated on a new practical circuit.
+The first collection is The Art of Electronics. All five references have editable LaTeX, PNG previews, captions, and browsing pages. The shared style remains provisional. A separate practical output-stage trial has been drawn and refined after initial feedback, but it has not been approved for the permanent collection; see [the current checkpoint](context/CURRENT.md).
 
 Personal customization and storage, plugin distribution, and generalization to other artifact domains remain to be designed. Difference-only storage for intermediate versions is also undecided. Start with complete files for selected useful revisions.

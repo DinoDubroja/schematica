@@ -24,6 +24,8 @@ At useful checkpoints, proactively propose which examples and lessons to preserv
 
 Keep captions with example records in the repository. Original screenshots are temporary working inputs. Save editable source and its rendered PNG as drawing assets, and keep origin, user feedback, and recreation status distinct. Use full source names in collection titles.
 
+Maintain the human browsing path when saving examples: main `README.md` → collection `README.md` gallery → example `README.md` with a visible PNG, caption/source information, and source links. Keep prose brief and detailed guidance in `STYLE.md` / `EXAMPLE.md`. A metadata-only record is pending, not a finished visual example. Keep unestablished installation and invocation instructions out of the main README. Check both human navigation and agent selection routes after changes.
+
 ## Show schematics inline by default
 
 During discussions, display schematics directly in chat, using SVG with a transparent background and theme-aware colors where supported. Explicit requests for another format or save location take precedence.

@@ -5,7 +5,7 @@
 - **User feedback:** liked as an integrated circuit-and-signal illustration. The user gave positive feedback on the recreation's appearance.
 - **Recreation:** source and rendered preview available. Visual approval does not approve every implementation choice as a shared rule.
 
-[Editable LaTeX source](drawing.tex)
+[Gallery page](README.md) · [Editable LaTeX source](drawing.tex)
 
 ![A leading-edge detector circuit with points A, B, and C matched to three waveform panels and a time-constant annotation.](preview.png)
 

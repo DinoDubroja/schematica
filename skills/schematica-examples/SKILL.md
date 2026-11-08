@@ -26,12 +26,12 @@ Discussion, proposed wording, praise, silence, and a collection's saved status d
 ## Start or add to a collection
 
 1. Reuse a matching collection if one exists. Otherwise use a readable full name for `examples/<COLLECTION>/`, such as `THE_ART_OF_ELECTRONICS`. Create only the needed files.
-2. Create or update `STYLE.md` with purpose, source, collection status, confirmed preferences, provisional patterns, an example guide, unresolved questions, and the next useful step. Add its link and selection cues to `examples/INDEX.md`.
+2. Create or update `STYLE.md` with purpose, source, collection status, confirmed preferences, provisional patterns, an example guide, unresolved questions, and the next useful step. Add its link and selection cues to `examples/INDEX.md`. Maintain a separate collection `README.md` for human browsing: a short introduction and clickable previews with titles and one-line descriptions. Link the main README to this gallery, keeping detailed guidance in `STYLE.md`.
 3. Give each example a stable descriptive folder name. For a numbered source figure, use a name such as `fig-01-07-adjustable-divider`; for new generated work, use the subject rather than a book figure number. Check for duplicates before adding.
 4. Follow [the example record format](references/example-record.md). Save `EXAMPLE.md` with the original supplied caption, source reference, a description, user feedback, inferred lessons, and accurate asset/review status. Preserve important associated explanations with clear attribution.
 5. Screenshots and original PDFs are working references. Do not commit them as finished drawings or establish a separate permanent screenshot archive by default. Captions are repository content, alongside the example. Source information should identify the work and figure without depending on a private machine path.
-6. When a recreation is authorized and ready, keep `drawing.tex` and `preview.png` together. Compile and inspect the rendered figure, preserve technical meaning, and verify that the preview represents the saved source. Do not claim a visual recreation is a reusable semantic CircuitikZ implementation unless it actually is.
-7. If no recreation exists, save the caption and feedback record with recreation marked pending. Do not fabricate a preview, broken asset link, or visual approval. Tell the user which material remains unavailable for visual use.
+6. When a recreation is authorized and ready, keep `drawing.tex` and `preview.png` together. Compile and inspect the rendered figure, preserve technical meaning, and verify that the preview represents the saved source. Add an example `README.md` showing the PNG immediately, a brief useful description, original caption/source information, and links to the PNG, LaTeX, detailed record, and collection gallery. Long captions may be expandable but remain in the repository. Do not claim a visual recreation is a reusable semantic CircuitikZ implementation unless it actually is.
+7. If no recreation exists, save the caption and feedback record with recreation marked pending in the agent index/guide. Do not present it as a completed gallery example, fabricate a preview, or leave a broken asset link. Tell the user which material remains unavailable for visual use; follow the actual authorization for completing it.
 8. Update the style's example guide and current next steps. Report what was captured briefly, including what remains pending.
 
 When examples are submitted to this workflow without additional comments, record that the user likes the example overall. Specific praise identifies a feature; it does not approve every detail as a general rule. Preserve explicit comments separately from inferred observations.
@@ -68,7 +68,7 @@ Preserve relevant prompt/feedback context rather than copying entire private cha
 
 ## Finish the authorized save
 
-- Read the saved records back. Check captions, attribution, links, asset availability, review status, and the index-to-style-to-example reading path.
+- Read the saved records back. Check captions, attribution, links, asset availability, review status, and the index-to-style-to-example reading path. Also check the human path from the main README through the collection gallery to each example, its image/source, and back. Keep public READMEs brief and focused on available work; do not introduce unestablished installation or invocation instructions.
 - Confirm new screenshots, temporary PDFs, build output, and unrelated material have not entered the repository.
 - Keep source and preview synchronized. If only metadata changed, do not redraw an already accepted figure unnecessarily.
 - Follow repository instructions for checks, commits, and pushes within the approved scope. Report any limitation, including whether fresh-chat discovery and real drawing behavior have actually been tested.

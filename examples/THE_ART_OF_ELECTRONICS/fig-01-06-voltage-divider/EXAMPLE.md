@@ -1,9 +1,13 @@
 # Voltage divider
 
-- **Origin:** reference.
+- **Origin:** reference; recreated in LaTeX.
 - **Source:** Paul Horowitz and Winfield Hill, *The Art of Electronics*, third edition (2015), Figure 1.6, printed page 7 (PDF page 40).
 - **User feedback:** liked overall; no feature-specific comment accompanied this reference.
-- **Recreation:** pending. This record has no LaTeX source or PNG preview yet.
+- **Recreation:** editable source and PNG completed on 08-11-2026 under the user's explicit request to finish the three missing examples. Compiled and visually checked against the book by the assistant; user review of this recreation is pending. The original reference feedback remains distinct from review of the recreation.
+
+[Gallery page](README.md) · [Editable LaTeX source](drawing.tex)
+
+![A resistor divider with input and output voltage spans and the divider equation.](preview.png)
 
 ## Original caption
 
@@ -23,4 +27,6 @@ Two vertically arranged resistors form a divider. Input and output voltage spans
 
 ## Use and limits
 
-Select for a circuit-and-equation composition or voltage annotations. Overall approval does not establish every notation or arrow choice as a universal convention. The voltage-divider relationship must be used with its applicable loading assumptions in new work. Inspect the original reference for visual details until a recreation is available.
+Select for a circuit-and-equation composition or voltage annotations. Overall approval does not establish every notation or arrow choice as a universal convention. The voltage-divider relationship must be used with its applicable loading assumptions in new work.
+
+The source uses editable TikZ paths inside CircuitikZ to preserve the reference geometry, with individually positioned text for the labels and equation. It is a visual recreation, not a semantic component template or a parameterized equation layout. TeX Gyre Heros approximates the book's typography. Compile with Tectonic or XeLaTeX with CircuitikZ and `tgheros` available. The PNG is rendered from that source, including the original caption; keep temporary build products outside the example folder.
