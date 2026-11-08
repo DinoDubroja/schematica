@@ -22,6 +22,11 @@ Apply to junction markers across schematic styles using
 [the common precedence](../../GENERAL.md#apply-preferences).
 This belongs under Connections because it describes wire connectivity.
 
+For when these markers are required, read
+[G-CONNECTION-02: Explicit wire junctions](../explicit-wire-junctions/RULE.md).
+For crossings without an electrical connection, read
+[G-CONNECTION-03: Unconnected wire crossings](../unconnected-crossings/RULE.md).
+
 ## Exceptions and exclusions
 
 Preserve the supplied circuit connectivity. This appearance rule does not require

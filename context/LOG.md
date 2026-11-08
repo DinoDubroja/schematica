@@ -603,3 +603,37 @@ The user authorized resolving the transfer issue and rejected manually locating/
 A fresh one-image transfer through the current supported helpers failed before copying bytes with `hosted apps tools/list request failed: DNS`. Independent diagnostics showed thread and socket creation working, localhost resolving, and both `github.com` and `chatgpt.com` failing name resolution. The active execution environment reports `CODEX_SANDBOX_NETWORK_DISABLED=1`: command networking is explicitly disabled. This is a confirmed execution-permission blocker, not evidence of missing attachment files or a system-wide internet outage.
 
 The user-facing next step is to enable Allow network access in the app's Configuration settings while retaining Workspace write, then retry the same original-image import. This agent cannot change its own sandbox permissions. If the setting is already enabled, the effective session policy still needs investigation; do not claim that a settings change or restart has succeeded without a fresh transfer test. No original screenshots were imported. Repository publishing also remains blocked by command networking; no redundant push was attempted during this diagnosis.
+
+<a id="separate-junction-and-crossing-rules"></a>
+
+## 08-11-2026 - Separate junction marking and unconnected crossing rules
+
+**User decisions and authorization:** after reviewing the A-E comparison in chat,
+the user selected plain unconnected crossings (A) as the default, bridges (C) as
+an explicitly selected alternative, and gap crossings (B) as Bad. Connected
+four-way (D) and staggered T-junction (E) layouts are both accepted and must have
+junction circles. The user corrected the combined proposal: marking actual
+connections and depicting unconnected crossings must be independent rules.
+They then instructed: "save these as two separate rules and add the good and bad
+examples", selecting the exact keyword "wire bridges". This authorizes the rules,
+necessary example assets, gallery/index updates, validation and publication.
+
+**Implemented:** [G-CONNECTION-02](../preferences/connections/explicit-wire-junctions/RULE.md)
+requires circles at every branch connection and references the existing junction
+appearance rule without redefining its size. Its Good/Bad pair shows the same
+four-way and staggered T layouts with and without required dots.
+[G-CONNECTION-03](../preferences/connections/unconnected-crossings/RULE.md) specifies
+plain crossings by default, prohibits gaps as an unconnected-crossing convention,
+and documents the keyword-selected bridge. Its gallery compares A/B and shows C
+separately. Ordinary bends/two-branch continuations and real electrical breaks
+remain outside the respective requirements. These are focused generated examples
+based on the reviewed options, not imported screenshots or historical redraws.
+
+**Verification:** both LaTeX sources compile; all five PNGs match their PDF pixels,
+and both SVG themes match compiled geometry with transparent backgrounds. Light
+and dark renders were visually inspected. Required dot diameter remains 10 times
+wire width (rendered ratio 10.00004); the junction Good/Bad wire geometry is
+identical. Gallery generation and freshness pass; rule/index/example links and anchors
+resolve, including discovery of the keyword through the general preference index. The accepted conventions are user-reviewed; final
+new asset review by the user and live GitHub theme rendering remain unverified.
+The historical examples and unrelated concurrent context edits are outside scope.

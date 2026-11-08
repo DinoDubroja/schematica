@@ -21,6 +21,8 @@ When no accepted preference applies, use the task and relevant examples to make 
 | ID and preference | Read when | Evidence available |
 | --- | --- | --- |
 | [G-CONNECTION-01: Junction dots](connections/junction-dots/RULE.md) | Drawing or changing wire-junction markers | Accepted rule and user-reviewed 10x dot size; good/bad visuals and editable source |
+| [G-CONNECTION-02: Explicit wire junctions](connections/explicit-wire-junctions/RULE.md) | Drawing or reviewing electrical branch connections, including T-junctions and four-way junctions | Required connection markers; both aligned and staggered layouts accepted; Good/Bad visuals and editable source |
+| [G-CONNECTION-03: Unconnected wire crossings](connections/unconnected-crossings/RULE.md) | Drawing or reviewing crossings without electrical connection, or applying the keyword "wire bridges" | Plain crossings by default; keyword-selected bridge variant; gaps rejected; Good/Bad visuals and editable source |
 | [G-SYMBOL-01: Power supply arrow symbols](symbols/power-supply-arrows/RULE.md) | Drawing or changing supply connections | Accepted rule, good/bad visuals, editable source, and user correction |
 | [G-SYMBOL-02: Input/output terminal circles](symbols/signal-terminal-circles/RULE.md) | Drawing or changing exposed signal ports | Accepted rule, good visual, editable source, and user correction |
 

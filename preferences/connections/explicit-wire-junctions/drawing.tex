@@ -1,0 +1,24 @@
+% G-CONNECTION-02: required connection markers; size from G-CONNECTION-01.
+\documentclass{article}
+\usepackage[paperwidth=7cm,paperheight=2.5cm,margin=0pt]{geometry}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\usepackage{tikz}
+\newcommand{\JunctionLayouts}[1]{%
+\noindent\begin{tikzpicture}[x=1cm,y=1cm,line width=0.65pt,line cap=round]
+\path[use as bounding box] (0,-1.2) rectangle (6.9,1.2);
+% Both layouts depict four branches of one connected net.
+\draw (0.5,0)--(2.6,0) (1.55,-0.8)--(1.55,0.8);
+\draw (4.1,0)--(6.2,0) (4.65,0)--(4.65,0.8) (5.65,0)--(5.65,-0.8);
+\ifnum#1=1
+\fill (1.55,0) circle[radius=5\pgflinewidth]
+      (4.65,0) circle[radius=5\pgflinewidth]
+      (5.65,0) circle[radius=5\pgflinewidth];
+\fi
+\end{tikzpicture}}
+\begin{document}
+\JunctionLayouts{1}
+\newpage
+% Intentionally deficient: all required connection markers omitted.
+\JunctionLayouts{0}
+\end{document}

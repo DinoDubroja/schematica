@@ -20,7 +20,9 @@ schematica/
 │   ├── assets/                       # Shared colored Good/Bad word labels
 │   ├── connections/
 │   │   ├── README.md
-│   │   └── junction-dots/            # RULE, visual README, source and images
+│   │   ├── explicit-wire-junctions/  # Required connection markers
+│   │   ├── junction-dots/            # RULE, visual README, source and images
+│   │   └── unconnected-crossings/    # Plain crossings and wire bridges
 │   └── symbols/
 │       ├── README.md                 # Combined rule presentations
 │       ├── power-supply-arrows/
