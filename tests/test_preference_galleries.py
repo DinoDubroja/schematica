@@ -48,14 +48,14 @@ class PreferenceGalleryTests(unittest.TestCase):
         return f'<a href="{stem}.png">PNG</a> · <a href="{stem}-light.svg">Light</a> · <a href="{stem}-dark.svg">Dark</a>'
 
     def variants(self):
-        return ('<!-- preference-visual:start -->\n# Crossings\n\n## ![Good](../../assets/good-label.svg)\n\n'
-                '<!-- preference-variants:start -->\n<table>\n'
-                '<tr><th>straight wire crossing (default)</th><th>bridged wire crossing</th></tr>\n'
-                f'<tr><td>{self.images("good", "good")}</td><td>{self.images("bridge", "alternative")}</td></tr>\n'
-                '<tr><td>Plain.</td><td>Bridge.</td></tr>\n'
-                f'<tr><td>{self.downloads("good")}</td><td>{self.downloads("bridge")}</td></tr>\n'
-                '</table>\n<!-- preference-variants:end -->\n\n## ![Bad](../../assets/bad-label.svg)\n\n'
-                f'{self.images("bad", "bad")}\n\n{self.downloads("bad")}\n'
+        return ('<!-- preference-visual:start -->\n# Crossings\n\n'
+                '<!-- preference-comparison:start -->\n<table>\n'
+                '<tr><th><img src="../../assets/good-label.svg" alt="Good"></th>'
+                '<th><img src="../../assets/bad-label.svg" alt="Bad"></th></tr>\n'
+                f'<tr><td>{self.images("good", "good")}</td><td>{self.images("bad", "bad")}</td></tr>\n'
+                '<tr><td>straight wire crossing (default); bridged wire crossing.</td><td>Gap.</td></tr>\n'
+                f'<tr><td>{self.downloads("good")}</td><td>{self.downloads("bad")}</td></tr>\n'
+                '</table>\n<!-- preference-comparison:end -->\n'
                 '<!-- preference-visual:end -->\n\n[Back](../README.md)\n')
 
     def mutate(self, old, new):
@@ -70,8 +70,9 @@ class PreferenceGalleryTests(unittest.TestCase):
         Builder(self.root).build()
         text = self.category.read_text(encoding='utf-8')
         self.assertIn('straight wire crossing (default)', text)
-        self.assertIn('crossings/bridge-dark.svg#gh-dark-mode-only', text)
-        self.assertLess(text.index('bridged wire crossing'), text.index('![Bad]'))
+        self.assertIn('crossings/good-dark.svg#gh-dark-mode-only', text)
+        self.assertLess(text.index('alt="Good"'), text.index('alt="Bad"'))
+        self.assertIn('<td>straight wire crossing (default); bridged wire crossing.</td><td>Gap.</td>', text)
         self.assertIn('## [Crossings](crossings/README.md)', text)
         after = self.category.read_bytes()
         for marker, part in [(b'<!-- preference-gallery:start level=2 -->', 0), (b'<!-- preference-gallery:end -->', 1)]:
@@ -83,12 +84,11 @@ class PreferenceGalleryTests(unittest.TestCase):
 
     def test_invalid_variants_reject_without_writing(self):
         cases = [
-            (' (default)', '', 'mark only the left'),
-            ('bridged wire crossing</th>', 'bridged wire crossing (default)</th>', 'mark only the left'),
-            ('<td>Bridge.</td>', '', 'four rows of two'),
-            ('#gh-dark-mode-only"><img src="bridge-dark.svg"', '#other"><img src="bridge-dark.svg"', 'alternative variant preview missing dark'),
-            ('## ![Bad](../../assets/bad-label.svg)', '## Bad', 'colored heading'),
-            ('<!-- preference-alternative:end -->', '', 'alternative marker pair'),
+            ('alt="Good"', 'alt="Bad"', 'Good left and Bad right'),
+            ('<td>Gap.</td>', '', 'four rows of two'),
+            ('#gh-dark-mode-only"><img src="good-dark.svg"', '#other"><img src="good-dark.svg"', 'good preview missing dark'),
+            ('<!-- preference-good:end -->', '', 'good marker pair'),
+            ('preference-comparison:', 'preference-variants:', 'inside the Good column'),
         ]
         for old, new, error in cases:
             with self.subTest(error=error):
@@ -98,15 +98,17 @@ class PreferenceGalleryTests(unittest.TestCase):
                     Builder(self.root).build()
                 self.assertEqual(before, self.category.read_bytes())
 
-    def test_missing_alternative_asset_rejects_before_writing(self):
-        (self.leaf.parent / 'bridge-dark.svg').unlink()
+    def test_missing_comparison_asset_rejects_before_writing(self):
+        (self.leaf.parent / 'bad-dark.svg').unlink()
         before = self.category.read_bytes()
         with self.assertRaisesRegex(GalleryError, 'missing reference'):
             Builder(self.root).build()
         self.assertEqual(before, self.category.read_bytes())
 
     def test_optional_bad_and_inactive_rules(self):
-        text = self.variants().split('## ![Bad]')[0] + '<!-- preference-visual:end -->\n'
+        text = ('<!-- preference-visual:start -->\n# Crossings\n\n'
+                '## ![Good](../../assets/good-label.svg)\n' + self.images('good', 'good') +
+                '\n' + self.downloads('good') + '\n<!-- preference-visual:end -->\n')
         self.leaf.write_text(text, encoding='utf-8')
         for status in ('proposed', 'deferred', 'rejected', 'superseded'):
             self.write(f'preferences/connections/{status}/RULE.md', f'# Pending\nID: G-{status}\nStatus: {status}\n')
@@ -127,7 +129,7 @@ class PreferenceGalleryTests(unittest.TestCase):
         self.assertIn('## [Routing](routing/README.md)', self.category.read_text(encoding='utf-8'))
         text = (routing / 'README.md').read_text(encoding='utf-8')
         self.assertIn('bridged wire crossing', text)
-        self.assertIn('crossings/bridge-dark.svg#gh-dark-mode-only', text)
+        self.assertIn('crossings/good-dark.svg#gh-dark-mode-only', text)
         self.assertIn('../../assets/good-label.svg', text)
         self.assertFalse(Builder(self.root).build(True))
 

@@ -163,41 +163,8 @@ class Builder:
         good = section(visual, 'good')
         examples = []
         if '<!-- preference-variants:start -->' in visual:
-            if '<!-- preference-comparison:start -->' in visual:
-                raise GalleryError(f'{page}: choose variants or Good/Bad comparison, not both')
-            variants = section(visual, 'variants')
-            rows = re.findall(r'<tr>\s*(.*?)\s*</tr>', variants, re.S)
-            cells = [re.findall(r'<t[hd]\b[^>]*>(.*?)</t[hd]>', row, re.S) for row in rows]
-            if len(cells) != 4 or any(len(row) != 2 for row in cells):
-                raise GalleryError(f'{page}: variants need four rows of two columns: names, images, captions, downloads')
-            names = [html.unescape(re.sub(r'<[^>]+>', '', name)).strip() for name in cells[0]]
-            if not all(names) or names[0].count('(default)') != 1 or '(default)' in names[1]:
-                raise GalleryError(f'{page}: name both variants and mark only the left one (default)')
-            if names[0].replace('(default)', '').strip() == names[1]:
-                raise GalleryError(f'{page}: accepted variants need distinct names')
-            label = re.search(r'^## !\[Good\]\(([^)]+)\)$', visual, re.M)
-            if not label or label.start() > visual.index('<!-- preference-variants:start -->'):
-                raise GalleryError(f'{page}: variants need a colored Good heading before the table')
-            for index, marker in enumerate(('good', 'alternative')):
-                preview = section(visual, marker)
-                if preview not in cells[1][index]:
-                    raise GalleryError(f'{page}: {marker} preview must be in its variant image column')
-                for theme in ('light', 'dark'):
-                    if f'#gh-{theme}-mode-only' not in preview or f'-{theme}.svg' not in preview:
-                        raise GalleryError(f'{page}: {marker} variant preview missing {theme} theme')
-                examples.append(('Good', label[1], '\n'.join(row[index] for row in cells)))
-            bad_label = re.search(r'^## !\[Bad\]\(([^)]+)\)$', visual, re.M)
-            has_bad = '<!-- preference-bad:start -->' in visual
-            if bool(bad_label) != has_bad:
-                raise GalleryError(f'{page}: separate Bad example needs its colored heading and preview markers')
-            if has_bad:
-                if bad_label.start() < visual.index('<!-- preference-variants:end -->'):
-                    raise GalleryError(f'{page}: separate Bad example must follow the variants table')
-                bad = re.split(r'^## ', visual[bad_label.end():], maxsplit=1, flags=re.M)[0]
-                if section(visual, 'bad') not in bad:
-                    raise GalleryError(f'{page}: Bad preview must follow its heading')
-                examples.append(('Bad', bad_label[1], bad))
-        elif '<!-- preference-comparison:start -->' in visual:
+            raise GalleryError(f'{page}: place accepted variants inside the Good column of a Good/Bad comparison')
+        if '<!-- preference-comparison:start -->' in visual:
             comparison = section(visual, 'comparison')
             rows = re.findall(r'<tr>\s*(.*?)\s*</tr>', comparison, re.S)
             cells = [re.findall(r'<t[hd]\b[^>]*>(.*?)</t[hd]>', row, re.S) for row in rows]

@@ -71,43 +71,32 @@ Use solid circles in the wire color, with a diameter ten times the wire width.
 
 ## [Unconnected wire crossings](unconnected-crossings/README.md)
 
-Both styles show crossing wires without a connection. Use either name as a keyword.
-
-### ![Good](../assets/good-label.svg)
+Crossing wires remain separate when there is no junction circle.
 
 <table>
 <tr>
-<th align="left" width="50%">straight wire crossing (default)</th>
-<th align="left" width="50%">bridged wire crossing</th>
+<th align="left" width="50%"><img src="../assets/good-label.svg" alt="Good"></th>
+<th align="left" width="50%"><img src="../assets/bad-label.svg" alt="Bad"></th>
 </tr>
 <tr>
 <td align="center" valign="top">
-<a href="unconnected-crossings/good-light.svg#gh-light-mode-only"><img src="unconnected-crossings/good-light.svg" alt="Two uninterrupted wires cross without a junction circle; they are electrically separate." width="210"></a>
-<a href="unconnected-crossings/good-dark.svg#gh-dark-mode-only"><img src="unconnected-crossings/good-dark.svg" alt="Two uninterrupted wires cross without a junction circle; they are electrically separate." width="210"></a>
+<a href="unconnected-crossings/good-light.svg#gh-light-mode-only"><img src="unconnected-crossings/good-light.svg" alt="Straight wire crossing (default) and bridged wire crossing, side by side. Neither has a junction circle." width="360"></a>
+<a href="unconnected-crossings/good-dark.svg#gh-dark-mode-only"><img src="unconnected-crossings/good-dark.svg" alt="Straight wire crossing (default) and bridged wire crossing, side by side. Neither has a junction circle." width="360"></a>
 </td>
 <td align="center" valign="top">
-<a href="unconnected-crossings/bridge-light.svg#gh-light-mode-only"><img src="unconnected-crossings/bridge-light.svg" alt="A semicircular bridge marks an unconnected crossing, selected by bridged wire crossing or wire bridges." width="210"></a>
-<a href="unconnected-crossings/bridge-dark.svg#gh-dark-mode-only"><img src="unconnected-crossings/bridge-dark.svg" alt="A semicircular bridge marks an unconnected crossing, selected by bridged wire crossing or wire bridges." width="210"></a>
+<a href="unconnected-crossings/bad-light.svg#gh-light-mode-only"><img src="unconnected-crossings/bad-light.svg" alt="Gap crossing: a continuous wire is incorrectly drawn with a break." width="360"></a>
+<a href="unconnected-crossings/bad-dark.svg#gh-dark-mode-only"><img src="unconnected-crossings/bad-dark.svg" alt="Gap crossing: a continuous wire is incorrectly drawn with a break." width="360"></a>
 </td>
 </tr>
 <tr>
-<td valign="top">Uninterrupted wires; no junction circle.</td>
-<td valign="top">Semicircular bridge; no junction circle. Also accepts <strong>wire bridges</strong>.</td>
+<td valign="top">Both styles are valid. Use either name as a keyword; <strong>wire bridges</strong> also selects the bridged style.</td>
+<td valign="top">Do not use a gap to indicate an unconnected crossing.</td>
 </tr>
 <tr>
 <td><a href="unconnected-crossings/good.png">PNG</a> · <a href="unconnected-crossings/good-light.svg">Light SVG</a> · <a href="unconnected-crossings/good-dark.svg">Dark SVG</a></td>
-<td><a href="unconnected-crossings/bridge.png">PNG</a> · <a href="unconnected-crossings/bridge-light.svg">Light SVG</a> · <a href="unconnected-crossings/bridge-dark.svg">Dark SVG</a></td>
+<td><a href="unconnected-crossings/bad.png">PNG</a> · <a href="unconnected-crossings/bad-light.svg">Light SVG</a> · <a href="unconnected-crossings/bad-dark.svg">Dark SVG</a></td>
 </tr>
 </table>
-
-### ![Bad](../assets/bad-label.svg)
-
-Do not use a gap to indicate an unconnected crossing.
-
-<a href="unconnected-crossings/bad-light.svg#gh-light-mode-only"><img src="unconnected-crossings/bad-light.svg" alt="A gap is incorrectly used to depict a crossing between electrically separate, continuous wires." width="210"></a>
-<a href="unconnected-crossings/bad-dark.svg#gh-dark-mode-only"><img src="unconnected-crossings/bad-dark.svg" alt="A gap is incorrectly used to depict a crossing between electrically separate, continuous wires." width="210"></a>
-
-[PNG](unconnected-crossings/bad.png) · [Light SVG](unconnected-crossings/bad-light.svg) · [Dark SVG](unconnected-crossings/bad-dark.svg)
 
 [Editable LaTeX](unconnected-crossings/drawing.tex)
 

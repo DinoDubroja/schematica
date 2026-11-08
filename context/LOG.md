@@ -689,6 +689,8 @@ not rechecked; publication status is verified separately in the task result.
 
 ## 08-11-2026 - Wire thickness and named crossing variants
 
+**Correction (08-11-2026):** the crossing portion of this entry incorrectly treated a discussion ending in "what do you think" as implementation approval. The user rejected the Bad-below layout. The wire-width B choice remains accepted. The reviewed replacement and its later explicit implementation authorization are recorded [below](#crossing-good-cell-correction). The following implementation record describes the superseded state.
+
 **User decision and requested correction:** the user chose B from the equal-scale
 wire comparison (0.40/0.65/0.90 pt), adopting 0.65 pt. They also requested placing
 the bridge beside the default straight crossing in the same table, with the names
@@ -714,3 +716,33 @@ variants, previous Good-only and Good/Bad layouts, inactive rules, missing asset
 and anchors, malformed tables, nested categories, link rebasing, repeatability,
 and preservation of manual text. The crossing drawing assets are unchanged.
 Final visual inspection and publication status are reported at task completion.
+
+<a id="crossing-good-cell-correction"></a>
+
+## 08-11-2026 - Both crossing variants inside the Good cell
+
+**User correction and authorization:** the user specified the existing two-column
+Good-left / Bad-right structure, with both straight and bridged crossings side by
+side inside Good and a label beneath each drawing. They reviewed a chat-only
+preview, confirmed it matched their intent, and explicitly authorized implementing
+that arrangement in the repository. The earlier crossing presentation was executed
+during discussion without approval; its Bad-below layout is superseded. The 0.65 pt
+wire choice remains accepted.
+
+**Implemented:** the [crossing comparison](../preferences/connections/unconnected-crossings/README.md)
+now uses two equal canvases at the same drawing scale. Good contains straight wire
+crossing (default) and bridged wire crossing; Bad contains the rejected gap.
+The existing named keywords and "wire bridges" alias are retained. Editable LaTeX,
+SVG themes, PNGs, the Connections gallery, rule evidence and gallery authoring
+instructions agree. The superseded variants-only gallery branch was removed;
+the established comparison format handles the grouped drawings.
+
+**Verification:** the source compiles; SVG geometry and PNG pixels match the PDF,
+all crossing wires retain the accepted width, and the two canvases have equal
+dimensions. Light and dark previews were inspected. Gallery generation, freshness,
+link checks and regression tests pass. Publication and live-site inspection are
+reported in the task result.
+
+**Boundary:** the user separately requested a proposal for default in-chat
+presentation behavior and explicitly said not to document it yet. That proposal
+stays in the chat; BEHAVIOR.md and the in-chat presentation procedure are unchanged.

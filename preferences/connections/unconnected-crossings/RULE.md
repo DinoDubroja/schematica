@@ -42,25 +42,27 @@ connected-junction marking and explicitly authorized saving both rules and
 Good/Bad examples, choosing the exact keyword "wire bridges". See
 [the decision](../../../context/LOG.md#separate-junction-and-crossing-rules).
 
-The user subsequently requested showing the straight and bridged styles together
-in one table, giving each its name/keyword and marking the straight style
-"(default)". The gap remains a Bad example below the accepted variants. The
-earlier "wire bridges" keyword remains supported. See
-[the presentation correction](../../../context/LOG.md#wire-width-and-crossing-variants).
+The initial named-variant presentation was implemented during discussion without
+approval and incorrectly put Bad below Good. The user clarified that both labeled
+styles belong side by side inside the Good cell, with Bad in the right column.
+They reviewed that arrangement in chat and explicitly authorized implementing it.
+The earlier "wire bridges" keyword remains supported. See
+[the correction and approval](../../../context/LOG.md#crossing-good-cell-correction).
 
 ## Illustrations and reproduction
 
-[README.md](README.md) shows straight and bridged crossings side by side as two
-accepted variants, using their names/keywords as column headings and marking the
-default. The rejected gap crossing appears below them. All use the same scale
-and intend two continuous wires with no connection between them. The variants
-belong to this rule, not separate preference categories.
+[README.md](README.md) shows straight and bridged crossings side by side within
+the left Good cell, with their names below the drawings and the straight style
+marked `(default)`. The right Bad cell shows the rejected gap crossing. Equal
+canvases preserve the same drawing scale. All intend two continuous wires with
+no connection between them. The variants belong to this rule, not separate
+preference categories.
 
 These are focused generated examples based on the reviewed A/B/C geometry,
 not historical screenshots. The conventions and save are user-approved; the
 newly exported assets require their own visual review.
 
 Compile [drawing.tex](drawing.tex) into an ignored build directory. Export pages
-1, 2 and 3 with stems `good`, `bad` and `bridge`, respectively, including PNGs,
+1 and 2 with stems `good` and `bad`, respectively, including PNGs,
 using [export_svg.py](../../../scripts/export_svg.py). Follow
 [the presentation procedure](../../../scripts/PRESENTATION.md).

@@ -1,18 +1,25 @@
-% G-CONNECTION-03: default, rejected gap, keyword-selected bridge.
+% G-CONNECTION-03: two accepted styles in Good; the rejected gap in Bad.
 \documentclass{article}
-\usepackage[paperwidth=4cm,paperheight=2.5cm,margin=0pt]{geometry}
+\usepackage[paperwidth=8.8cm,paperheight=3.7cm,margin=0pt]{geometry}
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 \usepackage{tikz}
 \newcommand{\Crossing}[1]{%
 \noindent\begin{tikzpicture}[x=1cm,y=1cm,line width=0.65pt,line cap=round]
-\path[use as bounding box] (0,0) rectangle (4,2.5);
+\path[use as bounding box] (0,0) rectangle (8.8,3.7);
 #1
 \end{tikzpicture}}
 \begin{document}
-\Crossing{\draw (0.5,1.25)--(3.5,1.25) (2,0.45)--(2,2.05);}
+\Crossing{
+\draw (0.7,2.2)--(3.7,2.2) (2.2,1.4)--(2.2,3.0);
+\draw (6.6,1.4)--(6.6,3.0);
+\draw (5.1,2.2)--(6.44,2.2) arc[start angle=180,end angle=0,radius=0.16cm]--(8.1,2.2);
+\node[align=center,anchor=north,font=\sffamily\fontsize{8.5}{11}\selectfont] at (2.2,0.95) {Straight wire crossing\\(default)};
+\node[align=center,anchor=north,font=\sffamily\fontsize{8.5}{11}\selectfont] at (6.6,0.95) {Bridged wire crossing};
+}
 \newpage
-\Crossing{\draw (0.5,1.25)--(1.87,1.25) (2.13,1.25)--(3.5,1.25) (2,0.45)--(2,2.05);}
-\newpage
-\Crossing{\draw (2,0.45)--(2,2.05);\draw (0.5,1.25)--(1.84,1.25) arc[start angle=180,end angle=0,radius=0.16cm]--(3.5,1.25);}
+\Crossing{
+\draw (2.9,2.2)--(4.27,2.2) (4.53,2.2)--(5.9,2.2) (4.4,1.4)--(4.4,3.0);
+\node[align=center,anchor=north,font=\sffamily\fontsize{8.5}{11}\selectfont] at (4.4,0.95) {Gap crossing};
+}
 \end{document}
