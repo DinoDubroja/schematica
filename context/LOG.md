@@ -1,5 +1,28 @@
 # Context log
 
+<a id="mcp-direction-and-repository-review"></a>
+
+## 11-11-2026 - MCP direction and repository review
+
+**Confirmed direction:** integration-first release using MCP, with Claude Desktop
+and OpenAI/ChatGPT support required from the start, a minimal visual catalogue,
+shared capabilities for a later app, and realistic testing with isolated user data.
+See [DIRECTION.md](../DIRECTION.md#agreed-first-release-direction).
+
+**Completed review:** inspected published `main` at `8af5433`; seven accepted rules,
+five rendered AOE references plus 26 text-only records, reusable export/gallery
+tooling, and a Windows Codex installer. Gallery checks and seven automated tests
+passed; four Windows-only tests were skipped. Exporter smoke test passed; no fresh
+CircuitikZ compilation or live host integration was tested. Full inventory, limits,
+preservation plan, and proposed milestones: [MCP_TRANSITION_REVIEW.md](MCP_TRANSITION_REVIEW.md).
+
+**Recommendation, not completed migration:** keep the same project/repository,
+preserve local-only work, checkpoint the baseline, and develop through small branches
+and optional worktrees. First prove host connectivity and a single-symbol user
+journey. Storage/profile/grid/hosting details remain open. Existing assets and
+accepted drawing rules were not changed. The review does not establish that work
+on other devices is backed up.
+
 <a id="resistor-convention-and-proportions"></a>
 
 ## 08-11-2026 - Resistor convention and body proportions

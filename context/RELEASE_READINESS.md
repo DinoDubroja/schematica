@@ -1,5 +1,13 @@
 # First-release readiness
 
+**Historical audit:** the state below refers to `40be8ef`, not the latest checkout.
+The [11-11-2026 repository review](MCP_TRANSITION_REVIEW.md) supersedes its inventory:
+seven rules, a Windows Codex installer, and automated tests now exist. The agreed
+first-release direction now includes MCP integration for Claude Desktop and
+OpenAI/ChatGPT, a minimal visual catalogue, and isolated user-data testing; see
+[DIRECTION.md](../DIRECTION.md#agreed-first-release-direction). Retain the quality
+goals below, but use [CURRENT.md](CURRENT.md) for the active next step.
+
 Reviewed: 08-11-2026, against checkout `40be8ef` and the user's first-release criteria.
 
 **Verdict: not ready for a public first release.** The reference library, preference bank, and collection workflow exist. Repeatable style generation, synthetic validation, complete reference pictures, and installation for a new user remain unfinished.

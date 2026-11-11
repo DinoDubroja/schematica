@@ -6,6 +6,26 @@ It should be available for anyone to use in their agent environment and work wel
 
 It should come with consistent, predefined drawing preferences. Users should be able to modify and save their preferences without having to establish everything from scratch. The user's circuit connections, component names, and supplied values should be preserved.
 
+## Agreed first-release direction
+
+The first release will be an agent integration using MCP as its tool interface.
+Support for Claude Desktop and OpenAI/ChatGPT is required from the start; exact
+supported application surfaces and setup must be verified through real user tests.
+The existing local Codex installation is not evidence of those integrations working.
+
+The library and rendering capabilities should be shared with a later app or web app.
+The first release still needs a minimal visual catalogue: a user must be able to
+create/save a symbol, see it in their catalogue, and reuse it in a later session.
+Establish the underlying library and user-data structure before growing it broadly.
+Keep development separate from realistic first-time-user testing with an isolated
+fictional user. A polished application interface can follow later.
+
+Develop through small working prototypes and document consequential decisions one
+at a time. Focus first on schematics; preserve existing rules, symbols, references,
+and unfinished ideas with their actual approval and implementation status. Exact
+storage, profiles versus styles, grid conventions, transport, and packaging remain
+open. See the [repository review and proposed migration](context/MCP_TRANSITION_REVIEW.md).
+
 ## Development approach
 
 - Preserve selected source images with their captions as visual references; recreate selected favorites in CircuitikZ when an editable drawing or theme-aware SVG is wanted.

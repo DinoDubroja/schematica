@@ -1,6 +1,29 @@
 # Current checkpoint
 
-Updated: 08-11-2026. Read this first when resuming; verify the checkout before acting.
+Updated: 11-11-2026. Read this first when resuming; verify the checkout before acting.
+
+## Active direction: MCP foundation
+
+The user has agreed to an integration-first product using MCP, targeting Claude
+Desktop and OpenAI/ChatGPT from the start, with a minimal visual catalogue and an
+isolated first-time-user workflow. A fuller app comes later. The agreed direction
+is in [DIRECTION.md](../DIRECTION.md#agreed-first-release-direction).
+
+The [repository review](MCP_TRANSITION_REVIEW.md) inventories published `main` at
+`8af5433`: seven accepted rules, reusable drawing/export/gallery code, and 31 AOE
+records (five rendered, 26 without images). Gallery checks and seven tests passed;
+four Windows-only tests were skipped. The existing installer is for local Windows
+Codex; neither target MCP client has been tested.
+
+Recommended next step: preserve outstanding work on the original checkout, then
+develop a small MCP/library prototype on a branch in the same repository, optionally
+using a separate worktree. Verify both host connections early, then demonstrate
+create/save/view/reuse of one symbol for a fictional user. The tag, PC archive,
+implementation branch/worktree, schema, and prototype have not been created.
+The current task covers review and documentation only. Do not restart AOE-only
+release work as the immediate next step or treat old preview proposals as implemented.
+
+The following checkpoint details are retained as history and unfinished work.
 
 ## Objective and mode
 
@@ -74,7 +97,7 @@ The later gallery update compiled all three new standalone sources, compared the
 - The preserve-after-feedback workflow has been exercised in a limited earlier trial, but has not yet been validated through the planned full new-circuit creation and review cycle.
 - Repo-based recovery is the agreed durable fallback. Independent operation on another device still requires its checkout and necessary tools/references; offline execution and automatic transfer of local tools have not been established.
 
-## Next useful step
+## Previous next step, before the MCP direction
 
 Review the gallery and new recreations, then continue collecting references. Figure 1.6 was explicitly selected and completed as part of the three missing examples, superseding its earlier status as an assistant-only suggestion.
 
