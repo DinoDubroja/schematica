@@ -1,6 +1,17 @@
 # Current checkpoint
 
-Updated: 08-11-2026. Read this first when resuming; verify the checkout before acting.
+Updated: 11-11-2026. Read this first when resuming; verify the checkout before acting.
+
+Scope discussion (11-11-2026): the user clarified two core Schematica outcomes:
+beautiful component-level electronic schematics and beautiful system/signal-flow
+diagrams, with integrated plots, annotations, writing and teaching explanations.
+Simulation and eventual component sourcing belong in the broader vision; separating
+simulation into a companion project remains an open proposal. The assistant
+recommends one amplifier demonstration first: a real SPICE run, a polished schematic,
+a response plot and a short explanation, with a bounded feedback-resistor comparison.
+The next system-diagram example would be an RF receiver. These are proposed tasks,
+not implementation approval; no new project, integration, drawing or preference has
+been adopted. See [scope and proposed first milestone](LOG.md#visual-explanation-and-simulation-boundary).
 
 ## Objective and mode
 

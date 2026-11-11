@@ -894,3 +894,38 @@ The full repository download includes [INSTALL.md](../INSTALL.md), a README quic
 A fresh independent read-only walkthrough, using only the download, produced a useful op-amp starting question and correctly distinguished requested previews, lead-length refinement, "B looks good", and "Save B as my default op-amp symbol". It selected the downloaded library for a save and found no mandatory private dependency or ordinary-use instruction conflict. This was an instruction/behavior walkthrough, not rendering or visual-quality validation of new symbols.
 
 **Limits:** the supported helper runtime is PowerShell 7.2+ on Windows. Older Windows PowerShell was excluded after local script-policy and special-character path failures; no execution policy was changed. Registration does not install LaTeX/export dependencies or prove rendering readiness on a new device. The connected folder must remain in place; updates do not automatically merge user customizations. Plugin-directory distribution and other platforms remain deferred. A combined verification/cleanup command was rejected by automatic review; separate read-only verification and narrowly targeted temporary cleanup succeeded. No new persistent symbol preference or example was added by this task.
+
+<a id="visual-explanation-and-simulation-boundary"></a>
+
+## 11-11-2026 - Visual explanation, simulation, and a bounded first milestone
+
+**Status:** user vision clarified; project separation and next demonstration proposed,
+not approved for implementation.
+
+**User clarification:** Schematica should support both component-level electronic
+schematics and system/signal-flow diagrams (for example an RF receiver or spectrum
+analyzer). System connections represent signal paths at the selected abstraction,
+without requiring every physical lead. Symbol quality, connections, composition,
+stage-by-stage signals, plots and clear written/teaching explanations belong together.
+The longer-term vision combines visual explanation, circuit simulation, agent-led
+parameter studies/optimization, and eventually component search; expansion beyond
+electrical engineering is a future possibility. The user asked for help choosing
+a manageable starting point and is considering a separate simulation project.
+
+**Assistant proposal:** keep Schematica responsible for visual explanation and a
+companion simulation capability responsible for models, analyses and numerical results.
+Defer an umbrella framework and parts-sourcing integration. Start with one non-inverting
+amplifier using an available simulator-compatible model: a polished editable schematic,
+an actual frequency-response result, a short explanation, and a bounded comparison of
+feedback-resistor values. Match circuit identifiers, values and connectivity between
+the drawing and simulation; label simulation data and conceptual illustrations honestly.
+Review this example before extracting reusable workflow rules. Queue an RF receiver
+system diagram after that first milestone; do not start both at once.
+
+**Inspection and limits:** current project direction already includes conceptual
+diagrams, plots and teaching use. An LTspice executable is present on the inspected
+machine, but this discussion did not test the MCP connection, simulator compatibility
+or the complete simulation-to-illustration workflow. Existing uncommitted work was
+preserved. This checkpoint records discussion under the adopted context workflow;
+it does not authorize a new repository, installations, integration, drawings,
+a model-generation system, a style change, or publication of new illustrations.
