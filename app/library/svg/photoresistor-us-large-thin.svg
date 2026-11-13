@@ -1,27 +1,27 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.00002 62.78707 35.62176" width="22.14988303mm" height="12.56656533mm">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000013 62.78707 37.065755" width="22.14988303mm" height="13.07597468mm">
   <title>Photoresistor (US)</title>
   <desc>Light-dependent resistor with two incoming light arrows, without an enclosure.</desc>
-  <metadata>{"dimensions_mm": {"body-height": 4.16666, "body-width": 12.49997}, "origin_svg": [-37.288923, -45.33094], "parts": ["body", "lead-a", "lead-b", "light-arrows"], "pins_mm": {"a": [-10.0, 0.0], "b": [10.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "thin", "stroke_mm": 0.15}, "symbol_id": "photoresistor-us"}</metadata>
-  <g id="sc-photoresistor-us-r1-large-thin--sc-photoresistor-us-r1-large-thin" inkscape:label="Photoresistor (US) / large / thin" data-symbol="photoresistor-us" data-revision="1" data-size="large" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(-37.288923,-45.33094)scale(0.996264,-0.996264)">
-    <g data-part="body" id="sc-photoresistor-us-r1-large-thin--sc-photoresistor-us-r1-large-thin--body" inkscape:label="body">
+  <metadata>{"dimensions_mm": {"body-height": 4.16666, "body-width": 12.49997}, "origin_svg": [-37.288923, -43.886938], "parts": ["body", "lead-a", "lead-b", "light-arrows"], "pins_mm": {"a": [-10.0, 0.0], "b": [10.0, 0.0]}, "revision": 2, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "thin", "stroke_mm": 0.15}, "symbol_id": "photoresistor-us"}</metadata>
+  <g id="sc-photoresistor-us-r2-large-thin--sc-photoresistor-us-r2-large-thin" inkscape:label="Photoresistor (US) / large / thin" data-symbol="photoresistor-us" data-revision="2" data-size="large" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(-37.288923,-43.886938)scale(0.996264,-0.996264)">
+    <g data-part="body" id="sc-photoresistor-us-r2-large-thin--sc-photoresistor-us-r2-large-thin--body" inkscape:label="body">
       <path d="M-17.78282 0L-14.819 5.9276L-8.89139-5.9276L-2.96378 5.9276L2.96378-5.9276L8.89139 5.9276L14.819-5.9276L17.78282 0" fill="none" />
       <desc>Zigzag resistor body</desc>
     </g>
-    <g data-part="lead-a" id="sc-photoresistor-us-r1-large-thin--sc-photoresistor-us-r1-large-thin--lead-a" inkscape:label="lead-a">
+    <g data-part="lead-a" id="sc-photoresistor-us-r2-large-thin--sc-photoresistor-us-r2-large-thin--lead-a" inkscape:label="lead-a">
       <path d="M-28.4526 0H-17.78282" fill="none" />
       <desc>Lead from terminal A to body</desc>
     </g>
-    <g data-part="lead-b" id="sc-photoresistor-us-r1-large-thin--sc-photoresistor-us-r1-large-thin--lead-b" inkscape:label="lead-b">
+    <g data-part="lead-b" id="sc-photoresistor-us-r2-large-thin--sc-photoresistor-us-r2-large-thin--lead-b" inkscape:label="lead-b">
       <path d="M17.78282 0H28.4526" fill="none" />
       <desc>Lead from body to terminal B</desc>
     </g>
-    <g data-part="light-arrows" id="sc-photoresistor-us-r1-large-thin--sc-photoresistor-us-r1-large-thin--light-arrows" inkscape:label="light-arrows">
-      <path d="M11.85521 23.71043L5.9276 11.85521" fill="none" />
-      <path d="M6.81671 17.18999L5.9276 11.85521L10.96606 15.1154" fill="none" />
-      <path d="M20.15382 23.71043L14.22621 11.85521" fill="none" />
-      <path d="M15.11531 17.18999L14.22621 11.85521L19.26472 15.1154" fill="none" />
-      <desc>Two incoming light arrows</desc>
+    <g data-part="light-arrows" id="sc-photoresistor-us-r2-large-thin--sc-photoresistor-us-r2-large-thin--light-arrows" inkscape:label="light-arrows">
+      <path d="M15.90915 25.15985L7.52625 16.77695" fill="none" />
+      <path d="M12.55591 18.0344L7.52625 16.77695L8.78369 21.80661" fill="none" />
+      <path d="M22.19603 18.87299L13.81311 10.49007" fill="none" />
+      <path d="M18.84277 11.74751L13.81311 10.49007L15.07056 15.51973" fill="none" />
+      <desc>Two parallel light arrows with symmetric heads</desc>
     </g>
   </g>
 </svg>

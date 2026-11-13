@@ -8,6 +8,7 @@ from __future__ import annotations
 import argparse
 import copy
 import hashlib
+import itertools
 import json
 import os
 from pathlib import Path
@@ -30,7 +31,8 @@ MACROS = {"resistor-eu": "SCResistorEU", "resistor-us": "SCResistorUS",
           "inductor-coil": "SCInductorCoil", "capacitor": "SCCapacitor",
           "opamp": "SCOpamp", "opamp-supply": "SCOpampSupply", "resistor-variant": "SCResistorVariant"}
 RESISTOR_VARIANTS = ("variable", "potentiometer", "trimmer", "trimmer-potentiometer",
-                    "thermistor", "ntc", "ptc", "varistor", "photo", "photo-enclosed", "tapped")
+                    "thermistor", "ntc", "ptc", "nonlinear", "photo", "photo-enclosed", "tapped")
+ORIENTATIONS = ("up-right", "up-left", "down-right", "down-left")
 BP_MM = 25.4 / 72
 ID_RE = re.compile(r"[a-z][a-z0-9-]*\Z")
 
@@ -90,6 +92,18 @@ def validate_definition(definition, presets):
         supported = definition["presets"][kind]
         if not supported or len(supported) != len(set(supported)) or set(supported) - presets[kind].keys():
             raise ValidationError(f"Invalid supported {kind}")
+    options = definition.get("options", {})
+    if not isinstance(options, dict):
+        raise ValidationError("Options must be a mapping")
+    for name, spec in options.items():
+        if name != "orientation" or definition.get("drawing", {}).get("variant") not in ("variable", "trimmer"):
+            raise ValidationError("Unsupported drawing option")
+        values = spec.get("values", [])
+        ids = _unique_ids(values, "option value")
+        if ids != set(ORIENTATIONS) or spec.get("default") not in ids or not spec.get("name"):
+            raise ValidationError("Invalid orientation options/default")
+        if any(not isinstance(v.get("name"), str) or not v["name"] for v in values):
+            raise ValidationError("Option values need display names")
 
 
 def definitions():
@@ -116,13 +130,45 @@ def _unknown(symbol_id):
     raise ValidationError(f"Unknown symbol: {symbol_id}")
 
 
-def resolve_settings(definition, size="medium", stroke="medium"):
+def resolve_options(definition, options=None):
+    supported = definition.get("options", {})
+    options = {} if options is None else options
+    if not isinstance(options, dict) or set(options) - set(supported):
+        raise ValidationError("Unsupported symbol option")
+    result = {key: spec["default"] for key, spec in supported.items()}
+    result.update(options)
+    for key, value in result.items():
+        if value not in [v["id"] for v in supported[key]["values"]]:
+            raise ValidationError(f"Unsupported {key}: {value}")
+    return result
+
+
+def configuration_key(symbol_id, size, stroke, options=None):
+    return f"{symbol_id}-{size}-{stroke}" + "".join(f"-{key}-{value}" for key, value in sorted((options or {}).items()))
+
+
+def option_combinations(definition):
+    keys = sorted(definition.get("options", {}))
+    values = [[v["id"] for v in definition["options"][key]["values"]] for key in keys]
+    return [dict(zip(keys, choices)) for choices in itertools.product(*values)]
+
+
+def configuration_choices(definition):
+    return [(size, stroke, options) for size in definition["presets"]["sizes"]
+            for stroke in definition["presets"]["strokes"] for options in option_combinations(definition)]
+
+
+def resolve_settings(definition, size="medium", stroke="medium", options=None):
     presets = read_yaml(ROOT / "presets.yaml")
     for kind, choice in (("sizes", size), ("strokes", stroke)):
         if choice not in definition["presets"][kind]:
             raise ValidationError(f"Unsupported {kind} preset: {choice}")
-    return {"size": size, "stroke": stroke, "size_factor": presets["sizes"][size]["factor"],
+    result = {"size": size, "stroke": stroke, "size_factor": presets["sizes"][size]["factor"],
             "stroke_mm": presets["strokes"][stroke]["width_mm"], "grid_mm": presets["grid_mm"]}
+    selected = resolve_options(definition, options)
+    if selected:
+        result["options"] = selected
+    return result
 
 
 def tool(name):
@@ -163,8 +209,9 @@ def tex_document(definition, settings, instance, svg=True):
     arguments = ""
     if definition["recipe"] == "resistor-variant":
         drawing = definition["drawing"]
-        arguments = "{%s}{%s}" % (0 if drawing["body"] == "eu" else 1,
-                                    RESISTOR_VARIANTS.index(drawing["variant"]))
+        arguments = "{%s}{%s}{%s}" % (0 if drawing["body"] == "eu" else 1,
+                                    RESISTOR_VARIANTS.index(drawing["variant"]),
+                                    ORIENTATIONS.index(settings.get("options", {}).get("orientation", "up-right")))
     return rf"""% Generated from {definition['id']} revision {definition['revision']}.
 % Bundle includes schematica.sty and the parameterized recipes.
 \documentclass[border=1mm]{{standalone}}
@@ -251,6 +298,8 @@ def package_svg(raw_path, definition, settings, metadata, instance):
         f"{{{INK}}}label": f"{definition['name']} / {settings['size']} / {settings['stroke']}",
         "data-symbol": definition["id"], "data-revision": str(definition["revision"]),
         "data-size": settings["size"], "data-stroke": settings["stroke"]})
+    for key, value in settings.get("options", {}).items():
+        symbol.set(f"data-option-{key}", value)
     found = []
     descriptions = {p["id"]: p["description"] for p in definition["parts"]}
 
@@ -263,6 +312,26 @@ def package_svg(raw_path, definition, settings, metadata, instance):
                 raise ValidationError(f"Unknown or duplicate SVG part: {part_id}")
             found.append(part_id)
             part = copy.deepcopy(element)
+            if part.findall(f"{{{SVG}}}g"):
+                # Text outlines can add anonymous converter wrappers. Preserve
+                # their transforms/styles while keeping named parts one level deep.
+                leaves = []
+                def flatten(node, inherited_attrs, inherited_transforms):
+                    values = dict(inherited_attrs)
+                    values.update({k: v for k, v in node.attrib.items() if k not in ("id", "transform")})
+                    chain = inherited_transforms + ([node.get("transform")] if node.get("transform") else [])
+                    if node.tag == f"{{{SVG}}}g" and not node.get("data-part"):
+                        for child in node:
+                            flatten(child, values, chain)
+                    else:
+                        leaf = copy.deepcopy(node)
+                        leaf.attrib.update(values)
+                        if chain:
+                            leaf.set("transform", " ".join(chain))
+                        leaves.append(leaf)
+                for child in part:
+                    flatten(child, {}, [])
+                part[:] = leaves
             part.attrib.update(attrs)
             part.set("transform", " ".join(transforms))
             part.set(f"{{{INK}}}label", part_id)
@@ -307,14 +376,16 @@ def package_svg(raw_path, definition, settings, metadata, instance):
 def write_svg(root, path):
     validate_svg_references(root)
     ET.indent(root)
-    ET.ElementTree(root).write(path, encoding="utf-8", xml_declaration=True)
+    # A binary stream keeps SVG bytes identical across Windows and Git checkouts.
+    with Path(path).open("wb") as stream:
+        ET.ElementTree(root).write(stream, encoding="utf-8", xml_declaration=True)
 
 
-def write_tex_bundle(symbol_id, size="medium", stroke="medium", output=None):
+def write_tex_bundle(symbol_id, size="medium", stroke="medium", output=None, options=None):
     """Materialize standalone TeX only when rendering or packaging an export."""
     definition = get_definition(symbol_id)
-    settings = resolve_settings(definition, size, stroke)
-    instance = f"sc-{symbol_id}-r{definition['revision']}-{size}-{stroke}"
+    settings = resolve_settings(definition, size, stroke, options)
+    instance = configuration_key(f"sc-{symbol_id}-r{definition['revision']}", size, stroke, settings.get("options"))
     output = Path(output or ROOT / "build" / instance).resolve()
     output.mkdir(parents=True, exist_ok=True)
     for helper in (ROOT / "tex").glob("*"):
@@ -323,13 +394,22 @@ def write_tex_bundle(symbol_id, size="medium", stroke="medium", output=None):
     return output
 
 
-def render_symbol(symbol_id, size="medium", stroke="medium", output=None):
+def render_symbol(symbol_id, size="medium", stroke="medium", output=None, options=None):
     definition = get_definition(symbol_id)
-    settings = resolve_settings(definition, size, stroke)
-    instance = f"sc-{symbol_id}-r{definition['revision']}-{size}-{stroke}"
-    output = write_tex_bundle(symbol_id, size, stroke, output)
+    settings = resolve_settings(definition, size, stroke, options)
+    instance = configuration_key(f"sc-{symbol_id}-r{definition['revision']}", size, stroke, settings.get("options"))
+    output = write_tex_bundle(symbol_id, size, stroke, output, options)
     compile_seconds, compile_log = run([tool("tectonic"), "-X", "compile", "--outfmt", "xdv",
         "--keep-logs", "--untrusted", "symbol.tex"], output)
+    # Tectonic and a standalone dvisvgm do not necessarily share a font search
+    # path. Retrieve the font already used by TeX from the same cached bundle.
+    # Keep it only in generated output; SVG downloads contain vector outlines.
+    if definition.get("drawing", {}).get("variant") in ("ntc", "ptc"):
+        font = subprocess.run([tool("tectonic"), "-X", "bundle", "cat", "--only-cached",
+                               "lmsans10-regular.otf"], capture_output=True, timeout=120)
+        if font.returncode or not font.stdout.startswith(b"OTTO"):
+            raise ValidationError("Cannot retrieve Latin Modern Sans from the TeX bundle")
+        (output / "lmsans10-regular.otf").write_bytes(font.stdout)
     convert_seconds, convert_log = run([tool("dvisvgm"), "--no-fonts", "--exact-bbox", "--bbox=1mm",
         "--output=symbol.raw.svg", "symbol.xdv"], output)
     (output / "commands.log").write_text(compile_log + convert_log, encoding="utf-8")
@@ -344,10 +424,10 @@ def render_symbol(symbol_id, size="medium", stroke="medium", output=None):
     return report
 
 
-def inspect_symbol(symbol_id, size="medium", stroke="medium"):
+def inspect_symbol(symbol_id, size="medium", stroke="medium", options=None):
     definition = get_definition(symbol_id)
     # Resolve by recompilation: never return stale geometry from edited recipes.
-    return {"definition": definition, "resolved": render_symbol(symbol_id, size, stroke)}
+    return {"definition": definition, "resolved": render_symbol(symbol_id, size, stroke, options=options)}
 
 
 def main():
@@ -360,10 +440,19 @@ def main():
         cmd.add_argument("symbol_id")
         cmd.add_argument("--size", default="medium")
         cmd.add_argument("--stroke", default="medium")
+        cmd.add_argument("--option", action="append", default=[], help="Symbol option NAME=VALUE (repeatable)")
         if command == "render":
             cmd.add_argument("--output", type=Path)
     args = vars(parser.parse_args())
     command = args.pop("command")
+    if command != "find":
+        options = {}
+        for item in args.pop("option"):
+            key, separator, value = item.partition("=")
+            if not separator or key in options:
+                parser.error("Use distinct --option NAME=VALUE arguments")
+            options[key] = value
+        args["options"] = options
     result = {"find": find_symbols, "inspect": inspect_symbol, "render": render_symbol}[command](**args)
     print(json.dumps(result, indent=2))
 

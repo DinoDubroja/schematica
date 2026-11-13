@@ -1,8 +1,9 @@
 schema_version: 1
 id: photoresistor-enclosed-eu
-revision: 1
+revision: 2
 name: Enclosed photoresistor (EU)
-description: Light-dependent resistor in a circular enclosure, with two incoming light arrows.
+description: Light-dependent resistor in a circular enclosure, with two incoming light
+  arrows.
 keywords:
 - resistor
 - European
@@ -62,4 +63,4 @@ parts:
 - id: enclosure
   description: Circular component enclosure
 - id: light-arrows
-  description: Two incoming light arrows
+  description: Two parallel light arrows with symmetric heads

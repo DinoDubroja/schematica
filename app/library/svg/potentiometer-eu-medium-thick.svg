@@ -1,27 +1,27 @@
 <?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000013 51.873775 28.251807" width="18.29991507mm" height="9.96660969mm">
   <title>Potentiometer (EU)</title>
-  <desc>Three-terminal resistor with a movable wiper contacting the resistance element.</desc>
-  <metadata>{"dimensions_mm": {"body-height": 3.33331, "body-width": 9.99994}, "origin_svg": [-42.745573, -51.732395], "parts": ["body", "lead-a", "lead-b", "lead-wiper", "wiper-arrow"], "pins_mm": {"a": [-8.0, 0.0], "b": [8.0, 0.0], "wiper": [0.0, 6.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "medium", "size_factor": 1.0, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "potentiometer-eu"}</metadata>
-  <g id="sc-potentiometer-eu-r1-medium-thick--sc-potentiometer-eu-r1-medium-thick" inkscape:label="Potentiometer (EU) / medium / thick" data-symbol="potentiometer-eu" data-revision="1" data-size="medium" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-42.745573,-51.732395)scale(0.996264,-0.996264)">
-    <g data-part="body" id="sc-potentiometer-eu-r1-medium-thick--sc-potentiometer-eu-r1-medium-thick--body" inkscape:label="body">
+  <desc>Three-terminal potentiometer with a centered vertical wiper, separated from the body by 1 mm.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 3.33331, "body-width": 9.99994, "wiper-body-gap": 1.0, "wiper-tip-x": 0.0, "wiper-tip-y": 2.66666}, "origin_svg": [-42.745573, -51.732395], "parts": ["body", "lead-a", "lead-b", "lead-wiper", "wiper-arrow"], "pins_mm": {"a": [-8.0, 0.0], "b": [8.0, 0.0], "wiper": [0.0, 6.0]}, "revision": 2, "settings": {"grid_mm": 1, "size": "medium", "size_factor": 1.0, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "potentiometer-eu"}</metadata>
+  <g id="sc-potentiometer-eu-r2-medium-thick--sc-potentiometer-eu-r2-medium-thick" inkscape:label="Potentiometer (EU) / medium / thick" data-symbol="potentiometer-eu" data-revision="2" data-size="medium" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-42.745573,-51.732395)scale(0.996264,-0.996264)">
+    <g data-part="body" id="sc-potentiometer-eu-r2-medium-thick--sc-potentiometer-eu-r2-medium-thick--body" inkscape:label="body">
       <path d="M-14.22621-4.74207V4.74207H14.22621V-4.74207ZM14.22621 4.74207" fill="none" />
       <desc>Rectangular resistor body</desc>
     </g>
-    <g data-part="lead-a" id="sc-potentiometer-eu-r1-medium-thick--sc-potentiometer-eu-r1-medium-thick--lead-a" inkscape:label="lead-a">
+    <g data-part="lead-a" id="sc-potentiometer-eu-r2-medium-thick--sc-potentiometer-eu-r2-medium-thick--lead-a" inkscape:label="lead-a">
       <path d="M-22.76208 0H-14.22621" fill="none" />
       <desc>Lead from terminal A to body</desc>
     </g>
-    <g data-part="lead-b" id="sc-potentiometer-eu-r1-medium-thick--sc-potentiometer-eu-r1-medium-thick--lead-b" inkscape:label="lead-b">
+    <g data-part="lead-b" id="sc-potentiometer-eu-r2-medium-thick--sc-potentiometer-eu-r2-medium-thick--lead-b" inkscape:label="lead-b">
       <path d="M14.22621 0H22.76208" fill="none" />
       <desc>Lead from body to terminal B</desc>
     </g>
-    <g data-part="lead-wiper" id="sc-potentiometer-eu-r1-medium-thick--sc-potentiometer-eu-r1-medium-thick--lead-wiper" inkscape:label="lead-wiper">
-      <path d="M0 17.07156V4.74207" fill="none" />
-      <desc>Lead from the wiper terminal to the resistance element</desc>
+    <g data-part="lead-wiper" id="sc-potentiometer-eu-r2-medium-thick--sc-potentiometer-eu-r2-medium-thick--lead-wiper" inkscape:label="lead-wiper">
+      <path d="M0 17.07156V7.58733" fill="none" />
+      <desc>Centered vertical lead from wiper terminal to arrow tip</desc>
     </g>
-    <g data-part="wiper-arrow" id="sc-potentiometer-eu-r1-medium-thick--sc-potentiometer-eu-r1-medium-thick--wiper-arrow" inkscape:label="wiper-arrow">
-      <path d="M-2.1339 8.2986L0 4.74207L2.1339 8.2986" fill="none" />
+    <g data-part="wiper-arrow" id="sc-potentiometer-eu-r2-medium-thick--sc-potentiometer-eu-r2-medium-thick--wiper-arrow" inkscape:label="wiper-arrow">
+      <path d="M2.1339 11.14384L0 7.58733L-2.1339 11.14384" fill="none" />
       <desc>Movable wiper contact arrow</desc>
     </g>
   </g>

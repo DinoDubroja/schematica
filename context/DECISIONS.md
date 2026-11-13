@@ -32,7 +32,7 @@ tests/docs, commit/push and deployment to the existing preview. The established
 [inventory](../docs/RESISTOR_BATCH.md) has 24 resistor designs: two reused and 22 new.
 The six-symbol catalog limit is superseded; complete-library export now covers 28.
 
-Official acceptance is published metadata tied to all nine drawings and semantic
+Official acceptance is published metadata tied to all supported drawings and semantic
 connections. Browser checkboxes store only pending local approvals, copied into
 chat for validated application and publication. New designs remain Unverified;
 technical success is not human approval. Undo affects pending selections only.
@@ -44,6 +44,32 @@ admin maintenance of supplied originals, separate personal variants, and an
 agent-integrated creation skill. None is implemented in this run. Batch production
 and future interactive creation share drawing formats/tools and validation while
 remaining separate workflows. The broader milestone order is still open.
+
+## Resistor corrections and Variations — 14-11-2026
+
+The user authorized implementation, checks, documentation, commit/push and the
+existing preview deployment. The [reference guide](../docs/SYMBOL_REFERENCE.md)
+was established before drawing changes; later batches must reuse it. Detailed
+IEC/ISO records were inaccessible, so no unreviewed compliance claim is made.
+
+Centered vertical potentiometer wipers, with tips 1 mm above the body, supersede
+the earlier angled US wiper. Fixed taps are unchanged. NTC/PTC lettering replaces
+the temperature signs; shared symmetric light arrows replace the asymmetric form.
+Varistors leave the active catalog; the user-confirmed diagonal S-marked nonlinear
+resistors replace them. No arrowhead is used on the S marking.
+
+Four orientations apply only to the diagonal variable/trimmer marking; body and
+pin identities stay fixed. Definitions declare options/defaults. There are now
+28 designs and 360 configurations. Complete-library exports use the selected
+orientation when applicable, otherwise Up-right; single exports use the exact
+selected configuration. Search never reduces library exports.
+
+The compact **Variations** window supersedes 3 × 3. Stroke, Size and applicable
+option rows each vary only that setting, holding the rest at defaults and using a
+common scale. Representative refinement and related-family visual checks precede
+production; technical checks cover the full Cartesian product. Changed designs
+require new human review; unaffected approvals survive. Creation skills and
+account/profile features remain outside this run.
 
 ## Repository separation — 13-11-2026
 

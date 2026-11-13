@@ -1,8 +1,9 @@
 schema_version: 1
 id: resistor-trimmer-eu
-revision: 1
+revision: 2
 name: Trimmer resistor (EU)
-description: Two-terminal preset resistor; the diagonal bar indicates adjustment during setup.
+description: Two-terminal preset resistor; the diagonal bar indicates adjustment during
+  setup.
 keywords:
 - resistor
 - European
@@ -59,3 +60,16 @@ parts:
   description: Lead from body to terminal B
 - id: adjustment
   description: Preset-adjustment slash and end bar
+options:
+  orientation:
+    name: Arrow orientation
+    default: up-right
+    values:
+    - id: up-right
+      name: Up-right
+    - id: up-left
+      name: Up-left
+    - id: down-right
+      name: Down-right
+    - id: down-left
+      name: Down-left

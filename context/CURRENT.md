@@ -1,57 +1,51 @@
 # Current status
 
-13-11-2026 · **Resistor batch and verification implemented and preview published.**
+14-11-2026 · **Resistor corrections and Variations ready for human review.**
 
-The user authorized this batch, compact viewer review controls, tests/docs,
-commit/push and deployment to the existing Cloudflare preview. Implementation,
-documentation and checks are complete. The [live preview](https://schematica-preview.dinodubroja.workers.dev/)
-and [fixed version](https://6b23fd83-schematica-preview.dinodubroja.workers.dev/)
-serve the tested build. The next step is human review, not another creation batch.
+The user authorized implementation, testing, documentation, commit/push and the
+existing-preview deployment. Creation skills and accounts/profiles remain outside
+this run. See [decisions](DECISIONS.md) for confirmed versus deferred scope.
 
-## What exists
+## Current checkpoint
 
-- **28 designs / 252 configurations:** the six accepted originals plus 22 new
-  resistor variants. [Inventory and reference mapping](../docs/RESISTOR_BATCH.md).
-- Minimal library viewer with dark/light mode, search, family/batch filters,
-  Unverified tab, design checkboxes, Verify & next, Undo, 3 × 3 comparison and
-  stable symbol references. Single SVG and complete-library exports remain small.
-- Separate official verification and browser-local pending selections. The
-  [handoff guide](../docs/VERIFICATION.md) explains exact revision/fingerprint
-  validation and publication. Only the six original designs are officially Verified.
-- TeX drawing authority, YAML semantics, candidate-render/check/promote workflow,
-  generated packaging, developer and Inkscape guides. Legacy material remains
-  archived outside this checkout and supplies no automatic instructions.
+- **28 designs / 360 configurations**, promoted after technical and family visual
+  checks. Four variable/trimmer designs have 36 combinations; the other 24 have nine.
+- Centered vertical potentiometer wipers, NTC/PTC lettering, symmetric light arrows,
+  nonlinear S instead of varistors, and four adjustment orientations are implemented.
+- Compact **Variations** compares Stroke, Size and applicable options at common scale.
+  Exact single exports and all 36 deterministic library profiles are implemented.
+- Six original designs retain approval and byte-identical SVGs. The other 22 remain
+  **Unverified**. Browser test approvals were undone; the official record is unchanged.
+- Build **`601a9624a06d`**: 42 Python + 8 JavaScript tests, all 360 Inkscape checks,
+  36 library exports, 57 actual local downloads and native TeX checks pass.
+  See [actual results and review steps](../DEVELOPMENT.md#latest-changes).
+- The [reference guide](../docs/SYMBOL_REFERENCE.md) was established before redrawing.
+  Detailed IEC/ISO records were inaccessible; no unreviewed compliance is claimed.
 
-## Verification results
+## Published preview
 
-**Build c7b750381988**, 270 static files. 34 Python and 4 JavaScript tests pass.
-All 252 configurations render and pass Inkscape bounds/parts checks; all 54 original
-SVGs are byte-identical. The 42 palette comparisons pass (maximum 0.001234 mm deviation).
-All nine actual browser library downloads match and survive Inkscape save/reopen.
-GUI Symbols shows 28 thumbnails; pasted/unlinked/saved/reopened US potentiometer
-retains its five named editable parts. Native CircuitikZ and new resistor PDF compile.
+Cloudflare deployment **`e6505edb`** serves build **`601a9624a06d`**. The hosted
+manifest and all 404 served assets match local hashes. Actual selected-orientation
+single and library downloads, plus a default-orientation library download, match
+byte for byte. Live search, Variations, themes and pending/reload/Undo passed.
+An independent read-only session recovered the scope, boundaries and next step
+from the repository alone without contradictions or edits.
 
-The temporary approval loop, clipboard fallback, stale/unknown rejection,
-idempotent application, local persistence/Undo and preservation/invalidation rules
-were tested separately. No test approvals entered the real record. All designs
-were visually inspected in the comparison view; US wiper/tap crowding was corrected.
-Search, filters, themes, keyboard, downloads, reference links and 360 px layout pass.
-The hosted manifest and all 268 served assets match locally. Actual hosted single/
-library downloads match; live search, pending reload/Undo, themes, comparison and
-references pass with no browser errors. Launch on port 8792 and its HTTP build check
-pass; Windows rejected 8766, and launcher failures now return an error. Repository-only
-recovery independently found the objective, authorization, checks and next review.
+A fresh Git-index checkout reproduces build `601a9624a06d`. SVG output uses
+consistent line endings; the six originals retain their historical bytes.
 
-## Next review and limits
+## Next step
 
-The user reviews **22 Unverified designs** and pastes approvals
-or corrections into chat. Repeat the [developer checklist](../DEVELOPMENT.md#test-and-review)
-on the laptop. Desktop checks do not establish results on the second device.
-Profile-wide Inkscape Symbols installation, fresh GUI grid snapping, and clean-machine/
-offline TeX setup remain unverified.
+Human visual review on both Windows devices: follow the short checks in
+[DEVELOPMENT.md](../DEVELOPMENT.md#test-and-review). Fix requests remain in chat;
+design approval uses the existing [verification handoff](../docs/VERIFICATION.md).
+This run's publication authorization covers the completed update only. Further
+features and publishing new human approvals require their own user instruction.
 
-Accounts, admin privileges, personal variants, MCP and an agent-integrated creation
-skill remain future work. Batch and interactive creation share tools/formats/checks,
-but remain separate workflows. The broader milestone interview/order is unfinished;
-see [roadmap](../docs/ROADMAP.md) and [decisions](DECISIONS.md). No expansion beyond
-the current batch is authorized by those future wishes.
+[Develop and test](../DEVELOPMENT.md) · [Batch workflow](../docs/RESISTOR_BATCH.md)
+· [Preview](https://schematica-preview.dinodubroja.workers.dev/)
+
+The laptop, profile-wide Inkscape installation, fresh GUI grid snapping and
+clean-machine/offline TeX setup remain unverified. Inkscape roundtrip results in
+this run are command-line checks. The broader milestone interview is unfinished;
+see [roadmap](../docs/ROADMAP.md). Future wishes do not authorize new implementation.

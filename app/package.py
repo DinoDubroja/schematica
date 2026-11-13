@@ -36,7 +36,7 @@ def package():
         source = Path(temporary)
         for config in items:
             write_tex_bundle(config["symbol_id"], config["size"], config["stroke"],
-                             source / config["key"])
+                             source / config["key"], options=config.get("options"))
         files = {p.relative_to(source).as_posix(): p.read_bytes()
                  for p in source.rglob("*") if p.is_file()}
         report["tex-bundles.zip"] = write_archive(output / "tex-bundles.zip", files)

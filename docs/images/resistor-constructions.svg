@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ns1="http://www.inkscape.org/namespaces/inkscape" xmlns:ns2="http://www.w3.org/1999/xlink" viewBox="0 0 800 176" width="800" height="176" role="img">
+  <title>Schematica construction examples at a common scale</title>
+  <rect width="100%" height="100%" fill="#fff" />
+  <g transform="translate(100.0,84) scale(2.822222222911413) translate(42.887314,51.874137)">
+    <g id="sc-potentiometer-us-r2-medium-medium--sc-potentiometer-us-r2-medium-medium" ns1:label="Potentiometer (US) / medium / medium" data-symbol="potentiometer-us" data-revision="2" data-size="medium" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-42.887314,-51.874137)scale(0.996264,-0.996264)">
+      <g data-part="body" id="sc-potentiometer-us-r2-medium-medium--sc-potentiometer-us-r2-medium-medium--body" ns1:label="body">
+        <path d="M-14.22621 0L-11.85518 4.74207L-7.1131-4.74207L-2.37103 4.74207L2.37103-4.74207L7.1131 4.74207L11.85518-4.74207L14.22621 0" fill="none" />
+        <desc>Zigzag resistor body</desc>
+      </g>
+      <g data-part="lead-a" id="sc-potentiometer-us-r2-medium-medium--sc-potentiometer-us-r2-medium-medium--lead-a" ns1:label="lead-a">
+        <path d="M-22.76208 0H-14.22621" fill="none" />
+        <desc>Lead from terminal A to body</desc>
+      </g>
+      <g data-part="lead-b" id="sc-potentiometer-us-r2-medium-medium--sc-potentiometer-us-r2-medium-medium--lead-b" ns1:label="lead-b">
+        <path d="M14.22621 0H22.76208" fill="none" />
+        <desc>Lead from body to terminal B</desc>
+      </g>
+      <g data-part="lead-wiper" id="sc-potentiometer-us-r2-medium-medium--sc-potentiometer-us-r2-medium-medium--lead-wiper" ns1:label="lead-wiper">
+        <path d="M0 17.07156V7.58733" fill="none" />
+        <desc>Centered vertical lead from wiper terminal to arrow tip</desc>
+      </g>
+      <g data-part="wiper-arrow" id="sc-potentiometer-us-r2-medium-medium--sc-potentiometer-us-r2-medium-medium--wiper-arrow" ns1:label="wiper-arrow">
+        <path d="M2.1339 11.14384L0 7.58733L-2.1339 11.14384" fill="none" />
+        <desc>Movable wiper contact arrow</desc>
+      </g>
+    </g>
+  </g>
+  <text x="100.0" y="156" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#20272e">Centered wiper</text>
+  <g transform="translate(300.0,84) scale(2.822222222911413) translate(42.887314,61.322941)">
+    <defs>
+      <path id="sc-thermistor-ntc-eu-r2-medium-medium--g0-42" d="M3.354654-.257171L3.320364-.6515C3.154632-.537202 2.988899-.428618 2.794592-.371469C2.611715-.308605 2.411693-.30289 2.217386-.30289C1.845917-.30289 1.508737-.502912 1.274425-.794373C1.01154-1.131553 .885811-1.554456 .885811-1.983075S1.01154-2.840311 1.274425-3.177491C1.508737-3.468952 1.845917-3.668974 2.217386-3.668974C2.388833-3.668974 2.565996-3.651829 2.731728-3.600395C2.903176-3.548961 3.063193-3.463237 3.211781-3.360369L3.29179-3.828991C3.120342-3.89757 2.94318-3.954719 2.760303-3.989009C2.58314-4.023298 2.400263-4.034728 2.217386-4.034728C1.714474-4.034728 1.251566-3.806132 .914386-3.434662C.560061-3.034619 .377184-2.514561 .377184-1.983075S.560061-.931531 .914386-.537202C1.251566-.165732 1.714474 .062864 2.217386 .062864C2.417408 .062864 2.61743 .057149 2.811737 0C3.006044-.051434 3.183206-.154303 3.354654-.257171Z" />
+      <path id="sc-thermistor-ntc-eu-r2-medium-medium--g0-76" d="M3.491812 0V-3.966149H3.046048V-.405759H3.040333L2.657434-1.188702L1.257281-3.966149H.548632V0H.994395V-3.56039H1.00011L1.383009-2.777447L2.783162 0H3.491812Z" />
+      <path id="sc-thermistor-ntc-eu-r2-medium-medium--g0-104" d="M3.680404-3.56039V-3.93186H.205737V-3.56039H.971535C1.040114-3.56039 1.108693-3.566105 1.177272-3.566105H1.691614V0H2.200241V-3.566105H2.708869C2.777447-3.566105 2.846026-3.56039 2.914605-3.56039H3.680404Z" />
+    </defs>
+    <g id="sc-thermistor-ntc-eu-r2-medium-medium--sc-thermistor-ntc-eu-r2-medium-medium" ns1:label="NTC thermistor (EU) / medium / medium" data-symbol="thermistor-ntc-eu" data-revision="2" data-size="medium" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-42.887314,-61.322941)scale(0.996264,-0.996264)">
+      <g data-part="body" id="sc-thermistor-ntc-eu-r2-medium-medium--sc-thermistor-ntc-eu-r2-medium-medium--body" ns1:label="body">
+        <path d="M-14.22621-4.74207V4.74207H14.22621V-4.74207ZM14.22621 4.74207" fill="none" />
+        <desc>Rectangular resistor body</desc>
+      </g>
+      <g data-part="lead-a" id="sc-thermistor-ntc-eu-r2-medium-medium--sc-thermistor-ntc-eu-r2-medium-medium--lead-a" ns1:label="lead-a">
+        <path d="M-22.76208 0H-14.22621" fill="none" />
+        <desc>Lead from terminal A to body</desc>
+      </g>
+      <g data-part="lead-b" id="sc-thermistor-ntc-eu-r2-medium-medium--sc-thermistor-ntc-eu-r2-medium-medium--lead-b" ns1:label="lead-b">
+        <path d="M14.22621 0H22.76208" fill="none" />
+        <desc>Lead from body to terminal B</desc>
+      </g>
+      <g data-part="dependency-mark" id="sc-thermistor-ntc-eu-r2-medium-medium--sc-thermistor-ntc-eu-r2-medium-medium--dependency-mark" ns1:label="dependency-mark">
+        <path d="M-13.2778-8.53574H-7.58733L10.4325 7.58733" fill="none" />
+        <desc>Bent temperature-dependence mark</desc>
+      </g>
+      <g data-part="temperature-mark" id="sc-thermistor-ntc-eu-r2-medium-medium--sc-thermistor-ntc-eu-r2-medium-medium--temperature-mark" ns1:label="temperature-mark">
+        <use x="-42.887314" y="-61.322941" ns2:href="#sc-thermistor-ntc-eu-r2-medium-medium--g0-76" stroke="none" fill="#000" transform="translate(-15.17458,-15.43077) scale(-1.00375,1.00375)translate(-42.887314,-61.322941)scale(-1,-1)" />
+        <use x="-38.841162" y="-61.322941" ns2:href="#sc-thermistor-ntc-eu-r2-medium-medium--g0-104" stroke="none" fill="#000" transform="translate(-15.17458,-15.43077) scale(-1.00375,1.00375)translate(-42.887314,-61.322941)scale(-1,-1)" />
+        <use x="-34.949293" y="-61.322941" ns2:href="#sc-thermistor-ntc-eu-r2-medium-medium--g0-42" stroke="none" fill="#000" transform="translate(-15.17458,-15.43077) scale(-1.00375,1.00375)translate(-42.887314,-61.322941)scale(-1,-1)" />
+        <desc>NTC temperature-coefficient label</desc>
+      </g>
+    </g>
+  </g>
+  <text x="300.0" y="156" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#20272e">NTC lettering</text>
+  <g transform="translate(500.0,84) scale(2.822222222911413) translate(42.887314,48.829311)">
+    <g id="sc-photoresistor-eu-r2-medium-medium--sc-photoresistor-eu-r2-medium-medium" ns1:label="Photoresistor (EU) / medium / medium" data-symbol="photoresistor-eu" data-revision="2" data-size="medium" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-42.887314,-48.829311)scale(0.996264,-0.996264)">
+      <g data-part="body" id="sc-photoresistor-eu-r2-medium-medium--sc-photoresistor-eu-r2-medium-medium--body" ns1:label="body">
+        <path d="M-14.22621-4.74207V4.74207H14.22621V-4.74207ZM14.22621 4.74207" fill="none" />
+        <desc>Rectangular resistor body</desc>
+      </g>
+      <g data-part="lead-a" id="sc-photoresistor-eu-r2-medium-medium--sc-photoresistor-eu-r2-medium-medium--lead-a" ns1:label="lead-a">
+        <path d="M-22.76208 0H-14.22621" fill="none" />
+        <desc>Lead from terminal A to body</desc>
+      </g>
+      <g data-part="lead-b" id="sc-photoresistor-eu-r2-medium-medium--sc-photoresistor-eu-r2-medium-medium--lead-b" ns1:label="lead-b">
+        <path d="M14.22621 0H22.76208" fill="none" />
+        <desc>Lead from body to terminal B</desc>
+      </g>
+      <g data-part="light-arrows" id="sc-photoresistor-eu-r2-medium-medium--sc-photoresistor-eu-r2-medium-medium--light-arrows" ns1:label="light-arrows">
+        <path d="M12.7273 20.1278L6.021 13.42151" fill="none" />
+        <path d="M10.04471 14.42746L6.021 13.42151L7.02695 17.44522" fill="none" />
+        <path d="M17.75677 15.09833L11.05048 8.39203" fill="none" />
+        <path d="M15.07419 9.39798L11.05048 8.39203L12.05643 12.41574" fill="none" />
+        <desc>Two parallel light arrows with symmetric heads</desc>
+      </g>
+    </g>
+  </g>
+  <text x="500.0" y="156" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#20272e">Symmetric light arrows</text>
+  <g transform="translate(700.0,84) scale(2.822222222911413) translate(42.887314,54.183226)">
+    <g id="sc-resistor-nonlinear-eu-r1-medium-medium--sc-resistor-nonlinear-eu-r1-medium-medium" ns1:label="Nonlinear resistor (EU) / medium / medium" data-symbol="resistor-nonlinear-eu" data-revision="1" data-size="medium" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-42.887314,-54.183226)scale(0.996264,-0.996264)">
+      <g data-part="body" id="sc-resistor-nonlinear-eu-r1-medium-medium--sc-resistor-nonlinear-eu-r1-medium-medium--body" ns1:label="body">
+        <path d="M-14.22621-4.74207V4.74207H14.22621V-4.74207ZM14.22621 4.74207" fill="none" />
+        <desc>Rectangular resistor body</desc>
+      </g>
+      <g data-part="lead-a" id="sc-resistor-nonlinear-eu-r1-medium-medium--sc-resistor-nonlinear-eu-r1-medium-medium--lead-a" ns1:label="lead-a">
+        <path d="M-22.76208 0H-14.22621" fill="none" />
+        <desc>Lead from terminal A to body</desc>
+      </g>
+      <g data-part="lead-b" id="sc-resistor-nonlinear-eu-r1-medium-medium--sc-resistor-nonlinear-eu-r1-medium-medium--lead-b" ns1:label="lead-b">
+        <path d="M14.22621 0H22.76208" fill="none" />
+        <desc>Lead from body to terminal B</desc>
+      </g>
+      <g data-part="nonlinear-mark" id="sc-resistor-nonlinear-eu-r1-medium-medium--sc-resistor-nonlinear-eu-r1-medium-medium--nonlinear-mark" ns1:label="nonlinear-mark">
+        <path d="M-11.73602-8.38287C-5.36508-14.75381 2.3472-7.04153 0 0S5.36508 14.75381 11.73602 8.38287" fill="none" />
+        <desc>Continuous diagonal S-shaped nonlinear-resistance marking</desc>
+      </g>
+    </g>
+  </g>
+  <text x="700.0" y="156" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#20272e">Nonlinear S</text>
+</svg>

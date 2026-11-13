@@ -2,7 +2,7 @@
 
 ## Use one symbol
 
-1. In Schematica, choose a symbol, size and stroke. Click the download icon beside
+1. In Schematica, choose a symbol, size, stroke and any displayed orientation. Click the download icon beside
    its name.
 2. Open the SVG in Inkscape, or use **File → Import** in your drawing. Keep its
    original scale; use the selected preset rather than resizing to change stroke.
@@ -16,7 +16,9 @@ the export canvas includes a 1 mm margin around the artwork.
 ## Use the Symbols panel
 
 1. Choose size and stroke, then **Export library → Download SVG**. The file contains
-   all 28 symbols at those settings, regardless of the search/filter.
+   all 28 symbols at those settings, regardless of the search/filter. If the selected
+   design has an orientation control, that orientation is applied to the four designs
+   supporting it. Otherwise they use **Up-right**. Other options use each design's defaults.
 2. Open the downloaded file in Inkscape. Open **Object → Symbols** (`Ctrl+Shift+Y`)
    and select **Current document**. Expect 28 thumbnails.
 3. Click a thumbnail to copy it. Create or switch to your drawing, click its canvas

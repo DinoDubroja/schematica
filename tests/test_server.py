@@ -9,6 +9,7 @@ from http.server import ThreadingHTTPServer
 from pathlib import Path
 from server import Handler
 from build_site import payload
+from core import configuration_choices
 
 
 class QuietHandler(Handler):
@@ -49,7 +50,8 @@ class LocalServiceTests(unittest.TestCase):
         status, body, _ = self.request('/library/catalog.json')
         self.assertEqual(status, 200)
         data = json.loads(body)
-        self.assertEqual(sum(len(s['configurations']) for s in data['symbols']), 9 * len(data['symbols']))
+        self.assertEqual(sum(len(s['configurations']) for s in data['symbols']),
+                         sum(len(configuration_choices(s)) for s in data['symbols']))
         status, body, headers = self.request('/')
         self.assertEqual(status, 200)
         self.assertIn(b'Schematica', body)

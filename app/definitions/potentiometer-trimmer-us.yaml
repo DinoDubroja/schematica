@@ -1,8 +1,9 @@
 schema_version: 1
 id: potentiometer-trimmer-us
-revision: 1
+revision: 2
 name: Trimmer potentiometer (US)
-description: Three-terminal preset potentiometer with a separate adjustable wiper terminal.
+description: Three-terminal preset potentiometer with a centered vertical wiper, separated
+  from the body by 1 mm.
 keywords:
 - resistor
 - American
@@ -64,7 +65,7 @@ parts:
 - id: lead-b
   description: Lead from body to terminal B
 - id: lead-wiper
-  description: Lead from the wiper terminal to the resistance element
+  description: Centered vertical lead from wiper terminal to arrow tip
 - id: wiper-arrow
   description: Movable wiper contact arrow
 - id: adjustment

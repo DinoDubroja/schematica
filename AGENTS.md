@@ -10,6 +10,11 @@
 - Preserve the accepted UI and geometry. Parameterized TeX is the drawing
   authority; YAML holds semantics and presets. Python packages converter output.
   Size and stroke remain independent on the accepted 1 mm connection grid.
+- Before a symbol batch, reuse the [construction reference](docs/SYMBOL_REFERENCE.md)
+  and [batch workflow](docs/RESISTOR_BATCH.md#repeatable-creation-workflow).
+  Refine representatives before production; visually compare related designs and
+  crowded Small/Thick cases. Render/check every declared option combination before
+  promotion, even though Variations compares one setting per row.
 - Keep app code in `app/`, tests and essential fixtures in `tests/`, human guides
   and images in `docs/`. Generate bundles and ZIPs into ignored build output.
 - After each implementation run, update the developer guide's latest review with

@@ -8,7 +8,7 @@ find personal presets and created schematics. Keep its everyday controls minimal
 
 | Outcome | Status | What it means |
 |---|---|---|
-| Minimal symbol library in the web app | Implemented | Browse, search, compare sizes/strokes, use dark/light mode and export one symbol or the whole Inkscape library |
+| Minimal symbol library in the web app | Implemented | Browse, search, compare variations, use dark/light mode and export one symbol or the whole Inkscape library |
 | Grow a consistent supplied library with agent-run batches | First batch implemented | A finite resistor inventory, repeatable creation and validation, and human verification; more component families remain to be planned |
 | Create symbols interactively with an agent | Near term · missing | A symbol-creation skill that discusses intent, shows alternatives, renders, checks and refines designs; shares tools and formats with batch production |
 | Connect Schematica to agent apps through MCP | Near term · missing | Let supported Claude/Codex and cloud-hosted agent workflows find, inspect, create and reuse symbols; demonstrate a complete working journey |
@@ -18,8 +18,8 @@ find personal presets and created schematics. Keep its everyday controls minimal
 
 These are product outcomes, not a step-by-step implementation plan. The detailed
 priority interview is unfinished; the order among the near-term milestones has
-not been agreed. Only the resistor batch and temporary verification workflow are
-authorized in the current implementation.
+not been agreed. The current authorization covers resistor corrections, declared
+options, Variations, batch checks and publication; it does not authorize the future milestones.
 
 ## Decisions that guide the work
 

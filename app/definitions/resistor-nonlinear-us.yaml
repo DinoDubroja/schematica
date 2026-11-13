@@ -1,0 +1,62 @@
+schema_version: 1
+id: resistor-nonlinear-us
+revision: 1
+name: Nonlinear resistor (US)
+description: Two-terminal nonlinear resistor with a diagonal S-shaped marking, without
+  an arrowhead. This generic form does not specify a voltage or temperature dependence.
+keywords:
+- resistor
+- American
+- zigzag
+- passive
+- nonlinear
+- non-linear
+- S-shaped
+types:
+- passive
+- resistor
+family: resistors
+batch: resistors-01
+attributes:
+  appearance: american
+  body: zigzag
+  polarized: false
+  variant: nonlinear
+recipe: resistor-variant
+drawing:
+  body: us
+  variant: nonlinear
+reference:
+  source: CircuitikZ R body; user-confirmed custom nonlinear marking
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: R + custom S curve
+  approach: custom modifier on accepted body; see docs/SYMBOL_REFERENCE.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: a
+  name: A
+  description: Resistance element terminal A
+  kind: passive
+  lead_part: lead-a
+- id: b
+  name: B
+  description: Resistance element terminal B
+  kind: passive
+  lead_part: lead-b
+parts:
+- id: body
+  description: Zigzag resistor body
+- id: lead-a
+  description: Lead from terminal A to body
+- id: lead-b
+  description: Lead from body to terminal B
+- id: nonlinear-mark
+  description: Continuous diagonal S-shaped nonlinear-resistance marking

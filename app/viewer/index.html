@@ -8,6 +8,7 @@
   <script src="./theme.js"></script>
   <link rel="stylesheet" href="./style.css">
   <script src="./review.js" defer></script>
+  <script src="./configurations.js" defer></script>
   <script src="./app.js" defer></script>
 </head>
 <body>
@@ -37,13 +38,14 @@
         <fieldset disabled><legend>Size</legend><div class="segmented" id="sizes"><button data-size="small">Small</button><button data-size="medium" class="active">Medium</button><button data-size="large">Large</button></div></fieldset>
         <fieldset disabled><legend>Stroke</legend><div class="segmented strokes" id="strokes"><button data-stroke="thin"><i class="thin" aria-hidden="true"></i>Thin</button><button data-stroke="medium" class="active"><i class="medium" aria-hidden="true"></i>Medium</button><button data-stroke="thick"><i class="thick" aria-hidden="true"></i>Thick</button></div></fieldset>
       </div>
-      <div class="review-tools"><label class="toggle"><input id="approve-design" type="checkbox" disabled><span id="approval-label">Unverified</span></label><button id="show-configurations" class="quiet-button" disabled>3 × 3</button><button id="verify-next" class="verify-button" disabled>Verify &amp; next</button><button id="undo-approval" class="quiet-button" disabled>Undo</button></div>
+      <div id="symbol-options" class="symbol-options" hidden></div>
+      <div class="review-tools"><label class="toggle"><input id="approve-design" type="checkbox" disabled><span id="approval-label">Unverified</span></label><button id="show-configurations" class="quiet-button" disabled>Variations</button><button id="verify-next" class="verify-button" disabled>Verify &amp; next</button><button id="undo-approval" class="quiet-button" disabled>Undo</button></div>
       <p id="pending-note" class="pending-note" hidden>Pending in this browser. Copy approvals to publish.</p>
       <details class="description"><summary>Description</summary><p id="description"></p><h3>Keywords</h3><ul id="keywords" class="tags" aria-label="Search keywords"></ul></details>
     </section>
   </main>
   <p id="notice" class="notice" role="status" hidden></p>
-  <dialog id="configuration-dialog" class="configuration-dialog" aria-labelledby="configuration-title"><div class="dialog-header"><h2 id="configuration-title">All configurations</h2><button class="icon-button" data-close="configuration-dialog" aria-label="Close configurations">×</button></div><div class="matrix-scroll"><div id="configuration-matrix" class="configuration-matrix" aria-busy="false"></div></div></dialog>
+  <dialog id="configuration-dialog" class="configuration-dialog" aria-labelledby="configuration-title" aria-describedby="variation-symbol"><div class="dialog-header"><div><h2 id="configuration-title">Variations</h2><p id="variation-symbol"></p></div><button class="quiet-button close-variations" data-close="configuration-dialog" aria-label="Close variations">Close</button></div><div id="variation-rows" aria-busy="false"></div></dialog>
   <dialog id="copy-dialog" aria-labelledby="copy-title"><div class="dialog-header"><h2 id="copy-title">Copy text</h2><button class="icon-button" data-close="copy-dialog" aria-label="Close copy text">×</button></div><p class="copy-help">Clipboard unavailable. Select and copy the text below.</p><textarea id="copy-text" readonly aria-label="Text to copy" spellcheck="false"></textarea><button id="select-copy-text" class="quiet-button">Select all</button></dialog>
   <dialog id="export-dialog" aria-labelledby="export-title">
     <div class="dialog-header"><h2 id="export-title">Export library</h2><button id="close-dialog" class="icon-button" aria-label="Close export options"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button></div>

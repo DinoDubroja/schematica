@@ -1,9 +1,9 @@
 schema_version: 1
 id: thermistor-ptc-eu
-revision: 1
+revision: 2
 name: PTC thermistor (EU)
-description: 'Positive-temperature-coefficient resistor: resistance increases as temperature rises.
-  The mark is plus t degrees.'
+description: 'Positive-temperature-coefficient resistor: resistance increases as temperature
+  rises. Labelled PTC.'
 keywords:
 - resistor
 - European
@@ -62,4 +62,4 @@ parts:
 - id: dependency-mark
   description: Bent temperature-dependence mark
 - id: temperature-mark
-  description: 'Plus t degrees: positive temperature coefficient'
+  description: PTC temperature-coefficient label

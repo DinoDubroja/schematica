@@ -48,11 +48,18 @@ def verify(downloads=None):
                         'references': 'passed', 'physical_page_size': 'passed', 'clipping': 'passed',
                         'browser_download': 'byte-identical' if downloads else 'not checked'})
         print(f'Verified library: {preset}', flush=True)
+    singles = []
     if downloads:
         actual = Path(downloads) / 'inductor-coil-small-thick.svg'
         assert actual.read_bytes() == (DIST / 'library/svg' / actual.name).read_bytes()
+        library_names = {Path(name).name for name in data['exports'].values()}
+        for actual in sorted(Path(downloads).glob('*.svg')):
+            if actual.name in library_names: continue
+            assert actual.read_bytes() == (DIST / 'library/svg' / actual.name).read_bytes(), actual.name
+            singles.append(actual.name)
     report = {'build_id': manifest['build_id'], 'libraries': results,
               'single_browser_download': 'byte-identical' if downloads else 'not checked',
+              'individual_downloads': singles,
               'note': 'Inkscape command-line save/reopen and PDF rendering; no GUI actions implied.'}
     (work / 'results.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
     print(json.dumps({'build_id': manifest['build_id'], 'libraries_passed': len(results)}, indent=2))

@@ -1,6 +1,6 @@
 schema_version: 1
 id: photoresistor-us
-revision: 1
+revision: 2
 name: Photoresistor (US)
 description: Light-dependent resistor with two incoming light arrows, without an enclosure.
 keywords:
@@ -59,4 +59,4 @@ parts:
 - id: lead-b
   description: Lead from body to terminal B
 - id: light-arrows
-  description: Two incoming light arrows
+  description: Two parallel light arrows with symmetric heads

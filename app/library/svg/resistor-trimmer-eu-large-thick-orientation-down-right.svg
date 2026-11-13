@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000023 63.212295 33.094238" width="22.29989296mm" height="11.67491174mm">
+  <title>Trimmer resistor (EU)</title>
+  <desc>Two-terminal preset resistor; the diagonal bar indicates adjustment during setup.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 4.16666, "body-width": 12.49997}, "origin_svg": [-37.076311, -56.929261], "parts": ["body", "lead-a", "lead-b", "adjustment"], "pins_mm": {"a": [-10.0, 0.0], "b": [10.0, 0.0]}, "revision": 2, "settings": {"grid_mm": 1, "options": {"orientation": "down-right"}, "size": "large", "size_factor": 1.25, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "resistor-trimmer-eu"}</metadata>
+  <g id="sc-resistor-trimmer-eu-r2-large-thick-orientation-down-right--sc-resistor-trimmer-eu-r2-large-thick-orientation-down-right" inkscape:label="Trimmer resistor (EU) / large / thick" data-symbol="resistor-trimmer-eu" data-revision="2" data-size="large" data-stroke="thick" data-option-orientation="down-right" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-37.076311,-56.929261)scale(0.996264,-0.996264)">
+    <g data-part="body" id="sc-resistor-trimmer-eu-r2-large-thick-orientation-down-right--sc-resistor-trimmer-eu-r2-large-thick-orientation-down-right--body" inkscape:label="body">
+      <path d="M-17.78282-5.9276V5.9276H17.78282V-5.9276ZM17.78282 5.9276" fill="none" />
+      <desc>Rectangular resistor body</desc>
+    </g>
+    <g data-part="lead-a" id="sc-resistor-trimmer-eu-r2-large-thick-orientation-down-right--sc-resistor-trimmer-eu-r2-large-thick-orientation-down-right--lead-a" inkscape:label="lead-a">
+      <path d="M-28.4526 0H-17.78282" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="lead-b" id="sc-resistor-trimmer-eu-r2-large-thick-orientation-down-right--sc-resistor-trimmer-eu-r2-large-thick-orientation-down-right--lead-b" inkscape:label="lead-b">
+      <path d="M17.78282 0H28.4526" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+    <g data-part="adjustment" id="sc-resistor-trimmer-eu-r2-large-thick-orientation-down-right--sc-resistor-trimmer-eu-r2-large-thick-orientation-down-right--adjustment" inkscape:label="adjustment">
+      <path d="M-11.85521 11.85521L11.85521-11.85521" fill="none" />
+      <path d="M8.89139-14.819L14.819-8.89139" fill="none" />
+      <desc>Preset-adjustment slash and end bar</desc>
+    </g>
+  </g>
+</svg>

@@ -1,13 +1,15 @@
 % CircuitikZ reference forms adapted to the accepted Schematica resistor bodies.
 % See docs/RESISTOR_BATCH.md for meaning, reference mapping and adaptations.
 % All adornments use size coordinates; none depends geometrically on line width.
-\newcommand{\SCResistorVariant}[5]{%
+\newcommand{\SCResistorVariant}[6]{%
   \SCresolve{#1}{#2}{#3}%
   \pgfmathsetmacro{\SCend}{ceil(3*\SCscale+2)+1}%
   \pgfmathsetmacro{\SCwiperend}{ceil(3*\SCscale)+1}%
   \pgfmathsetmacro{\SCcontact}{\SCscale}%
-  % The US wiper touches a peak, avoiding an arrow nearly parallel to the zigzag.
+  % A tap touches the old US peak; the potentiometer wiper is separately centered.
   \pgfmathsetmacro{\SCcontactx}{-.5*#4*\SCscale}%
+  \pgfmathsetmacro{\SCorientx}{ifthenelse(mod(#6,2)==1,-1,1)}%
+  \pgfmathsetmacro{\SCorienty}{ifthenelse(#6>1,-1,1)}%
   \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
     \SCpin{a}{-\SCend}{0}\SCpin{b}{\SCend}{0}
     \SCdimension{body-width}{6*\SCscale}\SCdimension{body-height}{2*\SCscale}
@@ -24,46 +26,41 @@
     \begin{SCpart}{lead-b}\draw ({3*\SCscale},0)--(\SCend,0);\end{SCpart}
     \ifcase#5
       \begin{SCpart}{adjustment}
-        \draw ({-2*\SCscale},{-2*\SCscale})--({2*\SCscale},{2*\SCscale});
-        \draw ({1.15*\SCscale},{1.8*\SCscale})--({2*\SCscale},{2*\SCscale})--({1.8*\SCscale},{1.15*\SCscale});
+        \begin{scope}[xscale=\SCorientx,yscale=\SCorienty]
+          \draw ({-2*\SCscale},{-2*\SCscale})--({2.4*\SCscale},{2.4*\SCscale});
+          \SCopenArrowHead{2.4*\SCscale}{2.4*\SCscale}{45}
+        \end{scope}
       \end{SCpart}
     \or \SCresistorWiper
     \or
       \begin{SCpart}{adjustment}
-        \draw ({-2*\SCscale},{-2*\SCscale})--({2*\SCscale},{2*\SCscale});
-        \draw ({1.5*\SCscale},{2.5*\SCscale})--({2.5*\SCscale},{1.5*\SCscale});
+        \begin{scope}[xscale=\SCorientx,yscale=\SCorienty]
+          \draw ({-2*\SCscale},{-2*\SCscale})--({2*\SCscale},{2*\SCscale});
+          \draw ({1.5*\SCscale},{2.5*\SCscale})--({2.5*\SCscale},{1.5*\SCscale});
+        \end{scope}
       \end{SCpart}
     \or
       \SCresistorWiper
       \begin{SCpart}{adjustment}
-        \draw ({-.55*\SCscale},{\SCcontact+1.8*\SCscale})--({.55*\SCscale},{\SCcontact+2.35*\SCscale});
+        \draw ({-.55*\SCscale},{\SCwipertip+1.1*\SCscale})--({.55*\SCscale},{\SCwipertip+1.7*\SCscale});
       \end{SCpart}
     \or \SCresistorDependence
-    \or \SCresistorDependence\SCtemperatureMark{0}
-    \or \SCresistorDependence\SCtemperatureMark{1}
+    \or \SCresistorDependence\SCtemperatureMark{NTC}
+    \or \SCresistorDependence\SCtemperatureMark{PTC}
     \or
-      \SCresistorDependence
-      \begin{SCpart}{voltage-mark}
-        \draw ({-2.8*\SCscale},{-2.55*\SCscale})--({-2.8*\SCscale},{-3.15*\SCscale})
-          .. controls ({-2.8*\SCscale},{-3.75*\SCscale}) and ({-1.8*\SCscale},{-3.75*\SCscale}) .. ({-1.8*\SCscale},{-3.15*\SCscale})
-          --({-1.8*\SCscale},{-2.55*\SCscale});
+      \begin{SCpart}{nonlinear-mark}
+        \begin{scope}[rotate=-45]
+          \draw ({-.5*\SCscale},{-3*\SCscale})
+            .. controls ({1.4*\SCscale},{-3*\SCscale}) and ({1.4*\SCscale},{-.7*\SCscale}) .. (0,0)
+            .. controls ({-1.4*\SCscale},{.7*\SCscale}) and ({-1.4*\SCscale},{3*\SCscale}) .. ({.5*\SCscale},{3*\SCscale});
+        \end{scope}
       \end{SCpart}
     \or
-      \begin{SCpart}{light-arrows}
-        \foreach \x in {0,1.4}{
-          \draw ({(2+\x)*\SCscale},{4*\SCscale})--({(1+\x)*\SCscale},{2*\SCscale});
-          \draw ({(1.15+\x)*\SCscale},{2.9*\SCscale})--({(1+\x)*\SCscale},{2*\SCscale})--({(1.85+\x)*\SCscale},{2.55*\SCscale});
-        }
-      \end{SCpart}
+      \SCphotoArrows{1.8}{2.3}
     \or
       \SCdimension{enclosure-diameter}{7.6*\SCscale}
       \begin{SCpart}{enclosure}\draw (0,0) circle ({3.8*\SCscale});\end{SCpart}
-      \begin{SCpart}{light-arrows}
-        \foreach \x/\y in {2.6/3.4,3.7/2.8}{
-          \draw ({(\x+1.2)*\SCscale},{(\y+1.6)*\SCscale})--({\x*\SCscale},{\y*\SCscale});
-          \draw ({(\x+.1)*\SCscale},{(\y+.75)*\SCscale})--({\x*\SCscale},{\y*\SCscale})--({(\x+.7)*\SCscale},{(\y+.3)*\SCscale});
-        }
-      \end{SCpart}
+      \SCphotoArrows{3.1}{3.1}
     \or
       \SCpin{tap}{0}{\SCwiperend}
       \begin{SCpart}{lead-tap}\draw (0,\SCwiperend)--(\SCcontactx,\SCcontact);\end{SCpart}
@@ -72,14 +69,12 @@
 }
 \newcommand{\SCresistorWiper}{%
   \SCpin{wiper}{0}{\SCwiperend}
-  \pgfmathsetmacro{\SCwiperlength}{sqrt(\SCcontactx^2+(\SCwiperend-\SCcontact)^2)}%
-  \pgfmathsetmacro{\SCwx}{-\SCcontactx/\SCwiperlength}%
-  \pgfmathsetmacro{\SCwy}{(\SCwiperend-\SCcontact)/\SCwiperlength}%
-  \begin{SCpart}{lead-wiper}\draw (0,\SCwiperend)--(\SCcontactx,\SCcontact);\end{SCpart}
+  \pgfmathsetmacro{\SCwipertip}{\SCscale+1}%
+  \SCdimension{wiper-tip-x}{0}\SCdimension{wiper-tip-y}{\SCwipertip}
+  \SCdimension{wiper-body-gap}{1}
+  \begin{SCpart}{lead-wiper}\draw (0,\SCwiperend)--(0,\SCwipertip);\end{SCpart}
   \begin{SCpart}{wiper-arrow}
-    \draw ({\SCcontactx+(.75*\SCwx-.45*\SCwy)*\SCscale},{\SCcontact+(.75*\SCwy+.45*\SCwx)*\SCscale})
-      --(\SCcontactx,\SCcontact)
-      --({\SCcontactx+(.75*\SCwx+.45*\SCwy)*\SCscale},{\SCcontact+(.75*\SCwy-.45*\SCwx)*\SCscale});
+    \SCopenArrowHead{0}{\SCwipertip}{-90}
   \end{SCpart}
 }
 \newcommand{\SCresistorDependence}{%
@@ -89,11 +84,28 @@
 }
 \newcommand{\SCtemperatureMark}[1]{%
   \begin{SCpart}{temperature-mark}
-    \draw ({-3.2*\SCscale},{-3.05*\SCscale})--({-2.2*\SCscale},{-3.05*\SCscale});
-    \ifnum#1=1 \draw ({-2.7*\SCscale},{-2.55*\SCscale})--({-2.7*\SCscale},{-3.55*\SCscale});\fi
-    \draw ({-1.2*\SCscale},{-2.5*\SCscale})--({-1.2*\SCscale},{-3.25*\SCscale})
-      .. controls ({-1.2*\SCscale},{-3.6*\SCscale}) and ({-.9*\SCscale},{-3.6*\SCscale}) .. ({-.7*\SCscale},{-3.4*\SCscale});
-    \draw ({-1.65*\SCscale},{-2.8*\SCscale})--({-.75*\SCscale},{-2.8*\SCscale});
-    \draw (0,{-2.6*\SCscale}) circle ({.25*\SCscale});
+    \pgfmathsetmacro{\SCcapheight}{.84*\SCscale}%
+    % Latin Modern Sans capitals have height 0.69444 em. Set the font itself;
+    % graphicx resize specials are not portable through the XDV converter.
+    \pgfmathsetmacro{\SCfontsize}{\SCcapheight*72.27/25.4/.69444}%
+    \font\SCtemperaturefont="[lmsans10-regular.otf]" at \SCfontsize pt
+    \node[anchor=north west,inner sep=0pt,outer sep=0pt] at ({-3.2*\SCscale},{-2.4*\SCscale})
+      {\SCtemperaturefont #1};
   \end{SCpart}
+}
+% Axis-based open head: same dimensions for every arrow in this family.
+\newcommand{\SCopenArrowHead}[3]{%
+  \begin{scope}[shift={(#1,#2)},rotate=#3]
+    \draw ({-.75*\SCscale},{.45*\SCscale})--(0,0)--({-.75*\SCscale},{-.45*\SCscale});
+  \end{scope}%
+}
+\newcommand{\SCphotoArrows}[2]{%
+  \begin{SCpart}{light-arrows}
+    \foreach \offset in {-.75,.75}{%
+      \pgfmathsetmacro{\SCax}{(#1+\offset/sqrt(2))*\SCscale}%
+      \pgfmathsetmacro{\SCay}{(#2-\offset/sqrt(2))*\SCscale}%
+      \draw ({\SCax+sqrt(2)*\SCscale},{\SCay+sqrt(2)*\SCscale})--(\SCax,\SCay);
+      \SCopenArrowHead{\SCax}{\SCay}{225}
+    }
+  \end{SCpart}%
 }

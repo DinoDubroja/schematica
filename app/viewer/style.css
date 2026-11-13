@@ -94,10 +94,17 @@ select:focus-visible,textarea:focus-visible{outline:2px solid var(--focus);outli
 .verify-button{border-radius:6px;background:var(--accent-soft);padding:7px 10px;font-size:12px;min-height:32px}
 .verify-button:hover{outline:1px solid var(--accent)}.pending-note{font-size:11px;color:var(--muted);margin:-4px 0 16px}
 .notice{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);max-width:calc(100% - 36px);padding:11px 16px;border:1px solid var(--border);border-radius:8px;background:var(--panel);box-shadow:0 5px 25px #0002;color:var(--text);font-size:12px;z-index:5}
-.configuration-dialog{width:min(1040px,calc(100% - 32px));max-height:calc(100vh - 32px);padding:20px}
-.matrix-scroll{overflow-x:auto;margin-top:16px}.configuration-matrix{display:grid;grid-template-columns:60px repeat(3,minmax(180px,1fr));gap:9px;min-width:630px}
-.matrix-label{display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:500;color:var(--muted);min-height:25px}
-.matrix-cell{background:var(--canvas);border:1px solid var(--border);border-radius:6px;height:clamp(110px,calc((100dvh - 210px)/3),200px)}.matrix-cell svg{width:100%;height:100%;display:block}
+.symbol-options{margin:-5px 0 24px}.option-choices button{font-size:11px;padding:6px 3px}
+.configuration-dialog{width:min(960px,calc(100% - 32px));max-height:calc(100dvh - 32px);padding:24px;overflow:auto}
+.configuration-dialog .dialog-header{align-items:flex-start;padding-bottom:20px}
+#variation-symbol{color:var(--muted);font-size:14px;margin:7px 0 0}.close-variations{border:1px solid var(--border);border-radius:6px}
+.variation-row{display:flex;align-items:center;gap:12px;border-top:1px solid var(--border);padding:18px 0}
+.variation-row:last-child{padding-bottom:0}.variation-row h3{flex:0 0 105px;font-size:13px;font-weight:600;margin:0}
+.variation-examples{display:flex;justify-content:space-around;width:100%;gap:6px}
+.variation-example{flex:0 0 calc(25% - 6px);margin:0;text-align:center;min-width:0}.variation-art{height:clamp(70px,13dvh,112px)}
+.variation-art svg{width:100%;height:100%;display:block}.variation-example figcaption{font-size:12px;color:var(--text);line-height:1.6}
+.variation-example figcaption span{display:block;font-size:11px;color:var(--muted);margin-top:3px}
+@media(max-width:600px){.configuration-dialog{padding:18px}.configuration-dialog .dialog-header{padding-bottom:14px}.variation-row{display:block;padding:16px 0}.variation-row h3{margin-bottom:8px}.variation-examples{gap:2px}.variation-example{flex-basis:calc(25% - 2px)}.variation-art{height:72px}.variation-example figcaption{font-size:10px}.variation-example figcaption span{font-size:10px}}
 #copy-dialog{width:min(620px,calc(100% - 32px))}.copy-help{font-size:12px;color:var(--muted);margin:14px 0}
 #copy-text{width:100%;height:240px;resize:vertical;font:12px/1.5 monospace;padding:12px}
 @media(max-width:720px){.catalogue-heading{gap:5px}.catalogue-heading .quiet-button{font-size:11px}.card-main{padding:0 12px 9px}.card-review{margin:0 12px 12px}.inspector-heading h2{font-size:19px}.configuration-dialog{padding:14px}.review-tools{gap:6px}.library-filters select{font-size:11px}}

@@ -6,11 +6,11 @@ import shutil
 import tempfile
 
 from core import ROOT, ValidationError, definitions
-from exports import LIBRARY, catalog, sheet
+from exports import LIBRARY, catalog, sheet, library_options, library_selection
 from verification import publication_catalog, read_ledger
 
 DIST = ROOT / "dist"
-VIEWER_FILES = ("index.html", "style.css", "app.js", "review.js", "theme.js", "_headers", "robots.txt")
+VIEWER_FILES = ("index.html", "style.css", "app.js", "configurations.js", "review.js", "theme.js", "_headers", "robots.txt")
 
 
 def payload():
@@ -18,6 +18,9 @@ def payload():
     definitions_by_id = {symbol["id"]: symbol for symbol in definitions()}
     files = {name: (ROOT / "viewer" / name).read_bytes() for name in VIEWER_FILES}
     data["exports"] = {}
+    data["export_settings"] = {}
+    specs, profiles = library_options(data)
+    data["export_defaults"] = {key: spec["default"] for key, spec in specs.items()}
     for symbol in data["symbols"]:
         # Editorial metadata can be updated without recompiling accepted geometry.
         source = definitions_by_id[symbol["id"]]
@@ -30,16 +33,15 @@ def payload():
             files[f"library/{config['svg']}"] = path.read_bytes()
     for size in data["presets"]["sizes"]:
         for stroke in data["presets"]["strokes"]:
-            items = []
-            for symbol in data["symbols"]:
-                matches = [c for c in symbol["configurations"] if c["size"] == size and c["stroke"] == stroke]
-                if len(matches) != 1:
-                    raise ValidationError(f"Expected one {size}/{stroke} configuration per symbol.")
-                items.extend(matches)
-            filename = f"exports/schematica-{size}-{stroke}.svg"
-            files[filename] = sheet(items, symbols=True, compact_titles=True,
-                                   title=f"Schematica · {size.title()} / {stroke.title()}")
-            data["exports"][f"{size}-{stroke}"] = filename
+            for options in profiles:
+                suffix = "".join(f"-{key}-{value}" for key, value in sorted(options.items()) if value != specs[key]["default"])
+                key = f"{size}-{stroke}{suffix}"
+                items = [library_selection(symbol, size, stroke, options) for symbol in data["symbols"]]
+                filename = f"exports/schematica-{key}.svg"
+                files[filename] = sheet(items, symbols=True, compact_titles=True,
+                                       title=f"Schematica · {size.title()} / {stroke.title()}")
+                data["exports"][key] = filename
+                data["export_settings"][key] = {"size": size, "stroke": stroke, "options": options}
     files["library/catalog.json"] = (json.dumps(data, indent=2) + "\n").encode()
     hashes = {name: hashlib.sha256(body).hexdigest() for name, body in sorted(files.items())}
     build_id = hashlib.sha256(json.dumps(hashes, sort_keys=True).encode()).hexdigest()[:12]

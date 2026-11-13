@@ -97,5 +97,29 @@ class ApprovalWorkflow(unittest.TestCase):
             else:
                 self.assertEqual(symbol['verification']['status'], 'unverified')
 
+    def test_options_and_nondefault_artwork_invalidate_approval(self):
+        symbol = next(s for s in self.data['symbols'] if s.get('options'))
+        source = next(s for s in self.sources if s['id'] == symbol['id'])
+        initial = self.publish()
+        published = next(s for s in initial['symbols'] if s['id'] == symbol['id'])
+        handoff = {'schema_version':1, 'library':'schematica', 'approvals':[
+            {'id':symbol['id'], 'revision':symbol['revision'], 'fingerprint':published['verification']['fingerprint']}]}
+        ledger, _ = apply_approvals(handoff, initial, self.empty)
+        config = next(c for c in symbol['configurations'] if c['options']['orientation']=='down-left')
+        file = self.library / config['svg']; tree = ET.parse(file)
+        next(tree.getroot().iter(f'{{{SVG}}}path')).set('transform', 'translate(.01,0)'); tree.write(file)
+        changed = self.publish(ledger)
+        with self.assertRaisesRegex(ValidationError, 'Stale approval'): apply_approvals(handoff, changed, ledger)
+        before = design_fingerprint(symbol, self.library)
+        symbol['options']['orientation']['default'] = 'down-left'
+        self.assertNotEqual(before, design_fingerprint(symbol, self.library))
+        source['options']['orientation']['default'] = 'down-left'
+        with self.assertRaisesRegex(ValidationError, 'Stale artwork'): self.publish()
+
+    def test_all_orientation_combinations_are_required(self):
+        symbol = next(s for s in self.data['symbols'] if s.get('options'))
+        symbol['configurations'].pop()
+        with self.assertRaisesRegex(ValidationError, 'Incomplete configurations'): self.publish()
+
 
 if __name__ == '__main__': unittest.main()

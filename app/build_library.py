@@ -5,7 +5,7 @@ from pathlib import Path
 import shutil
 import xml.etree.ElementTree as ET
 
-from core import ROOT, SVG, BP_MM, definitions, get_definition, render_symbol, read_yaml
+from core import ROOT, SVG, BP_MM, definitions, get_definition, render_symbol, read_yaml, configuration_choices, configuration_key
 from verification import source_fingerprint
 
 ORDER = ("resistor-eu", "resistor-us", "inductor-coil", "capacitor", "opamp", "opamp-supply")
@@ -32,9 +32,8 @@ def build(output=None, selected=None):
         started_from = source_fingerprint(entry)
         reports = []
         try:
-            for size in entry["presets"]["sizes"]:
-                for stroke in entry["presets"]["strokes"]:
-                    reports.append(render_symbol(sid, size, stroke))
+            for size, stroke, options in configuration_choices(entry):
+                reports.append(render_symbol(sid, size, stroke, options=options))
             if source_fingerprint(get_definition(sid)) != started_from:
                 raise ValueError("Drawing sources changed during rendering; rebuild this design")
         except Exception as error:
@@ -43,7 +42,7 @@ def build(output=None, selected=None):
             continue
         for report in reports:
             size, stroke = report["settings"]["size"], report["settings"]["stroke"]
-            key = f"{sid}-{size}-{stroke}"
+            key = configuration_key(sid, size, stroke, report["settings"].get("options"))
             path = library / "svg" / f"{key}.svg"
             shutil.copy2(report["output"], path)
             timings.append({**report, "output": str(path)})
@@ -59,9 +58,11 @@ def build(output=None, selected=None):
                 "pins_mm": report["pins_mm"], "dimensions_mm": report["dimensions_mm"],
                 "parts": report["parts"], "svg_bytes": report["svg_bytes"],
                 "settings": report["settings"]})
+            if report["settings"].get("options"):
+                entry["configurations"][-1]["options"] = report["settings"]["options"]
         entry["source_fingerprint"] = started_from
         data["symbols"].append(entry)
-        print(f"Built {sid}: 9 configurations", flush=True)
+        print(f"Built {sid}: {len(reports)} configurations", flush=True)
     (library / "catalog.json").write_text(json.dumps(data, indent=2)+"\n", encoding="utf-8")
     report_path = ROOT / "build/library-measurements.json"
     report_path.parent.mkdir(parents=True, exist_ok=True)

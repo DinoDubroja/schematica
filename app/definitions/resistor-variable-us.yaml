@@ -1,8 +1,9 @@
 schema_version: 1
 id: resistor-variable-us
-revision: 1
+revision: 2
 name: Variable resistor (US)
-description: Two-terminal adjustable resistor; the diagonal arrow indicates variable resistance.
+description: Two-terminal adjustable resistor; the diagonal arrow indicates variable
+  resistance.
 keywords:
 - resistor
 - American
@@ -59,3 +60,16 @@ parts:
   description: Lead from body to terminal B
 - id: adjustment
   description: Diagonal variable-resistance arrow
+options:
+  orientation:
+    name: Arrow orientation
+    default: up-right
+    values:
+    - id: up-right
+      name: Up-right
+    - id: up-left
+      name: Up-left
+    - id: down-right
+      name: Down-right
+    - id: down-left
+      name: Down-left

@@ -1,6 +1,7 @@
 """Compose pre-rendered converter artwork at physical scale; never draw symbols."""
 import copy
 import io
+import itertools
 import json
 import math
 import os
@@ -8,7 +9,7 @@ from pathlib import Path
 import xml.etree.ElementTree as ET
 import zipfile
 
-from core import ROOT, SVG, XLINK, BP_MM, ValidationError, namespace_ids, validate_svg_references
+from core import ROOT, SVG, XLINK, BP_MM, ValidationError, namespace_ids, validate_svg_references, resolve_options
 
 LIBRARY = Path(os.environ.get("SCHEMATICA_LIBRARY", ROOT / "library")).resolve()
 
@@ -27,6 +28,31 @@ def choose(selections, data=None):
     if any(not isinstance(k, str) or k not in lookup for k in selections):
         raise ValidationError("Unknown configuration.")
     return [lookup[k] for k in selections]
+
+
+def library_options(data):
+    """Shared export choices; symbols without a matching option use their defaults."""
+    specs = {}
+    for symbol in data["symbols"]:
+        for name, spec in symbol.get("options", {}).items():
+            if name in specs and specs[name] != spec:
+                raise ValidationError(f"Inconsistent shared export option: {name}")
+            specs[name] = spec
+    keys = sorted(specs)
+    profiles = [dict(zip(keys, values)) for values in itertools.product(
+        *[[v["id"] for v in specs[key]["values"]] for key in keys])]
+    return specs, profiles
+
+
+def library_selection(symbol, size, stroke, selections=None):
+    applicable = {key: value for key, value in (selections or {}).items()
+                  if key in symbol.get("options", {}) and value in [v["id"] for v in symbol["options"][key]["values"]]}
+    options = resolve_options(symbol, applicable)
+    matches = [c for c in symbol["configurations"] if c["size"] == size and c["stroke"] == stroke
+               and c.get("options", {}) == options]
+    if len(matches) != 1:
+        raise ValidationError(f"Expected one {size}/{stroke}/{options} configuration for {symbol['id']}")
+    return matches[0]
 
 
 def artwork(item):
@@ -92,7 +118,7 @@ def sheet(items, columns=3, spacing=6, symbols=False, title=None, compact_titles
                 sym = ET.SubElement(defs, f"{{{SVG}}}symbol", {"id": sid, "overflow": "visible"})
                 ET.SubElement(sym, f"{{{SVG}}}title").text = item['name'] if compact_titles else f"{item['name']} · {item['size'].title()} / {item['stroke'].title()}"
                 ET.SubElement(sym, f"{{{SVG}}}desc").text = "Unlink the placed instance to edit its named parts."
-                ET.SubElement(sym, f"{{{SVG}}}metadata").text = json.dumps({k:item[k] for k in ('symbol_id','revision','size','stroke','pins_mm')})
+                ET.SubElement(sym, f"{{{SVG}}}metadata").text = json.dumps({k:item[k] for k in ('symbol_id','revision','size','stroke','pins_mm','options') if k in item})
                 place(sym, item, 0, 0, prefix, origin=True)
                 # Symbols themselves have their TeX/pin origin at (0,0).
                 dx, dy = item["visual_center_from_origin_mm"]

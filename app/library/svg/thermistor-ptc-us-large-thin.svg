@@ -1,32 +1,35 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000023 62.78707 36.80288" width="22.14988303mm" height="12.98323822mm">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-68.682458 -72.000017 62.78707 34.625675" width="22.14988303mm" height="12.21516868mm">
+  <defs>
+    <path id="sc-thermistor-ptc-us-r2-large-thin--g0-42" d="M4.19335-.321466L4.150488-.814382C3.943321-.671508 3.736154-.535777 3.493268-.46434C3.26467-.38576 3.01464-.378616 2.771755-.378616C2.307414-.378616 1.885936-.628645 1.593045-.992974C1.264434-1.414452 1.107273-1.943086 1.107273-2.478863S1.264434-3.550418 1.593045-3.971896C1.885936-4.336224 2.307414-4.586254 2.771755-4.586254C2.986066-4.586254 3.20752-4.564823 3.414687-4.500529C3.628998-4.436236 3.829022-4.329081 4.014758-4.200494L4.11477-4.786277C3.900459-4.872002 3.679004-4.943439 3.450406-4.986301C3.228951-5.029163 3.000353-5.04345 2.771755-5.04345C2.143109-5.04345 1.56447-4.757703 1.142992-4.293362C.700082-3.793303 .471484-3.143227 .471484-2.478863S.700082-1.164423 1.142992-.671508C1.56447-.207167 2.143109 .078581 2.771755 .078581C3.021784 .078581 3.271813 .071437 3.514699 0C3.757585-.064293 3.97904-.19288 4.19335-.321466Z" />
+    <path id="sc-thermistor-ptc-us-r2-large-thin--g0-83" d="M4.157632-3.514699C4.157632-4.279075 3.450406-4.957726 2.464576-4.957726H.685795V0H1.321584V-2.064529H2.514582C3.4004-2.064529 4.157632-2.714605 4.157632-3.514699ZM3.578992-3.514699C3.578992-2.950347 3.12894-2.478863 2.307414-2.478863H1.300153V-4.557679H2.307414C3.093221-4.557679 3.578992-4.121914 3.578992-3.514699Z" />
+    <path id="sc-thermistor-ptc-us-r2-large-thin--g0-104" d="M4.600541-4.450524V-4.914864H.257173V-4.450524H1.214429C1.300153-4.450524 1.385877-4.457667 1.471602-4.457667H2.114534V0H2.750324V-4.457667H3.386113C3.471837-4.457667 3.557561-4.450524 3.643286-4.450524H4.600541Z" />
+  </defs>
   <title>PTC thermistor (US)</title>
-  <desc>Positive-temperature-coefficient resistor: resistance increases as temperature rises. The mark is plus t degrees.</desc>
-  <metadata>{"dimensions_mm": {"body-height": 4.16666, "body-width": 12.49997}, "origin_svg": [-37.288923, -59.504048], "parts": ["body", "lead-a", "lead-b", "dependency-mark", "temperature-mark"], "pins_mm": {"a": [-10.0, 0.0], "b": [10.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "thin", "stroke_mm": 0.15}, "symbol_id": "thermistor-ptc-us"}</metadata>
-  <g id="sc-thermistor-ptc-us-r1-large-thin--sc-thermistor-ptc-us-r1-large-thin" inkscape:label="PTC thermistor (US) / large / thin" data-symbol="thermistor-ptc-us" data-revision="1" data-size="large" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(-37.288923,-59.504048)scale(0.996264,-0.996264)">
-    <g data-part="body" id="sc-thermistor-ptc-us-r1-large-thin--sc-thermistor-ptc-us-r1-large-thin--body" inkscape:label="body">
+  <desc>Positive-temperature-coefficient resistor: resistance increases as temperature rises. Labelled PTC.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 4.16666, "body-width": 12.49997}, "origin_svg": [-37.288923, -59.504048], "parts": ["body", "lead-a", "lead-b", "dependency-mark", "temperature-mark"], "pins_mm": {"a": [-10.0, 0.0], "b": [10.0, 0.0]}, "revision": 2, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "thin", "stroke_mm": 0.15}, "symbol_id": "thermistor-ptc-us"}</metadata>
+  <g id="sc-thermistor-ptc-us-r2-large-thin--sc-thermistor-ptc-us-r2-large-thin" inkscape:label="PTC thermistor (US) / large / thin" data-symbol="thermistor-ptc-us" data-revision="2" data-size="large" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(-37.288923,-59.504048)scale(0.996264,-0.996264)">
+    <g data-part="body" id="sc-thermistor-ptc-us-r2-large-thin--sc-thermistor-ptc-us-r2-large-thin--body" inkscape:label="body">
       <path d="M-17.78282 0L-14.819 5.9276L-8.89139-5.9276L-2.96378 5.9276L2.96378-5.9276L8.89139 5.9276L14.819-5.9276L17.78282 0" fill="none" />
       <desc>Zigzag resistor body</desc>
     </g>
-    <g data-part="lead-a" id="sc-thermistor-ptc-us-r1-large-thin--sc-thermistor-ptc-us-r1-large-thin--lead-a" inkscape:label="lead-a">
+    <g data-part="lead-a" id="sc-thermistor-ptc-us-r2-large-thin--sc-thermistor-ptc-us-r2-large-thin--lead-a" inkscape:label="lead-a">
       <path d="M-28.4526 0H-17.78282" fill="none" />
       <desc>Lead from terminal A to body</desc>
     </g>
-    <g data-part="lead-b" id="sc-thermistor-ptc-us-r1-large-thin--sc-thermistor-ptc-us-r1-large-thin--lead-b" inkscape:label="lead-b">
+    <g data-part="lead-b" id="sc-thermistor-ptc-us-r2-large-thin--sc-thermistor-ptc-us-r2-large-thin--lead-b" inkscape:label="lead-b">
       <path d="M17.78282 0H28.4526" fill="none" />
       <desc>Lead from body to terminal B</desc>
     </g>
-    <g data-part="dependency-mark" id="sc-thermistor-ptc-us-r1-large-thin--sc-thermistor-ptc-us-r1-large-thin--dependency-mark" inkscape:label="dependency-mark">
+    <g data-part="dependency-mark" id="sc-thermistor-ptc-us-r2-large-thin--sc-thermistor-ptc-us-r2-large-thin--dependency-mark" inkscape:label="dependency-mark">
       <path d="M-16.59729-10.66968H-9.48418L13.04071 9.48418" fill="none" />
       <desc>Bent temperature-dependence mark</desc>
     </g>
-    <g data-part="temperature-mark" id="sc-thermistor-ptc-us-r1-large-thin--sc-thermistor-ptc-us-r1-large-thin--temperature-mark" inkscape:label="temperature-mark">
-      <path d="M-18.96832-18.07922H-13.04071" fill="none" />
-      <path d="M-16.0045-15.1154V-21.04301" fill="none" />
-      <path d="M-7.1131-14.819V-19.26472C-7.1131-21.3394-5.33476-21.3394-4.14928-20.15382" fill="none" />
-      <path d="M-9.78049-16.59729H-4.44566" fill="none" />
-      <path d="M1.48189-15.41179C1.48189-14.59337 .81842-13.9299 0-13.9299S-1.48189-14.59337-1.48189-15.41179S-.81842-16.89368 0-16.89368S1.48189-16.23021 1.48189-15.41179ZM0-15.41179" fill="none" />
-      <desc>Plus t degrees: positive temperature coefficient</desc>
+    <g data-part="temperature-mark" id="sc-thermistor-ptc-us-r2-large-thin--sc-thermistor-ptc-us-r2-large-thin--temperature-mark" inkscape:label="temperature-mark">
+      <use x="-37.288923" y="-59.504048" xlink:href="#sc-thermistor-ptc-us-r2-large-thin--g0-83" stroke="none" fill="#000" transform="translate(-18.96832,-19.28856) scale(-1.00375,1.00375)translate(-37.288923,-59.504048)scale(-1,-1)" />
+      <use x="-32.724102" y="-59.504048" xlink:href="#sc-thermistor-ptc-us-r2-large-thin--g0-104" stroke="none" fill="#000" transform="translate(-18.96832,-19.28856) scale(-1.00375,1.00375)translate(-37.288923,-59.504048)scale(-1,-1)" />
+      <use x="-27.859242" y="-59.504048" xlink:href="#sc-thermistor-ptc-us-r2-large-thin--g0-42" stroke="none" fill="#000" transform="translate(-18.96832,-19.28856) scale(-1.00375,1.00375)translate(-37.288923,-59.504048)scale(-1,-1)" />
+      <desc>PTC temperature-coefficient label</desc>
     </g>
   </g>
 </svg>

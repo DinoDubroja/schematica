@@ -1,9 +1,9 @@
 schema_version: 1
 id: thermistor-ntc-eu
-revision: 1
+revision: 2
 name: NTC thermistor (EU)
-description: 'Negative-temperature-coefficient resistor: resistance decreases as temperature rises.
-  The mark is minus t degrees.'
+description: 'Negative-temperature-coefficient resistor: resistance decreases as temperature
+  rises. Labelled NTC.'
 keywords:
 - resistor
 - European
@@ -62,4 +62,4 @@ parts:
 - id: dependency-mark
   description: Bent temperature-dependence mark
 - id: temperature-mark
-  description: 'Minus t degrees: negative temperature coefficient'
+  description: NTC temperature-coefficient label

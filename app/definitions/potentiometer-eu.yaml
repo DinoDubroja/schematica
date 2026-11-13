@@ -1,8 +1,9 @@
 schema_version: 1
 id: potentiometer-eu
-revision: 1
+revision: 2
 name: Potentiometer (EU)
-description: Three-terminal resistor with a movable wiper contacting the resistance element.
+description: Three-terminal potentiometer with a centered vertical wiper, separated
+  from the body by 1 mm.
 keywords:
 - resistor
 - European
@@ -64,6 +65,6 @@ parts:
 - id: lead-b
   description: Lead from body to terminal B
 - id: lead-wiper
-  description: Lead from the wiper terminal to the resistance element
+  description: Centered vertical lead from wiper terminal to arrow tip
 - id: wiper-arrow
   description: Movable wiper contact arrow

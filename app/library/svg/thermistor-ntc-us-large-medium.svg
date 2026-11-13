@@ -1,31 +1,35 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000021 62.928808 36.944619" width="22.19988504mm" height="13.03324059mm">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-68.682458 -72.000021 62.928808 34.696549" width="22.19988504mm" height="12.24017145mm">
+  <defs>
+    <path id="sc-thermistor-ntc-us-r2-large-medium--g0-42" d="M4.19335-.321466L4.150488-.814382C3.943321-.671508 3.736154-.535777 3.493268-.46434C3.26467-.38576 3.01464-.378616 2.771755-.378616C2.307414-.378616 1.885936-.628645 1.593045-.992974C1.264434-1.414452 1.107273-1.943086 1.107273-2.478863S1.264434-3.550418 1.593045-3.971896C1.885936-4.336224 2.307414-4.586254 2.771755-4.586254C2.986066-4.586254 3.20752-4.564823 3.414687-4.500529C3.628998-4.436236 3.829022-4.329081 4.014758-4.200494L4.11477-4.786277C3.900459-4.872002 3.679004-4.943439 3.450406-4.986301C3.228951-5.029163 3.000353-5.04345 2.771755-5.04345C2.143109-5.04345 1.56447-4.757703 1.142992-4.293362C.700082-3.793303 .471484-3.143227 .471484-2.478863S.700082-1.164423 1.142992-.671508C1.56447-.207167 2.143109 .078581 2.771755 .078581C3.021784 .078581 3.271813 .071437 3.514699 0C3.757585-.064293 3.97904-.19288 4.19335-.321466Z" />
+    <path id="sc-thermistor-ntc-us-r2-large-medium--g0-76" d="M4.364799 0V-4.957726H3.807591V-.507203H3.800447L3.321819-1.485889L1.571613-4.957726H.685795V0H1.243003V-4.450524H1.250147L1.728775-3.471837L3.478981 0H4.364799Z" />
+    <path id="sc-thermistor-ntc-us-r2-large-medium--g0-104" d="M4.600541-4.450524V-4.914864H.257173V-4.450524H1.214429C1.300153-4.450524 1.385877-4.457667 1.471602-4.457667H2.114534V0H2.750324V-4.457667H3.386113C3.471837-4.457667 3.557561-4.450524 3.643286-4.450524H4.600541Z" />
+  </defs>
   <title>NTC thermistor (US)</title>
-  <desc>Negative-temperature-coefficient resistor: resistance decreases as temperature rises. The mark is minus t degrees.</desc>
-  <metadata>{"dimensions_mm": {"body-height": 4.16666, "body-width": 12.49997}, "origin_svg": [-37.218053, -59.433177], "parts": ["body", "lead-a", "lead-b", "dependency-mark", "temperature-mark"], "pins_mm": {"a": [-10.0, 0.0], "b": [10.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "thermistor-ntc-us"}</metadata>
-  <g id="sc-thermistor-ntc-us-r1-large-medium--sc-thermistor-ntc-us-r1-large-medium" inkscape:label="NTC thermistor (US) / large / medium" data-symbol="thermistor-ntc-us" data-revision="1" data-size="large" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-37.218053,-59.433177)scale(0.996264,-0.996264)">
-    <g data-part="body" id="sc-thermistor-ntc-us-r1-large-medium--sc-thermistor-ntc-us-r1-large-medium--body" inkscape:label="body">
+  <desc>Negative-temperature-coefficient resistor: resistance decreases as temperature rises. Labelled NTC.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 4.16666, "body-width": 12.49997}, "origin_svg": [-37.218053, -59.433177], "parts": ["body", "lead-a", "lead-b", "dependency-mark", "temperature-mark"], "pins_mm": {"a": [-10.0, 0.0], "b": [10.0, 0.0]}, "revision": 2, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "thermistor-ntc-us"}</metadata>
+  <g id="sc-thermistor-ntc-us-r2-large-medium--sc-thermistor-ntc-us-r2-large-medium" inkscape:label="NTC thermistor (US) / large / medium" data-symbol="thermistor-ntc-us" data-revision="2" data-size="large" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-37.218053,-59.433177)scale(0.996264,-0.996264)">
+    <g data-part="body" id="sc-thermistor-ntc-us-r2-large-medium--sc-thermistor-ntc-us-r2-large-medium--body" inkscape:label="body">
       <path d="M-17.78282 0L-14.819 5.9276L-8.89139-5.9276L-2.96378 5.9276L2.96378-5.9276L8.89139 5.9276L14.819-5.9276L17.78282 0" fill="none" />
       <desc>Zigzag resistor body</desc>
     </g>
-    <g data-part="lead-a" id="sc-thermistor-ntc-us-r1-large-medium--sc-thermistor-ntc-us-r1-large-medium--lead-a" inkscape:label="lead-a">
+    <g data-part="lead-a" id="sc-thermistor-ntc-us-r2-large-medium--sc-thermistor-ntc-us-r2-large-medium--lead-a" inkscape:label="lead-a">
       <path d="M-28.4526 0H-17.78282" fill="none" />
       <desc>Lead from terminal A to body</desc>
     </g>
-    <g data-part="lead-b" id="sc-thermistor-ntc-us-r1-large-medium--sc-thermistor-ntc-us-r1-large-medium--lead-b" inkscape:label="lead-b">
+    <g data-part="lead-b" id="sc-thermistor-ntc-us-r2-large-medium--sc-thermistor-ntc-us-r2-large-medium--lead-b" inkscape:label="lead-b">
       <path d="M17.78282 0H28.4526" fill="none" />
       <desc>Lead from body to terminal B</desc>
     </g>
-    <g data-part="dependency-mark" id="sc-thermistor-ntc-us-r1-large-medium--sc-thermistor-ntc-us-r1-large-medium--dependency-mark" inkscape:label="dependency-mark">
+    <g data-part="dependency-mark" id="sc-thermistor-ntc-us-r2-large-medium--sc-thermistor-ntc-us-r2-large-medium--dependency-mark" inkscape:label="dependency-mark">
       <path d="M-16.59729-10.66968H-9.48418L13.04071 9.48418" fill="none" />
       <desc>Bent temperature-dependence mark</desc>
     </g>
-    <g data-part="temperature-mark" id="sc-thermistor-ntc-us-r1-large-medium--sc-thermistor-ntc-us-r1-large-medium--temperature-mark" inkscape:label="temperature-mark">
-      <path d="M-18.96832-18.07922H-13.04071" fill="none" />
-      <path d="M-7.1131-14.819V-19.26472C-7.1131-21.3394-5.33476-21.3394-4.14928-20.15382" fill="none" />
-      <path d="M-9.78049-16.59729H-4.44566" fill="none" />
-      <path d="M1.48189-15.41179C1.48189-14.59337 .81842-13.9299 0-13.9299S-1.48189-14.59337-1.48189-15.41179S-.81842-16.89368 0-16.89368S1.48189-16.23021 1.48189-15.41179ZM0-15.41179" fill="none" />
-      <desc>Minus t degrees: negative temperature coefficient</desc>
+    <g data-part="temperature-mark" id="sc-thermistor-ntc-us-r2-large-medium--sc-thermistor-ntc-us-r2-large-medium--temperature-mark" inkscape:label="temperature-mark">
+      <use x="-37.218053" y="-59.433177" xlink:href="#sc-thermistor-ntc-us-r2-large-medium--g0-76" stroke="none" fill="#000" transform="translate(-18.96832,-19.28856) scale(-1.00375,1.00375)translate(-37.218053,-59.433177)scale(-1,-1)" />
+      <use x="-32.160313" y="-59.433177" xlink:href="#sc-thermistor-ntc-us-r2-large-medium--g0-104" stroke="none" fill="#000" transform="translate(-18.96832,-19.28856) scale(-1.00375,1.00375)translate(-37.218053,-59.433177)scale(-1,-1)" />
+      <use x="-27.295454" y="-59.433177" xlink:href="#sc-thermistor-ntc-us-r2-large-medium--g0-42" stroke="none" fill="#000" transform="translate(-18.96832,-19.28856) scale(-1.00375,1.00375)translate(-37.218053,-59.433177)scale(-1,-1)" />
+      <desc>NTC temperature-coefficient label</desc>
     </g>
   </g>
 </svg>

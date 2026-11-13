@@ -10,7 +10,7 @@ from pathlib import Path
 import tempfile
 import xml.etree.ElementTree as ET
 
-from core import ROOT, SVG, INK, ValidationError, definitions, read_yaml
+from core import ROOT, SVG, INK, ValidationError, definitions, read_yaml, configuration_choices, configuration_key
 
 LEDGER = ROOT / "verification.json"
 
@@ -27,7 +27,8 @@ def source_fingerprint(definition):
     if recipe.startswith("opamp"):
         names.append("opamp-common.tex")
     sources = {name: (ROOT / "tex" / name).read_text(encoding="utf-8") for name in names}
-    return digest({"recipe": recipe, "drawing": definition.get("drawing", {}),
+    return digest({**({"options": definition["options"]} if definition.get("options") else {}),
+                   "recipe": recipe, "drawing": definition.get("drawing", {}),
                    "revision": definition["revision"], "presets": read_yaml(ROOT / "presets.yaml"),
                    "supported": definition["presets"],
                    "pins": [{k: p[k] for k in ("id", "kind", "lead_part")} for p in definition["pins"]],
@@ -43,15 +44,19 @@ def _geometry(element):
 
 
 def design_fingerprint(symbol, library):
-    """Hash all nine actual drawings and electrical connections, excluding prose."""
+    """Hash every supported drawing, option and connection, excluding editorial prose."""
     shapes = []
     for config in sorted(symbol["configurations"], key=lambda item: item["key"]):
         path = (Path(library) / config["svg"]).resolve()
         if not path.is_relative_to(Path(library).resolve()) or not path.is_file():
             raise ValidationError("Missing or invalid library artwork. Rebuild the library.")
-        shapes.append({"size": config["size"], "stroke": config["stroke"],
+        shapes.append({**({"options": config["options"]} if config.get("options") else {}),
+                       "size": config["size"], "stroke": config["stroke"],
                        "pins": config["pins_mm"], "geometry": _geometry(ET.parse(path).getroot())})
-    return digest({"id": symbol["id"], "revision": symbol["revision"], "shapes": shapes,
+    options = {key: {"default": spec["default"], "values": [v["id"] for v in spec["values"]]}
+               for key, spec in symbol.get("options", {}).items()}
+    return digest({**({"options": options} if options else {}),
+                   "id": symbol["id"], "revision": symbol["revision"], "shapes": shapes,
                    "pins": [{k: p[k] for k in ("id", "kind", "lead_part")} for p in symbol["pins"]]})
 
 
@@ -76,15 +81,18 @@ def publication_catalog(data, source_definitions, library, ledger):
         source = sources[sid]
         if symbol.get("source_fingerprint") != source_fingerprint(source):
             raise ValidationError(f"Stale artwork for {sid}; rebuild the affected design before publishing.")
-        expected = {(size, stroke) for size in source["presets"]["sizes"]
-                    for stroke in source["presets"]["strokes"]}
+        expected = {configuration_key(sid, size, stroke, options) for size, stroke, options in configuration_choices(source)}
         configs = symbol["configurations"]
-        if len(configs) != len(expected) or {(c["size"], c["stroke"]) for c in configs} != expected:
+        if len(configs) != len(expected) or {c["key"] for c in configs} != expected or any(
+                c["key"] != configuration_key(sid, c["size"], c["stroke"], c.get("options")) or
+                c.get("options", {}) != c["settings"].get("options", {}) for c in configs):
             raise ValidationError(f"Incomplete configurations for {sid}")
         if symbol["revision"] != source["revision"] or any(c["revision"] != source["revision"] or c["symbol_id"] != sid for c in configs):
             raise ValidationError(f"Stale configuration revision for {sid}")
         for field in ("name", "description", "keywords", "types", "pins", "parts"):
             symbol[field] = source[field]
+        if source.get("options"):
+            symbol["options"] = source["options"]
         symbol["family"] = source.get("family", "resistors" if "resistor" in source["types"] else
                                        "amplifiers" if "active" in source["types"] else "passive")
         symbol["batch"] = source.get("batch", "starter")

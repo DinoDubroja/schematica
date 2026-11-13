@@ -2,14 +2,17 @@
 
 **Verified** is the published record. **Pending** is your selection in this browser.
 Every new design starts **Unverified**, even after passing technical checks.
-One approval covers all nine size/stroke configurations.
+One approval covers every supported configuration: nine size/stroke combinations,
+or 36 when the design has four adjustment orientations.
 
-![All sizes and strokes at the same physical scale](images/configuration-comparison.jpg)
+![Stroke, size and orientation at a common viewing scale](images/configuration-comparison.jpg)
 
 ## In the viewer
 
 1. Open **Unverified** and optionally choose a family or batch.
-2. Select a design. Use **3 × 3** to compare all sizes and strokes at the same scale.
+2. Select a design. Open **Variations**: each row changes one option while the
+   others stay at their defaults. Also check **Small / Thick** in the main preview,
+   including each orientation when available.
 3. Check its box or choose **Verify & next**. **Undo** reverses a pending selection.
 4. Choose **Copy approvals** and paste the result into chat. If copying is blocked,
    a text box opens: select all and copy manually.
@@ -33,7 +36,7 @@ from the repository root:
 .\.venv\Scripts\python.exe app\verification.py apply app\build\approvals.json
 .\.venv\Scripts\python.exe app\build_site.py
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
-node --test tests\review.test.cjs
+node --test tests\review.test.cjs tests\configurations.test.cjs
 ```
 
 `check` changes nothing. `apply` validates the entire handoff before updating
@@ -42,8 +45,8 @@ changed drawings and duplicates reject the whole handoff. Applying the same vali
 handoff twice makes no additional changes. Review the diff; commit/push/deploy only
 within the user's authorization. Building locally does not update the hosted site.
 
-The fingerprint covers all nine SVG drawings and their electrical connections.
-Geometry, terminal mapping or revision changes make the old approval inapplicable.
+The fingerprint covers all supported SVG drawings, options/defaults and electrical
+connections. Geometry, options, terminal mapping or revision changes make the old approval inapplicable.
 Names, descriptions and keywords alone do not. Unchanged rebuilds preserve approval.
 The builder refuses stale artwork when its drawing sources changed without rendering.
 Old pending selections are discarded on reload and cannot be recovered through Undo.

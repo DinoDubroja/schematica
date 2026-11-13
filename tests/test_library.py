@@ -7,7 +7,7 @@ import xml.etree.ElementTree as ET
 import zipfile
 from pathlib import Path
 import sys
-from core import ROOT, SVG, ValidationError, validate_svg_references, find_symbols, definitions
+from core import ROOT, SVG, ValidationError, validate_svg_references, find_symbols, definitions, configuration_choices
 from exports import LIBRARY, catalog, choose, export, artwork, place, document
 
 
@@ -19,11 +19,16 @@ class LibraryChecks(unittest.TestCase):
 
     def test_complete_definitions_and_unique_configurations(self):
         self.assertEqual({s['id'] for s in self.data['symbols']}, {s['id'] for s in definitions()})
-        self.assertEqual(len(self.items),len(self.data['symbols'])*9)
+        self.assertEqual(len(self.items),sum(len(configuration_choices(s)) for s in self.data['symbols']))
         self.assertEqual(len({c['key'] for c in self.items}),len(self.items))
+        self.assertEqual({p.name for p in (LIBRARY/'svg').glob('*.svg')},
+                         {c['key']+'.svg' for c in self.items}, 'Obsolete or missing catalog SVGs')
         for symbol in self.data['symbols']:
-            self.assertEqual(len(symbol['configurations']),9)
+            self.assertEqual(len(symbol['configurations']),len(configuration_choices(symbol)))
             self.assertTrue(all(c['symbol_id']==symbol['id'] for c in symbol['configurations']))
+        for config in self.items:
+            data = (LIBRARY / config['svg']).read_bytes()
+            self.assertEqual(len(data), config['svg_bytes'], config['key'])
 
     def test_semantics_and_search(self):
         zigzags = find_symbols('zigzag')
@@ -35,8 +40,9 @@ class LibraryChecks(unittest.TestCase):
 
     def test_all_strokes_preserve_geometry_and_grid(self):
         for symbol in self.data['symbols']:
-            for size in ('small','medium','large'):
-                group=[c for c in symbol['configurations'] if c['size']==size]
+            settings = {(c['size'], tuple(sorted(c.get('options', {}).items()))) for c in symbol['configurations']}
+            for size, options in settings:
+                group=[c for c in symbol['configurations'] if c['size']==size and tuple(sorted(c.get('options', {}).items()))==options]
                 drawings=[]
                 for c in group:
                     root=artwork(c)

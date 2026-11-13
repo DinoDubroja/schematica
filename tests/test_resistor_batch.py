@@ -38,7 +38,7 @@ class ResistorBatch(unittest.TestCase):
         for symbol in self.batch:
             variant = symbol['drawing']['variant']; parts = {p['id'] for p in symbol['parts']}
             if variant in ('ntc','ptc'): self.assertIn('temperature-mark', parts)
-            if variant == 'varistor': self.assertIn('voltage-mark', parts)
+            if variant == 'nonlinear': self.assertIn('nonlinear-mark', parts)
             if variant.startswith('photo'): self.assertIn('light-arrows', parts)
             if variant == 'photo-enclosed': self.assertIn('enclosure', parts)
             if variant == 'tapped': self.assertNotIn('wiper-arrow', parts)

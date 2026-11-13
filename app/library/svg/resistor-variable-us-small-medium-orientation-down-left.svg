@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000018 45.921027 21.826611" width="16.19991786mm" height="7.69994332mm">
+  <title>Variable resistor (US)</title>
+  <desc>Two-terminal adjustable resistor; the diagonal arrow indicates variable resistance.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 2.5, "body-width": 7.5}, "origin_svg": [-45.721945, -61.795352], "parts": ["body", "lead-a", "lead-b", "adjustment"], "pins_mm": {"a": [-7.0, 0.0], "b": [7.0, 0.0]}, "revision": 2, "settings": {"grid_mm": 1, "options": {"orientation": "down-left"}, "size": "small", "size_factor": 0.75, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "resistor-variable-us"}</metadata>
+  <g id="sc-resistor-variable-us-r2-small-medium-orientation-down-left--sc-resistor-variable-us-r2-small-medium-orientation-down-left" inkscape:label="Variable resistor (US) / small / medium" data-symbol="resistor-variable-us" data-revision="2" data-size="small" data-stroke="medium" data-option-orientation="down-left" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-45.721945,-61.795352)scale(0.996264,-0.996264)">
+    <g data-part="body" id="sc-resistor-variable-us-r2-small-medium-orientation-down-left--sc-resistor-variable-us-r2-small-medium-orientation-down-left--body" inkscape:label="body">
+      <path d="M-10.66972 0L-8.89143 3.55656L-5.33485-3.55656L-1.77827 3.55656L1.77827-3.55656L5.33485 3.55656L8.89143-3.55656L10.66972 0" fill="none" />
+      <desc>Zigzag resistor body</desc>
+    </g>
+    <g data-part="lead-a" id="sc-resistor-variable-us-r2-small-medium-orientation-down-left--sc-resistor-variable-us-r2-small-medium-orientation-down-left--lead-a" inkscape:label="lead-a">
+      <path d="M-19.91682 0H-10.66972" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="lead-b" id="sc-resistor-variable-us-r2-small-medium-orientation-down-left--sc-resistor-variable-us-r2-small-medium-orientation-down-left--lead-b" inkscape:label="lead-b">
+      <path d="M10.66972 0H19.91682" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+    <g data-part="adjustment" id="sc-resistor-variable-us-r2-small-medium-orientation-down-left--sc-resistor-variable-us-r2-small-medium-orientation-down-left--adjustment" inkscape:label="adjustment">
+      <path d="M7.11314 7.11314L-8.53574-8.53574" fill="none" />
+      <path d="M-5.51794-7.78125L-8.53574-8.53574L-7.78125-5.51794" fill="none" />
+      <desc>Diagonal variable-resistance arrow</desc>
+    </g>
+  </g>
+</svg>

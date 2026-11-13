@@ -4,8 +4,9 @@ import json
 from pathlib import Path
 import shutil
 import xml.etree.ElementTree as ET
+import fitz
 
-from core import SVG, render_symbol, run, tool, validate_svg_references, write_svg
+from core import SVG, render_symbol, run, tool, validate_svg_references, write_svg, get_definition, resolve_settings, tex_document
 
 
 def verify():
@@ -21,6 +22,17 @@ def verify():
     shutil.copy2(FIXTURES / "native-circuitikz.tex", work / "native-circuitikz.tex")
     run([tool("tectonic"), "-X", "compile", "--untrusted", "native-circuitikz.tex"], work)
     assert (work / "native-circuitikz.pdf").stat().st_size > 0
+    for sid in ('thermistor-ntc-eu', 'thermistor-ptc-us', 'resistor-variable-us'):
+        definition = get_definition(sid)
+        options = {'orientation': 'down-left'} if definition.get('options') else None
+        settings = resolve_settings(definition, 'small', 'thick', options)
+        file = work / f'{sid}.tex'
+        file.write_text(tex_document(definition, settings, 'native-proof', svg=False), encoding='utf-8')
+        run([tool('tectonic'), '-X', 'compile', '--untrusted', file.name], work)
+        with fitz.open(file.with_suffix('.pdf')) as pdf:
+            assert pdf[0].get_drawings(), sid
+            if 'thermistor' in sid:
+                assert ('NTC' if 'ntc' in sid else 'PTC') in pdf[0].get_text(), sid
     label = ET.parse(FIXTURES / "editable-label.svg").getroot()
     original = json.loads((FIXTURES / "editable-label.strings.json").read_text(encoding="utf-8"))
     text = next(label.iter(f"{{{SVG}}}text"))
@@ -36,6 +48,7 @@ def verify():
         assert any(p.get("data-original-text") == original["label"] for p in again.iter())
         edited = saved
     report = {"fresh_small_thick_opamp": "accepted paths match", "native_circuitikz": "compiled",
+              "native_thermistors_and_orientation": "Small/Thick PDF compile and NTC/PTC text passed",
               "editable_label": "edit/save/reopen passed", "scope": "bounded fixture, command-line only"}
     (work / "results.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, indent=2))
