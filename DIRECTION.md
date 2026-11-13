@@ -16,6 +16,24 @@ It should come with consistent, predefined drawing preferences. Users should be 
 
 Present illustrations and visual comparisons directly in chat by default, using native visual capabilities and transparent, theme-aware SVG for generated drawings; follow [chat behavior](agents/BEHAVIOR.md#presenting-illustrations). Explicit requests for another format or destination take precedence. Authorized saved examples retain PNG downloads alongside their source and SVGs. Original reference images may display directly in their original format and background; no recreation or theme conversion is required.
 
+## Web library
+
+The first web implementation is a read-only symbol browser with independent size
+and stroke choices, dark/light themes, individual SVG exports and a six-symbol
+Inkscape library export at the chosen settings. Keep exports secondary to browsing;
+descriptions and search keywords are read-only. Creation initially belongs in agent
+integrations, outside the web app.
+
+Later the website should bring together symbol libraries, schematic styles,
+examples, personal presets and created schematics. In-circuit previews and symbol
+comparisons are future work. Keep shipped content separate from labelled
+user-created variants, without overwriting originals. Library grouping, profiles,
+storage and in-app creation remain undecided. Expose only controls needed for the
+current task; do not add placeholder features for this future scope.
+
+The agreed first shared preview uses Cloudflare and is accessible to anyone with
+its link. Publishing still requires review and explicit approval.
+
 ## Style collections
 
 General conventions live in a [visual preference bank](preferences/README.md), separate from source-specific styles. The [agent index](preferences/GENERAL.md) selects relevant pages and defines precedence; each rule folder separates its authoritative `RULE.md` (scope and evidence) from a minimal visual `README.md` with a good example and an optional bad example. Category galleries assemble those presentations; [project rules](agents/PROJECT_RULES.md) define their maintenance. Ordinary corrections can develop this bank through agent suggestions and scoped user approval. Styles inherit general preferences unless they declare an explicit exception.

@@ -1,0 +1,78 @@
+{
+  "palette_comparisons": [
+    {
+      "configuration": "resistor-eu-small-medium",
+      "max_coordinate_deviation_mm": 0.00047042038705580325,
+      "max_stroke_deviation_mm": 2.123746607046728e-06
+    },
+    {
+      "configuration": "resistor-eu-medium-medium",
+      "max_coordinate_deviation_mm": 0.0007084813382933122,
+      "max_stroke_deviation_mm": 2.123746607046728e-06
+    },
+    {
+      "configuration": "resistor-eu-large-medium",
+      "max_coordinate_deviation_mm": 0.0008470594882963312,
+      "max_stroke_deviation_mm": 2.123746607046728e-06
+    },
+    {
+      "configuration": "resistor-eu-medium-thin",
+      "max_coordinate_deviation_mm": 0.0006446480750854633,
+      "max_stroke_deviation_mm": 2.113233009970461e-06
+    },
+    {
+      "configuration": "resistor-eu-medium-medium",
+      "max_coordinate_deviation_mm": 0.0008125801881129213,
+      "max_stroke_deviation_mm": 2.123746607046728e-06
+    },
+    {
+      "configuration": "resistor-eu-medium-thick",
+      "max_coordinate_deviation_mm": 0.0016342057122058495,
+      "max_stroke_deviation_mm": 3.3643510610747995e-07
+    },
+    {
+      "configuration": "resistor-eu-small-thick",
+      "max_coordinate_deviation_mm": 0.0013446397251186681,
+      "max_stroke_deviation_mm": 3.3643510610747995e-07
+    },
+    {
+      "configuration": "opamp-supply-small-medium",
+      "max_coordinate_deviation_mm": 0.0016839669810284619,
+      "max_stroke_deviation_mm": 2.123746607046728e-06
+    },
+    {
+      "configuration": "opamp-supply-medium-medium",
+      "max_coordinate_deviation_mm": 0.0013899226983271618,
+      "max_stroke_deviation_mm": 2.123746607046728e-06
+    },
+    {
+      "configuration": "opamp-supply-large-medium",
+      "max_coordinate_deviation_mm": 0.0013125426239319893,
+      "max_stroke_deviation_mm": 2.123746607046728e-06
+    },
+    {
+      "configuration": "opamp-supply-medium-thin",
+      "max_coordinate_deviation_mm": 0.0014160805278238264,
+      "max_stroke_deviation_mm": 2.113233009970461e-06
+    },
+    {
+      "configuration": "opamp-supply-medium-medium",
+      "max_coordinate_deviation_mm": 0.0013899226983271618,
+      "max_stroke_deviation_mm": 2.123746607046728e-06
+    },
+    {
+      "configuration": "opamp-supply-medium-thick",
+      "max_coordinate_deviation_mm": 0.001954376697529625,
+      "max_stroke_deviation_mm": 3.3643510610747995e-07
+    },
+    {
+      "configuration": "opamp-supply-small-thick",
+      "max_coordinate_deviation_mm": 0.0018755343224903243,
+      "max_stroke_deviation_mm": 3.3643510610747995e-07
+    }
+  ],
+  "max_coordinate_deviation_mm": 0.001954376697529625,
+  "max_stroke_deviation_mm": 2.123746607046728e-06,
+  "named_part_selection_save_reopen": "passed",
+  "repeated_ids_after_save": "passed"
+}

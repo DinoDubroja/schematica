@@ -1,0 +1,86 @@
+\documentclass[border=3mm]{standalone}
+\usepackage{fontspec}
+\setmainfont{arial.ttf}[Path=./]
+\usepackage{circuitikz}
+\definecolor{pinblue}{RGB}{45,105,165}
+% Temporary comparison only. Body scale and stroke are independent.
+% A 6 mm base resistor becomes 10 mm at Medium: multiply bodies by 5/3.
+% Extend each signal lead by 1 mm from the previous palette; supply leads are unchanged.
+\newcommand{\sample}[4]{%
+  \begin{scope}[shift={(#1,0)},line width=#3mm,line cap=round,line join=round]
+    \pgfmathsetmacro{\s}{#2*5/3}
+    \pgfmathsetmacro{\passiveEnd}{ceil(3*\s+2)+1}
+    \pgfmathsetmacro{\capEnd}{ceil(0.6*\s+2)+1}
+    \pgfmathsetmacro{\ampHalfWidth}{3.4*\s}
+    \pgfmathsetmacro{\ampEnd}{ceil(\ampHalfWidth+2)+1}
+    \pgfmathsetmacro{\supplyEnd}{ceil(2*\s+2)}
+    \ifnum#4=0
+      \draw ({-3*\s},-\s) rectangle ({3*\s},\s);
+      \draw (-\passiveEnd,0)--({-3*\s},0) ({3*\s},0)--(\passiveEnd,0);
+    \fi
+    \ifnum#4=1
+      \draw (-\passiveEnd,0)--({-3*\s},0)--({-2.5*\s},\s)--({-1.5*\s},-\s)--({-0.5*\s},\s)--({0.5*\s},-\s)--({1.5*\s},\s)--({2.5*\s},-\s)--({3*\s},0)--(\passiveEnd,0);
+    \fi
+    \ifnum#4=2
+      \draw (-\passiveEnd,0)--({-3*\s},0);
+      \draw ({-3*\s},0) arc[start angle=180,end angle=0,x radius={0.75*\s},y radius={1.2*\s}]
+        arc[start angle=180,end angle=0,x radius={0.75*\s},y radius={1.2*\s}]
+        arc[start angle=180,end angle=0,x radius={0.75*\s},y radius={1.2*\s}]
+        arc[start angle=180,end angle=0,x radius={0.75*\s},y radius={1.2*\s}];
+      \draw ({3*\s},0)--(\passiveEnd,0);
+    \fi
+    \ifnum#4=3
+      \draw ({-0.6*\s},{-2*\s})--({-0.6*\s},{2*\s}) ({0.6*\s},{-2*\s})--({0.6*\s},{2*\s});
+      \draw (-\capEnd,0)--({-0.6*\s},0) ({0.6*\s},0)--(\capEnd,0);
+    \fi
+    \ifnum#4>3
+      % Triangle width reduced 15%; height and sign proportions retained.
+      \draw (-\ampHalfWidth,{-4*\s})--(-\ampHalfWidth,{4*\s})--(\ampHalfWidth,0)--cycle;
+      % Input row spacing remains 6 mm; lead ends conform to the 1 mm grid.
+      \draw (-\ampEnd,3)--(-\ampHalfWidth,3) (-\ampEnd,-3)--(-\ampHalfWidth,-3) (\ampHalfWidth,0)--(\ampEnd,0);
+      \pgfmathsetmacro{\markX}{-\ampHalfWidth+\s}
+      \draw ({\markX-0.4*\s},3)--({\markX+0.4*\s},3) (\markX,{3-0.4*\s})--(\markX,{3+0.4*\s});
+      \draw ({\markX-0.4*\s},-3)--({\markX+0.4*\s},-3);
+      \ifnum#4=5
+        \draw (0,{2*\s})--(0,\supplyEnd) (0,{-2*\s})--(0,-\supplyEnd);
+        \fill[pinblue] (0,\supplyEnd) circle[radius=0.14] (0,-\supplyEnd) circle[radius=0.14];
+      \fi
+      \fill[pinblue] (-\ampEnd,3) circle[radius=0.14] (-\ampEnd,-3) circle[radius=0.14] (\ampEnd,0) circle[radius=0.14];
+    \else
+      \ifnum#4=3
+        \fill[pinblue] (-\capEnd,0) circle[radius=0.14] (\capEnd,0) circle[radius=0.14];
+      \else
+        \fill[pinblue] (-\passiveEnd,0) circle[radius=0.14] (\passiveEnd,0) circle[radius=0.14];
+      \fi
+    \fi
+  \end{scope}%
+}
+\newcommand{\samplerow}[5]{%
+  \begin{scope}[shift={(0,#1)}]
+    \node[anchor=east,align=right,font=\fontsize{8}{9}\selectfont] at (-15,0) {#4\\{\fontsize{6.5}{8}\selectfont #5}};
+    \foreach \x/\kind in {0/0,28/1,56/2,84/3,112/4,140/5}{
+      \begin{scope}[shift={(\x,0)}]
+        \draw[step=1,black!15,line width=0.035mm] (-12,-10) grid (12,10);
+        \draw[step=5,black!22,line width=0.045mm] (-12,-10) grid (12,10);
+      \end{scope}
+      \sample{\x}{#2}{#3}{\kind}
+    }
+  \end{scope}%
+}
+\begin{document}
+\begin{tikzpicture}[x=1mm,y=1mm]
+  \node[anchor=west,font=\fontsize{12}{13}\selectfont] at (-37,27) {Preset comparison — 10 mm Medium resistor};
+  \node[anchor=west,font=\fontsize{7}{8}\selectfont] at (-37,21) {1 mm grid · op-amp triangle 15\% shorter · supply leads unchanged · draft values};
+  \foreach \x/\label in {0/R EU,28/R US,56/L,84/C,112/Op-amp,140/Op-amp + supplies}
+    \node[font=\fontsize{7}{8}\selectfont] at (\x,14) {\label};
+  \samplerow{0}{0.75}{0.20}{Small}{7.5 mm R body; 0.20 mm}
+  \samplerow{-23}{1}{0.20}{Medium}{10 mm R body; 0.20 mm}
+  \samplerow{-46}{1.25}{0.20}{Large}{12.5 mm R body; 0.20 mm}
+  \node[anchor=west,font=\fontsize{8}{9}\selectfont] at (-37,-63) {Stroke comparison — Medium body size};
+  \samplerow{-80}{1}{0.15}{Thin}{0.15 mm}
+  \samplerow{-103}{1}{0.20}{Medium}{0.20 mm}
+  \samplerow{-126}{1}{0.30}{Thick}{0.30 mm}
+  \node[anchor=west,font=\fontsize{8}{9}\selectfont] at (-37,-143) {Combined check};
+  \samplerow{-160}{0.75}{0.30}{Small + Thick}{7.5 mm R body; 0.30 mm}
+\end{tikzpicture}
+\end{document}

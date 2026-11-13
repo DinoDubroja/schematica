@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000015 68.881555 53.763379" width="24.29988190mm" height="18.96652537mm">
+  <title>Op-amp</title>
+  <desc>Operational amplifier with two inputs and one output. Supply pins are not shown.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 16.66663, "body-width": 14.1666}, "origin_svg": [-34.24168, -45.118328], "parts": ["body", "lead-in-plus", "lead-in-minus", "lead-out", "sign-plus", "sign-minus"], "pins_mm": {"in-minus": [-11.0, -3.0], "in-plus": [-11.0, 3.0], "out": [11.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "opamp"}</metadata>
+  <g id="sc-opamp-r1-large-thick--sc-opamp-r1-large-thick" inkscape:label="Op-amp / large / thick" data-symbol="opamp" data-revision="1" data-size="large" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-34.24168,-45.118328)scale(0.996264,-0.996264)">
+    <g data-part="body" id="sc-opamp-r1-large-thick--sc-opamp-r1-large-thick--body" inkscape:label="body">
+      <path d="M-20.15382-23.71043V23.71043L20.15382 0Z" fill="none" />
+      <desc>Triangle outline</desc>
+    </g>
+    <g data-part="lead-in-plus" id="sc-opamp-r1-large-thick--sc-opamp-r1-large-thick--lead-in-plus" inkscape:label="lead-in-plus">
+      <path d="M-31.29787 8.53578H-20.15382" fill="none" />
+      <desc>Non-inverting input lead</desc>
+    </g>
+    <g data-part="lead-in-minus" id="sc-opamp-r1-large-thick--sc-opamp-r1-large-thick--lead-in-minus" inkscape:label="lead-in-minus">
+      <path d="M-31.29787-8.53578H-20.15382" fill="none" />
+      <desc>Inverting input lead</desc>
+    </g>
+    <g data-part="lead-out" id="sc-opamp-r1-large-thick--sc-opamp-r1-large-thick--lead-out" inkscape:label="lead-out">
+      <path d="M20.15382 0H31.29787" fill="none" />
+      <desc>Output lead</desc>
+    </g>
+    <g data-part="sign-plus" id="sc-opamp-r1-large-thick--sc-opamp-r1-large-thick--sign-plus" inkscape:label="sign-plus">
+      <path d="M-16.5972 8.53578H-11.85521M-14.22621 6.16478V10.90677" fill="none" />
+      <desc>Non-inverting input mark</desc>
+    </g>
+    <g data-part="sign-minus" id="sc-opamp-r1-large-thick--sc-opamp-r1-large-thick--sign-minus" inkscape:label="sign-minus">
+      <path d="M-16.5972-8.53578H-11.85521" fill="none" />
+      <desc>Inverting input mark</desc>
+    </g>
+  </g>
+</svg>

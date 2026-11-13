@@ -24,6 +24,12 @@ Start with [the current checkpoint](context/CURRENT.md), [project direction](DIR
 Consult [the log](context/LOG.md) selectively for relevant decisions and authorization.
 Verify recorded state against the checkout and preserve concurrent work.
 
+After each implementation run, maintain a concise human development review with
+what changed, how to open and test it, expected results, checks actually completed,
+and anything unverified. For the symbol app, use
+[the implementation review](implementation/CHECKPOINT.md) and
+[development guide](implementation/DEVELOPMENT.md). Keep the main README short.
+
 For drawings and reviews, read [the preference index](preferences/GENERAL.md),
 applicable `RULE.md` files and their visuals, then [the collection index](styles/INDEX.md),
 the selected `STYLE.md`, the applicable domain guides it links, and relevant example records/previews.

@@ -1,0 +1,41 @@
+schema_version: 1
+id: inductor-coil
+revision: 1
+name: Coil inductor
+description: Inductor drawn as a coil, without a core marking.
+keywords: [inductor, coil, elliptical, no core, passive]
+types:
+- passive
+- inductor
+attributes:
+  appearance: coil
+  turns: 4
+  core: none
+recipe: inductor-coil
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: a
+  name: A
+  description: Interchangeable first terminal
+  kind: passive
+  lead_part: lead-a
+- id: b
+  name: B
+  description: Interchangeable second terminal
+  kind: passive
+  lead_part: lead-b
+parts:
+- id: body
+  description: Four coil half-turns
+- id: lead-a
+  description: Lead from terminal A to body
+- id: lead-b
+  description: Lead from body to terminal B

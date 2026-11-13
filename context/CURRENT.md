@@ -1,5 +1,33 @@
 # Current checkpoint
 
+Active implementation (13-11-2026): the user authorized the browsing-first UI
+cleanup, individual SVG and six-symbol library export at the chosen size/stroke,
+compact docs and a portable static website for Cloudflare. The preview audience is
+anyone with the link. The user accepted the result and explicitly authorized
+publishing the reviewed build. **Preview published; completed implementation and docs approved for commit/push.**
+This supersedes the earlier local-only publication boundary and export-selection UI.
+
+The revised viewer and static package are complete; awaiting the user's two-device
+testing. [Open the preview](https://schematica-preview.dinodubroja.workers.dev/).
+Build 971b3b876b93 passed 25 automated tests, all 54 local browser configurations,
+nine library-download/Inkscape round trips and a fresh-copy portability check. Start with [the current implementation
+review](../implementation/CHECKPOINT.md), which gives changes, exact test steps,
+expected results and verification limits. [Development instructions](../implementation/DEVELOPMENT.md)
+cover both Windows devices, build/test commands and the Cloudflare deployment;
+[Inkscape instructions](../implementation/INKSCAPE.md) cover single SVGs, Symbols and
+grid/snapping. Every future implementation run must update these review instructions.
+Hosted main/fixed-version manifests and nine library downloads plus one SVG match
+the local build; browser checks passed. Second-device checks remain pending. A
+Python HTTP sweep was blocked by Cloudflare 403/error 1010; no security settings
+were changed. See [publication and limits](LOG.md#cloudflare-preview-publication)
+and [the accepted implementation scope](LOG.md#browsing-ui-and-shared-preview).
+The user has released the first-batch Git hold; see [the GitHub handoff](LOG.md#first-implementation-github-handoff)
+and [laptop setup](../implementation/DEVELOPMENT.md#get-the-project-on-another-windows-device).
+
+## Earlier checkpoints
+
+The earlier first-batch hold below is superseded by the explicit GitHub approval above.
+
 Updated: 13-11-2026. Read this first when resuming; verify the checkout before acting.
 
 Maintenance authorization (13-11-2026): the user authorized hourly context updates

@@ -1,0 +1,27 @@
+schema_version: 1
+id: opamp-supply
+revision: 1
+name: Op-amp with supply pins
+description: Operational amplifier with two inputs, one output and two visible supply pins.
+keywords: [op-amp, operational amplifier, triangle, differential, active, supply pins]
+types: [active, amplifier, operational-amplifier]
+attributes: {appearance: triangle, supplies: visible, inputs: differential}
+recipe: opamp-supply
+presets:
+  sizes: [small, medium, large]
+  strokes: [thin, medium, thick]
+pins:
+  - {id: in-plus, name: Non-inverting input, description: Positive differential input, kind: input, lead_part: lead-in-plus}
+  - {id: in-minus, name: Inverting input, description: Negative differential input, kind: input, lead_part: lead-in-minus}
+  - {id: out, name: Output, description: Amplifier output, kind: output, lead_part: lead-out}
+  - {id: supply-plus, name: Positive supply, description: Positive power-supply connection, kind: power, lead_part: lead-supply-plus}
+  - {id: supply-minus, name: Negative supply, description: Negative power-supply connection, kind: power, lead_part: lead-supply-minus}
+parts:
+  - {id: body, description: Triangle outline}
+  - {id: sign-plus, description: Non-inverting input mark}
+  - {id: sign-minus, description: Inverting input mark}
+  - {id: lead-in-plus, description: Non-inverting input lead}
+  - {id: lead-in-minus, description: Inverting input lead}
+  - {id: lead-out, description: Output lead}
+  - {id: lead-supply-plus, description: Positive supply lead}
+  - {id: lead-supply-minus, description: Negative supply lead}

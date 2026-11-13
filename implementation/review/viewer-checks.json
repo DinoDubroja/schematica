@@ -1,0 +1,128 @@
+{
+  "build_id": "971b3b876b93",
+  "browser": "Codex in-app browser on Windows",
+  "browser_configurations": 54,
+  "library_downloads": [
+    {
+      "size": "small",
+      "stroke": "thin",
+      "summary": "6 symbols \u00c2\u00b7 Small \u00c2\u00b7 Thin"
+    },
+    {
+      "size": "small",
+      "stroke": "medium",
+      "summary": "6 symbols \u00c2\u00b7 Small \u00c2\u00b7 Medium"
+    },
+    {
+      "size": "small",
+      "stroke": "thick",
+      "summary": "6 symbols \u00c2\u00b7 Small \u00c2\u00b7 Thick"
+    },
+    {
+      "size": "medium",
+      "stroke": "thin",
+      "summary": "6 symbols \u00c2\u00b7 Medium \u00c2\u00b7 Thin"
+    },
+    {
+      "size": "medium",
+      "stroke": "medium",
+      "summary": "6 symbols \u00c2\u00b7 Medium \u00c2\u00b7 Medium"
+    },
+    {
+      "size": "medium",
+      "stroke": "thick",
+      "summary": "6 symbols \u00c2\u00b7 Medium \u00c2\u00b7 Thick"
+    },
+    {
+      "size": "large",
+      "stroke": "thin",
+      "summary": "6 symbols \u00c2\u00b7 Large \u00c2\u00b7 Thin"
+    },
+    {
+      "size": "large",
+      "stroke": "medium",
+      "summary": "6 symbols \u00c2\u00b7 Large \u00c2\u00b7 Medium"
+    },
+    {
+      "size": "large",
+      "stroke": "thick",
+      "summary": "6 symbols \u00c2\u00b7 Large \u00c2\u00b7 Thick"
+    }
+  ],
+  "checks": [
+    {
+      "check": "dark theme persists",
+      "passed": true
+    },
+    {
+      "check": "keyword search",
+      "names": [
+        "Coil inductor"
+      ]
+    },
+    {
+      "check": "empty results",
+      "visible": true
+    },
+    {
+      "check": "amplifier filter",
+      "names": [
+        "Op-amp",
+        "Op-amp with supply pins"
+      ]
+    },
+    {
+      "check": "grid hidden",
+      "hidden": true
+    }
+  ],
+  "light_theme_persistence": true,
+  "keyboard_card_focus": true,
+  "dialog_escape_and_return_focus": true,
+  "search_shortcut": true,
+  "filter_does_not_limit_export": true,
+  "layouts": [
+    {
+      "columns": "408.731px 408.731px",
+      "height": 818,
+      "overflow": false,
+      "width": 909
+    },
+    {
+      "columns": "minmax(300px, 1fr) minmax(340px, 1fr)",
+      "height": 818,
+      "overflow": false,
+      "width": 654
+    },
+    {
+      "columns": "minmax(300px, 1fr) minmax(340px, 1fr)",
+      "height": 818,
+      "overflow": false,
+      "width": 354
+    }
+  ],
+  "console_errors": [],
+  "inkscape_gui": {
+    "version": "1.3.2",
+    "library": "small-thick",
+    "symbols_panel_entries": 6,
+    "pasted_into_fresh_document": true,
+    "visual_bounds_mm": [
+      14.3,
+      1.8
+    ],
+    "unlinked_named_parts": [
+      "lead-a",
+      "body",
+      "lead-b"
+    ],
+    "saved": "viewer-downloads/placed-coil.svg",
+    "saved_file_cli_reopen": "all three named parts retained; no remaining clone"
+  },
+  "not_verified": [
+    "Cloudflare deployment",
+    "second physical Windows device",
+    "Chrome and Edge separately",
+    "profile-wide Symbols installation"
+  ]
+}

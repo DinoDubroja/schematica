@@ -961,3 +961,196 @@ setup verification did not prove an unattended run or actual publication. Runtim
 outcomes, machine details and private supporting evidence belong in local reports
 outside the shared repository. This entry records authority and boundaries; it
 does not claim that this note has already been synchronized.
+
+<a id="two-symbol-rendering-proof"></a>
+
+## 13-11-2026 - Two-symbol rendering proof and Inkscape checkpoint
+
+**Status:** local implementation authorized, technical proof completed and verified;
+user visual review pending. Expansion and viewer work are stopped.
+
+**User instruction:** the implementation request established a mandatory two-symbol
+rendering checkpoint. The continuation explicitly said: “show me the completed
+rendering proof and stop for my review before expanding the library or building
+the viewer.” Commit, push, publication and application connections are excluded.
+
+**Implemented:** a separate [implementation subtree](../implementation/README.md)
+with two revision-1 YAML definitions, shared presets, authoritative parameterized
+TeX, Tectonic XDV/dvisvgm rendering, shallow named parts, a reusable core and 18
+generated configurations. Accepted palette files were preserved unchanged. A full
+pre-change backup retained Git history and local modifications; all 2,282 copied
+file hashes matched and Git fsck passed. The existing library was preserved.
+
+**Repository and tool evidence:** the [checkpoint](../implementation/CHECKPOINT.md)
+records passing fidelity, physical dimensions, grid pins, independent stroke,
+Small+Thick clearance, named-part save/reopen, repeated-ID, editable-text and native
+CircuitikZ checks. Inkscape GUI tests placed the op-amp from the Symbols panel into
+a fresh document, unlinked it and selected its named body; all eight parts survived
+saving/reopening. Label A was edited to Label B and reopened as editable text.
+Nine focused automated tests passed. The measured 18 exports took 13.4651 s for
+compilation/conversion and occupy 1,786–3,382 bytes individually.
+
+**Limits and next step:** review the [actual sheet](../implementation/review/proof.png)
+and editable outputs. The simple Arial normalization is fixture-specific; arbitrary
+fonts and editable mathematical text are unproven. Inkscape can change XML IDs on
+unlinking but retained semantic part identities and labels. SVG edits do not flow
+back to TeX/YAML. Only two appearances exist; no viewer, integrations or full
+schematic capability was built. All work and this additive context update are
+saved locally only. Resume expansion only after explicit checkpoint approval.
+
+<a id="first-symbol-batch-complete"></a>
+
+## 13-11-2026 - Complete symbol batch, local viewer and dark mode
+
+**User approval:** “The rendering proof looks good. Continue with the remaining
+four appearances, all 54 configurations, and the local viewer and exports. Stop
+for my review before committing or publishing.” This supersedes the two-symbol
+expansion hold above. The user additionally requested working dark mode and a nice
+interface from the start; both themes and a persisted theme switch are included.
+
+**Completed locally:** six revision-1 YAML definitions, parameterized TeX geometry,
+all 54 SVG/TeX configurations, a pre-rendered searchable catalogue and inspector,
+independent presets, selected exports, SVG/ZIP/arranged-sheet/Symbols packaging,
+launch helper and reproducible setup/build/integration documentation. The complete
+review package lives under the separate implementation subtree. Existing library,
+accepted reference and concurrent modifications were preserved; the approved proof
+ZIP was separately backed up before expansion.
+
+**Verification:** all 54 Inkscape renders and full-sheet named-part save/reopen
+checks passed. Forty-two comparisons against the accepted palette measured maximum
+coordinate deviation 0.001234 mm; minimum page margin 0.999986 mm. All 22 focused
+tests passed. Actual browser downloads of all four formats match the export core.
+The downloaded Small/Thick coil was placed from the Symbols panel into a fresh
+Inkscape document at 14.300 × 1.800 mm, unlinked, its named body selected, saved,
+closed and reopened. All three parts and physical geometry survived. Dark/light
+switching and reload persistence, search/filters, grid visibility and responsive
+layouts passed observed browser checks. No console errors were observed.
+
+**Measured cost and limits:** compilation/conversion for 54 configurations took
+40.9878 s combined; individual SVGs are 1,863–3,462 bytes. Setup, first bundle
+downloads, preview generation and verification are excluded. Text remains a bounded
+Arial-label demonstration; other platforms, arbitrary fonts and reverse import
+are untested. Inkscape instances require unlinking for internal part editing.
+
+**Next step:** user review of [the viewer and exports](../implementation/README.md)
+and [the complete checkpoint](../implementation/CHECKPOINT.md). Final appearance
+and usability acceptance remain pending. No commit, push or publication was made.
+The explicit review hold also applies to any separate synchronization setup;
+connections, personal variants, full schematics and further expansion stay deferred.
+
+<a id="viewer-hierarchy-review"></a>
+
+## 13-11-2026 - Viewer hierarchy review; revision under discussion
+
+**User correction:** the first viewer gives export too much prominence relative to
+Schematica's longer-term use. The user wants a professional foundation for a future
+hosted app, minimal text, discreet individual SVG export, no Add configuration
+button, and no persistent export-selection area during normal browsing. Remove
+hero/tagline text, counts such as six appearances and nine configurations, the
+Inspect label, and repetitive explanatory copy. Enlarge blue connection markers.
+Replace the current technical accordions with useful human-readable description
+and search keywords, with details still to be agreed.
+
+**Mode and boundary:** user explicitly requests proposals and follow-up questions
+until agreement. Discuss the new hierarchy and export interaction before changing
+the app. Current implementation is technically verified but UI acceptance is
+withheld. No implementation revision, new feature scope, commit or publication is
+approved by this discussion. These are local project review notes, not a saved
+general personal preference.
+
+<a id="browsing-ui-and-shared-preview"></a>
+## 13-11-2026 — Browsing UI, exports and shared preview
+
+**Agreed direction (user):** Schematica Web is currently a read-only symbol browser.
+Use minimal text, larger blue connection points, human descriptions and read-only
+search keywords. Remove the export cart, Add configuration and technical panels.
+Keep a discreet individual SVG export and export all six symbols at the current
+size/stroke; no multi-selection. Keep working dark/light modes. Later styles,
+examples, in-circuit comparison and personal content belong in the wider direction;
+agent creation starts outside the web app. Shipped content must remain separate
+from labelled user variants. Grouping/profiles remain undecided.
+
+**Authorization:** after discussing hosting, the user chose Cloudflare with a
+preview anyone can open by link and instructed: “Go ahead with the UI cleanup,
+exports and docs, but stop for my review before committing or publishing anything.”
+Both test devices are Windows. Local implementation and verification are authorized;
+account setup, upload, commit, push and publication remain held for review.
+
+**Documentation addition (user):** after each implementation run, developer docs
+must say what changed, how to test and what to look for. Recorded in the repository
+entry points; each run updates the current implementation review and useful commands.
+
+**Implemented locally:** browsing UI, read-only metadata, 54 individual SVGs and
+nine six-symbol libraries, a deterministic static website and Cloudflare config.
+The existing TeX renderer remains authoritative. Initial verification passed 25
+tests, all 54 browser configurations and nine actual library downloads. A clean
+copy passed without original build caches. **Completed and verified:** final build
+971b3b876b93, nine final library downloads byte-matched, all nine Inkscape round trips
+passed, all 54 accepted-palette render checks passed. The final Small/Thick set showed
+six Symbols entries; a pasted coil measured 14.30 × 1.80 mm, was unlinked/saved and
+retained named parts on command-line reopen. Browser screenshots and exact human
+checks are in [CHECKPOINT.md](../implementation/CHECKPOINT.md). Hosted/second-device,
+separate Chrome/Edge and profile-installation checks remain unverified.
+No commit, push or publication has occurred. This supersedes the discussion-only
+boundary in [the earlier UI correction](#viewer-hierarchy-review).
+
+<a id="cloudflare-preview-publication"></a>
+
+## 13-11-2026 — Cloudflare preview published
+
+**User authorization:** after accepting the implementation and creating/verifying
+the hosting account, the user instructed: “Go ahead and publish the Cloudflare
+preview, then send me the link and short testing checklist for both Windows devices.”
+This releases the publication hold for the reviewed build only. Commits/pushes
+remain held; automatic deployment and further feature work were not requested.
+
+**Completed:** uploaded the unchanged 71-file static ZIP to the new
+`schematica-preview` Worker through the Cloudflare dashboard. The
+[main preview](https://schematica-preview.dinodubroja.workers.dev/) and
+[fixed version 650191bd](https://650191bd-schematica-preview.dinodubroja.workers.dev/)
+are public by link. No Git integration, paid upgrade, domain purchase, API credential,
+commit or push was performed.
+
+**Verified:** both hosted manifests match build `971b3b876b93`. Browser theme
+persistence, keyword/empty search, descriptions and nine preset choices passed.
+Nine downloaded libraries and one individual SVG match local files byte for byte;
+filtered export still includes six symbols. No browser console errors/warnings.
+Initial TLS activation errors cleared. Python HTTP requests were rejected with
+Cloudflare 403/error 1010, so the complete HTTP file/header sweep remains unverified;
+security settings were not weakened. The second physical Windows device and
+separate Chrome/Edge checks remain for user testing.
+
+**Handoff:** [current review](../implementation/CHECKPOINT.md),
+[development instructions](../implementation/DEVELOPMENT.md),
+[hosted verification](../implementation/review/hosted-verification.json) and
+[screenshot](../implementation/review/viewer-hosted.png). Documentation remains
+local/uncommitted; public hosting does not synchronize repository changes.
+
+<a id="first-implementation-github-handoff"></a>
+
+## 13-11-2026 — Completed implementation approved for GitHub
+
+**User authorization:** “Yes, commit and push the completed implementation and docs
+to GitHub. Verify everything is there, then tell me how to get the updated project
+on my laptop.” This releases the completed first-batch Git hold. It does not
+authorize unrelated pending preference edits or new product features.
+
+**Prepared:** six appearances, 54 SVG/TeX configurations, reusable core, viewer,
+static exports, Cloudflare settings, review evidence and concise user/developer/
+Inkscape docs. The README links the live preview and laptop setup. Saved measurement
+paths are relative; geometry and hosted build 971b3b876b93 are unchanged.
+
+**Preservation:** this batch is based on the latest GitHub maintenance note and
+excludes unrelated pending preference/style work. Existing local changes were
+backed up before preparing the scoped commit. Source synchronization and website
+deployment remain separate; no new website version was uploaded in this run.
+
+**How to check:** use [the Windows handoff guide](../implementation/DEVELOPMENT.md#get-the-project-on-another-windows-device)
+to clone or safely update, then build and run the 25 implementation tests. The
+README, implementation folder and [current review](../implementation/CHECKPOINT.md)
+should be present. The laptop's installation and two-device testing remain unverified.
+
+**Pre-push verification:** the exact staged Git checkout reproduced build
+971b3b876b93 and passed all 25 tests. All 210 local links in changed docs resolve;
+the review ZIP matches its file/hash manifest. An independent reading-route and
+publication audit found no further actionable issues.

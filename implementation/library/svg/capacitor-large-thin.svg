@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000023 34.440758 29.716295" width="12.14993407mm" height="10.48324851mm">
+  <title>Capacitor</title>
+  <desc>Non-polarized capacitor with two parallel plates and interchangeable terminals.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 8.33331, "body-width": 2.49998}, "origin_svg": [-51.462077, -57.141873], "parts": ["plate-a", "plate-b", "lead-a", "lead-b"], "pins_mm": {"a": [-5.0, 0.0], "b": [5.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "thin", "stroke_mm": 0.15}, "symbol_id": "capacitor"}</metadata>
+  <g id="sc-capacitor-r1-large-thin--sc-capacitor-r1-large-thin" inkscape:label="Capacitor / large / thin" data-symbol="capacitor" data-revision="1" data-size="large" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(-51.462077,-57.141873)scale(0.996264,-0.996264)">
+    <g data-part="plate-a" id="sc-capacitor-r1-large-thin--sc-capacitor-r1-large-thin--plate-a" inkscape:label="plate-a">
+      <path d="M-3.55656-11.85521V11.85521" fill="none" />
+      <desc>First capacitor plate</desc>
+    </g>
+    <g data-part="plate-b" id="sc-capacitor-r1-large-thin--sc-capacitor-r1-large-thin--plate-b" inkscape:label="plate-b">
+      <path d="M3.55656-11.85521V11.85521" fill="none" />
+      <desc>Second capacitor plate</desc>
+    </g>
+    <g data-part="lead-a" id="sc-capacitor-r1-large-thin--sc-capacitor-r1-large-thin--lead-a" inkscape:label="lead-a">
+      <path d="M-14.2263 0H-3.55656" fill="none" />
+      <desc>Lead to first plate</desc>
+    </g>
+    <g data-part="lead-b" id="sc-capacitor-r1-large-thin--sc-capacitor-r1-large-thin--lead-b" inkscape:label="lead-b">
+      <path d="M3.55656 0H14.2263" fill="none" />
+      <desc>Lead to second plate</desc>
+    </g>
+  </g>
+</svg>

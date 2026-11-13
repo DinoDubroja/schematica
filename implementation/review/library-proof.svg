@@ -1,0 +1,3954 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="218.00000000mm" height="252.00000000mm" viewBox="0 0 218.00000000 252.00000000">
+  <title>Schematica · 54 configurations</title>
+  <text x="6" y="8" font-family="Arial, sans-serif" font-size="4" fill="#222">Schematica · complete preset library</text>
+  <text x="6" y="15" font-family="Arial, sans-serif" font-size="2.5" fill="#222">Six appearances · independent size and stroke · 1 mm inspection grid</text>
+  <text x="31" y="24" font-family="Arial, sans-serif" font-size="2.2" fill="#222">EU resistor</text>
+  <text x="60" y="24" font-family="Arial, sans-serif" font-size="2.2" fill="#222">US resistor</text>
+  <text x="89" y="24" font-family="Arial, sans-serif" font-size="2.2" fill="#222">Coil inductor</text>
+  <text x="118" y="24" font-family="Arial, sans-serif" font-size="2.2" fill="#222">Capacitor</text>
+  <text x="147" y="24" font-family="Arial, sans-serif" font-size="2.2" fill="#222">Op-amp</text>
+  <text x="176" y="24" font-family="Arial, sans-serif" font-size="2.2" fill="#222">With supplies</text>
+  <text x="4" y="38" font-family="Arial, sans-serif" font-size="2.5" fill="#222">Small</text>
+  <text x="4" y="42" font-family="Arial, sans-serif" font-size="2.1" fill="#222">Thin</text>
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M29,29v20" />
+    <path d="M30,29v20" />
+    <path d="M31,29v20" />
+    <path d="M32,29v20" />
+    <path d="M33,29v20" />
+    <path d="M34,29v20" />
+    <path d="M35,29v20" />
+    <path d="M36,29v20" />
+    <path d="M37,29v20" />
+    <path d="M38,29v20" />
+    <path d="M39,29v20" />
+    <path d="M40,29v20" />
+    <path d="M41,29v20" />
+    <path d="M42,29v20" />
+    <path d="M43,29v20" />
+    <path d="M44,29v20" />
+    <path d="M45,29v20" />
+    <path d="M46,29v20" />
+    <path d="M47,29v20" />
+    <path d="M48,29v20" />
+    <path d="M49,29v20" />
+    <path d="M50,29v20" />
+    <path d="M51,29v20" />
+    <path d="M52,29v20" />
+    <path d="M53,29v20" />
+    <path d="M54,29v20" />
+    <path d="M55,29v20" />
+    <path d="M29,29h26" />
+    <path d="M29,30h26" />
+    <path d="M29,31h26" />
+    <path d="M29,32h26" />
+    <path d="M29,33h26" />
+    <path d="M29,34h26" />
+    <path d="M29,35h26" />
+    <path d="M29,36h26" />
+    <path d="M29,37h26" />
+    <path d="M29,38h26" />
+    <path d="M29,39h26" />
+    <path d="M29,40h26" />
+    <path d="M29,41h26" />
+    <path d="M29,42h26" />
+    <path d="M29,43h26" />
+    <path d="M29,44h26" />
+    <path d="M29,45h26" />
+    <path d="M29,46h26" />
+    <path d="M29,47h26" />
+    <path d="M29,48h26" />
+    <path d="M29,49h26" />
+  </g>
+  <g id="proof-0-0--sc-resistor-eu-r1-small-thin--sc-resistor-eu-r1-small-thin" inkscape:label="EU resistor / small / thin" data-symbol="resistor-eu" data-revision="1" data-size="small" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(58.15468786666666,62.07502334722222) scale(0.35277777777777775) translate(-45.792816,-65.409515)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-0-0--sc-resistor-eu-r1-small-thin--sc-resistor-eu-r1-small-thin--body" inkscape:label="body">
+      <path d="M-10.66972-3.55656V3.55656H10.66972V-3.55656ZM10.66972 3.55656" fill="none" />
+      <desc>Rectangular resistor body</desc>
+    </g>
+    <g data-part="lead-a" id="proof-0-0--sc-resistor-eu-r1-small-thin--sc-resistor-eu-r1-small-thin--lead-a" inkscape:label="lead-a">
+      <path d="M-19.91682 0H-10.66972" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="lead-b" id="proof-0-0--sc-resistor-eu-r1-small-thin--sc-resistor-eu-r1-small-thin--lead-b" inkscape:label="lead-b">
+      <path d="M10.66972 0H19.91682" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="35.0" cy="39.0" r="0.14" fill="#2d69a5" />
+  <circle cx="49.0" cy="39.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M58,29v20" />
+    <path d="M59,29v20" />
+    <path d="M60,29v20" />
+    <path d="M61,29v20" />
+    <path d="M62,29v20" />
+    <path d="M63,29v20" />
+    <path d="M64,29v20" />
+    <path d="M65,29v20" />
+    <path d="M66,29v20" />
+    <path d="M67,29v20" />
+    <path d="M68,29v20" />
+    <path d="M69,29v20" />
+    <path d="M70,29v20" />
+    <path d="M71,29v20" />
+    <path d="M72,29v20" />
+    <path d="M73,29v20" />
+    <path d="M74,29v20" />
+    <path d="M75,29v20" />
+    <path d="M76,29v20" />
+    <path d="M77,29v20" />
+    <path d="M78,29v20" />
+    <path d="M79,29v20" />
+    <path d="M80,29v20" />
+    <path d="M81,29v20" />
+    <path d="M82,29v20" />
+    <path d="M83,29v20" />
+    <path d="M84,29v20" />
+    <path d="M58,29h26" />
+    <path d="M58,30h26" />
+    <path d="M58,31h26" />
+    <path d="M58,32h26" />
+    <path d="M58,33h26" />
+    <path d="M58,34h26" />
+    <path d="M58,35h26" />
+    <path d="M58,36h26" />
+    <path d="M58,37h26" />
+    <path d="M58,38h26" />
+    <path d="M58,39h26" />
+    <path d="M58,40h26" />
+    <path d="M58,41h26" />
+    <path d="M58,42h26" />
+    <path d="M58,43h26" />
+    <path d="M58,44h26" />
+    <path d="M58,45h26" />
+    <path d="M58,46h26" />
+    <path d="M58,47h26" />
+    <path d="M58,48h26" />
+    <path d="M58,49h26" />
+  </g>
+  <g id="proof-0-1--sc-resistor-us-r1-small-thin--sc-resistor-us-r1-small-thin" inkscape:label="US resistor / small / thin" data-symbol="resistor-us" data-revision="1" data-size="small" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(87.15468786666666,62.07502334722222) scale(0.35277777777777775) translate(-45.792816,-65.409515)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="proof-0-1--sc-resistor-us-r1-small-thin--sc-resistor-us-r1-small-thin--lead-a" inkscape:label="lead-a">
+      <path d="M-19.91682 0H-10.66972" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="body" id="proof-0-1--sc-resistor-us-r1-small-thin--sc-resistor-us-r1-small-thin--body" inkscape:label="body">
+      <path d="M-10.66972 0L-8.89143 3.55656L-5.33485-3.55656L-1.77827 3.55656L1.77827-3.55656L5.33485 3.55656L8.89143-3.55656L10.66972 0" fill="none" />
+      <desc>Zigzag body</desc>
+    </g>
+    <g data-part="lead-b" id="proof-0-1--sc-resistor-us-r1-small-thin--sc-resistor-us-r1-small-thin--lead-b" inkscape:label="lead-b">
+      <path d="M10.66972 0H19.91682" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="64.0" cy="39.0" r="0.14" fill="#2d69a5" />
+  <circle cx="78.0" cy="39.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M87,29v20" />
+    <path d="M88,29v20" />
+    <path d="M89,29v20" />
+    <path d="M90,29v20" />
+    <path d="M91,29v20" />
+    <path d="M92,29v20" />
+    <path d="M93,29v20" />
+    <path d="M94,29v20" />
+    <path d="M95,29v20" />
+    <path d="M96,29v20" />
+    <path d="M97,29v20" />
+    <path d="M98,29v20" />
+    <path d="M99,29v20" />
+    <path d="M100,29v20" />
+    <path d="M101,29v20" />
+    <path d="M102,29v20" />
+    <path d="M103,29v20" />
+    <path d="M104,29v20" />
+    <path d="M105,29v20" />
+    <path d="M106,29v20" />
+    <path d="M107,29v20" />
+    <path d="M108,29v20" />
+    <path d="M109,29v20" />
+    <path d="M110,29v20" />
+    <path d="M111,29v20" />
+    <path d="M112,29v20" />
+    <path d="M113,29v20" />
+    <path d="M87,29h26" />
+    <path d="M87,30h26" />
+    <path d="M87,31h26" />
+    <path d="M87,32h26" />
+    <path d="M87,33h26" />
+    <path d="M87,34h26" />
+    <path d="M87,35h26" />
+    <path d="M87,36h26" />
+    <path d="M87,37h26" />
+    <path d="M87,38h26" />
+    <path d="M87,39h26" />
+    <path d="M87,40h26" />
+    <path d="M87,41h26" />
+    <path d="M87,42h26" />
+    <path d="M87,43h26" />
+    <path d="M87,44h26" />
+    <path d="M87,45h26" />
+    <path d="M87,46h26" />
+    <path d="M87,47h26" />
+    <path d="M87,48h26" />
+    <path d="M87,49h26" />
+  </g>
+  <g id="proof-0-2--sc-inductor-coil-r1-small-thin--sc-inductor-coil-r1-small-thin" inkscape:label="Coil inductor / small / thin" data-symbol="inductor-coil" data-revision="1" data-size="small" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(116.15468786666666,61.82503936944444) scale(0.35277777777777775) translate(-45.792816,-64.700899)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="proof-0-2--sc-inductor-coil-r1-small-thin--sc-inductor-coil-r1-small-thin--lead-a" inkscape:label="lead-a">
+      <path d="M-19.91682 0H-10.66972" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="body" id="proof-0-2--sc-inductor-coil-r1-small-thin--sc-inductor-coil-r1-small-thin--body" inkscape:label="body">
+      <path d="M-10.66972 0C-10.66972 2.35709-9.4755 4.26784-8.0023 4.26784C-6.52911 4.26784-5.33488 2.35709-5.33488 0C-5.33488 2.35709-4.14066 4.26784-2.66747 4.26784C-1.19427 4.26784-.00005 2.35709-.00005 0C-.00005 2.35709 1.19418 4.26784 2.66737 4.26784S5.3348 2.35709 5.3348 0C5.3348 2.35709 6.52902 4.26784 8.00221 4.26784S10.66963 2.35709 10.66963 0" fill="none" />
+      <desc>Four coil half-turns</desc>
+    </g>
+    <g data-part="lead-b" id="proof-0-2--sc-inductor-coil-r1-small-thin--sc-inductor-coil-r1-small-thin--lead-b" inkscape:label="lead-b">
+      <path d="M10.66972 0H19.91682" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="93.0" cy="39.0" r="0.14" fill="#2d69a5" />
+  <circle cx="107.0" cy="39.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M116,29v20" />
+    <path d="M117,29v20" />
+    <path d="M118,29v20" />
+    <path d="M119,29v20" />
+    <path d="M120,29v20" />
+    <path d="M121,29v20" />
+    <path d="M122,29v20" />
+    <path d="M123,29v20" />
+    <path d="M124,29v20" />
+    <path d="M125,29v20" />
+    <path d="M126,29v20" />
+    <path d="M127,29v20" />
+    <path d="M128,29v20" />
+    <path d="M129,29v20" />
+    <path d="M130,29v20" />
+    <path d="M131,29v20" />
+    <path d="M132,29v20" />
+    <path d="M133,29v20" />
+    <path d="M134,29v20" />
+    <path d="M135,29v20" />
+    <path d="M136,29v20" />
+    <path d="M137,29v20" />
+    <path d="M138,29v20" />
+    <path d="M139,29v20" />
+    <path d="M140,29v20" />
+    <path d="M141,29v20" />
+    <path d="M142,29v20" />
+    <path d="M116,29h26" />
+    <path d="M116,30h26" />
+    <path d="M116,31h26" />
+    <path d="M116,32h26" />
+    <path d="M116,33h26" />
+    <path d="M116,34h26" />
+    <path d="M116,35h26" />
+    <path d="M116,36h26" />
+    <path d="M116,37h26" />
+    <path d="M116,38h26" />
+    <path d="M116,39h26" />
+    <path d="M116,40h26" />
+    <path d="M116,41h26" />
+    <path d="M116,42h26" />
+    <path d="M116,43h26" />
+    <path d="M116,44h26" />
+    <path d="M116,45h26" />
+    <path d="M116,46h26" />
+    <path d="M116,47h26" />
+    <path d="M116,48h26" />
+    <path d="M116,49h26" />
+  </g>
+  <g id="proof-0-3--sc-capacitor-r1-small-thin--sc-capacitor-r1-small-thin" inkscape:label="Capacitor / small / thin" data-symbol="capacitor" data-revision="1" data-size="small" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(148.15467198888888,60.82502831666666) scale(0.35277777777777775) translate(-54.296708,-61.866222)scale(0.996264,-0.996264)">
+    <g data-part="plate-a" id="proof-0-3--sc-capacitor-r1-small-thin--sc-capacitor-r1-small-thin--plate-a" inkscape:label="plate-a">
+      <path d="M-2.13394-7.11314V7.11314" fill="none" />
+      <desc>First capacitor plate</desc>
+    </g>
+    <g data-part="plate-b" id="proof-0-3--sc-capacitor-r1-small-thin--sc-capacitor-r1-small-thin--plate-b" inkscape:label="plate-b">
+      <path d="M2.13394-7.11314V7.11314" fill="none" />
+      <desc>Second capacitor plate</desc>
+    </g>
+    <g data-part="lead-a" id="proof-0-3--sc-capacitor-r1-small-thin--sc-capacitor-r1-small-thin--lead-a" inkscape:label="lead-a">
+      <path d="M-11.38104 0H-2.13394" fill="none" />
+      <desc>Lead to first plate</desc>
+    </g>
+    <g data-part="lead-b" id="proof-0-3--sc-capacitor-r1-small-thin--sc-capacitor-r1-small-thin--lead-b" inkscape:label="lead-b">
+      <path d="M2.13394 0H11.38104" fill="none" />
+      <desc>Lead to second plate</desc>
+    </g>
+  </g>
+  <circle cx="125.0" cy="39.0" r="0.14" fill="#2d69a5" />
+  <circle cx="133.0" cy="39.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M145,29v20" />
+    <path d="M146,29v20" />
+    <path d="M147,29v20" />
+    <path d="M148,29v20" />
+    <path d="M149,29v20" />
+    <path d="M150,29v20" />
+    <path d="M151,29v20" />
+    <path d="M152,29v20" />
+    <path d="M153,29v20" />
+    <path d="M154,29v20" />
+    <path d="M155,29v20" />
+    <path d="M156,29v20" />
+    <path d="M157,29v20" />
+    <path d="M158,29v20" />
+    <path d="M159,29v20" />
+    <path d="M160,29v20" />
+    <path d="M161,29v20" />
+    <path d="M162,29v20" />
+    <path d="M163,29v20" />
+    <path d="M164,29v20" />
+    <path d="M165,29v20" />
+    <path d="M166,29v20" />
+    <path d="M167,29v20" />
+    <path d="M168,29v20" />
+    <path d="M169,29v20" />
+    <path d="M170,29v20" />
+    <path d="M171,29v20" />
+    <path d="M145,29h26" />
+    <path d="M145,30h26" />
+    <path d="M145,31h26" />
+    <path d="M145,32h26" />
+    <path d="M145,33h26" />
+    <path d="M145,34h26" />
+    <path d="M145,35h26" />
+    <path d="M145,36h26" />
+    <path d="M145,37h26" />
+    <path d="M145,38h26" />
+    <path d="M145,39h26" />
+    <path d="M145,40h26" />
+    <path d="M145,41h26" />
+    <path d="M145,42h26" />
+    <path d="M145,43h26" />
+    <path d="M145,44h26" />
+    <path d="M145,45h26" />
+    <path d="M145,46h26" />
+    <path d="M145,47h26" />
+    <path d="M145,48h26" />
+    <path d="M145,49h26" />
+  </g>
+  <g id="proof-0-4--sc-opamp-r1-small-thin--sc-opamp-r1-small-thin" inkscape:label="Op-amp / small / thin" data-symbol="opamp" data-revision="1" data-size="small" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(173.15469304166666,58.325038961111105) scale(0.35277777777777775) translate(-42.958185,-54.779638)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-0-4--sc-opamp-r1-small-thin--sc-opamp-r1-small-thin--body" inkscape:label="body">
+      <path d="M-12.0923-14.2263V14.2263L12.0923 0Z" fill="none" />
+      <desc>Triangle outline</desc>
+    </g>
+    <g data-part="lead-in-plus" id="proof-0-4--sc-opamp-r1-small-thin--sc-opamp-r1-small-thin--lead-in-plus" inkscape:label="lead-in-plus">
+      <path d="M-22.76208 8.53578H-12.0923" fill="none" />
+      <desc>Non-inverting input lead</desc>
+    </g>
+    <g data-part="lead-in-minus" id="proof-0-4--sc-opamp-r1-small-thin--sc-opamp-r1-small-thin--lead-in-minus" inkscape:label="lead-in-minus">
+      <path d="M-22.76208-8.53578H-12.0923" fill="none" />
+      <desc>Inverting input lead</desc>
+    </g>
+    <g data-part="lead-out" id="proof-0-4--sc-opamp-r1-small-thin--sc-opamp-r1-small-thin--lead-out" inkscape:label="lead-out">
+      <path d="M12.0923 0H22.76208" fill="none" />
+      <desc>Output lead</desc>
+    </g>
+    <g data-part="sign-plus" id="proof-0-4--sc-opamp-r1-small-thin--sc-opamp-r1-small-thin--sign-plus" inkscape:label="sign-plus">
+      <path d="M-9.95831 8.53578H-7.11314M-8.53574 7.11319V9.95836" fill="none" />
+      <desc>Non-inverting input mark</desc>
+    </g>
+    <g data-part="sign-minus" id="proof-0-4--sc-opamp-r1-small-thin--sc-opamp-r1-small-thin--sign-minus" inkscape:label="sign-minus">
+      <path d="M-9.95831-8.53578H-7.11314" fill="none" />
+      <desc>Inverting input mark</desc>
+    </g>
+  </g>
+  <circle cx="150.0" cy="36.0" r="0.14" fill="#2d69a5" />
+  <circle cx="150.0" cy="42.0" r="0.14" fill="#2d69a5" />
+  <circle cx="166.0" cy="39.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M174,29v20" />
+    <path d="M175,29v20" />
+    <path d="M176,29v20" />
+    <path d="M177,29v20" />
+    <path d="M178,29v20" />
+    <path d="M179,29v20" />
+    <path d="M180,29v20" />
+    <path d="M181,29v20" />
+    <path d="M182,29v20" />
+    <path d="M183,29v20" />
+    <path d="M184,29v20" />
+    <path d="M185,29v20" />
+    <path d="M186,29v20" />
+    <path d="M187,29v20" />
+    <path d="M188,29v20" />
+    <path d="M189,29v20" />
+    <path d="M190,29v20" />
+    <path d="M191,29v20" />
+    <path d="M192,29v20" />
+    <path d="M193,29v20" />
+    <path d="M194,29v20" />
+    <path d="M195,29v20" />
+    <path d="M196,29v20" />
+    <path d="M197,29v20" />
+    <path d="M198,29v20" />
+    <path d="M199,29v20" />
+    <path d="M200,29v20" />
+    <path d="M174,29h26" />
+    <path d="M174,30h26" />
+    <path d="M174,31h26" />
+    <path d="M174,32h26" />
+    <path d="M174,33h26" />
+    <path d="M174,34h26" />
+    <path d="M174,35h26" />
+    <path d="M174,36h26" />
+    <path d="M174,37h26" />
+    <path d="M174,38h26" />
+    <path d="M174,39h26" />
+    <path d="M174,40h26" />
+    <path d="M174,41h26" />
+    <path d="M174,42h26" />
+    <path d="M174,43h26" />
+    <path d="M174,44h26" />
+    <path d="M174,45h26" />
+    <path d="M174,46h26" />
+    <path d="M174,47h26" />
+    <path d="M174,48h26" />
+    <path d="M174,49h26" />
+  </g>
+  <g id="proof-0-5--sc-opamp-supply-r1-small-thin--sc-opamp-supply-r1-small-thin" inkscape:label="Op-amp with supply pins / small / thin" data-symbol="opamp-supply" data-revision="1" data-size="small" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(202.15469304166666,58.325038961111105) scale(0.35277777777777775) translate(-42.958185,-54.779638)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-0-5--sc-opamp-supply-r1-small-thin--sc-opamp-supply-r1-small-thin--body" inkscape:label="body">
+      <path d="M-12.0923-14.2263V14.2263L12.0923 0Z" fill="none" />
+      <desc>Triangle outline</desc>
+    </g>
+    <g data-part="lead-in-plus" id="proof-0-5--sc-opamp-supply-r1-small-thin--sc-opamp-supply-r1-small-thin--lead-in-plus" inkscape:label="lead-in-plus">
+      <path d="M-22.76208 8.53578H-12.0923" fill="none" />
+      <desc>Non-inverting input lead</desc>
+    </g>
+    <g data-part="lead-in-minus" id="proof-0-5--sc-opamp-supply-r1-small-thin--sc-opamp-supply-r1-small-thin--lead-in-minus" inkscape:label="lead-in-minus">
+      <path d="M-22.76208-8.53578H-12.0923" fill="none" />
+      <desc>Inverting input lead</desc>
+    </g>
+    <g data-part="lead-out" id="proof-0-5--sc-opamp-supply-r1-small-thin--sc-opamp-supply-r1-small-thin--lead-out" inkscape:label="lead-out">
+      <path d="M12.0923 0H22.76208" fill="none" />
+      <desc>Output lead</desc>
+    </g>
+    <g data-part="sign-plus" id="proof-0-5--sc-opamp-supply-r1-small-thin--sc-opamp-supply-r1-small-thin--sign-plus" inkscape:label="sign-plus">
+      <path d="M-9.95831 8.53578H-7.11314M-8.53574 7.11319V9.95836" fill="none" />
+      <desc>Non-inverting input mark</desc>
+    </g>
+    <g data-part="sign-minus" id="proof-0-5--sc-opamp-supply-r1-small-thin--sc-opamp-supply-r1-small-thin--sign-minus" inkscape:label="sign-minus">
+      <path d="M-9.95831-8.53578H-7.11314" fill="none" />
+      <desc>Inverting input mark</desc>
+    </g>
+    <g data-part="lead-supply-plus" id="proof-0-5--sc-opamp-supply-r1-small-thin--sc-opamp-supply-r1-small-thin--lead-supply-plus" inkscape:label="lead-supply-plus">
+      <path d="M0 7.11314V14.2263" fill="none" />
+      <desc>Positive supply lead</desc>
+    </g>
+    <g data-part="lead-supply-minus" id="proof-0-5--sc-opamp-supply-r1-small-thin--sc-opamp-supply-r1-small-thin--lead-supply-minus" inkscape:label="lead-supply-minus">
+      <path d="M0-7.11314V-14.2263" fill="none" />
+      <desc>Negative supply lead</desc>
+    </g>
+  </g>
+  <circle cx="179.0" cy="36.0" r="0.14" fill="#2d69a5" />
+  <circle cx="179.0" cy="42.0" r="0.14" fill="#2d69a5" />
+  <circle cx="195.0" cy="39.0" r="0.14" fill="#2d69a5" />
+  <circle cx="187.0" cy="34.0" r="0.14" fill="#2d69a5" />
+  <circle cx="187.0" cy="44.0" r="0.14" fill="#2d69a5" />
+  <text x="4" y="62" font-family="Arial, sans-serif" font-size="2.5" fill="#222">Small</text>
+  <text x="4" y="66" font-family="Arial, sans-serif" font-size="2.1" fill="#222">Medium</text>
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M29,53v20" />
+    <path d="M30,53v20" />
+    <path d="M31,53v20" />
+    <path d="M32,53v20" />
+    <path d="M33,53v20" />
+    <path d="M34,53v20" />
+    <path d="M35,53v20" />
+    <path d="M36,53v20" />
+    <path d="M37,53v20" />
+    <path d="M38,53v20" />
+    <path d="M39,53v20" />
+    <path d="M40,53v20" />
+    <path d="M41,53v20" />
+    <path d="M42,53v20" />
+    <path d="M43,53v20" />
+    <path d="M44,53v20" />
+    <path d="M45,53v20" />
+    <path d="M46,53v20" />
+    <path d="M47,53v20" />
+    <path d="M48,53v20" />
+    <path d="M49,53v20" />
+    <path d="M50,53v20" />
+    <path d="M51,53v20" />
+    <path d="M52,53v20" />
+    <path d="M53,53v20" />
+    <path d="M54,53v20" />
+    <path d="M55,53v20" />
+    <path d="M29,53h26" />
+    <path d="M29,54h26" />
+    <path d="M29,55h26" />
+    <path d="M29,56h26" />
+    <path d="M29,57h26" />
+    <path d="M29,58h26" />
+    <path d="M29,59h26" />
+    <path d="M29,60h26" />
+    <path d="M29,61h26" />
+    <path d="M29,62h26" />
+    <path d="M29,63h26" />
+    <path d="M29,64h26" />
+    <path d="M29,65h26" />
+    <path d="M29,66h26" />
+    <path d="M29,67h26" />
+    <path d="M29,68h26" />
+    <path d="M29,69h26" />
+    <path d="M29,70h26" />
+    <path d="M29,71h26" />
+    <path d="M29,72h26" />
+    <path d="M29,73h26" />
+  </g>
+  <g id="proof-1-0--sc-resistor-eu-r1-small-medium--sc-resistor-eu-r1-small-medium" inkscape:label="EU resistor / small / medium" data-symbol="resistor-eu" data-revision="1" data-size="small" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(58.12968615277778,86.05002163333333) scale(0.35277777777777775) translate(-45.721945,-65.338644)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-1-0--sc-resistor-eu-r1-small-medium--sc-resistor-eu-r1-small-medium--body" inkscape:label="body">
+      <path d="M-10.66972-3.55656V3.55656H10.66972V-3.55656ZM10.66972 3.55656" fill="none" />
+      <desc>Rectangular resistor body</desc>
+    </g>
+    <g data-part="lead-a" id="proof-1-0--sc-resistor-eu-r1-small-medium--sc-resistor-eu-r1-small-medium--lead-a" inkscape:label="lead-a">
+      <path d="M-19.91682 0H-10.66972" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="lead-b" id="proof-1-0--sc-resistor-eu-r1-small-medium--sc-resistor-eu-r1-small-medium--lead-b" inkscape:label="lead-b">
+      <path d="M10.66972 0H19.91682" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="35.0" cy="63.0" r="0.14" fill="#2d69a5" />
+  <circle cx="49.0" cy="63.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M58,53v20" />
+    <path d="M59,53v20" />
+    <path d="M60,53v20" />
+    <path d="M61,53v20" />
+    <path d="M62,53v20" />
+    <path d="M63,53v20" />
+    <path d="M64,53v20" />
+    <path d="M65,53v20" />
+    <path d="M66,53v20" />
+    <path d="M67,53v20" />
+    <path d="M68,53v20" />
+    <path d="M69,53v20" />
+    <path d="M70,53v20" />
+    <path d="M71,53v20" />
+    <path d="M72,53v20" />
+    <path d="M73,53v20" />
+    <path d="M74,53v20" />
+    <path d="M75,53v20" />
+    <path d="M76,53v20" />
+    <path d="M77,53v20" />
+    <path d="M78,53v20" />
+    <path d="M79,53v20" />
+    <path d="M80,53v20" />
+    <path d="M81,53v20" />
+    <path d="M82,53v20" />
+    <path d="M83,53v20" />
+    <path d="M84,53v20" />
+    <path d="M58,53h26" />
+    <path d="M58,54h26" />
+    <path d="M58,55h26" />
+    <path d="M58,56h26" />
+    <path d="M58,57h26" />
+    <path d="M58,58h26" />
+    <path d="M58,59h26" />
+    <path d="M58,60h26" />
+    <path d="M58,61h26" />
+    <path d="M58,62h26" />
+    <path d="M58,63h26" />
+    <path d="M58,64h26" />
+    <path d="M58,65h26" />
+    <path d="M58,66h26" />
+    <path d="M58,67h26" />
+    <path d="M58,68h26" />
+    <path d="M58,69h26" />
+    <path d="M58,70h26" />
+    <path d="M58,71h26" />
+    <path d="M58,72h26" />
+    <path d="M58,73h26" />
+  </g>
+  <g id="proof-1-1--sc-resistor-us-r1-small-medium--sc-resistor-us-r1-small-medium" inkscape:label="US resistor / small / medium" data-symbol="resistor-us" data-revision="1" data-size="small" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(87.12968615277778,86.05002163333333) scale(0.35277777777777775) translate(-45.721945,-65.338644)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="proof-1-1--sc-resistor-us-r1-small-medium--sc-resistor-us-r1-small-medium--lead-a" inkscape:label="lead-a">
+      <path d="M-19.91682 0H-10.66972" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="body" id="proof-1-1--sc-resistor-us-r1-small-medium--sc-resistor-us-r1-small-medium--body" inkscape:label="body">
+      <path d="M-10.66972 0L-8.89143 3.55656L-5.33485-3.55656L-1.77827 3.55656L1.77827-3.55656L5.33485 3.55656L8.89143-3.55656L10.66972 0" fill="none" />
+      <desc>Zigzag body</desc>
+    </g>
+    <g data-part="lead-b" id="proof-1-1--sc-resistor-us-r1-small-medium--sc-resistor-us-r1-small-medium--lead-b" inkscape:label="lead-b">
+      <path d="M10.66972 0H19.91682" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="64.0" cy="63.0" r="0.14" fill="#2d69a5" />
+  <circle cx="78.0" cy="63.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M87,53v20" />
+    <path d="M88,53v20" />
+    <path d="M89,53v20" />
+    <path d="M90,53v20" />
+    <path d="M91,53v20" />
+    <path d="M92,53v20" />
+    <path d="M93,53v20" />
+    <path d="M94,53v20" />
+    <path d="M95,53v20" />
+    <path d="M96,53v20" />
+    <path d="M97,53v20" />
+    <path d="M98,53v20" />
+    <path d="M99,53v20" />
+    <path d="M100,53v20" />
+    <path d="M101,53v20" />
+    <path d="M102,53v20" />
+    <path d="M103,53v20" />
+    <path d="M104,53v20" />
+    <path d="M105,53v20" />
+    <path d="M106,53v20" />
+    <path d="M107,53v20" />
+    <path d="M108,53v20" />
+    <path d="M109,53v20" />
+    <path d="M110,53v20" />
+    <path d="M111,53v20" />
+    <path d="M112,53v20" />
+    <path d="M113,53v20" />
+    <path d="M87,53h26" />
+    <path d="M87,54h26" />
+    <path d="M87,55h26" />
+    <path d="M87,56h26" />
+    <path d="M87,57h26" />
+    <path d="M87,58h26" />
+    <path d="M87,59h26" />
+    <path d="M87,60h26" />
+    <path d="M87,61h26" />
+    <path d="M87,62h26" />
+    <path d="M87,63h26" />
+    <path d="M87,64h26" />
+    <path d="M87,65h26" />
+    <path d="M87,66h26" />
+    <path d="M87,67h26" />
+    <path d="M87,68h26" />
+    <path d="M87,69h26" />
+    <path d="M87,70h26" />
+    <path d="M87,71h26" />
+    <path d="M87,72h26" />
+    <path d="M87,73h26" />
+  </g>
+  <g id="proof-1-2--sc-inductor-coil-r1-small-medium--sc-inductor-coil-r1-small-medium" inkscape:label="Coil inductor / small / medium" data-symbol="inductor-coil" data-revision="1" data-size="small" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(116.12968615277778,85.80003765555556) scale(0.35277777777777775) translate(-45.721945,-64.630028)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="proof-1-2--sc-inductor-coil-r1-small-medium--sc-inductor-coil-r1-small-medium--lead-a" inkscape:label="lead-a">
+      <path d="M-19.91682 0H-10.66972" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="body" id="proof-1-2--sc-inductor-coil-r1-small-medium--sc-inductor-coil-r1-small-medium--body" inkscape:label="body">
+      <path d="M-10.66972 0C-10.66972 2.35709-9.4755 4.26784-8.0023 4.26784C-6.52911 4.26784-5.33488 2.35709-5.33488 0C-5.33488 2.35709-4.14066 4.26784-2.66747 4.26784C-1.19427 4.26784-.00005 2.35709-.00005 0C-.00005 2.35709 1.19418 4.26784 2.66737 4.26784S5.3348 2.35709 5.3348 0C5.3348 2.35709 6.52902 4.26784 8.00221 4.26784S10.66963 2.35709 10.66963 0" fill="none" />
+      <desc>Four coil half-turns</desc>
+    </g>
+    <g data-part="lead-b" id="proof-1-2--sc-inductor-coil-r1-small-medium--sc-inductor-coil-r1-small-medium--lead-b" inkscape:label="lead-b">
+      <path d="M10.66972 0H19.91682" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="93.0" cy="63.0" r="0.14" fill="#2d69a5" />
+  <circle cx="107.0" cy="63.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M116,53v20" />
+    <path d="M117,53v20" />
+    <path d="M118,53v20" />
+    <path d="M119,53v20" />
+    <path d="M120,53v20" />
+    <path d="M121,53v20" />
+    <path d="M122,53v20" />
+    <path d="M123,53v20" />
+    <path d="M124,53v20" />
+    <path d="M125,53v20" />
+    <path d="M126,53v20" />
+    <path d="M127,53v20" />
+    <path d="M128,53v20" />
+    <path d="M129,53v20" />
+    <path d="M130,53v20" />
+    <path d="M131,53v20" />
+    <path d="M132,53v20" />
+    <path d="M133,53v20" />
+    <path d="M134,53v20" />
+    <path d="M135,53v20" />
+    <path d="M136,53v20" />
+    <path d="M137,53v20" />
+    <path d="M138,53v20" />
+    <path d="M139,53v20" />
+    <path d="M140,53v20" />
+    <path d="M141,53v20" />
+    <path d="M142,53v20" />
+    <path d="M116,53h26" />
+    <path d="M116,54h26" />
+    <path d="M116,55h26" />
+    <path d="M116,56h26" />
+    <path d="M116,57h26" />
+    <path d="M116,58h26" />
+    <path d="M116,59h26" />
+    <path d="M116,60h26" />
+    <path d="M116,61h26" />
+    <path d="M116,62h26" />
+    <path d="M116,63h26" />
+    <path d="M116,64h26" />
+    <path d="M116,65h26" />
+    <path d="M116,66h26" />
+    <path d="M116,67h26" />
+    <path d="M116,68h26" />
+    <path d="M116,69h26" />
+    <path d="M116,70h26" />
+    <path d="M116,71h26" />
+    <path d="M116,72h26" />
+    <path d="M116,73h26" />
+  </g>
+  <g id="proof-1-3--sc-capacitor-r1-small-medium--sc-capacitor-r1-small-medium" inkscape:label="Capacitor / small / medium" data-symbol="capacitor" data-revision="1" data-size="small" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(148.129670275,84.80002695555555) scale(0.35277777777777775) translate(-54.225837,-61.795352)scale(0.996264,-0.996264)">
+    <g data-part="plate-a" id="proof-1-3--sc-capacitor-r1-small-medium--sc-capacitor-r1-small-medium--plate-a" inkscape:label="plate-a">
+      <path d="M-2.13394-7.11314V7.11314" fill="none" />
+      <desc>First capacitor plate</desc>
+    </g>
+    <g data-part="plate-b" id="proof-1-3--sc-capacitor-r1-small-medium--sc-capacitor-r1-small-medium--plate-b" inkscape:label="plate-b">
+      <path d="M2.13394-7.11314V7.11314" fill="none" />
+      <desc>Second capacitor plate</desc>
+    </g>
+    <g data-part="lead-a" id="proof-1-3--sc-capacitor-r1-small-medium--sc-capacitor-r1-small-medium--lead-a" inkscape:label="lead-a">
+      <path d="M-11.38104 0H-2.13394" fill="none" />
+      <desc>Lead to first plate</desc>
+    </g>
+    <g data-part="lead-b" id="proof-1-3--sc-capacitor-r1-small-medium--sc-capacitor-r1-small-medium--lead-b" inkscape:label="lead-b">
+      <path d="M2.13394 0H11.38104" fill="none" />
+      <desc>Lead to second plate</desc>
+    </g>
+  </g>
+  <circle cx="125.0" cy="63.0" r="0.14" fill="#2d69a5" />
+  <circle cx="133.0" cy="63.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M145,53v20" />
+    <path d="M146,53v20" />
+    <path d="M147,53v20" />
+    <path d="M148,53v20" />
+    <path d="M149,53v20" />
+    <path d="M150,53v20" />
+    <path d="M151,53v20" />
+    <path d="M152,53v20" />
+    <path d="M153,53v20" />
+    <path d="M154,53v20" />
+    <path d="M155,53v20" />
+    <path d="M156,53v20" />
+    <path d="M157,53v20" />
+    <path d="M158,53v20" />
+    <path d="M159,53v20" />
+    <path d="M160,53v20" />
+    <path d="M161,53v20" />
+    <path d="M162,53v20" />
+    <path d="M163,53v20" />
+    <path d="M164,53v20" />
+    <path d="M165,53v20" />
+    <path d="M166,53v20" />
+    <path d="M167,53v20" />
+    <path d="M168,53v20" />
+    <path d="M169,53v20" />
+    <path d="M170,53v20" />
+    <path d="M171,53v20" />
+    <path d="M145,53h26" />
+    <path d="M145,54h26" />
+    <path d="M145,55h26" />
+    <path d="M145,56h26" />
+    <path d="M145,57h26" />
+    <path d="M145,58h26" />
+    <path d="M145,59h26" />
+    <path d="M145,60h26" />
+    <path d="M145,61h26" />
+    <path d="M145,62h26" />
+    <path d="M145,63h26" />
+    <path d="M145,64h26" />
+    <path d="M145,65h26" />
+    <path d="M145,66h26" />
+    <path d="M145,67h26" />
+    <path d="M145,68h26" />
+    <path d="M145,69h26" />
+    <path d="M145,70h26" />
+    <path d="M145,71h26" />
+    <path d="M145,72h26" />
+    <path d="M145,73h26" />
+  </g>
+  <g id="proof-1-4--sc-opamp-r1-small-medium--sc-opamp-r1-small-medium" inkscape:label="Op-amp / small / medium" data-symbol="opamp" data-revision="1" data-size="small" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(173.12969132777778,82.30003724722222) scale(0.35277777777777775) translate(-42.887314,-54.708767)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-1-4--sc-opamp-r1-small-medium--sc-opamp-r1-small-medium--body" inkscape:label="body">
+      <path d="M-12.0923-14.2263V14.2263L12.0923 0Z" fill="none" />
+      <desc>Triangle outline</desc>
+    </g>
+    <g data-part="lead-in-plus" id="proof-1-4--sc-opamp-r1-small-medium--sc-opamp-r1-small-medium--lead-in-plus" inkscape:label="lead-in-plus">
+      <path d="M-22.76208 8.53578H-12.0923" fill="none" />
+      <desc>Non-inverting input lead</desc>
+    </g>
+    <g data-part="lead-in-minus" id="proof-1-4--sc-opamp-r1-small-medium--sc-opamp-r1-small-medium--lead-in-minus" inkscape:label="lead-in-minus">
+      <path d="M-22.76208-8.53578H-12.0923" fill="none" />
+      <desc>Inverting input lead</desc>
+    </g>
+    <g data-part="lead-out" id="proof-1-4--sc-opamp-r1-small-medium--sc-opamp-r1-small-medium--lead-out" inkscape:label="lead-out">
+      <path d="M12.0923 0H22.76208" fill="none" />
+      <desc>Output lead</desc>
+    </g>
+    <g data-part="sign-plus" id="proof-1-4--sc-opamp-r1-small-medium--sc-opamp-r1-small-medium--sign-plus" inkscape:label="sign-plus">
+      <path d="M-9.95831 8.53578H-7.11314M-8.53574 7.11319V9.95836" fill="none" />
+      <desc>Non-inverting input mark</desc>
+    </g>
+    <g data-part="sign-minus" id="proof-1-4--sc-opamp-r1-small-medium--sc-opamp-r1-small-medium--sign-minus" inkscape:label="sign-minus">
+      <path d="M-9.95831-8.53578H-7.11314" fill="none" />
+      <desc>Inverting input mark</desc>
+    </g>
+  </g>
+  <circle cx="150.0" cy="60.0" r="0.14" fill="#2d69a5" />
+  <circle cx="150.0" cy="66.0" r="0.14" fill="#2d69a5" />
+  <circle cx="166.0" cy="63.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M174,53v20" />
+    <path d="M175,53v20" />
+    <path d="M176,53v20" />
+    <path d="M177,53v20" />
+    <path d="M178,53v20" />
+    <path d="M179,53v20" />
+    <path d="M180,53v20" />
+    <path d="M181,53v20" />
+    <path d="M182,53v20" />
+    <path d="M183,53v20" />
+    <path d="M184,53v20" />
+    <path d="M185,53v20" />
+    <path d="M186,53v20" />
+    <path d="M187,53v20" />
+    <path d="M188,53v20" />
+    <path d="M189,53v20" />
+    <path d="M190,53v20" />
+    <path d="M191,53v20" />
+    <path d="M192,53v20" />
+    <path d="M193,53v20" />
+    <path d="M194,53v20" />
+    <path d="M195,53v20" />
+    <path d="M196,53v20" />
+    <path d="M197,53v20" />
+    <path d="M198,53v20" />
+    <path d="M199,53v20" />
+    <path d="M200,53v20" />
+    <path d="M174,53h26" />
+    <path d="M174,54h26" />
+    <path d="M174,55h26" />
+    <path d="M174,56h26" />
+    <path d="M174,57h26" />
+    <path d="M174,58h26" />
+    <path d="M174,59h26" />
+    <path d="M174,60h26" />
+    <path d="M174,61h26" />
+    <path d="M174,62h26" />
+    <path d="M174,63h26" />
+    <path d="M174,64h26" />
+    <path d="M174,65h26" />
+    <path d="M174,66h26" />
+    <path d="M174,67h26" />
+    <path d="M174,68h26" />
+    <path d="M174,69h26" />
+    <path d="M174,70h26" />
+    <path d="M174,71h26" />
+    <path d="M174,72h26" />
+    <path d="M174,73h26" />
+  </g>
+  <g id="proof-1-5--sc-opamp-supply-r1-small-medium--sc-opamp-supply-r1-small-medium" inkscape:label="Op-amp with supply pins / small / medium" data-symbol="opamp-supply" data-revision="1" data-size="small" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(202.12969132777778,82.30003724722222) scale(0.35277777777777775) translate(-42.887314,-54.708767)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-1-5--sc-opamp-supply-r1-small-medium--sc-opamp-supply-r1-small-medium--body" inkscape:label="body">
+      <path d="M-12.0923-14.2263V14.2263L12.0923 0Z" fill="none" />
+      <desc>Triangle outline</desc>
+    </g>
+    <g data-part="lead-in-plus" id="proof-1-5--sc-opamp-supply-r1-small-medium--sc-opamp-supply-r1-small-medium--lead-in-plus" inkscape:label="lead-in-plus">
+      <path d="M-22.76208 8.53578H-12.0923" fill="none" />
+      <desc>Non-inverting input lead</desc>
+    </g>
+    <g data-part="lead-in-minus" id="proof-1-5--sc-opamp-supply-r1-small-medium--sc-opamp-supply-r1-small-medium--lead-in-minus" inkscape:label="lead-in-minus">
+      <path d="M-22.76208-8.53578H-12.0923" fill="none" />
+      <desc>Inverting input lead</desc>
+    </g>
+    <g data-part="lead-out" id="proof-1-5--sc-opamp-supply-r1-small-medium--sc-opamp-supply-r1-small-medium--lead-out" inkscape:label="lead-out">
+      <path d="M12.0923 0H22.76208" fill="none" />
+      <desc>Output lead</desc>
+    </g>
+    <g data-part="sign-plus" id="proof-1-5--sc-opamp-supply-r1-small-medium--sc-opamp-supply-r1-small-medium--sign-plus" inkscape:label="sign-plus">
+      <path d="M-9.95831 8.53578H-7.11314M-8.53574 7.11319V9.95836" fill="none" />
+      <desc>Non-inverting input mark</desc>
+    </g>
+    <g data-part="sign-minus" id="proof-1-5--sc-opamp-supply-r1-small-medium--sc-opamp-supply-r1-small-medium--sign-minus" inkscape:label="sign-minus">
+      <path d="M-9.95831-8.53578H-7.11314" fill="none" />
+      <desc>Inverting input mark</desc>
+    </g>
+    <g data-part="lead-supply-plus" id="proof-1-5--sc-opamp-supply-r1-small-medium--sc-opamp-supply-r1-small-medium--lead-supply-plus" inkscape:label="lead-supply-plus">
+      <path d="M0 7.11314V14.2263" fill="none" />
+      <desc>Positive supply lead</desc>
+    </g>
+    <g data-part="lead-supply-minus" id="proof-1-5--sc-opamp-supply-r1-small-medium--sc-opamp-supply-r1-small-medium--lead-supply-minus" inkscape:label="lead-supply-minus">
+      <path d="M0-7.11314V-14.2263" fill="none" />
+      <desc>Negative supply lead</desc>
+    </g>
+  </g>
+  <circle cx="179.0" cy="60.0" r="0.14" fill="#2d69a5" />
+  <circle cx="179.0" cy="66.0" r="0.14" fill="#2d69a5" />
+  <circle cx="195.0" cy="63.0" r="0.14" fill="#2d69a5" />
+  <circle cx="187.0" cy="58.0" r="0.14" fill="#2d69a5" />
+  <circle cx="187.0" cy="68.0" r="0.14" fill="#2d69a5" />
+  <text x="4" y="86" font-family="Arial, sans-serif" font-size="2.5" fill="#222">Small</text>
+  <text x="4" y="90" font-family="Arial, sans-serif" font-size="2.1" fill="#222">Thick</text>
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M29,77v20" />
+    <path d="M30,77v20" />
+    <path d="M31,77v20" />
+    <path d="M32,77v20" />
+    <path d="M33,77v20" />
+    <path d="M34,77v20" />
+    <path d="M35,77v20" />
+    <path d="M36,77v20" />
+    <path d="M37,77v20" />
+    <path d="M38,77v20" />
+    <path d="M39,77v20" />
+    <path d="M40,77v20" />
+    <path d="M41,77v20" />
+    <path d="M42,77v20" />
+    <path d="M43,77v20" />
+    <path d="M44,77v20" />
+    <path d="M45,77v20" />
+    <path d="M46,77v20" />
+    <path d="M47,77v20" />
+    <path d="M48,77v20" />
+    <path d="M49,77v20" />
+    <path d="M50,77v20" />
+    <path d="M51,77v20" />
+    <path d="M52,77v20" />
+    <path d="M53,77v20" />
+    <path d="M54,77v20" />
+    <path d="M55,77v20" />
+    <path d="M29,77h26" />
+    <path d="M29,78h26" />
+    <path d="M29,79h26" />
+    <path d="M29,80h26" />
+    <path d="M29,81h26" />
+    <path d="M29,82h26" />
+    <path d="M29,83h26" />
+    <path d="M29,84h26" />
+    <path d="M29,85h26" />
+    <path d="M29,86h26" />
+    <path d="M29,87h26" />
+    <path d="M29,88h26" />
+    <path d="M29,89h26" />
+    <path d="M29,90h26" />
+    <path d="M29,91h26" />
+    <path d="M29,92h26" />
+    <path d="M29,93h26" />
+    <path d="M29,94h26" />
+    <path d="M29,95h26" />
+    <path d="M29,96h26" />
+    <path d="M29,97h26" />
+  </g>
+  <g id="proof-2-0--sc-resistor-eu-r1-small-thick--sc-resistor-eu-r1-small-thick" inkscape:label="EU resistor / small / thick" data-symbol="resistor-eu" data-revision="1" data-size="small" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(58.079682725,110.00001855833334) scale(0.35277777777777775) translate(-45.580203,-65.196903)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-2-0--sc-resistor-eu-r1-small-thick--sc-resistor-eu-r1-small-thick--body" inkscape:label="body">
+      <path d="M-10.66972-3.55656V3.55656H10.66972V-3.55656ZM10.66972 3.55656" fill="none" />
+      <desc>Rectangular resistor body</desc>
+    </g>
+    <g data-part="lead-a" id="proof-2-0--sc-resistor-eu-r1-small-thick--sc-resistor-eu-r1-small-thick--lead-a" inkscape:label="lead-a">
+      <path d="M-19.91682 0H-10.66972" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="lead-b" id="proof-2-0--sc-resistor-eu-r1-small-thick--sc-resistor-eu-r1-small-thick--lead-b" inkscape:label="lead-b">
+      <path d="M10.66972 0H19.91682" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="35.0" cy="87.0" r="0.14" fill="#2d69a5" />
+  <circle cx="49.0" cy="87.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M58,77v20" />
+    <path d="M59,77v20" />
+    <path d="M60,77v20" />
+    <path d="M61,77v20" />
+    <path d="M62,77v20" />
+    <path d="M63,77v20" />
+    <path d="M64,77v20" />
+    <path d="M65,77v20" />
+    <path d="M66,77v20" />
+    <path d="M67,77v20" />
+    <path d="M68,77v20" />
+    <path d="M69,77v20" />
+    <path d="M70,77v20" />
+    <path d="M71,77v20" />
+    <path d="M72,77v20" />
+    <path d="M73,77v20" />
+    <path d="M74,77v20" />
+    <path d="M75,77v20" />
+    <path d="M76,77v20" />
+    <path d="M77,77v20" />
+    <path d="M78,77v20" />
+    <path d="M79,77v20" />
+    <path d="M80,77v20" />
+    <path d="M81,77v20" />
+    <path d="M82,77v20" />
+    <path d="M83,77v20" />
+    <path d="M84,77v20" />
+    <path d="M58,77h26" />
+    <path d="M58,78h26" />
+    <path d="M58,79h26" />
+    <path d="M58,80h26" />
+    <path d="M58,81h26" />
+    <path d="M58,82h26" />
+    <path d="M58,83h26" />
+    <path d="M58,84h26" />
+    <path d="M58,85h26" />
+    <path d="M58,86h26" />
+    <path d="M58,87h26" />
+    <path d="M58,88h26" />
+    <path d="M58,89h26" />
+    <path d="M58,90h26" />
+    <path d="M58,91h26" />
+    <path d="M58,92h26" />
+    <path d="M58,93h26" />
+    <path d="M58,94h26" />
+    <path d="M58,95h26" />
+    <path d="M58,96h26" />
+    <path d="M58,97h26" />
+  </g>
+  <g id="proof-2-1--sc-resistor-us-r1-small-thick--sc-resistor-us-r1-small-thick" inkscape:label="US resistor / small / thick" data-symbol="resistor-us" data-revision="1" data-size="small" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(87.079682725,110.00001855833334) scale(0.35277777777777775) translate(-45.580203,-65.196903)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="proof-2-1--sc-resistor-us-r1-small-thick--sc-resistor-us-r1-small-thick--lead-a" inkscape:label="lead-a">
+      <path d="M-19.91682 0H-10.66972" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="body" id="proof-2-1--sc-resistor-us-r1-small-thick--sc-resistor-us-r1-small-thick--body" inkscape:label="body">
+      <path d="M-10.66972 0L-8.89143 3.55656L-5.33485-3.55656L-1.77827 3.55656L1.77827-3.55656L5.33485 3.55656L8.89143-3.55656L10.66972 0" fill="none" />
+      <desc>Zigzag body</desc>
+    </g>
+    <g data-part="lead-b" id="proof-2-1--sc-resistor-us-r1-small-thick--sc-resistor-us-r1-small-thick--lead-b" inkscape:label="lead-b">
+      <path d="M10.66972 0H19.91682" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="64.0" cy="87.0" r="0.14" fill="#2d69a5" />
+  <circle cx="78.0" cy="87.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M87,77v20" />
+    <path d="M88,77v20" />
+    <path d="M89,77v20" />
+    <path d="M90,77v20" />
+    <path d="M91,77v20" />
+    <path d="M92,77v20" />
+    <path d="M93,77v20" />
+    <path d="M94,77v20" />
+    <path d="M95,77v20" />
+    <path d="M96,77v20" />
+    <path d="M97,77v20" />
+    <path d="M98,77v20" />
+    <path d="M99,77v20" />
+    <path d="M100,77v20" />
+    <path d="M101,77v20" />
+    <path d="M102,77v20" />
+    <path d="M103,77v20" />
+    <path d="M104,77v20" />
+    <path d="M105,77v20" />
+    <path d="M106,77v20" />
+    <path d="M107,77v20" />
+    <path d="M108,77v20" />
+    <path d="M109,77v20" />
+    <path d="M110,77v20" />
+    <path d="M111,77v20" />
+    <path d="M112,77v20" />
+    <path d="M113,77v20" />
+    <path d="M87,77h26" />
+    <path d="M87,78h26" />
+    <path d="M87,79h26" />
+    <path d="M87,80h26" />
+    <path d="M87,81h26" />
+    <path d="M87,82h26" />
+    <path d="M87,83h26" />
+    <path d="M87,84h26" />
+    <path d="M87,85h26" />
+    <path d="M87,86h26" />
+    <path d="M87,87h26" />
+    <path d="M87,88h26" />
+    <path d="M87,89h26" />
+    <path d="M87,90h26" />
+    <path d="M87,91h26" />
+    <path d="M87,92h26" />
+    <path d="M87,93h26" />
+    <path d="M87,94h26" />
+    <path d="M87,95h26" />
+    <path d="M87,96h26" />
+    <path d="M87,97h26" />
+  </g>
+  <g id="proof-2-2--sc-inductor-coil-r1-small-thick--sc-inductor-coil-r1-small-thick" inkscape:label="Coil inductor / small / thick" data-symbol="inductor-coil" data-revision="1" data-size="small" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(116.079682725,109.75003458055555) scale(0.35277777777777775) translate(-45.580203,-64.488287)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="proof-2-2--sc-inductor-coil-r1-small-thick--sc-inductor-coil-r1-small-thick--lead-a" inkscape:label="lead-a">
+      <path d="M-19.91682 0H-10.66972" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="body" id="proof-2-2--sc-inductor-coil-r1-small-thick--sc-inductor-coil-r1-small-thick--body" inkscape:label="body">
+      <path d="M-10.66972 0C-10.66972 2.35709-9.4755 4.26784-8.0023 4.26784C-6.52911 4.26784-5.33488 2.35709-5.33488 0C-5.33488 2.35709-4.14066 4.26784-2.66747 4.26784C-1.19427 4.26784-.00005 2.35709-.00005 0C-.00005 2.35709 1.19418 4.26784 2.66737 4.26784S5.3348 2.35709 5.3348 0C5.3348 2.35709 6.52902 4.26784 8.00221 4.26784S10.66963 2.35709 10.66963 0" fill="none" />
+      <desc>Four coil half-turns</desc>
+    </g>
+    <g data-part="lead-b" id="proof-2-2--sc-inductor-coil-r1-small-thick--sc-inductor-coil-r1-small-thick--lead-b" inkscape:label="lead-b">
+      <path d="M10.66972 0H19.91682" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="93.0" cy="87.0" r="0.14" fill="#2d69a5" />
+  <circle cx="107.0" cy="87.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M116,77v20" />
+    <path d="M117,77v20" />
+    <path d="M118,77v20" />
+    <path d="M119,77v20" />
+    <path d="M120,77v20" />
+    <path d="M121,77v20" />
+    <path d="M122,77v20" />
+    <path d="M123,77v20" />
+    <path d="M124,77v20" />
+    <path d="M125,77v20" />
+    <path d="M126,77v20" />
+    <path d="M127,77v20" />
+    <path d="M128,77v20" />
+    <path d="M129,77v20" />
+    <path d="M130,77v20" />
+    <path d="M131,77v20" />
+    <path d="M132,77v20" />
+    <path d="M133,77v20" />
+    <path d="M134,77v20" />
+    <path d="M135,77v20" />
+    <path d="M136,77v20" />
+    <path d="M137,77v20" />
+    <path d="M138,77v20" />
+    <path d="M139,77v20" />
+    <path d="M140,77v20" />
+    <path d="M141,77v20" />
+    <path d="M142,77v20" />
+    <path d="M116,77h26" />
+    <path d="M116,78h26" />
+    <path d="M116,79h26" />
+    <path d="M116,80h26" />
+    <path d="M116,81h26" />
+    <path d="M116,82h26" />
+    <path d="M116,83h26" />
+    <path d="M116,84h26" />
+    <path d="M116,85h26" />
+    <path d="M116,86h26" />
+    <path d="M116,87h26" />
+    <path d="M116,88h26" />
+    <path d="M116,89h26" />
+    <path d="M116,90h26" />
+    <path d="M116,91h26" />
+    <path d="M116,92h26" />
+    <path d="M116,93h26" />
+    <path d="M116,94h26" />
+    <path d="M116,95h26" />
+    <path d="M116,96h26" />
+    <path d="M116,97h26" />
+  </g>
+  <g id="proof-2-3--sc-capacitor-r1-small-thick--sc-capacitor-r1-small-thick" inkscape:label="Capacitor / small / thick" data-symbol="capacitor" data-revision="1" data-size="small" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(148.0796672,108.75002352777778) scale(0.35277777777777775) translate(-54.084096,-61.65361)scale(0.996264,-0.996264)">
+    <g data-part="plate-a" id="proof-2-3--sc-capacitor-r1-small-thick--sc-capacitor-r1-small-thick--plate-a" inkscape:label="plate-a">
+      <path d="M-2.13394-7.11314V7.11314" fill="none" />
+      <desc>First capacitor plate</desc>
+    </g>
+    <g data-part="plate-b" id="proof-2-3--sc-capacitor-r1-small-thick--sc-capacitor-r1-small-thick--plate-b" inkscape:label="plate-b">
+      <path d="M2.13394-7.11314V7.11314" fill="none" />
+      <desc>Second capacitor plate</desc>
+    </g>
+    <g data-part="lead-a" id="proof-2-3--sc-capacitor-r1-small-thick--sc-capacitor-r1-small-thick--lead-a" inkscape:label="lead-a">
+      <path d="M-11.38104 0H-2.13394" fill="none" />
+      <desc>Lead to first plate</desc>
+    </g>
+    <g data-part="lead-b" id="proof-2-3--sc-capacitor-r1-small-thick--sc-capacitor-r1-small-thick--lead-b" inkscape:label="lead-b">
+      <path d="M2.13394 0H11.38104" fill="none" />
+      <desc>Lead to second plate</desc>
+    </g>
+  </g>
+  <circle cx="125.0" cy="87.0" r="0.14" fill="#2d69a5" />
+  <circle cx="133.0" cy="87.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M145,77v20" />
+    <path d="M146,77v20" />
+    <path d="M147,77v20" />
+    <path d="M148,77v20" />
+    <path d="M149,77v20" />
+    <path d="M150,77v20" />
+    <path d="M151,77v20" />
+    <path d="M152,77v20" />
+    <path d="M153,77v20" />
+    <path d="M154,77v20" />
+    <path d="M155,77v20" />
+    <path d="M156,77v20" />
+    <path d="M157,77v20" />
+    <path d="M158,77v20" />
+    <path d="M159,77v20" />
+    <path d="M160,77v20" />
+    <path d="M161,77v20" />
+    <path d="M162,77v20" />
+    <path d="M163,77v20" />
+    <path d="M164,77v20" />
+    <path d="M165,77v20" />
+    <path d="M166,77v20" />
+    <path d="M167,77v20" />
+    <path d="M168,77v20" />
+    <path d="M169,77v20" />
+    <path d="M170,77v20" />
+    <path d="M171,77v20" />
+    <path d="M145,77h26" />
+    <path d="M145,78h26" />
+    <path d="M145,79h26" />
+    <path d="M145,80h26" />
+    <path d="M145,81h26" />
+    <path d="M145,82h26" />
+    <path d="M145,83h26" />
+    <path d="M145,84h26" />
+    <path d="M145,85h26" />
+    <path d="M145,86h26" />
+    <path d="M145,87h26" />
+    <path d="M145,88h26" />
+    <path d="M145,89h26" />
+    <path d="M145,90h26" />
+    <path d="M145,91h26" />
+    <path d="M145,92h26" />
+    <path d="M145,93h26" />
+    <path d="M145,94h26" />
+    <path d="M145,95h26" />
+    <path d="M145,96h26" />
+    <path d="M145,97h26" />
+  </g>
+  <g id="proof-2-4--sc-opamp-r1-small-thick--sc-opamp-r1-small-thick" inkscape:label="Op-amp / small / thick" data-symbol="opamp" data-revision="1" data-size="small" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(173.07968825277777,106.25003417222223) scale(0.35277777777777775) translate(-42.745573,-54.567026)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-2-4--sc-opamp-r1-small-thick--sc-opamp-r1-small-thick--body" inkscape:label="body">
+      <path d="M-12.0923-14.2263V14.2263L12.0923 0Z" fill="none" />
+      <desc>Triangle outline</desc>
+    </g>
+    <g data-part="lead-in-plus" id="proof-2-4--sc-opamp-r1-small-thick--sc-opamp-r1-small-thick--lead-in-plus" inkscape:label="lead-in-plus">
+      <path d="M-22.76208 8.53578H-12.0923" fill="none" />
+      <desc>Non-inverting input lead</desc>
+    </g>
+    <g data-part="lead-in-minus" id="proof-2-4--sc-opamp-r1-small-thick--sc-opamp-r1-small-thick--lead-in-minus" inkscape:label="lead-in-minus">
+      <path d="M-22.76208-8.53578H-12.0923" fill="none" />
+      <desc>Inverting input lead</desc>
+    </g>
+    <g data-part="lead-out" id="proof-2-4--sc-opamp-r1-small-thick--sc-opamp-r1-small-thick--lead-out" inkscape:label="lead-out">
+      <path d="M12.0923 0H22.76208" fill="none" />
+      <desc>Output lead</desc>
+    </g>
+    <g data-part="sign-plus" id="proof-2-4--sc-opamp-r1-small-thick--sc-opamp-r1-small-thick--sign-plus" inkscape:label="sign-plus">
+      <path d="M-9.95831 8.53578H-7.11314M-8.53574 7.11319V9.95836" fill="none" />
+      <desc>Non-inverting input mark</desc>
+    </g>
+    <g data-part="sign-minus" id="proof-2-4--sc-opamp-r1-small-thick--sc-opamp-r1-small-thick--sign-minus" inkscape:label="sign-minus">
+      <path d="M-9.95831-8.53578H-7.11314" fill="none" />
+      <desc>Inverting input mark</desc>
+    </g>
+  </g>
+  <circle cx="150.0" cy="84.0" r="0.14" fill="#2d69a5" />
+  <circle cx="150.0" cy="90.0" r="0.14" fill="#2d69a5" />
+  <circle cx="166.0" cy="87.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M174,77v20" />
+    <path d="M175,77v20" />
+    <path d="M176,77v20" />
+    <path d="M177,77v20" />
+    <path d="M178,77v20" />
+    <path d="M179,77v20" />
+    <path d="M180,77v20" />
+    <path d="M181,77v20" />
+    <path d="M182,77v20" />
+    <path d="M183,77v20" />
+    <path d="M184,77v20" />
+    <path d="M185,77v20" />
+    <path d="M186,77v20" />
+    <path d="M187,77v20" />
+    <path d="M188,77v20" />
+    <path d="M189,77v20" />
+    <path d="M190,77v20" />
+    <path d="M191,77v20" />
+    <path d="M192,77v20" />
+    <path d="M193,77v20" />
+    <path d="M194,77v20" />
+    <path d="M195,77v20" />
+    <path d="M196,77v20" />
+    <path d="M197,77v20" />
+    <path d="M198,77v20" />
+    <path d="M199,77v20" />
+    <path d="M200,77v20" />
+    <path d="M174,77h26" />
+    <path d="M174,78h26" />
+    <path d="M174,79h26" />
+    <path d="M174,80h26" />
+    <path d="M174,81h26" />
+    <path d="M174,82h26" />
+    <path d="M174,83h26" />
+    <path d="M174,84h26" />
+    <path d="M174,85h26" />
+    <path d="M174,86h26" />
+    <path d="M174,87h26" />
+    <path d="M174,88h26" />
+    <path d="M174,89h26" />
+    <path d="M174,90h26" />
+    <path d="M174,91h26" />
+    <path d="M174,92h26" />
+    <path d="M174,93h26" />
+    <path d="M174,94h26" />
+    <path d="M174,95h26" />
+    <path d="M174,96h26" />
+    <path d="M174,97h26" />
+  </g>
+  <g id="proof-2-5--sc-opamp-supply-r1-small-thick--sc-opamp-supply-r1-small-thick" inkscape:label="Op-amp with supply pins / small / thick" data-symbol="opamp-supply" data-revision="1" data-size="small" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(202.07968825277777,106.25003417222223) scale(0.35277777777777775) translate(-42.745573,-54.567026)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-2-5--sc-opamp-supply-r1-small-thick--sc-opamp-supply-r1-small-thick--body" inkscape:label="body">
+      <path d="M-12.0923-14.2263V14.2263L12.0923 0Z" fill="none" />
+      <desc>Triangle outline</desc>
+    </g>
+    <g data-part="lead-in-plus" id="proof-2-5--sc-opamp-supply-r1-small-thick--sc-opamp-supply-r1-small-thick--lead-in-plus" inkscape:label="lead-in-plus">
+      <path d="M-22.76208 8.53578H-12.0923" fill="none" />
+      <desc>Non-inverting input lead</desc>
+    </g>
+    <g data-part="lead-in-minus" id="proof-2-5--sc-opamp-supply-r1-small-thick--sc-opamp-supply-r1-small-thick--lead-in-minus" inkscape:label="lead-in-minus">
+      <path d="M-22.76208-8.53578H-12.0923" fill="none" />
+      <desc>Inverting input lead</desc>
+    </g>
+    <g data-part="lead-out" id="proof-2-5--sc-opamp-supply-r1-small-thick--sc-opamp-supply-r1-small-thick--lead-out" inkscape:label="lead-out">
+      <path d="M12.0923 0H22.76208" fill="none" />
+      <desc>Output lead</desc>
+    </g>
+    <g data-part="sign-plus" id="proof-2-5--sc-opamp-supply-r1-small-thick--sc-opamp-supply-r1-small-thick--sign-plus" inkscape:label="sign-plus">
+      <path d="M-9.95831 8.53578H-7.11314M-8.53574 7.11319V9.95836" fill="none" />
+      <desc>Non-inverting input mark</desc>
+    </g>
+    <g data-part="sign-minus" id="proof-2-5--sc-opamp-supply-r1-small-thick--sc-opamp-supply-r1-small-thick--sign-minus" inkscape:label="sign-minus">
+      <path d="M-9.95831-8.53578H-7.11314" fill="none" />
+      <desc>Inverting input mark</desc>
+    </g>
+    <g data-part="lead-supply-plus" id="proof-2-5--sc-opamp-supply-r1-small-thick--sc-opamp-supply-r1-small-thick--lead-supply-plus" inkscape:label="lead-supply-plus">
+      <path d="M0 7.11314V14.2263" fill="none" />
+      <desc>Positive supply lead</desc>
+    </g>
+    <g data-part="lead-supply-minus" id="proof-2-5--sc-opamp-supply-r1-small-thick--sc-opamp-supply-r1-small-thick--lead-supply-minus" inkscape:label="lead-supply-minus">
+      <path d="M0-7.11314V-14.2263" fill="none" />
+      <desc>Negative supply lead</desc>
+    </g>
+  </g>
+  <circle cx="179.0" cy="84.0" r="0.14" fill="#2d69a5" />
+  <circle cx="179.0" cy="90.0" r="0.14" fill="#2d69a5" />
+  <circle cx="195.0" cy="87.0" r="0.14" fill="#2d69a5" />
+  <circle cx="187.0" cy="82.0" r="0.14" fill="#2d69a5" />
+  <circle cx="187.0" cy="92.0" r="0.14" fill="#2d69a5" />
+  <text x="4" y="110" font-family="Arial, sans-serif" font-size="2.5" fill="#222">Medium</text>
+  <text x="4" y="114" font-family="Arial, sans-serif" font-size="2.1" fill="#222">Thin</text>
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M29,101v20" />
+    <path d="M30,101v20" />
+    <path d="M31,101v20" />
+    <path d="M32,101v20" />
+    <path d="M33,101v20" />
+    <path d="M34,101v20" />
+    <path d="M35,101v20" />
+    <path d="M36,101v20" />
+    <path d="M37,101v20" />
+    <path d="M38,101v20" />
+    <path d="M39,101v20" />
+    <path d="M40,101v20" />
+    <path d="M41,101v20" />
+    <path d="M42,101v20" />
+    <path d="M43,101v20" />
+    <path d="M44,101v20" />
+    <path d="M45,101v20" />
+    <path d="M46,101v20" />
+    <path d="M47,101v20" />
+    <path d="M48,101v20" />
+    <path d="M49,101v20" />
+    <path d="M50,101v20" />
+    <path d="M51,101v20" />
+    <path d="M52,101v20" />
+    <path d="M53,101v20" />
+    <path d="M54,101v20" />
+    <path d="M55,101v20" />
+    <path d="M29,101h26" />
+    <path d="M29,102h26" />
+    <path d="M29,103h26" />
+    <path d="M29,104h26" />
+    <path d="M29,105h26" />
+    <path d="M29,106h26" />
+    <path d="M29,107h26" />
+    <path d="M29,108h26" />
+    <path d="M29,109h26" />
+    <path d="M29,110h26" />
+    <path d="M29,111h26" />
+    <path d="M29,112h26" />
+    <path d="M29,113h26" />
+    <path d="M29,114h26" />
+    <path d="M29,115h26" />
+    <path d="M29,116h26" />
+    <path d="M29,117h26" />
+    <path d="M29,118h26" />
+    <path d="M29,119h26" />
+    <path d="M29,120h26" />
+    <path d="M29,121h26" />
+  </g>
+  <g id="proof-3-0--sc-resistor-eu-r1-medium-thin--sc-resistor-eu-r1-medium-thin" inkscape:label="EU resistor / medium / thin" data-symbol="resistor-eu" data-revision="1" data-size="medium" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(57.15469304166666,133.65836739166667) scale(0.35277777777777775) translate(-42.958185,-64.228443)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-3-0--sc-resistor-eu-r1-medium-thin--sc-resistor-eu-r1-medium-thin--body" inkscape:label="body">
+      <path d="M-14.22621-4.74207V4.74207H14.22621V-4.74207ZM14.22621 4.74207" fill="none" />
+      <desc>Rectangular resistor body</desc>
+    </g>
+    <g data-part="lead-a" id="proof-3-0--sc-resistor-eu-r1-medium-thin--sc-resistor-eu-r1-medium-thin--lead-a" inkscape:label="lead-a">
+      <path d="M-22.76208 0H-14.22621" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="lead-b" id="proof-3-0--sc-resistor-eu-r1-medium-thin--sc-resistor-eu-r1-medium-thin--lead-b" inkscape:label="lead-b">
+      <path d="M14.22621 0H22.76208" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="34.0" cy="111.0" r="0.14" fill="#2d69a5" />
+  <circle cx="50.0" cy="111.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M58,101v20" />
+    <path d="M59,101v20" />
+    <path d="M60,101v20" />
+    <path d="M61,101v20" />
+    <path d="M62,101v20" />
+    <path d="M63,101v20" />
+    <path d="M64,101v20" />
+    <path d="M65,101v20" />
+    <path d="M66,101v20" />
+    <path d="M67,101v20" />
+    <path d="M68,101v20" />
+    <path d="M69,101v20" />
+    <path d="M70,101v20" />
+    <path d="M71,101v20" />
+    <path d="M72,101v20" />
+    <path d="M73,101v20" />
+    <path d="M74,101v20" />
+    <path d="M75,101v20" />
+    <path d="M76,101v20" />
+    <path d="M77,101v20" />
+    <path d="M78,101v20" />
+    <path d="M79,101v20" />
+    <path d="M80,101v20" />
+    <path d="M81,101v20" />
+    <path d="M82,101v20" />
+    <path d="M83,101v20" />
+    <path d="M84,101v20" />
+    <path d="M58,101h26" />
+    <path d="M58,102h26" />
+    <path d="M58,103h26" />
+    <path d="M58,104h26" />
+    <path d="M58,105h26" />
+    <path d="M58,106h26" />
+    <path d="M58,107h26" />
+    <path d="M58,108h26" />
+    <path d="M58,109h26" />
+    <path d="M58,110h26" />
+    <path d="M58,111h26" />
+    <path d="M58,112h26" />
+    <path d="M58,113h26" />
+    <path d="M58,114h26" />
+    <path d="M58,115h26" />
+    <path d="M58,116h26" />
+    <path d="M58,117h26" />
+    <path d="M58,118h26" />
+    <path d="M58,119h26" />
+    <path d="M58,120h26" />
+    <path d="M58,121h26" />
+  </g>
+  <g id="proof-3-1--sc-resistor-us-r1-medium-thin--sc-resistor-us-r1-medium-thin" inkscape:label="US resistor / medium / thin" data-symbol="resistor-us" data-revision="1" data-size="medium" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(86.15469304166666,133.65836739166667) scale(0.35277777777777775) translate(-42.958185,-64.228443)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="proof-3-1--sc-resistor-us-r1-medium-thin--sc-resistor-us-r1-medium-thin--lead-a" inkscape:label="lead-a">
+      <path d="M-22.76208 0H-14.22621" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="body" id="proof-3-1--sc-resistor-us-r1-medium-thin--sc-resistor-us-r1-medium-thin--body" inkscape:label="body">
+      <path d="M-14.22621 0L-11.85518 4.74207L-7.1131-4.74207L-2.37103 4.74207L2.37103-4.74207L7.1131 4.74207L11.85518-4.74207L14.22621 0" fill="none" />
+      <desc>Zigzag body</desc>
+    </g>
+    <g data-part="lead-b" id="proof-3-1--sc-resistor-us-r1-medium-thin--sc-resistor-us-r1-medium-thin--lead-b" inkscape:label="lead-b">
+      <path d="M14.22621 0H22.76208" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="63.0" cy="111.0" r="0.14" fill="#2d69a5" />
+  <circle cx="79.0" cy="111.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M87,101v20" />
+    <path d="M88,101v20" />
+    <path d="M89,101v20" />
+    <path d="M90,101v20" />
+    <path d="M91,101v20" />
+    <path d="M92,101v20" />
+    <path d="M93,101v20" />
+    <path d="M94,101v20" />
+    <path d="M95,101v20" />
+    <path d="M96,101v20" />
+    <path d="M97,101v20" />
+    <path d="M98,101v20" />
+    <path d="M99,101v20" />
+    <path d="M100,101v20" />
+    <path d="M101,101v20" />
+    <path d="M102,101v20" />
+    <path d="M103,101v20" />
+    <path d="M104,101v20" />
+    <path d="M105,101v20" />
+    <path d="M106,101v20" />
+    <path d="M107,101v20" />
+    <path d="M108,101v20" />
+    <path d="M109,101v20" />
+    <path d="M110,101v20" />
+    <path d="M111,101v20" />
+    <path d="M112,101v20" />
+    <path d="M113,101v20" />
+    <path d="M87,101h26" />
+    <path d="M87,102h26" />
+    <path d="M87,103h26" />
+    <path d="M87,104h26" />
+    <path d="M87,105h26" />
+    <path d="M87,106h26" />
+    <path d="M87,107h26" />
+    <path d="M87,108h26" />
+    <path d="M87,109h26" />
+    <path d="M87,110h26" />
+    <path d="M87,111h26" />
+    <path d="M87,112h26" />
+    <path d="M87,113h26" />
+    <path d="M87,114h26" />
+    <path d="M87,115h26" />
+    <path d="M87,116h26" />
+    <path d="M87,117h26" />
+    <path d="M87,118h26" />
+    <path d="M87,119h26" />
+    <path d="M87,120h26" />
+    <path d="M87,121h26" />
+  </g>
+  <g id="proof-3-2--sc-inductor-coil-r1-medium-thin--sc-inductor-coil-r1-medium-thin" inkscape:label="Coil inductor / medium / thin" data-symbol="inductor-coil" data-revision="1" data-size="medium" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(115.15469304166666,133.32505518611111) scale(0.35277777777777775) translate(-42.958185,-63.283621)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="proof-3-2--sc-inductor-coil-r1-medium-thin--sc-inductor-coil-r1-medium-thin--lead-a" inkscape:label="lead-a">
+      <path d="M-22.76208 0H-14.22621" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="body" id="proof-3-2--sc-inductor-coil-r1-medium-thin--sc-inductor-coil-r1-medium-thin--body" inkscape:label="body">
+      <path d="M-14.22621 0C-14.22621 3.14278-12.63393 5.69043-10.6697 5.69043C-8.70546 5.69043-7.11317 3.14278-7.11317 0C-7.11317 3.14278-5.52089 5.69043-3.55666 5.69043C-1.59242 5.69043-.00014 3.14278-.00014 0C-.00014 3.14278 1.59215 5.69043 3.55638 5.69043S7.1129 3.14278 7.1129 0C7.1129 3.14278 8.70518 5.69043 10.66942 5.69043C12.63365 5.69043 14.22594 3.14278 14.22594 0" fill="none" />
+      <desc>Four coil half-turns</desc>
+    </g>
+    <g data-part="lead-b" id="proof-3-2--sc-inductor-coil-r1-medium-thin--sc-inductor-coil-r1-medium-thin--lead-b" inkscape:label="lead-b">
+      <path d="M14.22621 0H22.76208" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="92.0" cy="111.0" r="0.14" fill="#2d69a5" />
+  <circle cx="108.0" cy="111.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M116,101v20" />
+    <path d="M117,101v20" />
+    <path d="M118,101v20" />
+    <path d="M119,101v20" />
+    <path d="M120,101v20" />
+    <path d="M121,101v20" />
+    <path d="M122,101v20" />
+    <path d="M123,101v20" />
+    <path d="M124,101v20" />
+    <path d="M125,101v20" />
+    <path d="M126,101v20" />
+    <path d="M127,101v20" />
+    <path d="M128,101v20" />
+    <path d="M129,101v20" />
+    <path d="M130,101v20" />
+    <path d="M131,101v20" />
+    <path d="M132,101v20" />
+    <path d="M133,101v20" />
+    <path d="M134,101v20" />
+    <path d="M135,101v20" />
+    <path d="M136,101v20" />
+    <path d="M137,101v20" />
+    <path d="M138,101v20" />
+    <path d="M139,101v20" />
+    <path d="M140,101v20" />
+    <path d="M141,101v20" />
+    <path d="M142,101v20" />
+    <path d="M116,101h26" />
+    <path d="M116,102h26" />
+    <path d="M116,103h26" />
+    <path d="M116,104h26" />
+    <path d="M116,105h26" />
+    <path d="M116,106h26" />
+    <path d="M116,107h26" />
+    <path d="M116,108h26" />
+    <path d="M116,109h26" />
+    <path d="M116,110h26" />
+    <path d="M116,111h26" />
+    <path d="M116,112h26" />
+    <path d="M116,113h26" />
+    <path d="M116,114h26" />
+    <path d="M116,115h26" />
+    <path d="M116,116h26" />
+    <path d="M116,117h26" />
+    <path d="M116,118h26" />
+    <path d="M116,119h26" />
+    <path d="M116,120h26" />
+    <path d="M116,121h26" />
+  </g>
+  <g id="proof-3-3--sc-capacitor-r1-medium-thin--sc-capacitor-r1-medium-thin" inkscape:label="Capacitor / medium / thin" data-symbol="capacitor" data-revision="1" data-size="medium" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(148.15467198888888,131.99172205) scale(0.35277777777777775) translate(-54.296708,-59.504094)scale(0.996264,-0.996264)">
+    <g data-part="plate-a" id="proof-3-3--sc-capacitor-r1-medium-thin--sc-capacitor-r1-medium-thin--plate-a" inkscape:label="plate-a">
+      <path d="M-2.84526-9.48413V9.48413" fill="none" />
+      <desc>First capacitor plate</desc>
+    </g>
+    <g data-part="plate-b" id="proof-3-3--sc-capacitor-r1-medium-thin--sc-capacitor-r1-medium-thin--plate-b" inkscape:label="plate-b">
+      <path d="M2.84526-9.48413V9.48413" fill="none" />
+      <desc>Second capacitor plate</desc>
+    </g>
+    <g data-part="lead-a" id="proof-3-3--sc-capacitor-r1-medium-thin--sc-capacitor-r1-medium-thin--lead-a" inkscape:label="lead-a">
+      <path d="M-11.38104 0H-2.84526" fill="none" />
+      <desc>Lead to first plate</desc>
+    </g>
+    <g data-part="lead-b" id="proof-3-3--sc-capacitor-r1-medium-thin--sc-capacitor-r1-medium-thin--lead-b" inkscape:label="lead-b">
+      <path d="M2.84526 0H11.38104" fill="none" />
+      <desc>Lead to second plate</desc>
+    </g>
+  </g>
+  <circle cx="125.0" cy="111.0" r="0.14" fill="#2d69a5" />
+  <circle cx="133.0" cy="111.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M145,101v20" />
+    <path d="M146,101v20" />
+    <path d="M147,101v20" />
+    <path d="M148,101v20" />
+    <path d="M149,101v20" />
+    <path d="M150,101v20" />
+    <path d="M151,101v20" />
+    <path d="M152,101v20" />
+    <path d="M153,101v20" />
+    <path d="M154,101v20" />
+    <path d="M155,101v20" />
+    <path d="M156,101v20" />
+    <path d="M157,101v20" />
+    <path d="M158,101v20" />
+    <path d="M159,101v20" />
+    <path d="M160,101v20" />
+    <path d="M161,101v20" />
+    <path d="M162,101v20" />
+    <path d="M163,101v20" />
+    <path d="M164,101v20" />
+    <path d="M165,101v20" />
+    <path d="M166,101v20" />
+    <path d="M167,101v20" />
+    <path d="M168,101v20" />
+    <path d="M169,101v20" />
+    <path d="M170,101v20" />
+    <path d="M171,101v20" />
+    <path d="M145,101h26" />
+    <path d="M145,102h26" />
+    <path d="M145,103h26" />
+    <path d="M145,104h26" />
+    <path d="M145,105h26" />
+    <path d="M145,106h26" />
+    <path d="M145,107h26" />
+    <path d="M145,108h26" />
+    <path d="M145,109h26" />
+    <path d="M145,110h26" />
+    <path d="M145,111h26" />
+    <path d="M145,112h26" />
+    <path d="M145,113h26" />
+    <path d="M145,114h26" />
+    <path d="M145,115h26" />
+    <path d="M145,116h26" />
+    <path d="M145,117h26" />
+    <path d="M145,118h26" />
+    <path d="M145,119h26" />
+    <path d="M145,120h26" />
+    <path d="M145,121h26" />
+  </g>
+  <g id="proof-3-4--sc-opamp-r1-medium-thin--sc-opamp-r1-medium-thin" inkscape:label="Op-amp / medium / thin" data-symbol="opamp" data-revision="1" data-size="medium" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(172.15469821666667,128.6584257222222) scale(0.35277777777777775) translate(-40.123554,-50.05538)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-3-4--sc-opamp-r1-medium-thin--sc-opamp-r1-medium-thin--body" inkscape:label="body">
+      <path d="M-16.12297-18.96828V18.96828L16.12297 0Z" fill="none" />
+      <desc>Triangle outline</desc>
+    </g>
+    <g data-part="lead-in-plus" id="proof-3-4--sc-opamp-r1-medium-thin--sc-opamp-r1-medium-thin--lead-in-plus" inkscape:label="lead-in-plus">
+      <path d="M-25.60735 8.53578H-16.12297" fill="none" />
+      <desc>Non-inverting input lead</desc>
+    </g>
+    <g data-part="lead-in-minus" id="proof-3-4--sc-opamp-r1-medium-thin--sc-opamp-r1-medium-thin--lead-in-minus" inkscape:label="lead-in-minus">
+      <path d="M-25.60735-8.53578H-16.12297" fill="none" />
+      <desc>Inverting input lead</desc>
+    </g>
+    <g data-part="lead-out" id="proof-3-4--sc-opamp-r1-medium-thin--sc-opamp-r1-medium-thin--lead-out" inkscape:label="lead-out">
+      <path d="M16.12297 0H25.60735" fill="none" />
+      <desc>Output lead</desc>
+    </g>
+    <g data-part="sign-plus" id="proof-3-4--sc-opamp-r1-medium-thin--sc-opamp-r1-medium-thin--sign-plus" inkscape:label="sign-plus">
+      <path d="M-13.27768 8.53578H-9.48413M-11.3809 6.639V10.43254" fill="none" />
+      <desc>Non-inverting input mark</desc>
+    </g>
+    <g data-part="sign-minus" id="proof-3-4--sc-opamp-r1-medium-thin--sc-opamp-r1-medium-thin--sign-minus" inkscape:label="sign-minus">
+      <path d="M-13.27768-8.53578H-9.48413" fill="none" />
+      <desc>Inverting input mark</desc>
+    </g>
+  </g>
+  <circle cx="149.0" cy="108.0" r="0.14" fill="#2d69a5" />
+  <circle cx="149.0" cy="114.0" r="0.14" fill="#2d69a5" />
+  <circle cx="167.0" cy="111.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M174,101v20" />
+    <path d="M175,101v20" />
+    <path d="M176,101v20" />
+    <path d="M177,101v20" />
+    <path d="M178,101v20" />
+    <path d="M179,101v20" />
+    <path d="M180,101v20" />
+    <path d="M181,101v20" />
+    <path d="M182,101v20" />
+    <path d="M183,101v20" />
+    <path d="M184,101v20" />
+    <path d="M185,101v20" />
+    <path d="M186,101v20" />
+    <path d="M187,101v20" />
+    <path d="M188,101v20" />
+    <path d="M189,101v20" />
+    <path d="M190,101v20" />
+    <path d="M191,101v20" />
+    <path d="M192,101v20" />
+    <path d="M193,101v20" />
+    <path d="M194,101v20" />
+    <path d="M195,101v20" />
+    <path d="M196,101v20" />
+    <path d="M197,101v20" />
+    <path d="M198,101v20" />
+    <path d="M199,101v20" />
+    <path d="M200,101v20" />
+    <path d="M174,101h26" />
+    <path d="M174,102h26" />
+    <path d="M174,103h26" />
+    <path d="M174,104h26" />
+    <path d="M174,105h26" />
+    <path d="M174,106h26" />
+    <path d="M174,107h26" />
+    <path d="M174,108h26" />
+    <path d="M174,109h26" />
+    <path d="M174,110h26" />
+    <path d="M174,111h26" />
+    <path d="M174,112h26" />
+    <path d="M174,113h26" />
+    <path d="M174,114h26" />
+    <path d="M174,115h26" />
+    <path d="M174,116h26" />
+    <path d="M174,117h26" />
+    <path d="M174,118h26" />
+    <path d="M174,119h26" />
+    <path d="M174,120h26" />
+    <path d="M174,121h26" />
+  </g>
+  <g id="proof-3-5--sc-opamp-supply-r1-medium-thin--sc-opamp-supply-r1-medium-thin" inkscape:label="Op-amp with supply pins / medium / thin" data-symbol="opamp-supply" data-revision="1" data-size="medium" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(201.15469821666667,128.6584257222222) scale(0.35277777777777775) translate(-40.123554,-50.05538)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-3-5--sc-opamp-supply-r1-medium-thin--sc-opamp-supply-r1-medium-thin--body" inkscape:label="body">
+      <path d="M-16.12297-18.96828V18.96828L16.12297 0Z" fill="none" />
+      <desc>Triangle outline</desc>
+    </g>
+    <g data-part="lead-in-plus" id="proof-3-5--sc-opamp-supply-r1-medium-thin--sc-opamp-supply-r1-medium-thin--lead-in-plus" inkscape:label="lead-in-plus">
+      <path d="M-25.60735 8.53578H-16.12297" fill="none" />
+      <desc>Non-inverting input lead</desc>
+    </g>
+    <g data-part="lead-in-minus" id="proof-3-5--sc-opamp-supply-r1-medium-thin--sc-opamp-supply-r1-medium-thin--lead-in-minus" inkscape:label="lead-in-minus">
+      <path d="M-25.60735-8.53578H-16.12297" fill="none" />
+      <desc>Inverting input lead</desc>
+    </g>
+    <g data-part="lead-out" id="proof-3-5--sc-opamp-supply-r1-medium-thin--sc-opamp-supply-r1-medium-thin--lead-out" inkscape:label="lead-out">
+      <path d="M16.12297 0H25.60735" fill="none" />
+      <desc>Output lead</desc>
+    </g>
+    <g data-part="sign-plus" id="proof-3-5--sc-opamp-supply-r1-medium-thin--sc-opamp-supply-r1-medium-thin--sign-plus" inkscape:label="sign-plus">
+      <path d="M-13.27768 8.53578H-9.48413M-11.3809 6.639V10.43254" fill="none" />
+      <desc>Non-inverting input mark</desc>
+    </g>
+    <g data-part="sign-minus" id="proof-3-5--sc-opamp-supply-r1-medium-thin--sc-opamp-supply-r1-medium-thin--sign-minus" inkscape:label="sign-minus">
+      <path d="M-13.27768-8.53578H-9.48413" fill="none" />
+      <desc>Inverting input mark</desc>
+    </g>
+    <g data-part="lead-supply-plus" id="proof-3-5--sc-opamp-supply-r1-medium-thin--sc-opamp-supply-r1-medium-thin--lead-supply-plus" inkscape:label="lead-supply-plus">
+      <path d="M0 9.48413V17.07156" fill="none" />
+      <desc>Positive supply lead</desc>
+    </g>
+    <g data-part="lead-supply-minus" id="proof-3-5--sc-opamp-supply-r1-medium-thin--sc-opamp-supply-r1-medium-thin--lead-supply-minus" inkscape:label="lead-supply-minus">
+      <path d="M0-9.48413V-17.07156" fill="none" />
+      <desc>Negative supply lead</desc>
+    </g>
+  </g>
+  <circle cx="178.0" cy="108.0" r="0.14" fill="#2d69a5" />
+  <circle cx="178.0" cy="114.0" r="0.14" fill="#2d69a5" />
+  <circle cx="196.0" cy="111.0" r="0.14" fill="#2d69a5" />
+  <circle cx="187.0" cy="105.0" r="0.14" fill="#2d69a5" />
+  <circle cx="187.0" cy="117.0" r="0.14" fill="#2d69a5" />
+  <text x="4" y="134" font-family="Arial, sans-serif" font-size="2.5" fill="#222">Medium</text>
+  <text x="4" y="138" font-family="Arial, sans-serif" font-size="2.1" fill="#222">Medium</text>
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M29,125v20" />
+    <path d="M30,125v20" />
+    <path d="M31,125v20" />
+    <path d="M32,125v20" />
+    <path d="M33,125v20" />
+    <path d="M34,125v20" />
+    <path d="M35,125v20" />
+    <path d="M36,125v20" />
+    <path d="M37,125v20" />
+    <path d="M38,125v20" />
+    <path d="M39,125v20" />
+    <path d="M40,125v20" />
+    <path d="M41,125v20" />
+    <path d="M42,125v20" />
+    <path d="M43,125v20" />
+    <path d="M44,125v20" />
+    <path d="M45,125v20" />
+    <path d="M46,125v20" />
+    <path d="M47,125v20" />
+    <path d="M48,125v20" />
+    <path d="M49,125v20" />
+    <path d="M50,125v20" />
+    <path d="M51,125v20" />
+    <path d="M52,125v20" />
+    <path d="M53,125v20" />
+    <path d="M54,125v20" />
+    <path d="M55,125v20" />
+    <path d="M29,125h26" />
+    <path d="M29,126h26" />
+    <path d="M29,127h26" />
+    <path d="M29,128h26" />
+    <path d="M29,129h26" />
+    <path d="M29,130h26" />
+    <path d="M29,131h26" />
+    <path d="M29,132h26" />
+    <path d="M29,133h26" />
+    <path d="M29,134h26" />
+    <path d="M29,135h26" />
+    <path d="M29,136h26" />
+    <path d="M29,137h26" />
+    <path d="M29,138h26" />
+    <path d="M29,139h26" />
+    <path d="M29,140h26" />
+    <path d="M29,141h26" />
+    <path d="M29,142h26" />
+    <path d="M29,143h26" />
+    <path d="M29,144h26" />
+    <path d="M29,145h26" />
+  </g>
+  <g id="proof-4-0--sc-resistor-eu-r1-medium-medium--sc-resistor-eu-r1-medium-medium" inkscape:label="EU resistor / medium / medium" data-symbol="resistor-eu" data-revision="1" data-size="medium" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(57.12969132777778,157.63336567777776) scale(0.35277777777777775) translate(-42.887314,-64.157572)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-4-0--sc-resistor-eu-r1-medium-medium--sc-resistor-eu-r1-medium-medium--body" inkscape:label="body">
+      <path d="M-14.22621-4.74207V4.74207H14.22621V-4.74207ZM14.22621 4.74207" fill="none" />
+      <desc>Rectangular resistor body</desc>
+    </g>
+    <g data-part="lead-a" id="proof-4-0--sc-resistor-eu-r1-medium-medium--sc-resistor-eu-r1-medium-medium--lead-a" inkscape:label="lead-a">
+      <path d="M-22.76208 0H-14.22621" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="lead-b" id="proof-4-0--sc-resistor-eu-r1-medium-medium--sc-resistor-eu-r1-medium-medium--lead-b" inkscape:label="lead-b">
+      <path d="M14.22621 0H22.76208" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="34.0" cy="135.0" r="0.14" fill="#2d69a5" />
+  <circle cx="50.0" cy="135.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M58,125v20" />
+    <path d="M59,125v20" />
+    <path d="M60,125v20" />
+    <path d="M61,125v20" />
+    <path d="M62,125v20" />
+    <path d="M63,125v20" />
+    <path d="M64,125v20" />
+    <path d="M65,125v20" />
+    <path d="M66,125v20" />
+    <path d="M67,125v20" />
+    <path d="M68,125v20" />
+    <path d="M69,125v20" />
+    <path d="M70,125v20" />
+    <path d="M71,125v20" />
+    <path d="M72,125v20" />
+    <path d="M73,125v20" />
+    <path d="M74,125v20" />
+    <path d="M75,125v20" />
+    <path d="M76,125v20" />
+    <path d="M77,125v20" />
+    <path d="M78,125v20" />
+    <path d="M79,125v20" />
+    <path d="M80,125v20" />
+    <path d="M81,125v20" />
+    <path d="M82,125v20" />
+    <path d="M83,125v20" />
+    <path d="M84,125v20" />
+    <path d="M58,125h26" />
+    <path d="M58,126h26" />
+    <path d="M58,127h26" />
+    <path d="M58,128h26" />
+    <path d="M58,129h26" />
+    <path d="M58,130h26" />
+    <path d="M58,131h26" />
+    <path d="M58,132h26" />
+    <path d="M58,133h26" />
+    <path d="M58,134h26" />
+    <path d="M58,135h26" />
+    <path d="M58,136h26" />
+    <path d="M58,137h26" />
+    <path d="M58,138h26" />
+    <path d="M58,139h26" />
+    <path d="M58,140h26" />
+    <path d="M58,141h26" />
+    <path d="M58,142h26" />
+    <path d="M58,143h26" />
+    <path d="M58,144h26" />
+    <path d="M58,145h26" />
+  </g>
+  <g id="proof-4-1--sc-resistor-us-r1-medium-medium--sc-resistor-us-r1-medium-medium" inkscape:label="US resistor / medium / medium" data-symbol="resistor-us" data-revision="1" data-size="medium" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(86.12969132777778,157.63336567777776) scale(0.35277777777777775) translate(-42.887314,-64.157572)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="proof-4-1--sc-resistor-us-r1-medium-medium--sc-resistor-us-r1-medium-medium--lead-a" inkscape:label="lead-a">
+      <path d="M-22.76208 0H-14.22621" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="body" id="proof-4-1--sc-resistor-us-r1-medium-medium--sc-resistor-us-r1-medium-medium--body" inkscape:label="body">
+      <path d="M-14.22621 0L-11.85518 4.74207L-7.1131-4.74207L-2.37103 4.74207L2.37103-4.74207L7.1131 4.74207L11.85518-4.74207L14.22621 0" fill="none" />
+      <desc>Zigzag body</desc>
+    </g>
+    <g data-part="lead-b" id="proof-4-1--sc-resistor-us-r1-medium-medium--sc-resistor-us-r1-medium-medium--lead-b" inkscape:label="lead-b">
+      <path d="M14.22621 0H22.76208" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="63.0" cy="135.0" r="0.14" fill="#2d69a5" />
+  <circle cx="79.0" cy="135.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M87,125v20" />
+    <path d="M88,125v20" />
+    <path d="M89,125v20" />
+    <path d="M90,125v20" />
+    <path d="M91,125v20" />
+    <path d="M92,125v20" />
+    <path d="M93,125v20" />
+    <path d="M94,125v20" />
+    <path d="M95,125v20" />
+    <path d="M96,125v20" />
+    <path d="M97,125v20" />
+    <path d="M98,125v20" />
+    <path d="M99,125v20" />
+    <path d="M100,125v20" />
+    <path d="M101,125v20" />
+    <path d="M102,125v20" />
+    <path d="M103,125v20" />
+    <path d="M104,125v20" />
+    <path d="M105,125v20" />
+    <path d="M106,125v20" />
+    <path d="M107,125v20" />
+    <path d="M108,125v20" />
+    <path d="M109,125v20" />
+    <path d="M110,125v20" />
+    <path d="M111,125v20" />
+    <path d="M112,125v20" />
+    <path d="M113,125v20" />
+    <path d="M87,125h26" />
+    <path d="M87,126h26" />
+    <path d="M87,127h26" />
+    <path d="M87,128h26" />
+    <path d="M87,129h26" />
+    <path d="M87,130h26" />
+    <path d="M87,131h26" />
+    <path d="M87,132h26" />
+    <path d="M87,133h26" />
+    <path d="M87,134h26" />
+    <path d="M87,135h26" />
+    <path d="M87,136h26" />
+    <path d="M87,137h26" />
+    <path d="M87,138h26" />
+    <path d="M87,139h26" />
+    <path d="M87,140h26" />
+    <path d="M87,141h26" />
+    <path d="M87,142h26" />
+    <path d="M87,143h26" />
+    <path d="M87,144h26" />
+    <path d="M87,145h26" />
+  </g>
+  <g id="proof-4-2--sc-inductor-coil-r1-medium-medium--sc-inductor-coil-r1-medium-medium" inkscape:label="Coil inductor / medium / medium" data-symbol="inductor-coil" data-revision="1" data-size="medium" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(115.12969132777778,157.300053825) scale(0.35277777777777775) translate(-42.887314,-63.212751)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="proof-4-2--sc-inductor-coil-r1-medium-medium--sc-inductor-coil-r1-medium-medium--lead-a" inkscape:label="lead-a">
+      <path d="M-22.76208 0H-14.22621" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="body" id="proof-4-2--sc-inductor-coil-r1-medium-medium--sc-inductor-coil-r1-medium-medium--body" inkscape:label="body">
+      <path d="M-14.22621 0C-14.22621 3.14278-12.63393 5.69043-10.6697 5.69043C-8.70546 5.69043-7.11317 3.14278-7.11317 0C-7.11317 3.14278-5.52089 5.69043-3.55666 5.69043C-1.59242 5.69043-.00014 3.14278-.00014 0C-.00014 3.14278 1.59215 5.69043 3.55638 5.69043S7.1129 3.14278 7.1129 0C7.1129 3.14278 8.70518 5.69043 10.66942 5.69043C12.63365 5.69043 14.22594 3.14278 14.22594 0" fill="none" />
+      <desc>Four coil half-turns</desc>
+    </g>
+    <g data-part="lead-b" id="proof-4-2--sc-inductor-coil-r1-medium-medium--sc-inductor-coil-r1-medium-medium--lead-b" inkscape:label="lead-b">
+      <path d="M14.22621 0H22.76208" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="92.0" cy="135.0" r="0.14" fill="#2d69a5" />
+  <circle cx="108.0" cy="135.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M116,125v20" />
+    <path d="M117,125v20" />
+    <path d="M118,125v20" />
+    <path d="M119,125v20" />
+    <path d="M120,125v20" />
+    <path d="M121,125v20" />
+    <path d="M122,125v20" />
+    <path d="M123,125v20" />
+    <path d="M124,125v20" />
+    <path d="M125,125v20" />
+    <path d="M126,125v20" />
+    <path d="M127,125v20" />
+    <path d="M128,125v20" />
+    <path d="M129,125v20" />
+    <path d="M130,125v20" />
+    <path d="M131,125v20" />
+    <path d="M132,125v20" />
+    <path d="M133,125v20" />
+    <path d="M134,125v20" />
+    <path d="M135,125v20" />
+    <path d="M136,125v20" />
+    <path d="M137,125v20" />
+    <path d="M138,125v20" />
+    <path d="M139,125v20" />
+    <path d="M140,125v20" />
+    <path d="M141,125v20" />
+    <path d="M142,125v20" />
+    <path d="M116,125h26" />
+    <path d="M116,126h26" />
+    <path d="M116,127h26" />
+    <path d="M116,128h26" />
+    <path d="M116,129h26" />
+    <path d="M116,130h26" />
+    <path d="M116,131h26" />
+    <path d="M116,132h26" />
+    <path d="M116,133h26" />
+    <path d="M116,134h26" />
+    <path d="M116,135h26" />
+    <path d="M116,136h26" />
+    <path d="M116,137h26" />
+    <path d="M116,138h26" />
+    <path d="M116,139h26" />
+    <path d="M116,140h26" />
+    <path d="M116,141h26" />
+    <path d="M116,142h26" />
+    <path d="M116,143h26" />
+    <path d="M116,144h26" />
+    <path d="M116,145h26" />
+  </g>
+  <g id="proof-4-3--sc-capacitor-r1-medium-medium--sc-capacitor-r1-medium-medium" inkscape:label="Capacitor / medium / medium" data-symbol="capacitor" data-revision="1" data-size="medium" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(148.129670275,155.9667203361111) scale(0.35277777777777775) translate(-54.225837,-59.433223)scale(0.996264,-0.996264)">
+    <g data-part="plate-a" id="proof-4-3--sc-capacitor-r1-medium-medium--sc-capacitor-r1-medium-medium--plate-a" inkscape:label="plate-a">
+      <path d="M-2.84526-9.48413V9.48413" fill="none" />
+      <desc>First capacitor plate</desc>
+    </g>
+    <g data-part="plate-b" id="proof-4-3--sc-capacitor-r1-medium-medium--sc-capacitor-r1-medium-medium--plate-b" inkscape:label="plate-b">
+      <path d="M2.84526-9.48413V9.48413" fill="none" />
+      <desc>Second capacitor plate</desc>
+    </g>
+    <g data-part="lead-a" id="proof-4-3--sc-capacitor-r1-medium-medium--sc-capacitor-r1-medium-medium--lead-a" inkscape:label="lead-a">
+      <path d="M-11.38104 0H-2.84526" fill="none" />
+      <desc>Lead to first plate</desc>
+    </g>
+    <g data-part="lead-b" id="proof-4-3--sc-capacitor-r1-medium-medium--sc-capacitor-r1-medium-medium--lead-b" inkscape:label="lead-b">
+      <path d="M2.84526 0H11.38104" fill="none" />
+      <desc>Lead to second plate</desc>
+    </g>
+  </g>
+  <circle cx="125.0" cy="135.0" r="0.14" fill="#2d69a5" />
+  <circle cx="133.0" cy="135.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M145,125v20" />
+    <path d="M146,125v20" />
+    <path d="M147,125v20" />
+    <path d="M148,125v20" />
+    <path d="M149,125v20" />
+    <path d="M150,125v20" />
+    <path d="M151,125v20" />
+    <path d="M152,125v20" />
+    <path d="M153,125v20" />
+    <path d="M154,125v20" />
+    <path d="M155,125v20" />
+    <path d="M156,125v20" />
+    <path d="M157,125v20" />
+    <path d="M158,125v20" />
+    <path d="M159,125v20" />
+    <path d="M160,125v20" />
+    <path d="M161,125v20" />
+    <path d="M162,125v20" />
+    <path d="M163,125v20" />
+    <path d="M164,125v20" />
+    <path d="M165,125v20" />
+    <path d="M166,125v20" />
+    <path d="M167,125v20" />
+    <path d="M168,125v20" />
+    <path d="M169,125v20" />
+    <path d="M170,125v20" />
+    <path d="M171,125v20" />
+    <path d="M145,125h26" />
+    <path d="M145,126h26" />
+    <path d="M145,127h26" />
+    <path d="M145,128h26" />
+    <path d="M145,129h26" />
+    <path d="M145,130h26" />
+    <path d="M145,131h26" />
+    <path d="M145,132h26" />
+    <path d="M145,133h26" />
+    <path d="M145,134h26" />
+    <path d="M145,135h26" />
+    <path d="M145,136h26" />
+    <path d="M145,137h26" />
+    <path d="M145,138h26" />
+    <path d="M145,139h26" />
+    <path d="M145,140h26" />
+    <path d="M145,141h26" />
+    <path d="M145,142h26" />
+    <path d="M145,143h26" />
+    <path d="M145,144h26" />
+    <path d="M145,145h26" />
+  </g>
+  <g id="proof-4-4--sc-opamp-r1-medium-medium--sc-opamp-r1-medium-medium" inkscape:label="Op-amp / medium / medium" data-symbol="opamp" data-revision="1" data-size="medium" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(172.1296965027778,152.63342400833332) scale(0.35277777777777775) translate(-40.052683,-49.984509)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-4-4--sc-opamp-r1-medium-medium--sc-opamp-r1-medium-medium--body" inkscape:label="body">
+      <path d="M-16.12297-18.96828V18.96828L16.12297 0Z" fill="none" />
+      <desc>Triangle outline</desc>
+    </g>
+    <g data-part="lead-in-plus" id="proof-4-4--sc-opamp-r1-medium-medium--sc-opamp-r1-medium-medium--lead-in-plus" inkscape:label="lead-in-plus">
+      <path d="M-25.60735 8.53578H-16.12297" fill="none" />
+      <desc>Non-inverting input lead</desc>
+    </g>
+    <g data-part="lead-in-minus" id="proof-4-4--sc-opamp-r1-medium-medium--sc-opamp-r1-medium-medium--lead-in-minus" inkscape:label="lead-in-minus">
+      <path d="M-25.60735-8.53578H-16.12297" fill="none" />
+      <desc>Inverting input lead</desc>
+    </g>
+    <g data-part="lead-out" id="proof-4-4--sc-opamp-r1-medium-medium--sc-opamp-r1-medium-medium--lead-out" inkscape:label="lead-out">
+      <path d="M16.12297 0H25.60735" fill="none" />
+      <desc>Output lead</desc>
+    </g>
+    <g data-part="sign-plus" id="proof-4-4--sc-opamp-r1-medium-medium--sc-opamp-r1-medium-medium--sign-plus" inkscape:label="sign-plus">
+      <path d="M-13.27768 8.53578H-9.48413M-11.3809 6.639V10.43254" fill="none" />
+      <desc>Non-inverting input mark</desc>
+    </g>
+    <g data-part="sign-minus" id="proof-4-4--sc-opamp-r1-medium-medium--sc-opamp-r1-medium-medium--sign-minus" inkscape:label="sign-minus">
+      <path d="M-13.27768-8.53578H-9.48413" fill="none" />
+      <desc>Inverting input mark</desc>
+    </g>
+  </g>
+  <circle cx="149.0" cy="132.0" r="0.14" fill="#2d69a5" />
+  <circle cx="149.0" cy="138.0" r="0.14" fill="#2d69a5" />
+  <circle cx="167.0" cy="135.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M174,125v20" />
+    <path d="M175,125v20" />
+    <path d="M176,125v20" />
+    <path d="M177,125v20" />
+    <path d="M178,125v20" />
+    <path d="M179,125v20" />
+    <path d="M180,125v20" />
+    <path d="M181,125v20" />
+    <path d="M182,125v20" />
+    <path d="M183,125v20" />
+    <path d="M184,125v20" />
+    <path d="M185,125v20" />
+    <path d="M186,125v20" />
+    <path d="M187,125v20" />
+    <path d="M188,125v20" />
+    <path d="M189,125v20" />
+    <path d="M190,125v20" />
+    <path d="M191,125v20" />
+    <path d="M192,125v20" />
+    <path d="M193,125v20" />
+    <path d="M194,125v20" />
+    <path d="M195,125v20" />
+    <path d="M196,125v20" />
+    <path d="M197,125v20" />
+    <path d="M198,125v20" />
+    <path d="M199,125v20" />
+    <path d="M200,125v20" />
+    <path d="M174,125h26" />
+    <path d="M174,126h26" />
+    <path d="M174,127h26" />
+    <path d="M174,128h26" />
+    <path d="M174,129h26" />
+    <path d="M174,130h26" />
+    <path d="M174,131h26" />
+    <path d="M174,132h26" />
+    <path d="M174,133h26" />
+    <path d="M174,134h26" />
+    <path d="M174,135h26" />
+    <path d="M174,136h26" />
+    <path d="M174,137h26" />
+    <path d="M174,138h26" />
+    <path d="M174,139h26" />
+    <path d="M174,140h26" />
+    <path d="M174,141h26" />
+    <path d="M174,142h26" />
+    <path d="M174,143h26" />
+    <path d="M174,144h26" />
+    <path d="M174,145h26" />
+  </g>
+  <g id="proof-4-5--sc-opamp-supply-r1-medium-medium--sc-opamp-supply-r1-medium-medium" inkscape:label="Op-amp with supply pins / medium / medium" data-symbol="opamp-supply" data-revision="1" data-size="medium" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(201.1296965027778,152.63342400833332) scale(0.35277777777777775) translate(-40.052683,-49.984509)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-4-5--sc-opamp-supply-r1-medium-medium--sc-opamp-supply-r1-medium-medium--body" inkscape:label="body">
+      <path d="M-16.12297-18.96828V18.96828L16.12297 0Z" fill="none" />
+      <desc>Triangle outline</desc>
+    </g>
+    <g data-part="lead-in-plus" id="proof-4-5--sc-opamp-supply-r1-medium-medium--sc-opamp-supply-r1-medium-medium--lead-in-plus" inkscape:label="lead-in-plus">
+      <path d="M-25.60735 8.53578H-16.12297" fill="none" />
+      <desc>Non-inverting input lead</desc>
+    </g>
+    <g data-part="lead-in-minus" id="proof-4-5--sc-opamp-supply-r1-medium-medium--sc-opamp-supply-r1-medium-medium--lead-in-minus" inkscape:label="lead-in-minus">
+      <path d="M-25.60735-8.53578H-16.12297" fill="none" />
+      <desc>Inverting input lead</desc>
+    </g>
+    <g data-part="lead-out" id="proof-4-5--sc-opamp-supply-r1-medium-medium--sc-opamp-supply-r1-medium-medium--lead-out" inkscape:label="lead-out">
+      <path d="M16.12297 0H25.60735" fill="none" />
+      <desc>Output lead</desc>
+    </g>
+    <g data-part="sign-plus" id="proof-4-5--sc-opamp-supply-r1-medium-medium--sc-opamp-supply-r1-medium-medium--sign-plus" inkscape:label="sign-plus">
+      <path d="M-13.27768 8.53578H-9.48413M-11.3809 6.639V10.43254" fill="none" />
+      <desc>Non-inverting input mark</desc>
+    </g>
+    <g data-part="sign-minus" id="proof-4-5--sc-opamp-supply-r1-medium-medium--sc-opamp-supply-r1-medium-medium--sign-minus" inkscape:label="sign-minus">
+      <path d="M-13.27768-8.53578H-9.48413" fill="none" />
+      <desc>Inverting input mark</desc>
+    </g>
+    <g data-part="lead-supply-plus" id="proof-4-5--sc-opamp-supply-r1-medium-medium--sc-opamp-supply-r1-medium-medium--lead-supply-plus" inkscape:label="lead-supply-plus">
+      <path d="M0 9.48413V17.07156" fill="none" />
+      <desc>Positive supply lead</desc>
+    </g>
+    <g data-part="lead-supply-minus" id="proof-4-5--sc-opamp-supply-r1-medium-medium--sc-opamp-supply-r1-medium-medium--lead-supply-minus" inkscape:label="lead-supply-minus">
+      <path d="M0-9.48413V-17.07156" fill="none" />
+      <desc>Negative supply lead</desc>
+    </g>
+  </g>
+  <circle cx="178.0" cy="132.0" r="0.14" fill="#2d69a5" />
+  <circle cx="178.0" cy="138.0" r="0.14" fill="#2d69a5" />
+  <circle cx="196.0" cy="135.0" r="0.14" fill="#2d69a5" />
+  <circle cx="187.0" cy="129.0" r="0.14" fill="#2d69a5" />
+  <circle cx="187.0" cy="141.0" r="0.14" fill="#2d69a5" />
+  <text x="4" y="158" font-family="Arial, sans-serif" font-size="2.5" fill="#222">Medium</text>
+  <text x="4" y="162" font-family="Arial, sans-serif" font-size="2.1" fill="#222">Thick</text>
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M29,149v20" />
+    <path d="M30,149v20" />
+    <path d="M31,149v20" />
+    <path d="M32,149v20" />
+    <path d="M33,149v20" />
+    <path d="M34,149v20" />
+    <path d="M35,149v20" />
+    <path d="M36,149v20" />
+    <path d="M37,149v20" />
+    <path d="M38,149v20" />
+    <path d="M39,149v20" />
+    <path d="M40,149v20" />
+    <path d="M41,149v20" />
+    <path d="M42,149v20" />
+    <path d="M43,149v20" />
+    <path d="M44,149v20" />
+    <path d="M45,149v20" />
+    <path d="M46,149v20" />
+    <path d="M47,149v20" />
+    <path d="M48,149v20" />
+    <path d="M49,149v20" />
+    <path d="M50,149v20" />
+    <path d="M51,149v20" />
+    <path d="M52,149v20" />
+    <path d="M53,149v20" />
+    <path d="M54,149v20" />
+    <path d="M55,149v20" />
+    <path d="M29,149h26" />
+    <path d="M29,150h26" />
+    <path d="M29,151h26" />
+    <path d="M29,152h26" />
+    <path d="M29,153h26" />
+    <path d="M29,154h26" />
+    <path d="M29,155h26" />
+    <path d="M29,156h26" />
+    <path d="M29,157h26" />
+    <path d="M29,158h26" />
+    <path d="M29,159h26" />
+    <path d="M29,160h26" />
+    <path d="M29,161h26" />
+    <path d="M29,162h26" />
+    <path d="M29,163h26" />
+    <path d="M29,164h26" />
+    <path d="M29,165h26" />
+    <path d="M29,166h26" />
+    <path d="M29,167h26" />
+    <path d="M29,168h26" />
+    <path d="M29,169h26" />
+  </g>
+  <g id="proof-5-0--sc-resistor-eu-r1-medium-thick--sc-resistor-eu-r1-medium-thick" inkscape:label="EU resistor / medium / thick" data-symbol="resistor-eu" data-revision="1" data-size="medium" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(57.07968825277778,181.58336260277778) scale(0.35277777777777775) translate(-42.745573,-64.015831)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-5-0--sc-resistor-eu-r1-medium-thick--sc-resistor-eu-r1-medium-thick--body" inkscape:label="body">
+      <path d="M-14.22621-4.74207V4.74207H14.22621V-4.74207ZM14.22621 4.74207" fill="none" />
+      <desc>Rectangular resistor body</desc>
+    </g>
+    <g data-part="lead-a" id="proof-5-0--sc-resistor-eu-r1-medium-thick--sc-resistor-eu-r1-medium-thick--lead-a" inkscape:label="lead-a">
+      <path d="M-22.76208 0H-14.22621" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="lead-b" id="proof-5-0--sc-resistor-eu-r1-medium-thick--sc-resistor-eu-r1-medium-thick--lead-b" inkscape:label="lead-b">
+      <path d="M14.22621 0H22.76208" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="34.0" cy="159.0" r="0.14" fill="#2d69a5" />
+  <circle cx="50.0" cy="159.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M58,149v20" />
+    <path d="M59,149v20" />
+    <path d="M60,149v20" />
+    <path d="M61,149v20" />
+    <path d="M62,149v20" />
+    <path d="M63,149v20" />
+    <path d="M64,149v20" />
+    <path d="M65,149v20" />
+    <path d="M66,149v20" />
+    <path d="M67,149v20" />
+    <path d="M68,149v20" />
+    <path d="M69,149v20" />
+    <path d="M70,149v20" />
+    <path d="M71,149v20" />
+    <path d="M72,149v20" />
+    <path d="M73,149v20" />
+    <path d="M74,149v20" />
+    <path d="M75,149v20" />
+    <path d="M76,149v20" />
+    <path d="M77,149v20" />
+    <path d="M78,149v20" />
+    <path d="M79,149v20" />
+    <path d="M80,149v20" />
+    <path d="M81,149v20" />
+    <path d="M82,149v20" />
+    <path d="M83,149v20" />
+    <path d="M84,149v20" />
+    <path d="M58,149h26" />
+    <path d="M58,150h26" />
+    <path d="M58,151h26" />
+    <path d="M58,152h26" />
+    <path d="M58,153h26" />
+    <path d="M58,154h26" />
+    <path d="M58,155h26" />
+    <path d="M58,156h26" />
+    <path d="M58,157h26" />
+    <path d="M58,158h26" />
+    <path d="M58,159h26" />
+    <path d="M58,160h26" />
+    <path d="M58,161h26" />
+    <path d="M58,162h26" />
+    <path d="M58,163h26" />
+    <path d="M58,164h26" />
+    <path d="M58,165h26" />
+    <path d="M58,166h26" />
+    <path d="M58,167h26" />
+    <path d="M58,168h26" />
+    <path d="M58,169h26" />
+  </g>
+  <g id="proof-5-1--sc-resistor-us-r1-medium-thick--sc-resistor-us-r1-medium-thick" inkscape:label="US resistor / medium / thick" data-symbol="resistor-us" data-revision="1" data-size="medium" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(86.07968825277777,181.58336260277778) scale(0.35277777777777775) translate(-42.745573,-64.015831)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="proof-5-1--sc-resistor-us-r1-medium-thick--sc-resistor-us-r1-medium-thick--lead-a" inkscape:label="lead-a">
+      <path d="M-22.76208 0H-14.22621" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="body" id="proof-5-1--sc-resistor-us-r1-medium-thick--sc-resistor-us-r1-medium-thick--body" inkscape:label="body">
+      <path d="M-14.22621 0L-11.85518 4.74207L-7.1131-4.74207L-2.37103 4.74207L2.37103-4.74207L7.1131 4.74207L11.85518-4.74207L14.22621 0" fill="none" />
+      <desc>Zigzag body</desc>
+    </g>
+    <g data-part="lead-b" id="proof-5-1--sc-resistor-us-r1-medium-thick--sc-resistor-us-r1-medium-thick--lead-b" inkscape:label="lead-b">
+      <path d="M14.22621 0H22.76208" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="63.0" cy="159.0" r="0.14" fill="#2d69a5" />
+  <circle cx="79.0" cy="159.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M87,149v20" />
+    <path d="M88,149v20" />
+    <path d="M89,149v20" />
+    <path d="M90,149v20" />
+    <path d="M91,149v20" />
+    <path d="M92,149v20" />
+    <path d="M93,149v20" />
+    <path d="M94,149v20" />
+    <path d="M95,149v20" />
+    <path d="M96,149v20" />
+    <path d="M97,149v20" />
+    <path d="M98,149v20" />
+    <path d="M99,149v20" />
+    <path d="M100,149v20" />
+    <path d="M101,149v20" />
+    <path d="M102,149v20" />
+    <path d="M103,149v20" />
+    <path d="M104,149v20" />
+    <path d="M105,149v20" />
+    <path d="M106,149v20" />
+    <path d="M107,149v20" />
+    <path d="M108,149v20" />
+    <path d="M109,149v20" />
+    <path d="M110,149v20" />
+    <path d="M111,149v20" />
+    <path d="M112,149v20" />
+    <path d="M113,149v20" />
+    <path d="M87,149h26" />
+    <path d="M87,150h26" />
+    <path d="M87,151h26" />
+    <path d="M87,152h26" />
+    <path d="M87,153h26" />
+    <path d="M87,154h26" />
+    <path d="M87,155h26" />
+    <path d="M87,156h26" />
+    <path d="M87,157h26" />
+    <path d="M87,158h26" />
+    <path d="M87,159h26" />
+    <path d="M87,160h26" />
+    <path d="M87,161h26" />
+    <path d="M87,162h26" />
+    <path d="M87,163h26" />
+    <path d="M87,164h26" />
+    <path d="M87,165h26" />
+    <path d="M87,166h26" />
+    <path d="M87,167h26" />
+    <path d="M87,168h26" />
+    <path d="M87,169h26" />
+  </g>
+  <g id="proof-5-2--sc-inductor-coil-r1-medium-thick--sc-inductor-coil-r1-medium-thick" inkscape:label="Coil inductor / medium / thick" data-symbol="inductor-coil" data-revision="1" data-size="medium" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(115.07968825277777,181.25005039722222) scale(0.35277777777777775) translate(-42.745573,-63.071009)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="proof-5-2--sc-inductor-coil-r1-medium-thick--sc-inductor-coil-r1-medium-thick--lead-a" inkscape:label="lead-a">
+      <path d="M-22.76208 0H-14.22621" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="body" id="proof-5-2--sc-inductor-coil-r1-medium-thick--sc-inductor-coil-r1-medium-thick--body" inkscape:label="body">
+      <path d="M-14.22621 0C-14.22621 3.14278-12.63393 5.69043-10.6697 5.69043C-8.70546 5.69043-7.11317 3.14278-7.11317 0C-7.11317 3.14278-5.52089 5.69043-3.55666 5.69043C-1.59242 5.69043-.00014 3.14278-.00014 0C-.00014 3.14278 1.59215 5.69043 3.55638 5.69043S7.1129 3.14278 7.1129 0C7.1129 3.14278 8.70518 5.69043 10.66942 5.69043C12.63365 5.69043 14.22594 3.14278 14.22594 0" fill="none" />
+      <desc>Four coil half-turns</desc>
+    </g>
+    <g data-part="lead-b" id="proof-5-2--sc-inductor-coil-r1-medium-thick--sc-inductor-coil-r1-medium-thick--lead-b" inkscape:label="lead-b">
+      <path d="M14.22621 0H22.76208" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="92.0" cy="159.0" r="0.14" fill="#2d69a5" />
+  <circle cx="108.0" cy="159.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M116,149v20" />
+    <path d="M117,149v20" />
+    <path d="M118,149v20" />
+    <path d="M119,149v20" />
+    <path d="M120,149v20" />
+    <path d="M121,149v20" />
+    <path d="M122,149v20" />
+    <path d="M123,149v20" />
+    <path d="M124,149v20" />
+    <path d="M125,149v20" />
+    <path d="M126,149v20" />
+    <path d="M127,149v20" />
+    <path d="M128,149v20" />
+    <path d="M129,149v20" />
+    <path d="M130,149v20" />
+    <path d="M131,149v20" />
+    <path d="M132,149v20" />
+    <path d="M133,149v20" />
+    <path d="M134,149v20" />
+    <path d="M135,149v20" />
+    <path d="M136,149v20" />
+    <path d="M137,149v20" />
+    <path d="M138,149v20" />
+    <path d="M139,149v20" />
+    <path d="M140,149v20" />
+    <path d="M141,149v20" />
+    <path d="M142,149v20" />
+    <path d="M116,149h26" />
+    <path d="M116,150h26" />
+    <path d="M116,151h26" />
+    <path d="M116,152h26" />
+    <path d="M116,153h26" />
+    <path d="M116,154h26" />
+    <path d="M116,155h26" />
+    <path d="M116,156h26" />
+    <path d="M116,157h26" />
+    <path d="M116,158h26" />
+    <path d="M116,159h26" />
+    <path d="M116,160h26" />
+    <path d="M116,161h26" />
+    <path d="M116,162h26" />
+    <path d="M116,163h26" />
+    <path d="M116,164h26" />
+    <path d="M116,165h26" />
+    <path d="M116,166h26" />
+    <path d="M116,167h26" />
+    <path d="M116,168h26" />
+    <path d="M116,169h26" />
+  </g>
+  <g id="proof-5-3--sc-capacitor-r1-medium-thick--sc-capacitor-r1-medium-thick" inkscape:label="Capacitor / medium / thick" data-symbol="capacitor" data-revision="1" data-size="medium" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(148.0796672,179.91671690833334) scale(0.35277777777777775) translate(-54.084096,-59.291481)scale(0.996264,-0.996264)">
+    <g data-part="plate-a" id="proof-5-3--sc-capacitor-r1-medium-thick--sc-capacitor-r1-medium-thick--plate-a" inkscape:label="plate-a">
+      <path d="M-2.84526-9.48413V9.48413" fill="none" />
+      <desc>First capacitor plate</desc>
+    </g>
+    <g data-part="plate-b" id="proof-5-3--sc-capacitor-r1-medium-thick--sc-capacitor-r1-medium-thick--plate-b" inkscape:label="plate-b">
+      <path d="M2.84526-9.48413V9.48413" fill="none" />
+      <desc>Second capacitor plate</desc>
+    </g>
+    <g data-part="lead-a" id="proof-5-3--sc-capacitor-r1-medium-thick--sc-capacitor-r1-medium-thick--lead-a" inkscape:label="lead-a">
+      <path d="M-11.38104 0H-2.84526" fill="none" />
+      <desc>Lead to first plate</desc>
+    </g>
+    <g data-part="lead-b" id="proof-5-3--sc-capacitor-r1-medium-thick--sc-capacitor-r1-medium-thick--lead-b" inkscape:label="lead-b">
+      <path d="M2.84526 0H11.38104" fill="none" />
+      <desc>Lead to second plate</desc>
+    </g>
+  </g>
+  <circle cx="125.0" cy="159.0" r="0.14" fill="#2d69a5" />
+  <circle cx="133.0" cy="159.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M145,149v20" />
+    <path d="M146,149v20" />
+    <path d="M147,149v20" />
+    <path d="M148,149v20" />
+    <path d="M149,149v20" />
+    <path d="M150,149v20" />
+    <path d="M151,149v20" />
+    <path d="M152,149v20" />
+    <path d="M153,149v20" />
+    <path d="M154,149v20" />
+    <path d="M155,149v20" />
+    <path d="M156,149v20" />
+    <path d="M157,149v20" />
+    <path d="M158,149v20" />
+    <path d="M159,149v20" />
+    <path d="M160,149v20" />
+    <path d="M161,149v20" />
+    <path d="M162,149v20" />
+    <path d="M163,149v20" />
+    <path d="M164,149v20" />
+    <path d="M165,149v20" />
+    <path d="M166,149v20" />
+    <path d="M167,149v20" />
+    <path d="M168,149v20" />
+    <path d="M169,149v20" />
+    <path d="M170,149v20" />
+    <path d="M171,149v20" />
+    <path d="M145,149h26" />
+    <path d="M145,150h26" />
+    <path d="M145,151h26" />
+    <path d="M145,152h26" />
+    <path d="M145,153h26" />
+    <path d="M145,154h26" />
+    <path d="M145,155h26" />
+    <path d="M145,156h26" />
+    <path d="M145,157h26" />
+    <path d="M145,158h26" />
+    <path d="M145,159h26" />
+    <path d="M145,160h26" />
+    <path d="M145,161h26" />
+    <path d="M145,162h26" />
+    <path d="M145,163h26" />
+    <path d="M145,164h26" />
+    <path d="M145,165h26" />
+    <path d="M145,166h26" />
+    <path d="M145,167h26" />
+    <path d="M145,168h26" />
+    <path d="M145,169h26" />
+  </g>
+  <g id="proof-5-4--sc-opamp-r1-medium-thick--sc-opamp-r1-medium-thick" inkscape:label="Op-amp / medium / thick" data-symbol="opamp" data-revision="1" data-size="medium" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(172.07969342777778,176.58342093333334) scale(0.35277777777777775) translate(-39.910942,-49.842768)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-5-4--sc-opamp-r1-medium-thick--sc-opamp-r1-medium-thick--body" inkscape:label="body">
+      <path d="M-16.12297-18.96828V18.96828L16.12297 0Z" fill="none" />
+      <desc>Triangle outline</desc>
+    </g>
+    <g data-part="lead-in-plus" id="proof-5-4--sc-opamp-r1-medium-thick--sc-opamp-r1-medium-thick--lead-in-plus" inkscape:label="lead-in-plus">
+      <path d="M-25.60735 8.53578H-16.12297" fill="none" />
+      <desc>Non-inverting input lead</desc>
+    </g>
+    <g data-part="lead-in-minus" id="proof-5-4--sc-opamp-r1-medium-thick--sc-opamp-r1-medium-thick--lead-in-minus" inkscape:label="lead-in-minus">
+      <path d="M-25.60735-8.53578H-16.12297" fill="none" />
+      <desc>Inverting input lead</desc>
+    </g>
+    <g data-part="lead-out" id="proof-5-4--sc-opamp-r1-medium-thick--sc-opamp-r1-medium-thick--lead-out" inkscape:label="lead-out">
+      <path d="M16.12297 0H25.60735" fill="none" />
+      <desc>Output lead</desc>
+    </g>
+    <g data-part="sign-plus" id="proof-5-4--sc-opamp-r1-medium-thick--sc-opamp-r1-medium-thick--sign-plus" inkscape:label="sign-plus">
+      <path d="M-13.27768 8.53578H-9.48413M-11.3809 6.639V10.43254" fill="none" />
+      <desc>Non-inverting input mark</desc>
+    </g>
+    <g data-part="sign-minus" id="proof-5-4--sc-opamp-r1-medium-thick--sc-opamp-r1-medium-thick--sign-minus" inkscape:label="sign-minus">
+      <path d="M-13.27768-8.53578H-9.48413" fill="none" />
+      <desc>Inverting input mark</desc>
+    </g>
+  </g>
+  <circle cx="149.0" cy="156.0" r="0.14" fill="#2d69a5" />
+  <circle cx="149.0" cy="162.0" r="0.14" fill="#2d69a5" />
+  <circle cx="167.0" cy="159.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M174,149v20" />
+    <path d="M175,149v20" />
+    <path d="M176,149v20" />
+    <path d="M177,149v20" />
+    <path d="M178,149v20" />
+    <path d="M179,149v20" />
+    <path d="M180,149v20" />
+    <path d="M181,149v20" />
+    <path d="M182,149v20" />
+    <path d="M183,149v20" />
+    <path d="M184,149v20" />
+    <path d="M185,149v20" />
+    <path d="M186,149v20" />
+    <path d="M187,149v20" />
+    <path d="M188,149v20" />
+    <path d="M189,149v20" />
+    <path d="M190,149v20" />
+    <path d="M191,149v20" />
+    <path d="M192,149v20" />
+    <path d="M193,149v20" />
+    <path d="M194,149v20" />
+    <path d="M195,149v20" />
+    <path d="M196,149v20" />
+    <path d="M197,149v20" />
+    <path d="M198,149v20" />
+    <path d="M199,149v20" />
+    <path d="M200,149v20" />
+    <path d="M174,149h26" />
+    <path d="M174,150h26" />
+    <path d="M174,151h26" />
+    <path d="M174,152h26" />
+    <path d="M174,153h26" />
+    <path d="M174,154h26" />
+    <path d="M174,155h26" />
+    <path d="M174,156h26" />
+    <path d="M174,157h26" />
+    <path d="M174,158h26" />
+    <path d="M174,159h26" />
+    <path d="M174,160h26" />
+    <path d="M174,161h26" />
+    <path d="M174,162h26" />
+    <path d="M174,163h26" />
+    <path d="M174,164h26" />
+    <path d="M174,165h26" />
+    <path d="M174,166h26" />
+    <path d="M174,167h26" />
+    <path d="M174,168h26" />
+    <path d="M174,169h26" />
+  </g>
+  <g id="proof-5-5--sc-opamp-supply-r1-medium-thick--sc-opamp-supply-r1-medium-thick" inkscape:label="Op-amp with supply pins / medium / thick" data-symbol="opamp-supply" data-revision="1" data-size="medium" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(201.07969342777778,176.58342093333334) scale(0.35277777777777775) translate(-39.910942,-49.842768)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-5-5--sc-opamp-supply-r1-medium-thick--sc-opamp-supply-r1-medium-thick--body" inkscape:label="body">
+      <path d="M-16.12297-18.96828V18.96828L16.12297 0Z" fill="none" />
+      <desc>Triangle outline</desc>
+    </g>
+    <g data-part="lead-in-plus" id="proof-5-5--sc-opamp-supply-r1-medium-thick--sc-opamp-supply-r1-medium-thick--lead-in-plus" inkscape:label="lead-in-plus">
+      <path d="M-25.60735 8.53578H-16.12297" fill="none" />
+      <desc>Non-inverting input lead</desc>
+    </g>
+    <g data-part="lead-in-minus" id="proof-5-5--sc-opamp-supply-r1-medium-thick--sc-opamp-supply-r1-medium-thick--lead-in-minus" inkscape:label="lead-in-minus">
+      <path d="M-25.60735-8.53578H-16.12297" fill="none" />
+      <desc>Inverting input lead</desc>
+    </g>
+    <g data-part="lead-out" id="proof-5-5--sc-opamp-supply-r1-medium-thick--sc-opamp-supply-r1-medium-thick--lead-out" inkscape:label="lead-out">
+      <path d="M16.12297 0H25.60735" fill="none" />
+      <desc>Output lead</desc>
+    </g>
+    <g data-part="sign-plus" id="proof-5-5--sc-opamp-supply-r1-medium-thick--sc-opamp-supply-r1-medium-thick--sign-plus" inkscape:label="sign-plus">
+      <path d="M-13.27768 8.53578H-9.48413M-11.3809 6.639V10.43254" fill="none" />
+      <desc>Non-inverting input mark</desc>
+    </g>
+    <g data-part="sign-minus" id="proof-5-5--sc-opamp-supply-r1-medium-thick--sc-opamp-supply-r1-medium-thick--sign-minus" inkscape:label="sign-minus">
+      <path d="M-13.27768-8.53578H-9.48413" fill="none" />
+      <desc>Inverting input mark</desc>
+    </g>
+    <g data-part="lead-supply-plus" id="proof-5-5--sc-opamp-supply-r1-medium-thick--sc-opamp-supply-r1-medium-thick--lead-supply-plus" inkscape:label="lead-supply-plus">
+      <path d="M0 9.48413V17.07156" fill="none" />
+      <desc>Positive supply lead</desc>
+    </g>
+    <g data-part="lead-supply-minus" id="proof-5-5--sc-opamp-supply-r1-medium-thick--sc-opamp-supply-r1-medium-thick--lead-supply-minus" inkscape:label="lead-supply-minus">
+      <path d="M0-9.48413V-17.07156" fill="none" />
+      <desc>Negative supply lead</desc>
+    </g>
+  </g>
+  <circle cx="178.0" cy="156.0" r="0.14" fill="#2d69a5" />
+  <circle cx="178.0" cy="162.0" r="0.14" fill="#2d69a5" />
+  <circle cx="196.0" cy="159.0" r="0.14" fill="#2d69a5" />
+  <circle cx="187.0" cy="153.0" r="0.14" fill="#2d69a5" />
+  <circle cx="187.0" cy="165.0" r="0.14" fill="#2d69a5" />
+  <text x="4" y="182" font-family="Arial, sans-serif" font-size="2.5" fill="#222">Large</text>
+  <text x="4" y="186" font-family="Arial, sans-serif" font-size="2.1" fill="#222">Thin</text>
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M29,173v20" />
+    <path d="M30,173v20" />
+    <path d="M31,173v20" />
+    <path d="M32,173v20" />
+    <path d="M33,173v20" />
+    <path d="M34,173v20" />
+    <path d="M35,173v20" />
+    <path d="M36,173v20" />
+    <path d="M37,173v20" />
+    <path d="M38,173v20" />
+    <path d="M39,173v20" />
+    <path d="M40,173v20" />
+    <path d="M41,173v20" />
+    <path d="M42,173v20" />
+    <path d="M43,173v20" />
+    <path d="M44,173v20" />
+    <path d="M45,173v20" />
+    <path d="M46,173v20" />
+    <path d="M47,173v20" />
+    <path d="M48,173v20" />
+    <path d="M49,173v20" />
+    <path d="M50,173v20" />
+    <path d="M51,173v20" />
+    <path d="M52,173v20" />
+    <path d="M53,173v20" />
+    <path d="M54,173v20" />
+    <path d="M55,173v20" />
+    <path d="M29,173h26" />
+    <path d="M29,174h26" />
+    <path d="M29,175h26" />
+    <path d="M29,176h26" />
+    <path d="M29,177h26" />
+    <path d="M29,178h26" />
+    <path d="M29,179h26" />
+    <path d="M29,180h26" />
+    <path d="M29,181h26" />
+    <path d="M29,182h26" />
+    <path d="M29,183h26" />
+    <path d="M29,184h26" />
+    <path d="M29,185h26" />
+    <path d="M29,186h26" />
+    <path d="M29,187h26" />
+    <path d="M29,188h26" />
+    <path d="M29,189h26" />
+    <path d="M29,190h26" />
+    <path d="M29,191h26" />
+    <path d="M29,192h26" />
+    <path d="M29,193h26" />
+  </g>
+  <g id="proof-6-0--sc-resistor-eu-r1-large-thin--sc-resistor-eu-r1-large-thin" inkscape:label="EU resistor / large / thin" data-symbol="resistor-eu" data-revision="1" data-size="large" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(55.154703391666665,205.2417005) scale(0.35277777777777775) translate(-37.288923,-63.04734)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-6-0--sc-resistor-eu-r1-large-thin--sc-resistor-eu-r1-large-thin--body" inkscape:label="body">
+      <path d="M-17.78282-5.9276V5.9276H17.78282V-5.9276ZM17.78282 5.9276" fill="none" />
+      <desc>Rectangular resistor body</desc>
+    </g>
+    <g data-part="lead-a" id="proof-6-0--sc-resistor-eu-r1-large-thin--sc-resistor-eu-r1-large-thin--lead-a" inkscape:label="lead-a">
+      <path d="M-28.4526 0H-17.78282" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="lead-b" id="proof-6-0--sc-resistor-eu-r1-large-thin--sc-resistor-eu-r1-large-thin--lead-b" inkscape:label="lead-b">
+      <path d="M17.78282 0H28.4526" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="32.0" cy="183.0" r="0.14" fill="#2d69a5" />
+  <circle cx="52.0" cy="183.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M58,173v20" />
+    <path d="M59,173v20" />
+    <path d="M60,173v20" />
+    <path d="M61,173v20" />
+    <path d="M62,173v20" />
+    <path d="M63,173v20" />
+    <path d="M64,173v20" />
+    <path d="M65,173v20" />
+    <path d="M66,173v20" />
+    <path d="M67,173v20" />
+    <path d="M68,173v20" />
+    <path d="M69,173v20" />
+    <path d="M70,173v20" />
+    <path d="M71,173v20" />
+    <path d="M72,173v20" />
+    <path d="M73,173v20" />
+    <path d="M74,173v20" />
+    <path d="M75,173v20" />
+    <path d="M76,173v20" />
+    <path d="M77,173v20" />
+    <path d="M78,173v20" />
+    <path d="M79,173v20" />
+    <path d="M80,173v20" />
+    <path d="M81,173v20" />
+    <path d="M82,173v20" />
+    <path d="M83,173v20" />
+    <path d="M84,173v20" />
+    <path d="M58,173h26" />
+    <path d="M58,174h26" />
+    <path d="M58,175h26" />
+    <path d="M58,176h26" />
+    <path d="M58,177h26" />
+    <path d="M58,178h26" />
+    <path d="M58,179h26" />
+    <path d="M58,180h26" />
+    <path d="M58,181h26" />
+    <path d="M58,182h26" />
+    <path d="M58,183h26" />
+    <path d="M58,184h26" />
+    <path d="M58,185h26" />
+    <path d="M58,186h26" />
+    <path d="M58,187h26" />
+    <path d="M58,188h26" />
+    <path d="M58,189h26" />
+    <path d="M58,190h26" />
+    <path d="M58,191h26" />
+    <path d="M58,192h26" />
+    <path d="M58,193h26" />
+  </g>
+  <g id="proof-6-1--sc-resistor-us-r1-large-thin--sc-resistor-us-r1-large-thin" inkscape:label="US resistor / large / thin" data-symbol="resistor-us" data-revision="1" data-size="large" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(84.15470339166666,205.2417005) scale(0.35277777777777775) translate(-37.288923,-63.04734)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="proof-6-1--sc-resistor-us-r1-large-thin--sc-resistor-us-r1-large-thin--lead-a" inkscape:label="lead-a">
+      <path d="M-28.4526 0H-17.78282" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="body" id="proof-6-1--sc-resistor-us-r1-large-thin--sc-resistor-us-r1-large-thin--body" inkscape:label="body">
+      <path d="M-17.78282 0L-14.819 5.9276L-8.89139-5.9276L-2.96378 5.9276L2.96378-5.9276L8.89139 5.9276L14.819-5.9276L17.78282 0" fill="none" />
+      <desc>Zigzag body</desc>
+    </g>
+    <g data-part="lead-b" id="proof-6-1--sc-resistor-us-r1-large-thin--sc-resistor-us-r1-large-thin--lead-b" inkscape:label="lead-b">
+      <path d="M17.78282 0H28.4526" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="61.0" cy="183.0" r="0.14" fill="#2d69a5" />
+  <circle cx="81.0" cy="183.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M87,173v20" />
+    <path d="M88,173v20" />
+    <path d="M89,173v20" />
+    <path d="M90,173v20" />
+    <path d="M91,173v20" />
+    <path d="M92,173v20" />
+    <path d="M93,173v20" />
+    <path d="M94,173v20" />
+    <path d="M95,173v20" />
+    <path d="M96,173v20" />
+    <path d="M97,173v20" />
+    <path d="M98,173v20" />
+    <path d="M99,173v20" />
+    <path d="M100,173v20" />
+    <path d="M101,173v20" />
+    <path d="M102,173v20" />
+    <path d="M103,173v20" />
+    <path d="M104,173v20" />
+    <path d="M105,173v20" />
+    <path d="M106,173v20" />
+    <path d="M107,173v20" />
+    <path d="M108,173v20" />
+    <path d="M109,173v20" />
+    <path d="M110,173v20" />
+    <path d="M111,173v20" />
+    <path d="M112,173v20" />
+    <path d="M113,173v20" />
+    <path d="M87,173h26" />
+    <path d="M87,174h26" />
+    <path d="M87,175h26" />
+    <path d="M87,176h26" />
+    <path d="M87,177h26" />
+    <path d="M87,178h26" />
+    <path d="M87,179h26" />
+    <path d="M87,180h26" />
+    <path d="M87,181h26" />
+    <path d="M87,182h26" />
+    <path d="M87,183h26" />
+    <path d="M87,184h26" />
+    <path d="M87,185h26" />
+    <path d="M87,186h26" />
+    <path d="M87,187h26" />
+    <path d="M87,188h26" />
+    <path d="M87,189h26" />
+    <path d="M87,190h26" />
+    <path d="M87,191h26" />
+    <path d="M87,192h26" />
+    <path d="M87,193h26" />
+  </g>
+  <g id="proof-6-2--sc-inductor-coil-r1-large-thin--sc-inductor-coil-r1-large-thin" inkscape:label="Coil inductor / large / thin" data-symbol="inductor-coil" data-revision="1" data-size="large" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(113.15470339166666,204.82504454444444) scale(0.35277777777777775) translate(-37.288923,-61.866268)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="proof-6-2--sc-inductor-coil-r1-large-thin--sc-inductor-coil-r1-large-thin--lead-a" inkscape:label="lead-a">
+      <path d="M-28.4526 0H-17.78282" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="body" id="proof-6-2--sc-inductor-coil-r1-large-thin--sc-inductor-coil-r1-large-thin--body" inkscape:label="body">
+      <path d="M-17.78282 0C-17.78282 3.9285-15.79245 7.1131-13.33716 7.1131S-8.8915 3.9285-8.8915 0C-8.8915 3.9285-6.90112 7.1131-4.44583 7.1131S-.00017 3.9285-.00017 0C-.00017 3.9285 1.9902 7.1131 4.4455 7.1131C6.90079 7.1131 8.89116 3.9285 8.89116 0C8.89116 3.9285 10.88153 7.1131 13.33682 7.1131S17.78249 3.9285 17.78249 0" fill="none" />
+      <desc>Four coil half-turns</desc>
+    </g>
+    <g data-part="lead-b" id="proof-6-2--sc-inductor-coil-r1-large-thin--sc-inductor-coil-r1-large-thin--lead-b" inkscape:label="lead-b">
+      <path d="M17.78282 0H28.4526" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="90.0" cy="183.0" r="0.14" fill="#2d69a5" />
+  <circle cx="110.0" cy="183.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M116,173v20" />
+    <path d="M117,173v20" />
+    <path d="M118,173v20" />
+    <path d="M119,173v20" />
+    <path d="M120,173v20" />
+    <path d="M121,173v20" />
+    <path d="M122,173v20" />
+    <path d="M123,173v20" />
+    <path d="M124,173v20" />
+    <path d="M125,173v20" />
+    <path d="M126,173v20" />
+    <path d="M127,173v20" />
+    <path d="M128,173v20" />
+    <path d="M129,173v20" />
+    <path d="M130,173v20" />
+    <path d="M131,173v20" />
+    <path d="M132,173v20" />
+    <path d="M133,173v20" />
+    <path d="M134,173v20" />
+    <path d="M135,173v20" />
+    <path d="M136,173v20" />
+    <path d="M137,173v20" />
+    <path d="M138,173v20" />
+    <path d="M139,173v20" />
+    <path d="M140,173v20" />
+    <path d="M141,173v20" />
+    <path d="M142,173v20" />
+    <path d="M116,173h26" />
+    <path d="M116,174h26" />
+    <path d="M116,175h26" />
+    <path d="M116,176h26" />
+    <path d="M116,177h26" />
+    <path d="M116,178h26" />
+    <path d="M116,179h26" />
+    <path d="M116,180h26" />
+    <path d="M116,181h26" />
+    <path d="M116,182h26" />
+    <path d="M116,183h26" />
+    <path d="M116,184h26" />
+    <path d="M116,185h26" />
+    <path d="M116,186h26" />
+    <path d="M116,187h26" />
+    <path d="M116,188h26" />
+    <path d="M116,189h26" />
+    <path d="M116,190h26" />
+    <path d="M116,191h26" />
+    <path d="M116,192h26" />
+    <path d="M116,193h26" />
+  </g>
+  <g id="proof-6-3--sc-capacitor-r1-large-thin--sc-capacitor-r1-large-thin" inkscape:label="Capacitor / large / thin" data-symbol="capacitor" data-revision="1" data-size="large" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(147.1546771638889,203.158382975) scale(0.35277777777777775) translate(-51.462077,-57.141873)scale(0.996264,-0.996264)">
+    <g data-part="plate-a" id="proof-6-3--sc-capacitor-r1-large-thin--sc-capacitor-r1-large-thin--plate-a" inkscape:label="plate-a">
+      <path d="M-3.55656-11.85521V11.85521" fill="none" />
+      <desc>First capacitor plate</desc>
+    </g>
+    <g data-part="plate-b" id="proof-6-3--sc-capacitor-r1-large-thin--sc-capacitor-r1-large-thin--plate-b" inkscape:label="plate-b">
+      <path d="M3.55656-11.85521V11.85521" fill="none" />
+      <desc>Second capacitor plate</desc>
+    </g>
+    <g data-part="lead-a" id="proof-6-3--sc-capacitor-r1-large-thin--sc-capacitor-r1-large-thin--lead-a" inkscape:label="lead-a">
+      <path d="M-14.2263 0H-3.55656" fill="none" />
+      <desc>Lead to first plate</desc>
+    </g>
+    <g data-part="lead-b" id="proof-6-3--sc-capacitor-r1-large-thin--sc-capacitor-r1-large-thin--lead-b" inkscape:label="lead-b">
+      <path d="M3.55656 0H14.2263" fill="none" />
+      <desc>Lead to second plate</desc>
+    </g>
+  </g>
+  <circle cx="124.0" cy="183.0" r="0.14" fill="#2d69a5" />
+  <circle cx="134.0" cy="183.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M145,173v20" />
+    <path d="M146,173v20" />
+    <path d="M147,173v20" />
+    <path d="M148,173v20" />
+    <path d="M149,173v20" />
+    <path d="M150,173v20" />
+    <path d="M151,173v20" />
+    <path d="M152,173v20" />
+    <path d="M153,173v20" />
+    <path d="M154,173v20" />
+    <path d="M155,173v20" />
+    <path d="M156,173v20" />
+    <path d="M157,173v20" />
+    <path d="M158,173v20" />
+    <path d="M159,173v20" />
+    <path d="M160,173v20" />
+    <path d="M161,173v20" />
+    <path d="M162,173v20" />
+    <path d="M163,173v20" />
+    <path d="M164,173v20" />
+    <path d="M165,173v20" />
+    <path d="M166,173v20" />
+    <path d="M167,173v20" />
+    <path d="M168,173v20" />
+    <path d="M169,173v20" />
+    <path d="M170,173v20" />
+    <path d="M171,173v20" />
+    <path d="M145,173h26" />
+    <path d="M145,174h26" />
+    <path d="M145,175h26" />
+    <path d="M145,176h26" />
+    <path d="M145,177h26" />
+    <path d="M145,178h26" />
+    <path d="M145,179h26" />
+    <path d="M145,180h26" />
+    <path d="M145,181h26" />
+    <path d="M145,182h26" />
+    <path d="M145,183h26" />
+    <path d="M145,184h26" />
+    <path d="M145,185h26" />
+    <path d="M145,186h26" />
+    <path d="M145,187h26" />
+    <path d="M145,188h26" />
+    <path d="M145,189h26" />
+    <path d="M145,190h26" />
+    <path d="M145,191h26" />
+    <path d="M145,192h26" />
+    <path d="M145,193h26" />
+  </g>
+  <g id="proof-6-4--sc-opamp-r1-large-thin--sc-opamp-r1-large-thin" inkscape:label="Op-amp / large / thin" data-symbol="opamp" data-revision="1" data-size="large" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(170.15470856666667,198.9917482777778) scale(0.35277777777777775) translate(-34.454292,-45.33094)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-6-4--sc-opamp-r1-large-thin--sc-opamp-r1-large-thin--body" inkscape:label="body">
+      <path d="M-20.15382-23.71043V23.71043L20.15382 0Z" fill="none" />
+      <desc>Triangle outline</desc>
+    </g>
+    <g data-part="lead-in-plus" id="proof-6-4--sc-opamp-r1-large-thin--sc-opamp-r1-large-thin--lead-in-plus" inkscape:label="lead-in-plus">
+      <path d="M-31.29787 8.53578H-20.15382" fill="none" />
+      <desc>Non-inverting input lead</desc>
+    </g>
+    <g data-part="lead-in-minus" id="proof-6-4--sc-opamp-r1-large-thin--sc-opamp-r1-large-thin--lead-in-minus" inkscape:label="lead-in-minus">
+      <path d="M-31.29787-8.53578H-20.15382" fill="none" />
+      <desc>Inverting input lead</desc>
+    </g>
+    <g data-part="lead-out" id="proof-6-4--sc-opamp-r1-large-thin--sc-opamp-r1-large-thin--lead-out" inkscape:label="lead-out">
+      <path d="M20.15382 0H31.29787" fill="none" />
+      <desc>Output lead</desc>
+    </g>
+    <g data-part="sign-plus" id="proof-6-4--sc-opamp-r1-large-thin--sc-opamp-r1-large-thin--sign-plus" inkscape:label="sign-plus">
+      <path d="M-16.5972 8.53578H-11.85521M-14.22621 6.16478V10.90677" fill="none" />
+      <desc>Non-inverting input mark</desc>
+    </g>
+    <g data-part="sign-minus" id="proof-6-4--sc-opamp-r1-large-thin--sc-opamp-r1-large-thin--sign-minus" inkscape:label="sign-minus">
+      <path d="M-16.5972-8.53578H-11.85521" fill="none" />
+      <desc>Inverting input mark</desc>
+    </g>
+  </g>
+  <circle cx="147.0" cy="180.0" r="0.14" fill="#2d69a5" />
+  <circle cx="147.0" cy="186.0" r="0.14" fill="#2d69a5" />
+  <circle cx="169.0" cy="183.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M174,173v20" />
+    <path d="M175,173v20" />
+    <path d="M176,173v20" />
+    <path d="M177,173v20" />
+    <path d="M178,173v20" />
+    <path d="M179,173v20" />
+    <path d="M180,173v20" />
+    <path d="M181,173v20" />
+    <path d="M182,173v20" />
+    <path d="M183,173v20" />
+    <path d="M184,173v20" />
+    <path d="M185,173v20" />
+    <path d="M186,173v20" />
+    <path d="M187,173v20" />
+    <path d="M188,173v20" />
+    <path d="M189,173v20" />
+    <path d="M190,173v20" />
+    <path d="M191,173v20" />
+    <path d="M192,173v20" />
+    <path d="M193,173v20" />
+    <path d="M194,173v20" />
+    <path d="M195,173v20" />
+    <path d="M196,173v20" />
+    <path d="M197,173v20" />
+    <path d="M198,173v20" />
+    <path d="M199,173v20" />
+    <path d="M200,173v20" />
+    <path d="M174,173h26" />
+    <path d="M174,174h26" />
+    <path d="M174,175h26" />
+    <path d="M174,176h26" />
+    <path d="M174,177h26" />
+    <path d="M174,178h26" />
+    <path d="M174,179h26" />
+    <path d="M174,180h26" />
+    <path d="M174,181h26" />
+    <path d="M174,182h26" />
+    <path d="M174,183h26" />
+    <path d="M174,184h26" />
+    <path d="M174,185h26" />
+    <path d="M174,186h26" />
+    <path d="M174,187h26" />
+    <path d="M174,188h26" />
+    <path d="M174,189h26" />
+    <path d="M174,190h26" />
+    <path d="M174,191h26" />
+    <path d="M174,192h26" />
+    <path d="M174,193h26" />
+  </g>
+  <g id="proof-6-5--sc-opamp-supply-r1-large-thin--sc-opamp-supply-r1-large-thin" inkscape:label="Op-amp with supply pins / large / thin" data-symbol="opamp-supply" data-revision="1" data-size="large" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(199.15470856666667,198.9917482777778) scale(0.35277777777777775) translate(-34.454292,-45.33094)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-6-5--sc-opamp-supply-r1-large-thin--sc-opamp-supply-r1-large-thin--body" inkscape:label="body">
+      <path d="M-20.15382-23.71043V23.71043L20.15382 0Z" fill="none" />
+      <desc>Triangle outline</desc>
+    </g>
+    <g data-part="lead-in-plus" id="proof-6-5--sc-opamp-supply-r1-large-thin--sc-opamp-supply-r1-large-thin--lead-in-plus" inkscape:label="lead-in-plus">
+      <path d="M-31.29787 8.53578H-20.15382" fill="none" />
+      <desc>Non-inverting input lead</desc>
+    </g>
+    <g data-part="lead-in-minus" id="proof-6-5--sc-opamp-supply-r1-large-thin--sc-opamp-supply-r1-large-thin--lead-in-minus" inkscape:label="lead-in-minus">
+      <path d="M-31.29787-8.53578H-20.15382" fill="none" />
+      <desc>Inverting input lead</desc>
+    </g>
+    <g data-part="lead-out" id="proof-6-5--sc-opamp-supply-r1-large-thin--sc-opamp-supply-r1-large-thin--lead-out" inkscape:label="lead-out">
+      <path d="M20.15382 0H31.29787" fill="none" />
+      <desc>Output lead</desc>
+    </g>
+    <g data-part="sign-plus" id="proof-6-5--sc-opamp-supply-r1-large-thin--sc-opamp-supply-r1-large-thin--sign-plus" inkscape:label="sign-plus">
+      <path d="M-16.5972 8.53578H-11.85521M-14.22621 6.16478V10.90677" fill="none" />
+      <desc>Non-inverting input mark</desc>
+    </g>
+    <g data-part="sign-minus" id="proof-6-5--sc-opamp-supply-r1-large-thin--sc-opamp-supply-r1-large-thin--sign-minus" inkscape:label="sign-minus">
+      <path d="M-16.5972-8.53578H-11.85521" fill="none" />
+      <desc>Inverting input mark</desc>
+    </g>
+    <g data-part="lead-supply-plus" id="proof-6-5--sc-opamp-supply-r1-large-thin--sc-opamp-supply-r1-large-thin--lead-supply-plus" inkscape:label="lead-supply-plus">
+      <path d="M0 11.85521V19.91682" fill="none" />
+      <desc>Positive supply lead</desc>
+    </g>
+    <g data-part="lead-supply-minus" id="proof-6-5--sc-opamp-supply-r1-large-thin--sc-opamp-supply-r1-large-thin--lead-supply-minus" inkscape:label="lead-supply-minus">
+      <path d="M0-11.85521V-19.91682" fill="none" />
+      <desc>Negative supply lead</desc>
+    </g>
+  </g>
+  <circle cx="176.0" cy="180.0" r="0.14" fill="#2d69a5" />
+  <circle cx="176.0" cy="186.0" r="0.14" fill="#2d69a5" />
+  <circle cx="198.0" cy="183.0" r="0.14" fill="#2d69a5" />
+  <circle cx="187.0" cy="176.0" r="0.14" fill="#2d69a5" />
+  <circle cx="187.0" cy="190.0" r="0.14" fill="#2d69a5" />
+  <text x="4" y="206" font-family="Arial, sans-serif" font-size="2.5" fill="#222">Large</text>
+  <text x="4" y="210" font-family="Arial, sans-serif" font-size="2.1" fill="#222">Medium</text>
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M29,197v20" />
+    <path d="M30,197v20" />
+    <path d="M31,197v20" />
+    <path d="M32,197v20" />
+    <path d="M33,197v20" />
+    <path d="M34,197v20" />
+    <path d="M35,197v20" />
+    <path d="M36,197v20" />
+    <path d="M37,197v20" />
+    <path d="M38,197v20" />
+    <path d="M39,197v20" />
+    <path d="M40,197v20" />
+    <path d="M41,197v20" />
+    <path d="M42,197v20" />
+    <path d="M43,197v20" />
+    <path d="M44,197v20" />
+    <path d="M45,197v20" />
+    <path d="M46,197v20" />
+    <path d="M47,197v20" />
+    <path d="M48,197v20" />
+    <path d="M49,197v20" />
+    <path d="M50,197v20" />
+    <path d="M51,197v20" />
+    <path d="M52,197v20" />
+    <path d="M53,197v20" />
+    <path d="M54,197v20" />
+    <path d="M55,197v20" />
+    <path d="M29,197h26" />
+    <path d="M29,198h26" />
+    <path d="M29,199h26" />
+    <path d="M29,200h26" />
+    <path d="M29,201h26" />
+    <path d="M29,202h26" />
+    <path d="M29,203h26" />
+    <path d="M29,204h26" />
+    <path d="M29,205h26" />
+    <path d="M29,206h26" />
+    <path d="M29,207h26" />
+    <path d="M29,208h26" />
+    <path d="M29,209h26" />
+    <path d="M29,210h26" />
+    <path d="M29,211h26" />
+    <path d="M29,212h26" />
+    <path d="M29,213h26" />
+    <path d="M29,214h26" />
+    <path d="M29,215h26" />
+    <path d="M29,216h26" />
+    <path d="M29,217h26" />
+  </g>
+  <g id="proof-7-0--sc-resistor-eu-r1-large-medium--sc-resistor-eu-r1-large-medium" inkscape:label="EU resistor / large / medium" data-symbol="resistor-eu" data-revision="1" data-size="large" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(55.12970203055555,229.21669878611112) scale(0.35277777777777775) translate(-37.218053,-62.976469)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-7-0--sc-resistor-eu-r1-large-medium--sc-resistor-eu-r1-large-medium--body" inkscape:label="body">
+      <path d="M-17.78282-5.9276V5.9276H17.78282V-5.9276ZM17.78282 5.9276" fill="none" />
+      <desc>Rectangular resistor body</desc>
+    </g>
+    <g data-part="lead-a" id="proof-7-0--sc-resistor-eu-r1-large-medium--sc-resistor-eu-r1-large-medium--lead-a" inkscape:label="lead-a">
+      <path d="M-28.4526 0H-17.78282" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="lead-b" id="proof-7-0--sc-resistor-eu-r1-large-medium--sc-resistor-eu-r1-large-medium--lead-b" inkscape:label="lead-b">
+      <path d="M17.78282 0H28.4526" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="32.0" cy="207.0" r="0.14" fill="#2d69a5" />
+  <circle cx="52.0" cy="207.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M58,197v20" />
+    <path d="M59,197v20" />
+    <path d="M60,197v20" />
+    <path d="M61,197v20" />
+    <path d="M62,197v20" />
+    <path d="M63,197v20" />
+    <path d="M64,197v20" />
+    <path d="M65,197v20" />
+    <path d="M66,197v20" />
+    <path d="M67,197v20" />
+    <path d="M68,197v20" />
+    <path d="M69,197v20" />
+    <path d="M70,197v20" />
+    <path d="M71,197v20" />
+    <path d="M72,197v20" />
+    <path d="M73,197v20" />
+    <path d="M74,197v20" />
+    <path d="M75,197v20" />
+    <path d="M76,197v20" />
+    <path d="M77,197v20" />
+    <path d="M78,197v20" />
+    <path d="M79,197v20" />
+    <path d="M80,197v20" />
+    <path d="M81,197v20" />
+    <path d="M82,197v20" />
+    <path d="M83,197v20" />
+    <path d="M84,197v20" />
+    <path d="M58,197h26" />
+    <path d="M58,198h26" />
+    <path d="M58,199h26" />
+    <path d="M58,200h26" />
+    <path d="M58,201h26" />
+    <path d="M58,202h26" />
+    <path d="M58,203h26" />
+    <path d="M58,204h26" />
+    <path d="M58,205h26" />
+    <path d="M58,206h26" />
+    <path d="M58,207h26" />
+    <path d="M58,208h26" />
+    <path d="M58,209h26" />
+    <path d="M58,210h26" />
+    <path d="M58,211h26" />
+    <path d="M58,212h26" />
+    <path d="M58,213h26" />
+    <path d="M58,214h26" />
+    <path d="M58,215h26" />
+    <path d="M58,216h26" />
+    <path d="M58,217h26" />
+  </g>
+  <g id="proof-7-1--sc-resistor-us-r1-large-medium--sc-resistor-us-r1-large-medium" inkscape:label="US resistor / large / medium" data-symbol="resistor-us" data-revision="1" data-size="large" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(84.12970203055555,229.21669878611112) scale(0.35277777777777775) translate(-37.218053,-62.976469)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="proof-7-1--sc-resistor-us-r1-large-medium--sc-resistor-us-r1-large-medium--lead-a" inkscape:label="lead-a">
+      <path d="M-28.4526 0H-17.78282" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="body" id="proof-7-1--sc-resistor-us-r1-large-medium--sc-resistor-us-r1-large-medium--body" inkscape:label="body">
+      <path d="M-17.78282 0L-14.819 5.9276L-8.89139-5.9276L-2.96378 5.9276L2.96378-5.9276L8.89139 5.9276L14.819-5.9276L17.78282 0" fill="none" />
+      <desc>Zigzag body</desc>
+    </g>
+    <g data-part="lead-b" id="proof-7-1--sc-resistor-us-r1-large-medium--sc-resistor-us-r1-large-medium--lead-b" inkscape:label="lead-b">
+      <path d="M17.78282 0H28.4526" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="61.0" cy="207.0" r="0.14" fill="#2d69a5" />
+  <circle cx="81.0" cy="207.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M87,197v20" />
+    <path d="M88,197v20" />
+    <path d="M89,197v20" />
+    <path d="M90,197v20" />
+    <path d="M91,197v20" />
+    <path d="M92,197v20" />
+    <path d="M93,197v20" />
+    <path d="M94,197v20" />
+    <path d="M95,197v20" />
+    <path d="M96,197v20" />
+    <path d="M97,197v20" />
+    <path d="M98,197v20" />
+    <path d="M99,197v20" />
+    <path d="M100,197v20" />
+    <path d="M101,197v20" />
+    <path d="M102,197v20" />
+    <path d="M103,197v20" />
+    <path d="M104,197v20" />
+    <path d="M105,197v20" />
+    <path d="M106,197v20" />
+    <path d="M107,197v20" />
+    <path d="M108,197v20" />
+    <path d="M109,197v20" />
+    <path d="M110,197v20" />
+    <path d="M111,197v20" />
+    <path d="M112,197v20" />
+    <path d="M113,197v20" />
+    <path d="M87,197h26" />
+    <path d="M87,198h26" />
+    <path d="M87,199h26" />
+    <path d="M87,200h26" />
+    <path d="M87,201h26" />
+    <path d="M87,202h26" />
+    <path d="M87,203h26" />
+    <path d="M87,204h26" />
+    <path d="M87,205h26" />
+    <path d="M87,206h26" />
+    <path d="M87,207h26" />
+    <path d="M87,208h26" />
+    <path d="M87,209h26" />
+    <path d="M87,210h26" />
+    <path d="M87,211h26" />
+    <path d="M87,212h26" />
+    <path d="M87,213h26" />
+    <path d="M87,214h26" />
+    <path d="M87,215h26" />
+    <path d="M87,216h26" />
+    <path d="M87,217h26" />
+  </g>
+  <g id="proof-7-2--sc-inductor-coil-r1-large-medium--sc-inductor-coil-r1-large-medium" inkscape:label="Coil inductor / large / medium" data-symbol="inductor-coil" data-revision="1" data-size="large" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(113.12970203055555,228.80004283055555) scale(0.35277777777777775) translate(-37.218053,-61.795397)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="proof-7-2--sc-inductor-coil-r1-large-medium--sc-inductor-coil-r1-large-medium--lead-a" inkscape:label="lead-a">
+      <path d="M-28.4526 0H-17.78282" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="body" id="proof-7-2--sc-inductor-coil-r1-large-medium--sc-inductor-coil-r1-large-medium--body" inkscape:label="body">
+      <path d="M-17.78282 0C-17.78282 3.9285-15.79245 7.1131-13.33716 7.1131S-8.8915 3.9285-8.8915 0C-8.8915 3.9285-6.90112 7.1131-4.44583 7.1131S-.00017 3.9285-.00017 0C-.00017 3.9285 1.9902 7.1131 4.4455 7.1131C6.90079 7.1131 8.89116 3.9285 8.89116 0C8.89116 3.9285 10.88153 7.1131 13.33682 7.1131S17.78249 3.9285 17.78249 0" fill="none" />
+      <desc>Four coil half-turns</desc>
+    </g>
+    <g data-part="lead-b" id="proof-7-2--sc-inductor-coil-r1-large-medium--sc-inductor-coil-r1-large-medium--lead-b" inkscape:label="lead-b">
+      <path d="M17.78282 0H28.4526" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="90.0" cy="207.0" r="0.14" fill="#2d69a5" />
+  <circle cx="110.0" cy="207.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M116,197v20" />
+    <path d="M117,197v20" />
+    <path d="M118,197v20" />
+    <path d="M119,197v20" />
+    <path d="M120,197v20" />
+    <path d="M121,197v20" />
+    <path d="M122,197v20" />
+    <path d="M123,197v20" />
+    <path d="M124,197v20" />
+    <path d="M125,197v20" />
+    <path d="M126,197v20" />
+    <path d="M127,197v20" />
+    <path d="M128,197v20" />
+    <path d="M129,197v20" />
+    <path d="M130,197v20" />
+    <path d="M131,197v20" />
+    <path d="M132,197v20" />
+    <path d="M133,197v20" />
+    <path d="M134,197v20" />
+    <path d="M135,197v20" />
+    <path d="M136,197v20" />
+    <path d="M137,197v20" />
+    <path d="M138,197v20" />
+    <path d="M139,197v20" />
+    <path d="M140,197v20" />
+    <path d="M141,197v20" />
+    <path d="M142,197v20" />
+    <path d="M116,197h26" />
+    <path d="M116,198h26" />
+    <path d="M116,199h26" />
+    <path d="M116,200h26" />
+    <path d="M116,201h26" />
+    <path d="M116,202h26" />
+    <path d="M116,203h26" />
+    <path d="M116,204h26" />
+    <path d="M116,205h26" />
+    <path d="M116,206h26" />
+    <path d="M116,207h26" />
+    <path d="M116,208h26" />
+    <path d="M116,209h26" />
+    <path d="M116,210h26" />
+    <path d="M116,211h26" />
+    <path d="M116,212h26" />
+    <path d="M116,213h26" />
+    <path d="M116,214h26" />
+    <path d="M116,215h26" />
+    <path d="M116,216h26" />
+    <path d="M116,217h26" />
+  </g>
+  <g id="proof-7-3--sc-capacitor-r1-large-medium--sc-capacitor-r1-large-medium" inkscape:label="Capacitor / large / medium" data-symbol="capacitor" data-revision="1" data-size="large" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(147.12967545,227.1333816138889) scale(0.35277777777777775) translate(-51.391206,-57.071003)scale(0.996264,-0.996264)">
+    <g data-part="plate-a" id="proof-7-3--sc-capacitor-r1-large-medium--sc-capacitor-r1-large-medium--plate-a" inkscape:label="plate-a">
+      <path d="M-3.55656-11.85521V11.85521" fill="none" />
+      <desc>First capacitor plate</desc>
+    </g>
+    <g data-part="plate-b" id="proof-7-3--sc-capacitor-r1-large-medium--sc-capacitor-r1-large-medium--plate-b" inkscape:label="plate-b">
+      <path d="M3.55656-11.85521V11.85521" fill="none" />
+      <desc>Second capacitor plate</desc>
+    </g>
+    <g data-part="lead-a" id="proof-7-3--sc-capacitor-r1-large-medium--sc-capacitor-r1-large-medium--lead-a" inkscape:label="lead-a">
+      <path d="M-14.2263 0H-3.55656" fill="none" />
+      <desc>Lead to first plate</desc>
+    </g>
+    <g data-part="lead-b" id="proof-7-3--sc-capacitor-r1-large-medium--sc-capacitor-r1-large-medium--lead-b" inkscape:label="lead-b">
+      <path d="M3.55656 0H14.2263" fill="none" />
+      <desc>Lead to second plate</desc>
+    </g>
+  </g>
+  <circle cx="124.0" cy="207.0" r="0.14" fill="#2d69a5" />
+  <circle cx="134.0" cy="207.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M145,197v20" />
+    <path d="M146,197v20" />
+    <path d="M147,197v20" />
+    <path d="M148,197v20" />
+    <path d="M149,197v20" />
+    <path d="M150,197v20" />
+    <path d="M151,197v20" />
+    <path d="M152,197v20" />
+    <path d="M153,197v20" />
+    <path d="M154,197v20" />
+    <path d="M155,197v20" />
+    <path d="M156,197v20" />
+    <path d="M157,197v20" />
+    <path d="M158,197v20" />
+    <path d="M159,197v20" />
+    <path d="M160,197v20" />
+    <path d="M161,197v20" />
+    <path d="M162,197v20" />
+    <path d="M163,197v20" />
+    <path d="M164,197v20" />
+    <path d="M165,197v20" />
+    <path d="M166,197v20" />
+    <path d="M167,197v20" />
+    <path d="M168,197v20" />
+    <path d="M169,197v20" />
+    <path d="M170,197v20" />
+    <path d="M171,197v20" />
+    <path d="M145,197h26" />
+    <path d="M145,198h26" />
+    <path d="M145,199h26" />
+    <path d="M145,200h26" />
+    <path d="M145,201h26" />
+    <path d="M145,202h26" />
+    <path d="M145,203h26" />
+    <path d="M145,204h26" />
+    <path d="M145,205h26" />
+    <path d="M145,206h26" />
+    <path d="M145,207h26" />
+    <path d="M145,208h26" />
+    <path d="M145,209h26" />
+    <path d="M145,210h26" />
+    <path d="M145,211h26" />
+    <path d="M145,212h26" />
+    <path d="M145,213h26" />
+    <path d="M145,214h26" />
+    <path d="M145,215h26" />
+    <path d="M145,216h26" />
+    <path d="M145,217h26" />
+  </g>
+  <g id="proof-7-4--sc-opamp-r1-large-medium--sc-opamp-r1-large-medium" inkscape:label="Op-amp / large / medium" data-symbol="opamp" data-revision="1" data-size="large" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(170.12970720555555,222.96674656388888) scale(0.35277777777777775) translate(-34.383422,-45.260069)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-7-4--sc-opamp-r1-large-medium--sc-opamp-r1-large-medium--body" inkscape:label="body">
+      <path d="M-20.15382-23.71043V23.71043L20.15382 0Z" fill="none" />
+      <desc>Triangle outline</desc>
+    </g>
+    <g data-part="lead-in-plus" id="proof-7-4--sc-opamp-r1-large-medium--sc-opamp-r1-large-medium--lead-in-plus" inkscape:label="lead-in-plus">
+      <path d="M-31.29787 8.53578H-20.15382" fill="none" />
+      <desc>Non-inverting input lead</desc>
+    </g>
+    <g data-part="lead-in-minus" id="proof-7-4--sc-opamp-r1-large-medium--sc-opamp-r1-large-medium--lead-in-minus" inkscape:label="lead-in-minus">
+      <path d="M-31.29787-8.53578H-20.15382" fill="none" />
+      <desc>Inverting input lead</desc>
+    </g>
+    <g data-part="lead-out" id="proof-7-4--sc-opamp-r1-large-medium--sc-opamp-r1-large-medium--lead-out" inkscape:label="lead-out">
+      <path d="M20.15382 0H31.29787" fill="none" />
+      <desc>Output lead</desc>
+    </g>
+    <g data-part="sign-plus" id="proof-7-4--sc-opamp-r1-large-medium--sc-opamp-r1-large-medium--sign-plus" inkscape:label="sign-plus">
+      <path d="M-16.5972 8.53578H-11.85521M-14.22621 6.16478V10.90677" fill="none" />
+      <desc>Non-inverting input mark</desc>
+    </g>
+    <g data-part="sign-minus" id="proof-7-4--sc-opamp-r1-large-medium--sc-opamp-r1-large-medium--sign-minus" inkscape:label="sign-minus">
+      <path d="M-16.5972-8.53578H-11.85521" fill="none" />
+      <desc>Inverting input mark</desc>
+    </g>
+  </g>
+  <circle cx="147.0" cy="204.0" r="0.14" fill="#2d69a5" />
+  <circle cx="147.0" cy="210.0" r="0.14" fill="#2d69a5" />
+  <circle cx="169.0" cy="207.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M174,197v20" />
+    <path d="M175,197v20" />
+    <path d="M176,197v20" />
+    <path d="M177,197v20" />
+    <path d="M178,197v20" />
+    <path d="M179,197v20" />
+    <path d="M180,197v20" />
+    <path d="M181,197v20" />
+    <path d="M182,197v20" />
+    <path d="M183,197v20" />
+    <path d="M184,197v20" />
+    <path d="M185,197v20" />
+    <path d="M186,197v20" />
+    <path d="M187,197v20" />
+    <path d="M188,197v20" />
+    <path d="M189,197v20" />
+    <path d="M190,197v20" />
+    <path d="M191,197v20" />
+    <path d="M192,197v20" />
+    <path d="M193,197v20" />
+    <path d="M194,197v20" />
+    <path d="M195,197v20" />
+    <path d="M196,197v20" />
+    <path d="M197,197v20" />
+    <path d="M198,197v20" />
+    <path d="M199,197v20" />
+    <path d="M200,197v20" />
+    <path d="M174,197h26" />
+    <path d="M174,198h26" />
+    <path d="M174,199h26" />
+    <path d="M174,200h26" />
+    <path d="M174,201h26" />
+    <path d="M174,202h26" />
+    <path d="M174,203h26" />
+    <path d="M174,204h26" />
+    <path d="M174,205h26" />
+    <path d="M174,206h26" />
+    <path d="M174,207h26" />
+    <path d="M174,208h26" />
+    <path d="M174,209h26" />
+    <path d="M174,210h26" />
+    <path d="M174,211h26" />
+    <path d="M174,212h26" />
+    <path d="M174,213h26" />
+    <path d="M174,214h26" />
+    <path d="M174,215h26" />
+    <path d="M174,216h26" />
+    <path d="M174,217h26" />
+  </g>
+  <g id="proof-7-5--sc-opamp-supply-r1-large-medium--sc-opamp-supply-r1-large-medium" inkscape:label="Op-amp with supply pins / large / medium" data-symbol="opamp-supply" data-revision="1" data-size="large" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(199.12970720555555,222.96674656388888) scale(0.35277777777777775) translate(-34.383422,-45.260069)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-7-5--sc-opamp-supply-r1-large-medium--sc-opamp-supply-r1-large-medium--body" inkscape:label="body">
+      <path d="M-20.15382-23.71043V23.71043L20.15382 0Z" fill="none" />
+      <desc>Triangle outline</desc>
+    </g>
+    <g data-part="lead-in-plus" id="proof-7-5--sc-opamp-supply-r1-large-medium--sc-opamp-supply-r1-large-medium--lead-in-plus" inkscape:label="lead-in-plus">
+      <path d="M-31.29787 8.53578H-20.15382" fill="none" />
+      <desc>Non-inverting input lead</desc>
+    </g>
+    <g data-part="lead-in-minus" id="proof-7-5--sc-opamp-supply-r1-large-medium--sc-opamp-supply-r1-large-medium--lead-in-minus" inkscape:label="lead-in-minus">
+      <path d="M-31.29787-8.53578H-20.15382" fill="none" />
+      <desc>Inverting input lead</desc>
+    </g>
+    <g data-part="lead-out" id="proof-7-5--sc-opamp-supply-r1-large-medium--sc-opamp-supply-r1-large-medium--lead-out" inkscape:label="lead-out">
+      <path d="M20.15382 0H31.29787" fill="none" />
+      <desc>Output lead</desc>
+    </g>
+    <g data-part="sign-plus" id="proof-7-5--sc-opamp-supply-r1-large-medium--sc-opamp-supply-r1-large-medium--sign-plus" inkscape:label="sign-plus">
+      <path d="M-16.5972 8.53578H-11.85521M-14.22621 6.16478V10.90677" fill="none" />
+      <desc>Non-inverting input mark</desc>
+    </g>
+    <g data-part="sign-minus" id="proof-7-5--sc-opamp-supply-r1-large-medium--sc-opamp-supply-r1-large-medium--sign-minus" inkscape:label="sign-minus">
+      <path d="M-16.5972-8.53578H-11.85521" fill="none" />
+      <desc>Inverting input mark</desc>
+    </g>
+    <g data-part="lead-supply-plus" id="proof-7-5--sc-opamp-supply-r1-large-medium--sc-opamp-supply-r1-large-medium--lead-supply-plus" inkscape:label="lead-supply-plus">
+      <path d="M0 11.85521V19.91682" fill="none" />
+      <desc>Positive supply lead</desc>
+    </g>
+    <g data-part="lead-supply-minus" id="proof-7-5--sc-opamp-supply-r1-large-medium--sc-opamp-supply-r1-large-medium--lead-supply-minus" inkscape:label="lead-supply-minus">
+      <path d="M0-11.85521V-19.91682" fill="none" />
+      <desc>Negative supply lead</desc>
+    </g>
+  </g>
+  <circle cx="176.0" cy="204.0" r="0.14" fill="#2d69a5" />
+  <circle cx="176.0" cy="210.0" r="0.14" fill="#2d69a5" />
+  <circle cx="198.0" cy="207.0" r="0.14" fill="#2d69a5" />
+  <circle cx="187.0" cy="200.0" r="0.14" fill="#2d69a5" />
+  <circle cx="187.0" cy="214.0" r="0.14" fill="#2d69a5" />
+  <text x="4" y="230" font-family="Arial, sans-serif" font-size="2.5" fill="#222">Large</text>
+  <text x="4" y="234" font-family="Arial, sans-serif" font-size="2.1" fill="#222">Thick</text>
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M29,221v20" />
+    <path d="M30,221v20" />
+    <path d="M31,221v20" />
+    <path d="M32,221v20" />
+    <path d="M33,221v20" />
+    <path d="M34,221v20" />
+    <path d="M35,221v20" />
+    <path d="M36,221v20" />
+    <path d="M37,221v20" />
+    <path d="M38,221v20" />
+    <path d="M39,221v20" />
+    <path d="M40,221v20" />
+    <path d="M41,221v20" />
+    <path d="M42,221v20" />
+    <path d="M43,221v20" />
+    <path d="M44,221v20" />
+    <path d="M45,221v20" />
+    <path d="M46,221v20" />
+    <path d="M47,221v20" />
+    <path d="M48,221v20" />
+    <path d="M49,221v20" />
+    <path d="M50,221v20" />
+    <path d="M51,221v20" />
+    <path d="M52,221v20" />
+    <path d="M53,221v20" />
+    <path d="M54,221v20" />
+    <path d="M55,221v20" />
+    <path d="M29,221h26" />
+    <path d="M29,222h26" />
+    <path d="M29,223h26" />
+    <path d="M29,224h26" />
+    <path d="M29,225h26" />
+    <path d="M29,226h26" />
+    <path d="M29,227h26" />
+    <path d="M29,228h26" />
+    <path d="M29,229h26" />
+    <path d="M29,230h26" />
+    <path d="M29,231h26" />
+    <path d="M29,232h26" />
+    <path d="M29,233h26" />
+    <path d="M29,234h26" />
+    <path d="M29,235h26" />
+    <path d="M29,236h26" />
+    <path d="M29,237h26" />
+    <path d="M29,238h26" />
+    <path d="M29,239h26" />
+    <path d="M29,240h26" />
+    <path d="M29,241h26" />
+  </g>
+  <g id="proof-8-0--sc-resistor-eu-r1-large-thick--sc-resistor-eu-r1-large-thick" inkscape:label="EU resistor / large / thick" data-symbol="resistor-eu" data-revision="1" data-size="large" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(55.079698602777775,253.16669571111112) scale(0.35277777777777775) translate(-37.076311,-62.834728)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-8-0--sc-resistor-eu-r1-large-thick--sc-resistor-eu-r1-large-thick--body" inkscape:label="body">
+      <path d="M-17.78282-5.9276V5.9276H17.78282V-5.9276ZM17.78282 5.9276" fill="none" />
+      <desc>Rectangular resistor body</desc>
+    </g>
+    <g data-part="lead-a" id="proof-8-0--sc-resistor-eu-r1-large-thick--sc-resistor-eu-r1-large-thick--lead-a" inkscape:label="lead-a">
+      <path d="M-28.4526 0H-17.78282" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="lead-b" id="proof-8-0--sc-resistor-eu-r1-large-thick--sc-resistor-eu-r1-large-thick--lead-b" inkscape:label="lead-b">
+      <path d="M17.78282 0H28.4526" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="32.0" cy="231.0" r="0.14" fill="#2d69a5" />
+  <circle cx="52.0" cy="231.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M58,221v20" />
+    <path d="M59,221v20" />
+    <path d="M60,221v20" />
+    <path d="M61,221v20" />
+    <path d="M62,221v20" />
+    <path d="M63,221v20" />
+    <path d="M64,221v20" />
+    <path d="M65,221v20" />
+    <path d="M66,221v20" />
+    <path d="M67,221v20" />
+    <path d="M68,221v20" />
+    <path d="M69,221v20" />
+    <path d="M70,221v20" />
+    <path d="M71,221v20" />
+    <path d="M72,221v20" />
+    <path d="M73,221v20" />
+    <path d="M74,221v20" />
+    <path d="M75,221v20" />
+    <path d="M76,221v20" />
+    <path d="M77,221v20" />
+    <path d="M78,221v20" />
+    <path d="M79,221v20" />
+    <path d="M80,221v20" />
+    <path d="M81,221v20" />
+    <path d="M82,221v20" />
+    <path d="M83,221v20" />
+    <path d="M84,221v20" />
+    <path d="M58,221h26" />
+    <path d="M58,222h26" />
+    <path d="M58,223h26" />
+    <path d="M58,224h26" />
+    <path d="M58,225h26" />
+    <path d="M58,226h26" />
+    <path d="M58,227h26" />
+    <path d="M58,228h26" />
+    <path d="M58,229h26" />
+    <path d="M58,230h26" />
+    <path d="M58,231h26" />
+    <path d="M58,232h26" />
+    <path d="M58,233h26" />
+    <path d="M58,234h26" />
+    <path d="M58,235h26" />
+    <path d="M58,236h26" />
+    <path d="M58,237h26" />
+    <path d="M58,238h26" />
+    <path d="M58,239h26" />
+    <path d="M58,240h26" />
+    <path d="M58,241h26" />
+  </g>
+  <g id="proof-8-1--sc-resistor-us-r1-large-thick--sc-resistor-us-r1-large-thick" inkscape:label="US resistor / large / thick" data-symbol="resistor-us" data-revision="1" data-size="large" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(84.07969860277777,253.16669571111112) scale(0.35277777777777775) translate(-37.076311,-62.834728)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="proof-8-1--sc-resistor-us-r1-large-thick--sc-resistor-us-r1-large-thick--lead-a" inkscape:label="lead-a">
+      <path d="M-28.4526 0H-17.78282" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="body" id="proof-8-1--sc-resistor-us-r1-large-thick--sc-resistor-us-r1-large-thick--body" inkscape:label="body">
+      <path d="M-17.78282 0L-14.819 5.9276L-8.89139-5.9276L-2.96378 5.9276L2.96378-5.9276L8.89139 5.9276L14.819-5.9276L17.78282 0" fill="none" />
+      <desc>Zigzag body</desc>
+    </g>
+    <g data-part="lead-b" id="proof-8-1--sc-resistor-us-r1-large-thick--sc-resistor-us-r1-large-thick--lead-b" inkscape:label="lead-b">
+      <path d="M17.78282 0H28.4526" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="61.0" cy="231.0" r="0.14" fill="#2d69a5" />
+  <circle cx="81.0" cy="231.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M87,221v20" />
+    <path d="M88,221v20" />
+    <path d="M89,221v20" />
+    <path d="M90,221v20" />
+    <path d="M91,221v20" />
+    <path d="M92,221v20" />
+    <path d="M93,221v20" />
+    <path d="M94,221v20" />
+    <path d="M95,221v20" />
+    <path d="M96,221v20" />
+    <path d="M97,221v20" />
+    <path d="M98,221v20" />
+    <path d="M99,221v20" />
+    <path d="M100,221v20" />
+    <path d="M101,221v20" />
+    <path d="M102,221v20" />
+    <path d="M103,221v20" />
+    <path d="M104,221v20" />
+    <path d="M105,221v20" />
+    <path d="M106,221v20" />
+    <path d="M107,221v20" />
+    <path d="M108,221v20" />
+    <path d="M109,221v20" />
+    <path d="M110,221v20" />
+    <path d="M111,221v20" />
+    <path d="M112,221v20" />
+    <path d="M113,221v20" />
+    <path d="M87,221h26" />
+    <path d="M87,222h26" />
+    <path d="M87,223h26" />
+    <path d="M87,224h26" />
+    <path d="M87,225h26" />
+    <path d="M87,226h26" />
+    <path d="M87,227h26" />
+    <path d="M87,228h26" />
+    <path d="M87,229h26" />
+    <path d="M87,230h26" />
+    <path d="M87,231h26" />
+    <path d="M87,232h26" />
+    <path d="M87,233h26" />
+    <path d="M87,234h26" />
+    <path d="M87,235h26" />
+    <path d="M87,236h26" />
+    <path d="M87,237h26" />
+    <path d="M87,238h26" />
+    <path d="M87,239h26" />
+    <path d="M87,240h26" />
+    <path d="M87,241h26" />
+  </g>
+  <g id="proof-8-2--sc-inductor-coil-r1-large-thick--sc-inductor-coil-r1-large-thick" inkscape:label="Coil inductor / large / thick" data-symbol="inductor-coil" data-revision="1" data-size="large" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(113.07969860277777,252.75003975555555) scale(0.35277777777777775) translate(-37.076311,-61.653656)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="proof-8-2--sc-inductor-coil-r1-large-thick--sc-inductor-coil-r1-large-thick--lead-a" inkscape:label="lead-a">
+      <path d="M-28.4526 0H-17.78282" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="body" id="proof-8-2--sc-inductor-coil-r1-large-thick--sc-inductor-coil-r1-large-thick--body" inkscape:label="body">
+      <path d="M-17.78282 0C-17.78282 3.9285-15.79245 7.1131-13.33716 7.1131S-8.8915 3.9285-8.8915 0C-8.8915 3.9285-6.90112 7.1131-4.44583 7.1131S-.00017 3.9285-.00017 0C-.00017 3.9285 1.9902 7.1131 4.4455 7.1131C6.90079 7.1131 8.89116 3.9285 8.89116 0C8.89116 3.9285 10.88153 7.1131 13.33682 7.1131S17.78249 3.9285 17.78249 0" fill="none" />
+      <desc>Four coil half-turns</desc>
+    </g>
+    <g data-part="lead-b" id="proof-8-2--sc-inductor-coil-r1-large-thick--sc-inductor-coil-r1-large-thick--lead-b" inkscape:label="lead-b">
+      <path d="M17.78282 0H28.4526" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+  </g>
+  <circle cx="90.0" cy="231.0" r="0.14" fill="#2d69a5" />
+  <circle cx="110.0" cy="231.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M116,221v20" />
+    <path d="M117,221v20" />
+    <path d="M118,221v20" />
+    <path d="M119,221v20" />
+    <path d="M120,221v20" />
+    <path d="M121,221v20" />
+    <path d="M122,221v20" />
+    <path d="M123,221v20" />
+    <path d="M124,221v20" />
+    <path d="M125,221v20" />
+    <path d="M126,221v20" />
+    <path d="M127,221v20" />
+    <path d="M128,221v20" />
+    <path d="M129,221v20" />
+    <path d="M130,221v20" />
+    <path d="M131,221v20" />
+    <path d="M132,221v20" />
+    <path d="M133,221v20" />
+    <path d="M134,221v20" />
+    <path d="M135,221v20" />
+    <path d="M136,221v20" />
+    <path d="M137,221v20" />
+    <path d="M138,221v20" />
+    <path d="M139,221v20" />
+    <path d="M140,221v20" />
+    <path d="M141,221v20" />
+    <path d="M142,221v20" />
+    <path d="M116,221h26" />
+    <path d="M116,222h26" />
+    <path d="M116,223h26" />
+    <path d="M116,224h26" />
+    <path d="M116,225h26" />
+    <path d="M116,226h26" />
+    <path d="M116,227h26" />
+    <path d="M116,228h26" />
+    <path d="M116,229h26" />
+    <path d="M116,230h26" />
+    <path d="M116,231h26" />
+    <path d="M116,232h26" />
+    <path d="M116,233h26" />
+    <path d="M116,234h26" />
+    <path d="M116,235h26" />
+    <path d="M116,236h26" />
+    <path d="M116,237h26" />
+    <path d="M116,238h26" />
+    <path d="M116,239h26" />
+    <path d="M116,240h26" />
+    <path d="M116,241h26" />
+  </g>
+  <g id="proof-8-3--sc-capacitor-r1-large-thick--sc-capacitor-r1-large-thick" inkscape:label="Capacitor / large / thick" data-symbol="capacitor" data-revision="1" data-size="large" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(147.079672375,251.0833781861111) scale(0.35277777777777775) translate(-51.249465,-56.929261)scale(0.996264,-0.996264)">
+    <g data-part="plate-a" id="proof-8-3--sc-capacitor-r1-large-thick--sc-capacitor-r1-large-thick--plate-a" inkscape:label="plate-a">
+      <path d="M-3.55656-11.85521V11.85521" fill="none" />
+      <desc>First capacitor plate</desc>
+    </g>
+    <g data-part="plate-b" id="proof-8-3--sc-capacitor-r1-large-thick--sc-capacitor-r1-large-thick--plate-b" inkscape:label="plate-b">
+      <path d="M3.55656-11.85521V11.85521" fill="none" />
+      <desc>Second capacitor plate</desc>
+    </g>
+    <g data-part="lead-a" id="proof-8-3--sc-capacitor-r1-large-thick--sc-capacitor-r1-large-thick--lead-a" inkscape:label="lead-a">
+      <path d="M-14.2263 0H-3.55656" fill="none" />
+      <desc>Lead to first plate</desc>
+    </g>
+    <g data-part="lead-b" id="proof-8-3--sc-capacitor-r1-large-thick--sc-capacitor-r1-large-thick--lead-b" inkscape:label="lead-b">
+      <path d="M3.55656 0H14.2263" fill="none" />
+      <desc>Lead to second plate</desc>
+    </g>
+  </g>
+  <circle cx="124.0" cy="231.0" r="0.14" fill="#2d69a5" />
+  <circle cx="134.0" cy="231.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M145,221v20" />
+    <path d="M146,221v20" />
+    <path d="M147,221v20" />
+    <path d="M148,221v20" />
+    <path d="M149,221v20" />
+    <path d="M150,221v20" />
+    <path d="M151,221v20" />
+    <path d="M152,221v20" />
+    <path d="M153,221v20" />
+    <path d="M154,221v20" />
+    <path d="M155,221v20" />
+    <path d="M156,221v20" />
+    <path d="M157,221v20" />
+    <path d="M158,221v20" />
+    <path d="M159,221v20" />
+    <path d="M160,221v20" />
+    <path d="M161,221v20" />
+    <path d="M162,221v20" />
+    <path d="M163,221v20" />
+    <path d="M164,221v20" />
+    <path d="M165,221v20" />
+    <path d="M166,221v20" />
+    <path d="M167,221v20" />
+    <path d="M168,221v20" />
+    <path d="M169,221v20" />
+    <path d="M170,221v20" />
+    <path d="M171,221v20" />
+    <path d="M145,221h26" />
+    <path d="M145,222h26" />
+    <path d="M145,223h26" />
+    <path d="M145,224h26" />
+    <path d="M145,225h26" />
+    <path d="M145,226h26" />
+    <path d="M145,227h26" />
+    <path d="M145,228h26" />
+    <path d="M145,229h26" />
+    <path d="M145,230h26" />
+    <path d="M145,231h26" />
+    <path d="M145,232h26" />
+    <path d="M145,233h26" />
+    <path d="M145,234h26" />
+    <path d="M145,235h26" />
+    <path d="M145,236h26" />
+    <path d="M145,237h26" />
+    <path d="M145,238h26" />
+    <path d="M145,239h26" />
+    <path d="M145,240h26" />
+    <path d="M145,241h26" />
+  </g>
+  <g id="proof-8-4--sc-opamp-r1-large-thick--sc-opamp-r1-large-thick" inkscape:label="Op-amp / large / thick" data-symbol="opamp" data-revision="1" data-size="large" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(170.07970377777778,246.9167434888889) scale(0.35277777777777775) translate(-34.24168,-45.118328)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-8-4--sc-opamp-r1-large-thick--sc-opamp-r1-large-thick--body" inkscape:label="body">
+      <path d="M-20.15382-23.71043V23.71043L20.15382 0Z" fill="none" />
+      <desc>Triangle outline</desc>
+    </g>
+    <g data-part="lead-in-plus" id="proof-8-4--sc-opamp-r1-large-thick--sc-opamp-r1-large-thick--lead-in-plus" inkscape:label="lead-in-plus">
+      <path d="M-31.29787 8.53578H-20.15382" fill="none" />
+      <desc>Non-inverting input lead</desc>
+    </g>
+    <g data-part="lead-in-minus" id="proof-8-4--sc-opamp-r1-large-thick--sc-opamp-r1-large-thick--lead-in-minus" inkscape:label="lead-in-minus">
+      <path d="M-31.29787-8.53578H-20.15382" fill="none" />
+      <desc>Inverting input lead</desc>
+    </g>
+    <g data-part="lead-out" id="proof-8-4--sc-opamp-r1-large-thick--sc-opamp-r1-large-thick--lead-out" inkscape:label="lead-out">
+      <path d="M20.15382 0H31.29787" fill="none" />
+      <desc>Output lead</desc>
+    </g>
+    <g data-part="sign-plus" id="proof-8-4--sc-opamp-r1-large-thick--sc-opamp-r1-large-thick--sign-plus" inkscape:label="sign-plus">
+      <path d="M-16.5972 8.53578H-11.85521M-14.22621 6.16478V10.90677" fill="none" />
+      <desc>Non-inverting input mark</desc>
+    </g>
+    <g data-part="sign-minus" id="proof-8-4--sc-opamp-r1-large-thick--sc-opamp-r1-large-thick--sign-minus" inkscape:label="sign-minus">
+      <path d="M-16.5972-8.53578H-11.85521" fill="none" />
+      <desc>Inverting input mark</desc>
+    </g>
+  </g>
+  <circle cx="147.0" cy="228.0" r="0.14" fill="#2d69a5" />
+  <circle cx="147.0" cy="234.0" r="0.14" fill="#2d69a5" />
+  <circle cx="169.0" cy="231.0" r="0.14" fill="#2d69a5" />
+  <g stroke="#d8dfe4" stroke-width="0.035" fill="none">
+    <path d="M174,221v20" />
+    <path d="M175,221v20" />
+    <path d="M176,221v20" />
+    <path d="M177,221v20" />
+    <path d="M178,221v20" />
+    <path d="M179,221v20" />
+    <path d="M180,221v20" />
+    <path d="M181,221v20" />
+    <path d="M182,221v20" />
+    <path d="M183,221v20" />
+    <path d="M184,221v20" />
+    <path d="M185,221v20" />
+    <path d="M186,221v20" />
+    <path d="M187,221v20" />
+    <path d="M188,221v20" />
+    <path d="M189,221v20" />
+    <path d="M190,221v20" />
+    <path d="M191,221v20" />
+    <path d="M192,221v20" />
+    <path d="M193,221v20" />
+    <path d="M194,221v20" />
+    <path d="M195,221v20" />
+    <path d="M196,221v20" />
+    <path d="M197,221v20" />
+    <path d="M198,221v20" />
+    <path d="M199,221v20" />
+    <path d="M200,221v20" />
+    <path d="M174,221h26" />
+    <path d="M174,222h26" />
+    <path d="M174,223h26" />
+    <path d="M174,224h26" />
+    <path d="M174,225h26" />
+    <path d="M174,226h26" />
+    <path d="M174,227h26" />
+    <path d="M174,228h26" />
+    <path d="M174,229h26" />
+    <path d="M174,230h26" />
+    <path d="M174,231h26" />
+    <path d="M174,232h26" />
+    <path d="M174,233h26" />
+    <path d="M174,234h26" />
+    <path d="M174,235h26" />
+    <path d="M174,236h26" />
+    <path d="M174,237h26" />
+    <path d="M174,238h26" />
+    <path d="M174,239h26" />
+    <path d="M174,240h26" />
+    <path d="M174,241h26" />
+  </g>
+  <g id="proof-8-5--sc-opamp-supply-r1-large-thick--sc-opamp-supply-r1-large-thick" inkscape:label="Op-amp with supply pins / large / thick" data-symbol="opamp-supply" data-revision="1" data-size="large" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(199.07970377777778,246.9167434888889) scale(0.35277777777777775) translate(-34.24168,-45.118328)scale(0.996264,-0.996264)">
+    <g data-part="body" id="proof-8-5--sc-opamp-supply-r1-large-thick--sc-opamp-supply-r1-large-thick--body" inkscape:label="body">
+      <path d="M-20.15382-23.71043V23.71043L20.15382 0Z" fill="none" />
+      <desc>Triangle outline</desc>
+    </g>
+    <g data-part="lead-in-plus" id="proof-8-5--sc-opamp-supply-r1-large-thick--sc-opamp-supply-r1-large-thick--lead-in-plus" inkscape:label="lead-in-plus">
+      <path d="M-31.29787 8.53578H-20.15382" fill="none" />
+      <desc>Non-inverting input lead</desc>
+    </g>
+    <g data-part="lead-in-minus" id="proof-8-5--sc-opamp-supply-r1-large-thick--sc-opamp-supply-r1-large-thick--lead-in-minus" inkscape:label="lead-in-minus">
+      <path d="M-31.29787-8.53578H-20.15382" fill="none" />
+      <desc>Inverting input lead</desc>
+    </g>
+    <g data-part="lead-out" id="proof-8-5--sc-opamp-supply-r1-large-thick--sc-opamp-supply-r1-large-thick--lead-out" inkscape:label="lead-out">
+      <path d="M20.15382 0H31.29787" fill="none" />
+      <desc>Output lead</desc>
+    </g>
+    <g data-part="sign-plus" id="proof-8-5--sc-opamp-supply-r1-large-thick--sc-opamp-supply-r1-large-thick--sign-plus" inkscape:label="sign-plus">
+      <path d="M-16.5972 8.53578H-11.85521M-14.22621 6.16478V10.90677" fill="none" />
+      <desc>Non-inverting input mark</desc>
+    </g>
+    <g data-part="sign-minus" id="proof-8-5--sc-opamp-supply-r1-large-thick--sc-opamp-supply-r1-large-thick--sign-minus" inkscape:label="sign-minus">
+      <path d="M-16.5972-8.53578H-11.85521" fill="none" />
+      <desc>Inverting input mark</desc>
+    </g>
+    <g data-part="lead-supply-plus" id="proof-8-5--sc-opamp-supply-r1-large-thick--sc-opamp-supply-r1-large-thick--lead-supply-plus" inkscape:label="lead-supply-plus">
+      <path d="M0 11.85521V19.91682" fill="none" />
+      <desc>Positive supply lead</desc>
+    </g>
+    <g data-part="lead-supply-minus" id="proof-8-5--sc-opamp-supply-r1-large-thick--sc-opamp-supply-r1-large-thick--lead-supply-minus" inkscape:label="lead-supply-minus">
+      <path d="M0-11.85521V-19.91682" fill="none" />
+      <desc>Negative supply lead</desc>
+    </g>
+  </g>
+  <circle cx="176.0" cy="228.0" r="0.14" fill="#2d69a5" />
+  <circle cx="176.0" cy="234.0" r="0.14" fill="#2d69a5" />
+  <circle cx="198.0" cy="231.0" r="0.14" fill="#2d69a5" />
+  <circle cx="187.0" cy="224.0" r="0.14" fill="#2d69a5" />
+  <circle cx="187.0" cy="238.0" r="0.14" fill="#2d69a5" />
+</svg>

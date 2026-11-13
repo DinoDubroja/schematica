@@ -1,0 +1,2 @@
+# Preserve exact source/export bytes so builds and download hashes match on Windows.
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

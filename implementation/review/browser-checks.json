@@ -1,0 +1,44 @@
+{
+  "download_selection": [
+    "resistor-us-large-thin",
+    "inductor-coil-small-thick",
+    "opamp-medium-medium"
+  ],
+  "four_browser_export_formats_match_core": true,
+  "arranged_sheet": {
+    "columns": 2,
+    "spacing_mm": 8
+  },
+  "dark_mode_svg_matches_original_black_artwork": true,
+  "downloaded_svgs_save_reopen_and_references": "passed",
+  "coil_gui_placement": {
+    "size": "small",
+    "stroke": "thick",
+    "measured_width_mm": 14.3,
+    "measured_height_mm": 1.8
+  },
+  "coil_clone_unlinked_in_gui": true,
+  "coil_parts_survive_save_reopen": [
+    "body",
+    "lead-a",
+    "lead-b"
+  ],
+  "coil_save_reopen_coordinate_deviation_mm": 0.0008812917603386872,
+  "gui_observations": {
+    "search_names_and_attributes": "zigzag, coil, triangle; expected cards returned",
+    "type_filters": "4 passive, 2 amplifiers; clear search restores 6 appearances",
+    "empty_search": "no-match message displayed",
+    "presets": "Large/Thin US resistor, Small/Thick coil, Medium/Medium op-amp",
+    "pins": "3 visible op-amp connections; Small coil at (-7,0) and (7,0)",
+    "grid_toggle": "both grid and pin groups hidden and restored",
+    "theme": "dark first launch, both directions switched, both preferences survive reload",
+    "responsive_widths_px": [
+      1280,
+      1000,
+      390
+    ],
+    "horizontal_overflow": false,
+    "browser_console_errors": [],
+    "inkscape": "downloaded Symbols library opened; coil thumbnail pasted into fresh document, saved, unlinked, body selected in Layers, saved separately, closed and reopened"
+  }
+}

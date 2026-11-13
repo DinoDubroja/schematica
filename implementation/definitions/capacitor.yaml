@@ -1,0 +1,43 @@
+schema_version: 1
+id: capacitor
+revision: 1
+name: Capacitor
+description: Non-polarized capacitor with two parallel plates and interchangeable
+  terminals.
+keywords: [capacitor, parallel plates, non-polarized, passive]
+types:
+- passive
+- capacitor
+attributes:
+  appearance: parallel-plates
+  polarized: false
+recipe: capacitor
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: a
+  name: A
+  description: Interchangeable first terminal
+  kind: passive
+  lead_part: lead-a
+- id: b
+  name: B
+  description: Interchangeable second terminal
+  kind: passive
+  lead_part: lead-b
+parts:
+- id: plate-a
+  description: First capacitor plate
+- id: plate-b
+  description: Second capacitor plate
+- id: lead-a
+  description: Lead to first plate
+- id: lead-b
+  description: Lead to second plate

@@ -1,0 +1,16 @@
+instance|sc-opamp-supply-r1-medium-medium|1.0|0.2
+pin|in-plus|-9.0|3
+pin|in-minus|-9.0|-3.0
+pin|out|9.0|0
+pin|supply-plus|0|6.0
+pin|supply-minus|0|-6.0
+dimension|body-width|11.33322
+dimension|body-height|13.33325
+part|body
+part|lead-in-plus
+part|lead-in-minus
+part|lead-out
+part|sign-plus
+part|sign-minus
+part|lead-supply-plus
+part|lead-supply-minus

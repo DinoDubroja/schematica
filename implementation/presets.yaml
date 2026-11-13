@@ -1,0 +1,12 @@
+schema_version: 1
+grid_mm: 1
+default_size: medium
+default_stroke: medium
+sizes:
+  small: {name: Small, factor: 0.75}
+  medium: {name: Medium, factor: 1.0}
+  large: {name: Large, factor: 1.25}
+strokes:
+  thin: {name: Thin, width_mm: 0.15}
+  medium: {name: Medium, width_mm: 0.20}
+  thick: {name: Thick, width_mm: 0.30}

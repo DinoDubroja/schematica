@@ -1,0 +1,88 @@
+{
+  "build_id": "971b3b876b93",
+  "libraries": [
+    {
+      "preset": "small-thin",
+      "symbols": 6,
+      "named_parts": 27,
+      "references": "passed",
+      "physical_page_size": "passed",
+      "clipping": "passed",
+      "browser_download": "byte-identical"
+    },
+    {
+      "preset": "small-medium",
+      "symbols": 6,
+      "named_parts": 27,
+      "references": "passed",
+      "physical_page_size": "passed",
+      "clipping": "passed",
+      "browser_download": "byte-identical"
+    },
+    {
+      "preset": "small-thick",
+      "symbols": 6,
+      "named_parts": 27,
+      "references": "passed",
+      "physical_page_size": "passed",
+      "clipping": "passed",
+      "browser_download": "byte-identical"
+    },
+    {
+      "preset": "medium-thin",
+      "symbols": 6,
+      "named_parts": 27,
+      "references": "passed",
+      "physical_page_size": "passed",
+      "clipping": "passed",
+      "browser_download": "byte-identical"
+    },
+    {
+      "preset": "medium-medium",
+      "symbols": 6,
+      "named_parts": 27,
+      "references": "passed",
+      "physical_page_size": "passed",
+      "clipping": "passed",
+      "browser_download": "byte-identical"
+    },
+    {
+      "preset": "medium-thick",
+      "symbols": 6,
+      "named_parts": 27,
+      "references": "passed",
+      "physical_page_size": "passed",
+      "clipping": "passed",
+      "browser_download": "byte-identical"
+    },
+    {
+      "preset": "large-thin",
+      "symbols": 6,
+      "named_parts": 27,
+      "references": "passed",
+      "physical_page_size": "passed",
+      "clipping": "passed",
+      "browser_download": "byte-identical"
+    },
+    {
+      "preset": "large-medium",
+      "symbols": 6,
+      "named_parts": 27,
+      "references": "passed",
+      "physical_page_size": "passed",
+      "clipping": "passed",
+      "browser_download": "byte-identical"
+    },
+    {
+      "preset": "large-thick",
+      "symbols": 6,
+      "named_parts": 27,
+      "references": "passed",
+      "physical_page_size": "passed",
+      "clipping": "passed",
+      "browser_download": "byte-identical"
+    }
+  ],
+  "single_browser_download": "byte-identical",
+  "note": "Inkscape command-line save/reopen and PDF rendering; no GUI actions implied."
+}

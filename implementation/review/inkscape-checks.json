@@ -1,0 +1,104 @@
+{
+  "saved_gui_evidence": "validated; GUI actions documented separately in CHECKPOINT.md",
+  "placement_geometry": [
+    {
+      "file": "symbols-placed.svg",
+      "max_geometry_deviation_mm": 0.0014097472031906477
+    },
+    {
+      "file": "symbols-unlinked.svg",
+      "max_geometry_deviation_mm": 0.0014097472031906477
+    },
+    {
+      "file": "symbols-reopened.svg",
+      "max_geometry_deviation_mm": 0.0014097472031906477
+    }
+  ],
+  "unlinked_named_parts": [
+    "body",
+    "lead-in-minus",
+    "lead-in-plus",
+    "lead-out",
+    "lead-supply-minus",
+    "lead-supply-plus",
+    "sign-minus",
+    "sign-plus"
+  ],
+  "editable_text_after_reopen": "Label B",
+  "preserved_original_text": "Label A",
+  "configuration_margins": [
+    {
+      "file": "opamp-supply-large-medium.svg",
+      "minimum_page_margin_mm": 0.9999875941666687
+    },
+    {
+      "file": "opamp-supply-large-thick.svg",
+      "minimum_page_margin_mm": 0.999998
+    },
+    {
+      "file": "opamp-supply-large-thin.svg",
+      "minimum_page_margin_mm": 0.9999891783333332
+    },
+    {
+      "file": "opamp-supply-medium-medium.svg",
+      "minimum_page_margin_mm": 0.9999953541666667
+    },
+    {
+      "file": "opamp-supply-medium-thick.svg",
+      "minimum_page_margin_mm": 0.999998
+    },
+    {
+      "file": "opamp-supply-medium-thin.svg",
+      "minimum_page_margin_mm": 0.9999939474999984
+    },
+    {
+      "file": "opamp-supply-small-medium.svg",
+      "minimum_page_margin_mm": 0.9999898866666683
+    },
+    {
+      "file": "opamp-supply-small-thick.svg",
+      "minimum_page_margin_mm": 0.9999935908333342
+    },
+    {
+      "file": "opamp-supply-small-thin.svg",
+      "minimum_page_margin_mm": 0.9999902366666671
+    },
+    {
+      "file": "resistor-eu-large-medium.svg",
+      "minimum_page_margin_mm": 0.9999909450000013
+    },
+    {
+      "file": "resistor-eu-large-thick.svg",
+      "minimum_page_margin_mm": 0.999998
+    },
+    {
+      "file": "resistor-eu-large-thin.svg",
+      "minimum_page_margin_mm": 0.9999921791666662
+    },
+    {
+      "file": "resistor-eu-medium-medium.svg",
+      "minimum_page_margin_mm": 0.9999875958333329
+    },
+    {
+      "file": "resistor-eu-medium-thick.svg",
+      "minimum_page_margin_mm": 0.9999935908333342
+    },
+    {
+      "file": "resistor-eu-medium-thin.svg",
+      "minimum_page_margin_mm": 0.9999914758333337
+    },
+    {
+      "file": "resistor-eu-small-medium.svg",
+      "minimum_page_margin_mm": 0.9999969433333344
+    },
+    {
+      "file": "resistor-eu-small-thick.svg",
+      "minimum_page_margin_mm": 0.9999972966666668
+    },
+    {
+      "file": "resistor-eu-small-thin.svg",
+      "minimum_page_margin_mm": 0.9999976433333373
+    }
+  ],
+  "small_thick_opamp_sign_to_body_clearance_mm": 0.35860349736903824
+}

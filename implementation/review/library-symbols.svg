@@ -1,0 +1,1410 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="183.29925572mm" height="150.36592830mm" viewBox="0 0 183.29925572 150.36592830">
+  <title>Schematica symbol library</title>
+  <defs>
+    <symbol id="instance-1-resistor-eu-small-thin" overflow="visible">
+      <title>EU resistor · Small / Thin</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "resistor-eu", "revision": 1, "size": "small", "stroke": "thin", "pins_mm": {"a": [-7.0, 0.0], "b": [7.0, 0.0]}}</metadata>
+      <g id="instance-1--sc-resistor-eu-r1-small-thin--sc-resistor-eu-r1-small-thin" inkscape:label="EU resistor / small / thin" data-symbol="resistor-eu" data-revision="1" data-size="small" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(16.154687866666666,23.07502334722222) scale(0.35277777777777775) translate(-45.792816,-65.409515)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-1--sc-resistor-eu-r1-small-thin--sc-resistor-eu-r1-small-thin--body" inkscape:label="body">
+          <path d="M-10.66972-3.55656V3.55656H10.66972V-3.55656ZM10.66972 3.55656" fill="none" />
+          <desc>Rectangular resistor body</desc>
+        </g>
+        <g data-part="lead-a" id="instance-1--sc-resistor-eu-r1-small-thin--sc-resistor-eu-r1-small-thin--lead-a" inkscape:label="lead-a">
+          <path d="M-19.91682 0H-10.66972" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="lead-b" id="instance-1--sc-resistor-eu-r1-small-thin--sc-resistor-eu-r1-small-thin--lead-b" inkscape:label="lead-b">
+          <path d="M10.66972 0H19.91682" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-2-resistor-eu-small-medium" overflow="visible">
+      <title>EU resistor · Small / Medium</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "resistor-eu", "revision": 1, "size": "small", "stroke": "medium", "pins_mm": {"a": [-7.0, 0.0], "b": [7.0, 0.0]}}</metadata>
+      <g id="instance-2--sc-resistor-eu-r1-small-medium--sc-resistor-eu-r1-small-medium" inkscape:label="EU resistor / small / medium" data-symbol="resistor-eu" data-revision="1" data-size="small" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(16.129686152777776,23.050021633333333) scale(0.35277777777777775) translate(-45.721945,-65.338644)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-2--sc-resistor-eu-r1-small-medium--sc-resistor-eu-r1-small-medium--body" inkscape:label="body">
+          <path d="M-10.66972-3.55656V3.55656H10.66972V-3.55656ZM10.66972 3.55656" fill="none" />
+          <desc>Rectangular resistor body</desc>
+        </g>
+        <g data-part="lead-a" id="instance-2--sc-resistor-eu-r1-small-medium--sc-resistor-eu-r1-small-medium--lead-a" inkscape:label="lead-a">
+          <path d="M-19.91682 0H-10.66972" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="lead-b" id="instance-2--sc-resistor-eu-r1-small-medium--sc-resistor-eu-r1-small-medium--lead-b" inkscape:label="lead-b">
+          <path d="M10.66972 0H19.91682" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-3-resistor-eu-small-thick" overflow="visible">
+      <title>EU resistor · Small / Thick</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "resistor-eu", "revision": 1, "size": "small", "stroke": "thick", "pins_mm": {"a": [-7.0, 0.0], "b": [7.0, 0.0]}}</metadata>
+      <g id="instance-3--sc-resistor-eu-r1-small-thick--sc-resistor-eu-r1-small-thick" inkscape:label="EU resistor / small / thick" data-symbol="resistor-eu" data-revision="1" data-size="small" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(16.079682724999998,23.000018558333334) scale(0.35277777777777775) translate(-45.580203,-65.196903)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-3--sc-resistor-eu-r1-small-thick--sc-resistor-eu-r1-small-thick--body" inkscape:label="body">
+          <path d="M-10.66972-3.55656V3.55656H10.66972V-3.55656ZM10.66972 3.55656" fill="none" />
+          <desc>Rectangular resistor body</desc>
+        </g>
+        <g data-part="lead-a" id="instance-3--sc-resistor-eu-r1-small-thick--sc-resistor-eu-r1-small-thick--lead-a" inkscape:label="lead-a">
+          <path d="M-19.91682 0H-10.66972" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="lead-b" id="instance-3--sc-resistor-eu-r1-small-thick--sc-resistor-eu-r1-small-thick--lead-b" inkscape:label="lead-b">
+          <path d="M10.66972 0H19.91682" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-4-resistor-eu-medium-thin" overflow="visible">
+      <title>EU resistor · Medium / Thin</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "resistor-eu", "revision": 1, "size": "medium", "stroke": "thin", "pins_mm": {"a": [-8.0, 0.0], "b": [8.0, 0.0]}}</metadata>
+      <g id="instance-4--sc-resistor-eu-r1-medium-thin--sc-resistor-eu-r1-medium-thin" inkscape:label="EU resistor / medium / thin" data-symbol="resistor-eu" data-revision="1" data-size="medium" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(15.154693041666665,22.658367391666665) scale(0.35277777777777775) translate(-42.958185,-64.228443)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-4--sc-resistor-eu-r1-medium-thin--sc-resistor-eu-r1-medium-thin--body" inkscape:label="body">
+          <path d="M-14.22621-4.74207V4.74207H14.22621V-4.74207ZM14.22621 4.74207" fill="none" />
+          <desc>Rectangular resistor body</desc>
+        </g>
+        <g data-part="lead-a" id="instance-4--sc-resistor-eu-r1-medium-thin--sc-resistor-eu-r1-medium-thin--lead-a" inkscape:label="lead-a">
+          <path d="M-22.76208 0H-14.22621" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="lead-b" id="instance-4--sc-resistor-eu-r1-medium-thin--sc-resistor-eu-r1-medium-thin--lead-b" inkscape:label="lead-b">
+          <path d="M14.22621 0H22.76208" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-5-resistor-eu-medium-medium" overflow="visible">
+      <title>EU resistor · Medium / Medium</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "resistor-eu", "revision": 1, "size": "medium", "stroke": "medium", "pins_mm": {"a": [-8.0, 0.0], "b": [8.0, 0.0]}}</metadata>
+      <g id="instance-5--sc-resistor-eu-r1-medium-medium--sc-resistor-eu-r1-medium-medium" inkscape:label="EU resistor / medium / medium" data-symbol="resistor-eu" data-revision="1" data-size="medium" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(15.129691327777778,22.633365677777775) scale(0.35277777777777775) translate(-42.887314,-64.157572)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-5--sc-resistor-eu-r1-medium-medium--sc-resistor-eu-r1-medium-medium--body" inkscape:label="body">
+          <path d="M-14.22621-4.74207V4.74207H14.22621V-4.74207ZM14.22621 4.74207" fill="none" />
+          <desc>Rectangular resistor body</desc>
+        </g>
+        <g data-part="lead-a" id="instance-5--sc-resistor-eu-r1-medium-medium--sc-resistor-eu-r1-medium-medium--lead-a" inkscape:label="lead-a">
+          <path d="M-22.76208 0H-14.22621" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="lead-b" id="instance-5--sc-resistor-eu-r1-medium-medium--sc-resistor-eu-r1-medium-medium--lead-b" inkscape:label="lead-b">
+          <path d="M14.22621 0H22.76208" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-6-resistor-eu-medium-thick" overflow="visible">
+      <title>EU resistor · Medium / Thick</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "resistor-eu", "revision": 1, "size": "medium", "stroke": "thick", "pins_mm": {"a": [-8.0, 0.0], "b": [8.0, 0.0]}}</metadata>
+      <g id="instance-6--sc-resistor-eu-r1-medium-thick--sc-resistor-eu-r1-medium-thick" inkscape:label="EU resistor / medium / thick" data-symbol="resistor-eu" data-revision="1" data-size="medium" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(15.079688252777776,22.58336260277778) scale(0.35277777777777775) translate(-42.745573,-64.015831)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-6--sc-resistor-eu-r1-medium-thick--sc-resistor-eu-r1-medium-thick--body" inkscape:label="body">
+          <path d="M-14.22621-4.74207V4.74207H14.22621V-4.74207ZM14.22621 4.74207" fill="none" />
+          <desc>Rectangular resistor body</desc>
+        </g>
+        <g data-part="lead-a" id="instance-6--sc-resistor-eu-r1-medium-thick--sc-resistor-eu-r1-medium-thick--lead-a" inkscape:label="lead-a">
+          <path d="M-22.76208 0H-14.22621" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="lead-b" id="instance-6--sc-resistor-eu-r1-medium-thick--sc-resistor-eu-r1-medium-thick--lead-b" inkscape:label="lead-b">
+          <path d="M14.22621 0H22.76208" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-7-resistor-eu-large-thin" overflow="visible">
+      <title>EU resistor · Large / Thin</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "resistor-eu", "revision": 1, "size": "large", "stroke": "thin", "pins_mm": {"a": [-10.0, 0.0], "b": [10.0, 0.0]}}</metadata>
+      <g id="instance-7--sc-resistor-eu-r1-large-thin--sc-resistor-eu-r1-large-thin" inkscape:label="EU resistor / large / thin" data-symbol="resistor-eu" data-revision="1" data-size="large" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(13.154703391666665,22.241700499999997) scale(0.35277777777777775) translate(-37.288923,-63.04734)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-7--sc-resistor-eu-r1-large-thin--sc-resistor-eu-r1-large-thin--body" inkscape:label="body">
+          <path d="M-17.78282-5.9276V5.9276H17.78282V-5.9276ZM17.78282 5.9276" fill="none" />
+          <desc>Rectangular resistor body</desc>
+        </g>
+        <g data-part="lead-a" id="instance-7--sc-resistor-eu-r1-large-thin--sc-resistor-eu-r1-large-thin--lead-a" inkscape:label="lead-a">
+          <path d="M-28.4526 0H-17.78282" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="lead-b" id="instance-7--sc-resistor-eu-r1-large-thin--sc-resistor-eu-r1-large-thin--lead-b" inkscape:label="lead-b">
+          <path d="M17.78282 0H28.4526" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-8-resistor-eu-large-medium" overflow="visible">
+      <title>EU resistor · Large / Medium</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "resistor-eu", "revision": 1, "size": "large", "stroke": "medium", "pins_mm": {"a": [-10.0, 0.0], "b": [10.0, 0.0]}}</metadata>
+      <g id="instance-8--sc-resistor-eu-r1-large-medium--sc-resistor-eu-r1-large-medium" inkscape:label="EU resistor / large / medium" data-symbol="resistor-eu" data-revision="1" data-size="large" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(13.129702030555553,22.21669878611111) scale(0.35277777777777775) translate(-37.218053,-62.976469)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-8--sc-resistor-eu-r1-large-medium--sc-resistor-eu-r1-large-medium--body" inkscape:label="body">
+          <path d="M-17.78282-5.9276V5.9276H17.78282V-5.9276ZM17.78282 5.9276" fill="none" />
+          <desc>Rectangular resistor body</desc>
+        </g>
+        <g data-part="lead-a" id="instance-8--sc-resistor-eu-r1-large-medium--sc-resistor-eu-r1-large-medium--lead-a" inkscape:label="lead-a">
+          <path d="M-28.4526 0H-17.78282" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="lead-b" id="instance-8--sc-resistor-eu-r1-large-medium--sc-resistor-eu-r1-large-medium--lead-b" inkscape:label="lead-b">
+          <path d="M17.78282 0H28.4526" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-9-resistor-eu-large-thick" overflow="visible">
+      <title>EU resistor · Large / Thick</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "resistor-eu", "revision": 1, "size": "large", "stroke": "thick", "pins_mm": {"a": [-10.0, 0.0], "b": [10.0, 0.0]}}</metadata>
+      <g id="instance-9--sc-resistor-eu-r1-large-thick--sc-resistor-eu-r1-large-thick" inkscape:label="EU resistor / large / thick" data-symbol="resistor-eu" data-revision="1" data-size="large" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(13.079698602777775,22.16669571111111) scale(0.35277777777777775) translate(-37.076311,-62.834728)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-9--sc-resistor-eu-r1-large-thick--sc-resistor-eu-r1-large-thick--body" inkscape:label="body">
+          <path d="M-17.78282-5.9276V5.9276H17.78282V-5.9276ZM17.78282 5.9276" fill="none" />
+          <desc>Rectangular resistor body</desc>
+        </g>
+        <g data-part="lead-a" id="instance-9--sc-resistor-eu-r1-large-thick--sc-resistor-eu-r1-large-thick--lead-a" inkscape:label="lead-a">
+          <path d="M-28.4526 0H-17.78282" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="lead-b" id="instance-9--sc-resistor-eu-r1-large-thick--sc-resistor-eu-r1-large-thick--lead-b" inkscape:label="lead-b">
+          <path d="M17.78282 0H28.4526" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-10-resistor-us-small-thin" overflow="visible">
+      <title>US resistor · Small / Thin</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "resistor-us", "revision": 1, "size": "small", "stroke": "thin", "pins_mm": {"a": [-7.0, 0.0], "b": [7.0, 0.0]}}</metadata>
+      <g id="instance-10--sc-resistor-us-r1-small-thin--sc-resistor-us-r1-small-thin" inkscape:label="US resistor / small / thin" data-symbol="resistor-us" data-revision="1" data-size="small" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(16.154687866666666,23.07502334722222) scale(0.35277777777777775) translate(-45.792816,-65.409515)scale(0.996264,-0.996264)">
+        <g data-part="lead-a" id="instance-10--sc-resistor-us-r1-small-thin--sc-resistor-us-r1-small-thin--lead-a" inkscape:label="lead-a">
+          <path d="M-19.91682 0H-10.66972" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="body" id="instance-10--sc-resistor-us-r1-small-thin--sc-resistor-us-r1-small-thin--body" inkscape:label="body">
+          <path d="M-10.66972 0L-8.89143 3.55656L-5.33485-3.55656L-1.77827 3.55656L1.77827-3.55656L5.33485 3.55656L8.89143-3.55656L10.66972 0" fill="none" />
+          <desc>Zigzag body</desc>
+        </g>
+        <g data-part="lead-b" id="instance-10--sc-resistor-us-r1-small-thin--sc-resistor-us-r1-small-thin--lead-b" inkscape:label="lead-b">
+          <path d="M10.66972 0H19.91682" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-11-resistor-us-small-medium" overflow="visible">
+      <title>US resistor · Small / Medium</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "resistor-us", "revision": 1, "size": "small", "stroke": "medium", "pins_mm": {"a": [-7.0, 0.0], "b": [7.0, 0.0]}}</metadata>
+      <g id="instance-11--sc-resistor-us-r1-small-medium--sc-resistor-us-r1-small-medium" inkscape:label="US resistor / small / medium" data-symbol="resistor-us" data-revision="1" data-size="small" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(16.129686152777776,23.050021633333333) scale(0.35277777777777775) translate(-45.721945,-65.338644)scale(0.996264,-0.996264)">
+        <g data-part="lead-a" id="instance-11--sc-resistor-us-r1-small-medium--sc-resistor-us-r1-small-medium--lead-a" inkscape:label="lead-a">
+          <path d="M-19.91682 0H-10.66972" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="body" id="instance-11--sc-resistor-us-r1-small-medium--sc-resistor-us-r1-small-medium--body" inkscape:label="body">
+          <path d="M-10.66972 0L-8.89143 3.55656L-5.33485-3.55656L-1.77827 3.55656L1.77827-3.55656L5.33485 3.55656L8.89143-3.55656L10.66972 0" fill="none" />
+          <desc>Zigzag body</desc>
+        </g>
+        <g data-part="lead-b" id="instance-11--sc-resistor-us-r1-small-medium--sc-resistor-us-r1-small-medium--lead-b" inkscape:label="lead-b">
+          <path d="M10.66972 0H19.91682" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-12-resistor-us-small-thick" overflow="visible">
+      <title>US resistor · Small / Thick</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "resistor-us", "revision": 1, "size": "small", "stroke": "thick", "pins_mm": {"a": [-7.0, 0.0], "b": [7.0, 0.0]}}</metadata>
+      <g id="instance-12--sc-resistor-us-r1-small-thick--sc-resistor-us-r1-small-thick" inkscape:label="US resistor / small / thick" data-symbol="resistor-us" data-revision="1" data-size="small" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(16.079682724999998,23.000018558333334) scale(0.35277777777777775) translate(-45.580203,-65.196903)scale(0.996264,-0.996264)">
+        <g data-part="lead-a" id="instance-12--sc-resistor-us-r1-small-thick--sc-resistor-us-r1-small-thick--lead-a" inkscape:label="lead-a">
+          <path d="M-19.91682 0H-10.66972" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="body" id="instance-12--sc-resistor-us-r1-small-thick--sc-resistor-us-r1-small-thick--body" inkscape:label="body">
+          <path d="M-10.66972 0L-8.89143 3.55656L-5.33485-3.55656L-1.77827 3.55656L1.77827-3.55656L5.33485 3.55656L8.89143-3.55656L10.66972 0" fill="none" />
+          <desc>Zigzag body</desc>
+        </g>
+        <g data-part="lead-b" id="instance-12--sc-resistor-us-r1-small-thick--sc-resistor-us-r1-small-thick--lead-b" inkscape:label="lead-b">
+          <path d="M10.66972 0H19.91682" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-13-resistor-us-medium-thin" overflow="visible">
+      <title>US resistor · Medium / Thin</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "resistor-us", "revision": 1, "size": "medium", "stroke": "thin", "pins_mm": {"a": [-8.0, 0.0], "b": [8.0, 0.0]}}</metadata>
+      <g id="instance-13--sc-resistor-us-r1-medium-thin--sc-resistor-us-r1-medium-thin" inkscape:label="US resistor / medium / thin" data-symbol="resistor-us" data-revision="1" data-size="medium" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(15.154693041666665,22.658367391666665) scale(0.35277777777777775) translate(-42.958185,-64.228443)scale(0.996264,-0.996264)">
+        <g data-part="lead-a" id="instance-13--sc-resistor-us-r1-medium-thin--sc-resistor-us-r1-medium-thin--lead-a" inkscape:label="lead-a">
+          <path d="M-22.76208 0H-14.22621" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="body" id="instance-13--sc-resistor-us-r1-medium-thin--sc-resistor-us-r1-medium-thin--body" inkscape:label="body">
+          <path d="M-14.22621 0L-11.85518 4.74207L-7.1131-4.74207L-2.37103 4.74207L2.37103-4.74207L7.1131 4.74207L11.85518-4.74207L14.22621 0" fill="none" />
+          <desc>Zigzag body</desc>
+        </g>
+        <g data-part="lead-b" id="instance-13--sc-resistor-us-r1-medium-thin--sc-resistor-us-r1-medium-thin--lead-b" inkscape:label="lead-b">
+          <path d="M14.22621 0H22.76208" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-14-resistor-us-medium-medium" overflow="visible">
+      <title>US resistor · Medium / Medium</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "resistor-us", "revision": 1, "size": "medium", "stroke": "medium", "pins_mm": {"a": [-8.0, 0.0], "b": [8.0, 0.0]}}</metadata>
+      <g id="instance-14--sc-resistor-us-r1-medium-medium--sc-resistor-us-r1-medium-medium" inkscape:label="US resistor / medium / medium" data-symbol="resistor-us" data-revision="1" data-size="medium" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(15.129691327777778,22.633365677777775) scale(0.35277777777777775) translate(-42.887314,-64.157572)scale(0.996264,-0.996264)">
+        <g data-part="lead-a" id="instance-14--sc-resistor-us-r1-medium-medium--sc-resistor-us-r1-medium-medium--lead-a" inkscape:label="lead-a">
+          <path d="M-22.76208 0H-14.22621" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="body" id="instance-14--sc-resistor-us-r1-medium-medium--sc-resistor-us-r1-medium-medium--body" inkscape:label="body">
+          <path d="M-14.22621 0L-11.85518 4.74207L-7.1131-4.74207L-2.37103 4.74207L2.37103-4.74207L7.1131 4.74207L11.85518-4.74207L14.22621 0" fill="none" />
+          <desc>Zigzag body</desc>
+        </g>
+        <g data-part="lead-b" id="instance-14--sc-resistor-us-r1-medium-medium--sc-resistor-us-r1-medium-medium--lead-b" inkscape:label="lead-b">
+          <path d="M14.22621 0H22.76208" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-15-resistor-us-medium-thick" overflow="visible">
+      <title>US resistor · Medium / Thick</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "resistor-us", "revision": 1, "size": "medium", "stroke": "thick", "pins_mm": {"a": [-8.0, 0.0], "b": [8.0, 0.0]}}</metadata>
+      <g id="instance-15--sc-resistor-us-r1-medium-thick--sc-resistor-us-r1-medium-thick" inkscape:label="US resistor / medium / thick" data-symbol="resistor-us" data-revision="1" data-size="medium" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(15.079688252777776,22.58336260277778) scale(0.35277777777777775) translate(-42.745573,-64.015831)scale(0.996264,-0.996264)">
+        <g data-part="lead-a" id="instance-15--sc-resistor-us-r1-medium-thick--sc-resistor-us-r1-medium-thick--lead-a" inkscape:label="lead-a">
+          <path d="M-22.76208 0H-14.22621" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="body" id="instance-15--sc-resistor-us-r1-medium-thick--sc-resistor-us-r1-medium-thick--body" inkscape:label="body">
+          <path d="M-14.22621 0L-11.85518 4.74207L-7.1131-4.74207L-2.37103 4.74207L2.37103-4.74207L7.1131 4.74207L11.85518-4.74207L14.22621 0" fill="none" />
+          <desc>Zigzag body</desc>
+        </g>
+        <g data-part="lead-b" id="instance-15--sc-resistor-us-r1-medium-thick--sc-resistor-us-r1-medium-thick--lead-b" inkscape:label="lead-b">
+          <path d="M14.22621 0H22.76208" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-16-resistor-us-large-thin" overflow="visible">
+      <title>US resistor · Large / Thin</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "resistor-us", "revision": 1, "size": "large", "stroke": "thin", "pins_mm": {"a": [-10.0, 0.0], "b": [10.0, 0.0]}}</metadata>
+      <g id="instance-16--sc-resistor-us-r1-large-thin--sc-resistor-us-r1-large-thin" inkscape:label="US resistor / large / thin" data-symbol="resistor-us" data-revision="1" data-size="large" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(13.154703391666665,22.241700499999997) scale(0.35277777777777775) translate(-37.288923,-63.04734)scale(0.996264,-0.996264)">
+        <g data-part="lead-a" id="instance-16--sc-resistor-us-r1-large-thin--sc-resistor-us-r1-large-thin--lead-a" inkscape:label="lead-a">
+          <path d="M-28.4526 0H-17.78282" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="body" id="instance-16--sc-resistor-us-r1-large-thin--sc-resistor-us-r1-large-thin--body" inkscape:label="body">
+          <path d="M-17.78282 0L-14.819 5.9276L-8.89139-5.9276L-2.96378 5.9276L2.96378-5.9276L8.89139 5.9276L14.819-5.9276L17.78282 0" fill="none" />
+          <desc>Zigzag body</desc>
+        </g>
+        <g data-part="lead-b" id="instance-16--sc-resistor-us-r1-large-thin--sc-resistor-us-r1-large-thin--lead-b" inkscape:label="lead-b">
+          <path d="M17.78282 0H28.4526" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-17-resistor-us-large-medium" overflow="visible">
+      <title>US resistor · Large / Medium</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "resistor-us", "revision": 1, "size": "large", "stroke": "medium", "pins_mm": {"a": [-10.0, 0.0], "b": [10.0, 0.0]}}</metadata>
+      <g id="instance-17--sc-resistor-us-r1-large-medium--sc-resistor-us-r1-large-medium" inkscape:label="US resistor / large / medium" data-symbol="resistor-us" data-revision="1" data-size="large" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(13.129702030555553,22.21669878611111) scale(0.35277777777777775) translate(-37.218053,-62.976469)scale(0.996264,-0.996264)">
+        <g data-part="lead-a" id="instance-17--sc-resistor-us-r1-large-medium--sc-resistor-us-r1-large-medium--lead-a" inkscape:label="lead-a">
+          <path d="M-28.4526 0H-17.78282" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="body" id="instance-17--sc-resistor-us-r1-large-medium--sc-resistor-us-r1-large-medium--body" inkscape:label="body">
+          <path d="M-17.78282 0L-14.819 5.9276L-8.89139-5.9276L-2.96378 5.9276L2.96378-5.9276L8.89139 5.9276L14.819-5.9276L17.78282 0" fill="none" />
+          <desc>Zigzag body</desc>
+        </g>
+        <g data-part="lead-b" id="instance-17--sc-resistor-us-r1-large-medium--sc-resistor-us-r1-large-medium--lead-b" inkscape:label="lead-b">
+          <path d="M17.78282 0H28.4526" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-18-resistor-us-large-thick" overflow="visible">
+      <title>US resistor · Large / Thick</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "resistor-us", "revision": 1, "size": "large", "stroke": "thick", "pins_mm": {"a": [-10.0, 0.0], "b": [10.0, 0.0]}}</metadata>
+      <g id="instance-18--sc-resistor-us-r1-large-thick--sc-resistor-us-r1-large-thick" inkscape:label="US resistor / large / thick" data-symbol="resistor-us" data-revision="1" data-size="large" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(13.079698602777775,22.16669571111111) scale(0.35277777777777775) translate(-37.076311,-62.834728)scale(0.996264,-0.996264)">
+        <g data-part="lead-a" id="instance-18--sc-resistor-us-r1-large-thick--sc-resistor-us-r1-large-thick--lead-a" inkscape:label="lead-a">
+          <path d="M-28.4526 0H-17.78282" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="body" id="instance-18--sc-resistor-us-r1-large-thick--sc-resistor-us-r1-large-thick--body" inkscape:label="body">
+          <path d="M-17.78282 0L-14.819 5.9276L-8.89139-5.9276L-2.96378 5.9276L2.96378-5.9276L8.89139 5.9276L14.819-5.9276L17.78282 0" fill="none" />
+          <desc>Zigzag body</desc>
+        </g>
+        <g data-part="lead-b" id="instance-18--sc-resistor-us-r1-large-thick--sc-resistor-us-r1-large-thick--lead-b" inkscape:label="lead-b">
+          <path d="M17.78282 0H28.4526" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-19-inductor-coil-small-thin" overflow="visible">
+      <title>Coil inductor · Small / Thin</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "inductor-coil", "revision": 1, "size": "small", "stroke": "thin", "pins_mm": {"a": [-7.0, 0.0], "b": [7.0, 0.0]}}</metadata>
+      <g id="instance-19--sc-inductor-coil-r1-small-thin--sc-inductor-coil-r1-small-thin" inkscape:label="Coil inductor / small / thin" data-symbol="inductor-coil" data-revision="1" data-size="small" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(16.154687866666666,22.825039369444443) scale(0.35277777777777775) translate(-45.792816,-64.700899)scale(0.996264,-0.996264)">
+        <g data-part="lead-a" id="instance-19--sc-inductor-coil-r1-small-thin--sc-inductor-coil-r1-small-thin--lead-a" inkscape:label="lead-a">
+          <path d="M-19.91682 0H-10.66972" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="body" id="instance-19--sc-inductor-coil-r1-small-thin--sc-inductor-coil-r1-small-thin--body" inkscape:label="body">
+          <path d="M-10.66972 0C-10.66972 2.35709-9.4755 4.26784-8.0023 4.26784C-6.52911 4.26784-5.33488 2.35709-5.33488 0C-5.33488 2.35709-4.14066 4.26784-2.66747 4.26784C-1.19427 4.26784-.00005 2.35709-.00005 0C-.00005 2.35709 1.19418 4.26784 2.66737 4.26784S5.3348 2.35709 5.3348 0C5.3348 2.35709 6.52902 4.26784 8.00221 4.26784S10.66963 2.35709 10.66963 0" fill="none" />
+          <desc>Four coil half-turns</desc>
+        </g>
+        <g data-part="lead-b" id="instance-19--sc-inductor-coil-r1-small-thin--sc-inductor-coil-r1-small-thin--lead-b" inkscape:label="lead-b">
+          <path d="M10.66972 0H19.91682" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-20-inductor-coil-small-medium" overflow="visible">
+      <title>Coil inductor · Small / Medium</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "inductor-coil", "revision": 1, "size": "small", "stroke": "medium", "pins_mm": {"a": [-7.0, 0.0], "b": [7.0, 0.0]}}</metadata>
+      <g id="instance-20--sc-inductor-coil-r1-small-medium--sc-inductor-coil-r1-small-medium" inkscape:label="Coil inductor / small / medium" data-symbol="inductor-coil" data-revision="1" data-size="small" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(16.129686152777776,22.800037655555553) scale(0.35277777777777775) translate(-45.721945,-64.630028)scale(0.996264,-0.996264)">
+        <g data-part="lead-a" id="instance-20--sc-inductor-coil-r1-small-medium--sc-inductor-coil-r1-small-medium--lead-a" inkscape:label="lead-a">
+          <path d="M-19.91682 0H-10.66972" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="body" id="instance-20--sc-inductor-coil-r1-small-medium--sc-inductor-coil-r1-small-medium--body" inkscape:label="body">
+          <path d="M-10.66972 0C-10.66972 2.35709-9.4755 4.26784-8.0023 4.26784C-6.52911 4.26784-5.33488 2.35709-5.33488 0C-5.33488 2.35709-4.14066 4.26784-2.66747 4.26784C-1.19427 4.26784-.00005 2.35709-.00005 0C-.00005 2.35709 1.19418 4.26784 2.66737 4.26784S5.3348 2.35709 5.3348 0C5.3348 2.35709 6.52902 4.26784 8.00221 4.26784S10.66963 2.35709 10.66963 0" fill="none" />
+          <desc>Four coil half-turns</desc>
+        </g>
+        <g data-part="lead-b" id="instance-20--sc-inductor-coil-r1-small-medium--sc-inductor-coil-r1-small-medium--lead-b" inkscape:label="lead-b">
+          <path d="M10.66972 0H19.91682" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-21-inductor-coil-small-thick" overflow="visible">
+      <title>Coil inductor · Small / Thick</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "inductor-coil", "revision": 1, "size": "small", "stroke": "thick", "pins_mm": {"a": [-7.0, 0.0], "b": [7.0, 0.0]}}</metadata>
+      <g id="instance-21--sc-inductor-coil-r1-small-thick--sc-inductor-coil-r1-small-thick" inkscape:label="Coil inductor / small / thick" data-symbol="inductor-coil" data-revision="1" data-size="small" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(16.079682724999998,22.750034580555553) scale(0.35277777777777775) translate(-45.580203,-64.488287)scale(0.996264,-0.996264)">
+        <g data-part="lead-a" id="instance-21--sc-inductor-coil-r1-small-thick--sc-inductor-coil-r1-small-thick--lead-a" inkscape:label="lead-a">
+          <path d="M-19.91682 0H-10.66972" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="body" id="instance-21--sc-inductor-coil-r1-small-thick--sc-inductor-coil-r1-small-thick--body" inkscape:label="body">
+          <path d="M-10.66972 0C-10.66972 2.35709-9.4755 4.26784-8.0023 4.26784C-6.52911 4.26784-5.33488 2.35709-5.33488 0C-5.33488 2.35709-4.14066 4.26784-2.66747 4.26784C-1.19427 4.26784-.00005 2.35709-.00005 0C-.00005 2.35709 1.19418 4.26784 2.66737 4.26784S5.3348 2.35709 5.3348 0C5.3348 2.35709 6.52902 4.26784 8.00221 4.26784S10.66963 2.35709 10.66963 0" fill="none" />
+          <desc>Four coil half-turns</desc>
+        </g>
+        <g data-part="lead-b" id="instance-21--sc-inductor-coil-r1-small-thick--sc-inductor-coil-r1-small-thick--lead-b" inkscape:label="lead-b">
+          <path d="M10.66972 0H19.91682" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-22-inductor-coil-medium-thin" overflow="visible">
+      <title>Coil inductor · Medium / Thin</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "inductor-coil", "revision": 1, "size": "medium", "stroke": "thin", "pins_mm": {"a": [-8.0, 0.0], "b": [8.0, 0.0]}}</metadata>
+      <g id="instance-22--sc-inductor-coil-r1-medium-thin--sc-inductor-coil-r1-medium-thin" inkscape:label="Coil inductor / medium / thin" data-symbol="inductor-coil" data-revision="1" data-size="medium" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(15.154693041666665,22.325055186111108) scale(0.35277777777777775) translate(-42.958185,-63.283621)scale(0.996264,-0.996264)">
+        <g data-part="lead-a" id="instance-22--sc-inductor-coil-r1-medium-thin--sc-inductor-coil-r1-medium-thin--lead-a" inkscape:label="lead-a">
+          <path d="M-22.76208 0H-14.22621" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="body" id="instance-22--sc-inductor-coil-r1-medium-thin--sc-inductor-coil-r1-medium-thin--body" inkscape:label="body">
+          <path d="M-14.22621 0C-14.22621 3.14278-12.63393 5.69043-10.6697 5.69043C-8.70546 5.69043-7.11317 3.14278-7.11317 0C-7.11317 3.14278-5.52089 5.69043-3.55666 5.69043C-1.59242 5.69043-.00014 3.14278-.00014 0C-.00014 3.14278 1.59215 5.69043 3.55638 5.69043S7.1129 3.14278 7.1129 0C7.1129 3.14278 8.70518 5.69043 10.66942 5.69043C12.63365 5.69043 14.22594 3.14278 14.22594 0" fill="none" />
+          <desc>Four coil half-turns</desc>
+        </g>
+        <g data-part="lead-b" id="instance-22--sc-inductor-coil-r1-medium-thin--sc-inductor-coil-r1-medium-thin--lead-b" inkscape:label="lead-b">
+          <path d="M14.22621 0H22.76208" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-23-inductor-coil-medium-medium" overflow="visible">
+      <title>Coil inductor · Medium / Medium</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "inductor-coil", "revision": 1, "size": "medium", "stroke": "medium", "pins_mm": {"a": [-8.0, 0.0], "b": [8.0, 0.0]}}</metadata>
+      <g id="instance-23--sc-inductor-coil-r1-medium-medium--sc-inductor-coil-r1-medium-medium" inkscape:label="Coil inductor / medium / medium" data-symbol="inductor-coil" data-revision="1" data-size="medium" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(15.129691327777778,22.300053824999996) scale(0.35277777777777775) translate(-42.887314,-63.212751)scale(0.996264,-0.996264)">
+        <g data-part="lead-a" id="instance-23--sc-inductor-coil-r1-medium-medium--sc-inductor-coil-r1-medium-medium--lead-a" inkscape:label="lead-a">
+          <path d="M-22.76208 0H-14.22621" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="body" id="instance-23--sc-inductor-coil-r1-medium-medium--sc-inductor-coil-r1-medium-medium--body" inkscape:label="body">
+          <path d="M-14.22621 0C-14.22621 3.14278-12.63393 5.69043-10.6697 5.69043C-8.70546 5.69043-7.11317 3.14278-7.11317 0C-7.11317 3.14278-5.52089 5.69043-3.55666 5.69043C-1.59242 5.69043-.00014 3.14278-.00014 0C-.00014 3.14278 1.59215 5.69043 3.55638 5.69043S7.1129 3.14278 7.1129 0C7.1129 3.14278 8.70518 5.69043 10.66942 5.69043C12.63365 5.69043 14.22594 3.14278 14.22594 0" fill="none" />
+          <desc>Four coil half-turns</desc>
+        </g>
+        <g data-part="lead-b" id="instance-23--sc-inductor-coil-r1-medium-medium--sc-inductor-coil-r1-medium-medium--lead-b" inkscape:label="lead-b">
+          <path d="M14.22621 0H22.76208" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-24-inductor-coil-medium-thick" overflow="visible">
+      <title>Coil inductor · Medium / Thick</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "inductor-coil", "revision": 1, "size": "medium", "stroke": "thick", "pins_mm": {"a": [-8.0, 0.0], "b": [8.0, 0.0]}}</metadata>
+      <g id="instance-24--sc-inductor-coil-r1-medium-thick--sc-inductor-coil-r1-medium-thick" inkscape:label="Coil inductor / medium / thick" data-symbol="inductor-coil" data-revision="1" data-size="medium" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(15.079688252777776,22.250050397222218) scale(0.35277777777777775) translate(-42.745573,-63.071009)scale(0.996264,-0.996264)">
+        <g data-part="lead-a" id="instance-24--sc-inductor-coil-r1-medium-thick--sc-inductor-coil-r1-medium-thick--lead-a" inkscape:label="lead-a">
+          <path d="M-22.76208 0H-14.22621" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="body" id="instance-24--sc-inductor-coil-r1-medium-thick--sc-inductor-coil-r1-medium-thick--body" inkscape:label="body">
+          <path d="M-14.22621 0C-14.22621 3.14278-12.63393 5.69043-10.6697 5.69043C-8.70546 5.69043-7.11317 3.14278-7.11317 0C-7.11317 3.14278-5.52089 5.69043-3.55666 5.69043C-1.59242 5.69043-.00014 3.14278-.00014 0C-.00014 3.14278 1.59215 5.69043 3.55638 5.69043S7.1129 3.14278 7.1129 0C7.1129 3.14278 8.70518 5.69043 10.66942 5.69043C12.63365 5.69043 14.22594 3.14278 14.22594 0" fill="none" />
+          <desc>Four coil half-turns</desc>
+        </g>
+        <g data-part="lead-b" id="instance-24--sc-inductor-coil-r1-medium-thick--sc-inductor-coil-r1-medium-thick--lead-b" inkscape:label="lead-b">
+          <path d="M14.22621 0H22.76208" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-25-inductor-coil-large-thin" overflow="visible">
+      <title>Coil inductor · Large / Thin</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "inductor-coil", "revision": 1, "size": "large", "stroke": "thin", "pins_mm": {"a": [-10.0, 0.0], "b": [10.0, 0.0]}}</metadata>
+      <g id="instance-25--sc-inductor-coil-r1-large-thin--sc-inductor-coil-r1-large-thin" inkscape:label="Coil inductor / large / thin" data-symbol="inductor-coil" data-revision="1" data-size="large" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(13.154703391666665,21.82504454444444) scale(0.35277777777777775) translate(-37.288923,-61.866268)scale(0.996264,-0.996264)">
+        <g data-part="lead-a" id="instance-25--sc-inductor-coil-r1-large-thin--sc-inductor-coil-r1-large-thin--lead-a" inkscape:label="lead-a">
+          <path d="M-28.4526 0H-17.78282" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="body" id="instance-25--sc-inductor-coil-r1-large-thin--sc-inductor-coil-r1-large-thin--body" inkscape:label="body">
+          <path d="M-17.78282 0C-17.78282 3.9285-15.79245 7.1131-13.33716 7.1131S-8.8915 3.9285-8.8915 0C-8.8915 3.9285-6.90112 7.1131-4.44583 7.1131S-.00017 3.9285-.00017 0C-.00017 3.9285 1.9902 7.1131 4.4455 7.1131C6.90079 7.1131 8.89116 3.9285 8.89116 0C8.89116 3.9285 10.88153 7.1131 13.33682 7.1131S17.78249 3.9285 17.78249 0" fill="none" />
+          <desc>Four coil half-turns</desc>
+        </g>
+        <g data-part="lead-b" id="instance-25--sc-inductor-coil-r1-large-thin--sc-inductor-coil-r1-large-thin--lead-b" inkscape:label="lead-b">
+          <path d="M17.78282 0H28.4526" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-26-inductor-coil-large-medium" overflow="visible">
+      <title>Coil inductor · Large / Medium</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "inductor-coil", "revision": 1, "size": "large", "stroke": "medium", "pins_mm": {"a": [-10.0, 0.0], "b": [10.0, 0.0]}}</metadata>
+      <g id="instance-26--sc-inductor-coil-r1-large-medium--sc-inductor-coil-r1-large-medium" inkscape:label="Coil inductor / large / medium" data-symbol="inductor-coil" data-revision="1" data-size="large" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(13.129702030555553,21.800042830555554) scale(0.35277777777777775) translate(-37.218053,-61.795397)scale(0.996264,-0.996264)">
+        <g data-part="lead-a" id="instance-26--sc-inductor-coil-r1-large-medium--sc-inductor-coil-r1-large-medium--lead-a" inkscape:label="lead-a">
+          <path d="M-28.4526 0H-17.78282" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="body" id="instance-26--sc-inductor-coil-r1-large-medium--sc-inductor-coil-r1-large-medium--body" inkscape:label="body">
+          <path d="M-17.78282 0C-17.78282 3.9285-15.79245 7.1131-13.33716 7.1131S-8.8915 3.9285-8.8915 0C-8.8915 3.9285-6.90112 7.1131-4.44583 7.1131S-.00017 3.9285-.00017 0C-.00017 3.9285 1.9902 7.1131 4.4455 7.1131C6.90079 7.1131 8.89116 3.9285 8.89116 0C8.89116 3.9285 10.88153 7.1131 13.33682 7.1131S17.78249 3.9285 17.78249 0" fill="none" />
+          <desc>Four coil half-turns</desc>
+        </g>
+        <g data-part="lead-b" id="instance-26--sc-inductor-coil-r1-large-medium--sc-inductor-coil-r1-large-medium--lead-b" inkscape:label="lead-b">
+          <path d="M17.78282 0H28.4526" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-27-inductor-coil-large-thick" overflow="visible">
+      <title>Coil inductor · Large / Thick</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "inductor-coil", "revision": 1, "size": "large", "stroke": "thick", "pins_mm": {"a": [-10.0, 0.0], "b": [10.0, 0.0]}}</metadata>
+      <g id="instance-27--sc-inductor-coil-r1-large-thick--sc-inductor-coil-r1-large-thick" inkscape:label="Coil inductor / large / thick" data-symbol="inductor-coil" data-revision="1" data-size="large" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(13.079698602777775,21.75003975555555) scale(0.35277777777777775) translate(-37.076311,-61.653656)scale(0.996264,-0.996264)">
+        <g data-part="lead-a" id="instance-27--sc-inductor-coil-r1-large-thick--sc-inductor-coil-r1-large-thick--lead-a" inkscape:label="lead-a">
+          <path d="M-28.4526 0H-17.78282" fill="none" />
+          <desc>Lead from terminal A to body</desc>
+        </g>
+        <g data-part="body" id="instance-27--sc-inductor-coil-r1-large-thick--sc-inductor-coil-r1-large-thick--body" inkscape:label="body">
+          <path d="M-17.78282 0C-17.78282 3.9285-15.79245 7.1131-13.33716 7.1131S-8.8915 3.9285-8.8915 0C-8.8915 3.9285-6.90112 7.1131-4.44583 7.1131S-.00017 3.9285-.00017 0C-.00017 3.9285 1.9902 7.1131 4.4455 7.1131C6.90079 7.1131 8.89116 3.9285 8.89116 0C8.89116 3.9285 10.88153 7.1131 13.33682 7.1131S17.78249 3.9285 17.78249 0" fill="none" />
+          <desc>Four coil half-turns</desc>
+        </g>
+        <g data-part="lead-b" id="instance-27--sc-inductor-coil-r1-large-thick--sc-inductor-coil-r1-large-thick--lead-b" inkscape:label="lead-b">
+          <path d="M17.78282 0H28.4526" fill="none" />
+          <desc>Lead from body to terminal B</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-28-capacitor-small-thin" overflow="visible">
+      <title>Capacitor · Small / Thin</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "capacitor", "revision": 1, "size": "small", "stroke": "thin", "pins_mm": {"a": [-4.0, 0.0], "b": [4.0, 0.0]}}</metadata>
+      <g id="instance-28--sc-capacitor-r1-small-thin--sc-capacitor-r1-small-thin" inkscape:label="Capacitor / small / thin" data-symbol="capacitor" data-revision="1" data-size="small" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(19.15467198888889,21.825028316666664) scale(0.35277777777777775) translate(-54.296708,-61.866222)scale(0.996264,-0.996264)">
+        <g data-part="plate-a" id="instance-28--sc-capacitor-r1-small-thin--sc-capacitor-r1-small-thin--plate-a" inkscape:label="plate-a">
+          <path d="M-2.13394-7.11314V7.11314" fill="none" />
+          <desc>First capacitor plate</desc>
+        </g>
+        <g data-part="plate-b" id="instance-28--sc-capacitor-r1-small-thin--sc-capacitor-r1-small-thin--plate-b" inkscape:label="plate-b">
+          <path d="M2.13394-7.11314V7.11314" fill="none" />
+          <desc>Second capacitor plate</desc>
+        </g>
+        <g data-part="lead-a" id="instance-28--sc-capacitor-r1-small-thin--sc-capacitor-r1-small-thin--lead-a" inkscape:label="lead-a">
+          <path d="M-11.38104 0H-2.13394" fill="none" />
+          <desc>Lead to first plate</desc>
+        </g>
+        <g data-part="lead-b" id="instance-28--sc-capacitor-r1-small-thin--sc-capacitor-r1-small-thin--lead-b" inkscape:label="lead-b">
+          <path d="M2.13394 0H11.38104" fill="none" />
+          <desc>Lead to second plate</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-29-capacitor-small-medium" overflow="visible">
+      <title>Capacitor · Small / Medium</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "capacitor", "revision": 1, "size": "small", "stroke": "medium", "pins_mm": {"a": [-4.0, 0.0], "b": [4.0, 0.0]}}</metadata>
+      <g id="instance-29--sc-capacitor-r1-small-medium--sc-capacitor-r1-small-medium" inkscape:label="Capacitor / small / medium" data-symbol="capacitor" data-revision="1" data-size="small" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(19.129670275,21.800026955555555) scale(0.35277777777777775) translate(-54.225837,-61.795352)scale(0.996264,-0.996264)">
+        <g data-part="plate-a" id="instance-29--sc-capacitor-r1-small-medium--sc-capacitor-r1-small-medium--plate-a" inkscape:label="plate-a">
+          <path d="M-2.13394-7.11314V7.11314" fill="none" />
+          <desc>First capacitor plate</desc>
+        </g>
+        <g data-part="plate-b" id="instance-29--sc-capacitor-r1-small-medium--sc-capacitor-r1-small-medium--plate-b" inkscape:label="plate-b">
+          <path d="M2.13394-7.11314V7.11314" fill="none" />
+          <desc>Second capacitor plate</desc>
+        </g>
+        <g data-part="lead-a" id="instance-29--sc-capacitor-r1-small-medium--sc-capacitor-r1-small-medium--lead-a" inkscape:label="lead-a">
+          <path d="M-11.38104 0H-2.13394" fill="none" />
+          <desc>Lead to first plate</desc>
+        </g>
+        <g data-part="lead-b" id="instance-29--sc-capacitor-r1-small-medium--sc-capacitor-r1-small-medium--lead-b" inkscape:label="lead-b">
+          <path d="M2.13394 0H11.38104" fill="none" />
+          <desc>Lead to second plate</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-30-capacitor-small-thick" overflow="visible">
+      <title>Capacitor · Small / Thick</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "capacitor", "revision": 1, "size": "small", "stroke": "thick", "pins_mm": {"a": [-4.0, 0.0], "b": [4.0, 0.0]}}</metadata>
+      <g id="instance-30--sc-capacitor-r1-small-thick--sc-capacitor-r1-small-thick" inkscape:label="Capacitor / small / thick" data-symbol="capacitor" data-revision="1" data-size="small" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(19.0796672,21.750023527777778) scale(0.35277777777777775) translate(-54.084096,-61.65361)scale(0.996264,-0.996264)">
+        <g data-part="plate-a" id="instance-30--sc-capacitor-r1-small-thick--sc-capacitor-r1-small-thick--plate-a" inkscape:label="plate-a">
+          <path d="M-2.13394-7.11314V7.11314" fill="none" />
+          <desc>First capacitor plate</desc>
+        </g>
+        <g data-part="plate-b" id="instance-30--sc-capacitor-r1-small-thick--sc-capacitor-r1-small-thick--plate-b" inkscape:label="plate-b">
+          <path d="M2.13394-7.11314V7.11314" fill="none" />
+          <desc>Second capacitor plate</desc>
+        </g>
+        <g data-part="lead-a" id="instance-30--sc-capacitor-r1-small-thick--sc-capacitor-r1-small-thick--lead-a" inkscape:label="lead-a">
+          <path d="M-11.38104 0H-2.13394" fill="none" />
+          <desc>Lead to first plate</desc>
+        </g>
+        <g data-part="lead-b" id="instance-30--sc-capacitor-r1-small-thick--sc-capacitor-r1-small-thick--lead-b" inkscape:label="lead-b">
+          <path d="M2.13394 0H11.38104" fill="none" />
+          <desc>Lead to second plate</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-31-capacitor-medium-thin" overflow="visible">
+      <title>Capacitor · Medium / Thin</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "capacitor", "revision": 1, "size": "medium", "stroke": "thin", "pins_mm": {"a": [-4.0, 0.0], "b": [4.0, 0.0]}}</metadata>
+      <g id="instance-31--sc-capacitor-r1-medium-thin--sc-capacitor-r1-medium-thin" inkscape:label="Capacitor / medium / thin" data-symbol="capacitor" data-revision="1" data-size="medium" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(19.15467198888889,20.99172205) scale(0.35277777777777775) translate(-54.296708,-59.504094)scale(0.996264,-0.996264)">
+        <g data-part="plate-a" id="instance-31--sc-capacitor-r1-medium-thin--sc-capacitor-r1-medium-thin--plate-a" inkscape:label="plate-a">
+          <path d="M-2.84526-9.48413V9.48413" fill="none" />
+          <desc>First capacitor plate</desc>
+        </g>
+        <g data-part="plate-b" id="instance-31--sc-capacitor-r1-medium-thin--sc-capacitor-r1-medium-thin--plate-b" inkscape:label="plate-b">
+          <path d="M2.84526-9.48413V9.48413" fill="none" />
+          <desc>Second capacitor plate</desc>
+        </g>
+        <g data-part="lead-a" id="instance-31--sc-capacitor-r1-medium-thin--sc-capacitor-r1-medium-thin--lead-a" inkscape:label="lead-a">
+          <path d="M-11.38104 0H-2.84526" fill="none" />
+          <desc>Lead to first plate</desc>
+        </g>
+        <g data-part="lead-b" id="instance-31--sc-capacitor-r1-medium-thin--sc-capacitor-r1-medium-thin--lead-b" inkscape:label="lead-b">
+          <path d="M2.84526 0H11.38104" fill="none" />
+          <desc>Lead to second plate</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-32-capacitor-medium-medium" overflow="visible">
+      <title>Capacitor · Medium / Medium</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "capacitor", "revision": 1, "size": "medium", "stroke": "medium", "pins_mm": {"a": [-4.0, 0.0], "b": [4.0, 0.0]}}</metadata>
+      <g id="instance-32--sc-capacitor-r1-medium-medium--sc-capacitor-r1-medium-medium" inkscape:label="Capacitor / medium / medium" data-symbol="capacitor" data-revision="1" data-size="medium" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(19.129670275,20.96672033611111) scale(0.35277777777777775) translate(-54.225837,-59.433223)scale(0.996264,-0.996264)">
+        <g data-part="plate-a" id="instance-32--sc-capacitor-r1-medium-medium--sc-capacitor-r1-medium-medium--plate-a" inkscape:label="plate-a">
+          <path d="M-2.84526-9.48413V9.48413" fill="none" />
+          <desc>First capacitor plate</desc>
+        </g>
+        <g data-part="plate-b" id="instance-32--sc-capacitor-r1-medium-medium--sc-capacitor-r1-medium-medium--plate-b" inkscape:label="plate-b">
+          <path d="M2.84526-9.48413V9.48413" fill="none" />
+          <desc>Second capacitor plate</desc>
+        </g>
+        <g data-part="lead-a" id="instance-32--sc-capacitor-r1-medium-medium--sc-capacitor-r1-medium-medium--lead-a" inkscape:label="lead-a">
+          <path d="M-11.38104 0H-2.84526" fill="none" />
+          <desc>Lead to first plate</desc>
+        </g>
+        <g data-part="lead-b" id="instance-32--sc-capacitor-r1-medium-medium--sc-capacitor-r1-medium-medium--lead-b" inkscape:label="lead-b">
+          <path d="M2.84526 0H11.38104" fill="none" />
+          <desc>Lead to second plate</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-33-capacitor-medium-thick" overflow="visible">
+      <title>Capacitor · Medium / Thick</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "capacitor", "revision": 1, "size": "medium", "stroke": "thick", "pins_mm": {"a": [-4.0, 0.0], "b": [4.0, 0.0]}}</metadata>
+      <g id="instance-33--sc-capacitor-r1-medium-thick--sc-capacitor-r1-medium-thick" inkscape:label="Capacitor / medium / thick" data-symbol="capacitor" data-revision="1" data-size="medium" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(19.0796672,20.91671690833333) scale(0.35277777777777775) translate(-54.084096,-59.291481)scale(0.996264,-0.996264)">
+        <g data-part="plate-a" id="instance-33--sc-capacitor-r1-medium-thick--sc-capacitor-r1-medium-thick--plate-a" inkscape:label="plate-a">
+          <path d="M-2.84526-9.48413V9.48413" fill="none" />
+          <desc>First capacitor plate</desc>
+        </g>
+        <g data-part="plate-b" id="instance-33--sc-capacitor-r1-medium-thick--sc-capacitor-r1-medium-thick--plate-b" inkscape:label="plate-b">
+          <path d="M2.84526-9.48413V9.48413" fill="none" />
+          <desc>Second capacitor plate</desc>
+        </g>
+        <g data-part="lead-a" id="instance-33--sc-capacitor-r1-medium-thick--sc-capacitor-r1-medium-thick--lead-a" inkscape:label="lead-a">
+          <path d="M-11.38104 0H-2.84526" fill="none" />
+          <desc>Lead to first plate</desc>
+        </g>
+        <g data-part="lead-b" id="instance-33--sc-capacitor-r1-medium-thick--sc-capacitor-r1-medium-thick--lead-b" inkscape:label="lead-b">
+          <path d="M2.84526 0H11.38104" fill="none" />
+          <desc>Lead to second plate</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-34-capacitor-large-thin" overflow="visible">
+      <title>Capacitor · Large / Thin</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "capacitor", "revision": 1, "size": "large", "stroke": "thin", "pins_mm": {"a": [-5.0, 0.0], "b": [5.0, 0.0]}}</metadata>
+      <g id="instance-34--sc-capacitor-r1-large-thin--sc-capacitor-r1-large-thin" inkscape:label="Capacitor / large / thin" data-symbol="capacitor" data-revision="1" data-size="large" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(18.154677163888888,20.158382975) scale(0.35277777777777775) translate(-51.462077,-57.141873)scale(0.996264,-0.996264)">
+        <g data-part="plate-a" id="instance-34--sc-capacitor-r1-large-thin--sc-capacitor-r1-large-thin--plate-a" inkscape:label="plate-a">
+          <path d="M-3.55656-11.85521V11.85521" fill="none" />
+          <desc>First capacitor plate</desc>
+        </g>
+        <g data-part="plate-b" id="instance-34--sc-capacitor-r1-large-thin--sc-capacitor-r1-large-thin--plate-b" inkscape:label="plate-b">
+          <path d="M3.55656-11.85521V11.85521" fill="none" />
+          <desc>Second capacitor plate</desc>
+        </g>
+        <g data-part="lead-a" id="instance-34--sc-capacitor-r1-large-thin--sc-capacitor-r1-large-thin--lead-a" inkscape:label="lead-a">
+          <path d="M-14.2263 0H-3.55656" fill="none" />
+          <desc>Lead to first plate</desc>
+        </g>
+        <g data-part="lead-b" id="instance-34--sc-capacitor-r1-large-thin--sc-capacitor-r1-large-thin--lead-b" inkscape:label="lead-b">
+          <path d="M3.55656 0H14.2263" fill="none" />
+          <desc>Lead to second plate</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-35-capacitor-large-medium" overflow="visible">
+      <title>Capacitor · Large / Medium</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "capacitor", "revision": 1, "size": "large", "stroke": "medium", "pins_mm": {"a": [-5.0, 0.0], "b": [5.0, 0.0]}}</metadata>
+      <g id="instance-35--sc-capacitor-r1-large-medium--sc-capacitor-r1-large-medium" inkscape:label="Capacitor / large / medium" data-symbol="capacitor" data-revision="1" data-size="large" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(18.129675449999997,20.133381613888886) scale(0.35277777777777775) translate(-51.391206,-57.071003)scale(0.996264,-0.996264)">
+        <g data-part="plate-a" id="instance-35--sc-capacitor-r1-large-medium--sc-capacitor-r1-large-medium--plate-a" inkscape:label="plate-a">
+          <path d="M-3.55656-11.85521V11.85521" fill="none" />
+          <desc>First capacitor plate</desc>
+        </g>
+        <g data-part="plate-b" id="instance-35--sc-capacitor-r1-large-medium--sc-capacitor-r1-large-medium--plate-b" inkscape:label="plate-b">
+          <path d="M3.55656-11.85521V11.85521" fill="none" />
+          <desc>Second capacitor plate</desc>
+        </g>
+        <g data-part="lead-a" id="instance-35--sc-capacitor-r1-large-medium--sc-capacitor-r1-large-medium--lead-a" inkscape:label="lead-a">
+          <path d="M-14.2263 0H-3.55656" fill="none" />
+          <desc>Lead to first plate</desc>
+        </g>
+        <g data-part="lead-b" id="instance-35--sc-capacitor-r1-large-medium--sc-capacitor-r1-large-medium--lead-b" inkscape:label="lead-b">
+          <path d="M3.55656 0H14.2263" fill="none" />
+          <desc>Lead to second plate</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-36-capacitor-large-thick" overflow="visible">
+      <title>Capacitor · Large / Thick</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "capacitor", "revision": 1, "size": "large", "stroke": "thick", "pins_mm": {"a": [-5.0, 0.0], "b": [5.0, 0.0]}}</metadata>
+      <g id="instance-36--sc-capacitor-r1-large-thick--sc-capacitor-r1-large-thick" inkscape:label="Capacitor / large / thick" data-symbol="capacitor" data-revision="1" data-size="large" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(18.079672374999998,20.08337818611111) scale(0.35277777777777775) translate(-51.249465,-56.929261)scale(0.996264,-0.996264)">
+        <g data-part="plate-a" id="instance-36--sc-capacitor-r1-large-thick--sc-capacitor-r1-large-thick--plate-a" inkscape:label="plate-a">
+          <path d="M-3.55656-11.85521V11.85521" fill="none" />
+          <desc>First capacitor plate</desc>
+        </g>
+        <g data-part="plate-b" id="instance-36--sc-capacitor-r1-large-thick--sc-capacitor-r1-large-thick--plate-b" inkscape:label="plate-b">
+          <path d="M3.55656-11.85521V11.85521" fill="none" />
+          <desc>Second capacitor plate</desc>
+        </g>
+        <g data-part="lead-a" id="instance-36--sc-capacitor-r1-large-thick--sc-capacitor-r1-large-thick--lead-a" inkscape:label="lead-a">
+          <path d="M-14.2263 0H-3.55656" fill="none" />
+          <desc>Lead to first plate</desc>
+        </g>
+        <g data-part="lead-b" id="instance-36--sc-capacitor-r1-large-thick--sc-capacitor-r1-large-thick--lead-b" inkscape:label="lead-b">
+          <path d="M3.55656 0H14.2263" fill="none" />
+          <desc>Lead to second plate</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-37-opamp-small-thin" overflow="visible">
+      <title>Op-amp · Small / Thin</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "opamp", "revision": 1, "size": "small", "stroke": "thin", "pins_mm": {"in-plus": [-8.0, 3.0], "in-minus": [-8.0, -3.0], "out": [8.0, 0.0]}}</metadata>
+      <g id="instance-37--sc-opamp-r1-small-thin--sc-opamp-r1-small-thin" inkscape:label="Op-amp / small / thin" data-symbol="opamp" data-revision="1" data-size="small" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(15.154693041666665,19.325038961111108) scale(0.35277777777777775) translate(-42.958185,-54.779638)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-37--sc-opamp-r1-small-thin--sc-opamp-r1-small-thin--body" inkscape:label="body">
+          <path d="M-12.0923-14.2263V14.2263L12.0923 0Z" fill="none" />
+          <desc>Triangle outline</desc>
+        </g>
+        <g data-part="lead-in-plus" id="instance-37--sc-opamp-r1-small-thin--sc-opamp-r1-small-thin--lead-in-plus" inkscape:label="lead-in-plus">
+          <path d="M-22.76208 8.53578H-12.0923" fill="none" />
+          <desc>Non-inverting input lead</desc>
+        </g>
+        <g data-part="lead-in-minus" id="instance-37--sc-opamp-r1-small-thin--sc-opamp-r1-small-thin--lead-in-minus" inkscape:label="lead-in-minus">
+          <path d="M-22.76208-8.53578H-12.0923" fill="none" />
+          <desc>Inverting input lead</desc>
+        </g>
+        <g data-part="lead-out" id="instance-37--sc-opamp-r1-small-thin--sc-opamp-r1-small-thin--lead-out" inkscape:label="lead-out">
+          <path d="M12.0923 0H22.76208" fill="none" />
+          <desc>Output lead</desc>
+        </g>
+        <g data-part="sign-plus" id="instance-37--sc-opamp-r1-small-thin--sc-opamp-r1-small-thin--sign-plus" inkscape:label="sign-plus">
+          <path d="M-9.95831 8.53578H-7.11314M-8.53574 7.11319V9.95836" fill="none" />
+          <desc>Non-inverting input mark</desc>
+        </g>
+        <g data-part="sign-minus" id="instance-37--sc-opamp-r1-small-thin--sc-opamp-r1-small-thin--sign-minus" inkscape:label="sign-minus">
+          <path d="M-9.95831-8.53578H-7.11314" fill="none" />
+          <desc>Inverting input mark</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-38-opamp-small-medium" overflow="visible">
+      <title>Op-amp · Small / Medium</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "opamp", "revision": 1, "size": "small", "stroke": "medium", "pins_mm": {"in-plus": [-8.0, 3.0], "in-minus": [-8.0, -3.0], "out": [8.0, 0.0]}}</metadata>
+      <g id="instance-38--sc-opamp-r1-small-medium--sc-opamp-r1-small-medium" inkscape:label="Op-amp / small / medium" data-symbol="opamp" data-revision="1" data-size="small" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(15.129691327777778,19.30003724722222) scale(0.35277777777777775) translate(-42.887314,-54.708767)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-38--sc-opamp-r1-small-medium--sc-opamp-r1-small-medium--body" inkscape:label="body">
+          <path d="M-12.0923-14.2263V14.2263L12.0923 0Z" fill="none" />
+          <desc>Triangle outline</desc>
+        </g>
+        <g data-part="lead-in-plus" id="instance-38--sc-opamp-r1-small-medium--sc-opamp-r1-small-medium--lead-in-plus" inkscape:label="lead-in-plus">
+          <path d="M-22.76208 8.53578H-12.0923" fill="none" />
+          <desc>Non-inverting input lead</desc>
+        </g>
+        <g data-part="lead-in-minus" id="instance-38--sc-opamp-r1-small-medium--sc-opamp-r1-small-medium--lead-in-minus" inkscape:label="lead-in-minus">
+          <path d="M-22.76208-8.53578H-12.0923" fill="none" />
+          <desc>Inverting input lead</desc>
+        </g>
+        <g data-part="lead-out" id="instance-38--sc-opamp-r1-small-medium--sc-opamp-r1-small-medium--lead-out" inkscape:label="lead-out">
+          <path d="M12.0923 0H22.76208" fill="none" />
+          <desc>Output lead</desc>
+        </g>
+        <g data-part="sign-plus" id="instance-38--sc-opamp-r1-small-medium--sc-opamp-r1-small-medium--sign-plus" inkscape:label="sign-plus">
+          <path d="M-9.95831 8.53578H-7.11314M-8.53574 7.11319V9.95836" fill="none" />
+          <desc>Non-inverting input mark</desc>
+        </g>
+        <g data-part="sign-minus" id="instance-38--sc-opamp-r1-small-medium--sc-opamp-r1-small-medium--sign-minus" inkscape:label="sign-minus">
+          <path d="M-9.95831-8.53578H-7.11314" fill="none" />
+          <desc>Inverting input mark</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-39-opamp-small-thick" overflow="visible">
+      <title>Op-amp · Small / Thick</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "opamp", "revision": 1, "size": "small", "stroke": "thick", "pins_mm": {"in-plus": [-8.0, 3.0], "in-minus": [-8.0, -3.0], "out": [8.0, 0.0]}}</metadata>
+      <g id="instance-39--sc-opamp-r1-small-thick--sc-opamp-r1-small-thick" inkscape:label="Op-amp / small / thick" data-symbol="opamp" data-revision="1" data-size="small" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(15.079688252777776,19.25003417222222) scale(0.35277777777777775) translate(-42.745573,-54.567026)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-39--sc-opamp-r1-small-thick--sc-opamp-r1-small-thick--body" inkscape:label="body">
+          <path d="M-12.0923-14.2263V14.2263L12.0923 0Z" fill="none" />
+          <desc>Triangle outline</desc>
+        </g>
+        <g data-part="lead-in-plus" id="instance-39--sc-opamp-r1-small-thick--sc-opamp-r1-small-thick--lead-in-plus" inkscape:label="lead-in-plus">
+          <path d="M-22.76208 8.53578H-12.0923" fill="none" />
+          <desc>Non-inverting input lead</desc>
+        </g>
+        <g data-part="lead-in-minus" id="instance-39--sc-opamp-r1-small-thick--sc-opamp-r1-small-thick--lead-in-minus" inkscape:label="lead-in-minus">
+          <path d="M-22.76208-8.53578H-12.0923" fill="none" />
+          <desc>Inverting input lead</desc>
+        </g>
+        <g data-part="lead-out" id="instance-39--sc-opamp-r1-small-thick--sc-opamp-r1-small-thick--lead-out" inkscape:label="lead-out">
+          <path d="M12.0923 0H22.76208" fill="none" />
+          <desc>Output lead</desc>
+        </g>
+        <g data-part="sign-plus" id="instance-39--sc-opamp-r1-small-thick--sc-opamp-r1-small-thick--sign-plus" inkscape:label="sign-plus">
+          <path d="M-9.95831 8.53578H-7.11314M-8.53574 7.11319V9.95836" fill="none" />
+          <desc>Non-inverting input mark</desc>
+        </g>
+        <g data-part="sign-minus" id="instance-39--sc-opamp-r1-small-thick--sc-opamp-r1-small-thick--sign-minus" inkscape:label="sign-minus">
+          <path d="M-9.95831-8.53578H-7.11314" fill="none" />
+          <desc>Inverting input mark</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-40-opamp-medium-thin" overflow="visible">
+      <title>Op-amp · Medium / Thin</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "opamp", "revision": 1, "size": "medium", "stroke": "thin", "pins_mm": {"in-plus": [-9.0, 3.0], "in-minus": [-9.0, -3.0], "out": [9.0, 0.0]}}</metadata>
+      <g id="instance-40--sc-opamp-r1-medium-thin--sc-opamp-r1-medium-thin" inkscape:label="Op-amp / medium / thin" data-symbol="opamp" data-revision="1" data-size="medium" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(14.154698216666665,17.65842572222222) scale(0.35277777777777775) translate(-40.123554,-50.05538)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-40--sc-opamp-r1-medium-thin--sc-opamp-r1-medium-thin--body" inkscape:label="body">
+          <path d="M-16.12297-18.96828V18.96828L16.12297 0Z" fill="none" />
+          <desc>Triangle outline</desc>
+        </g>
+        <g data-part="lead-in-plus" id="instance-40--sc-opamp-r1-medium-thin--sc-opamp-r1-medium-thin--lead-in-plus" inkscape:label="lead-in-plus">
+          <path d="M-25.60735 8.53578H-16.12297" fill="none" />
+          <desc>Non-inverting input lead</desc>
+        </g>
+        <g data-part="lead-in-minus" id="instance-40--sc-opamp-r1-medium-thin--sc-opamp-r1-medium-thin--lead-in-minus" inkscape:label="lead-in-minus">
+          <path d="M-25.60735-8.53578H-16.12297" fill="none" />
+          <desc>Inverting input lead</desc>
+        </g>
+        <g data-part="lead-out" id="instance-40--sc-opamp-r1-medium-thin--sc-opamp-r1-medium-thin--lead-out" inkscape:label="lead-out">
+          <path d="M16.12297 0H25.60735" fill="none" />
+          <desc>Output lead</desc>
+        </g>
+        <g data-part="sign-plus" id="instance-40--sc-opamp-r1-medium-thin--sc-opamp-r1-medium-thin--sign-plus" inkscape:label="sign-plus">
+          <path d="M-13.27768 8.53578H-9.48413M-11.3809 6.639V10.43254" fill="none" />
+          <desc>Non-inverting input mark</desc>
+        </g>
+        <g data-part="sign-minus" id="instance-40--sc-opamp-r1-medium-thin--sc-opamp-r1-medium-thin--sign-minus" inkscape:label="sign-minus">
+          <path d="M-13.27768-8.53578H-9.48413" fill="none" />
+          <desc>Inverting input mark</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-41-opamp-medium-medium" overflow="visible">
+      <title>Op-amp · Medium / Medium</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "opamp", "revision": 1, "size": "medium", "stroke": "medium", "pins_mm": {"in-plus": [-9.0, 3.0], "in-minus": [-9.0, -3.0], "out": [9.0, 0.0]}}</metadata>
+      <g id="instance-41--sc-opamp-r1-medium-medium--sc-opamp-r1-medium-medium" inkscape:label="Op-amp / medium / medium" data-symbol="opamp" data-revision="1" data-size="medium" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(14.129696502777778,17.633424008333332) scale(0.35277777777777775) translate(-40.052683,-49.984509)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-41--sc-opamp-r1-medium-medium--sc-opamp-r1-medium-medium--body" inkscape:label="body">
+          <path d="M-16.12297-18.96828V18.96828L16.12297 0Z" fill="none" />
+          <desc>Triangle outline</desc>
+        </g>
+        <g data-part="lead-in-plus" id="instance-41--sc-opamp-r1-medium-medium--sc-opamp-r1-medium-medium--lead-in-plus" inkscape:label="lead-in-plus">
+          <path d="M-25.60735 8.53578H-16.12297" fill="none" />
+          <desc>Non-inverting input lead</desc>
+        </g>
+        <g data-part="lead-in-minus" id="instance-41--sc-opamp-r1-medium-medium--sc-opamp-r1-medium-medium--lead-in-minus" inkscape:label="lead-in-minus">
+          <path d="M-25.60735-8.53578H-16.12297" fill="none" />
+          <desc>Inverting input lead</desc>
+        </g>
+        <g data-part="lead-out" id="instance-41--sc-opamp-r1-medium-medium--sc-opamp-r1-medium-medium--lead-out" inkscape:label="lead-out">
+          <path d="M16.12297 0H25.60735" fill="none" />
+          <desc>Output lead</desc>
+        </g>
+        <g data-part="sign-plus" id="instance-41--sc-opamp-r1-medium-medium--sc-opamp-r1-medium-medium--sign-plus" inkscape:label="sign-plus">
+          <path d="M-13.27768 8.53578H-9.48413M-11.3809 6.639V10.43254" fill="none" />
+          <desc>Non-inverting input mark</desc>
+        </g>
+        <g data-part="sign-minus" id="instance-41--sc-opamp-r1-medium-medium--sc-opamp-r1-medium-medium--sign-minus" inkscape:label="sign-minus">
+          <path d="M-13.27768-8.53578H-9.48413" fill="none" />
+          <desc>Inverting input mark</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-42-opamp-medium-thick" overflow="visible">
+      <title>Op-amp · Medium / Thick</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "opamp", "revision": 1, "size": "medium", "stroke": "thick", "pins_mm": {"in-plus": [-9.0, 3.0], "in-minus": [-9.0, -3.0], "out": [9.0, 0.0]}}</metadata>
+      <g id="instance-42--sc-opamp-r1-medium-thick--sc-opamp-r1-medium-thick" inkscape:label="Op-amp / medium / thick" data-symbol="opamp" data-revision="1" data-size="medium" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(14.079693427777777,17.583420933333333) scale(0.35277777777777775) translate(-39.910942,-49.842768)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-42--sc-opamp-r1-medium-thick--sc-opamp-r1-medium-thick--body" inkscape:label="body">
+          <path d="M-16.12297-18.96828V18.96828L16.12297 0Z" fill="none" />
+          <desc>Triangle outline</desc>
+        </g>
+        <g data-part="lead-in-plus" id="instance-42--sc-opamp-r1-medium-thick--sc-opamp-r1-medium-thick--lead-in-plus" inkscape:label="lead-in-plus">
+          <path d="M-25.60735 8.53578H-16.12297" fill="none" />
+          <desc>Non-inverting input lead</desc>
+        </g>
+        <g data-part="lead-in-minus" id="instance-42--sc-opamp-r1-medium-thick--sc-opamp-r1-medium-thick--lead-in-minus" inkscape:label="lead-in-minus">
+          <path d="M-25.60735-8.53578H-16.12297" fill="none" />
+          <desc>Inverting input lead</desc>
+        </g>
+        <g data-part="lead-out" id="instance-42--sc-opamp-r1-medium-thick--sc-opamp-r1-medium-thick--lead-out" inkscape:label="lead-out">
+          <path d="M16.12297 0H25.60735" fill="none" />
+          <desc>Output lead</desc>
+        </g>
+        <g data-part="sign-plus" id="instance-42--sc-opamp-r1-medium-thick--sc-opamp-r1-medium-thick--sign-plus" inkscape:label="sign-plus">
+          <path d="M-13.27768 8.53578H-9.48413M-11.3809 6.639V10.43254" fill="none" />
+          <desc>Non-inverting input mark</desc>
+        </g>
+        <g data-part="sign-minus" id="instance-42--sc-opamp-r1-medium-thick--sc-opamp-r1-medium-thick--sign-minus" inkscape:label="sign-minus">
+          <path d="M-13.27768-8.53578H-9.48413" fill="none" />
+          <desc>Inverting input mark</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-43-opamp-large-thin" overflow="visible">
+      <title>Op-amp · Large / Thin</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "opamp", "revision": 1, "size": "large", "stroke": "thin", "pins_mm": {"in-plus": [-11.0, 3.0], "in-minus": [-11.0, -3.0], "out": [11.0, 0.0]}}</metadata>
+      <g id="instance-43--sc-opamp-r1-large-thin--sc-opamp-r1-large-thin" inkscape:label="Op-amp / large / thin" data-symbol="opamp" data-revision="1" data-size="large" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(12.154708566666667,15.991748277777775) scale(0.35277777777777775) translate(-34.454292,-45.33094)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-43--sc-opamp-r1-large-thin--sc-opamp-r1-large-thin--body" inkscape:label="body">
+          <path d="M-20.15382-23.71043V23.71043L20.15382 0Z" fill="none" />
+          <desc>Triangle outline</desc>
+        </g>
+        <g data-part="lead-in-plus" id="instance-43--sc-opamp-r1-large-thin--sc-opamp-r1-large-thin--lead-in-plus" inkscape:label="lead-in-plus">
+          <path d="M-31.29787 8.53578H-20.15382" fill="none" />
+          <desc>Non-inverting input lead</desc>
+        </g>
+        <g data-part="lead-in-minus" id="instance-43--sc-opamp-r1-large-thin--sc-opamp-r1-large-thin--lead-in-minus" inkscape:label="lead-in-minus">
+          <path d="M-31.29787-8.53578H-20.15382" fill="none" />
+          <desc>Inverting input lead</desc>
+        </g>
+        <g data-part="lead-out" id="instance-43--sc-opamp-r1-large-thin--sc-opamp-r1-large-thin--lead-out" inkscape:label="lead-out">
+          <path d="M20.15382 0H31.29787" fill="none" />
+          <desc>Output lead</desc>
+        </g>
+        <g data-part="sign-plus" id="instance-43--sc-opamp-r1-large-thin--sc-opamp-r1-large-thin--sign-plus" inkscape:label="sign-plus">
+          <path d="M-16.5972 8.53578H-11.85521M-14.22621 6.16478V10.90677" fill="none" />
+          <desc>Non-inverting input mark</desc>
+        </g>
+        <g data-part="sign-minus" id="instance-43--sc-opamp-r1-large-thin--sc-opamp-r1-large-thin--sign-minus" inkscape:label="sign-minus">
+          <path d="M-16.5972-8.53578H-11.85521" fill="none" />
+          <desc>Inverting input mark</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-44-opamp-large-medium" overflow="visible">
+      <title>Op-amp · Large / Medium</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "opamp", "revision": 1, "size": "large", "stroke": "medium", "pins_mm": {"in-plus": [-11.0, 3.0], "in-minus": [-11.0, -3.0], "out": [11.0, 0.0]}}</metadata>
+      <g id="instance-44--sc-opamp-r1-large-medium--sc-opamp-r1-large-medium" inkscape:label="Op-amp / large / medium" data-symbol="opamp" data-revision="1" data-size="large" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(12.129707205555556,15.966746563888888) scale(0.35277777777777775) translate(-34.383422,-45.260069)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-44--sc-opamp-r1-large-medium--sc-opamp-r1-large-medium--body" inkscape:label="body">
+          <path d="M-20.15382-23.71043V23.71043L20.15382 0Z" fill="none" />
+          <desc>Triangle outline</desc>
+        </g>
+        <g data-part="lead-in-plus" id="instance-44--sc-opamp-r1-large-medium--sc-opamp-r1-large-medium--lead-in-plus" inkscape:label="lead-in-plus">
+          <path d="M-31.29787 8.53578H-20.15382" fill="none" />
+          <desc>Non-inverting input lead</desc>
+        </g>
+        <g data-part="lead-in-minus" id="instance-44--sc-opamp-r1-large-medium--sc-opamp-r1-large-medium--lead-in-minus" inkscape:label="lead-in-minus">
+          <path d="M-31.29787-8.53578H-20.15382" fill="none" />
+          <desc>Inverting input lead</desc>
+        </g>
+        <g data-part="lead-out" id="instance-44--sc-opamp-r1-large-medium--sc-opamp-r1-large-medium--lead-out" inkscape:label="lead-out">
+          <path d="M20.15382 0H31.29787" fill="none" />
+          <desc>Output lead</desc>
+        </g>
+        <g data-part="sign-plus" id="instance-44--sc-opamp-r1-large-medium--sc-opamp-r1-large-medium--sign-plus" inkscape:label="sign-plus">
+          <path d="M-16.5972 8.53578H-11.85521M-14.22621 6.16478V10.90677" fill="none" />
+          <desc>Non-inverting input mark</desc>
+        </g>
+        <g data-part="sign-minus" id="instance-44--sc-opamp-r1-large-medium--sc-opamp-r1-large-medium--sign-minus" inkscape:label="sign-minus">
+          <path d="M-16.5972-8.53578H-11.85521" fill="none" />
+          <desc>Inverting input mark</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-45-opamp-large-thick" overflow="visible">
+      <title>Op-amp · Large / Thick</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "opamp", "revision": 1, "size": "large", "stroke": "thick", "pins_mm": {"in-plus": [-11.0, 3.0], "in-minus": [-11.0, -3.0], "out": [11.0, 0.0]}}</metadata>
+      <g id="instance-45--sc-opamp-r1-large-thick--sc-opamp-r1-large-thick" inkscape:label="Op-amp / large / thick" data-symbol="opamp" data-revision="1" data-size="large" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(12.079703777777777,15.916743488888887) scale(0.35277777777777775) translate(-34.24168,-45.118328)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-45--sc-opamp-r1-large-thick--sc-opamp-r1-large-thick--body" inkscape:label="body">
+          <path d="M-20.15382-23.71043V23.71043L20.15382 0Z" fill="none" />
+          <desc>Triangle outline</desc>
+        </g>
+        <g data-part="lead-in-plus" id="instance-45--sc-opamp-r1-large-thick--sc-opamp-r1-large-thick--lead-in-plus" inkscape:label="lead-in-plus">
+          <path d="M-31.29787 8.53578H-20.15382" fill="none" />
+          <desc>Non-inverting input lead</desc>
+        </g>
+        <g data-part="lead-in-minus" id="instance-45--sc-opamp-r1-large-thick--sc-opamp-r1-large-thick--lead-in-minus" inkscape:label="lead-in-minus">
+          <path d="M-31.29787-8.53578H-20.15382" fill="none" />
+          <desc>Inverting input lead</desc>
+        </g>
+        <g data-part="lead-out" id="instance-45--sc-opamp-r1-large-thick--sc-opamp-r1-large-thick--lead-out" inkscape:label="lead-out">
+          <path d="M20.15382 0H31.29787" fill="none" />
+          <desc>Output lead</desc>
+        </g>
+        <g data-part="sign-plus" id="instance-45--sc-opamp-r1-large-thick--sc-opamp-r1-large-thick--sign-plus" inkscape:label="sign-plus">
+          <path d="M-16.5972 8.53578H-11.85521M-14.22621 6.16478V10.90677" fill="none" />
+          <desc>Non-inverting input mark</desc>
+        </g>
+        <g data-part="sign-minus" id="instance-45--sc-opamp-r1-large-thick--sc-opamp-r1-large-thick--sign-minus" inkscape:label="sign-minus">
+          <path d="M-16.5972-8.53578H-11.85521" fill="none" />
+          <desc>Inverting input mark</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-46-opamp-supply-small-thin" overflow="visible">
+      <title>Op-amp with supply pins · Small / Thin</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "opamp-supply", "revision": 1, "size": "small", "stroke": "thin", "pins_mm": {"in-plus": [-8.0, 3.0], "in-minus": [-8.0, -3.0], "out": [8.0, 0.0], "supply-plus": [0.0, 5.0], "supply-minus": [0.0, -5.0]}}</metadata>
+      <g id="instance-46--sc-opamp-supply-r1-small-thin--sc-opamp-supply-r1-small-thin" inkscape:label="Op-amp with supply pins / small / thin" data-symbol="opamp-supply" data-revision="1" data-size="small" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(15.154693041666665,19.325038961111108) scale(0.35277777777777775) translate(-42.958185,-54.779638)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-46--sc-opamp-supply-r1-small-thin--sc-opamp-supply-r1-small-thin--body" inkscape:label="body">
+          <path d="M-12.0923-14.2263V14.2263L12.0923 0Z" fill="none" />
+          <desc>Triangle outline</desc>
+        </g>
+        <g data-part="lead-in-plus" id="instance-46--sc-opamp-supply-r1-small-thin--sc-opamp-supply-r1-small-thin--lead-in-plus" inkscape:label="lead-in-plus">
+          <path d="M-22.76208 8.53578H-12.0923" fill="none" />
+          <desc>Non-inverting input lead</desc>
+        </g>
+        <g data-part="lead-in-minus" id="instance-46--sc-opamp-supply-r1-small-thin--sc-opamp-supply-r1-small-thin--lead-in-minus" inkscape:label="lead-in-minus">
+          <path d="M-22.76208-8.53578H-12.0923" fill="none" />
+          <desc>Inverting input lead</desc>
+        </g>
+        <g data-part="lead-out" id="instance-46--sc-opamp-supply-r1-small-thin--sc-opamp-supply-r1-small-thin--lead-out" inkscape:label="lead-out">
+          <path d="M12.0923 0H22.76208" fill="none" />
+          <desc>Output lead</desc>
+        </g>
+        <g data-part="sign-plus" id="instance-46--sc-opamp-supply-r1-small-thin--sc-opamp-supply-r1-small-thin--sign-plus" inkscape:label="sign-plus">
+          <path d="M-9.95831 8.53578H-7.11314M-8.53574 7.11319V9.95836" fill="none" />
+          <desc>Non-inverting input mark</desc>
+        </g>
+        <g data-part="sign-minus" id="instance-46--sc-opamp-supply-r1-small-thin--sc-opamp-supply-r1-small-thin--sign-minus" inkscape:label="sign-minus">
+          <path d="M-9.95831-8.53578H-7.11314" fill="none" />
+          <desc>Inverting input mark</desc>
+        </g>
+        <g data-part="lead-supply-plus" id="instance-46--sc-opamp-supply-r1-small-thin--sc-opamp-supply-r1-small-thin--lead-supply-plus" inkscape:label="lead-supply-plus">
+          <path d="M0 7.11314V14.2263" fill="none" />
+          <desc>Positive supply lead</desc>
+        </g>
+        <g data-part="lead-supply-minus" id="instance-46--sc-opamp-supply-r1-small-thin--sc-opamp-supply-r1-small-thin--lead-supply-minus" inkscape:label="lead-supply-minus">
+          <path d="M0-7.11314V-14.2263" fill="none" />
+          <desc>Negative supply lead</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-47-opamp-supply-small-medium" overflow="visible">
+      <title>Op-amp with supply pins · Small / Medium</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "opamp-supply", "revision": 1, "size": "small", "stroke": "medium", "pins_mm": {"in-plus": [-8.0, 3.0], "in-minus": [-8.0, -3.0], "out": [8.0, 0.0], "supply-plus": [0.0, 5.0], "supply-minus": [0.0, -5.0]}}</metadata>
+      <g id="instance-47--sc-opamp-supply-r1-small-medium--sc-opamp-supply-r1-small-medium" inkscape:label="Op-amp with supply pins / small / medium" data-symbol="opamp-supply" data-revision="1" data-size="small" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(15.129691327777778,19.30003724722222) scale(0.35277777777777775) translate(-42.887314,-54.708767)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-47--sc-opamp-supply-r1-small-medium--sc-opamp-supply-r1-small-medium--body" inkscape:label="body">
+          <path d="M-12.0923-14.2263V14.2263L12.0923 0Z" fill="none" />
+          <desc>Triangle outline</desc>
+        </g>
+        <g data-part="lead-in-plus" id="instance-47--sc-opamp-supply-r1-small-medium--sc-opamp-supply-r1-small-medium--lead-in-plus" inkscape:label="lead-in-plus">
+          <path d="M-22.76208 8.53578H-12.0923" fill="none" />
+          <desc>Non-inverting input lead</desc>
+        </g>
+        <g data-part="lead-in-minus" id="instance-47--sc-opamp-supply-r1-small-medium--sc-opamp-supply-r1-small-medium--lead-in-minus" inkscape:label="lead-in-minus">
+          <path d="M-22.76208-8.53578H-12.0923" fill="none" />
+          <desc>Inverting input lead</desc>
+        </g>
+        <g data-part="lead-out" id="instance-47--sc-opamp-supply-r1-small-medium--sc-opamp-supply-r1-small-medium--lead-out" inkscape:label="lead-out">
+          <path d="M12.0923 0H22.76208" fill="none" />
+          <desc>Output lead</desc>
+        </g>
+        <g data-part="sign-plus" id="instance-47--sc-opamp-supply-r1-small-medium--sc-opamp-supply-r1-small-medium--sign-plus" inkscape:label="sign-plus">
+          <path d="M-9.95831 8.53578H-7.11314M-8.53574 7.11319V9.95836" fill="none" />
+          <desc>Non-inverting input mark</desc>
+        </g>
+        <g data-part="sign-minus" id="instance-47--sc-opamp-supply-r1-small-medium--sc-opamp-supply-r1-small-medium--sign-minus" inkscape:label="sign-minus">
+          <path d="M-9.95831-8.53578H-7.11314" fill="none" />
+          <desc>Inverting input mark</desc>
+        </g>
+        <g data-part="lead-supply-plus" id="instance-47--sc-opamp-supply-r1-small-medium--sc-opamp-supply-r1-small-medium--lead-supply-plus" inkscape:label="lead-supply-plus">
+          <path d="M0 7.11314V14.2263" fill="none" />
+          <desc>Positive supply lead</desc>
+        </g>
+        <g data-part="lead-supply-minus" id="instance-47--sc-opamp-supply-r1-small-medium--sc-opamp-supply-r1-small-medium--lead-supply-minus" inkscape:label="lead-supply-minus">
+          <path d="M0-7.11314V-14.2263" fill="none" />
+          <desc>Negative supply lead</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-48-opamp-supply-small-thick" overflow="visible">
+      <title>Op-amp with supply pins · Small / Thick</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "opamp-supply", "revision": 1, "size": "small", "stroke": "thick", "pins_mm": {"in-plus": [-8.0, 3.0], "in-minus": [-8.0, -3.0], "out": [8.0, 0.0], "supply-plus": [0.0, 5.0], "supply-minus": [0.0, -5.0]}}</metadata>
+      <g id="instance-48--sc-opamp-supply-r1-small-thick--sc-opamp-supply-r1-small-thick" inkscape:label="Op-amp with supply pins / small / thick" data-symbol="opamp-supply" data-revision="1" data-size="small" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(15.079688252777776,19.25003417222222) scale(0.35277777777777775) translate(-42.745573,-54.567026)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-48--sc-opamp-supply-r1-small-thick--sc-opamp-supply-r1-small-thick--body" inkscape:label="body">
+          <path d="M-12.0923-14.2263V14.2263L12.0923 0Z" fill="none" />
+          <desc>Triangle outline</desc>
+        </g>
+        <g data-part="lead-in-plus" id="instance-48--sc-opamp-supply-r1-small-thick--sc-opamp-supply-r1-small-thick--lead-in-plus" inkscape:label="lead-in-plus">
+          <path d="M-22.76208 8.53578H-12.0923" fill="none" />
+          <desc>Non-inverting input lead</desc>
+        </g>
+        <g data-part="lead-in-minus" id="instance-48--sc-opamp-supply-r1-small-thick--sc-opamp-supply-r1-small-thick--lead-in-minus" inkscape:label="lead-in-minus">
+          <path d="M-22.76208-8.53578H-12.0923" fill="none" />
+          <desc>Inverting input lead</desc>
+        </g>
+        <g data-part="lead-out" id="instance-48--sc-opamp-supply-r1-small-thick--sc-opamp-supply-r1-small-thick--lead-out" inkscape:label="lead-out">
+          <path d="M12.0923 0H22.76208" fill="none" />
+          <desc>Output lead</desc>
+        </g>
+        <g data-part="sign-plus" id="instance-48--sc-opamp-supply-r1-small-thick--sc-opamp-supply-r1-small-thick--sign-plus" inkscape:label="sign-plus">
+          <path d="M-9.95831 8.53578H-7.11314M-8.53574 7.11319V9.95836" fill="none" />
+          <desc>Non-inverting input mark</desc>
+        </g>
+        <g data-part="sign-minus" id="instance-48--sc-opamp-supply-r1-small-thick--sc-opamp-supply-r1-small-thick--sign-minus" inkscape:label="sign-minus">
+          <path d="M-9.95831-8.53578H-7.11314" fill="none" />
+          <desc>Inverting input mark</desc>
+        </g>
+        <g data-part="lead-supply-plus" id="instance-48--sc-opamp-supply-r1-small-thick--sc-opamp-supply-r1-small-thick--lead-supply-plus" inkscape:label="lead-supply-plus">
+          <path d="M0 7.11314V14.2263" fill="none" />
+          <desc>Positive supply lead</desc>
+        </g>
+        <g data-part="lead-supply-minus" id="instance-48--sc-opamp-supply-r1-small-thick--sc-opamp-supply-r1-small-thick--lead-supply-minus" inkscape:label="lead-supply-minus">
+          <path d="M0-7.11314V-14.2263" fill="none" />
+          <desc>Negative supply lead</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-49-opamp-supply-medium-thin" overflow="visible">
+      <title>Op-amp with supply pins · Medium / Thin</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "opamp-supply", "revision": 1, "size": "medium", "stroke": "thin", "pins_mm": {"in-plus": [-9.0, 3.0], "in-minus": [-9.0, -3.0], "out": [9.0, 0.0], "supply-plus": [0.0, 6.0], "supply-minus": [0.0, -6.0]}}</metadata>
+      <g id="instance-49--sc-opamp-supply-r1-medium-thin--sc-opamp-supply-r1-medium-thin" inkscape:label="Op-amp with supply pins / medium / thin" data-symbol="opamp-supply" data-revision="1" data-size="medium" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(14.154698216666665,17.65842572222222) scale(0.35277777777777775) translate(-40.123554,-50.05538)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-49--sc-opamp-supply-r1-medium-thin--sc-opamp-supply-r1-medium-thin--body" inkscape:label="body">
+          <path d="M-16.12297-18.96828V18.96828L16.12297 0Z" fill="none" />
+          <desc>Triangle outline</desc>
+        </g>
+        <g data-part="lead-in-plus" id="instance-49--sc-opamp-supply-r1-medium-thin--sc-opamp-supply-r1-medium-thin--lead-in-plus" inkscape:label="lead-in-plus">
+          <path d="M-25.60735 8.53578H-16.12297" fill="none" />
+          <desc>Non-inverting input lead</desc>
+        </g>
+        <g data-part="lead-in-minus" id="instance-49--sc-opamp-supply-r1-medium-thin--sc-opamp-supply-r1-medium-thin--lead-in-minus" inkscape:label="lead-in-minus">
+          <path d="M-25.60735-8.53578H-16.12297" fill="none" />
+          <desc>Inverting input lead</desc>
+        </g>
+        <g data-part="lead-out" id="instance-49--sc-opamp-supply-r1-medium-thin--sc-opamp-supply-r1-medium-thin--lead-out" inkscape:label="lead-out">
+          <path d="M16.12297 0H25.60735" fill="none" />
+          <desc>Output lead</desc>
+        </g>
+        <g data-part="sign-plus" id="instance-49--sc-opamp-supply-r1-medium-thin--sc-opamp-supply-r1-medium-thin--sign-plus" inkscape:label="sign-plus">
+          <path d="M-13.27768 8.53578H-9.48413M-11.3809 6.639V10.43254" fill="none" />
+          <desc>Non-inverting input mark</desc>
+        </g>
+        <g data-part="sign-minus" id="instance-49--sc-opamp-supply-r1-medium-thin--sc-opamp-supply-r1-medium-thin--sign-minus" inkscape:label="sign-minus">
+          <path d="M-13.27768-8.53578H-9.48413" fill="none" />
+          <desc>Inverting input mark</desc>
+        </g>
+        <g data-part="lead-supply-plus" id="instance-49--sc-opamp-supply-r1-medium-thin--sc-opamp-supply-r1-medium-thin--lead-supply-plus" inkscape:label="lead-supply-plus">
+          <path d="M0 9.48413V17.07156" fill="none" />
+          <desc>Positive supply lead</desc>
+        </g>
+        <g data-part="lead-supply-minus" id="instance-49--sc-opamp-supply-r1-medium-thin--sc-opamp-supply-r1-medium-thin--lead-supply-minus" inkscape:label="lead-supply-minus">
+          <path d="M0-9.48413V-17.07156" fill="none" />
+          <desc>Negative supply lead</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-50-opamp-supply-medium-medium" overflow="visible">
+      <title>Op-amp with supply pins · Medium / Medium</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "opamp-supply", "revision": 1, "size": "medium", "stroke": "medium", "pins_mm": {"in-plus": [-9.0, 3.0], "in-minus": [-9.0, -3.0], "out": [9.0, 0.0], "supply-plus": [0.0, 6.0], "supply-minus": [0.0, -6.0]}}</metadata>
+      <g id="instance-50--sc-opamp-supply-r1-medium-medium--sc-opamp-supply-r1-medium-medium" inkscape:label="Op-amp with supply pins / medium / medium" data-symbol="opamp-supply" data-revision="1" data-size="medium" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(14.129696502777778,17.633424008333332) scale(0.35277777777777775) translate(-40.052683,-49.984509)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-50--sc-opamp-supply-r1-medium-medium--sc-opamp-supply-r1-medium-medium--body" inkscape:label="body">
+          <path d="M-16.12297-18.96828V18.96828L16.12297 0Z" fill="none" />
+          <desc>Triangle outline</desc>
+        </g>
+        <g data-part="lead-in-plus" id="instance-50--sc-opamp-supply-r1-medium-medium--sc-opamp-supply-r1-medium-medium--lead-in-plus" inkscape:label="lead-in-plus">
+          <path d="M-25.60735 8.53578H-16.12297" fill="none" />
+          <desc>Non-inverting input lead</desc>
+        </g>
+        <g data-part="lead-in-minus" id="instance-50--sc-opamp-supply-r1-medium-medium--sc-opamp-supply-r1-medium-medium--lead-in-minus" inkscape:label="lead-in-minus">
+          <path d="M-25.60735-8.53578H-16.12297" fill="none" />
+          <desc>Inverting input lead</desc>
+        </g>
+        <g data-part="lead-out" id="instance-50--sc-opamp-supply-r1-medium-medium--sc-opamp-supply-r1-medium-medium--lead-out" inkscape:label="lead-out">
+          <path d="M16.12297 0H25.60735" fill="none" />
+          <desc>Output lead</desc>
+        </g>
+        <g data-part="sign-plus" id="instance-50--sc-opamp-supply-r1-medium-medium--sc-opamp-supply-r1-medium-medium--sign-plus" inkscape:label="sign-plus">
+          <path d="M-13.27768 8.53578H-9.48413M-11.3809 6.639V10.43254" fill="none" />
+          <desc>Non-inverting input mark</desc>
+        </g>
+        <g data-part="sign-minus" id="instance-50--sc-opamp-supply-r1-medium-medium--sc-opamp-supply-r1-medium-medium--sign-minus" inkscape:label="sign-minus">
+          <path d="M-13.27768-8.53578H-9.48413" fill="none" />
+          <desc>Inverting input mark</desc>
+        </g>
+        <g data-part="lead-supply-plus" id="instance-50--sc-opamp-supply-r1-medium-medium--sc-opamp-supply-r1-medium-medium--lead-supply-plus" inkscape:label="lead-supply-plus">
+          <path d="M0 9.48413V17.07156" fill="none" />
+          <desc>Positive supply lead</desc>
+        </g>
+        <g data-part="lead-supply-minus" id="instance-50--sc-opamp-supply-r1-medium-medium--sc-opamp-supply-r1-medium-medium--lead-supply-minus" inkscape:label="lead-supply-minus">
+          <path d="M0-9.48413V-17.07156" fill="none" />
+          <desc>Negative supply lead</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-51-opamp-supply-medium-thick" overflow="visible">
+      <title>Op-amp with supply pins · Medium / Thick</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "opamp-supply", "revision": 1, "size": "medium", "stroke": "thick", "pins_mm": {"in-plus": [-9.0, 3.0], "in-minus": [-9.0, -3.0], "out": [9.0, 0.0], "supply-plus": [0.0, 6.0], "supply-minus": [0.0, -6.0]}}</metadata>
+      <g id="instance-51--sc-opamp-supply-r1-medium-thick--sc-opamp-supply-r1-medium-thick" inkscape:label="Op-amp with supply pins / medium / thick" data-symbol="opamp-supply" data-revision="1" data-size="medium" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(14.079693427777777,17.583420933333333) scale(0.35277777777777775) translate(-39.910942,-49.842768)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-51--sc-opamp-supply-r1-medium-thick--sc-opamp-supply-r1-medium-thick--body" inkscape:label="body">
+          <path d="M-16.12297-18.96828V18.96828L16.12297 0Z" fill="none" />
+          <desc>Triangle outline</desc>
+        </g>
+        <g data-part="lead-in-plus" id="instance-51--sc-opamp-supply-r1-medium-thick--sc-opamp-supply-r1-medium-thick--lead-in-plus" inkscape:label="lead-in-plus">
+          <path d="M-25.60735 8.53578H-16.12297" fill="none" />
+          <desc>Non-inverting input lead</desc>
+        </g>
+        <g data-part="lead-in-minus" id="instance-51--sc-opamp-supply-r1-medium-thick--sc-opamp-supply-r1-medium-thick--lead-in-minus" inkscape:label="lead-in-minus">
+          <path d="M-25.60735-8.53578H-16.12297" fill="none" />
+          <desc>Inverting input lead</desc>
+        </g>
+        <g data-part="lead-out" id="instance-51--sc-opamp-supply-r1-medium-thick--sc-opamp-supply-r1-medium-thick--lead-out" inkscape:label="lead-out">
+          <path d="M16.12297 0H25.60735" fill="none" />
+          <desc>Output lead</desc>
+        </g>
+        <g data-part="sign-plus" id="instance-51--sc-opamp-supply-r1-medium-thick--sc-opamp-supply-r1-medium-thick--sign-plus" inkscape:label="sign-plus">
+          <path d="M-13.27768 8.53578H-9.48413M-11.3809 6.639V10.43254" fill="none" />
+          <desc>Non-inverting input mark</desc>
+        </g>
+        <g data-part="sign-minus" id="instance-51--sc-opamp-supply-r1-medium-thick--sc-opamp-supply-r1-medium-thick--sign-minus" inkscape:label="sign-minus">
+          <path d="M-13.27768-8.53578H-9.48413" fill="none" />
+          <desc>Inverting input mark</desc>
+        </g>
+        <g data-part="lead-supply-plus" id="instance-51--sc-opamp-supply-r1-medium-thick--sc-opamp-supply-r1-medium-thick--lead-supply-plus" inkscape:label="lead-supply-plus">
+          <path d="M0 9.48413V17.07156" fill="none" />
+          <desc>Positive supply lead</desc>
+        </g>
+        <g data-part="lead-supply-minus" id="instance-51--sc-opamp-supply-r1-medium-thick--sc-opamp-supply-r1-medium-thick--lead-supply-minus" inkscape:label="lead-supply-minus">
+          <path d="M0-9.48413V-17.07156" fill="none" />
+          <desc>Negative supply lead</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-52-opamp-supply-large-thin" overflow="visible">
+      <title>Op-amp with supply pins · Large / Thin</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "opamp-supply", "revision": 1, "size": "large", "stroke": "thin", "pins_mm": {"in-plus": [-11.0, 3.0], "in-minus": [-11.0, -3.0], "out": [11.0, 0.0], "supply-plus": [0.0, 7.0], "supply-minus": [0.0, -7.0]}}</metadata>
+      <g id="instance-52--sc-opamp-supply-r1-large-thin--sc-opamp-supply-r1-large-thin" inkscape:label="Op-amp with supply pins / large / thin" data-symbol="opamp-supply" data-revision="1" data-size="large" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(12.154708566666667,15.991748277777775) scale(0.35277777777777775) translate(-34.454292,-45.33094)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-52--sc-opamp-supply-r1-large-thin--sc-opamp-supply-r1-large-thin--body" inkscape:label="body">
+          <path d="M-20.15382-23.71043V23.71043L20.15382 0Z" fill="none" />
+          <desc>Triangle outline</desc>
+        </g>
+        <g data-part="lead-in-plus" id="instance-52--sc-opamp-supply-r1-large-thin--sc-opamp-supply-r1-large-thin--lead-in-plus" inkscape:label="lead-in-plus">
+          <path d="M-31.29787 8.53578H-20.15382" fill="none" />
+          <desc>Non-inverting input lead</desc>
+        </g>
+        <g data-part="lead-in-minus" id="instance-52--sc-opamp-supply-r1-large-thin--sc-opamp-supply-r1-large-thin--lead-in-minus" inkscape:label="lead-in-minus">
+          <path d="M-31.29787-8.53578H-20.15382" fill="none" />
+          <desc>Inverting input lead</desc>
+        </g>
+        <g data-part="lead-out" id="instance-52--sc-opamp-supply-r1-large-thin--sc-opamp-supply-r1-large-thin--lead-out" inkscape:label="lead-out">
+          <path d="M20.15382 0H31.29787" fill="none" />
+          <desc>Output lead</desc>
+        </g>
+        <g data-part="sign-plus" id="instance-52--sc-opamp-supply-r1-large-thin--sc-opamp-supply-r1-large-thin--sign-plus" inkscape:label="sign-plus">
+          <path d="M-16.5972 8.53578H-11.85521M-14.22621 6.16478V10.90677" fill="none" />
+          <desc>Non-inverting input mark</desc>
+        </g>
+        <g data-part="sign-minus" id="instance-52--sc-opamp-supply-r1-large-thin--sc-opamp-supply-r1-large-thin--sign-minus" inkscape:label="sign-minus">
+          <path d="M-16.5972-8.53578H-11.85521" fill="none" />
+          <desc>Inverting input mark</desc>
+        </g>
+        <g data-part="lead-supply-plus" id="instance-52--sc-opamp-supply-r1-large-thin--sc-opamp-supply-r1-large-thin--lead-supply-plus" inkscape:label="lead-supply-plus">
+          <path d="M0 11.85521V19.91682" fill="none" />
+          <desc>Positive supply lead</desc>
+        </g>
+        <g data-part="lead-supply-minus" id="instance-52--sc-opamp-supply-r1-large-thin--sc-opamp-supply-r1-large-thin--lead-supply-minus" inkscape:label="lead-supply-minus">
+          <path d="M0-11.85521V-19.91682" fill="none" />
+          <desc>Negative supply lead</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-53-opamp-supply-large-medium" overflow="visible">
+      <title>Op-amp with supply pins · Large / Medium</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "opamp-supply", "revision": 1, "size": "large", "stroke": "medium", "pins_mm": {"in-plus": [-11.0, 3.0], "in-minus": [-11.0, -3.0], "out": [11.0, 0.0], "supply-plus": [0.0, 7.0], "supply-minus": [0.0, -7.0]}}</metadata>
+      <g id="instance-53--sc-opamp-supply-r1-large-medium--sc-opamp-supply-r1-large-medium" inkscape:label="Op-amp with supply pins / large / medium" data-symbol="opamp-supply" data-revision="1" data-size="large" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(12.129707205555556,15.966746563888888) scale(0.35277777777777775) translate(-34.383422,-45.260069)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-53--sc-opamp-supply-r1-large-medium--sc-opamp-supply-r1-large-medium--body" inkscape:label="body">
+          <path d="M-20.15382-23.71043V23.71043L20.15382 0Z" fill="none" />
+          <desc>Triangle outline</desc>
+        </g>
+        <g data-part="lead-in-plus" id="instance-53--sc-opamp-supply-r1-large-medium--sc-opamp-supply-r1-large-medium--lead-in-plus" inkscape:label="lead-in-plus">
+          <path d="M-31.29787 8.53578H-20.15382" fill="none" />
+          <desc>Non-inverting input lead</desc>
+        </g>
+        <g data-part="lead-in-minus" id="instance-53--sc-opamp-supply-r1-large-medium--sc-opamp-supply-r1-large-medium--lead-in-minus" inkscape:label="lead-in-minus">
+          <path d="M-31.29787-8.53578H-20.15382" fill="none" />
+          <desc>Inverting input lead</desc>
+        </g>
+        <g data-part="lead-out" id="instance-53--sc-opamp-supply-r1-large-medium--sc-opamp-supply-r1-large-medium--lead-out" inkscape:label="lead-out">
+          <path d="M20.15382 0H31.29787" fill="none" />
+          <desc>Output lead</desc>
+        </g>
+        <g data-part="sign-plus" id="instance-53--sc-opamp-supply-r1-large-medium--sc-opamp-supply-r1-large-medium--sign-plus" inkscape:label="sign-plus">
+          <path d="M-16.5972 8.53578H-11.85521M-14.22621 6.16478V10.90677" fill="none" />
+          <desc>Non-inverting input mark</desc>
+        </g>
+        <g data-part="sign-minus" id="instance-53--sc-opamp-supply-r1-large-medium--sc-opamp-supply-r1-large-medium--sign-minus" inkscape:label="sign-minus">
+          <path d="M-16.5972-8.53578H-11.85521" fill="none" />
+          <desc>Inverting input mark</desc>
+        </g>
+        <g data-part="lead-supply-plus" id="instance-53--sc-opamp-supply-r1-large-medium--sc-opamp-supply-r1-large-medium--lead-supply-plus" inkscape:label="lead-supply-plus">
+          <path d="M0 11.85521V19.91682" fill="none" />
+          <desc>Positive supply lead</desc>
+        </g>
+        <g data-part="lead-supply-minus" id="instance-53--sc-opamp-supply-r1-large-medium--sc-opamp-supply-r1-large-medium--lead-supply-minus" inkscape:label="lead-supply-minus">
+          <path d="M0-11.85521V-19.91682" fill="none" />
+          <desc>Negative supply lead</desc>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="instance-54-opamp-supply-large-thick" overflow="visible">
+      <title>Op-amp with supply pins · Large / Thick</title>
+      <desc>Unlink the placed instance to edit its named parts.</desc>
+      <metadata>{"symbol_id": "opamp-supply", "revision": 1, "size": "large", "stroke": "thick", "pins_mm": {"in-plus": [-11.0, 3.0], "in-minus": [-11.0, -3.0], "out": [11.0, 0.0], "supply-plus": [0.0, 7.0], "supply-minus": [0.0, -7.0]}}</metadata>
+      <g id="instance-54--sc-opamp-supply-r1-large-thick--sc-opamp-supply-r1-large-thick" inkscape:label="Op-amp with supply pins / large / thick" data-symbol="opamp-supply" data-revision="1" data-size="large" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(12.079703777777777,15.916743488888887) scale(0.35277777777777775) translate(-34.24168,-45.118328)scale(0.996264,-0.996264)">
+        <g data-part="body" id="instance-54--sc-opamp-supply-r1-large-thick--sc-opamp-supply-r1-large-thick--body" inkscape:label="body">
+          <path d="M-20.15382-23.71043V23.71043L20.15382 0Z" fill="none" />
+          <desc>Triangle outline</desc>
+        </g>
+        <g data-part="lead-in-plus" id="instance-54--sc-opamp-supply-r1-large-thick--sc-opamp-supply-r1-large-thick--lead-in-plus" inkscape:label="lead-in-plus">
+          <path d="M-31.29787 8.53578H-20.15382" fill="none" />
+          <desc>Non-inverting input lead</desc>
+        </g>
+        <g data-part="lead-in-minus" id="instance-54--sc-opamp-supply-r1-large-thick--sc-opamp-supply-r1-large-thick--lead-in-minus" inkscape:label="lead-in-minus">
+          <path d="M-31.29787-8.53578H-20.15382" fill="none" />
+          <desc>Inverting input lead</desc>
+        </g>
+        <g data-part="lead-out" id="instance-54--sc-opamp-supply-r1-large-thick--sc-opamp-supply-r1-large-thick--lead-out" inkscape:label="lead-out">
+          <path d="M20.15382 0H31.29787" fill="none" />
+          <desc>Output lead</desc>
+        </g>
+        <g data-part="sign-plus" id="instance-54--sc-opamp-supply-r1-large-thick--sc-opamp-supply-r1-large-thick--sign-plus" inkscape:label="sign-plus">
+          <path d="M-16.5972 8.53578H-11.85521M-14.22621 6.16478V10.90677" fill="none" />
+          <desc>Non-inverting input mark</desc>
+        </g>
+        <g data-part="sign-minus" id="instance-54--sc-opamp-supply-r1-large-thick--sc-opamp-supply-r1-large-thick--sign-minus" inkscape:label="sign-minus">
+          <path d="M-16.5972-8.53578H-11.85521" fill="none" />
+          <desc>Inverting input mark</desc>
+        </g>
+        <g data-part="lead-supply-plus" id="instance-54--sc-opamp-supply-r1-large-thick--sc-opamp-supply-r1-large-thick--lead-supply-plus" inkscape:label="lead-supply-plus">
+          <path d="M0 11.85521V19.91682" fill="none" />
+          <desc>Positive supply lead</desc>
+        </g>
+        <g data-part="lead-supply-minus" id="instance-54--sc-opamp-supply-r1-large-thick--sc-opamp-supply-r1-large-thick--lead-supply-minus" inkscape:label="lead-supply-minus">
+          <path d="M0-11.85521V-19.91682" fill="none" />
+          <desc>Negative supply lead</desc>
+        </g>
+      </g>
+    </symbol>
+  </defs>
+  <use id="instance-1-placement" xlink:href="#instance-1-resistor-eu-small-thin" transform="translate(16.07493686694444,6.816643745555554)" />
+  <use id="instance-2-placement" xlink:href="#instance-2-resistor-eu-small-medium" transform="translate(46.24980878861111,6.816643216388889)" />
+  <use id="instance-3-placement" xlink:href="#instance-3-resistor-eu-small-thick" transform="translate(76.49968620444446,6.816641981666665)" />
+  <use id="instance-4-placement" xlink:href="#instance-4-resistor-eu-medium-thin" transform="translate(106.72456331583334,6.816643040000006)" />
+  <use id="instance-5-placement" xlink:href="#instance-5-resistor-eu-medium-medium" transform="translate(136.899436825,6.816642863611112)" />
+  <use id="instance-6-placement" xlink:href="#instance-6-resistor-eu-medium-thick" transform="translate(167.14931388805556,6.816641628888888)" />
+  <use id="instance-7-placement" xlink:href="#instance-7-resistor-eu-large-thin" transform="translate(16.074935985,18.866596717222222)" />
+  <use id="instance-8-placement" xlink:href="#instance-8-resistor-eu-large-medium" transform="translate(46.249809317777775,18.866596188055553)" />
+  <use id="instance-9-placement" xlink:href="#instance-9-resistor-eu-large-thick" transform="translate(76.49968673361111,18.866596717222222)" />
+  <use id="instance-10-placement" xlink:href="#instance-10-resistor-us-small-thin" transform="translate(106.72456472694445,18.866597775555555)" />
+  <use id="instance-11-placement" xlink:href="#instance-11-resistor-us-small-medium" transform="translate(136.89943664861113,18.86659724638889)" />
+  <use id="instance-12-placement" xlink:href="#instance-12-resistor-us-small-thick" transform="translate(167.14931406444447,18.866596011666665)" />
+  <use id="instance-13-placement" xlink:href="#instance-13-resistor-us-medium-thin" transform="translate(16.07493545583333,31.333219050000004)" />
+  <use id="instance-14-placement" xlink:href="#instance-14-resistor-us-medium-medium" transform="translate(46.249808965,31.333218873611113)" />
+  <use id="instance-15-placement" xlink:href="#instance-15-resistor-us-medium-thick" transform="translate(76.49968602805556,31.333217638888886)" />
+  <use id="instance-16-placement" xlink:href="#instance-16-resistor-us-large-thin" transform="translate(106.724563845,31.33321869722222)" />
+  <use id="instance-17-placement" xlink:href="#instance-17-resistor-us-large-medium" transform="translate(136.8994371777778,31.333218168055552)" />
+  <use id="instance-18-placement" xlink:href="#instance-18-resistor-us-large-thick" transform="translate(167.14931459361114,31.33321869722222)" />
+  <use id="instance-19-placement" xlink:href="#instance-19-inductor-coil-small-thin" transform="translate(16.07493686694444,43.46649407888889)" />
+  <use id="instance-20-placement" xlink:href="#instance-20-inductor-coil-small-medium" transform="translate(46.24980878861111,43.46649354972223)" />
+  <use id="instance-21-placement" xlink:href="#instance-21-inductor-coil-small-thick" transform="translate(76.49968620444446,43.46649231500001)" />
+  <use id="instance-22-placement" xlink:href="#instance-22-inductor-coil-medium-thin" transform="translate(106.72456331583334,43.71648581777778)" />
+  <use id="instance-23-placement" xlink:href="#instance-23-inductor-coil-medium-medium" transform="translate(136.899436825,43.71648511222223)" />
+  <use id="instance-24-placement" xlink:href="#instance-24-inductor-coil-medium-thick" transform="translate(167.14931388805556,43.716484230277786)" />
+  <use id="instance-25-placement" xlink:href="#instance-25-inductor-coil-large-thin" transform="translate(16.074935985,55.766450085)" />
+  <use id="instance-26-placement" xlink:href="#instance-26-inductor-coil-large-medium" transform="translate(46.249809317777775,55.76644955583334)" />
+  <use id="instance-27-placement" xlink:href="#instance-27-inductor-coil-large-thick" transform="translate(76.49968673361111,55.76644832111111)" />
+  <use id="instance-28-placement" xlink:href="#instance-28-capacitor-small-thin" transform="translate(106.72456419777778,54.516466343333335)" />
+  <use id="instance-29-placement" xlink:href="#instance-29-capacitor-small-medium" transform="translate(136.89943594305555,54.516465637777785)" />
+  <use id="instance-30-placement" xlink:href="#instance-30-capacitor-small-thick" transform="translate(167.1493149463889,54.51646475583334)" />
+  <use id="instance-31-placement" xlink:href="#instance-31-capacitor-medium-thin" transform="translate(16.074936337777775,69.48307679999999)" />
+  <use id="instance-32-placement" xlink:href="#instance-32-capacitor-medium-medium" transform="translate(46.249808083055555,69.4830782111111)" />
+  <use id="instance-33-placement" xlink:href="#instance-33-capacitor-medium-thick" transform="translate(76.4996870863889,69.48307732916666)" />
+  <use id="instance-34-placement" xlink:href="#instance-34-capacitor-large-thin" transform="translate(106.72456455055556,69.48307768194444)" />
+  <use id="instance-35-placement" xlink:href="#instance-35-capacitor-large-medium" transform="translate(136.89943629583334,69.48307679999999)" />
+  <use id="instance-36-placement" xlink:href="#instance-36-capacitor-large-thick" transform="translate(167.1493151227778,69.48307785833333)" />
+  <use id="instance-37-placement" xlink:href="#instance-37-opamp-small-thin" transform="translate(16.07493545583333,88.61629108444446)" />
+  <use id="instance-38-placement" xlink:href="#instance-38-opamp-small-medium" transform="translate(46.249808965,88.61629231916667)" />
+  <use id="instance-39-placement" xlink:href="#instance-39-opamp-small-thick" transform="translate(76.49968602805556,88.61629108444446)" />
+  <use id="instance-40-placement" xlink:href="#instance-40-opamp-medium-thin" transform="translate(106.72456366861111,88.61629143722223)" />
+  <use id="instance-41-placement" xlink:href="#instance-41-opamp-medium-medium" transform="translate(136.8994371777778,88.61629090805556)" />
+  <use id="instance-42-placement" xlink:href="#instance-42-opamp-medium-thick" transform="translate(167.14931424083335,88.61629179)" />
+  <use id="instance-43-placement" xlink:href="#instance-43-opamp-large-thin" transform="translate(16.07493633777778,111.91614077416668)" />
+  <use id="instance-44-placement" xlink:href="#instance-44-opamp-large-medium" transform="translate(46.24980967055556,111.91614024500001)" />
+  <use id="instance-45-placement" xlink:href="#instance-45-opamp-large-thick" transform="translate(76.49968708638889,111.91613936305556)" />
+  <use id="instance-46-placement" xlink:href="#instance-46-opamp-supply-small-thin" transform="translate(106.72456331583334,111.91613953944446)" />
+  <use id="instance-47-placement" xlink:href="#instance-47-opamp-supply-small-medium" transform="translate(136.899436825,111.91614077416668)" />
+  <use id="instance-48-placement" xlink:href="#instance-48-opamp-supply-small-thick" transform="translate(167.14931388805556,111.91613953944446)" />
+  <use id="instance-49-placement" xlink:href="#instance-49-opamp-supply-medium-thin" transform="translate(16.074935808611112,136.88266526222222)" />
+  <use id="instance-50-placement" xlink:href="#instance-50-opamp-supply-medium-medium" transform="translate(46.249809317777775,136.88266473305555)" />
+  <use id="instance-51-placement" xlink:href="#instance-51-opamp-supply-medium-thick" transform="translate(76.49968638083334,136.882665615)" />
+  <use id="instance-52-placement" xlink:href="#instance-52-opamp-supply-large-thin" transform="translate(106.72456419777778,136.88266614416668)" />
+  <use id="instance-53-placement" xlink:href="#instance-53-opamp-supply-large-medium" transform="translate(136.89943753055556,136.882665615)" />
+  <use id="instance-54-placement" xlink:href="#instance-54-opamp-supply-large-thick" transform="translate(167.1493149463889,136.88266473305558)" />
+</svg>

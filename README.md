@@ -1,26 +1,25 @@
 # Schematica
 
-Beautiful, useful electronics illustrations with LaTeX: schematics, conceptual diagrams, waveforms, and equations composed together.
+Beautiful electronics illustrations for engineering, teaching and documentation.
+Schematica brings together reusable symbols, drawing preferences and schematic styles
+for people and AI agents.
 
-Schematica is in development. We are building a library of examples and drawing guidance to help AI agents produce consistent results from the first prompt.
+The current web app is a **symbol library browser**: six symbols, independent size
+and stroke choices, dark/light mode, individual SVGs and Inkscape library exports.
+Symbol creation and schematic editing are not yet part of the app.
 
-## Start Schematica Preferences
+- [Open the web preview](https://schematica-preview.dinodubroja.workers.dev/) · [Run locally](implementation/README.md)
+- [Use symbols in Inkscape](implementation/INKSCAPE.md)
+- [Get the project on another Windows device](implementation/DEVELOPMENT.md#get-the-project-on-another-windows-device)
+- [Development and testing](implementation/DEVELOPMENT.md) · [Current review](implementation/CHECKPOINT.md)
+- [Drawing preferences](preferences/README.md) · [Styles and examples](styles/INDEX.md)
+- [Install the agent preferences workflow](INSTALL.md) · [Project direction](DIRECTION.md)
 
-[Install for Codex on Windows](INSTALL.md). The download includes the workflow,
-preferences, styles and examples together. Keep the extracted folder: Codex connects
-to that copy, where your approved changes are saved.
+The preview is public by link. Follow the [testing checklist](implementation/CHECKPOINT.md)
+on both Windows devices.
 
-Start with `$schematica-preferences` or write naturally:
-"Let's work on Schematica's amplifier and op-amp symbols."
-
-The agent helps choose a starting point, shows requested visual options in chat,
-and refines them with you. A choice is feedback; saving a preference or example
-needs your instruction. You can also ask directly for a comparison or continue
-an existing example. [Workflow details](skills/schematica-preferences/SKILL.md).
-
-## Preferences
-
-[Browse all preferences](preferences/README.md).
+<details>
+<summary>Browse drawing preferences</summary>
 
 <!-- preference-gallery:start level=3 -->
 
@@ -36,17 +35,4 @@ an existing example. [Workflow details](skills/schematica-preferences/SKILL.md).
 
 <!-- preference-gallery:end -->
 
-## Explore the styles
-
-### [The Art of Electronics](styles/THE_ART_OF_ELECTRONICS/)
-
-Schematic and qualitative plot guidance, supported by examples. Five recreated figures include images, editable LaTeX, and the original captions.
-
-<a href="styles/THE_ART_OF_ELECTRONICS/#gh-light-mode-only"><img src="styles/THE_ART_OF_ELECTRONICS/examples/mixed/fig-01-06-voltage-divider/preview-light.svg" alt="Voltage divider with voltage annotations and its equation. Open The Art of Electronics gallery." width="660"></a>
-<a href="styles/THE_ART_OF_ELECTRONICS/#gh-dark-mode-only"><img src="styles/THE_ART_OF_ELECTRONICS/examples/mixed/fig-01-06-voltage-divider/preview-dark.svg" alt="Voltage divider with voltage annotations and its equation. Open The Art of Electronics gallery." width="660"></a>
-
-[Showcase →](styles/THE_ART_OF_ELECTRONICS/) · [All examples →](styles/THE_ART_OF_ELECTRONICS/examples/README.md)
-
----
-
-[Project direction](DIRECTION.md) · [Development checkpoint](context/CURRENT.md)
+</details>

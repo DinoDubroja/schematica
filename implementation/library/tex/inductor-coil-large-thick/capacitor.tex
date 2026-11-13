@@ -1,0 +1,13 @@
+% Accepted palette kind 3; separate non-polarized plates and semantic leads.
+\newcommand{\SCCapacitor}[3]{%
+  \SCresolve{#1}{#2}{#3}%
+  \pgfmathsetmacro{\SCend}{ceil(0.6*\SCscale+2)+1}%
+  \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+    \SCpin{a}{-\SCend}{0}\SCpin{b}{\SCend}{0}
+    \SCdimension{body-width}{1.2*\SCscale}\SCdimension{body-height}{4*\SCscale}
+    \begin{SCpart}{plate-a}\draw ({-0.6*\SCscale},{-2*\SCscale})--({-0.6*\SCscale},{2*\SCscale});\end{SCpart}
+    \begin{SCpart}{plate-b}\draw ({0.6*\SCscale},{-2*\SCscale})--({0.6*\SCscale},{2*\SCscale});\end{SCpart}
+    \begin{SCpart}{lead-a}\draw (-\SCend,0)--({-0.6*\SCscale},0);\end{SCpart}
+    \begin{SCpart}{lead-b}\draw ({0.6*\SCscale},0)--(\SCend,0);\end{SCpart}
+  \end{scope}%
+}

@@ -1,0 +1,41 @@
+schema_version: 1
+id: resistor-us
+revision: 1
+name: US resistor
+description: American resistor drawn as a zigzag, with a terminal at each end.
+keywords: [resistor, American, zigzag, passive, non-polarized]
+types:
+- passive
+- resistor
+attributes:
+  appearance: american
+  body: zigzag
+  polarized: false
+recipe: resistor-us
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: a
+  name: A
+  description: Interchangeable first terminal
+  kind: passive
+  lead_part: lead-a
+- id: b
+  name: B
+  description: Interchangeable second terminal
+  kind: passive
+  lead_part: lead-b
+parts:
+- id: body
+  description: Zigzag body
+- id: lead-a
+  description: Lead from terminal A to body
+- id: lead-b
+  description: Lead from body to terminal B

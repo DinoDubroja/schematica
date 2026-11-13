@@ -1,0 +1,3222 @@
+{
+  "schema_version": 1,
+  "presets": {
+    "schema_version": 1,
+    "grid_mm": 1,
+    "default_size": "medium",
+    "default_stroke": "medium",
+    "sizes": {
+      "small": {
+        "name": "Small",
+        "factor": 0.75
+      },
+      "medium": {
+        "name": "Medium",
+        "factor": 1.0
+      },
+      "large": {
+        "name": "Large",
+        "factor": 1.25
+      }
+    },
+    "strokes": {
+      "thin": {
+        "name": "Thin",
+        "width_mm": 0.15
+      },
+      "medium": {
+        "name": "Medium",
+        "width_mm": 0.2
+      },
+      "thick": {
+        "name": "Thick",
+        "width_mm": 0.3
+      }
+    }
+  },
+  "symbols": [
+    {
+      "schema_version": 1,
+      "id": "resistor-eu",
+      "revision": 1,
+      "name": "EU resistor",
+      "description": "European resistor drawn as a rectangle, with a terminal at each end.",
+      "keywords": [
+        "resistor",
+        "European",
+        "rectangle",
+        "passive",
+        "non-polarized"
+      ],
+      "types": [
+        "passive",
+        "resistor"
+      ],
+      "attributes": {
+        "appearance": "european",
+        "body": "rectangle",
+        "polarized": false
+      },
+      "recipe": "resistor-eu",
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "A",
+          "description": "First interchangeable resistor terminal",
+          "kind": "passive",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "b",
+          "name": "B",
+          "description": "Second interchangeable resistor terminal",
+          "kind": "passive",
+          "lead_part": "lead-b"
+        }
+      ],
+      "parts": [
+        {
+          "id": "body",
+          "description": "Rectangular resistor body"
+        },
+        {
+          "id": "lead-a",
+          "description": "Lead from terminal A to body"
+        },
+        {
+          "id": "lead-b",
+          "description": "Lead from body to terminal B"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "resistor-eu-small-thin",
+          "symbol_id": "resistor-eu",
+          "name": "EU resistor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/resistor-eu-small-thin.svg",
+          "width_mm": 16.14991231,
+          "height_mm": 4.64996812,
+          "origin_svg": [
+            -45.792816,
+            -65.409515
+          ],
+          "visual_center_from_origin_mm": [
+            -8.819444422177487e-07,
+            -7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 2.5
+          },
+          "parts": [
+            "body",
+            "lead-a",
+            "lead-b"
+          ],
+          "svg_bytes": 1866,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "resistor-eu-small-medium",
+          "symbol_id": "resistor-eu",
+          "name": "EU resistor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/resistor-eu-small-medium.svg",
+          "width_mm": 16.19991786,
+          "height_mm": 4.69997049,
+          "origin_svg": [
+            -45.721945,
+            -65.338644
+          ],
+          "visual_center_from_origin_mm": [
+            1.763888909501866e-07,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 2.5
+          },
+          "parts": [
+            "body",
+            "lead-a",
+            "lead-b"
+          ],
+          "svg_bytes": 1886,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "resistor-eu-small-thick",
+          "symbol_id": "resistor-eu",
+          "name": "EU resistor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/resistor-eu-small-thick.svg",
+          "width_mm": 16.29992577,
+          "height_mm": 4.79997488,
+          "origin_svg": [
+            -45.580203,
+            -65.196903
+          ],
+          "visual_center_from_origin_mm": [
+            7.055555562808358e-07,
+            1.0583333356745722e-06
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 2.5
+          },
+          "parts": [
+            "body",
+            "lead-a",
+            "lead-b"
+          ],
+          "svg_bytes": 1876,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "resistor-eu-medium-thin",
+          "symbol_id": "resistor-eu",
+          "name": "EU resistor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/resistor-eu-medium-thin.svg",
+          "width_mm": 18.14990479,
+          "height_mm": 5.48327933,
+          "origin_svg": [
+            -42.958185,
+            -64.228443
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -5.0132737467518175e-15
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "b": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.99994,
+            "body-height": 3.33331
+          },
+          "parts": [
+            "body",
+            "lead-a",
+            "lead-b"
+          ],
+          "svg_bytes": 1883,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "resistor-eu-medium-medium",
+          "symbol_id": "resistor-eu",
+          "name": "EU resistor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/resistor-eu-medium-medium.svg",
+          "width_mm": 18.19990716,
+          "height_mm": 5.5332817,
+          "origin_svg": [
+            -42.887314,
+            -64.157572
+          ],
+          "visual_center_from_origin_mm": [
+            2.5066368733759088e-15,
+            1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "b": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.99994,
+            "body-height": 3.33331
+          },
+          "parts": [
+            "body",
+            "lead-a",
+            "lead-b"
+          ],
+          "svg_bytes": 1905,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "resistor-eu-medium-thick",
+          "symbol_id": "resistor-eu",
+          "name": "EU resistor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/resistor-eu-medium-thick.svg",
+          "width_mm": 18.29991507,
+          "height_mm": 5.63328608,
+          "origin_svg": [
+            -42.745573,
+            -64.015831
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            1.4111111125616716e-06
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "b": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.99994,
+            "body-height": 3.33331
+          },
+          "parts": [
+            "body",
+            "lead-a",
+            "lead-b"
+          ],
+          "svg_bytes": 1893,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "resistor-eu-large-thin",
+          "symbol_id": "resistor-eu",
+          "name": "EU resistor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/resistor-eu-large-thin.svg",
+          "width_mm": 22.14988303,
+          "height_mm": 6.3166117,
+          "origin_svg": [
+            -37.288923,
+            -63.04734
+          ],
+          "visual_center_from_origin_mm": [
+            0.0,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              0.0
+            ],
+            "b": [
+              10.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 12.49997,
+            "body-height": 4.16666
+          },
+          "parts": [
+            "body",
+            "lead-a",
+            "lead-b"
+          ],
+          "svg_bytes": 1868,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "resistor-eu-large-medium",
+          "symbol_id": "resistor-eu",
+          "name": "EU resistor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/resistor-eu-large-medium.svg",
+          "width_mm": 22.19988504,
+          "height_mm": 6.36661407,
+          "origin_svg": [
+            -37.218053,
+            -62.976469
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            8.819444472310225e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              0.0
+            ],
+            "b": [
+              10.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 12.49997,
+            "body-height": 4.16666
+          },
+          "parts": [
+            "body",
+            "lead-a",
+            "lead-b"
+          ],
+          "svg_bytes": 1892,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "resistor-eu-large-thick",
+          "symbol_id": "resistor-eu",
+          "name": "EU resistor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/resistor-eu-large-thick.svg",
+          "width_mm": 22.29989296,
+          "height_mm": 6.46662198,
+          "origin_svg": [
+            -37.076311,
+            -62.834728
+          ],
+          "visual_center_from_origin_mm": [
+            1.7638888844354975e-07,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              0.0
+            ],
+            "b": [
+              10.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 12.49997,
+            "body-height": 4.16666
+          },
+          "parts": [
+            "body",
+            "lead-a",
+            "lead-b"
+          ],
+          "svg_bytes": 1881,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "id": "resistor-us",
+      "revision": 1,
+      "name": "US resistor",
+      "description": "American resistor drawn as a zigzag, with a terminal at each end.",
+      "keywords": [
+        "resistor",
+        "American",
+        "zigzag",
+        "passive",
+        "non-polarized"
+      ],
+      "types": [
+        "passive",
+        "resistor"
+      ],
+      "attributes": {
+        "appearance": "american",
+        "body": "zigzag",
+        "polarized": false
+      },
+      "recipe": "resistor-us",
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "A",
+          "description": "Interchangeable first terminal",
+          "kind": "passive",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "b",
+          "name": "B",
+          "description": "Interchangeable second terminal",
+          "kind": "passive",
+          "lead_part": "lead-b"
+        }
+      ],
+      "parts": [
+        {
+          "id": "body",
+          "description": "Zigzag body"
+        },
+        {
+          "id": "lead-a",
+          "description": "Lead from terminal A to body"
+        },
+        {
+          "id": "lead-b",
+          "description": "Lead from body to terminal B"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "resistor-us-small-thin",
+          "symbol_id": "resistor-us",
+          "name": "US resistor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/resistor-us-small-thin.svg",
+          "width_mm": 16.14991231,
+          "height_mm": 4.64996812,
+          "origin_svg": [
+            -45.792816,
+            -65.409515
+          ],
+          "visual_center_from_origin_mm": [
+            -8.819444422177487e-07,
+            -7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 2.5
+          },
+          "parts": [
+            "lead-a",
+            "body",
+            "lead-b"
+          ],
+          "svg_bytes": 1909,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "resistor-us-small-medium",
+          "symbol_id": "resistor-us",
+          "name": "US resistor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/resistor-us-small-medium.svg",
+          "width_mm": 16.19991786,
+          "height_mm": 4.69997049,
+          "origin_svg": [
+            -45.721945,
+            -65.338644
+          ],
+          "visual_center_from_origin_mm": [
+            1.763888909501866e-07,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 2.5
+          },
+          "parts": [
+            "lead-a",
+            "body",
+            "lead-b"
+          ],
+          "svg_bytes": 1929,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "resistor-us-small-thick",
+          "symbol_id": "resistor-us",
+          "name": "US resistor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/resistor-us-small-thick.svg",
+          "width_mm": 16.29992577,
+          "height_mm": 4.79997488,
+          "origin_svg": [
+            -45.580203,
+            -65.196903
+          ],
+          "visual_center_from_origin_mm": [
+            7.055555562808358e-07,
+            1.0583333356745722e-06
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 2.5
+          },
+          "parts": [
+            "lead-a",
+            "body",
+            "lead-b"
+          ],
+          "svg_bytes": 1919,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "resistor-us-medium-thin",
+          "symbol_id": "resistor-us",
+          "name": "US resistor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/resistor-us-medium-thin.svg",
+          "width_mm": 18.14990479,
+          "height_mm": 5.48327933,
+          "origin_svg": [
+            -42.958185,
+            -64.228443
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -5.0132737467518175e-15
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "b": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.99994,
+            "body-height": 3.33331
+          },
+          "parts": [
+            "lead-a",
+            "body",
+            "lead-b"
+          ],
+          "svg_bytes": 1926,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "resistor-us-medium-medium",
+          "symbol_id": "resistor-us",
+          "name": "US resistor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/resistor-us-medium-medium.svg",
+          "width_mm": 18.19990716,
+          "height_mm": 5.5332817,
+          "origin_svg": [
+            -42.887314,
+            -64.157572
+          ],
+          "visual_center_from_origin_mm": [
+            2.5066368733759088e-15,
+            1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "b": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.99994,
+            "body-height": 3.33331
+          },
+          "parts": [
+            "lead-a",
+            "body",
+            "lead-b"
+          ],
+          "svg_bytes": 1948,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "resistor-us-medium-thick",
+          "symbol_id": "resistor-us",
+          "name": "US resistor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/resistor-us-medium-thick.svg",
+          "width_mm": 18.29991507,
+          "height_mm": 5.63328608,
+          "origin_svg": [
+            -42.745573,
+            -64.015831
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            1.4111111125616716e-06
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "b": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.99994,
+            "body-height": 3.33331
+          },
+          "parts": [
+            "lead-a",
+            "body",
+            "lead-b"
+          ],
+          "svg_bytes": 1936,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "resistor-us-large-thin",
+          "symbol_id": "resistor-us",
+          "name": "US resistor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/resistor-us-large-thin.svg",
+          "width_mm": 22.14988303,
+          "height_mm": 6.3166117,
+          "origin_svg": [
+            -37.288923,
+            -63.04734
+          ],
+          "visual_center_from_origin_mm": [
+            0.0,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              0.0
+            ],
+            "b": [
+              10.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 12.49997,
+            "body-height": 4.16666
+          },
+          "parts": [
+            "lead-a",
+            "body",
+            "lead-b"
+          ],
+          "svg_bytes": 1907,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "resistor-us-large-medium",
+          "symbol_id": "resistor-us",
+          "name": "US resistor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/resistor-us-large-medium.svg",
+          "width_mm": 22.19988504,
+          "height_mm": 6.36661407,
+          "origin_svg": [
+            -37.218053,
+            -62.976469
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            8.819444472310225e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              0.0
+            ],
+            "b": [
+              10.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 12.49997,
+            "body-height": 4.16666
+          },
+          "parts": [
+            "lead-a",
+            "body",
+            "lead-b"
+          ],
+          "svg_bytes": 1931,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "resistor-us-large-thick",
+          "symbol_id": "resistor-us",
+          "name": "US resistor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/resistor-us-large-thick.svg",
+          "width_mm": 22.29989296,
+          "height_mm": 6.46662198,
+          "origin_svg": [
+            -37.076311,
+            -62.834728
+          ],
+          "visual_center_from_origin_mm": [
+            1.7638888844354975e-07,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              0.0
+            ],
+            "b": [
+              10.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 12.49997,
+            "body-height": 4.16666
+          },
+          "parts": [
+            "lead-a",
+            "body",
+            "lead-b"
+          ],
+          "svg_bytes": 1920,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "id": "inductor-coil",
+      "revision": 1,
+      "name": "Coil inductor",
+      "description": "Inductor drawn as a coil, without a core marking.",
+      "keywords": [
+        "inductor",
+        "coil",
+        "elliptical",
+        "no core",
+        "passive"
+      ],
+      "types": [
+        "passive",
+        "inductor"
+      ],
+      "attributes": {
+        "appearance": "coil",
+        "turns": 4,
+        "core": "none"
+      },
+      "recipe": "inductor-coil",
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "A",
+          "description": "Interchangeable first terminal",
+          "kind": "passive",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "b",
+          "name": "B",
+          "description": "Interchangeable second terminal",
+          "kind": "passive",
+          "lead_part": "lead-b"
+        }
+      ],
+      "parts": [
+        {
+          "id": "body",
+          "description": "Four coil half-turns"
+        },
+        {
+          "id": "lead-a",
+          "description": "Lead from terminal A to body"
+        },
+        {
+          "id": "lead-b",
+          "description": "Lead from body to terminal B"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "inductor-coil-small-thin",
+          "symbol_id": "inductor-coil",
+          "name": "Coil inductor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/inductor-coil-small-thin.svg",
+          "width_mm": 16.14991231,
+          "height_mm": 3.64996307,
+          "origin_svg": [
+            -45.792816,
+            -64.700899
+          ],
+          "visual_center_from_origin_mm": [
+            -8.819444422177487e-07,
+            -0.7499875638888858
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 1.49998
+          },
+          "parts": [
+            "lead-a",
+            "body",
+            "lead-b"
+          ],
+          "svg_bytes": 2148,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "inductor-coil-small-medium",
+          "symbol_id": "inductor-coil",
+          "name": "Coil inductor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/inductor-coil-small-medium.svg",
+          "width_mm": 16.19991786,
+          "height_mm": 3.69996544,
+          "origin_svg": [
+            -45.721945,
+            -64.630028
+          ],
+          "visual_center_from_origin_mm": [
+            1.763888909501866e-07,
+            -0.7499870347222255
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 1.49998
+          },
+          "parts": [
+            "lead-a",
+            "body",
+            "lead-b"
+          ],
+          "svg_bytes": 2169,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "inductor-coil-small-thick",
+          "symbol_id": "inductor-coil",
+          "name": "Coil inductor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/inductor-coil-small-thick.svg",
+          "width_mm": 16.29992577,
+          "height_mm": 3.79996982,
+          "origin_svg": [
+            -45.580203,
+            -64.488287
+          ],
+          "visual_center_from_origin_mm": [
+            7.055555562808358e-07,
+            -0.7499858000000014
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 1.49998
+          },
+          "parts": [
+            "lead-a",
+            "body",
+            "lead-b"
+          ],
+          "svg_bytes": 2158,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "inductor-coil-medium-thin",
+          "symbol_id": "inductor-coil",
+          "name": "Coil inductor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/inductor-coil-medium-thin.svg",
+          "width_mm": 18.14990479,
+          "height_mm": 4.14994654,
+          "origin_svg": [
+            -42.958185,
+            -63.283621
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -0.9999793027777774
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "b": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.99994,
+            "body-height": 1.99997
+          },
+          "parts": [
+            "lead-a",
+            "body",
+            "lead-b"
+          ],
+          "svg_bytes": 2183,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "inductor-coil-medium-medium",
+          "symbol_id": "inductor-coil",
+          "name": "Coil inductor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/inductor-coil-medium-medium.svg",
+          "width_mm": 18.19990716,
+          "height_mm": 4.19994856,
+          "origin_svg": [
+            -42.887314,
+            -63.212751
+          ],
+          "visual_center_from_origin_mm": [
+            2.5066368733759088e-15,
+            -0.9999785972222236
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "b": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.99994,
+            "body-height": 1.99997
+          },
+          "parts": [
+            "lead-a",
+            "body",
+            "lead-b"
+          ],
+          "svg_bytes": 2204,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "inductor-coil-medium-thick",
+          "symbol_id": "inductor-coil",
+          "name": "Coil inductor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/inductor-coil-medium-thick.svg",
+          "width_mm": 18.29991507,
+          "height_mm": 4.29995295,
+          "origin_svg": [
+            -42.745573,
+            -63.071009
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -0.9999777152777789
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "b": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.99994,
+            "body-height": 1.99997
+          },
+          "parts": [
+            "lead-a",
+            "body",
+            "lead-b"
+          ],
+          "svg_bytes": 2193,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "inductor-coil-large-thin",
+          "symbol_id": "inductor-coil",
+          "name": "Coil inductor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/inductor-coil-large-thin.svg",
+          "width_mm": 22.14988303,
+          "height_mm": 4.64995754,
+          "origin_svg": [
+            -37.288923,
+            -61.866268
+          ],
+          "visual_center_from_origin_mm": [
+            0.0,
+            -1.2499848
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              0.0
+            ],
+            "b": [
+              10.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 12.49997,
+            "body-height": 2.49998
+          },
+          "parts": [
+            "lead-a",
+            "body",
+            "lead-b"
+          ],
+          "svg_bytes": 2123,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "inductor-coil-large-medium",
+          "symbol_id": "inductor-coil",
+          "name": "Coil inductor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/inductor-coil-large-medium.svg",
+          "width_mm": 22.19988504,
+          "height_mm": 4.69995991,
+          "origin_svg": [
+            -37.218053,
+            -61.795397
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            -1.2499842708333349
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              0.0
+            ],
+            "b": [
+              10.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 12.49997,
+            "body-height": 2.49998
+          },
+          "parts": [
+            "lead-a",
+            "body",
+            "lead-b"
+          ],
+          "svg_bytes": 2144,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "inductor-coil-large-thick",
+          "symbol_id": "inductor-coil",
+          "name": "Coil inductor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/inductor-coil-large-thick.svg",
+          "width_mm": 22.29989296,
+          "height_mm": 4.79996429,
+          "origin_svg": [
+            -37.076311,
+            -61.653656
+          ],
+          "visual_center_from_origin_mm": [
+            1.7638888844354975e-07,
+            -1.2499830361111082
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              0.0
+            ],
+            "b": [
+              10.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 12.49997,
+            "body-height": 2.49998
+          },
+          "parts": [
+            "lead-a",
+            "body",
+            "lead-b"
+          ],
+          "svg_bytes": 2134,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "id": "capacitor",
+      "revision": 1,
+      "name": "Capacitor",
+      "description": "Non-polarized capacitor with two parallel plates and interchangeable terminals.",
+      "keywords": [
+        "capacitor",
+        "parallel plates",
+        "non-polarized",
+        "passive"
+      ],
+      "types": [
+        "passive",
+        "capacitor"
+      ],
+      "attributes": {
+        "appearance": "parallel-plates",
+        "polarized": false
+      },
+      "recipe": "capacitor",
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "A",
+          "description": "Interchangeable first terminal",
+          "kind": "passive",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "b",
+          "name": "B",
+          "description": "Interchangeable second terminal",
+          "kind": "passive",
+          "lead_part": "lead-b"
+        }
+      ],
+      "parts": [
+        {
+          "id": "plate-a",
+          "description": "First capacitor plate"
+        },
+        {
+          "id": "plate-b",
+          "description": "Second capacitor plate"
+        },
+        {
+          "id": "lead-a",
+          "description": "Lead to first plate"
+        },
+        {
+          "id": "lead-b",
+          "description": "Lead to second plate"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "capacitor-small-thin",
+          "symbol_id": "capacitor",
+          "name": "Capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/capacitor-small-thin.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 7.14995818,
+          "origin_svg": [
+            -54.296708,
+            -61.866222
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777743804626e-07,
+            -1.0583333331679353e-06
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.49998,
+            "body-height": 5.0
+          },
+          "parts": [
+            "plate-a",
+            "plate-b",
+            "lead-a",
+            "lead-b"
+          ],
+          "svg_bytes": 2053,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-small-medium",
+          "symbol_id": "capacitor",
+          "name": "Capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/capacitor-small-medium.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 7.1999602,
+          "origin_svg": [
+            -54.225837,
+            -61.795352
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.49998,
+            "body-height": 5.0
+          },
+          "parts": [
+            "plate-a",
+            "plate-b",
+            "lead-a",
+            "lead-b"
+          ],
+          "svg_bytes": 2078,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-small-thick",
+          "symbol_id": "capacitor",
+          "name": "Capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/capacitor-small-thick.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 7.29996459,
+          "origin_svg": [
+            -54.084096,
+            -61.65361
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.49998,
+            "body-height": 5.0
+          },
+          "parts": [
+            "plate-a",
+            "plate-b",
+            "lead-a",
+            "lead-b"
+          ],
+          "svg_bytes": 2063,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-medium-thin",
+          "symbol_id": "capacitor",
+          "name": "Capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/capacitor-medium-thin.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 8.81657001,
+          "origin_svg": [
+            -54.296708,
+            -59.504094
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777743804626e-07,
+            -2.5066368733759088e-15
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.99997,
+            "body-height": 6.66663
+          },
+          "parts": [
+            "plate-a",
+            "plate-b",
+            "lead-a",
+            "lead-b"
+          ],
+          "svg_bytes": 2068,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-medium-medium",
+          "symbol_id": "capacitor",
+          "name": "Capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/capacitor-medium-medium.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 8.86657556,
+          "origin_svg": [
+            -54.225837,
+            -59.433223
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -1.4111111125616716e-06
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.99997,
+            "body-height": 6.66663
+          },
+          "parts": [
+            "plate-a",
+            "plate-b",
+            "lead-a",
+            "lead-b"
+          ],
+          "svg_bytes": 2092,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-medium-thick",
+          "symbol_id": "capacitor",
+          "name": "Capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/capacitor-medium-thick.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 8.96657994,
+          "origin_svg": [
+            -54.084096,
+            -59.291481
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.99997,
+            "body-height": 6.66663
+          },
+          "parts": [
+            "plate-a",
+            "plate-b",
+            "lead-a",
+            "lead-b"
+          ],
+          "svg_bytes": 2081,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-large-thin",
+          "symbol_id": "capacitor",
+          "name": "Capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/capacitor-large-thin.svg",
+          "width_mm": 12.14993407,
+          "height_mm": 10.48324851,
+          "origin_svg": [
+            -51.462077,
+            -57.141873
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.49998,
+            "body-height": 8.33331
+          },
+          "parts": [
+            "plate-a",
+            "plate-b",
+            "lead-a",
+            "lead-b"
+          ],
+          "svg_bytes": 2060,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-large-medium",
+          "symbol_id": "capacitor",
+          "name": "Capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/capacitor-large-medium.svg",
+          "width_mm": 12.19993997,
+          "height_mm": 10.53325088,
+          "origin_svg": [
+            -51.391206,
+            -57.071003
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666653306492e-07,
+            -2.5066368733759088e-15
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.49998,
+            "body-height": 8.33331
+          },
+          "parts": [
+            "plate-a",
+            "plate-b",
+            "lead-a",
+            "lead-b"
+          ],
+          "svg_bytes": 2084,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-large-thick",
+          "symbol_id": "capacitor",
+          "name": "Capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/capacitor-large-thick.svg",
+          "width_mm": 12.29994436,
+          "height_mm": 10.63325844,
+          "origin_svg": [
+            -51.249465,
+            -56.929261
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            -1.0583333331679353e-06
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.49998,
+            "body-height": 8.33331
+          },
+          "parts": [
+            "plate-a",
+            "plate-b",
+            "lead-a",
+            "lead-b"
+          ],
+          "svg_bytes": 2071,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "id": "opamp",
+      "revision": 1,
+      "name": "Op-amp",
+      "description": "Operational amplifier with two inputs and one output. Supply pins are not shown.",
+      "keywords": [
+        "op-amp",
+        "operational amplifier",
+        "triangle",
+        "differential",
+        "active",
+        "supplies not shown"
+      ],
+      "types": [
+        "active",
+        "amplifier",
+        "operational-amplifier"
+      ],
+      "attributes": {
+        "appearance": "triangle",
+        "supplies": "not-shown",
+        "inputs": "differential"
+      },
+      "recipe": "opamp",
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "in-plus",
+          "name": "Non-inverting input",
+          "description": "Positive differential input",
+          "kind": "input",
+          "lead_part": "lead-in-plus"
+        },
+        {
+          "id": "in-minus",
+          "name": "Inverting input",
+          "description": "Negative differential input",
+          "kind": "input",
+          "lead_part": "lead-in-minus"
+        },
+        {
+          "id": "out",
+          "name": "Output",
+          "description": "Amplifier output",
+          "kind": "output",
+          "lead_part": "lead-out"
+        }
+      ],
+      "parts": [
+        {
+          "id": "body",
+          "description": "Triangle outline"
+        },
+        {
+          "id": "sign-plus",
+          "description": "Non-inverting input mark"
+        },
+        {
+          "id": "sign-minus",
+          "description": "Inverting input mark"
+        },
+        {
+          "id": "lead-in-plus",
+          "description": "Non-inverting input lead"
+        },
+        {
+          "id": "lead-in-minus",
+          "description": "Inverting input lead"
+        },
+        {
+          "id": "lead-out",
+          "description": "Output lead"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "opamp-small-thin",
+          "symbol_id": "opamp",
+          "name": "Op-amp",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/opamp-small-thin.svg",
+          "width_mm": 18.14990479,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -42.958185,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -8.0,
+              3.0
+            ],
+            "in-minus": [
+              -8.0,
+              -3.0
+            ],
+            "out": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.49997,
+            "body-height": 10.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "lead-in-minus",
+            "lead-out",
+            "sign-plus",
+            "sign-minus"
+          ],
+          "svg_bytes": 2610,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "opamp-small-medium",
+          "symbol_id": "opamp",
+          "name": "Op-amp",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/opamp-small-medium.svg",
+          "width_mm": 18.19990716,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -42.887314,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            2.5066368733759088e-15,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -8.0,
+              3.0
+            ],
+            "in-minus": [
+              -8.0,
+              -3.0
+            ],
+            "out": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.49997,
+            "body-height": 10.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "lead-in-minus",
+            "lead-out",
+            "sign-plus",
+            "sign-minus"
+          ],
+          "svg_bytes": 2643,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "opamp-small-thick",
+          "symbol_id": "opamp",
+          "name": "Op-amp",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/opamp-small-thick.svg",
+          "width_mm": 18.29991507,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -42.745573,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -8.0,
+              3.0
+            ],
+            "in-minus": [
+              -8.0,
+              -3.0
+            ],
+            "out": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.49997,
+            "body-height": 10.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "lead-in-minus",
+            "lead-out",
+            "sign-plus",
+            "sign-minus"
+          ],
+          "svg_bytes": 2626,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "opamp-medium-thin",
+          "symbol_id": "opamp",
+          "name": "Op-amp",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/opamp-medium-thin.svg",
+          "width_mm": 20.14989373,
+          "height_mm": 15.48316126,
+          "origin_svg": [
+            -40.123554,
+            -50.05538
+          ],
+          "visual_center_from_origin_mm": [
+            1.7638888844354975e-07,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -9.0,
+              3.0
+            ],
+            "in-minus": [
+              -9.0,
+              -3.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.33322,
+            "body-height": 13.33325
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "lead-in-minus",
+            "lead-out",
+            "sign-plus",
+            "sign-minus"
+          ],
+          "svg_bytes": 2637,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "opamp-medium-medium",
+          "symbol_id": "opamp",
+          "name": "Op-amp",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/opamp-medium-medium.svg",
+          "width_mm": 20.1998961,
+          "height_mm": 15.53316362,
+          "origin_svg": [
+            -40.052683,
+            -49.984509
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            8.819444472310225e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -9.0,
+              3.0
+            ],
+            "in-minus": [
+              -9.0,
+              -3.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.33322,
+            "body-height": 13.33325
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "lead-in-minus",
+            "lead-out",
+            "sign-plus",
+            "sign-minus"
+          ],
+          "svg_bytes": 2672,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "opamp-medium-thick",
+          "symbol_id": "opamp",
+          "name": "Op-amp",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/opamp-medium-thick.svg",
+          "width_mm": 20.29990401,
+          "height_mm": 15.63317154,
+          "origin_svg": [
+            -39.910942,
+            -49.842768
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            2.5066368733759088e-15
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -9.0,
+              3.0
+            ],
+            "in-minus": [
+              -9.0,
+              -3.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.33322,
+            "body-height": 13.33325
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "lead-in-minus",
+            "lead-out",
+            "sign-plus",
+            "sign-minus"
+          ],
+          "svg_bytes": 2655,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "opamp-large-thin",
+          "symbol_id": "opamp",
+          "name": "Op-amp",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/opamp-large-thin.svg",
+          "width_mm": 24.14987197,
+          "height_mm": 18.81651861,
+          "origin_svg": [
+            -34.454292,
+            -45.33094
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            -5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -11.0,
+              3.0
+            ],
+            "in-minus": [
+              -11.0,
+              -3.0
+            ],
+            "out": [
+              11.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 14.1666,
+            "body-height": 16.66663
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "lead-in-minus",
+            "lead-out",
+            "sign-plus",
+            "sign-minus"
+          ],
+          "svg_bytes": 2625,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "opamp-large-medium",
+          "symbol_id": "opamp",
+          "name": "Op-amp",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/opamp-large-medium.svg",
+          "width_mm": 24.19987399,
+          "height_mm": 18.86652098,
+          "origin_svg": [
+            -34.383422,
+            -45.260069
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            0.0
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -11.0,
+              3.0
+            ],
+            "in-minus": [
+              -11.0,
+              -3.0
+            ],
+            "out": [
+              11.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 14.1666,
+            "body-height": 16.66663
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "lead-in-minus",
+            "lead-out",
+            "sign-plus",
+            "sign-minus"
+          ],
+          "svg_bytes": 2660,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "opamp-large-thick",
+          "symbol_id": "opamp",
+          "name": "Op-amp",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/opamp-large-thick.svg",
+          "width_mm": 24.2998819,
+          "height_mm": 18.96652537,
+          "origin_svg": [
+            -34.24168,
+            -45.118328
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888593691287e-07,
+            8.819444422177487e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -11.0,
+              3.0
+            ],
+            "in-minus": [
+              -11.0,
+              -3.0
+            ],
+            "out": [
+              11.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 14.1666,
+            "body-height": 16.66663
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "lead-in-minus",
+            "lead-out",
+            "sign-plus",
+            "sign-minus"
+          ],
+          "svg_bytes": 2642,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "id": "opamp-supply",
+      "revision": 1,
+      "name": "Op-amp with supply pins",
+      "description": "Operational amplifier with two inputs, one output and two visible supply pins.",
+      "keywords": [
+        "op-amp",
+        "operational amplifier",
+        "triangle",
+        "differential",
+        "active",
+        "supply pins"
+      ],
+      "types": [
+        "active",
+        "amplifier",
+        "operational-amplifier"
+      ],
+      "attributes": {
+        "appearance": "triangle",
+        "supplies": "visible",
+        "inputs": "differential"
+      },
+      "recipe": "opamp-supply",
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "in-plus",
+          "name": "Non-inverting input",
+          "description": "Positive differential input",
+          "kind": "input",
+          "lead_part": "lead-in-plus"
+        },
+        {
+          "id": "in-minus",
+          "name": "Inverting input",
+          "description": "Negative differential input",
+          "kind": "input",
+          "lead_part": "lead-in-minus"
+        },
+        {
+          "id": "out",
+          "name": "Output",
+          "description": "Amplifier output",
+          "kind": "output",
+          "lead_part": "lead-out"
+        },
+        {
+          "id": "supply-plus",
+          "name": "Positive supply",
+          "description": "Positive power-supply connection",
+          "kind": "power",
+          "lead_part": "lead-supply-plus"
+        },
+        {
+          "id": "supply-minus",
+          "name": "Negative supply",
+          "description": "Negative power-supply connection",
+          "kind": "power",
+          "lead_part": "lead-supply-minus"
+        }
+      ],
+      "parts": [
+        {
+          "id": "body",
+          "description": "Triangle outline"
+        },
+        {
+          "id": "sign-plus",
+          "description": "Non-inverting input mark"
+        },
+        {
+          "id": "sign-minus",
+          "description": "Inverting input mark"
+        },
+        {
+          "id": "lead-in-plus",
+          "description": "Non-inverting input lead"
+        },
+        {
+          "id": "lead-in-minus",
+          "description": "Inverting input lead"
+        },
+        {
+          "id": "lead-out",
+          "description": "Output lead"
+        },
+        {
+          "id": "lead-supply-plus",
+          "description": "Positive supply lead"
+        },
+        {
+          "id": "lead-supply-minus",
+          "description": "Negative supply lead"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "opamp-supply-small-thin",
+          "symbol_id": "opamp-supply",
+          "name": "Op-amp with supply pins",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/opamp-supply-small-thin.svg",
+          "width_mm": 18.14990479,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -42.958185,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -8.0,
+              3.0
+            ],
+            "in-minus": [
+              -8.0,
+              -3.0
+            ],
+            "out": [
+              8.0,
+              0.0
+            ],
+            "supply-plus": [
+              0.0,
+              5.0
+            ],
+            "supply-minus": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.49997,
+            "body-height": 10.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "lead-in-minus",
+            "lead-out",
+            "sign-plus",
+            "sign-minus",
+            "lead-supply-plus",
+            "lead-supply-minus"
+          ],
+          "svg_bytes": 3371,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "opamp-supply-small-medium",
+          "symbol_id": "opamp-supply",
+          "name": "Op-amp with supply pins",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/opamp-supply-small-medium.svg",
+          "width_mm": 18.19990716,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -42.887314,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            2.5066368733759088e-15,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -8.0,
+              3.0
+            ],
+            "in-minus": [
+              -8.0,
+              -3.0
+            ],
+            "out": [
+              8.0,
+              0.0
+            ],
+            "supply-plus": [
+              0.0,
+              5.0
+            ],
+            "supply-minus": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.49997,
+            "body-height": 10.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "lead-in-minus",
+            "lead-out",
+            "sign-plus",
+            "sign-minus",
+            "lead-supply-plus",
+            "lead-supply-minus"
+          ],
+          "svg_bytes": 3412,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "opamp-supply-small-thick",
+          "symbol_id": "opamp-supply",
+          "name": "Op-amp with supply pins",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/opamp-supply-small-thick.svg",
+          "width_mm": 18.29991507,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -42.745573,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -8.0,
+              3.0
+            ],
+            "in-minus": [
+              -8.0,
+              -3.0
+            ],
+            "out": [
+              8.0,
+              0.0
+            ],
+            "supply-plus": [
+              0.0,
+              5.0
+            ],
+            "supply-minus": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.49997,
+            "body-height": 10.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "lead-in-minus",
+            "lead-out",
+            "sign-plus",
+            "sign-minus",
+            "lead-supply-plus",
+            "lead-supply-minus"
+          ],
+          "svg_bytes": 3391,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "opamp-supply-medium-thin",
+          "symbol_id": "opamp-supply",
+          "name": "Op-amp with supply pins",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/opamp-supply-medium-thin.svg",
+          "width_mm": 20.14989373,
+          "height_mm": 15.48316126,
+          "origin_svg": [
+            -40.123554,
+            -50.05538
+          ],
+          "visual_center_from_origin_mm": [
+            1.7638888844354975e-07,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -9.0,
+              3.0
+            ],
+            "in-minus": [
+              -9.0,
+              -3.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ],
+            "supply-plus": [
+              0.0,
+              6.0
+            ],
+            "supply-minus": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.33322,
+            "body-height": 13.33325
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "lead-in-minus",
+            "lead-out",
+            "sign-plus",
+            "sign-minus",
+            "lead-supply-plus",
+            "lead-supply-minus"
+          ],
+          "svg_bytes": 3404,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "opamp-supply-medium-medium",
+          "symbol_id": "opamp-supply",
+          "name": "Op-amp with supply pins",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/opamp-supply-medium-medium.svg",
+          "width_mm": 20.1998961,
+          "height_mm": 15.53316362,
+          "origin_svg": [
+            -40.052683,
+            -49.984509
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            8.819444472310225e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -9.0,
+              3.0
+            ],
+            "in-minus": [
+              -9.0,
+              -3.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ],
+            "supply-plus": [
+              0.0,
+              6.0
+            ],
+            "supply-minus": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.33322,
+            "body-height": 13.33325
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "lead-in-minus",
+            "lead-out",
+            "sign-plus",
+            "sign-minus",
+            "lead-supply-plus",
+            "lead-supply-minus"
+          ],
+          "svg_bytes": 3447,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "opamp-supply-medium-thick",
+          "symbol_id": "opamp-supply",
+          "name": "Op-amp with supply pins",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/opamp-supply-medium-thick.svg",
+          "width_mm": 20.29990401,
+          "height_mm": 15.63317154,
+          "origin_svg": [
+            -39.910942,
+            -49.842768
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            2.5066368733759088e-15
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -9.0,
+              3.0
+            ],
+            "in-minus": [
+              -9.0,
+              -3.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ],
+            "supply-plus": [
+              0.0,
+              6.0
+            ],
+            "supply-minus": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.33322,
+            "body-height": 13.33325
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "lead-in-minus",
+            "lead-out",
+            "sign-plus",
+            "sign-minus",
+            "lead-supply-plus",
+            "lead-supply-minus"
+          ],
+          "svg_bytes": 3426,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "opamp-supply-large-thin",
+          "symbol_id": "opamp-supply",
+          "name": "Op-amp with supply pins",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/opamp-supply-large-thin.svg",
+          "width_mm": 24.14987197,
+          "height_mm": 18.81651861,
+          "origin_svg": [
+            -34.454292,
+            -45.33094
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            -5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -11.0,
+              3.0
+            ],
+            "in-minus": [
+              -11.0,
+              -3.0
+            ],
+            "out": [
+              11.0,
+              0.0
+            ],
+            "supply-plus": [
+              0.0,
+              7.0
+            ],
+            "supply-minus": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 14.1666,
+            "body-height": 16.66663
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "lead-in-minus",
+            "lead-out",
+            "sign-plus",
+            "sign-minus",
+            "lead-supply-plus",
+            "lead-supply-minus"
+          ],
+          "svg_bytes": 3390,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "opamp-supply-large-medium",
+          "symbol_id": "opamp-supply",
+          "name": "Op-amp with supply pins",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/opamp-supply-large-medium.svg",
+          "width_mm": 24.19987399,
+          "height_mm": 18.86652098,
+          "origin_svg": [
+            -34.383422,
+            -45.260069
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            0.0
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -11.0,
+              3.0
+            ],
+            "in-minus": [
+              -11.0,
+              -3.0
+            ],
+            "out": [
+              11.0,
+              0.0
+            ],
+            "supply-plus": [
+              0.0,
+              7.0
+            ],
+            "supply-minus": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 14.1666,
+            "body-height": 16.66663
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "lead-in-minus",
+            "lead-out",
+            "sign-plus",
+            "sign-minus",
+            "lead-supply-plus",
+            "lead-supply-minus"
+          ],
+          "svg_bytes": 3433,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "opamp-supply-large-thick",
+          "symbol_id": "opamp-supply",
+          "name": "Op-amp with supply pins",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/opamp-supply-large-thick.svg",
+          "width_mm": 24.2998819,
+          "height_mm": 18.96652537,
+          "origin_svg": [
+            -34.24168,
+            -45.118328
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888593691287e-07,
+            8.819444422177487e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -11.0,
+              3.0
+            ],
+            "in-minus": [
+              -11.0,
+              -3.0
+            ],
+            "out": [
+              11.0,
+              0.0
+            ],
+            "supply-plus": [
+              0.0,
+              7.0
+            ],
+            "supply-minus": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 14.1666,
+            "body-height": 16.66663
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "lead-in-minus",
+            "lead-out",
+            "sign-plus",
+            "sign-minus",
+            "lead-supply-plus",
+            "lead-supply-minus"
+          ],
+          "svg_bytes": 3411,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ]
+    }
+  ]
+}

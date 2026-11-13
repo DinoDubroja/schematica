@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.00002 34.582507 29.858034" width="12.19993997mm" height="10.53325088mm">
+  <title>Capacitor</title>
+  <desc>Non-polarized capacitor with two parallel plates and interchangeable terminals.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 8.33331, "body-width": 2.49998}, "origin_svg": [-51.391206, -57.071003], "parts": ["plate-a", "plate-b", "lead-a", "lead-b"], "pins_mm": {"a": [-5.0, 0.0], "b": [5.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "capacitor"}</metadata>
+  <g id="sc-capacitor-r1-large-medium--sc-capacitor-r1-large-medium" inkscape:label="Capacitor / large / medium" data-symbol="capacitor" data-revision="1" data-size="large" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-51.391206,-57.071003)scale(0.996264,-0.996264)">
+    <g data-part="plate-a" id="sc-capacitor-r1-large-medium--sc-capacitor-r1-large-medium--plate-a" inkscape:label="plate-a">
+      <path d="M-3.55656-11.85521V11.85521" fill="none" />
+      <desc>First capacitor plate</desc>
+    </g>
+    <g data-part="plate-b" id="sc-capacitor-r1-large-medium--sc-capacitor-r1-large-medium--plate-b" inkscape:label="plate-b">
+      <path d="M3.55656-11.85521V11.85521" fill="none" />
+      <desc>Second capacitor plate</desc>
+    </g>
+    <g data-part="lead-a" id="sc-capacitor-r1-large-medium--sc-capacitor-r1-large-medium--lead-a" inkscape:label="lead-a">
+      <path d="M-14.2263 0H-3.55656" fill="none" />
+      <desc>Lead to first plate</desc>
+    </g>
+    <g data-part="lead-b" id="sc-capacitor-r1-large-medium--sc-capacitor-r1-large-medium--lead-b" inkscape:label="lead-b">
+      <path d="M3.55656 0H14.2263" fill="none" />
+      <desc>Lead to second plate</desc>
+    </g>
+  </g>
+</svg>

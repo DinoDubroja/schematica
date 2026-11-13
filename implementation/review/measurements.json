@@ -1,0 +1,788 @@
+{
+  "configurations": [
+    {
+      "symbol_id": "resistor-eu",
+      "revision": 1,
+      "settings": {
+        "size": "small",
+        "stroke": "thin",
+        "size_factor": 0.75,
+        "stroke_mm": 0.15,
+        "grid_mm": 1
+      },
+      "pins_mm": {
+        "a": [
+          -7.0,
+          0.0
+        ],
+        "b": [
+          7.0,
+          0.0
+        ]
+      },
+      "dimensions_mm": {
+        "body-width": 7.5,
+        "body-height": 2.5
+      },
+      "parts": [
+        "body",
+        "lead-a",
+        "lead-b"
+      ],
+      "output": "review/configurations/resistor-eu-small-thin.svg",
+      "compile_seconds": 0.7424,
+      "convert_seconds": 0.0269,
+      "svg_bytes": 1786,
+      "definition_sha256": "f60c4ec0a29514d5530613ae43338938f5bff7bb477b5b356b555418a8a34389"
+    },
+    {
+      "symbol_id": "resistor-eu",
+      "revision": 1,
+      "settings": {
+        "size": "small",
+        "stroke": "medium",
+        "size_factor": 0.75,
+        "stroke_mm": 0.2,
+        "grid_mm": 1
+      },
+      "pins_mm": {
+        "a": [
+          -7.0,
+          0.0
+        ],
+        "b": [
+          7.0,
+          0.0
+        ]
+      },
+      "dimensions_mm": {
+        "body-width": 7.5,
+        "body-height": 2.5
+      },
+      "parts": [
+        "body",
+        "lead-a",
+        "lead-b"
+      ],
+      "output": "review/configurations/resistor-eu-small-medium.svg",
+      "compile_seconds": 0.7078,
+      "convert_seconds": 0.0247,
+      "svg_bytes": 1804,
+      "definition_sha256": "f60c4ec0a29514d5530613ae43338938f5bff7bb477b5b356b555418a8a34389"
+    },
+    {
+      "symbol_id": "resistor-eu",
+      "revision": 1,
+      "settings": {
+        "size": "small",
+        "stroke": "thick",
+        "size_factor": 0.75,
+        "stroke_mm": 0.3,
+        "grid_mm": 1
+      },
+      "pins_mm": {
+        "a": [
+          -7.0,
+          0.0
+        ],
+        "b": [
+          7.0,
+          0.0
+        ]
+      },
+      "dimensions_mm": {
+        "body-width": 7.5,
+        "body-height": 2.5
+      },
+      "parts": [
+        "body",
+        "lead-a",
+        "lead-b"
+      ],
+      "output": "review/configurations/resistor-eu-small-thick.svg",
+      "compile_seconds": 0.7256,
+      "convert_seconds": 0.0262,
+      "svg_bytes": 1795,
+      "definition_sha256": "f60c4ec0a29514d5530613ae43338938f5bff7bb477b5b356b555418a8a34389"
+    },
+    {
+      "symbol_id": "resistor-eu",
+      "revision": 1,
+      "settings": {
+        "size": "medium",
+        "stroke": "thin",
+        "size_factor": 1.0,
+        "stroke_mm": 0.15,
+        "grid_mm": 1
+      },
+      "pins_mm": {
+        "a": [
+          -8.0,
+          0.0
+        ],
+        "b": [
+          8.0,
+          0.0
+        ]
+      },
+      "dimensions_mm": {
+        "body-width": 9.99994,
+        "body-height": 3.33331
+      },
+      "parts": [
+        "body",
+        "lead-a",
+        "lead-b"
+      ],
+      "output": "review/configurations/resistor-eu-medium-thin.svg",
+      "compile_seconds": 0.6975,
+      "convert_seconds": 0.0242,
+      "svg_bytes": 1802,
+      "definition_sha256": "f60c4ec0a29514d5530613ae43338938f5bff7bb477b5b356b555418a8a34389"
+    },
+    {
+      "symbol_id": "resistor-eu",
+      "revision": 1,
+      "settings": {
+        "size": "medium",
+        "stroke": "medium",
+        "size_factor": 1.0,
+        "stroke_mm": 0.2,
+        "grid_mm": 1
+      },
+      "pins_mm": {
+        "a": [
+          -8.0,
+          0.0
+        ],
+        "b": [
+          8.0,
+          0.0
+        ]
+      },
+      "dimensions_mm": {
+        "body-width": 9.99994,
+        "body-height": 3.33331
+      },
+      "parts": [
+        "body",
+        "lead-a",
+        "lead-b"
+      ],
+      "output": "review/configurations/resistor-eu-medium-medium.svg",
+      "compile_seconds": 0.7187,
+      "convert_seconds": 0.0311,
+      "svg_bytes": 1822,
+      "definition_sha256": "f60c4ec0a29514d5530613ae43338938f5bff7bb477b5b356b555418a8a34389"
+    },
+    {
+      "symbol_id": "resistor-eu",
+      "revision": 1,
+      "settings": {
+        "size": "medium",
+        "stroke": "thick",
+        "size_factor": 1.0,
+        "stroke_mm": 0.3,
+        "grid_mm": 1
+      },
+      "pins_mm": {
+        "a": [
+          -8.0,
+          0.0
+        ],
+        "b": [
+          8.0,
+          0.0
+        ]
+      },
+      "dimensions_mm": {
+        "body-width": 9.99994,
+        "body-height": 3.33331
+      },
+      "parts": [
+        "body",
+        "lead-a",
+        "lead-b"
+      ],
+      "output": "review/configurations/resistor-eu-medium-thick.svg",
+      "compile_seconds": 0.721,
+      "convert_seconds": 0.0259,
+      "svg_bytes": 1811,
+      "definition_sha256": "f60c4ec0a29514d5530613ae43338938f5bff7bb477b5b356b555418a8a34389"
+    },
+    {
+      "symbol_id": "resistor-eu",
+      "revision": 1,
+      "settings": {
+        "size": "large",
+        "stroke": "thin",
+        "size_factor": 1.25,
+        "stroke_mm": 0.15,
+        "grid_mm": 1
+      },
+      "pins_mm": {
+        "a": [
+          -10.0,
+          0.0
+        ],
+        "b": [
+          10.0,
+          0.0
+        ]
+      },
+      "dimensions_mm": {
+        "body-width": 12.49997,
+        "body-height": 4.16666
+      },
+      "parts": [
+        "body",
+        "lead-a",
+        "lead-b"
+      ],
+      "output": "review/configurations/resistor-eu-large-thin.svg",
+      "compile_seconds": 0.7242,
+      "convert_seconds": 0.0272,
+      "svg_bytes": 1789,
+      "definition_sha256": "f60c4ec0a29514d5530613ae43338938f5bff7bb477b5b356b555418a8a34389"
+    },
+    {
+      "symbol_id": "resistor-eu",
+      "revision": 1,
+      "settings": {
+        "size": "large",
+        "stroke": "medium",
+        "size_factor": 1.25,
+        "stroke_mm": 0.2,
+        "grid_mm": 1
+      },
+      "pins_mm": {
+        "a": [
+          -10.0,
+          0.0
+        ],
+        "b": [
+          10.0,
+          0.0
+        ]
+      },
+      "dimensions_mm": {
+        "body-width": 12.49997,
+        "body-height": 4.16666
+      },
+      "parts": [
+        "body",
+        "lead-a",
+        "lead-b"
+      ],
+      "output": "review/configurations/resistor-eu-large-medium.svg",
+      "compile_seconds": 0.701,
+      "convert_seconds": 0.0252,
+      "svg_bytes": 1810,
+      "definition_sha256": "f60c4ec0a29514d5530613ae43338938f5bff7bb477b5b356b555418a8a34389"
+    },
+    {
+      "symbol_id": "resistor-eu",
+      "revision": 1,
+      "settings": {
+        "size": "large",
+        "stroke": "thick",
+        "size_factor": 1.25,
+        "stroke_mm": 0.3,
+        "grid_mm": 1
+      },
+      "pins_mm": {
+        "a": [
+          -10.0,
+          0.0
+        ],
+        "b": [
+          10.0,
+          0.0
+        ]
+      },
+      "dimensions_mm": {
+        "body-width": 12.49997,
+        "body-height": 4.16666
+      },
+      "parts": [
+        "body",
+        "lead-a",
+        "lead-b"
+      ],
+      "output": "review/configurations/resistor-eu-large-thick.svg",
+      "compile_seconds": 0.7074,
+      "convert_seconds": 0.0291,
+      "svg_bytes": 1800,
+      "definition_sha256": "f60c4ec0a29514d5530613ae43338938f5bff7bb477b5b356b555418a8a34389"
+    },
+    {
+      "symbol_id": "opamp-supply",
+      "revision": 1,
+      "settings": {
+        "size": "small",
+        "stroke": "thin",
+        "size_factor": 0.75,
+        "stroke_mm": 0.15,
+        "grid_mm": 1
+      },
+      "pins_mm": {
+        "in-plus": [
+          -8.0,
+          3.0
+        ],
+        "in-minus": [
+          -8.0,
+          -3.0
+        ],
+        "out": [
+          8.0,
+          0.0
+        ],
+        "supply-plus": [
+          0.0,
+          5.0
+        ],
+        "supply-minus": [
+          0.0,
+          -5.0
+        ]
+      },
+      "dimensions_mm": {
+        "body-width": 8.49997,
+        "body-height": 10.0
+      },
+      "parts": [
+        "body",
+        "lead-in-plus",
+        "lead-in-minus",
+        "lead-out",
+        "sign-plus",
+        "sign-minus",
+        "lead-supply-plus",
+        "lead-supply-minus"
+      ],
+      "output": "review/configurations/opamp-supply-small-thin.svg",
+      "compile_seconds": 0.7129,
+      "convert_seconds": 0.0261,
+      "svg_bytes": 3309,
+      "definition_sha256": "5f503a0e0bccd5a08303807aae093dd7300e70eaa80cba3b6600772e20f7a2cc"
+    },
+    {
+      "symbol_id": "opamp-supply",
+      "revision": 1,
+      "settings": {
+        "size": "small",
+        "stroke": "medium",
+        "size_factor": 0.75,
+        "stroke_mm": 0.2,
+        "grid_mm": 1
+      },
+      "pins_mm": {
+        "in-plus": [
+          -8.0,
+          3.0
+        ],
+        "in-minus": [
+          -8.0,
+          -3.0
+        ],
+        "out": [
+          8.0,
+          0.0
+        ],
+        "supply-plus": [
+          0.0,
+          5.0
+        ],
+        "supply-minus": [
+          0.0,
+          -5.0
+        ]
+      },
+      "dimensions_mm": {
+        "body-width": 8.49997,
+        "body-height": 10.0
+      },
+      "parts": [
+        "body",
+        "lead-in-plus",
+        "lead-in-minus",
+        "lead-out",
+        "sign-plus",
+        "sign-minus",
+        "lead-supply-plus",
+        "lead-supply-minus"
+      ],
+      "output": "review/configurations/opamp-supply-small-medium.svg",
+      "compile_seconds": 0.7229,
+      "convert_seconds": 0.033,
+      "svg_bytes": 3348,
+      "definition_sha256": "5f503a0e0bccd5a08303807aae093dd7300e70eaa80cba3b6600772e20f7a2cc"
+    },
+    {
+      "symbol_id": "opamp-supply",
+      "revision": 1,
+      "settings": {
+        "size": "small",
+        "stroke": "thick",
+        "size_factor": 0.75,
+        "stroke_mm": 0.3,
+        "grid_mm": 1
+      },
+      "pins_mm": {
+        "in-plus": [
+          -8.0,
+          3.0
+        ],
+        "in-minus": [
+          -8.0,
+          -3.0
+        ],
+        "out": [
+          8.0,
+          0.0
+        ],
+        "supply-plus": [
+          0.0,
+          5.0
+        ],
+        "supply-minus": [
+          0.0,
+          -5.0
+        ]
+      },
+      "dimensions_mm": {
+        "body-width": 8.49997,
+        "body-height": 10.0
+      },
+      "parts": [
+        "body",
+        "lead-in-plus",
+        "lead-in-minus",
+        "lead-out",
+        "sign-plus",
+        "sign-minus",
+        "lead-supply-plus",
+        "lead-supply-minus"
+      ],
+      "output": "review/configurations/opamp-supply-small-thick.svg",
+      "compile_seconds": 0.7237,
+      "convert_seconds": 0.0287,
+      "svg_bytes": 3328,
+      "definition_sha256": "5f503a0e0bccd5a08303807aae093dd7300e70eaa80cba3b6600772e20f7a2cc"
+    },
+    {
+      "symbol_id": "opamp-supply",
+      "revision": 1,
+      "settings": {
+        "size": "medium",
+        "stroke": "thin",
+        "size_factor": 1.0,
+        "stroke_mm": 0.15,
+        "grid_mm": 1
+      },
+      "pins_mm": {
+        "in-plus": [
+          -9.0,
+          3.0
+        ],
+        "in-minus": [
+          -9.0,
+          -3.0
+        ],
+        "out": [
+          9.0,
+          0.0
+        ],
+        "supply-plus": [
+          0.0,
+          6.0
+        ],
+        "supply-minus": [
+          0.0,
+          -6.0
+        ]
+      },
+      "dimensions_mm": {
+        "body-width": 11.33322,
+        "body-height": 13.33325
+      },
+      "parts": [
+        "body",
+        "lead-in-plus",
+        "lead-in-minus",
+        "lead-out",
+        "sign-plus",
+        "sign-minus",
+        "lead-supply-plus",
+        "lead-supply-minus"
+      ],
+      "output": "review/configurations/opamp-supply-medium-thin.svg",
+      "compile_seconds": 0.725,
+      "convert_seconds": 0.032,
+      "svg_bytes": 3342,
+      "definition_sha256": "5f503a0e0bccd5a08303807aae093dd7300e70eaa80cba3b6600772e20f7a2cc"
+    },
+    {
+      "symbol_id": "opamp-supply",
+      "revision": 1,
+      "settings": {
+        "size": "medium",
+        "stroke": "medium",
+        "size_factor": 1.0,
+        "stroke_mm": 0.2,
+        "grid_mm": 1
+      },
+      "pins_mm": {
+        "in-plus": [
+          -9.0,
+          3.0
+        ],
+        "in-minus": [
+          -9.0,
+          -3.0
+        ],
+        "out": [
+          9.0,
+          0.0
+        ],
+        "supply-plus": [
+          0.0,
+          6.0
+        ],
+        "supply-minus": [
+          0.0,
+          -6.0
+        ]
+      },
+      "dimensions_mm": {
+        "body-width": 11.33322,
+        "body-height": 13.33325
+      },
+      "parts": [
+        "body",
+        "lead-in-plus",
+        "lead-in-minus",
+        "lead-out",
+        "sign-plus",
+        "sign-minus",
+        "lead-supply-plus",
+        "lead-supply-minus"
+      ],
+      "output": "review/configurations/opamp-supply-medium-medium.svg",
+      "compile_seconds": 0.72,
+      "convert_seconds": 0.0274,
+      "svg_bytes": 3382,
+      "definition_sha256": "5f503a0e0bccd5a08303807aae093dd7300e70eaa80cba3b6600772e20f7a2cc"
+    },
+    {
+      "symbol_id": "opamp-supply",
+      "revision": 1,
+      "settings": {
+        "size": "medium",
+        "stroke": "thick",
+        "size_factor": 1.0,
+        "stroke_mm": 0.3,
+        "grid_mm": 1
+      },
+      "pins_mm": {
+        "in-plus": [
+          -9.0,
+          3.0
+        ],
+        "in-minus": [
+          -9.0,
+          -3.0
+        ],
+        "out": [
+          9.0,
+          0.0
+        ],
+        "supply-plus": [
+          0.0,
+          6.0
+        ],
+        "supply-minus": [
+          0.0,
+          -6.0
+        ]
+      },
+      "dimensions_mm": {
+        "body-width": 11.33322,
+        "body-height": 13.33325
+      },
+      "parts": [
+        "body",
+        "lead-in-plus",
+        "lead-in-minus",
+        "lead-out",
+        "sign-plus",
+        "sign-minus",
+        "lead-supply-plus",
+        "lead-supply-minus"
+      ],
+      "output": "review/configurations/opamp-supply-medium-thick.svg",
+      "compile_seconds": 0.7138,
+      "convert_seconds": 0.0316,
+      "svg_bytes": 3362,
+      "definition_sha256": "5f503a0e0bccd5a08303807aae093dd7300e70eaa80cba3b6600772e20f7a2cc"
+    },
+    {
+      "symbol_id": "opamp-supply",
+      "revision": 1,
+      "settings": {
+        "size": "large",
+        "stroke": "thin",
+        "size_factor": 1.25,
+        "stroke_mm": 0.15,
+        "grid_mm": 1
+      },
+      "pins_mm": {
+        "in-plus": [
+          -11.0,
+          3.0
+        ],
+        "in-minus": [
+          -11.0,
+          -3.0
+        ],
+        "out": [
+          11.0,
+          0.0
+        ],
+        "supply-plus": [
+          0.0,
+          7.0
+        ],
+        "supply-minus": [
+          0.0,
+          -7.0
+        ]
+      },
+      "dimensions_mm": {
+        "body-width": 14.1666,
+        "body-height": 16.66663
+      },
+      "parts": [
+        "body",
+        "lead-in-plus",
+        "lead-in-minus",
+        "lead-out",
+        "sign-plus",
+        "sign-minus",
+        "lead-supply-plus",
+        "lead-supply-minus"
+      ],
+      "output": "review/configurations/opamp-supply-large-thin.svg",
+      "compile_seconds": 0.7394,
+      "convert_seconds": 0.0295,
+      "svg_bytes": 3329,
+      "definition_sha256": "5f503a0e0bccd5a08303807aae093dd7300e70eaa80cba3b6600772e20f7a2cc"
+    },
+    {
+      "symbol_id": "opamp-supply",
+      "revision": 1,
+      "settings": {
+        "size": "large",
+        "stroke": "medium",
+        "size_factor": 1.25,
+        "stroke_mm": 0.2,
+        "grid_mm": 1
+      },
+      "pins_mm": {
+        "in-plus": [
+          -11.0,
+          3.0
+        ],
+        "in-minus": [
+          -11.0,
+          -3.0
+        ],
+        "out": [
+          11.0,
+          0.0
+        ],
+        "supply-plus": [
+          0.0,
+          7.0
+        ],
+        "supply-minus": [
+          0.0,
+          -7.0
+        ]
+      },
+      "dimensions_mm": {
+        "body-width": 14.1666,
+        "body-height": 16.66663
+      },
+      "parts": [
+        "body",
+        "lead-in-plus",
+        "lead-in-minus",
+        "lead-out",
+        "sign-plus",
+        "sign-minus",
+        "lead-supply-plus",
+        "lead-supply-minus"
+      ],
+      "output": "review/configurations/opamp-supply-large-medium.svg",
+      "compile_seconds": 0.7196,
+      "convert_seconds": 0.0309,
+      "svg_bytes": 3369,
+      "definition_sha256": "5f503a0e0bccd5a08303807aae093dd7300e70eaa80cba3b6600772e20f7a2cc"
+    },
+    {
+      "symbol_id": "opamp-supply",
+      "revision": 1,
+      "settings": {
+        "size": "large",
+        "stroke": "thick",
+        "size_factor": 1.25,
+        "stroke_mm": 0.3,
+        "grid_mm": 1
+      },
+      "pins_mm": {
+        "in-plus": [
+          -11.0,
+          3.0
+        ],
+        "in-minus": [
+          -11.0,
+          -3.0
+        ],
+        "out": [
+          11.0,
+          0.0
+        ],
+        "supply-plus": [
+          0.0,
+          7.0
+        ],
+        "supply-minus": [
+          0.0,
+          -7.0
+        ]
+      },
+      "dimensions_mm": {
+        "body-width": 14.1666,
+        "body-height": 16.66663
+      },
+      "parts": [
+        "body",
+        "lead-in-plus",
+        "lead-in-minus",
+        "lead-out",
+        "sign-plus",
+        "sign-minus",
+        "lead-supply-plus",
+        "lead-supply-minus"
+      ],
+      "output": "review/configurations/opamp-supply-large-thick.svg",
+      "compile_seconds": 0.7315,
+      "convert_seconds": 0.031,
+      "svg_bytes": 3349,
+      "definition_sha256": "5f503a0e0bccd5a08303807aae093dd7300e70eaa80cba3b6600772e20f7a2cc"
+    }
+  ],
+  "native_circuitikz_compile_seconds": 0.871207999996841
+}
