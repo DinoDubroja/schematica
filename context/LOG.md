@@ -1159,3 +1159,30 @@ publication audit found no further actionable issues.
 is on GitHub main. GitHub returned all 853 repository files with hashes matching
 the local commit, including all 705 implementation files, 54 SVGs and 54 TeX
 bundles. The published README exposes the preview, laptop setup and testing guides.
+
+<a id="receiving-device-setup-verification"></a>
+
+## 13-11-2026 — Receiving-device setup and verification
+
+**User authorization:** complete laptop setup and synchronization, including the
+Schematica skill, missing dependencies and checks; keep the desktop task unchanged.
+This does not authorize new product features or a new website deployment.
+
+**Completed:** fast-forwarded the receiving checkout to the published source,
+connected the skill to that checkout and installed the pinned Python runtime and
+development dependencies in a project environment. Reconciled the local maintenance
+record with the specific first-batch publication approval above; all other review
+boundaries remain. The existing laptop schedule and target were preserved.
+
+**Verified:** build `971b3b876b93`, all 25 implementation tests, skill registration,
+preference galleries/references, a fresh Small/Thick coil compilation and all nine
+Inkscape command-line library round trips. Focused local Chrome controls, theme
+persistence and actual SVG/library downloads passed, including six-symbol export
+while filtered and byte-identical downloaded files. A 390 px layout had no horizontal
+overflow. Chrome's Dark Reader overrides the light palette; a browser without
+extensions displayed it correctly. No extension setting was changed.
+
+**Limits:** no fresh full 54-rendering sweep, full hosted second-device checklist,
+Edge test, profile-wide Symbols installation or GUI snapping walkthrough. User review
+remains open. See [the implementation review](../implementation/CHECKPOINT.md).
+Machine-specific evidence remains outside the repository; no desktop task changed.

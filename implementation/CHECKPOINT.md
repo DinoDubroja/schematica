@@ -17,6 +17,27 @@ published artwork are unchanged. After obtaining the repository on the laptop,
 expect `implementation/README.md`, these instructions and all 54 SVG/TeX bundles;
 follow the local setup/build checks in DEVELOPMENT.md, then the checklist below.
 
+## Additional Windows setup verification — 13-11-2026
+
+The receiving laptop now has the current checkout, the Schematica skill connection
+and a project Python environment with the pinned runtime/development dependencies.
+It reproduced build `971b3b876b93` and passed all 25 implementation tests, the
+skill-registration check and the preference-gallery/reference check. A fresh
+Small/Thick coil compiled through Tectonic and dvisvgm. All nine libraries passed
+Inkscape 1.4.4 command-line save/reopen, named-part, page-size and clipping checks.
+
+Local Chrome checks passed search/empty search, category filters, size/stroke,
+grid/pins, descriptions, theme persistence, Escape/focus return and actual single
+SVG/library downloads. The filtered library export still contained six symbols;
+both downloads matched the build byte for byte. At a 390 px viewport there was no
+horizontal overflow. The local viewer reported no browser warnings or errors.
+
+Chrome's enabled Dark Reader extension overrides the light-theme palette. The
+light theme displayed correctly in the browser without extensions; extension
+settings were preserved. This was a local laptop check, not a new hosted deployment
+or a full repeat of all 54 renderings. User review, Edge, profile-wide Symbols
+installation and a fresh GUI grid/snapping walkthrough remain open.
+
 ## What changed
 
 - Browsing comes first: symbol-and-name cards, search, filters and a clean preview.
@@ -98,9 +119,9 @@ preset and what happened instead; include a screenshot if useful.
   through Inkscape's command line retained the body and both named leads.
 - Launcher, documentation links and existing preference-gallery checks passed.
 
-**Not yet verified:** the second physical Windows device, Chrome/Edge separately,
-profile-wide Symbols installation, or a
-fresh GUI grid-snapping walkthrough. Use the checklist above for those reviews.
+**Still open after the laptop checks above:** the full hosted checklist on the
+second device, Edge, profile-wide Symbols installation and a fresh GUI
+grid-snapping walkthrough. Use the checklist above for those reviews.
 
 The initial HTTPS activation error cleared during this run. Cloudflare rejected
 the Python HTTP checker with 403/error 1010; its complete remote-file and response-

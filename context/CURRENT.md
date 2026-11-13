@@ -1,5 +1,14 @@
 # Current checkpoint
 
+Receiving-device setup (13-11-2026): the current source was synchronized to the
+laptop, the Schematica skill connected and pinned dependencies installed in its
+project environment. The published build was reproduced; all 25 implementation
+tests, registration/gallery checks, a fresh symbol compilation, nine Inkscape
+library round trips and focused local browser/download checks passed. See
+[the additional Windows verification](../implementation/CHECKPOINT.md#additional-windows-setup-verification--13-11-2026)
+for scope and the browser-extension appearance limitation. User review and the
+remaining hosted/GUI checks are still open. No new website build was published.
+
 Active implementation (13-11-2026): the user authorized the browsing-first UI
 cleanup, individual SVG and six-symbol library export at the chosen size/stroke,
 compact docs and a portable static website for Cloudflare. The preview audience is
