@@ -8,6 +8,7 @@ import unittest
 import xml.etree.ElementTree as ET
 
 import core
+from exports import catalog, LIBRARY
 
 
 class DefinitionFailures(unittest.TestCase):
@@ -56,9 +57,9 @@ class DefinitionFailures(unittest.TestCase):
 class RenderProof(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        catalog = json.loads((core.ROOT / "library/catalog.json").read_text())
-        cls.reports = [dict(c, output=core.ROOT / 'library' / c['svg'])
-                       for s in catalog['symbols'] if s['id'] in ('resistor-eu', 'opamp-supply')
+        data = catalog()
+        cls.reports = [dict(c, output=LIBRARY / c['svg'])
+                       for s in data['symbols'] if s['id'] in ('resistor-eu', 'opamp-supply')
                        for c in s['configurations']]
 
     def test_accepted_dimensions_and_grid(self):

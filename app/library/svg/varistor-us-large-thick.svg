@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000016 63.212295 38.113874" width="22.29989296mm" height="13.44572777mm">
+  <title>Varistor (US)</title>
+  <desc>Voltage-dependent resistor. The U mark identifies voltage dependence; this generic symbol does not specify the material.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 4.16666, "body-width": 12.49997}, "origin_svg": [-37.076311, -59.291436], "parts": ["body", "lead-a", "lead-b", "dependency-mark", "voltage-mark"], "pins_mm": {"a": [-10.0, 0.0], "b": [10.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "varistor-us"}</metadata>
+  <g id="sc-varistor-us-r1-large-thick--sc-varistor-us-r1-large-thick" inkscape:label="Varistor (US) / large / thick" data-symbol="varistor-us" data-revision="1" data-size="large" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-37.076311,-59.291436)scale(0.996264,-0.996264)">
+    <g data-part="body" id="sc-varistor-us-r1-large-thick--sc-varistor-us-r1-large-thick--body" inkscape:label="body">
+      <path d="M-17.78282 0L-14.819 5.9276L-8.89139-5.9276L-2.96378 5.9276L2.96378-5.9276L8.89139 5.9276L14.819-5.9276L17.78282 0" fill="none" />
+      <desc>Zigzag resistor body</desc>
+    </g>
+    <g data-part="lead-a" id="sc-varistor-us-r1-large-thick--sc-varistor-us-r1-large-thick--lead-a" inkscape:label="lead-a">
+      <path d="M-28.4526 0H-17.78282" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="lead-b" id="sc-varistor-us-r1-large-thick--sc-varistor-us-r1-large-thick--lead-b" inkscape:label="lead-b">
+      <path d="M17.78282 0H28.4526" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+    <g data-part="dependency-mark" id="sc-varistor-us-r1-large-thick--sc-varistor-us-r1-large-thick--dependency-mark" inkscape:label="dependency-mark">
+      <path d="M-16.59729-10.66968H-9.48418L13.04071 9.48418" fill="none" />
+      <desc>Bent dependence mark</desc>
+    </g>
+    <g data-part="voltage-mark" id="sc-varistor-us-r1-large-thick--sc-varistor-us-r1-large-thick--voltage-mark" inkscape:label="voltage-mark">
+      <path d="M-16.59729-15.1154V-18.67192C-16.59729-22.2285-10.66968-22.2285-10.66968-18.67192V-15.1154" fill="none" />
+      <desc>U marking for voltage dependence</desc>
+    </g>
+  </g>
+</svg>

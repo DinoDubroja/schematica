@@ -20,3 +20,4 @@ try {
 $serverArguments = @((Join-Path $PSScriptRoot 'server.py'), '--port', $Port)
 if (-not $NoBrowser) { $serverArguments += '--open' }
 & $python @serverArguments
+if ($LASTEXITCODE -ne 0) { throw "Preview server could not start. Try another port, for example -Port 8792." }

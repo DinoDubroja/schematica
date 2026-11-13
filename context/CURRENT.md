@@ -1,51 +1,57 @@
 # Current status
 
-13-11-2026. **New-project cleanup reviewed and accepted by the user for GitHub
-synchronization.** Website deployment and further feature work are separate actions.
+13-11-2026 · **Resistor batch and verification implemented and preview published.**
 
-The same repository and Git history remain. Main was fast-forwarded to published
-baseline `e97aa17` before restructuring. The original working copy, both worktrees,
-Git refs/history and meaningful ignored files were backed up and verified outside
-the checkout. The laptop's intervening documentation commits are preserved in
-history, with their relevant results carried forward below.
+The user authorized this batch, compact viewer review controls, tests/docs,
+commit/push and deployment to the existing Cloudflare preview. Implementation,
+documentation and checks are complete. The [live preview](https://schematica-preview.dinodubroja.workers.dev/)
+and [fixed version](https://6b23fd83-schematica-preview.dinodubroja.workers.dev/)
+serve the tested build. The next step is human review, not another creation batch.
 
-The active layout is `app/`, `tests/`, `docs/`, `context/`, with a short README,
-root developer guide and new-project agent instructions. Legacy instructions and
-assets are archived; nothing loads them automatically. Only documented geometry
-and serialization regression fixtures are retained.
+## What exists
 
-Verified locally:
+- **28 designs / 252 configurations:** the six accepted originals plus 22 new
+  resistor variants. [Inventory and reference mapping](../docs/RESISTOR_BATCH.md).
+- Minimal library viewer with dark/light mode, search, family/batch filters,
+  Unverified tab, design checkboxes, Verify & next, Undo, 3 × 3 comparison and
+  stable symbol references. Single SVG and complete-library exports remain small.
+- Separate official verification and browser-local pending selections. The
+  [handoff guide](../docs/VERIFICATION.md) explains exact revision/fingerprint
+  validation and publication. Only the six original designs are officially Verified.
+- TeX drawing authority, YAML semantics, candidate-render/check/promote workflow,
+  generated packaging, developer and Inkscape guides. Legacy material remains
+  archived outside this checkout and supplies no automatic instructions.
 
-- 25 tests pass; static build `971b3b876b93` and website ZIP match the published
-  version byte for byte. All 486 generated standalone-TeX files match the archive.
-- All 54 configurations freshly compile with identical catalog and SVG geometry;
-  independent Inkscape checks pass 42 palette comparisons and nine library round
-  trips. Maximum palette coordinate deviation is 0.00124 mm (tolerance 0.005 mm).
-- Native CircuitikZ and bounded editable-label edit/save/reopen pass.
-- All 54 browser configurations, dark/light persistence, search, grid toggle,
-  export-dialog focus and actual single/library downloads pass. No horizontal
-  overflow in the checked desktop/narrow layouts.
-- Documentation links/anchors pass; README and developer pages were rendered and
-  inspected. Windows launcher works from the root. A repository-only recovery
-  audit found no actionable issue or dependency on removed legacy material.
-- A separate source copy with a new virtual environment and only runtime
-  requirements passes all 25 tests, builds the same website and launches correctly.
-  This checks clean app setup on this computer, not another Windows installation.
+## Verification results
 
-The earlier laptop setup report (Git commit `9f4673f`) records build 971b3b876b93,
-25 tests, a fresh coil render, nine Inkscape library round trips and focused local
-Chrome/download checks. These are reported results from that device, not tests
-rerun during cleanup. Dark Reader overrode its light palette; a browser without
-extensions displayed it correctly. The old preference skill was installed there;
-it is not an instruction source for the new project.
+**Build c7b750381988**, 270 static files. 34 Python and 4 JavaScript tests pass.
+All 252 configurations render and pass Inkscape bounds/parts checks; all 54 original
+SVGs are byte-identical. The 42 palette comparisons pass (maximum 0.001234 mm deviation).
+All nine actual browser library downloads match and survive Inkscape save/reopen.
+GUI Symbols shows 28 thumbnails; pasted/unlinked/saved/reopened US potentiometer
+retains its five named editable parts. Native CircuitikZ and new resistor PDF compile.
 
-Still unverified: the updated checkout on the laptop, the full hosted two-device
-checklist, clean-machine/offline TeX setup, profile-wide Inkscape Symbols installation
-and a new grid-snapping GUI walkthrough. Existing GUI evidence is archived, not
-presented as a fresh test.
+The temporary approval loop, clipboard fallback, stale/unknown rejection,
+idempotent application, local persistence/Undo and preservation/invalidation rules
+were tested separately. No test approvals entered the real record. All designs
+were visually inspected in the comparison view; US wiper/tap crowding was corrected.
+Search, filters, themes, keyboard, downloads, reference links and 360 px layout pass.
+The hosted manifest and all 268 served assets match locally. Actual hosted single/
+library downloads match; live search, pending reload/Undo, themes, comparison and
+references pass with no browser errors. Launch on port 8792 and its HTTP build check
+pass; Windows rejected 8766, and launcher failures now return an error. Repository-only
+recovery independently found the objective, authorization, checks and next review.
 
-Start with [the developer guide](../DEVELOPMENT.md) for changes, commands and
-action → expected result checks. [Roadmap](../docs/ROADMAP.md) separates implemented,
-partial, missing and deferred work; [decisions](DECISIONS.md) records current scope.
-Next: update the existing laptop checkout and follow the developer guide's review
-checklist. No missing product capabilities are being implemented in this run.
+## Next review and limits
+
+The user reviews **22 Unverified designs** and pastes approvals
+or corrections into chat. Repeat the [developer checklist](../DEVELOPMENT.md#test-and-review)
+on the laptop. Desktop checks do not establish results on the second device.
+Profile-wide Inkscape Symbols installation, fresh GUI grid snapping, and clean-machine/
+offline TeX setup remain unverified.
+
+Accounts, admin privileges, personal variants, MCP and an agent-integrated creation
+skill remain future work. Batch and interactive creation share tools/formats/checks,
+but remain separate workflows. The broader milestone interview/order is unfinished;
+see [roadmap](../docs/ROADMAP.md) and [decisions](DECISIONS.md). No expansion beyond
+the current batch is authorized by those future wishes.

@@ -3,13 +3,14 @@ import copy
 import io
 import json
 import math
+import os
 from pathlib import Path
 import xml.etree.ElementTree as ET
 import zipfile
 
 from core import ROOT, SVG, XLINK, BP_MM, ValidationError, namespace_ids, validate_svg_references
 
-LIBRARY = ROOT / "library"
+LIBRARY = Path(os.environ.get("SCHEMATICA_LIBRARY", ROOT / "library")).resolve()
 
 
 def catalog():
@@ -20,8 +21,8 @@ def catalog():
 
 
 def choose(selections, data=None):
-    if not isinstance(selections, list) or not 1 <= len(selections) <= 108:
-        raise ValidationError("Select between 1 and 108 configurations.")
+    if not isinstance(selections, list) or not 1 <= len(selections) <= 10000:
+        raise ValidationError("Select between 1 and 10000 configurations.")
     lookup = {c["key"]: c for s in (data or catalog())["symbols"] for c in s["configurations"]}
     if any(not isinstance(k, str) or k not in lookup for k in selections):
         raise ValidationError("Unknown configuration.")

@@ -15,6 +15,9 @@
 - After each implementation run, update the developer guide's latest review with
   changes, action → expected result checks, actual results and unverified limits.
   Keep context concise; record decisions rather than a transcript.
+- New designs enter Unverified after technical and visual checks. Apply human
+  approvals only through the [verification handoff](docs/VERIFICATION.md). Geometry
+  or connection changes require fresh review; never copy an old approval forward.
 - Check branch/index/files before changes; preserve concurrent work. Run the
   [applicable checks](DEVELOPMENT.md#test-and-review) and verify links after moves.
 - Commit, push and deploy only within the user's current authorization. Source

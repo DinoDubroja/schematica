@@ -1,13 +1,14 @@
 from support import APP, FIXTURES
 import io
+import hashlib
 import json
 import unittest
 import xml.etree.ElementTree as ET
 import zipfile
 from pathlib import Path
 import sys
-from core import ROOT, SVG, ValidationError, validate_svg_references, find_symbols
-from exports import catalog, choose, export, artwork, place, document
+from core import ROOT, SVG, ValidationError, validate_svg_references, find_symbols, definitions
+from exports import LIBRARY, catalog, choose, export, artwork, place, document
 
 
 class LibraryChecks(unittest.TestCase):
@@ -16,16 +17,18 @@ class LibraryChecks(unittest.TestCase):
         cls.data=catalog()
         cls.items=[c for s in cls.data['symbols'] for c in s['configurations']]
 
-    def test_six_definitions_fifty_four_unique_configs(self):
-        self.assertEqual(len(self.data['symbols']),6)
-        self.assertEqual(len(self.items),54)
-        self.assertEqual(len({c['key'] for c in self.items}),54)
+    def test_complete_definitions_and_unique_configurations(self):
+        self.assertEqual({s['id'] for s in self.data['symbols']}, {s['id'] for s in definitions()})
+        self.assertEqual(len(self.items),len(self.data['symbols'])*9)
+        self.assertEqual(len({c['key'] for c in self.items}),len(self.items))
         for symbol in self.data['symbols']:
             self.assertEqual(len(symbol['configurations']),9)
             self.assertTrue(all(c['symbol_id']==symbol['id'] for c in symbol['configurations']))
 
     def test_semantics_and_search(self):
-        self.assertEqual([s['id'] for s in find_symbols('zigzag')],['resistor-us'])
+        zigzags = find_symbols('zigzag')
+        self.assertIn('resistor-us',[s['id'] for s in zigzags])
+        self.assertTrue(all(s['attributes']['body']=='zigzag' for s in zigzags))
         self.assertEqual([s['id'] for s in find_symbols('coil')],['inductor-coil'])
         amp=next(s for s in self.data['symbols'] if s['id']=='opamp')
         self.assertEqual({p['id'] for p in amp['pins']},{'in-plus','in-minus','out'})
@@ -89,9 +92,15 @@ class LibraryChecks(unittest.TestCase):
 
     def test_approved_paths_unchanged(self):
         accepted = json.loads((FIXTURES / 'accepted-geometry.json').read_text())
+        checked = set()
         for config in self.items:
+            if config['key'] not in accepted:
+                continue
+            checked.add(config['key'])
             self.assertEqual(accepted[config['key']]['paths'],
                              [p.get('d') for p in artwork(config).iter(f'{{{SVG}}}path')])
+            self.assertEqual(accepted[config['key']]['sha256'], hashlib.sha256((LIBRARY/config['svg']).read_bytes()).hexdigest())
+        self.assertEqual(checked,set(accepted))
 
 
 

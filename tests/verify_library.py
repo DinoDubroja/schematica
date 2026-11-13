@@ -4,7 +4,7 @@ import json
 import xml.etree.ElementTree as ET
 import fitz
 from core import ROOT, SVG, INK, BP_MM, run, tool, validate_svg_references
-from exports import catalog, export, sheet
+from exports import LIBRARY, catalog, export, sheet
 from geometry import segments, nearest_error
 
 
@@ -15,9 +15,10 @@ def verify():
     rect=drawings[0]['rect'];origin=((rect.x0+rect.x1)/2,(rect.y0+rect.y1)/2)
     rows=[(0,'small','medium'),(23,'medium','medium'),(46,'large','medium'),(80,'medium','thin'),(103,'medium','medium'),(126,'medium','thick'),(160,'small','thick')]
     fidelity=[];margins=[]
-    for col,symbol in enumerate(data['symbols']):
+    baseline = ('resistor-eu','resistor-us','inductor-coil','capacitor','opamp','opamp-supply')
+    for symbol in data['symbols']:
         for c in symbol['configurations']:
-            source=ROOT/'library'/c['svg'];root=ET.parse(source).getroot();group=root.find(f'{{{SVG}}}g')
+            source=LIBRARY/c['svg'];root=ET.parse(source).getroot();group=root.find(f'{{{SVG}}}g')
             validate_svg_references(root)
             assert {p.get('data-part') for p in group}=={p['id'] for p in symbol['parts']}
             assert all(p.get(f'{{{INK}}}label')==p.get('data-part') for p in group)
@@ -27,7 +28,8 @@ def verify():
             x,y,w,h=[float(v)*25.4/96 for v in bounds]
             margin=min(x,y,c['width_mm']-x-w,c['height_mm']-y-h)
             assert margin>.9,(c['key'],margin);margins.append(margin)
-        for y,size,stroke in rows:
+        for y,size,stroke in (rows if symbol['id'] in baseline else []):
+            col = baseline.index(symbol['id'])
             c=next(c for c in symbol['configurations'] if c['size']==size and c['stroke']==stroke)
             cx,cy=origin[0]+28*col/BP_MM,origin[1]+y/BP_MM
             box=fitz.Rect(cx-12/BP_MM,cy-10/BP_MM,cx+12/BP_MM,cy+10/BP_MM)
@@ -56,7 +58,7 @@ def verify():
     for kind in ('svg','zip','sheet','symbols'):
         name,mime,body=export(kind,keys[:1] if kind=='svg' else keys,columns=3,spacing=8)
         (work/('sample-'+name)).write_bytes(body)
-    results={'configurations':54,'palette_comparisons':fidelity,'minimum_page_margin_mm':min(margins),'max_coordinate_deviation_mm':max(f['coordinate_deviation_mm'] for f in fidelity),'max_stroke_deviation_mm':max(f['stroke_deviation_mm'] for f in fidelity),'all_parts_save_reopen':'passed','sheet_and_symbol_references':'passed'}
+    results={'configurations':len(items),'palette_comparisons':fidelity,'minimum_page_margin_mm':min(margins),'max_coordinate_deviation_mm':max(f['coordinate_deviation_mm'] for f in fidelity),'max_stroke_deviation_mm':max(f['stroke_deviation_mm'] for f in fidelity),'all_parts_save_reopen':'passed','sheet_and_symbol_references':'passed'}
     (work/'results.json').write_text(json.dumps(results,indent=2)+'\n',encoding='utf-8')
     print(json.dumps({k:v for k,v in results.items() if k!='palette_comparisons'},indent=2))
 

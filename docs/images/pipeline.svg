@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1120" height="240" viewBox="0 0 1120 240" role="img" aria-labelledby="title desc">
   <title id="title">How Schematica produces a symbol browser</title>
-  <desc id="desc">YAML semantics and authoritative TeX recipes feed the shared renderer. The renderer produces 54 SVGs and a catalog. The static builder makes the browser and nine libraries. Packaging creates ZIPs only when requested.</desc>
+  <desc id="desc">YAML semantics and authoritative TeX recipes feed the shared renderer. The renderer produces 252 SVGs and a catalog. The static builder makes the browser and nine libraries. Packaging creates ZIPs only when requested.</desc>
   <rect width="1120" height="240" rx="14" fill="#f7f9fa"/>
   <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#66717b"/></marker></defs>
   <g fill="#fff" stroke="#b9c2c9" stroke-width="1.3">
@@ -12,8 +12,8 @@
   </g>
   <g stroke="#66717b" stroke-width="2" marker-end="url(#arrow)"><path d="M211 103H242"/><path d="M439 103H470"/><path d="M667 103H698"/><path d="M895 103H926"/></g>
   <g font-family="Segoe UI,Arial,sans-serif" text-anchor="middle" fill="#172027">
-    <g font-size="17" font-weight="600"><text x="116" y="80">Define</text><text x="344" y="80">Render</text><text x="572" y="80">Keep ready</text><text x="800" y="80">Build website</text><text x="1016" y="80">Browse / export</text></g>
-    <g font-size="14"><text x="116" y="111">YAML semantics</text><text x="116" y="135">TeX geometry</text><text x="344" y="111">TeX → XDV → SVG</text><text x="344" y="135">Validate parts &amp; pins</text><text x="572" y="111">54 SVGs + catalog</text><text x="572" y="135">Immediate browsing</text><text x="800" y="111">Viewer + nine libraries</text><text x="800" y="135">71 static files</text><text x="1016" y="111">Local or Cloudflare</text><text x="1016" y="135">Same artwork</text></g>
+    <g font-size="17" font-weight="600"><text x="116" y="80">Define</text><text x="344" y="80">Render</text><text x="572" y="80">Check &amp; admit</text><text x="800" y="80">Build website</text><text x="1016" y="80">Browse / export</text></g>
+    <g font-size="14"><text x="116" y="111">YAML semantics</text><text x="116" y="135">TeX geometry</text><text x="344" y="111">TeX → XDV → SVG</text><text x="344" y="135">Validate parts &amp; pins</text><text x="572" y="111">252 SVGs + catalog</text><text x="572" y="135">Unverified by default</text><text x="800" y="111">Viewer + nine libraries</text><text x="800" y="135">270 static files</text><text x="1016" y="111">Local or Cloudflare</text><text x="1016" y="135">Same artwork</text></g>
     <text x="560" y="208" font-size="15" fill="#45515b">Packaging creates standalone TeX bundles and ZIPs on demand; generated output stays outside source control.</text>
   </g>
 </svg>

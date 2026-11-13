@@ -48,7 +48,8 @@ class LocalServiceTests(unittest.TestCase):
     def test_catalogue_and_viewer(self):
         status, body, _ = self.request('/library/catalog.json')
         self.assertEqual(status, 200)
-        self.assertEqual(sum(len(s['configurations']) for s in json.loads(body)['symbols']), 54)
+        data = json.loads(body)
+        self.assertEqual(sum(len(s['configurations']) for s in data['symbols']), 9 * len(data['symbols']))
         status, body, headers = self.request('/')
         self.assertEqual(status, 200)
         self.assertIn(b'Schematica', body)

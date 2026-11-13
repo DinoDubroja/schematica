@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000019 62.78707 34.676953" width="22.14988303mm" height="12.23325842mm">
+  <title>Trimmer potentiometer (US)</title>
+  <desc>Three-terminal preset potentiometer with a separate adjustable wiper terminal.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 4.16666, "body-width": 12.49997}, "origin_svg": [-37.288923, -46.275746], "parts": ["body", "lead-a", "lead-b", "lead-wiper", "wiper-arrow", "adjustment"], "pins_mm": {"a": [-10.0, 0.0], "b": [10.0, 0.0], "wiper": [0.0, 8.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "thin", "stroke_mm": 0.15}, "symbol_id": "potentiometer-trimmer-us"}</metadata>
+  <g id="sc-potentiometer-trimmer-us-r1-large-thin--sc-potentiometer-trimmer-us-r1-large-thin" inkscape:label="Trimmer potentiometer (US) / large / thin" data-symbol="potentiometer-trimmer-us" data-revision="1" data-size="large" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(-37.288923,-46.275746)scale(0.996264,-0.996264)">
+    <g data-part="body" id="sc-potentiometer-trimmer-us-r1-large-thin--sc-potentiometer-trimmer-us-r1-large-thin--body" inkscape:label="body">
+      <path d="M-17.78282 0L-14.819 5.9276L-8.89139-5.9276L-2.96378 5.9276L2.96378-5.9276L8.89139 5.9276L14.819-5.9276L17.78282 0" fill="none" />
+      <desc>Zigzag resistor body</desc>
+    </g>
+    <g data-part="lead-a" id="sc-potentiometer-trimmer-us-r1-large-thin--sc-potentiometer-trimmer-us-r1-large-thin--lead-a" inkscape:label="lead-a">
+      <path d="M-28.4526 0H-17.78282" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="lead-b" id="sc-potentiometer-trimmer-us-r1-large-thin--sc-potentiometer-trimmer-us-r1-large-thin--lead-b" inkscape:label="lead-b">
+      <path d="M17.78282 0H28.4526" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+    <g data-part="lead-wiper" id="sc-potentiometer-trimmer-us-r1-large-thin--sc-potentiometer-trimmer-us-r1-large-thin--lead-wiper" inkscape:label="lead-wiper">
+      <path d="M0 22.76208L-2.96378 5.9276" fill="none" />
+      <desc>Lead from the wiper terminal to the resistance element</desc>
+    </g>
+    <g data-part="wiper-arrow" id="sc-potentiometer-trimmer-us-r1-large-thin--sc-potentiometer-trimmer-us-r1-large-thin--wiper-arrow" inkscape:label="wiper-arrow">
+      <path d="M-4.87834 10.9207L-2.96378 5.9276L.54086 9.96683" fill="none" />
+      <desc>Movable wiper contact arrow</desc>
+    </g>
+    <g data-part="adjustment" id="sc-potentiometer-trimmer-us-r1-large-thin--sc-potentiometer-trimmer-us-r1-large-thin--adjustment" inkscape:label="adjustment">
+      <path d="M-3.26018 16.59729L3.26018 19.85751" fill="none" />
+      <desc>Preset-adjustment bar on the wiper lead</desc>
+    </g>
+  </g>
+</svg>

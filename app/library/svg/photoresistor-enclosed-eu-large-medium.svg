@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.00002 63.519204 58.204265" width="22.40816363mm" height="20.53317126mm">
+  <title>Enclosed photoresistor (EU)</title>
+  <desc>Light-dependent resistor in a circular enclosure, with two incoming light arrows.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 4.16666, "body-width": 12.49997, "enclosure-diameter": 15.8333}, "origin_svg": [-37.218053, -39.354602], "parts": ["body", "lead-a", "lead-b", "enclosure", "light-arrows"], "pins_mm": {"a": [-10.0, 0.0], "b": [10.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "photoresistor-enclosed-eu"}</metadata>
+  <g id="sc-photoresistor-enclosed-eu-r1-large-medium--sc-photoresistor-enclosed-eu-r1-large-medium" inkscape:label="Enclosed photoresistor (EU) / large / medium" data-symbol="photoresistor-enclosed-eu" data-revision="1" data-size="large" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-37.218053,-39.354602)scale(0.996264,-0.996264)">
+    <g data-part="body" id="sc-photoresistor-enclosed-eu-r1-large-medium--sc-photoresistor-enclosed-eu-r1-large-medium--body" inkscape:label="body">
+      <path d="M-17.78282-5.9276V5.9276H17.78282V-5.9276ZM17.78282 5.9276" fill="none" />
+      <desc>Rectangular resistor body</desc>
+    </g>
+    <g data-part="lead-a" id="sc-photoresistor-enclosed-eu-r1-large-medium--sc-photoresistor-enclosed-eu-r1-large-medium--lead-a" inkscape:label="lead-a">
+      <path d="M-28.4526 0H-17.78282" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="lead-b" id="sc-photoresistor-enclosed-eu-r1-large-medium--sc-photoresistor-enclosed-eu-r1-large-medium--lead-b" inkscape:label="lead-b">
+      <path d="M17.78282 0H28.4526" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+    <g data-part="enclosure" id="sc-photoresistor-enclosed-eu-r1-large-medium--sc-photoresistor-enclosed-eu-r1-large-medium--enclosure" inkscape:label="enclosure">
+      <path d="M22.5249 0C22.5249 12.4403 12.4403 22.5249 0 22.5249S-22.5249 12.4403-22.5249 0S-12.4403-22.5249 0-22.5249S22.5249-12.4403 22.5249 0ZM0 0" fill="none" />
+      <desc>Circular component enclosure</desc>
+    </g>
+    <g data-part="light-arrows" id="sc-photoresistor-enclosed-eu-r1-large-medium--sc-photoresistor-enclosed-eu-r1-large-medium--light-arrows" inkscape:label="light-arrows">
+      <path d="M22.5249 29.63805L15.41179 20.15382" fill="none" />
+      <path d="M16.00458 24.59953L15.41179 20.15382L19.56111 21.93211" fill="none" />
+      <path d="M29.04521 26.08151L21.93211 16.59729" fill="none" />
+      <path d="M22.5249 21.04301L21.93211 16.59729L26.08144 18.37563" fill="none" />
+      <desc>Two incoming light arrows</desc>
+    </g>
+  </g>
+</svg>

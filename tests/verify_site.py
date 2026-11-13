@@ -30,7 +30,7 @@ def verify(downloads=None):
         root = ET.parse(saved).getroot()
         validate_svg_references(root)
         symbols = list(root.iter(f'{{{SVG}}}symbol'))
-        assert len(symbols) == 6, preset
+        assert len(symbols) == len(data['symbols']), preset
         before = [p.get('data-part') for p in original.iter() if p.get('data-part')]
         after = [p.get('data-part') for p in root.iter() if p.get('data-part')]
         assert before == after, preset
@@ -44,7 +44,7 @@ def verify(downloads=None):
             drawings = page.get_drawings()
             assert drawings, preset
             assert all(page.rect.contains(d['rect']) for d in drawings), preset
-        results.append({'preset': preset, 'symbols': 6, 'named_parts': len(after),
+        results.append({'preset': preset, 'symbols': len(data['symbols']), 'named_parts': len(after),
                         'references': 'passed', 'physical_page_size': 'passed', 'clipping': 'passed',
                         'browser_download': 'byte-identical' if downloads else 'not checked'})
         print(f'Verified library: {preset}', flush=True)

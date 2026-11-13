@@ -28,7 +28,9 @@ ET.register_namespace("inkscape", INK)
 ET.register_namespace("xlink", XLINK)
 MACROS = {"resistor-eu": "SCResistorEU", "resistor-us": "SCResistorUS",
           "inductor-coil": "SCInductorCoil", "capacitor": "SCCapacitor",
-          "opamp": "SCOpamp", "opamp-supply": "SCOpampSupply"}
+          "opamp": "SCOpamp", "opamp-supply": "SCOpampSupply", "resistor-variant": "SCResistorVariant"}
+RESISTOR_VARIANTS = ("variable", "potentiometer", "trimmer", "trimmer-potentiometer",
+                    "thermistor", "ntc", "ptc", "varistor", "photo", "photo-enclosed", "tapped")
 BP_MM = 25.4 / 72
 ID_RE = re.compile(r"[a-z][a-z0-9-]*\Z")
 
@@ -75,6 +77,10 @@ def validate_definition(definition, presets):
         raise ValidationError("Revision must be a positive integer")
     if definition.get("recipe") not in MACROS:
         raise ValidationError("Unknown recipe")
+    if definition["recipe"] == "resistor-variant":
+        drawing = definition.get("drawing", {})
+        if drawing.get("body") not in ("eu", "us") or drawing.get("variant") not in RESISTOR_VARIANTS:
+            raise ValidationError("Invalid resistor drawing specification")
     parts = _unique_ids(definition["parts"], "part")
     _unique_ids(definition["pins"], "pin")
     for pin in definition["pins"]:
@@ -154,6 +160,11 @@ def run(command, cwd):
 def tex_document(definition, settings, instance, svg=True):
     driver = r"\def\pgfsysdriver{pgfsys-dvisvgm.def}" if svg else ""
     export = r"\SCsvgtrueexport" if svg else ""
+    arguments = ""
+    if definition["recipe"] == "resistor-variant":
+        drawing = definition["drawing"]
+        arguments = "{%s}{%s}" % (0 if drawing["body"] == "eu" else 1,
+                                    RESISTOR_VARIANTS.index(drawing["variant"]))
     return rf"""% Generated from {definition['id']} revision {definition['revision']}.
 % Bundle includes schematica.sty and the parameterized recipes.
 \documentclass[border=1mm]{{standalone}}
@@ -163,7 +174,7 @@ def tex_document(definition, settings, instance, svg=True):
 \begin{{document}}
 \SCrecordto{{symbol.scmeta}}
 \begin{{tikzpicture}}
-\{MACROS[definition['recipe']]}{{{instance}}}{{{settings['size_factor']}}}{{{settings['stroke_mm']}}}
+\{MACROS[definition['recipe']]}{{{instance}}}{{{settings['size_factor']}}}{{{settings['stroke_mm']}}}{arguments}
 \end{{tikzpicture}}
 \SCrecordend
 \end{{document}}

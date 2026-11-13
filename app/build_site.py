@@ -1,4 +1,4 @@
-"""Build a portable static viewer and nine six-symbol Inkscape libraries. No upload."""
+"""Build the portable viewer and one complete Inkscape library per preset pair."""
 import hashlib
 import json
 from pathlib import Path
@@ -7,13 +7,14 @@ import tempfile
 
 from core import ROOT, ValidationError, definitions
 from exports import LIBRARY, catalog, sheet
+from verification import publication_catalog, read_ledger
 
 DIST = ROOT / "dist"
-VIEWER_FILES = ("index.html", "style.css", "app.js", "theme.js", "_headers", "robots.txt")
+VIEWER_FILES = ("index.html", "style.css", "app.js", "review.js", "theme.js", "_headers", "robots.txt")
 
 
 def payload():
-    data = catalog()
+    data = publication_catalog(catalog(), definitions(), LIBRARY, read_ledger())
     definitions_by_id = {symbol["id"]: symbol for symbol in definitions()}
     files = {name: (ROOT / "viewer" / name).read_bytes() for name in VIEWER_FILES}
     data["exports"] = {}
@@ -63,7 +64,8 @@ def build():
             shutil.rmtree(DIST)
         shutil.move(str(staging), str(DIST))
     print(json.dumps({"build_id": json.loads(files["build.json"])["build_id"],
-                      "files": len(files), "individual_svgs": 54, "six_symbol_libraries": 9,
+                      "files": len(files), "individual_svgs": sum(name.startswith("library/svg/") for name in files),
+                      "symbol_libraries": sum(name.startswith("exports/") for name in files),
                       "bytes": sum(map(len, files.values())), "directory": str(DIST)}, indent=2))
 
 

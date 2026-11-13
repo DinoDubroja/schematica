@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000021 45.921027 23.952629" width="16.19991786mm" height="8.44995523mm">
+  <title>Potentiometer (US)</title>
+  <desc>Three-terminal resistor with a movable wiper contacting the resistance element.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 2.5, "body-width": 7.5}, "origin_svg": [-45.721945, -54.708767], "parts": ["body", "lead-a", "lead-b", "lead-wiper", "wiper-arrow"], "pins_mm": {"a": [-7.0, 0.0], "b": [7.0, 0.0], "wiper": [0.0, 5.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "potentiometer-us"}</metadata>
+  <g id="sc-potentiometer-us-r1-small-medium--sc-potentiometer-us-r1-small-medium" inkscape:label="Potentiometer (US) / small / medium" data-symbol="potentiometer-us" data-revision="1" data-size="small" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-45.721945,-54.708767)scale(0.996264,-0.996264)">
+    <g data-part="body" id="sc-potentiometer-us-r1-small-medium--sc-potentiometer-us-r1-small-medium--body" inkscape:label="body">
+      <path d="M-10.66972 0L-8.89143 3.55656L-5.33485-3.55656L-1.77827 3.55656L1.77827-3.55656L5.33485 3.55656L8.89143-3.55656L10.66972 0" fill="none" />
+      <desc>Zigzag resistor body</desc>
+    </g>
+    <g data-part="lead-a" id="sc-potentiometer-us-r1-small-medium--sc-potentiometer-us-r1-small-medium--lead-a" inkscape:label="lead-a">
+      <path d="M-19.91682 0H-10.66972" fill="none" />
+      <desc>Lead from terminal A to body</desc>
+    </g>
+    <g data-part="lead-b" id="sc-potentiometer-us-r1-small-medium--sc-potentiometer-us-r1-small-medium--lead-b" inkscape:label="lead-b">
+      <path d="M10.66972 0H19.91682" fill="none" />
+      <desc>Lead from body to terminal B</desc>
+    </g>
+    <g data-part="lead-wiper" id="sc-potentiometer-us-r1-small-medium--sc-potentiometer-us-r1-small-medium--lead-wiper" inkscape:label="lead-wiper">
+      <path d="M0 14.2263L-1.77827 3.55656" fill="none" />
+      <desc>Lead from the wiper terminal to the resistance element</desc>
+    </g>
+    <g data-part="wiper-arrow" id="sc-potentiometer-us-r1-small-medium--sc-potentiometer-us-r1-small-medium--wiper-arrow" inkscape:label="wiper-arrow">
+      <path d="M-2.95041 6.53238L-1.77827 3.55656L.29578 5.99133" fill="none" />
+      <desc>Movable wiper contact arrow</desc>
+    </g>
+  </g>
+</svg>

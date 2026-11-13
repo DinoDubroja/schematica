@@ -7,27 +7,33 @@
 
 ## Latest changes
 
-13-11-2026: repository cleanup reviewed and accepted. The accepted interface and
-symbol artwork are unchanged. The rebuilt website is byte-identical to published
-build **971b3b876b93**.
+13-11-2026: **22 new resistor designs**, bringing the library to **28 designs / 252
+configurations**. The original six designs retain their accepted geometry and
+verification. New designs are technically checked and **Unverified** until reviewed.
 
-| Change | Where to check |
+| Change | Where to inspect |
 |---|---|
-| Current app moved out of the old project layout | [app/](app/) |
-| Current tests and essential regression inputs separated | [tests/](tests/), [fixture notes](tests/fixtures/README.md) |
-| Standalone TeX bundles and ZIPs generated when requested | [Package exports](#package-exports) |
-| Legacy instructions, galleries and historical reports archived outside the checkout | [Archive and deliberate reuse](docs/ROADMAP.md#archive-and-deliberate-reuse) |
-| One human developer guide, concise project decisions | This page, [decisions](context/DECISIONS.md) |
+| Variable resistors, potentiometers, trimmers, thermistors, varistors, photoresistors and taps | [Batch inventory, references and results](docs/RESISTOR_BATCH.md) |
+| Unverified tab, filters, per-design approvals, Verify & next and Undo | [Review and verification guide](docs/VERIFICATION.md) |
+| Same-scale 3 × 3 comparison, stable links and Copy symbol reference | Select a design in the [preview](https://schematica-preview.dinodubroja.workers.dev/) |
+| Exact-revision approval command; separate browser-local and official records | [verification.py](app/verification.py), [official record](app/verification.json) |
+| Broader product outcomes and explicit future agent integration | [Roadmap](docs/ROADMAP.md) |
 
-Run the [review checklist](#test-and-review). Verification results and remaining
-device checks are recorded in [current status](context/CURRENT.md).
+Verified locally: **34 Python + 4 JavaScript tests**, all **252** Inkscape renders,
+42 accepted-palette comparisons, nine actual browser library downloads and save/reopen
+round trips, native TeX, the temporary approval handoff, all design comparisons,
+and desktop/360 px browser checks. The original 54 SVG files are byte-identical.
+A GUI placement retained all five named potentiometer parts after unlink/save/reopen.
+Build **c7b750381988**; see [batch results](docs/RESISTOR_BATCH.md#results--13-11-2026).
 
-Verified this run: 25 automated tests; 54 fresh TeX renders; 42 palette comparisons;
-nine Inkscape library round trips; all 54 browser configurations; actual single and
-six-symbol downloads; documentation links and desktop/narrow layouts. The 486
-standalone TeX files and website ZIP match the archived exports. Earlier laptop
-checks also reproduced the build and passed focused tests; the complete hosted
-checklist, profile-wide Symbols installation and GUI snapping checks remain open.
+Published to the [shared preview](https://schematica-preview.dinodubroja.workers.dev/)
+and [fixed version](https://6b23fd83-schematica-preview.dinodubroja.workers.dev/).
+The live manifest and all 268 served assets match the tested build; both actual
+hosted downloads match. Live search, review persistence/Undo, themes, references
+and comparison passed with no browser errors. No test approvals are published.
+The laptop's current build, profile-wide Symbols installation, fresh GUI grid snapping
+and clean-machine/offline TeX setup remain unverified. Follow the
+[action → expected-result checklist](#test-and-review) on both devices.
 
 ## Run on Windows
 
@@ -41,8 +47,10 @@ python -m venv .venv
 
 Open the printed address, normally **http://127.0.0.1:8765/**. Keep the terminal
 open; Ctrl+C stops the server. To use another port, run
-`.\app\launch.ps1 -Port 8766`. `-NoBrowser` leaves opening the browser to you.
-If PowerShell blocks scripts, run the equivalent Python commands:
+`.\app\launch.ps1 -Port 8792`. `-NoBrowser` leaves opening the browser to you.
+If Windows blocks the chosen port, try another; 8792 passed on this desktop.
+The launcher now reports server-start failures as errors. If PowerShell blocks
+scripts, run the equivalent Python commands:
 
 ```powershell
 .\.venv\Scripts\python.exe app\build_site.py
@@ -73,8 +81,7 @@ already set up during the first batch; update that copy instead of cloning again
 Before updating an existing copy, run `git status --short`. If it lists files,
 preserve and resolve that work first. If empty, run `git pull --ff-only`. Stop on
 divergence; do not overwrite the other device's work. Commit/push reviewed work
-before switching devices, and pull before starting on the receiving device. After
-this cleanup, use `app\launch.ps1`; the old `implementation\launch.ps1` path is gone.
+before switching devices, and pull before starting on the receiving device. Use `app\launch.ps1`; the old `implementation\launch.ps1` path is gone.
 If the existing preview server holds the old folder open, stop it with Ctrl+C
 before pulling, then start it from the new path.
 GitHub synchronizes source and docs; Cloudflare is a separate website deployment.
@@ -93,10 +100,12 @@ schematica/
 │   ├── tex/                # Authoritative parameterized geometry
 │   ├── core.py             # Find, inspect and render; shared TeX export
 │   ├── exports.py          # SVG, ZIP, sheet and Symbols composition
-│   ├── library/            # Catalog and 54 SVGs for immediate browsing
+│   ├── library/            # Catalog and 252 SVGs for immediate browsing
+│   ├── verification.py     # Validate and apply chat approval handoffs
+│   ├── verification.json   # Official acceptance, tied to actual geometry
 │   ├── viewer/             # Accepted HTML/CSS/JavaScript interface
 │   ├── build_site.py       # Portable website builder
-│   ├── build_library.py    # Regenerate artwork after a geometry change
+│   ├── build_library.py    # Render candidates before promotion
 │   ├── package.py          # Generate distributable ZIPs
 │   ├── launch.ps1          # Windows entry point
 │   ├── server.py           # Local static server
@@ -119,65 +128,92 @@ schematica/
 
 The viewer reads pre-rendered SVGs and a catalog. It never compiles TeX. The static
 builder copies the accepted artwork, reads current editorial metadata and creates
-nine six-symbol libraries. The website contains 71 files, with no Python, source
+nine complete-library exports. The website contains 270 files, with no Python, source
 TeX, references or test material. Its content hashes determine `build.json`.
 
 ## Test and review
 
-Run from the repository root:
+Run from the repository root. Node.js **20 or newer** is needed only for the
+browser-state tests; the app itself has no Node dependency.
 
 ```powershell
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
+node --test tests\review.test.cjs
 .\.venv\Scripts\python.exe app\build_site.py
 .\.venv\Scripts\python.exe tests\check_docs.py
 ```
 
-Expect **25 tests, OK**, a **71-file** website and no broken documentation links.
-The tests cover accepted paths, dimensions, independent strokes, grid coordinates,
-named parts, repeated IDs, export bytes, six distinct symbols per library and HTTP
-boundaries. The cleanup should still produce build **971b3b876b93**.
+Expect **34 Python tests and 4 JavaScript tests**, a **270-file** website, and no
+broken documentation links. Tests cover all designs/configurations, accepted SVG
+bytes, pins, independent strokes, editable parts, exports, HTTP boundaries and
+approval validity. Compare `app/dist/build.json` with the hosted `build.json` when
+checking that both devices have the same version.
 
 | Action | Expected result |
 |---|---|
-| Open the app; select an op-amp | Six symbol cards; name, artwork and preview update |
-| Switch dark/light; reload after each choice | Theme persists and controls, grid and pins stay readable |
-| Search `elliptical`, then `zzzz`, then clear | Coil only; empty result; all six cards |
-| Select Coil inductor → Small → Thick | Proportions and stroke update; changing only stroke leaves pins fixed |
-| Toggle Grid & pins; expand Description | Both preview aids toggle together; description/keywords are read-only |
-| Download the selected coil SVG | Black vector artwork, no grid/blue points; 14.30 × 1.80 mm visual bounds |
-| Search `capacitor`, then Export library | All six symbols at Small/Thick, despite the filter |
-| Open the library in Inkscape Symbols | Six thumbnails; paste, unlink, edit named parts, save/reopen successfully |
-| Tab through controls; use Enter, Escape and `/`; narrow the window | Controls work, dialog returns focus, search focuses, no horizontal overflow |
+| Open the app; switch All symbols / Unverified | 28 designs / 22 new designs; the original six remain Verified |
+| Choose Resistors / Batch 01; search `NTC`, then `zzzz`, then clear | Two NTCs; empty state; the filtered batch returns |
+| Select a new design; open 3 × 3 | All nine labelled combinations; size differences remain visible at a common scale |
+| Check a design; reload | Pending in this browser; selection and exact design identity persist |
+| Verify & next, then Undo | Selects the next unreviewed design; Undo reverses the pending selection |
+| Copy approvals or Copy symbol reference | Approval JSON includes exact revision/fingerprint; reference includes name/ID/revision/link |
+| Open the reference link in another browser | Same design selected; local approvals are not transferred |
+| Switch dark/light; reload; use Small/Thick and Grid & pins | Theme persists; stroke changes keep pins fixed; preview aids toggle together |
+| Export a Small/Thick coil, then export library while search is filtered | Single SVG has no blue points/grid; library still includes all 28 designs at those settings |
+| Open the library in Inkscape Symbols | 28 thumbnails; placed artwork can be unlinked, edited, saved and reopened |
+| Use Tab, Enter, Escape, arrow keys on the tabs, and `/`; narrow the window | Controls remain reachable; dialogs return focus; search focuses; page does not overflow |
 
-Repeat on both Windows devices using the same
-[fixed hosted version](https://650191bd-schematica-preview.dinodubroja.workers.dev/).
-For export and grid details, use [the Inkscape guide](docs/INKSCAPE.md). Record
-device/browser, build ID, selected preset, failed action and actual result. A test
-on this computer does not establish the laptop's result.
+Repeat on both Windows devices using the [shared preview](https://schematica-preview.dinodubroja.workers.dev/).
+Record device/browser, build ID, design reference, selected preset, failed action
+and actual result. See [Inkscape](docs/INKSCAPE.md) for export/grid details and
+[verification](docs/VERIFICATION.md) for approval handoff and clipboard fallback.
 
 ## Render and verify geometry
 
-Only geometry work needs the extra tools:
+Only geometry work needs Tectonic, dvisvgm, Inkscape and the developer requirements.
+Build candidates separately from the browsable library:
 
 ```powershell
 .\.venv\Scripts\python.exe -m pip install -r app\requirements-dev.txt
-.\.venv\Scripts\python.exe app\build_library.py
+.\.venv\Scripts\python.exe app\build_library.py --output app\build\candidates\current
+$env:SCHEMATICA_LIBRARY = (Resolve-Path app\build\candidates\current).Path
+.\.venv\Scripts\python.exe -m unittest discover -s tests -v
 .\.venv\Scripts\python.exe tests\verify_library.py
-.\.venv\Scripts\python.exe tests\verify_renderer.py
 .\.venv\Scripts\python.exe app\build_site.py
 .\.venv\Scripts\python.exe tests\verify_site.py
+.\.venv\Scripts\python.exe tests\verify_renderer.py
+.\.venv\Scripts\python.exe app\server.py --port 8792
 ```
 
-Tectonic and dvisvgm compile the TeX; Inkscape and PyMuPDF independently check the
-SVGs. Set `SCHEMATICA_TECTONIC`, `SCHEMATICA_DVISVGM` and `SCHEMATICA_INKSCAPE` to
-executable paths when automatic discovery fails. On Windows use `inkscape.com`.
+Inspect the candidate viewer at **http://127.0.0.1:8792/** and follow the
+[creation workflow](docs/RESISTOR_BATCH.md#repeatable-creation-workflow). The renderer
+excludes a design if any configuration fails and reports it in
+`app/build/library-measurements.json`. Fix and repeat before promotion. Do not edit
+generated SVGs as the drawing authority.
 
-`verify_library.py` checks all 54 SVGs, 42 accepted-palette comparisons, bounds,
-named parts and composite save/reopen. `verify_renderer.py` checks a fresh render,
-native CircuitikZ and the bounded editable-label fixture. `verify_site.py` checks
-all nine Inkscape libraries. Add `--downloads <folder>` to compare real browser
-downloads (all nine libraries and `inductor-coil-small-thick.svg`). Results go into
-ignored `app/build/` subfolders. Command-line checks do not imply a new GUI check.
+After technical and visual checks pass, stop that test server and promote only the
+checked candidate output. Preserve concurrent edits before copying:
+
+```powershell
+Copy-Item "$env:SCHEMATICA_LIBRARY\svg\*.svg" app\library\svg\
+Copy-Item "$env:SCHEMATICA_LIBRARY\catalog.json" app\library\catalog.json
+Remove-Item Env:SCHEMATICA_LIBRARY
+.\.venv\Scripts\python.exe app\build_site.py
+.\.venv\Scripts\python.exe -m unittest discover -s tests -v
+```
+
+Set `SCHEMATICA_TECTONIC`, `SCHEMATICA_DVISVGM` and `SCHEMATICA_INKSCAPE` to executable
+paths if discovery fails. On Windows use `inkscape.com`. The optional
+`--symbols <ids...>` builds selected candidates for diagnosis; it does not merge
+partial catalogs into the supplied library.
+
+`verify_library.py` checks every SVG in Inkscape, 42 comparisons against the six
+accepted palette designs, margins, named parts and composite save/reopen.
+`verify_renderer.py` checks fresh compilation, native CircuitikZ and a bounded
+editable-label fixture. `verify_site.py` checks all nine complete-library exports;
+add `--downloads <folder>` to compare actual browser downloads (nine libraries and
+`inductor-coil-small-thick.svg`). Results go into ignored `app/build/` folders.
+Command-line checks do not imply a GUI check.
 
 The accepted palette is an independent regression reference, not an inherited
 legacy style. Update it only after explicit geometry acceptance. Baseline tools:
@@ -195,9 +231,9 @@ Creates `app/build/exports/` with a hash manifest and three ZIPs:
 
 | Package | Contents |
 |---|---|
-| `web-preview.zip` | 71 static website files, ready for Cloudflare upload |
-| `all-symbols.zip` | 54 individual SVGs |
-| `tex-bundles.zip` | 54 standalone configurations, each with `symbol.tex` and required helpers |
+| `web-preview.zip` | 270 static website files, ready for Cloudflare upload |
+| `all-symbols.zip` | 252 individual SVGs |
+| `tex-bundles.zip` | 252 standalone configurations, each with `symbol.tex` and required helpers |
 
 Only the shared TeX recipes/helpers and prebuilt browser SVGs are maintained.
 Generated standalone bundles and ZIPs are not committed. To use the native TeX
@@ -214,9 +250,8 @@ the helpers from [app/tex/](app/tex/), then compile it without the SVG driver.
 
 Python integrations use `find_symbols`, `get_definition`, `resolve_settings`,
 `inspect_symbol`, `render_symbol` and `write_tex_bundle`. Inspection recompiles;
-browsing uses the catalog. Stable IDs: `resistor-eu`, `resistor-us`, `inductor-coil`,
-`capacitor`, `opamp`, `opamp-supply`, all revision 1. Configuration keys append
-size and stroke. `exports.export(kind, keys, columns=3, spacing=6)` supports `svg`,
+browsing uses the catalog. Stable IDs and revisions live in YAML; the [batch inventory](docs/RESISTOR_BATCH.md)
+lists the resistor IDs. Configuration keys append size and stroke. `exports.export(kind, keys, columns=3, spacing=6)` supports `svg`,
 `zip`, `sheet`, `symbols`; the viewer exposes the two agreed export actions.
 
 ## Hosting and documentation previews

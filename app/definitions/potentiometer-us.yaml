@@ -1,0 +1,69 @@
+schema_version: 1
+id: potentiometer-us
+revision: 1
+name: Potentiometer (US)
+description: Three-terminal resistor with a movable wiper contacting the resistance element.
+keywords:
+- resistor
+- American
+- zigzag
+- passive
+- potentiometer
+- pot
+- wiper
+- adjustable
+types:
+- passive
+- resistor
+family: resistors
+batch: resistors-01
+attributes:
+  appearance: american
+  body: zigzag
+  polarized: false
+  variant: potentiometer
+recipe: resistor-variant
+drawing:
+  body: us
+  variant: potentiometer
+reference:
+  source: CircuitikZ components list, sections 4.2 and 4.2.1
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: pR
+  approach: adapted; see docs/RESISTOR_BATCH.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: a
+  name: A
+  description: Resistance element terminal A
+  kind: passive
+  lead_part: lead-a
+- id: b
+  name: B
+  description: Resistance element terminal B
+  kind: passive
+  lead_part: lead-b
+- id: wiper
+  name: Wiper
+  description: Movable contact with the resistance element
+  kind: passive
+  lead_part: lead-wiper
+parts:
+- id: body
+  description: Zigzag resistor body
+- id: lead-a
+  description: Lead from terminal A to body
+- id: lead-b
+  description: Lead from body to terminal B
+- id: lead-wiper
+  description: Lead from the wiper terminal to the resistance element
+- id: wiper-arrow
+  description: Movable wiper contact arrow

@@ -1,0 +1,65 @@
+schema_version: 1
+id: photoresistor-enclosed-eu
+revision: 1
+name: Enclosed photoresistor (EU)
+description: Light-dependent resistor in a circular enclosure, with two incoming light arrows.
+keywords:
+- resistor
+- European
+- rectangle
+- passive
+- photoresistor
+- LDR
+- light
+- circle
+- enclosed
+types:
+- passive
+- resistor
+family: resistors
+batch: resistors-01
+attributes:
+  appearance: european
+  body: rectangle
+  polarized: false
+  variant: photo-enclosed
+recipe: resistor-variant
+drawing:
+  body: eu
+  variant: photo-enclosed
+reference:
+  source: CircuitikZ components list, sections 4.2 and 4.2.1
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: ldR
+  approach: adapted; see docs/RESISTOR_BATCH.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: a
+  name: A
+  description: Resistance element terminal A
+  kind: passive
+  lead_part: lead-a
+- id: b
+  name: B
+  description: Resistance element terminal B
+  kind: passive
+  lead_part: lead-b
+parts:
+- id: body
+  description: Rectangular resistor body
+- id: lead-a
+  description: Lead from terminal A to body
+- id: lead-b
+  description: Lead from body to terminal B
+- id: enclosure
+  description: Circular component enclosure
+- id: light-arrows
+  description: Two incoming light arrows

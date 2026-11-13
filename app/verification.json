@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "approvals": {
+    "resistor-eu": {
+      "revision": 1,
+      "fingerprint": "674972f402034c75f95640aba0aeba898610a3b311101e7ba6a539a891e38617",
+      "evidence": "Accepted first-batch rendering and viewer reviews, preserved baseline 22387d3"
+    },
+    "resistor-us": {
+      "revision": 1,
+      "fingerprint": "339cbdd8bfa91253a4c2c78900d8edbccfc215cc0efecac9f5af7b2402e290e5",
+      "evidence": "Accepted first-batch rendering and viewer reviews, preserved baseline 22387d3"
+    },
+    "inductor-coil": {
+      "revision": 1,
+      "fingerprint": "ccaae7a8ab1a2af4869f67b6071312e0ddafb4f3e8d0057057d832f3540636f9",
+      "evidence": "Accepted first-batch rendering and viewer reviews, preserved baseline 22387d3"
+    },
+    "capacitor": {
+      "revision": 1,
+      "fingerprint": "8385a6bfc0173363e5cfbba93989902c90a9d832a54c49ed1650d8dfb95baef1",
+      "evidence": "Accepted first-batch rendering and viewer reviews, preserved baseline 22387d3"
+    },
+    "opamp": {
+      "revision": 1,
+      "fingerprint": "71a8a97fc1513b3970277716bb2146485b0a11f27e8c1c9fc2e01e93f4c30531",
+      "evidence": "Accepted first-batch rendering and viewer reviews, preserved baseline 22387d3"
+    },
+    "opamp-supply": {
+      "revision": 1,
+      "fingerprint": "66ef95f5cea68d0aefbd3dcaa8dbd45dde33b7b54f2796bbc15c22cccc870a5b",
+      "evidence": "Accepted first-batch rendering and viewer reviews, preserved baseline 22387d3"
+    }
+  }
+}

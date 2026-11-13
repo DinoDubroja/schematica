@@ -16,7 +16,7 @@ class StaticSiteTests(unittest.TestCase):
         cls.files = payload()
         cls.catalog = json.loads(cls.files['library/catalog.json'])
 
-    def test_each_library_has_six_distinct_symbols_at_one_preset(self):
+    def test_each_library_has_all_distinct_symbols_at_one_preset(self):
         self.assertEqual(len(self.catalog['exports']), 9)
         expected_ids = {s['id'] for s in self.catalog['symbols']}
         for preset, path in self.catalog['exports'].items():
@@ -24,7 +24,7 @@ class StaticSiteTests(unittest.TestCase):
             root = ET.fromstring(self.files[path])
             validate_svg_references(root)
             symbols = root.findall(f'{{{SVG}}}defs/{{{SVG}}}symbol')
-            self.assertEqual(len(symbols), 6)
+            self.assertEqual(len(symbols), len(self.catalog['symbols']))
             self.assertEqual(root.find(f'{{{SVG}}}title').text, f'Schematica · {size.title()} / {stroke.title()}')
             self.assertEqual({s.find(f'{{{SVG}}}title').text for s in symbols},
                              {s['name'] for s in self.catalog['symbols']})
@@ -32,7 +32,7 @@ class StaticSiteTests(unittest.TestCase):
             self.assertEqual({m['symbol_id'] for m in metadata}, expected_ids)
             self.assertTrue(all(m['size'] == size and m['stroke'] == stroke for m in metadata))
             self.assertTrue(root.get('width').endswith('mm'))
-            self.assertFalse(list(root.iter(f'{{{SVG}}}circle')), 'Preview markers leaked into export')
+            self.assertFalse(any('inspection-grid' in e.get('class','') or 'pin-markers' in e.get('class','') for e in root.iter()), 'Preview markers leaked into export')
             for symbol, meta in zip(symbols, metadata):
                 definition = next(s for s in self.catalog['symbols'] if s['id'] == meta['symbol_id'])
                 self.assertEqual({e.get('data-part') for e in symbol.iter() if e.get('data-part')},
@@ -40,13 +40,13 @@ class StaticSiteTests(unittest.TestCase):
 
     def test_individual_artwork_is_copied_without_changes(self):
         configs = [c for s in self.catalog['symbols'] for c in s['configurations']]
-        self.assertEqual(len(configs), 54)
+        self.assertEqual(len(configs), 9 * len(self.catalog['symbols']))
         for config in configs:
             self.assertEqual(self.files['library/' + config['svg']], (LIBRARY / config['svg']).read_bytes())
 
     def test_repeatable_build_and_publish_allowlist(self):
         self.assertEqual(self.files, payload())
-        self.assertEqual(len(self.files), 71)
+        self.assertEqual(len(self.files), 18 + 9 * len(self.catalog['symbols']))
         manifest = json.loads(self.files['build.json'])
         for name, expected in manifest['files'].items():
             self.assertEqual(hashlib.sha256(self.files[name]).hexdigest(), expected)
