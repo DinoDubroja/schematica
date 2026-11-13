@@ -1,5 +1,0 @@
-{
-  "label": "Label A",
-  "font": "Arial",
-  "normalization": "Preserve converter text position and font size; replace subset font with installed Arial; restore literal source string."
-}

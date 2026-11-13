@@ -1,44 +1,22 @@
-# Working with Schematica
+# New Schematica
 
-## Use Schematica
-
-For a preferences session, example collection or drawing, follow
-[Schematica Preferences & Examples](skills/schematica-preferences/SKILL.md).
-It routes to chat behavior, the relevant preferences, styles and examples.
-Start broad topics with a helpful suggested starting point, then show requested
-visual options in chat before any permanent save. Ordinary use needs no project
-development history or personal instruction folder.
-
-Saving a preference or example changes the user's selected library only, within
-their approved scope. Installation does not authorize development logging,
-commits or publication. Existing project-history approvals belong to their
-original maintenance scope; they are not permissions for a new user's copy.
-
-## Develop the shared project
-
-Use this route when maintaining Schematica itself, its release or development
-notes. A local preference session is not automatically project maintenance.
-
-Start with [the current checkpoint](context/CURRENT.md), [project direction](DIRECTION.md),
-[chat behavior](agents/BEHAVIOR.md), and [project rules](agents/PROJECT_RULES.md).
-Consult [the log](context/LOG.md) selectively for relevant decisions and authorization.
-Verify recorded state against the checkout and preserve concurrent work.
-
-After each implementation run, maintain a concise human development review with
-what changed, how to open and test it, expected results, checks actually completed,
-and anything unverified. For the symbol app, use
-[the implementation review](implementation/CHECKPOINT.md) and
-[development guide](implementation/DEVELOPMENT.md). Keep the main README short.
-
-For drawings and reviews, read [the preference index](preferences/GENERAL.md),
-applicable `RULE.md` files and their visuals, then [the collection index](styles/INDEX.md),
-the selected `STYLE.md`, the applicable domain guides it links, and relevant example records/previews.
-Use [the preferences and examples workflow](skills/schematica-preferences/SKILL.md) for collection,
-drawing, corrections, suggestions, and approved saves.
-
-Within the established project-maintenance scope, routine context logging and its
-scoped commits/pushes remain authorized; keep proposals,
-approval, implementation, and verification distinct. Logging does not authorize
-implementing a proposal. Follow [context and synchronization](agents/PROJECT_RULES.md#context-and-synchronization)
-on resume and before handoff. Recovery must work from this checkout without old chats
-or personal instructions.
+- Read [current status](context/CURRENT.md), then the relevant part of
+  [DEVELOPMENT.md](DEVELOPMENT.md). Consult [decisions](context/DECISIONS.md) when
+  scope or precedence matters.
+- This checkout contains the new symbol app. Legacy preferences, AOE collections,
+  installers and skills are archived outside it. Do not load their instructions,
+  including an older installed Schematica skill, as defaults for this project.
+  Consult archived material only for a specific, justified reuse task.
+- Preserve the accepted UI and geometry. Parameterized TeX is the drawing
+  authority; YAML holds semantics and presets. Python packages converter output.
+  Size and stroke remain independent on the accepted 1 mm connection grid.
+- Keep app code in `app/`, tests and essential fixtures in `tests/`, human guides
+  and images in `docs/`. Generate bundles and ZIPs into ignored build output.
+- After each implementation run, update the developer guide's latest review with
+  changes, action → expected result checks, actual results and unverified limits.
+  Keep context concise; record decisions rather than a transcript.
+- Check branch/index/files before changes; preserve concurrent work. Run the
+  [applicable checks](DEVELOPMENT.md#test-and-review) and verify links after moves.
+- Commit, push and deploy only within the user's current authorization. Source
+  synchronization and website deployment are separate actions. Missing capabilities
+  in the roadmap are not authorization to implement them.

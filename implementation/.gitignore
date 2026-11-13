@@ -1,8 +1,0 @@
-build/
-__pycache__/
-*.pyc
-.venv/
-dist/
-.wrangler/
-node_modules/
-output/

@@ -1,4 +1,8 @@
-build/
-*.aux
-*.log
-*.synctex.gz
+.venv/
+__pycache__/
+*.pyc
+app/build/
+app/dist/
+.wrangler/
+node_modules/
+output/

@@ -1,0 +1,14 @@
+% Run with Tectonic or a LaTeX installation with CircuitikZ.
+\documentclass[border=2mm]{standalone}
+\usepackage{schematica}
+\begin{document}
+\begin{circuitikz}[x=1mm,y=1mm]
+  \SCResistorEU{R1}{1}{0.20}
+  \draw (R1-a) -- ++(-5,0) to[C] ++(0,-15) -- ++(5,0);
+  \begin{scope}[shift={(30,0)}]
+    \SCOpampSupply{U1}{1}{0.20}
+  \end{scope}
+  \draw (R1-b) -- (U1-in-plus);
+  \draw (U1-out) -- ++(5,0);
+\end{circuitikz}
+\end{document}
