@@ -4,7 +4,7 @@ Active implementation (13-11-2026): the user authorized the browsing-first UI
 cleanup, individual SVG and six-symbol library export at the chosen size/stroke,
 compact docs and a portable static website for Cloudflare. The preview audience is
 anyone with the link. The user accepted the result and explicitly authorized
-publishing the reviewed build. **Preview published; completed implementation and docs approved for commit/push.**
+publishing the reviewed build. **Preview and completed implementation/docs published; GitHub main verified.**
 This supersedes the earlier local-only publication boundary and export-selection UI.
 
 The revised viewer and static package are complete; awaiting the user's two-device

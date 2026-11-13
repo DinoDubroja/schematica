@@ -20,8 +20,8 @@
     "sha256": "231496c1ac3fbe140ece5af0a0bc3d29a081b794d3f6a10dba339de2461c6e4b"
   },
   "CHECKPOINT.md": {
-    "bytes": 8540,
-    "sha256": "13d9f3552d837000ad28a66aa724d159200c2c4cb3d9e148bc463734fa786e19"
+    "bytes": 8724,
+    "sha256": "4d8b3335a73d6bc6b1f9ef12ba040546b6973a2fa6a494cfb1bfb23d4446afcc"
   },
   "core.py": {
     "bytes": 15639,
@@ -2273,7 +2273,7 @@
   },
   "review/all-symbols.zip": {
     "bytes": 52896,
-    "sha256": "564e62ca8cbb59de0507b2aec57b2b2d3aaf75b09109e3b6f12296a53345783f"
+    "sha256": "9b66f1175c2f00f6c6f5984d3248ed1cd22c1a6f35f7415ebe44d332e7fe9b96"
   },
   "review/browser-checks.json": {
     "bytes": 1602,

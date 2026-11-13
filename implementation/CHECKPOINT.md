@@ -1,6 +1,6 @@
 # Review: hosted symbol library
 
-13-11-2026 · Build **971b3b876b93** · **Web preview published; completed source approved for GitHub.**
+13-11-2026 · Build **971b3b876b93** · **Web preview and completed source published.**
 
 [Open the preview](https://schematica-preview.dinodubroja.workers.dev/)
 · [Fixed review version](https://650191bd-schematica-preview.dinodubroja.workers.dev/)
@@ -8,7 +8,9 @@
 This run published the accepted website unchanged through Cloudflare's static-file
 upload. No account is needed to view it. Both links were checked in a Windows browser.
 
-Repository handoff: the user approved committing and pushing the completed batch.
+Repository handoff: the completed batch is published on [GitHub main](https://github.com/DinoDubroja/schematica).
+Source commit `4b76d70` was checked through GitHub: all 853 repository files matched
+the local commit, including 54 SVGs, 54 TeX bundles, the viewer and these guides.
 The README now links [laptop setup and update steps](DEVELOPMENT.md#get-the-project-on-another-windows-device).
 Saved measurement reports use portable, relative artifact paths. The viewer and
 published artwork are unchanged. After obtaining the repository on the laptop,

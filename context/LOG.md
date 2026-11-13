@@ -1154,3 +1154,8 @@ should be present. The laptop's installation and two-device testing remain unver
 971b3b876b93 and passed all 25 tests. All 210 local links in changed docs resolve;
 the review ZIP matches its file/hash manifest. An independent reading-route and
 publication audit found no further actionable issues.
+
+**Published and verified:** source commit [4b76d70](https://github.com/DinoDubroja/schematica/commit/4b76d7066052575b8129ba1d949a4873bd5e2bc4)
+is on GitHub main. GitHub returned all 853 repository files with hashes matching
+the local commit, including all 705 implementation files, 54 SVGs and 54 TeX
+bundles. The published README exposes the preview, laptop setup and testing guides.
