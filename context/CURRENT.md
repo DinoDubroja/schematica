@@ -49,3 +49,18 @@ The laptop, profile-wide Inkscape installation, fresh GUI grid snapping and
 clean-machine/offline TeX setup remain unverified. Inkscape roundtrip results in
 this run are command-line checks. The broader milestone interview is unfinished;
 see [roadmap](../docs/ROADMAP.md). Future wishes do not authorize new implementation.
+
+## Latest planning context
+
+The implementation report above completed in **Agent B** on
+14-11-2026 00:54 +01:00; its source revision is
+[`3a09af9`](https://github.com/DinoDubroja/schematica/commit/3a09af969818ad0f637759ae0dfd0d02fae2065d).
+
+Chat review reconciled 14-11-2026 00:55 +01:00; original source times and supersession
+are preserved in [decisions](DECISIONS.md#product-direction-recovered-from-chats).
+The latest planning scope is individual creation plus a separate search skill,
+using the dev library before accounts/personal libraries. Interpret and confirm
+intent before creating; preview/refine, then offer download/save. ChatGPT Desktop
+across its environments and Claude Desktop are required targets, still unverified.
+[The roadmap](../docs/ROADMAP.md) retains sketch/system-diagram and style goals.
+These directions do not expand the current implementation authorization.

@@ -20,6 +20,11 @@
 - After each implementation run, update the developer guide's latest review with
   changes, action → expected result checks, actual results and unverified limits.
   Keep context concise; record decisions rather than a transcript.
+- Maintain context after consequential discussions as well as implementation.
+  Record the source chat and original turn/message timestamp with timezone, status
+  and any superseding decision; keep review time separate. Read actual accessible
+  chat messages when reconciling context. Git being clean does not establish chat
+  coverage. Preserve pending topics when concurrent work prevents shared writes.
 - New designs enter Unverified after technical and visual checks. Apply human
   approvals only through the [verification handoff](docs/VERIFICATION.md). Geometry
   or connection changes require fresh review; never copy an old approval forward.
