@@ -929,3 +929,35 @@ or the complete simulation-to-illustration workflow. Existing uncommitted work w
 preserved. This checkpoint records discussion under the adopted context workflow;
 it does not authorize a new repository, installations, integration, drawings,
 a model-generation system, a style change, or publication of new illustrations.
+
+<a id="guarded-maintenance-and-symbol-review-hold"></a>
+
+## 13-11-2026 - Guarded maintenance and preserved symbol review hold
+
+**User authorization:** the user explicitly authorized hourly Schematica context
+updates and synchronization on a designated local checkout, including reviewing
+and committing eligible completed changes. This is a scoped exception to the
+general maintenance procedure's no-commit rule, not approval for new product work.
+Maintain concise evidence-based context, separating proposals, decisions, explicit
+approvals, implementation and verified results; skip duplicate no-change entries.
+
+**Review boundary:** the first symbol batch remains held before committing or
+publishing. The user reaffirmed that setting up and enabling synchronization does
+not release this hold. Preserve other explicit review/publication holds. If a
+change's ownership, completion or relation to held work is uncertain, defer it.
+No symbol artifact, new preference, proposed feature or release is approved here.
+
+**Execution contract:** fetch before deciding; fast-forward pull only from a clean
+checkout; push only reviewed, authorized commits from a clean checkout and verify
+the remote revision. Stop on divergence, conflicts, rejected pushes or concurrent
+edits. Never force-push, reset, stash, rebase, overwrite work or automatically
+resolve conflicts. Use an atomic local overlap lock and defer while another local
+chat is editing. A local lock does not coordinate another computer.
+
+**Verified setup and limits:** the designated checkout was cloned and its remote,
+main branch and upstream verified. Local overlap tests and a read-only preview
+passed, and the saved hourly task configuration was read back as active. That
+setup verification did not prove an unattended run or actual publication. Runtime
+outcomes, machine details and private supporting evidence belong in local reports
+outside the shared repository. This entry records authority and boundaries; it
+does not claim that this note has already been synchronized.

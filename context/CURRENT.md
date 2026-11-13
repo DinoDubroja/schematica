@@ -1,6 +1,16 @@
 # Current checkpoint
 
-Updated: 11-11-2026. Read this first when resuming; verify the checkout before acting.
+Updated: 13-11-2026. Read this first when resuming; verify the checkout before acting.
+
+Maintenance authorization (13-11-2026): the user authorized hourly context updates
+and synchronization for the explicitly configured checkout, including review and
+commits of eligible completed work. **The first symbol batch remains held before
+committing or publishing; this maintenance authorization does not release it.**
+Other explicit holds also persist. Fetch before synchronization decisions; pull
+only by fast-forward from a clean checkout and push only reviewed, authorized
+commits from a clean checkout, with remote verification. Stop for concurrent edits,
+uncertain ownership, divergence or conflicts. This does not authorize new product
+work or publication of held artifacts. See [scope and preserved review hold](LOG.md#guarded-maintenance-and-symbol-review-hold).
 
 Scope discussion (11-11-2026): the user clarified two core Schematica outcomes:
 beautiful component-level electronic schematics and beautiful system/signal-flow
