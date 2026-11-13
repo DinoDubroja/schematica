@@ -1,5 +1,12 @@
 # Current checkpoint
 
+Cleanup discussion (13-11-2026): the user wants old Schematica preserved outside
+the active project and consulted only for deliberate reuse, with clear visual
+developer documentation for the new implementation. A cleanup plan and agent
+prompt were drafted. **This is a discussion handoff, not execution by the sync
+task**; the draft proposes user review before committing or publishing cleanup.
+See [the desired result and proposal boundary](LOG.md#new-project-cleanup-proposal).
+
 Receiving-device setup (13-11-2026): the current source was synchronized to the
 laptop, the Schematica skill connected and pinned dependencies installed in its
 project environment. The published build was reproduced; all 25 implementation

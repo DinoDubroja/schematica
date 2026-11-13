@@ -1186,3 +1186,25 @@ extensions displayed it correctly. No extension setting was changed.
 Edge test, profile-wide Symbols installation or GUI snapping walkthrough. User review
 remains open. See [the implementation review](../implementation/CHECKPOINT.md).
 Machine-specific evidence remains outside the repository; no desktop task changed.
+
+<a id="new-project-cleanup-proposal"></a>
+
+## 13-11-2026 — New-project cleanup discussion
+
+- **User correction:** old preferences, styles/examples and historical instructions
+  clutter the new implementation. Preserve old Schematica outside the active
+  project; consult it only for a specific relevant reuse task, without automatic
+  authority over the new project.
+- **Desired documentation:** a clear development entry point, linked folder maps,
+  diagrams, screenshots and short action/expected-result checks. Recover the
+  agreed requirements and distinguish implemented, partial, missing and deferred
+  work; do not add missing features during cleanup.
+- **Assistant proposal:** verify an archive before changing files; separate legacy
+  material, organize current implementation/tests/docs, remove redundant generated
+  material and update affected links/commands while preserving accepted behavior.
+- **Status:** the user requested a concrete proposal, then an agent prompt. The
+  drafted prompt includes local execution wording and a pre-commit/publication
+  review gate; drafting that prompt is not execution authorization for this sync
+  task. No archive, move, deletion, product change or deployment was performed by
+  this context update. Implementation must follow the actual scoped handoff and
+  approval delivered to the receiving agent.
