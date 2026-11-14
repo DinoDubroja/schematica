@@ -15,9 +15,9 @@ This page states desired capabilities; implementation status comes from
 |---|---|---|
 | Minimal symbol library in the web app | Implemented | Browse, search, compare variations, use dark/light mode and export one symbol or the whole Inkscape library |
 | Grow the dev library with agent-run batches | First batch implemented | A finite resistor inventory, repeatable creation and validation, and human verification; more component families remain to be planned |
-| Create symbols interactively with an agent | Near term · missing | Create one symbol from text, images, sketches or PDFs: interpret → confirm → create → preview/refine → offer download/save to the dev library; shares formats and checks with batches |
-| Search and reuse symbols through agent apps | Near term · planning | Separate search skill; proposed shared interactive web/chat viewer with filtered results, configuration controls and an explicit selection handoff |
-| Connect Schematica through MCP | Near term · missing | Required: ChatGPT Desktop across its environments and Claude Desktop; verify each complete journey, including previews, downloads and fresh-chat retrieval |
+| Create symbols interactively with an agent | Local prototype · host checks pending | Create one symbol from text, images, sketches or PDFs: interpret → confirm → create → preview/refine → offer download/save to the dev library; shares formats and checks with batches |
+| Search and reuse symbols through agent apps | Local prototype · host checks pending | Separate search skill; shared interactive web/chat viewer with filtered results, configuration controls and an explicit selection handoff |
+| Connect Schematica through MCP | Local protocol verified · hosts pending | Required: ChatGPT Desktop across its environments and Claude Desktop; verify each complete journey, including previews, downloads and fresh-chat retrieval |
 | Select the first default library | Planned · not released | Review material from the dev library for the first Schematica default library |
 | Personal libraries alongside supplied originals | Deferred from the immediate prototype | Later sign-in, account-linked preferences/designs and separate personal variants; admin privileges for supplied originals |
 | Schematic styles and examples in the library | Future · deferred | Browse styles and visible references with captions, including mixed circuits/plots/equations; compare symbols in circuits and test style generalization on realistic examples |
@@ -25,8 +25,8 @@ This page states desired capabilities; implementation status comes from
 
 Library expansion is underway; individual creation and search are separate
 workstreams that may be developed alongside it after their own scope is authorized.
-The remaining interview must settle retrieval behavior (including single matches),
-save/version semantics, concrete host acceptance tests and the next delivery order.
+The current milestone specifies single-match viewers, revisioned dev-library saves
+and concrete host acceptance tests. Embedded-host verification remains outstanding.
 The latest decision defers accounts until after the dev-library prototype.
 The completed resistor work covered corrections, declared options, Variations,
 batch checks and its authorized publication. Current authorization is recorded in
@@ -46,8 +46,8 @@ not authorize a new batch or publication.
 - **Interpret before creating.** Confirm meaning and uncertain elements, use visual
   annotations where useful, request a short description when missing, then render
   and refine. Offer two meaningful alternatives and save only when requested.
-- **Reuse the viewer where practical.** Shared prewritten search UI is proposed;
-  host support and the exact selection/download contract still need testing.
+- **Reuse the viewer where practical.** Shared prewritten search UI and exact selection/download contracts are implemented
+  locally; each embedded host still needs its own verification.
 - **The website has a broader future than exporting symbols.** Keep export small;
   support browsing, comparison and reuse without filling the interface with setup
   text or technical details. Descriptions and keywords remain read-only for now.

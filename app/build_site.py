@@ -10,7 +10,7 @@ from exports import LIBRARY, catalog, sheet, library_options, library_selection
 from verification import publication_catalog, read_ledger
 
 DIST = ROOT / "dist"
-VIEWER_FILES = ("index.html", "style.css", "app.js", "configurations.js", "review.js", "theme.js", "_headers", "robots.txt")
+VIEWER_FILES = ("index.html", "style.css", "app.js", "configurations.js", "host.js", "review.js", "theme.js", "_headers", "robots.txt")
 
 
 def payload():

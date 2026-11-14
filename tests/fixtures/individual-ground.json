@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "test-ground",
+  "revision": 1,
+  "name": "Test ground",
+  "description": "Integration fixture: one-terminal ground mark with full or compact bars; not a reviewed production design.",
+  "family": "grounds",
+  "keywords": ["ground", "test"],
+  "types": ["ground"],
+  "recipe": "custom",
+  "presets": {"sizes": ["small", "medium", "large"], "strokes": ["thin", "medium", "thick"]},
+  "pins": [{"id": "a", "name": "A", "description": "Ground connection", "kind": "passive", "lead_part": "lead-a"}],
+  "parts": [{"id": "lead-a", "description": "Connection lead"}, {"id": "earth-mark", "description": "Ground bars"}],
+  "options": {"bars": {"name": "Ground bars", "default": "full", "affected_parts": ["earth-mark"], "values": [{"id": "full", "name": "Full"}, {"id": "compact", "name": "Compact"}]}}
+}

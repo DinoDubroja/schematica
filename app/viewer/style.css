@@ -108,3 +108,8 @@ select:focus-visible,textarea:focus-visible{outline:2px solid var(--focus);outli
 #copy-dialog{width:min(620px,calc(100% - 32px))}.copy-help{font-size:12px;color:var(--muted);margin:14px 0}
 #copy-text{width:100%;height:240px;resize:vertical;font:12px/1.5 monospace;padding:12px}
 @media(max-width:720px){.catalogue-heading{gap:5px}.catalogue-heading .quiet-button{font-size:11px}.card-main{padding:0 12px 9px}.card-review{margin:0 12px 12px}.inspector-heading h2{font-size:19px}.configuration-dialog{padding:14px}.review-tools{gap:6px}.library-filters select{font-size:11px}}
+/* Integration controls reuse the accepted colors, spacing and button styles. */
+.agent-filters { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 12px 0; font-size: 12px; }
+.agent-filters[hidden], [hidden] { display: none !important; }
+#use-symbol { margin-top: 12px; }
+.agent-viewer .card-review input { display: none; }

@@ -4,6 +4,8 @@ const el = (tag, text, className) => { const node = document.createElement(tag);
 const svgEl = (tag, attrs) => { const node = document.createElementNS("http://www.w3.org/2000/svg", tag); for (const [key, value] of Object.entries(attrs)) node.setAttribute(key, value); return node; };
 const Review = window.SchematicaReview;
 const Configurations = window.SchematicaConfigurations;
+const Host = window.SchematicaHost;
+let agentResult = null;
 const state = { data: null, symbol: null, size: "medium", stroke: "medium", view: "all", options: {}, render: 0, matrix: 0 };
 const cache = new Map();
 let review, svgSerial = 0;
@@ -27,6 +29,7 @@ function initTheme() {
 function filteredSymbols() {
   const words = $("#search").value.toLowerCase().trim().split(/\s+/).filter(Boolean);
   return state.data.symbols.filter(symbol =>
+    (!agentResult || agentResult.match_ids.includes(symbol.id)) &&
     (state.view === "all" || !Review.official(symbol)) &&
     ($("#family-filter").value === "all" || symbol.family === $("#family-filter").value) &&
     ($("#batch-filter").value === "all" || symbol.batch === $("#batch-filter").value) &&
@@ -51,23 +54,22 @@ function renderCards() {
     const card = el("article", undefined, "card" + (symbol.id === state.symbol ? " active" : "")); card.dataset.symbol = symbol.id;
     const button = el("button", undefined, "card-main"); button.dataset.symbol = symbol.id; button.setAttribute("aria-pressed", symbol.id === state.symbol);
     const config = configFor(symbol), thumb = el("span", undefined, "thumbnail"), img = el("img");
-    img.src = `./library/${config.svg}`; img.alt = ""; img.loading = "lazy"; img.style.width = `${config.width_mm / 34 * 100}%`; thumb.append(img);
+    Host.thumbnail(img, config); img.alt = ""; img.loading = "lazy"; img.style.width = `${config.width_mm / 34 * 100}%`; thumb.append(img);
     button.append(thumb, el("span", symbol.name, "card-name"));
     const label = el("label", undefined, "card-review"), checkbox = el("input"); checkbox.type = "checkbox"; checkbox.dataset.approval = symbol.id;
     checkbox.checked = Review.official(symbol) || review.has(symbol); checkbox.disabled = Review.official(symbol); checkbox.setAttribute("aria-label", `Verify ${symbol.name}`);
     label.append(checkbox, el("span", status(symbol))); card.append(button, label); cards.append(card);
   }
   $("#empty").hidden = symbols.length > 0; cards.setAttribute("aria-busy", "false"); cards.setAttribute("aria-labelledby", state.view === "all" ? "all-tab" : "unverified-tab");
-  $("#review-count").textContent = `${symbols.filter(s => !Review.official(s) && !review.has(s)).length} remaining`;
+  $("#review-count").textContent = Host.active ? `${symbols.length} symbols` : `${symbols.filter(s => !Review.official(s) && !review.has(s)).length} remaining`;
   const count = review.count(); $("#copy-approvals").textContent = count ? `Copy approvals (${count})` : "Copy approvals"; $("#copy-approvals").disabled = !count;
   if (focus) cards.querySelector(`input[data-approval="${CSS.escape(focus)}"]`)?.focus({ preventScroll: true });
   else if (cardFocus) cards.querySelector(`button[data-symbol="${CSS.escape(cardFocus)}"]`)?.focus({ preventScroll: true });
 }
 async function readArtwork(config) {
-  if (!cache.has(config.key)) cache.set(config.key, fetch(`./library/${config.svg}`).then(response => {
-    if (!response.ok) throw new Error("Preview unavailable. Reload to try again."); return response.text();
-  }).catch(error => { cache.delete(config.key); throw error; }));
-  const source = new DOMParser().parseFromString(await cache.get(config.key), "image/svg+xml");
+  const key = config.asset || config.key;
+  if (!cache.has(key)) cache.set(key, Host.artwork(config).catch(error => { cache.delete(key); throw error; }));
+  const source = new DOMParser().parseFromString(await cache.get(key), "image/svg+xml");
   if (source.querySelector("parsererror")) throw new Error("Preview unavailable. Reload to try again.");
   // Variations and the main preview can contain the same configuration: isolate IDs.
   const prefix = `preview-${++svgSerial}-`, ids = new Map();
@@ -116,11 +118,15 @@ function updateApprovalControls() {
   $("#verify-next").disabled = official; $("#undo-approval").disabled = !review.canUndo();
 }
 function renderInspector() {
-  const symbol = activeSymbol(), config = configFor(symbol); $("#symbol-name").textContent = symbol.name;
+  const symbol = activeSymbol(); if (!symbol) return;
+  const config = configFor(symbol); $("#symbol-name").textContent = symbol.name;
   renderOptions(symbol);
   for (const kind of ["size", "stroke"]) document.querySelectorAll(`button[data-${kind}]`).forEach(button => { const selected = button.dataset[kind] === state[kind]; button.classList.toggle("active", selected); button.setAttribute("aria-pressed", selected); });
   $("#description").textContent = symbol.description; $("#keywords").replaceChildren(...symbol.keywords.map(keyword => el("li", keyword)));
-  setDownload($("#download-svg"), `./library/${config.svg}`); updateApprovalControls(); renderPreview(symbol, config);
+  const link = $("#download-svg"); link.removeAttribute("href"); link.setAttribute("aria-disabled", "true");
+  Host.imageUrl(config).then(url => { if (activeSymbol()?.id === symbol.id && configFor(activeSymbol()).key === config.key) { setDownload(link, url); link.download = config.key + ".svg"; } }).catch(error => notify(error.message));
+  $("#draft-note").hidden = !symbol.draft_id;
+  updateApprovalControls(); renderPreview(symbol, config);
 }
 function changeApproval(symbol, selected) { review.select(symbol, selected); renderCards(); updateApprovalControls(); if (!review.storageAvailable()) notify("Browser storage is unavailable. Copy approvals before leaving this page."); }
 async function copyText(text, title) {
@@ -164,7 +170,7 @@ async function showConfigurations() {
 }
 async function init() {
   try {
-    const response = await fetch("./library/catalog.json"); if (!response.ok) throw new Error(); state.data = await response.json();
+    const loaded = await Host.load(); state.data = loaded.catalog;
     review = Review.create(state.data.symbols, { getItem: key => localStorage.getItem(key), setItem: (key, value) => localStorage.setItem(key, value) });
     state.size = state.data.presets.default_size; state.stroke = state.data.presets.default_stroke;
     state.symbol = state.data.symbols.some(s => s.id === linkedSymbol()) ? linkedSymbol() : state.data.symbols[0].id;
@@ -173,16 +179,37 @@ async function init() {
       const option = el("option", value === "starter" ? "Starter library" : value === "resistors-01" ? "Resistors · Batch 01" : titleCase(value)); option.value = value; $(`#${kind}-filter`).append(option);
     }
     document.querySelectorAll("[disabled]").forEach(control => control.disabled = false);
+    if (Host.active) {
+      document.body.classList.add("agent-viewer");
+      $("#use-symbol").hidden = false; $("#agent-filters").hidden = false;
+      $("#open-exports").hidden = true;
+      $("#copy-approvals").hidden = true;
+      document.querySelectorAll(".review-tools > :not(#show-configurations),.pending-note").forEach(node => node.hidden = true);
+      if (loaded.result) applyAgentResult(loaded.result);
+      Host.subscribe(async result => {
+        try { const data = await Host.load(); state.data = data.catalog; applyAgentResult(result); } catch (error) { notify(error.message); }
+      });
+      Host.startUpdates();
+    }
     renderCards(); renderInspector(); $(".inspector").setAttribute("aria-busy", "false");
     if (review.discarded()) notify("Outdated or officially published selections were cleared.");
     if (!review.storageAvailable()) notify("Browser storage is unavailable. Copy approvals before leaving this page.");
   } catch (_) { $("#load-error").textContent = "Library unavailable. Reload to try again."; $("#load-error").hidden = false; $("#cards").setAttribute("aria-busy", "false"); $(".inspector").setAttribute("aria-busy", "false"); return; }
-  $("#search").addEventListener("input", renderCards);
-  for (const kind of ["family", "batch"]) $(`#${kind}-filter`).addEventListener("change", renderCards);
+  $("#search").addEventListener("input", () => { renderCards(); if (Host.active) syncVisibleSelection(); });
+  $("#search").addEventListener("keydown", async event => {
+    if (Host.active && event.key === "Enter") { try { const query = event.target.value; event.target.value = ""; await Host.search(query); } catch (error) { notify(error.message); } }
+  });
+  $("#browse-all").addEventListener("click", async () => { try { $("#search").value = ""; $("#family-filter").value = "all"; $("#batch-filter").value = "all"; await Host.search("Browse all"); } catch (error) { notify(error.message); } });
+  $("#use-symbol").addEventListener("click", async () => {
+    const button = $("#use-symbol"); button.disabled = true;
+    try { const response = await Host.select(activeSymbol(), configFor(activeSymbol())); notify(response.contextDelivered ? "Symbol selection is ready for the agent." : "Selection saved. Ask the agent to retrieve it from this viewer."); }
+    catch (error) { notify(error.message); } finally { button.disabled = false; }
+  });
+  for (const kind of ["family", "batch"]) $(`#${kind}-filter`).addEventListener("change", () => { renderCards(); if (Host.active) syncVisibleSelection(); });
   $("#cards").addEventListener("click", event => { const button = event.target.closest("button[data-symbol]"); if (button) selectCard(button.dataset.symbol); });
   $("#cards").addEventListener("change", event => { if (event.target.dataset.approval) changeApproval(state.data.symbols.find(s => s.id === event.target.dataset.approval), event.target.checked); });
   const tabs = [...document.querySelectorAll("[data-view]")];
-  function setView(button) { state.view = button.dataset.view; tabs.forEach(other => { other.classList.toggle("active", other === button); other.setAttribute("aria-selected", other === button); other.tabIndex = other === button ? 0 : -1; }); renderCards(); }
+  function setView(button) { state.view = button.dataset.view; tabs.forEach(other => { other.classList.toggle("active", other === button); other.setAttribute("aria-selected", other === button); other.tabIndex = other === button ? 0 : -1; }); renderCards(); if (Host.active) syncVisibleSelection(); }
   tabs.forEach(button => {
     button.addEventListener("click", () => setView(button));
     button.addEventListener("keydown", event => { if (["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) { event.preventDefault(); const next = event.key === "Home" ? tabs[0] : event.key === "End" ? tabs.at(-1) : tabs[(tabs.indexOf(button) + 1) % tabs.length]; setView(next); next.focus(); } });
@@ -215,6 +242,23 @@ async function init() {
   });
   $("#close-dialog").addEventListener("click", () => $("#export-dialog").close()); $("#download-library").addEventListener("click", () => $("#export-dialog").close());
   document.addEventListener("keydown", event => { if (event.key === "/" && !event.ctrlKey && !event.metaKey && !event.altKey && !/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName) && !document.querySelector("dialog[open]")) { event.preventDefault(); $("#search").focus(); } });
+}
+function syncVisibleSelection() {
+  const visible = filteredSymbols(); $(".inspector").hidden = visible.length === 0;
+  if (visible.length && !visible.some(s => s.id === state.symbol)) selectCard(visible[0].id, false, false);
+}
+function applyAgentResult(result) {
+  agentResult = result;
+  if (result.selection) {
+    state.symbol = result.selection.id;
+    state.size = result.selection.configuration.size;
+    state.stroke = result.selection.configuration.stroke;
+    state.options = result.selection.configuration.options;
+  }
+  $("#active-filters").textContent = Object.entries(result.filters).map(([key, value]) => `${key}: ${Array.isArray(value) ? value.join(", ") : value}`).join(" · ") || "All symbols · dev library";
+  if (result.filters.size) state.size = result.filters.size;
+  if (result.filters.stroke) state.stroke = result.filters.stroke;
+  renderCards(); syncVisibleSelection(); renderInspector();
 }
 initTheme();
 init();

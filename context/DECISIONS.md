@@ -390,3 +390,29 @@ were absent at inspection, so A's setup and actual common baseline remain to be
 verified. Paths and verification receipts are in B's local handoff.
 All accepted designs remain unchanged. No additional batch or unresolved design
 was selected. The lighter recurring Inkscape policy remains a proposal.
+
+## Agent integration milestone — 14-11-2026
+
+Source: user's attached milestone request in Agent A; original message timestamp
+unavailable, recorded 14-11-2026 Europe/Zagreb (UTC+01:00).
+
+**Authorized:** “Local environment setup, implementation, testing, task-specific
+checkpoint commits and local integration of ready work are authorized.” Preserve
+publication ownership and outstanding design choices. A uses an isolated worktree
+from B's committed baseline, and integrates only exact ready checkpoints.
+
+**Confirmed:** search, individual creation and production batches are distinct.
+Search always uses the shared viewer, including one/zero matches, with filters
+and Browse all. Use this symbol returns exact identity, revision, settings and
+SVG. Creation needs short text even with images, explains intent, waits for
+confirmation, renders TeX, presents preview and two alternatives, then saves only
+on request. Options preserve unrelated parts and connection identities. Saves
+remain Unverified; accounts and personal libraries wait.
+
+**Implemented locally:** separate skills, standard MCP Apps resource/bridge,
+stdio/HTTP server, isolated durable sessions/drafts/revisions and custom TeX
+validation. Rendering, transport and browser checks passed. The server checks
+state but cannot prove a quoted response came from a human; skills enforce the
+conversation wait. [Platform evidence](../docs/HOST_VERIFICATION.md) remains
+separate from protocol tests. B's new batch-02 and ready capacitor checkpoint will
+be incorporated without transferring its publication ownership.

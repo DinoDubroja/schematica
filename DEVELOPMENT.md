@@ -7,6 +7,29 @@
 
 ## Latest changes
 
+14-11-2026 · Agent A's local integration milestone adds
+[agent setup/use](docs/AGENT_INTEGRATION.md), separate search/creation skills,
+stdio and Streamable HTTP MCP, the shared viewer adapter and an isolated,
+revisioned dev-library store. No publication is performed by A.
+
+Latest review: 55 Python + 11 JavaScript tests passed before B's next integration;
+real creation/refinement and existing-symbol option proofs passed. Browser search
+follow-ups, single/empty results, Variations, exact selection and SVG download
+passed. The [platform record](docs/HOST_VERIFICATION.md) distinguishes protocol
+results from actual embedded hosts, which still require verification.
+
+- Search “normal resistors” → existing fixed designs; follow with EU, variable
+  and thicker stroke → the same session, explicit filters and matching artwork.
+- Press Use this symbol → exact ID/revision/configuration and retrievable SVG.
+- Create without description/confirmation → generation blocked. Render a
+  confirmed draft → every combination checked; unsaved material stays out of search.
+- Save on request → Unverified revision and download/viewer links; restart and
+  retrieve it. Added options preserve unrelated parts and connection identities.
+
+Use the [integration checks](docs/AGENT_INTEGRATION.md#checks) as well as the symbol
+checks below. Test stores are ignored local data, not production symbols and not
+synchronized by checkpoint commits.
+
 14-11-2026: [parallel work](#parallel-work) separates B's symbols from A's
 integration work. B's checkout and ignored review evidence are backed up; the
 accepted app is unchanged. Setup checks: 42 Python tests, eight JavaScript tests,

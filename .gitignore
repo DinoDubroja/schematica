@@ -6,3 +6,4 @@ app/dist/
 .wrangler/
 node_modules/
 output/
+.codex/config.toml

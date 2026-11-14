@@ -1,0 +1,17 @@
+% Integration fixture only; geometry is not a production proposal or approval.
+\newcommand{\SCCustom}[3]{%
+  \SCresolve{#1}{#2}{#3}%
+  \pgfmathsetmacro{\SCend}{ceil(3*\SCscale+2)}%
+  \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+    \SCpin{a}{0}{\SCend}
+    \SCdimension{body-width}{6*\SCscale}
+    \begin{SCpart}{lead-a}\draw (0,\SCend)--(0,0);\end{SCpart}
+    \begin{SCpart}{earth-mark}
+      \draw ({-3*\SCscale},0)--({3*\SCscale},0);
+      \draw ({-2*\SCscale},-\SCscale)--({2*\SCscale},-\SCscale);
+      \ifcase\SCoption{bars}
+        \draw (-\SCscale,{-2*\SCscale})--(\SCscale,{-2*\SCscale});
+      \fi
+    \end{SCpart}
+  \end{scope}%
+}

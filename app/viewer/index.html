@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./style.css">
   <script src="./review.js" defer></script>
   <script src="./configurations.js" defer></script>
+  <script src="./host.js" defer></script>
   <script src="./app.js" defer></script>
 </head>
 <body>
@@ -26,6 +27,7 @@
       <label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><input id="search" type="search" placeholder="Search symbols" aria-label="Search symbols" autocomplete="off" disabled><kbd>/</kbd></label>
       <div class="filters" role="tablist" aria-label="Library view"><button id="all-tab" data-view="all" role="tab" aria-selected="true" aria-controls="cards" class="active" disabled>All symbols</button><button id="unverified-tab" data-view="unverified" role="tab" aria-selected="false" aria-controls="cards" tabindex="-1" disabled>Unverified</button></div>
       <div class="library-filters"><label><span class="sr-only">Family</span><select id="family-filter" aria-label="Family" disabled><option value="all">All families</option></select></label><label><span class="sr-only">Batch</span><select id="batch-filter" aria-label="Batch" disabled><option value="all">All batches</option></select></label><span id="review-count" aria-live="polite"></span></div>
+      <div id="agent-filters" class="agent-filters" hidden><span id="active-filters" aria-live="polite"></span><button id="browse-all" class="quiet-button">Browse all</button></div>
       <div class="cards" id="cards" aria-label="Symbols" aria-busy="true"></div>
       <p id="empty" class="empty" role="status" hidden>No matching symbols.</p>
       <p id="load-error" class="error" role="alert" hidden></p>
@@ -41,6 +43,8 @@
       <div id="symbol-options" class="symbol-options" hidden></div>
       <div class="review-tools"><label class="toggle"><input id="approve-design" type="checkbox" disabled><span id="approval-label">Unverified</span></label><button id="show-configurations" class="quiet-button" disabled>Variations</button><button id="verify-next" class="verify-button" disabled>Verify &amp; next</button><button id="undo-approval" class="quiet-button" disabled>Undo</button></div>
       <p id="pending-note" class="pending-note" hidden>Pending in this browser. Copy approvals to publish.</p>
+      <button id="use-symbol" class="verify-button" hidden>Use this symbol</button>
+      <p id="draft-note" class="pending-note" hidden>Unsaved draft · saving does not verify a design.</p>
       <details class="description"><summary>Description</summary><p id="description"></p><h3>Keywords</h3><ul id="keywords" class="tags" aria-label="Search keywords"></ul></details>
     </section>
   </main>
