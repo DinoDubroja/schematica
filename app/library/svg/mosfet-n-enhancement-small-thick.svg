@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000016 29.196723 34.865984" width="10.29995506mm" height="12.29994436mm">
+  <title>N-channel enhancement MOSFET</title>
+  <desc>N-channel enhancement MOSFET. The body is explicitly tied to source. A broken channel indicates enhancement mode.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 4.5, "body-width": 2.92499, "grid": 1.0}, "origin_svg": [-51.249465, -54.567026], "parts": ["lead-gate", "lead-drain", "lead-source", "gate", "channel", "drain-branch", "source-branch", "body-source-link", "body-arrow"], "pins_mm": {"drain": [3.0, 5.0], "gate": [-5.0, 0.0], "source": [3.0, -5.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "mosfet-n-enhancement"}</metadata>
+  <g id="sc-mosfet-n-enhancement-r1-small-thick--sc-mosfet-n-enhancement-r1-small-thick" inkscape:label="N-channel enhancement MOSFET / small / thick" data-symbol="mosfet-n-enhancement" data-revision="1" data-size="small" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-51.249465,-54.567026)scale(0.996264,-0.996264)">
+    <g data-part="lead-gate" id="sc-mosfet-n-enhancement-r1-small-thick--sc-mosfet-n-enhancement-r1-small-thick--lead-gate" inkscape:label="lead-gate">
+      <path d="M-14.2263 0H-1.9205" fill="none" />
+      <desc>Electrical lead: Gate</desc>
+    </g>
+    <g data-part="lead-drain" id="sc-mosfet-n-enhancement-r1-small-thick--sc-mosfet-n-enhancement-r1-small-thick--lead-drain" inkscape:label="lead-drain">
+      <path d="M8.53578 14.2263V5.54825H6.40182" fill="none" />
+      <desc>Electrical lead: Drain</desc>
+    </g>
+    <g data-part="lead-source" id="sc-mosfet-n-enhancement-r1-small-thick--sc-mosfet-n-enhancement-r1-small-thick--lead-source" inkscape:label="lead-source">
+      <path d="M8.53578-14.2263V-5.54825H6.40182" fill="none" />
+      <desc>Electrical lead: Source</desc>
+    </g>
+    <g data-part="gate" id="sc-mosfet-n-enhancement-r1-small-thick--sc-mosfet-n-enhancement-r1-small-thick--gate" inkscape:label="gate">
+      <path d="M-1.9205-6.40182V6.40182" fill="none" />
+      <desc>Gate</desc>
+    </g>
+    <g data-part="channel" id="sc-mosfet-n-enhancement-r1-small-thick--sc-mosfet-n-enhancement-r1-small-thick--channel" inkscape:label="channel">
+      <path d="M1.28035-6.40182V-3.41429" fill="none" />
+      <path d="M1.28035-1.49374V1.49374" fill="none" />
+      <path d="M1.28035 3.41429V6.40182" fill="none" />
+      <desc>Channel</desc>
+    </g>
+    <g data-part="drain-branch" id="sc-mosfet-n-enhancement-r1-small-thick--sc-mosfet-n-enhancement-r1-small-thick--drain-branch" inkscape:label="drain-branch">
+      <path d="M1.28035 5.54825H6.40182" fill="none" />
+      <desc>Drain branch</desc>
+    </g>
+    <g data-part="source-branch" id="sc-mosfet-n-enhancement-r1-small-thick--sc-mosfet-n-enhancement-r1-small-thick--source-branch" inkscape:label="source-branch">
+      <path d="M1.28035-5.54825H6.40182" fill="none" />
+      <desc>Source branch</desc>
+    </g>
+    <g data-part="body-source-link" id="sc-mosfet-n-enhancement-r1-small-thick--sc-mosfet-n-enhancement-r1-small-thick--body-source-link" inkscape:label="body-source-link">
+      <path d="M1.28035 0H6.40182V-5.54825" fill="none" />
+      <path d="M6.9993-5.54825C6.9993-5.21828 6.7318-4.95078 6.40182-4.95078C6.07185-4.95078 5.80435-5.21828 5.80435-5.54825S6.07185-6.14572 6.40182-6.14572C6.7318-6.14572 6.9993-5.87822 6.9993-5.54825ZM6.40182-5.54825" stroke="none" />
+      <desc>Body source link</desc>
+    </g>
+    <g data-part="body-arrow" id="sc-mosfet-n-enhancement-r1-small-thick--sc-mosfet-n-enhancement-r1-small-thick--body-arrow" inkscape:label="body-arrow">
+      <path d="M3.52097-1.17363L1.28035 0L3.52097 1.17363Z" stroke="none" />
+      <desc>Body arrow</desc>
+    </g>
+  </g>
+</svg>

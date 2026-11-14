@@ -1,0 +1,68 @@
+schema_version: 1
+id: transistor-npn
+revision: 1
+name: NPN transistor
+description: NPN bipolar transistor; the emitter arrow points away from the base.
+keywords:
+- transistor
+- active
+- npn
+- BJT
+- NPN
+- transistors
+- overnight
+- batch 02
+types:
+- transistors
+family: transistors
+batch: overnight-transistors-02
+attributes:
+  polarity: npn
+  device: bjt
+  enclosed: false
+recipe: transistor-npn
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: npn
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: base
+  name: Base
+  description: Base
+  kind: input
+  lead_part: lead-base
+- id: collector
+  name: Collector
+  description: Collector
+  kind: passive
+  lead_part: lead-collector
+- id: emitter
+  name: Emitter
+  description: Emitter
+  kind: passive
+  lead_part: lead-emitter
+parts:
+- id: lead-base
+  description: 'Electrical lead: Base'
+- id: lead-collector
+  description: 'Electrical lead: Collector'
+- id: lead-emitter
+  description: 'Electrical lead: Emitter'
+- id: base
+  description: Base
+- id: collector-branch
+  description: Collector branch
+- id: emitter-branch
+  description: Emitter branch
+- id: emitter-arrow
+  description: Emitter arrow

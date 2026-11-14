@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000019 37.467418 34.989501" width="13.21767246mm" height="12.34351841mm">
+  <title>NPN phototransistor</title>
+  <desc>Two-terminal NPN phototransistor with an unconnected internal base and incoming light arrows.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 5.25, "body-width": 3.375, "enclosure-diameter": 8.4, "grid": 1.0}, "origin_svg": [-47.230676, -54.230899], "parts": ["lead-collector", "lead-emitter", "base", "collector-branch", "emitter-branch", "emitter-arrow", "enclosure", "light-arrows"], "pins_mm": {"collector": [3.0, 5.0], "emitter": [3.0, -5.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "thin", "stroke_mm": 0.15}, "symbol_id": "phototransistor-npn"}</metadata>
+  <g id="sc-phototransistor-npn-r1-small-thin--sc-phototransistor-npn-r1-small-thin" inkscape:label="NPN phototransistor / small / thin" data-symbol="phototransistor-npn" data-revision="1" data-size="small" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(-47.230676,-54.230899)scale(0.996264,-0.996264)">
+    <g data-part="lead-collector" id="sc-phototransistor-npn-r1-small-thin--sc-phototransistor-npn-r1-small-thin--lead-collector" inkscape:label="lead-collector">
+      <path d="M8.53578 14.2263V7.4688H6.40182" fill="none" />
+      <desc>Electrical lead: Collector</desc>
+    </g>
+    <g data-part="lead-emitter" id="sc-phototransistor-npn-r1-small-thin--sc-phototransistor-npn-r1-small-thin--lead-emitter" inkscape:label="lead-emitter">
+      <path d="M8.53578-14.2263V-7.4688H6.40182" fill="none" />
+      <desc>Electrical lead: Emitter</desc>
+    </g>
+    <g data-part="base" id="sc-phototransistor-npn-r1-small-thin--sc-phototransistor-npn-r1-small-thin--base" inkscape:label="base">
+      <path d="M-3.20091-5.12143V5.12143" fill="none" />
+      <desc>Base</desc>
+    </g>
+    <g data-part="collector-branch" id="sc-phototransistor-npn-r1-small-thin--sc-phototransistor-npn-r1-small-thin--collector-branch" inkscape:label="collector-branch">
+      <path d="M-3.20091 3.20091L6.40182 7.4688" fill="none" />
+      <desc>Collector branch</desc>
+    </g>
+    <g data-part="emitter-branch" id="sc-phototransistor-npn-r1-small-thin--sc-phototransistor-npn-r1-small-thin--emitter-branch" inkscape:label="emitter-branch">
+      <path d="M-3.20091-3.20091L6.40182-7.4688" fill="none" />
+      <desc>Emitter branch</desc>
+    </g>
+    <g data-part="emitter-arrow" id="sc-phototransistor-npn-r1-small-thin--sc-phototransistor-npn-r1-small-thin--emitter-arrow" inkscape:label="emitter-arrow">
+      <path d="M3.12386-4.72763L4.69466-6.71004L2.17058-6.8725Z" stroke="none" />
+      <desc>Emitter arrow</desc>
+    </g>
+    <g data-part="enclosure" id="sc-phototransistor-npn-r1-small-thin--sc-phototransistor-npn-r1-small-thin--enclosure" inkscape:label="enclosure">
+      <path d="M13.01704 0C13.01704 6.59991 7.66689 11.95007 1.06697 11.95007C-5.53294 11.95007-10.8831 6.59991-10.8831 0S-5.53294-11.95007 1.06697-11.95007C7.66689-11.95007 13.01704-6.59991 13.01704 0ZM1.06697 0" fill="none" />
+      <desc>Enclosure</desc>
+    </g>
+    <g data-part="light-arrows" id="sc-phototransistor-npn-r1-small-thin--sc-phototransistor-npn-r1-small-thin--light-arrows" inkscape:label="light-arrows">
+      <path d="M-18.47357 11.00476L-13.44382 5.975" fill="none" />
+      <path d="M-14.19827 8.99283L-13.44382 5.975L-16.46164 6.72946" fill="none" />
+      <path d="M-14.7013 14.7771L-9.67152 9.74731" fill="none" />
+      <path d="M-10.42598 12.76514L-9.67152 9.74731L-12.68935 10.50177" fill="none" />
+      <desc>Light arrows</desc>
+    </g>
+  </g>
+</svg>

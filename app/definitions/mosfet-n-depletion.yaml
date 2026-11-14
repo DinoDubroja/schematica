@@ -1,0 +1,79 @@
+schema_version: 1
+id: mosfet-n-depletion
+revision: 1
+name: N-channel depletion MOSFET
+description: N-channel depletion MOSFET. The body is explicitly tied to source. A
+  continuous channel indicates depletion mode.
+keywords:
+- transistor
+- active
+- nigfetd
+- N-channel
+- MOSFET
+- MOS
+- field effect
+- depletion
+- body tied to source
+- transistors
+- mosfet
+- n
+- overnight
+- batch 02
+types:
+- transistors
+family: transistors
+batch: overnight-transistors-02
+attributes:
+  channel: n
+  device: mosfet
+  enclosed: false
+recipe: mosfet-n-depletion
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: nigfetd
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: gate
+  name: Gate
+  description: Gate
+  kind: input
+  lead_part: lead-gate
+- id: drain
+  name: Drain
+  description: Drain
+  kind: passive
+  lead_part: lead-drain
+- id: source
+  name: Source
+  description: Source
+  kind: passive
+  lead_part: lead-source
+parts:
+- id: lead-gate
+  description: 'Electrical lead: Gate'
+- id: lead-drain
+  description: 'Electrical lead: Drain'
+- id: lead-source
+  description: 'Electrical lead: Source'
+- id: gate
+  description: Gate
+- id: channel
+  description: Channel
+- id: drain-branch
+  description: Drain branch
+- id: source-branch
+  description: Source branch
+- id: body-source-link
+  description: Body source link
+- id: body-arrow
+  description: Body arrow

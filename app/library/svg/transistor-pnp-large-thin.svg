@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000021 40.110029 51.448549" width="14.14992690mm" height="18.14990479mm">
+  <title>PNP transistor</title>
+  <desc>PNP bipolar transistor; the emitter arrow points toward the base.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 8.75, "body-width": 5.625, "grid": 1.0}, "origin_svg": [-42.958185, -46.275746], "parts": ["lead-base", "lead-collector", "lead-emitter", "base", "collector-branch", "emitter-branch", "emitter-arrow"], "pins_mm": {"base": [-8.0, 0.0], "collector": [4.0, 8.0], "emitter": [4.0, -8.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "thin", "stroke_mm": 0.15}, "symbol_id": "transistor-pnp"}</metadata>
+  <g id="sc-transistor-pnp-r1-large-thin--sc-transistor-pnp-r1-large-thin" inkscape:label="PNP transistor / large / thin" data-symbol="transistor-pnp" data-revision="1" data-size="large" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(-42.958185,-46.275746)scale(0.996264,-0.996264)">
+    <g data-part="lead-base" id="sc-transistor-pnp-r1-large-thin--sc-transistor-pnp-r1-large-thin--lead-base" inkscape:label="lead-base">
+      <path d="M-22.76208 0H-5.33485" fill="none" />
+      <desc>Electrical lead: Base</desc>
+    </g>
+    <g data-part="lead-collector" id="sc-transistor-pnp-r1-large-thin--sc-transistor-pnp-r1-large-thin--lead-collector" inkscape:label="lead-collector">
+      <path d="M11.38104 22.76208V12.44801H10.66972" fill="none" />
+      <desc>Electrical lead: Collector</desc>
+    </g>
+    <g data-part="lead-emitter" id="sc-transistor-pnp-r1-large-thin--sc-transistor-pnp-r1-large-thin--lead-emitter" inkscape:label="lead-emitter">
+      <path d="M11.38104-22.76208V-12.44801H10.66972" fill="none" />
+      <desc>Electrical lead: Emitter</desc>
+    </g>
+    <g data-part="base" id="sc-transistor-pnp-r1-large-thin--sc-transistor-pnp-r1-large-thin--base" inkscape:label="base">
+      <path d="M-5.33485-8.53574V8.53574" fill="none" />
+      <desc>Base</desc>
+    </g>
+    <g data-part="collector-branch" id="sc-transistor-pnp-r1-large-thin--sc-transistor-pnp-r1-large-thin--collector-branch" inkscape:label="collector-branch">
+      <path d="M-5.33485 5.33485L10.66972 12.44801" fill="none" />
+      <desc>Collector branch</desc>
+    </g>
+    <g data-part="emitter-branch" id="sc-transistor-pnp-r1-large-thin--sc-transistor-pnp-r1-large-thin--emitter-branch" inkscape:label="emitter-branch">
+      <path d="M-5.33485-5.33485L10.66972-12.44801" fill="none" />
+      <desc>Emitter branch</desc>
+    </g>
+    <g data-part="emitter-arrow" id="sc-transistor-pnp-r1-large-thin--sc-transistor-pnp-r1-large-thin--emitter-arrow" inkscape:label="emitter-arrow">
+      <path d="M.83981-10.21957L-1.77827-6.91551L2.42862-6.64459Z" stroke="none" />
+      <desc>Emitter arrow</desc>
+    </g>
+  </g>
+</svg>

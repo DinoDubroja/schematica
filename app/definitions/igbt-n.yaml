@@ -1,0 +1,75 @@
+schema_version: 1
+id: igbt-n
+revision: 1
+name: N-channel IGBT
+description: Insulated-gate bipolar transistor with gate, collector and emitter; no
+  antiparallel diode is shown.
+keywords:
+- transistor
+- active
+- nigbt
+- N-channel
+- IGBT
+- insulated gate
+- power
+- transistors
+- igbt
+- n
+- overnight
+- batch 02
+types:
+- transistors
+family: transistors
+batch: overnight-transistors-02
+attributes:
+  channel: n
+  device: igbt
+  enclosed: false
+recipe: igbt-n
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: nigbt
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: gate
+  name: Gate
+  description: Gate
+  kind: input
+  lead_part: lead-gate
+- id: collector
+  name: Collector
+  description: Collector
+  kind: passive
+  lead_part: lead-collector
+- id: emitter
+  name: Emitter
+  description: Emitter
+  kind: passive
+  lead_part: lead-emitter
+parts:
+- id: lead-gate
+  description: 'Electrical lead: Gate'
+- id: lead-collector
+  description: 'Electrical lead: Collector'
+- id: lead-emitter
+  description: 'Electrical lead: Emitter'
+- id: base
+  description: Base
+- id: collector-branch
+  description: Collector branch
+- id: emitter-branch
+  description: Emitter branch
+- id: emitter-arrow
+  description: Emitter arrow
+- id: insulated-gate
+  description: Insulated gate

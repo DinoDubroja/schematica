@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000018 28.913247 51.590288" width="10.19995102mm" height="18.19990716mm">
+  <title>P-channel JFET</title>
+  <desc>P-channel JFET with gate, drain and source terminals; the junction arrow points from P material to N material.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 7.5, "body-width": 2.5, "grid": 1.0}, "origin_svg": [-42.887314, -46.204875], "parts": ["lead-gate", "lead-drain", "lead-source", "channel", "gate-arrow"], "pins_mm": {"drain": [0.0, 8.0], "gate": [-8.0, 0.0], "source": [0.0, -8.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "jfet-p"}</metadata>
+  <g id="sc-jfet-p-r1-large-medium--sc-jfet-p-r1-large-medium" inkscape:label="P-channel JFET / large / medium" data-symbol="jfet-p" data-revision="1" data-size="large" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-42.887314,-46.204875)scale(0.996264,-0.996264)">
+    <g data-part="lead-gate" id="sc-jfet-p-r1-large-medium--sc-jfet-p-r1-large-medium--lead-gate" inkscape:label="lead-gate">
+      <path d="M-22.76208 0H0" fill="none" />
+      <desc>Electrical lead: Gate</desc>
+    </g>
+    <g data-part="lead-drain" id="sc-jfet-p-r1-large-medium--sc-jfet-p-r1-large-medium--lead-drain" inkscape:label="lead-drain">
+      <path d="M0 22.76208V10.66972" fill="none" />
+      <desc>Electrical lead: Drain</desc>
+    </g>
+    <g data-part="lead-source" id="sc-jfet-p-r1-large-medium--sc-jfet-p-r1-large-medium--lead-source" inkscape:label="lead-source">
+      <path d="M0-22.76208V-10.66972" fill="none" />
+      <desc>Electrical lead: Source</desc>
+    </g>
+    <g data-part="channel" id="sc-jfet-p-r1-large-medium--sc-jfet-p-r1-large-medium--channel" inkscape:label="channel">
+      <path d="M0-10.66972V10.66972" fill="none" />
+      <desc>Channel</desc>
+    </g>
+    <g data-part="gate-arrow" id="sc-jfet-p-r1-large-medium--sc-jfet-p-r1-large-medium--gate-arrow" inkscape:label="gate-arrow">
+      <path d="M-3.37875-1.95612L-7.11314 0L-3.37875 1.95612Z" stroke="none" />
+      <desc>Gate arrow</desc>
+    </g>
+  </g>
+</svg>

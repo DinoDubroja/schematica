@@ -15,6 +15,21 @@ FAMILIES = {'resistors','capacitors','inductors-and-transformers','diodes','tran
 NUMBER = r'[-+]?(?:\d*\.\d+|\d+\.?\d*)(?:[eE][-+]?\d+)?'
 
 
+def straight_points(path):
+    """Decode the actual converter path, including its H/V optimizations."""
+    points=[];x=y=0
+    for command,values in re.findall(r'([MLHVZ])([^MLHVZ]*)',path.get('d')):
+        values=[float(n)*25.4/72.27 for n in re.findall(NUMBER,values)]
+        if command in ('M','L'):
+            for i in range(0,len(values),2):
+                x,y=values[i:i+2];points.append((x,y))
+        elif command=='H':
+            for x in values:points.append((x,y))
+        elif command=='V':
+            for y in values:points.append((x,y))
+    return points
+
+
 class Batch02(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -91,6 +106,35 @@ class Batch02(unittest.TestCase):
                     self.assertAlmostEqual(math.dist(*s),10/3*config['settings']['size_factor'],delta=.0003)
                     shafts.append(s)
                 self.assertAlmostEqual(math.dist(shafts[0][0],shafts[1][0]),2.5*config['settings']['size_factor'],delta=.0003)
+
+    def test_transistor_terminals_channels_and_actual_arrow_polarity(self):
+        for symbol in self.new:
+            if symbol['family']!='transistors':continue
+            sid=symbol['id'];device=symbol['attributes']['device'];pchannel=symbol['attributes'].get('channel')=='p'
+            bjt=device=='bjt';igbt=device=='igbt';photo=sid=='phototransistor-npn';bulk=sid.endswith('-bulk')
+            expected=({'collector','emitter'} if photo else {'collector','emitter','base'} if bjt else
+                      {'collector','emitter','gate'} if igbt else {'drain','source','gate','bulk'} if bulk else {'drain','source','gate'})
+            self.assertEqual({p['id'] for p in symbol['pins']},expected,sid)
+            for config in symbol['configurations']:
+                pins=config['pins_mm'];upper='collector' if bjt or igbt else 'drain';lower='emitter' if bjt or igbt else 'source'
+                self.assertGreater(pins[upper][1],0);self.assertLess(pins[lower][1],0)
+                if not photo:self.assertLess(pins['base' if bjt else 'gate'][0],min(pins[upper][0],pins[lower][0]))
+                if bulk:self.assertGreater(pins['bulk'][0],pins[lower][0])
+                parts={g.get('data-part'):g for g in artwork(config).iter() if g.get('data-part')}
+                arrow_part='emitter-arrow' if bjt or igbt else 'gate-arrow' if device=='jfet' else 'body-arrow'
+                points=straight_points(next(parts[arrow_part].iter(f'{{{SVG}}}path')))
+                self.assertEqual(len(points),3)
+                direction=points[1][0]-(points[0][0]+points[2][0])/2
+                positive=(symbol['attributes'].get('polarity')!='pnp') if bjt else True if igbt else (not pchannel) if device=='jfet' else pchannel
+                self.assertGreater(direction if positive else -direction,0,sid)
+                if device=='mosfet':
+                    self.assertEqual(len(list(parts['channel'].iter(f'{{{SVG}}}path'))),1 if 'depletion' in sid else 3)
+                    self.assertEqual('body-source-link' in parts,not bulk)
+                if photo:
+                    rays=list(parts['light-arrows'].iter(f'{{{SVG}}}path'));self.assertEqual(len(rays),4)
+                    for shaft in rays[::2]:
+                        pts=straight_points(shaft)
+                        self.assertGreater(pts[1][0],pts[0][0]);self.assertLess(pts[1][1],pts[0][1])
 
 
 if __name__=='__main__':unittest.main()

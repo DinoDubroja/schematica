@@ -29,7 +29,7 @@ Status: complete — 7 designs / 63 configurations; Unverified.
 
 ### Transistors
 
-Status: planned.
+Status: complete — 12 designs / 108 configurations; Unverified.
 
 `transistor-npn`, `transistor-pnp`, `jfet-n`, `jfet-p`, `mosfet-n-enhancement`, `mosfet-p-enhancement`, `mosfet-n-depletion`, `mosfet-p-depletion`, `mosfet-n-enhancement-bulk`, `mosfet-p-enhancement-bulk`, `phototransistor-npn`, `igbt-n`.
 

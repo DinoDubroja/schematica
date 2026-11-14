@@ -1,0 +1,68 @@
+schema_version: 1
+id: jfet-n
+revision: 1
+name: N-channel JFET
+description: N-channel JFET with gate, drain and source terminals; the junction arrow
+  points from P material to N material.
+keywords:
+- transistor
+- active
+- njfet
+- N-channel
+- JFET
+- junction FET
+- transistors
+- jfet
+- n
+- overnight
+- batch 02
+types:
+- transistors
+family: transistors
+batch: overnight-transistors-02
+attributes:
+  channel: n
+  device: jfet
+  enclosed: false
+recipe: jfet-n
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: njfet
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: gate
+  name: Gate
+  description: Gate
+  kind: input
+  lead_part: lead-gate
+- id: drain
+  name: Drain
+  description: Drain
+  kind: passive
+  lead_part: lead-drain
+- id: source
+  name: Source
+  description: Source
+  kind: passive
+  lead_part: lead-source
+parts:
+- id: lead-gate
+  description: 'Electrical lead: Gate'
+- id: lead-drain
+  description: 'Electrical lead: Drain'
+- id: lead-source
+  description: 'Electrical lead: Source'
+- id: channel
+  description: Channel
+- id: gate-arrow
+  description: Gate arrow

@@ -1,0 +1,85 @@
+schema_version: 1
+id: mosfet-p-enhancement-bulk
+revision: 1
+name: P-channel enhancement MOSFET - bulk terminal
+description: P-channel enhancement MOSFET - bulk terminal. The body has its own fourth
+  terminal. A broken channel indicates enhancement mode.
+keywords:
+- transistor
+- active
+- pigfete
+- P-channel
+- MOSFET
+- MOS
+- field effect
+- enhancement
+- explicit bulk
+- transistors
+- mosfet
+- p
+- bulk
+- overnight
+- batch 02
+types:
+- transistors
+family: transistors
+batch: overnight-transistors-02
+attributes:
+  channel: p
+  device: mosfet
+  enclosed: false
+recipe: mosfet-p-enhancement-bulk
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: pigfete
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: gate
+  name: Gate
+  description: Gate
+  kind: input
+  lead_part: lead-gate
+- id: drain
+  name: Drain
+  description: Drain
+  kind: passive
+  lead_part: lead-drain
+- id: source
+  name: Source
+  description: Source
+  kind: passive
+  lead_part: lead-source
+- id: bulk
+  name: Bulk / body
+  description: Independent substrate terminal
+  kind: passive
+  lead_part: lead-bulk
+parts:
+- id: lead-gate
+  description: 'Electrical lead: Gate'
+- id: lead-drain
+  description: 'Electrical lead: Drain'
+- id: lead-source
+  description: 'Electrical lead: Source'
+- id: gate
+  description: Gate
+- id: channel
+  description: Channel
+- id: drain-branch
+  description: Drain branch
+- id: source-branch
+  description: Source branch
+- id: lead-bulk
+  description: 'Electrical lead: Bulk / body'
+- id: body-arrow
+  description: Body arrow

@@ -29559,6 +29559,7405 @@
         }
       ],
       "source_fingerprint": "7f0bcca5c98ffab902b2bc9f7bf9bbe1f164a90bfeeffdbc3a7fe201c6c5ed0a"
+    },
+    {
+      "schema_version": 1,
+      "id": "igbt-n",
+      "revision": 1,
+      "name": "N-channel IGBT",
+      "description": "Insulated-gate bipolar transistor with gate, collector and emitter; no antiparallel diode is shown.",
+      "keywords": [
+        "transistor",
+        "active",
+        "nigbt",
+        "N-channel",
+        "IGBT",
+        "insulated gate",
+        "power",
+        "transistors",
+        "igbt",
+        "n",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "transistors"
+      ],
+      "family": "transistors",
+      "batch": "overnight-transistors-02",
+      "attributes": {
+        "channel": "n",
+        "device": "igbt",
+        "enclosed": false
+      },
+      "recipe": "igbt-n",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "nigbt",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "gate",
+          "name": "Gate",
+          "description": "Gate",
+          "kind": "input",
+          "lead_part": "lead-gate"
+        },
+        {
+          "id": "collector",
+          "name": "Collector",
+          "description": "Collector",
+          "kind": "passive",
+          "lead_part": "lead-collector"
+        },
+        {
+          "id": "emitter",
+          "name": "Emitter",
+          "description": "Emitter",
+          "kind": "passive",
+          "lead_part": "lead-emitter"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-gate",
+          "description": "Electrical lead: Gate"
+        },
+        {
+          "id": "lead-collector",
+          "description": "Electrical lead: Collector"
+        },
+        {
+          "id": "lead-emitter",
+          "description": "Electrical lead: Emitter"
+        },
+        {
+          "id": "base",
+          "description": "Base"
+        },
+        {
+          "id": "collector-branch",
+          "description": "Collector branch"
+        },
+        {
+          "id": "emitter-branch",
+          "description": "Emitter branch"
+        },
+        {
+          "id": "emitter-arrow",
+          "description": "Emitter arrow"
+        },
+        {
+          "id": "insulated-gate",
+          "description": "Insulated gate"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "igbt-n-small-thin",
+          "symbol_id": "igbt-n",
+          "name": "N-channel IGBT",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/igbt-n-small-thin.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -51.462077,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            -0.9999951777777749,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "collector": [
+              3.0,
+              5.0
+            ],
+            "emitter": [
+              3.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 5.25,
+            "body-width": 3.67499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow",
+            "insulated-gate"
+          ],
+          "svg_bytes": 3199,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "igbt-n-small-medium",
+          "symbol_id": "igbt-n",
+          "name": "N-channel IGBT",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/igbt-n-small-medium.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -51.391206,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            -0.9999939430555558,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "collector": [
+              3.0,
+              5.0
+            ],
+            "emitter": [
+              3.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 5.25,
+            "body-width": 3.67499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow",
+            "insulated-gate"
+          ],
+          "svg_bytes": 3240,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "igbt-n-small-thick",
+          "symbol_id": "igbt-n",
+          "name": "N-channel IGBT",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/igbt-n-small-thick.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -51.249465,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            -0.999995001388889,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "collector": [
+              3.0,
+              5.0
+            ],
+            "emitter": [
+              3.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 5.25,
+            "body-width": 3.67499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow",
+            "insulated-gate"
+          ],
+          "svg_bytes": 3219,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "igbt-n-medium-thin",
+          "symbol_id": "igbt-n",
+          "name": "N-channel IGBT",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/igbt-n-medium-thin.svg",
+          "width_mm": 11.1499396,
+          "height_mm": 14.1499269,
+          "origin_svg": [
+            -48.627446,
+            -51.945007
+          ],
+          "visual_center_from_origin_mm": [
+            -1.4999927666666661,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "collector": [
+              3.0,
+              6.0
+            ],
+            "emitter": [
+              3.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.0,
+            "body-width": 4.9,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow",
+            "insulated-gate"
+          ],
+          "svg_bytes": 3201,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "igbt-n-medium-medium",
+          "symbol_id": "igbt-n",
+          "name": "N-channel IGBT",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/igbt-n-medium-medium.svg",
+          "width_mm": 11.1999455,
+          "height_mm": 14.19992891,
+          "origin_svg": [
+            -48.556576,
+            -51.874137
+          ],
+          "visual_center_from_origin_mm": [
+            -1.4999911791666651,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "collector": [
+              3.0,
+              6.0
+            ],
+            "emitter": [
+              3.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.0,
+            "body-width": 4.9,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow",
+            "insulated-gate"
+          ],
+          "svg_bytes": 3242,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "igbt-n-medium-thick",
+          "symbol_id": "igbt-n",
+          "name": "N-channel IGBT",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/igbt-n-medium-thick.svg",
+          "width_mm": 11.29994988,
+          "height_mm": 14.2999333,
+          "origin_svg": [
+            -48.414834,
+            -51.732395
+          ],
+          "visual_center_from_origin_mm": [
+            -1.4999924138888892,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "collector": [
+              3.0,
+              6.0
+            ],
+            "emitter": [
+              3.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.0,
+            "body-width": 4.9,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow",
+            "insulated-gate"
+          ],
+          "svg_bytes": 3221,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "igbt-n-large-thin",
+          "symbol_id": "igbt-n",
+          "name": "N-channel IGBT",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/igbt-n-large-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 18.14990479,
+          "origin_svg": [
+            -42.958185,
+            -46.275746
+          ],
+          "visual_center_from_origin_mm": [
+            -1.999988415277777,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "collector": [
+              4.0,
+              8.0
+            ],
+            "emitter": [
+              4.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 8.75,
+            "body-width": 6.12498,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow",
+            "insulated-gate"
+          ],
+          "svg_bytes": 3222,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "igbt-n-large-medium",
+          "symbol_id": "igbt-n",
+          "name": "N-channel IGBT",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/igbt-n-large-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 18.19990716,
+          "origin_svg": [
+            -42.887314,
+            -46.204875
+          ],
+          "visual_center_from_origin_mm": [
+            -1.9999891208333307,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "collector": [
+              4.0,
+              8.0
+            ],
+            "emitter": [
+              4.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 8.75,
+            "body-width": 6.12498,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow",
+            "insulated-gate"
+          ],
+          "svg_bytes": 3263,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "igbt-n-large-thick",
+          "symbol_id": "igbt-n",
+          "name": "N-channel IGBT",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/igbt-n-large-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 18.29991507,
+          "origin_svg": [
+            -42.745573,
+            -46.063134
+          ],
+          "visual_center_from_origin_mm": [
+            -1.9999900027777753,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "collector": [
+              4.0,
+              8.0
+            ],
+            "emitter": [
+              4.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 8.75,
+            "body-width": 6.12498,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow",
+            "insulated-gate"
+          ],
+          "svg_bytes": 3242,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "18abc41aac79357b80cc67e090b187ddfa1aea279f67453009cdc69934dd2dce"
+    },
+    {
+      "schema_version": 1,
+      "id": "jfet-n",
+      "revision": 1,
+      "name": "N-channel JFET",
+      "description": "N-channel JFET with gate, drain and source terminals; the junction arrow points from P material to N material.",
+      "keywords": [
+        "transistor",
+        "active",
+        "njfet",
+        "N-channel",
+        "JFET",
+        "junction FET",
+        "transistors",
+        "jfet",
+        "n",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "transistors"
+      ],
+      "family": "transistors",
+      "batch": "overnight-transistors-02",
+      "attributes": {
+        "channel": "n",
+        "device": "jfet",
+        "enclosed": false
+      },
+      "recipe": "jfet-n",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "njfet",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "gate",
+          "name": "Gate",
+          "description": "Gate",
+          "kind": "input",
+          "lead_part": "lead-gate"
+        },
+        {
+          "id": "drain",
+          "name": "Drain",
+          "description": "Drain",
+          "kind": "passive",
+          "lead_part": "lead-drain"
+        },
+        {
+          "id": "source",
+          "name": "Source",
+          "description": "Source",
+          "kind": "passive",
+          "lead_part": "lead-source"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-gate",
+          "description": "Electrical lead: Gate"
+        },
+        {
+          "id": "lead-drain",
+          "description": "Electrical lead: Drain"
+        },
+        {
+          "id": "lead-source",
+          "description": "Electrical lead: Source"
+        },
+        {
+          "id": "channel",
+          "description": "Channel"
+        },
+        {
+          "id": "gate-arrow",
+          "description": "Gate arrow"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "jfet-n-small-thin",
+          "symbol_id": "jfet-n",
+          "name": "N-channel JFET",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/jfet-n-small-thin.svg",
+          "width_mm": 7.14996171,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -51.462077,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            -2.49998688611111,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "drain": [
+              0.0,
+              5.0
+            ],
+            "source": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 4.5,
+            "body-width": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "channel",
+            "gate-arrow"
+          ],
+          "svg_bytes": 2339,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "jfet-n-small-medium",
+          "symbol_id": "jfet-n",
+          "name": "N-channel JFET",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/jfet-n-small-medium.svg",
+          "width_mm": 7.19996373,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -51.391206,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            -2.4999875916666667,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "drain": [
+              0.0,
+              5.0
+            ],
+            "source": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 4.5,
+            "body-width": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "channel",
+            "gate-arrow"
+          ],
+          "svg_bytes": 2368,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "jfet-n-small-thick",
+          "symbol_id": "jfet-n",
+          "name": "N-channel JFET",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/jfet-n-small-thick.svg",
+          "width_mm": 7.29997164,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -51.249465,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            -2.4999867097222195,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "drain": [
+              0.0,
+              5.0
+            ],
+            "source": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 4.5,
+            "body-width": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "channel",
+            "gate-arrow"
+          ],
+          "svg_bytes": 2353,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "jfet-n-medium-thin",
+          "symbol_id": "jfet-n",
+          "name": "N-channel JFET",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/jfet-n-medium-thin.svg",
+          "width_mm": 8.14995618,
+          "height_mm": 14.1499269,
+          "origin_svg": [
+            -48.627446,
+            -51.945007
+          ],
+          "visual_center_from_origin_mm": [
+            -2.999984474999999,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "drain": [
+              0.0,
+              6.0
+            ],
+            "source": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 6.0,
+            "body-width": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "channel",
+            "gate-arrow"
+          ],
+          "svg_bytes": 2354,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "jfet-n-medium-medium",
+          "symbol_id": "jfet-n",
+          "name": "N-channel JFET",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/jfet-n-medium-medium.svg",
+          "width_mm": 8.19996173,
+          "height_mm": 14.19992891,
+          "origin_svg": [
+            -48.556576,
+            -51.874137
+          ],
+          "visual_center_from_origin_mm": [
+            -2.9999830638888865,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "drain": [
+              0.0,
+              6.0
+            ],
+            "source": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 6.0,
+            "body-width": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "channel",
+            "gate-arrow"
+          ],
+          "svg_bytes": 2383,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "jfet-n-medium-thick",
+          "symbol_id": "jfet-n",
+          "name": "N-channel JFET",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/jfet-n-medium-thick.svg",
+          "width_mm": 8.29996611,
+          "height_mm": 14.2999333,
+          "origin_svg": [
+            -48.414834,
+            -51.732395
+          ],
+          "visual_center_from_origin_mm": [
+            -2.9999842986111105,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "drain": [
+              0.0,
+              6.0
+            ],
+            "source": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 6.0,
+            "body-width": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "channel",
+            "gate-arrow"
+          ],
+          "svg_bytes": 2368,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "jfet-n-large-thin",
+          "symbol_id": "jfet-n",
+          "name": "N-channel JFET",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/jfet-n-large-thin.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 18.14990479,
+          "origin_svg": [
+            -42.958185,
+            -46.275746
+          ],
+          "visual_center_from_origin_mm": [
+            -3.999979299999997,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "drain": [
+              0.0,
+              8.0
+            ],
+            "source": [
+              0.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.5,
+            "body-width": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "channel",
+            "gate-arrow"
+          ],
+          "svg_bytes": 2347,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "jfet-n-large-medium",
+          "symbol_id": "jfet-n",
+          "name": "N-channel JFET",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/jfet-n-large-medium.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 18.19990716,
+          "origin_svg": [
+            -42.887314,
+            -46.204875
+          ],
+          "visual_center_from_origin_mm": [
+            -3.999978065277775,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "drain": [
+              0.0,
+              8.0
+            ],
+            "source": [
+              0.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.5,
+            "body-width": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "channel",
+            "gate-arrow"
+          ],
+          "svg_bytes": 2376,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "jfet-n-large-thick",
+          "symbol_id": "jfet-n",
+          "name": "N-channel JFET",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/jfet-n-large-thick.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 18.29991507,
+          "origin_svg": [
+            -42.745573,
+            -46.063134
+          ],
+          "visual_center_from_origin_mm": [
+            -3.999979123611111,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "drain": [
+              0.0,
+              8.0
+            ],
+            "source": [
+              0.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.5,
+            "body-width": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "channel",
+            "gate-arrow"
+          ],
+          "svg_bytes": 2361,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "ac0b48c89320367fc6cc2949c3c89908aea1af2095b0566ed0fa981680b0d2d1"
+    },
+    {
+      "schema_version": 1,
+      "id": "jfet-p",
+      "revision": 1,
+      "name": "P-channel JFET",
+      "description": "P-channel JFET with gate, drain and source terminals; the junction arrow points from P material to N material.",
+      "keywords": [
+        "transistor",
+        "active",
+        "pjfet",
+        "P-channel",
+        "JFET",
+        "junction FET",
+        "transistors",
+        "jfet",
+        "p",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "transistors"
+      ],
+      "family": "transistors",
+      "batch": "overnight-transistors-02",
+      "attributes": {
+        "channel": "p",
+        "device": "jfet",
+        "enclosed": false
+      },
+      "recipe": "jfet-p",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "pjfet",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "gate",
+          "name": "Gate",
+          "description": "Gate",
+          "kind": "input",
+          "lead_part": "lead-gate"
+        },
+        {
+          "id": "drain",
+          "name": "Drain",
+          "description": "Drain",
+          "kind": "passive",
+          "lead_part": "lead-drain"
+        },
+        {
+          "id": "source",
+          "name": "Source",
+          "description": "Source",
+          "kind": "passive",
+          "lead_part": "lead-source"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-gate",
+          "description": "Electrical lead: Gate"
+        },
+        {
+          "id": "lead-drain",
+          "description": "Electrical lead: Drain"
+        },
+        {
+          "id": "lead-source",
+          "description": "Electrical lead: Source"
+        },
+        {
+          "id": "channel",
+          "description": "Channel"
+        },
+        {
+          "id": "gate-arrow",
+          "description": "Gate arrow"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "jfet-p-small-thin",
+          "symbol_id": "jfet-p",
+          "name": "P-channel JFET",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/jfet-p-small-thin.svg",
+          "width_mm": 7.14996171,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -51.462077,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            -2.49998688611111,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "drain": [
+              0.0,
+              5.0
+            ],
+            "source": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 4.5,
+            "body-width": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "channel",
+            "gate-arrow"
+          ],
+          "svg_bytes": 2346,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "jfet-p-small-medium",
+          "symbol_id": "jfet-p",
+          "name": "P-channel JFET",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/jfet-p-small-medium.svg",
+          "width_mm": 7.19996373,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -51.391206,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            -2.4999875916666667,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "drain": [
+              0.0,
+              5.0
+            ],
+            "source": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 4.5,
+            "body-width": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "channel",
+            "gate-arrow"
+          ],
+          "svg_bytes": 2375,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "jfet-p-small-thick",
+          "symbol_id": "jfet-p",
+          "name": "P-channel JFET",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/jfet-p-small-thick.svg",
+          "width_mm": 7.29997164,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -51.249465,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            -2.4999867097222195,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "drain": [
+              0.0,
+              5.0
+            ],
+            "source": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 4.5,
+            "body-width": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "channel",
+            "gate-arrow"
+          ],
+          "svg_bytes": 2360,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "jfet-p-medium-thin",
+          "symbol_id": "jfet-p",
+          "name": "P-channel JFET",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/jfet-p-medium-thin.svg",
+          "width_mm": 8.14995618,
+          "height_mm": 14.1499269,
+          "origin_svg": [
+            -48.627446,
+            -51.945007
+          ],
+          "visual_center_from_origin_mm": [
+            -2.999984474999999,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "drain": [
+              0.0,
+              6.0
+            ],
+            "source": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 6.0,
+            "body-width": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "channel",
+            "gate-arrow"
+          ],
+          "svg_bytes": 2357,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "jfet-p-medium-medium",
+          "symbol_id": "jfet-p",
+          "name": "P-channel JFET",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/jfet-p-medium-medium.svg",
+          "width_mm": 8.19996173,
+          "height_mm": 14.19992891,
+          "origin_svg": [
+            -48.556576,
+            -51.874137
+          ],
+          "visual_center_from_origin_mm": [
+            -2.9999830638888865,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "drain": [
+              0.0,
+              6.0
+            ],
+            "source": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 6.0,
+            "body-width": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "channel",
+            "gate-arrow"
+          ],
+          "svg_bytes": 2386,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "jfet-p-medium-thick",
+          "symbol_id": "jfet-p",
+          "name": "P-channel JFET",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/jfet-p-medium-thick.svg",
+          "width_mm": 8.29996611,
+          "height_mm": 14.2999333,
+          "origin_svg": [
+            -48.414834,
+            -51.732395
+          ],
+          "visual_center_from_origin_mm": [
+            -2.9999842986111105,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "drain": [
+              0.0,
+              6.0
+            ],
+            "source": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 6.0,
+            "body-width": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "channel",
+            "gate-arrow"
+          ],
+          "svg_bytes": 2371,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "jfet-p-large-thin",
+          "symbol_id": "jfet-p",
+          "name": "P-channel JFET",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/jfet-p-large-thin.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 18.14990479,
+          "origin_svg": [
+            -42.958185,
+            -46.275746
+          ],
+          "visual_center_from_origin_mm": [
+            -3.999979299999997,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "drain": [
+              0.0,
+              8.0
+            ],
+            "source": [
+              0.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.5,
+            "body-width": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "channel",
+            "gate-arrow"
+          ],
+          "svg_bytes": 2354,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "jfet-p-large-medium",
+          "symbol_id": "jfet-p",
+          "name": "P-channel JFET",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/jfet-p-large-medium.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 18.19990716,
+          "origin_svg": [
+            -42.887314,
+            -46.204875
+          ],
+          "visual_center_from_origin_mm": [
+            -3.999978065277775,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "drain": [
+              0.0,
+              8.0
+            ],
+            "source": [
+              0.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.5,
+            "body-width": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "channel",
+            "gate-arrow"
+          ],
+          "svg_bytes": 2383,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "jfet-p-large-thick",
+          "symbol_id": "jfet-p",
+          "name": "P-channel JFET",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/jfet-p-large-thick.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 18.29991507,
+          "origin_svg": [
+            -42.745573,
+            -46.063134
+          ],
+          "visual_center_from_origin_mm": [
+            -3.999979123611111,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "drain": [
+              0.0,
+              8.0
+            ],
+            "source": [
+              0.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.5,
+            "body-width": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "channel",
+            "gate-arrow"
+          ],
+          "svg_bytes": 2368,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "ba02408ffc65927057be7b07f6ab8fed5c3e101baca182e27dcf02ea4a7295e7"
+    },
+    {
+      "schema_version": 1,
+      "id": "mosfet-n-depletion",
+      "revision": 1,
+      "name": "N-channel depletion MOSFET",
+      "description": "N-channel depletion MOSFET. The body is explicitly tied to source. A continuous channel indicates depletion mode.",
+      "keywords": [
+        "transistor",
+        "active",
+        "nigfetd",
+        "N-channel",
+        "MOSFET",
+        "MOS",
+        "field effect",
+        "depletion",
+        "body tied to source",
+        "transistors",
+        "mosfet",
+        "n",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "transistors"
+      ],
+      "family": "transistors",
+      "batch": "overnight-transistors-02",
+      "attributes": {
+        "channel": "n",
+        "device": "mosfet",
+        "enclosed": false
+      },
+      "recipe": "mosfet-n-depletion",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "nigfetd",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "gate",
+          "name": "Gate",
+          "description": "Gate",
+          "kind": "input",
+          "lead_part": "lead-gate"
+        },
+        {
+          "id": "drain",
+          "name": "Drain",
+          "description": "Drain",
+          "kind": "passive",
+          "lead_part": "lead-drain"
+        },
+        {
+          "id": "source",
+          "name": "Source",
+          "description": "Source",
+          "kind": "passive",
+          "lead_part": "lead-source"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-gate",
+          "description": "Electrical lead: Gate"
+        },
+        {
+          "id": "lead-drain",
+          "description": "Electrical lead: Drain"
+        },
+        {
+          "id": "lead-source",
+          "description": "Electrical lead: Source"
+        },
+        {
+          "id": "gate",
+          "description": "Gate"
+        },
+        {
+          "id": "channel",
+          "description": "Channel"
+        },
+        {
+          "id": "drain-branch",
+          "description": "Drain branch"
+        },
+        {
+          "id": "source-branch",
+          "description": "Source branch"
+        },
+        {
+          "id": "body-source-link",
+          "description": "Body source link"
+        },
+        {
+          "id": "body-arrow",
+          "description": "Body arrow"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "mosfet-n-depletion-small-thin",
+          "symbol_id": "mosfet-n-depletion",
+          "name": "N-channel depletion MOSFET",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/mosfet-n-depletion-small-thin.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -51.462077,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            -0.9999951777777749,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              5.0
+            ],
+            "source": [
+              3.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 4.5,
+            "body-width": 2.92499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 3880,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-n-depletion-small-medium",
+          "symbol_id": "mosfet-n-depletion",
+          "name": "N-channel depletion MOSFET",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/mosfet-n-depletion-small-medium.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -51.391206,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            -0.9999939430555558,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              5.0
+            ],
+            "source": [
+              3.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 4.5,
+            "body-width": 2.92499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 3925,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-n-depletion-small-thick",
+          "symbol_id": "mosfet-n-depletion",
+          "name": "N-channel depletion MOSFET",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/mosfet-n-depletion-small-thick.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -51.249465,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            -0.999995001388889,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              5.0
+            ],
+            "source": [
+              3.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 4.5,
+            "body-width": 2.92499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 3902,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-n-depletion-medium-thin",
+          "symbol_id": "mosfet-n-depletion",
+          "name": "N-channel depletion MOSFET",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/mosfet-n-depletion-medium-thin.svg",
+          "width_mm": 11.35494265,
+          "height_mm": 14.1499269,
+          "origin_svg": [
+            -48.627446,
+            -51.945007
+          ],
+          "visual_center_from_origin_mm": [
+            -1.3974912430555537,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              6.0
+            ],
+            "source": [
+              3.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 6.0,
+            "body-width": 3.9,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 3887,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-n-depletion-medium-medium",
+          "symbol_id": "mosfet-n-depletion",
+          "name": "N-channel depletion MOSFET",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/mosfet-n-depletion-medium-medium.svg",
+          "width_mm": 11.37994189,
+          "height_mm": 14.19992891,
+          "origin_svg": [
+            -48.556576,
+            -51.874137
+          ],
+          "visual_center_from_origin_mm": [
+            -1.4099929819444423,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              6.0
+            ],
+            "source": [
+              3.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 6.0,
+            "body-width": 3.9,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 3932,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-n-depletion-medium-thick",
+          "symbol_id": "mosfet-n-depletion",
+          "name": "N-channel depletion MOSFET",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/mosfet-n-depletion-medium-thick.svg",
+          "width_mm": 11.42994779,
+          "height_mm": 14.2999333,
+          "origin_svg": [
+            -48.414834,
+            -51.732395
+          ],
+          "visual_center_from_origin_mm": [
+            -1.4349934611111086,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              6.0
+            ],
+            "source": [
+              3.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 6.0,
+            "body-width": 3.9,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 3909,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-n-depletion-large-thin",
+          "symbol_id": "mosfet-n-depletion",
+          "name": "N-channel depletion MOSFET",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/mosfet-n-depletion-large-thin.svg",
+          "width_mm": 14.17491556,
+          "height_mm": 18.14990479,
+          "origin_svg": [
+            -42.958185,
+            -46.275746
+          ],
+          "visual_center_from_origin_mm": [
+            -1.9874940847222204,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "drain": [
+              4.0,
+              8.0
+            ],
+            "source": [
+              4.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.5,
+            "body-width": 4.87498,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 3930,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-n-depletion-large-medium",
+          "symbol_id": "mosfet-n-depletion",
+          "name": "N-channel depletion MOSFET",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/mosfet-n-depletion-large-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 18.19990716,
+          "origin_svg": [
+            -42.887314,
+            -46.204875
+          ],
+          "visual_center_from_origin_mm": [
+            -1.9999891208333307,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "drain": [
+              4.0,
+              8.0
+            ],
+            "source": [
+              4.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.5,
+            "body-width": 4.87498,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 3975,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-n-depletion-large-thick",
+          "symbol_id": "mosfet-n-depletion",
+          "name": "N-channel depletion MOSFET",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/mosfet-n-depletion-large-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 18.29991507,
+          "origin_svg": [
+            -42.745573,
+            -46.063134
+          ],
+          "visual_center_from_origin_mm": [
+            -1.9999900027777753,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "drain": [
+              4.0,
+              8.0
+            ],
+            "source": [
+              4.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.5,
+            "body-width": 4.87498,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 3952,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "a6f6621237dd20fea9ef14a08a56081d4f5633e00ac4351d0c692f69af51b420"
+    },
+    {
+      "schema_version": 1,
+      "id": "mosfet-n-enhancement",
+      "revision": 1,
+      "name": "N-channel enhancement MOSFET",
+      "description": "N-channel enhancement MOSFET. The body is explicitly tied to source. A broken channel indicates enhancement mode.",
+      "keywords": [
+        "transistor",
+        "active",
+        "nigfete",
+        "N-channel",
+        "MOSFET",
+        "MOS",
+        "field effect",
+        "enhancement",
+        "body tied to source",
+        "transistors",
+        "mosfet",
+        "n",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "transistors"
+      ],
+      "family": "transistors",
+      "batch": "overnight-transistors-02",
+      "attributes": {
+        "channel": "n",
+        "device": "mosfet",
+        "enclosed": false
+      },
+      "recipe": "mosfet-n-enhancement",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "nigfete",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "gate",
+          "name": "Gate",
+          "description": "Gate",
+          "kind": "input",
+          "lead_part": "lead-gate"
+        },
+        {
+          "id": "drain",
+          "name": "Drain",
+          "description": "Drain",
+          "kind": "passive",
+          "lead_part": "lead-drain"
+        },
+        {
+          "id": "source",
+          "name": "Source",
+          "description": "Source",
+          "kind": "passive",
+          "lead_part": "lead-source"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-gate",
+          "description": "Electrical lead: Gate"
+        },
+        {
+          "id": "lead-drain",
+          "description": "Electrical lead: Drain"
+        },
+        {
+          "id": "lead-source",
+          "description": "Electrical lead: Source"
+        },
+        {
+          "id": "gate",
+          "description": "Gate"
+        },
+        {
+          "id": "channel",
+          "description": "Channel"
+        },
+        {
+          "id": "drain-branch",
+          "description": "Drain branch"
+        },
+        {
+          "id": "source-branch",
+          "description": "Source branch"
+        },
+        {
+          "id": "body-source-link",
+          "description": "Body source link"
+        },
+        {
+          "id": "body-arrow",
+          "description": "Body arrow"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "mosfet-n-enhancement-small-thin",
+          "symbol_id": "mosfet-n-enhancement",
+          "name": "N-channel enhancement MOSFET",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/mosfet-n-enhancement-small-thin.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -51.462077,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            -0.9999951777777749,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              5.0
+            ],
+            "source": [
+              3.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 4.5,
+            "body-width": 2.92499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 4041,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-n-enhancement-small-medium",
+          "symbol_id": "mosfet-n-enhancement",
+          "name": "N-channel enhancement MOSFET",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/mosfet-n-enhancement-small-medium.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -51.391206,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            -0.9999939430555558,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              5.0
+            ],
+            "source": [
+              3.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 4.5,
+            "body-width": 2.92499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 4086,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-n-enhancement-small-thick",
+          "symbol_id": "mosfet-n-enhancement",
+          "name": "N-channel enhancement MOSFET",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/mosfet-n-enhancement-small-thick.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -51.249465,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            -0.999995001388889,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              5.0
+            ],
+            "source": [
+              3.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 4.5,
+            "body-width": 2.92499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 4063,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-n-enhancement-medium-thin",
+          "symbol_id": "mosfet-n-enhancement",
+          "name": "N-channel enhancement MOSFET",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/mosfet-n-enhancement-medium-thin.svg",
+          "width_mm": 11.35494265,
+          "height_mm": 14.1499269,
+          "origin_svg": [
+            -48.627446,
+            -51.945007
+          ],
+          "visual_center_from_origin_mm": [
+            -1.3974912430555537,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              6.0
+            ],
+            "source": [
+              3.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 6.0,
+            "body-width": 3.9,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 4048,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-n-enhancement-medium-medium",
+          "symbol_id": "mosfet-n-enhancement",
+          "name": "N-channel enhancement MOSFET",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/mosfet-n-enhancement-medium-medium.svg",
+          "width_mm": 11.37994189,
+          "height_mm": 14.19992891,
+          "origin_svg": [
+            -48.556576,
+            -51.874137
+          ],
+          "visual_center_from_origin_mm": [
+            -1.4099929819444423,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              6.0
+            ],
+            "source": [
+              3.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 6.0,
+            "body-width": 3.9,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 4093,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-n-enhancement-medium-thick",
+          "symbol_id": "mosfet-n-enhancement",
+          "name": "N-channel enhancement MOSFET",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/mosfet-n-enhancement-medium-thick.svg",
+          "width_mm": 11.42994779,
+          "height_mm": 14.2999333,
+          "origin_svg": [
+            -48.414834,
+            -51.732395
+          ],
+          "visual_center_from_origin_mm": [
+            -1.4349934611111086,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              6.0
+            ],
+            "source": [
+              3.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 6.0,
+            "body-width": 3.9,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 4070,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-n-enhancement-large-thin",
+          "symbol_id": "mosfet-n-enhancement",
+          "name": "N-channel enhancement MOSFET",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/mosfet-n-enhancement-large-thin.svg",
+          "width_mm": 14.17491556,
+          "height_mm": 18.14990479,
+          "origin_svg": [
+            -42.958185,
+            -46.275746
+          ],
+          "visual_center_from_origin_mm": [
+            -1.9874940847222204,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "drain": [
+              4.0,
+              8.0
+            ],
+            "source": [
+              4.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.5,
+            "body-width": 4.87498,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 4091,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-n-enhancement-large-medium",
+          "symbol_id": "mosfet-n-enhancement",
+          "name": "N-channel enhancement MOSFET",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/mosfet-n-enhancement-large-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 18.19990716,
+          "origin_svg": [
+            -42.887314,
+            -46.204875
+          ],
+          "visual_center_from_origin_mm": [
+            -1.9999891208333307,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "drain": [
+              4.0,
+              8.0
+            ],
+            "source": [
+              4.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.5,
+            "body-width": 4.87498,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 4136,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-n-enhancement-large-thick",
+          "symbol_id": "mosfet-n-enhancement",
+          "name": "N-channel enhancement MOSFET",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/mosfet-n-enhancement-large-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 18.29991507,
+          "origin_svg": [
+            -42.745573,
+            -46.063134
+          ],
+          "visual_center_from_origin_mm": [
+            -1.9999900027777753,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "drain": [
+              4.0,
+              8.0
+            ],
+            "source": [
+              4.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.5,
+            "body-width": 4.87498,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 4113,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "8713ac44f2491035e1eb67c35da97e34fb847d4d8f6141c2428324b1f946cb1c"
+    },
+    {
+      "schema_version": 1,
+      "id": "mosfet-n-enhancement-bulk",
+      "revision": 1,
+      "name": "N-channel enhancement MOSFET - bulk terminal",
+      "description": "N-channel enhancement MOSFET - bulk terminal. The body has its own fourth terminal. A broken channel indicates enhancement mode.",
+      "keywords": [
+        "transistor",
+        "active",
+        "nigfete",
+        "N-channel",
+        "MOSFET",
+        "MOS",
+        "field effect",
+        "enhancement",
+        "explicit bulk",
+        "transistors",
+        "mosfet",
+        "n",
+        "bulk",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "transistors"
+      ],
+      "family": "transistors",
+      "batch": "overnight-transistors-02",
+      "attributes": {
+        "channel": "n",
+        "device": "mosfet",
+        "enclosed": false
+      },
+      "recipe": "mosfet-n-enhancement-bulk",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "nigfete",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "gate",
+          "name": "Gate",
+          "description": "Gate",
+          "kind": "input",
+          "lead_part": "lead-gate"
+        },
+        {
+          "id": "drain",
+          "name": "Drain",
+          "description": "Drain",
+          "kind": "passive",
+          "lead_part": "lead-drain"
+        },
+        {
+          "id": "source",
+          "name": "Source",
+          "description": "Source",
+          "kind": "passive",
+          "lead_part": "lead-source"
+        },
+        {
+          "id": "bulk",
+          "name": "Bulk / body",
+          "description": "Independent substrate terminal",
+          "kind": "passive",
+          "lead_part": "lead-bulk"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-gate",
+          "description": "Electrical lead: Gate"
+        },
+        {
+          "id": "lead-drain",
+          "description": "Electrical lead: Drain"
+        },
+        {
+          "id": "lead-source",
+          "description": "Electrical lead: Source"
+        },
+        {
+          "id": "gate",
+          "description": "Gate"
+        },
+        {
+          "id": "channel",
+          "description": "Channel"
+        },
+        {
+          "id": "drain-branch",
+          "description": "Drain branch"
+        },
+        {
+          "id": "source-branch",
+          "description": "Source branch"
+        },
+        {
+          "id": "lead-bulk",
+          "description": "Electrical lead: Bulk / body"
+        },
+        {
+          "id": "body-arrow",
+          "description": "Body arrow"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "mosfet-n-enhancement-bulk-small-thin",
+          "symbol_id": "mosfet-n-enhancement-bulk",
+          "name": "N-channel enhancement MOSFET - bulk terminal",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/mosfet-n-enhancement-bulk-small-thin.svg",
+          "width_mm": 12.14993407,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -51.462077,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              5.0
+            ],
+            "source": [
+              3.0,
+              -5.0
+            ],
+            "bulk": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 4.5,
+            "body-width": 2.92499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "lead-bulk",
+            "body-arrow"
+          ],
+          "svg_bytes": 3956,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-n-enhancement-bulk-small-medium",
+          "symbol_id": "mosfet-n-enhancement-bulk",
+          "name": "N-channel enhancement MOSFET - bulk terminal",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/mosfet-n-enhancement-bulk-small-medium.svg",
+          "width_mm": 12.19993997,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -51.391206,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666653306492e-07,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              5.0
+            ],
+            "source": [
+              3.0,
+              -5.0
+            ],
+            "bulk": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 4.5,
+            "body-width": 2.92499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "lead-bulk",
+            "body-arrow"
+          ],
+          "svg_bytes": 4001,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-n-enhancement-bulk-small-thick",
+          "symbol_id": "mosfet-n-enhancement-bulk",
+          "name": "N-channel enhancement MOSFET - bulk terminal",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/mosfet-n-enhancement-bulk-small-thick.svg",
+          "width_mm": 12.29994436,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -51.249465,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              5.0
+            ],
+            "source": [
+              3.0,
+              -5.0
+            ],
+            "bulk": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 4.5,
+            "body-width": 2.92499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "lead-bulk",
+            "body-arrow"
+          ],
+          "svg_bytes": 3978,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-n-enhancement-bulk-medium-thin",
+          "symbol_id": "mosfet-n-enhancement-bulk",
+          "name": "N-channel enhancement MOSFET - bulk terminal",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/mosfet-n-enhancement-bulk-medium-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 14.1499269,
+          "origin_svg": [
+            -48.627446,
+            -51.945007
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              6.0
+            ],
+            "source": [
+              3.0,
+              -6.0
+            ],
+            "bulk": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 6.0,
+            "body-width": 3.9,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "lead-bulk",
+            "body-arrow"
+          ],
+          "svg_bytes": 3962,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-n-enhancement-bulk-medium-medium",
+          "symbol_id": "mosfet-n-enhancement-bulk",
+          "name": "N-channel enhancement MOSFET - bulk terminal",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/mosfet-n-enhancement-bulk-medium-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 14.19992891,
+          "origin_svg": [
+            -48.556576,
+            -51.874137
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              6.0
+            ],
+            "source": [
+              3.0,
+              -6.0
+            ],
+            "bulk": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 6.0,
+            "body-width": 3.9,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "lead-bulk",
+            "body-arrow"
+          ],
+          "svg_bytes": 4007,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-n-enhancement-bulk-medium-thick",
+          "symbol_id": "mosfet-n-enhancement-bulk",
+          "name": "N-channel enhancement MOSFET - bulk terminal",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/mosfet-n-enhancement-bulk-medium-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 14.2999333,
+          "origin_svg": [
+            -48.414834,
+            -51.732395
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              6.0
+            ],
+            "source": [
+              3.0,
+              -6.0
+            ],
+            "bulk": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 6.0,
+            "body-width": 3.9,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "lead-bulk",
+            "body-arrow"
+          ],
+          "svg_bytes": 3984,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-n-enhancement-bulk-large-thin",
+          "symbol_id": "mosfet-n-enhancement-bulk",
+          "name": "N-channel enhancement MOSFET - bulk terminal",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/mosfet-n-enhancement-bulk-large-thin.svg",
+          "width_mm": 18.14990479,
+          "height_mm": 18.14990479,
+          "origin_svg": [
+            -42.958185,
+            -46.275746
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "drain": [
+              4.0,
+              8.0
+            ],
+            "source": [
+              4.0,
+              -8.0
+            ],
+            "bulk": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.5,
+            "body-width": 4.87498,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "lead-bulk",
+            "body-arrow"
+          ],
+          "svg_bytes": 3972,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-n-enhancement-bulk-large-medium",
+          "symbol_id": "mosfet-n-enhancement-bulk",
+          "name": "N-channel enhancement MOSFET - bulk terminal",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/mosfet-n-enhancement-bulk-large-medium.svg",
+          "width_mm": 18.19990716,
+          "height_mm": 18.19990716,
+          "origin_svg": [
+            -42.887314,
+            -46.204875
+          ],
+          "visual_center_from_origin_mm": [
+            2.5066368733759088e-15,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "drain": [
+              4.0,
+              8.0
+            ],
+            "source": [
+              4.0,
+              -8.0
+            ],
+            "bulk": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.5,
+            "body-width": 4.87498,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "lead-bulk",
+            "body-arrow"
+          ],
+          "svg_bytes": 4017,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-n-enhancement-bulk-large-thick",
+          "symbol_id": "mosfet-n-enhancement-bulk",
+          "name": "N-channel enhancement MOSFET - bulk terminal",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/mosfet-n-enhancement-bulk-large-thick.svg",
+          "width_mm": 18.29991507,
+          "height_mm": 18.29991507,
+          "origin_svg": [
+            -42.745573,
+            -46.063134
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "drain": [
+              4.0,
+              8.0
+            ],
+            "source": [
+              4.0,
+              -8.0
+            ],
+            "bulk": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.5,
+            "body-width": 4.87498,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "lead-bulk",
+            "body-arrow"
+          ],
+          "svg_bytes": 3994,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "d25e7adf9b0d16a41863b4578e7147e895941fc638720bae838bf48d7815b778"
+    },
+    {
+      "schema_version": 1,
+      "id": "mosfet-p-depletion",
+      "revision": 1,
+      "name": "P-channel depletion MOSFET",
+      "description": "P-channel depletion MOSFET. The body is explicitly tied to source. A continuous channel indicates depletion mode.",
+      "keywords": [
+        "transistor",
+        "active",
+        "pigfetd",
+        "P-channel",
+        "MOSFET",
+        "MOS",
+        "field effect",
+        "depletion",
+        "body tied to source",
+        "transistors",
+        "mosfet",
+        "p",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "transistors"
+      ],
+      "family": "transistors",
+      "batch": "overnight-transistors-02",
+      "attributes": {
+        "channel": "p",
+        "device": "mosfet",
+        "enclosed": false
+      },
+      "recipe": "mosfet-p-depletion",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "pigfetd",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "gate",
+          "name": "Gate",
+          "description": "Gate",
+          "kind": "input",
+          "lead_part": "lead-gate"
+        },
+        {
+          "id": "drain",
+          "name": "Drain",
+          "description": "Drain",
+          "kind": "passive",
+          "lead_part": "lead-drain"
+        },
+        {
+          "id": "source",
+          "name": "Source",
+          "description": "Source",
+          "kind": "passive",
+          "lead_part": "lead-source"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-gate",
+          "description": "Electrical lead: Gate"
+        },
+        {
+          "id": "lead-drain",
+          "description": "Electrical lead: Drain"
+        },
+        {
+          "id": "lead-source",
+          "description": "Electrical lead: Source"
+        },
+        {
+          "id": "gate",
+          "description": "Gate"
+        },
+        {
+          "id": "channel",
+          "description": "Channel"
+        },
+        {
+          "id": "drain-branch",
+          "description": "Drain branch"
+        },
+        {
+          "id": "source-branch",
+          "description": "Source branch"
+        },
+        {
+          "id": "body-source-link",
+          "description": "Body source link"
+        },
+        {
+          "id": "body-arrow",
+          "description": "Body arrow"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "mosfet-p-depletion-small-thin",
+          "symbol_id": "mosfet-p-depletion",
+          "name": "P-channel depletion MOSFET",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/mosfet-p-depletion-small-thin.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -51.462077,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            -0.9999951777777749,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              5.0
+            ],
+            "source": [
+              3.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 4.5,
+            "body-width": 2.92499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 3880,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-p-depletion-small-medium",
+          "symbol_id": "mosfet-p-depletion",
+          "name": "P-channel depletion MOSFET",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/mosfet-p-depletion-small-medium.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -51.391206,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            -0.9999939430555558,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              5.0
+            ],
+            "source": [
+              3.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 4.5,
+            "body-width": 2.92499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 3925,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-p-depletion-small-thick",
+          "symbol_id": "mosfet-p-depletion",
+          "name": "P-channel depletion MOSFET",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/mosfet-p-depletion-small-thick.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -51.249465,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            -0.999995001388889,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              5.0
+            ],
+            "source": [
+              3.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 4.5,
+            "body-width": 2.92499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 3902,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-p-depletion-medium-thin",
+          "symbol_id": "mosfet-p-depletion",
+          "name": "P-channel depletion MOSFET",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/mosfet-p-depletion-medium-thin.svg",
+          "width_mm": 11.35494265,
+          "height_mm": 14.1499269,
+          "origin_svg": [
+            -48.627446,
+            -51.945007
+          ],
+          "visual_center_from_origin_mm": [
+            -1.3974912430555537,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              6.0
+            ],
+            "source": [
+              3.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 6.0,
+            "body-width": 3.9,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 3887,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-p-depletion-medium-medium",
+          "symbol_id": "mosfet-p-depletion",
+          "name": "P-channel depletion MOSFET",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/mosfet-p-depletion-medium-medium.svg",
+          "width_mm": 11.37994189,
+          "height_mm": 14.19992891,
+          "origin_svg": [
+            -48.556576,
+            -51.874137
+          ],
+          "visual_center_from_origin_mm": [
+            -1.4099929819444423,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              6.0
+            ],
+            "source": [
+              3.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 6.0,
+            "body-width": 3.9,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 3932,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-p-depletion-medium-thick",
+          "symbol_id": "mosfet-p-depletion",
+          "name": "P-channel depletion MOSFET",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/mosfet-p-depletion-medium-thick.svg",
+          "width_mm": 11.42994779,
+          "height_mm": 14.2999333,
+          "origin_svg": [
+            -48.414834,
+            -51.732395
+          ],
+          "visual_center_from_origin_mm": [
+            -1.4349934611111086,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              6.0
+            ],
+            "source": [
+              3.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 6.0,
+            "body-width": 3.9,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 3909,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-p-depletion-large-thin",
+          "symbol_id": "mosfet-p-depletion",
+          "name": "P-channel depletion MOSFET",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/mosfet-p-depletion-large-thin.svg",
+          "width_mm": 14.17491556,
+          "height_mm": 18.14990479,
+          "origin_svg": [
+            -42.958185,
+            -46.275746
+          ],
+          "visual_center_from_origin_mm": [
+            -1.9874940847222204,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "drain": [
+              4.0,
+              8.0
+            ],
+            "source": [
+              4.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.5,
+            "body-width": 4.87498,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 3928,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-p-depletion-large-medium",
+          "symbol_id": "mosfet-p-depletion",
+          "name": "P-channel depletion MOSFET",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/mosfet-p-depletion-large-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 18.19990716,
+          "origin_svg": [
+            -42.887314,
+            -46.204875
+          ],
+          "visual_center_from_origin_mm": [
+            -1.9999891208333307,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "drain": [
+              4.0,
+              8.0
+            ],
+            "source": [
+              4.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.5,
+            "body-width": 4.87498,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 3973,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-p-depletion-large-thick",
+          "symbol_id": "mosfet-p-depletion",
+          "name": "P-channel depletion MOSFET",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/mosfet-p-depletion-large-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 18.29991507,
+          "origin_svg": [
+            -42.745573,
+            -46.063134
+          ],
+          "visual_center_from_origin_mm": [
+            -1.9999900027777753,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "drain": [
+              4.0,
+              8.0
+            ],
+            "source": [
+              4.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.5,
+            "body-width": 4.87498,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 3950,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "5c4f01a765b7324badbc422e2fb9710ebd17cd4c24deaf7dbe80278c4a27cc69"
+    },
+    {
+      "schema_version": 1,
+      "id": "mosfet-p-enhancement",
+      "revision": 1,
+      "name": "P-channel enhancement MOSFET",
+      "description": "P-channel enhancement MOSFET. The body is explicitly tied to source. A broken channel indicates enhancement mode.",
+      "keywords": [
+        "transistor",
+        "active",
+        "pigfete",
+        "P-channel",
+        "MOSFET",
+        "MOS",
+        "field effect",
+        "enhancement",
+        "body tied to source",
+        "transistors",
+        "mosfet",
+        "p",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "transistors"
+      ],
+      "family": "transistors",
+      "batch": "overnight-transistors-02",
+      "attributes": {
+        "channel": "p",
+        "device": "mosfet",
+        "enclosed": false
+      },
+      "recipe": "mosfet-p-enhancement",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "pigfete",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "gate",
+          "name": "Gate",
+          "description": "Gate",
+          "kind": "input",
+          "lead_part": "lead-gate"
+        },
+        {
+          "id": "drain",
+          "name": "Drain",
+          "description": "Drain",
+          "kind": "passive",
+          "lead_part": "lead-drain"
+        },
+        {
+          "id": "source",
+          "name": "Source",
+          "description": "Source",
+          "kind": "passive",
+          "lead_part": "lead-source"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-gate",
+          "description": "Electrical lead: Gate"
+        },
+        {
+          "id": "lead-drain",
+          "description": "Electrical lead: Drain"
+        },
+        {
+          "id": "lead-source",
+          "description": "Electrical lead: Source"
+        },
+        {
+          "id": "gate",
+          "description": "Gate"
+        },
+        {
+          "id": "channel",
+          "description": "Channel"
+        },
+        {
+          "id": "drain-branch",
+          "description": "Drain branch"
+        },
+        {
+          "id": "source-branch",
+          "description": "Source branch"
+        },
+        {
+          "id": "body-source-link",
+          "description": "Body source link"
+        },
+        {
+          "id": "body-arrow",
+          "description": "Body arrow"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "mosfet-p-enhancement-small-thin",
+          "symbol_id": "mosfet-p-enhancement",
+          "name": "P-channel enhancement MOSFET",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/mosfet-p-enhancement-small-thin.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -51.462077,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            -0.9999951777777749,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              5.0
+            ],
+            "source": [
+              3.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 4.5,
+            "body-width": 2.92499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 4041,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-p-enhancement-small-medium",
+          "symbol_id": "mosfet-p-enhancement",
+          "name": "P-channel enhancement MOSFET",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/mosfet-p-enhancement-small-medium.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -51.391206,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            -0.9999939430555558,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              5.0
+            ],
+            "source": [
+              3.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 4.5,
+            "body-width": 2.92499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 4086,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-p-enhancement-small-thick",
+          "symbol_id": "mosfet-p-enhancement",
+          "name": "P-channel enhancement MOSFET",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/mosfet-p-enhancement-small-thick.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -51.249465,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            -0.999995001388889,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              5.0
+            ],
+            "source": [
+              3.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 4.5,
+            "body-width": 2.92499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 4063,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-p-enhancement-medium-thin",
+          "symbol_id": "mosfet-p-enhancement",
+          "name": "P-channel enhancement MOSFET",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/mosfet-p-enhancement-medium-thin.svg",
+          "width_mm": 11.35494265,
+          "height_mm": 14.1499269,
+          "origin_svg": [
+            -48.627446,
+            -51.945007
+          ],
+          "visual_center_from_origin_mm": [
+            -1.3974912430555537,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              6.0
+            ],
+            "source": [
+              3.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 6.0,
+            "body-width": 3.9,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 4048,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-p-enhancement-medium-medium",
+          "symbol_id": "mosfet-p-enhancement",
+          "name": "P-channel enhancement MOSFET",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/mosfet-p-enhancement-medium-medium.svg",
+          "width_mm": 11.37994189,
+          "height_mm": 14.19992891,
+          "origin_svg": [
+            -48.556576,
+            -51.874137
+          ],
+          "visual_center_from_origin_mm": [
+            -1.4099929819444423,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              6.0
+            ],
+            "source": [
+              3.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 6.0,
+            "body-width": 3.9,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 4093,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-p-enhancement-medium-thick",
+          "symbol_id": "mosfet-p-enhancement",
+          "name": "P-channel enhancement MOSFET",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/mosfet-p-enhancement-medium-thick.svg",
+          "width_mm": 11.42994779,
+          "height_mm": 14.2999333,
+          "origin_svg": [
+            -48.414834,
+            -51.732395
+          ],
+          "visual_center_from_origin_mm": [
+            -1.4349934611111086,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              6.0
+            ],
+            "source": [
+              3.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 6.0,
+            "body-width": 3.9,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 4070,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-p-enhancement-large-thin",
+          "symbol_id": "mosfet-p-enhancement",
+          "name": "P-channel enhancement MOSFET",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/mosfet-p-enhancement-large-thin.svg",
+          "width_mm": 14.17491556,
+          "height_mm": 18.14990479,
+          "origin_svg": [
+            -42.958185,
+            -46.275746
+          ],
+          "visual_center_from_origin_mm": [
+            -1.9874940847222204,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "drain": [
+              4.0,
+              8.0
+            ],
+            "source": [
+              4.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.5,
+            "body-width": 4.87498,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 4089,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-p-enhancement-large-medium",
+          "symbol_id": "mosfet-p-enhancement",
+          "name": "P-channel enhancement MOSFET",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/mosfet-p-enhancement-large-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 18.19990716,
+          "origin_svg": [
+            -42.887314,
+            -46.204875
+          ],
+          "visual_center_from_origin_mm": [
+            -1.9999891208333307,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "drain": [
+              4.0,
+              8.0
+            ],
+            "source": [
+              4.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.5,
+            "body-width": 4.87498,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 4134,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-p-enhancement-large-thick",
+          "symbol_id": "mosfet-p-enhancement",
+          "name": "P-channel enhancement MOSFET",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/mosfet-p-enhancement-large-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 18.29991507,
+          "origin_svg": [
+            -42.745573,
+            -46.063134
+          ],
+          "visual_center_from_origin_mm": [
+            -1.9999900027777753,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "drain": [
+              4.0,
+              8.0
+            ],
+            "source": [
+              4.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.5,
+            "body-width": 4.87498,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "body-source-link",
+            "body-arrow"
+          ],
+          "svg_bytes": 4111,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "2fe6e66a90457b50b59a452a7ab4650acda7fa6e84dba482fe3266d6ef94e29a"
+    },
+    {
+      "schema_version": 1,
+      "id": "mosfet-p-enhancement-bulk",
+      "revision": 1,
+      "name": "P-channel enhancement MOSFET - bulk terminal",
+      "description": "P-channel enhancement MOSFET - bulk terminal. The body has its own fourth terminal. A broken channel indicates enhancement mode.",
+      "keywords": [
+        "transistor",
+        "active",
+        "pigfete",
+        "P-channel",
+        "MOSFET",
+        "MOS",
+        "field effect",
+        "enhancement",
+        "explicit bulk",
+        "transistors",
+        "mosfet",
+        "p",
+        "bulk",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "transistors"
+      ],
+      "family": "transistors",
+      "batch": "overnight-transistors-02",
+      "attributes": {
+        "channel": "p",
+        "device": "mosfet",
+        "enclosed": false
+      },
+      "recipe": "mosfet-p-enhancement-bulk",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "pigfete",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "gate",
+          "name": "Gate",
+          "description": "Gate",
+          "kind": "input",
+          "lead_part": "lead-gate"
+        },
+        {
+          "id": "drain",
+          "name": "Drain",
+          "description": "Drain",
+          "kind": "passive",
+          "lead_part": "lead-drain"
+        },
+        {
+          "id": "source",
+          "name": "Source",
+          "description": "Source",
+          "kind": "passive",
+          "lead_part": "lead-source"
+        },
+        {
+          "id": "bulk",
+          "name": "Bulk / body",
+          "description": "Independent substrate terminal",
+          "kind": "passive",
+          "lead_part": "lead-bulk"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-gate",
+          "description": "Electrical lead: Gate"
+        },
+        {
+          "id": "lead-drain",
+          "description": "Electrical lead: Drain"
+        },
+        {
+          "id": "lead-source",
+          "description": "Electrical lead: Source"
+        },
+        {
+          "id": "gate",
+          "description": "Gate"
+        },
+        {
+          "id": "channel",
+          "description": "Channel"
+        },
+        {
+          "id": "drain-branch",
+          "description": "Drain branch"
+        },
+        {
+          "id": "source-branch",
+          "description": "Source branch"
+        },
+        {
+          "id": "lead-bulk",
+          "description": "Electrical lead: Bulk / body"
+        },
+        {
+          "id": "body-arrow",
+          "description": "Body arrow"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "mosfet-p-enhancement-bulk-small-thin",
+          "symbol_id": "mosfet-p-enhancement-bulk",
+          "name": "P-channel enhancement MOSFET - bulk terminal",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/mosfet-p-enhancement-bulk-small-thin.svg",
+          "width_mm": 12.14993407,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -51.462077,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              5.0
+            ],
+            "source": [
+              3.0,
+              -5.0
+            ],
+            "bulk": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 4.5,
+            "body-width": 2.92499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "lead-bulk",
+            "body-arrow"
+          ],
+          "svg_bytes": 3956,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-p-enhancement-bulk-small-medium",
+          "symbol_id": "mosfet-p-enhancement-bulk",
+          "name": "P-channel enhancement MOSFET - bulk terminal",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/mosfet-p-enhancement-bulk-small-medium.svg",
+          "width_mm": 12.19993997,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -51.391206,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666653306492e-07,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              5.0
+            ],
+            "source": [
+              3.0,
+              -5.0
+            ],
+            "bulk": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 4.5,
+            "body-width": 2.92499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "lead-bulk",
+            "body-arrow"
+          ],
+          "svg_bytes": 4001,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-p-enhancement-bulk-small-thick",
+          "symbol_id": "mosfet-p-enhancement-bulk",
+          "name": "P-channel enhancement MOSFET - bulk terminal",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/mosfet-p-enhancement-bulk-small-thick.svg",
+          "width_mm": 12.29994436,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -51.249465,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -5.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              5.0
+            ],
+            "source": [
+              3.0,
+              -5.0
+            ],
+            "bulk": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 4.5,
+            "body-width": 2.92499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "lead-bulk",
+            "body-arrow"
+          ],
+          "svg_bytes": 3978,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-p-enhancement-bulk-medium-thin",
+          "symbol_id": "mosfet-p-enhancement-bulk",
+          "name": "P-channel enhancement MOSFET - bulk terminal",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/mosfet-p-enhancement-bulk-medium-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 14.1499269,
+          "origin_svg": [
+            -48.627446,
+            -51.945007
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              6.0
+            ],
+            "source": [
+              3.0,
+              -6.0
+            ],
+            "bulk": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 6.0,
+            "body-width": 3.9,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "lead-bulk",
+            "body-arrow"
+          ],
+          "svg_bytes": 3962,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-p-enhancement-bulk-medium-medium",
+          "symbol_id": "mosfet-p-enhancement-bulk",
+          "name": "P-channel enhancement MOSFET - bulk terminal",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/mosfet-p-enhancement-bulk-medium-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 14.19992891,
+          "origin_svg": [
+            -48.556576,
+            -51.874137
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              6.0
+            ],
+            "source": [
+              3.0,
+              -6.0
+            ],
+            "bulk": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 6.0,
+            "body-width": 3.9,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "lead-bulk",
+            "body-arrow"
+          ],
+          "svg_bytes": 4007,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-p-enhancement-bulk-medium-thick",
+          "symbol_id": "mosfet-p-enhancement-bulk",
+          "name": "P-channel enhancement MOSFET - bulk terminal",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/mosfet-p-enhancement-bulk-medium-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 14.2999333,
+          "origin_svg": [
+            -48.414834,
+            -51.732395
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -6.0,
+              0.0
+            ],
+            "drain": [
+              3.0,
+              6.0
+            ],
+            "source": [
+              3.0,
+              -6.0
+            ],
+            "bulk": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 6.0,
+            "body-width": 3.9,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "lead-bulk",
+            "body-arrow"
+          ],
+          "svg_bytes": 3984,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-p-enhancement-bulk-large-thin",
+          "symbol_id": "mosfet-p-enhancement-bulk",
+          "name": "P-channel enhancement MOSFET - bulk terminal",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/mosfet-p-enhancement-bulk-large-thin.svg",
+          "width_mm": 18.14990479,
+          "height_mm": 18.14990479,
+          "origin_svg": [
+            -42.958185,
+            -46.275746
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "drain": [
+              4.0,
+              8.0
+            ],
+            "source": [
+              4.0,
+              -8.0
+            ],
+            "bulk": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.5,
+            "body-width": 4.87498,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "lead-bulk",
+            "body-arrow"
+          ],
+          "svg_bytes": 3970,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-p-enhancement-bulk-large-medium",
+          "symbol_id": "mosfet-p-enhancement-bulk",
+          "name": "P-channel enhancement MOSFET - bulk terminal",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/mosfet-p-enhancement-bulk-large-medium.svg",
+          "width_mm": 18.19990716,
+          "height_mm": 18.19990716,
+          "origin_svg": [
+            -42.887314,
+            -46.204875
+          ],
+          "visual_center_from_origin_mm": [
+            2.5066368733759088e-15,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "drain": [
+              4.0,
+              8.0
+            ],
+            "source": [
+              4.0,
+              -8.0
+            ],
+            "bulk": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.5,
+            "body-width": 4.87498,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "lead-bulk",
+            "body-arrow"
+          ],
+          "svg_bytes": 4015,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "mosfet-p-enhancement-bulk-large-thick",
+          "symbol_id": "mosfet-p-enhancement-bulk",
+          "name": "P-channel enhancement MOSFET - bulk terminal",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/mosfet-p-enhancement-bulk-large-thick.svg",
+          "width_mm": 18.29991507,
+          "height_mm": 18.29991507,
+          "origin_svg": [
+            -42.745573,
+            -46.063134
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "gate": [
+              -8.0,
+              0.0
+            ],
+            "drain": [
+              4.0,
+              8.0
+            ],
+            "source": [
+              4.0,
+              -8.0
+            ],
+            "bulk": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.5,
+            "body-width": 4.87498,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-gate",
+            "lead-drain",
+            "lead-source",
+            "gate",
+            "channel",
+            "drain-branch",
+            "source-branch",
+            "lead-bulk",
+            "body-arrow"
+          ],
+          "svg_bytes": 3992,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "4bfabf2bc6bec66a67abcb81bcafac3321397ba6c875f5fefe826870869c47b9"
+    },
+    {
+      "schema_version": 1,
+      "id": "phototransistor-npn",
+      "revision": 1,
+      "name": "NPN phototransistor",
+      "description": "Two-terminal NPN phototransistor with an unconnected internal base and incoming light arrows.",
+      "keywords": [
+        "transistor",
+        "active",
+        "npn, photo",
+        "BJT",
+        "NPN",
+        "optical",
+        "light-sensitive",
+        "enclosed",
+        "phototransistor",
+        "transistors",
+        "npn",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "transistors"
+      ],
+      "family": "transistors",
+      "batch": "overnight-transistors-02",
+      "attributes": {
+        "polarity": "npn",
+        "device": "bjt",
+        "enclosed": true
+      },
+      "recipe": "phototransistor-npn",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "npn, photo",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "collector",
+          "name": "Collector",
+          "description": "Collector",
+          "kind": "passive",
+          "lead_part": "lead-collector"
+        },
+        {
+          "id": "emitter",
+          "name": "Emitter",
+          "description": "Emitter",
+          "kind": "passive",
+          "lead_part": "lead-emitter"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-collector",
+          "description": "Electrical lead: Collector"
+        },
+        {
+          "id": "lead-emitter",
+          "description": "Electrical lead: Emitter"
+        },
+        {
+          "id": "base",
+          "description": "Base"
+        },
+        {
+          "id": "collector-branch",
+          "description": "Collector branch"
+        },
+        {
+          "id": "emitter-branch",
+          "description": "Emitter branch"
+        },
+        {
+          "id": "emitter-arrow",
+          "description": "Emitter arrow"
+        },
+        {
+          "id": "enclosure",
+          "description": "Enclosure"
+        },
+        {
+          "id": "light-arrows",
+          "description": "Light arrows"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "phototransistor-npn-small-thin",
+          "symbol_id": "phototransistor-npn",
+          "name": "NPN phototransistor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/phototransistor-npn-small-thin.svg",
+          "width_mm": 13.21767246,
+          "height_mm": 12.34351841,
+          "origin_svg": [
+            -47.230676,
+            -54.230899
+          ],
+          "visual_center_from_origin_mm": [
+            -0.958875752777774,
+            -0.09679146249999958
+          ],
+          "pins_mm": {
+            "collector": [
+              3.0,
+              5.0
+            ],
+            "emitter": [
+              3.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 5.25,
+            "body-width": 3.375,
+            "enclosure-diameter": 8.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow",
+            "enclosure",
+            "light-arrows"
+          ],
+          "svg_bytes": 3872,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "phototransistor-npn-small-medium",
+          "symbol_id": "phototransistor-npn",
+          "name": "NPN phototransistor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/phototransistor-npn-small-medium.svg",
+          "width_mm": 13.26767836,
+          "height_mm": 12.39352042,
+          "origin_svg": [
+            -47.159805,
+            -54.160029
+          ],
+          "visual_center_from_origin_mm": [
+            -0.958874518055555,
+            -0.0967907569444458
+          ],
+          "pins_mm": {
+            "collector": [
+              3.0,
+              5.0
+            ],
+            "emitter": [
+              3.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 5.25,
+            "body-width": 3.375,
+            "enclosure-diameter": 8.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow",
+            "enclosure",
+            "light-arrows"
+          ],
+          "svg_bytes": 3913,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "phototransistor-npn-small-thick",
+          "symbol_id": "phototransistor-npn",
+          "name": "NPN phototransistor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/phototransistor-npn-small-thick.svg",
+          "width_mm": 13.36768627,
+          "height_mm": 12.49352834,
+          "origin_svg": [
+            -47.018064,
+            -54.018287
+          ],
+          "visual_center_from_origin_mm": [
+            -0.9588736361111102,
+            -0.09679163888889053
+          ],
+          "pins_mm": {
+            "collector": [
+              3.0,
+              5.0
+            ],
+            "emitter": [
+              3.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 5.25,
+            "body-width": 3.375,
+            "enclosure-diameter": 8.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow",
+            "enclosure",
+            "light-arrows"
+          ],
+          "svg_bytes": 3891,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "phototransistor-npn-medium-thin",
+          "symbol_id": "phototransistor-npn",
+          "name": "NPN phototransistor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/phototransistor-npn-medium-thin.svg",
+          "width_mm": 16.90692157,
+          "height_mm": 15.07470527,
+          "origin_svg": [
+            -41.095799,
+            -49.323581
+          ],
+          "visual_center_from_origin_mm": [
+            -1.2784994750000005,
+            -0.4623904194444443
+          ],
+          "pins_mm": {
+            "collector": [
+              3.0,
+              6.0
+            ],
+            "emitter": [
+              3.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.0,
+            "body-width": 4.5,
+            "enclosure-diameter": 11.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow",
+            "enclosure",
+            "light-arrows"
+          ],
+          "svg_bytes": 3883,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "phototransistor-npn-medium-medium",
+          "symbol_id": "phototransistor-npn",
+          "name": "NPN phototransistor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/phototransistor-npn-medium-medium.svg",
+          "width_mm": 16.95692711,
+          "height_mm": 15.12470764,
+          "origin_svg": [
+            -41.024928,
+            -49.252711
+          ],
+          "visual_center_from_origin_mm": [
+            -1.2784984166666649,
+            -0.4623895375000021
+          ],
+          "pins_mm": {
+            "collector": [
+              3.0,
+              6.0
+            ],
+            "emitter": [
+              3.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.0,
+            "body-width": 4.5,
+            "enclosure-diameter": 11.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow",
+            "enclosure",
+            "light-arrows"
+          ],
+          "svg_bytes": 3923,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "phototransistor-npn-medium-thick",
+          "symbol_id": "phototransistor-npn",
+          "name": "NPN phototransistor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/phototransistor-npn-medium-thick.svg",
+          "width_mm": 17.05693502,
+          "height_mm": 15.22471555,
+          "origin_svg": [
+            -40.883187,
+            -49.110969
+          ],
+          "visual_center_from_origin_mm": [
+            -1.2784975347222203,
+            -0.4623904194444418
+          ],
+          "pins_mm": {
+            "collector": [
+              3.0,
+              6.0
+            ],
+            "emitter": [
+              3.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.0,
+            "body-width": 4.5,
+            "enclosure-diameter": 11.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow",
+            "enclosure",
+            "light-arrows"
+          ],
+          "svg_bytes": 3903,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "phototransistor-npn-large-thin",
+          "symbol_id": "phototransistor-npn",
+          "name": "NPN phototransistor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/phototransistor-npn-large-thin.svg",
+          "width_mm": 20.59614245,
+          "height_mm": 18.80587284,
+          "origin_svg": [
+            -34.960968,
+            -44.416309
+          ],
+          "visual_center_from_origin_mm": [
+            -1.5981210805555532,
+            -0.32798455555555667
+          ],
+          "pins_mm": {
+            "collector": [
+              4.0,
+              8.0
+            ],
+            "emitter": [
+              4.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 8.75,
+            "body-width": 5.625,
+            "enclosure-diameter": 13.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow",
+            "enclosure",
+            "light-arrows"
+          ],
+          "svg_bytes": 3901,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "phototransistor-npn-large-medium",
+          "symbol_id": "phototransistor-npn",
+          "name": "NPN phototransistor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/phototransistor-npn-large-medium.svg",
+          "width_mm": 20.64614447,
+          "height_mm": 18.85587521,
+          "origin_svg": [
+            -34.890097,
+            -44.345439
+          ],
+          "visual_center_from_origin_mm": [
+            -1.5981217861111094,
+            -0.3279836736111094
+          ],
+          "pins_mm": {
+            "collector": [
+              4.0,
+              8.0
+            ],
+            "emitter": [
+              4.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 8.75,
+            "body-width": 5.625,
+            "enclosure-diameter": 13.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow",
+            "enclosure",
+            "light-arrows"
+          ],
+          "svg_bytes": 3942,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "phototransistor-npn-large-thick",
+          "symbol_id": "phototransistor-npn",
+          "name": "NPN phototransistor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/phototransistor-npn-large-thick.svg",
+          "width_mm": 20.74615238,
+          "height_mm": 18.95588312,
+          "origin_svg": [
+            -34.748356,
+            -44.203697
+          ],
+          "visual_center_from_origin_mm": [
+            -1.5981209041666649,
+            -0.32798455555555417
+          ],
+          "pins_mm": {
+            "collector": [
+              4.0,
+              8.0
+            ],
+            "emitter": [
+              4.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 8.75,
+            "body-width": 5.625,
+            "enclosure-diameter": 13.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow",
+            "enclosure",
+            "light-arrows"
+          ],
+          "svg_bytes": 3921,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "955aa4eb7bd4efb45bb785687f3b206dd16d05df1a233bfca1c3729d330df0f8"
+    },
+    {
+      "schema_version": 1,
+      "id": "transistor-npn",
+      "revision": 1,
+      "name": "NPN transistor",
+      "description": "NPN bipolar transistor; the emitter arrow points away from the base.",
+      "keywords": [
+        "transistor",
+        "active",
+        "npn",
+        "BJT",
+        "NPN",
+        "transistors",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "transistors"
+      ],
+      "family": "transistors",
+      "batch": "overnight-transistors-02",
+      "attributes": {
+        "polarity": "npn",
+        "device": "bjt",
+        "enclosed": false
+      },
+      "recipe": "transistor-npn",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "npn",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "base",
+          "name": "Base",
+          "description": "Base",
+          "kind": "input",
+          "lead_part": "lead-base"
+        },
+        {
+          "id": "collector",
+          "name": "Collector",
+          "description": "Collector",
+          "kind": "passive",
+          "lead_part": "lead-collector"
+        },
+        {
+          "id": "emitter",
+          "name": "Emitter",
+          "description": "Emitter",
+          "kind": "passive",
+          "lead_part": "lead-emitter"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-base",
+          "description": "Electrical lead: Base"
+        },
+        {
+          "id": "lead-collector",
+          "description": "Electrical lead: Collector"
+        },
+        {
+          "id": "lead-emitter",
+          "description": "Electrical lead: Emitter"
+        },
+        {
+          "id": "base",
+          "description": "Base"
+        },
+        {
+          "id": "collector-branch",
+          "description": "Collector branch"
+        },
+        {
+          "id": "emitter-branch",
+          "description": "Emitter branch"
+        },
+        {
+          "id": "emitter-arrow",
+          "description": "Emitter arrow"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "transistor-npn-small-thin",
+          "symbol_id": "transistor-npn",
+          "name": "NPN transistor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/transistor-npn-small-thin.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -51.462077,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            -0.9999951777777749,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "base": [
+              -5.0,
+              0.0
+            ],
+            "collector": [
+              3.0,
+              5.0
+            ],
+            "emitter": [
+              3.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 5.25,
+            "body-width": 3.375,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-base",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow"
+          ],
+          "svg_bytes": 3058,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "transistor-npn-small-medium",
+          "symbol_id": "transistor-npn",
+          "name": "NPN transistor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/transistor-npn-small-medium.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -51.391206,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            -0.9999939430555558,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "base": [
+              -5.0,
+              0.0
+            ],
+            "collector": [
+              3.0,
+              5.0
+            ],
+            "emitter": [
+              3.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 5.25,
+            "body-width": 3.375,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-base",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow"
+          ],
+          "svg_bytes": 3095,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "transistor-npn-small-thick",
+          "symbol_id": "transistor-npn",
+          "name": "NPN transistor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/transistor-npn-small-thick.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -51.249465,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            -0.999995001388889,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "base": [
+              -5.0,
+              0.0
+            ],
+            "collector": [
+              3.0,
+              5.0
+            ],
+            "emitter": [
+              3.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 5.25,
+            "body-width": 3.375,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-base",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow"
+          ],
+          "svg_bytes": 3076,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "transistor-npn-medium-thin",
+          "symbol_id": "transistor-npn",
+          "name": "NPN transistor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/transistor-npn-medium-thin.svg",
+          "width_mm": 11.1499396,
+          "height_mm": 14.1499269,
+          "origin_svg": [
+            -48.627446,
+            -51.945007
+          ],
+          "visual_center_from_origin_mm": [
+            -1.4999927666666661,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "base": [
+              -6.0,
+              0.0
+            ],
+            "collector": [
+              3.0,
+              6.0
+            ],
+            "emitter": [
+              3.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.0,
+            "body-width": 4.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-base",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow"
+          ],
+          "svg_bytes": 3059,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "transistor-npn-medium-medium",
+          "symbol_id": "transistor-npn",
+          "name": "NPN transistor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/transistor-npn-medium-medium.svg",
+          "width_mm": 11.1999455,
+          "height_mm": 14.19992891,
+          "origin_svg": [
+            -48.556576,
+            -51.874137
+          ],
+          "visual_center_from_origin_mm": [
+            -1.4999911791666651,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "base": [
+              -6.0,
+              0.0
+            ],
+            "collector": [
+              3.0,
+              6.0
+            ],
+            "emitter": [
+              3.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.0,
+            "body-width": 4.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-base",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow"
+          ],
+          "svg_bytes": 3096,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "transistor-npn-medium-thick",
+          "symbol_id": "transistor-npn",
+          "name": "NPN transistor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/transistor-npn-medium-thick.svg",
+          "width_mm": 11.29994988,
+          "height_mm": 14.2999333,
+          "origin_svg": [
+            -48.414834,
+            -51.732395
+          ],
+          "visual_center_from_origin_mm": [
+            -1.4999924138888892,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "base": [
+              -6.0,
+              0.0
+            ],
+            "collector": [
+              3.0,
+              6.0
+            ],
+            "emitter": [
+              3.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.0,
+            "body-width": 4.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-base",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow"
+          ],
+          "svg_bytes": 3077,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "transistor-npn-large-thin",
+          "symbol_id": "transistor-npn",
+          "name": "NPN transistor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/transistor-npn-large-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 18.14990479,
+          "origin_svg": [
+            -42.958185,
+            -46.275746
+          ],
+          "visual_center_from_origin_mm": [
+            -1.999988415277777,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "base": [
+              -8.0,
+              0.0
+            ],
+            "collector": [
+              4.0,
+              8.0
+            ],
+            "emitter": [
+              4.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 8.75,
+            "body-width": 5.625,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-base",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow"
+          ],
+          "svg_bytes": 3077,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "transistor-npn-large-medium",
+          "symbol_id": "transistor-npn",
+          "name": "NPN transistor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/transistor-npn-large-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 18.19990716,
+          "origin_svg": [
+            -42.887314,
+            -46.204875
+          ],
+          "visual_center_from_origin_mm": [
+            -1.9999891208333307,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "base": [
+              -8.0,
+              0.0
+            ],
+            "collector": [
+              4.0,
+              8.0
+            ],
+            "emitter": [
+              4.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 8.75,
+            "body-width": 5.625,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-base",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow"
+          ],
+          "svg_bytes": 3114,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "transistor-npn-large-thick",
+          "symbol_id": "transistor-npn",
+          "name": "NPN transistor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/transistor-npn-large-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 18.29991507,
+          "origin_svg": [
+            -42.745573,
+            -46.063134
+          ],
+          "visual_center_from_origin_mm": [
+            -1.9999900027777753,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "base": [
+              -8.0,
+              0.0
+            ],
+            "collector": [
+              4.0,
+              8.0
+            ],
+            "emitter": [
+              4.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 8.75,
+            "body-width": 5.625,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-base",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow"
+          ],
+          "svg_bytes": 3095,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "44c6ff58ad7d80a35c33fd44d100ff786119c276b63f04b4f04b7ae267377117"
+    },
+    {
+      "schema_version": 1,
+      "id": "transistor-pnp",
+      "revision": 1,
+      "name": "PNP transistor",
+      "description": "PNP bipolar transistor; the emitter arrow points toward the base.",
+      "keywords": [
+        "transistor",
+        "active",
+        "pnp",
+        "BJT",
+        "PNP",
+        "transistors",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "transistors"
+      ],
+      "family": "transistors",
+      "batch": "overnight-transistors-02",
+      "attributes": {
+        "polarity": "pnp",
+        "device": "bjt",
+        "enclosed": false
+      },
+      "recipe": "transistor-pnp",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "pnp",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "base",
+          "name": "Base",
+          "description": "Base",
+          "kind": "input",
+          "lead_part": "lead-base"
+        },
+        {
+          "id": "collector",
+          "name": "Collector",
+          "description": "Collector",
+          "kind": "passive",
+          "lead_part": "lead-collector"
+        },
+        {
+          "id": "emitter",
+          "name": "Emitter",
+          "description": "Emitter",
+          "kind": "passive",
+          "lead_part": "lead-emitter"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-base",
+          "description": "Electrical lead: Base"
+        },
+        {
+          "id": "lead-collector",
+          "description": "Electrical lead: Collector"
+        },
+        {
+          "id": "lead-emitter",
+          "description": "Electrical lead: Emitter"
+        },
+        {
+          "id": "base",
+          "description": "Base"
+        },
+        {
+          "id": "collector-branch",
+          "description": "Collector branch"
+        },
+        {
+          "id": "emitter-branch",
+          "description": "Emitter branch"
+        },
+        {
+          "id": "emitter-arrow",
+          "description": "Emitter arrow"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "transistor-pnp-small-thin",
+          "symbol_id": "transistor-pnp",
+          "name": "PNP transistor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/transistor-pnp-small-thin.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -51.462077,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            -0.9999951777777749,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "base": [
+              -5.0,
+              0.0
+            ],
+            "collector": [
+              3.0,
+              5.0
+            ],
+            "emitter": [
+              3.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 5.25,
+            "body-width": 3.375,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-base",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow"
+          ],
+          "svg_bytes": 3056,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "transistor-pnp-small-medium",
+          "symbol_id": "transistor-pnp",
+          "name": "PNP transistor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/transistor-pnp-small-medium.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -51.391206,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            -0.9999939430555558,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "base": [
+              -5.0,
+              0.0
+            ],
+            "collector": [
+              3.0,
+              5.0
+            ],
+            "emitter": [
+              3.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 5.25,
+            "body-width": 3.375,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-base",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow"
+          ],
+          "svg_bytes": 3093,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "transistor-pnp-small-thick",
+          "symbol_id": "transistor-pnp",
+          "name": "PNP transistor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/transistor-pnp-small-thick.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -51.249465,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            -0.999995001388889,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "base": [
+              -5.0,
+              0.0
+            ],
+            "collector": [
+              3.0,
+              5.0
+            ],
+            "emitter": [
+              3.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 5.25,
+            "body-width": 3.375,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-base",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow"
+          ],
+          "svg_bytes": 3074,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "transistor-pnp-medium-thin",
+          "symbol_id": "transistor-pnp",
+          "name": "PNP transistor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/transistor-pnp-medium-thin.svg",
+          "width_mm": 11.1499396,
+          "height_mm": 14.1499269,
+          "origin_svg": [
+            -48.627446,
+            -51.945007
+          ],
+          "visual_center_from_origin_mm": [
+            -1.4999927666666661,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "base": [
+              -6.0,
+              0.0
+            ],
+            "collector": [
+              3.0,
+              6.0
+            ],
+            "emitter": [
+              3.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.0,
+            "body-width": 4.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-base",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow"
+          ],
+          "svg_bytes": 3055,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "transistor-pnp-medium-medium",
+          "symbol_id": "transistor-pnp",
+          "name": "PNP transistor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/transistor-pnp-medium-medium.svg",
+          "width_mm": 11.1999455,
+          "height_mm": 14.19992891,
+          "origin_svg": [
+            -48.556576,
+            -51.874137
+          ],
+          "visual_center_from_origin_mm": [
+            -1.4999911791666651,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "base": [
+              -6.0,
+              0.0
+            ],
+            "collector": [
+              3.0,
+              6.0
+            ],
+            "emitter": [
+              3.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.0,
+            "body-width": 4.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-base",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow"
+          ],
+          "svg_bytes": 3092,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "transistor-pnp-medium-thick",
+          "symbol_id": "transistor-pnp",
+          "name": "PNP transistor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/transistor-pnp-medium-thick.svg",
+          "width_mm": 11.29994988,
+          "height_mm": 14.2999333,
+          "origin_svg": [
+            -48.414834,
+            -51.732395
+          ],
+          "visual_center_from_origin_mm": [
+            -1.4999924138888892,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "base": [
+              -6.0,
+              0.0
+            ],
+            "collector": [
+              3.0,
+              6.0
+            ],
+            "emitter": [
+              3.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 7.0,
+            "body-width": 4.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-base",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow"
+          ],
+          "svg_bytes": 3073,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "transistor-pnp-large-thin",
+          "symbol_id": "transistor-pnp",
+          "name": "PNP transistor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/transistor-pnp-large-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 18.14990479,
+          "origin_svg": [
+            -42.958185,
+            -46.275746
+          ],
+          "visual_center_from_origin_mm": [
+            -1.999988415277777,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "base": [
+              -8.0,
+              0.0
+            ],
+            "collector": [
+              4.0,
+              8.0
+            ],
+            "emitter": [
+              4.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 8.75,
+            "body-width": 5.625,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-base",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow"
+          ],
+          "svg_bytes": 3074,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "transistor-pnp-large-medium",
+          "symbol_id": "transistor-pnp",
+          "name": "PNP transistor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/transistor-pnp-large-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 18.19990716,
+          "origin_svg": [
+            -42.887314,
+            -46.204875
+          ],
+          "visual_center_from_origin_mm": [
+            -1.9999891208333307,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "base": [
+              -8.0,
+              0.0
+            ],
+            "collector": [
+              4.0,
+              8.0
+            ],
+            "emitter": [
+              4.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 8.75,
+            "body-width": 5.625,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-base",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow"
+          ],
+          "svg_bytes": 3111,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "transistor-pnp-large-thick",
+          "symbol_id": "transistor-pnp",
+          "name": "PNP transistor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/transistor-pnp-large-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 18.29991507,
+          "origin_svg": [
+            -42.745573,
+            -46.063134
+          ],
+          "visual_center_from_origin_mm": [
+            -1.9999900027777753,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "base": [
+              -8.0,
+              0.0
+            ],
+            "collector": [
+              4.0,
+              8.0
+            ],
+            "emitter": [
+              4.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-height": 8.75,
+            "body-width": 5.625,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-base",
+            "lead-collector",
+            "lead-emitter",
+            "base",
+            "collector-branch",
+            "emitter-branch",
+            "emitter-arrow"
+          ],
+          "svg_bytes": 3092,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "58408156e1cdb14013e9280157c41a1f24471894dd5949f4294a92e2ddb30fab"
     }
   ]
 }

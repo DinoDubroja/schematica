@@ -1,0 +1,42 @@
+% N-channel IGBT; nigbt.
+% Schematica coordinates are millimetres at Medium; pins snap outward to the 1 mm grid.
+\newcommand{\SCBatchIgbtN}[4]{%
+  \SCresolve{#1}{#2}{#3}
+  \def\F{#2}
+  \pgfmathsetmacro{\SCorientx}{ifthenelse(mod(#4,2)==1,-1,1)}
+  \pgfmathsetmacro{\SCorienty}{ifthenelse(#4>1,-1,1)}
+  \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+    \SCdimension{body-height}{7*\F}
+    \SCdimension{body-width}{4.9*\F}
+    \SCdimension{grid}{1}
+    \SCpin{gate}{floor(-6*\F)}{0}
+    \begin{SCpart}{lead-gate}
+    \draw ({floor(-6*\F)},{0})--({-1.9*\F},{0*\F});
+    \end{SCpart}
+    \SCpin{collector}{ceil(3*\F)}{ceil(6*\F)}
+    \begin{SCpart}{lead-collector}
+    \draw ({ceil(3*\F)},{ceil(6*\F)})--({ceil(3*\F)},{3.5*\F})--({3*\F},{3.5*\F});
+    \end{SCpart}
+    \SCpin{emitter}{ceil(3*\F)}{floor(-6*\F)}
+    \begin{SCpart}{lead-emitter}
+    \draw ({ceil(3*\F)},{floor(-6*\F)})--({ceil(3*\F)},{-3.5*\F})--({3*\F},{-3.5*\F});
+    \end{SCpart}
+    \begin{SCpart}{base}
+    \draw ({-0.4*\F},{-2.4*\F})--({-0.4*\F},{2.4*\F});
+    \end{SCpart}
+    \begin{SCpart}{collector-branch}
+    \draw ({-0.4*\F},{1.5*\F})--({3*\F},{3.5*\F});
+    \end{SCpart}
+    \begin{SCpart}{emitter-branch}
+    \draw ({-0.4*\F},{-1.5*\F})--({3*\F},{-3.5*\F});
+    \end{SCpart}
+    \begin{SCpart}{emitter-arrow}
+    \begin{scope}[shift={({2.2*\F},{-3.02941*\F})},rotate=-30.4655]
+    \fill ({-1.05*\F},{0.55*\F})--({0*\F},{0*\F})--({-1.05*\F},{-0.55*\F})--cycle;
+    \end{scope}
+    \end{SCpart}
+    \begin{SCpart}{insulated-gate}
+    \draw ({-1.9*\F},{-2.4*\F})--({-1.9*\F},{2.4*\F});
+    \end{SCpart}
+  \end{scope}
+}

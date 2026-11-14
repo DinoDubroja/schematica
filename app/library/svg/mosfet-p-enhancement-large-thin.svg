@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000021 40.180863 51.448549" width="14.17491556mm" height="18.14990479mm">
+  <title>P-channel enhancement MOSFET</title>
+  <desc>P-channel enhancement MOSFET. The body is explicitly tied to source. A broken channel indicates enhancement mode.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 7.5, "body-width": 4.87498, "grid": 1.0}, "origin_svg": [-42.958185, -46.275746], "parts": ["lead-gate", "lead-drain", "lead-source", "gate", "channel", "drain-branch", "source-branch", "body-source-link", "body-arrow"], "pins_mm": {"drain": [4.0, 8.0], "gate": [-8.0, 0.0], "source": [4.0, -8.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "thin", "stroke_mm": 0.15}, "symbol_id": "mosfet-p-enhancement"}</metadata>
+  <g id="sc-mosfet-p-enhancement-r1-large-thin--sc-mosfet-p-enhancement-r1-large-thin" inkscape:label="P-channel enhancement MOSFET / large / thin" data-symbol="mosfet-p-enhancement" data-revision="1" data-size="large" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(-42.958185,-46.275746)scale(0.996264,-0.996264)">
+    <g data-part="lead-gate" id="sc-mosfet-p-enhancement-r1-large-thin--sc-mosfet-p-enhancement-r1-large-thin--lead-gate" inkscape:label="lead-gate">
+      <path d="M-22.76208 0H-3.20087" fill="none" />
+      <desc>Electrical lead: Gate</desc>
+    </g>
+    <g data-part="lead-drain" id="sc-mosfet-p-enhancement-r1-large-thin--sc-mosfet-p-enhancement-r1-large-thin--lead-drain" inkscape:label="lead-drain">
+      <path d="M11.38104 22.76208V9.24709H10.66972" fill="none" />
+      <desc>Electrical lead: Drain</desc>
+    </g>
+    <g data-part="lead-source" id="sc-mosfet-p-enhancement-r1-large-thin--sc-mosfet-p-enhancement-r1-large-thin--lead-source" inkscape:label="lead-source">
+      <path d="M11.38104-22.76208V-9.24709H10.66972" fill="none" />
+      <desc>Electrical lead: Source</desc>
+    </g>
+    <g data-part="gate" id="sc-mosfet-p-enhancement-r1-large-thin--sc-mosfet-p-enhancement-r1-large-thin--gate" inkscape:label="gate">
+      <path d="M-3.20087-10.66972V10.66972" fill="none" />
+      <desc>Gate</desc>
+    </g>
+    <g data-part="channel" id="sc-mosfet-p-enhancement-r1-large-thin--sc-mosfet-p-enhancement-r1-large-thin--channel" inkscape:label="channel">
+      <path d="M2.13394-10.66972V-5.69052" fill="none" />
+      <path d="M2.13394-2.48955V2.48955" fill="none" />
+      <path d="M2.13394 5.69052V10.66972" fill="none" />
+      <desc>Channel</desc>
+    </g>
+    <g data-part="drain-branch" id="sc-mosfet-p-enhancement-r1-large-thin--sc-mosfet-p-enhancement-r1-large-thin--drain-branch" inkscape:label="drain-branch">
+      <path d="M2.13394 9.24709H10.66972" fill="none" />
+      <desc>Drain branch</desc>
+    </g>
+    <g data-part="source-branch" id="sc-mosfet-p-enhancement-r1-large-thin--sc-mosfet-p-enhancement-r1-large-thin--source-branch" inkscape:label="source-branch">
+      <path d="M2.13394-9.24709H10.66972" fill="none" />
+      <desc>Source branch</desc>
+    </g>
+    <g data-part="body-source-link" id="sc-mosfet-p-enhancement-r1-large-thin--sc-mosfet-p-enhancement-r1-large-thin--body-source-link" inkscape:label="body-source-link">
+      <path d="M2.13394 0H10.66972V-9.24709" fill="none" />
+      <path d="M11.66553-9.24709C11.66553-8.69711 11.2197-8.25128 10.66972-8.25128C10.11975-8.25128 9.67392-8.69711 9.67392-9.24709C9.67392-9.79706 10.11975-10.24289 10.66972-10.24289C11.2197-10.24289 11.66553-9.79706 11.66553-9.24709ZM10.66972-9.24709" stroke="none" />
+      <desc>Body source link</desc>
+    </g>
+    <g data-part="body-arrow" id="sc-mosfet-p-enhancement-r1-large-thin--sc-mosfet-p-enhancement-r1-large-thin--body-arrow" inkscape:label="body-arrow">
+      <path d="M5.5127 1.95612L9.24709 0L5.5127-1.95612Z" stroke="none" />
+      <desc>Body arrow</desc>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000022 28.913247 34.582507" width="10.19995102mm" height="12.19993997mm">
+  <title>NPN transistor</title>
+  <desc>NPN bipolar transistor; the emitter arrow points away from the base.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 5.25, "body-width": 3.375, "grid": 1.0}, "origin_svg": [-51.391206, -54.708767], "parts": ["lead-base", "lead-collector", "lead-emitter", "base", "collector-branch", "emitter-branch", "emitter-arrow"], "pins_mm": {"base": [-5.0, 0.0], "collector": [3.0, 5.0], "emitter": [3.0, -5.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "transistor-npn"}</metadata>
+  <g id="sc-transistor-npn-r1-small-medium--sc-transistor-npn-r1-small-medium" inkscape:label="NPN transistor / small / medium" data-symbol="transistor-npn" data-revision="1" data-size="small" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-51.391206,-54.708767)scale(0.996264,-0.996264)">
+    <g data-part="lead-base" id="sc-transistor-npn-r1-small-medium--sc-transistor-npn-r1-small-medium--lead-base" inkscape:label="lead-base">
+      <path d="M-14.2263 0H-3.20091" fill="none" />
+      <desc>Electrical lead: Base</desc>
+    </g>
+    <g data-part="lead-collector" id="sc-transistor-npn-r1-small-medium--sc-transistor-npn-r1-small-medium--lead-collector" inkscape:label="lead-collector">
+      <path d="M8.53578 14.2263V7.4688H6.40182" fill="none" />
+      <desc>Electrical lead: Collector</desc>
+    </g>
+    <g data-part="lead-emitter" id="sc-transistor-npn-r1-small-medium--sc-transistor-npn-r1-small-medium--lead-emitter" inkscape:label="lead-emitter">
+      <path d="M8.53578-14.2263V-7.4688H6.40182" fill="none" />
+      <desc>Electrical lead: Emitter</desc>
+    </g>
+    <g data-part="base" id="sc-transistor-npn-r1-small-medium--sc-transistor-npn-r1-small-medium--base" inkscape:label="base">
+      <path d="M-3.20091-5.12143V5.12143" fill="none" />
+      <desc>Base</desc>
+    </g>
+    <g data-part="collector-branch" id="sc-transistor-npn-r1-small-medium--sc-transistor-npn-r1-small-medium--collector-branch" inkscape:label="collector-branch">
+      <path d="M-3.20091 3.20091L6.40182 7.4688" fill="none" />
+      <desc>Collector branch</desc>
+    </g>
+    <g data-part="emitter-branch" id="sc-transistor-npn-r1-small-medium--sc-transistor-npn-r1-small-medium--emitter-branch" inkscape:label="emitter-branch">
+      <path d="M-3.20091-3.20091L6.40182-7.4688" fill="none" />
+      <desc>Emitter branch</desc>
+    </g>
+    <g data-part="emitter-arrow" id="sc-transistor-npn-r1-small-medium--sc-transistor-npn-r1-small-medium--emitter-arrow" inkscape:label="emitter-arrow">
+      <path d="M3.12386-4.72763L4.69466-6.71004L2.17058-6.8725Z" stroke="none" />
+      <desc>Emitter arrow</desc>
+    </g>
+  </g>
+</svg>
