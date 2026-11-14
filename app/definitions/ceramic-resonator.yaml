@@ -1,0 +1,86 @@
+schema_version: 1
+id: ceramic-resonator
+revision: 1
+name: Ceramic resonator with load capacitors
+description: Three-terminal ceramic resonator with two integrated load capacitors.
+  The lower common terminal joins the capacitors; the resonating element connects
+  the left and right terminals. The dashed boundary groups the internal elements.
+keywords:
+- ceramic
+- resonator
+- CERALOCK
+- oscillator
+- load capacitors
+- three terminal
+- passive
+- protection resonators
+- overnight
+- batch 02
+types:
+- protection-and-resonators
+family: protection-and-resonators
+batch: overnight-protection-and-resonators-02
+attributes:
+  function: resonator
+  integrated_load_capacitors: true
+recipe: ceramic-resonator
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: custom three-terminal resonator equivalent circuit with built-in load capacitors
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+  secondary_url: https://www.murata.com/en-global/support/faqs/timingdevice/ceralock/mnt/cch0008
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: a
+  name: Resonator terminal A
+  description: Resonator terminal A
+  kind: passive
+  lead_part: lead-a
+- id: b
+  name: Resonator terminal B
+  description: Resonator terminal B
+  kind: passive
+  lead_part: lead-b
+- id: common
+  name: Load-capacitor common
+  description: Load-capacitor common
+  kind: passive
+  lead_part: lead-common
+parts:
+- id: lead-a
+  description: 'Electrical lead: Resonator terminal A'
+- id: lead-b
+  description: 'Electrical lead: Resonator terminal B'
+- id: resonating-element
+  description: Resonating element
+- id: electrode-a
+  description: Electrode a
+- id: electrode-b
+  description: Electrode b
+- id: load-a-upper
+  description: Load a upper
+- id: load-a-lower
+  description: Load a lower
+- id: load-a-junction
+  description: Load a junction
+- id: load-b-upper
+  description: Load b upper
+- id: load-b-lower
+  description: Load b lower
+- id: load-b-junction
+  description: Load b junction
+- id: common-bus
+  description: Common bus
+- id: lead-common
+  description: 'Electrical lead: Load-capacitor common'
+- id: package
+  description: Package

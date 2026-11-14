@@ -1,0 +1,56 @@
+schema_version: 1
+id: fuse
+revision: 1
+name: Fuse
+description: Replaceable fuse with a continuous fusible link through a rectangular
+  body.
+keywords:
+- fuse
+- protection
+- overcurrent
+- passive
+- protection resonators
+- overnight
+- batch 02
+types:
+- protection-and-resonators
+family: protection-and-resonators
+batch: overnight-protection-and-resonators-02
+attributes:
+  function: overcurrent protection
+  integrated_load_capacitors: false
+recipe: fuse
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: fuse
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: a
+  name: A
+  description: A
+  kind: passive
+  lead_part: lead-a
+- id: b
+  name: B
+  description: B
+  kind: passive
+  lead_part: lead-b
+parts:
+- id: lead-a
+  description: 'Electrical lead: A'
+- id: lead-b
+  description: 'Electrical lead: B'
+- id: body
+  description: Body
+- id: fusible-link
+  description: Fusible link

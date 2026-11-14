@@ -332,4 +332,39 @@ class Batch02(unittest.TestCase):
                     if sid=='test-point':self.assertIn('test-label',parts)
 
 
+    def test_fuse_link_and_resonator_electrodes_and_common(self):
+        for symbol in self.new:
+            if symbol['family']!='protection-and-resonators':continue
+            sid=symbol['id']
+            for config in symbol['configurations']:
+                parts={g.get('data-part'):g for g in artwork(config).iter() if g.get('data-part')}
+                def points(name):return straight_points(next(parts[name].iter(f'{{{SVG}}}path')))
+                factor=config['settings']['size_factor'];pins=config['pins_mm']
+                self.assertEqual(set(pins),{'a','b','common'} if sid=='ceramic-resonator' else {'a','b'})
+                self.assertLess(pins['a'][0],pins['b'][0]);self.assertEqual(pins['a'][1],pins['b'][1])
+                if sid=='fuse':
+                    link=points('fusible-link')
+                    self.assertLess(math.dist(link[0],points('lead-a')[-1]),.0003)
+                    self.assertLess(math.dist(link[-1],points('lead-b')[-1]),.0003)
+                else:
+                    body=points('resonating-element')
+                    for pin,sign in [('a',-1),('b',1)]:
+                        electrode=points('electrode-'+pin);end=points('lead-'+pin)[-1]
+                        self.assertAlmostEqual(end[0],electrode[0][0],delta=.0003)
+                        self.assertLess(electrode[0][1],end[1]);self.assertGreater(electrode[-1][1],end[1])
+                        self.assertGreater(sign*electrode[0][0]-max(sign*x for x,y in body),factor)
+                    if sid=='ceramic-resonator':
+                        bus=points('common-bus');common=points('lead-common')[-1]
+                        self.assertAlmostEqual(common[1],bus[0][1],delta=.0003)
+                        self.assertLess(bus[0][0],common[0]);self.assertGreater(bus[1][0],common[0])
+                        self.assertLess(pins['common'][1],common[1]);self.assertIn('package',parts)
+                        for side in ('a','b'):
+                            upper=points('load-'+side+'-upper');lower=points('load-'+side+'-lower')
+                            self.assertEqual(upper[0][1],0)
+                            self.assertGreater(upper[1][1]-lower[0][1],factor)
+                            lower_paths=list(parts['load-'+side+'-lower'].iter(f'{{{SVG}}}path'))
+                            join=straight_points(lower_paths[-1])[-1]
+                            self.assertAlmostEqual(join[1],bus[0][1],delta=.0003)
+
+
 if __name__=='__main__':unittest.main()

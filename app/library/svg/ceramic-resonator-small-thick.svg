@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000024 51.873775 39.826591" width="18.29991507mm" height="14.04993627mm">
+  <title>Ceramic resonator with load capacitors</title>
+  <desc>Three-terminal ceramic resonator with two integrated load capacitors. The lower common terminal joins the capacitors; the resonating element connects the left and right terminals. The dashed boundary groups the internal elements.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 9.375, "body-width": 10.5, "grid": 1.0}, "origin_svg": [-42.745573, -58.110318], "parts": ["lead-a", "lead-b", "resonating-element", "electrode-a", "electrode-b", "load-a-upper", "load-a-lower", "load-a-junction", "load-b-upper", "load-b-lower", "load-b-junction", "common-bus", "lead-common", "package"], "pins_mm": {"a": [-8.0, 0.0], "b": [8.0, 0.0], "common": [0.0, -8.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "ceramic-resonator"}</metadata>
+  <g id="sc-ceramic-resonator-r1-small-thick--sc-ceramic-resonator-r1-small-thick" inkscape:label="Ceramic resonator with load capacitors / small / thick" data-symbol="ceramic-resonator" data-revision="1" data-size="small" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-42.745573,-58.110318)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="sc-ceramic-resonator-r1-small-thick--sc-ceramic-resonator-r1-small-thick--lead-a" inkscape:label="lead-a">
+      <path d="M-22.76208 0H-5.76163" fill="none" />
+      <desc>Electrical lead: Resonator terminal A</desc>
+    </g>
+    <g data-part="lead-b" id="sc-ceramic-resonator-r1-small-thick--sc-ceramic-resonator-r1-small-thick--lead-b" inkscape:label="lead-b">
+      <path d="M22.76208 0H5.76163" fill="none" />
+      <desc>Electrical lead: Resonator terminal B</desc>
+    </g>
+    <g data-part="resonating-element" id="sc-ceramic-resonator-r1-small-thick--sc-ceramic-resonator-r1-small-thick--resonating-element" inkscape:label="resonating-element">
+      <path d="M-3.20091-6.40182V6.40182H3.20091V-6.40182ZM3.20091 6.40182" fill="none" />
+      <desc>Resonating element</desc>
+    </g>
+    <g data-part="electrode-a" id="sc-ceramic-resonator-r1-small-thick--sc-ceramic-resonator-r1-small-thick--electrode-a" inkscape:label="electrode-a">
+      <path d="M-5.76163-8.10896V8.10896" fill="none" />
+      <desc>Electrode a</desc>
+    </g>
+    <g data-part="electrode-b" id="sc-ceramic-resonator-r1-small-thick--sc-ceramic-resonator-r1-small-thick--electrode-b" inkscape:label="electrode-b">
+      <path d="M5.76163-8.10896V8.10896" fill="none" />
+      <desc>Electrode b</desc>
+    </g>
+    <g data-part="load-a-upper" id="sc-ceramic-resonator-r1-small-thick--sc-ceramic-resonator-r1-small-thick--load-a-upper" inkscape:label="load-a-upper">
+      <path d="M-10.66972 0V-6.40182" fill="none" />
+      <path d="M-13.23044-6.40182H-8.10896" fill="none" />
+      <desc>Load a upper</desc>
+    </g>
+    <g data-part="load-a-lower" id="sc-ceramic-resonator-r1-small-thick--sc-ceramic-resonator-r1-small-thick--load-a-lower" inkscape:label="load-a-lower">
+      <path d="M-13.23044-9.17593H-8.10896" fill="none" />
+      <path d="M-10.66972-9.17593V-12.80367" fill="none" />
+      <desc>Load a lower</desc>
+    </g>
+    <g data-part="load-a-junction" id="sc-ceramic-resonator-r1-small-thick--sc-ceramic-resonator-r1-small-thick--load-a-junction" inkscape:label="load-a-junction">
+      <path d="M-10.07225 0C-10.07225 .32997-10.33975 .59747-10.66972 .59747C-10.9997 .59747-11.2672 .32997-11.2672 0S-10.9997-.59747-10.66972-.59747C-10.33975-.59747-10.07225-.32997-10.07225 0ZM-10.66972 0" stroke="none" />
+      <desc>Load a junction</desc>
+    </g>
+    <g data-part="load-b-upper" id="sc-ceramic-resonator-r1-small-thick--sc-ceramic-resonator-r1-small-thick--load-b-upper" inkscape:label="load-b-upper">
+      <path d="M10.66972 0V-6.40182" fill="none" />
+      <path d="M8.10896-6.40182H13.23044" fill="none" />
+      <desc>Load b upper</desc>
+    </g>
+    <g data-part="load-b-lower" id="sc-ceramic-resonator-r1-small-thick--sc-ceramic-resonator-r1-small-thick--load-b-lower" inkscape:label="load-b-lower">
+      <path d="M8.10896-9.17593H13.23044" fill="none" />
+      <path d="M10.66972-9.17593V-12.80367" fill="none" />
+      <desc>Load b lower</desc>
+    </g>
+    <g data-part="load-b-junction" id="sc-ceramic-resonator-r1-small-thick--sc-ceramic-resonator-r1-small-thick--load-b-junction" inkscape:label="load-b-junction">
+      <path d="M11.2672 0C11.2672 .32997 10.9997 .59747 10.66972 .59747C10.33975 .59747 10.07225 .32997 10.07225 0S10.33975-.59747 10.66972-.59747C10.9997-.59747 11.2672-.32997 11.2672 0ZM10.66972 0" stroke="none" />
+      <desc>Load b junction</desc>
+    </g>
+    <g data-part="common-bus" id="sc-ceramic-resonator-r1-small-thick--sc-ceramic-resonator-r1-small-thick--common-bus" inkscape:label="common-bus">
+      <path d="M-10.66972-12.80367H10.66972" fill="none" />
+      <path d="M.59747-12.80367C.59747-12.4737 .32997-12.20619 0-12.20619S-.59747-12.4737-.59747-12.80367S-.32997-13.40114 0-13.40114S.59747-13.13364 .59747-12.80367ZM0-12.80367" stroke="none" />
+      <desc>Common bus</desc>
+    </g>
+    <g data-part="lead-common" id="sc-ceramic-resonator-r1-small-thick--sc-ceramic-resonator-r1-small-thick--lead-common" inkscape:label="lead-common">
+      <path d="M0-22.76208V-12.80367" fill="none" />
+      <desc>Electrical lead: Load-capacitor common</desc>
+    </g>
+    <g data-part="package" id="sc-ceramic-resonator-r1-small-thick--sc-ceramic-resonator-r1-small-thick--package" inkscape:label="package">
+      <path d="M-14.9376-16.00458V10.66972H14.9376V-16.00458ZM14.9376 10.66972" fill="none" stroke-dasharray="2.84526,1.99168" stroke-dashoffset="0.0" />
+      <desc>Package</desc>
+    </g>
+  </g>
+</svg>

@@ -92,7 +92,7 @@ Status: complete — 8 designs / 72 configurations; Unverified.
 
 ### Protection And Resonators
 
-Status: planned.
+Status: complete — 3 designs / 27 configurations; Unverified.
 
 `fuse`, `crystal`, `ceramic-resonator`.
 

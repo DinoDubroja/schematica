@@ -1,0 +1,62 @@
+% Ceramic resonator with load capacitors; custom three-terminal resonator equivalent circuit with built-in load capacitors.
+% Schematica coordinates are millimetres at Medium; pins snap outward to the 1 mm grid.
+\newcommand{\SCBatchCeramicResonator}[4]{%
+  \SCresolve{#1}{#2}{#3}
+  \def\F{#2}
+  \pgfmathsetmacro{\SCorientx}{ifthenelse(mod(#4,2)==1,-1,1)}
+  \pgfmathsetmacro{\SCorienty}{ifthenelse(#4>1,-1,1)}
+  \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+    \SCdimension{body-width}{14*\F}
+    \SCdimension{body-height}{12.5*\F}
+    \SCdimension{grid}{1}
+    \SCpin{a}{floor(-10*\F)}{0}
+    \begin{SCpart}{lead-a}
+    \draw ({floor(-10*\F)},{0})--({-2.7*\F},{0*\F});
+    \end{SCpart}
+    \SCpin{b}{ceil(10*\F)}{0}
+    \begin{SCpart}{lead-b}
+    \draw ({ceil(10*\F)},{0})--({2.7*\F},{0*\F});
+    \end{SCpart}
+    \begin{SCpart}{resonating-element}
+    \draw ({-1.5*\F},{-3*\F}) rectangle ({1.5*\F},{3*\F});
+    \end{SCpart}
+    \begin{SCpart}{electrode-a}
+    \draw ({-2.7*\F},{-3.8*\F})--({-2.7*\F},{3.8*\F});
+    \end{SCpart}
+    \begin{SCpart}{electrode-b}
+    \draw ({2.7*\F},{-3.8*\F})--({2.7*\F},{3.8*\F});
+    \end{SCpart}
+    \begin{SCpart}{load-a-upper}
+    \draw ({-5*\F},{0*\F})--({-5*\F},{-3*\F});
+    \draw ({-6.2*\F},{-3*\F})--({-3.8*\F},{-3*\F});
+    \end{SCpart}
+    \begin{SCpart}{load-a-lower}
+    \draw ({-6.2*\F},{-4.3*\F})--({-3.8*\F},{-4.3*\F});
+    \draw ({-5*\F},{-4.3*\F})--({-5*\F},{-6*\F});
+    \end{SCpart}
+    \begin{SCpart}{load-a-junction}
+    \fill ({-5*\F},{0*\F}) circle ({0.28*\F});
+    \end{SCpart}
+    \begin{SCpart}{load-b-upper}
+    \draw ({5*\F},{0*\F})--({5*\F},{-3*\F});
+    \draw ({3.8*\F},{-3*\F})--({6.2*\F},{-3*\F});
+    \end{SCpart}
+    \begin{SCpart}{load-b-lower}
+    \draw ({3.8*\F},{-4.3*\F})--({6.2*\F},{-4.3*\F});
+    \draw ({5*\F},{-4.3*\F})--({5*\F},{-6*\F});
+    \end{SCpart}
+    \begin{SCpart}{load-b-junction}
+    \fill ({5*\F},{0*\F}) circle ({0.28*\F});
+    \end{SCpart}
+    \begin{SCpart}{common-bus}
+    \draw ({-5*\F},{-6*\F})--({5*\F},{-6*\F});\fill ({0*\F},{-6*\F}) circle ({0.28*\F});
+    \end{SCpart}
+    \SCpin{common}{0}{floor(-10*\F)}
+    \begin{SCpart}{lead-common}
+    \draw ({0},{floor(-10*\F)})--({0*\F},{-6*\F});
+    \end{SCpart}
+    \begin{SCpart}{package}
+    \draw[dash pattern=on 1mm off .7mm] ({-7*\F},{-7.5*\F}) rectangle ({7*\F},{5*\F});
+    \end{SCpart}
+  \end{scope}
+}

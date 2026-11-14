@@ -69872,6 +69872,1737 @@
         }
       ],
       "source_fingerprint": "638015c6cb4daa4b7c47daafceeeba24b889b1ef6232f3e5dec1d3ad2a0967c2"
+    },
+    {
+      "schema_version": 1,
+      "id": "ceramic-resonator",
+      "revision": 1,
+      "name": "Ceramic resonator with load capacitors",
+      "description": "Three-terminal ceramic resonator with two integrated load capacitors. The lower common terminal joins the capacitors; the resonating element connects the left and right terminals. The dashed boundary groups the internal elements.",
+      "keywords": [
+        "ceramic",
+        "resonator",
+        "CERALOCK",
+        "oscillator",
+        "load capacitors",
+        "three terminal",
+        "passive",
+        "protection resonators",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "protection-and-resonators"
+      ],
+      "family": "protection-and-resonators",
+      "batch": "overnight-protection-and-resonators-02",
+      "attributes": {
+        "function": "resonator",
+        "integrated_load_capacitors": true
+      },
+      "recipe": "ceramic-resonator",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "custom three-terminal resonator equivalent circuit with built-in load capacitors",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md",
+        "secondary_url": "https://www.murata.com/en-global/support/faqs/timingdevice/ceralock/mnt/cch0008"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "Resonator terminal A",
+          "description": "Resonator terminal A",
+          "kind": "passive",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "b",
+          "name": "Resonator terminal B",
+          "description": "Resonator terminal B",
+          "kind": "passive",
+          "lead_part": "lead-b"
+        },
+        {
+          "id": "common",
+          "name": "Load-capacitor common",
+          "description": "Load-capacitor common",
+          "kind": "passive",
+          "lead_part": "lead-common"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-a",
+          "description": "Electrical lead: Resonator terminal A"
+        },
+        {
+          "id": "lead-b",
+          "description": "Electrical lead: Resonator terminal B"
+        },
+        {
+          "id": "resonating-element",
+          "description": "Resonating element"
+        },
+        {
+          "id": "electrode-a",
+          "description": "Electrode a"
+        },
+        {
+          "id": "electrode-b",
+          "description": "Electrode b"
+        },
+        {
+          "id": "load-a-upper",
+          "description": "Load a upper"
+        },
+        {
+          "id": "load-a-lower",
+          "description": "Load a lower"
+        },
+        {
+          "id": "load-a-junction",
+          "description": "Load a junction"
+        },
+        {
+          "id": "load-b-upper",
+          "description": "Load b upper"
+        },
+        {
+          "id": "load-b-lower",
+          "description": "Load b lower"
+        },
+        {
+          "id": "load-b-junction",
+          "description": "Load b junction"
+        },
+        {
+          "id": "common-bus",
+          "description": "Common bus"
+        },
+        {
+          "id": "lead-common",
+          "description": "Electrical lead: Load-capacitor common"
+        },
+        {
+          "id": "package",
+          "description": "Package"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "ceramic-resonator-small-thin",
+          "symbol_id": "ceramic-resonator",
+          "name": "Ceramic resonator with load capacitors",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/ceramic-resonator-small-thin.svg",
+          "width_mm": 18.14990479,
+          "height_mm": 13.89992634,
+          "origin_svg": [
+            -42.958185,
+            -58.32293
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            2.124988694444444
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "b": [
+              8.0,
+              0.0
+            ],
+            "common": [
+              0.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 10.5,
+            "body-height": 9.375,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "resonating-element",
+            "electrode-a",
+            "electrode-b",
+            "load-a-upper",
+            "load-a-lower",
+            "load-a-junction",
+            "load-b-upper",
+            "load-b-lower",
+            "load-b-junction",
+            "common-bus",
+            "lead-common",
+            "package"
+          ],
+          "svg_bytes": 6013,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ceramic-resonator-small-medium",
+          "symbol_id": "ceramic-resonator",
+          "name": "Ceramic resonator with load capacitors",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/ceramic-resonator-small-medium.svg",
+          "width_mm": 18.19990716,
+          "height_mm": 13.94992871,
+          "origin_svg": [
+            -42.887314,
+            -58.25206
+          ],
+          "visual_center_from_origin_mm": [
+            2.5066368733759088e-15,
+            2.124989576388886
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "b": [
+              8.0,
+              0.0
+            ],
+            "common": [
+              0.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 10.5,
+            "body-height": 9.375,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "resonating-element",
+            "electrode-a",
+            "electrode-b",
+            "load-a-upper",
+            "load-a-lower",
+            "load-a-junction",
+            "load-b-upper",
+            "load-b-lower",
+            "load-b-junction",
+            "common-bus",
+            "lead-common",
+            "package"
+          ],
+          "svg_bytes": 6077,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ceramic-resonator-small-thick",
+          "symbol_id": "ceramic-resonator",
+          "name": "Ceramic resonator with load capacitors",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/ceramic-resonator-small-thick.svg",
+          "width_mm": 18.29991507,
+          "height_mm": 14.04993627,
+          "origin_svg": [
+            -42.745573,
+            -58.110318
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            2.1249885180555577
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "b": [
+              8.0,
+              0.0
+            ],
+            "common": [
+              0.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 10.5,
+            "body-height": 9.375,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "resonating-element",
+            "electrode-a",
+            "electrode-b",
+            "load-a-upper",
+            "load-a-lower",
+            "load-a-junction",
+            "load-b-upper",
+            "load-b-lower",
+            "load-b-junction",
+            "common-bus",
+            "lead-common",
+            "package"
+          ],
+          "svg_bytes": 6047,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ceramic-resonator-medium-thin",
+          "symbol_id": "ceramic-resonator",
+          "name": "Ceramic resonator with load capacitors",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/ceramic-resonator-medium-thin.svg",
+          "width_mm": 22.14988303,
+          "height_mm": 17.14991031,
+          "origin_svg": [
+            -37.288923,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            0.0,
+            2.499986356944445
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              0.0
+            ],
+            "b": [
+              10.0,
+              0.0
+            ],
+            "common": [
+              0.0,
+              -10.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 14.0,
+            "body-height": 12.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "resonating-element",
+            "electrode-a",
+            "electrode-b",
+            "load-a-upper",
+            "load-a-lower",
+            "load-a-junction",
+            "load-b-upper",
+            "load-b-lower",
+            "load-b-junction",
+            "common-bus",
+            "lead-common",
+            "package"
+          ],
+          "svg_bytes": 6052,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ceramic-resonator-medium-medium",
+          "symbol_id": "ceramic-resonator",
+          "name": "Ceramic resonator with load capacitors",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/ceramic-resonator-medium-medium.svg",
+          "width_mm": 22.19988504,
+          "height_mm": 17.19991233,
+          "origin_svg": [
+            -37.218053,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            2.4999867097222244
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              0.0
+            ],
+            "b": [
+              10.0,
+              0.0
+            ],
+            "common": [
+              0.0,
+              -10.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 14.0,
+            "body-height": 12.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "resonating-element",
+            "electrode-a",
+            "electrode-b",
+            "load-a-upper",
+            "load-a-lower",
+            "load-a-junction",
+            "load-b-upper",
+            "load-b-lower",
+            "load-b-junction",
+            "common-bus",
+            "lead-common",
+            "package"
+          ],
+          "svg_bytes": 6118,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ceramic-resonator-medium-thick",
+          "symbol_id": "ceramic-resonator",
+          "name": "Ceramic resonator with load capacitors",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/ceramic-resonator-medium-thick.svg",
+          "width_mm": 22.29989296,
+          "height_mm": 17.29992024,
+          "origin_svg": [
+            -37.076311,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            1.7638888844354975e-07,
+            2.499986180555554
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              0.0
+            ],
+            "b": [
+              10.0,
+              0.0
+            ],
+            "common": [
+              0.0,
+              -10.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 14.0,
+            "body-height": 12.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "resonating-element",
+            "electrode-a",
+            "electrode-b",
+            "load-a-upper",
+            "load-a-lower",
+            "load-a-junction",
+            "load-b-upper",
+            "load-b-lower",
+            "load-b-junction",
+            "common-bus",
+            "lead-common",
+            "package"
+          ],
+          "svg_bytes": 6085,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ceramic-resonator-large-thin",
+          "symbol_id": "ceramic-resonator",
+          "name": "Ceramic resonator with load capacitors",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/ceramic-resonator-large-thin.svg",
+          "width_mm": 28.14984986,
+          "height_mm": 21.39988171,
+          "origin_svg": [
+            -28.785031,
+            -51.236361
+          ],
+          "visual_center_from_origin_mm": [
+            -7.055555550275173e-07,
+            3.374984783333332
+          ],
+          "pins_mm": {
+            "a": [
+              -13.0,
+              0.0
+            ],
+            "b": [
+              13.0,
+              0.0
+            ],
+            "common": [
+              0.0,
+              -13.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 17.5,
+            "body-height": 15.625,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "resonating-element",
+            "electrode-a",
+            "electrode-b",
+            "load-a-upper",
+            "load-a-lower",
+            "load-a-junction",
+            "load-b-upper",
+            "load-b-lower",
+            "load-b-junction",
+            "common-bus",
+            "lead-common",
+            "package"
+          ],
+          "svg_bytes": 5984,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ceramic-resonator-large-medium",
+          "symbol_id": "ceramic-resonator",
+          "name": "Ceramic resonator with load capacitors",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/ceramic-resonator-large-medium.svg",
+          "width_mm": 28.19985223,
+          "height_mm": 21.4498876,
+          "origin_svg": [
+            -28.71416,
+            -51.16549
+          ],
+          "visual_center_from_origin_mm": [
+            -1.234722221611485e-06,
+            3.37498354861111
+          ],
+          "pins_mm": {
+            "a": [
+              -13.0,
+              0.0
+            ],
+            "b": [
+              13.0,
+              0.0
+            ],
+            "common": [
+              0.0,
+              -13.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 17.5,
+            "body-height": 15.625,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "resonating-element",
+            "electrode-a",
+            "electrode-b",
+            "load-a-upper",
+            "load-a-lower",
+            "load-a-junction",
+            "load-b-upper",
+            "load-b-lower",
+            "load-b-junction",
+            "common-bus",
+            "lead-common",
+            "package"
+          ],
+          "svg_bytes": 6046,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ceramic-resonator-large-thick",
+          "symbol_id": "ceramic-resonator",
+          "name": "Ceramic resonator with load capacitors",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/ceramic-resonator-large-thick.svg",
+          "width_mm": 28.29986014,
+          "height_mm": 21.54989199,
+          "origin_svg": [
+            -28.572419,
+            -51.023749
+          ],
+          "visual_center_from_origin_mm": [
+            -3.5277777563378106e-07,
+            3.374984783333334
+          ],
+          "pins_mm": {
+            "a": [
+              -13.0,
+              0.0
+            ],
+            "b": [
+              13.0,
+              0.0
+            ],
+            "common": [
+              0.0,
+              -13.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 17.5,
+            "body-height": 15.625,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "resonating-element",
+            "electrode-a",
+            "electrode-b",
+            "load-a-upper",
+            "load-a-lower",
+            "load-a-junction",
+            "load-b-upper",
+            "load-b-lower",
+            "load-b-junction",
+            "common-bus",
+            "lead-common",
+            "package"
+          ],
+          "svg_bytes": 6017,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "933c38c55aaf4c7be37dcd9744862b3937a5ff291ca75b6aa3a05f40013aebcf"
+    },
+    {
+      "schema_version": 1,
+      "id": "crystal",
+      "revision": 1,
+      "name": "Crystal resonator",
+      "description": "Two-terminal quartz crystal resonator; a schematic label specifies frequency and loading.",
+      "keywords": [
+        "crystal",
+        "quartz",
+        "resonator",
+        "frequency",
+        "oscillator",
+        "passive",
+        "protection resonators",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "protection-and-resonators"
+      ],
+      "family": "protection-and-resonators",
+      "batch": "overnight-protection-and-resonators-02",
+      "attributes": {
+        "function": "resonator",
+        "integrated_load_capacitors": false
+      },
+      "recipe": "crystal",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "quartz",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "Resonator terminal A",
+          "description": "Resonator terminal A",
+          "kind": "passive",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "b",
+          "name": "Resonator terminal B",
+          "description": "Resonator terminal B",
+          "kind": "passive",
+          "lead_part": "lead-b"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-a",
+          "description": "Electrical lead: Resonator terminal A"
+        },
+        {
+          "id": "lead-b",
+          "description": "Electrical lead: Resonator terminal B"
+        },
+        {
+          "id": "resonating-element",
+          "description": "Resonating element"
+        },
+        {
+          "id": "electrode-a",
+          "description": "Electrode a"
+        },
+        {
+          "id": "electrode-b",
+          "description": "Electrode b"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "crystal-small-thin",
+          "symbol_id": "crystal",
+          "name": "Crystal resonator",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/crystal-small-thin.svg",
+          "width_mm": 12.14993407,
+          "height_mm": 7.84993597,
+          "origin_svg": [
+            -51.462077,
+            -60.874124
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.04999,
+            "body-height": 5.7,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "resonating-element",
+            "electrode-a",
+            "electrode-b"
+          ],
+          "svg_bytes": 2400,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "crystal-small-medium",
+          "symbol_id": "crystal",
+          "name": "Crystal resonator",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/crystal-small-medium.svg",
+          "width_mm": 12.19993997,
+          "height_mm": 7.89994151,
+          "origin_svg": [
+            -51.391206,
+            -60.803253
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666653306492e-07,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.04999,
+            "body-height": 5.7,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "resonating-element",
+            "electrode-a",
+            "electrode-b"
+          ],
+          "svg_bytes": 2429,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "crystal-small-thick",
+          "symbol_id": "crystal",
+          "name": "Crystal resonator",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/crystal-small-thick.svg",
+          "width_mm": 12.29994436,
+          "height_mm": 7.9999459,
+          "origin_svg": [
+            -51.249465,
+            -60.661512
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.04999,
+            "body-height": 5.7,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "resonating-element",
+            "electrode-a",
+            "electrode-b"
+          ],
+          "svg_bytes": 2414,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "crystal-medium-thin",
+          "symbol_id": "crystal",
+          "name": "Crystal resonator",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/crystal-medium-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 9.74995228,
+          "origin_svg": [
+            -48.627446,
+            -58.181189
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "b": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 7.6,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "resonating-element",
+            "electrode-a",
+            "electrode-b"
+          ],
+          "svg_bytes": 2407,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "crystal-medium-medium",
+          "symbol_id": "crystal",
+          "name": "Crystal resonator",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/crystal-medium-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 9.79995429,
+          "origin_svg": [
+            -48.556576,
+            -58.110318
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "b": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 7.6,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "resonating-element",
+            "electrode-a",
+            "electrode-b"
+          ],
+          "svg_bytes": 2437,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "crystal-medium-thick",
+          "symbol_id": "crystal",
+          "name": "Crystal resonator",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/crystal-medium-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 9.89996221,
+          "origin_svg": [
+            -48.414834,
+            -57.968577
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "b": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 7.6,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "resonating-element",
+            "electrode-a",
+            "electrode-b"
+          ],
+          "svg_bytes": 2421,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "crystal-large-thin",
+          "symbol_id": "crystal",
+          "name": "Crystal resonator",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/crystal-large-thin.svg",
+          "width_mm": 18.14990479,
+          "height_mm": 11.64993684,
+          "origin_svg": [
+            -42.958185,
+            -55.488299
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "b": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.74998,
+            "body-height": 9.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "resonating-element",
+            "electrode-a",
+            "electrode-b"
+          ],
+          "svg_bytes": 2407,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "crystal-large-medium",
+          "symbol_id": "crystal",
+          "name": "Crystal resonator",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/crystal-large-medium.svg",
+          "width_mm": 18.19990716,
+          "height_mm": 11.69993921,
+          "origin_svg": [
+            -42.887314,
+            -55.417429
+          ],
+          "visual_center_from_origin_mm": [
+            2.5066368733759088e-15,
+            -2.5066368733759088e-15
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "b": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.74998,
+            "body-height": 9.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "resonating-element",
+            "electrode-a",
+            "electrode-b"
+          ],
+          "svg_bytes": 2435,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "crystal-large-thick",
+          "symbol_id": "crystal",
+          "name": "Crystal resonator",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/crystal-large-thick.svg",
+          "width_mm": 18.29991507,
+          "height_mm": 11.79994359,
+          "origin_svg": [
+            -42.745573,
+            -55.275687
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "b": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.74998,
+            "body-height": 9.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "resonating-element",
+            "electrode-a",
+            "electrode-b"
+          ],
+          "svg_bytes": 2421,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "29897f3e2a96488f1b3fd2e94c6b3377ea9053b9a1076d30ecc5c2518c4c0644"
+    },
+    {
+      "schema_version": 1,
+      "id": "fuse",
+      "revision": 1,
+      "name": "Fuse",
+      "description": "Replaceable fuse with a continuous fusible link through a rectangular body.",
+      "keywords": [
+        "fuse",
+        "protection",
+        "overcurrent",
+        "passive",
+        "protection resonators",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "protection-and-resonators"
+      ],
+      "family": "protection-and-resonators",
+      "batch": "overnight-protection-and-resonators-02",
+      "attributes": {
+        "function": "overcurrent protection",
+        "integrated_load_capacitors": false
+      },
+      "recipe": "fuse",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "fuse",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "A",
+          "description": "A",
+          "kind": "passive",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "b",
+          "name": "B",
+          "description": "B",
+          "kind": "passive",
+          "lead_part": "lead-b"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-a",
+          "description": "Electrical lead: A"
+        },
+        {
+          "id": "lead-b",
+          "description": "Electrical lead: B"
+        },
+        {
+          "id": "body",
+          "description": "Body"
+        },
+        {
+          "id": "fusible-link",
+          "description": "Fusible link"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "fuse-small-thin",
+          "symbol_id": "fuse",
+          "name": "Fuse",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/fuse-small-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 4.54996021,
+          "origin_svg": [
+            -48.627446,
+            -65.551256
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "b": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.25,
+            "body-height": 2.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "fusible-link"
+          ],
+          "svg_bytes": 1966,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "fuse-small-medium",
+          "symbol_id": "fuse",
+          "name": "Fuse",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/fuse-small-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 4.59996258,
+          "origin_svg": [
+            -48.556576,
+            -65.480385
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "b": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.25,
+            "body-height": 2.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "fusible-link"
+          ],
+          "svg_bytes": 1991,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "fuse-small-thick",
+          "symbol_id": "fuse",
+          "name": "Fuse",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/fuse-small-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 4.69997049,
+          "origin_svg": [
+            -48.414834,
+            -65.338644
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "b": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.25,
+            "body-height": 2.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "fusible-link"
+          ],
+          "svg_bytes": 1977,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "fuse-medium-thin",
+          "symbol_id": "fuse",
+          "name": "Fuse",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/fuse-medium-thin.svg",
+          "width_mm": 16.14991231,
+          "height_mm": 5.34998119,
+          "origin_svg": [
+            -45.792816,
+            -64.41737
+          ],
+          "visual_center_from_origin_mm": [
+            -8.819444422177487e-07,
+            -8.819444422177487e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.0,
+            "body-height": 3.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "fusible-link"
+          ],
+          "svg_bytes": 1975,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "fuse-medium-medium",
+          "symbol_id": "fuse",
+          "name": "Fuse",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/fuse-medium-medium.svg",
+          "width_mm": 16.19991786,
+          "height_mm": 5.39998356,
+          "origin_svg": [
+            -45.721945,
+            -64.3465
+          ],
+          "visual_center_from_origin_mm": [
+            1.763888909501866e-07,
+            0.0
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.0,
+            "body-height": 3.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "fusible-link"
+          ],
+          "svg_bytes": 1996,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "fuse-medium-thick",
+          "symbol_id": "fuse",
+          "name": "Fuse",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/fuse-medium-thick.svg",
+          "width_mm": 16.29992577,
+          "height_mm": 5.49999147,
+          "origin_svg": [
+            -45.580203,
+            -64.204758
+          ],
+          "visual_center_from_origin_mm": [
+            7.055555562808358e-07,
+            -8.819444422177487e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.0,
+            "body-height": 3.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "fusible-link"
+          ],
+          "svg_bytes": 1989,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "fuse-large-thin",
+          "symbol_id": "fuse",
+          "name": "Fuse",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/fuse-large-thin.svg",
+          "width_mm": 20.14989373,
+          "height_mm": 6.14996724,
+          "origin_svg": [
+            -40.123554,
+            -63.28353
+          ],
+          "visual_center_from_origin_mm": [
+            1.7638888844354975e-07,
+            0.0
+          ],
+          "pins_mm": {
+            "a": [
+              -9.0,
+              0.0
+            ],
+            "b": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.75,
+            "body-height": 3.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "fusible-link"
+          ],
+          "svg_bytes": 1982,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "fuse-large-medium",
+          "symbol_id": "fuse",
+          "name": "Fuse",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/fuse-large-medium.svg",
+          "width_mm": 20.1998961,
+          "height_mm": 6.19996926,
+          "origin_svg": [
+            -40.052683,
+            -63.21266
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -9.0,
+              0.0
+            ],
+            "b": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.75,
+            "body-height": 3.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "fusible-link"
+          ],
+          "svg_bytes": 2007,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "fuse-large-thick",
+          "symbol_id": "fuse",
+          "name": "Fuse",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/fuse-large-thick.svg",
+          "width_mm": 20.29990401,
+          "height_mm": 6.29997717,
+          "origin_svg": [
+            -39.910942,
+            -63.070918
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -9.0,
+              0.0
+            ],
+            "b": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.75,
+            "body-height": 3.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "fusible-link"
+          ],
+          "svg_bytes": 1995,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "42920fab381a9be98362ab9cdc4f6a4eedef89f6dab3a143a64f5fa380138f73"
     }
   ]
 }
