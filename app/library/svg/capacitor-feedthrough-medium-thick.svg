@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.00002 34.865984 25.511692" width="12.29994436mm" height="8.99995801mm">
+  <title>Feedthrough capacitor</title>
+  <desc>Three-terminal feedthrough capacitor: the input and output share a through conductor, capacitively coupled to the case terminal.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 4.2, "body-width": 6.0, "grid": 1.0, "plate-gap": 1.3}, "origin_svg": [-51.249465, -63.921321], "parts": ["lead-in", "lead-out", "lead-case", "through-conductor", "case-plate", "enclosure"], "pins_mm": {"case": [0.0, -5.0], "in": [-5.0, 0.0], "out": [5.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "medium", "size_factor": 1.0, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "capacitor-feedthrough"}</metadata>
+  <g id="sc-capacitor-feedthrough-r1-medium-thick--sc-capacitor-feedthrough-r1-medium-thick" inkscape:label="Feedthrough capacitor / medium / thick" data-symbol="capacitor-feedthrough" data-revision="1" data-size="medium" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-51.249465,-63.921321)scale(0.996264,-0.996264)">
+    <g data-part="lead-in" id="sc-capacitor-feedthrough-r1-medium-thick--sc-capacitor-feedthrough-r1-medium-thick--lead-in" inkscape:label="lead-in">
+      <path d="M-14.2263 0H-5.69052" fill="none" />
+      <desc>Electrical lead: Through input</desc>
+    </g>
+    <g data-part="lead-out" id="sc-capacitor-feedthrough-r1-medium-thick--sc-capacitor-feedthrough-r1-medium-thick--lead-out" inkscape:label="lead-out">
+      <path d="M14.2263 0H5.69052" fill="none" />
+      <desc>Electrical lead: Through output</desc>
+    </g>
+    <g data-part="lead-case" id="sc-capacitor-feedthrough-r1-medium-thick--sc-capacitor-feedthrough-r1-medium-thick--lead-case" inkscape:label="lead-case">
+      <path d="M0-14.2263V-3.69884" fill="none" />
+      <desc>Electrical lead: Case</desc>
+    </g>
+    <g data-part="through-conductor" id="sc-capacitor-feedthrough-r1-medium-thick--sc-capacitor-feedthrough-r1-medium-thick--through-conductor" inkscape:label="through-conductor">
+      <path d="M-5.69052 0H5.69052" fill="none" />
+      <desc>Through conductor</desc>
+    </g>
+    <g data-part="case-plate" id="sc-capacitor-feedthrough-r1-medium-thick--sc-capacitor-feedthrough-r1-medium-thick--case-plate" inkscape:label="case-plate">
+      <path d="M-5.69052-3.69884H5.69052" fill="none" />
+      <desc>Case plate</desc>
+    </g>
+    <g data-part="enclosure" id="sc-capacitor-feedthrough-r1-medium-thick--sc-capacitor-feedthrough-r1-medium-thick--enclosure" inkscape:label="enclosure">
+      <path d="M-8.53578-7.11314V4.83693H8.53578V-7.11314ZM8.53578 4.83693" fill="none" />
+      <desc>Enclosure</desc>
+    </g>
+  </g>
+</svg>

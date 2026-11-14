@@ -11,6 +11,7 @@ from core import (ROOT, SVG, INK, BP_MM, ID_RE, MACROS, ValidationError, read_ya
                   configuration_choices, configuration_key, resolve_settings, parse_metadata,
                   package_svg, write_svg, run, tool)
 from verification import digest, design_fingerprint
+from recipe_registry import BATCH_MACROS
 
 
 def validate_custom(definition, recipe):
@@ -108,13 +109,16 @@ def render_all(definition, recipe, output):
         (work / "custom.tex").write_text(recipe, encoding="utf-8")
         choices = "\n".join(r"\expandafter\def\csname SCoption@" + name + r"\endcsname{" + str([v["id"] for v in definition["options"][name]["values"]].index(value)) + "}"
                             for name, value in options.items())
+        # Only trusted, explicitly registered recipes may supply helper macros.
+        imports = "\n".join(r"\input{" + name + ".tex}" for name, macro in BATCH_MACROS.items()
+                            if re.search(r"\\" + re.escape(macro) + r"\b", recipe))
         instance = f"sc-{definition['id']}-r{definition['revision']}-{size}-{stroke}"
         document = r"""\documentclass[border=1mm]{standalone}
 \def\pgfsysdriver{pgfsys-dvisvgm.def}
 \usepackage{schematica}
 \SCsvgtrueexport
 \newcommand{\SCoption}[1]{\csname SCoption@#1\endcsname}
-""" + choices + "\n" + r"\input{custom.tex}" + r"""
+""" + choices + "\n" + imports + "\n" + r"\input{custom.tex}" + r"""
 \begin{document}
 \SCrecordto{symbol.scmeta}
 \begin{tikzpicture}

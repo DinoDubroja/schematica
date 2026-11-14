@@ -11,6 +11,10 @@ and export SVGs for Inkscape.
 · [Roadmap and scope](docs/ROADMAP.md)
 · [Review symbols](docs/VERIFICATION.md)
 
-The current app has 26 designs and 342 configurations, dark/light mode, design
-verification and single-symbol or complete-library export. Agent-assisted creation,
-personal variants and schematic styles are next directions.
+The combined local app has 31 designs and 441 configurations: 26 Verified designs
+and five new Unverified capacitors. Dark/light mode, Variations and SVG/library
+exports remain available. [Agent integration](docs/AGENT_INTEGRATION.md) adds search,
+the shared viewer and confirmed individual creation in an isolated dev library.
+[Embedded-host verification](docs/HOST_VERIFICATION.md) remains pending. Personal
+libraries and schematic styles are future directions. The shared preview may be
+on an earlier B-published build; this local integration has not been published.

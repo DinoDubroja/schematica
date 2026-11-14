@@ -37,7 +37,7 @@ class AgentTests(unittest.TestCase):
         thick = self.service.search("Use a thicker stroke.", sid)
         self.assertEqual(thick["match_ids"], variable["match_ids"])
         self.assertEqual(thick["filters"]["stroke"], "thick")
-        self.assertEqual(self.service.search("Browse the whole library.", sid)["count"], 26)
+        self.assertEqual(self.service.search("Browse the whole library.", sid)["count"], len(self.service.catalog()["symbols"]))
 
     def test_unknown_search_never_substitutes_or_creates(self):
         result = self.service.search("quantum unicorn")

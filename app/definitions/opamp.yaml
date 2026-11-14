@@ -2,8 +2,15 @@ schema_version: 1
 id: opamp
 revision: 1
 name: Op-amp
-description: Operational amplifier with two inputs and one output. Supply pins are not shown.
-keywords: [op-amp, operational amplifier, triangle, differential, active, supplies not shown]
+description: Operational amplifier with two inputs and one output. Supply pins are
+  not shown.
+keywords:
+- op-amp
+- operational amplifier
+- triangle
+- differential
+- active
+- supplies not shown
 types:
 - active
 - amplifier
@@ -51,3 +58,5 @@ parts:
   description: Inverting input lead
 - id: lead-out
   description: Output lead
+family: analog
+batch: starter

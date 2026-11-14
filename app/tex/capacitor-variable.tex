@@ -1,0 +1,36 @@
+% Variable capacitor; vC.
+% Schematica coordinates are millimetres at Medium; pins snap outward to the 1 mm grid.
+\newcommand{\SCBatchCapacitorVariable}[4]{%
+  \SCresolve{#1}{#2}{#3}
+  \def\F{#2}
+  \pgfmathsetmacro{\SCorientx}{ifthenelse(mod(#4,2)==1,-1,1)}
+  \pgfmathsetmacro{\SCorienty}{ifthenelse(#4>1,-1,1)}
+  \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+    \SCdimension{body-width}{2*\F}
+    \SCdimension{body-height}{6.66667*\F}
+    \SCdimension{plate-gap}{2*\F}
+    \SCdimension{grid}{1}
+    \SCpin{a}{-ceil(\F+2)-1}{0}
+    \begin{SCpart}{lead-a}
+    \draw ({-ceil(\F+2)-1},{0})--({-1*\F},{0*\F});
+    \end{SCpart}
+    \SCpin{b}{ceil(\F+2)+1}{0}
+    \begin{SCpart}{lead-b}
+    \draw ({ceil(\F+2)+1},{0})--({1*\F},{0*\F});
+    \end{SCpart}
+    \begin{SCpart}{plate-a}
+    \draw ({-1*\F},{-3.33333*\F})--({-1*\F},{3.33333*\F});
+    \end{SCpart}
+    \begin{SCpart}{plate-b}
+    \draw ({1*\F},{-3.33333*\F})--({1*\F},{3.33333*\F});
+    \end{SCpart}
+    \begin{SCpart}{adjustment}
+    \begin{scope}[xscale=\SCorientx,yscale=\SCorienty]
+    \draw ({-3.3*\F},{-4.8*\F})--({3.3*\F},{4.8*\F});
+    \begin{scope}[shift={({3.3*\F},{4.8*\F})},rotate=55.4915]
+    \draw ({-1.25*\F},{0.75*\F})--({0*\F},{0*\F})--({-1.25*\F},{-0.75*\F});
+    \end{scope}
+    \end{scope}
+    \end{SCpart}
+  \end{scope}
+}

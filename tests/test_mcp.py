@@ -14,7 +14,8 @@ class MCPTests(unittest.IsolatedAsyncioTestCase):
     async def test_protocol_search_viewer_selection_and_resource(self):
         with tempfile.TemporaryDirectory(dir=ROOT / "build", prefix="mcp-test-") as path:
             initialize(path)
-            server = create_server(AgentService(path))
+            service = AgentService(path)
+            server = create_server(service)
             async with create_connected_server_and_client_session(server) as client:
                 tools = (await client.list_tools()).tools
                 search = next(t for t in tools if t.name == "search_symbols")
@@ -29,7 +30,7 @@ class MCPTests(unittest.IsolatedAsyncioTestCase):
                 self.assertNotIn('src="./', resource.contents[0].text)
                 data = await client.call_tool("viewer_data", {"session_id": session})
                 self.assertNotIn("catalog", data.structuredContent)
-                self.assertEqual(len(data.meta["catalog"]["symbols"]), 26)
+                self.assertEqual(len(data.meta["catalog"]["symbols"]), len(service.catalog()["symbols"]))
                 selection = await client.call_tool("use_symbol", {"symbol_id": "resistor-eu", "revision": 1, "size": "small", "stroke": "thick", "session_id": session})
                 self.assertFalse(selection.isError)
                 body = await client.read_resource(selection.structuredContent["resource_uri"])
@@ -38,6 +39,8 @@ class MCPTests(unittest.IsolatedAsyncioTestCase):
                 self.assertEqual(saved.structuredContent["selection"], selection.structuredContent)
                 source = await client.call_tool("get_drawing_source", {"symbol_id": "resistor-variable-eu"})
                 self.assertIn("SCResistorVariant", source.structuredContent["recipe_tex"])
+                source = await client.call_tool("get_drawing_source", {"symbol_id": "capacitor-variable"})
+                self.assertIn(r"\SCBatchCapacitorVariable{#1}{#2}{#3}{\SCoption{orientation}}", source.structuredContent["recipe_tex"])
                 invalid = await client.call_tool("prepare_creation", {"description": "", "interpretation": {}})
                 self.assertTrue(invalid.isError)
 

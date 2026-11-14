@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000019 29.196723 25.417167" width="10.29995506mm" height="8.96661169mm">
+  <title>Polarized capacitor</title>
+  <desc>Polarized capacitor with straight plates; the left terminal is positive.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 6.66667, "body-width": 2.0, "grid": 1.0, "plate-gap": 2.0}, "origin_svg": [-54.084096, -59.291436], "parts": ["lead-positive", "lead-negative", "plate-positive", "plate-negative", "polarity"], "pins_mm": {"negative": [4.0, 0.0], "positive": [-4.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "medium", "size_factor": 1.0, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "capacitor-polarized"}</metadata>
+  <g id="sc-capacitor-polarized-r1-medium-thick--sc-capacitor-polarized-r1-medium-thick" inkscape:label="Polarized capacitor / medium / thick" data-symbol="capacitor-polarized" data-revision="1" data-size="medium" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-54.084096,-59.291436)scale(0.996264,-0.996264)">
+    <g data-part="lead-positive" id="sc-capacitor-polarized-r1-medium-thick--sc-capacitor-polarized-r1-medium-thick--lead-positive" inkscape:label="lead-positive">
+      <path d="M-11.38104 0H-2.84526" fill="none" />
+      <desc>Electrical lead: Positive</desc>
+    </g>
+    <g data-part="lead-negative" id="sc-capacitor-polarized-r1-medium-thick--sc-capacitor-polarized-r1-medium-thick--lead-negative" inkscape:label="lead-negative">
+      <path d="M11.38104 0H2.84526" fill="none" />
+      <desc>Electrical lead: Negative</desc>
+    </g>
+    <g data-part="plate-positive" id="sc-capacitor-polarized-r1-medium-thick--sc-capacitor-polarized-r1-medium-thick--plate-positive" inkscape:label="plate-positive">
+      <path d="M-2.84526-9.48418V9.48418" fill="none" />
+      <desc>Plate positive</desc>
+    </g>
+    <g data-part="plate-negative" id="sc-capacitor-polarized-r1-medium-thick--sc-capacitor-polarized-r1-medium-thick--plate-negative" inkscape:label="plate-negative">
+      <path d="M2.84526-9.48418V9.48418" fill="none" />
+      <desc>Plate negative</desc>
+    </g>
+    <g data-part="polarity" id="sc-capacitor-polarized-r1-medium-thick--sc-capacitor-polarized-r1-medium-thick--polarity" inkscape:label="polarity">
+      <path d="M-9.10481 7.53992H-5.97505" fill="none" />
+      <path d="M-7.53992 5.97505V9.10481" fill="none" />
+      <desc>Polarity</desc>
+    </g>
+  </g>
+</svg>

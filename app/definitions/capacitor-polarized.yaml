@@ -1,0 +1,57 @@
+schema_version: 1
+id: capacitor-polarized
+revision: 1
+name: Polarized capacitor
+description: Polarized capacitor with straight plates; the left terminal is positive.
+keywords:
+- capacitor
+- passive
+- polarized
+- electrolytic
+- capacitors
+- overnight
+- batch 02
+types:
+- capacitors
+family: capacitors
+batch: overnight-capacitors-02
+attributes:
+  polarized: true
+  variant: polarized
+recipe: capacitor-polarized
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: eC
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: positive
+  name: Positive
+  description: Positive
+  kind: passive
+  lead_part: lead-positive
+- id: negative
+  name: Negative
+  description: Negative
+  kind: passive
+  lead_part: lead-negative
+parts:
+- id: lead-positive
+  description: 'Electrical lead: Positive'
+- id: lead-negative
+  description: 'Electrical lead: Negative'
+- id: plate-positive
+  description: Plate positive
+- id: plate-negative
+  description: Plate negative
+- id: polarity
+  description: Polarity

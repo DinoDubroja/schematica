@@ -12,7 +12,7 @@
 stdio and Streamable HTTP MCP, the shared viewer adapter and an isolated,
 revisioned dev-library store. No publication is performed by A.
 
-Latest review: 55 Python + 11 JavaScript tests passed before B's next integration;
+Combined review: 59 Python + 11 JavaScript tests passed;
 real creation/refinement and existing-symbol option proofs passed. Browser search
 follow-ups, single/empty results, Variations, exact selection and SVG download
 passed. The [platform record](docs/HOST_VERIFICATION.md) distinguishes protocol
@@ -30,45 +30,36 @@ Use the [integration checks](docs/AGENT_INTEGRATION.md#checks) as well as the sy
 checks below. Test stores are ignored local data, not production symbols and not
 synchronized by checkpoint commits.
 
-14-11-2026: [parallel work](#parallel-work) separates B's symbols from A's
-integration work. B's checkout and ignored review evidence are backed up; the
-accepted app is unchanged. Setup checks: 42 Python tests, eight JavaScript tests,
-and the same 388-file build `fae9ed42be9d`. Machine-specific ownership and exact
-ready commits are in the local handoff; A's setup remains unverified until its
-checkout and handoff exist. This setup is local only, with no push or deployment.
+14-11-2026: **batch 02 is in progress**. 5 of 80 new designs are complete;
+the current source library has **31 designs / 441 configurations**.
+The original 26 designs remain Verified; new designs are Unverified.
+Completed families: capacitors. See the [finite inventory](docs/BATCH_02.md).
 
-14-11-2026: **option B and all approvals are live**. The library has **26 designs /
-342 configurations**, all **Verified**. Tapped resistors are removed. Both nonlinear
-designs use the selected smooth B curve, revision 3.
+B capacitor checkpoint build: `0d6b41588a1a`. The shared preview remains on the previous
+release until the tested batch is published. Family checkpoint commits are pushed
+on `work/agent-b-symbols`; B does not merge main or A's unfinished work. A integrates only exact READY checkpoints.
 
-![Selected option B in the actual EU and US exports](docs/images/nonlinear-option-b.png)
-
-**Live build: `fae9ed42be9d`.** [Open the shared preview](https://schematica-preview.dinodubroja.workers.dev/).
-Cloudflare version `5cc8f4f6-8343-47d4-9dea-d0f562cc4f69` was published using Wrangler.
-The user completed one authorization step; no browser automation was used.
-
-| Check | Result |
-|---|---|
-| Approval status | Original six + 18 pasted approvals + two selected B designs = 26 Verified |
-| Pending cleanup | Actual live catalog clears the 18 supplied pending selections; Undo does not restore them |
-| Hosted files | Build manifest and all 386 served assets match local hashes, including 342 SVGs and 36 libraries |
-| Focused approval tests | Eight Python + eight JavaScript tests pass; all 386 non-catalog assets unchanged |
-| Prior geometry checks | 42 Python + eight JavaScript tests passed for B; 18 changed configurations match the chosen curve within 0.00007 mm; 324 other SVGs byte-identical |
-| Documentation | 71 local links/anchors checked |
-| Scope | No new rendering, Inkscape checks or browser automation; device interaction remains for human review |
+Checks so far: 46 Python tests, eight JavaScript tests, all declared family
+configurations, Inkscape vector bounds and composite save/reopen. Actual renders
+were visually inspected at common scale and normal size, including Small/Thick
+and every adjustment orientation. All 342 approved SVG bytes and 26 approval
+records match the pre-batch baseline. No new design has human approval.
 
 ### Test on both Windows devices
 
+Use the shared preview after publication; during development use your local build.
+
 | Action | Expected result |
 |---|---|
-| Open the shared preview and press Ctrl+F5 once | Current library loads; prior Pending selections clear |
-| Open All symbols, then Unverified | 26 Verified designs; Unverified is empty; no Pending approvals |
-| Search `tapped` | No results |
-| Inspect nonlinear EU and US at Medium/Medium and Small/Thick | Smooth selected B with no centre join or arrowhead |
-| Switch dark/light and optionally download a symbol/library | Usable theme; single SVG matches selection; complete library contains 26 symbols |
+| Choose a family and its `overnight-…-02` batch | Only that family's new designs appear |
+| Open Unverified; search `overnight` | New designs awaiting your review; existing approved designs stay Verified |
+| Open Variations, then Small / Thick | All supported settings render; pin identities stay fixed |
+| Inspect polarity, arrows and terminal names | Electrical meaning matches the description; report a fix by copied symbol reference |
+| Switch dark/light; download one SVG and the library | Usable theme; clean vectors; complete library contains every current design |
+| Verify acceptable designs; copy approvals into chat | Browser selections are Pending until the exact approval handoff is applied and published |
 
-Report device/browser, selected symbol and failed action if results differ.
-The same link works on both devices; the GitHub README also links to it.
+No new review sheet or comment UI is added. Review through Unverified and Variations;
+send corrections in chat. See [verification](docs/VERIFICATION.md).
 
 ## Run on Windows
 
@@ -164,7 +155,7 @@ schematica/
 │   ├── tex/                # Authoritative parameterized geometry
 │   ├── core.py             # Find, inspect and render; shared TeX export
 │   ├── exports.py          # SVG, ZIP, sheet and Symbols composition
-│   ├── library/            # Catalog and 342 SVGs for immediate browsing
+│   ├── library/            # Catalog and 441 SVGs for immediate browsing
 │   ├── verification.py     # Validate and apply chat approval handoffs
 │   ├── verification.json   # Official acceptance, tied to actual geometry
 │   ├── viewer/             # Accepted HTML/CSS/JavaScript interface
@@ -192,7 +183,7 @@ schematica/
 
 The viewer reads pre-rendered SVGs and a catalog. It never compiles TeX. The static
 builder copies the accepted artwork, reads current editorial metadata and creates
-36 complete-library exports. The website contains 388 files, with no Python, source
+36 complete-library exports. The website contains 488 files, with no Python, source
 TeX, references or test material. Its content hashes determine `build.json`.
 
 ## Test and review
@@ -202,12 +193,12 @@ browser-state tests; the app itself has no Node dependency.
 
 ```powershell
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
-node --test tests\review.test.cjs tests\configurations.test.cjs
+node --test tests\review.test.cjs tests\configurations.test.cjs tests\host.test.cjs
 .\.venv\Scripts\python.exe app\build_site.py
 .\.venv\Scripts\python.exe tests\check_docs.py
 ```
 
-Expect **42 Python tests and 8 JavaScript tests**, a **388-file** website, and no
+Expect **59 Python tests and 11 JavaScript tests**, a **488-file** website, and no
 broken documentation links. Tests cover all designs/configurations, accepted SVG
 bytes, pins, independent strokes, editable parts, exports, HTTP boundaries and
 approval validity. Compare `app/dist/build.json` with the hosted `build.json` when
@@ -215,7 +206,7 @@ checking that both devices have the same version.
 
 | Action | Expected result |
 |---|---|
-| Open the app; switch All symbols / Unverified | 26 designs / no unverified designs; all 26 are Verified |
+| Open the app; switch All symbols / Unverified | 31 designs / 5 unverified designs; the original 26 remain Verified |
 | Choose Resistors / Batch 01; search `NTC`, then `zzzz`, then clear | Two NTCs; empty state; the filtered batch returns |
 | Select Variable resistor · US; open Variations | Stroke, Size and Arrow orientation rows; one setting varies per row, all others at defaults; no large preview |
 | Choose Small / Thick / Down-left; open Variations | Comparison rows still use defaults, independently of the main preview selection |
@@ -226,10 +217,10 @@ checking that both devices have the same version.
 | Copy approvals or Copy symbol reference | Approval JSON includes exact revision/fingerprint; reference includes name/ID/revision/link |
 | Open the reference link in another browser | Same design selected; local approvals are not transferred |
 | Switch dark/light; reload; use Small/Thick and Grid & pins | Theme persists; stroke changes keep pins fixed; preview aids toggle together |
-| Export Small/Thick/Down-left variable resistor, then the library while filtered | Single matches the selected marking; library has all 26 designs and Down-left on its four adjustable designs |
+| Export Small/Thick/Down-left variable resistor, then the library while filtered | Single matches the selected marking; library has all 31 designs and Down-left on its six adjustable designs |
 | Select a coil; export the library | Orientation controls disappear; adjustable designs in the library use Up-right |
 | Inspect exported artwork | Black vectors, no blue points/grid; NTC/PTC glyph outlines stay grouped as temperature-mark |
-| Open the library in Inkscape Symbols | 26 thumbnails; placed artwork can be unlinked, edited, saved and reopened |
+| Open the library in Inkscape Symbols | 31 thumbnails; placed artwork can be unlinked, edited, saved and reopened |
 | Use Tab, Enter, Escape, arrow keys on the tabs, and `/`; narrow the window | Controls remain reachable; dialogs return focus; search focuses; page does not overflow |
 
 Repeat on both Windows devices using the [shared preview](https://schematica-preview.dinodubroja.workers.dev/).
@@ -308,9 +299,9 @@ Creates `app/build/exports/` with a hash manifest and three ZIPs:
 
 | Package | Contents |
 |---|---|
-| `web-preview.zip` | 388 static website files, ready for Cloudflare upload |
-| `all-symbols.zip` | 342 individual SVGs |
-| `tex-bundles.zip` | 342 standalone configurations, each with `symbol.tex` and required helpers |
+| `web-preview.zip` | 488 static website files, ready for Cloudflare upload |
+| `all-symbols.zip` | 441 individual SVGs |
+| `tex-bundles.zip` | 441 standalone configurations, each with `symbol.tex` and required helpers |
 
 Only the shared TeX recipes/helpers and prebuilt browser SVGs are maintained.
 Generated standalone bundles and ZIPs are not committed. To use the native TeX

@@ -42,7 +42,6 @@ settings or another checkout:
 
 ```powershell
 .\.venv\Scripts\python.exe app\setup_agent.py
-codex mcp get schematica-integration
 ```
 
 Open a fresh trusted chat rooted at this checkout, reload its MCP connection if
@@ -51,10 +50,22 @@ needed, and use the [search skill](../.agents/skills/schematica-search/SKILL.md)
 does not retroactively prove that this currently running chat loaded the tools.
 Keep the preview running for browser/download links.
 
-Claude's generated JSON fragment is a local launch description. Current Claude
-documentation favors desktop extensions and distinguishes local plugins from
-remote connectors; inspect the installed app's supported developer connection
-path before merging it. No existing Claude configuration is overwritten.
+The installed CLI did not discover the generated project configuration during this
+check. A separate namespaced global entry, `schematica-integration-a`, was therefore
+registered for this machine and recognized by `codex mcp get schematica-integration-a`.
+Existing settings were backed up and verified preserved. This active chat still
+needs an MCP reload/fresh chat; registration alone is not an embedded-host test.
+On another machine, inspect project trust/config discovery first. If needed, use
+`codex mcp add` with the generated fragment's absolute Python, server and data-root
+arguments; do not copy this machine's absolute paths or overwrite existing entries.
+
+Claude's generated JSON fragment is a local launch description. In the observed
+Windows 5.11492.5 app, **Settings → Desktop app → Extensions → Local MCP servers →
+Edit config** locates the actual configuration; it is not necessarily under the
+older Roaming/Claude path. A namespaced `schematica-integration-a` entry was merged
+on this machine after backup, preserving all existing settings. The running app
+still showed no loaded servers, so restart/reload it before the checklist. No real
+embedded journey is established by editing this configuration.
 
 Cloud-hosted Chat/Work/Codex and remote Claude connectors cannot assume access to
 this machine's loopback. They need an approved reachable endpoint/private tunnel
@@ -89,6 +100,8 @@ website; the integration viewer exports individual selected symbols.
 node --test tests\review.test.cjs tests\configurations.test.cjs tests\host.test.cjs
 .\.venv\Scripts\python.exe tests\verify_agent_creation.py
 .\.venv\Scripts\python.exe tests\verify_agent_transport.py
+.\.venv\Scripts\python.exe tests\verify_agent_options.py
+.\.venv\Scripts\python.exe tests\verify_agent_registered_recipe.py
 .\.venv\Scripts\python.exe app\build_site.py
 .\.venv\Scripts\python.exe tests\check_docs.py
 ```

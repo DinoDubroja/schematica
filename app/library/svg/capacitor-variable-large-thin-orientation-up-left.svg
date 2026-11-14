@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000024 34.440758 40.110029" width="12.14993407mm" height="14.14992690mm">
+  <title>Variable capacitor</title>
+  <desc>Continuously adjustable two-terminal capacitor; only the diagonal adjustment marking changes orientation.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 8.33333, "body-width": 2.5, "grid": 1.0, "plate-gap": 2.5}, "origin_svg": [-51.462077, -51.945007], "parts": ["lead-a", "lead-b", "plate-a", "plate-b", "adjustment"], "pins_mm": {"a": [-5.0, 0.0], "b": [5.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "options": {"orientation": "up-left"}, "size": "large", "size_factor": 1.25, "stroke": "thin", "stroke_mm": 0.15}, "symbol_id": "capacitor-variable"}</metadata>
+  <g id="sc-capacitor-variable-r1-large-thin-orientation-up-left--sc-capacitor-variable-r1-large-thin-orientation-up-left" inkscape:label="Variable capacitor / large / thin" data-symbol="capacitor-variable" data-revision="1" data-size="large" data-stroke="thin" data-option-orientation="up-left" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(-51.462077,-51.945007)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="sc-capacitor-variable-r1-large-thin-orientation-up-left--sc-capacitor-variable-r1-large-thin-orientation-up-left--lead-a" inkscape:label="lead-a">
+      <path d="M-14.2263 0H-3.55656" fill="none" />
+      <desc>Electrical lead: A</desc>
+    </g>
+    <g data-part="lead-b" id="sc-capacitor-variable-r1-large-thin-orientation-up-left--sc-capacitor-variable-r1-large-thin-orientation-up-left--lead-b" inkscape:label="lead-b">
+      <path d="M14.2263 0H3.55656" fill="none" />
+      <desc>Electrical lead: B</desc>
+    </g>
+    <g data-part="plate-a" id="sc-capacitor-variable-r1-large-thin-orientation-up-left--sc-capacitor-variable-r1-large-thin-orientation-up-left--plate-a" inkscape:label="plate-a">
+      <path d="M-3.55656-11.85521V11.85521" fill="none" />
+      <desc>Plate a</desc>
+    </g>
+    <g data-part="plate-b" id="sc-capacitor-variable-r1-large-thin-orientation-up-left--sc-capacitor-variable-r1-large-thin-orientation-up-left--plate-b" inkscape:label="plate-b">
+      <path d="M3.55656-11.85521V11.85521" fill="none" />
+      <desc>Plate b</desc>
+    </g>
+    <g data-part="adjustment" id="sc-capacitor-variable-r1-large-thin-orientation-up-left--sc-capacitor-variable-r1-large-thin-orientation-up-left--adjustment" inkscape:label="adjustment">
+      <path d="M11.7367-17.07156L-11.7367 17.07156" fill="none" />
+      <path d="M-7.02026 14.91936L-11.7367 17.07156L-11.41617 11.8972" fill="none" />
+      <desc>Adjustment</desc>
+    </g>
+  </g>
+</svg>

@@ -3,7 +3,12 @@ id: resistor-us
 revision: 1
 name: US resistor
 description: American resistor drawn as a zigzag, with a terminal at each end.
-keywords: [resistor, American, zigzag, passive, non-polarized]
+keywords:
+- resistor
+- American
+- zigzag
+- passive
+- non-polarized
 types:
 - passive
 - resistor
@@ -39,3 +44,5 @@ parts:
   description: Lead from terminal A to body
 - id: lead-b
   description: Lead from body to terminal B
+family: resistors
+batch: starter

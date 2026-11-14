@@ -13,10 +13,12 @@ of embedded UI support. No remote endpoint, tunnel or public plugin was publishe
 | Creation over stdio | Verified: reference PNG bytes, confirmation, 18 real TeX configurations, save |
 | Fresh HTTP retrieval | Verified: saved symbol retrieved after a separate server startup; remains Unverified |
 | Revision/refinement proof | Verified: 36 real TeX configurations over two revisions, old revision retained, unchanged lead and terminals preserved |
-| Browser fallback | Verified: normal → European → variable → thick, single match, Variations, empty result, Browse all, Use this symbol |
+| Existing-symbol options | Verified: 18 configurations with a new named option; original body/leads/pins and old revision preserved |
+| B registered recipe reuse | Verified: source-tool wrapper and all 36 variable-capacitor configurations through refinement; unrelated geometry/pins preserved |
+| Browser fallback | Verified: normal → European → variable → thick, single match, Variations, empty result, Browse all, Use this symbol; integrated capacitor and saved custom option preview |
 | Browser SVG download | Verified byte-for-byte against the selected accepted SVG |
 | MCP Apps bridge | Automated mock-host tests pass: initialization, metadata/artwork access, context feedback and refusal fallback; not a real host claim |
-| Production geometry | Source artwork and official ledger remain unchanged in A; inherited regression checks pass |
+| Production geometry | All original 342 SVG files and 26 approvals match the baseline; combined 59 Python/11 JavaScript tests pass |
 
 Repeatable commands are in [the integration guide](AGENT_INTEGRATION.md#checks).
 Machine-specific stores, logs, process IDs and exact commits are in A's local
@@ -36,7 +38,7 @@ verified. A failed feature must be recorded separately from a connectivity block
 | ChatGPT Desktop · Work cloud | Blocked | No approved reachable MCP endpoint/private tunnel; local-computer bridging is workspace-dependent |
 | ChatGPT Desktop · Codex local | Blocked | Namespaced local MCP connection registered; this active chat has not reloaded its tools/UI |
 | ChatGPT Desktop · Codex cloud | Blocked | No approved cloud connector and persistent dev-library destination |
-| Claude Desktop | Untested | App installed on the development machine; local launch fragment prepared; connector path and actual embedded behavior need testing |
+| Claude Desktop | Blocked | Version 5.11492.5 observed: Settings → Desktop app → Extensions exposes Local MCP servers/Edit config. Namespaced isolated entry added with existing settings preserved; the running app still shows no servers until reload. Embedded journey untested. |
 
 Windows Computer Use guidance in this development session prohibits automation of
 the ChatGPT desktop app UI. Therefore its manual interaction checks were not

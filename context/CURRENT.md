@@ -1,51 +1,54 @@
 # Current status
 
-14-11-2026 · **Agent A integration milestone implemented locally; host verification pending.**
+14-11-2026 · **A integration milestone implemented locally; combined checks passed; host checks pending.**
 
-## Working ownership
+## Ownership and authorization
 
-This is Agent A's `work/agent-a-integration`, created from committed baseline
-`477f679c51c699573f0e28f31cfe63f7e4bc01b1` and fast-forwarded through B's exact
-ready documentation checkpoint `89dbd3e`. The local workspace handoff
-`Local/parallel-work/agent-a.md` records paths, environments, data, ports and ready
-commits. B owns `agent-b.md` and its separate symbol checkout.
-See the [parallel-work guide](../DEVELOPMENT.md#parallel-work).
+This is Agent A's `work/agent-a-integration`, isolated from B's symbol checkout.
+A started at `477f679`, adopted B's ready documentation checkpoint `89dbd3e`,
+and has integrated exact READY capacitor checkpoint `51a101c`. Machine-specific
+paths, ports, data and ready commits are in `Local/parallel-work/agent-a.md`.
+B owns its own handoff and checkout. See [parallel work](../DEVELOPMENT.md#parallel-work).
 
-**Current user authorization:** local environments, implementation, testing,
-task-specific checkpoint commits and local integration of exact ready B commits.
-A has no new push/deployment permission. B remains sole publisher of the existing
-shared preview. Accounts/personal libraries remain deferred. B is working on its
-separately authorized second batch; never assume its moving tip is ready.
+A is authorized for local setup, implementation, tests, checkpoint commits and
+integration of exact ready B work. **No A push or deployment is authorized.**
+B's separate [batch-02 request](../docs/BATCH_02.md) authorizes its finite 80-design
+batch, family commits, pushing B's branch and publishing its tested library.
+B remains sole shared-preview publisher. Never treat its moving branch tip as ready.
+The collection is the dev library; accounts and personal libraries remain deferred.
 
-## Integration checkpoint
+## Delivered locally
 
-- Natural-language search and follow-up filters; exact identity, revision,
-  configuration and retrievable SVG selection. One prewritten shared website/MCP
-  Apps viewer, including single and zero matches and Browse all.
-- Confirmed individual creation from text and accessible image references,
-  exhaustive parameterized TeX rendering, named options, review alternatives and
-  request-only save/retrieval. Drafts and saved revisions use an isolated dev
-  library. Previous revisions remain recoverable; saves remain Unverified.
-- 55 Python and 11 JavaScript tests passed before B's next integration. Real
-  proofs cover 36 creation/refinement configurations, 18 creations over stdio,
-  and 18 existing-symbol option configurations preserving body/leads/connections.
-- Real stdio/HTTP MCP and focused browser tests pass. Actual embedded-host
-  journeys remain blocked/untested; no remote endpoint was published.
+- Natural-language search and follow-ups; exact identity/revision/configuration/SVG
+  selection. One prewritten shared website/MCP Apps viewer, including one/zero
+  matches, active filters, Browse all and accepted Variations controls.
+- Separate creation skill: short text plus accessible images, explain/confirm/wait,
+  authoritative TeX, all combinations checked, preview/two alternatives, request-only
+  save. Isolated drafts and recoverable dev-library revisions; saves stay Unverified.
+- Combined checks: 59 Python + 11 JavaScript tests; real proofs covering 108 TeX
+  configurations across creation, refinement, transport, added options and B recipe reuse.
+  stdio/HTTP and focused browser behavior pass; embedded-host journeys are pending.
 - [Setup/use](../docs/AGENT_INTEGRATION.md), [creation contract](../docs/INDIVIDUAL_CREATION.md),
-  [platform evidence and user checks](../docs/HOST_VERIFICATION.md).
+  [platform evidence and exact user checks](../docs/HOST_VERIFICATION.md).
 
-Next: adopt B's exact ready capacitor checkpoint, regenerate from combined
-sources and rerun checks. Then run real-host checks after MCP reload/approved
-cloud connectivity. The proposed lighter recurring Inkscape policy and B's
-two-device interaction checks remain open.
+## Integrated symbols and review
 
-## Inherited symbol and publication checkpoint
+B's capacitor checkpoint has **31 designs / 441 configurations**, including the
+original 26 Verified designs and five new Unverified designs. B reports all original
+342 SVG bytes and 26 approval records preserved, with 46 Python/eight JS checks,
+full-family Inkscape bounds/vector/save-reopen checks and visual inspection.
+A independently confirmed the same preservation, regenerated build `d05badc085b5`
+(488 files) and passed combined checks. Tests do not confer human artwork approval.
+Nonlinear B revision 3 and removed tapped/varistor designs remain unchanged.
 
-The initial A baseline has **26 designs / 342 configurations**, all Verified.
-Nonlinear EU/US revision 3 retains the selected smooth B curve; tapped designs
-remain removed. A does not change accepted artwork or the official ledger.
-Historical shared preview build: `fae9ed42be9d`, published by B before this task.
-This is not a new live-site verification or publication by A.
+B's checkpoint build was `0d6b41588a1a`; its shared preview was still on the prior
+`fae9ed42be9d` release at that handoff. This is historical evidence, not an A live-site
+verification. The remaining batch families continue independently in B.
 
-[Existing symbol review steps](../DEVELOPMENT.md#test-on-both-windows-devices)
-· [Decision history](DECISIONS.md) · [Broad roadmap](../docs/ROADMAP.md)
+Next: complete the local merge checkpoint and handoff; run host-specific checks
+after MCP reload/approved cloud connectivity. The independent repository recovery
+audit identified stale overview counts/links, now corrected.
+The lighter recurring Inkscape policy and two-device interaction checks remain open.
+
+[Decision history](DECISIONS.md) · [Broad roadmap](../docs/ROADMAP.md)
+· [Symbol review](../DEVELOPMENT.md#test-on-both-windows-devices)

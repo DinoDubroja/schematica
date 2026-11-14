@@ -81,13 +81,16 @@ def create_server(service, port=8794):
         """Get the authoritative definition and TeX for a requested refinement/options workflow.
         Preserve unrelated parts and connection identities. This does not authorize editing or rendering.
         """
-        from core import MACROS, RESISTOR_VARIANTS, ORIENTATIONS
+        from core import MACROS, RESISTOR_VARIANTS
+        from recipe_registry import BATCH_MACROS
         symbol = service.symbol(symbol_id, revision)
         definition = {k: v for k, v in symbol.items() if k not in ("configurations", "source", "verification", "source_fingerprint")}
         if symbol.get("source"):
             recipe = service.store.artifact(symbol["source"]["recipe"]).read_text(encoding="utf-8")
         else:
             args = ""
+            if symbol["recipe"] in BATCH_MACROS:
+                args = "{" + (r"\SCoption{orientation}" if "orientation" in symbol.get("options", {}) else "0") + "}"
             if symbol["recipe"] == "resistor-variant":
                 drawing = symbol["drawing"]
                 orientation = r"\SCoption{orientation}" if "orientation" in symbol.get("options", {}) else "0"

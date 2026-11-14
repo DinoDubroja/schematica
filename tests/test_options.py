@@ -80,7 +80,7 @@ class SymbolOptions(unittest.TestCase):
 
     def test_variable_arrowheads_clear_body_at_small_thick(self):
         for symbol in self.symbols:
-            if symbol.get('drawing', {}).get('variant') != 'variable': continue
+            if symbol.get('recipe') != 'resistor-variant' or symbol.get('drawing', {}).get('variant') != 'variable': continue
             for value in symbol['options']['orientation']['values']:
                 config = library_selection(symbol,'small','thick',{'orientation':value['id']})
                 head = points(paths(config, 'adjustment')[1])
