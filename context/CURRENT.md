@@ -1,37 +1,52 @@
 # Current status
 
-14-11-2026 · **Cloudflare preview updated; all 26 designs Verified.**
+14-11-2026 · **Delivery workflow adopted; documentation-only main update.**
 
-## Current checkpoint
+## Delivery workflow adoption
 
-- **26 designs / 342 configurations**, all officially Verified. The original six,
-  the 18 pasted approvals and the two explicitly selected B designs are recorded
-  against their exact revisions/fingerprints. No new design approval is pending.
-- Nonlinear EU/US revision 3 uses the smooth selected B curve; tapped resistors
-  are removed. Geometry and UI are unchanged since the checked B implementation.
-- Live build **`fae9ed42be9d`**, Cloudflare version
-  **`5cc8f4f6-8343-47d4-9dea-d0f562cc4f69`**. Publication used Wrangler, with user
-  authorization and no browser automation.
-- The hosted manifest and all 386 served assets match local hashes. All 342
-  individual SVGs and 36 complete libraries are included; removed taps return 404.
-- Eight approval Python tests and eight JavaScript tests pass. With the actual live
-  catalog, saved Pending approvals clear to zero and Undo cannot restore them.
-- Earlier B checks remain valid: 42 Python + eight JavaScript tests, exact match
-  to selected B across 18 configurations, 324 unrelated SVGs byte-identical.
+[AGENTS.md](../AGENTS.md) requires the authoritative
+[delivery checklist](../DEVELOPMENT.md#delivery-checklist) before finishing.
+Agent A coordinates exact ready commits, conflict resolution and combined checks.
+The same checklist is adopted locally in A and in B's active branch. Branch
+publication, main updates and hosted-app deployment remain separate actions.
+This delivery changes guidance and the README entry point only; product features
+are not merged and the app is not deployed. Installer simplification and rewriting
+user guides remain separate work.
 
-## Next step
+## Source, preview and unfinished work
 
-Human testing on both Windows devices: open the
-[shared preview](https://schematica-preview.dinodubroja.workers.dev/), press Ctrl+F5
-once, and follow the [short testing checklist](../DEVELOPMENT.md#test-on-both-windows-devices).
-All symbols should be Verified, with no Pending selections or unverified designs.
+- **Main source:** the existing 26 designs / 342 configurations, all Verified.
+  The earlier product commit is
+  [`477f679`](https://github.com/DinoDubroja/schematica/commit/477f679c51c699573f0e28f31cfe63f7e4bc01b1).
+- **Published symbol work:** B's final-approval source checkpoint
+  [`fda51cf`](https://github.com/DinoDubroja/schematica/commit/fda51cf00fc2531ec7f83987f5f66a7011ec8cb4),
+  with cumulative ready documentation at
+  [`2fedf44`](https://github.com/DinoDubroja/schematica/commit/2fedf44e984340c5b64b540b36cbf0df5f92e10a).
+  B reports build `21ee8da1455d` on the
+  [shared preview](https://schematica-preview.dinodubroja.workers.dev/):
+  **91 Verified / 0 Unverified designs**, 1,035 configurations. Cloudflare version
+  `626b5f31-d628-46f2-8554-e26d06a0ede6`. These product changes are not in main.
+- **Agent integration/search/creation:** implemented locally in A's isolated
+  `work/agent-a-integration`. Product branch publication, integration into main,
+  actual embedded-host journeys and cloud connectivity remain outstanding.
+  Backend/protocol and standalone browser checks do not establish first use in
+  ChatGPT or Claude. Accounts and personal libraries remain deferred.
 
-The user authorized publication and correction of accepted components left pending.
-This supersedes the earlier Cloudflare hold and the request for a second B handoff.
-Future drawing changes still require explicit human acceptance. Command-line
-publishing is configured locally; keep credentials out of the repository.
+## Verification and handoff
 
-[Develop and test](../DEVELOPMENT.md) · [Decisions](DECISIONS.md)
+This delivery checks documentation routes, links and the published GitHub revision.
+It does not repeat backend, installation or first-use tests. B's existing hosted
+asset checks do not establish physical laptop testing; that remains unverified.
+The automated preview link check in A's environment returned HTTP 403; it does not
+establish an app outage. No browser/embedded-host result is inferred from it.
+
+Open the [main README](../README.md) → setup, testing, preview, progress and the
+workflow are discoverable. Open each agent's AGENTS.md → the same six-item checklist.
+A's product branch remains unpublished because its earlier product scope has no
+push authorization; the guidance is independently publishable from main. B's owner
+handoff remains intact; B can acknowledge guidance adoption in its next session.
+Future product integration must use exact owner-ready commits and its own authorized
+scope. See [parallel work](../DEVELOPMENT.md#parallel-work) and [decisions](DECISIONS.md).
 
 ## Latest planning context
 

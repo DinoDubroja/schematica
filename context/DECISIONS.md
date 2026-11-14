@@ -363,3 +363,25 @@ Wrangler 4.162.0 published build `fae9ed42be9d`; the user authorized OAuth once.
 No browser automation or Inkscape rerun was used. The live catalog clears saved
 Pending entries on reload; the manifest and all 386 served assets match locally.
 See [current status](CURRENT.md) for the deployment and two-device review steps.
+
+## GitHub delivery and documentation workflow — 14-11-2026
+
+Source: user's implementation request in Agent A; original message timestamp
+unavailable, recorded 14-11-2026 Europe/Zagreb (UTC+01:00).
+
+**Confirmed; adoption authorized:** the [delivery checklist](../DEVELOPMENT.md#delivery-checklist)
+is authoritative. Every agent must reach it from `AGENTS.md` before declaring work
+finished. Keep authorized branch checkpoints pushed, user setup/tests compact or
+visual, and GitHub's `main` README the discoverable entry point. Verify published
+links and distinguish backend checks from setup/first-use evidence.
+
+**Agent A is the integration coordinator:** adopt exact ready commits, resolve
+conflicts and check the combined result before an authorized `main` update.
+Branch pushes, merges and website deployments remain separate actions. Honor
+existing authorization without blanket approval pauses; preserve B's active work
+and coordinate guidance adoption through the existing owner handoffs.
+
+This task updates guidance only; it does not authorize product-feature merges or
+app deployment. Installer simplification and rewriting user guides remain separate
+implementation work. [Current status](CURRENT.md#delivery-workflow-adoption) records
+branch adoption and outstanding publication/handoff items.

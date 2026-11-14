@@ -17,9 +17,9 @@
   promotion, even though Variations compares one setting per row.
 - Keep app code in `app/`, tests and essential fixtures in `tests/`, human guides
   and images in `docs/`. Generate bundles and ZIPs into ignored build output.
-- After each implementation run, update the developer guide's latest review with
-  changes, action → expected result checks, actual results and unverified limits.
-  Keep context concise; record decisions rather than a transcript.
+- Keep the developer guide's latest review current using the
+  [delivery checklist](DEVELOPMENT.md#delivery-checklist). Keep context concise;
+  record decisions rather than a transcript.
 - Maintain context after consequential discussions as well as implementation.
   Record the source chat and original turn/message timestamp with timezone, status
   and any superseding decision; keep review time separate. Read actual accessible
@@ -30,6 +30,8 @@
   or connection changes require fresh review; never copy an old approval forward.
 - Check branch/index/files before changes; preserve concurrent work. Run the
   [applicable checks](DEVELOPMENT.md#test-and-review) and verify links after moves.
-- Commit, push and deploy only within the user's current authorization. Source
-  synchronization and website deployment are separate actions. Missing capabilities
-  in the roadmap are not authorization to implement them.
+- Before declaring work finished, complete the
+  [delivery checklist](DEVELOPMENT.md#delivery-checklist) and report blocked items.
+  Agent A coordinates integration. Branch pushes, main updates and deployments
+  are separate actions within the current authorization; do not add approval
+  pauses for actions already authorized. Roadmap gaps do not authorize new work.

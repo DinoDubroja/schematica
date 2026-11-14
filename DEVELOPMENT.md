@@ -5,15 +5,53 @@
 · [Scope and gaps](docs/ROADMAP.md)
 · [Current status](context/CURRENT.md)
 
+## Delivery checklist
+
+Complete this checklist at meaningful checkpoints and before declaring work finished.
+
+1. **Publish the branch.** Push each agent's branch at meaningful checkpoints and
+   before finishing, within the task's publication authorization. Verify the remote
+   commit. If publishing is blocked, report the reason and unpublished checkpoint.
+2. **Keep setup and testing current.** User instructions must be visual with useful
+   screenshots or extremely compact: **action → expected result**. Keep developer
+   commands separate from user instructions; state actual results and unverified limits.
+3. **Keep main discoverable.** GitHub's `main` README is the user's entry point:
+   link setup, testing and available previews, and label unfinished features and
+   limitations. Users must not need to navigate branches to discover progress.
+4. **Coordinate integration.** Agent A integrates exact commits marked READY by
+   their owners, resolves conflicts and checks the combined result before updating
+   `main`, within authorized scope. Branch pushes, merges and website deployments
+   are separate actions. Preserve checkout ownership and the current preview publisher.
+5. **Verify the delivery.** Check published documentation links at their actual
+   GitHub/preview destinations. Distinguish backend tests from actual installation,
+   setup and first-use verification; record blocked or untested checks honestly.
+6. **Report the result.** Finish with **what changed → GitHub/preview link → what to
+   test → remaining limitations**. Explicitly state whether the branch, `main` and
+   hosted app were updated; local commits alone are not a GitHub update.
+
+Use existing authorization without repeated approval pauses. The checklist does
+not grant permission for a new publication, product merge or deployment; explain
+any missing authorization or external blocker. See [parallel work](#parallel-work)
+for ownership and handoffs.
+
 ## Latest changes
 
-14-11-2026: **option B and all approvals are live**. The library has **26 designs /
+14-11-2026: the [delivery checklist](#delivery-checklist) is adopted. Agent A is
+the integration coordinator; the [current status](context/CURRENT.md) distinguishes
+main source, B's published symbol checkpoint and A's pending integration.
+This documentation delivery includes no product changes or deployment.
+
+### Earlier source checkpoint on main
+
+The following results belong to main's 26-design source checkpoint, before B's
+later symbol publications. They are historical checks, not new setup/first-use
+verification. The library has **26 designs /
 342 configurations**, all **Verified**. Tapped resistors are removed. Both nonlinear
 designs use the selected smooth B curve, revision 3.
 
 ![Selected option B in the actual EU and US exports](docs/images/nonlinear-option-b.png)
 
-**Live build: `fae9ed42be9d`.** [Open the shared preview](https://schematica-preview.dinodubroja.workers.dev/).
+**Build at that earlier publication: `fae9ed42be9d`.** [Open the shared preview](https://schematica-preview.dinodubroja.workers.dev/).
 Cloudflare version `5cc8f4f6-8343-47d4-9dea-d0f562cc4f69` was published using Wrangler.
 The user completed one authorization step; no browser automation was used.
 
@@ -29,16 +67,24 @@ The user completed one authorization step; no browser automation was used.
 
 ### Test on both Windows devices
 
+Open the shared preview → the latest published checkpoint has 91 Verified designs,
+no Unverified designs and cleared submitted Pending selections. This expected
+result comes from B's published delivery; physical second-device testing remains
+unverified. See [current status](context/CURRENT.md) for its exact checkpoint.
+
+For a local checkout of this main source snapshot, use the checks below (26 designs).
+Developer setup commands are in [Run on Windows](#run-on-windows).
+
 | Action | Expected result |
 |---|---|
-| Open the shared preview and press Ctrl+F5 once | Current library loads; prior Pending selections clear |
+| Open the locally launched app and press Ctrl+F5 once | This source library loads; prior Pending selections clear |
 | Open All symbols, then Unverified | 26 Verified designs; Unverified is empty; no Pending approvals |
 | Search `tapped` | No results |
 | Inspect nonlinear EU and US at Medium/Medium and Small/Thick | Smooth selected B with no centre join or arrowhead |
 | Switch dark/light and optionally download a symbol/library | Usable theme; single SVG matches selection; complete library contains 26 symbols |
 
 Report device/browser, selected symbol and failed action if results differ.
-The same link works on both devices; the GitHub README also links to it.
+Use the preview link in the GitHub README for the hosted build on either device.
 
 ## Run on Windows
 
@@ -67,6 +113,17 @@ Inkscape, Node.js or Cloudflare account is needed. Open the served address rathe
 than the HTML file itself. The launcher uses the root `.venv`, then an existing
 workspace environment if available, then Python on PATH.
 
+## Parallel work
+
+Agent A coordinates integration and owns `work/agent-a-integration`; Agent B owns
+symbol work on `work/agent-b-symbols` and remains the shared-preview publisher.
+Read both owner handoffs in the workspace's `Local/parallel-work` before shared
+changes; each agent edits its own handoff. Preserve checkout ownership, adopt
+exact READY commits and check the combined result before an authorized main update.
+If another agent is editing shared guidance, coordinate adoption through the
+handoff rather than overwrite its work. Publishing a branch, updating main and
+deploying the preview are separate actions within the current authorization.
+
 ## Get the project on another Windows device
 
 For web testing, open the preview from the GitHub README; no local project is
@@ -86,7 +143,8 @@ already set up during the first batch; update that copy instead of cloning again
 Before updating an existing copy, run `git status --short`. If it lists files,
 preserve and resolve that work first. If empty, run `git pull --ff-only`. Stop on
 divergence; do not overwrite the other device's work. Commit/push reviewed work
-before switching devices, and pull before starting on the receiving device. Use `app\launch.ps1`; the old `implementation\launch.ps1` path is gone.
+within the current publication authorization before switching devices, and pull
+before starting on the receiving device. Use `app\launch.ps1`; the old `implementation\launch.ps1` path is gone.
 If the existing preview server holds the old folder open, stop it with Ctrl+C
 before pulling, then start it from the new path.
 GitHub synchronizes source and docs; Cloudflare is a separate website deployment.
