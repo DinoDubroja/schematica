@@ -1,6 +1,6 @@
 schema_version: 1
 id: logic-xnor
-revision: 1
+revision: 2
 name: XNOR gate
 description: XNOR gate. Two logic inputs and one inverted output. Supply pins are
   omitted.

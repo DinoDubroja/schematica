@@ -117,7 +117,9 @@ class Batch02(unittest.TestCase):
             self.assertEqual({p['id'] for p in symbol['pins']},expected,sid)
             for config in symbol['configurations']:
                 pins=config['pins_mm'];upper='collector' if bjt or igbt else 'drain';lower='emitter' if bjt or igbt else 'source'
-                self.assertGreater(pins[upper][1],0);self.assertLess(pins[lower][1],0)
+                # CircuitikZ's P-JFET is vertically mirrored: source above, drain below.
+                sign=-1 if sid=='jfet-p' else 1
+                self.assertGreater(sign*pins[upper][1],0);self.assertLess(sign*pins[lower][1],0)
                 if not photo:self.assertLess(pins['base' if bjt else 'gate'][0],min(pins[upper][0],pins[lower][0]))
                 if bulk:self.assertGreater(pins['bulk'][0],pins[lower][0])
                 parts={g.get('data-part'):g for g in artwork(config).iter() if g.get('data-part')}
@@ -246,8 +248,9 @@ class Batch02(unittest.TestCase):
                     self.assertLess(pins[pin][0],0)
                     endpoint=straight_points(next(parts['lead-'+pin].iter(f'{{{SVG}}}path')))[-1]
                     if kind in ('or','nor','xor','xnor'):
-                        # Concave input edge is a quadratic parabola; the lead must meet it.
-                        expected_x=-2.5*factor-endpoint[1]**2/(8*factor)
+                        # XOR inputs meet the separate outer curve, OR inputs the body.
+                        offset=3.7 if kind in ('xor','xnor') else 2.5
+                        expected_x=-offset*factor-endpoint[1]**2/(8*factor)
                         self.assertAlmostEqual(endpoint[0],expected_x,delta=.0003)
                     else:self.assertAlmostEqual(endpoint[0],-4.5*factor,delta=.0003)
                 if two:self.assertEqual([pins['a'][1],pins['b'][1]],[2,-2])

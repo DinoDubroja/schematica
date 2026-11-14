@@ -1,6 +1,6 @@
 schema_version: 1
 id: mosfet-n-enhancement
-revision: 1
+revision: 2
 name: N-channel enhancement MOSFET
 description: N-channel enhancement MOSFET. The body is explicitly tied to source.
   A broken channel indicates enhancement mode.

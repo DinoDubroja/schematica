@@ -1,6 +1,6 @@
 schema_version: 1
 id: ground-chassis
-revision: 1
+revision: 2
 name: Chassis ground
 description: Chassis or frame connection with three oblique strokes; it does not by
   itself specify protective earth.

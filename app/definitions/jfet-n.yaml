@@ -1,6 +1,6 @@
 schema_version: 1
 id: jfet-n
-revision: 1
+revision: 2
 name: N-channel JFET
 description: N-channel JFET with gate, drain and source terminals; the junction arrow
   points from P material to N material.

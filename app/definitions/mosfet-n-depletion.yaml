@@ -1,6 +1,6 @@
 schema_version: 1
 id: mosfet-n-depletion
-revision: 1
+revision: 2
 name: N-channel depletion MOSFET
 description: N-channel depletion MOSFET. The body is explicitly tied to source. A
   continuous channel indicates depletion mode.

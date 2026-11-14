@@ -1,6 +1,6 @@
 schema_version: 1
 id: mosfet-p-enhancement
-revision: 1
+revision: 2
 name: P-channel enhancement MOSFET
 description: P-channel enhancement MOSFET. The body is explicitly tied to source.
   A broken channel indicates enhancement mode.

@@ -1,6 +1,6 @@
 schema_version: 1
 id: logic-xor
-revision: 1
+revision: 2
 name: XOR gate
 description: XOR gate. Two logic inputs and one output. Supply pins are omitted.
 keywords:

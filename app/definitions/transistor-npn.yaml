@@ -1,6 +1,6 @@
 schema_version: 1
 id: transistor-npn
-revision: 1
+revision: 2
 name: NPN transistor
 description: NPN bipolar transistor; the emitter arrow points away from the base.
 keywords:

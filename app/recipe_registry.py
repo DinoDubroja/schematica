@@ -2,8 +2,6 @@
 
 BATCH_MACROS = {
     'ammeter': 'SCBatchAmmeter',
-    'amplifier-fully-differential': 'SCBatchAmplifierFullyDifferential',
-    'amplifier-instrumentation': 'SCBatchAmplifierInstrumentation',
     'battery': 'SCBatchBattery',
     'capacitor-feedthrough': 'SCBatchCapacitorFeedthrough',
     'capacitor-polarized': 'SCBatchCapacitorPolarized',
@@ -11,11 +9,6 @@ BATCH_MACROS = {
     'capacitor-trimmer': 'SCBatchCapacitorTrimmer',
     'capacitor-variable': 'SCBatchCapacitorVariable',
     'cell': 'SCBatchCell',
-    'ceramic-resonator': 'SCBatchCeramicResonator',
-    'comparator': 'SCBatchComparator',
-    'comparator-supply': 'SCBatchComparatorSupply',
-    'connector-2pin': 'SCBatchConnectorTwopin',
-    'connector-3pin': 'SCBatchConnectorThreepin',
     'connector-coaxial': 'SCBatchConnectorCoaxial',
     'crystal': 'SCBatchCrystal',
     'diode': 'SCBatchDiode',
@@ -55,24 +48,16 @@ BATCH_MACROS = {
     'mosfet-p-depletion': 'SCBatchMosfetPDepletion',
     'mosfet-p-enhancement': 'SCBatchMosfetPEnhancement',
     'mosfet-p-enhancement-bulk': 'SCBatchMosfetPEnhancementBulk',
-    'ota': 'SCBatchOta',
     'phototransistor-npn': 'SCBatchPhototransistorNpn',
-    'pushbutton-nc': 'SCBatchPushbuttonNc',
-    'pushbutton-no': 'SCBatchPushbuttonNo',
-    'regulator': 'SCBatchRegulator',
-    'relay-coil': 'SCBatchRelayCoil',
-    'relay-spdt': 'SCBatchRelaySpdt',
     'source-current': 'SCBatchSourceCurrent',
     'source-dependent-current': 'SCBatchSourceDependentCurrent',
     'source-dependent-voltage': 'SCBatchSourceDependentVoltage',
     'source-voltage': 'SCBatchSourceVoltage',
     'source-voltage-ac': 'SCBatchSourceVoltageAc',
-    'supply-port': 'SCBatchSupplyPort',
     'switch-dpdt': 'SCBatchSwitchDpdt',
     'switch-dpst': 'SCBatchSwitchDpst',
     'switch-spdt': 'SCBatchSwitchSpdt',
     'switch-spst': 'SCBatchSwitchSpst',
-    'terminal-filled': 'SCBatchTerminalFilled',
     'terminal-open': 'SCBatchTerminalOpen',
     'test-point': 'SCBatchTestPoint',
     'transformer-air': 'SCBatchTransformerAir',
@@ -83,4 +68,4 @@ BATCH_MACROS = {
     'voltmeter': 'SCBatchVoltmeter',
 }
 
-BATCH_LABEL_RECIPES = frozenset(('ammeter', 'amplifier-fully-differential', 'amplifier-instrumentation', 'comparator', 'comparator-supply', 'connector-2pin', 'connector-3pin', 'ota', 'regulator', 'relay-coil', 'relay-spdt', 'test-point', 'voltmeter'))
+BATCH_LABEL_RECIPES = frozenset(('ammeter', 'test-point', 'voltmeter'))

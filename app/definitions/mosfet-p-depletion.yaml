@@ -1,6 +1,6 @@
 schema_version: 1
 id: mosfet-p-depletion
-revision: 1
+revision: 2
 name: P-channel depletion MOSFET
 description: P-channel depletion MOSFET. The body is explicitly tied to source. A
   continuous channel indicates depletion mode.

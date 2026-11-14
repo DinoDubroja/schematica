@@ -1,6 +1,6 @@
 schema_version: 1
 id: transistor-pnp
-revision: 1
+revision: 2
 name: PNP transistor
 description: PNP bipolar transistor; the emitter arrow points toward the base.
 keywords:

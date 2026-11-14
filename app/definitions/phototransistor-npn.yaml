@@ -1,6 +1,6 @@
 schema_version: 1
 id: phototransistor-npn
-revision: 1
+revision: 2
 name: NPN phototransistor
 description: Two-terminal NPN phototransistor with an unconnected internal base and
   incoming light arrows.
