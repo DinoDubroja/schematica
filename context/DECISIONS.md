@@ -585,6 +585,20 @@ Claude required a full exit/reopen; its embedded search exposed singular family
 filters returning zero results. The repair normalizes those aliases and includes
 session/identity details in model-readable search text. The user reported the same
 empty/broadened-result problem in ChatGPT Chat. Corrected host retests remain required.
-The user declined the proposed ground test and requested a different symbol; wait
-for its description and confirmation. A host tool permission is not drawing or save
-approval. Existing synthetic tests do not establish live creation or human acceptance.
+The user replaced the ground test with a two-port band-pass block. Actual confirmation
+authorized rendering three rounded widths; “Revise the drawing first” withheld saving.
+A host tool permission is not drawing or save approval. Synthetic tests do not
+establish live creation or human acceptance.
+
+**Refinement confirmed — 15-11-2026:** same source chat, turn starting
+15-11-2026 00:26:26 +01:00, user message `01a1dc62-3876-7472-9d38-3b88858bac1c`:
+“Curve shape should have flat top, rounded edges, and box should be more narrow.”
+Confirmation message `01a1dc63-1dd1-73f0-b4a7-ed6d7640d1a9` accepted about 20% less
+horizontal width, unchanged height/terminal positions and no save. Review time:
+15-11-2026 +01:00. Rendered all 27 configurations and inspected the browser preview;
+the earlier draft remains recoverable. Saving and design acceptance are still pending.
+
+The user reported successful ChatGPT search after reload; actual Claude search,
+follow-up and selected-identity retrieval passed. Native control was stopped by the
+user before the repaired download and creation-guide retest. Record those as pending,
+not completed host journeys; source publication remains the focused repair branch.

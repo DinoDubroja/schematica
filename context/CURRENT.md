@@ -36,14 +36,22 @@ must reload to pick up source changes.
 
 Local Codex search/follow-ups, browser selection feedback and exact SVG download
 passed. Claude's connection loaded after a full exit/reopen, and its embedded
-viewer displayed the corrected two-result search and Small/Thick controls. The
-user's ChatGPT Chat test initially failed filtering; its corrected retest is pending.
-Fifteen agent tests and the MCP test pass. See [host evidence](../docs/HOST_VERIFICATION.md).
+viewer displayed the corrected two-result search and Small/Thick controls. Claude
+then retrieved the exact stored selection using `search_session`; European-only
+follow-up passed. The user confirmed ChatGPT Chat now returns exactly two fixed
+resistors after reload. Fifteen agent tests, the MCP test and all 14 JavaScript tests
+pass. See [host evidence](../docs/HOST_VERIFICATION.md).
 
-Creation is waiting for the user's alternative test-symbol description, then actual
-interpretation confirmation. No live test drawing was rendered or saved. Finish
-selection/download and creation/save/fresh-retrieval checks per host before claiming
-complete integration. Cloud hosting and production-library changes are outside this check.
+The user confirmed a band-pass draft and then a refinement: flat tops, rounded edges
+and a narrower box. Both sets of 27 configurations rendered through this chat's real
+connection; terminal positions stayed fixed and browser previews were inspected.
+The revised draft remains unsaved pending review and an explicit save request.
+
+Claude's embedded download produced no file; the host-mediated repair and a new
+tool-accessible drawing guide are pushed but need a full host reload/retest. The
+user stopped native computer control, so Claude creation/download verification is
+on hold. Do not claim complete integration. Cloud hosting and production-library
+changes remain outside this check.
 
 ## Verification
 

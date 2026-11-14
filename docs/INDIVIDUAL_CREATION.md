@@ -24,6 +24,11 @@ supported attachment. No external OCR service or image account is introduced.
 
 ## Drawing contract
 
+Call `get_creation_guide` to read this contract and its complete example schema
+and TeX in hosts without resource access. The example is a test fixture, not a
+default design. `render_creation.alternatives` requires exactly two objects with
+`design` and `practical_effect` strings; these are proposals, not automatic edits.
+
 The existing YAML semantics, part IDs, connection IDs, preset names and catalog
 configuration format are retained. Individual creation uses `recipe: custom` and
 a separate authoritative `custom.tex` file. Python packages converter output; it

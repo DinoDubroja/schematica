@@ -36,6 +36,14 @@ for ownership and handoffs.
 
 ## Latest changes
 
+15-11-2026: the [host-verification branch](https://github.com/DinoDubroja/schematica/tree/fix/chat-host-verification)
+repairs family aliases, model-readable search results, Claude's selection argument,
+embedded downloads and drawing-guide access. Search and selection passed live checks;
+download/Claude creation retests remain pending. The confirmed local band-pass draft
+and refinement each rendered 27 configurations and remain unsaved. See
+[host evidence](docs/HOST_VERIFICATION.md). Main and the hosted website remain at the
+consolidated baseline below; these test drawings are isolated from the accepted library.
+
 14-11-2026: combined A's integration/search/creation/shared viewer with B's complete
 **91 Verified designs / 1,035 configurations**. Reproducible build **`c30dfe980c04`**
 contains 1,082 files. The official ledger, catalog, all drawings and all 36 complete

@@ -83,8 +83,15 @@ for one or zero matches. The HTML bundles the same viewer source used by the
 website. A host adapter handles MCP Apps initialization, data loading, lazy artwork,
 SVG downloads and `ui/update-model-context` after **Use this symbol**. Normal
 browsing doesn't ask the model to generate UI or answer another turn.
+Embedded exports use the host's `ui/download-file` capability; direct iframe
+downloads are blocked in some hosts. If unavailable or refused, the viewer reports
+that limitation. The browser fallback still exports the exact SVG directly.
 
-Search sessions persist filters and selections. Follow-ups reuse `session_id`.
+Search sessions persist filters and selections. Chat follow-ups and `get_selection`
+reuse the returned `search_session`; `session_id` remains a compatible viewer-bridge
+alias. Claude dropped the old argument in live calls; the new name passed actual
+selection retrieval after reloading. Search text includes bounded match identities
+as well as the session so models can read them without structured-content support.
 Local browser views poll their session for updates. Embedded views accept host
 tool-result updates; whether a host updates the same view or creates another is
 host-dependent. Selection fallback is always `get_selection` and exact artwork

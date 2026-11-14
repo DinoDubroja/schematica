@@ -1,8 +1,9 @@
 # Host verification
 
 Checked 14–15-11-2026. **Live search is verified through local Codex with the browser
-fallback and through Claude Desktop's embedded viewer. Full creation/save journeys
-remain unverified.** A browser fallback is not evidence of embedded UI support.
+fallback and through Claude Desktop's embedded viewer. The user also confirmed
+corrected ChatGPT Chat filtering. Local creation/refinement passed; full per-host
+creation/save journeys remain incomplete.** A browser fallback is not embedded UI proof.
 No remote endpoint, tunnel or public plugin was published.
 
 ## Evidence
@@ -11,7 +12,9 @@ Live host testing exposed a structured-filter defect: `family: resistor` overrod
 the natural-language parser's `resistors`, producing false empty results. The repair
 normalizes known family aliases. Search text now includes the session, active filters
 and bounded symbol summaries because Claude's model only received the earlier
-count/link text. This second repair still needs a fresh host reload/retest.
+count/link text. Claude then named both exact matches. Its chat calls dropped
+`session_id`; the compatible `search_session` argument passed actual selection
+retrieval and a European-only follow-up without broadening the result.
 
 - Local Codex: normal → European → variable → thick searches, browser selection
   feedback and an actual SVG download passed. The downloaded EU variable resistor,
@@ -19,15 +22,26 @@ count/link text. This second repair still needs a fresh host reload/retest.
 - Claude 5.11492.5: a full exit/reopen loaded the configured server. After the user
   allowed the tool and the filter repair was loaded, the original call returned two
   fixed resistors in an actual embedded viewer; Small/Thick controls and **Use this
-  symbol** responded. Model feedback and embedded downloads remain under test.
+  symbol** responded. Chat retrieved the stored US resistor revision 1, Small/Thick,
+  and its exact SVG URL. A fresh search and European-only follow-up passed.
+  The embedded download click produced no file. The repair now uses capability-
+  checked `ui/download-file`, with an explicit unsupported/refused result.
+  Its real-host retest is pending after the user stopped computer control.
 - ChatGPT Chat: the user reported zero results followed by all symbols. The test
   chat labeled all 91 designs as resistors; stored state showed the family filter
-  had been cleared. Retest after reloading the corrected connection is pending.
-- Creation: interpretation reached the real connected tool. The user requested a
-  different test symbol; its description and confirmation are pending. No live test
-  drawing was rendered or saved. Earlier synthetic creation evidence stays separate.
+  had been cleared. After reloading, the user reported “Yes, exactly two fixed
+  resistors.” Embedded UI, selection, download and creation still need host evidence.
+- Creation in this local Codex chat: actual user interpretation/confirmation,
+  27 rendered band-pass configurations, then a confirmed 27-configuration refinement
+  with flat tops, rounded edges and a narrower box passed. Terminal identities and
+  coordinates were preserved; both browser previews were inspected. The user chose
+  revision before saving. Both drafts remain unsaved; no production symbol changed.
+- Claude prepared interpretations but could not read the resource-only drawing
+  guide. A new `get_creation_guide` tool exposes the guide and complete schema/TeX
+  example. Reload and actual Claude rendering remain pending; no success is inferred.
 - Focused repair checks: 15 agent tests and the MCP transport/resource test passed,
-  including aliases, exact identities and session reuse through text-only results.
+  including aliases, exact identities, compatible session arguments and guide access.
+  All 14 JavaScript tests pass, including download payload, capability and refusal checks.
 
 The consolidation reran stdio/HTTP and isolated creation/refinement proofs (18 +
 36 rendered configurations), complete-library search follow-ups, targeted browser
@@ -51,8 +65,8 @@ retained for unchanged paths; production artwork is verified by exact hashes.
 
 Repeatable commands are in [the integration guide](AGENT_INTEGRATION.md#checks).
 Machine-specific stores, logs, process IDs and exact commits are in A's local
-handoff, not this shared document. Test confirmations are synthetic and are not
-human acceptance of any drawing.
+handoff, not this shared document. Earlier protocol proofs used synthetic confirmations;
+the live band-pass test above used actual user replies. Neither is design acceptance.
 
 ## Required environments
 
@@ -62,12 +76,12 @@ verified. A failed feature must be recorded separately from a connectivity block
 
 | Environment | Status | Current evidence / next dependency |
 |---|---|---|
-| ChatGPT Desktop · Chat | Retest pending | Actual chat connected but returned incorrect filtering before the repair; reload and repeat. Embedded rendering not verified |
+| ChatGPT Desktop · Chat | Partial, user-reported | After reload, user confirmed exactly two fixed resistors. Embedded rendering and the remaining journey are unverified |
 | ChatGPT Desktop · Work local | Untested | Local launch configuration prepared; reload connection and run the checklist |
 | ChatGPT Desktop · Work cloud | Blocked | No approved reachable MCP endpoint/private tunnel; local-computer bridging is workspace-dependent |
-| ChatGPT Desktop · Codex local | Partial | Actual connected search, browser selection feedback and exact SVG download passed. No embedded panel observed; creation/save pending |
+| ChatGPT Desktop · Codex local | Partial | Actual search, browser selection/export and confirmed 27 + 27 creation/refinement configurations passed. No embedded panel; saving/fresh saved retrieval pending user request |
 | ChatGPT Desktop · Codex cloud | Blocked | No approved cloud connector and persistent dev-library destination |
-| Claude Desktop | Partial | Version 5.11492.5: connection loaded after full exit/reopen; corrected search, embedded artwork and configuration controls observed. Selection feedback, embedded download and creation/save require completion |
+| Claude Desktop | Partial | Version 5.11492.5: embedded search/follow-up, controls and stored selection retrieval passed. Download repair and tool-accessible creation guide require reload/retest; creation/save remain incomplete |
 
 Windows Computer Use guidance in this development session prohibits automation of
 the ChatGPT desktop app UI. Therefore its manual interaction checks were not

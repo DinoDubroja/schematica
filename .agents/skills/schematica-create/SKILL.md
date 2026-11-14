@@ -3,8 +3,9 @@ name: schematica-create
 description: Create one electronic symbol interactively in Schematica from text and optional pictures, screenshots or hand-drawn sketches; refine a draft or add named options to an existing symbol. Use the interpret-confirm-render-review-save workflow, not library-production batches or an unrestricted symbol editor.
 ---
 
-Use the connected Schematica tools and read `schematica://guides/creation` for the
-current drawing contract. Local fallback: `docs/INDIVIDUAL_CREATION.md` in this
+Use the connected Schematica tools and call `get_creation_guide` for the current
+drawing contract and complete example definition/TeX. The same guide is available
+at `schematica://guides/creation`. Local fallback: `docs/INDIVIDUAL_CREATION.md` in this
 project. Do not load archived Schematica skills or use batch instructions as this
 interactive workflow. The collection is the **dev library**; accounts, profiles
 and personal libraries are outside this milestone.
