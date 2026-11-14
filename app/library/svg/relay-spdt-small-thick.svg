@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-68.682458 -72.000016 50.102128 34.865984" width="17.67491738mm" height="12.29994436mm">
+  <defs>
+    <path id="sc-relay-spdt-r1-small-thick--g0-69" d="M3.587569 0L2.033507-2.314561L3.510417-3.824536H2.997907L.997465-1.780007V-3.824536H.529042V0H.997465V-1.250965L1.73041-2.005953L3.08057 0H3.587569Z" />
+  </defs>
+  <title>SPDT relay</title>
+  <desc>Relay with an isolated coil and one changeover contact. In the de-energized state common connects to NC; energizing transfers it to NO. The dashed coupling is mechanical.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 4.5, "body-width": 11.625, "grid": 1.0}, "origin_svg": [-47.35185, -54.567026], "parts": ["coil-body", "coil-label", "lead-coil-1", "lead-coil-2", "lead-common", "lead-nc", "lead-no", "contacts", "contact-blade", "mechanical-link"], "pins_mm": {"coil-1": [-5.0, 5.0], "coil-2": [-5.0, -5.0], "common": [1.0, -5.0], "nc": [9.0, 2.0], "no": [9.0, -2.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "relay-spdt"}</metadata>
+  <g id="sc-relay-spdt-r1-small-thick--sc-relay-spdt-r1-small-thick" inkscape:label="SPDT relay / small / thick" data-symbol="relay-spdt" data-revision="1" data-size="small" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-47.35185,-54.567026)scale(0.996264,-0.996264)">
+    <g data-part="coil-body" id="sc-relay-spdt-r1-small-thick--sc-relay-spdt-r1-small-thick--coil-body" inkscape:label="coil-body">
+      <path d="M-18.13853-6.40182V6.40182H-7.4688V-6.40182ZM-7.4688 6.40182" fill="none" />
+      <desc>Coil body</desc>
+    </g>
+    <g data-part="coil-label" id="sc-relay-spdt-r1-small-thick--sc-relay-spdt-r1-small-thick--coil-label" inkscape:label="coil-label">
+      <use x="-47.35185" y="-54.567026" xlink:href="#sc-relay-spdt-r1-small-thick--g0-69" stroke="none" fill="#000" transform="translate(-14.7231,-1.91943) scale(-1.00375,1.00375)translate(-47.35185,-54.567026)scale(-1,-1)" />
+      <desc>Coil label</desc>
+    </g>
+    <g data-part="lead-coil-1" id="sc-relay-spdt-r1-small-thick--sc-relay-spdt-r1-small-thick--lead-coil-1" inkscape:label="lead-coil-1">
+      <path d="M-14.2263 14.2263V6.40182H-12.80367" fill="none" />
+      <desc>Electrical lead: Coil 1</desc>
+    </g>
+    <g data-part="lead-coil-2" id="sc-relay-spdt-r1-small-thick--sc-relay-spdt-r1-small-thick--lead-coil-2" inkscape:label="lead-coil-2">
+      <path d="M-14.2263-14.2263V-6.40182H-12.80367" fill="none" />
+      <desc>Electrical lead: Coil 2</desc>
+    </g>
+    <g data-part="lead-common" id="sc-relay-spdt-r1-small-thick--sc-relay-spdt-r1-small-thick--lead-common" inkscape:label="lead-common">
+      <path d="M2.84526-14.2263V0H2.13394" fill="none" />
+      <desc>Electrical lead: Common</desc>
+    </g>
+    <g data-part="lead-nc" id="sc-relay-spdt-r1-small-thick--sc-relay-spdt-r1-small-thick--lead-nc" inkscape:label="lead-nc">
+      <path d="M25.60735 5.69052V4.26788H14.9376" fill="none" />
+      <desc>Electrical lead: Normally closed</desc>
+    </g>
+    <g data-part="lead-no" id="sc-relay-spdt-r1-small-thick--sc-relay-spdt-r1-small-thick--lead-no" inkscape:label="lead-no">
+      <path d="M25.60735-5.69052V-4.26788H14.9376" fill="none" />
+      <desc>Electrical lead: Normally open</desc>
+    </g>
+    <g data-part="contacts" id="sc-relay-spdt-r1-small-thick--sc-relay-spdt-r1-small-thick--contacts" inkscape:label="contacts">
+      <path d="M2.98747 0C2.98747 .47139 2.60533 .85353 2.13394 .85353S1.28041 .47139 1.28041 0S1.66255-.85353 2.13394-.85353S2.98747-.47139 2.98747 0ZM2.13394 0" stroke="none" />
+      <path d="M15.79114 4.26788C15.79114 4.73927 15.409 5.12141 14.9376 5.12141C14.46622 5.12141 14.08408 4.73927 14.08408 4.26788C14.08408 3.7965 14.46622 3.41435 14.9376 3.41435C15.409 3.41435 15.79114 3.7965 15.79114 4.26788ZM14.9376 4.26788" stroke="none" />
+      <path d="M15.79114-4.26788C15.79114-3.7965 15.409-3.41435 14.9376-3.41435C14.46622-3.41435 14.08408-3.7965 14.08408-4.26788C14.08408-4.73927 14.46622-5.12141 14.9376-5.12141C15.409-5.12141 15.79114-4.73927 15.79114-4.26788ZM14.9376-4.26788" stroke="none" />
+      <desc>Contacts</desc>
+    </g>
+    <g data-part="contact-blade" id="sc-relay-spdt-r1-small-thick--sc-relay-spdt-r1-small-thick--contact-blade" inkscape:label="contact-blade">
+      <path d="M2.13394 0L14.9376 4.26788" fill="none" />
+      <desc>Contact blade</desc>
+    </g>
+    <g data-part="mechanical-link" id="sc-relay-spdt-r1-small-thick--sc-relay-spdt-r1-small-thick--mechanical-link" inkscape:label="mechanical-link">
+      <path d="M-7.4688 0L8.53578 2.13394" fill="none" stroke-dasharray="2.84526,1.99168" stroke-dashoffset="0.0" />
+      <desc>Mechanical link</desc>
+    </g>
+  </g>
+</svg>

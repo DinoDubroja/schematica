@@ -1,0 +1,30 @@
+% SPST switch; cspst or cspdt; custom ganged contacts.
+% Schematica coordinates are millimetres at Medium; pins snap outward to the 1 mm grid.
+\newcommand{\SCBatchSwitchSpst}[4]{%
+  \SCresolve{#1}{#2}{#3}
+  \def\F{#2}
+  \pgfmathsetmacro{\SCorientx}{ifthenelse(mod(#4,2)==1,-1,1)}
+  \pgfmathsetmacro{\SCorienty}{ifthenelse(#4>1,-1,1)}
+  \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+    \SCdimension{body-width}{6*\F}
+    \SCdimension{body-height}{2.2}
+    \SCdimension{grid}{1}
+    \SCpin{common}{floor(-7*\F)}{0}
+    \begin{SCpart}{lead-common}
+    \draw ({floor(-7*\F)},{0})--({-3*\F},{0});
+    \end{SCpart}
+    \begin{SCpart}{pivot}
+    \fill ({-3*\F},{0}) circle ({0.4*\F});
+    \end{SCpart}
+    \SCpin{out}{ceil(7*\F)}{0}
+    \begin{SCpart}{lead-out}
+    \draw ({ceil(7*\F)},{0})--({3*\F},{0});
+    \end{SCpart}
+    \begin{SCpart}{fixed-contact}
+    \fill ({3*\F},{0}) circle ({0.4*\F});
+    \end{SCpart}
+    \begin{SCpart}{blade}
+    \draw ({-3*\F},{0})--({2.2*\F},{0+2.2*\F});
+    \end{SCpart}
+  \end{scope}
+}

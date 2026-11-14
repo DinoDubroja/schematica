@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-68.682458 -72.000015 16.724305 34.440758" width="5.89996315mm" height="12.14993407mm">
+  <defs>
+    <path id="sc-relay-coil-r1-small-thin--g0-69" d="M3.587569 0L2.033507-2.314561L3.510417-3.824536H2.997907L.997465-1.780007V-3.824536H.529042V0H.997465V-1.250965L1.73041-2.005953L3.08057 0H3.587569Z" />
+  </defs>
+  <title>Relay coil</title>
+  <desc>Electromagnetic relay actuator represented by a labelled coil block. Contact units are drawn separately; no coil polarity is specified.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 4.5, "body-width": 3.75, "grid": 1.0}, "origin_svg": [-60.320308, -54.779638], "parts": ["coil-body", "coil-label", "lead-coil-1", "lead-coil-2"], "pins_mm": {"coil-1": [0.0, 5.0], "coil-2": [0.0, -5.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "thin", "stroke_mm": 0.15}, "symbol_id": "relay-coil"}</metadata>
+  <g id="sc-relay-coil-r1-small-thin--sc-relay-coil-r1-small-thin" inkscape:label="Relay coil / small / thin" data-symbol="relay-coil" data-revision="1" data-size="small" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(-60.320308,-54.779638)scale(0.996264,-0.996264)">
+    <g data-part="coil-body" id="sc-relay-coil-r1-small-thin--sc-relay-coil-r1-small-thin--coil-body" inkscape:label="coil-body">
+      <path d="M-5.33485-6.40182V6.40182H5.33485V-6.40182ZM5.33485 6.40182" fill="none" />
+      <desc>Coil body</desc>
+    </g>
+    <g data-part="coil-label" id="sc-relay-coil-r1-small-thin--sc-relay-coil-r1-small-thin--coil-label" inkscape:label="coil-label">
+      <use x="-60.320308" y="-54.779638" xlink:href="#sc-relay-coil-r1-small-thin--g0-69" stroke="none" fill="#000" transform="translate(-1.91943,-1.91943) scale(-1.00375,1.00375)translate(-60.320308,-54.779638)scale(-1,-1)" />
+      <desc>Coil label</desc>
+    </g>
+    <g data-part="lead-coil-1" id="sc-relay-coil-r1-small-thin--sc-relay-coil-r1-small-thin--lead-coil-1" inkscape:label="lead-coil-1">
+      <path d="M0 14.2263V6.40182" fill="none" />
+      <desc>Electrical lead: Coil 1</desc>
+    </g>
+    <g data-part="lead-coil-2" id="sc-relay-coil-r1-small-thin--sc-relay-coil-r1-small-thin--lead-coil-2" inkscape:label="lead-coil-2">
+      <path d="M0-14.2263V-6.40182" fill="none" />
+      <desc>Electrical lead: Coil 2</desc>
+    </g>
+  </g>
+</svg>

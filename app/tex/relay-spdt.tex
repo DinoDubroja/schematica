@@ -1,0 +1,52 @@
+% SPDT relay; custom relay coil/contact assembly.
+% Schematica coordinates are millimetres at Medium; pins snap outward to the 1 mm grid.
+\newcommand{\SCBatchRelaySpdt}[4]{%
+  \SCresolve{#1}{#2}{#3}
+  \def\F{#2}
+  \pgfmathsetmacro{\SCorientx}{ifthenelse(mod(#4,2)==1,-1,1)}
+  \pgfmathsetmacro{\SCorienty}{ifthenelse(#4>1,-1,1)}
+  \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+    \SCdimension{body-width}{15.5*\F}
+    \SCdimension{body-height}{6*\F}
+    \SCdimension{grid}{1}
+    \begin{SCpart}{coil-body}
+    \draw ({-8.5*\F},{-3*\F}) rectangle ({-3.5*\F},{3*\F});
+    \end{SCpart}
+    \begin{SCpart}{coil-label}
+    \pgfmathsetmacro{\SCfontsize}{1.8*\F*72.27/25.4/.69444}
+    \font\SCbatchfont="[lmsans10-regular.otf]" at \SCfontsize pt
+    \node[inner sep=0pt,outer sep=0pt] at ({-6*\F},{0*\F}) {\SCbatchfont K};
+    \end{SCpart}
+    \SCpin{coil-1}{floor(-6*\F)}{ceil(6*\F)}
+    \begin{SCpart}{lead-coil-1}
+    \draw ({floor(-6*\F)},{ceil(6*\F)})--({floor(-6*\F)},{3*\F})--({-6*\F},{3*\F});
+    \end{SCpart}
+    \SCpin{coil-2}{floor(-6*\F)}{floor(-6*\F)}
+    \begin{SCpart}{lead-coil-2}
+    \draw ({floor(-6*\F)},{floor(-6*\F)})--({floor(-6*\F)},{-3*\F})--({-6*\F},{-3*\F});
+    \end{SCpart}
+    \SCpin{common}{ceil(1*\F)}{floor(-6*\F)}
+    \begin{SCpart}{lead-common}
+    \draw ({ceil(1*\F)},{floor(-6*\F)})--({ceil(1*\F)},{0*\F})--({1*\F},{0*\F});
+    \end{SCpart}
+    \SCpin{nc}{ceil(11*\F)}{ceil(2*\F)}
+    \begin{SCpart}{lead-nc}
+    \draw ({ceil(11*\F)},{ceil(2*\F)})--({ceil(11*\F)},{2*\F})--({7*\F},{2*\F});
+    \end{SCpart}
+    \SCpin{no}{ceil(11*\F)}{floor(-2*\F)}
+    \begin{SCpart}{lead-no}
+    \draw ({ceil(11*\F)},{floor(-2*\F)})--({ceil(11*\F)},{-2*\F})--({7*\F},{-2*\F});
+    \end{SCpart}
+    \begin{SCpart}{contacts}
+    \fill ({1*\F},{0*\F}) circle ({0.4*\F});
+    \fill ({7*\F},{2*\F}) circle ({0.4*\F});
+    \fill ({7*\F},{-2*\F}) circle ({0.4*\F});
+    \end{SCpart}
+    \begin{SCpart}{contact-blade}
+    \draw ({1*\F},{0*\F})--({7*\F},{2*\F});
+    \end{SCpart}
+    \begin{SCpart}{mechanical-link}
+    \draw[dash pattern=on 1mm off .7mm] ({-3.5*\F},{0*\F})--({4*\F},{1*\F});
+    \end{SCpart}
+  \end{scope}
+}

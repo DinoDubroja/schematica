@@ -80,7 +80,7 @@ Status: complete — 12 designs / 108 configurations; Unverified.
 
 ### Switches And Relays
 
-Status: planned.
+Status: complete — 8 designs / 72 configurations; Unverified.
 
 `switch-spst`, `switch-spdt`, `switch-dpst`, `switch-dpdt`, `pushbutton-no`, `pushbutton-nc`, `relay-coil`, `relay-spdt`.
 

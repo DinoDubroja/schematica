@@ -260,5 +260,41 @@ class Batch02(unittest.TestCase):
             for kind,size,stroke in list(bodies):
                 if kind==a:self.assertEqual(bodies[kind,size,stroke],bodies[b,size,stroke])
 
+    def test_switch_resting_connections_and_separate_relay_coil(self):
+        for symbol in self.new:
+            if symbol['family']!='switches-and-relays':continue
+            sid=symbol['id']
+            for config in symbol['configurations']:
+                parts={g.get('data-part'):g for g in artwork(config).iter() if g.get('data-part')}
+                def points(name):return straight_points(next(parts[name].iter(f'{{{SVG}}}path')))
+                pins=config['pins_mm'];factor=config['settings']['size_factor']
+                if sid.startswith('pushbutton'):
+                    self.assertEqual(set(pins),{'a','b'})
+                    bridge=points('contact-bridge')
+                    closed=sid.endswith('-nc')
+                    self.assertEqual(symbol['attributes']['resting_state'],'closed' if closed else 'open')
+                    for i,pin in enumerate(('a','b')):
+                        contact=points('lead-'+pin)[-1]
+                        if closed:self.assertLess(math.dist(bridge[i],contact),.0003)
+                        else:self.assertGreater(math.dist(bridge[i],contact),1.7*factor)
+                elif sid.startswith('relay'):
+                    self.assertEqual(set(pins),{'coil-1','coil-2'} | ({'common','nc','no'} if sid=='relay-spdt' else set()))
+                    if sid=='relay-spdt':
+                        blade=points('contact-blade')
+                        self.assertLess(math.dist(blade[0],points('lead-common')[-1]),.0003)
+                        self.assertLess(math.dist(blade[-1],points('lead-nc')[-1]),.0003)
+                        self.assertGreater(math.dist(blade[-1],points('lead-no')[-1]),3.9*factor)
+                        self.assertTrue(all(pins[p][0]<pins['common'][0] for p in ('coil-1','coil-2')))
+                else:
+                    double='-dp' in sid;changeover=sid.endswith('dt')
+                    self.assertEqual(len(pins),(2 if double else 1)*(3 if changeover else 2))
+                    self.assertEqual('mechanical-link' in parts,double)
+                    for prefix in ('pole-1-','pole-2-') if double else ('',):
+                        blade=points(prefix+'blade')
+                        self.assertLess(math.dist(blade[0],points('lead-'+prefix+'common')[-1]),.0003)
+                        target=points('lead-'+prefix+('upper' if changeover else 'out'))[-1]
+                        if changeover:self.assertLess(math.dist(blade[-1],target),.0003)
+                        else:self.assertGreater(math.dist(blade[-1],target),2*factor)
+
 
 if __name__=='__main__':unittest.main()

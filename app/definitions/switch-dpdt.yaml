@@ -1,0 +1,97 @@
+schema_version: 1
+id: switch-dpdt
+revision: 1
+name: DPDT switch
+description: Two mechanically linked changeover poles, each connecting common to its
+  upper throw; the dashed link is not electrical.
+keywords:
+- switch
+- DPDT
+- contact
+- switches relays
+- dpdt
+- overnight
+- batch 02
+types:
+- switches-and-relays
+family: switches-and-relays
+batch: overnight-switches-and-relays-02
+attributes:
+  resting_state: common-to-upper
+recipe: switch-dpdt
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: cspst or cspdt; custom ganged contacts
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: pole-1-common
+  name: Common 1
+  description: Common 1
+  kind: passive
+  lead_part: lead-pole-1-common
+- id: pole-1-upper
+  name: Upper throw 1
+  description: Upper throw 1
+  kind: passive
+  lead_part: lead-pole-1-upper
+- id: pole-1-lower
+  name: Lower throw 1
+  description: Lower throw 1
+  kind: passive
+  lead_part: lead-pole-1-lower
+- id: pole-2-common
+  name: Common 2
+  description: Common 2
+  kind: passive
+  lead_part: lead-pole-2-common
+- id: pole-2-upper
+  name: Upper throw 2
+  description: Upper throw 2
+  kind: passive
+  lead_part: lead-pole-2-upper
+- id: pole-2-lower
+  name: Lower throw 2
+  description: Lower throw 2
+  kind: passive
+  lead_part: lead-pole-2-lower
+parts:
+- id: lead-pole-1-common
+  description: 'Electrical lead: Common 1'
+- id: pole-1-pivot
+  description: Pole 1 pivot
+- id: lead-pole-1-upper
+  description: 'Electrical lead: Upper throw 1'
+- id: pole-1-upper-contact
+  description: Pole 1 upper contact
+- id: lead-pole-1-lower
+  description: 'Electrical lead: Lower throw 1'
+- id: pole-1-lower-contact
+  description: Pole 1 lower contact
+- id: pole-1-blade
+  description: Pole 1 blade
+- id: lead-pole-2-common
+  description: 'Electrical lead: Common 2'
+- id: pole-2-pivot
+  description: Pole 2 pivot
+- id: lead-pole-2-upper
+  description: 'Electrical lead: Upper throw 2'
+- id: pole-2-upper-contact
+  description: Pole 2 upper contact
+- id: lead-pole-2-lower
+  description: 'Electrical lead: Lower throw 2'
+- id: pole-2-lower-contact
+  description: Pole 2 lower contact
+- id: pole-2-blade
+  description: Pole 2 blade
+- id: mechanical-link
+  description: Mechanical link

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000021 40.251767 16.582547" width="14.19992891mm" height="5.84995408mm">
+  <title>Pushbutton - normally closed</title>
+  <desc>Momentary pushbutton with a closed contact at rest; pressing the plunger opens the contact.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 3.45, "body-width": 4.5, "grid": 1.0}, "origin_svg": [-48.556576, -59.102462], "parts": ["lead-a", "lead-b", "fixed-contacts", "contact-bridge", "actuator"], "pins_mm": {"a": [-6.0, 0.0], "b": [6.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "pushbutton-nc"}</metadata>
+  <g id="sc-pushbutton-nc-r1-small-medium--sc-pushbutton-nc-r1-small-medium" inkscape:label="Pushbutton - normally closed / small / medium" data-symbol="pushbutton-nc" data-revision="1" data-size="small" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-48.556576,-59.102462)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="sc-pushbutton-nc-r1-small-medium--sc-pushbutton-nc-r1-small-medium--lead-a" inkscape:label="lead-a">
+      <path d="M-17.07156 0H-6.40182" fill="none" />
+      <desc>Electrical lead: A</desc>
+    </g>
+    <g data-part="lead-b" id="sc-pushbutton-nc-r1-small-medium--sc-pushbutton-nc-r1-small-medium--lead-b" inkscape:label="lead-b">
+      <path d="M17.07156 0H6.40182" fill="none" />
+      <desc>Electrical lead: B</desc>
+    </g>
+    <g data-part="fixed-contacts" id="sc-pushbutton-nc-r1-small-medium--sc-pushbutton-nc-r1-small-medium--fixed-contacts" inkscape:label="fixed-contacts">
+      <path d="M-5.5483 0C-5.5483 .47139-5.93044 .85353-6.40182 .85353C-6.87321 .85353-7.25536 .47139-7.25536 0S-6.87321-.85353-6.40182-.85353C-5.93044-.85353-5.5483-.47139-5.5483 0ZM-6.40182 0" stroke="none" />
+      <path d="M7.25536 0C7.25536 .47139 6.87321 .85353 6.40182 .85353C5.93044 .85353 5.5483 .47139 5.5483 0S5.93044-.85353 6.40182-.85353C6.87321-.85353 7.25536-.47139 7.25536 0ZM6.40182 0" stroke="none" />
+      <desc>Fixed contacts</desc>
+    </g>
+    <g data-part="contact-bridge" id="sc-pushbutton-nc-r1-small-medium--sc-pushbutton-nc-r1-small-medium--contact-bridge" inkscape:label="contact-bridge">
+      <path d="M-6.40182 0H6.40182" fill="none" />
+      <desc>Contact bridge</desc>
+    </g>
+    <g data-part="actuator" id="sc-pushbutton-nc-r1-small-medium--sc-pushbutton-nc-r1-small-medium--actuator" inkscape:label="actuator">
+      <path d="M0 0V9.81613" fill="none" />
+      <path d="M-3.62769 9.81613H3.62769" fill="none" />
+      <desc>Actuator</desc>
+    </g>
+  </g>
+</svg>

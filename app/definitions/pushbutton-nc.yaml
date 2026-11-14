@@ -1,0 +1,60 @@
+schema_version: 1
+id: pushbutton-nc
+revision: 1
+name: Pushbutton - normally closed
+description: Momentary pushbutton with a closed contact at rest; pressing the plunger
+  opens the contact.
+keywords:
+- switch
+- contact
+- momentary
+- push button
+- NC
+- switches relays
+- pushbutton
+- nc
+- overnight
+- batch 02
+types:
+- switches-and-relays
+family: switches-and-relays
+batch: overnight-switches-and-relays-02
+attributes:
+  resting_state: closed
+recipe: pushbutton-nc
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: custom momentary contact and plunger
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: a
+  name: A
+  description: A
+  kind: passive
+  lead_part: lead-a
+- id: b
+  name: B
+  description: B
+  kind: passive
+  lead_part: lead-b
+parts:
+- id: lead-a
+  description: 'Electrical lead: A'
+- id: lead-b
+  description: 'Electrical lead: B'
+- id: fixed-contacts
+  description: Fixed contacts
+- id: contact-bridge
+  description: Contact bridge
+- id: actuator
+  description: Actuator

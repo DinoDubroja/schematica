@@ -1,0 +1,56 @@
+schema_version: 1
+id: switch-spst
+revision: 1
+name: SPST switch
+description: Single-pole single-throw switch shown open.
+keywords:
+- switch
+- SPST
+- contact
+- switches relays
+- spst
+- overnight
+- batch 02
+types:
+- switches-and-relays
+family: switches-and-relays
+batch: overnight-switches-and-relays-02
+attributes:
+  resting_state: open
+recipe: switch-spst
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: cspst or cspdt; custom ganged contacts
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: common
+  name: Common
+  description: Common
+  kind: passive
+  lead_part: lead-common
+- id: out
+  name: Switched terminal
+  description: Switched terminal
+  kind: passive
+  lead_part: lead-out
+parts:
+- id: lead-common
+  description: 'Electrical lead: Common'
+- id: pivot
+  description: Pivot
+- id: lead-out
+  description: 'Electrical lead: Switched terminal'
+- id: fixed-contact
+  description: Fixed contact
+- id: blade
+  description: Blade

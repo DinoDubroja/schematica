@@ -1,0 +1,32 @@
+% Pushbutton - normally closed; custom momentary contact and plunger.
+% Schematica coordinates are millimetres at Medium; pins snap outward to the 1 mm grid.
+\newcommand{\SCBatchPushbuttonNc}[4]{%
+  \SCresolve{#1}{#2}{#3}
+  \def\F{#2}
+  \pgfmathsetmacro{\SCorientx}{ifthenelse(mod(#4,2)==1,-1,1)}
+  \pgfmathsetmacro{\SCorienty}{ifthenelse(#4>1,-1,1)}
+  \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+    \SCdimension{body-width}{6*\F}
+    \SCdimension{body-height}{4.6*\F}
+    \SCdimension{grid}{1}
+    \SCpin{a}{floor(-7*\F)}{0}
+    \begin{SCpart}{lead-a}
+    \draw ({floor(-7*\F)},{0})--({-3*\F},{0*\F});
+    \end{SCpart}
+    \SCpin{b}{ceil(7*\F)}{0}
+    \begin{SCpart}{lead-b}
+    \draw ({ceil(7*\F)},{0})--({3*\F},{0*\F});
+    \end{SCpart}
+    \begin{SCpart}{fixed-contacts}
+    \fill ({-3*\F},{0*\F}) circle ({0.4*\F});
+    \fill ({3*\F},{0*\F}) circle ({0.4*\F});
+    \end{SCpart}
+    \begin{SCpart}{contact-bridge}
+    \draw ({-3*\F},{0*\F})--({3*\F},{0*\F});
+    \end{SCpart}
+    \begin{SCpart}{actuator}
+    \draw ({0*\F},{0*\F})--({0*\F},{4.6*\F});
+    \draw ({-1.7*\F},{4.6*\F})--({1.7*\F},{4.6*\F});
+    \end{SCpart}
+  \end{scope}
+}

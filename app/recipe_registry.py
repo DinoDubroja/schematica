@@ -50,13 +50,21 @@ BATCH_MACROS = {
     'mosfet-p-enhancement-bulk': 'SCBatchMosfetPEnhancementBulk',
     'ota': 'SCBatchOta',
     'phototransistor-npn': 'SCBatchPhototransistorNpn',
+    'pushbutton-nc': 'SCBatchPushbuttonNc',
+    'pushbutton-no': 'SCBatchPushbuttonNo',
     'regulator': 'SCBatchRegulator',
+    'relay-coil': 'SCBatchRelayCoil',
+    'relay-spdt': 'SCBatchRelaySpdt',
     'source-current': 'SCBatchSourceCurrent',
     'source-dependent-current': 'SCBatchSourceDependentCurrent',
     'source-dependent-voltage': 'SCBatchSourceDependentVoltage',
     'source-voltage': 'SCBatchSourceVoltage',
     'source-voltage-ac': 'SCBatchSourceVoltageAc',
     'supply-port': 'SCBatchSupplyPort',
+    'switch-dpdt': 'SCBatchSwitchDpdt',
+    'switch-dpst': 'SCBatchSwitchDpst',
+    'switch-spdt': 'SCBatchSwitchSpdt',
+    'switch-spst': 'SCBatchSwitchSpst',
     'transformer-air': 'SCBatchTransformerAir',
     'transformer-center-tap': 'SCBatchTransformerCenterTap',
     'transformer-core': 'SCBatchTransformerCore',
@@ -64,4 +72,4 @@ BATCH_MACROS = {
     'transistor-pnp': 'SCBatchTransistorPnp',
 }
 
-BATCH_LABEL_RECIPES = frozenset(('amplifier-fully-differential', 'amplifier-instrumentation', 'comparator', 'comparator-supply', 'ota', 'regulator'))
+BATCH_LABEL_RECIPES = frozenset(('amplifier-fully-differential', 'amplifier-instrumentation', 'comparator', 'comparator-supply', 'ota', 'regulator', 'relay-coil', 'relay-spdt'))

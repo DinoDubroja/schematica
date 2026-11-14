@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000022 57.543035 37.983981" width="20.29990401mm" height="13.39990441mm">
+  <title>DPST switch</title>
+  <desc>Two mechanically linked single-throw poles, both shown open; the dashed link is not an electrical connection.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 10.2, "body-width": 7.5, "grid": 1.0}, "origin_svg": [-39.910942, -49.606471], "parts": ["lead-pole-1-common", "pole-1-pivot", "lead-pole-1-out", "pole-1-fixed-contact", "pole-1-blade", "lead-pole-2-common", "pole-2-pivot", "lead-pole-2-out", "pole-2-fixed-contact", "pole-2-blade", "mechanical-link"], "pins_mm": {"pole-1-common": [-9.0, 4.0], "pole-1-out": [9.0, 4.0], "pole-2-common": [-9.0, -4.0], "pole-2-out": [9.0, -4.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "switch-dpst"}</metadata>
+  <g id="sc-switch-dpst-r1-large-thick--sc-switch-dpst-r1-large-thick" inkscape:label="DPST switch / large / thick" data-symbol="switch-dpst" data-revision="1" data-size="large" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-39.910942,-49.606471)scale(0.996264,-0.996264)">
+    <g data-part="lead-pole-1-common" id="sc-switch-dpst-r1-large-thick--sc-switch-dpst-r1-large-thick--lead-pole-1-common" inkscape:label="lead-pole-1-common">
+      <path d="M-25.60735 11.38104H-10.66972" fill="none" />
+      <desc>Electrical lead: Common 1</desc>
+    </g>
+    <g data-part="pole-1-pivot" id="sc-switch-dpst-r1-large-thick--sc-switch-dpst-r1-large-thick--pole-1-pivot" inkscape:label="pole-1-pivot">
+      <path d="M-9.24715 11.38104C-9.24715 12.16672-9.88405 12.80362-10.66972 12.80362C-11.4554 12.80362-12.0923 12.16672-12.0923 11.38104C-12.0923 10.59537-11.4554 9.95847-10.66972 9.95847C-9.88405 9.95847-9.24715 10.59537-9.24715 11.38104ZM-10.66972 11.38104" stroke="none" />
+      <desc>Pole 1 pivot</desc>
+    </g>
+    <g data-part="lead-pole-1-out" id="sc-switch-dpst-r1-large-thick--sc-switch-dpst-r1-large-thick--lead-pole-1-out" inkscape:label="lead-pole-1-out">
+      <path d="M25.60735 11.38104H10.66972" fill="none" />
+      <desc>Electrical lead: Switched terminal 1</desc>
+    </g>
+    <g data-part="pole-1-fixed-contact" id="sc-switch-dpst-r1-large-thick--sc-switch-dpst-r1-large-thick--pole-1-fixed-contact" inkscape:label="pole-1-fixed-contact">
+      <path d="M12.0923 11.38104C12.0923 12.16672 11.4554 12.80362 10.66972 12.80362C9.88405 12.80362 9.24715 12.16672 9.24715 11.38104C9.24715 10.59537 9.88405 9.95847 10.66972 9.95847C11.4554 9.95847 12.0923 10.59537 12.0923 11.38104ZM10.66972 11.38104" stroke="none" />
+      <desc>Pole 1 fixed contact</desc>
+    </g>
+    <g data-part="pole-1-blade" id="sc-switch-dpst-r1-large-thick--sc-switch-dpst-r1-large-thick--pole-1-blade" inkscape:label="pole-1-blade">
+      <path d="M-10.66972 11.38104L7.82442 19.20546" fill="none" />
+      <desc>Pole 1 blade</desc>
+    </g>
+    <g data-part="lead-pole-2-common" id="sc-switch-dpst-r1-large-thick--sc-switch-dpst-r1-large-thick--lead-pole-2-common" inkscape:label="lead-pole-2-common">
+      <path d="M-25.60735-11.38104H-10.66972" fill="none" />
+      <desc>Electrical lead: Common 2</desc>
+    </g>
+    <g data-part="pole-2-pivot" id="sc-switch-dpst-r1-large-thick--sc-switch-dpst-r1-large-thick--pole-2-pivot" inkscape:label="pole-2-pivot">
+      <path d="M-9.24715-11.38104C-9.24715-10.59537-9.88405-9.95847-10.66972-9.95847C-11.4554-9.95847-12.0923-10.59537-12.0923-11.38104C-12.0923-12.16672-11.4554-12.80362-10.66972-12.80362C-9.88405-12.80362-9.24715-12.16672-9.24715-11.38104ZM-10.66972-11.38104" stroke="none" />
+      <desc>Pole 2 pivot</desc>
+    </g>
+    <g data-part="lead-pole-2-out" id="sc-switch-dpst-r1-large-thick--sc-switch-dpst-r1-large-thick--lead-pole-2-out" inkscape:label="lead-pole-2-out">
+      <path d="M25.60735-11.38104H10.66972" fill="none" />
+      <desc>Electrical lead: Switched terminal 2</desc>
+    </g>
+    <g data-part="pole-2-fixed-contact" id="sc-switch-dpst-r1-large-thick--sc-switch-dpst-r1-large-thick--pole-2-fixed-contact" inkscape:label="pole-2-fixed-contact">
+      <path d="M12.0923-11.38104C12.0923-10.59537 11.4554-9.95847 10.66972-9.95847C9.88405-9.95847 9.24715-10.59537 9.24715-11.38104C9.24715-12.16672 9.88405-12.80362 10.66972-12.80362C11.4554-12.80362 12.0923-12.16672 12.0923-11.38104ZM10.66972-11.38104" stroke="none" />
+      <desc>Pole 2 fixed contact</desc>
+    </g>
+    <g data-part="pole-2-blade" id="sc-switch-dpst-r1-large-thick--sc-switch-dpst-r1-large-thick--pole-2-blade" inkscape:label="pole-2-blade">
+      <path d="M-10.66972-11.38104L7.82442-3.55661" fill="none" />
+      <desc>Pole 2 blade</desc>
+    </g>
+    <g data-part="mechanical-link" id="sc-switch-dpst-r1-large-thick--sc-switch-dpst-r1-large-thick--mechanical-link" inkscape:label="mechanical-link">
+      <path d="M0-6.86694V15.89513" fill="none" stroke-dasharray="2.84526,1.99168" stroke-dashoffset="0.0" />
+      <desc>Mechanical link</desc>
+    </g>
+  </g>
+</svg>

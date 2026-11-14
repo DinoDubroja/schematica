@@ -60865,6 +60865,4929 @@
         }
       ],
       "source_fingerprint": "a15c9d7143dd9c5340357aaa1245d95a29af44eadf417f4feb66425790583955"
+    },
+    {
+      "schema_version": 1,
+      "id": "pushbutton-nc",
+      "revision": 1,
+      "name": "Pushbutton - normally closed",
+      "description": "Momentary pushbutton with a closed contact at rest; pressing the plunger opens the contact.",
+      "keywords": [
+        "switch",
+        "contact",
+        "momentary",
+        "push button",
+        "NC",
+        "switches relays",
+        "pushbutton",
+        "nc",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "switches-and-relays"
+      ],
+      "family": "switches-and-relays",
+      "batch": "overnight-switches-and-relays-02",
+      "attributes": {
+        "resting_state": "closed"
+      },
+      "recipe": "pushbutton-nc",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "custom momentary contact and plunger",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "A",
+          "description": "A",
+          "kind": "passive",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "b",
+          "name": "B",
+          "description": "B",
+          "kind": "passive",
+          "lead_part": "lead-b"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-a",
+          "description": "Electrical lead: A"
+        },
+        {
+          "id": "lead-b",
+          "description": "Electrical lead: B"
+        },
+        {
+          "id": "fixed-contacts",
+          "description": "Fixed contacts"
+        },
+        {
+          "id": "contact-bridge",
+          "description": "Contact bridge"
+        },
+        {
+          "id": "actuator",
+          "description": "Actuator"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "pushbutton-nc-small-thin",
+          "symbol_id": "pushbutton-nc",
+          "name": "Pushbutton - normally closed",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/pushbutton-nc-small-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 5.82495096,
+          "origin_svg": [
+            -48.627446,
+            -59.173333
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -1.612493952777776
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "b": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 3.45,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "fixed-contacts",
+            "contact-bridge",
+            "actuator"
+          ],
+          "svg_bytes": 2817,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "pushbutton-nc-small-medium",
+          "symbol_id": "pushbutton-nc",
+          "name": "Pushbutton - normally closed",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/pushbutton-nc-small-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 5.84995408,
+          "origin_svg": [
+            -48.556576,
+            -59.102462
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -1.6249951624999994
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "b": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 3.45,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "fixed-contacts",
+            "contact-bridge",
+            "actuator"
+          ],
+          "svg_bytes": 2846,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "pushbutton-nc-small-thick",
+          "symbol_id": "pushbutton-nc",
+          "name": "Pushbutton - normally closed",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/pushbutton-nc-small-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 5.8999561,
+          "origin_svg": [
+            -48.414834,
+            -58.960721
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -1.6499961708333333
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "b": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 3.45,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "fixed-contacts",
+            "contact-bridge",
+            "actuator"
+          ],
+          "svg_bytes": 2831,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "pushbutton-nc-medium-thin",
+          "symbol_id": "pushbutton-nc",
+          "name": "Pushbutton - normally closed",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/pushbutton-nc-medium-thin.svg",
+          "width_mm": 16.14991231,
+          "height_mm": 7.07496362,
+          "origin_svg": [
+            -45.792816,
+            -55.913478
+          ],
+          "visual_center_from_origin_mm": [
+            -8.819444422177487e-07,
+            -2.137493431944446
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 4.6,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "fixed-contacts",
+            "contact-bridge",
+            "actuator"
+          ],
+          "svg_bytes": 2780,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "pushbutton-nc-medium-medium",
+          "symbol_id": "pushbutton-nc",
+          "name": "Pushbutton - normally closed",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/pushbutton-nc-medium-medium.svg",
+          "width_mm": 16.19991786,
+          "height_mm": 7.09996287,
+          "origin_svg": [
+            -45.721945,
+            -55.842607
+          ],
+          "visual_center_from_origin_mm": [
+            1.763888909501866e-07,
+            -2.149993406944445
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 4.6,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "fixed-contacts",
+            "contact-bridge",
+            "actuator"
+          ],
+          "svg_bytes": 2809,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "pushbutton-nc-medium-thick",
+          "symbol_id": "pushbutton-nc",
+          "name": "Pushbutton - normally closed",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/pushbutton-nc-medium-thick.svg",
+          "width_mm": 16.29992577,
+          "height_mm": 7.14996877,
+          "origin_svg": [
+            -45.580203,
+            -55.700866
+          ],
+          "visual_center_from_origin_mm": [
+            7.055555562808358e-07,
+            -2.1749960027777777
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 4.6,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "fixed-contacts",
+            "contact-bridge",
+            "actuator"
+          ],
+          "svg_bytes": 2794,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "pushbutton-nc-large-thin",
+          "symbol_id": "pushbutton-nc",
+          "name": "Pushbutton - normally closed",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/pushbutton-nc-large-thin.svg",
+          "width_mm": 20.14989373,
+          "height_mm": 8.32494102,
+          "origin_svg": [
+            -40.123554,
+            -52.653669
+          ],
+          "visual_center_from_origin_mm": [
+            1.7638888844354975e-07,
+            -2.6624918527777752
+          ],
+          "pins_mm": {
+            "a": [
+              -9.0,
+              0.0
+            ],
+            "b": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 5.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "fixed-contacts",
+            "contact-bridge",
+            "actuator"
+          ],
+          "svg_bytes": 2847,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "pushbutton-nc-large-medium",
+          "symbol_id": "pushbutton-nc",
+          "name": "Pushbutton - normally closed",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/pushbutton-nc-large-medium.svg",
+          "width_mm": 20.1998961,
+          "height_mm": 8.34994379,
+          "origin_svg": [
+            -40.052683,
+            -52.582798
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            -2.6749932388888893
+          ],
+          "pins_mm": {
+            "a": [
+              -9.0,
+              0.0
+            ],
+            "b": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 5.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "fixed-contacts",
+            "contact-bridge",
+            "actuator"
+          ],
+          "svg_bytes": 2876,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "pushbutton-nc-large-thick",
+          "symbol_id": "pushbutton-nc",
+          "name": "Pushbutton - normally closed",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/pushbutton-nc-large-thick.svg",
+          "width_mm": 20.29990401,
+          "height_mm": 8.39994581,
+          "origin_svg": [
+            -39.910942,
+            -52.441057
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -2.6999942472222207
+          ],
+          "pins_mm": {
+            "a": [
+              -9.0,
+              0.0
+            ],
+            "b": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 5.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "fixed-contacts",
+            "contact-bridge",
+            "actuator"
+          ],
+          "svg_bytes": 2860,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "03d326703539c9c22dfb2135a2156cb698e40d4740bbc8bb79e21747c0affbd9"
+    },
+    {
+      "schema_version": 1,
+      "id": "pushbutton-no",
+      "revision": 1,
+      "name": "Pushbutton - normally open",
+      "description": "Momentary pushbutton with an open contact at rest; pressing the plunger closes the contact.",
+      "keywords": [
+        "switch",
+        "contact",
+        "momentary",
+        "push button",
+        "NO",
+        "switches relays",
+        "pushbutton",
+        "no",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "switches-and-relays"
+      ],
+      "family": "switches-and-relays",
+      "batch": "overnight-switches-and-relays-02",
+      "attributes": {
+        "resting_state": "open"
+      },
+      "recipe": "pushbutton-no",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "custom momentary contact and plunger",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "A",
+          "description": "A",
+          "kind": "passive",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "b",
+          "name": "B",
+          "description": "B",
+          "kind": "passive",
+          "lead_part": "lead-b"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-a",
+          "description": "Electrical lead: A"
+        },
+        {
+          "id": "lead-b",
+          "description": "Electrical lead: B"
+        },
+        {
+          "id": "fixed-contacts",
+          "description": "Fixed contacts"
+        },
+        {
+          "id": "contact-bridge",
+          "description": "Contact bridge"
+        },
+        {
+          "id": "actuator",
+          "description": "Actuator"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "pushbutton-no-small-thin",
+          "symbol_id": "pushbutton-no",
+          "name": "Pushbutton - normally open",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/pushbutton-no-small-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 5.82495096,
+          "origin_svg": [
+            -48.627446,
+            -59.173333
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -1.612493952777776
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "b": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 3.45,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "fixed-contacts",
+            "contact-bridge",
+            "actuator"
+          ],
+          "svg_bytes": 2825,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "pushbutton-no-small-medium",
+          "symbol_id": "pushbutton-no",
+          "name": "Pushbutton - normally open",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/pushbutton-no-small-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 5.84995408,
+          "origin_svg": [
+            -48.556576,
+            -59.102462
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -1.6249951624999994
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "b": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 3.45,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "fixed-contacts",
+            "contact-bridge",
+            "actuator"
+          ],
+          "svg_bytes": 2854,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "pushbutton-no-small-thick",
+          "symbol_id": "pushbutton-no",
+          "name": "Pushbutton - normally open",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/pushbutton-no-small-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 5.8999561,
+          "origin_svg": [
+            -48.414834,
+            -58.960721
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -1.6499961708333333
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "b": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 3.45,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "fixed-contacts",
+            "contact-bridge",
+            "actuator"
+          ],
+          "svg_bytes": 2839,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "pushbutton-no-medium-thin",
+          "symbol_id": "pushbutton-no",
+          "name": "Pushbutton - normally open",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/pushbutton-no-medium-thin.svg",
+          "width_mm": 16.14991231,
+          "height_mm": 7.07496362,
+          "origin_svg": [
+            -45.792816,
+            -55.913478
+          ],
+          "visual_center_from_origin_mm": [
+            -8.819444422177487e-07,
+            -2.137493431944446
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 4.6,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "fixed-contacts",
+            "contact-bridge",
+            "actuator"
+          ],
+          "svg_bytes": 2788,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "pushbutton-no-medium-medium",
+          "symbol_id": "pushbutton-no",
+          "name": "Pushbutton - normally open",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/pushbutton-no-medium-medium.svg",
+          "width_mm": 16.19991786,
+          "height_mm": 7.09996287,
+          "origin_svg": [
+            -45.721945,
+            -55.842607
+          ],
+          "visual_center_from_origin_mm": [
+            1.763888909501866e-07,
+            -2.149993406944445
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 4.6,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "fixed-contacts",
+            "contact-bridge",
+            "actuator"
+          ],
+          "svg_bytes": 2817,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "pushbutton-no-medium-thick",
+          "symbol_id": "pushbutton-no",
+          "name": "Pushbutton - normally open",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/pushbutton-no-medium-thick.svg",
+          "width_mm": 16.29992577,
+          "height_mm": 7.14996877,
+          "origin_svg": [
+            -45.580203,
+            -55.700866
+          ],
+          "visual_center_from_origin_mm": [
+            7.055555562808358e-07,
+            -2.1749960027777777
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 4.6,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "fixed-contacts",
+            "contact-bridge",
+            "actuator"
+          ],
+          "svg_bytes": 2802,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "pushbutton-no-large-thin",
+          "symbol_id": "pushbutton-no",
+          "name": "Pushbutton - normally open",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/pushbutton-no-large-thin.svg",
+          "width_mm": 20.14989373,
+          "height_mm": 8.32494102,
+          "origin_svg": [
+            -40.123554,
+            -52.653669
+          ],
+          "visual_center_from_origin_mm": [
+            1.7638888844354975e-07,
+            -2.6624918527777752
+          ],
+          "pins_mm": {
+            "a": [
+              -9.0,
+              0.0
+            ],
+            "b": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 5.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "fixed-contacts",
+            "contact-bridge",
+            "actuator"
+          ],
+          "svg_bytes": 2855,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "pushbutton-no-large-medium",
+          "symbol_id": "pushbutton-no",
+          "name": "Pushbutton - normally open",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/pushbutton-no-large-medium.svg",
+          "width_mm": 20.1998961,
+          "height_mm": 8.34994379,
+          "origin_svg": [
+            -40.052683,
+            -52.582798
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            -2.6749932388888893
+          ],
+          "pins_mm": {
+            "a": [
+              -9.0,
+              0.0
+            ],
+            "b": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 5.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "fixed-contacts",
+            "contact-bridge",
+            "actuator"
+          ],
+          "svg_bytes": 2884,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "pushbutton-no-large-thick",
+          "symbol_id": "pushbutton-no",
+          "name": "Pushbutton - normally open",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/pushbutton-no-large-thick.svg",
+          "width_mm": 20.29990401,
+          "height_mm": 8.39994581,
+          "origin_svg": [
+            -39.910942,
+            -52.441057
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -2.6999942472222207
+          ],
+          "pins_mm": {
+            "a": [
+              -9.0,
+              0.0
+            ],
+            "b": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 5.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "fixed-contacts",
+            "contact-bridge",
+            "actuator"
+          ],
+          "svg_bytes": 2868,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "2d3df4c48479449f7197f7ea2774c058d372bebd4c0a54631e15693638501d7a"
+    },
+    {
+      "schema_version": 1,
+      "id": "relay-coil",
+      "revision": 1,
+      "name": "Relay coil",
+      "description": "Electromagnetic relay actuator represented by a labelled coil block. Contact units are drawn separately; no coil polarity is specified.",
+      "keywords": [
+        "switch",
+        "contact",
+        "relay",
+        "coil",
+        "switches relays",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "switches-and-relays"
+      ],
+      "family": "switches-and-relays",
+      "batch": "overnight-switches-and-relays-02",
+      "attributes": {
+        "resting_state": "unspecified"
+      },
+      "recipe": "relay-coil",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "custom relay coil/contact assembly",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "coil-1",
+          "name": "Coil 1",
+          "description": "Coil 1",
+          "kind": "passive",
+          "lead_part": "lead-coil-1"
+        },
+        {
+          "id": "coil-2",
+          "name": "Coil 2",
+          "description": "Coil 2",
+          "kind": "passive",
+          "lead_part": "lead-coil-2"
+        }
+      ],
+      "parts": [
+        {
+          "id": "coil-body",
+          "description": "Coil body"
+        },
+        {
+          "id": "coil-label",
+          "description": "Coil label"
+        },
+        {
+          "id": "lead-coil-1",
+          "description": "Electrical lead: Coil 1"
+        },
+        {
+          "id": "lead-coil-2",
+          "description": "Electrical lead: Coil 2"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "relay-coil-small-thin",
+          "symbol_id": "relay-coil",
+          "name": "Relay coil",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/relay-coil-small-thin.svg",
+          "width_mm": 5.89996315,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -60.320308,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "coil-1": [
+              0.0,
+              5.0
+            ],
+            "coil-2": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.75,
+            "body-height": 4.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "coil-body",
+            "coil-label",
+            "lead-coil-1",
+            "lead-coil-2"
+          ],
+          "svg_bytes": 2634,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "relay-coil-small-medium",
+          "symbol_id": "relay-coil",
+          "name": "Relay coil",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/relay-coil-small-medium.svg",
+          "width_mm": 5.94996552,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -60.249437,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            3.5277777939373633e-07,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "coil-1": [
+              0.0,
+              5.0
+            ],
+            "coil-2": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.75,
+            "body-height": 4.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "coil-body",
+            "coil-label",
+            "lead-coil-1",
+            "lead-coil-2"
+          ],
+          "svg_bytes": 2663,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "relay-coil-small-thick",
+          "symbol_id": "relay-coil",
+          "name": "Relay coil",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/relay-coil-small-thick.svg",
+          "width_mm": 6.04996956,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -60.107696,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            -7.055555562808358e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "coil-1": [
+              0.0,
+              5.0
+            ],
+            "coil-2": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.75,
+            "body-height": 4.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "coil-body",
+            "coil-label",
+            "lead-coil-1",
+            "lead-coil-2"
+          ],
+          "svg_bytes": 2647,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "relay-coil-medium-thin",
+          "symbol_id": "relay-coil",
+          "name": "Relay coil",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/relay-coil-medium-thin.svg",
+          "width_mm": 7.14995818,
+          "height_mm": 14.1499269,
+          "origin_svg": [
+            -58.548662,
+            -51.945007
+          ],
+          "visual_center_from_origin_mm": [
+            1.0583333331679353e-06,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "coil-1": [
+              0.0,
+              6.0
+            ],
+            "coil-2": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.0,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "coil-body",
+            "coil-label",
+            "lead-coil-1",
+            "lead-coil-2"
+          ],
+          "svg_bytes": 2653,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "relay-coil-medium-medium",
+          "symbol_id": "relay-coil",
+          "name": "Relay coil",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/relay-coil-medium-medium.svg",
+          "width_mm": 7.1999602,
+          "height_mm": 14.19992891,
+          "origin_svg": [
+            -58.477791,
+            -51.874137
+          ],
+          "visual_center_from_origin_mm": [
+            3.5277777939373633e-07,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "coil-1": [
+              0.0,
+              6.0
+            ],
+            "coil-2": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.0,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "coil-body",
+            "coil-label",
+            "lead-coil-1",
+            "lead-coil-2"
+          ],
+          "svg_bytes": 2682,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "relay-coil-medium-thick",
+          "symbol_id": "relay-coil",
+          "name": "Relay coil",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/relay-coil-medium-thick.svg",
+          "width_mm": 7.29996459,
+          "height_mm": 14.2999333,
+          "origin_svg": [
+            -58.336049,
+            -51.732395
+          ],
+          "visual_center_from_origin_mm": [
+            -8.819444422177487e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "coil-1": [
+              0.0,
+              6.0
+            ],
+            "coil-2": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.0,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "coil-body",
+            "coil-label",
+            "lead-coil-1",
+            "lead-coil-2"
+          ],
+          "svg_bytes": 2667,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "relay-coil-large-thin",
+          "symbol_id": "relay-coil",
+          "name": "Relay coil",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/relay-coil-large-thin.svg",
+          "width_mm": 8.39995286,
+          "height_mm": 18.14990479,
+          "origin_svg": [
+            -56.777015,
+            -46.275746
+          ],
+          "visual_center_from_origin_mm": [
+            7.055555562808358e-07,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "coil-1": [
+              0.0,
+              8.0
+            ],
+            "coil-2": [
+              0.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.25,
+            "body-height": 7.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "coil-body",
+            "coil-label",
+            "lead-coil-1",
+            "lead-coil-2"
+          ],
+          "svg_bytes": 2642,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "relay-coil-large-medium",
+          "symbol_id": "relay-coil",
+          "name": "Relay coil",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/relay-coil-large-medium.svg",
+          "width_mm": 8.44995523,
+          "height_mm": 18.19990716,
+          "origin_svg": [
+            -56.706145,
+            -46.204875
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "coil-1": [
+              0.0,
+              8.0
+            ],
+            "coil-2": [
+              0.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.25,
+            "body-height": 7.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "coil-body",
+            "coil-label",
+            "lead-coil-1",
+            "lead-coil-2"
+          ],
+          "svg_bytes": 2672,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "relay-coil-large-thick",
+          "symbol_id": "relay-coil",
+          "name": "Relay coil",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/relay-coil-large-thick.svg",
+          "width_mm": 8.54995962,
+          "height_mm": 18.29991507,
+          "origin_svg": [
+            -56.564403,
+            -46.063134
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "coil-1": [
+              0.0,
+              8.0
+            ],
+            "coil-2": [
+              0.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.25,
+            "body-height": 7.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "coil-body",
+            "coil-label",
+            "lead-coil-1",
+            "lead-coil-2"
+          ],
+          "svg_bytes": 2657,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "f328ca7bfe430706bbc3a242753d18c0709c72ba823841822d354f75e8246edf"
+    },
+    {
+      "schema_version": 1,
+      "id": "relay-spdt",
+      "revision": 1,
+      "name": "SPDT relay",
+      "description": "Relay with an isolated coil and one changeover contact. In the de-energized state common connects to NC; energizing transfers it to NO. The dashed coupling is mechanical.",
+      "keywords": [
+        "switch",
+        "contact",
+        "relay",
+        "coil",
+        "switches relays",
+        "spdt",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "switches-and-relays"
+      ],
+      "family": "switches-and-relays",
+      "batch": "overnight-switches-and-relays-02",
+      "attributes": {
+        "resting_state": "common-to-NC"
+      },
+      "recipe": "relay-spdt",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "custom relay coil/contact assembly",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "coil-1",
+          "name": "Coil 1",
+          "description": "Coil 1",
+          "kind": "passive",
+          "lead_part": "lead-coil-1"
+        },
+        {
+          "id": "coil-2",
+          "name": "Coil 2",
+          "description": "Coil 2",
+          "kind": "passive",
+          "lead_part": "lead-coil-2"
+        },
+        {
+          "id": "common",
+          "name": "Common",
+          "description": "Common",
+          "kind": "passive",
+          "lead_part": "lead-common"
+        },
+        {
+          "id": "nc",
+          "name": "Normally closed",
+          "description": "Normally closed",
+          "kind": "passive",
+          "lead_part": "lead-nc"
+        },
+        {
+          "id": "no",
+          "name": "Normally open",
+          "description": "Normally open",
+          "kind": "passive",
+          "lead_part": "lead-no"
+        }
+      ],
+      "parts": [
+        {
+          "id": "coil-body",
+          "description": "Coil body"
+        },
+        {
+          "id": "coil-label",
+          "description": "Coil label"
+        },
+        {
+          "id": "lead-coil-1",
+          "description": "Electrical lead: Coil 1"
+        },
+        {
+          "id": "lead-coil-2",
+          "description": "Electrical lead: Coil 2"
+        },
+        {
+          "id": "lead-common",
+          "description": "Electrical lead: Common"
+        },
+        {
+          "id": "lead-nc",
+          "description": "Electrical lead: Normally closed"
+        },
+        {
+          "id": "lead-no",
+          "description": "Electrical lead: Normally open"
+        },
+        {
+          "id": "contacts",
+          "description": "Contacts"
+        },
+        {
+          "id": "contact-blade",
+          "description": "Contact blade"
+        },
+        {
+          "id": "mechanical-link",
+          "description": "Mechanical link"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "relay-spdt-small-thin",
+          "symbol_id": "relay-spdt",
+          "name": "SPDT relay",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/relay-spdt-small-thin.svg",
+          "width_mm": 17.52490745,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -47.564462,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            1.3124940236111136,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "coil-1": [
+              -5.0,
+              5.0
+            ],
+            "coil-2": [
+              -5.0,
+              -5.0
+            ],
+            "common": [
+              1.0,
+              -5.0
+            ],
+            "nc": [
+              9.0,
+              2.0
+            ],
+            "no": [
+              9.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.625,
+            "body-height": 4.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "coil-body",
+            "coil-label",
+            "lead-coil-1",
+            "lead-coil-2",
+            "lead-common",
+            "lead-nc",
+            "lead-no",
+            "contacts",
+            "contact-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 5022,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "relay-spdt-small-medium",
+          "symbol_id": "relay-spdt",
+          "name": "SPDT relay",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/relay-spdt-small-medium.svg",
+          "width_mm": 17.57490946,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -47.493591,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            1.3124933180555571,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "coil-1": [
+              -5.0,
+              5.0
+            ],
+            "coil-2": [
+              -5.0,
+              -5.0
+            ],
+            "common": [
+              1.0,
+              -5.0
+            ],
+            "nc": [
+              9.0,
+              2.0
+            ],
+            "no": [
+              9.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.625,
+            "body-height": 4.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "coil-body",
+            "coil-label",
+            "lead-coil-1",
+            "lead-coil-2",
+            "lead-common",
+            "lead-nc",
+            "lead-no",
+            "contacts",
+            "contact-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 5075,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "relay-spdt-small-thick",
+          "symbol_id": "relay-spdt",
+          "name": "SPDT relay",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/relay-spdt-small-thick.svg",
+          "width_mm": 17.67491738,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -47.35185,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            1.3124941999999995,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "coil-1": [
+              -5.0,
+              5.0
+            ],
+            "coil-2": [
+              -5.0,
+              -5.0
+            ],
+            "common": [
+              1.0,
+              -5.0
+            ],
+            "nc": [
+              9.0,
+              2.0
+            ],
+            "no": [
+              9.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.625,
+            "body-height": 4.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "coil-body",
+            "coil-label",
+            "lead-coil-1",
+            "lead-coil-2",
+            "lead-common",
+            "lead-nc",
+            "lead-no",
+            "contacts",
+            "contact-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 5044,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "relay-spdt-medium-thin",
+          "symbol_id": "relay-spdt",
+          "name": "SPDT relay",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/relay-spdt-medium-thin.svg",
+          "width_mm": 21.64988226,
+          "height_mm": 14.1499269,
+          "origin_svg": [
+            -41.540877,
+            -51.945007
+          ],
+          "visual_center_from_origin_mm": [
+            1.2499945013888896,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "coil-1": [
+              -6.0,
+              6.0
+            ],
+            "coil-2": [
+              -6.0,
+              -6.0
+            ],
+            "common": [
+              1.0,
+              -6.0
+            ],
+            "nc": [
+              11.0,
+              2.0
+            ],
+            "no": [
+              11.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 15.5,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "coil-body",
+            "coil-label",
+            "lead-coil-1",
+            "lead-coil-2",
+            "lead-common",
+            "lead-nc",
+            "lead-no",
+            "contacts",
+            "contact-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 4924,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "relay-spdt-medium-medium",
+          "symbol_id": "relay-spdt",
+          "name": "SPDT relay",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/relay-spdt-medium-medium.svg",
+          "width_mm": 21.69988428,
+          "height_mm": 14.19992891,
+          "origin_svg": [
+            -41.470006,
+            -51.874137
+          ],
+          "visual_center_from_origin_mm": [
+            1.2499937958333334,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "coil-1": [
+              -6.0,
+              6.0
+            ],
+            "coil-2": [
+              -6.0,
+              -6.0
+            ],
+            "common": [
+              1.0,
+              -6.0
+            ],
+            "nc": [
+              11.0,
+              2.0
+            ],
+            "no": [
+              11.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 15.5,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "coil-body",
+            "coil-label",
+            "lead-coil-1",
+            "lead-coil-2",
+            "lead-common",
+            "lead-nc",
+            "lead-no",
+            "contacts",
+            "contact-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 4977,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "relay-spdt-medium-thick",
+          "symbol_id": "relay-spdt",
+          "name": "SPDT relay",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/relay-spdt-medium-thick.svg",
+          "width_mm": 21.79989219,
+          "height_mm": 14.2999333,
+          "origin_svg": [
+            -41.328265,
+            -51.732395
+          ],
+          "visual_center_from_origin_mm": [
+            1.2499946777777806,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "coil-1": [
+              -6.0,
+              6.0
+            ],
+            "coil-2": [
+              -6.0,
+              -6.0
+            ],
+            "common": [
+              1.0,
+              -6.0
+            ],
+            "nc": [
+              11.0,
+              2.0
+            ],
+            "no": [
+              11.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 15.5,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "coil-body",
+            "coil-label",
+            "lead-coil-1",
+            "lead-coil-2",
+            "lead-common",
+            "lead-nc",
+            "lead-no",
+            "contacts",
+            "contact-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 4949,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "relay-spdt-large-thin",
+          "symbol_id": "relay-spdt",
+          "name": "SPDT relay",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/relay-spdt-large-thin.svg",
+          "width_mm": 26.77485508,
+          "height_mm": 18.14990479,
+          "origin_svg": [
+            -35.517292,
+            -46.275746
+          ],
+          "visual_center_from_origin_mm": [
+            1.687493979166667,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "coil-1": [
+              -8.0,
+              8.0
+            ],
+            "coil-2": [
+              -8.0,
+              -8.0
+            ],
+            "common": [
+              2.0,
+              -8.0
+            ],
+            "nc": [
+              14.0,
+              3.0
+            ],
+            "no": [
+              14.0,
+              -3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 19.375,
+            "body-height": 7.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "coil-body",
+            "coil-label",
+            "lead-coil-1",
+            "lead-coil-2",
+            "lead-common",
+            "lead-nc",
+            "lead-no",
+            "contacts",
+            "contact-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 5088,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "relay-spdt-large-medium",
+          "symbol_id": "relay-spdt",
+          "name": "SPDT relay",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/relay-spdt-large-medium.svg",
+          "width_mm": 26.8248571,
+          "height_mm": 18.19990716,
+          "origin_svg": [
+            -35.446422,
+            -46.204875
+          ],
+          "visual_center_from_origin_mm": [
+            1.68749362638889,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "coil-1": [
+              -8.0,
+              8.0
+            ],
+            "coil-2": [
+              -8.0,
+              -8.0
+            ],
+            "common": [
+              2.0,
+              -8.0
+            ],
+            "nc": [
+              14.0,
+              3.0
+            ],
+            "no": [
+              14.0,
+              -3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 19.375,
+            "body-height": 7.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "coil-body",
+            "coil-label",
+            "lead-coil-1",
+            "lead-coil-2",
+            "lead-common",
+            "lead-nc",
+            "lead-no",
+            "contacts",
+            "contact-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 5141,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "relay-spdt-large-thick",
+          "symbol_id": "relay-spdt",
+          "name": "SPDT relay",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/relay-spdt-large-thick.svg",
+          "width_mm": 26.92486148,
+          "height_mm": 18.29991507,
+          "origin_svg": [
+            -35.30468,
+            -46.063134
+          ],
+          "visual_center_from_origin_mm": [
+            1.687492391666666,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "coil-1": [
+              -8.0,
+              8.0
+            ],
+            "coil-2": [
+              -8.0,
+              -8.0
+            ],
+            "common": [
+              2.0,
+              -8.0
+            ],
+            "nc": [
+              14.0,
+              3.0
+            ],
+            "no": [
+              14.0,
+              -3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 19.375,
+            "body-height": 7.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "coil-body",
+            "coil-label",
+            "lead-coil-1",
+            "lead-coil-2",
+            "lead-common",
+            "lead-nc",
+            "lead-no",
+            "contacts",
+            "contact-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 5110,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "cab024fdb0395a72dc53a6aac1e6da54a4f4bd62e4ca13ed14f5024472d6f4bd"
+    },
+    {
+      "schema_version": 1,
+      "id": "switch-dpdt",
+      "revision": 1,
+      "name": "DPDT switch",
+      "description": "Two mechanically linked changeover poles, each connecting common to its upper throw; the dashed link is not electrical.",
+      "keywords": [
+        "switch",
+        "DPDT",
+        "contact",
+        "switches relays",
+        "dpdt",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "switches-and-relays"
+      ],
+      "family": "switches-and-relays",
+      "batch": "overnight-switches-and-relays-02",
+      "attributes": {
+        "resting_state": "common-to-upper"
+      },
+      "recipe": "switch-dpdt",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "cspst or cspdt; custom ganged contacts",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "pole-1-common",
+          "name": "Common 1",
+          "description": "Common 1",
+          "kind": "passive",
+          "lead_part": "lead-pole-1-common"
+        },
+        {
+          "id": "pole-1-upper",
+          "name": "Upper throw 1",
+          "description": "Upper throw 1",
+          "kind": "passive",
+          "lead_part": "lead-pole-1-upper"
+        },
+        {
+          "id": "pole-1-lower",
+          "name": "Lower throw 1",
+          "description": "Lower throw 1",
+          "kind": "passive",
+          "lead_part": "lead-pole-1-lower"
+        },
+        {
+          "id": "pole-2-common",
+          "name": "Common 2",
+          "description": "Common 2",
+          "kind": "passive",
+          "lead_part": "lead-pole-2-common"
+        },
+        {
+          "id": "pole-2-upper",
+          "name": "Upper throw 2",
+          "description": "Upper throw 2",
+          "kind": "passive",
+          "lead_part": "lead-pole-2-upper"
+        },
+        {
+          "id": "pole-2-lower",
+          "name": "Lower throw 2",
+          "description": "Lower throw 2",
+          "kind": "passive",
+          "lead_part": "lead-pole-2-lower"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-pole-1-common",
+          "description": "Electrical lead: Common 1"
+        },
+        {
+          "id": "pole-1-pivot",
+          "description": "Pole 1 pivot"
+        },
+        {
+          "id": "lead-pole-1-upper",
+          "description": "Electrical lead: Upper throw 1"
+        },
+        {
+          "id": "pole-1-upper-contact",
+          "description": "Pole 1 upper contact"
+        },
+        {
+          "id": "lead-pole-1-lower",
+          "description": "Electrical lead: Lower throw 1"
+        },
+        {
+          "id": "pole-1-lower-contact",
+          "description": "Pole 1 lower contact"
+        },
+        {
+          "id": "pole-1-blade",
+          "description": "Pole 1 blade"
+        },
+        {
+          "id": "lead-pole-2-common",
+          "description": "Electrical lead: Common 2"
+        },
+        {
+          "id": "pole-2-pivot",
+          "description": "Pole 2 pivot"
+        },
+        {
+          "id": "lead-pole-2-upper",
+          "description": "Electrical lead: Upper throw 2"
+        },
+        {
+          "id": "pole-2-upper-contact",
+          "description": "Pole 2 upper contact"
+        },
+        {
+          "id": "lead-pole-2-lower",
+          "description": "Electrical lead: Lower throw 2"
+        },
+        {
+          "id": "pole-2-lower-contact",
+          "description": "Pole 2 lower contact"
+        },
+        {
+          "id": "pole-2-blade",
+          "description": "Pole 2 blade"
+        },
+        {
+          "id": "mechanical-link",
+          "description": "Mechanical link"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "switch-dpdt-small-thin",
+          "symbol_id": "switch-dpdt",
+          "name": "DPDT switch",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/switch-dpdt-small-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 16.59988989,
+          "origin_svg": [
+            -48.627446,
+            -48.472616
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            2.5066368733759088e-15
+          ],
+          "pins_mm": {
+            "pole-1-common": [
+              -6.0,
+              5.0
+            ],
+            "pole-1-upper": [
+              6.0,
+              7.0
+            ],
+            "pole-1-lower": [
+              6.0,
+              3.0
+            ],
+            "pole-2-common": [
+              -6.0,
+              -5.0
+            ],
+            "pole-2-upper": [
+              6.0,
+              -3.0
+            ],
+            "pole-2-lower": [
+              6.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 14.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-pole-1-common",
+            "pole-1-pivot",
+            "lead-pole-1-upper",
+            "pole-1-upper-contact",
+            "lead-pole-1-lower",
+            "pole-1-lower-contact",
+            "pole-1-blade",
+            "lead-pole-2-common",
+            "pole-2-pivot",
+            "lead-pole-2-upper",
+            "pole-2-upper-contact",
+            "lead-pole-2-lower",
+            "pole-2-lower-contact",
+            "pole-2-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 6777,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-dpdt-small-medium",
+          "symbol_id": "switch-dpdt",
+          "name": "DPDT switch",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/switch-dpdt-small-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 16.59988989,
+          "origin_svg": [
+            -48.556576,
+            -48.472616
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            2.5066368733759088e-15
+          ],
+          "pins_mm": {
+            "pole-1-common": [
+              -6.0,
+              5.0
+            ],
+            "pole-1-upper": [
+              6.0,
+              7.0
+            ],
+            "pole-1-lower": [
+              6.0,
+              3.0
+            ],
+            "pole-2-common": [
+              -6.0,
+              -5.0
+            ],
+            "pole-2-upper": [
+              6.0,
+              -3.0
+            ],
+            "pole-2-lower": [
+              6.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 14.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-pole-1-common",
+            "pole-1-pivot",
+            "lead-pole-1-upper",
+            "pole-1-upper-contact",
+            "lead-pole-1-lower",
+            "pole-1-lower-contact",
+            "pole-1-blade",
+            "lead-pole-2-common",
+            "pole-2-pivot",
+            "lead-pole-2-upper",
+            "pole-2-upper-contact",
+            "lead-pole-2-lower",
+            "pole-2-lower-contact",
+            "pole-2-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 6846,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-dpdt-small-thick",
+          "symbol_id": "switch-dpdt",
+          "name": "DPDT switch",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/switch-dpdt-small-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 16.59988989,
+          "origin_svg": [
+            -48.414834,
+            -48.472616
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            2.5066368733759088e-15
+          ],
+          "pins_mm": {
+            "pole-1-common": [
+              -6.0,
+              5.0
+            ],
+            "pole-1-upper": [
+              6.0,
+              7.0
+            ],
+            "pole-1-lower": [
+              6.0,
+              3.0
+            ],
+            "pole-2-common": [
+              -6.0,
+              -5.0
+            ],
+            "pole-2-upper": [
+              6.0,
+              -3.0
+            ],
+            "pole-2-lower": [
+              6.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 14.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-pole-1-common",
+            "pole-1-pivot",
+            "lead-pole-1-upper",
+            "pole-1-upper-contact",
+            "lead-pole-1-lower",
+            "pole-1-lower-contact",
+            "pole-1-blade",
+            "lead-pole-2-common",
+            "pole-2-pivot",
+            "lead-pole-2-upper",
+            "pole-2-upper-contact",
+            "lead-pole-2-lower",
+            "pole-2-lower-contact",
+            "pole-2-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 6811,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-dpdt-medium-thin",
+          "symbol_id": "switch-dpdt",
+          "name": "DPDT switch",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/switch-dpdt-medium-thin.svg",
+          "width_mm": 16.14991231,
+          "height_mm": 16.79990219,
+          "origin_svg": [
+            -45.792816,
+            -48.189133
+          ],
+          "visual_center_from_origin_mm": [
+            -8.819444422177487e-07,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "pole-1-common": [
+              -7.0,
+              5.0
+            ],
+            "pole-1-upper": [
+              7.0,
+              7.0
+            ],
+            "pole-1-lower": [
+              7.0,
+              3.0
+            ],
+            "pole-2-common": [
+              -7.0,
+              -5.0
+            ],
+            "pole-2-upper": [
+              7.0,
+              -3.0
+            ],
+            "pole-2-lower": [
+              7.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 14.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-pole-1-common",
+            "pole-1-pivot",
+            "lead-pole-1-upper",
+            "pole-1-upper-contact",
+            "lead-pole-1-lower",
+            "pole-1-lower-contact",
+            "pole-1-blade",
+            "lead-pole-2-common",
+            "pole-2-pivot",
+            "lead-pole-2-upper",
+            "pole-2-upper-contact",
+            "lead-pole-2-lower",
+            "pole-2-lower-contact",
+            "pole-2-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 6578,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-dpdt-medium-medium",
+          "symbol_id": "switch-dpdt",
+          "name": "DPDT switch",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/switch-dpdt-medium-medium.svg",
+          "width_mm": 16.19991786,
+          "height_mm": 16.79990219,
+          "origin_svg": [
+            -45.721945,
+            -48.189133
+          ],
+          "visual_center_from_origin_mm": [
+            1.763888909501866e-07,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "pole-1-common": [
+              -7.0,
+              5.0
+            ],
+            "pole-1-upper": [
+              7.0,
+              7.0
+            ],
+            "pole-1-lower": [
+              7.0,
+              3.0
+            ],
+            "pole-2-common": [
+              -7.0,
+              -5.0
+            ],
+            "pole-2-upper": [
+              7.0,
+              -3.0
+            ],
+            "pole-2-lower": [
+              7.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 14.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-pole-1-common",
+            "pole-1-pivot",
+            "lead-pole-1-upper",
+            "pole-1-upper-contact",
+            "lead-pole-1-lower",
+            "pole-1-lower-contact",
+            "pole-1-blade",
+            "lead-pole-2-common",
+            "pole-2-pivot",
+            "lead-pole-2-upper",
+            "pole-2-upper-contact",
+            "lead-pole-2-lower",
+            "pole-2-lower-contact",
+            "pole-2-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 6647,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-dpdt-medium-thick",
+          "symbol_id": "switch-dpdt",
+          "name": "DPDT switch",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/switch-dpdt-medium-thick.svg",
+          "width_mm": 16.29992577,
+          "height_mm": 16.79990219,
+          "origin_svg": [
+            -45.580203,
+            -48.189133
+          ],
+          "visual_center_from_origin_mm": [
+            7.055555562808358e-07,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "pole-1-common": [
+              -7.0,
+              5.0
+            ],
+            "pole-1-upper": [
+              7.0,
+              7.0
+            ],
+            "pole-1-lower": [
+              7.0,
+              3.0
+            ],
+            "pole-2-common": [
+              -7.0,
+              -5.0
+            ],
+            "pole-2-upper": [
+              7.0,
+              -3.0
+            ],
+            "pole-2-lower": [
+              7.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 14.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-pole-1-common",
+            "pole-1-pivot",
+            "lead-pole-1-upper",
+            "pole-1-upper-contact",
+            "lead-pole-1-lower",
+            "pole-1-lower-contact",
+            "pole-1-blade",
+            "lead-pole-2-common",
+            "pole-2-pivot",
+            "lead-pole-2-upper",
+            "pole-2-upper-contact",
+            "lead-pole-2-lower",
+            "pole-2-lower-contact",
+            "pole-2-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 6612,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-dpdt-large-thin",
+          "symbol_id": "switch-dpdt",
+          "name": "DPDT switch",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/switch-dpdt-large-thin.svg",
+          "width_mm": 20.14989373,
+          "height_mm": 16.99988274,
+          "origin_svg": [
+            -40.123554,
+            -47.905696
+          ],
+          "visual_center_from_origin_mm": [
+            1.7638888844354975e-07,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "pole-1-common": [
+              -9.0,
+              5.0
+            ],
+            "pole-1-upper": [
+              9.0,
+              7.0
+            ],
+            "pole-1-lower": [
+              9.0,
+              3.0
+            ],
+            "pole-2-common": [
+              -9.0,
+              -5.0
+            ],
+            "pole-2-upper": [
+              9.0,
+              -3.0
+            ],
+            "pole-2-lower": [
+              9.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 14.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-pole-1-common",
+            "pole-1-pivot",
+            "lead-pole-1-upper",
+            "pole-1-upper-contact",
+            "lead-pole-1-lower",
+            "pole-1-lower-contact",
+            "pole-1-blade",
+            "lead-pole-2-common",
+            "pole-2-pivot",
+            "lead-pole-2-upper",
+            "pole-2-upper-contact",
+            "lead-pole-2-lower",
+            "pole-2-lower-contact",
+            "pole-2-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 6846,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-dpdt-large-medium",
+          "symbol_id": "switch-dpdt",
+          "name": "DPDT switch",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/switch-dpdt-large-medium.svg",
+          "width_mm": 20.1998961,
+          "height_mm": 16.99988274,
+          "origin_svg": [
+            -40.052683,
+            -47.905696
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "pole-1-common": [
+              -9.0,
+              5.0
+            ],
+            "pole-1-upper": [
+              9.0,
+              7.0
+            ],
+            "pole-1-lower": [
+              9.0,
+              3.0
+            ],
+            "pole-2-common": [
+              -9.0,
+              -5.0
+            ],
+            "pole-2-upper": [
+              9.0,
+              -3.0
+            ],
+            "pole-2-lower": [
+              9.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 14.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-pole-1-common",
+            "pole-1-pivot",
+            "lead-pole-1-upper",
+            "pole-1-upper-contact",
+            "lead-pole-1-lower",
+            "pole-1-lower-contact",
+            "pole-1-blade",
+            "lead-pole-2-common",
+            "pole-2-pivot",
+            "lead-pole-2-upper",
+            "pole-2-upper-contact",
+            "lead-pole-2-lower",
+            "pole-2-lower-contact",
+            "pole-2-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 6915,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-dpdt-large-thick",
+          "symbol_id": "switch-dpdt",
+          "name": "DPDT switch",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/switch-dpdt-large-thick.svg",
+          "width_mm": 20.29990401,
+          "height_mm": 16.99988274,
+          "origin_svg": [
+            -39.910942,
+            -47.905696
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "pole-1-common": [
+              -9.0,
+              5.0
+            ],
+            "pole-1-upper": [
+              9.0,
+              7.0
+            ],
+            "pole-1-lower": [
+              9.0,
+              3.0
+            ],
+            "pole-2-common": [
+              -9.0,
+              -5.0
+            ],
+            "pole-2-upper": [
+              9.0,
+              -3.0
+            ],
+            "pole-2-lower": [
+              9.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 14.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-pole-1-common",
+            "pole-1-pivot",
+            "lead-pole-1-upper",
+            "pole-1-upper-contact",
+            "lead-pole-1-lower",
+            "pole-1-lower-contact",
+            "pole-1-blade",
+            "lead-pole-2-common",
+            "pole-2-pivot",
+            "lead-pole-2-upper",
+            "pole-2-upper-contact",
+            "lead-pole-2-lower",
+            "pole-2-lower-contact",
+            "pole-2-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 6880,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "0483da38462d78ab957e1e6444d816a1e2aa6a63c7199650a6380573933102b6"
+    },
+    {
+      "schema_version": 1,
+      "id": "switch-dpst",
+      "revision": 1,
+      "name": "DPST switch",
+      "description": "Two mechanically linked single-throw poles, both shown open; the dashed link is not an electrical connection.",
+      "keywords": [
+        "switch",
+        "DPST",
+        "contact",
+        "switches relays",
+        "dpst",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "switches-and-relays"
+      ],
+      "family": "switches-and-relays",
+      "batch": "overnight-switches-and-relays-02",
+      "attributes": {
+        "resting_state": "open"
+      },
+      "recipe": "switch-dpst",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "cspst or cspdt; custom ganged contacts",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "pole-1-common",
+          "name": "Common 1",
+          "description": "Common 1",
+          "kind": "passive",
+          "lead_part": "lead-pole-1-common"
+        },
+        {
+          "id": "pole-1-out",
+          "name": "Switched terminal 1",
+          "description": "Switched terminal 1",
+          "kind": "passive",
+          "lead_part": "lead-pole-1-out"
+        },
+        {
+          "id": "pole-2-common",
+          "name": "Common 2",
+          "description": "Common 2",
+          "kind": "passive",
+          "lead_part": "lead-pole-2-common"
+        },
+        {
+          "id": "pole-2-out",
+          "name": "Switched terminal 2",
+          "description": "Switched terminal 2",
+          "kind": "passive",
+          "lead_part": "lead-pole-2-out"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-pole-1-common",
+          "description": "Electrical lead: Common 1"
+        },
+        {
+          "id": "pole-1-pivot",
+          "description": "Pole 1 pivot"
+        },
+        {
+          "id": "lead-pole-1-out",
+          "description": "Electrical lead: Switched terminal 1"
+        },
+        {
+          "id": "pole-1-fixed-contact",
+          "description": "Pole 1 fixed contact"
+        },
+        {
+          "id": "pole-1-blade",
+          "description": "Pole 1 blade"
+        },
+        {
+          "id": "lead-pole-2-common",
+          "description": "Electrical lead: Common 2"
+        },
+        {
+          "id": "pole-2-pivot",
+          "description": "Pole 2 pivot"
+        },
+        {
+          "id": "lead-pole-2-out",
+          "description": "Electrical lead: Switched terminal 2"
+        },
+        {
+          "id": "pole-2-fixed-contact",
+          "description": "Pole 2 fixed contact"
+        },
+        {
+          "id": "pole-2-blade",
+          "description": "Pole 2 blade"
+        },
+        {
+          "id": "mechanical-link",
+          "description": "Mechanical link"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "switch-dpst-small-thin",
+          "symbol_id": "switch-dpst",
+          "name": "DPST switch",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/switch-dpst-small-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 12.02491633,
+          "origin_svg": [
+            -48.627446,
+            -52.937152
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -0.7124973402777778
+          ],
+          "pins_mm": {
+            "pole-1-common": [
+              -6.0,
+              4.0
+            ],
+            "pole-1-out": [
+              6.0,
+              4.0
+            ],
+            "pole-2-common": [
+              -6.0,
+              -4.0
+            ],
+            "pole-2-out": [
+              6.0,
+              -4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 10.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-pole-1-common",
+            "pole-1-pivot",
+            "lead-pole-1-out",
+            "pole-1-fixed-contact",
+            "pole-1-blade",
+            "lead-pole-2-common",
+            "pole-2-pivot",
+            "lead-pole-2-out",
+            "pole-2-fixed-contact",
+            "pole-2-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 5143,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-dpst-small-medium",
+          "symbol_id": "switch-dpst",
+          "name": "DPST switch",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/switch-dpst-small-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 12.0499191,
+          "origin_svg": [
+            -48.556576,
+            -52.866281
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -0.7249990791666664
+          ],
+          "pins_mm": {
+            "pole-1-common": [
+              -6.0,
+              4.0
+            ],
+            "pole-1-out": [
+              6.0,
+              4.0
+            ],
+            "pole-2-common": [
+              -6.0,
+              -4.0
+            ],
+            "pole-2-out": [
+              6.0,
+              -4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 10.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-pole-1-common",
+            "pole-1-pivot",
+            "lead-pole-1-out",
+            "pole-1-fixed-contact",
+            "pole-1-blade",
+            "lead-pole-2-common",
+            "pole-2-pivot",
+            "lead-pole-2-out",
+            "pole-2-fixed-contact",
+            "pole-2-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 5196,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-dpst-small-thick",
+          "symbol_id": "switch-dpst",
+          "name": "DPST switch",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/switch-dpst-small-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 12.09992147,
+          "origin_svg": [
+            -48.414834,
+            -52.724539
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -0.7500002638888863
+          ],
+          "pins_mm": {
+            "pole-1-common": [
+              -6.0,
+              4.0
+            ],
+            "pole-1-out": [
+              6.0,
+              4.0
+            ],
+            "pole-2-common": [
+              -6.0,
+              -4.0
+            ],
+            "pole-2-out": [
+              6.0,
+              -4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 10.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-pole-1-common",
+            "pole-1-pivot",
+            "lead-pole-1-out",
+            "pole-1-fixed-contact",
+            "pole-1-blade",
+            "lead-pole-2-common",
+            "pole-2-pivot",
+            "lead-pole-2-out",
+            "pole-2-fixed-contact",
+            "pole-2-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 5168,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-dpst-medium-thin",
+          "symbol_id": "switch-dpst",
+          "name": "DPST switch",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/switch-dpst-medium-thin.svg",
+          "width_mm": 16.14991231,
+          "height_mm": 12.67492385,
+          "origin_svg": [
+            -45.792816,
+            -51.378102
+          ],
+          "visual_center_from_origin_mm": [
+            -8.819444422177487e-07,
+            -0.9374945972222228
+          ],
+          "pins_mm": {
+            "pole-1-common": [
+              -7.0,
+              4.0
+            ],
+            "pole-1-out": [
+              7.0,
+              4.0
+            ],
+            "pole-2-common": [
+              -7.0,
+              -4.0
+            ],
+            "pole-2-out": [
+              7.0,
+              -4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 10.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-pole-1-common",
+            "pole-1-pivot",
+            "lead-pole-1-out",
+            "pole-1-fixed-contact",
+            "pole-1-blade",
+            "lead-pole-2-common",
+            "pole-2-pivot",
+            "lead-pole-2-out",
+            "pole-2-fixed-contact",
+            "pole-2-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 5028,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-dpst-medium-medium",
+          "symbol_id": "switch-dpst",
+          "name": "DPST switch",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/switch-dpst-medium-medium.svg",
+          "width_mm": 16.19991786,
+          "height_mm": 12.69992309,
+          "origin_svg": [
+            -45.721945,
+            -51.307232
+          ],
+          "visual_center_from_origin_mm": [
+            1.763888909501866e-07,
+            -0.9499942194444451
+          ],
+          "pins_mm": {
+            "pole-1-common": [
+              -7.0,
+              4.0
+            ],
+            "pole-1-out": [
+              7.0,
+              4.0
+            ],
+            "pole-2-common": [
+              -7.0,
+              -4.0
+            ],
+            "pole-2-out": [
+              7.0,
+              -4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 10.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-pole-1-common",
+            "pole-1-pivot",
+            "lead-pole-1-out",
+            "pole-1-fixed-contact",
+            "pole-1-blade",
+            "lead-pole-2-common",
+            "pole-2-pivot",
+            "lead-pole-2-out",
+            "pole-2-fixed-contact",
+            "pole-2-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 5080,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-dpst-medium-thick",
+          "symbol_id": "switch-dpst",
+          "name": "DPST switch",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/switch-dpst-medium-thick.svg",
+          "width_mm": 16.29992577,
+          "height_mm": 12.74992511,
+          "origin_svg": [
+            -45.580203,
+            -51.16549
+          ],
+          "visual_center_from_origin_mm": [
+            7.055555562808358e-07,
+            -0.974995580555556
+          ],
+          "pins_mm": {
+            "pole-1-common": [
+              -7.0,
+              4.0
+            ],
+            "pole-1-out": [
+              7.0,
+              4.0
+            ],
+            "pole-2-common": [
+              -7.0,
+              -4.0
+            ],
+            "pole-2-out": [
+              7.0,
+              -4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 10.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-pole-1-common",
+            "pole-1-pivot",
+            "lead-pole-1-out",
+            "pole-1-fixed-contact",
+            "pole-1-blade",
+            "lead-pole-2-common",
+            "pole-2-pivot",
+            "lead-pole-2-out",
+            "pole-2-fixed-contact",
+            "pole-2-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 5051,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-dpst-large-thin",
+          "symbol_id": "switch-dpst",
+          "name": "DPST switch",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/switch-dpst-large-thin.svg",
+          "width_mm": 20.14989373,
+          "height_mm": 13.32489962,
+          "origin_svg": [
+            -40.123554,
+            -49.819084
+          ],
+          "visual_center_from_origin_mm": [
+            1.7638888844354975e-07,
+            -1.1624918541666704
+          ],
+          "pins_mm": {
+            "pole-1-common": [
+              -9.0,
+              4.0
+            ],
+            "pole-1-out": [
+              9.0,
+              4.0
+            ],
+            "pole-2-common": [
+              -9.0,
+              -4.0
+            ],
+            "pole-2-out": [
+              9.0,
+              -4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 10.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-pole-1-common",
+            "pole-1-pivot",
+            "lead-pole-1-out",
+            "pole-1-fixed-contact",
+            "pole-1-blade",
+            "lead-pole-2-common",
+            "pole-2-pivot",
+            "lead-pole-2-out",
+            "pole-2-fixed-contact",
+            "pole-2-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 5231,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-dpst-large-medium",
+          "symbol_id": "switch-dpst",
+          "name": "DPST switch",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/switch-dpst-large-medium.svg",
+          "width_mm": 20.1998961,
+          "height_mm": 13.34990239,
+          "origin_svg": [
+            -40.052683,
+            -49.748213
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            -1.174993593055554
+          ],
+          "pins_mm": {
+            "pole-1-common": [
+              -9.0,
+              4.0
+            ],
+            "pole-1-out": [
+              9.0,
+              4.0
+            ],
+            "pole-2-common": [
+              -9.0,
+              -4.0
+            ],
+            "pole-2-out": [
+              9.0,
+              -4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 10.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-pole-1-common",
+            "pole-1-pivot",
+            "lead-pole-1-out",
+            "pole-1-fixed-contact",
+            "pole-1-blade",
+            "lead-pole-2-common",
+            "pole-2-pivot",
+            "lead-pole-2-out",
+            "pole-2-fixed-contact",
+            "pole-2-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 5284,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-dpst-large-thick",
+          "symbol_id": "switch-dpst",
+          "name": "DPST switch",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/switch-dpst-large-thick.svg",
+          "width_mm": 20.29990401,
+          "height_mm": 13.39990441,
+          "origin_svg": [
+            -39.910942,
+            -49.606471
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -1.1999949541666672
+          ],
+          "pins_mm": {
+            "pole-1-common": [
+              -9.0,
+              4.0
+            ],
+            "pole-1-out": [
+              9.0,
+              4.0
+            ],
+            "pole-2-common": [
+              -9.0,
+              -4.0
+            ],
+            "pole-2-out": [
+              9.0,
+              -4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 10.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-pole-1-common",
+            "pole-1-pivot",
+            "lead-pole-1-out",
+            "pole-1-fixed-contact",
+            "pole-1-blade",
+            "lead-pole-2-common",
+            "pole-2-pivot",
+            "lead-pole-2-out",
+            "pole-2-fixed-contact",
+            "pole-2-blade",
+            "mechanical-link"
+          ],
+          "svg_bytes": 5257,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "8672ba39be8253cc0667e304c432128da3db47723527598bcc9996c52ddbafa7"
+    },
+    {
+      "schema_version": 1,
+      "id": "switch-spdt",
+      "revision": 1,
+      "name": "SPDT switch",
+      "description": "Single-pole changeover switch shown connecting common to the upper throw.",
+      "keywords": [
+        "switch",
+        "SPDT",
+        "contact",
+        "switches relays",
+        "spdt",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "switches-and-relays"
+      ],
+      "family": "switches-and-relays",
+      "batch": "overnight-switches-and-relays-02",
+      "attributes": {
+        "resting_state": "common-to-upper"
+      },
+      "recipe": "switch-spdt",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "cspst or cspdt; custom ganged contacts",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "common",
+          "name": "Common",
+          "description": "Common",
+          "kind": "passive",
+          "lead_part": "lead-common"
+        },
+        {
+          "id": "upper",
+          "name": "Upper throw",
+          "description": "Upper throw",
+          "kind": "passive",
+          "lead_part": "lead-upper"
+        },
+        {
+          "id": "lower",
+          "name": "Lower throw",
+          "description": "Lower throw",
+          "kind": "passive",
+          "lead_part": "lead-lower"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-common",
+          "description": "Electrical lead: Common"
+        },
+        {
+          "id": "pivot",
+          "description": "Pivot"
+        },
+        {
+          "id": "lead-upper",
+          "description": "Electrical lead: Upper throw"
+        },
+        {
+          "id": "upper-contact",
+          "description": "Upper contact"
+        },
+        {
+          "id": "lead-lower",
+          "description": "Electrical lead: Lower throw"
+        },
+        {
+          "id": "lower-contact",
+          "description": "Lower contact"
+        },
+        {
+          "id": "blade",
+          "description": "Blade"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "switch-spdt-small-thin",
+          "symbol_id": "switch-spdt",
+          "name": "SPDT switch",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/switch-spdt-small-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 6.59994094,
+          "origin_svg": [
+            -48.627446,
+            -62.64577
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "common": [
+              -6.0,
+              0.0
+            ],
+            "upper": [
+              6.0,
+              2.0
+            ],
+            "lower": [
+              6.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 4.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-common",
+            "pivot",
+            "lead-upper",
+            "upper-contact",
+            "lead-lower",
+            "lower-contact",
+            "blade"
+          ],
+          "svg_bytes": 3404,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-spdt-small-medium",
+          "symbol_id": "switch-spdt",
+          "name": "SPDT switch",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/switch-spdt-small-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 6.59994094,
+          "origin_svg": [
+            -48.556576,
+            -62.64577
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "common": [
+              -6.0,
+              0.0
+            ],
+            "upper": [
+              6.0,
+              2.0
+            ],
+            "lower": [
+              6.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 4.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-common",
+            "pivot",
+            "lead-upper",
+            "upper-contact",
+            "lead-lower",
+            "lower-contact",
+            "blade"
+          ],
+          "svg_bytes": 3441,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-spdt-small-thick",
+          "symbol_id": "switch-spdt",
+          "name": "SPDT switch",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/switch-spdt-small-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 6.59994094,
+          "origin_svg": [
+            -48.414834,
+            -62.64577
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "common": [
+              -6.0,
+              0.0
+            ],
+            "upper": [
+              6.0,
+              2.0
+            ],
+            "lower": [
+              6.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 4.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-common",
+            "pivot",
+            "lead-upper",
+            "upper-contact",
+            "lead-lower",
+            "lower-contact",
+            "blade"
+          ],
+          "svg_bytes": 3422,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-spdt-medium-thin",
+          "symbol_id": "switch-spdt",
+          "name": "SPDT switch",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/switch-spdt-medium-thin.svg",
+          "width_mm": 16.14991231,
+          "height_mm": 6.79995677,
+          "origin_svg": [
+            -45.792816,
+            -62.362287
+          ],
+          "visual_center_from_origin_mm": [
+            -8.819444422177487e-07,
+            -7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "common": [
+              -7.0,
+              0.0
+            ],
+            "upper": [
+              7.0,
+              2.0
+            ],
+            "lower": [
+              7.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 4.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-common",
+            "pivot",
+            "lead-upper",
+            "upper-contact",
+            "lead-lower",
+            "lower-contact",
+            "blade"
+          ],
+          "svg_bytes": 3330,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-spdt-medium-medium",
+          "symbol_id": "switch-spdt",
+          "name": "SPDT switch",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/switch-spdt-medium-medium.svg",
+          "width_mm": 16.19991786,
+          "height_mm": 6.79995677,
+          "origin_svg": [
+            -45.721945,
+            -62.362287
+          ],
+          "visual_center_from_origin_mm": [
+            1.763888909501866e-07,
+            -7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "common": [
+              -7.0,
+              0.0
+            ],
+            "upper": [
+              7.0,
+              2.0
+            ],
+            "lower": [
+              7.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 4.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-common",
+            "pivot",
+            "lead-upper",
+            "upper-contact",
+            "lead-lower",
+            "lower-contact",
+            "blade"
+          ],
+          "svg_bytes": 3367,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-spdt-medium-thick",
+          "symbol_id": "switch-spdt",
+          "name": "SPDT switch",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/switch-spdt-medium-thick.svg",
+          "width_mm": 16.29992577,
+          "height_mm": 6.79995677,
+          "origin_svg": [
+            -45.580203,
+            -62.362287
+          ],
+          "visual_center_from_origin_mm": [
+            7.055555562808358e-07,
+            -7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "common": [
+              -7.0,
+              0.0
+            ],
+            "upper": [
+              7.0,
+              2.0
+            ],
+            "lower": [
+              7.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 4.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-common",
+            "pivot",
+            "lead-upper",
+            "upper-contact",
+            "lead-lower",
+            "lower-contact",
+            "blade"
+          ],
+          "svg_bytes": 3348,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-spdt-large-thin",
+          "symbol_id": "switch-spdt",
+          "name": "SPDT switch",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/switch-spdt-large-thin.svg",
+          "width_mm": 20.14989373,
+          "height_mm": 6.99993732,
+          "origin_svg": [
+            -40.123554,
+            -62.07885
+          ],
+          "visual_center_from_origin_mm": [
+            1.7638888844354975e-07,
+            -7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "common": [
+              -9.0,
+              0.0
+            ],
+            "upper": [
+              9.0,
+              2.0
+            ],
+            "lower": [
+              9.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 4.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-common",
+            "pivot",
+            "lead-upper",
+            "upper-contact",
+            "lead-lower",
+            "lower-contact",
+            "blade"
+          ],
+          "svg_bytes": 3454,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-spdt-large-medium",
+          "symbol_id": "switch-spdt",
+          "name": "SPDT switch",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/switch-spdt-large-medium.svg",
+          "width_mm": 20.1998961,
+          "height_mm": 6.99993732,
+          "origin_svg": [
+            -40.052683,
+            -62.07885
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            -7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "common": [
+              -9.0,
+              0.0
+            ],
+            "upper": [
+              9.0,
+              2.0
+            ],
+            "lower": [
+              9.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 4.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-common",
+            "pivot",
+            "lead-upper",
+            "upper-contact",
+            "lead-lower",
+            "lower-contact",
+            "blade"
+          ],
+          "svg_bytes": 3491,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-spdt-large-thick",
+          "symbol_id": "switch-spdt",
+          "name": "SPDT switch",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/switch-spdt-large-thick.svg",
+          "width_mm": 20.29990401,
+          "height_mm": 6.99993732,
+          "origin_svg": [
+            -39.910942,
+            -62.07885
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "common": [
+              -9.0,
+              0.0
+            ],
+            "upper": [
+              9.0,
+              2.0
+            ],
+            "lower": [
+              9.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 4.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-common",
+            "pivot",
+            "lead-upper",
+            "upper-contact",
+            "lead-lower",
+            "lower-contact",
+            "blade"
+          ],
+          "svg_bytes": 3472,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "2c7c096f12e016a2a34a4ed4bb9dbbabd0efa423924e33f89736676a676c2454"
+    },
+    {
+      "schema_version": 1,
+      "id": "switch-spst",
+      "revision": 1,
+      "name": "SPST switch",
+      "description": "Single-pole single-throw switch shown open.",
+      "keywords": [
+        "switch",
+        "SPST",
+        "contact",
+        "switches relays",
+        "spst",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "switches-and-relays"
+      ],
+      "family": "switches-and-relays",
+      "batch": "overnight-switches-and-relays-02",
+      "attributes": {
+        "resting_state": "open"
+      },
+      "recipe": "switch-spst",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "cspst or cspdt; custom ganged contacts",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "common",
+          "name": "Common",
+          "description": "Common",
+          "kind": "passive",
+          "lead_part": "lead-common"
+        },
+        {
+          "id": "out",
+          "name": "Switched terminal",
+          "description": "Switched terminal",
+          "kind": "passive",
+          "lead_part": "lead-out"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-common",
+          "description": "Electrical lead: Common"
+        },
+        {
+          "id": "pivot",
+          "description": "Pivot"
+        },
+        {
+          "id": "lead-out",
+          "description": "Electrical lead: Switched terminal"
+        },
+        {
+          "id": "fixed-contact",
+          "description": "Fixed contact"
+        },
+        {
+          "id": "blade",
+          "description": "Blade"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "switch-spst-small-thin",
+          "symbol_id": "switch-spst",
+          "name": "SPST switch",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/switch-spst-small-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 4.0249602,
+          "origin_svg": [
+            -48.627446,
+            -64.275675
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -0.71249822222222
+          ],
+          "pins_mm": {
+            "common": [
+              -6.0,
+              0.0
+            ],
+            "out": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 2.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-common",
+            "pivot",
+            "lead-out",
+            "fixed-contact",
+            "blade"
+          ],
+          "svg_bytes": 2604,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-spst-small-medium",
+          "symbol_id": "switch-spst",
+          "name": "SPST switch",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/switch-spst-small-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 4.04995944,
+          "origin_svg": [
+            -48.556576,
+            -64.204804
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -0.7249981972222241
+          ],
+          "pins_mm": {
+            "common": [
+              -6.0,
+              0.0
+            ],
+            "out": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 2.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-common",
+            "pivot",
+            "lead-out",
+            "fixed-contact",
+            "blade"
+          ],
+          "svg_bytes": 2631,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-spst-small-thick",
+          "symbol_id": "switch-spst",
+          "name": "SPST switch",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/switch-spst-small-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 4.09996534,
+          "origin_svg": [
+            -48.414834,
+            -64.063062
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -0.750001145833331
+          ],
+          "pins_mm": {
+            "common": [
+              -6.0,
+              0.0
+            ],
+            "out": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 2.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-common",
+            "pivot",
+            "lead-out",
+            "fixed-contact",
+            "blade"
+          ],
+          "svg_bytes": 2618,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-spst-medium-thin",
+          "symbol_id": "switch-spst",
+          "name": "SPST switch",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/switch-spst-medium-thin.svg",
+          "width_mm": 16.14991231,
+          "height_mm": 4.67496419,
+          "origin_svg": [
+            -45.792816,
+            -62.716625
+          ],
+          "visual_center_from_origin_mm": [
+            -8.819444422177487e-07,
+            -0.9374937152777781
+          ],
+          "pins_mm": {
+            "common": [
+              -7.0,
+              0.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 2.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-common",
+            "pivot",
+            "lead-out",
+            "fixed-contact",
+            "blade"
+          ],
+          "svg_bytes": 2566,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-spst-medium-medium",
+          "symbol_id": "switch-spst",
+          "name": "SPST switch",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/switch-spst-medium-medium.svg",
+          "width_mm": 16.19991786,
+          "height_mm": 4.69996344,
+          "origin_svg": [
+            -45.721945,
+            -62.645755
+          ],
+          "visual_center_from_origin_mm": [
+            1.763888909501866e-07,
+            -0.9499933375000004
+          ],
+          "pins_mm": {
+            "common": [
+              -7.0,
+              0.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 2.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-common",
+            "pivot",
+            "lead-out",
+            "fixed-contact",
+            "blade"
+          ],
+          "svg_bytes": 2595,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-spst-medium-thick",
+          "symbol_id": "switch-spst",
+          "name": "SPST switch",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/switch-spst-medium-thick.svg",
+          "width_mm": 16.29992577,
+          "height_mm": 4.74996898,
+          "origin_svg": [
+            -45.580203,
+            -62.504013
+          ],
+          "visual_center_from_origin_mm": [
+            7.055555562808358e-07,
+            -0.9749964624999982
+          ],
+          "pins_mm": {
+            "common": [
+              -7.0,
+              0.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 2.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-common",
+            "pivot",
+            "lead-out",
+            "fixed-contact",
+            "blade"
+          ],
+          "svg_bytes": 2580,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-spst-large-thin",
+          "symbol_id": "switch-spst",
+          "name": "SPST switch",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/switch-spst-large-thin.svg",
+          "width_mm": 20.14989373,
+          "height_mm": 5.32493961,
+          "origin_svg": [
+            -40.123554,
+            -61.157607
+          ],
+          "visual_center_from_origin_mm": [
+            1.7638888844354975e-07,
+            -1.162491148611114
+          ],
+          "pins_mm": {
+            "common": [
+              -9.0,
+              0.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 2.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-common",
+            "pivot",
+            "lead-out",
+            "fixed-contact",
+            "blade"
+          ],
+          "svg_bytes": 2631,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-spst-large-medium",
+          "symbol_id": "switch-spst",
+          "name": "SPST switch",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/switch-spst-large-medium.svg",
+          "width_mm": 20.1998961,
+          "height_mm": 5.34994273,
+          "origin_svg": [
+            -40.052683,
+            -61.086736
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            -1.1749927111111143
+          ],
+          "pins_mm": {
+            "common": [
+              -9.0,
+              0.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 2.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-common",
+            "pivot",
+            "lead-out",
+            "fixed-contact",
+            "blade"
+          ],
+          "svg_bytes": 2659,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "switch-spst-large-thick",
+          "symbol_id": "switch-spst",
+          "name": "SPST switch",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/switch-spst-large-thick.svg",
+          "width_mm": 20.29990401,
+          "height_mm": 5.39994475,
+          "origin_svg": [
+            -39.910942,
+            -60.944994
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -1.1999940722222227
+          ],
+          "pins_mm": {
+            "common": [
+              -9.0,
+              0.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 2.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-common",
+            "pivot",
+            "lead-out",
+            "fixed-contact",
+            "blade"
+          ],
+          "svg_bytes": 2644,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "ce23cc58625d19b64450265c1d605f185c1babd1ab522f40ef7ad2c6d65fad12"
     }
   ]
 }

@@ -1,0 +1,84 @@
+schema_version: 1
+id: relay-spdt
+revision: 1
+name: SPDT relay
+description: Relay with an isolated coil and one changeover contact. In the de-energized
+  state common connects to NC; energizing transfers it to NO. The dashed coupling
+  is mechanical.
+keywords:
+- switch
+- contact
+- relay
+- coil
+- switches relays
+- spdt
+- overnight
+- batch 02
+types:
+- switches-and-relays
+family: switches-and-relays
+batch: overnight-switches-and-relays-02
+attributes:
+  resting_state: common-to-NC
+recipe: relay-spdt
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: custom relay coil/contact assembly
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: coil-1
+  name: Coil 1
+  description: Coil 1
+  kind: passive
+  lead_part: lead-coil-1
+- id: coil-2
+  name: Coil 2
+  description: Coil 2
+  kind: passive
+  lead_part: lead-coil-2
+- id: common
+  name: Common
+  description: Common
+  kind: passive
+  lead_part: lead-common
+- id: nc
+  name: Normally closed
+  description: Normally closed
+  kind: passive
+  lead_part: lead-nc
+- id: 'no'
+  name: Normally open
+  description: Normally open
+  kind: passive
+  lead_part: lead-no
+parts:
+- id: coil-body
+  description: Coil body
+- id: coil-label
+  description: Coil label
+- id: lead-coil-1
+  description: 'Electrical lead: Coil 1'
+- id: lead-coil-2
+  description: 'Electrical lead: Coil 2'
+- id: lead-common
+  description: 'Electrical lead: Common'
+- id: lead-nc
+  description: 'Electrical lead: Normally closed'
+- id: lead-no
+  description: 'Electrical lead: Normally open'
+- id: contacts
+  description: Contacts
+- id: contact-blade
+  description: Contact blade
+- id: mechanical-link
+  description: Mechanical link
