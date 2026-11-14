@@ -446,3 +446,41 @@ exports, docs, scoped B-branch commit/push and existing-preview publication are
 authorized. Preserve A ownership and unrelated research work. Result: 91 designs,
 78 Verified and 13 Unverified; corrected revisions require fresh human review.
 This request does not approve replacement drawings or authorize another batch.
+
+
+## Final 13 symbol approvals - 14-11-2026
+
+Source: user's exact 13-record approval JSON in **Brainstorm B**. Original message
+timestamp unavailable; recorded 14-11-2026 21:53 +01:00, Europe/Zagreb.
+
+**Human acceptance confirmed; applied locally.** Both JFETs, four three-terminal
+MOSFETs, three BJTs, chassis ground and XOR/XNOR are approved at revision 2;
+P-bulk enhancement MOSFET is approved unchanged at revision 1. Every supplied
+fingerprint matches the current drawing. This supersedes the pending human review
+in the previous correction checkpoint; no approval is inferred from test results.
+
+The validator adds exactly 13 entries, preserving all 78 existing entries. Local
+build `21ee8da1455d` has 91 Verified / 0 Unverified designs, with all SVG and
+complete-library export bytes unchanged. Source and build are saved locally only;
+B retains shared-preview publication ownership. No new symbols, geometry changes,
+review-service implementation or integration are authorized by this handoff.
+
+**Verified locally:** 62 Python tests, eight JavaScript tests, 90 documentation
+links, unchanged artwork/export hashes and repeat handoff validation. Updated the
+old regression's 78/13 expectation to 91/0 while preserving rejection of the
+superseded XOR fingerprint. The test retry used a writable project temporary
+directory after default sandbox-temp permission failures. Hosted publication
+and Git synchronization remain pending Agent B.
+
+
+## Final approval delivery authorization - 14-11-2026
+
+Source: user's **Agent B** request, “Complete publication of my final 13 symbol
+approvals.” Original message timestamp unavailable; recorded 14-11-2026,
+Europe/Zagreb, UTC+01:00.
+
+Explicitly authorizes reuse of Brainstorm B's prepared changes, current-tree
+validation, status documentation, a scoped B-branch commit/push and publication
+to the existing shared preview. Supersedes the local-only delivery state above.
+Preserve earlier approvals, all artwork/export bytes, unrelated work and A's
+isolation. No new symbols, geometry or viewer changes are requested.

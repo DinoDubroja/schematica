@@ -7,41 +7,42 @@
 
 ## Latest changes
 
-14-11-2026: **Batch 02 review applied** — 12 corrected designs, 52 unchanged
-approvals applied and 15 designs removed. The dev library has **91 designs /
-1,035 configurations: 78 Verified, 13 Unverified**. All 53 supplied approvals
-matched before editing; corrected XOR remains Unverified. See
-[the corrections and retained inventory](docs/BATCH_02.md).
+14-11-2026: **Final 13 human approvals validated for publication.** All exact revisions and
+fingerprints match. Local build **`21ee8da1455d`** has **91 Verified / 0 Unverified**
+designs. The previous 78 approvals, all 1,035 drawings and all 36 library exports
+are unchanged. Only `library/catalog.json` changed in the website asset manifest.
+Agent B is publishing this approval-only update to the existing shared preview.
 
-Published and local build: **`612e2ec4f95b`**. All 1,079 public assets match;
-all 135 removed SVG URLs return 404.
+The saved handoff validates without further changes. The regression expectation
+now reflects the user's exact approvals; stale fingerprints still fail validation.
+**Passed:** 62 Python tests, eight JavaScript tests and 90 local documentation
+links. The local server's 1,079 public assets match the build; all 135 removed SVG
+URLs return 404. The exact 13 old Pending selections clear, and Undo cannot
+restore them. Hosted verification is pending publication.
+
+After publication, reload the viewer: expect all 91 Verified, an empty Unverified
+filter, and matching old Pending selections cleared. Actual hosted refresh and
+second-device behavior remain unverified for this update.
+
+The [accepted corrections and retained inventory](docs/BATCH_02.md) are unchanged.
+The earlier geometry run checked every configuration and all 36 exports in Inkscape;
+this approval-only update does not repeat rendering or GUI automation.
 Source belongs to `work/agent-b-symbols`; A's integration and `main` remain separate.
-
-**Passed:** 62 Python and eight JavaScript tests; all 36 complete-library exports;
-all 108 corrected configurations visually inspected; 12 native Small/Thick TeX
-comparisons; three byte-checked ZIPs. All 927 unaffected SVGs and original 26
-approval records are exact. Browser filters, Variations, both themes and actual
-single/library downloads pass. Inkscape passed all 1,035 SVGs, 42 accepted-palette
-comparisons and editable-part/Symbols save/reopen. A full rerun resolved one
-Windows process-start failure; no drawing check was skipped.
-Corrected artwork remains Unverified until human review.
 
 ### Test on both Windows devices
 
 | Action | Expected result |
 |---|---|
-| Reload the preview; open [build.json](https://schematica-preview.dinodubroja.workers.dev/build.json) | Build `612e2ec4f95b` on both devices |
-| Clear filters; switch All symbols / Unverified | 91 designs / 13 Unverified; 78 Verified |
+| Reload the preview; open [build.json](https://schematica-preview.dinodubroja.workers.dev/build.json) | Build `21ee8da1455d` on both devices |
+| Clear filters; switch All symbols / Unverified | 91 designs, all Verified; Unverified is empty |
 | Search `overnight` in All symbols | 65 retained Batch 02 designs; no removed IDs |
 | Open [the corrected symbols](docs/BATCH_02.md#what-to-inspect); compare Variations and Small / Thick | JFET shape, MOS dots, 1 mm BJT shortening, chassis ends and XOR input joins match the checklist |
-| Reload a browser with old Pending selections; press Undo | Published approvals, old corrected revisions and removed designs cannot reappear as Pending; unchanged valid selections remain |
+| Reload a browser with old Pending selections; press Undo if available | Pending clears to zero; Undo cannot restore published approvals, old revisions or removed designs |
 | Switch dark/light; narrow the window | Readable drawings and usable controls |
 | Export one symbol, then the library while filtered | Single SVG matches size/stroke; library contains all 91 designs |
-| Verify replacements you accept; copy approvals into chat | Only browser-local Pending until the exact handoff is applied and published |
 
-Send corrections by copied symbol reference. Actual testing on the second Windows
-device and human acceptance remain yours; automated checks do not establish either.
-Inkscape checks use the command line, not GUI/profile installation.
+Send corrections by copied symbol reference. These exact designs are already
+human-approved. Physical testing on the second Windows device remains unverified.
 
 ## Run on Windows
 
@@ -194,14 +195,14 @@ checking that both devices have the same version.
 
 | Action | Expected result |
 |---|---|
-| Open the app; switch All symbols / Unverified | 91 designs / 13 unverified designs; 78 are Verified |
+| Open the app; switch All symbols / Unverified | 91 designs, all Verified; Unverified is empty |
 | Choose Resistors / Batch 01; search `NTC`, then `zzzz`, then clear | Two NTCs; empty state; the filtered batch returns |
 | Select Variable resistor · US; open Variations | Stroke, Size and Arrow orientation rows; one setting varies per row, all others at defaults; no large preview |
 | Choose Small / Thick / Down-left; open Variations | Comparison rows still use defaults, independently of the main preview selection |
 | Try all orientations on variable/trimmer US/EU | Only the diagonal marking reflects; body, leads and blue pin identities stay fixed |
 | Inspect potentiometers, NTC/PTC, photos and nonlinear resistors | Wiper tip centered 1 mm above body; labels readable; arrows symmetric; diagonal S has no arrowhead; no varistors |
-| Check a design; reload | Pending in this browser; selection and exact design identity persist |
-| Verify & next, then Undo | Selects the next unreviewed design; Undo reverses the pending selection |
+| In an isolated test library, check an Unverified design; reload | Pending in this browser; selection and exact design identity persist |
+| In that test library, Verify & next, then Undo | Selects the next unreviewed design; Undo reverses the pending selection |
 | Copy approvals or Copy symbol reference | Approval JSON includes exact revision/fingerprint; reference includes name/ID/revision/link |
 | Open the reference link in another browser | Same design selected; local approvals are not transferred |
 | Switch dark/light; reload; use Small/Thick and Grid & pins | Theme persists; stroke changes keep pins fixed; preview aids toggle together |

@@ -1,6 +1,6 @@
 # Current status
 
-14-11-2026 · **Batch 02 corrections; replacement review pending.**
+14-11-2026 · **All 91 designs approved locally; publication pending.**
 
 ## Working ownership
 
@@ -17,30 +17,25 @@ A's viewer/integration or unresolved structural change is authorized. B remains
 sole preview publisher. This is the dev library; accounts and personal libraries
 remain deferred.
 
-## Current review
+## Final human approvals
 
-- **91 designs / 1,035 configurations; 78 Verified / 13 Unverified.** All 53 supplied
-  approvals matched the old artwork. Applied 52 unchanged approvals; corrected XOR's
-  old approval is superseded. N-bulk MOSFET remains unchanged and Verified.
-- Exactly 12 corrected revision-2 designs and 15 removals; see
-  [the inventory and review links](../docs/BATCH_02.md). Unchanged P-bulk MOSFET is
-  revision 1 and still Unverified. No new batch is authorized.
-- All 927 unaffected SVG bytes and original 26 approval records are exact.
-  Accepted nonlinear B revision 3 remains; tapped resistors/varistors stay removed.
-- Published/local build **`612e2ec4f95b`**; 1,079 public assets byte-match, all 135
-  removed SVG URLs return 404. Passed 62 Python + eight JavaScript tests, all 1,035
-  Inkscape configurations and 36 library exports; all 108 corrected configurations
-  actually inspected. A's integration, processes and test library remain untouched.
-- Verified full backup precedes changes; unrelated `docs/research/` is preserved.
-  Exact ready commits, runtime and receipts belong in B's local handoff.
+The exact 13-record handoff from Brainstorm B is validated against the current
+revisions and fingerprints. All 12 corrected revision-2 designs and the unchanged
+revision-1 P-bulk MOSFET are approved. The user explicitly authorized Agent B to
+complete the scoped commit, push and shared-preview publication on 14-11-2026.
 
-## Review next
-
-Open **Unverified → Variations**, then **Small / Thick**. Follow
-[action → expected result checks](../DEVELOPMENT.md#latest-changes) on both devices.
-All replacements need fresh human approval; tests or commits do not confer it.
-The lighter recurring Inkscape policy remains a proposal; this correction run uses
-the requested command-line checks. No viewer/interface or integration changes.
+- Local build **`21ee8da1455d`**: **91 Verified / 0 Unverified**, 1,035 configurations.
+- All 78 earlier approval records are exact. Every SVG and all 36 complete-library
+  exports are unchanged; only catalog approval metadata changes in the site assets.
+- The accepted Batch 02 corrections and 15 removals remain intact; see
+  [the inventory](../docs/BATCH_02.md). No new drawing approval is needed for these
+  exact fingerprints. No new batch or viewer/integration change is authorized.
+- Verified external backup preserves the prepared changes, exact handoff and
+  unrelated research. A's isolated checkout and runtime remain untouched.
+- Passed 62 Python tests, eight JavaScript tests, 90 documentation links and local
+  HTTP/hash checks for all 1,079 public assets. Pending/Undo clears all 13 approvals.
+- Publication is in progress. Exact ready commits and delivery
+  receipts will be recorded in B's own local handoff after hosted verification.
 
 [Decisions](DECISIONS.md) · [Verification](../docs/VERIFICATION.md)
 

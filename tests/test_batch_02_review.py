@@ -56,7 +56,8 @@ class Batch02Review(unittest.TestCase):
         for relative, digest in self.fixture['unchanged_svg_sha256'].items():
             self.assertEqual(hashlib.sha256((LIBRARY/relative).read_bytes()).hexdigest(), digest, relative)
         verified = {s['id'] for s in self.symbols.values() if s['verification']['status']=='verified'}
-        self.assertEqual(len(verified), 78)
+        # The later 13-record handoff explicitly accepts every retained design.
+        self.assertEqual(len(verified), 91)
         for approval in self.fixture['reviewed_approvals']:
             symbol = self.symbols[approval['id']]
             if symbol['id']=='logic-xor':
@@ -68,9 +69,9 @@ class Batch02Review(unittest.TestCase):
                 self.assertEqual(symbol['verification']['fingerprint'], approval['fingerprint'])
         for sid in self.fixture['changed']:
             self.assertEqual(self.symbols[sid]['revision'], 2)
-            self.assertEqual(self.symbols[sid]['verification']['status'], 'unverified')
+            self.assertEqual(self.symbols[sid]['verification']['status'], 'verified')
         self.assertEqual(self.symbols['mosfet-p-enhancement-bulk']['revision'], 1)
-        self.assertNotIn('mosfet-p-enhancement-bulk', verified)
+        self.assertIn('mosfet-p-enhancement-bulk', verified)
 
     def test_jfet_bent_connections_source_side_gate_and_polarity(self):
         for sid, sign in [('jfet-n',1), ('jfet-p',-1)]:

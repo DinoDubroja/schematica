@@ -13,5 +13,5 @@ and export SVGs for Inkscape.
 
 The dev library has 91 designs and 1,035 configurations, with dark/light mode,
 variations, human verification and single-symbol or complete-library export.
-[Batch 02 review](docs/BATCH_02.md) leaves 78 Verified and 13 Unverified designs.
+[Batch 02 review](docs/BATCH_02.md) is complete: **91 Verified / 0 Unverified** designs.
 Agent-assisted creation, personal variants and schematic styles are future directions.

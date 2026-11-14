@@ -1,20 +1,21 @@
 # Dev-library batch 02
 
 **Review applied 14-11-2026:** 65 retained designs / 693 configurations from the
-original 80-design batch. **52 Verified; 13 Unverified.** Exactly 15 designs removed.
-The complete dev library has **91 designs / 1,035 configurations: 78 Verified,
-13 Unverified**. The original 26 approvals and 342 SVGs are unchanged.
+original 80-design batch. **65 Verified; 0 Unverified.** Exactly 15 designs removed.
+The complete dev library has **91 designs / 1,035 configurations: 91 Verified,
+0 Unverified**. The original 26 approvals and 342 SVGs are unchanged.
 
 All 53 supplied approvals matched the reviewed revisions before editing. XOR's
 approval applied to its old drawing and was superseded by the requested correction.
 The N-channel bulk MOSFET was already dot-free: its unchanged revision 1 is Verified.
-The P-channel bulk MOSFET is also unchanged but has no supplied approval.
+The final 13-record handoff approves the corrected revision-2 designs and the
+unchanged revision-1 P-channel bulk MOSFET. All 78 earlier approvals are preserved.
 
 ## What to inspect
 
-Open **Unverified → Variations**, then try **Small / Thick** in the main preview.
-The 12 corrected designs are revision 2 and require fresh review. The remaining
-Unverified design is the unchanged P-channel bulk MOSFET, revision 1.
+Open a linked symbol and **Variations**, then try **Small / Thick** in the main
+preview. These are the accepted corrections, retained here as a visual reference;
+all 12 corrected designs and the unchanged P-channel bulk MOSFET are Verified.
 
 | Review | Expected drawing |
 |---|---|
@@ -23,7 +24,7 @@ Unverified design is the unchanged P-channel bulk MOSFET, revision 1.
 | [NPN](https://schematica-preview.dinodubroja.workers.dev/#symbol=transistor-npn), [PNP](https://schematica-preview.dinodubroja.workers.dev/#symbol=transistor-pnp), [phototransistor](https://schematica-preview.dinodubroja.workers.dev/#symbol=phototransistor-npn) | Collector/emitter junctions and pins 1 mm left; base unchanged. Arrow at outer emitter end, pointing outward for NPN and inward for PNP |
 | [Chassis ground](https://schematica-preview.dinodubroja.workers.dev/#symbol=ground-chassis) | Bar stops at first/third hatch attachments, including Thick; no horizontal overhang |
 | [XOR](https://schematica-preview.dinodubroja.workers.dev/#symbol=logic-xor), [XNOR](https://schematica-preview.dinodubroja.workers.dev/#symbol=logic-xnor) | Inputs end on the separate outer curve; no lead in the gap. XNOR bubble remains |
-| [P-channel bulk MOSFET](https://schematica-preview.dinodubroja.workers.dev/#symbol=mosfet-p-enhancement-bulk) | Unchanged four-terminal drawing, still awaiting its first approval |
+| [P-channel bulk MOSFET](https://schematica-preview.dinodubroja.workers.dev/#symbol=mosfet-p-enhancement-bulk) | Approved, unchanged four-terminal drawing at revision 1 |
 
 Copy the symbol reference when reporting a correction. Technical checks do not
 approve designs; use the [verification handoff](VERIFICATION.md).
@@ -48,13 +49,13 @@ Unidirectional TVS remains covered by the Zener drawing/aliases.
 
 ### Transistors
 
-12 designs / 108 configurations · 2 Verified / 10 Unverified.
+12 designs / 108 configurations · 12 Verified / 0 Unverified.
 
 `igbt-n`, `jfet-n`, `jfet-p`, `mosfet-n-depletion`, `mosfet-n-enhancement`, `mosfet-n-enhancement-bulk`, `mosfet-p-depletion`, `mosfet-p-enhancement`, `mosfet-p-enhancement-bulk`, `phototransistor-npn`, `transistor-npn`, `transistor-pnp`.
 
 ### Sources and grounds
 
-10 designs / 90 configurations · 9 Verified / 1 Unverified.
+10 designs / 90 configurations · 10 Verified / 0 Unverified.
 
 `battery`, `cell`, `ground-chassis`, `ground-earth`, `ground-signal`, `source-current`, `source-dependent-current`, `source-dependent-voltage`, `source-voltage`, `source-voltage-ac`.
 
@@ -66,7 +67,7 @@ Unidirectional TVS remains covered by the Zener drawing/aliases.
 
 ### Logic
 
-12 designs / 108 configurations · 10 Verified / 2 Unverified.
+12 designs / 108 configurations · 12 Verified / 0 Unverified.
 
 `logic-and`, `logic-buffer`, `logic-nand`, `logic-nor`, `logic-not`, `logic-or`, `logic-schmitt-buffer`, `logic-schmitt-inverter`, `logic-tristate-buffer`, `logic-tristate-inverter`, `logic-xnor`, `logic-xor`.
 

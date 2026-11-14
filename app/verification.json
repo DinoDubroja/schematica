@@ -390,6 +390,71 @@
       "revision": 1,
       "fingerprint": "7160768ebeb9977303400fc0af338d7a66db95416c5525900d7bfc6aaa8c6e01",
       "evidence": "User approval supplied through the chat handoff"
+    },
+    "jfet-n": {
+      "revision": 2,
+      "fingerprint": "9fc54f2970473a5392d1076296eac0e6380d8955f8b4850a9c8691da52e53cc7",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "jfet-p": {
+      "revision": 2,
+      "fingerprint": "2dab6525667c29b680933064b5394e6e65ee523fe66caa050491bf797aa63a37",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "mosfet-n-depletion": {
+      "revision": 2,
+      "fingerprint": "23591ba7e3365525e3cfd0202f451e57e7904f08b42281e68172db99a7fb97d6",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "mosfet-n-enhancement": {
+      "revision": 2,
+      "fingerprint": "c223ed7d5c2d1b8bd2896e34e4774613e03fc1bb5c30b5430f7468b372261be8",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "mosfet-p-depletion": {
+      "revision": 2,
+      "fingerprint": "2d81e5bfff5521745dab1444cea0104052fc25ede05b229df1807ec0c097b83f",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "mosfet-p-enhancement": {
+      "revision": 2,
+      "fingerprint": "e70294f6b5fed398ef0a24829a24aaf838aa3ad1c622b82bf14f1c5adbcdf914",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "mosfet-p-enhancement-bulk": {
+      "revision": 1,
+      "fingerprint": "837b20731e1a8ba57cb41f83cf41c17a630af3e287704772f689b20009a4d579",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "phototransistor-npn": {
+      "revision": 2,
+      "fingerprint": "499c5ec233399a20cd86f53b6db9e00b9ce515784739f33a400e1ee39b537a07",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "transistor-npn": {
+      "revision": 2,
+      "fingerprint": "5b39a164baa4e871ae62ee9e2852cff7660c5543c5153a339d6655335fd1b33a",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "transistor-pnp": {
+      "revision": 2,
+      "fingerprint": "d2cf203c1771e4e819f124fe396c97744e44ee1a6c77e562a76f77b60406842c",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "ground-chassis": {
+      "revision": 2,
+      "fingerprint": "31d272f15f9e5291463eefcea71a99f513790cb0fb449a6e1c99af60a9c6859b",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "logic-xnor": {
+      "revision": 2,
+      "fingerprint": "86b7d5f999cac2f268d495d4ddf4cdb19cbb55f3151e942b56a8af533d102b12",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "logic-xor": {
+      "revision": 2,
+      "fingerprint": "772c3ca2d48d66a15719230eae886588a416ea1042b3be0c81e124b7a749e3da",
+      "evidence": "User approval supplied through the chat handoff"
     }
   }
 }

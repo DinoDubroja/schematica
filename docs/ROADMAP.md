@@ -14,7 +14,7 @@ This page states desired capabilities; implementation status comes from
 | Outcome | Status | What it means |
 |---|---|---|
 | Minimal symbol library in the web app | Implemented | Browse, search, compare variations, use dark/light mode and export one symbol or the whole Inkscape library |
-| Grow the dev library with agent-run batches | Two batches implemented | Resistors plus 65 retained Batch 02 designs; repeatable creation, validation and human verification. Corrected artwork awaits review |
+| Grow the dev library with agent-run batches | Two batches implemented and approved | 91 dev-library designs, all Verified; repeatable creation, validation and human verification |
 | Create symbols interactively with an agent | Near term · missing | Create one symbol from text, images, sketches or PDFs: interpret → confirm → create → preview/refine → offer download/save to the dev library; shares formats and checks with batches |
 | Search and reuse symbols through agent apps | Near term · planning | Separate search skill; proposed shared interactive web/chat viewer with filtered results, configuration controls and an explicit selection handoff |
 | Connect Schematica through MCP | Near term · missing | Required: ChatGPT Desktop across its environments and Claude Desktop; verify each complete journey, including previews, downloads and fresh-chat retrieval |
@@ -72,7 +72,7 @@ decisions take precedence.
 
 | Area | What remains |
 |---|---|
-| Human verification | Original 26 designs remain Verified; all 80 batch-02 designs await explicit human acceptance |
+| Human verification | All 91 retained designs are explicitly approved; future new or changed drawings require fresh acceptance |
 | Temporary approvals | Browser-local pending selections and a chat-mediated publish step; no accounts or cross-device selection sync |
 | Text editing | Bounded editable-label proof only; no general mathematical-text round trip |
 | Device readiness | Repeat the current hosted and local checklist on the laptop; desktop results do not establish laptop behavior |
