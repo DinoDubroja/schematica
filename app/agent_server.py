@@ -58,12 +58,16 @@ def create_server(service, port=8794):
     @mcp.tool(annotations=WRITE, meta=UI)
     def search_symbols(query: str = "", session_id: str | None = None, filters: dict | None = None) -> CallToolResult:
         """Find existing symbols and open the shared interactive viewer, including one or zero results.
-        Reuse session_id for follow-ups. Filters: family, style eu/us, variant fixed/variable/etc,
+        Usually supply query only. Reuse the returned session_id for follow-ups.
+        Optional filters: family (for example resistors/capacitors/diodes), style eu/us, variant fixed/variable/etc,
         terms string[], ids string[], size small/medium/large, stroke thin/medium/thick; null clears a filter.
         'normal resistor' means standard fixed designs. Never creates replacements.
         """
         data = service.search(query, session_id, filters)
-        return result(data, f"{data['count']} matching symbols in the dev library. Viewer: {data['viewer_url']}")
+        # Some hosts expose only text content to their model. Keep the session,
+        # filters and bounded match summaries there as well as in structuredContent.
+        summary = {key: data[key] for key in ("session_id", "sequence", "filters", "count", "matches", "viewer_url")}
+        return result(data, json.dumps(summary))
 
     @mcp.tool(annotations=READ, meta={"ui": {"visibility": ["app"]}})
     def viewer_data(session_id: str | None = None) -> CallToolResult:

@@ -1,4 +1,5 @@
 from support import APP
+import json
 import tempfile
 import unittest
 from urllib.parse import quote
@@ -20,10 +21,16 @@ class MCPTests(unittest.IsolatedAsyncioTestCase):
                 tools = (await client.list_tools()).tools
                 search = next(t for t in tools if t.name == "search_symbols")
                 self.assertEqual(search.meta["ui"]["resourceUri"], UI_URI)
-                found = await client.call_tool("search_symbols", {"query": "normal resistors"})
+                found = await client.call_tool("search_symbols", {"query": "normal resistor", "filters": {"family": "resistor", "variant": "fixed"}})
                 self.assertFalse(found.isError)
                 self.assertEqual(found.structuredContent["count"], 2)
                 session = found.structuredContent["session_id"]
+                text_result = json.loads(found.content[0].text)
+                self.assertEqual(text_result["session_id"], session)
+                self.assertEqual([s["id"] for s in text_result["matches"]], ["resistor-eu", "resistor-us"])
+                followup = await client.call_tool("search_symbols", {"query": "Only European ones", "session_id": text_result["session_id"]})
+                self.assertEqual(followup.structuredContent["session_id"], session)
+                self.assertEqual(followup.structuredContent["match_ids"], ["resistor-eu"])
                 resource = await client.read_resource(UI_URI)
                 self.assertEqual(resource.contents[0].mimeType, MIME)
                 self.assertIn("ui/initialize", resource.contents[0].text)
