@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.00002 18.495961 8.220425" width="6.52496402mm" height="2.89998326mm">
+  <title>Filled terminal</title>
+  <desc>Filled connection terminal with one electrical pin; use a schematic label to identify the node.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 0.9, "body-width": 0.9, "grid": 1.0}, "origin_svg": [-54.296708, -67.889807], "parts": ["lead-net", "terminal"], "pins_mm": {"net": [-4.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "medium", "size_factor": 1.0, "stroke": "thin", "stroke_mm": 0.15}, "symbol_id": "terminal-filled"}</metadata>
+  <g id="sc-terminal-filled-r1-medium-thin--sc-terminal-filled-r1-medium-thin" inkscape:label="Filled terminal / medium / thin" data-symbol="terminal-filled" data-revision="1" data-size="medium" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(-54.296708,-67.889807)scale(0.996264,-0.996264)">
+    <g data-part="lead-net" id="sc-terminal-filled-r1-medium-thin--sc-terminal-filled-r1-medium-thin--lead-net" inkscape:label="lead-net">
+      <path d="M-11.38104 0H0" fill="none" />
+      <desc>Electrical lead: Net</desc>
+    </g>
+    <g data-part="terminal" id="sc-terminal-filled-r1-medium-thin--sc-terminal-filled-r1-medium-thin--terminal" inkscape:label="terminal">
+      <path d="M1.28035 0C1.28035 .70712 .70712 1.28035 0 1.28035S-1.28035 .70712-1.28035 0S-.70712-1.28035 0-1.28035S1.28035-.70712 1.28035 0ZM0 0" stroke="none" />
+      <desc>Terminal</desc>
+    </g>
+  </g>
+</svg>

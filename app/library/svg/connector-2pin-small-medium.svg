@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-68.682458 -72.000023 28.913247 25.369954" width="10.19995102mm" height="8.94995599mm">
+  <defs>
+    <path id="sc-connector-2pin-r1-small-medium--g0-82" d="M1.81735 0V-.2486H1.281575V-2.906046H1.195851C.942965-2.644587 .58721-2.631729 .381472-2.623156V-2.374557C.522917-2.378843 .728655-2.387415 .942965-2.477426V-.2486H.407189V0H1.81735Z" />
+    <path id="sc-connector-2pin-r1-small-medium--g0-107" d="M1.924505 0V-.30432H1.144416C1.092982-.30432 1.041547-.300034 .990113-.300034H.522917C.660075-.420048 .985827-.741513 1.118699-.865813C1.200137-.942965 1.418733-1.122985 1.500171-1.200137C1.69305-1.393016 1.924505-1.620185 1.924505-1.984512C1.924505-2.477426 1.577323-2.906046 1.011544-2.906046C.522917-2.906046 .282889-2.571722 .180021-2.203109C.231455-2.130243 .252886-2.104526 .261458-2.091667C.270031-2.083095 .312893-2.027374 .355755-1.967367C.441479-2.297405 .561493-2.631729 .951537-2.631729C1.35444-2.631729 1.573037-2.310264 1.573037-1.97594C1.573037-1.611612 1.328723-1.367299 1.075837-1.110127L.745799-.805806L.21431-.274317V0H1.924505Z" />
+  </defs>
+  <title>Two-pin connector</title>
+  <desc>Generic two-contact connector; contacts 1 and 2 are electrically independent.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 6.75, "body-width": 4.5, "grid": 1.0}, "origin_svg": [-51.391206, -59.315044], "parts": ["housing", "lead-pin-1", "contact-1", "number-1", "lead-pin-2", "contact-2", "number-2"], "pins_mm": {"pin-1": [-5.0, 2.0], "pin-2": [-5.0, -2.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "connector-2pin"}</metadata>
+  <g id="sc-connector-2pin-r1-small-medium--sc-connector-2pin-r1-small-medium" inkscape:label="Two-pin connector / small / medium" data-symbol="connector-2pin" data-revision="1" data-size="small" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-51.391206,-59.315044)scale(0.996264,-0.996264)">
+    <g data-part="housing" id="sc-connector-2pin-r1-small-medium--sc-connector-2pin-r1-small-medium--housing" inkscape:label="housing">
+      <path d="M-4.26788-9.60275V9.60275H8.53578V-9.60275ZM8.53578 9.60275" fill="none" />
+      <desc>Housing</desc>
+    </g>
+    <g data-part="lead-pin-1" id="sc-connector-2pin-r1-small-medium--sc-connector-2pin-r1-small-medium--lead-pin-1" inkscape:label="lead-pin-1">
+      <path d="M-14.2263 5.69052H.42676" fill="none" />
+      <desc>Electrical lead: Contact 1</desc>
+    </g>
+    <g data-part="contact-1" id="sc-connector-2pin-r1-small-medium--sc-connector-2pin-r1-small-medium--contact-1" inkscape:label="contact-1">
+      <path d="M2.98747 5.69052C2.98747 6.39764 2.41425 6.97087 1.70712 6.97087C1 6.97087 .42677 6.39764 .42677 5.69052S1 4.41017 1.70712 4.41017C2.41425 4.41017 2.98747 4.9834 2.98747 5.69052ZM1.70712 5.69052" fill="none" />
+      <desc>Contact 1</desc>
+    </g>
+    <g data-part="number-1" id="sc-connector-2pin-r1-small-medium--sc-connector-2pin-r1-small-medium--number-1" inkscape:label="number-1">
+      <use x="-51.391206" y="-59.315044" xlink:href="#sc-connector-2pin-r1-small-medium--g0-82" stroke="none" fill="#000" transform="translate(4.68607,4.23206) scale(-1.00375,1.00375)translate(-51.391206,-59.315044)scale(-1,-1)" />
+      <desc>Number 1</desc>
+    </g>
+    <g data-part="lead-pin-2" id="sc-connector-2pin-r1-small-medium--sc-connector-2pin-r1-small-medium--lead-pin-2" inkscape:label="lead-pin-2">
+      <path d="M-14.2263-5.69052H.42676" fill="none" />
+      <desc>Electrical lead: Contact 2</desc>
+    </g>
+    <g data-part="contact-2" id="sc-connector-2pin-r1-small-medium--sc-connector-2pin-r1-small-medium--contact-2" inkscape:label="contact-2">
+      <path d="M2.98747-5.69052C2.98747-4.9834 2.41425-4.41017 1.70712-4.41017C1-4.41017 .42677-4.9834 .42677-5.69052S1-6.97087 1.70712-6.97087C2.41425-6.97087 2.98747-6.39764 2.98747-5.69052ZM1.70712-5.69052" fill="none" />
+      <desc>Contact 2</desc>
+    </g>
+    <g data-part="number-2" id="sc-connector-2pin-r1-small-medium--sc-connector-2pin-r1-small-medium--number-2" inkscape:label="number-2">
+      <use x="-51.391206" y="-59.315044" xlink:href="#sc-connector-2pin-r1-small-medium--g0-107" stroke="none" fill="#000" transform="translate(4.68607,-7.14899) scale(-1.00375,1.00375)translate(-51.391206,-59.315044)scale(-1,-1)" />
+      <desc>Number 2</desc>
+    </g>
+  </g>
+</svg>

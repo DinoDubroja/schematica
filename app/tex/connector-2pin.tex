@@ -1,0 +1,40 @@
+% Two-pin connector; custom two-contact connector.
+% Schematica coordinates are millimetres at Medium; pins snap outward to the 1 mm grid.
+\newcommand{\SCBatchConnectorTwopin}[4]{%
+  \SCresolve{#1}{#2}{#3}
+  \def\F{#2}
+  \pgfmathsetmacro{\SCorientx}{ifthenelse(mod(#4,2)==1,-1,1)}
+  \pgfmathsetmacro{\SCorienty}{ifthenelse(#4>1,-1,1)}
+  \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+    \SCdimension{body-width}{6*\F}
+    \SCdimension{body-height}{9*\F}
+    \SCdimension{grid}{1}
+    \begin{SCpart}{housing}
+    \draw ({-2*\F},{-4.5*\F}) rectangle ({4*\F},{4.5*\F});
+    \end{SCpart}
+    \SCpin{pin-1}{floor(-6*\F)}{2}
+    \begin{SCpart}{lead-pin-1}
+    \draw ({floor(-6*\F)},{2})--({0.2*\F},{2});
+    \end{SCpart}
+    \begin{SCpart}{contact-1}
+    \draw ({0.8*\F},{2}) circle ({0.6*\F});
+    \end{SCpart}
+    \begin{SCpart}{number-1}
+    \pgfmathsetmacro{\SCfontsize}{1.4*\F*72.27/25.4/.69444}
+    \font\SCbatchfont="[lmsans10-regular.otf]" at \SCfontsize pt
+    \node[inner sep=0pt,outer sep=0pt] at ({2.7*\F},{2}) {\SCbatchfont 1};
+    \end{SCpart}
+    \SCpin{pin-2}{floor(-6*\F)}{-2}
+    \begin{SCpart}{lead-pin-2}
+    \draw ({floor(-6*\F)},{-2})--({0.2*\F},{-2});
+    \end{SCpart}
+    \begin{SCpart}{contact-2}
+    \draw ({0.8*\F},{-2}) circle ({0.6*\F});
+    \end{SCpart}
+    \begin{SCpart}{number-2}
+    \pgfmathsetmacro{\SCfontsize}{1.4*\F*72.27/25.4/.69444}
+    \font\SCbatchfont="[lmsans10-regular.otf]" at \SCfontsize pt
+    \node[inner sep=0pt,outer sep=0pt] at ({2.7*\F},{-2}) {\SCbatchfont 2};
+    \end{SCpart}
+  \end{scope}
+}

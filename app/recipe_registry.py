@@ -1,6 +1,7 @@
 """Explicit registrations for reviewed batch-02 TeX recipes. No schema changes."""
 
 BATCH_MACROS = {
+    'ammeter': 'SCBatchAmmeter',
     'amplifier-fully-differential': 'SCBatchAmplifierFullyDifferential',
     'amplifier-instrumentation': 'SCBatchAmplifierInstrumentation',
     'battery': 'SCBatchBattery',
@@ -12,6 +13,9 @@ BATCH_MACROS = {
     'cell': 'SCBatchCell',
     'comparator': 'SCBatchComparator',
     'comparator-supply': 'SCBatchComparatorSupply',
+    'connector-2pin': 'SCBatchConnectorTwopin',
+    'connector-3pin': 'SCBatchConnectorThreepin',
+    'connector-coaxial': 'SCBatchConnectorCoaxial',
     'diode': 'SCBatchDiode',
     'diode-led': 'SCBatchDiodeLed',
     'diode-photo': 'SCBatchDiodePhoto',
@@ -65,11 +69,15 @@ BATCH_MACROS = {
     'switch-dpst': 'SCBatchSwitchDpst',
     'switch-spdt': 'SCBatchSwitchSpdt',
     'switch-spst': 'SCBatchSwitchSpst',
+    'terminal-filled': 'SCBatchTerminalFilled',
+    'terminal-open': 'SCBatchTerminalOpen',
+    'test-point': 'SCBatchTestPoint',
     'transformer-air': 'SCBatchTransformerAir',
     'transformer-center-tap': 'SCBatchTransformerCenterTap',
     'transformer-core': 'SCBatchTransformerCore',
     'transistor-npn': 'SCBatchTransistorNpn',
     'transistor-pnp': 'SCBatchTransistorPnp',
+    'voltmeter': 'SCBatchVoltmeter',
 }
 
-BATCH_LABEL_RECIPES = frozenset(('amplifier-fully-differential', 'amplifier-instrumentation', 'comparator', 'comparator-supply', 'ota', 'regulator', 'relay-coil', 'relay-spdt'))
+BATCH_LABEL_RECIPES = frozenset(('ammeter', 'amplifier-fully-differential', 'amplifier-instrumentation', 'comparator', 'comparator-supply', 'connector-2pin', 'connector-3pin', 'ota', 'regulator', 'relay-coil', 'relay-spdt', 'test-point', 'voltmeter'))

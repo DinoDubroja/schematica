@@ -86,7 +86,7 @@ Status: complete — 8 designs / 72 configurations; Unverified.
 
 ### Connections And Instruments
 
-Status: planned.
+Status: complete — 8 designs / 72 configurations; Unverified.
 
 `terminal-open`, `terminal-filled`, `test-point`, `connector-2pin`, `connector-3pin`, `connector-coaxial`, `ammeter`, `voltmeter`.
 

@@ -1,0 +1,60 @@
+schema_version: 1
+id: connector-coaxial
+revision: 1
+name: Coaxial connector
+description: Coaxial connector with independent center conductor and shield terminals.
+  The open shield arc leaves the center lead electrically separate.
+keywords:
+- connector
+- coaxial
+- connection
+- interface
+- connections instruments
+- overnight
+- batch 02
+- coax
+- RF
+- shield
+- center conductor
+types:
+- connections-and-instruments
+family: connections-and-instruments
+batch: overnight-connections-and-instruments-02
+attributes:
+  function: connector-coaxial
+  contact_count: 2
+recipe: connector-coaxial
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: coaxport concept; separate shield and center
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: center
+  name: Center conductor
+  description: Center conductor
+  kind: passive
+  lead_part: lead-center
+- id: shield
+  name: Shield
+  description: Shield
+  kind: passive
+  lead_part: lead-shield
+parts:
+- id: lead-center
+  description: 'Electrical lead: Center conductor'
+- id: lead-shield
+  description: 'Electrical lead: Shield'
+- id: center-contact
+  description: Center contact
+- id: shield-contact
+  description: Shield contact

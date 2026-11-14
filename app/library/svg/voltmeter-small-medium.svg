@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-68.682458 -72.000019 40.251767 21.543174" width="14.19992891mm" height="7.59995305mm">
+  <defs>
+    <path id="sc-voltmeter-r1-small-medium--g0-111" d="M5.589259-5.949303H4.920605L3.780465-3.017514C3.643305-2.666042 3.000369-1.011553 2.923217-.617219H2.914644C2.846064-.960118 2.477448-1.903091 2.400295-2.108831L.917256-5.949303H.120015L2.460303 0H3.248971L5.589259-5.949303Z" />
+  </defs>
+  <title>Voltmeter</title>
+  <desc>Voltage-measuring instrument with two terminals, intended for a parallel connection.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 5.4, "body-width": 5.4, "grid": 1.0}, "origin_svg": [-48.556576, -61.228432], "parts": ["lead-a", "lead-b", "body", "quantity"], "pins_mm": {"a": [-6.0, 0.0], "b": [6.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "voltmeter"}</metadata>
+  <g id="sc-voltmeter-r1-small-medium--sc-voltmeter-r1-small-medium" inkscape:label="Voltmeter / small / medium" data-symbol="voltmeter" data-revision="1" data-size="small" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-48.556576,-61.228432)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="sc-voltmeter-r1-small-medium--sc-voltmeter-r1-small-medium--lead-a" inkscape:label="lead-a">
+      <path d="M-17.07156 0H-7.68219" fill="none" />
+      <desc>Electrical lead: A</desc>
+    </g>
+    <g data-part="lead-b" id="sc-voltmeter-r1-small-medium--sc-voltmeter-r1-small-medium--lead-b" inkscape:label="lead-b">
+      <path d="M17.07156 0H7.68219" fill="none" />
+      <desc>Electrical lead: B</desc>
+    </g>
+    <g data-part="body" id="sc-voltmeter-r1-small-medium--sc-voltmeter-r1-small-medium--body" inkscape:label="body">
+      <path d="M7.68219 0C7.68219 4.2428 4.2428 7.68219 0 7.68219S-7.68219 4.2428-7.68219 0S-4.2428-7.68219 0-7.68219S7.68219-4.2428 7.68219 0ZM0 0" fill="none" />
+      <desc>Body</desc>
+    </g>
+    <g data-part="quantity" id="sc-voltmeter-r1-small-medium--sc-voltmeter-r1-small-medium--quantity" inkscape:label="quantity">
+      <use x="-48.556576" y="-61.228432" xlink:href="#sc-voltmeter-r1-small-medium--g0-111" stroke="none" fill="#000" transform="translate(-2.86964,-2.98581) scale(-1.00375,1.00375)translate(-48.556576,-61.228432)scale(-1,-1)" />
+      <desc>Quantity</desc>
+    </g>
+  </g>
+</svg>

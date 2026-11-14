@@ -1,0 +1,76 @@
+schema_version: 1
+id: connector-3pin
+revision: 1
+name: Three-pin connector
+description: Generic three-contact connector; contacts 1, 2 and 3 are electrically
+  independent.
+keywords:
+- connector
+- 3pin
+- connection
+- interface
+- connections instruments
+- overnight
+- batch 02
+- three pin
+- 3 pin
+- three contact
+types:
+- connections-and-instruments
+family: connections-and-instruments
+batch: overnight-connections-and-instruments-02
+attributes:
+  function: connector-3pin
+  contact_count: 3
+recipe: connector-3pin
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: custom three-contact connector
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: pin-1
+  name: Contact 1
+  description: Contact 1
+  kind: passive
+  lead_part: lead-pin-1
+- id: pin-2
+  name: Contact 2
+  description: Contact 2
+  kind: passive
+  lead_part: lead-pin-2
+- id: pin-3
+  name: Contact 3
+  description: Contact 3
+  kind: passive
+  lead_part: lead-pin-3
+parts:
+- id: housing
+  description: Housing
+- id: lead-pin-1
+  description: 'Electrical lead: Contact 1'
+- id: contact-1
+  description: Contact 1
+- id: number-1
+  description: Number 1
+- id: lead-pin-2
+  description: 'Electrical lead: Contact 2'
+- id: contact-2
+  description: Contact 2
+- id: number-2
+  description: Number 2
+- id: lead-pin-3
+  description: 'Electrical lead: Contact 3'
+- id: contact-3
+  description: Contact 3
+- id: number-3
+  description: Number 3

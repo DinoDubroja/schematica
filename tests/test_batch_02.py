@@ -297,4 +297,39 @@ class Batch02(unittest.TestCase):
                         else:self.assertGreater(math.dist(blade[-1],target),2*factor)
 
 
+    def test_connector_contacts_numbering_and_instrument_terminals(self):
+        for symbol in self.new:
+            if symbol['family']!='connections-and-instruments':continue
+            sid=symbol['id']
+            for config in symbol['configurations']:
+                parts={g.get('data-part'):g for g in artwork(config).iter() if g.get('data-part')}
+                pins=config['pins_mm'];factor=config['settings']['size_factor']
+                self.assertEqual(len(pins),symbol['attributes']['contact_count'])
+                def points(name):return straight_points(next(parts[name].iter(f'{{{SVG}}}path')))
+                if sid in ('connector-2pin','connector-3pin'):
+                    count=len(pins)
+                    self.assertEqual(set(pins),{'pin-'+str(i) for i in range(1,count+1)})
+                    self.assertEqual([pins['pin-'+str(i)][1] for i in range(1,count+1)],sorted([p[1] for p in pins.values()],reverse=True))
+                    for i in range(1,count+1):
+                        self.assertIn('number-'+str(i),parts);self.assertIn('contact-'+str(i),parts)
+                        endpoint=points('lead-pin-'+str(i))[-1]
+                        self.assertAlmostEqual(endpoint[0],.2*factor,delta=.0003)
+                        self.assertAlmostEqual(endpoint[1],pins['pin-'+str(i)][1],delta=.0003)
+                elif sid=='connector-coaxial':
+                    self.assertEqual(set(pins),{'center','shield'})
+                    self.assertLess(pins['center'][0],0);self.assertLess(pins['shield'][1],0)
+                    self.assertLess(math.dist(points('lead-center')[-1],(-.65*factor,0)),.0003)
+                    self.assertLess(math.dist(points('lead-shield')[-1],(0,-2.2*factor)),.0003)
+                    # Open shield arc ends straddle the center lead, leaving an actual insulating gap.
+                    arc=points('shield-contact')
+                    self.assertLess(arc[0][0],-1.8*factor);self.assertLess(arc[-1][0],-1.8*factor)
+                    self.assertGreater(arc[0][1],factor);self.assertLess(arc[-1][1],-factor)
+                elif sid in ('ammeter','voltmeter'):
+                    self.assertEqual(set(pins),{'a','b'});self.assertIn('quantity',parts)
+                    self.assertEqual(pins['a'][1],pins['b'][1]);self.assertLess(pins['a'][0],pins['b'][0])
+                else:
+                    self.assertEqual(set(pins),{'net'})
+                    if sid=='test-point':self.assertIn('test-label',parts)
+
+
 if __name__=='__main__':unittest.main()

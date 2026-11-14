@@ -48,6 +48,16 @@ def verify(batch, workers=4):
                 gaps.extend([lx-bx-stroke,ly-by-stroke,bx+bw-stroke-lx-lw,by+bh-stroke-ly-lh])
             annotation_clearance=min(gaps)
             assert annotation_clearance>=.2999,(c['key'],'mark/label too close to functional block border',annotation_clearance)
+        if symbol['id'] in ('connector-2pin','connector-3pin'):
+            parts={g.get('data-part'):g for g in root.iter() if g.get('data-part')}
+            bx,by,bw,bh=queried[parts['housing'].get('id')];stroke=c['settings']['stroke_mm'];gaps=[]
+            for pid,g in parts.items():
+                if not pid.startswith('number-'):continue
+                lx,ly,lw,lh=queried[g.get('id')]
+                cx,cy,cw,ch=queried[parts[pid.replace('number-','contact-')].get('id')]
+                gaps.extend([lx-(cx+cw),bx+bw-stroke-lx-lw,ly-by-stroke,by+bh-stroke-ly-lh])
+            annotation_clearance=min(gaps)
+            assert annotation_clearance>=.2999,(c['key'],'contact number too close to ring/housing',annotation_clearance)
         with fitz.open(pdf) as document:
             assert document.page_count==1 and document[0].get_drawings(),c['key']
             assert not document[0].get_images(),c['key']

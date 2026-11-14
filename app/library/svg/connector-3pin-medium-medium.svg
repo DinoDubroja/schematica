@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-68.682458 -72.000016 34.582507 43.086377" width="12.19993997mm" height="15.19991633mm">
+  <defs>
+    <path id="sc-connector-3pin-r1-medium-medium--g0-82" d="M2.423155 0V-.331469H1.708782V-3.874762H1.594482C1.257297-3.526148 .782953-3.509003 .508634-3.497573V-3.166104C.697229-3.171819 .971548-3.183249 1.257297-3.303263V-.331469H.542924V0H2.423155Z" />
+    <path id="sc-connector-3pin-r1-medium-medium--g0-106" d="M2.61175-1.028698C2.61175-1.548762 2.211701-1.903091 1.823081-2.023106C2.25742-2.25742 2.457445-2.64604 2.457445-3.006084C2.457445-3.497573 1.983101-3.874762 1.417317-3.874762C.977263-3.874762 .560069-3.646163 .320039-3.246113L.525779-2.937504C.691514-3.337553 1.062988-3.543293 1.411602-3.543293C1.708782-3.543293 1.988816-3.371843 1.988816-3.006084C1.988816-2.65747 1.754501-2.320285 1.405887-2.240275C1.371597-2.23456 1.360167-2.23456 .954403-2.200271V-1.851656H1.360167C1.977386-1.851656 2.103116-1.320162 2.103116-1.034413C2.103116-.588644 1.840226-.222885 1.400172-.222885C1.005838-.222885 .554354-.422909 .302894-.811528L.24003-.468629C.657224 .06858 1.183003 .12573 1.411602 .12573C2.108831 .12573 2.61175-.428624 2.61175-1.028698Z" />
+    <path id="sc-connector-3pin-r1-medium-medium--g0-107" d="M2.56603 0V-.405764H1.525902C1.457322-.405764 1.388742-.400049 1.320162-.400049H.697229C.880108-.560069 1.314447-.988693 1.491612-1.154428C1.600197-1.257297 1.891661-1.497327 2.000246-1.600197C2.25742-1.857371 2.56603-2.160266 2.56603-2.64604C2.56603-3.303263 2.103116-3.874762 1.348737-3.874762C.697229-3.874762 .377189-3.428993 .24003-2.937504C.308609-2.840349 .337184-2.806059 .348614-2.788914C.360044-2.777484 .417194-2.70319 .474344-2.62318C.588644-3.063234 .748663-3.509003 1.268727-3.509003C1.805936-3.509003 2.097401-3.080379 2.097401-2.63461C2.097401-2.148836 1.771646-1.823081 1.434462-1.480182L.994408-1.074418L.285749-.365759V0H2.56603Z" />
+  </defs>
+  <title>Three-pin connector</title>
+  <desc>Generic three-contact connector; contacts 1, 2 and 3 are electrically independent.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 13.0, "body-width": 6.0, "grid": 1.0}, "origin_svg": [-48.556576, -50.456829], "parts": ["housing", "lead-pin-1", "contact-1", "number-1", "lead-pin-2", "contact-2", "number-2", "lead-pin-3", "contact-3", "number-3"], "pins_mm": {"pin-1": [-6.0, 4.0], "pin-2": [-6.0, 0.0], "pin-3": [-6.0, -4.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "medium", "size_factor": 1.0, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "connector-3pin"}</metadata>
+  <g id="sc-connector-3pin-r1-medium-medium--sc-connector-3pin-r1-medium-medium" inkscape:label="Three-pin connector / medium / medium" data-symbol="connector-3pin" data-revision="1" data-size="medium" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-48.556576,-50.456829)scale(0.996264,-0.996264)">
+    <g data-part="housing" id="sc-connector-3pin-r1-medium-medium--sc-connector-3pin-r1-medium-medium--housing" inkscape:label="housing">
+      <path d="M-5.69052-18.49419V18.49419H11.38104V-18.49419ZM11.38104 18.49419" fill="none" />
+      <desc>Housing</desc>
+    </g>
+    <g data-part="lead-pin-1" id="sc-connector-3pin-r1-medium-medium--sc-connector-3pin-r1-medium-medium--lead-pin-1" inkscape:label="lead-pin-1">
+      <path d="M-17.07156 11.38104H.56903" fill="none" />
+      <desc>Electrical lead: Contact 1</desc>
+    </g>
+    <g data-part="contact-1" id="sc-connector-3pin-r1-medium-medium--sc-connector-3pin-r1-medium-medium--contact-1" inkscape:label="contact-1">
+      <path d="M3.98338 11.38104C3.98338 12.32388 3.21906 13.08821 2.27621 13.08821C1.33337 13.08821 .56905 12.32388 .56905 11.38104S1.33337 9.67387 2.27621 9.67387C3.21906 9.67387 3.98338 10.4382 3.98338 11.38104ZM2.27621 11.38104" fill="none" />
+      <desc>Contact 1</desc>
+    </g>
+    <g data-part="number-1" id="sc-connector-3pin-r1-medium-medium--sc-connector-3pin-r1-medium-medium--number-1" inkscape:label="number-1">
+      <use x="-48.556576" y="-50.456829" xlink:href="#sc-connector-3pin-r1-medium-medium--g0-82" stroke="none" fill="#000" transform="translate(6.2481,9.4364) scale(-1.00375,1.00375)translate(-48.556576,-50.456829)scale(-1,-1)" />
+      <desc>Number 1</desc>
+    </g>
+    <g data-part="lead-pin-2" id="sc-connector-3pin-r1-medium-medium--sc-connector-3pin-r1-medium-medium--lead-pin-2" inkscape:label="lead-pin-2">
+      <path d="M-17.07156 0H.56903" fill="none" />
+      <desc>Electrical lead: Contact 2</desc>
+    </g>
+    <g data-part="contact-2" id="sc-connector-3pin-r1-medium-medium--sc-connector-3pin-r1-medium-medium--contact-2" inkscape:label="contact-2">
+      <path d="M3.98338 0C3.98338 .94284 3.21906 1.70717 2.27621 1.70717C1.33337 1.70717 .56905 .94284 .56905 0S1.33337-1.70717 2.27621-1.70717C3.21906-1.70717 3.98338-.94284 3.98338 0ZM2.27621 0" fill="none" />
+      <desc>Contact 2</desc>
+    </g>
+    <g data-part="number-2" id="sc-connector-3pin-r1-medium-medium--sc-connector-3pin-r1-medium-medium--number-2" inkscape:label="number-2">
+      <use x="-48.556576" y="-50.456829" xlink:href="#sc-connector-3pin-r1-medium-medium--g0-107" stroke="none" fill="#000" transform="translate(6.2481,-1.94464) scale(-1.00375,1.00375)translate(-48.556576,-50.456829)scale(-1,-1)" />
+      <desc>Number 2</desc>
+    </g>
+    <g data-part="lead-pin-3" id="sc-connector-3pin-r1-medium-medium--sc-connector-3pin-r1-medium-medium--lead-pin-3" inkscape:label="lead-pin-3">
+      <path d="M-17.07156-11.38104H.56903" fill="none" />
+      <desc>Electrical lead: Contact 3</desc>
+    </g>
+    <g data-part="contact-3" id="sc-connector-3pin-r1-medium-medium--sc-connector-3pin-r1-medium-medium--contact-3" inkscape:label="contact-3">
+      <path d="M3.98338-11.38104C3.98338-10.4382 3.21906-9.67387 2.27621-9.67387C1.33337-9.67387 .56905-10.4382 .56905-11.38104S1.33337-13.08821 2.27621-13.08821C3.21906-13.08821 3.98338-12.32388 3.98338-11.38104ZM2.27621-11.38104" fill="none" />
+      <desc>Contact 3</desc>
+    </g>
+    <g data-part="number-3" id="sc-connector-3pin-r1-medium-medium--sc-connector-3pin-r1-medium-medium--number-3" inkscape:label="number-3">
+      <use x="-48.556576" y="-50.456829" xlink:href="#sc-connector-3pin-r1-medium-medium--g0-106" stroke="none" fill="#000" transform="translate(6.2481,-13.26259) scale(-1.00375,1.00375)translate(-48.556576,-50.456829)scale(-1,-1)" />
+      <desc>Number 3</desc>
+    </g>
+  </g>
+</svg>

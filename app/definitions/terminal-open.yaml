@@ -1,0 +1,46 @@
+schema_version: 1
+id: terminal-open
+revision: 1
+name: Open terminal
+description: Open-circle connection terminal with one electrical pin.
+keywords:
+- terminal
+- open
+- connection
+- interface
+- connections instruments
+- overnight
+- batch 02
+types:
+- connections-and-instruments
+family: connections-and-instruments
+batch: overnight-connections-and-instruments-02
+attributes:
+  function: terminal-open
+  contact_count: 1
+recipe: terminal-open
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: ocirc
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: net
+  name: Net
+  description: Net
+  kind: passive
+  lead_part: lead-net
+parts:
+- id: lead-net
+  description: 'Electrical lead: Net'
+- id: terminal
+  description: Terminal

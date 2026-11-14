@@ -1,0 +1,64 @@
+schema_version: 1
+id: connector-2pin
+revision: 1
+name: Two-pin connector
+description: Generic two-contact connector; contacts 1 and 2 are electrically independent.
+keywords:
+- connector
+- 2pin
+- connection
+- interface
+- connections instruments
+- overnight
+- batch 02
+- two pin
+- 2 pin
+- two contact
+types:
+- connections-and-instruments
+family: connections-and-instruments
+batch: overnight-connections-and-instruments-02
+attributes:
+  function: connector-2pin
+  contact_count: 2
+recipe: connector-2pin
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: custom two-contact connector
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: pin-1
+  name: Contact 1
+  description: Contact 1
+  kind: passive
+  lead_part: lead-pin-1
+- id: pin-2
+  name: Contact 2
+  description: Contact 2
+  kind: passive
+  lead_part: lead-pin-2
+parts:
+- id: housing
+  description: Housing
+- id: lead-pin-1
+  description: 'Electrical lead: Contact 1'
+- id: contact-1
+  description: Contact 1
+- id: number-1
+  description: Number 1
+- id: lead-pin-2
+  description: 'Electrical lead: Contact 2'
+- id: contact-2
+  description: Contact 2
+- id: number-2
+  description: Number 2

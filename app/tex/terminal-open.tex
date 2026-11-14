@@ -1,0 +1,20 @@
+% Open terminal; ocirc.
+% Schematica coordinates are millimetres at Medium; pins snap outward to the 1 mm grid.
+\newcommand{\SCBatchTerminalOpen}[4]{%
+  \SCresolve{#1}{#2}{#3}
+  \def\F{#2}
+  \pgfmathsetmacro{\SCorientx}{ifthenelse(mod(#4,2)==1,-1,1)}
+  \pgfmathsetmacro{\SCorienty}{ifthenelse(#4>1,-1,1)}
+  \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+    \SCdimension{body-width}{1.6*\F}
+    \SCdimension{body-height}{1.6*\F}
+    \SCdimension{grid}{1}
+    \SCpin{net}{floor(-4*\F)}{0}
+    \begin{SCpart}{lead-net}
+    \draw ({floor(-4*\F)},{0})--({-0.8*\F},{0*\F});
+    \end{SCpart}
+    \begin{SCpart}{terminal}
+    \draw ({0*\F},{0*\F}) circle ({0.8*\F});
+    \end{SCpart}
+  \end{scope}
+}

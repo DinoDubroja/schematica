@@ -65788,6 +65788,4090 @@
         }
       ],
       "source_fingerprint": "ce23cc58625d19b64450265c1d605f185c1babd1ab522f40ef7ad2c6d65fad12"
+    },
+    {
+      "schema_version": 1,
+      "id": "ammeter",
+      "revision": 1,
+      "name": "Ammeter",
+      "description": "Current-measuring instrument with two terminals, intended for a series connection.",
+      "keywords": [
+        "ammeter",
+        "measurement",
+        "instrument",
+        "connections instruments",
+        "overnight",
+        "batch 02",
+        "current meter",
+        "current measurement"
+      ],
+      "types": [
+        "connections-and-instruments"
+      ],
+      "family": "connections-and-instruments",
+      "batch": "overnight-connections-and-instruments-02",
+      "attributes": {
+        "function": "ammeter",
+        "contact_count": 2
+      },
+      "recipe": "ammeter",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "ammeter",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "A",
+          "description": "A",
+          "kind": "passive",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "b",
+          "name": "B",
+          "description": "B",
+          "kind": "passive",
+          "lead_part": "lead-b"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-a",
+          "description": "Electrical lead: A"
+        },
+        {
+          "id": "lead-b",
+          "description": "Electrical lead: B"
+        },
+        {
+          "id": "body",
+          "description": "Body"
+        },
+        {
+          "id": "quantity",
+          "description": "Quantity"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "ammeter-small-thin",
+          "symbol_id": "ammeter",
+          "name": "Ammeter",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/ammeter-small-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 7.54995103,
+          "origin_svg": [
+            -48.627446,
+            -61.299302
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "b": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 5.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "quantity"
+          ],
+          "svg_bytes": 2682,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ammeter-small-medium",
+          "symbol_id": "ammeter",
+          "name": "Ammeter",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/ammeter-small-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 7.59995305,
+          "origin_svg": [
+            -48.556576,
+            -61.228432
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            0.0
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "b": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 5.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "quantity"
+          ],
+          "svg_bytes": 2711,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ammeter-small-thick",
+          "symbol_id": "ammeter",
+          "name": "Ammeter",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/ammeter-small-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 7.69996096,
+          "origin_svg": [
+            -48.414834,
+            -61.08669
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "b": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 5.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "quantity"
+          ],
+          "svg_bytes": 2692,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ammeter-medium-thin",
+          "symbol_id": "ammeter",
+          "name": "Ammeter",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/ammeter-medium-thin.svg",
+          "width_mm": 16.14991231,
+          "height_mm": 9.34995943,
+          "origin_svg": [
+            -45.792816,
+            -58.748109
+          ],
+          "visual_center_from_origin_mm": [
+            -8.819444422177487e-07,
+            -2.5066368733759088e-15
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.2,
+            "body-height": 7.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "quantity"
+          ],
+          "svg_bytes": 2711,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ammeter-medium-medium",
+          "symbol_id": "ammeter",
+          "name": "Ammeter",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/ammeter-medium-medium.svg",
+          "width_mm": 16.19991786,
+          "height_mm": 9.39996144,
+          "origin_svg": [
+            -45.721945,
+            -58.677238
+          ],
+          "visual_center_from_origin_mm": [
+            1.763888909501866e-07,
+            2.5066368733759088e-15
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.2,
+            "body-height": 7.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "quantity"
+          ],
+          "svg_bytes": 2740,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ammeter-medium-thick",
+          "symbol_id": "ammeter",
+          "name": "Ammeter",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/ammeter-medium-thick.svg",
+          "width_mm": 16.29992577,
+          "height_mm": 9.49996936,
+          "origin_svg": [
+            -45.580203,
+            -58.535497
+          ],
+          "visual_center_from_origin_mm": [
+            7.055555562808358e-07,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.2,
+            "body-height": 7.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "quantity"
+          ],
+          "svg_bytes": 2726,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ammeter-large-thin",
+          "symbol_id": "ammeter",
+          "name": "Ammeter",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/ammeter-large-thin.svg",
+          "width_mm": 20.14989373,
+          "height_mm": 11.14993607,
+          "origin_svg": [
+            -40.123554,
+            -56.196961
+          ],
+          "visual_center_from_origin_mm": [
+            1.7638888844354975e-07,
+            -3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -9.0,
+              0.0
+            ],
+            "b": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.99998,
+            "body-height": 8.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "quantity"
+          ],
+          "svg_bytes": 2708,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ammeter-large-medium",
+          "symbol_id": "ammeter",
+          "name": "Ammeter",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/ammeter-large-medium.svg",
+          "width_mm": 20.1998961,
+          "height_mm": 11.19993844,
+          "origin_svg": [
+            -40.052683,
+            -56.12609
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -9.0,
+              0.0
+            ],
+            "b": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.99998,
+            "body-height": 8.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "quantity"
+          ],
+          "svg_bytes": 2733,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ammeter-large-thick",
+          "symbol_id": "ammeter",
+          "name": "Ammeter",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/ammeter-large-thick.svg",
+          "width_mm": 20.29990401,
+          "height_mm": 11.29994283,
+          "origin_svg": [
+            -39.910942,
+            -55.984349
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            1.4111111125616716e-06
+          ],
+          "pins_mm": {
+            "a": [
+              -9.0,
+              0.0
+            ],
+            "b": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.99998,
+            "body-height": 8.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "quantity"
+          ],
+          "svg_bytes": 2722,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "dca1a1bbd46182476ce2778c1741e71f94a57cf9f5463c13b11fed1c5e104c9b"
+    },
+    {
+      "schema_version": 1,
+      "id": "connector-2pin",
+      "revision": 1,
+      "name": "Two-pin connector",
+      "description": "Generic two-contact connector; contacts 1 and 2 are electrically independent.",
+      "keywords": [
+        "connector",
+        "2pin",
+        "connection",
+        "interface",
+        "connections instruments",
+        "overnight",
+        "batch 02",
+        "two pin",
+        "2 pin",
+        "two contact"
+      ],
+      "types": [
+        "connections-and-instruments"
+      ],
+      "family": "connections-and-instruments",
+      "batch": "overnight-connections-and-instruments-02",
+      "attributes": {
+        "function": "connector-2pin",
+        "contact_count": 2
+      },
+      "recipe": "connector-2pin",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "custom two-contact connector",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "pin-1",
+          "name": "Contact 1",
+          "description": "Contact 1",
+          "kind": "passive",
+          "lead_part": "lead-pin-1"
+        },
+        {
+          "id": "pin-2",
+          "name": "Contact 2",
+          "description": "Contact 2",
+          "kind": "passive",
+          "lead_part": "lead-pin-2"
+        }
+      ],
+      "parts": [
+        {
+          "id": "housing",
+          "description": "Housing"
+        },
+        {
+          "id": "lead-pin-1",
+          "description": "Electrical lead: Contact 1"
+        },
+        {
+          "id": "contact-1",
+          "description": "Contact 1"
+        },
+        {
+          "id": "number-1",
+          "description": "Number 1"
+        },
+        {
+          "id": "lead-pin-2",
+          "description": "Electrical lead: Contact 2"
+        },
+        {
+          "id": "contact-2",
+          "description": "Contact 2"
+        },
+        {
+          "id": "number-2",
+          "description": "Number 2"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "connector-2pin-small-thin",
+          "symbol_id": "connector-2pin",
+          "name": "Two-pin connector",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/connector-2pin-small-thin.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 8.8999501,
+          "origin_svg": [
+            -51.462077,
+            -59.385915
+          ],
+          "visual_center_from_origin_mm": [
+            -0.9999951777777749,
+            5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "pin-1": [
+              -5.0,
+              2.0
+            ],
+            "pin-2": [
+              -5.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 6.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "housing",
+            "lead-pin-1",
+            "contact-1",
+            "number-1",
+            "lead-pin-2",
+            "contact-2",
+            "number-2"
+          ],
+          "svg_bytes": 4622,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "connector-2pin-small-medium",
+          "symbol_id": "connector-2pin",
+          "name": "Two-pin connector",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/connector-2pin-small-medium.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 8.94995599,
+          "origin_svg": [
+            -51.391206,
+            -59.315044
+          ],
+          "visual_center_from_origin_mm": [
+            -0.9999939430555558,
+            -7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "pin-1": [
+              -5.0,
+              2.0
+            ],
+            "pin-2": [
+              -5.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 6.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "housing",
+            "lead-pin-1",
+            "contact-1",
+            "number-1",
+            "lead-pin-2",
+            "contact-2",
+            "number-2"
+          ],
+          "svg_bytes": 4667,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "connector-2pin-small-thick",
+          "symbol_id": "connector-2pin",
+          "name": "Two-pin connector",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/connector-2pin-small-thick.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 9.04996038,
+          "origin_svg": [
+            -51.249465,
+            -59.173303
+          ],
+          "visual_center_from_origin_mm": [
+            -0.999995001388889,
+            5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "pin-1": [
+              -5.0,
+              2.0
+            ],
+            "pin-2": [
+              -5.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 6.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "housing",
+            "lead-pin-1",
+            "contact-1",
+            "number-1",
+            "lead-pin-2",
+            "contact-2",
+            "number-2"
+          ],
+          "svg_bytes": 4644,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "connector-2pin-medium-thin",
+          "symbol_id": "connector-2pin",
+          "name": "Two-pin connector",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/connector-2pin-medium-thin.svg",
+          "width_mm": 12.14993407,
+          "height_mm": 11.14993607,
+          "origin_svg": [
+            -48.627446,
+            -56.196961
+          ],
+          "visual_center_from_origin_mm": [
+            -0.9999955305555542,
+            -3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "pin-1": [
+              -6.0,
+              2.0
+            ],
+            "pin-2": [
+              -6.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 9.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "housing",
+            "lead-pin-1",
+            "contact-1",
+            "number-1",
+            "lead-pin-2",
+            "contact-2",
+            "number-2"
+          ],
+          "svg_bytes": 4687,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "connector-2pin-medium-medium",
+          "symbol_id": "connector-2pin",
+          "name": "Two-pin connector",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/connector-2pin-medium-medium.svg",
+          "width_mm": 12.19993997,
+          "height_mm": 11.19993844,
+          "origin_svg": [
+            -48.556576,
+            -56.12609
+          ],
+          "visual_center_from_origin_mm": [
+            -0.9999939430555558,
+            1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "pin-1": [
+              -6.0,
+              2.0
+            ],
+            "pin-2": [
+              -6.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 9.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "housing",
+            "lead-pin-1",
+            "contact-1",
+            "number-1",
+            "lead-pin-2",
+            "contact-2",
+            "number-2"
+          ],
+          "svg_bytes": 4726,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "connector-2pin-medium-thick",
+          "symbol_id": "connector-2pin",
+          "name": "Two-pin connector",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/connector-2pin-medium-thick.svg",
+          "width_mm": 12.29994436,
+          "height_mm": 11.29994283,
+          "origin_svg": [
+            -48.414834,
+            -55.984349
+          ],
+          "visual_center_from_origin_mm": [
+            -0.9999951777777774,
+            1.4111111125616716e-06
+          ],
+          "pins_mm": {
+            "pin-1": [
+              -6.0,
+              2.0
+            ],
+            "pin-2": [
+              -6.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 9.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "housing",
+            "lead-pin-1",
+            "contact-1",
+            "number-1",
+            "lead-pin-2",
+            "contact-2",
+            "number-2"
+          ],
+          "svg_bytes": 4709,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "connector-2pin-large-thin",
+          "symbol_id": "connector-2pin",
+          "name": "Two-pin connector",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/connector-2pin-large-thin.svg",
+          "width_mm": 15.14992137,
+          "height_mm": 13.39991852,
+          "origin_svg": [
+            -42.958185,
+            -53.008007
+          ],
+          "visual_center_from_origin_mm": [
+            -1.4999911791666651,
+            5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "pin-1": [
+              -8.0,
+              2.0
+            ],
+            "pin-2": [
+              -8.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 11.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "housing",
+            "lead-pin-1",
+            "contact-1",
+            "number-1",
+            "lead-pin-2",
+            "contact-2",
+            "number-2"
+          ],
+          "svg_bytes": 4591,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "connector-2pin-large-medium",
+          "symbol_id": "connector-2pin",
+          "name": "Two-pin connector",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/connector-2pin-large-medium.svg",
+          "width_mm": 15.19992339,
+          "height_mm": 13.44992442,
+          "origin_svg": [
+            -42.887314,
+            -52.937136
+          ],
+          "visual_center_from_origin_mm": [
+            -1.499991884722219,
+            -7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "pin-1": [
+              -8.0,
+              2.0
+            ],
+            "pin-2": [
+              -8.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 11.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "housing",
+            "lead-pin-1",
+            "contact-1",
+            "number-1",
+            "lead-pin-2",
+            "contact-2",
+            "number-2"
+          ],
+          "svg_bytes": 4635,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "connector-2pin-large-thick",
+          "symbol_id": "connector-2pin",
+          "name": "Two-pin connector",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/connector-2pin-large-thick.svg",
+          "width_mm": 15.29992777,
+          "height_mm": 13.5499288,
+          "origin_svg": [
+            -42.745573,
+            -52.795395
+          ],
+          "visual_center_from_origin_mm": [
+            -1.4999927666666635,
+            5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "pin-1": [
+              -8.0,
+              2.0
+            ],
+            "pin-2": [
+              -8.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 11.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "housing",
+            "lead-pin-1",
+            "contact-1",
+            "number-1",
+            "lead-pin-2",
+            "contact-2",
+            "number-2"
+          ],
+          "svg_bytes": 4613,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "5fb0fc4238a8abca33987f03cad4527f2c7bbe001a355e7cbc79e724f71a63b9"
+    },
+    {
+      "schema_version": 1,
+      "id": "connector-3pin",
+      "revision": 1,
+      "name": "Three-pin connector",
+      "description": "Generic three-contact connector; contacts 1, 2 and 3 are electrically independent.",
+      "keywords": [
+        "connector",
+        "3pin",
+        "connection",
+        "interface",
+        "connections instruments",
+        "overnight",
+        "batch 02",
+        "three pin",
+        "3 pin",
+        "three contact"
+      ],
+      "types": [
+        "connections-and-instruments"
+      ],
+      "family": "connections-and-instruments",
+      "batch": "overnight-connections-and-instruments-02",
+      "attributes": {
+        "function": "connector-3pin",
+        "contact_count": 3
+      },
+      "recipe": "connector-3pin",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "custom three-contact connector",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "pin-1",
+          "name": "Contact 1",
+          "description": "Contact 1",
+          "kind": "passive",
+          "lead_part": "lead-pin-1"
+        },
+        {
+          "id": "pin-2",
+          "name": "Contact 2",
+          "description": "Contact 2",
+          "kind": "passive",
+          "lead_part": "lead-pin-2"
+        },
+        {
+          "id": "pin-3",
+          "name": "Contact 3",
+          "description": "Contact 3",
+          "kind": "passive",
+          "lead_part": "lead-pin-3"
+        }
+      ],
+      "parts": [
+        {
+          "id": "housing",
+          "description": "Housing"
+        },
+        {
+          "id": "lead-pin-1",
+          "description": "Electrical lead: Contact 1"
+        },
+        {
+          "id": "contact-1",
+          "description": "Contact 1"
+        },
+        {
+          "id": "number-1",
+          "description": "Number 1"
+        },
+        {
+          "id": "lead-pin-2",
+          "description": "Electrical lead: Contact 2"
+        },
+        {
+          "id": "contact-2",
+          "description": "Contact 2"
+        },
+        {
+          "id": "number-2",
+          "description": "Number 2"
+        },
+        {
+          "id": "lead-pin-3",
+          "description": "Electrical lead: Contact 3"
+        },
+        {
+          "id": "contact-3",
+          "description": "Contact 3"
+        },
+        {
+          "id": "number-3",
+          "description": "Number 3"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "connector-3pin-small-thin",
+          "symbol_id": "connector-3pin",
+          "name": "Three-pin connector",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/connector-3pin-small-thin.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 11.89993034,
+          "origin_svg": [
+            -51.462077,
+            -55.133976
+          ],
+          "visual_center_from_origin_mm": [
+            -0.9999951777777749,
+            2.5066368733759088e-15
+          ],
+          "pins_mm": {
+            "pin-1": [
+              -5.0,
+              3.0
+            ],
+            "pin-2": [
+              -5.0,
+              0.0
+            ],
+            "pin-3": [
+              -5.0,
+              -3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 9.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "housing",
+            "lead-pin-1",
+            "contact-1",
+            "number-1",
+            "lead-pin-2",
+            "contact-2",
+            "number-2",
+            "lead-pin-3",
+            "contact-3",
+            "number-3"
+          ],
+          "svg_bytes": 6527,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "connector-3pin-small-medium",
+          "symbol_id": "connector-3pin",
+          "name": "Three-pin connector",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/connector-3pin-small-medium.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 11.94993236,
+          "origin_svg": [
+            -51.391206,
+            -55.063106
+          ],
+          "visual_center_from_origin_mm": [
+            -0.9999939430555558,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "pin-1": [
+              -5.0,
+              3.0
+            ],
+            "pin-2": [
+              -5.0,
+              0.0
+            ],
+            "pin-3": [
+              -5.0,
+              -3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 9.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "housing",
+            "lead-pin-1",
+            "contact-1",
+            "number-1",
+            "lead-pin-2",
+            "contact-2",
+            "number-2",
+            "lead-pin-3",
+            "contact-3",
+            "number-3"
+          ],
+          "svg_bytes": 6588,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "connector-3pin-small-thick",
+          "symbol_id": "connector-3pin",
+          "name": "Three-pin connector",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/connector-3pin-small-thick.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 12.04994027,
+          "origin_svg": [
+            -51.249465,
+            -54.921364
+          ],
+          "visual_center_from_origin_mm": [
+            -0.999995001388889,
+            -5.29166670343923e-07
+          ],
+          "pins_mm": {
+            "pin-1": [
+              -5.0,
+              3.0
+            ],
+            "pin-2": [
+              -5.0,
+              0.0
+            ],
+            "pin-3": [
+              -5.0,
+              -3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 9.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "housing",
+            "lead-pin-1",
+            "contact-1",
+            "number-1",
+            "lead-pin-2",
+            "contact-2",
+            "number-2",
+            "lead-pin-3",
+            "contact-3",
+            "number-3"
+          ],
+          "svg_bytes": 6557,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "connector-3pin-medium-thin",
+          "symbol_id": "connector-3pin",
+          "name": "Three-pin connector",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/connector-3pin-medium-thin.svg",
+          "width_mm": 12.14993407,
+          "height_mm": 15.14991431,
+          "origin_svg": [
+            -48.627446,
+            -50.527699
+          ],
+          "visual_center_from_origin_mm": [
+            -0.9999955305555542,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "pin-1": [
+              -6.0,
+              4.0
+            ],
+            "pin-2": [
+              -6.0,
+              0.0
+            ],
+            "pin-3": [
+              -6.0,
+              -4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 13.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "housing",
+            "lead-pin-1",
+            "contact-1",
+            "number-1",
+            "lead-pin-2",
+            "contact-2",
+            "number-2",
+            "lead-pin-3",
+            "contact-3",
+            "number-3"
+          ],
+          "svg_bytes": 6625,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "connector-3pin-medium-medium",
+          "symbol_id": "connector-3pin",
+          "name": "Three-pin connector",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/connector-3pin-medium-medium.svg",
+          "width_mm": 12.19993997,
+          "height_mm": 15.19991633,
+          "origin_svg": [
+            -48.556576,
+            -50.456829
+          ],
+          "visual_center_from_origin_mm": [
+            -0.9999939430555558,
+            5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "pin-1": [
+              -6.0,
+              4.0
+            ],
+            "pin-2": [
+              -6.0,
+              0.0
+            ],
+            "pin-3": [
+              -6.0,
+              -4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 13.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "housing",
+            "lead-pin-1",
+            "contact-1",
+            "number-1",
+            "lead-pin-2",
+            "contact-2",
+            "number-2",
+            "lead-pin-3",
+            "contact-3",
+            "number-3"
+          ],
+          "svg_bytes": 6686,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "connector-3pin-medium-thick",
+          "symbol_id": "connector-3pin",
+          "name": "Three-pin connector",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/connector-3pin-medium-thick.svg",
+          "width_mm": 12.29994436,
+          "height_mm": 15.29992424,
+          "origin_svg": [
+            -48.414834,
+            -50.315087
+          ],
+          "visual_center_from_origin_mm": [
+            -0.9999951777777774,
+            -3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "pin-1": [
+              -6.0,
+              4.0
+            ],
+            "pin-2": [
+              -6.0,
+              0.0
+            ],
+            "pin-3": [
+              -6.0,
+              -4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 13.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "housing",
+            "lead-pin-1",
+            "contact-1",
+            "number-1",
+            "lead-pin-2",
+            "contact-2",
+            "number-2",
+            "lead-pin-3",
+            "contact-3",
+            "number-3"
+          ],
+          "svg_bytes": 6654,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "connector-3pin-large-thin",
+          "symbol_id": "connector-3pin",
+          "name": "Three-pin connector",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/connector-3pin-large-thin.svg",
+          "width_mm": 15.14992137,
+          "height_mm": 18.39989829,
+          "origin_svg": [
+            -42.958185,
+            -45.921423
+          ],
+          "visual_center_from_origin_mm": [
+            -1.4999911791666651,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "pin-1": [
+              -8.0,
+              5.0
+            ],
+            "pin-2": [
+              -8.0,
+              0.0
+            ],
+            "pin-3": [
+              -8.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 16.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "housing",
+            "lead-pin-1",
+            "contact-1",
+            "number-1",
+            "lead-pin-2",
+            "contact-2",
+            "number-2",
+            "lead-pin-3",
+            "contact-3",
+            "number-3"
+          ],
+          "svg_bytes": 6488,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "connector-3pin-large-medium",
+          "symbol_id": "connector-3pin",
+          "name": "Three-pin connector",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/connector-3pin-large-medium.svg",
+          "width_mm": 15.19992339,
+          "height_mm": 18.44990031,
+          "origin_svg": [
+            -42.887314,
+            -45.850552
+          ],
+          "visual_center_from_origin_mm": [
+            -1.499991884722219,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "pin-1": [
+              -8.0,
+              5.0
+            ],
+            "pin-2": [
+              -8.0,
+              0.0
+            ],
+            "pin-3": [
+              -8.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 16.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "housing",
+            "lead-pin-1",
+            "contact-1",
+            "number-1",
+            "lead-pin-2",
+            "contact-2",
+            "number-2",
+            "lead-pin-3",
+            "contact-3",
+            "number-3"
+          ],
+          "svg_bytes": 6548,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "connector-3pin-large-thick",
+          "symbol_id": "connector-3pin",
+          "name": "Three-pin connector",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/connector-3pin-large-thick.svg",
+          "width_mm": 15.29992777,
+          "height_mm": 18.54990822,
+          "origin_svg": [
+            -42.745573,
+            -45.70881
+          ],
+          "visual_center_from_origin_mm": [
+            -1.4999927666666635,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "pin-1": [
+              -8.0,
+              5.0
+            ],
+            "pin-2": [
+              -8.0,
+              0.0
+            ],
+            "pin-3": [
+              -8.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 16.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "housing",
+            "lead-pin-1",
+            "contact-1",
+            "number-1",
+            "lead-pin-2",
+            "contact-2",
+            "number-2",
+            "lead-pin-3",
+            "contact-3",
+            "number-3"
+          ],
+          "svg_bytes": 6510,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "584159d706d34e32e825f7c1ed5ed542ec5c4c4aa9c9eb580e3a40d46e6a5294"
+    },
+    {
+      "schema_version": 1,
+      "id": "connector-coaxial",
+      "revision": 1,
+      "name": "Coaxial connector",
+      "description": "Coaxial connector with independent center conductor and shield terminals. The open shield arc leaves the center lead electrically separate.",
+      "keywords": [
+        "connector",
+        "coaxial",
+        "connection",
+        "interface",
+        "connections instruments",
+        "overnight",
+        "batch 02",
+        "coax",
+        "RF",
+        "shield",
+        "center conductor"
+      ],
+      "types": [
+        "connections-and-instruments"
+      ],
+      "family": "connections-and-instruments",
+      "batch": "overnight-connections-and-instruments-02",
+      "attributes": {
+        "function": "connector-coaxial",
+        "contact_count": 2
+      },
+      "recipe": "connector-coaxial",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "coaxport concept; separate shield and center",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "center",
+          "name": "Center conductor",
+          "description": "Center conductor",
+          "kind": "passive",
+          "lead_part": "lead-center"
+        },
+        {
+          "id": "shield",
+          "name": "Shield",
+          "description": "Shield",
+          "kind": "passive",
+          "lead_part": "lead-shield"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-center",
+          "description": "Electrical lead: Center conductor"
+        },
+        {
+          "id": "lead-shield",
+          "description": "Electrical lead: Shield"
+        },
+        {
+          "id": "center-contact",
+          "description": "Center contact"
+        },
+        {
+          "id": "shield-contact",
+          "description": "Shield contact"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "connector-coaxial-small-thin",
+          "symbol_id": "connector-coaxial",
+          "name": "Coaxial connector",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/connector-coaxial-small-thin.svg",
+          "width_mm": 9.03450307,
+          "height_mm": 8.03451565,
+          "origin_svg": [
+            -51.462077,
+            -63.610764
+          ],
+          "visual_center_from_origin_mm": [
+            -1.5577162069444421,
+            1.0577154430555564
+          ],
+          "pins_mm": {
+            "center": [
+              -5.0,
+              0.0
+            ],
+            "shield": [
+              0.0,
+              -4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.29999,
+            "body-height": 3.29999,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-center",
+            "lead-shield",
+            "center-contact",
+            "shield-contact"
+          ],
+          "svg_bytes": 2611,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "connector-coaxial-small-medium",
+          "symbol_id": "connector-coaxial",
+          "name": "Coaxial connector",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/connector-coaxial-small-medium.svg",
+          "width_mm": 9.08450897,
+          "height_mm": 8.08451767,
+          "origin_svg": [
+            -51.391206,
+            -63.539893
+          ],
+          "visual_center_from_origin_mm": [
+            -1.557714972222223,
+            1.0577157958333308
+          ],
+          "pins_mm": {
+            "center": [
+              -5.0,
+              0.0
+            ],
+            "shield": [
+              0.0,
+              -4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.29999,
+            "body-height": 3.29999,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-center",
+            "lead-shield",
+            "center-contact",
+            "shield-contact"
+          ],
+          "svg_bytes": 2636,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "connector-coaxial-small-thick",
+          "symbol_id": "connector-coaxial",
+          "name": "Coaxial connector",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/connector-coaxial-small-thick.svg",
+          "width_mm": 9.18451653,
+          "height_mm": 8.18452558,
+          "origin_svg": [
+            -51.249465,
+            -63.398152
+          ],
+          "visual_center_from_origin_mm": [
+            -1.5577142666666641,
+            1.0577152666666705
+          ],
+          "pins_mm": {
+            "center": [
+              -5.0,
+              0.0
+            ],
+            "shield": [
+              0.0,
+              -4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.29999,
+            "body-height": 3.29999,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-center",
+            "lead-shield",
+            "center-contact",
+            "shield-contact"
+          ],
+          "svg_bytes": 2621,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "connector-coaxial-medium-thin",
+          "symbol_id": "connector-coaxial",
+          "name": "Coaxial connector",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/connector-coaxial-medium-thin.svg",
+          "width_mm": 10.66270057,
+          "height_mm": 9.66270927,
+          "origin_svg": [
+            -48.627446,
+            -61.830042
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7436122805555558,
+            1.2436131041666663
+          ],
+          "pins_mm": {
+            "center": [
+              -6.0,
+              0.0
+            ],
+            "shield": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.4,
+            "body-height": 4.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-center",
+            "lead-shield",
+            "center-contact",
+            "shield-contact"
+          ],
+          "svg_bytes": 2581,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "connector-coaxial-medium-medium",
+          "symbol_id": "connector-coaxial",
+          "name": "Coaxial connector",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/connector-coaxial-medium-medium.svg",
+          "width_mm": 10.71270259,
+          "height_mm": 9.71271517,
+          "origin_svg": [
+            -48.556576,
+            -61.759172
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7436126333333328,
+            1.243612222222224
+          ],
+          "pins_mm": {
+            "center": [
+              -6.0,
+              0.0
+            ],
+            "shield": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.4,
+            "body-height": 4.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-center",
+            "lead-shield",
+            "center-contact",
+            "shield-contact"
+          ],
+          "svg_bytes": 2606,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "connector-coaxial-medium-thick",
+          "symbol_id": "connector-coaxial",
+          "name": "Coaxial connector",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/connector-coaxial-medium-thick.svg",
+          "width_mm": 10.81270697,
+          "height_mm": 9.81271956,
+          "origin_svg": [
+            -48.414834,
+            -61.61743
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7436138680555544,
+            1.2436127513888868
+          ],
+          "pins_mm": {
+            "center": [
+              -6.0,
+              0.0
+            ],
+            "shield": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.4,
+            "body-height": 4.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-center",
+            "lead-shield",
+            "center-contact",
+            "shield-contact"
+          ],
+          "svg_bytes": 2590,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "connector-coaxial-large-thin",
+          "symbol_id": "connector-coaxial",
+          "name": "Coaxial connector",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/connector-coaxial-large-thin.svg",
+          "width_mm": 13.29086044,
+          "height_mm": 12.29087656,
+          "origin_svg": [
+            -42.958185,
+            -60.049381
+          ],
+          "visual_center_from_origin_mm": [
+            -2.429521641666665,
+            1.9295187611111129
+          ],
+          "pins_mm": {
+            "center": [
+              -8.0,
+              0.0
+            ],
+            "shield": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.49998,
+            "body-height": 5.49998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-center",
+            "lead-shield",
+            "center-contact",
+            "shield-contact"
+          ],
+          "svg_bytes": 2620,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "connector-coaxial-large-medium",
+          "symbol_id": "connector-coaxial",
+          "name": "Coaxial connector",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/connector-coaxial-large-medium.svg",
+          "width_mm": 13.34086281,
+          "height_mm": 12.34087892,
+          "origin_svg": [
+            -42.887314,
+            -59.978511
+          ],
+          "visual_center_from_origin_mm": [
+            -2.42952217083333,
+            1.9295196430555552
+          ],
+          "pins_mm": {
+            "center": [
+              -8.0,
+              0.0
+            ],
+            "shield": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.49998,
+            "body-height": 5.49998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-center",
+            "lead-shield",
+            "center-contact",
+            "shield-contact"
+          ],
+          "svg_bytes": 2647,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "connector-coaxial-large-thick",
+          "symbol_id": "connector-coaxial",
+          "name": "Coaxial connector",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/connector-coaxial-large-thick.svg",
+          "width_mm": 13.44087073,
+          "height_mm": 12.44088684,
+          "origin_svg": [
+            -42.745573,
+            -59.836769
+          ],
+          "visual_center_from_origin_mm": [
+            -2.429521288888888,
+            1.929518761111108
+          ],
+          "pins_mm": {
+            "center": [
+              -8.0,
+              0.0
+            ],
+            "shield": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.49998,
+            "body-height": 5.49998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-center",
+            "lead-shield",
+            "center-contact",
+            "shield-contact"
+          ],
+          "svg_bytes": 2633,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "468abcf2233d20c34c5d132b8d9532b532b3af4d574c4204611f70b293714a5d"
+    },
+    {
+      "schema_version": 1,
+      "id": "terminal-filled",
+      "revision": 1,
+      "name": "Filled terminal",
+      "description": "Filled connection terminal with one electrical pin; use a schematic label to identify the node.",
+      "keywords": [
+        "terminal",
+        "filled",
+        "connection",
+        "interface",
+        "connections instruments",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "connections-and-instruments"
+      ],
+      "family": "connections-and-instruments",
+      "batch": "overnight-connections-and-instruments-02",
+      "attributes": {
+        "function": "terminal-filled",
+        "contact_count": 1
+      },
+      "recipe": "terminal-filled",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "circ",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "net",
+          "name": "Net",
+          "description": "Net",
+          "kind": "passive",
+          "lead_part": "lead-net"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-net",
+          "description": "Electrical lead: Net"
+        },
+        {
+          "id": "terminal",
+          "description": "Terminal"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "terminal-filled-small-thin",
+          "symbol_id": "terminal-filled",
+          "name": "Filled terminal",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/terminal-filled-small-thin.svg",
+          "width_mm": 5.4124673,
+          "height_mm": 2.67497842,
+          "origin_svg": [
+            -57.131339,
+            -68.20871
+          ],
+          "visual_center_from_origin_mm": [
+            -1.3687444402777775,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "net": [
+              -3.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 0.67499,
+            "body-height": 0.67499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "terminal"
+          ],
+          "svg_bytes": 1726,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "terminal-filled-small-medium",
+          "symbol_id": "terminal-filled",
+          "name": "Filled terminal",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/terminal-filled-small-medium.svg",
+          "width_mm": 5.43747007,
+          "height_mm": 2.67497842,
+          "origin_svg": [
+            -57.060468,
+            -68.20871
+          ],
+          "visual_center_from_origin_mm": [
+            -1.3812447680555535,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "net": [
+              -3.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 0.67499,
+            "body-height": 0.67499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "terminal"
+          ],
+          "svg_bytes": 1743,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "terminal-filled-small-thick",
+          "symbol_id": "terminal-filled",
+          "name": "Filled terminal",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/terminal-filled-small-thick.svg",
+          "width_mm": 5.48747244,
+          "height_mm": 2.67497842,
+          "origin_svg": [
+            -56.918726,
+            -68.20871
+          ],
+          "visual_center_from_origin_mm": [
+            -1.4062470111111092,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "net": [
+              -3.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 0.67499,
+            "body-height": 0.67499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "terminal"
+          ],
+          "svg_bytes": 1733,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "terminal-filled-medium-thin",
+          "symbol_id": "terminal-filled",
+          "name": "Filled terminal",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/terminal-filled-medium-thin.svg",
+          "width_mm": 6.52496402,
+          "height_mm": 2.89998326,
+          "origin_svg": [
+            -54.296708,
+            -67.889807
+          ],
+          "visual_center_from_origin_mm": [
+            -1.8124909069444435,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "net": [
+              -4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 0.9,
+            "body-height": 0.9,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "terminal"
+          ],
+          "svg_bytes": 1738,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "terminal-filled-medium-medium",
+          "symbol_id": "terminal-filled",
+          "name": "Filled terminal",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/terminal-filled-medium-medium.svg",
+          "width_mm": 6.54996362,
+          "height_mm": 2.89998326,
+          "origin_svg": [
+            -54.225837,
+            -67.889807
+          ],
+          "visual_center_from_origin_mm": [
+            -1.824992822222223,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "net": [
+              -4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 0.9,
+            "body-height": 0.9,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "terminal"
+          ],
+          "svg_bytes": 1755,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "terminal-filled-medium-thick",
+          "symbol_id": "terminal-filled",
+          "name": "Filled terminal",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/terminal-filled-medium-thick.svg",
+          "width_mm": 6.59996916,
+          "height_mm": 2.89998326,
+          "origin_svg": [
+            -54.084096,
+            -67.889807
+          ],
+          "visual_center_from_origin_mm": [
+            -1.8499931249999981,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "net": [
+              -4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 0.9,
+            "body-height": 0.9,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "terminal"
+          ],
+          "svg_bytes": 1746,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "terminal-filled-large-thin",
+          "symbol_id": "terminal-filled",
+          "name": "Filled terminal",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/terminal-filled-large-thin.svg",
+          "width_mm": 7.63744345,
+          "height_mm": 3.12495247,
+          "origin_svg": [
+            -51.462077,
+            -67.57095
+          ],
+          "visual_center_from_origin_mm": [
+            -2.2562460166666654,
+            8.819444472310225e-07
+          ],
+          "pins_mm": {
+            "net": [
+              -5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.12498,
+            "body-height": 1.12498,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "terminal"
+          ],
+          "svg_bytes": 1726,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "terminal-filled-large-medium",
+          "symbol_id": "terminal-filled",
+          "name": "Filled terminal",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/terminal-filled-large-medium.svg",
+          "width_mm": 7.66244622,
+          "height_mm": 3.12495247,
+          "origin_svg": [
+            -51.391206,
+            -67.57095
+          ],
+          "visual_center_from_origin_mm": [
+            -2.2687463444444442,
+            8.819444472310225e-07
+          ],
+          "pins_mm": {
+            "net": [
+              -5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.12498,
+            "body-height": 1.12498,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "terminal"
+          ],
+          "svg_bytes": 1742,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "terminal-filled-large-thick",
+          "symbol_id": "terminal-filled",
+          "name": "Filled terminal",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/terminal-filled-large-thick.svg",
+          "width_mm": 7.71245177,
+          "height_mm": 3.12495247,
+          "origin_svg": [
+            -51.249465,
+            -67.57095
+          ],
+          "visual_center_from_origin_mm": [
+            -2.2937466472222217,
+            8.819444472310225e-07
+          ],
+          "pins_mm": {
+            "net": [
+              -5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.12498,
+            "body-height": 1.12498,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "terminal"
+          ],
+          "svg_bytes": 1734,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "0831e9bc7f5fadf21694be26600f914ac2311aa33212ac3bc4fb21a1fbbd7ee6"
+    },
+    {
+      "schema_version": 1,
+      "id": "terminal-open",
+      "revision": 1,
+      "name": "Open terminal",
+      "description": "Open-circle connection terminal with one electrical pin.",
+      "keywords": [
+        "terminal",
+        "open",
+        "connection",
+        "interface",
+        "connections instruments",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "connections-and-instruments"
+      ],
+      "family": "connections-and-instruments",
+      "batch": "overnight-connections-and-instruments-02",
+      "attributes": {
+        "function": "terminal-open",
+        "contact_count": 1
+      },
+      "recipe": "terminal-open",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "ocirc",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "net",
+          "name": "Net",
+          "description": "Net",
+          "kind": "passive",
+          "lead_part": "lead-net"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-net",
+          "description": "Electrical lead: Net"
+        },
+        {
+          "id": "terminal",
+          "description": "Terminal"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "terminal-open-small-thin",
+          "symbol_id": "terminal-open",
+          "name": "Open terminal",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/terminal-open-small-thin.svg",
+          "width_mm": 5.74995675,
+          "height_mm": 3.34995696,
+          "origin_svg": [
+            -57.131339,
+            -67.252047
+          ],
+          "visual_center_from_origin_mm": [
+            -1.1999997166666654,
+            5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "net": [
+              -3.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.2,
+            "body-height": 1.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "terminal"
+          ],
+          "svg_bytes": 1675,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "terminal-open-small-medium",
+          "symbol_id": "terminal-open",
+          "name": "Open terminal",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/terminal-open-small-medium.svg",
+          "width_mm": 5.79996229,
+          "height_mm": 3.39996286,
+          "origin_svg": [
+            -57.060468,
+            -67.181176
+          ],
+          "visual_center_from_origin_mm": [
+            -1.1999986583333322,
+            -7.055555587874727e-07
+          ],
+          "pins_mm": {
+            "net": [
+              -3.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.2,
+            "body-height": 1.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "terminal"
+          ],
+          "svg_bytes": 1692,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "terminal-open-small-thick",
+          "symbol_id": "terminal-open",
+          "name": "Open terminal",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/terminal-open-small-thick.svg",
+          "width_mm": 5.89996668,
+          "height_mm": 3.49996725,
+          "origin_svg": [
+            -56.918726,
+            -67.039435
+          ],
+          "visual_center_from_origin_mm": [
+            -1.1999998930555538,
+            5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "net": [
+              -3.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.2,
+            "body-height": 1.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "terminal"
+          ],
+          "svg_bytes": 1684,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "terminal-open-medium-thin",
+          "symbol_id": "terminal-open",
+          "name": "Open terminal",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/terminal-open-medium-thin.svg",
+          "width_mm": 6.94996352,
+          "height_mm": 3.74998509,
+          "origin_svg": [
+            -54.296708,
+            -66.685081
+          ],
+          "visual_center_from_origin_mm": [
+            -1.5999911555555544,
+            -5.29166670343923e-07
+          ],
+          "pins_mm": {
+            "net": [
+              -4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.6,
+            "body-height": 1.6,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "terminal"
+          ],
+          "svg_bytes": 1691,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "terminal-open-medium-medium",
+          "symbol_id": "terminal-open",
+          "name": "Open terminal",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/terminal-open-medium-medium.svg",
+          "width_mm": 6.99996907,
+          "height_mm": 3.79998746,
+          "origin_svg": [
+            -54.225837,
+            -66.61421
+          ],
+          "visual_center_from_origin_mm": [
+            -1.5999900972222212,
+            0.0
+          ],
+          "pins_mm": {
+            "net": [
+              -4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.6,
+            "body-height": 1.6,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "terminal"
+          ],
+          "svg_bytes": 1706,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "terminal-open-medium-thick",
+          "symbol_id": "terminal-open",
+          "name": "Open terminal",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/terminal-open-medium-thick.svg",
+          "width_mm": 7.09997345,
+          "height_mm": 3.89999185,
+          "origin_svg": [
+            -54.084096,
+            -66.472469
+          ],
+          "visual_center_from_origin_mm": [
+            -1.5999909791666633,
+            1.2347222241181219e-06
+          ],
+          "pins_mm": {
+            "net": [
+              -4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.6,
+            "body-height": 1.6,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "terminal"
+          ],
+          "svg_bytes": 1699,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "terminal-open-large-thin",
+          "symbol_id": "terminal-open",
+          "name": "Open terminal",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/terminal-open-large-thin.svg",
+          "width_mm": 8.14995618,
+          "height_mm": 4.14997794,
+          "origin_svg": [
+            -51.462077,
+            -66.118161
+          ],
+          "visual_center_from_origin_mm": [
+            -1.9999896499999985,
+            -1.763888934568235e-07
+          ],
+          "pins_mm": {
+            "net": [
+              -5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "terminal"
+          ],
+          "svg_bytes": 1681,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "terminal-open-large-medium",
+          "symbol_id": "terminal-open",
+          "name": "Open terminal",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/terminal-open-large-medium.svg",
+          "width_mm": 8.19996173,
+          "height_mm": 4.19998031,
+          "origin_svg": [
+            -51.391206,
+            -66.04729
+          ],
+          "visual_center_from_origin_mm": [
+            -1.9999885916666653,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "net": [
+              -5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "terminal"
+          ],
+          "svg_bytes": 1697,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "terminal-open-large-thick",
+          "symbol_id": "terminal-open",
+          "name": "Open terminal",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/terminal-open-large-thick.svg",
+          "width_mm": 8.29996611,
+          "height_mm": 4.29998822,
+          "origin_svg": [
+            -51.249465,
+            -65.905549
+          ],
+          "visual_center_from_origin_mm": [
+            -1.9999894736111101,
+            -1.763888934568235e-07
+          ],
+          "pins_mm": {
+            "net": [
+              -5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "terminal"
+          ],
+          "svg_bytes": 1690,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "7ce5b1c560922f71314a2514b161ef59618742b1694ae9e127ded2a899f7e716"
+    },
+    {
+      "schema_version": 1,
+      "id": "test-point",
+      "revision": 1,
+      "name": "Test point",
+      "description": "Accessible measurement point marked TP; one electrical pin connects it to the measured net.",
+      "keywords": [
+        "test",
+        "point",
+        "measurement",
+        "instrument",
+        "connections instruments",
+        "overnight",
+        "batch 02",
+        "probe",
+        "TP"
+      ],
+      "types": [
+        "connections-and-instruments"
+      ],
+      "family": "connections-and-instruments",
+      "batch": "overnight-connections-and-instruments-02",
+      "attributes": {
+        "function": "test-point",
+        "contact_count": 1
+      },
+      "recipe": "test-point",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "custom labelled test-point marker",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "net",
+          "name": "Measured net",
+          "description": "Measured net",
+          "kind": "passive",
+          "lead_part": "lead-net"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-net",
+          "description": "Electrical lead: Measured net"
+        },
+        {
+          "id": "probe-contact",
+          "description": "Probe contact"
+        },
+        {
+          "id": "test-label",
+          "description": "Test label"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "test-point-small-thin",
+          "symbol_id": "test-point",
+          "name": "Test point",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/test-point-small-thin.svg",
+          "width_mm": 4.90772309,
+          "height_mm": 8.47464862,
+          "origin_svg": [
+            -63.018928,
+            -62.363138
+          ],
+          "visual_center_from_origin_mm": [
+            0.45589401666666746,
+            0.8376486083333359
+          ],
+          "pins_mm": {
+            "net": [
+              0.0,
+              -4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 3.15,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "probe-contact",
+            "test-label"
+          ],
+          "svg_bytes": 3060,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "test-point-small-medium",
+          "symbol_id": "test-point",
+          "name": "Test point",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/test-point-small-medium.svg",
+          "width_mm": 4.90772309,
+          "height_mm": 8.49965174,
+          "origin_svg": [
+            -63.018928,
+            -62.363138
+          ],
+          "visual_center_from_origin_mm": [
+            0.45589401666666746,
+            0.8501487597222235
+          ],
+          "pins_mm": {
+            "net": [
+              0.0,
+              -4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 3.15,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "probe-contact",
+            "test-label"
+          ],
+          "svg_bytes": 3089,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "test-point-small-thick",
+          "symbol_id": "test-point",
+          "name": "Test point",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/test-point-small-thick.svg",
+          "width_mm": 4.90772309,
+          "height_mm": 8.54965376,
+          "origin_svg": [
+            -63.018928,
+            -62.363138
+          ],
+          "visual_center_from_origin_mm": [
+            0.45589401666666746,
+            0.8751508263888881
+          ],
+          "pins_mm": {
+            "net": [
+              0.0,
+              -4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 3.15,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "probe-contact",
+            "test-label"
+          ],
+          "svg_bytes": 3074,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "test-point-medium-thin",
+          "symbol_id": "test-point",
+          "name": "Test point",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/test-point-medium-thin.svg",
+          "width_mm": 5.87699944,
+          "height_mm": 10.27454836,
+          "origin_svg": [
+            -62.075931,
+            -60.095701
+          ],
+          "visual_center_from_origin_mm": [
+            0.6078638041666665,
+            0.937693563888891
+          ],
+          "pins_mm": {
+            "net": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 4.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "probe-contact",
+            "test-label"
+          ],
+          "svg_bytes": 3081,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "test-point-medium-medium",
+          "symbol_id": "test-point",
+          "name": "Test point",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/test-point-medium-medium.svg",
+          "width_mm": 5.87699944,
+          "height_mm": 10.2995476,
+          "origin_svg": [
+            -62.075931,
+            -60.095701
+          ],
+          "visual_center_from_origin_mm": [
+            0.6078638041666665,
+            0.9501956555555565
+          ],
+          "pins_mm": {
+            "net": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 4.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "probe-contact",
+            "test-label"
+          ],
+          "svg_bytes": 3110,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "test-point-medium-thick",
+          "symbol_id": "test-point",
+          "name": "Test point",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/test-point-medium-thick.svg",
+          "width_mm": 5.87699944,
+          "height_mm": 10.34954962,
+          "origin_svg": [
+            -62.075931,
+            -60.095701
+          ],
+          "visual_center_from_origin_mm": [
+            0.6078638041666665,
+            0.9751977222222237
+          ],
+          "pins_mm": {
+            "net": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 4.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "probe-contact",
+            "test-label"
+          ],
+          "svg_bytes": 3095,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "test-point-large-thin",
+          "symbol_id": "test-point",
+          "name": "Test point",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/test-point-large-thin.svg",
+          "width_mm": 6.84622251,
+          "height_mm": 13.0744281,
+          "origin_svg": [
+            -61.13298,
+            -57.828295
+          ],
+          "visual_center_from_origin_mm": [
+            0.7598231847222249,
+            1.5377433402777785
+          ],
+          "pins_mm": {
+            "net": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 5.24998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "probe-contact",
+            "test-label"
+          ],
+          "svg_bytes": 3070,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "test-point-large-medium",
+          "symbol_id": "test-point",
+          "name": "Test point",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/test-point-large-medium.svg",
+          "width_mm": 6.84622251,
+          "height_mm": 13.09942735,
+          "origin_svg": [
+            -61.13298,
+            -57.828295
+          ],
+          "visual_center_from_origin_mm": [
+            0.7598231847222249,
+            1.550245079166667
+          ],
+          "pins_mm": {
+            "net": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 5.24998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "probe-contact",
+            "test-label"
+          ],
+          "svg_bytes": 3099,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "test-point-large-thick",
+          "symbol_id": "test-point",
+          "name": "Test point",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/test-point-large-thick.svg",
+          "width_mm": 6.84622251,
+          "height_mm": 13.14942972,
+          "origin_svg": [
+            -61.13298,
+            -57.828295
+          ],
+          "visual_center_from_origin_mm": [
+            0.7598231847222249,
+            1.5752473222222252
+          ],
+          "pins_mm": {
+            "net": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 5.24998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "probe-contact",
+            "test-label"
+          ],
+          "svg_bytes": 3084,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "e08e4ad564bff9dfe60680f321454ca28120ffba0aad364de39b5000c0abda9e"
+    },
+    {
+      "schema_version": 1,
+      "id": "voltmeter",
+      "revision": 1,
+      "name": "Voltmeter",
+      "description": "Voltage-measuring instrument with two terminals, intended for a parallel connection.",
+      "keywords": [
+        "voltmeter",
+        "measurement",
+        "instrument",
+        "connections instruments",
+        "overnight",
+        "batch 02",
+        "voltage meter",
+        "voltage measurement"
+      ],
+      "types": [
+        "connections-and-instruments"
+      ],
+      "family": "connections-and-instruments",
+      "batch": "overnight-connections-and-instruments-02",
+      "attributes": {
+        "function": "voltmeter",
+        "contact_count": 2
+      },
+      "recipe": "voltmeter",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "voltmeter",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "A",
+          "description": "A",
+          "kind": "passive",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "b",
+          "name": "B",
+          "description": "B",
+          "kind": "passive",
+          "lead_part": "lead-b"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-a",
+          "description": "Electrical lead: A"
+        },
+        {
+          "id": "lead-b",
+          "description": "Electrical lead: B"
+        },
+        {
+          "id": "body",
+          "description": "Body"
+        },
+        {
+          "id": "quantity",
+          "description": "Quantity"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "voltmeter-small-thin",
+          "symbol_id": "voltmeter",
+          "name": "Voltmeter",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/voltmeter-small-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 7.54995103,
+          "origin_svg": [
+            -48.627446,
+            -61.299302
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "b": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 5.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "quantity"
+          ],
+          "svg_bytes": 2625,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "voltmeter-small-medium",
+          "symbol_id": "voltmeter",
+          "name": "Voltmeter",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/voltmeter-small-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 7.59995305,
+          "origin_svg": [
+            -48.556576,
+            -61.228432
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            0.0
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "b": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 5.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "quantity"
+          ],
+          "svg_bytes": 2654,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "voltmeter-small-thick",
+          "symbol_id": "voltmeter",
+          "name": "Voltmeter",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/voltmeter-small-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 7.69996096,
+          "origin_svg": [
+            -48.414834,
+            -61.08669
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "b": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 5.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "quantity"
+          ],
+          "svg_bytes": 2635,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "voltmeter-medium-thin",
+          "symbol_id": "voltmeter",
+          "name": "Voltmeter",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/voltmeter-medium-thin.svg",
+          "width_mm": 16.14991231,
+          "height_mm": 9.34995943,
+          "origin_svg": [
+            -45.792816,
+            -58.748109
+          ],
+          "visual_center_from_origin_mm": [
+            -8.819444422177487e-07,
+            -2.5066368733759088e-15
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.2,
+            "body-height": 7.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "quantity"
+          ],
+          "svg_bytes": 2655,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "voltmeter-medium-medium",
+          "symbol_id": "voltmeter",
+          "name": "Voltmeter",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/voltmeter-medium-medium.svg",
+          "width_mm": 16.19991786,
+          "height_mm": 9.39996144,
+          "origin_svg": [
+            -45.721945,
+            -58.677238
+          ],
+          "visual_center_from_origin_mm": [
+            1.763888909501866e-07,
+            2.5066368733759088e-15
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.2,
+            "body-height": 7.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "quantity"
+          ],
+          "svg_bytes": 2684,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "voltmeter-medium-thick",
+          "symbol_id": "voltmeter",
+          "name": "Voltmeter",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/voltmeter-medium-thick.svg",
+          "width_mm": 16.29992577,
+          "height_mm": 9.49996936,
+          "origin_svg": [
+            -45.580203,
+            -58.535497
+          ],
+          "visual_center_from_origin_mm": [
+            7.055555562808358e-07,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.2,
+            "body-height": 7.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "quantity"
+          ],
+          "svg_bytes": 2670,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "voltmeter-large-thin",
+          "symbol_id": "voltmeter",
+          "name": "Voltmeter",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/voltmeter-large-thin.svg",
+          "width_mm": 20.14989373,
+          "height_mm": 11.14993607,
+          "origin_svg": [
+            -40.123554,
+            -56.196961
+          ],
+          "visual_center_from_origin_mm": [
+            1.7638888844354975e-07,
+            -3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -9.0,
+              0.0
+            ],
+            "b": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.99998,
+            "body-height": 8.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "quantity"
+          ],
+          "svg_bytes": 2653,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "voltmeter-large-medium",
+          "symbol_id": "voltmeter",
+          "name": "Voltmeter",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/voltmeter-large-medium.svg",
+          "width_mm": 20.1998961,
+          "height_mm": 11.19993844,
+          "origin_svg": [
+            -40.052683,
+            -56.12609
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -9.0,
+              0.0
+            ],
+            "b": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.99998,
+            "body-height": 8.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "quantity"
+          ],
+          "svg_bytes": 2678,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "voltmeter-large-thick",
+          "symbol_id": "voltmeter",
+          "name": "Voltmeter",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/voltmeter-large-thick.svg",
+          "width_mm": 20.29990401,
+          "height_mm": 11.29994283,
+          "origin_svg": [
+            -39.910942,
+            -55.984349
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            1.4111111125616716e-06
+          ],
+          "pins_mm": {
+            "a": [
+              -9.0,
+              0.0
+            ],
+            "b": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.99998,
+            "body-height": 8.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "quantity"
+          ],
+          "svg_bytes": 2667,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "638015c6cb4daa4b7c47daafceeeba24b889b1ef6232f3e5dec1d3ad2a0967c2"
     }
   ]
 }

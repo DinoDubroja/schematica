@@ -1,0 +1,47 @@
+schema_version: 1
+id: terminal-filled
+revision: 1
+name: Filled terminal
+description: Filled connection terminal with one electrical pin; use a schematic label
+  to identify the node.
+keywords:
+- terminal
+- filled
+- connection
+- interface
+- connections instruments
+- overnight
+- batch 02
+types:
+- connections-and-instruments
+family: connections-and-instruments
+batch: overnight-connections-and-instruments-02
+attributes:
+  function: terminal-filled
+  contact_count: 1
+recipe: terminal-filled
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: circ
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: net
+  name: Net
+  description: Net
+  kind: passive
+  lead_part: lead-net
+parts:
+- id: lead-net
+  description: 'Electrical lead: Net'
+- id: terminal
+  description: Terminal

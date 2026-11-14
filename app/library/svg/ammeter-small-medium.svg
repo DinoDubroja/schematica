@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-68.682458 -72.000019 40.251767 21.543174" width="14.19992891mm" height="7.59995305mm">
+  <defs>
+    <path id="sc-ammeter-r1-small-medium--g0-27" d="M5.469244 0L3.231826-5.949303H2.477448L.24003 0H.874393L1.534474-1.748786H4.029067L4.680576 0H5.469244ZM3.840472-2.228846H1.714497C2.151693-3.454711 1.834511-2.5546 2.271708-3.780465C2.45173-4.286241 2.717477-5.014902 2.777484-5.332084H2.786057C2.803202-5.212069 2.863209-4.997757 3.060376-4.431974L3.840472-2.228846Z" />
+  </defs>
+  <title>Ammeter</title>
+  <desc>Current-measuring instrument with two terminals, intended for a series connection.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 5.4, "body-width": 5.4, "grid": 1.0}, "origin_svg": [-48.556576, -61.228432], "parts": ["lead-a", "lead-b", "body", "quantity"], "pins_mm": {"a": [-6.0, 0.0], "b": [6.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "ammeter"}</metadata>
+  <g id="sc-ammeter-r1-small-medium--sc-ammeter-r1-small-medium" inkscape:label="Ammeter / small / medium" data-symbol="ammeter" data-revision="1" data-size="small" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-48.556576,-61.228432)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="sc-ammeter-r1-small-medium--sc-ammeter-r1-small-medium--lead-a" inkscape:label="lead-a">
+      <path d="M-17.07156 0H-7.68219" fill="none" />
+      <desc>Electrical lead: A</desc>
+    </g>
+    <g data-part="lead-b" id="sc-ammeter-r1-small-medium--sc-ammeter-r1-small-medium--lead-b" inkscape:label="lead-b">
+      <path d="M17.07156 0H7.68219" fill="none" />
+      <desc>Electrical lead: B</desc>
+    </g>
+    <g data-part="body" id="sc-ammeter-r1-small-medium--sc-ammeter-r1-small-medium--body" inkscape:label="body">
+      <path d="M7.68219 0C7.68219 4.2428 4.2428 7.68219 0 7.68219S-7.68219 4.2428-7.68219 0S-4.2428-7.68219 0-7.68219S7.68219-4.2428 7.68219 0ZM0 0" fill="none" />
+      <desc>Body</desc>
+    </g>
+    <g data-part="quantity" id="sc-ammeter-r1-small-medium--sc-ammeter-r1-small-medium--quantity" inkscape:label="quantity">
+      <use x="-48.556576" y="-61.228432" xlink:href="#sc-ammeter-r1-small-medium--g0-27" stroke="none" fill="#000" transform="translate(-2.86964,-2.98581) scale(-1.00375,1.00375)translate(-48.556576,-61.228432)scale(-1,-1)" />
+      <desc>Quantity</desc>
+    </g>
+  </g>
+</svg>
