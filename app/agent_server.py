@@ -6,7 +6,7 @@ import re
 from mcp.server.fastmcp import FastMCP
 from mcp.types import CallToolResult, TextContent, ToolAnnotations
 
-from core import ROOT
+from core import ROOT, ValidationError
 from agent_store import initialize
 from agent_service import AgentService
 
@@ -15,6 +15,16 @@ MIME = "text/html;profile=mcp-app"
 UI = {"ui": {"resourceUri": UI_URI}}
 READ = ToolAnnotations(readOnlyHint=True, destructiveHint=False, openWorldHint=False)
 WRITE = ToolAnnotations(readOnlyHint=False, destructiveHint=False, openWorldHint=False)
+
+
+def search_session_id(search_session=None, session_id=None, required=False):
+    """Resolve the chat-compatible argument and the original viewer-bridge alias."""
+    if search_session is not None and session_id is not None and search_session != session_id:
+        raise ValidationError("Conflicting search session identifiers")
+    value = search_session if search_session is not None else session_id
+    if required and not value:
+        raise ValidationError("Provide search_session from the search result")
+    return value
 
 
 def result(data, text=None, meta=None):
@@ -40,7 +50,7 @@ def viewer_html():
 def create_server(service, port=8794):
     mcp = FastMCP("Schematica", instructions=(
         "Search existing symbols with search_symbols; always show its shared viewer, even for one or zero matches. "
-        "Reuse session_id for follow-ups. Use get_selection to retrieve the user's choice. "
+        "Reuse search_session for follow-ups. Use get_selection to retrieve the user's choice. "
         "Creation is separate: require a text description, explain intent and wait for confirmation before rendering. "
         "Save only on the user's request. Saving never verifies a design. Read the creation guide resource."),
         host="127.0.0.1", port=port, json_response=True, stateless_http=True, max_request_body_size=12 * 1024 * 1024)
@@ -56,23 +66,26 @@ def create_server(service, port=8794):
         return service.asset(unquote(asset)).decode("utf-8")
 
     @mcp.tool(annotations=WRITE, meta=UI)
-    def search_symbols(query: str = "", session_id: str | None = None, filters: dict | None = None) -> CallToolResult:
+    def search_symbols(query: str = "", session_id: str | None = None, filters: dict | None = None,
+                       search_session: str | None = None) -> CallToolResult:
         """Find existing symbols and open the shared interactive viewer, including one or zero results.
-        Usually supply query only. Reuse the returned session_id for follow-ups.
+        Usually supply query only. Reuse the returned search_session for follow-ups.
+        Prefer search_session in chat; session_id is a legacy viewer-bridge alias.
         Optional filters: family (for example resistors/capacitors/diodes), style eu/us, variant fixed/variable/etc,
         terms string[], ids string[], size small/medium/large, stroke thin/medium/thick; null clears a filter.
         'normal resistor' means standard fixed designs. Never creates replacements.
         """
-        data = service.search(query, session_id, filters)
+        data = service.search(query, search_session_id(search_session, session_id), filters)
+        data["search_session"] = data["session_id"]
         # Some hosts expose only text content to their model. Keep the session,
         # filters and bounded match summaries there as well as in structuredContent.
-        summary = {key: data[key] for key in ("session_id", "sequence", "filters", "count", "matches", "viewer_url")}
+        summary = {key: data[key] for key in ("search_session", "session_id", "sequence", "filters", "count", "matches", "viewer_url")}
         return result(data, json.dumps(summary))
 
     @mcp.tool(annotations=READ, meta={"ui": {"visibility": ["app"]}})
-    def viewer_data(session_id: str | None = None) -> CallToolResult:
+    def viewer_data(session_id: str | None = None, search_session: str | None = None) -> CallToolResult:
         """Load the shared viewer catalog and state without sending the catalog to the model."""
-        return result({"loaded": True}, meta=service.viewer_data(session_id))
+        return result({"loaded": True}, meta=service.viewer_data(search_session_id(search_session, session_id)))
 
     @mcp.tool(annotations=READ)
     def get_symbol(symbol_id: str, revision: int | None = None) -> CallToolResult:
@@ -117,14 +130,18 @@ def create_server(service, port=8794):
 
     @mcp.tool(annotations=WRITE)
     def use_symbol(symbol_id: str, revision: int, size: str = "medium", stroke: str = "medium",
-                   options: dict | None = None, session_id: str | None = None, draft_id: str | None = None) -> CallToolResult:
+                   options: dict | None = None, session_id: str | None = None, draft_id: str | None = None,
+                   search_session: str | None = None) -> CallToolResult:
         """Make the user's selected identity, exact revision/configuration and retrievable SVG available to the agent."""
-        return result(service.select(symbol_id, revision, size, stroke, options, session_id, draft_id))
+        return result(service.select(symbol_id, revision, size, stroke, options,
+                                     search_session_id(search_session, session_id), draft_id))
 
     @mcp.tool(annotations=READ)
-    def get_selection(session_id: str) -> CallToolResult:
-        """Retrieve the latest Use this symbol selection and current filters from an existing viewer."""
-        return result(service.search_result(session_id))
+    def get_selection(search_session: str | None = None, session_id: str | None = None) -> CallToolResult:
+        """Retrieve the latest Use this symbol selection and current filters from an existing viewer.
+        Supply search_session from search_symbols. Prefer this name in chat; session_id is a legacy alias.
+        """
+        return result(service.search_result(search_session_id(search_session, session_id, required=True)))
 
     @mcp.tool(annotations=READ)
     def storage_status() -> CallToolResult:
