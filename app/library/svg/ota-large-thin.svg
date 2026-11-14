@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-68.682458 -72.000014 68.45633 63.731916" width="24.14987197mm" height="22.48320370mm">
+  <defs>
+    <path id="sc-ota-r1-large-thin--g0-27" d="M4.557679 0L2.693174-4.957726H2.064529L.200024 0H.728657L1.278722-1.457314H3.357538L3.900459 0H4.557679ZM3.200377-1.857361H1.42874C1.793068-2.87891 1.528751-2.128822 1.89308-3.150371C2.043098-3.571849 2.264552-4.179063 2.314558-4.44338H2.321702C2.335989-4.343368 2.385995-4.164776 2.5503-3.693292L3.200377-1.857361Z" />
+    <path id="sc-ota-r1-large-thin--g0-34" d="M4.357656-1.343015C4.357656-1.964517 3.736154-2.471719 2.978922-2.593162C3.628998-2.757467 4.164776-3.171802 4.164776-3.714723C4.164776-4.371943 3.4004-4.957726 2.385995-4.957726H.692939V0H2.578875C3.607567 0 4.357656-.642933 4.357656-1.343015ZM3.607567-3.707579C3.607567-3.278957 3.100365-2.793186 2.114534-2.793186H1.285866V-4.557679H2.185971C2.978922-4.557679 3.607567-4.179063 3.607567-3.707579ZM3.779016-1.350159C3.779016-.814382 3.150371-.400047 2.378851-.400047H1.285866V-2.35742H2.321702C3.078934-2.35742 3.779016-1.921655 3.779016-1.350159Z" />
+    <path id="sc-ota-r1-large-thin--g0-65" d="M1.307297 0V-4.957726H.671508V0H1.307297Z" />
+    <path id="sc-ota-r1-large-thin--g0-80" d="M4.850571-2.464576C4.850571-3.964752 3.814735-5.114887 2.628881-5.114887C1.414452-5.114887 .400047-3.950465 .400047-2.464576C.400047-.950112 1.457314 .157161 2.621737 .157161C3.814735 .157161 4.850571-.964399 4.850571-2.464576ZM4.214782-2.571731C4.214782-1.17871 3.443262-.307179 2.628881-.307179C1.785924-.307179 1.035836-1.200141 1.035836-2.571731C1.035836-3.879028 1.821643-4.657691 2.621737-4.657691C3.450406-4.657691 4.214782-3.850453 4.214782-2.571731Z" />
+    <path id="sc-ota-r1-large-thin--g0-97" d="M3.564705-1.350159C3.564705-1.814499 3.34325-2.157397 3.186089-2.328845C2.850335-2.68603 2.614593-2.750324 1.957373-2.914629C1.543039-3.01464 1.42874-3.043215 1.214429-3.228951C1.164423-3.271813 .964399-3.478981 .964399-3.793303C.964399-4.214782 1.350159-4.643403 2.007379-4.643403C2.60745-4.643403 2.950347-4.407661 3.214664-4.186207L3.321819-4.757703C2.928916-4.993445 2.536013-5.114887 2.014523-5.114887C1.021549-5.114887 .400047-4.414805 .400047-3.707579C.400047-3.4004 .500059-3.100365 .785807-2.800329C1.085842-2.478863 1.400165-2.393139 1.821643-2.293127C2.428857-2.143109 2.500294-2.121678 2.700318-1.943086C2.843192-1.821643 3.000353-1.585901 3.000353-1.278722C3.000353-.807238 2.60745-.335754 1.957373-.335754C1.664482-.335754 1.021549-.407191 .421478-.914393L.314323-.335754C.942968 .05715 1.514464 .157161 1.964517 .157161C2.907485 .157161 3.564705-.564352 3.564705-1.350159Z" />
+    <path id="sc-ota-r1-large-thin--g0-104" d="M4.600541-4.450524V-4.914864H.257173V-4.450524H1.214429C1.300153-4.450524 1.385877-4.457667 1.471602-4.457667H2.114534V0H2.750324V-4.457667H3.386113C3.471837-4.457667 3.557561-4.450524 3.643286-4.450524H4.600541Z" />
+    <use id="sc-ota-r1-large-thin--g1-27" xlink:href="#sc-ota-r1-large-thin--g0-27" transform="scale(1.142867)" />
+    <use id="sc-ota-r1-large-thin--g1-80" xlink:href="#sc-ota-r1-large-thin--g0-80" transform="scale(1.142867)" />
+    <use id="sc-ota-r1-large-thin--g1-104" xlink:href="#sc-ota-r1-large-thin--g0-104" transform="scale(1.142867)" />
+  </defs>
+  <title>Transconductance amplifier</title>
+  <desc>Operational transconductance amplifier: differential voltage inputs control an output current. The lower terminal is the bias-current input; supply pins are omitted.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 16.66661, "body-width": 14.16661, "grid": 1.0}, "origin_svg": [-34.454292, -45.330894], "parts": ["body", "lead-in-plus", "input-plus", "lead-in-minus", "input-minus", "lead-out", "function", "lead-bias", "current-output", "bias-label"], "pins_mm": {"bias": [0.0, -12.0], "in-minus": [-11.0, -3.0], "in-plus": [-11.0, 3.0], "out": [11.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "thin", "stroke_mm": 0.15}, "symbol_id": "ota"}</metadata>
+  <g id="sc-ota-r1-large-thin--sc-ota-r1-large-thin" inkscape:label="Transconductance amplifier / large / thin" data-symbol="ota" data-revision="1" data-size="large" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(-34.454292,-45.330894)scale(0.996264,-0.996264)">
+    <g data-part="body" id="sc-ota-r1-large-thin--sc-ota-r1-large-thin--body" inkscape:label="body">
+      <path d="M-20.1539-23.71048V23.71048L20.1539 0L-20.1539-23.71048" fill="none" />
+      <desc>Body</desc>
+    </g>
+    <g data-part="lead-in-plus" id="sc-ota-r1-large-thin--sc-ota-r1-large-thin--lead-in-plus" inkscape:label="lead-in-plus">
+      <path d="M-31.29787 8.53578H-20.1539" fill="none" />
+      <desc>Electrical lead: Noninverting input</desc>
+    </g>
+    <g data-part="input-plus" id="sc-ota-r1-large-thin--sc-ota-r1-large-thin--input-plus" inkscape:label="input-plus">
+      <path d="M-16.7752 8.53581H-13.57425" fill="none" />
+      <path d="M-15.1747 6.93541V10.13622" fill="none" />
+      <desc>Input plus</desc>
+    </g>
+    <g data-part="lead-in-minus" id="sc-ota-r1-large-thin--sc-ota-r1-large-thin--lead-in-minus" inkscape:label="lead-in-minus">
+      <path d="M-31.29787-8.53578H-20.1539" fill="none" />
+      <desc>Electrical lead: Inverting input</desc>
+    </g>
+    <g data-part="input-minus" id="sc-ota-r1-large-thin--sc-ota-r1-large-thin--input-minus" inkscape:label="input-minus">
+      <path d="M-16.7752-8.53581H-13.57425" fill="none" />
+      <desc>Input minus</desc>
+    </g>
+    <g data-part="lead-out" id="sc-ota-r1-large-thin--sc-ota-r1-large-thin--lead-out" inkscape:label="lead-out">
+      <path d="M31.29787 0H20.1539" fill="none" />
+      <desc>Electrical lead: Output current</desc>
+    </g>
+    <g data-part="function" id="sc-ota-r1-large-thin--sc-ota-r1-large-thin--function" inkscape:label="function">
+      <use x="-34.454292" y="-45.330894" xlink:href="#sc-ota-r1-large-thin--g1-80" stroke="none" fill="#000" transform="translate(-10.68855,-2.84364) scale(-1.00375,1.00375)translate(-34.454292,-45.330894)scale(-1,-1)" />
+      <use x="-28.445362" y="-45.330894" xlink:href="#sc-ota-r1-large-thin--g1-104" stroke="none" fill="#000" transform="translate(-10.68855,-2.84364) scale(-1.00375,1.00375)translate(-34.454292,-45.330894)scale(-1,-1)" />
+      <use x="-23.563112" y="-45.330894" xlink:href="#sc-ota-r1-large-thin--g1-27" stroke="none" fill="#000" transform="translate(-10.68855,-2.84364) scale(-1.00375,1.00375)translate(-34.454292,-45.330894)scale(-1,-1)" />
+      <desc>Function</desc>
+    </g>
+    <g data-part="lead-bias" id="sc-ota-r1-large-thin--sc-ota-r1-large-thin--lead-bias" inkscape:label="lead-bias">
+      <path d="M0-34.14313V-11.85521" fill="none" />
+      <desc>Electrical lead: Bias-current input</desc>
+    </g>
+    <g data-part="current-output" id="sc-ota-r1-large-thin--sc-ota-r1-large-thin--current-output" inkscape:label="current-output">
+      <path d="M23.88837 2.13394L27.97838 0L23.88837-2.13394Z" stroke="none" />
+      <desc>Current output</desc>
+    </g>
+    <g data-part="bias-label" id="sc-ota-r1-large-thin--sc-ota-r1-large-thin--bias-label" inkscape:label="bias-label">
+      <use x="-34.454292" y="-45.330894" xlink:href="#sc-ota-r1-large-thin--g0-34" stroke="none" fill="#000" transform="translate(-19.1538,-31.29643) scale(-1.00375,1.00375)translate(-34.454292,-45.330894)scale(-1,-1)" />
+      <use x="-29.689446" y="-45.330894" xlink:href="#sc-ota-r1-large-thin--g0-65" stroke="none" fill="#000" transform="translate(-19.1538,-31.29643) scale(-1.00375,1.00375)translate(-34.454292,-45.330894)scale(-1,-1)" />
+      <use x="-27.7035" y="-45.330894" xlink:href="#sc-ota-r1-large-thin--g0-27" stroke="none" fill="#000" transform="translate(-19.1538,-31.29643) scale(-1.00375,1.00375)translate(-34.454292,-45.330894)scale(-1,-1)" />
+      <use x="-22.938654" y="-45.330894" xlink:href="#sc-ota-r1-large-thin--g0-97" stroke="none" fill="#000" transform="translate(-19.1538,-31.29643) scale(-1.00375,1.00375)translate(-34.454292,-45.330894)scale(-1,-1)" />
+      <desc>Bias label</desc>
+    </g>
+  </g>
+</svg>

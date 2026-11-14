@@ -50140,6 +50140,4057 @@
         }
       ],
       "source_fingerprint": "df0d610102e5bc73ddb408ed1dc50a4d9f7f4a1b13720d5fef5fac9e084d8a46"
+    },
+    {
+      "schema_version": 1,
+      "id": "amplifier-fully-differential",
+      "revision": 1,
+      "name": "Fully differential amplifier",
+      "description": "Fully differential amplifier with two inputs and two complementary outputs. Supply and common-mode control pins are omitted.",
+      "keywords": [
+        "analog",
+        "active",
+        "amplifier",
+        "FDA",
+        "fully",
+        "differential",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "analog"
+      ],
+      "family": "analog",
+      "batch": "overnight-analog-02",
+      "attributes": {
+        "function": "amplifier-fully-differential",
+        "supplies_shown": false
+      },
+      "recipe": "amplifier-fully-differential",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "fdopamp concept; custom labelled differential functional block",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "in-plus",
+          "name": "Noninverting input",
+          "description": "Noninverting input",
+          "kind": "input",
+          "lead_part": "lead-in-plus"
+        },
+        {
+          "id": "in-minus",
+          "name": "Inverting input",
+          "description": "Inverting input",
+          "kind": "input",
+          "lead_part": "lead-in-minus"
+        },
+        {
+          "id": "out-plus",
+          "name": "Noninverting output",
+          "description": "Noninverting output",
+          "kind": "output",
+          "lead_part": "lead-out-plus"
+        },
+        {
+          "id": "out-minus",
+          "name": "Inverting output",
+          "description": "Inverting output",
+          "kind": "output",
+          "lead_part": "lead-out-minus"
+        }
+      ],
+      "parts": [
+        {
+          "id": "body",
+          "description": "Body"
+        },
+        {
+          "id": "lead-in-plus",
+          "description": "Electrical lead: Noninverting input"
+        },
+        {
+          "id": "input-plus",
+          "description": "Input plus"
+        },
+        {
+          "id": "lead-in-minus",
+          "description": "Electrical lead: Inverting input"
+        },
+        {
+          "id": "input-minus",
+          "description": "Input minus"
+        },
+        {
+          "id": "lead-out-plus",
+          "description": "Electrical lead: Noninverting output"
+        },
+        {
+          "id": "output-plus",
+          "description": "Output plus"
+        },
+        {
+          "id": "lead-out-minus",
+          "description": "Electrical lead: Inverting output"
+        },
+        {
+          "id": "output-minus",
+          "description": "Output minus"
+        },
+        {
+          "id": "function",
+          "description": "Function"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "amplifier-fully-differential-small-thin",
+          "symbol_id": "amplifier-fully-differential",
+          "name": "Fully differential amplifier",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/amplifier-fully-differential-small-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 11.14993607,
+          "origin_svg": [
+            -48.627446,
+            -56.196961
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -6.0,
+              3.0
+            ],
+            "in-minus": [
+              -6.0,
+              -3.0
+            ],
+            "out-plus": [
+              6.0,
+              2.0
+            ],
+            "out-minus": [
+              6.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 9.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out-plus",
+            "output-plus",
+            "lead-out-minus",
+            "output-minus",
+            "function"
+          ],
+          "svg_bytes": 6130,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "amplifier-fully-differential-small-medium",
+          "symbol_id": "amplifier-fully-differential",
+          "name": "Fully differential amplifier",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/amplifier-fully-differential-small-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 11.19993844,
+          "origin_svg": [
+            -48.556576,
+            -56.12609
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -6.0,
+              3.0
+            ],
+            "in-minus": [
+              -6.0,
+              -3.0
+            ],
+            "out-plus": [
+              6.0,
+              2.0
+            ],
+            "out-minus": [
+              6.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 9.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out-plus",
+            "output-plus",
+            "lead-out-minus",
+            "output-minus",
+            "function"
+          ],
+          "svg_bytes": 6183,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "amplifier-fully-differential-small-thick",
+          "symbol_id": "amplifier-fully-differential",
+          "name": "Fully differential amplifier",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/amplifier-fully-differential-small-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 11.29994283,
+          "origin_svg": [
+            -48.414834,
+            -55.984349
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            1.4111111125616716e-06
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -6.0,
+              3.0
+            ],
+            "in-minus": [
+              -6.0,
+              -3.0
+            ],
+            "out-plus": [
+              6.0,
+              2.0
+            ],
+            "out-minus": [
+              6.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 9.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out-plus",
+            "output-plus",
+            "lead-out-minus",
+            "output-minus",
+            "function"
+          ],
+          "svg_bytes": 6160,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "amplifier-fully-differential-medium-thin",
+          "symbol_id": "amplifier-fully-differential",
+          "name": "Fully differential amplifier",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/amplifier-fully-differential-medium-thin.svg",
+          "width_mm": 18.14990479,
+          "height_mm": 14.1499269,
+          "origin_svg": [
+            -42.958185,
+            -51.945007
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -8.0,
+              3.0
+            ],
+            "in-minus": [
+              -8.0,
+              -3.0
+            ],
+            "out-plus": [
+              8.0,
+              2.0
+            ],
+            "out-minus": [
+              8.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 10.0,
+            "body-height": 12.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out-plus",
+            "output-plus",
+            "lead-out-minus",
+            "output-minus",
+            "function"
+          ],
+          "svg_bytes": 6171,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "amplifier-fully-differential-medium-medium",
+          "symbol_id": "amplifier-fully-differential",
+          "name": "Fully differential amplifier",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/amplifier-fully-differential-medium-medium.svg",
+          "width_mm": 18.19990716,
+          "height_mm": 14.19992891,
+          "origin_svg": [
+            -42.887314,
+            -51.874137
+          ],
+          "visual_center_from_origin_mm": [
+            2.5066368733759088e-15,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -8.0,
+              3.0
+            ],
+            "in-minus": [
+              -8.0,
+              -3.0
+            ],
+            "out-plus": [
+              8.0,
+              2.0
+            ],
+            "out-minus": [
+              8.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 10.0,
+            "body-height": 12.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out-plus",
+            "output-plus",
+            "lead-out-minus",
+            "output-minus",
+            "function"
+          ],
+          "svg_bytes": 6232,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "amplifier-fully-differential-medium-thick",
+          "symbol_id": "amplifier-fully-differential",
+          "name": "Fully differential amplifier",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/amplifier-fully-differential-medium-thick.svg",
+          "width_mm": 18.29991507,
+          "height_mm": 14.2999333,
+          "origin_svg": [
+            -42.745573,
+            -51.732395
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -8.0,
+              3.0
+            ],
+            "in-minus": [
+              -8.0,
+              -3.0
+            ],
+            "out-plus": [
+              8.0,
+              2.0
+            ],
+            "out-minus": [
+              8.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 10.0,
+            "body-height": 12.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out-plus",
+            "output-plus",
+            "lead-out-minus",
+            "output-minus",
+            "function"
+          ],
+          "svg_bytes": 6200,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "amplifier-fully-differential-large-thin",
+          "symbol_id": "amplifier-fully-differential",
+          "name": "Fully differential amplifier",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/amplifier-fully-differential-large-thin.svg",
+          "width_mm": 22.14988303,
+          "height_mm": 17.14990326,
+          "origin_svg": [
+            -37.288923,
+            -47.693069
+          ],
+          "visual_center_from_origin_mm": [
+            0.0,
+            5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -10.0,
+              3.0
+            ],
+            "in-minus": [
+              -10.0,
+              -3.0
+            ],
+            "out-plus": [
+              10.0,
+              2.0
+            ],
+            "out-minus": [
+              10.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 12.5,
+            "body-height": 15.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out-plus",
+            "output-plus",
+            "lead-out-minus",
+            "output-minus",
+            "function"
+          ],
+          "svg_bytes": 6153,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "amplifier-fully-differential-large-medium",
+          "symbol_id": "amplifier-fully-differential",
+          "name": "Fully differential amplifier",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/amplifier-fully-differential-large-medium.svg",
+          "width_mm": 22.19988504,
+          "height_mm": 17.19990563,
+          "origin_svg": [
+            -37.218053,
+            -47.622198
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            1.0583333356745722e-06
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -10.0,
+              3.0
+            ],
+            "in-minus": [
+              -10.0,
+              -3.0
+            ],
+            "out-plus": [
+              10.0,
+              2.0
+            ],
+            "out-minus": [
+              10.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 12.5,
+            "body-height": 15.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out-plus",
+            "output-plus",
+            "lead-out-minus",
+            "output-minus",
+            "function"
+          ],
+          "svg_bytes": 6214,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "amplifier-fully-differential-large-thick",
+          "symbol_id": "amplifier-fully-differential",
+          "name": "Fully differential amplifier",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/amplifier-fully-differential-large-thick.svg",
+          "width_mm": 22.29989296,
+          "height_mm": 17.29991319,
+          "origin_svg": [
+            -37.076311,
+            -47.480457
+          ],
+          "visual_center_from_origin_mm": [
+            1.7638888844354975e-07,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -10.0,
+              3.0
+            ],
+            "in-minus": [
+              -10.0,
+              -3.0
+            ],
+            "out-plus": [
+              10.0,
+              2.0
+            ],
+            "out-minus": [
+              10.0,
+              -2.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 12.5,
+            "body-height": 15.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out-plus",
+            "output-plus",
+            "lead-out-minus",
+            "output-minus",
+            "function"
+          ],
+          "svg_bytes": 6184,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "b7f394e43a9f4202f29fb0499b1132bc855ee7c439414bf8fcfcf499d17e0287"
+    },
+    {
+      "schema_version": 1,
+      "id": "amplifier-instrumentation",
+      "revision": 1,
+      "name": "Instrumentation amplifier",
+      "description": "Instrumentation amplifier with two differential inputs, one output, a reference terminal and two external gain-resistor terminals. Supplies are omitted.",
+      "keywords": [
+        "analog",
+        "active",
+        "amplifier",
+        "INA",
+        "instrumentation",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "analog"
+      ],
+      "family": "analog",
+      "batch": "overnight-analog-02",
+      "attributes": {
+        "function": "amplifier-instrumentation",
+        "supplies_shown": false
+      },
+      "recipe": "amplifier-instrumentation",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "instamp and gain terminals; custom labelled functional block",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "in-plus",
+          "name": "Noninverting input",
+          "description": "Noninverting input",
+          "kind": "input",
+          "lead_part": "lead-in-plus"
+        },
+        {
+          "id": "in-minus",
+          "name": "Inverting input",
+          "description": "Inverting input",
+          "kind": "input",
+          "lead_part": "lead-in-minus"
+        },
+        {
+          "id": "out",
+          "name": "Output",
+          "description": "Output",
+          "kind": "output",
+          "lead_part": "lead-out"
+        },
+        {
+          "id": "reference",
+          "name": "Reference",
+          "description": "Reference",
+          "kind": "input",
+          "lead_part": "lead-reference"
+        },
+        {
+          "id": "gain-1",
+          "name": "Gain resistor 1",
+          "description": "Gain resistor 1",
+          "kind": "passive",
+          "lead_part": "lead-gain-1"
+        },
+        {
+          "id": "gain-2",
+          "name": "Gain resistor 2",
+          "description": "Gain resistor 2",
+          "kind": "passive",
+          "lead_part": "lead-gain-2"
+        }
+      ],
+      "parts": [
+        {
+          "id": "body",
+          "description": "Body"
+        },
+        {
+          "id": "lead-in-plus",
+          "description": "Electrical lead: Noninverting input"
+        },
+        {
+          "id": "input-plus",
+          "description": "Input plus"
+        },
+        {
+          "id": "lead-in-minus",
+          "description": "Electrical lead: Inverting input"
+        },
+        {
+          "id": "input-minus",
+          "description": "Input minus"
+        },
+        {
+          "id": "lead-out",
+          "description": "Electrical lead: Output"
+        },
+        {
+          "id": "function",
+          "description": "Function"
+        },
+        {
+          "id": "lead-reference",
+          "description": "Electrical lead: Reference"
+        },
+        {
+          "id": "lead-gain-1",
+          "description": "Electrical lead: Gain resistor 1"
+        },
+        {
+          "id": "lead-gain-2",
+          "description": "Electrical lead: Gain resistor 2"
+        },
+        {
+          "id": "gain-label",
+          "description": "Gain label"
+        },
+        {
+          "id": "reference-label",
+          "description": "Reference label"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "amplifier-instrumentation-small-thin",
+          "symbol_id": "amplifier-instrumentation",
+          "name": "Instrumentation amplifier",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/amplifier-instrumentation-small-thin.svg",
+          "width_mm": 16.14991231,
+          "height_mm": 18.14990479,
+          "origin_svg": [
+            -45.792816,
+            -46.275746
+          ],
+          "visual_center_from_origin_mm": [
+            -8.819444422177487e-07,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -7.0,
+              3.0
+            ],
+            "in-minus": [
+              -7.0,
+              -3.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ],
+            "reference": [
+              0.0,
+              -8.0
+            ],
+            "gain-1": [
+              -2.0,
+              8.0
+            ],
+            "gain-2": [
+              2.0,
+              8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 10.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-reference",
+            "lead-gain-1",
+            "lead-gain-2",
+            "gain-label",
+            "reference-label"
+          ],
+          "svg_bytes": 9733,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "amplifier-instrumentation-small-medium",
+          "symbol_id": "amplifier-instrumentation",
+          "name": "Instrumentation amplifier",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/amplifier-instrumentation-small-medium.svg",
+          "width_mm": 16.19991786,
+          "height_mm": 18.19990716,
+          "origin_svg": [
+            -45.721945,
+            -46.204875
+          ],
+          "visual_center_from_origin_mm": [
+            1.763888909501866e-07,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -7.0,
+              3.0
+            ],
+            "in-minus": [
+              -7.0,
+              -3.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ],
+            "reference": [
+              0.0,
+              -8.0
+            ],
+            "gain-1": [
+              -2.0,
+              8.0
+            ],
+            "gain-2": [
+              2.0,
+              8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 10.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-reference",
+            "lead-gain-1",
+            "lead-gain-2",
+            "gain-label",
+            "reference-label"
+          ],
+          "svg_bytes": 9832,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "amplifier-instrumentation-small-thick",
+          "symbol_id": "amplifier-instrumentation",
+          "name": "Instrumentation amplifier",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/amplifier-instrumentation-small-thick.svg",
+          "width_mm": 16.29992577,
+          "height_mm": 18.29991507,
+          "origin_svg": [
+            -45.580203,
+            -46.063134
+          ],
+          "visual_center_from_origin_mm": [
+            7.055555562808358e-07,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -7.0,
+              3.0
+            ],
+            "in-minus": [
+              -7.0,
+              -3.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ],
+            "reference": [
+              0.0,
+              -8.0
+            ],
+            "gain-1": [
+              -2.0,
+              8.0
+            ],
+            "gain-2": [
+              2.0,
+              8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 10.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-reference",
+            "lead-gain-1",
+            "lead-gain-2",
+            "gain-label",
+            "reference-label"
+          ],
+          "svg_bytes": 9779,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "amplifier-instrumentation-medium-thin",
+          "symbol_id": "amplifier-instrumentation",
+          "name": "Instrumentation amplifier",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/amplifier-instrumentation-medium-thin.svg",
+          "width_mm": 20.14989373,
+          "height_mm": 22.14988303,
+          "origin_svg": [
+            -40.123554,
+            -40.606484
+          ],
+          "visual_center_from_origin_mm": [
+            1.7638888844354975e-07,
+            2.5066368733759088e-15
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -9.0,
+              3.0
+            ],
+            "in-minus": [
+              -9.0,
+              -3.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ],
+            "reference": [
+              0.0,
+              -10.0
+            ],
+            "gain-1": [
+              -2.0,
+              10.0
+            ],
+            "gain-2": [
+              2.0,
+              10.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 12.0,
+            "body-height": 14.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-reference",
+            "lead-gain-1",
+            "lead-gain-2",
+            "gain-label",
+            "reference-label"
+          ],
+          "svg_bytes": 9822,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "amplifier-instrumentation-medium-medium",
+          "symbol_id": "amplifier-instrumentation",
+          "name": "Instrumentation amplifier",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/amplifier-instrumentation-medium-medium.svg",
+          "width_mm": 20.1998961,
+          "height_mm": 22.19988504,
+          "origin_svg": [
+            -40.052683,
+            -40.535614
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -9.0,
+              3.0
+            ],
+            "in-minus": [
+              -9.0,
+              -3.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ],
+            "reference": [
+              0.0,
+              -10.0
+            ],
+            "gain-1": [
+              -2.0,
+              10.0
+            ],
+            "gain-2": [
+              2.0,
+              10.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 12.0,
+            "body-height": 14.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-reference",
+            "lead-gain-1",
+            "lead-gain-2",
+            "gain-label",
+            "reference-label"
+          ],
+          "svg_bytes": 9922,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "amplifier-instrumentation-medium-thick",
+          "symbol_id": "amplifier-instrumentation",
+          "name": "Instrumentation amplifier",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/amplifier-instrumentation-medium-thick.svg",
+          "width_mm": 20.29990401,
+          "height_mm": 22.29989296,
+          "origin_svg": [
+            -39.910942,
+            -40.393872
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -9.0,
+              3.0
+            ],
+            "in-minus": [
+              -9.0,
+              -3.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ],
+            "reference": [
+              0.0,
+              -10.0
+            ],
+            "gain-1": [
+              -2.0,
+              10.0
+            ],
+            "gain-2": [
+              2.0,
+              10.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 12.0,
+            "body-height": 14.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-reference",
+            "lead-gain-1",
+            "lead-gain-2",
+            "gain-label",
+            "reference-label"
+          ],
+          "svg_bytes": 9870,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "amplifier-instrumentation-large-thin",
+          "symbol_id": "amplifier-instrumentation",
+          "name": "Instrumentation amplifier",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/amplifier-instrumentation-large-thin.svg",
+          "width_mm": 26.14986092,
+          "height_mm": 28.14984986,
+          "origin_svg": [
+            -31.619662,
+            -32.102592
+          ],
+          "visual_center_from_origin_mm": [
+            -3.5277777563378106e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -12.0,
+              3.0
+            ],
+            "in-minus": [
+              -12.0,
+              -3.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ],
+            "reference": [
+              0.0,
+              -13.0
+            ],
+            "gain-1": [
+              -2.0,
+              13.0
+            ],
+            "gain-2": [
+              2.0,
+              13.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 15.0,
+            "body-height": 17.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-reference",
+            "lead-gain-1",
+            "lead-gain-2",
+            "gain-label",
+            "reference-label"
+          ],
+          "svg_bytes": 9772,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "amplifier-instrumentation-large-medium",
+          "symbol_id": "amplifier-instrumentation",
+          "name": "Instrumentation amplifier",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/amplifier-instrumentation-large-medium.svg",
+          "width_mm": 26.19986681,
+          "height_mm": 28.19985223,
+          "origin_svg": [
+            -31.548791,
+            -32.031721
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444472310225e-07,
+            1.234722221611485e-06
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -12.0,
+              3.0
+            ],
+            "in-minus": [
+              -12.0,
+              -3.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ],
+            "reference": [
+              0.0,
+              -13.0
+            ],
+            "gain-1": [
+              -2.0,
+              13.0
+            ],
+            "gain-2": [
+              2.0,
+              13.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 15.0,
+            "body-height": 17.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-reference",
+            "lead-gain-1",
+            "lead-gain-2",
+            "gain-label",
+            "reference-label"
+          ],
+          "svg_bytes": 9874,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "amplifier-instrumentation-large-thick",
+          "symbol_id": "amplifier-instrumentation",
+          "name": "Instrumentation amplifier",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/amplifier-instrumentation-large-thick.svg",
+          "width_mm": 26.2998712,
+          "height_mm": 28.29986014,
+          "origin_svg": [
+            -31.40705,
+            -31.88998
+          ],
+          "visual_center_from_origin_mm": [
+            1.2533184366879544e-15,
+            7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -12.0,
+              3.0
+            ],
+            "in-minus": [
+              -12.0,
+              -3.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ],
+            "reference": [
+              0.0,
+              -13.0
+            ],
+            "gain-1": [
+              -2.0,
+              13.0
+            ],
+            "gain-2": [
+              2.0,
+              13.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 15.0,
+            "body-height": 17.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-reference",
+            "lead-gain-1",
+            "lead-gain-2",
+            "gain-label",
+            "reference-label"
+          ],
+          "svg_bytes": 9792,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "4899e7c9f0615807e07061566399dbcf3b88219e601275972d15b5896646b2bf"
+    },
+    {
+      "schema_version": 1,
+      "id": "comparator",
+      "revision": 1,
+      "name": "Comparator",
+      "description": "Voltage comparator with noninverting and inverting inputs and one logic-level output; supply pins are omitted.",
+      "keywords": [
+        "analog",
+        "active",
+        "comparator",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "analog"
+      ],
+      "family": "analog",
+      "batch": "overnight-analog-02",
+      "attributes": {
+        "function": "comparator",
+        "supplies_shown": false
+      },
+      "recipe": "comparator",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "custom labelled comparator functional block",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "in-plus",
+          "name": "Noninverting input",
+          "description": "Noninverting input",
+          "kind": "input",
+          "lead_part": "lead-in-plus"
+        },
+        {
+          "id": "in-minus",
+          "name": "Inverting input",
+          "description": "Inverting input",
+          "kind": "input",
+          "lead_part": "lead-in-minus"
+        },
+        {
+          "id": "out",
+          "name": "Output",
+          "description": "Output",
+          "kind": "output",
+          "lead_part": "lead-out"
+        }
+      ],
+      "parts": [
+        {
+          "id": "body",
+          "description": "Body"
+        },
+        {
+          "id": "lead-in-plus",
+          "description": "Electrical lead: Noninverting input"
+        },
+        {
+          "id": "input-plus",
+          "description": "Input plus"
+        },
+        {
+          "id": "lead-in-minus",
+          "description": "Electrical lead: Inverting input"
+        },
+        {
+          "id": "input-minus",
+          "description": "Input minus"
+        },
+        {
+          "id": "lead-out",
+          "description": "Electrical lead: Output"
+        },
+        {
+          "id": "function",
+          "description": "Function"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "comparator-small-thin",
+          "symbol_id": "comparator",
+          "name": "Comparator",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/comparator-small-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 11.14993607,
+          "origin_svg": [
+            -48.627446,
+            -56.196961
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -6.0,
+              3.0
+            ],
+            "in-minus": [
+              -6.0,
+              -3.0
+            ],
+            "out": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 9.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function"
+          ],
+          "svg_bytes": 5448,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "comparator-small-medium",
+          "symbol_id": "comparator",
+          "name": "Comparator",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/comparator-small-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 11.19993844,
+          "origin_svg": [
+            -48.556576,
+            -56.12609
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -6.0,
+              3.0
+            ],
+            "in-minus": [
+              -6.0,
+              -3.0
+            ],
+            "out": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 9.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function"
+          ],
+          "svg_bytes": 5489,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "comparator-small-thick",
+          "symbol_id": "comparator",
+          "name": "Comparator",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/comparator-small-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 11.29994283,
+          "origin_svg": [
+            -48.414834,
+            -55.984349
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            1.4111111125616716e-06
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -6.0,
+              3.0
+            ],
+            "in-minus": [
+              -6.0,
+              -3.0
+            ],
+            "out": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 9.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function"
+          ],
+          "svg_bytes": 5471,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "comparator-medium-thin",
+          "symbol_id": "comparator",
+          "name": "Comparator",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/comparator-medium-thin.svg",
+          "width_mm": 18.14990479,
+          "height_mm": 14.1499269,
+          "origin_svg": [
+            -42.958185,
+            -51.945007
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -8.0,
+              3.0
+            ],
+            "in-minus": [
+              -8.0,
+              -3.0
+            ],
+            "out": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 10.0,
+            "body-height": 12.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function"
+          ],
+          "svg_bytes": 5480,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "comparator-medium-medium",
+          "symbol_id": "comparator",
+          "name": "Comparator",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/comparator-medium-medium.svg",
+          "width_mm": 18.19990716,
+          "height_mm": 14.19992891,
+          "origin_svg": [
+            -42.887314,
+            -51.874137
+          ],
+          "visual_center_from_origin_mm": [
+            2.5066368733759088e-15,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -8.0,
+              3.0
+            ],
+            "in-minus": [
+              -8.0,
+              -3.0
+            ],
+            "out": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 10.0,
+            "body-height": 12.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function"
+          ],
+          "svg_bytes": 5529,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "comparator-medium-thick",
+          "symbol_id": "comparator",
+          "name": "Comparator",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/comparator-medium-thick.svg",
+          "width_mm": 18.29991507,
+          "height_mm": 14.2999333,
+          "origin_svg": [
+            -42.745573,
+            -51.732395
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -8.0,
+              3.0
+            ],
+            "in-minus": [
+              -8.0,
+              -3.0
+            ],
+            "out": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 10.0,
+            "body-height": 12.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function"
+          ],
+          "svg_bytes": 5503,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "comparator-large-thin",
+          "symbol_id": "comparator",
+          "name": "Comparator",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/comparator-large-thin.svg",
+          "width_mm": 22.14988303,
+          "height_mm": 17.14990326,
+          "origin_svg": [
+            -37.288923,
+            -47.693069
+          ],
+          "visual_center_from_origin_mm": [
+            0.0,
+            5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -10.0,
+              3.0
+            ],
+            "in-minus": [
+              -10.0,
+              -3.0
+            ],
+            "out": [
+              10.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 12.5,
+            "body-height": 15.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function"
+          ],
+          "svg_bytes": 5472,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "comparator-large-medium",
+          "symbol_id": "comparator",
+          "name": "Comparator",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/comparator-large-medium.svg",
+          "width_mm": 22.19988504,
+          "height_mm": 17.19990563,
+          "origin_svg": [
+            -37.218053,
+            -47.622198
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            1.0583333356745722e-06
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -10.0,
+              3.0
+            ],
+            "in-minus": [
+              -10.0,
+              -3.0
+            ],
+            "out": [
+              10.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 12.5,
+            "body-height": 15.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function"
+          ],
+          "svg_bytes": 5523,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "comparator-large-thick",
+          "symbol_id": "comparator",
+          "name": "Comparator",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/comparator-large-thick.svg",
+          "width_mm": 22.29989296,
+          "height_mm": 17.29991319,
+          "origin_svg": [
+            -37.076311,
+            -47.480457
+          ],
+          "visual_center_from_origin_mm": [
+            1.7638888844354975e-07,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -10.0,
+              3.0
+            ],
+            "in-minus": [
+              -10.0,
+              -3.0
+            ],
+            "out": [
+              10.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 12.5,
+            "body-height": 15.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function"
+          ],
+          "svg_bytes": 5498,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "89e9ea7f7a431c74953176a9d8c245be9f0034897a4aa0822fe0308bfc848819"
+    },
+    {
+      "schema_version": 1,
+      "id": "comparator-supply",
+      "revision": 1,
+      "name": "Comparator with supply pins",
+      "description": "Voltage comparator with two signal inputs, one logic-level output and explicit positive and negative supply pins.",
+      "keywords": [
+        "analog",
+        "active",
+        "comparator-supply",
+        "comparator",
+        "supply",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "analog"
+      ],
+      "family": "analog",
+      "batch": "overnight-analog-02",
+      "attributes": {
+        "function": "comparator-supply",
+        "supplies_shown": true
+      },
+      "recipe": "comparator-supply",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "custom labelled comparator with supply terminals",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "in-plus",
+          "name": "Noninverting input",
+          "description": "Noninverting input",
+          "kind": "input",
+          "lead_part": "lead-in-plus"
+        },
+        {
+          "id": "in-minus",
+          "name": "Inverting input",
+          "description": "Inverting input",
+          "kind": "input",
+          "lead_part": "lead-in-minus"
+        },
+        {
+          "id": "out",
+          "name": "Output",
+          "description": "Output",
+          "kind": "output",
+          "lead_part": "lead-out"
+        },
+        {
+          "id": "supply-plus",
+          "name": "Positive supply",
+          "description": "Positive supply",
+          "kind": "power",
+          "lead_part": "lead-supply-plus"
+        },
+        {
+          "id": "supply-minus",
+          "name": "Negative supply",
+          "description": "Negative supply",
+          "kind": "power",
+          "lead_part": "lead-supply-minus"
+        }
+      ],
+      "parts": [
+        {
+          "id": "body",
+          "description": "Body"
+        },
+        {
+          "id": "lead-in-plus",
+          "description": "Electrical lead: Noninverting input"
+        },
+        {
+          "id": "input-plus",
+          "description": "Input plus"
+        },
+        {
+          "id": "lead-in-minus",
+          "description": "Electrical lead: Inverting input"
+        },
+        {
+          "id": "input-minus",
+          "description": "Input minus"
+        },
+        {
+          "id": "lead-out",
+          "description": "Electrical lead: Output"
+        },
+        {
+          "id": "function",
+          "description": "Function"
+        },
+        {
+          "id": "lead-supply-plus",
+          "description": "Electrical lead: Positive supply"
+        },
+        {
+          "id": "lead-supply-minus",
+          "description": "Electrical lead: Negative supply"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "comparator-supply-small-thin",
+          "symbol_id": "comparator-supply",
+          "name": "Comparator with supply pins",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/comparator-supply-small-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 16.14991231,
+          "origin_svg": [
+            -48.627446,
+            -49.110376
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            8.819444472310225e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -6.0,
+              3.0
+            ],
+            "in-minus": [
+              -6.0,
+              -3.0
+            ],
+            "out": [
+              6.0,
+              0.0
+            ],
+            "supply-plus": [
+              0.0,
+              7.0
+            ],
+            "supply-minus": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 9.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-supply-plus",
+            "lead-supply-minus"
+          ],
+          "svg_bytes": 6310,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "comparator-supply-small-medium",
+          "symbol_id": "comparator-supply",
+          "name": "Comparator with supply pins",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/comparator-supply-small-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 16.19991786,
+          "origin_svg": [
+            -48.556576,
+            -49.039506
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -6.0,
+              3.0
+            ],
+            "in-minus": [
+              -6.0,
+              -3.0
+            ],
+            "out": [
+              6.0,
+              0.0
+            ],
+            "supply-plus": [
+              0.0,
+              7.0
+            ],
+            "supply-minus": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 9.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-supply-plus",
+            "lead-supply-minus"
+          ],
+          "svg_bytes": 6366,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "comparator-supply-small-thick",
+          "symbol_id": "comparator-supply",
+          "name": "Comparator with supply pins",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/comparator-supply-small-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 16.29992577,
+          "origin_svg": [
+            -48.414834,
+            -48.897764
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -1.0583333306612984e-06
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -6.0,
+              3.0
+            ],
+            "in-minus": [
+              -6.0,
+              -3.0
+            ],
+            "out": [
+              6.0,
+              0.0
+            ],
+            "supply-plus": [
+              0.0,
+              7.0
+            ],
+            "supply-minus": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 9.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-supply-plus",
+            "lead-supply-minus"
+          ],
+          "svg_bytes": 6337,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "comparator-supply-medium-thin",
+          "symbol_id": "comparator-supply",
+          "name": "Comparator with supply pins",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/comparator-supply-medium-thin.svg",
+          "width_mm": 18.14990479,
+          "height_mm": 20.14989373,
+          "origin_svg": [
+            -42.958185,
+            -43.441115
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -8.0,
+              3.0
+            ],
+            "in-minus": [
+              -8.0,
+              -3.0
+            ],
+            "out": [
+              8.0,
+              0.0
+            ],
+            "supply-plus": [
+              0.0,
+              9.0
+            ],
+            "supply-minus": [
+              0.0,
+              -9.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 10.0,
+            "body-height": 12.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-supply-plus",
+            "lead-supply-minus"
+          ],
+          "svg_bytes": 6345,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "comparator-supply-medium-medium",
+          "symbol_id": "comparator-supply",
+          "name": "Comparator with supply pins",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/comparator-supply-medium-medium.svg",
+          "width_mm": 18.19990716,
+          "height_mm": 20.1998961,
+          "origin_svg": [
+            -42.887314,
+            -43.370244
+          ],
+          "visual_center_from_origin_mm": [
+            2.5066368733759088e-15,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -8.0,
+              3.0
+            ],
+            "in-minus": [
+              -8.0,
+              -3.0
+            ],
+            "out": [
+              8.0,
+              0.0
+            ],
+            "supply-plus": [
+              0.0,
+              9.0
+            ],
+            "supply-minus": [
+              0.0,
+              -9.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 10.0,
+            "body-height": 12.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-supply-plus",
+            "lead-supply-minus"
+          ],
+          "svg_bytes": 6403,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "comparator-supply-medium-thick",
+          "symbol_id": "comparator-supply",
+          "name": "Comparator with supply pins",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/comparator-supply-medium-thick.svg",
+          "width_mm": 18.29991507,
+          "height_mm": 20.29990401,
+          "origin_svg": [
+            -42.745573,
+            -43.228503
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -8.0,
+              3.0
+            ],
+            "in-minus": [
+              -8.0,
+              -3.0
+            ],
+            "out": [
+              8.0,
+              0.0
+            ],
+            "supply-plus": [
+              0.0,
+              9.0
+            ],
+            "supply-minus": [
+              0.0,
+              -9.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 10.0,
+            "body-height": 12.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-supply-plus",
+            "lead-supply-minus"
+          ],
+          "svg_bytes": 6373,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "comparator-supply-large-thin",
+          "symbol_id": "comparator-supply",
+          "name": "Comparator with supply pins",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/comparator-supply-large-thin.svg",
+          "width_mm": 22.14988303,
+          "height_mm": 26.14986092,
+          "origin_svg": [
+            -37.288923,
+            -34.937223
+          ],
+          "visual_center_from_origin_mm": [
+            0.0,
+            7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -10.0,
+              3.0
+            ],
+            "in-minus": [
+              -10.0,
+              -3.0
+            ],
+            "out": [
+              10.0,
+              0.0
+            ],
+            "supply-plus": [
+              0.0,
+              12.0
+            ],
+            "supply-minus": [
+              0.0,
+              -12.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 12.5,
+            "body-height": 15.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-supply-plus",
+            "lead-supply-minus"
+          ],
+          "svg_bytes": 6335,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "comparator-supply-large-medium",
+          "symbol_id": "comparator-supply",
+          "name": "Comparator with supply pins",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/comparator-supply-large-medium.svg",
+          "width_mm": 22.19988504,
+          "height_mm": 26.19986681,
+          "origin_svg": [
+            -37.218053,
+            -34.866352
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            -8.819444422177487e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -10.0,
+              3.0
+            ],
+            "in-minus": [
+              -10.0,
+              -3.0
+            ],
+            "out": [
+              10.0,
+              0.0
+            ],
+            "supply-plus": [
+              0.0,
+              12.0
+            ],
+            "supply-minus": [
+              0.0,
+              -12.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 12.5,
+            "body-height": 15.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-supply-plus",
+            "lead-supply-minus"
+          ],
+          "svg_bytes": 6395,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "comparator-supply-large-thick",
+          "symbol_id": "comparator-supply",
+          "name": "Comparator with supply pins",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/comparator-supply-large-thick.svg",
+          "width_mm": 22.29989296,
+          "height_mm": 26.2998712,
+          "origin_svg": [
+            -37.076311,
+            -34.724611
+          ],
+          "visual_center_from_origin_mm": [
+            1.7638888844354975e-07,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -10.0,
+              3.0
+            ],
+            "in-minus": [
+              -10.0,
+              -3.0
+            ],
+            "out": [
+              10.0,
+              0.0
+            ],
+            "supply-plus": [
+              0.0,
+              12.0
+            ],
+            "supply-minus": [
+              0.0,
+              -12.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 12.5,
+            "body-height": 15.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-supply-plus",
+            "lead-supply-minus"
+          ],
+          "svg_bytes": 6366,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "47719e502691c75e32d57d094b46f2a569c5aea14d2e6816be98f7403e09a08b"
+    },
+    {
+      "schema_version": 1,
+      "id": "ota",
+      "revision": 1,
+      "name": "Transconductance amplifier",
+      "description": "Operational transconductance amplifier: differential voltage inputs control an output current. The lower terminal is the bias-current input; supply pins are omitted.",
+      "keywords": [
+        "analog",
+        "active",
+        "amplifier",
+        "OTA",
+        "ota",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "analog"
+      ],
+      "family": "analog",
+      "batch": "overnight-analog-02",
+      "attributes": {
+        "function": "ota",
+        "supplies_shown": false
+      },
+      "recipe": "ota",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "gmamp concept; custom triangle with bias input",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "in-plus",
+          "name": "Noninverting input",
+          "description": "Noninverting input",
+          "kind": "input",
+          "lead_part": "lead-in-plus"
+        },
+        {
+          "id": "in-minus",
+          "name": "Inverting input",
+          "description": "Inverting input",
+          "kind": "input",
+          "lead_part": "lead-in-minus"
+        },
+        {
+          "id": "out",
+          "name": "Output current",
+          "description": "Output current",
+          "kind": "output",
+          "lead_part": "lead-out"
+        },
+        {
+          "id": "bias",
+          "name": "Bias-current input",
+          "description": "Bias-current input",
+          "kind": "input",
+          "lead_part": "lead-bias"
+        }
+      ],
+      "parts": [
+        {
+          "id": "body",
+          "description": "Body"
+        },
+        {
+          "id": "lead-in-plus",
+          "description": "Electrical lead: Noninverting input"
+        },
+        {
+          "id": "input-plus",
+          "description": "Input plus"
+        },
+        {
+          "id": "lead-in-minus",
+          "description": "Electrical lead: Inverting input"
+        },
+        {
+          "id": "input-minus",
+          "description": "Input minus"
+        },
+        {
+          "id": "lead-out",
+          "description": "Electrical lead: Output current"
+        },
+        {
+          "id": "function",
+          "description": "Function"
+        },
+        {
+          "id": "lead-bias",
+          "description": "Electrical lead: Bias-current input"
+        },
+        {
+          "id": "current-output",
+          "description": "Current output"
+        },
+        {
+          "id": "bias-label",
+          "description": "Bias label"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "ota-small-thin",
+          "symbol_id": "ota",
+          "name": "Transconductance amplifier",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/ota-small-thin.svg",
+          "width_mm": 16.14991231,
+          "height_mm": 14.1499269,
+          "origin_svg": [
+            -45.792816,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            -8.819444422177487e-07,
+            0.9999939430555558
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -7.0,
+              3.0
+            ],
+            "in-minus": [
+              -7.0,
+              -3.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ],
+            "bias": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.49997,
+            "body-height": 9.99997,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-bias",
+            "current-output",
+            "bias-label"
+          ],
+          "svg_bytes": 8322,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ota-small-medium",
+          "symbol_id": "ota",
+          "name": "Transconductance amplifier",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/ota-small-medium.svg",
+          "width_mm": 16.19991786,
+          "height_mm": 14.19992891,
+          "origin_svg": [
+            -45.721945,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            1.763888909501866e-07,
+            0.9999942958333327
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -7.0,
+              3.0
+            ],
+            "in-minus": [
+              -7.0,
+              -3.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ],
+            "bias": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.49997,
+            "body-height": 9.99997,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-bias",
+            "current-output",
+            "bias-label"
+          ],
+          "svg_bytes": 8410,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ota-small-thick",
+          "symbol_id": "ota",
+          "name": "Transconductance amplifier",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/ota-small-thick.svg",
+          "width_mm": 16.29992577,
+          "height_mm": 14.2999333,
+          "origin_svg": [
+            -45.580203,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            7.055555562808358e-07,
+            0.9999955305555542
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -7.0,
+              3.0
+            ],
+            "in-minus": [
+              -7.0,
+              -3.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ],
+            "bias": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.49997,
+            "body-height": 9.99997,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-bias",
+            "current-output",
+            "bias-label"
+          ],
+          "svg_bytes": 8365,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ota-medium-thin",
+          "symbol_id": "ota",
+          "name": "Transconductance amplifier",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/ota-medium-thin.svg",
+          "width_mm": 20.14989373,
+          "height_mm": 17.81657671,
+          "origin_svg": [
+            -40.123554,
+            -50.055243
+          ],
+          "visual_center_from_origin_mm": [
+            1.7638888844354975e-07,
+            1.1666583361111083
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -9.0,
+              3.0
+            ],
+            "in-minus": [
+              -9.0,
+              -3.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ],
+            "bias": [
+              0.0,
+              -9.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.3333,
+            "body-height": 13.3333,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-bias",
+            "current-output",
+            "bias-label"
+          ],
+          "svg_bytes": 8396,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ota-medium-medium",
+          "symbol_id": "ota",
+          "name": "Transconductance amplifier",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/ota-medium-medium.svg",
+          "width_mm": 20.1998961,
+          "height_mm": 17.86657907,
+          "origin_svg": [
+            -40.052683,
+            -49.984373
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            1.1666588652777787
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -9.0,
+              3.0
+            ],
+            "in-minus": [
+              -9.0,
+              -3.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ],
+            "bias": [
+              0.0,
+              -9.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.3333,
+            "body-height": 13.3333,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-bias",
+            "current-output",
+            "bias-label"
+          ],
+          "svg_bytes": 8483,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ota-medium-thick",
+          "symbol_id": "ota",
+          "name": "Transconductance amplifier",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/ota-medium-thick.svg",
+          "width_mm": 20.29990401,
+          "height_mm": 17.96658699,
+          "origin_svg": [
+            -39.910942,
+            -49.842631
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            1.166657983333334
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -9.0,
+              3.0
+            ],
+            "in-minus": [
+              -9.0,
+              -3.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ],
+            "bias": [
+              0.0,
+              -9.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.3333,
+            "body-height": 13.3333,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-bias",
+            "current-output",
+            "bias-label"
+          ],
+          "svg_bytes": 8439,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ota-large-thin",
+          "symbol_id": "ota",
+          "name": "Transconductance amplifier",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/ota-large-thin.svg",
+          "width_mm": 24.14987197,
+          "height_mm": 22.4832037,
+          "origin_svg": [
+            -34.454292,
+            -45.330894
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            1.8333289611111132
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -11.0,
+              3.0
+            ],
+            "in-minus": [
+              -11.0,
+              -3.0
+            ],
+            "out": [
+              11.0,
+              0.0
+            ],
+            "bias": [
+              0.0,
+              -12.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 14.16661,
+            "body-height": 16.66661,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-bias",
+            "current-output",
+            "bias-label"
+          ],
+          "svg_bytes": 8367,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ota-large-medium",
+          "symbol_id": "ota",
+          "name": "Transconductance amplifier",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/ota-large-medium.svg",
+          "width_mm": 24.19987399,
+          "height_mm": 22.5332096,
+          "origin_svg": [
+            -34.383422,
+            -45.260023
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            1.8333277263888867
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -11.0,
+              3.0
+            ],
+            "in-minus": [
+              -11.0,
+              -3.0
+            ],
+            "out": [
+              11.0,
+              0.0
+            ],
+            "bias": [
+              0.0,
+              -12.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 14.16661,
+            "body-height": 16.66661,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-bias",
+            "current-output",
+            "bias-label"
+          ],
+          "svg_bytes": 8457,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ota-large-thick",
+          "symbol_id": "ota",
+          "name": "Transconductance amplifier",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/ota-large-thick.svg",
+          "width_mm": 24.2998819,
+          "height_mm": 22.63321398,
+          "origin_svg": [
+            -34.24168,
+            -45.118282
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888593691287e-07,
+            1.8333289611111083
+          ],
+          "pins_mm": {
+            "in-plus": [
+              -11.0,
+              3.0
+            ],
+            "in-minus": [
+              -11.0,
+              -3.0
+            ],
+            "out": [
+              11.0,
+              0.0
+            ],
+            "bias": [
+              0.0,
+              -12.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 14.16661,
+            "body-height": 16.66661,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in-plus",
+            "input-plus",
+            "lead-in-minus",
+            "input-minus",
+            "lead-out",
+            "function",
+            "lead-bias",
+            "current-output",
+            "bias-label"
+          ],
+          "svg_bytes": 8399,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "5f3d6bce097acfd907db4eb267d246c40d7443d34eeba65574db0ef515990a51"
+    },
+    {
+      "schema_version": 1,
+      "id": "regulator",
+      "revision": 1,
+      "name": "Voltage regulator",
+      "description": "Generic three-terminal voltage regulator with input, output and common reference; a schematic label specifies the regulator type and output voltage.",
+      "keywords": [
+        "analog",
+        "active",
+        "regulator",
+        "power regulation",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "analog"
+      ],
+      "family": "analog",
+      "batch": "overnight-analog-02",
+      "attributes": {
+        "function": "regulator",
+        "supplies_shown": false
+      },
+      "recipe": "regulator",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "custom three-terminal regulator functional block",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "in",
+          "name": "Input",
+          "description": "Input",
+          "kind": "power",
+          "lead_part": "lead-in"
+        },
+        {
+          "id": "out",
+          "name": "Regulated output",
+          "description": "Regulated output",
+          "kind": "power",
+          "lead_part": "lead-out"
+        },
+        {
+          "id": "common",
+          "name": "Common reference",
+          "description": "Common reference",
+          "kind": "power",
+          "lead_part": "lead-common"
+        }
+      ],
+      "parts": [
+        {
+          "id": "body",
+          "description": "Body"
+        },
+        {
+          "id": "lead-in",
+          "description": "Electrical lead: Input"
+        },
+        {
+          "id": "lead-out",
+          "description": "Electrical lead: Regulated output"
+        },
+        {
+          "id": "lead-common",
+          "description": "Electrical lead: Common reference"
+        },
+        {
+          "id": "function",
+          "description": "Function"
+        },
+        {
+          "id": "input-label",
+          "description": "Input label"
+        },
+        {
+          "id": "output-label",
+          "description": "Output label"
+        },
+        {
+          "id": "common-label",
+          "description": "Common label"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "regulator-small-thin",
+          "symbol_id": "regulator",
+          "name": "Voltage regulator",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/regulator-small-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 11.1499396,
+          "origin_svg": [
+            -48.627446,
+            -60.4489
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            1.4999927666666661
+          ],
+          "pins_mm": {
+            "in": [
+              -6.0,
+              0.0
+            ],
+            "out": [
+              6.0,
+              0.0
+            ],
+            "common": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in",
+            "lead-out",
+            "lead-common",
+            "function",
+            "input-label",
+            "output-label",
+            "common-label"
+          ],
+          "svg_bytes": 10135,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "regulator-small-medium",
+          "symbol_id": "regulator",
+          "name": "Voltage regulator",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/regulator-small-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 11.1999455,
+          "origin_svg": [
+            -48.556576,
+            -60.378029
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            1.4999915319444446
+          ],
+          "pins_mm": {
+            "in": [
+              -6.0,
+              0.0
+            ],
+            "out": [
+              6.0,
+              0.0
+            ],
+            "common": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in",
+            "lead-out",
+            "lead-common",
+            "function",
+            "input-label",
+            "output-label",
+            "common-label"
+          ],
+          "svg_bytes": 10279,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "regulator-small-thick",
+          "symbol_id": "regulator",
+          "name": "Voltage regulator",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/regulator-small-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 11.29994988,
+          "origin_svg": [
+            -48.414834,
+            -60.236287
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            1.4999924138888867
+          ],
+          "pins_mm": {
+            "in": [
+              -6.0,
+              0.0
+            ],
+            "out": [
+              6.0,
+              0.0
+            ],
+            "common": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in",
+            "lead-out",
+            "lead-common",
+            "function",
+            "input-label",
+            "output-label",
+            "common-label"
+          ],
+          "svg_bytes": 10230,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "regulator-medium-thin",
+          "symbol_id": "regulator",
+          "name": "Voltage regulator",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/regulator-medium-thin.svg",
+          "width_mm": 18.14990479,
+          "height_mm": 13.14992854,
+          "origin_svg": [
+            -42.958185,
+            -57.614269
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            1.4999927666666635
+          ],
+          "pins_mm": {
+            "in": [
+              -8.0,
+              0.0
+            ],
+            "out": [
+              8.0,
+              0.0
+            ],
+            "common": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 10.0,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in",
+            "lead-out",
+            "lead-common",
+            "function",
+            "input-label",
+            "output-label",
+            "common-label"
+          ],
+          "svg_bytes": 10288,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "regulator-medium-medium",
+          "symbol_id": "regulator",
+          "name": "Voltage regulator",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/regulator-medium-medium.svg",
+          "width_mm": 18.19990716,
+          "height_mm": 13.19993444,
+          "origin_svg": [
+            -42.887314,
+            -57.543398
+          ],
+          "visual_center_from_origin_mm": [
+            2.5066368733759088e-15,
+            1.4999915319444446
+          ],
+          "pins_mm": {
+            "in": [
+              -8.0,
+              0.0
+            ],
+            "out": [
+              8.0,
+              0.0
+            ],
+            "common": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 10.0,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in",
+            "lead-out",
+            "lead-common",
+            "function",
+            "input-label",
+            "output-label",
+            "common-label"
+          ],
+          "svg_bytes": 10383,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "regulator-medium-thick",
+          "symbol_id": "regulator",
+          "name": "Voltage regulator",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/regulator-medium-thick.svg",
+          "width_mm": 18.29991507,
+          "height_mm": 13.29993883,
+          "origin_svg": [
+            -42.745573,
+            -57.401657
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            1.4999927666666661
+          ],
+          "pins_mm": {
+            "in": [
+              -8.0,
+              0.0
+            ],
+            "out": [
+              8.0,
+              0.0
+            ],
+            "common": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 10.0,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in",
+            "lead-out",
+            "lead-common",
+            "function",
+            "input-label",
+            "output-label",
+            "common-label"
+          ],
+          "svg_bytes": 10335,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "regulator-large-thin",
+          "symbol_id": "regulator",
+          "name": "Voltage regulator",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/regulator-large-thin.svg",
+          "width_mm": 22.14988303,
+          "height_mm": 16.14991231,
+          "origin_svg": [
+            -37.288923,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            0.0,
+            1.9999905319444458
+          ],
+          "pins_mm": {
+            "in": [
+              -10.0,
+              0.0
+            ],
+            "out": [
+              10.0,
+              0.0
+            ],
+            "common": [
+              0.0,
+              -9.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 12.5,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in",
+            "lead-out",
+            "lead-common",
+            "function",
+            "input-label",
+            "output-label",
+            "common-label"
+          ],
+          "svg_bytes": 10258,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "regulator-large-medium",
+          "symbol_id": "regulator",
+          "name": "Voltage regulator",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/regulator-large-medium.svg",
+          "width_mm": 22.19988504,
+          "height_mm": 16.19991786,
+          "origin_svg": [
+            -37.218053,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            1.9999891208333331
+          ],
+          "pins_mm": {
+            "in": [
+              -10.0,
+              0.0
+            ],
+            "out": [
+              10.0,
+              0.0
+            ],
+            "common": [
+              0.0,
+              -9.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 12.5,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in",
+            "lead-out",
+            "lead-common",
+            "function",
+            "input-label",
+            "output-label",
+            "common-label"
+          ],
+          "svg_bytes": 10354,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "regulator-large-thick",
+          "symbol_id": "regulator",
+          "name": "Voltage regulator",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/regulator-large-thick.svg",
+          "width_mm": 22.29989296,
+          "height_mm": 16.29992577,
+          "origin_svg": [
+            -37.076311,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            1.7638888844354975e-07,
+            1.9999885916666678
+          ],
+          "pins_mm": {
+            "in": [
+              -10.0,
+              0.0
+            ],
+            "out": [
+              10.0,
+              0.0
+            ],
+            "common": [
+              0.0,
+              -9.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 12.5,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "body",
+            "lead-in",
+            "lead-out",
+            "lead-common",
+            "function",
+            "input-label",
+            "output-label",
+            "common-label"
+          ],
+          "svg_bytes": 10307,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "e05aeef6b0da7e8453ff2b54d44503b3a70d85c691484911460b317021b0e1c5"
     }
   ]
 }

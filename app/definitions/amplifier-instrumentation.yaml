@@ -1,0 +1,92 @@
+schema_version: 1
+id: amplifier-instrumentation
+revision: 1
+name: Instrumentation amplifier
+description: Instrumentation amplifier with two differential inputs, one output, a
+  reference terminal and two external gain-resistor terminals. Supplies are omitted.
+keywords:
+- analog
+- active
+- amplifier
+- INA
+- instrumentation
+- overnight
+- batch 02
+types:
+- analog
+family: analog
+batch: overnight-analog-02
+attributes:
+  function: amplifier-instrumentation
+  supplies_shown: false
+recipe: amplifier-instrumentation
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: instamp and gain terminals; custom labelled functional block
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: in-plus
+  name: Noninverting input
+  description: Noninverting input
+  kind: input
+  lead_part: lead-in-plus
+- id: in-minus
+  name: Inverting input
+  description: Inverting input
+  kind: input
+  lead_part: lead-in-minus
+- id: out
+  name: Output
+  description: Output
+  kind: output
+  lead_part: lead-out
+- id: reference
+  name: Reference
+  description: Reference
+  kind: input
+  lead_part: lead-reference
+- id: gain-1
+  name: Gain resistor 1
+  description: Gain resistor 1
+  kind: passive
+  lead_part: lead-gain-1
+- id: gain-2
+  name: Gain resistor 2
+  description: Gain resistor 2
+  kind: passive
+  lead_part: lead-gain-2
+parts:
+- id: body
+  description: Body
+- id: lead-in-plus
+  description: 'Electrical lead: Noninverting input'
+- id: input-plus
+  description: Input plus
+- id: lead-in-minus
+  description: 'Electrical lead: Inverting input'
+- id: input-minus
+  description: Input minus
+- id: lead-out
+  description: 'Electrical lead: Output'
+- id: function
+  description: Function
+- id: lead-reference
+  description: 'Electrical lead: Reference'
+- id: lead-gain-1
+  description: 'Electrical lead: Gain resistor 1'
+- id: lead-gain-2
+  description: 'Electrical lead: Gain resistor 2'
+- id: gain-label
+  description: Gain label
+- id: reference-label
+  description: Reference label

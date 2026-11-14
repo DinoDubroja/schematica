@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-68.682458 -72.000022 51.590288 37.417137" width="18.19990716mm" height="13.19993444mm">
+  <defs>
+    <path id="sc-regulator-r1-medium-medium--g0-42" d="M3.354698-.257174L3.320408-.651509C3.154674-.537209 2.988939-.428624 2.794629-.371474C2.61175-.308609 2.411725-.302894 2.217416-.302894C1.845941-.302894 1.508757-.502919 1.274442-.794383C1.011553-1.131568 .885823-1.554477 .885823-1.983101S1.011553-2.840349 1.274442-3.177534C1.508757-3.468998 1.845941-3.669023 2.217416-3.669023C2.388865-3.669023 2.56603-3.651878 2.731764-3.600443C2.903214-3.549008 3.063234-3.463283 3.211824-3.360413L3.291833-3.829042C3.120384-3.897622 2.943219-3.954772 2.760339-3.989062C2.583175-4.023352 2.400295-4.034782 2.217416-4.034782C1.714497-4.034782 1.251582-3.806182 .914398-3.434708C.560069-3.034659 .377189-2.514595 .377189-1.983101S.560069-.931543 .914398-.537209C1.251582-.165735 1.714497 .062865 2.217416 .062865C2.41744 .062865 2.617465 .05715 2.811774 0C3.006084-.051435 3.183249-.154305 3.354698-.257174Z" />
+    <path id="sc-regulator-r1-medium-medium--g0-49" d="M3.166104 0V-.405764H2.446015C2.377435-.405764 2.308855-.400049 2.240275-.400049H1.045843V-1.880231H2.931789V-2.228846H1.045843V-3.583298H1.834511C1.903091-3.583298 1.971671-3.577583 2.040251-3.577583H3.086094V-3.949057H.537209V0H3.166104Z" />
+    <path id="sc-regulator-r1-medium-medium--g0-58" d="M3.417563-.21717V-1.714497H2.217416V-1.365882H2.971794V-.422909C2.731764-.342899 2.47459-.302894 2.217416-.302894C1.845941-.302894 1.508757-.502919 1.274442-.794383C1.011553-1.131568 .885823-1.554477 .885823-1.983101S1.011553-2.840349 1.274442-3.177534C1.508757-3.468998 1.845941-3.669023 2.217416-3.669023C2.411725-3.669023 2.60032-3.646163 2.783199-3.577583C2.971794-3.514718 3.137529-3.406133 3.286118-3.280403L3.371843-3.749032C3.194679-3.846187 3.006084-3.920482 2.811774-3.971917C2.617465-4.017637 2.41744-4.034782 2.217416-4.034782C1.720212-4.034782 1.251582-3.806182 .914398-3.434708C.560069-3.034659 .377189-2.514595 .377189-1.983101S.560069-.931543 .914398-.537209C1.251582-.165735 1.720212 .062865 2.217416 .062865C2.63461 .062865 3.046089-.03429 3.417563-.21717Z" />
+    <path id="sc-regulator-r1-medium-medium--g0-65" d="M1.045843 0V-3.966202H.537209V0H1.045843Z" />
+    <path id="sc-regulator-r1-medium-medium--g0-74" d="M4.423401 0V-3.966202H3.771892L3.028944-2.028821C2.828919-1.508757 2.560315-.800098 2.49745-.531494H2.491735C2.46316-.651509 2.39458-.862963 2.308855-1.102993L1.411602-3.468998L1.217293-3.966202H.571499V0H1.017268V-3.543293H1.022983C1.057273-3.360413 1.285872-2.737479 1.434462-2.34886L2.28028-.12573H2.697475L3.457568-2.114546L3.731887-2.840349C3.789037-3.006084 3.943342-3.417563 3.971917-3.549008L3.977632-3.543293V0H4.423401Z" />
+    <path id="sc-regulator-r1-medium-medium--g0-76" d="M3.491858 0V-3.966202H3.046089V-.405764H3.040374L2.65747-1.188718L1.257297-3.966202H.548639V0H.994408V-3.560438H1.000123L1.383027-2.777484L2.783199 0H3.491858Z" />
+    <path id="sc-regulator-r1-medium-medium--g0-80" d="M3.880477-1.971671C3.880477-3.171819 3.051804-4.091932 2.103116-4.091932C1.131568-4.091932 .320039-3.160389 .320039-1.971671C.320039-.760093 1.165858 .12573 2.097401 .12573C3.051804 .12573 3.880477-.771523 3.880477-1.971671ZM3.371843-2.057396C3.371843-.942973 2.754624-.245745 2.103116-.245745C1.428747-.245745 .828673-.960118 .828673-2.057396C.828673-3.103239 1.457322-3.726172 2.097401-3.726172C2.760339-3.726172 3.371843-3.080379 3.371843-2.057396Z" />
+    <path id="sc-regulator-r1-medium-medium--g0-95" d="M3.526148 0L2.39458-1.863086C2.983224-2.034536 3.366128-2.4403 3.366128-2.903214C3.366128-3.468998 2.743194-3.966202 1.925951-3.966202H.548639V0H1.040128V-1.811651H1.943096L3.017514 0H3.526148ZM2.903214-2.903214C2.903214-2.49745 2.537455-2.160266 1.863086-2.160266H1.040128V-3.646163H1.863086C2.526025-3.646163 2.903214-3.308978 2.903214-2.903214Z" />
+    <path id="sc-regulator-r1-medium-medium--g0-104" d="M3.680453-3.560438V-3.931912H.20574V-3.560438H.971548C1.040128-3.560438 1.108708-3.566153 1.177288-3.566153H1.691637V0H2.200271V-3.566153H2.708905C2.777484-3.566153 2.846064-3.560438 2.914644-3.560438H3.680453Z" />
+    <path id="sc-regulator-r1-medium-medium--g0-108" d="M3.388988-1.331592V-3.966202H2.943219V-1.325877C2.943219-.571499 2.46316-.19431 1.983101-.19431C1.514472-.19431 1.045843-.554354 1.045843-1.325877V-3.966202H.537209V-1.331592C.537209-.497204 1.205863 .12573 1.977386 .12573C2.743194 .12573 3.388988-.502919 3.388988-1.331592Z" />
+    <use id="sc-regulator-r1-medium-medium--g1-49" xlink:href="#sc-regulator-r1-medium-medium--g0-49" transform="scale(1.142868)" />
+    <use id="sc-regulator-r1-medium-medium--g1-58" xlink:href="#sc-regulator-r1-medium-medium--g0-58" transform="scale(1.142868)" />
+    <use id="sc-regulator-r1-medium-medium--g1-95" xlink:href="#sc-regulator-r1-medium-medium--g0-95" transform="scale(1.142868)" />
+  </defs>
+  <title>Voltage regulator</title>
+  <desc>Generic three-terminal voltage regulator with input, output and common reference; a schematic label specifies the regulator type and output voltage.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 8.0, "body-width": 10.0, "grid": 1.0}, "origin_svg": [-42.887314, -57.543398], "parts": ["body", "lead-in", "lead-out", "lead-common", "function", "input-label", "output-label", "common-label"], "pins_mm": {"common": [0.0, -7.0], "in": [-8.0, 0.0], "out": [8.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "medium", "size_factor": 1.0, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "regulator"}</metadata>
+  <g id="sc-regulator-r1-medium-medium--sc-regulator-r1-medium-medium" inkscape:label="Voltage regulator / medium / medium" data-symbol="regulator" data-revision="1" data-size="medium" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-42.887314,-57.543398)scale(0.996264,-0.996264)">
+    <g data-part="body" id="sc-regulator-r1-medium-medium--sc-regulator-r1-medium-medium--body" inkscape:label="body">
+      <path d="M-14.2263-11.38104V11.38104H14.2263V-11.38104ZM14.2263 11.38104" fill="none" />
+      <desc>Body</desc>
+    </g>
+    <g data-part="lead-in" id="sc-regulator-r1-medium-medium--sc-regulator-r1-medium-medium--lead-in" inkscape:label="lead-in">
+      <path d="M-22.76208 0H-14.2263" fill="none" />
+      <desc>Electrical lead: Input</desc>
+    </g>
+    <g data-part="lead-out" id="sc-regulator-r1-medium-medium--sc-regulator-r1-medium-medium--lead-out" inkscape:label="lead-out">
+      <path d="M22.76208 0H14.2263" fill="none" />
+      <desc>Electrical lead: Regulated output</desc>
+    </g>
+    <g data-part="lead-common" id="sc-regulator-r1-medium-medium--sc-regulator-r1-medium-medium--lead-common" inkscape:label="lead-common">
+      <path d="M0-19.91682V-11.38104" fill="none" />
+      <desc>Electrical lead: Common reference</desc>
+    </g>
+    <g data-part="function" id="sc-regulator-r1-medium-medium--sc-regulator-r1-medium-medium--function" inkscape:label="function">
+      <use x="-42.887314" y="-57.543398" xlink:href="#sc-regulator-r1-medium-medium--g1-95" stroke="none" fill="#000" transform="translate(-6.26094,4.26588) scale(-1.00375,1.00375)translate(-42.887314,-57.543398)scale(-1,-1)" />
+      <use x="-38.667983" y="-57.543398" xlink:href="#sc-regulator-r1-medium-medium--g1-49" stroke="none" fill="#000" transform="translate(-6.26094,4.26588) scale(-1.00375,1.00375)translate(-42.887314,-57.543398)scale(-1,-1)" />
+      <use x="-34.768696" y="-57.543398" xlink:href="#sc-regulator-r1-medium-medium--g1-58" stroke="none" fill="#000" transform="translate(-6.26094,4.26588) scale(-1.00375,1.00375)translate(-42.887314,-57.543398)scale(-1,-1)" />
+      <desc>Function</desc>
+    </g>
+    <g data-part="input-label" id="sc-regulator-r1-medium-medium--sc-regulator-r1-medium-medium--input-label" inkscape:label="input-label">
+      <use x="-42.887314" y="-57.543398" xlink:href="#sc-regulator-r1-medium-medium--g0-65" stroke="none" fill="#000" transform="translate(-11.36383,-1.99054) scale(-1.00375,1.00375)translate(-42.887314,-57.543398)scale(-1,-1)" />
+      <use x="-41.298545" y="-57.543398" xlink:href="#sc-regulator-r1-medium-medium--g0-76" stroke="none" fill="#000" transform="translate(-11.36383,-1.99054) scale(-1.00375,1.00375)translate(-42.887314,-57.543398)scale(-1,-1)" />
+      <desc>Input label</desc>
+    </g>
+    <g data-part="output-label" id="sc-regulator-r1-medium-medium--sc-regulator-r1-medium-medium--output-label" inkscape:label="output-label">
+      <use x="-42.887314" y="-57.543398" xlink:href="#sc-regulator-r1-medium-medium--g0-80" stroke="none" fill="#000" transform="translate(0.22197,-1.99054) scale(-1.00375,1.00375)translate(-42.887314,-57.543398)scale(-1,-1)" />
+      <use x="-38.681087" y="-57.543398" xlink:href="#sc-regulator-r1-medium-medium--g0-108" stroke="none" fill="#000" transform="translate(0.22197,-1.99054) scale(-1.00375,1.00375)translate(-42.887314,-57.543398)scale(-1,-1)" />
+      <use x="-34.749177" y="-57.543398" xlink:href="#sc-regulator-r1-medium-medium--g0-104" stroke="none" fill="#000" transform="translate(0.22197,-1.99054) scale(-1.00375,1.00375)translate(-42.887314,-57.543398)scale(-1,-1)" />
+      <desc>Output label</desc>
+    </g>
+    <g data-part="common-label" id="sc-regulator-r1-medium-medium--sc-regulator-r1-medium-medium--common-label" inkscape:label="common-label">
+      <use x="-42.887314" y="-57.543398" xlink:href="#sc-regulator-r1-medium-medium--g0-42" stroke="none" fill="#000" transform="translate(-6.45348,-9.38823) scale(-1.00375,1.00375)translate(-42.887314,-57.543398)scale(-1,-1)" />
+      <use x="-39.235435" y="-57.543398" xlink:href="#sc-regulator-r1-medium-medium--g0-80" stroke="none" fill="#000" transform="translate(-6.45348,-9.38823) scale(-1.00375,1.00375)translate(-42.887314,-57.543398)scale(-1,-1)" />
+      <use x="-35.029209" y="-57.543398" xlink:href="#sc-regulator-r1-medium-medium--g0-74" stroke="none" fill="#000" transform="translate(-6.45348,-9.38823) scale(-1.00375,1.00375)translate(-42.887314,-57.543398)scale(-1,-1)" />
+      <desc>Common label</desc>
+    </g>
+  </g>
+</svg>

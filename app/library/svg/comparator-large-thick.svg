@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-68.682458 -72.000018 63.212295 49.039124" width="22.29989296mm" height="17.29991319mm">
+  <defs>
+    <path id="sc-comparator-r1-large-thick--g0-42" d="M4.792444-.367393L4.743458-.93073C4.506693-.767444 4.269929-.612322 3.992343-.530679C3.731085-.440872 3.445334-.432708 3.167748-.432708C2.637069-.432708 2.155375-.718458 1.820639-1.134838C1.445081-1.616531 1.265466-2.22069 1.265466-2.833012S1.445081-4.057657 1.820639-4.539351C2.155375-4.95573 2.637069-5.24148 3.167748-5.24148C3.412677-5.24148 3.665771-5.216987 3.902535-5.143509C4.147464-5.07003 4.376065-4.947566 4.588336-4.800608L4.702637-5.470081C4.457708-5.568052 4.204614-5.649695 3.943357-5.698681C3.690263-5.747667 3.429006-5.763996 3.167748-5.763996C2.44929-5.763996 1.787982-5.437424 1.306288-4.906744C.800101-4.335243 .538844-3.592292 .538844-2.833012S.800101-1.330781 1.306288-.767444C1.787982-.236765 2.44929 .089807 3.167748 .089807C3.453499 .089807 3.739249 .081643 4.016835 0C4.294422-.073479 4.547515-.220436 4.792444-.367393Z" />
+    <path id="sc-comparator-r1-large-thick--g0-74" d="M6.319168 0V-5.666024H5.388438L4.327079-2.898326C4.041328-2.155375 3.657606-1.143002 3.567799-.75928H3.559635C3.518813-.93073 3.420842-1.232809 3.298377-1.57571L2.016582-4.95573L1.738996-5.666024H.81643V0H1.453245V-5.061866H1.46141C1.510395-4.800608 1.836967-3.9107 2.049239-3.355527L3.257556-.179615H3.853549L4.939401-3.020791L5.331288-4.057657C5.412931-4.294422 5.633367-4.882251 5.674188-5.07003L5.682353-5.061866V0H6.319168Z" />
+    <path id="sc-comparator-r1-large-thick--g0-83" d="M4.751622-4.016835C4.751622-4.890415 3.943357-5.666024 2.816683-5.666024H.783773V0H1.510395V-2.359483H2.873833C3.886207-2.359483 4.751622-3.102434 4.751622-4.016835ZM4.090314-4.016835C4.090314-3.371856 3.575963-2.833012 2.637069-2.833012H1.485903V-5.208823H2.637069C3.535142-5.208823 4.090314-4.710801 4.090314-4.016835Z" />
+  </defs>
+  <title>Comparator</title>
+  <desc>Voltage comparator with noninverting and inverting inputs and one logic-level output; supply pins are omitted.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 15.0, "body-width": 12.5, "grid": 1.0}, "origin_svg": [-37.076311, -47.480457], "parts": ["body", "lead-in-plus", "input-plus", "lead-in-minus", "input-minus", "lead-out", "function"], "pins_mm": {"in-minus": [-10.0, -3.0], "in-plus": [-10.0, 3.0], "out": [10.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "comparator"}</metadata>
+  <g id="sc-comparator-r1-large-thick--sc-comparator-r1-large-thick" inkscape:label="Comparator / large / thick" data-symbol="comparator" data-revision="1" data-size="large" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-37.076311,-47.480457)scale(0.996264,-0.996264)">
+    <g data-part="body" id="sc-comparator-r1-large-thick--sc-comparator-r1-large-thick--body" inkscape:label="body">
+      <path d="M-17.78287-21.33945V21.33945H17.78287V-21.33945ZM17.78287 21.33945" fill="none" />
+      <desc>Body</desc>
+    </g>
+    <g data-part="lead-in-plus" id="sc-comparator-r1-large-thick--sc-comparator-r1-large-thick--lead-in-plus" inkscape:label="lead-in-plus">
+      <path d="M-28.4526 8.53578H-17.78287" fill="none" />
+      <desc>Electrical lead: Noninverting input</desc>
+    </g>
+    <g data-part="input-plus" id="sc-comparator-r1-large-thick--sc-comparator-r1-large-thick--input-plus" inkscape:label="input-plus">
+      <path d="M-14.40413 8.53581H-11.20316" fill="none" />
+      <path d="M-12.80367 6.93541V10.13622" fill="none" />
+      <desc>Input plus</desc>
+    </g>
+    <g data-part="lead-in-minus" id="sc-comparator-r1-large-thick--sc-comparator-r1-large-thick--lead-in-minus" inkscape:label="lead-in-minus">
+      <path d="M-28.4526-8.53578H-17.78287" fill="none" />
+      <desc>Electrical lead: Inverting input</desc>
+    </g>
+    <g data-part="input-minus" id="sc-comparator-r1-large-thick--sc-comparator-r1-large-thick--input-minus" inkscape:label="input-minus">
+      <path d="M-14.40413-8.53581H-11.20316" fill="none" />
+      <desc>Input minus</desc>
+    </g>
+    <g data-part="lead-out" id="sc-comparator-r1-large-thick--sc-comparator-r1-large-thick--lead-out" inkscape:label="lead-out">
+      <path d="M28.4526 0H17.78287" fill="none" />
+      <desc>Electrical lead: Output</desc>
+    </g>
+    <g data-part="function" id="sc-comparator-r1-large-thick--sc-comparator-r1-large-thick--function" inkscape:label="function">
+      <use x="-37.076311" y="-47.480457" xlink:href="#sc-comparator-r1-large-thick--g0-42" stroke="none" fill="#000" transform="translate(-7.39925,-2.84775) scale(-1.00375,1.00375)translate(-37.076311,-47.480457)scale(-1,-1)" />
+      <use x="-31.859318" y="-47.480457" xlink:href="#sc-comparator-r1-large-thick--g0-74" stroke="none" fill="#000" transform="translate(-7.39925,-2.84775) scale(-1.00375,1.00375)translate(-37.076311,-47.480457)scale(-1,-1)" />
+      <use x="-24.715559" y="-47.480457" xlink:href="#sc-comparator-r1-large-thick--g0-83" stroke="none" fill="#000" transform="translate(-7.39925,-2.84775) scale(-1.00375,1.00375)translate(-37.076311,-47.480457)scale(-1,-1)" />
+      <desc>Function</desc>
+    </g>
+  </g>
+</svg>

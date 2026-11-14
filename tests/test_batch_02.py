@@ -193,5 +193,36 @@ class Batch02(unittest.TestCase):
                     join=straight_points(path)[-1]
                     self.assertTrue(any(math.dist(join,p)<.0003 for p in winding_points['secondary']))
 
+    def test_analog_functional_terminal_sets_and_polarity(self):
+        expected={
+            'comparator':{'in-plus','in-minus','out'},
+            'comparator-supply':{'in-plus','in-minus','out','supply-plus','supply-minus'},
+            'amplifier-fully-differential':{'in-plus','in-minus','out-plus','out-minus'},
+            'amplifier-instrumentation':{'in-plus','in-minus','out','reference','gain-1','gain-2'},
+            'ota':{'in-plus','in-minus','out','bias'},'regulator':{'in','out','common'}}
+        for symbol in self.new:
+            if symbol['id'] not in expected:continue
+            sid=symbol['id'];self.assertEqual({p['id'] for p in symbol['pins']},expected[sid])
+            for config in symbol['configurations']:
+                pins=config['pins_mm']
+                if sid=='regulator':
+                    self.assertLess(pins['in'][0],pins['out'][0]);self.assertLess(pins['common'][1],0)
+                    continue
+                self.assertEqual(pins['in-plus'][1],3);self.assertEqual(pins['in-minus'][1],-3)
+                if sid=='amplifier-fully-differential':
+                    self.assertGreater(pins['out-plus'][1],pins['out-minus'][1])
+                    self.assertGreater(pins['out-plus'][0],pins['in-plus'][0])
+                else:self.assertGreater(pins['out'][0],pins['in-plus'][0])
+                if sid=='comparator-supply':
+                    self.assertGreater(pins['supply-plus'][1],3);self.assertLess(pins['supply-minus'][1],-3)
+                elif sid=='amplifier-instrumentation':
+                    self.assertLess(pins['reference'][1],-3)
+                    self.assertGreater(pins['gain-1'][1],3);self.assertGreater(pins['gain-2'][1],3)
+                elif sid=='ota':
+                    self.assertLess(pins['bias'][1],0)
+                    group=next(g for g in artwork(config).iter() if g.get('data-part')=='current-output')
+                    head=straight_points(next(group.iter(f'{{{SVG}}}path')))
+                    self.assertGreater(head[1][0],(head[0][0]+head[2][0])/2)
+
 
 if __name__=='__main__':unittest.main()

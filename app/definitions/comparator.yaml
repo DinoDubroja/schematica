@@ -1,0 +1,65 @@
+schema_version: 1
+id: comparator
+revision: 1
+name: Comparator
+description: Voltage comparator with noninverting and inverting inputs and one logic-level
+  output; supply pins are omitted.
+keywords:
+- analog
+- active
+- comparator
+- overnight
+- batch 02
+types:
+- analog
+family: analog
+batch: overnight-analog-02
+attributes:
+  function: comparator
+  supplies_shown: false
+recipe: comparator
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: custom labelled comparator functional block
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: in-plus
+  name: Noninverting input
+  description: Noninverting input
+  kind: input
+  lead_part: lead-in-plus
+- id: in-minus
+  name: Inverting input
+  description: Inverting input
+  kind: input
+  lead_part: lead-in-minus
+- id: out
+  name: Output
+  description: Output
+  kind: output
+  lead_part: lead-out
+parts:
+- id: body
+  description: Body
+- id: lead-in-plus
+  description: 'Electrical lead: Noninverting input'
+- id: input-plus
+  description: Input plus
+- id: lead-in-minus
+  description: 'Electrical lead: Inverting input'
+- id: input-minus
+  description: Input minus
+- id: lead-out
+  description: 'Electrical lead: Output'
+- id: function
+  description: Function

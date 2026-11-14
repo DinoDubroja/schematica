@@ -34,14 +34,26 @@ def verify(batch, workers=4):
         assert not list(root.iter(f'{{{SVG}}}text')),'Symbol labels must be vector outlines'
         pdf=work/(c['key']+'.pdf')
         _,output=inkscape([str(source),'--query-all',f'--export-filename={pdf}'],work)
-        bounds=next(line.split(',')[1:] for line in output.splitlines() if line.startswith(group.get('id')+','))
-        x,y,w,h=[float(v)*25.4/96 for v in bounds]
+        queried={row.split(',')[0]:[float(v)*25.4/96 for v in row.split(',')[1:]] for row in output.splitlines() if len(row.split(','))==5}
+        x,y,w,h=queried[group.get('id')]
         margin=min(x,y,c['width_mm']-x-w,c['height_mm']-y-h)
         assert margin>.9,(c['key'],margin)
+        annotation_clearance=None
+        if symbol.get('family')=='analog' and symbol['id']!='ota':
+            parts={g.get('data-part'):g for g in root.iter() if g.get('data-part')}
+            bx,by,bw,bh=queried[parts['body'].get('id')];stroke=c['settings']['stroke_mm']
+            labels=[queried[g.get('id')] for pid,g in parts.items() if pid!='body' and not pid.startswith('lead-')]
+            gaps=[]
+            for lx,ly,lw,lh in labels:
+                gaps.extend([lx-bx-stroke,ly-by-stroke,bx+bw-stroke-lx-lw,by+bh-stroke-ly-lh])
+            annotation_clearance=min(gaps)
+            assert annotation_clearance>=.2999,(c['key'],'mark/label too close to functional block border',annotation_clearance)
         with fitz.open(pdf) as document:
             assert document.page_count==1 and document[0].get_drawings(),c['key']
             assert not document[0].get_images(),c['key']
-        return {'configuration':c['key'],'margin_mm':margin,'sha256':hashlib.sha256(source.read_bytes()).hexdigest()}
+        result={'configuration':c['key'],'margin_mm':margin,'sha256':hashlib.sha256(source.read_bytes()).hexdigest()}
+        if annotation_clearance is not None:result['minimum_annotation_clearance_mm']=annotation_clearance
+        return result
     with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as pool:checks=list(pool.map(check,items))
     configs=[c for _,c in items]
     for symbols_mode in (False,True):

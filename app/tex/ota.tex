@@ -1,0 +1,58 @@
+% Transconductance amplifier; gmamp concept; custom triangle with bias input.
+% Schematica coordinates are millimetres at Medium; pins snap outward to the 1 mm grid.
+\newcommand{\SCBatchOta}[4]{%
+  \SCresolve{#1}{#2}{#3}
+  \def\F{#2}
+  \pgfmathsetmacro{\SCorientx}{ifthenelse(mod(#4,2)==1,-1,1)}
+  \pgfmathsetmacro{\SCorienty}{ifthenelse(#4>1,-1,1)}
+  \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+    \SCdimension{body-width}{11.3333*\F}
+    \SCdimension{body-height}{13.3333*\F}
+    \SCdimension{grid}{1}
+    \begin{SCpart}{body}
+    \draw ({-5.66667*\F},{-6.66667*\F})--({-5.66667*\F},{6.66667*\F})--({5.66667*\F},{0*\F})--({-5.66667*\F},{-6.66667*\F});
+    \end{SCpart}
+    \SCpin{in-plus}{floor(-8.66667*\F)}{3}
+    \begin{SCpart}{lead-in-plus}
+    \draw ({floor(-8.66667*\F)},{3})--({-5.66667*\F},{3});
+    \end{SCpart}
+    \begin{SCpart}{input-plus}
+    \begin{scope}[yshift=3mm]
+    \draw ({-4.71667*\F},{0*\F})--({-3.81667*\F},{0*\F});
+    \draw ({-4.26667*\F},{-0.45*\F})--({-4.26667*\F},{0.45*\F});
+    \end{scope}
+    \end{SCpart}
+    \SCpin{in-minus}{floor(-8.66667*\F)}{-3}
+    \begin{SCpart}{lead-in-minus}
+    \draw ({floor(-8.66667*\F)},{-3})--({-5.66667*\F},{-3});
+    \end{SCpart}
+    \begin{SCpart}{input-minus}
+    \begin{scope}[yshift=-3mm]
+    \draw ({-4.71667*\F},{0*\F})--({-3.81667*\F},{0*\F});
+    \end{scope}
+    \end{SCpart}
+    \SCpin{out}{ceil(8.66667*\F)}{0}
+    \begin{SCpart}{lead-out}
+    \draw ({ceil(8.66667*\F)},{0})--({5.66667*\F},{0*\F});
+    \end{SCpart}
+    \begin{SCpart}{function}
+    \pgfmathsetmacro{\SCfontsize}{1.6*\F*72.27/25.4/.69444}
+    \font\SCbatchfont="[lmsans10-regular.otf]" at \SCfontsize pt
+    \node[inner sep=0pt,outer sep=0pt] at ({-0.7*\F},{0*\F}) {\SCbatchfont OTA};
+    \end{SCpart}
+    \SCpin{bias}{0}{floor(-9*\F)}
+    \begin{SCpart}{lead-bias}
+    \draw ({0},{floor(-9*\F)})--({0*\F},{-3.33333*\F});
+    \end{SCpart}
+    \begin{SCpart}{current-output}
+    \begin{scope}[shift={({7.86667*\F},{0*\F})},rotate=0]
+    \fill ({-1.15*\F},{0.6*\F})--({0*\F},{0*\F})--({-1.15*\F},{-0.6*\F})--cycle;
+    \end{scope}
+    \end{SCpart}
+    \begin{SCpart}{bias-label}
+    \pgfmathsetmacro{\SCfontsize}{1.4*\F*72.27/25.4/.69444}
+    \font\SCbatchfont="[lmsans10-regular.otf]" at \SCfontsize pt
+    \node[inner sep=0pt,outer sep=0pt] at ({-3.2*\F},{-8.1*\F}) {\SCbatchfont BIAS};
+    \end{SCpart}
+  \end{scope}
+}

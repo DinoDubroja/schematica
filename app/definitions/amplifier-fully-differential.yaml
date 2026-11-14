@@ -1,0 +1,79 @@
+schema_version: 1
+id: amplifier-fully-differential
+revision: 1
+name: Fully differential amplifier
+description: Fully differential amplifier with two inputs and two complementary outputs.
+  Supply and common-mode control pins are omitted.
+keywords:
+- analog
+- active
+- amplifier
+- FDA
+- fully
+- differential
+- overnight
+- batch 02
+types:
+- analog
+family: analog
+batch: overnight-analog-02
+attributes:
+  function: amplifier-fully-differential
+  supplies_shown: false
+recipe: amplifier-fully-differential
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: fdopamp concept; custom labelled differential functional block
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: in-plus
+  name: Noninverting input
+  description: Noninverting input
+  kind: input
+  lead_part: lead-in-plus
+- id: in-minus
+  name: Inverting input
+  description: Inverting input
+  kind: input
+  lead_part: lead-in-minus
+- id: out-plus
+  name: Noninverting output
+  description: Noninverting output
+  kind: output
+  lead_part: lead-out-plus
+- id: out-minus
+  name: Inverting output
+  description: Inverting output
+  kind: output
+  lead_part: lead-out-minus
+parts:
+- id: body
+  description: Body
+- id: lead-in-plus
+  description: 'Electrical lead: Noninverting input'
+- id: input-plus
+  description: Input plus
+- id: lead-in-minus
+  description: 'Electrical lead: Inverting input'
+- id: input-minus
+  description: Input minus
+- id: lead-out-plus
+  description: 'Electrical lead: Noninverting output'
+- id: output-plus
+  description: Output plus
+- id: lead-out-minus
+  description: 'Electrical lead: Inverting output'
+- id: output-minus
+  description: Output minus
+- id: function
+  description: Function

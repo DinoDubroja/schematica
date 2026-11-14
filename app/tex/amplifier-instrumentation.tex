@@ -1,0 +1,66 @@
+% Instrumentation amplifier; instamp and gain terminals; custom labelled functional block.
+% Schematica coordinates are millimetres at Medium; pins snap outward to the 1 mm grid.
+\newcommand{\SCBatchAmplifierInstrumentation}[4]{%
+  \SCresolve{#1}{#2}{#3}
+  \def\F{#2}
+  \pgfmathsetmacro{\SCorientx}{ifthenelse(mod(#4,2)==1,-1,1)}
+  \pgfmathsetmacro{\SCorienty}{ifthenelse(#4>1,-1,1)}
+  \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+    \SCdimension{body-width}{12*\F}
+    \SCdimension{body-height}{14*\F}
+    \SCdimension{grid}{1}
+    \begin{SCpart}{body}
+    \draw ({-6*\F},{-7*\F}) rectangle ({6*\F},{7*\F});
+    \end{SCpart}
+    \SCpin{in-plus}{floor(-9*\F)}{3}
+    \begin{SCpart}{lead-in-plus}
+    \draw ({floor(-9*\F)},{3})--({-6*\F},{3});
+    \end{SCpart}
+    \begin{SCpart}{input-plus}
+    \begin{scope}[yshift=3mm]
+    \draw ({-5.05*\F},{0*\F})--({-4.15*\F},{0*\F});
+    \draw ({-4.6*\F},{-0.45*\F})--({-4.6*\F},{0.45*\F});
+    \end{scope}
+    \end{SCpart}
+    \SCpin{in-minus}{floor(-9*\F)}{-3}
+    \begin{SCpart}{lead-in-minus}
+    \draw ({floor(-9*\F)},{-3})--({-6*\F},{-3});
+    \end{SCpart}
+    \begin{SCpart}{input-minus}
+    \begin{scope}[yshift=-3mm]
+    \draw ({-5.05*\F},{0*\F})--({-4.15*\F},{0*\F});
+    \end{scope}
+    \end{SCpart}
+    \SCpin{out}{ceil(9*\F)}{0}
+    \begin{SCpart}{lead-out}
+    \draw ({ceil(9*\F)},{0})--({6*\F},{0*\F});
+    \end{SCpart}
+    \begin{SCpart}{function}
+    \pgfmathsetmacro{\SCfontsize}{1.6*\F*72.27/25.4/.69444}
+    \font\SCbatchfont="[lmsans10-regular.otf]" at \SCfontsize pt
+    \node[inner sep=0pt,outer sep=0pt] at ({0.4*\F},{0*\F}) {\SCbatchfont INA};
+    \end{SCpart}
+    \SCpin{reference}{0}{floor(-10*\F)}
+    \begin{SCpart}{lead-reference}
+    \draw ({0},{floor(-10*\F)})--({0*\F},{-7*\F});
+    \end{SCpart}
+    \SCpin{gain-1}{-2}{ceil(10*\F)}
+    \begin{SCpart}{lead-gain-1}
+    \draw ({-2},{ceil(10*\F)})--({-2},{7*\F});
+    \end{SCpart}
+    \SCpin{gain-2}{2}{ceil(10*\F)}
+    \begin{SCpart}{lead-gain-2}
+    \draw ({2},{ceil(10*\F)})--({2},{7*\F});
+    \end{SCpart}
+    \begin{SCpart}{gain-label}
+    \pgfmathsetmacro{\SCfontsize}{1.4*\F*72.27/25.4/.69444}
+    \font\SCbatchfont="[lmsans10-regular.otf]" at \SCfontsize pt
+    \node[inner sep=0pt,outer sep=0pt] at ({0*\F},{5.3*\F}) {\SCbatchfont RG};
+    \end{SCpart}
+    \begin{SCpart}{reference-label}
+    \pgfmathsetmacro{\SCfontsize}{1.4*\F*72.27/25.4/.69444}
+    \font\SCbatchfont="[lmsans10-regular.otf]" at \SCfontsize pt
+    \node[inner sep=0pt,outer sep=0pt] at ({0*\F},{-5.3*\F}) {\SCbatchfont REF};
+    \end{SCpart}
+  \end{scope}
+}

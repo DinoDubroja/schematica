@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-68.682458 -72.000021 45.779279 51.448549" width="16.14991231mm" height="18.14990479mm">
+  <defs>
+    <path id="sc-amplifier-instrumentation-r1-small-thin--g0-27" d="M2.734598 0L1.615899-2.974625H1.238713L.120014 0H.437193L.76723-.874385H2.014516L2.340267 0H2.734598ZM1.920219-1.114413H.857241C1.075837-1.72734 .917248-1.277289 1.135844-1.890216C1.225854-2.143102 1.358726-2.507429 1.38873-2.666018H1.393016C1.401588-2.606012 1.431592-2.498857 1.530175-2.215967L1.920219-1.114413Z" />
+    <path id="sc-amplifier-instrumentation-r1-small-thin--g0-49" d="M2.374557 0V-.30432H1.834495C1.783061-.30432 1.731626-.300034 1.680192-.300034H.784375V-1.410161H2.198822V-1.671619H.784375V-2.687449H1.375871C1.427306-2.687449 1.47874-2.683163 1.530175-2.683163H2.31455V-2.961767H.402903V0H2.374557Z" />
+    <path id="sc-amplifier-instrumentation-r1-small-thin--g0-54" d="M2.254543-2.683163V-2.961767H.402903V0H.784375V-1.350154H2.078809V-1.611612H.784375V-2.687449H1.345868C1.397302-2.687449 1.448737-2.683163 1.500171-2.683163H2.254543Z" />
+    <path id="sc-amplifier-instrumentation-r1-small-thin--g0-58" d="M2.56315-.162876V-1.285861H1.663047V-1.024403H2.228826V-.317179C2.048805-.257172 1.855926-.227169 1.663047-.227169C1.384444-.227169 1.131558-.377186 .955823-.595782C.758658-.848668 .664362-1.165847 .664362-1.487313S.758658-2.130243 .955823-2.383129C1.131558-2.601725 1.384444-2.751743 1.663047-2.751743C1.808778-2.751743 1.950223-2.734598 2.087381-2.683163C2.228826-2.636015 2.353126-2.554577 2.464567-2.460281L2.52886-2.811749C2.395988-2.884615 2.254543-2.940335 2.108812-2.978911C1.963081-3.013201 1.813064-3.02606 1.663047-3.02606C1.290147-3.02606 .938679-2.854611 .685793-2.576008C.420048-2.275974 .282889-1.885929 .282889-1.487313S.420048-.698651 .685793-.402903C.938679-.1243 1.290147 .047148 1.663047 .047148C1.97594 .047148 2.284546-.025717 2.56315-.162876Z" />
+    <path id="sc-amplifier-instrumentation-r1-small-thin--g0-65" d="M.784375 0V-2.974625H.402903V0H.784375Z" />
+    <path id="sc-amplifier-instrumentation-r1-small-thin--g0-76" d="M2.61887 0V-2.974625H2.284546V-.30432H2.28026L1.993085-.89153L.942965-2.974625H.411476V0H.745799V-2.670305H.750086L1.037261-2.083095L2.087381 0H2.61887Z" />
+    <path id="sc-amplifier-instrumentation-r1-small-thin--g0-95" d="M2.644587 0L1.795919-1.397302C2.237398-1.525888 2.524574-1.830209 2.524574-2.177391C2.524574-2.601725 2.057378-2.974625 1.444451-2.974625H.411476V0H.780089V-1.358726H1.457309L2.263115 0H2.644587ZM2.177391-2.177391C2.177391-1.873071 1.903074-1.620185 1.397302-1.620185H.780089V-2.734598H1.397302C1.894502-2.734598 2.177391-2.481712 2.177391-2.177391Z" />
+    <use id="sc-amplifier-instrumentation-r1-small-thin--g1-27" xlink:href="#sc-amplifier-instrumentation-r1-small-thin--g0-27" transform="scale(1.142867)" />
+    <use id="sc-amplifier-instrumentation-r1-small-thin--g1-65" xlink:href="#sc-amplifier-instrumentation-r1-small-thin--g0-65" transform="scale(1.142867)" />
+    <use id="sc-amplifier-instrumentation-r1-small-thin--g1-76" xlink:href="#sc-amplifier-instrumentation-r1-small-thin--g0-76" transform="scale(1.142867)" />
+  </defs>
+  <title>Instrumentation amplifier</title>
+  <desc>Instrumentation amplifier with two differential inputs, one output, a reference terminal and two external gain-resistor terminals. Supplies are omitted.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 10.5, "body-width": 9.0, "grid": 1.0}, "origin_svg": [-45.792816, -46.275746], "parts": ["body", "lead-in-plus", "input-plus", "lead-in-minus", "input-minus", "lead-out", "function", "lead-reference", "lead-gain-1", "lead-gain-2", "gain-label", "reference-label"], "pins_mm": {"gain-1": [-2.0, 8.0], "gain-2": [2.0, 8.0], "in-minus": [-7.0, -3.0], "in-plus": [-7.0, 3.0], "out": [7.0, 0.0], "reference": [0.0, -8.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "thin", "stroke_mm": 0.15}, "symbol_id": "amplifier-instrumentation"}</metadata>
+  <g id="sc-amplifier-instrumentation-r1-small-thin--sc-amplifier-instrumentation-r1-small-thin" inkscape:label="Instrumentation amplifier / small / thin" data-symbol="amplifier-instrumentation" data-revision="1" data-size="small" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(-45.792816,-46.275746)scale(0.996264,-0.996264)">
+    <g data-part="body" id="sc-amplifier-instrumentation-r1-small-thin--sc-amplifier-instrumentation-r1-small-thin--body" inkscape:label="body">
+      <path d="M-12.80367-14.9376V14.9376H12.80367V-14.9376ZM12.80367 14.9376" fill="none" />
+      <desc>Body</desc>
+    </g>
+    <g data-part="lead-in-plus" id="sc-amplifier-instrumentation-r1-small-thin--sc-amplifier-instrumentation-r1-small-thin--lead-in-plus" inkscape:label="lead-in-plus">
+      <path d="M-19.91682 8.53578H-12.80367" fill="none" />
+      <desc>Electrical lead: Noninverting input</desc>
+    </g>
+    <g data-part="input-plus" id="sc-amplifier-instrumentation-r1-small-thin--sc-amplifier-instrumentation-r1-small-thin--input-plus" inkscape:label="input-plus">
+      <path d="M-10.7764 8.53581H-8.85583" fill="none" />
+      <path d="M-9.81613 7.57556V9.49606" fill="none" />
+      <desc>Input plus</desc>
+    </g>
+    <g data-part="lead-in-minus" id="sc-amplifier-instrumentation-r1-small-thin--sc-amplifier-instrumentation-r1-small-thin--lead-in-minus" inkscape:label="lead-in-minus">
+      <path d="M-19.91682-8.53578H-12.80367" fill="none" />
+      <desc>Electrical lead: Inverting input</desc>
+    </g>
+    <g data-part="input-minus" id="sc-amplifier-instrumentation-r1-small-thin--sc-amplifier-instrumentation-r1-small-thin--input-minus" inkscape:label="input-minus">
+      <path d="M-10.7764-8.53581H-8.85583" fill="none" />
+      <desc>Input minus</desc>
+    </g>
+    <g data-part="lead-out" id="sc-amplifier-instrumentation-r1-small-thin--sc-amplifier-instrumentation-r1-small-thin--lead-out" inkscape:label="lead-out">
+      <path d="M19.91682 0H12.80367" fill="none" />
+      <desc>Electrical lead: Output</desc>
+    </g>
+    <g data-part="function" id="sc-amplifier-instrumentation-r1-small-thin--sc-amplifier-instrumentation-r1-small-thin--function" inkscape:label="function">
+      <use x="-45.792816" y="-46.275746" xlink:href="#sc-amplifier-instrumentation-r1-small-thin--g1-65" stroke="none" fill="#000" transform="translate(-3.21031,-1.70618) scale(-1.00375,1.00375)translate(-45.792816,-46.275746)scale(-1,-1)" />
+      <use x="-44.431009" y="-46.275746" xlink:href="#sc-amplifier-instrumentation-r1-small-thin--g1-76" stroke="none" fill="#000" transform="translate(-3.21031,-1.70618) scale(-1.00375,1.00375)translate(-45.792816,-46.275746)scale(-1,-1)" />
+      <use x="-40.962829" y="-46.275746" xlink:href="#sc-amplifier-instrumentation-r1-small-thin--g1-27" stroke="none" fill="#000" transform="translate(-3.21031,-1.70618) scale(-1.00375,1.00375)translate(-45.792816,-46.275746)scale(-1,-1)" />
+      <desc>Function</desc>
+    </g>
+    <g data-part="lead-reference" id="sc-amplifier-instrumentation-r1-small-thin--sc-amplifier-instrumentation-r1-small-thin--lead-reference" inkscape:label="lead-reference">
+      <path d="M0-22.76208V-14.9376" fill="none" />
+      <desc>Electrical lead: Reference</desc>
+    </g>
+    <g data-part="lead-gain-1" id="sc-amplifier-instrumentation-r1-small-thin--sc-amplifier-instrumentation-r1-small-thin--lead-gain-1" inkscape:label="lead-gain-1">
+      <path d="M-5.69052 22.76208V14.9376" fill="none" />
+      <desc>Electrical lead: Gain resistor 1</desc>
+    </g>
+    <g data-part="lead-gain-2" id="sc-amplifier-instrumentation-r1-small-thin--sc-amplifier-instrumentation-r1-small-thin--lead-gain-2" inkscape:label="lead-gain-2">
+      <path d="M5.69052 22.76208V14.9376" fill="none" />
+      <desc>Electrical lead: Gain resistor 2</desc>
+    </g>
+    <g data-part="gain-label" id="sc-amplifier-instrumentation-r1-small-thin--sc-amplifier-instrumentation-r1-small-thin--gain-label" inkscape:label="gain-label">
+      <use x="-45.792816" y="-46.275746" xlink:href="#sc-amplifier-instrumentation-r1-small-thin--g0-95" stroke="none" fill="#000" transform="translate(-2.82445,9.81482) scale(-1.00375,1.00375)translate(-45.792816,-46.275746)scale(-1,-1)" />
+      <use x="-43.023932" y="-46.275746" xlink:href="#sc-amplifier-instrumentation-r1-small-thin--g0-58" stroke="none" fill="#000" transform="translate(-2.82445,9.81482) scale(-1.00375,1.00375)translate(-45.792816,-46.275746)scale(-1,-1)" />
+      <desc>Gain label</desc>
+    </g>
+    <g data-part="reference-label" id="sc-amplifier-instrumentation-r1-small-thin--sc-amplifier-instrumentation-r1-small-thin--reference-label" inkscape:label="reference-label">
+      <use x="-45.792816" y="-46.275746" xlink:href="#sc-amplifier-instrumentation-r1-small-thin--g0-95" stroke="none" fill="#000" transform="translate(-3.89786,-12.80276) scale(-1.00375,1.00375)translate(-45.792816,-46.275746)scale(-1,-1)" />
+      <use x="-43.023932" y="-46.275746" xlink:href="#sc-amplifier-instrumentation-r1-small-thin--g0-49" stroke="none" fill="#000" transform="translate(-3.89786,-12.80276) scale(-1.00375,1.00375)translate(-45.792816,-46.275746)scale(-1,-1)" />
+      <use x="-40.465062" y="-46.275746" xlink:href="#sc-amplifier-instrumentation-r1-small-thin--g0-54" stroke="none" fill="#000" transform="translate(-3.89786,-12.80276) scale(-1.00375,1.00375)translate(-45.792816,-46.275746)scale(-1,-1)" />
+      <desc>Reference label</desc>
+    </g>
+  </g>
+</svg>

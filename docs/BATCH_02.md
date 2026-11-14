@@ -47,7 +47,7 @@ Status: complete — 8 designs / 126 configurations; Unverified.
 
 ### Analog
 
-Status: planned.
+Status: complete — 6 designs / 54 configurations; Unverified.
 
 `comparator`, `comparator-supply`, `amplifier-fully-differential`, `amplifier-instrumentation`, `ota`, `regulator`.
 

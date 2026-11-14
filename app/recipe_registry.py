@@ -1,6 +1,8 @@
 """Explicit registrations for reviewed batch-02 TeX recipes. No schema changes."""
 
 BATCH_MACROS = {
+    'amplifier-fully-differential': 'SCBatchAmplifierFullyDifferential',
+    'amplifier-instrumentation': 'SCBatchAmplifierInstrumentation',
     'battery': 'SCBatchBattery',
     'capacitor-feedthrough': 'SCBatchCapacitorFeedthrough',
     'capacitor-polarized': 'SCBatchCapacitorPolarized',
@@ -8,6 +10,8 @@ BATCH_MACROS = {
     'capacitor-trimmer': 'SCBatchCapacitorTrimmer',
     'capacitor-variable': 'SCBatchCapacitorVariable',
     'cell': 'SCBatchCell',
+    'comparator': 'SCBatchComparator',
+    'comparator-supply': 'SCBatchComparatorSupply',
     'diode': 'SCBatchDiode',
     'diode-led': 'SCBatchDiodeLed',
     'diode-photo': 'SCBatchDiodePhoto',
@@ -32,7 +36,9 @@ BATCH_MACROS = {
     'mosfet-p-depletion': 'SCBatchMosfetPDepletion',
     'mosfet-p-enhancement': 'SCBatchMosfetPEnhancement',
     'mosfet-p-enhancement-bulk': 'SCBatchMosfetPEnhancementBulk',
+    'ota': 'SCBatchOta',
     'phototransistor-npn': 'SCBatchPhototransistorNpn',
+    'regulator': 'SCBatchRegulator',
     'source-current': 'SCBatchSourceCurrent',
     'source-dependent-current': 'SCBatchSourceDependentCurrent',
     'source-dependent-voltage': 'SCBatchSourceDependentVoltage',
@@ -46,4 +52,4 @@ BATCH_MACROS = {
     'transistor-pnp': 'SCBatchTransistorPnp',
 }
 
-BATCH_LABEL_RECIPES = frozenset(())
+BATCH_LABEL_RECIPES = frozenset(('amplifier-fully-differential', 'amplifier-instrumentation', 'comparator', 'comparator-supply', 'ota', 'regulator'))

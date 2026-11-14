@@ -1,0 +1,79 @@
+schema_version: 1
+id: ota
+revision: 1
+name: Transconductance amplifier
+description: 'Operational transconductance amplifier: differential voltage inputs
+  control an output current. The lower terminal is the bias-current input; supply
+  pins are omitted.'
+keywords:
+- analog
+- active
+- amplifier
+- OTA
+- ota
+- overnight
+- batch 02
+types:
+- analog
+family: analog
+batch: overnight-analog-02
+attributes:
+  function: ota
+  supplies_shown: false
+recipe: ota
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: gmamp concept; custom triangle with bias input
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: in-plus
+  name: Noninverting input
+  description: Noninverting input
+  kind: input
+  lead_part: lead-in-plus
+- id: in-minus
+  name: Inverting input
+  description: Inverting input
+  kind: input
+  lead_part: lead-in-minus
+- id: out
+  name: Output current
+  description: Output current
+  kind: output
+  lead_part: lead-out
+- id: bias
+  name: Bias-current input
+  description: Bias-current input
+  kind: input
+  lead_part: lead-bias
+parts:
+- id: body
+  description: Body
+- id: lead-in-plus
+  description: 'Electrical lead: Noninverting input'
+- id: input-plus
+  description: Input plus
+- id: lead-in-minus
+  description: 'Electrical lead: Inverting input'
+- id: input-minus
+  description: Input minus
+- id: lead-out
+  description: 'Electrical lead: Output current'
+- id: function
+  description: Function
+- id: lead-bias
+  description: 'Electrical lead: Bias-current input'
+- id: current-output
+  description: Current output
+- id: bias-label
+  description: Bias label

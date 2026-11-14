@@ -1,0 +1,81 @@
+schema_version: 1
+id: comparator-supply
+revision: 1
+name: Comparator with supply pins
+description: Voltage comparator with two signal inputs, one logic-level output and
+  explicit positive and negative supply pins.
+keywords:
+- analog
+- active
+- comparator-supply
+- comparator
+- supply
+- overnight
+- batch 02
+types:
+- analog
+family: analog
+batch: overnight-analog-02
+attributes:
+  function: comparator-supply
+  supplies_shown: true
+recipe: comparator-supply
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: custom labelled comparator with supply terminals
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: in-plus
+  name: Noninverting input
+  description: Noninverting input
+  kind: input
+  lead_part: lead-in-plus
+- id: in-minus
+  name: Inverting input
+  description: Inverting input
+  kind: input
+  lead_part: lead-in-minus
+- id: out
+  name: Output
+  description: Output
+  kind: output
+  lead_part: lead-out
+- id: supply-plus
+  name: Positive supply
+  description: Positive supply
+  kind: power
+  lead_part: lead-supply-plus
+- id: supply-minus
+  name: Negative supply
+  description: Negative supply
+  kind: power
+  lead_part: lead-supply-minus
+parts:
+- id: body
+  description: Body
+- id: lead-in-plus
+  description: 'Electrical lead: Noninverting input'
+- id: input-plus
+  description: Input plus
+- id: lead-in-minus
+  description: 'Electrical lead: Inverting input'
+- id: input-minus
+  description: Input minus
+- id: lead-out
+  description: 'Electrical lead: Output'
+- id: function
+  description: Function
+- id: lead-supply-plus
+  description: 'Electrical lead: Positive supply'
+- id: lead-supply-minus
+  description: 'Electrical lead: Negative supply'

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-68.682458 -72.000015 51.873775 40.535244" width="18.29991507mm" height="14.29993330mm">
+  <defs>
+    <path id="sc-amplifier-fully-differential-r1-medium-thick--g0-27" d="M4.167082 0L2.462367-4.532844H1.887597L.182881 0H.666211L1.169134-1.332421H3.069794L3.566186 0H4.167082ZM2.926101-1.698184H1.306295C1.639401-2.632185 1.397736-1.94638 1.730841-2.880381C1.868002-3.265738 2.070478-3.820914 2.116198-4.062578H2.12273C2.135793-3.971138 2.181513-3.807851 2.331737-3.376773L2.926101-1.698184Z" />
+    <path id="sc-amplifier-fully-differential-r1-medium-thick--g0-46" d="M4.343432-2.227233C4.343432-3.49434 3.461682-4.532844 2.338268-4.532844H.627022V0H2.3448C3.455151 0 4.343432-.992784 4.343432-2.227233ZM3.781725-2.227233C3.781725-1.116882 3.102451-.365763 2.188045-.365763H1.188729V-4.167082H2.188045C3.102451-4.167082 3.781725-3.376773 3.781725-2.227233Z" />
+    <path id="sc-amplifier-fully-differential-r1-medium-thick--g0-54" d="M3.435556-4.088704V-4.51325H.613959V0H1.19526V-2.057415H3.167766V-2.455835H1.19526V-4.095236H2.050884C2.129261-4.095236 2.207639-4.088704 2.286017-4.088704H3.435556Z" />
+  </defs>
+  <title>Fully differential amplifier</title>
+  <desc>Fully differential amplifier with two inputs and two complementary outputs. Supply and common-mode control pins are omitted.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 12.0, "body-width": 10.0, "grid": 1.0}, "origin_svg": [-42.745573, -51.732395], "parts": ["body", "lead-in-plus", "input-plus", "lead-in-minus", "input-minus", "lead-out-plus", "output-plus", "lead-out-minus", "output-minus", "function"], "pins_mm": {"in-minus": [-8.0, -3.0], "in-plus": [-8.0, 3.0], "out-minus": [8.0, -2.0], "out-plus": [8.0, 2.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "medium", "size_factor": 1.0, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "amplifier-fully-differential"}</metadata>
+  <g id="sc-amplifier-fully-differential-r1-medium-thick--sc-amplifier-fully-differential-r1-medium-thick" inkscape:label="Fully differential amplifier / medium / thick" data-symbol="amplifier-fully-differential" data-revision="1" data-size="medium" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-42.745573,-51.732395)scale(0.996264,-0.996264)">
+    <g data-part="body" id="sc-amplifier-fully-differential-r1-medium-thick--sc-amplifier-fully-differential-r1-medium-thick--body" inkscape:label="body">
+      <path d="M-14.2263-17.07156V17.07156H14.2263V-17.07156ZM14.2263 17.07156" fill="none" />
+      <desc>Body</desc>
+    </g>
+    <g data-part="lead-in-plus" id="sc-amplifier-fully-differential-r1-medium-thick--sc-amplifier-fully-differential-r1-medium-thick--lead-in-plus" inkscape:label="lead-in-plus">
+      <path d="M-22.76208 8.53578H-14.2263" fill="none" />
+      <desc>Electrical lead: Noninverting input</desc>
+    </g>
+    <g data-part="input-plus" id="sc-amplifier-fully-differential-r1-medium-thick--sc-amplifier-fully-differential-r1-medium-thick--input-plus" inkscape:label="input-plus">
+      <path d="M-11.5233 8.53581H-8.96254" fill="none" />
+      <path d="M-10.24295 7.25546V9.81616" fill="none" />
+      <desc>Input plus</desc>
+    </g>
+    <g data-part="lead-in-minus" id="sc-amplifier-fully-differential-r1-medium-thick--sc-amplifier-fully-differential-r1-medium-thick--lead-in-minus" inkscape:label="lead-in-minus">
+      <path d="M-22.76208-8.53578H-14.2263" fill="none" />
+      <desc>Electrical lead: Inverting input</desc>
+    </g>
+    <g data-part="input-minus" id="sc-amplifier-fully-differential-r1-medium-thick--sc-amplifier-fully-differential-r1-medium-thick--input-minus" inkscape:label="input-minus">
+      <path d="M-11.5233-8.53581H-8.96254" fill="none" />
+      <desc>Input minus</desc>
+    </g>
+    <g data-part="lead-out-plus" id="sc-amplifier-fully-differential-r1-medium-thick--sc-amplifier-fully-differential-r1-medium-thick--lead-out-plus" inkscape:label="lead-out-plus">
+      <path d="M22.76208 5.69052H14.2263" fill="none" />
+      <desc>Electrical lead: Noninverting output</desc>
+    </g>
+    <g data-part="output-plus" id="sc-amplifier-fully-differential-r1-medium-thick--sc-amplifier-fully-differential-r1-medium-thick--output-plus" inkscape:label="output-plus">
+      <path d="M8.96254 5.69054H11.5233" fill="none" />
+      <path d="M10.24295 4.41019V6.97089" fill="none" />
+      <desc>Output plus</desc>
+    </g>
+    <g data-part="lead-out-minus" id="sc-amplifier-fully-differential-r1-medium-thick--sc-amplifier-fully-differential-r1-medium-thick--lead-out-minus" inkscape:label="lead-out-minus">
+      <path d="M22.76208-5.69052H14.2263" fill="none" />
+      <desc>Electrical lead: Inverting output</desc>
+    </g>
+    <g data-part="output-minus" id="sc-amplifier-fully-differential-r1-medium-thick--sc-amplifier-fully-differential-r1-medium-thick--output-minus" inkscape:label="output-minus">
+      <path d="M8.96254-5.69054H11.5233" fill="none" />
+      <desc>Output minus</desc>
+    </g>
+    <g data-part="function" id="sc-amplifier-fully-differential-r1-medium-thick--sc-amplifier-fully-differential-r1-medium-thick--function" inkscape:label="function">
+      <use x="-42.745573" y="-51.732395" xlink:href="#sc-amplifier-fully-differential-r1-medium-thick--g0-54" stroke="none" fill="#000" transform="translate(-5.18843,-2.27492) scale(-1.00375,1.00375)translate(-42.745573,-51.732395)scale(-1,-1)" />
+      <use x="-39.029162" y="-51.732395" xlink:href="#sc-amplifier-fully-differential-r1-medium-thick--g0-46" stroke="none" fill="#000" transform="translate(-5.18843,-2.27492) scale(-1.00375,1.00375)translate(-42.745573,-51.732395)scale(-1,-1)" />
+      <use x="-34.49631" y="-51.732395" xlink:href="#sc-amplifier-fully-differential-r1-medium-thick--g0-27" stroke="none" fill="#000" transform="translate(-5.18843,-2.27492) scale(-1.00375,1.00375)translate(-42.745573,-51.732395)scale(-1,-1)" />
+      <desc>Function</desc>
+    </g>
+  </g>
+</svg>

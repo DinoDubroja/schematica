@@ -1,0 +1,68 @@
+schema_version: 1
+id: regulator
+revision: 1
+name: Voltage regulator
+description: Generic three-terminal voltage regulator with input, output and common
+  reference; a schematic label specifies the regulator type and output voltage.
+keywords:
+- analog
+- active
+- regulator
+- power regulation
+- overnight
+- batch 02
+types:
+- analog
+family: analog
+batch: overnight-analog-02
+attributes:
+  function: regulator
+  supplies_shown: false
+recipe: regulator
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: custom three-terminal regulator functional block
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: in
+  name: Input
+  description: Input
+  kind: power
+  lead_part: lead-in
+- id: out
+  name: Regulated output
+  description: Regulated output
+  kind: power
+  lead_part: lead-out
+- id: common
+  name: Common reference
+  description: Common reference
+  kind: power
+  lead_part: lead-common
+parts:
+- id: body
+  description: Body
+- id: lead-in
+  description: 'Electrical lead: Input'
+- id: lead-out
+  description: 'Electrical lead: Regulated output'
+- id: lead-common
+  description: 'Electrical lead: Common reference'
+- id: function
+  description: Function
+- id: input-label
+  description: Input label
+- id: output-label
+  description: Output label
+- id: common-label
+  description: Common label
