@@ -28,7 +28,10 @@ workstreams that may be developed alongside it after their own scope is authoriz
 The remaining interview must settle retrieval behavior (including single matches),
 save/version semantics, concrete host acceptance tests and the next delivery order.
 The latest decision defers accounts until after the dev-library prototype.
-The current authorization covers resistor corrections, declared options, Variations, batch checks and publication; it does not authorize the future milestones.
+The completed resistor work covered corrections, declared options, Variations,
+batch checks and its authorized publication. Current authorization is recorded in
+[current status](../context/CURRENT.md#working-ownership); roadmap milestones do
+not authorize a new batch or publication.
 
 ## Decisions that guide the work
 
