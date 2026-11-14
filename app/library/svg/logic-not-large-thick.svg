@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000016 68.881555 34.865984" width="24.29988190mm" height="12.29994436mm">
+  <title>Inverter</title>
+  <desc>Inverter. One logic input and one inverted output. Supply pins are omitted.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 10.0, "body-width": 11.25, "grid": 1.0, "inversion-diameter": 1.875}, "origin_svg": [-37.076311, -54.567026], "parts": ["lead-in", "lead-out", "body", "inversion"], "pins_mm": {"in": [-10.0, 0.0], "out": [12.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "logic-not"}</metadata>
+  <g id="sc-logic-not-r1-large-thick--sc-logic-not-r1-large-thick" inkscape:label="Inverter / large / thick" data-symbol="logic-not" data-revision="1" data-size="large" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-37.076311,-54.567026)scale(0.996264,-0.996264)">
+    <g data-part="lead-in" id="sc-logic-not-r1-large-thick--sc-logic-not-r1-large-thick--lead-in" inkscape:label="lead-in">
+      <path d="M-28.4526 0H-16.00458" fill="none" />
+      <desc>Electrical lead: Input</desc>
+    </g>
+    <g data-part="lead-out" id="sc-logic-not-r1-large-thick--sc-logic-not-r1-large-thick--lead-out" inkscape:label="lead-out">
+      <path d="M34.14313 0H21.33945" fill="none" />
+      <desc>Electrical lead: Output</desc>
+    </g>
+    <g data-part="body" id="sc-logic-not-r1-large-thick--sc-logic-not-r1-large-thick--body" inkscape:label="body">
+      <path d="M-16.00458-14.2263V14.2263L16.00458 0L-16.00458-14.2263" fill="none" />
+      <desc>Body</desc>
+    </g>
+    <g data-part="inversion" id="sc-logic-not-r1-large-thick--sc-logic-not-r1-large-thick--inversion" inkscape:label="inversion">
+      <path d="M21.33943 0C21.33943 1.47319 20.1452 2.66742 18.67201 2.66742S16.0046 1.47319 16.0046 0S17.19882-2.66742 18.67201-2.66742S21.33943-1.47319 21.33943 0ZM18.67201 0" fill="none" />
+      <desc>Inversion</desc>
+    </g>
+  </g>
+</svg>

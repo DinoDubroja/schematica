@@ -54191,6 +54191,6680 @@
         }
       ],
       "source_fingerprint": "e05aeef6b0da7e8453ff2b54d44503b3a70d85c691484911460b317021b0e1c5"
+    },
+    {
+      "schema_version": 1,
+      "id": "logic-and",
+      "revision": 1,
+      "name": "AND gate",
+      "description": "AND gate. Two logic inputs and one output. Supply pins are omitted.",
+      "keywords": [
+        "logic",
+        "digital",
+        "US",
+        "American",
+        "and",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "logic"
+      ],
+      "family": "logic",
+      "batch": "overnight-logic-02",
+      "attributes": {
+        "function": "and",
+        "input_count": 2,
+        "inverting": false,
+        "enable_active": null
+      },
+      "recipe": "logic-and",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "and port",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "A",
+          "description": "A",
+          "kind": "input",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "b",
+          "name": "B",
+          "description": "B",
+          "kind": "input",
+          "lead_part": "lead-b"
+        },
+        {
+          "id": "out",
+          "name": "Output",
+          "description": "Output",
+          "kind": "output",
+          "lead_part": "lead-out"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-a",
+          "description": "Electrical lead: A"
+        },
+        {
+          "id": "lead-b",
+          "description": "Electrical lead: B"
+        },
+        {
+          "id": "lead-out",
+          "description": "Electrical lead: Output"
+        },
+        {
+          "id": "body",
+          "description": "Body"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "logic-and-small-thin",
+          "symbol_id": "logic-and",
+          "name": "AND gate",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/logic-and-small-thin.svg",
+          "width_mm": 15.14992137,
+          "height_mm": 8.14995618,
+          "origin_svg": [
+            -48.627446,
+            -60.4489
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999811805555655,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              2.0
+            ],
+            "b": [
+              -6.0,
+              -2.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.75,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 2114,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-and-small-medium",
+          "symbol_id": "logic-and",
+          "name": "AND gate",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/logic-and-small-medium.svg",
+          "width_mm": 15.19992339,
+          "height_mm": 8.19996173,
+          "origin_svg": [
+            -48.556576,
+            -60.378029
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999776527777967,
+            -1.0583333306612984e-06
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              2.0
+            ],
+            "b": [
+              -6.0,
+              -2.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.75,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 2143,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-and-small-thick",
+          "symbol_id": "logic-and",
+          "name": "AND gate",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/logic-and-small-thick.svg",
+          "width_mm": 15.29992777,
+          "height_mm": 8.29996611,
+          "origin_svg": [
+            -48.414834,
+            -60.236287
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999653055555804,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              2.0
+            ],
+            "b": [
+              -6.0,
+              -2.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.75,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 2130,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-and-medium-thin",
+          "symbol_id": "logic-and",
+          "name": "AND gate",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/logic-and-medium-thin.svg",
+          "width_mm": 19.14989926,
+          "height_mm": 10.14994513,
+          "origin_svg": [
+            -42.958185,
+            -57.614269
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999977652777771,
+            7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              2.0
+            ],
+            "b": [
+              -8.0,
+              -2.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 2144,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-and-medium-medium",
+          "symbol_id": "logic-and",
+          "name": "AND gate",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/logic-and-medium-medium.svg",
+          "width_mm": 19.19990163,
+          "height_mm": 10.19995102,
+          "origin_svg": [
+            -42.887314,
+            -57.543398
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999972361111118,
+            -5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              2.0
+            ],
+            "b": [
+              -8.0,
+              -2.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 2169,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-and-medium-thick",
+          "symbol_id": "logic-and",
+          "name": "AND gate",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/logic-and-medium-thick.svg",
+          "width_mm": 19.29990601,
+          "height_mm": 10.29995506,
+          "origin_svg": [
+            -42.745573,
+            -57.401657
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999963541666671,
+            1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              2.0
+            ],
+            "b": [
+              -8.0,
+              -2.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 2156,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-and-large-thin",
+          "symbol_id": "logic-and",
+          "name": "AND gate",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/logic-and-large-thin.svg",
+          "width_mm": 24.14987197,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -37.288923,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999944722222212,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              2.0
+            ],
+            "b": [
+              -10.0,
+              -2.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.25,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 2130,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-and-large-medium",
+          "symbol_id": "logic-and",
+          "name": "AND gate",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/logic-and-large-medium.svg",
+          "width_mm": 24.19987399,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -37.218053,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999941194444443,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              2.0
+            ],
+            "b": [
+              -10.0,
+              -2.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.25,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 2156,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-and-large-thick",
+          "symbol_id": "logic-and",
+          "name": "AND gate",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/logic-and-large-thick.svg",
+          "width_mm": 24.2998819,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -37.076311,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999946486111121,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              2.0
+            ],
+            "b": [
+              -10.0,
+              -2.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.25,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 2143,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "f4d90104eea1497997aea13e2d0ef90bc0d8ea6b915e3c1e573e65c9bf0ff7e9"
+    },
+    {
+      "schema_version": 1,
+      "id": "logic-buffer",
+      "revision": 1,
+      "name": "Buffer",
+      "description": "Buffer. One logic input and one noninverting output. Supply pins are omitted.",
+      "keywords": [
+        "logic",
+        "digital",
+        "US",
+        "American",
+        "buffer",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "logic"
+      ],
+      "family": "logic",
+      "batch": "overnight-logic-02",
+      "attributes": {
+        "function": "buffer",
+        "input_count": 1,
+        "inverting": false,
+        "enable_active": null
+      },
+      "recipe": "logic-buffer",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "buffer port",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "in",
+          "name": "Input",
+          "description": "Input",
+          "kind": "input",
+          "lead_part": "lead-in"
+        },
+        {
+          "id": "out",
+          "name": "Output",
+          "description": "Output",
+          "kind": "output",
+          "lead_part": "lead-out"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-in",
+          "description": "Electrical lead: Input"
+        },
+        {
+          "id": "lead-out",
+          "description": "Electrical lead: Output"
+        },
+        {
+          "id": "body",
+          "description": "Body"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "logic-buffer-small-thin",
+          "symbol_id": "logic-buffer",
+          "name": "Buffer",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/logic-buffer-small-thin.svg",
+          "width_mm": 15.14992137,
+          "height_mm": 8.14995618,
+          "origin_svg": [
+            -48.627446,
+            -60.4489
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999811805555655,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -6.0,
+              0.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.75,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 1837,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-buffer-small-medium",
+          "symbol_id": "logic-buffer",
+          "name": "Buffer",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/logic-buffer-small-medium.svg",
+          "width_mm": 15.19992339,
+          "height_mm": 8.19996173,
+          "origin_svg": [
+            -48.556576,
+            -60.378029
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999776527777967,
+            -1.0583333306612984e-06
+          ],
+          "pins_mm": {
+            "in": [
+              -6.0,
+              0.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.75,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 1862,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-buffer-small-thick",
+          "symbol_id": "logic-buffer",
+          "name": "Buffer",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/logic-buffer-small-thick.svg",
+          "width_mm": 15.29992777,
+          "height_mm": 8.29996611,
+          "origin_svg": [
+            -48.414834,
+            -60.236287
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999653055555804,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -6.0,
+              0.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.75,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 1851,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-buffer-medium-thin",
+          "symbol_id": "logic-buffer",
+          "name": "Buffer",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/logic-buffer-medium-thin.svg",
+          "width_mm": 19.14989926,
+          "height_mm": 10.14994513,
+          "origin_svg": [
+            -42.958185,
+            -57.614269
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999977652777771,
+            7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -8.0,
+              0.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 1859,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-buffer-medium-medium",
+          "symbol_id": "logic-buffer",
+          "name": "Buffer",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/logic-buffer-medium-medium.svg",
+          "width_mm": 19.19990163,
+          "height_mm": 10.19995102,
+          "origin_svg": [
+            -42.887314,
+            -57.543398
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999972361111118,
+            -5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -8.0,
+              0.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 1880,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-buffer-medium-thick",
+          "symbol_id": "logic-buffer",
+          "name": "Buffer",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/logic-buffer-medium-thick.svg",
+          "width_mm": 19.29990601,
+          "height_mm": 10.29995506,
+          "origin_svg": [
+            -42.745573,
+            -57.401657
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999963541666671,
+            1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -8.0,
+              0.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 1869,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-buffer-large-thin",
+          "symbol_id": "logic-buffer",
+          "name": "Buffer",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/logic-buffer-large-thin.svg",
+          "width_mm": 24.14987197,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -37.288923,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999944722222212,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -10.0,
+              0.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.25,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 1849,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-buffer-large-medium",
+          "symbol_id": "logic-buffer",
+          "name": "Buffer",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/logic-buffer-large-medium.svg",
+          "width_mm": 24.19987399,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -37.218053,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999941194444443,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -10.0,
+              0.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.25,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 1871,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-buffer-large-thick",
+          "symbol_id": "logic-buffer",
+          "name": "Buffer",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/logic-buffer-large-thick.svg",
+          "width_mm": 24.2998819,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -37.076311,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999946486111121,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -10.0,
+              0.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.25,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 1860,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "a1c5f53f3b2b8dc6499187d578b7951a311192bd7ed37b95e7863cbf8c6fcb38"
+    },
+    {
+      "schema_version": 1,
+      "id": "logic-nand",
+      "revision": 1,
+      "name": "NAND gate",
+      "description": "NAND gate. Two logic inputs and one inverted output. Supply pins are omitted.",
+      "keywords": [
+        "logic",
+        "digital",
+        "US",
+        "American",
+        "nand",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "logic"
+      ],
+      "family": "logic",
+      "batch": "overnight-logic-02",
+      "attributes": {
+        "function": "nand",
+        "input_count": 2,
+        "inverting": true,
+        "enable_active": null
+      },
+      "recipe": "logic-nand",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "nand port",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "A",
+          "description": "A",
+          "kind": "input",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "b",
+          "name": "B",
+          "description": "B",
+          "kind": "input",
+          "lead_part": "lead-b"
+        },
+        {
+          "id": "out",
+          "name": "Output",
+          "description": "Output",
+          "kind": "output",
+          "lead_part": "lead-out"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-a",
+          "description": "Electrical lead: A"
+        },
+        {
+          "id": "lead-b",
+          "description": "Electrical lead: B"
+        },
+        {
+          "id": "lead-out",
+          "description": "Electrical lead: Output"
+        },
+        {
+          "id": "body",
+          "description": "Body"
+        },
+        {
+          "id": "inversion",
+          "description": "Inversion"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "logic-nand-small-thin",
+          "symbol_id": "logic-nand",
+          "name": "NAND gate",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/logic-nand-small-thin.svg",
+          "width_mm": 15.14992137,
+          "height_mm": 8.14995618,
+          "origin_svg": [
+            -48.627446,
+            -60.4489
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999811805555655,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              2.0
+            ],
+            "b": [
+              -6.0,
+              -2.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.75,
+            "body-height": 6.0,
+            "inversion-diameter": 1.125,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2537,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-nand-small-medium",
+          "symbol_id": "logic-nand",
+          "name": "NAND gate",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/logic-nand-small-medium.svg",
+          "width_mm": 15.19992339,
+          "height_mm": 8.19996173,
+          "origin_svg": [
+            -48.556576,
+            -60.378029
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999776527777967,
+            -1.0583333306612984e-06
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              2.0
+            ],
+            "b": [
+              -6.0,
+              -2.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.75,
+            "body-height": 6.0,
+            "inversion-diameter": 1.125,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2570,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-nand-small-thick",
+          "symbol_id": "logic-nand",
+          "name": "NAND gate",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/logic-nand-small-thick.svg",
+          "width_mm": 15.29992777,
+          "height_mm": 8.29996611,
+          "origin_svg": [
+            -48.414834,
+            -60.236287
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999653055555804,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              2.0
+            ],
+            "b": [
+              -6.0,
+              -2.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.75,
+            "body-height": 6.0,
+            "inversion-diameter": 1.125,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2555,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-nand-medium-thin",
+          "symbol_id": "logic-nand",
+          "name": "NAND gate",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/logic-nand-medium-thin.svg",
+          "width_mm": 19.14989926,
+          "height_mm": 10.14994513,
+          "origin_svg": [
+            -42.958185,
+            -57.614269
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999977652777771,
+            7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              2.0
+            ],
+            "b": [
+              -8.0,
+              -2.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 8.0,
+            "inversion-diameter": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2605,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-nand-medium-medium",
+          "symbol_id": "logic-nand",
+          "name": "NAND gate",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/logic-nand-medium-medium.svg",
+          "width_mm": 19.19990163,
+          "height_mm": 10.19995102,
+          "origin_svg": [
+            -42.887314,
+            -57.543398
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999972361111118,
+            -5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              2.0
+            ],
+            "b": [
+              -8.0,
+              -2.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 8.0,
+            "inversion-diameter": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2634,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-nand-medium-thick",
+          "symbol_id": "logic-nand",
+          "name": "NAND gate",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/logic-nand-medium-thick.svg",
+          "width_mm": 19.29990601,
+          "height_mm": 10.29995506,
+          "origin_svg": [
+            -42.745573,
+            -57.401657
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999963541666671,
+            1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              2.0
+            ],
+            "b": [
+              -8.0,
+              -2.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 8.0,
+            "inversion-diameter": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2619,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-nand-large-thin",
+          "symbol_id": "logic-nand",
+          "name": "NAND gate",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/logic-nand-large-thin.svg",
+          "width_mm": 24.14987197,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -37.288923,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999944722222212,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              2.0
+            ],
+            "b": [
+              -10.0,
+              -2.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.25,
+            "body-height": 10.0,
+            "inversion-diameter": 1.875,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2557,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-nand-large-medium",
+          "symbol_id": "logic-nand",
+          "name": "NAND gate",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/logic-nand-large-medium.svg",
+          "width_mm": 24.19987399,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -37.218053,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999941194444443,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              2.0
+            ],
+            "b": [
+              -10.0,
+              -2.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.25,
+            "body-height": 10.0,
+            "inversion-diameter": 1.875,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2587,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-nand-large-thick",
+          "symbol_id": "logic-nand",
+          "name": "NAND gate",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/logic-nand-large-thick.svg",
+          "width_mm": 24.2998819,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -37.076311,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999946486111121,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              2.0
+            ],
+            "b": [
+              -10.0,
+              -2.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.25,
+            "body-height": 10.0,
+            "inversion-diameter": 1.875,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2572,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "25c3e03c2d57bce548573a4cd1535d6cfae15fa73d348096c014f17aa625f5e9"
+    },
+    {
+      "schema_version": 1,
+      "id": "logic-nor",
+      "revision": 1,
+      "name": "NOR gate",
+      "description": "NOR gate. Two logic inputs and one inverted output. Supply pins are omitted.",
+      "keywords": [
+        "logic",
+        "digital",
+        "US",
+        "American",
+        "nor",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "logic"
+      ],
+      "family": "logic",
+      "batch": "overnight-logic-02",
+      "attributes": {
+        "function": "nor",
+        "input_count": 2,
+        "inverting": true,
+        "enable_active": null
+      },
+      "recipe": "logic-nor",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "nor port",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "A",
+          "description": "A",
+          "kind": "input",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "b",
+          "name": "B",
+          "description": "B",
+          "kind": "input",
+          "lead_part": "lead-b"
+        },
+        {
+          "id": "out",
+          "name": "Output",
+          "description": "Output",
+          "kind": "output",
+          "lead_part": "lead-out"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-a",
+          "description": "Electrical lead: A"
+        },
+        {
+          "id": "lead-b",
+          "description": "Electrical lead: B"
+        },
+        {
+          "id": "lead-out",
+          "description": "Electrical lead: Output"
+        },
+        {
+          "id": "body",
+          "description": "Body"
+        },
+        {
+          "id": "inversion",
+          "description": "Inversion"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "logic-nor-small-thin",
+          "symbol_id": "logic-nor",
+          "name": "NOR gate",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/logic-nor-small-thin.svg",
+          "width_mm": 15.14992137,
+          "height_mm": 8.14995618,
+          "origin_svg": [
+            -48.627446,
+            -60.4489
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999811805555655,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              2.0
+            ],
+            "b": [
+              -6.0,
+              -2.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.97499,
+            "body-height": 6.0,
+            "inversion-diameter": 1.125,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2558,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-nor-small-medium",
+          "symbol_id": "logic-nor",
+          "name": "NOR gate",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/logic-nor-small-medium.svg",
+          "width_mm": 15.19992339,
+          "height_mm": 8.19996173,
+          "origin_svg": [
+            -48.556576,
+            -60.378029
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999776527777967,
+            -1.0583333306612984e-06
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              2.0
+            ],
+            "b": [
+              -6.0,
+              -2.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.97499,
+            "body-height": 6.0,
+            "inversion-diameter": 1.125,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2591,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-nor-small-thick",
+          "symbol_id": "logic-nor",
+          "name": "NOR gate",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/logic-nor-small-thick.svg",
+          "width_mm": 15.29992777,
+          "height_mm": 8.29996611,
+          "origin_svg": [
+            -48.414834,
+            -60.236287
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999653055555804,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              2.0
+            ],
+            "b": [
+              -6.0,
+              -2.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.97499,
+            "body-height": 6.0,
+            "inversion-diameter": 1.125,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2576,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-nor-medium-thin",
+          "symbol_id": "logic-nor",
+          "name": "NOR gate",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/logic-nor-medium-thin.svg",
+          "width_mm": 19.14989926,
+          "height_mm": 10.14994513,
+          "origin_svg": [
+            -42.958185,
+            -57.614269
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999977652777771,
+            7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              2.0
+            ],
+            "b": [
+              -8.0,
+              -2.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.3,
+            "body-height": 8.0,
+            "inversion-diameter": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2576,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-nor-medium-medium",
+          "symbol_id": "logic-nor",
+          "name": "NOR gate",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/logic-nor-medium-medium.svg",
+          "width_mm": 19.19990163,
+          "height_mm": 10.19995102,
+          "origin_svg": [
+            -42.887314,
+            -57.543398
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999972361111118,
+            -5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              2.0
+            ],
+            "b": [
+              -8.0,
+              -2.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.3,
+            "body-height": 8.0,
+            "inversion-diameter": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2605,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-nor-medium-thick",
+          "symbol_id": "logic-nor",
+          "name": "NOR gate",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/logic-nor-medium-thick.svg",
+          "width_mm": 19.29990601,
+          "height_mm": 10.29995506,
+          "origin_svg": [
+            -42.745573,
+            -57.401657
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999963541666671,
+            1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              2.0
+            ],
+            "b": [
+              -8.0,
+              -2.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.3,
+            "body-height": 8.0,
+            "inversion-diameter": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2590,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-nor-large-thin",
+          "symbol_id": "logic-nor",
+          "name": "NOR gate",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/logic-nor-large-thin.svg",
+          "width_mm": 24.14987197,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -37.288923,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999944722222212,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              2.0
+            ],
+            "b": [
+              -10.0,
+              -2.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.625,
+            "body-height": 10.0,
+            "inversion-diameter": 1.875,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2602,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-nor-large-medium",
+          "symbol_id": "logic-nor",
+          "name": "NOR gate",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/logic-nor-large-medium.svg",
+          "width_mm": 24.19987399,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -37.218053,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999941194444443,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              2.0
+            ],
+            "b": [
+              -10.0,
+              -2.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.625,
+            "body-height": 10.0,
+            "inversion-diameter": 1.875,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2632,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-nor-large-thick",
+          "symbol_id": "logic-nor",
+          "name": "NOR gate",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/logic-nor-large-thick.svg",
+          "width_mm": 24.2998819,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -37.076311,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999946486111121,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              2.0
+            ],
+            "b": [
+              -10.0,
+              -2.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.625,
+            "body-height": 10.0,
+            "inversion-diameter": 1.875,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2617,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "d0870a94a15acd6e29a7c89d3a5819043a798afde23d00cb84fc4c6a284a4d82"
+    },
+    {
+      "schema_version": 1,
+      "id": "logic-not",
+      "revision": 1,
+      "name": "Inverter",
+      "description": "Inverter. One logic input and one inverted output. Supply pins are omitted.",
+      "keywords": [
+        "logic",
+        "digital",
+        "US",
+        "American",
+        "not",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "logic"
+      ],
+      "family": "logic",
+      "batch": "overnight-logic-02",
+      "attributes": {
+        "function": "not",
+        "input_count": 1,
+        "inverting": true,
+        "enable_active": null
+      },
+      "recipe": "logic-not",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "not port",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "in",
+          "name": "Input",
+          "description": "Input",
+          "kind": "input",
+          "lead_part": "lead-in"
+        },
+        {
+          "id": "out",
+          "name": "Output",
+          "description": "Output",
+          "kind": "output",
+          "lead_part": "lead-out"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-in",
+          "description": "Electrical lead: Input"
+        },
+        {
+          "id": "lead-out",
+          "description": "Electrical lead: Output"
+        },
+        {
+          "id": "body",
+          "description": "Body"
+        },
+        {
+          "id": "inversion",
+          "description": "Inversion"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "logic-not-small-thin",
+          "symbol_id": "logic-not",
+          "name": "Inverter",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/logic-not-small-thin.svg",
+          "width_mm": 15.14992137,
+          "height_mm": 8.14995618,
+          "origin_svg": [
+            -48.627446,
+            -60.4489
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999811805555655,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -6.0,
+              0.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.75,
+            "body-height": 6.0,
+            "inversion-diameter": 1.125,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2206,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-not-small-medium",
+          "symbol_id": "logic-not",
+          "name": "Inverter",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/logic-not-small-medium.svg",
+          "width_mm": 15.19992339,
+          "height_mm": 8.19996173,
+          "origin_svg": [
+            -48.556576,
+            -60.378029
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999776527777967,
+            -1.0583333306612984e-06
+          ],
+          "pins_mm": {
+            "in": [
+              -6.0,
+              0.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.75,
+            "body-height": 6.0,
+            "inversion-diameter": 1.125,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2235,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-not-small-thick",
+          "symbol_id": "logic-not",
+          "name": "Inverter",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/logic-not-small-thick.svg",
+          "width_mm": 15.29992777,
+          "height_mm": 8.29996611,
+          "origin_svg": [
+            -48.414834,
+            -60.236287
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999653055555804,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -6.0,
+              0.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.75,
+            "body-height": 6.0,
+            "inversion-diameter": 1.125,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2222,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-not-medium-thin",
+          "symbol_id": "logic-not",
+          "name": "Inverter",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/logic-not-medium-thin.svg",
+          "width_mm": 19.14989926,
+          "height_mm": 10.14994513,
+          "origin_svg": [
+            -42.958185,
+            -57.614269
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999977652777771,
+            7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -8.0,
+              0.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 8.0,
+            "inversion-diameter": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2266,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-not-medium-medium",
+          "symbol_id": "logic-not",
+          "name": "Inverter",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/logic-not-medium-medium.svg",
+          "width_mm": 19.19990163,
+          "height_mm": 10.19995102,
+          "origin_svg": [
+            -42.887314,
+            -57.543398
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999972361111118,
+            -5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -8.0,
+              0.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 8.0,
+            "inversion-diameter": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2291,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-not-medium-thick",
+          "symbol_id": "logic-not",
+          "name": "Inverter",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/logic-not-medium-thick.svg",
+          "width_mm": 19.29990601,
+          "height_mm": 10.29995506,
+          "origin_svg": [
+            -42.745573,
+            -57.401657
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999963541666671,
+            1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -8.0,
+              0.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 8.0,
+            "inversion-diameter": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2278,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-not-large-thin",
+          "symbol_id": "logic-not",
+          "name": "Inverter",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/logic-not-large-thin.svg",
+          "width_mm": 24.14987197,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -37.288923,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999944722222212,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -10.0,
+              0.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.25,
+            "body-height": 10.0,
+            "inversion-diameter": 1.875,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2222,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-not-large-medium",
+          "symbol_id": "logic-not",
+          "name": "Inverter",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/logic-not-large-medium.svg",
+          "width_mm": 24.19987399,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -37.218053,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999941194444443,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -10.0,
+              0.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.25,
+            "body-height": 10.0,
+            "inversion-diameter": 1.875,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2248,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-not-large-thick",
+          "symbol_id": "logic-not",
+          "name": "Inverter",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/logic-not-large-thick.svg",
+          "width_mm": 24.2998819,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -37.076311,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999946486111121,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -10.0,
+              0.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.25,
+            "body-height": 10.0,
+            "inversion-diameter": 1.875,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion"
+          ],
+          "svg_bytes": 2235,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "4aad9d06432d769f5fdcd4158949effc4e65fcd3ba72a131ebf9e38ce5958d9f"
+    },
+    {
+      "schema_version": 1,
+      "id": "logic-or",
+      "revision": 1,
+      "name": "OR gate",
+      "description": "OR gate. Two logic inputs and one output. Supply pins are omitted.",
+      "keywords": [
+        "logic",
+        "digital",
+        "US",
+        "American",
+        "or",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "logic"
+      ],
+      "family": "logic",
+      "batch": "overnight-logic-02",
+      "attributes": {
+        "function": "or",
+        "input_count": 2,
+        "inverting": false,
+        "enable_active": null
+      },
+      "recipe": "logic-or",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "or port",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "A",
+          "description": "A",
+          "kind": "input",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "b",
+          "name": "B",
+          "description": "B",
+          "kind": "input",
+          "lead_part": "lead-b"
+        },
+        {
+          "id": "out",
+          "name": "Output",
+          "description": "Output",
+          "kind": "output",
+          "lead_part": "lead-out"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-a",
+          "description": "Electrical lead: A"
+        },
+        {
+          "id": "lead-b",
+          "description": "Electrical lead: B"
+        },
+        {
+          "id": "lead-out",
+          "description": "Electrical lead: Output"
+        },
+        {
+          "id": "body",
+          "description": "Body"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "logic-or-small-thin",
+          "symbol_id": "logic-or",
+          "name": "OR gate",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/logic-or-small-thin.svg",
+          "width_mm": 15.14992137,
+          "height_mm": 8.14995618,
+          "origin_svg": [
+            -48.627446,
+            -60.4489
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999811805555655,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              2.0
+            ],
+            "b": [
+              -6.0,
+              -2.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.97499,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 2132,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-or-small-medium",
+          "symbol_id": "logic-or",
+          "name": "OR gate",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/logic-or-small-medium.svg",
+          "width_mm": 15.19992339,
+          "height_mm": 8.19996173,
+          "origin_svg": [
+            -48.556576,
+            -60.378029
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999776527777967,
+            -1.0583333306612984e-06
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              2.0
+            ],
+            "b": [
+              -6.0,
+              -2.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.97499,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 2161,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-or-small-thick",
+          "symbol_id": "logic-or",
+          "name": "OR gate",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/logic-or-small-thick.svg",
+          "width_mm": 15.29992777,
+          "height_mm": 8.29996611,
+          "origin_svg": [
+            -48.414834,
+            -60.236287
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999653055555804,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              2.0
+            ],
+            "b": [
+              -6.0,
+              -2.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.97499,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 2148,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-or-medium-thin",
+          "symbol_id": "logic-or",
+          "name": "OR gate",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/logic-or-medium-thin.svg",
+          "width_mm": 19.14989926,
+          "height_mm": 10.14994513,
+          "origin_svg": [
+            -42.958185,
+            -57.614269
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999977652777771,
+            7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              2.0
+            ],
+            "b": [
+              -8.0,
+              -2.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.3,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 2151,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-or-medium-medium",
+          "symbol_id": "logic-or",
+          "name": "OR gate",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/logic-or-medium-medium.svg",
+          "width_mm": 19.19990163,
+          "height_mm": 10.19995102,
+          "origin_svg": [
+            -42.887314,
+            -57.543398
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999972361111118,
+            -5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              2.0
+            ],
+            "b": [
+              -8.0,
+              -2.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.3,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 2176,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-or-medium-thick",
+          "symbol_id": "logic-or",
+          "name": "OR gate",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/logic-or-medium-thick.svg",
+          "width_mm": 19.29990601,
+          "height_mm": 10.29995506,
+          "origin_svg": [
+            -42.745573,
+            -57.401657
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999963541666671,
+            1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              2.0
+            ],
+            "b": [
+              -8.0,
+              -2.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.3,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 2163,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-or-large-thin",
+          "symbol_id": "logic-or",
+          "name": "OR gate",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/logic-or-large-thin.svg",
+          "width_mm": 24.14987197,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -37.288923,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999944722222212,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              2.0
+            ],
+            "b": [
+              -10.0,
+              -2.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.625,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 2146,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-or-large-medium",
+          "symbol_id": "logic-or",
+          "name": "OR gate",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/logic-or-large-medium.svg",
+          "width_mm": 24.19987399,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -37.218053,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999941194444443,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              2.0
+            ],
+            "b": [
+              -10.0,
+              -2.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.625,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 2172,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-or-large-thick",
+          "symbol_id": "logic-or",
+          "name": "OR gate",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/logic-or-large-thick.svg",
+          "width_mm": 24.2998819,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -37.076311,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999946486111121,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              2.0
+            ],
+            "b": [
+              -10.0,
+              -2.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.625,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body"
+          ],
+          "svg_bytes": 2159,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "fa26da20d502874b239070d73f6cacae09acf3d852d514a02a5b595863fc0813"
+    },
+    {
+      "schema_version": 1,
+      "id": "logic-schmitt-buffer",
+      "revision": 1,
+      "name": "Schmitt-trigger buffer",
+      "description": "Schmitt-trigger buffer. One logic input and one noninverting output. The internal hysteresis mark indicates distinct rising and falling thresholds. Supply pins are omitted.",
+      "keywords": [
+        "logic",
+        "digital",
+        "US",
+        "American",
+        "schmitt-buffer",
+        "Schmitt trigger",
+        "hysteresis",
+        "schmitt",
+        "buffer",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "logic"
+      ],
+      "family": "logic",
+      "batch": "overnight-logic-02",
+      "attributes": {
+        "function": "schmitt-buffer",
+        "input_count": 1,
+        "inverting": false,
+        "enable_active": null
+      },
+      "recipe": "logic-schmitt-buffer",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "schmitt",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md",
+        "secondary_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "in",
+          "name": "Input",
+          "description": "Input",
+          "kind": "input",
+          "lead_part": "lead-in"
+        },
+        {
+          "id": "out",
+          "name": "Output",
+          "description": "Output",
+          "kind": "output",
+          "lead_part": "lead-out"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-in",
+          "description": "Electrical lead: Input"
+        },
+        {
+          "id": "lead-out",
+          "description": "Electrical lead: Output"
+        },
+        {
+          "id": "body",
+          "description": "Body"
+        },
+        {
+          "id": "hysteresis",
+          "description": "Hysteresis"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "logic-schmitt-buffer-small-thin",
+          "symbol_id": "logic-schmitt-buffer",
+          "name": "Schmitt-trigger buffer",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/logic-schmitt-buffer-small-thin.svg",
+          "width_mm": 15.14992137,
+          "height_mm": 8.14995618,
+          "origin_svg": [
+            -48.627446,
+            -60.4489
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999811805555655,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -6.0,
+              0.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.75,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "hysteresis"
+          ],
+          "svg_bytes": 2458,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-schmitt-buffer-small-medium",
+          "symbol_id": "logic-schmitt-buffer",
+          "name": "Schmitt-trigger buffer",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/logic-schmitt-buffer-small-medium.svg",
+          "width_mm": 15.19992339,
+          "height_mm": 8.19996173,
+          "origin_svg": [
+            -48.556576,
+            -60.378029
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999776527777967,
+            -1.0583333306612984e-06
+          ],
+          "pins_mm": {
+            "in": [
+              -6.0,
+              0.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.75,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "hysteresis"
+          ],
+          "svg_bytes": 2487,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-schmitt-buffer-small-thick",
+          "symbol_id": "logic-schmitt-buffer",
+          "name": "Schmitt-trigger buffer",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/logic-schmitt-buffer-small-thick.svg",
+          "width_mm": 15.29992777,
+          "height_mm": 8.29996611,
+          "origin_svg": [
+            -48.414834,
+            -60.236287
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999653055555804,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -6.0,
+              0.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.75,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "hysteresis"
+          ],
+          "svg_bytes": 2474,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-schmitt-buffer-medium-thin",
+          "symbol_id": "logic-schmitt-buffer",
+          "name": "Schmitt-trigger buffer",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/logic-schmitt-buffer-medium-thin.svg",
+          "width_mm": 19.14989926,
+          "height_mm": 10.14994513,
+          "origin_svg": [
+            -42.958185,
+            -57.614269
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999977652777771,
+            7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -8.0,
+              0.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "hysteresis"
+          ],
+          "svg_bytes": 2482,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-schmitt-buffer-medium-medium",
+          "symbol_id": "logic-schmitt-buffer",
+          "name": "Schmitt-trigger buffer",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/logic-schmitt-buffer-medium-medium.svg",
+          "width_mm": 19.19990163,
+          "height_mm": 10.19995102,
+          "origin_svg": [
+            -42.887314,
+            -57.543398
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999972361111118,
+            -5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -8.0,
+              0.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "hysteresis"
+          ],
+          "svg_bytes": 2507,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-schmitt-buffer-medium-thick",
+          "symbol_id": "logic-schmitt-buffer",
+          "name": "Schmitt-trigger buffer",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/logic-schmitt-buffer-medium-thick.svg",
+          "width_mm": 19.29990601,
+          "height_mm": 10.29995506,
+          "origin_svg": [
+            -42.745573,
+            -57.401657
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999963541666671,
+            1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -8.0,
+              0.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "hysteresis"
+          ],
+          "svg_bytes": 2494,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-schmitt-buffer-large-thin",
+          "symbol_id": "logic-schmitt-buffer",
+          "name": "Schmitt-trigger buffer",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/logic-schmitt-buffer-large-thin.svg",
+          "width_mm": 24.14987197,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -37.288923,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999944722222212,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -10.0,
+              0.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.25,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "hysteresis"
+          ],
+          "svg_bytes": 2471,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-schmitt-buffer-large-medium",
+          "symbol_id": "logic-schmitt-buffer",
+          "name": "Schmitt-trigger buffer",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/logic-schmitt-buffer-large-medium.svg",
+          "width_mm": 24.19987399,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -37.218053,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999941194444443,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -10.0,
+              0.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.25,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "hysteresis"
+          ],
+          "svg_bytes": 2497,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-schmitt-buffer-large-thick",
+          "symbol_id": "logic-schmitt-buffer",
+          "name": "Schmitt-trigger buffer",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/logic-schmitt-buffer-large-thick.svg",
+          "width_mm": 24.2998819,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -37.076311,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999946486111121,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -10.0,
+              0.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.25,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "hysteresis"
+          ],
+          "svg_bytes": 2484,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "871d3319659b0e16ea133599f81c7f50694f88738d216ffb0900e28639e4c3bd"
+    },
+    {
+      "schema_version": 1,
+      "id": "logic-schmitt-inverter",
+      "revision": 1,
+      "name": "Schmitt-trigger inverter",
+      "description": "Schmitt-trigger inverter. One logic input and one inverted output. The internal hysteresis mark indicates distinct rising and falling thresholds. Supply pins are omitted.",
+      "keywords": [
+        "logic",
+        "digital",
+        "US",
+        "American",
+        "schmitt-inverter",
+        "Schmitt trigger",
+        "hysteresis",
+        "schmitt",
+        "inverter",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "logic"
+      ],
+      "family": "logic",
+      "batch": "overnight-logic-02",
+      "attributes": {
+        "function": "schmitt-inverter",
+        "input_count": 1,
+        "inverting": true,
+        "enable_active": null
+      },
+      "recipe": "logic-schmitt-inverter",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "invschmitt",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md",
+        "secondary_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "in",
+          "name": "Input",
+          "description": "Input",
+          "kind": "input",
+          "lead_part": "lead-in"
+        },
+        {
+          "id": "out",
+          "name": "Output",
+          "description": "Output",
+          "kind": "output",
+          "lead_part": "lead-out"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-in",
+          "description": "Electrical lead: Input"
+        },
+        {
+          "id": "lead-out",
+          "description": "Electrical lead: Output"
+        },
+        {
+          "id": "body",
+          "description": "Body"
+        },
+        {
+          "id": "inversion",
+          "description": "Inversion"
+        },
+        {
+          "id": "hysteresis",
+          "description": "Hysteresis"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "logic-schmitt-inverter-small-thin",
+          "symbol_id": "logic-schmitt-inverter",
+          "name": "Schmitt-trigger inverter",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/logic-schmitt-inverter-small-thin.svg",
+          "width_mm": 15.14992137,
+          "height_mm": 8.14995618,
+          "origin_svg": [
+            -48.627446,
+            -60.4489
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999811805555655,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -6.0,
+              0.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.75,
+            "body-height": 6.0,
+            "inversion-diameter": 1.125,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion",
+            "hysteresis"
+          ],
+          "svg_bytes": 2907,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-schmitt-inverter-small-medium",
+          "symbol_id": "logic-schmitt-inverter",
+          "name": "Schmitt-trigger inverter",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/logic-schmitt-inverter-small-medium.svg",
+          "width_mm": 15.19992339,
+          "height_mm": 8.19996173,
+          "origin_svg": [
+            -48.556576,
+            -60.378029
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999776527777967,
+            -1.0583333306612984e-06
+          ],
+          "pins_mm": {
+            "in": [
+              -6.0,
+              0.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.75,
+            "body-height": 6.0,
+            "inversion-diameter": 1.125,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion",
+            "hysteresis"
+          ],
+          "svg_bytes": 2940,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-schmitt-inverter-small-thick",
+          "symbol_id": "logic-schmitt-inverter",
+          "name": "Schmitt-trigger inverter",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/logic-schmitt-inverter-small-thick.svg",
+          "width_mm": 15.29992777,
+          "height_mm": 8.29996611,
+          "origin_svg": [
+            -48.414834,
+            -60.236287
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999653055555804,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -6.0,
+              0.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.75,
+            "body-height": 6.0,
+            "inversion-diameter": 1.125,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion",
+            "hysteresis"
+          ],
+          "svg_bytes": 2925,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-schmitt-inverter-medium-thin",
+          "symbol_id": "logic-schmitt-inverter",
+          "name": "Schmitt-trigger inverter",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/logic-schmitt-inverter-medium-thin.svg",
+          "width_mm": 19.14989926,
+          "height_mm": 10.14994513,
+          "origin_svg": [
+            -42.958185,
+            -57.614269
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999977652777771,
+            7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -8.0,
+              0.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 8.0,
+            "inversion-diameter": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion",
+            "hysteresis"
+          ],
+          "svg_bytes": 2969,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-schmitt-inverter-medium-medium",
+          "symbol_id": "logic-schmitt-inverter",
+          "name": "Schmitt-trigger inverter",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/logic-schmitt-inverter-medium-medium.svg",
+          "width_mm": 19.19990163,
+          "height_mm": 10.19995102,
+          "origin_svg": [
+            -42.887314,
+            -57.543398
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999972361111118,
+            -5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -8.0,
+              0.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 8.0,
+            "inversion-diameter": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion",
+            "hysteresis"
+          ],
+          "svg_bytes": 2998,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-schmitt-inverter-medium-thick",
+          "symbol_id": "logic-schmitt-inverter",
+          "name": "Schmitt-trigger inverter",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/logic-schmitt-inverter-medium-thick.svg",
+          "width_mm": 19.29990601,
+          "height_mm": 10.29995506,
+          "origin_svg": [
+            -42.745573,
+            -57.401657
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999963541666671,
+            1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -8.0,
+              0.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 8.0,
+            "inversion-diameter": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion",
+            "hysteresis"
+          ],
+          "svg_bytes": 2983,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-schmitt-inverter-large-thin",
+          "symbol_id": "logic-schmitt-inverter",
+          "name": "Schmitt-trigger inverter",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/logic-schmitt-inverter-large-thin.svg",
+          "width_mm": 24.14987197,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -37.288923,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999944722222212,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -10.0,
+              0.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.25,
+            "body-height": 10.0,
+            "inversion-diameter": 1.875,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion",
+            "hysteresis"
+          ],
+          "svg_bytes": 2924,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-schmitt-inverter-large-medium",
+          "symbol_id": "logic-schmitt-inverter",
+          "name": "Schmitt-trigger inverter",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/logic-schmitt-inverter-large-medium.svg",
+          "width_mm": 24.19987399,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -37.218053,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999941194444443,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -10.0,
+              0.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.25,
+            "body-height": 10.0,
+            "inversion-diameter": 1.875,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion",
+            "hysteresis"
+          ],
+          "svg_bytes": 2954,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-schmitt-inverter-large-thick",
+          "symbol_id": "logic-schmitt-inverter",
+          "name": "Schmitt-trigger inverter",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/logic-schmitt-inverter-large-thick.svg",
+          "width_mm": 24.2998819,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -37.076311,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999946486111121,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "in": [
+              -10.0,
+              0.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.25,
+            "body-height": 10.0,
+            "inversion-diameter": 1.875,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion",
+            "hysteresis"
+          ],
+          "svg_bytes": 2939,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "fe55f46acf976720a913439db63ad711f08c016dd4964bccae6273daa7246c9c"
+    },
+    {
+      "schema_version": 1,
+      "id": "logic-tristate-buffer",
+      "revision": 1,
+      "name": "Tri-state buffer",
+      "description": "Tri-state buffer. One logic input and one noninverting output. The lower enable input is active high; a low enable makes the output high impedance. Supply pins are omitted.",
+      "keywords": [
+        "logic",
+        "digital",
+        "US",
+        "American",
+        "tristate-buffer",
+        "three state",
+        "enable",
+        "tristate",
+        "buffer",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "logic"
+      ],
+      "family": "logic",
+      "batch": "overnight-logic-02",
+      "attributes": {
+        "function": "tristate-buffer",
+        "input_count": 1,
+        "inverting": false,
+        "enable_active": "high"
+      },
+      "recipe": "logic-tristate-buffer",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "custom active-high enable added to buffer port",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "in",
+          "name": "Input",
+          "description": "Input",
+          "kind": "input",
+          "lead_part": "lead-in"
+        },
+        {
+          "id": "out",
+          "name": "Output",
+          "description": "Output",
+          "kind": "output",
+          "lead_part": "lead-out"
+        },
+        {
+          "id": "enable",
+          "name": "Enable (active high)",
+          "description": "Enable (active high)",
+          "kind": "input",
+          "lead_part": "lead-enable"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-in",
+          "description": "Electrical lead: Input"
+        },
+        {
+          "id": "lead-out",
+          "description": "Electrical lead: Output"
+        },
+        {
+          "id": "body",
+          "description": "Body"
+        },
+        {
+          "id": "lead-enable",
+          "description": "Electrical lead: Enable (active high)"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "logic-tristate-buffer-small-thin",
+          "symbol_id": "logic-tristate-buffer",
+          "name": "Tri-state buffer",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/logic-tristate-buffer-small-thin.svg",
+          "width_mm": 15.14992137,
+          "height_mm": 10.14994513,
+          "origin_svg": [
+            -48.627446,
+            -60.4489
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999811805555655,
+            0.9999955305555568
+          ],
+          "pins_mm": {
+            "in": [
+              -6.0,
+              0.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ],
+            "enable": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.75,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "lead-enable"
+          ],
+          "svg_bytes": 2356,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-tristate-buffer-small-medium",
+          "symbol_id": "logic-tristate-buffer",
+          "name": "Tri-state buffer",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/logic-tristate-buffer-small-medium.svg",
+          "width_mm": 15.19992339,
+          "height_mm": 10.19995102,
+          "origin_svg": [
+            -48.556576,
+            -60.378029
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999776527777967,
+            0.9999942958333327
+          ],
+          "pins_mm": {
+            "in": [
+              -6.0,
+              0.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ],
+            "enable": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.75,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "lead-enable"
+          ],
+          "svg_bytes": 2385,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-tristate-buffer-small-thick",
+          "symbol_id": "logic-tristate-buffer",
+          "name": "Tri-state buffer",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/logic-tristate-buffer-small-thick.svg",
+          "width_mm": 15.29992777,
+          "height_mm": 10.29995506,
+          "origin_svg": [
+            -48.414834,
+            -60.236287
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999653055555804,
+            0.9999946486111095
+          ],
+          "pins_mm": {
+            "in": [
+              -6.0,
+              0.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ],
+            "enable": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.75,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "lead-enable"
+          ],
+          "svg_bytes": 2372,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-tristate-buffer-medium-thin",
+          "symbol_id": "logic-tristate-buffer",
+          "name": "Tri-state buffer",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/logic-tristate-buffer-medium-thin.svg",
+          "width_mm": 19.14989926,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -42.958185,
+            -57.614269
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999977652777771,
+            0.9999955305555542
+          ],
+          "pins_mm": {
+            "in": [
+              -8.0,
+              0.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ],
+            "enable": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "lead-enable"
+          ],
+          "svg_bytes": 2380,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-tristate-buffer-medium-medium",
+          "symbol_id": "logic-tristate-buffer",
+          "name": "Tri-state buffer",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/logic-tristate-buffer-medium-medium.svg",
+          "width_mm": 19.19990163,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -42.887314,
+            -57.543398
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999972361111118,
+            0.9999942958333327
+          ],
+          "pins_mm": {
+            "in": [
+              -8.0,
+              0.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ],
+            "enable": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "lead-enable"
+          ],
+          "svg_bytes": 2405,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-tristate-buffer-medium-thick",
+          "symbol_id": "logic-tristate-buffer",
+          "name": "Tri-state buffer",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/logic-tristate-buffer-medium-thick.svg",
+          "width_mm": 19.29990601,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -42.745573,
+            -57.401657
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999963541666671,
+            0.9999955305555542
+          ],
+          "pins_mm": {
+            "in": [
+              -8.0,
+              0.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ],
+            "enable": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "lead-enable"
+          ],
+          "svg_bytes": 2392,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-tristate-buffer-large-thin",
+          "symbol_id": "logic-tristate-buffer",
+          "name": "Tri-state buffer",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/logic-tristate-buffer-large-thin.svg",
+          "width_mm": 24.14987197,
+          "height_mm": 15.14992137,
+          "origin_svg": [
+            -37.288923,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999944722222212,
+            1.4999915319444446
+          ],
+          "pins_mm": {
+            "in": [
+              -10.0,
+              0.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ],
+            "enable": [
+              0.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.25,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "lead-enable"
+          ],
+          "svg_bytes": 2368,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-tristate-buffer-large-medium",
+          "symbol_id": "logic-tristate-buffer",
+          "name": "Tri-state buffer",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/logic-tristate-buffer-large-medium.svg",
+          "width_mm": 24.19987399,
+          "height_mm": 15.19992339,
+          "origin_svg": [
+            -37.218053,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999941194444443,
+            1.4999918847222213
+          ],
+          "pins_mm": {
+            "in": [
+              -10.0,
+              0.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ],
+            "enable": [
+              0.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.25,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "lead-enable"
+          ],
+          "svg_bytes": 2393,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-tristate-buffer-large-thick",
+          "symbol_id": "logic-tristate-buffer",
+          "name": "Tri-state buffer",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/logic-tristate-buffer-large-thick.svg",
+          "width_mm": 24.2998819,
+          "height_mm": 15.29992777,
+          "origin_svg": [
+            -37.076311,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999946486111121,
+            1.499993119444448
+          ],
+          "pins_mm": {
+            "in": [
+              -10.0,
+              0.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ],
+            "enable": [
+              0.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.25,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "lead-enable"
+          ],
+          "svg_bytes": 2381,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "a66c5c8883893a17d2e6c17210886da5fe652b0f9b150ae40a204bc5d7ce1533"
+    },
+    {
+      "schema_version": 1,
+      "id": "logic-tristate-inverter",
+      "revision": 1,
+      "name": "Tri-state inverter",
+      "description": "Tri-state inverter. One logic input and one inverted output. The lower enable input is active high; a low enable makes the output high impedance. Supply pins are omitted.",
+      "keywords": [
+        "logic",
+        "digital",
+        "US",
+        "American",
+        "tristate-inverter",
+        "three state",
+        "enable",
+        "tristate",
+        "inverter",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "logic"
+      ],
+      "family": "logic",
+      "batch": "overnight-logic-02",
+      "attributes": {
+        "function": "tristate-inverter",
+        "input_count": 1,
+        "inverting": true,
+        "enable_active": "high"
+      },
+      "recipe": "logic-tristate-inverter",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "custom active-high enable added to not port",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "in",
+          "name": "Input",
+          "description": "Input",
+          "kind": "input",
+          "lead_part": "lead-in"
+        },
+        {
+          "id": "out",
+          "name": "Output",
+          "description": "Output",
+          "kind": "output",
+          "lead_part": "lead-out"
+        },
+        {
+          "id": "enable",
+          "name": "Enable (active high)",
+          "description": "Enable (active high)",
+          "kind": "input",
+          "lead_part": "lead-enable"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-in",
+          "description": "Electrical lead: Input"
+        },
+        {
+          "id": "lead-out",
+          "description": "Electrical lead: Output"
+        },
+        {
+          "id": "body",
+          "description": "Body"
+        },
+        {
+          "id": "inversion",
+          "description": "Inversion"
+        },
+        {
+          "id": "lead-enable",
+          "description": "Electrical lead: Enable (active high)"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "logic-tristate-inverter-small-thin",
+          "symbol_id": "logic-tristate-inverter",
+          "name": "Tri-state inverter",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/logic-tristate-inverter-small-thin.svg",
+          "width_mm": 15.14992137,
+          "height_mm": 10.14994513,
+          "origin_svg": [
+            -48.627446,
+            -60.4489
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999811805555655,
+            0.9999955305555568
+          ],
+          "pins_mm": {
+            "in": [
+              -6.0,
+              0.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ],
+            "enable": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.75,
+            "body-height": 6.0,
+            "inversion-diameter": 1.125,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion",
+            "lead-enable"
+          ],
+          "svg_bytes": 2807,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-tristate-inverter-small-medium",
+          "symbol_id": "logic-tristate-inverter",
+          "name": "Tri-state inverter",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/logic-tristate-inverter-small-medium.svg",
+          "width_mm": 15.19992339,
+          "height_mm": 10.19995102,
+          "origin_svg": [
+            -48.556576,
+            -60.378029
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999776527777967,
+            0.9999942958333327
+          ],
+          "pins_mm": {
+            "in": [
+              -6.0,
+              0.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ],
+            "enable": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.75,
+            "body-height": 6.0,
+            "inversion-diameter": 1.125,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion",
+            "lead-enable"
+          ],
+          "svg_bytes": 2840,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-tristate-inverter-small-thick",
+          "symbol_id": "logic-tristate-inverter",
+          "name": "Tri-state inverter",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/logic-tristate-inverter-small-thick.svg",
+          "width_mm": 15.29992777,
+          "height_mm": 10.29995506,
+          "origin_svg": [
+            -48.414834,
+            -60.236287
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999653055555804,
+            0.9999946486111095
+          ],
+          "pins_mm": {
+            "in": [
+              -6.0,
+              0.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ],
+            "enable": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.75,
+            "body-height": 6.0,
+            "inversion-diameter": 1.125,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion",
+            "lead-enable"
+          ],
+          "svg_bytes": 2825,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-tristate-inverter-medium-thin",
+          "symbol_id": "logic-tristate-inverter",
+          "name": "Tri-state inverter",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/logic-tristate-inverter-medium-thin.svg",
+          "width_mm": 19.14989926,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -42.958185,
+            -57.614269
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999977652777771,
+            0.9999955305555542
+          ],
+          "pins_mm": {
+            "in": [
+              -8.0,
+              0.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ],
+            "enable": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 8.0,
+            "inversion-diameter": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion",
+            "lead-enable"
+          ],
+          "svg_bytes": 2869,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-tristate-inverter-medium-medium",
+          "symbol_id": "logic-tristate-inverter",
+          "name": "Tri-state inverter",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/logic-tristate-inverter-medium-medium.svg",
+          "width_mm": 19.19990163,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -42.887314,
+            -57.543398
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999972361111118,
+            0.9999942958333327
+          ],
+          "pins_mm": {
+            "in": [
+              -8.0,
+              0.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ],
+            "enable": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 8.0,
+            "inversion-diameter": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion",
+            "lead-enable"
+          ],
+          "svg_bytes": 2898,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-tristate-inverter-medium-thick",
+          "symbol_id": "logic-tristate-inverter",
+          "name": "Tri-state inverter",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/logic-tristate-inverter-medium-thick.svg",
+          "width_mm": 19.29990601,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -42.745573,
+            -57.401657
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999963541666671,
+            0.9999955305555542
+          ],
+          "pins_mm": {
+            "in": [
+              -8.0,
+              0.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ],
+            "enable": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.0,
+            "body-height": 8.0,
+            "inversion-diameter": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion",
+            "lead-enable"
+          ],
+          "svg_bytes": 2883,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-tristate-inverter-large-thin",
+          "symbol_id": "logic-tristate-inverter",
+          "name": "Tri-state inverter",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/logic-tristate-inverter-large-thin.svg",
+          "width_mm": 24.14987197,
+          "height_mm": 15.14992137,
+          "origin_svg": [
+            -37.288923,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999944722222212,
+            1.4999915319444446
+          ],
+          "pins_mm": {
+            "in": [
+              -10.0,
+              0.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ],
+            "enable": [
+              0.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.25,
+            "body-height": 10.0,
+            "inversion-diameter": 1.875,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion",
+            "lead-enable"
+          ],
+          "svg_bytes": 2823,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-tristate-inverter-large-medium",
+          "symbol_id": "logic-tristate-inverter",
+          "name": "Tri-state inverter",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/logic-tristate-inverter-large-medium.svg",
+          "width_mm": 24.19987399,
+          "height_mm": 15.19992339,
+          "origin_svg": [
+            -37.218053,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999941194444443,
+            1.4999918847222213
+          ],
+          "pins_mm": {
+            "in": [
+              -10.0,
+              0.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ],
+            "enable": [
+              0.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.25,
+            "body-height": 10.0,
+            "inversion-diameter": 1.875,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion",
+            "lead-enable"
+          ],
+          "svg_bytes": 2852,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-tristate-inverter-large-thick",
+          "symbol_id": "logic-tristate-inverter",
+          "name": "Tri-state inverter",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/logic-tristate-inverter-large-thick.svg",
+          "width_mm": 24.2998819,
+          "height_mm": 15.29992777,
+          "origin_svg": [
+            -37.076311,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999946486111121,
+            1.499993119444448
+          ],
+          "pins_mm": {
+            "in": [
+              -10.0,
+              0.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ],
+            "enable": [
+              0.0,
+              -8.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.25,
+            "body-height": 10.0,
+            "inversion-diameter": 1.875,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "body",
+            "inversion",
+            "lead-enable"
+          ],
+          "svg_bytes": 2838,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "21d3877edf43fd886f9075b7dd040dac2c1eb15136dd10f4240409a3bfc37080"
+    },
+    {
+      "schema_version": 1,
+      "id": "logic-xnor",
+      "revision": 1,
+      "name": "XNOR gate",
+      "description": "XNOR gate. Two logic inputs and one inverted output. Supply pins are omitted.",
+      "keywords": [
+        "logic",
+        "digital",
+        "US",
+        "American",
+        "xnor",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "logic"
+      ],
+      "family": "logic",
+      "batch": "overnight-logic-02",
+      "attributes": {
+        "function": "xnor",
+        "input_count": 2,
+        "inverting": true,
+        "enable_active": null
+      },
+      "recipe": "logic-xnor",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "xnor port",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "A",
+          "description": "A",
+          "kind": "input",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "b",
+          "name": "B",
+          "description": "B",
+          "kind": "input",
+          "lead_part": "lead-b"
+        },
+        {
+          "id": "out",
+          "name": "Output",
+          "description": "Output",
+          "kind": "output",
+          "lead_part": "lead-out"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-a",
+          "description": "Electrical lead: A"
+        },
+        {
+          "id": "lead-b",
+          "description": "Electrical lead: B"
+        },
+        {
+          "id": "lead-out",
+          "description": "Electrical lead: Output"
+        },
+        {
+          "id": "body",
+          "description": "Body"
+        },
+        {
+          "id": "exclusive-mark",
+          "description": "Exclusive mark"
+        },
+        {
+          "id": "inversion",
+          "description": "Inversion"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "logic-xnor-small-thin",
+          "symbol_id": "logic-xnor",
+          "name": "XNOR gate",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/logic-xnor-small-thin.svg",
+          "width_mm": 15.14992137,
+          "height_mm": 8.14995618,
+          "origin_svg": [
+            -48.627446,
+            -60.4489
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999811805555655,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              2.0
+            ],
+            "b": [
+              -6.0,
+              -2.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.97499,
+            "body-height": 6.0,
+            "inversion-diameter": 1.125,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "exclusive-mark",
+            "inversion"
+          ],
+          "svg_bytes": 2881,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-xnor-small-medium",
+          "symbol_id": "logic-xnor",
+          "name": "XNOR gate",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/logic-xnor-small-medium.svg",
+          "width_mm": 15.19992339,
+          "height_mm": 8.19996173,
+          "origin_svg": [
+            -48.556576,
+            -60.378029
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999776527777967,
+            -1.0583333306612984e-06
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              2.0
+            ],
+            "b": [
+              -6.0,
+              -2.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.97499,
+            "body-height": 6.0,
+            "inversion-diameter": 1.125,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "exclusive-mark",
+            "inversion"
+          ],
+          "svg_bytes": 2918,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-xnor-small-thick",
+          "symbol_id": "logic-xnor",
+          "name": "XNOR gate",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/logic-xnor-small-thick.svg",
+          "width_mm": 15.29992777,
+          "height_mm": 8.29996611,
+          "origin_svg": [
+            -48.414834,
+            -60.236287
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999653055555804,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              2.0
+            ],
+            "b": [
+              -6.0,
+              -2.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.97499,
+            "body-height": 6.0,
+            "inversion-diameter": 1.125,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "exclusive-mark",
+            "inversion"
+          ],
+          "svg_bytes": 2901,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-xnor-medium-thin",
+          "symbol_id": "logic-xnor",
+          "name": "XNOR gate",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/logic-xnor-medium-thin.svg",
+          "width_mm": 19.14989926,
+          "height_mm": 10.14994513,
+          "origin_svg": [
+            -42.958185,
+            -57.614269
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999977652777771,
+            7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              2.0
+            ],
+            "b": [
+              -8.0,
+              -2.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.3,
+            "body-height": 8.0,
+            "inversion-diameter": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "exclusive-mark",
+            "inversion"
+          ],
+          "svg_bytes": 2901,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-xnor-medium-medium",
+          "symbol_id": "logic-xnor",
+          "name": "XNOR gate",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/logic-xnor-medium-medium.svg",
+          "width_mm": 19.19990163,
+          "height_mm": 10.19995102,
+          "origin_svg": [
+            -42.887314,
+            -57.543398
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999972361111118,
+            -5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              2.0
+            ],
+            "b": [
+              -8.0,
+              -2.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.3,
+            "body-height": 8.0,
+            "inversion-diameter": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "exclusive-mark",
+            "inversion"
+          ],
+          "svg_bytes": 2934,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-xnor-medium-thick",
+          "symbol_id": "logic-xnor",
+          "name": "XNOR gate",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/logic-xnor-medium-thick.svg",
+          "width_mm": 19.29990601,
+          "height_mm": 10.29995506,
+          "origin_svg": [
+            -42.745573,
+            -57.401657
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999963541666671,
+            1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              2.0
+            ],
+            "b": [
+              -8.0,
+              -2.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.3,
+            "body-height": 8.0,
+            "inversion-diameter": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "exclusive-mark",
+            "inversion"
+          ],
+          "svg_bytes": 2917,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-xnor-large-thin",
+          "symbol_id": "logic-xnor",
+          "name": "XNOR gate",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/logic-xnor-large-thin.svg",
+          "width_mm": 24.14987197,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -37.288923,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999944722222212,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              2.0
+            ],
+            "b": [
+              -10.0,
+              -2.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.625,
+            "body-height": 10.0,
+            "inversion-diameter": 1.875,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "exclusive-mark",
+            "inversion"
+          ],
+          "svg_bytes": 2927,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-xnor-large-medium",
+          "symbol_id": "logic-xnor",
+          "name": "XNOR gate",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/logic-xnor-large-medium.svg",
+          "width_mm": 24.19987399,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -37.218053,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999941194444443,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              2.0
+            ],
+            "b": [
+              -10.0,
+              -2.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.625,
+            "body-height": 10.0,
+            "inversion-diameter": 1.875,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "exclusive-mark",
+            "inversion"
+          ],
+          "svg_bytes": 2961,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-xnor-large-thick",
+          "symbol_id": "logic-xnor",
+          "name": "XNOR gate",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/logic-xnor-large-thick.svg",
+          "width_mm": 24.2998819,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -37.076311,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999946486111121,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              2.0
+            ],
+            "b": [
+              -10.0,
+              -2.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.625,
+            "body-height": 10.0,
+            "inversion-diameter": 1.875,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "exclusive-mark",
+            "inversion"
+          ],
+          "svg_bytes": 2944,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "ac6365a0ca520d6aef739f1983b901ca51801b76ad331a30aed2b1d33fdeb3c3"
+    },
+    {
+      "schema_version": 1,
+      "id": "logic-xor",
+      "revision": 1,
+      "name": "XOR gate",
+      "description": "XOR gate. Two logic inputs and one output. Supply pins are omitted.",
+      "keywords": [
+        "logic",
+        "digital",
+        "US",
+        "American",
+        "xor",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "logic"
+      ],
+      "family": "logic",
+      "batch": "overnight-logic-02",
+      "attributes": {
+        "function": "xor",
+        "input_count": 2,
+        "inverting": false,
+        "enable_active": null
+      },
+      "recipe": "logic-xor",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "xor port",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "A",
+          "description": "A",
+          "kind": "input",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "b",
+          "name": "B",
+          "description": "B",
+          "kind": "input",
+          "lead_part": "lead-b"
+        },
+        {
+          "id": "out",
+          "name": "Output",
+          "description": "Output",
+          "kind": "output",
+          "lead_part": "lead-out"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-a",
+          "description": "Electrical lead: A"
+        },
+        {
+          "id": "lead-b",
+          "description": "Electrical lead: B"
+        },
+        {
+          "id": "lead-out",
+          "description": "Electrical lead: Output"
+        },
+        {
+          "id": "body",
+          "description": "Body"
+        },
+        {
+          "id": "exclusive-mark",
+          "description": "Exclusive mark"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "logic-xor-small-thin",
+          "symbol_id": "logic-xor",
+          "name": "XOR gate",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/logic-xor-small-thin.svg",
+          "width_mm": 15.14992137,
+          "height_mm": 8.14995618,
+          "origin_svg": [
+            -48.627446,
+            -60.4489
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999811805555655,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              2.0
+            ],
+            "b": [
+              -6.0,
+              -2.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.97499,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "exclusive-mark"
+          ],
+          "svg_bytes": 2451,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-xor-small-medium",
+          "symbol_id": "logic-xor",
+          "name": "XOR gate",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/logic-xor-small-medium.svg",
+          "width_mm": 15.19992339,
+          "height_mm": 8.19996173,
+          "origin_svg": [
+            -48.556576,
+            -60.378029
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999776527777967,
+            -1.0583333306612984e-06
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              2.0
+            ],
+            "b": [
+              -6.0,
+              -2.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.97499,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "exclusive-mark"
+          ],
+          "svg_bytes": 2484,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-xor-small-thick",
+          "symbol_id": "logic-xor",
+          "name": "XOR gate",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/logic-xor-small-thick.svg",
+          "width_mm": 15.29992777,
+          "height_mm": 8.29996611,
+          "origin_svg": [
+            -48.414834,
+            -60.236287
+          ],
+          "visual_center_from_origin_mm": [
+            0.49999653055555804,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              2.0
+            ],
+            "b": [
+              -6.0,
+              -2.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.97499,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "exclusive-mark"
+          ],
+          "svg_bytes": 2469,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-xor-medium-thin",
+          "symbol_id": "logic-xor",
+          "name": "XOR gate",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/logic-xor-medium-thin.svg",
+          "width_mm": 19.14989926,
+          "height_mm": 10.14994513,
+          "origin_svg": [
+            -42.958185,
+            -57.614269
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999977652777771,
+            7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              2.0
+            ],
+            "b": [
+              -8.0,
+              -2.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.3,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "exclusive-mark"
+          ],
+          "svg_bytes": 2472,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-xor-medium-medium",
+          "symbol_id": "logic-xor",
+          "name": "XOR gate",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/logic-xor-medium-medium.svg",
+          "width_mm": 19.19990163,
+          "height_mm": 10.19995102,
+          "origin_svg": [
+            -42.887314,
+            -57.543398
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999972361111118,
+            -5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              2.0
+            ],
+            "b": [
+              -8.0,
+              -2.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.3,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "exclusive-mark"
+          ],
+          "svg_bytes": 2501,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-xor-medium-thick",
+          "symbol_id": "logic-xor",
+          "name": "XOR gate",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/logic-xor-medium-thick.svg",
+          "width_mm": 19.29990601,
+          "height_mm": 10.29995506,
+          "origin_svg": [
+            -42.745573,
+            -57.401657
+          ],
+          "visual_center_from_origin_mm": [
+            0.4999963541666671,
+            1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              2.0
+            ],
+            "b": [
+              -8.0,
+              -2.0
+            ],
+            "out": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.3,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "exclusive-mark"
+          ],
+          "svg_bytes": 2486,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-xor-large-thin",
+          "symbol_id": "logic-xor",
+          "name": "XOR gate",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/logic-xor-large-thin.svg",
+          "width_mm": 24.14987197,
+          "height_mm": 12.14993407,
+          "origin_svg": [
+            -37.288923,
+            -54.779638
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999944722222212,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              2.0
+            ],
+            "b": [
+              -10.0,
+              -2.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.625,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "exclusive-mark"
+          ],
+          "svg_bytes": 2467,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-xor-large-medium",
+          "symbol_id": "logic-xor",
+          "name": "XOR gate",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/logic-xor-large-medium.svg",
+          "width_mm": 24.19987399,
+          "height_mm": 12.19993997,
+          "origin_svg": [
+            -37.218053,
+            -54.708767
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999941194444443,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              2.0
+            ],
+            "b": [
+              -10.0,
+              -2.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.625,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "exclusive-mark"
+          ],
+          "svg_bytes": 2497,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "logic-xor-large-thick",
+          "symbol_id": "logic-xor",
+          "name": "XOR gate",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/logic-xor-large-thick.svg",
+          "width_mm": 24.2998819,
+          "height_mm": 12.29994436,
+          "origin_svg": [
+            -37.076311,
+            -54.567026
+          ],
+          "visual_center_from_origin_mm": [
+            0.9999946486111121,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -10.0,
+              2.0
+            ],
+            "b": [
+              -10.0,
+              -2.0
+            ],
+            "out": [
+              12.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 11.625,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "lead-out",
+            "body",
+            "exclusive-mark"
+          ],
+          "svg_bytes": 2482,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "a15c9d7143dd9c5340357aaa1245d95a29af44eadf417f4feb66425790583955"
     }
   ]
 }

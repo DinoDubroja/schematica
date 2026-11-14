@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000016 54.283179 28.771498" width="19.14989926mm" height="10.14994513mm">
+  <title>XOR gate</title>
+  <desc>XOR gate. Two logic inputs and one output. Supply pins are omitted.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 8.0, "body-width": 9.3, "grid": 1.0}, "origin_svg": [-42.958185, -57.614269], "parts": ["lead-a", "lead-b", "lead-out", "body", "exclusive-mark"], "pins_mm": {"a": [-8.0, 2.0], "b": [-8.0, -2.0], "out": [9.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "medium", "size_factor": 1.0, "stroke": "thin", "stroke_mm": 0.15}, "symbol_id": "logic-xor"}</metadata>
+  <g id="sc-logic-xor-r1-medium-thin--sc-logic-xor-r1-medium-thin" inkscape:label="XOR gate / medium / thin" data-symbol="logic-xor" data-revision="1" data-size="medium" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(-42.958185,-57.614269)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="sc-logic-xor-r1-medium-thin--sc-logic-xor-r1-medium-thin--lead-a" inkscape:label="lead-a">
+      <path d="M-22.76208 5.69052H-8.53578" fill="none" />
+      <desc>Electrical lead: A</desc>
+    </g>
+    <g data-part="lead-b" id="sc-logic-xor-r1-medium-thin--sc-logic-xor-r1-medium-thin--lead-b" inkscape:label="lead-b">
+      <path d="M-22.76208-5.69052H-8.53578" fill="none" />
+      <desc>Electrical lead: B</desc>
+    </g>
+    <g data-part="lead-out" id="sc-logic-xor-r1-medium-thin--sc-logic-xor-r1-medium-thin--lead-out" inkscape:label="lead-out">
+      <path d="M25.60735 0H13.65726" fill="none" />
+      <desc>Electrical lead: Output</desc>
+    </g>
+    <g data-part="body" id="sc-logic-xor-r1-medium-thin--sc-logic-xor-r1-medium-thin--body" inkscape:label="body">
+      <path d="M-12.80367-11.38104C-5.2163-3.79366-5.2163 3.79366-12.80367 11.38104C0 11.38104 6.8286 8.53578 13.65726 0C6.8286-8.53578 0-11.38104-12.80367-11.38104" fill="none" />
+      <desc>Body</desc>
+    </g>
+    <g data-part="exclusive-mark" id="sc-logic-xor-r1-medium-thin--sc-logic-xor-r1-medium-thin--exclusive-mark" inkscape:label="exclusive-mark">
+      <path d="M-16.21797-11.38104C-8.6306-3.79366-8.6306 3.79366-16.21797 11.38104" fill="none" />
+      <desc>Exclusive mark</desc>
+    </g>
+  </g>
+</svg>

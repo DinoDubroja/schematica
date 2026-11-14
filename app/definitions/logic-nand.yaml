@@ -1,0 +1,65 @@
+schema_version: 1
+id: logic-nand
+revision: 1
+name: NAND gate
+description: NAND gate. Two logic inputs and one inverted output. Supply pins are
+  omitted.
+keywords:
+- logic
+- digital
+- US
+- American
+- nand
+- overnight
+- batch 02
+types:
+- logic
+family: logic
+batch: overnight-logic-02
+attributes:
+  function: nand
+  input_count: 2
+  inverting: true
+  enable_active: null
+recipe: logic-nand
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: nand port
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: a
+  name: A
+  description: A
+  kind: input
+  lead_part: lead-a
+- id: b
+  name: B
+  description: B
+  kind: input
+  lead_part: lead-b
+- id: out
+  name: Output
+  description: Output
+  kind: output
+  lead_part: lead-out
+parts:
+- id: lead-a
+  description: 'Electrical lead: A'
+- id: lead-b
+  description: 'Electrical lead: B'
+- id: lead-out
+  description: 'Electrical lead: Output'
+- id: body
+  description: Body
+- id: inversion
+  description: Inversion

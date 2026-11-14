@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000019 43.369874 23.527463" width="15.29992777mm" height="8.29996611mm">
+  <title>AND gate</title>
+  <desc>AND gate. Two logic inputs and one output. Supply pins are omitted.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 6.0, "body-width": 6.75, "grid": 1.0}, "origin_svg": [-48.414834, -60.236287], "parts": ["lead-a", "lead-b", "lead-out", "body"], "pins_mm": {"a": [-6.0, 2.0], "b": [-6.0, -2.0], "out": [7.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "logic-and"}</metadata>
+  <g id="sc-logic-and-r1-small-thick--sc-logic-and-r1-small-thick" inkscape:label="AND gate / small / thick" data-symbol="logic-and" data-revision="1" data-size="small" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-48.414834,-60.236287)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="sc-logic-and-r1-small-thick--sc-logic-and-r1-small-thick--lead-a" inkscape:label="lead-a">
+      <path d="M-17.07156 5.69052H-9.60275" fill="none" />
+      <desc>Electrical lead: A</desc>
+    </g>
+    <g data-part="lead-b" id="sc-logic-and-r1-small-thick--sc-logic-and-r1-small-thick--lead-b" inkscape:label="lead-b">
+      <path d="M-17.07156-5.69052H-9.60275" fill="none" />
+      <desc>Electrical lead: B</desc>
+    </g>
+    <g data-part="lead-out" id="sc-logic-and-r1-small-thick--sc-logic-and-r1-small-thick--lead-out" inkscape:label="lead-out">
+      <path d="M19.91682 0H9.60275" fill="none" />
+      <desc>Electrical lead: Output</desc>
+    </g>
+    <g data-part="body" id="sc-logic-and-r1-small-thick--sc-logic-and-r1-small-thick--body" inkscape:label="body">
+      <path d="M-9.60275-8.53578V8.53578H1.06697C5.7812 8.53578 9.60275 4.71423 9.60275 0S5.7812-8.53578 1.06697-8.53578H-9.60275" fill="none" />
+      <desc>Body</desc>
+    </g>
+  </g>
+</svg>

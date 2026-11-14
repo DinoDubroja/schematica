@@ -33,7 +33,7 @@ def straight_points(path):
 class Batch02(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.data=catalog();cls.new=[s for s in cls.data['symbols'] if s.get('batch','').startswith('overnight-')]
+        cls.data=catalog();cls.new=[s for s in cls.data['symbols'] if s.get('batch','').startswith('overnight-') and s['batch'].endswith('-02')]
         cls.baseline=json.loads((FIXTURES/'approved-before-batch-02.json').read_text(encoding='utf-8'))
 
     def test_previously_accepted_svg_bytes_and_approvals_unchanged(self):
@@ -223,6 +223,42 @@ class Batch02(unittest.TestCase):
                     group=next(g for g in artwork(config).iter() if g.get('data-part')=='current-output')
                     head=straight_points(next(group.iter(f'{{{SVG}}}path')))
                     self.assertGreater(head[1][0],(head[0][0]+head[2][0])/2)
+
+    def test_logic_inversion_input_anchors_and_active_high_enable(self):
+        bodies={}
+        inverted={'nand','nor','xnor','not','schmitt-inverter','tristate-inverter'}
+        two_inputs={'and','nand','or','nor','xor','xnor'}
+        for symbol in self.new:
+            if symbol['family']!='logic':continue
+            kind=symbol['id'].removeprefix('logic-');two=kind in two_inputs;tri=kind.startswith('tristate')
+            expected=({'a','b','out'} if two else {'in','out','enable'} if tri else {'in','out'})
+            self.assertEqual({p['id'] for p in symbol['pins']},expected)
+            for config in symbol['configurations']:
+                factor=config['settings']['size_factor'];pins=config['pins_mm']
+                parts={g.get('data-part'):g for g in artwork(config).iter() if g.get('data-part')}
+                self.assertEqual('inversion' in parts,kind in inverted)
+                self.assertEqual('exclusive-mark' in parts,kind in ('xor','xnor'))
+                self.assertEqual('hysteresis' in parts,kind.startswith('schmitt'))
+                self.assertGreater(pins['out'][0],0)
+                body=next(parts['body'].iter(f'{{{SVG}}}path'))
+                bodies[kind,config['size'],config['stroke']]=body.get('d')
+                for pin in ('a','b') if two else ('in',):
+                    self.assertLess(pins[pin][0],0)
+                    endpoint=straight_points(next(parts['lead-'+pin].iter(f'{{{SVG}}}path')))[-1]
+                    if kind in ('or','nor','xor','xnor'):
+                        # Concave input edge is a quadratic parabola; the lead must meet it.
+                        expected_x=-2.5*factor-endpoint[1]**2/(8*factor)
+                        self.assertAlmostEqual(endpoint[0],expected_x,delta=.0003)
+                    else:self.assertAlmostEqual(endpoint[0],-4.5*factor,delta=.0003)
+                if two:self.assertEqual([pins['a'][1],pins['b'][1]],[2,-2])
+                if tri:
+                    self.assertEqual(symbol['attributes']['enable_active'],'high')
+                    self.assertLess(pins['enable'][1],0)
+                    endpoint=straight_points(next(parts['lead-enable'].iter(f'{{{SVG}}}path')))[-1]
+                    self.assertLess(math.dist(endpoint,(0,-2*factor)),.0003)
+        for a,b in [('and','nand'),('or','nor'),('xor','xnor'),('buffer','not'),('schmitt-buffer','schmitt-inverter'),('tristate-buffer','tristate-inverter')]:
+            for kind,size,stroke in list(bodies):
+                if kind==a:self.assertEqual(bodies[kind,size,stroke],bodies[b,size,stroke])
 
 
 if __name__=='__main__':unittest.main()
