@@ -14,6 +14,7 @@ VARIANTS = {"normal": "fixed", "standard": "fixed", "fixed": "fixed",
             "photoresistor": "photo"}
 FAMILIES = {"resistor": "resistors", "resistors": "resistors",
             "capacitor": "capacitors", "capacitors": "capacitors",
+            "diode": "diodes", "diodes": "diodes",
             "inductor": "inductors", "inductors": "inductors",
             "opamp": "amplifiers", "amplifier": "amplifiers", "amplifiers": "amplifiers"}
 FILLER = set("show me the a an of ones one only instead symbols symbol you have please use with stroke size designs design all browse whole library dev thicker thinner larger smaller medium thick thin small large".split())

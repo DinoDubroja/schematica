@@ -14,7 +14,7 @@ This page states desired capabilities; implementation status comes from
 | Outcome | Status | What it means |
 |---|---|---|
 | Minimal symbol library in the web app | Implemented | Browse, search, compare variations, use dark/light mode and export one symbol or the whole Inkscape library |
-| Grow the dev library with agent-run batches | Batch 02 in progress | The first resistor batch is complete; the finite 80-design expansion has five new capacitors integrated here, with remaining families owned by B |
+| Grow the dev library with agent-run batches | Batch 02 in progress | The first resistor batch is complete; the finite 80-design expansion has 12 new capacitors/diodes integrated here, with remaining families owned by B |
 | Create symbols interactively with an agent | Local prototype · host checks pending | Create one symbol from text plus PNG/JPEG/WebP photos, screenshots or sketches (PDF needs host conversion): interpret → confirm → create → preview/refine → offer download/save to the dev library; shares formats and checks with batches |
 | Search and reuse symbols through agent apps | Local prototype · host checks pending | Separate search skill; shared interactive web/chat viewer with filtered results, configuration controls and an explicit selection handoff |
 | Connect Schematica through MCP | Local protocol verified · hosts pending | Required: ChatGPT Desktop across its environments and Claude Desktop; verify each complete journey, including previews, downloads and fresh-chat retrieval |
@@ -70,7 +70,7 @@ decisions take precedence.
 
 | Area | What remains |
 |---|---|
-| Human verification | Of 31 integrated designs, the original 26 are Verified and five capacitors await review; every new or changed design requires explicit human acceptance |
+| Human verification | Of 38 integrated designs, the original 26 are Verified and 12 capacitors/diodes await review; every new or changed design requires explicit human acceptance |
 | Temporary approvals | Browser-local pending selections and a chat-mediated publish step; no accounts or cross-device selection sync |
 | Text editing | Bounded editable-label proof only; no general mathematical-text round trip |
 | Device readiness | Repeat the current hosted and local checklist on the laptop; desktop results do not establish laptop behavior |

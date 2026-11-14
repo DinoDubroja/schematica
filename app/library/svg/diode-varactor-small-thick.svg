@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000014 34.865984 17.14952" width="12.29994436mm" height="6.04996956mm">
+  <title>Varactor diode</title>
+  <desc>Voltage-variable capacitance diode with a double-plate cathode marking.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 3.75, "body-width": 3.29999, "grid": 1.0}, "origin_svg": [-51.249465, -63.425256], "parts": ["lead-a", "lead-k", "junction", "cathode", "capacitance-plate"], "pins_mm": {"a": [-5.0, 0.0], "k": [5.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "diode-varactor"}</metadata>
+  <g id="sc-diode-varactor-r1-small-thick--sc-diode-varactor-r1-small-thick" inkscape:label="Varactor diode / small / thick" data-symbol="diode-varactor" data-revision="1" data-size="small" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-51.249465,-63.425256)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="sc-diode-varactor-r1-small-thick--sc-diode-varactor-r1-small-thick--lead-a" inkscape:label="lead-a">
+      <path d="M-14.2263 0H-4.26788" fill="none" />
+      <desc>Electrical lead: Anode</desc>
+    </g>
+    <g data-part="lead-k" id="sc-diode-varactor-r1-small-thick--sc-diode-varactor-r1-small-thick--lead-k" inkscape:label="lead-k">
+      <path d="M14.2263 0H5.12143" fill="none" />
+      <desc>Electrical lead: Cathode</desc>
+    </g>
+    <g data-part="junction" id="sc-diode-varactor-r1-small-thick--sc-diode-varactor-r1-small-thick--junction" inkscape:label="junction">
+      <path d="M-4.26788-5.33485L3.20091 0L-4.26788 5.33485V-5.33485" fill="none" />
+      <desc>Junction</desc>
+    </g>
+    <g data-part="cathode" id="sc-diode-varactor-r1-small-thick--sc-diode-varactor-r1-small-thick--cathode" inkscape:label="cathode">
+      <path d="M3.20091-5.33485V5.33485" fill="none" />
+      <desc>Cathode</desc>
+    </g>
+    <g data-part="capacitance-plate" id="sc-diode-varactor-r1-small-thick--sc-diode-varactor-r1-small-thick--capacitance-plate" inkscape:label="capacitance-plate">
+      <path d="M5.12143-5.33485V5.33485" fill="none" />
+      <desc>Capacitance plate</desc>
+    </g>
+  </g>
+</svg>

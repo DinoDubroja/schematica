@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.00002 34.582507 26.873027" width="12.19993997mm" height="9.48020675mm">
+  <title>Photodiode</title>
+  <desc>Light-sensitive photodiode; two arrows point toward the junction.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 3.75, "body-width": 2.625, "grid": 1.0}, "origin_svg": [-51.391206, -53.560014], "parts": ["lead-a", "lead-k", "junction", "cathode", "light-arrows"], "pins_mm": {"a": [-5.0, 0.0], "k": [5.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "diode-photo"}</metadata>
+  <g id="sc-diode-photo-r1-small-medium--sc-diode-photo-r1-small-medium" inkscape:label="Photodiode / small / medium" data-symbol="diode-photo" data-revision="1" data-size="small" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-51.391206,-53.560014)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="sc-diode-photo-r1-small-medium--sc-diode-photo-r1-small-medium--lead-a" inkscape:label="lead-a">
+      <path d="M-14.2263 0H-4.26788" fill="none" />
+      <desc>Electrical lead: Anode</desc>
+    </g>
+    <g data-part="lead-k" id="sc-diode-photo-r1-small-medium--sc-diode-photo-r1-small-medium--lead-k" inkscape:label="lead-k">
+      <path d="M14.2263 0H3.20091" fill="none" />
+      <desc>Electrical lead: Cathode</desc>
+    </g>
+    <g data-part="junction" id="sc-diode-photo-r1-small-medium--sc-diode-photo-r1-small-medium--junction" inkscape:label="junction">
+      <path d="M-4.26788-5.33485L3.20091 0L-4.26788 5.33485V-5.33485" fill="none" />
+      <desc>Junction</desc>
+    </g>
+    <g data-part="cathode" id="sc-diode-photo-r1-small-medium--sc-diode-photo-r1-small-medium--cathode" inkscape:label="cathode">
+      <path d="M3.20091-5.33485V5.33485" fill="none" />
+      <desc>Cathode</desc>
+    </g>
+    <g data-part="light-arrows" id="sc-diode-photo-r1-small-medium--sc-diode-photo-r1-small-medium--light-arrows" inkscape:label="light-arrows">
+      <path d="M2.89578 15.37936L-2.13394 10.34962" fill="none" />
+      <path d="M.88388 11.10408L-2.13394 10.34962L-1.37949 13.36745" fill="none" />
+      <path d="M6.66809 11.60706L1.63835 6.57727" fill="none" />
+      <path d="M4.65617 7.33173L1.63835 6.57727L2.3928 9.5951" fill="none" />
+      <desc>Two incoming light arrows</desc>
+    </g>
+  </g>
+</svg>

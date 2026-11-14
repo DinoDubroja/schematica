@@ -1,0 +1,54 @@
+schema_version: 1
+id: diode
+revision: 1
+name: Diode
+description: Rectifying diode; the bar marks the cathode.
+keywords:
+- diode
+- semiconductor
+- standard
+- diodes
+- overnight
+- batch 02
+types:
+- diodes
+family: diodes
+batch: overnight-diodes-02
+attributes:
+  variant: standard
+  polarized: true
+recipe: diode
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: Do
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: a
+  name: Anode
+  description: Anode
+  kind: passive
+  lead_part: lead-a
+- id: k
+  name: Cathode
+  description: Cathode
+  kind: passive
+  lead_part: lead-k
+parts:
+- id: lead-a
+  description: 'Electrical lead: Anode'
+- id: lead-k
+  description: 'Electrical lead: Cathode'
+- id: junction
+  description: Junction
+- id: cathode
+  description: Cathode

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000019 46.204514 23.527463" width="16.29992577mm" height="8.29996611mm">
+  <title>Bidirectional TVS</title>
+  <desc>Bidirectional transient-voltage suppressor shown as two opposed avalanche junctions; the terminals are interchangeable.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 5.0, "body-width": 7.6, "grid": 1.0}, "origin_svg": [-45.580203, -60.236287], "parts": ["lead-a", "lead-b", "left-junction", "left-cathode", "right-junction", "right-cathode", "junction-link"], "pins_mm": {"a": [-7.0, 0.0], "b": [7.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "medium", "size_factor": 1.0, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "diode-tvs-bidirectional"}</metadata>
+  <g id="sc-diode-tvs-bidirectional-r1-medium-thick--sc-diode-tvs-bidirectional-r1-medium-thick" inkscape:label="Bidirectional TVS / medium / thick" data-symbol="diode-tvs-bidirectional" data-revision="1" data-size="medium" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-45.580203,-60.236287)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="sc-diode-tvs-bidirectional-r1-medium-thick--sc-diode-tvs-bidirectional-r1-medium-thick--lead-a" inkscape:label="lead-a">
+      <path d="M-19.91682 0H-10.812" fill="none" />
+      <desc>Electrical lead: A</desc>
+    </g>
+    <g data-part="lead-b" id="sc-diode-tvs-bidirectional-r1-medium-thick--sc-diode-tvs-bidirectional-r1-medium-thick--lead-b" inkscape:label="lead-b">
+      <path d="M19.91682 0H10.812" fill="none" />
+      <desc>Electrical lead: B</desc>
+    </g>
+    <g data-part="left-junction" id="sc-diode-tvs-bidirectional-r1-medium-thick--sc-diode-tvs-bidirectional-r1-medium-thick--left-junction" inkscape:label="left-junction">
+      <path d="M-10.812-7.11314L-3.41429 0L-10.812 7.11314V-7.11314" fill="none" />
+      <desc>Left junction</desc>
+    </g>
+    <g data-part="left-cathode" id="sc-diode-tvs-bidirectional-r1-medium-thick--sc-diode-tvs-bidirectional-r1-medium-thick--left-cathode" inkscape:label="left-cathode">
+      <path d="M-1.5649-8.53578L-3.41429-7.11314V7.11314L-5.26375 8.53578" fill="none" />
+      <desc>Left cathode</desc>
+    </g>
+    <g data-part="right-junction" id="sc-diode-tvs-bidirectional-r1-medium-thick--sc-diode-tvs-bidirectional-r1-medium-thick--right-junction" inkscape:label="right-junction">
+      <path d="M10.812-7.11314L3.41429 0L10.812 7.11314V-7.11314" fill="none" />
+      <desc>Right junction</desc>
+    </g>
+    <g data-part="right-cathode" id="sc-diode-tvs-bidirectional-r1-medium-thick--sc-diode-tvs-bidirectional-r1-medium-thick--right-cathode" inkscape:label="right-cathode">
+      <path d="M1.5649-8.53578L3.41429-7.11314V7.11314L5.26375 8.53578" fill="none" />
+      <desc>Right cathode</desc>
+    </g>
+    <g data-part="junction-link" id="sc-diode-tvs-bidirectional-r1-medium-thick--sc-diode-tvs-bidirectional-r1-medium-thick--junction-link" inkscape:label="junction-link">
+      <path d="M-3.41429 0H3.41429" fill="none" />
+      <desc>Junction link</desc>
+    </g>
+  </g>
+</svg>

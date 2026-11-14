@@ -1,0 +1,59 @@
+schema_version: 1
+id: diode-led
+revision: 1
+name: LED
+description: Light-emitting diode; two arrows point outward to indicate emitted light.
+keywords:
+- diode
+- semiconductor
+- led
+- optical
+- light-emitting
+- LED
+- diodes
+- overnight
+- batch 02
+types:
+- diodes
+family: diodes
+batch: overnight-diodes-02
+attributes:
+  variant: led
+  polarized: true
+recipe: diode-led
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: leDo
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: a
+  name: Anode
+  description: Anode
+  kind: passive
+  lead_part: lead-a
+- id: k
+  name: Cathode
+  description: Cathode
+  kind: passive
+  lead_part: lead-k
+parts:
+- id: lead-a
+  description: 'Electrical lead: Anode'
+- id: lead-k
+  description: 'Electrical lead: Cathode'
+- id: junction
+  description: Junction
+- id: cathode
+  description: Cathode
+- id: light-arrows
+  description: Two outward light arrows

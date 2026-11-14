@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000018 28.771498 24.991941" width="10.14994513mm" height="8.81660141mm">
-  <title>Polarized capacitor Ã‚Â· curved</title>
-  <desc>Polarized capacitor with a curved negative plate; the left terminal is positive.</desc>
+  <title>Polarized capacitor - curved</title>
+  <desc>Polarized capacitor - curved negative plate; the left terminal is positive.</desc>
   <metadata>{"dimensions_mm": {"body-height": 6.66667, "body-width": 2.0, "grid": 1.0, "plate-gap": 2.0}, "origin_svg": [-54.296708, -59.504048], "parts": ["lead-positive", "lead-negative", "plate-positive", "plate-negative", "polarity"], "pins_mm": {"negative": [4.0, 0.0], "positive": [-4.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "medium", "size_factor": 1.0, "stroke": "thin", "stroke_mm": 0.15}, "symbol_id": "capacitor-polarized-curved"}</metadata>
-  <g id="sc-capacitor-polarized-curved-r1-medium-thin--sc-capacitor-polarized-curved-r1-medium-thin" inkscape:label="Polarized capacitor Ã‚Â· curved / medium / thin" data-symbol="capacitor-polarized-curved" data-revision="1" data-size="medium" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(-54.296708,-59.504048)scale(0.996264,-0.996264)">
+  <g id="sc-capacitor-polarized-curved-r1-medium-thin--sc-capacitor-polarized-curved-r1-medium-thin" inkscape:label="Polarized capacitor - curved / medium / thin" data-symbol="capacitor-polarized-curved" data-revision="1" data-size="medium" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(-54.296708,-59.504048)scale(0.996264,-0.996264)">
     <g data-part="lead-positive" id="sc-capacitor-polarized-curved-r1-medium-thin--sc-capacitor-polarized-curved-r1-medium-thin--lead-positive" inkscape:label="lead-positive">
       <path d="M-11.38104 0H-2.84526" fill="none" />
       <desc>Electrical lead: Positive</desc>

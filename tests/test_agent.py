@@ -45,6 +45,16 @@ class AgentTests(unittest.TestCase):
         self.assertIn("viewer_url", result)
         self.assertEqual(self.service.store.current_versions(), [])
 
+    def test_integrated_families_clear_unrelated_followup_filters(self):
+        session = self.service.search("normal European resistors")["session_id"]
+        capacitors = self.service.search("variable capacitors", session)
+        self.assertEqual(capacitors["match_ids"], ["capacitor-variable"])
+        self.assertNotIn("style", capacitors["filters"])
+        diodes = self.service.search("Show me diodes", session)
+        self.assertEqual(set(diodes["match_ids"]), {"diode", "diode-led", "diode-photo", "diode-schottky",
+            "diode-tvs-bidirectional", "diode-varactor", "diode-zener"})
+        self.assertNotIn("variant", diodes["filters"])
+
     def test_filters_reject_wrong_types(self):
         for filters in ({"style": "martian"}, {"ids": "resistor-eu"}, {"size": []}, {"mystery": "x"}):
             with self.assertRaises(ValidationError):

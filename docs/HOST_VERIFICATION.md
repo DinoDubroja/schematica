@@ -18,7 +18,7 @@ of embedded UI support. No remote endpoint, tunnel or public plugin was publishe
 | Browser fallback | Verified: normal → European → variable → thick, single match, Variations, empty result, Browse all, Use this symbol; integrated capacitor and saved custom option preview |
 | Browser SVG download | Verified byte-for-byte against the selected accepted SVG |
 | MCP Apps bridge | Automated mock-host tests pass: initialization, metadata/artwork access, context feedback and refusal fallback; not a real host claim |
-| Production geometry | All original 342 SVG files and 26 approvals match the baseline; combined 59 Python/11 JavaScript tests pass |
+| Production geometry | All original 342 SVG files and 26 approvals match the baseline; combined 61 Python/11 JavaScript tests pass |
 
 Repeatable commands are in [the integration guide](AGENT_INTEGRATION.md#checks).
 Machine-specific stores, logs, process IDs and exact commits are in A's local

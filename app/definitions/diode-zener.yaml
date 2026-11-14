@@ -1,0 +1,61 @@
+schema_version: 1
+id: diode-zener
+revision: 1
+name: Zener diode
+description: Zener or avalanche diode, also usable for a unidirectional TVS; the bent
+  bar marks the cathode.
+keywords:
+- diode
+- semiconductor
+- zener
+- protection
+- transient suppression
+- TVS
+- avalanche
+- unidirectional TVS
+- voltage clamp
+- diodes
+- overnight
+- batch 02
+types:
+- diodes
+family: diodes
+batch: overnight-diodes-02
+attributes:
+  variant: zener
+  polarized: true
+recipe: diode-zener
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: zDo
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: a
+  name: Anode
+  description: Anode
+  kind: passive
+  lead_part: lead-a
+- id: k
+  name: Cathode
+  description: Cathode
+  kind: passive
+  lead_part: lead-k
+parts:
+- id: lead-a
+  description: 'Electrical lead: Anode'
+- id: lead-k
+  description: 'Electrical lead: Cathode'
+- id: junction
+  description: Junction
+- id: cathode
+  description: Cathode
