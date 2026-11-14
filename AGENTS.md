@@ -39,7 +39,7 @@
   Read the current owner handoffs and [parallel-work guide](DEVELOPMENT.md#parallel-work)
   before shared edits. Integrate exact owner-ready commits, preserve active work
   and ignored drafts, and check runtime paths before retiring working copies.
-  Agent A coordinates integration and owns this consolidation's publication.
+  Agent A coordinates integration; each delivery names its authorized publisher.
 - Before declaring work finished, complete the
   [delivery checklist](DEVELOPMENT.md#delivery-checklist) and report blocked items.
   Agent A coordinates integration. Branch pushes, main updates and deployments

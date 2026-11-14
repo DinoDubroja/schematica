@@ -561,3 +561,16 @@ retire only fully merged inactive branches or recoverably preserved obsolete
 worktrees, accounting for runtime paths. Future tasks branch from the consolidated
 main. No Review, website-triggered agent processing, new symbols, categorization
 or Library redesign is authorized. [Current status](CURRENT.md) records delivery.
+
+
+**Delivery verified — 14-11-2026:** combined product `2e2f820` is on main; canonical
+website build `c30dfe980c04` is live (Cloudflare version
+`f04f7e02-6c66-4a2b-ba2e-1c03ab11ef6b`). All 91 approvals, 1,035 SVGs and 36 exports
+are exact. Passed 77 Python/11 JavaScript tests, isolated creation/transport and
+targeted UI/download checks; hosted manifest/catalog, 22 representative assets and
+135 removed-asset 404s are verified. No embedded-host or laptop completion inferred.
+Fully merged inactive task/publication branches and two obsolete publication
+worktrees were retired after preservation. The integration folder remains at the
+same baseline for installed host paths/stores; the canonical checkout is on main.
+Unrelated research and the unmerged historical review branch are retained. See
+[current status](CURRENT.md) for future task routing and remaining limitations.

@@ -1,53 +1,73 @@
 # Current status
 
-14-11-2026 · **Consolidation in progress; Agent A owns delivery through publication.**
+14-11-2026 · **Consolidated main and website published and verified.**
 
 ## Objective and authorization
 
-Combine A's ready integration/search/creation/viewer `8f686fe` with B's complete
-accepted library `2fedf44`, preserving later documentation (`25d8f54`, `ddbd03f`,
-main `131d705`). The user explicitly authorizes conflict resolution, integration
-fixes, checks, commits, pushes, normal main update, tested website publication
-and safe cleanup. This supersedes A's local-only and B-only publication restrictions.
-No Review, website-triggered processing, new symbols, categorization or redesign.
+Completed the user's authorized consolidation of A's integration/search/creation/
+shared viewer and B's complete accepted library, including later delivery guidance.
+Agent A owned integration, normal GitHub publication, website deployment and safe
+cleanup. Earlier local-only A and B-only publishing restrictions are superseded
+for this delivery. No Review, website-triggered processing, new symbols, Library
+categorization or redesign was implemented; those remain separate work.
 
-## Working checkpoint
+## Published baseline
 
-The exact ready product ancestors and later guidance are merged in A's checkout;
-A's earlier local work is pushed. Combined build **`c30dfe980c04`** is verified:
-**91 Verified / 0 Unverified**, 1,035 configurations and 36 complete-library exports.
-All accepted artwork, source recipes, definitions, catalog and approval records
-match B byte-for-byte; removed designs remain absent. Search follow-ups now handle
-all complete-library families and clear obsolete filters.
+- [GitHub main](https://github.com/DinoDubroja/schematica): complete combined source.
+  Tested product checkpoint
+  [`2e2f820`](https://github.com/DinoDubroja/schematica/commit/2e2f82047177df6223c99d57c8112747bbbfa5ef).
+  Subsequent documentation receipts do not change the website payload.
+- [Canonical website](https://schematica-preview.dinodubroja.workers.dev/): build
+  **`c30dfe980c04`**, Cloudflare version `f04f7e02-6c66-4a2b-ba2e-1c03ab11ef6b`.
+  **91 Verified / 0 Unverified designs**, 1,035 configurations and 36 library exports.
+- All accepted source recipes, definitions, artwork, catalog, IDs and approval
+  records match B's ready collection exactly. Test creations remain isolated and
+  Unverified. All intentional removals remain absent.
 
-Passed 77 Python + 11 JavaScript tests, documentation links, reproducible build,
-stdio/HTTP plus 18 real creation configurations, 36-configuration isolated
-creation/refinement/save/retrieval, and targeted browser selection/download checks.
-Test symbols remain in separate ignored stores. No exhaustive artwork GUI rerun.
+## Verification
 
-B was idle with no publication running. A verified history bundle and file archive
-preserve all worktrees, ignored drafts and B's unrelated research. Local receipts
-and runtime paths remain in `Local/parallel-work`. Main/website publication and
-cleanup are the remaining steps; the last live symbol-only build was `21ee8da1455d`.
+Passed **77 Python and 11 JavaScript tests**, documentation links and reproducible
+build. Real stdio/HTTP checks include 18 creation configurations and fresh retrieval;
+36 further configurations verify isolated creation/refinement, explicit save,
+unchanged pins and recoverable revisions. Search covers all complete-library families
+and clears obsolete follow-up filters.
+
+Targeted browser checks passed for search, NPN Small/Thick, Variations, two actual
+SVG downloads and exact chassis-ground selection. On the live destination, the
+manifest/catalog match, 22 representative assets across all 11 families match
+hashes, all 135 removed SVG URLs and two private-source paths return 404. Existing
+artwork/Inkscape evidence was reused after byte-for-byte checks, without a broad GUI rerun.
+The canonical local launcher serves the same build; the retained integration viewer
+uses the same consolidated source. Backend/browser checks are not host or laptop proof.
+
+## Cleanup and future work
+
+Retired the fully merged A/B task branches, delivery-documentation branch and old
+publication branch; removed the two obsolete publication worktrees after verified
+preservation and runtime checks. Stale synthetic/test preview servers were stopped.
+The canonical checkout is on main. The extra integration working folder is retained
+at the same revision because installed host configurations, its environment and
+ignored stores depend on that path; it is not a separate product version.
+
+A verified local history bundle and SHA-256/CRC-checked archive preserve prior source,
+ignored drafts, handoffs and unrelated research. Research remains untracked and
+unchanged in the canonical checkout. The unmerged historical
+`docs/mcp-transition-review` branch is deliberately retained. Exact local paths,
+backup and process receipts are in the workspace's owner handoffs; inspect them
+before future machine-local cleanup. A stale Claude compiler path was repaired
+with its original configuration backed up and unrelated settings preserved.
 
 ## Delivery workflow adoption
 
 [AGENTS.md](../AGENTS.md) requires the authoritative
-[delivery checklist](../DEVELOPMENT.md#delivery-checklist). Future tasks start from
-consolidated main using separate task branches/worktrees as needed. A coordinates
-integration and this delivery; cleanup follows preservation and runtime-path checks.
+[delivery checklist](../DEVELOPMENT.md#delivery-checklist). Future tasks begin from
+current main, with separate task branches/worktrees when needed. Agent A coordinates
+exact ready commits; each delivery names its publisher within authorized scope.
+No further A/B product handoff is required for this consolidation.
 
-## Remaining delivery and limitations
+Actual ChatGPT/Claude embedded journeys, remote MCP connectivity and physical laptop
+setup remain unverified. Reload existing host connections after this source update.
+Accounts, personal libraries and production storage remain outside the current baseline.
 
-Update main normally, deploy the exact tested build to the
-[canonical website](https://schematica-preview.dinodubroja.workers.dev/), verify its
-remote identity/catalog/downloads, then retire obsolete merged branches and
-publication worktrees. Keep the integration checkout while installed host configs
-and ignored stores depend on it; align it with the same consolidated baseline.
-
-Actual embedded-host journeys, remote MCP connectivity and physical laptop setup
-remain unverified; protocol/browser checks are not host or second-device evidence.
-Production stores, accounts and personal libraries remain outside this task.
-
-[Agent setup](../docs/AGENT_INTEGRATION.md) · [Host evidence](../docs/HOST_VERIFICATION.md)
-· [Decisions](DECISIONS.md) · [Roadmap](../docs/ROADMAP.md)
+[Setup and quick checks](../DEVELOPMENT.md) · [Agent setup](../docs/AGENT_INTEGRATION.md)
+· [Host evidence](../docs/HOST_VERIFICATION.md) · [Decisions](DECISIONS.md)

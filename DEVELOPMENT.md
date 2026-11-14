@@ -50,7 +50,9 @@ Targeted browser checks cover filtering, NPN Small/Thick, Variations, exact down
 and the integration selection handoff for chassis ground revision 2.
 Unchanged artwork reuses earlier rendering/Inkscape evidence, confirmed by hashes.
 
-Publication status and cleanup receipts are in [current status](context/CURRENT.md).
+GitHub main and the canonical website are published and verified at this build.
+The live manifest/catalog, 22 representative assets across all 11 families and
+135 removed SVG URLs were checked. Cleanup receipts are in [current status](context/CURRENT.md).
 The [agent setup](docs/AGENT_INTEGRATION.md) is optional local functionality;
 [actual embedded-host journeys](docs/HOST_VERIFICATION.md) and physical laptop
 setup remain unverified. Static website publication does not host an MCP backend.
@@ -59,7 +61,7 @@ setup remain unverified. Static website publication does not host an MCP backend
 
 | Action | Expected result |
 |---|---|
-| Open the [website](https://schematica-preview.dinodubroja.workers.dev/); check [build.json](https://schematica-preview.dinodubroja.workers.dev/build.json) | Build `c30dfe980c04` after the published delivery |
+| Open the [website](https://schematica-preview.dinodubroja.workers.dev/); check [build.json](https://schematica-preview.dinodubroja.workers.dev/build.json) | Build `c30dfe980c04` |
 | Clear filters; select Unverified | No matches; all 91 designs are Verified |
 | Return to All symbols; search `NPN`; select NPN transistor | The correct accepted drawing appears |
 | Choose Small / Thick; open Variations; download the symbol | Selected SVG matches Small/Thick; comparison rows vary one setting at a time |
@@ -101,7 +103,7 @@ workspace environment if available, then Python on PATH.
 `main` is the shared product baseline. Start future task branches/worktrees from
 current main; keep separate working folders for parallel tasks, not separate
 long-lived product versions. Agent A coordinates exact owner-ready commits and
-checks the combined result. For this consolidation, Agent A owns publication,
+checks the combined result. For this consolidation, Agent A completed publication,
 superseding the earlier B-only restriction. Later deliveries name one publisher
 within their task authorization; branch pushes and deployment remain separate.
 
