@@ -25,13 +25,19 @@ in A's guidance; `AGENTS.md` requires it before finishing. Agent A coordinates
 integration. This guidance-only task does not merge product features or deploy.
 Installer simplification and user-guide rewrites remain separate work.
 
-B is actively reviewing symbols. Adoption of the focused documentation change is
-handed off through A's existing owner record; B's checkout is not overwritten.
-Verify B's `AGENTS.md` route after it adopts the change. A's previously unpushed
+B is actively reviewing symbols. Exact READY guidance-only commit:
+`b722d22e28b1dedbd2b2834df6f8c264faef0190` (only the four requested documents).
+Adopt that single commit at B's safe checkpoint, preserving B's current status;
+do not merge A's product ancestry. A's owner handoff also contains the patch.
+B's `AGENTS.md` still lacks the checklist route; adoption/verification is pending. A's previously unpushed
 feature ancestry still lacks publication authorization, so A's branch and `main`
 remain unpublished/unchanged by this task; no hosted-app update is performed.
 GitHub's current `main` README still describes the earlier library. Updating that
 entry point to reflect later work remains a publication handoff, not a feature merge.
+
+Checks: 109 local links/anchors and A's checklist route pass; the independent
+repository recovery audit passes. Existing main README targets resolve on GitHub.
+The hosted-preview link check returned HTTP 403 here; first-use behavior was not tested.
 
 ## Delivered locally
 
