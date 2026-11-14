@@ -229,6 +229,14 @@ async function init() {
   $("#undo-approval").addEventListener("click", () => { review.undo(); renderCards(); updateApprovalControls(); notify("Pending selection undone."); });
   $("#copy-approvals").addEventListener("click", () => copyText(JSON.stringify(review.payload(), null, 2), "Approvals"));
   $("#copy-reference").addEventListener("click", () => { const symbol = activeSymbol(); copyText(`${symbol.name}\nID: ${symbol.id}\nRevision: ${symbol.revision}\n${symbolLink(symbol)}`, "Symbol reference"); });
+  $("#download-svg").addEventListener("click", async event => {
+    if (!Host.embedded) return;
+    event.preventDefault();
+    const symbol = activeSymbol();
+    if (!symbol) return;
+    try { await Host.download(configFor(symbol)); }
+    catch (error) { notify(error.message); }
+  });
   $("#select-copy-text").addEventListener("click", () => { $("#copy-text").focus(); $("#copy-text").select(); });
   $("#show-configurations").addEventListener("click", showConfigurations);
   document.querySelectorAll("[data-close]").forEach(button => button.addEventListener("click", () => document.getElementById(button.dataset.close).close()));

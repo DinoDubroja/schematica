@@ -21,6 +21,12 @@ class MCPTests(unittest.IsolatedAsyncioTestCase):
                 tools = (await client.list_tools()).tools
                 search = next(t for t in tools if t.name == "search_symbols")
                 self.assertEqual(search.meta["ui"]["resourceUri"], UI_URI)
+                guide = await client.call_tool("get_creation_guide", {})
+                self.assertFalse(guide.isError)
+                guidance = json.loads(guide.content[0].text)
+                self.assertIn("Drawing contract", guidance["guide"])
+                self.assertEqual(guidance["example_definition"]["recipe"], "custom")
+                self.assertIn(r"\newcommand{\SCCustom}[3]", guidance["example_recipe_tex"])
                 found = await client.call_tool("search_symbols", {"query": "normal resistor", "filters": {"family": "resistor", "variant": "fixed"}})
                 self.assertFalse(found.isError)
                 self.assertEqual(found.structuredContent["count"], 2)

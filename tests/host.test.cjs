@@ -4,14 +4,15 @@ const fs = require('node:fs');
 const vm = require('node:vm');
 const source = fs.readFileSync(require('node:path').join(__dirname, '../app/viewer/host.js'), 'utf8');
 
-function harness({rejectContext = false} = {}) {
+function harness({rejectContext = false, downloads = true, rejectDownload = false} = {}) {
   const handlers = {}, messages = [];
   const data = {catalog: {symbols: []}, session: {filters: {}}, result: {session_id:'s', sequence:1}};
   const parent = {postMessage(message) {
     messages.push(message);
     if (!message.id) return;
     let result = {};
-    if (message.method === 'ui/initialize') result = {protocolVersion:'2026-01-26', hostContext:{theme:'light'}, hostCapabilities:{serverTools:{}}};
+    if (message.method === 'ui/initialize') result = {protocolVersion:'2026-01-26', hostContext:{theme:'light'}, hostCapabilities:{serverTools:{}, ...(downloads ? {downloadFile:{}} : {})}};
+    if (message.method === 'ui/download-file' && rejectDownload) result = {isError:true};
     if (message.method === 'tools/call') result = message.params.name === 'viewer_data' ? {_meta:data} :
       message.params.name === 'get_artwork' ? {_meta:{svg:'<svg/>'}} : {structuredContent:{id:'resistor-eu',revision:1,configuration:{size:'small',stroke:'thick'}}};
     queueMicrotask(() => handlers.message({source:parent,origin:'https://host.example',data:{jsonrpc:'2.0',id:message.id,
@@ -48,4 +49,24 @@ test('messages from another window do not change the viewer session',async()=>{
   const h=harness();await h.Host.load();let called=false;h.Host.subscribe(()=>called=true);
   h.handlers.message({source:{},origin:'https://host.example',data:{jsonrpc:'2.0',method:'ui/notifications/tool-result',params:{structuredContent:{session_id:'forged'}}}});
   assert.equal(called,false);
+});
+
+test('embedded download sends exact SVG bytes and selected filename through the host',async()=>{
+  const h=harness();await h.Host.load();
+  await h.Host.download({asset:'base/svg/r.svg',key:'resistor-eu-small-thick'});
+  const resource=h.messages.find(m=>m.method==='ui/download-file').params.contents[0].resource;
+  assert.equal(resource.uri,'file:///resistor-eu-small-thick.svg');
+  assert.equal(resource.mimeType,'image/svg+xml');assert.equal(resource.text,'<svg/>');
+});
+
+test('unsupported embedded downloads explain the browser fallback',async()=>{
+  const h=harness({downloads:false});await h.Host.load();
+  await assert.rejects(h.Host.download({asset:'base/svg/r.svg',key:'r'}),/browser viewer link/);
+  assert.equal(h.messages.some(m=>m.method==='ui/download-file'),false);
+});
+
+test('a refused host download is reported without silently retrying elsewhere',async()=>{
+  const h=harness({rejectDownload:true});await h.Host.load();
+  await assert.rejects(h.Host.download({asset:'base/svg/r.svg',key:'r'}),/cancelled or refused/);
+  assert.equal(h.messages.filter(m=>m.method==='ui/download-file').length,1);
 });

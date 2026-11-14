@@ -52,7 +52,7 @@ def create_server(service, port=8794):
         "Search existing symbols with search_symbols; always show its shared viewer, even for one or zero matches. "
         "Reuse search_session for follow-ups. Use get_selection to retrieve the user's choice. "
         "Creation is separate: require a text description, explain intent and wait for confirmation before rendering. "
-        "Save only on the user's request. Saving never verifies a design. Read the creation guide resource."),
+        "Save only on the user's request. Saving never verifies a design. Call get_creation_guide before drawing."),
         host="127.0.0.1", port=port, json_response=True, stateless_http=True, max_request_body_size=12 * 1024 * 1024)
 
     @mcp.resource(UI_URI, name="Schematica shared viewer", mime_type=MIME,

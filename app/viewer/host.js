@@ -3,7 +3,7 @@
 (function () {
   const embedded = !!window.SCHEMATICA_EMBEDDED, integration = !!window.SCHEMATICA_INTEGRATION;
   const pending = new Map(), listeners = new Set(), blobs = new Map();
-  let serial = 0, sessionId, latest, initialResolve, connected = false, hostOrigin = "*";
+  let serial = 0, sessionId, latest, initialResolve, connected = false, hostOrigin = "*", hostCapabilities = {};
   const thumbnails = new WeakMap();
   const observer = typeof IntersectionObserver === "undefined" ? null : new IntersectionObserver(entries => {
     for (const entry of entries) if (entry.isIntersecting) {
@@ -60,6 +60,7 @@
         if (!connected) {
           const init = await rpc("ui/initialize", { protocolVersion: "2026-01-26", appInfo: { name: "Schematica", version: "0.1.0" }, appCapabilities: { availableDisplayModes: ["inline", "fullscreen"] } });
           connected = true;
+          hostCapabilities = init.hostCapabilities || {};
           if (init.hostContext?.theme) document.documentElement.dataset.theme = init.hostContext.theme;
           notify("ui/notifications/initialized", {});
           new ResizeObserver(() => notify("ui/notifications/size-changed", { height: document.body.scrollHeight })).observe(document.body);
@@ -94,6 +95,16 @@
       if (!embedded) return integration ? "/artwork/" + config.asset : "./library/" + config.svg;
       if (!blobs.has(config.asset)) blobs.set(config.asset, Host.artwork(config).then(svg => URL.createObjectURL(new Blob([svg], { type: "image/svg+xml" }))));
       return blobs.get(config.asset);
+    },
+    async download(config) {
+      if (!embedded || hostCapabilities.downloadFile === undefined) {
+        throw new Error("This chat cannot download files directly. Open the browser viewer link and export there.");
+      }
+      const svg = await Host.artwork(config);
+      const response = await rpc("ui/download-file", { contents: [{ type: "resource", resource: {
+        uri: "file:///" + encodeURIComponent(config.key + ".svg"), mimeType: "image/svg+xml", text: svg
+      } }] });
+      if (response.isError) throw new Error("Download was cancelled or refused by the chat host.");
     },
     thumbnail(img, config) {
       if (embedded && observer) { thumbnails.set(img, config); observer.observe(img); }
