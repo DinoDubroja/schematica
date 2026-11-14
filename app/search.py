@@ -16,14 +16,25 @@ FAMILIES = {"resistor": "resistors", "resistors": "resistors",
             "capacitor": "capacitors", "capacitors": "capacitors",
             "diode": "diodes", "diodes": "diodes",
             "inductor": "inductors", "inductors": "inductors",
-            "opamp": "amplifiers", "amplifier": "amplifiers", "amplifiers": "amplifiers"}
+            "opamp": "amplifiers", "amplifier": "amplifiers", "amplifiers": "amplifiers",
+            "transistor": "transistors", "transistors": "transistors",
+            "logic": "logic", "analog": "analog"}
+for family in ("inductors-and-transformers", "sources-and-grounds", "switches-and-relays",
+               "connections-and-instruments", "protection-and-resonators"):
+    FAMILIES[family] = family
+TERMS = {"grounds": "ground", "sources": "source", "switches": "switch",
+         "relays": "relay", "transformers": "transformer", "fuses": "fuse"}
 FILLER = set("show me the a an of ones one only instead symbols symbol you have please use with stroke size designs design all browse whole library dev thicker thinner larger smaller medium thick thin small large".split())
 
 
 def interpret(query="", previous=None, filters=None):
     if not isinstance(query, str) or len(query) > 2000:
         raise ValidationError("Search must be text of at most 2000 characters")
-    words = re.findall(r"[a-z0-9-]+", query.lower().replace("op-amp", "opamp"))
+    normalized = query.lower().replace("op-amp", "opamp")
+    for family in FAMILIES:
+        if "-" in family:
+            normalized = re.sub(r"\b" + re.escape(family.replace("-", " ")) + r"\b", family, normalized)
+    words = re.findall(r"[a-z0-9-]+", normalized)
     result = copy.deepcopy(previous or {})
     if any(w in words for w in ("browse", "whole")) or query.lower().strip() in ("all", "browse all"):
         result = {}
@@ -46,8 +57,12 @@ def interpret(query="", previous=None, filters=None):
         choices = [aliases.get(w, w) for w in words if w in values or w in aliases]
         if choices:
             result[key] = choices[-1]
-    terms = [w for w in words if w not in FILLER | STYLES.keys() | VARIANTS.keys() | FAMILIES.keys()]
+    terms = [TERMS.get(w, w) for w in words if w not in FILLER | STYLES.keys() | VARIANTS.keys() | FAMILIES.keys()]
     if terms:
+        if not families and not styles and not variants:
+            # A new subject must not remain trapped in the previous family.
+            for key in ("family", "variant", "style", "ids"):
+                result.pop(key, None)
         result["terms"] = terms
     if filters is not None:
         if not isinstance(filters, dict) or set(filters) - FIELDS:
@@ -89,5 +104,10 @@ def matches(symbol, filters):
             return False
     elif variant and actual != variant:
         return False
-    text = " ".join([sid, symbol["name"], symbol["description"], *symbol.get("keywords", []), *symbol.get("types", [])]).lower()
+    # Batch family tags are umbrella labels, not evidence that each member is
+    # every named type (for example a source is not necessarily a ground).
+    family_tag = symbol.get("family", "")
+    umbrella = {family_tag, family_tag.replace("-", " "), family_tag.replace("-and-", " ").replace("-", " ")}
+    tags = [tag for tag in [*symbol.get("keywords", []), *symbol.get("types", [])] if tag.lower() not in umbrella]
+    text = " ".join([sid, symbol["name"], symbol["description"], *tags]).lower()
     return all(word.lower() in text for word in filters.get("terms", []))

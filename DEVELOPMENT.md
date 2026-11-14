@@ -36,49 +36,38 @@ for ownership and handoffs.
 
 ## Latest changes
 
-Consolidation in progress: A's integration/search/creation and shared viewer are
-combined with B's 91 accepted designs. Publication follows combined verification.
-Use [agent setup](docs/AGENT_INTEGRATION.md) and [host limits](docs/HOST_VERIFICATION.md)
-for the optional local integration; static website publication does not host MCP.
+14-11-2026: combined A's integration/search/creation/shared viewer with B's complete
+**91 Verified designs / 1,035 configurations**. Reproducible build **`c30dfe980c04`**
+contains 1,082 files. The official ledger, catalog, all drawings and all 36 complete
+SVG library exports match B's accepted checkpoint exactly; intentional removals
+remain absent. Only four website assets change: app.js, host.js, index.html and style.css.
 
-### Earlier symbol publication
+Passed **77 Python tests and 11 JavaScript tests**, documentation checks, real
+stdio/HTTP transport with 18 rendered configurations, and 36-configuration isolated
+creation/refinement with save and fresh retrieval. New-family search follow-ups
+clear obsolete filters; umbrella family tags no longer make sources match grounds.
+Targeted browser checks cover filtering, NPN Small/Thick, Variations, exact downloads
+and the integration selection handoff for chassis ground revision 2.
+Unchanged artwork reuses earlier rendering/Inkscape evidence, confirmed by hashes.
 
-14-11-2026: **Final 13 human approvals published.** All exact revisions and
-fingerprints match. Hosted/local build **`21ee8da1455d`** has **91 Verified / 0 Unverified**
-designs. The previous 78 approvals, all 1,035 drawings and all 36 library exports
-are unchanged. Only `library/catalog.json` changed in the website asset manifest.
-The scoped source update is pushed as `fda51cf` on `work/agent-b-symbols`.
-
-The saved handoff validates without further changes. The regression expectation
-now reflects the user's exact approvals; stale fingerprints still fail validation.
-**Passed:** 62 Python tests, eight JavaScript tests and 90 local documentation
-links. All 1,079 public assets match locally and on the shared preview; all 135 removed SVG
-URLs return 404. The exact 13 old Pending selections clear, and Undo cannot
-restore them. Hosted catalog counts and all 13 exact approval identities are confirmed.
-
-Reload the viewer: expect all 91 Verified, an empty Unverified filter, and matching
-old Pending selections cleared. Browser UI automation and physical second-device
-testing were not repeated for this metadata-only update.
-
-The [accepted corrections and retained inventory](docs/BATCH_02.md) are unchanged.
-The earlier geometry run checked every configuration and all 36 exports in Inkscape;
-this approval-only update does not repeat rendering or GUI automation.
-Source belongs to `work/agent-b-symbols`; A's integration and `main` remain separate.
+Publication status and cleanup receipts are in [current status](context/CURRENT.md).
+The [agent setup](docs/AGENT_INTEGRATION.md) is optional local functionality;
+[actual embedded-host journeys](docs/HOST_VERIFICATION.md) and physical laptop
+setup remain unverified. Static website publication does not host an MCP backend.
 
 ### Test on both Windows devices
 
 | Action | Expected result |
 |---|---|
-| Reload the preview; open [build.json](https://schematica-preview.dinodubroja.workers.dev/build.json) | Build `21ee8da1455d` on both devices |
-| Clear filters; switch All symbols / Unverified | 91 designs, all Verified; Unverified is empty |
-| Search `overnight` in All symbols | 65 retained Batch 02 designs; no removed IDs |
-| Open [the corrected symbols](docs/BATCH_02.md#what-to-inspect); compare Variations and Small / Thick | JFET shape, MOS dots, 1 mm BJT shortening, chassis ends and XOR input joins match the checklist |
-| Reload a browser with old Pending selections; press Undo if available | Pending clears to zero; Undo cannot restore published approvals, old revisions or removed designs |
-| Switch dark/light; narrow the window | Readable drawings and usable controls |
-| Export one symbol, then the library while filtered | Single SVG matches size/stroke; library contains all 91 designs |
+| Open the [website](https://schematica-preview.dinodubroja.workers.dev/); check [build.json](https://schematica-preview.dinodubroja.workers.dev/build.json) | Build `c30dfe980c04` after the published delivery |
+| Clear filters; select Unverified | No matches; all 91 designs are Verified |
+| Return to All symbols; search `NPN`; select NPN transistor | The correct accepted drawing appears |
+| Choose Small / Thick; open Variations; download the symbol | Selected SVG matches Small/Thick; comparison rows vary one setting at a time |
+| Export the library while filtered | All 91 designs in the selected preset |
+| Reload with old Pending selections | Accepted entries clear; Undo cannot restore obsolete approvals |
 
-Send corrections by copied symbol reference. These exact designs are already
-human-approved. Physical testing on the second Windows device remains unverified.
+Developer commands are below. Report build ID, device/browser, symbol and failed
+action if results differ. The second physical Windows device still needs this check.
 
 ## Run on Windows
 
@@ -139,11 +128,11 @@ cd schematica
 Then follow [Run on Windows](#run-on-windows). The existing laptop checkout was
 already set up during the first batch; update that copy instead of cloning again.
 
-The current symbol batch is on **`work/agent-b-symbols`**. The default `main`
-branch does not include it until integration. In a fresh, clean clone, use
-`git switch --track origin/work/agent-b-symbols` before launching. For an existing
-checkout, inspect its branch and local/concurrent work before switching or merging;
-do not discard work just to match the preview.
+Use **`main`** for the complete current product. A fresh clone selects it by default.
+For an existing checkout, inspect ownership and local/concurrent work before updating.
+If it is clean and inactive, run `git fetch origin`, `git switch main`, then
+`git merge --ff-only origin/main`. Preserve work and stop on conflicts or divergence;
+do not discard local changes or switch another agent's active task checkout.
 
 Before updating an existing copy, run `git status --short`. If it lists files,
 preserve and resolve that work first. If empty, run `git pull --ff-only`. Stop on
@@ -196,7 +185,7 @@ schematica/
 
 The viewer reads pre-rendered SVGs and a catalog. It never compiles TeX. The static
 builder copies the accepted artwork, reads current editorial metadata and creates
-36 complete-library exports. The website contains 1081 files, with no Python, source
+36 complete-library exports. The website contains 1082 files, with no Python, source
 TeX, references or test material. Its content hashes determine `build.json`.
 
 ## Test and review
@@ -211,7 +200,7 @@ node --test tests\review.test.cjs tests\configurations.test.cjs tests\host.test.
 .\.venv\Scripts\python.exe tests\check_docs.py
 ```
 
-Expect **62 Python tests and 8 JavaScript tests**, a **1081-file** website, and no
+Expect **77 Python tests and 11 JavaScript tests**, a **1082-file** website, and no
 broken documentation links. Tests cover all designs/configurations, accepted SVG
 bytes, pins, independent strokes, editable parts, exports, HTTP boundaries and
 approval validity. Compare `app/dist/build.json` with the hosted `build.json` when
@@ -315,7 +304,7 @@ Creates `app/build/exports/` with a hash manifest and three ZIPs:
 
 | Package | Contents |
 |---|---|
-| `web-preview.zip` | 1081 static website files, ready for Cloudflare upload |
+| `web-preview.zip` | 1082 static website files, ready for Cloudflare upload |
 | `all-symbols.zip` | 1035 individual SVGs |
 | `tex-bundles.zip` | 1035 standalone configurations, each with `symbol.tex` and required helpers |
 
@@ -349,7 +338,9 @@ for authorized publications. Build once, deploy, then compare the hosted `build.
 catalog and downloads against the local build. Routine publishing needs no automated
 browser session or repeated Inkscape export checks.
 
-This workstation has a portable Wrangler 4.162.0 installation outside the repository:
+From the canonical checkout on this workstation, the portable Wrangler 4.162.0
+installation is outside the repository. Other worktrees must use its resolved
+absolute path, not assume the same relative depth:
 
 ```powershell
 .\.venv\Scripts\python.exe app\build_site.py

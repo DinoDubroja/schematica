@@ -17,8 +17,9 @@ shared selection viewer and confirmed creation/refinement in a separate dev stor
 Actual ChatGPT/Claude embedded journeys and remote MCP connectivity remain
 unverified. Website deployment alone does not enable an agent backend.
 
-The consolidation is being verified before publication. `main` will be the shared
-baseline; users will not need to choose between A/B product branches.
+`main` is the shared source baseline for the complete library and integration.
+Use the website above for browsing, or the setup links for local operation.
+[Current status](context/CURRENT.md) records the build and remaining limitations.
 
 [Inkscape](docs/INKSCAPE.md) · [Symbol verification](docs/VERIFICATION.md)
 · [Roadmap and limits](docs/ROADMAP.md) · [Delivery workflow](DEVELOPMENT.md#delivery-checklist)

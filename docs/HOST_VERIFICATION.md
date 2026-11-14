@@ -6,6 +6,12 @@ of embedded UI support. No remote endpoint, tunnel or public plugin was publishe
 
 ## Evidence
 
+The consolidation reran stdio/HTTP and isolated creation/refinement proofs (18 +
+36 rendered configurations), complete-library search follow-ups, targeted browser
+selection and actual SVG downloads. Earlier option/registered-recipe evidence is
+retained for unchanged paths; production artwork is verified by exact hashes.
+
+
 | Check | Result |
 |---|---|
 | stdio MCP | Verified: initialization, search/follow-ups, UI resource, selection, actual SVG resource |
@@ -18,7 +24,7 @@ of embedded UI support. No remote endpoint, tunnel or public plugin was publishe
 | Browser fallback | Verified: normal → European → variable → thick, single match, Variations, empty result, Browse all, Use this symbol; integrated capacitor and saved custom option preview |
 | Browser SVG download | Verified byte-for-byte against the selected accepted SVG |
 | MCP Apps bridge | Automated mock-host tests pass: initialization, metadata/artwork access, context feedback and refusal fallback; not a real host claim |
-| Production geometry | All original 342 SVG files and 26 approvals match the baseline; combined 61 Python/11 JavaScript tests pass |
+| Production geometry | All 1,035 accepted SVGs, all 91 approvals and all 36 library exports match B exactly; combined 77 Python/11 JavaScript tests pass |
 
 Repeatable commands are in [the integration guide](AGENT_INTEGRATION.md#checks).
 Machine-specific stores, logs, process IDs and exact commits are in A's local
@@ -36,7 +42,7 @@ verified. A failed feature must be recorded separately from a connectivity block
 | ChatGPT Desktop · Chat | Untested | Current docs support MCP Apps; actual installed connector and embedded journey need testing |
 | ChatGPT Desktop · Work local | Untested | Local launch configuration prepared; reload connection and run the checklist |
 | ChatGPT Desktop · Work cloud | Blocked | No approved reachable MCP endpoint/private tunnel; local-computer bridging is workspace-dependent |
-| ChatGPT Desktop · Codex local | Blocked | Namespaced local MCP connection registered; this active chat has not reloaded its tools/UI |
+| ChatGPT Desktop · Codex local | Unverified | Namespaced local connection configured; reload after the consolidated source update. Protocol checks do not establish an embedded journey |
 | ChatGPT Desktop · Codex cloud | Blocked | No approved cloud connector and persistent dev-library destination |
 | Claude Desktop | Blocked | Version 5.11492.5 observed: Settings → Desktop app → Extensions exposes Local MCP servers/Edit config. Namespaced isolated entry added with existing settings preserved; the running app still shows no servers until reload. Embedded journey untested. |
 
@@ -68,9 +74,9 @@ These are documentation claims, not Schematica host-test results.
 
 ## User verification
 
-1. Start A's integration preview and load the local MCP connection in a fresh
-   trusted chat. Confirm `storage_status` points to A's integration store. Do not
-   reuse B's preview, library or approval record. In Codex, select the namespaced
+1. Start the local integration preview from the consolidated checkout and load its
+   MCP connection in a fresh trusted chat. Confirm `storage_status` points to an
+   initialized isolated dev store, never the accepted library or approval record. In Codex, select the namespaced
    `schematica-integration-a` connection when present.
 2. Ask **“Show me normal resistor symbols you have.”** Expect the existing EU and
    US fixed designs in the shared viewer. Confirm whether it is actually embedded.
@@ -89,7 +95,7 @@ These are documentation claims, not Schematica host-test results.
    stay fixed. Ask for the proposed name, category and keywords.
 7. Ask to save. Expect **Unverified**, download and viewer links. In a fresh chat,
    retrieve the saved symbol and its exact configuration; confirm prior revisions
-   remain retrievable. Saving must not alter B's official approvals.
+   remain retrievable. Saving must not alter the accepted library's official approvals.
 8. Record the host/version, transport and each feature as verified, failed,
    blocked or untested. Repeat in each required environment; do not copy a result
    from one host or execution mode to another.

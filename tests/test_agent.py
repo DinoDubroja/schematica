@@ -55,6 +55,25 @@ class AgentTests(unittest.TestCase):
             "diode-tvs-bidirectional", "diode-varactor", "diode-zener"})
         self.assertNotIn("variant", diodes["filters"])
 
+    def test_complete_library_family_followups_and_removed_symbols(self):
+        session = self.service.search("normal European resistors")["session_id"]
+        for query, count in (("transistors", 12), ("logic", 12), ("sources and grounds", 10),
+                             ("switches and relays", 4), ("connections and instruments", 5),
+                             ("protection and resonators", 2), ("inductors and transformers", 9),
+                             ("analog", 2)):
+            with self.subTest(query=query):
+                result = self.service.search(query, session)
+                self.assertEqual(result["count"], count)
+                self.assertNotIn("style", result["filters"])
+                self.assertNotIn("variant", result["filters"])
+        self.service.search("diodes", session)
+        grounds = self.service.search("grounds", session)
+        self.assertEqual(set(grounds["match_ids"]), {"ground-chassis", "ground-earth", "ground-signal"})
+        switches = self.service.search("switches", session)
+        self.assertEqual(set(switches["match_ids"]), {"switch-spst", "switch-spdt", "switch-dpst", "switch-dpdt"})
+        self.assertEqual(self.service.search("relays", session)["count"], 0)
+        self.assertEqual(self.service.search("Browse all", session)["count"], 91)
+
     def test_filters_reject_wrong_types(self):
         for filters in ({"style": "martian"}, {"ids": "resistor-eu"}, {"size": []}, {"mystery": "x"}):
             with self.assertRaises(ValidationError):

@@ -1,13 +1,14 @@
 # Agent integration
 
-The local milestone adds natural-language search, one prewritten shared website /
+The consolidated source includes natural-language search, one prewritten shared website /
 MCP Apps viewer, exact selection handoff, and confirmed individual creation with
 isolated save and retrieval. No account or personal-library system is introduced.
 See [platform evidence](HOST_VERIFICATION.md) before claiming host support.
 
 ## Run locally
 
-Run from Agent A's integration checkout, using its own Python 3.12+ environment:
+Run from your current main checkout (or a task branch based on it), using a
+Python 3.12+ environment:
 
 ```powershell
 python -m venv .venv
@@ -17,7 +18,7 @@ python -m venv .venv
 ```
 
 Open [the integration viewer](http://127.0.0.1:8793/). Leave the preview process
-running. The production publisher and its port remain separately owned.
+running. This local viewer is separate from the canonical static website.
 
 In another terminal, start optional Streamable HTTP:
 
@@ -53,8 +54,8 @@ Keep the preview running for browser/download links.
 The installed CLI did not discover the generated project configuration during this
 check. A separate namespaced global entry, `schematica-integration-a`, was therefore
 registered for this machine and recognized by `codex mcp get schematica-integration-a`.
-Existing settings were backed up and verified preserved. This active chat still
-needs an MCP reload/fresh chat; registration alone is not an embedded-host test.
+Existing settings were backed up and verified preserved. After source updates, reload the MCP connection or start a fresh chat; registration
+alone is not an embedded-host test.
 On another machine, inspect project trust/config discovery first. If needed, use
 `codex mcp add` with the generated fragment's absolute Python, server and data-root
 arguments; do not copy this machine's absolute paths or overwrite existing entries.
@@ -70,7 +71,7 @@ embedded journey is established by editing this configuration.
 Cloud-hosted Chat/Work/Codex and remote Claude connectors cannot assume access to
 this machine's loopback. They need an approved reachable endpoint/private tunnel
 and persistence arrangement. This local milestone does not publish a server,
-establish a tunnel or transfer shared-preview ownership.
+establish a tunnel. The website is published independently.
 
 ## Shared interface
 
@@ -93,6 +94,12 @@ not acquire official approvals. Complete-library exports remain in the static
 website; the integration viewer exports individual selected symbols.
 
 ## Checks
+
+Creation checks need the renderer executables as well as Python dependencies.
+If dvisvgm is not discovered in a task worktree, set `SCHEMATICA_DVISVGM` to its
+existing absolute executable path before running these commands. Do the same for
+`SCHEMATICA_TECTONIC` if needed. Setup fragments preserve those resolved tool paths.
+
 
 ```powershell
 .\.venv\Scripts\python.exe -m pip install -r app\requirements-dev.txt
