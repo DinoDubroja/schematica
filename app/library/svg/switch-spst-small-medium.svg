@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000017 40.251767 11.4802" width="14.19992891mm" height="4.04995944mm">
+  <title>SPST switch</title>
+  <desc>Single-pole single-throw switch shown open.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 2.2, "body-width": 4.5, "grid": 1.0}, "origin_svg": [-48.556576, -64.204804], "parts": ["lead-common", "pivot", "lead-out", "fixed-contact", "blade"], "pins_mm": {"common": [-6.0, 0.0], "out": [6.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "switch-spst"}</metadata>
+  <g id="sc-switch-spst-r1-small-medium--sc-switch-spst-r1-small-medium" inkscape:label="SPST switch / small / medium" data-symbol="switch-spst" data-revision="1" data-size="small" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-48.556576,-64.204804)scale(0.996264,-0.996264)">
+    <g data-part="lead-common" id="sc-switch-spst-r1-small-medium--sc-switch-spst-r1-small-medium--lead-common" inkscape:label="lead-common">
+      <path d="M-17.07156 0H-6.40182" fill="none" />
+      <desc>Electrical lead: Common</desc>
+    </g>
+    <g data-part="pivot" id="sc-switch-spst-r1-small-medium--sc-switch-spst-r1-small-medium--pivot" inkscape:label="pivot">
+      <path d="M-5.5483 0C-5.5483 .47139-5.93044 .85353-6.40182 .85353C-6.87321 .85353-7.25536 .47139-7.25536 0S-6.87321-.85353-6.40182-.85353C-5.93044-.85353-5.5483-.47139-5.5483 0ZM-6.40182 0" stroke="none" />
+      <desc>Pivot</desc>
+    </g>
+    <g data-part="lead-out" id="sc-switch-spst-r1-small-medium--sc-switch-spst-r1-small-medium--lead-out" inkscape:label="lead-out">
+      <path d="M17.07156 0H6.40182" fill="none" />
+      <desc>Electrical lead: Switched terminal</desc>
+    </g>
+    <g data-part="fixed-contact" id="sc-switch-spst-r1-small-medium--sc-switch-spst-r1-small-medium--fixed-contact" inkscape:label="fixed-contact">
+      <path d="M7.25536 0C7.25536 .47139 6.87321 .85353 6.40182 .85353C5.93044 .85353 5.5483 .47139 5.5483 0S5.93044-.85353 6.40182-.85353C6.87321-.85353 7.25536-.47139 7.25536 0ZM6.40182 0" stroke="none" />
+      <desc>Fixed contact</desc>
+    </g>
+    <g data-part="blade" id="sc-switch-spst-r1-small-medium--sc-switch-spst-r1-small-medium--blade" inkscape:label="blade">
+      <path d="M-6.40182 0L4.69466 4.69466" fill="none" />
+      <desc>Blade</desc>
+    </g>
+  </g>
+</svg>

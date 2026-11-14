@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000015 40.535244 40.535244" width="14.29993330mm" height="14.29993330mm">
+  <title>P-channel enhancement MOSFET - bulk terminal</title>
+  <desc>P-channel enhancement MOSFET - bulk terminal. The body has its own fourth terminal. A broken channel indicates enhancement mode.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 6.0, "body-width": 3.9, "grid": 1.0}, "origin_svg": [-48.414834, -51.732395], "parts": ["lead-gate", "lead-drain", "lead-source", "gate", "channel", "drain-branch", "source-branch", "lead-bulk", "body-arrow"], "pins_mm": {"bulk": [6.0, 0.0], "drain": [3.0, 6.0], "gate": [-6.0, 0.0], "source": [3.0, -6.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "medium", "size_factor": 1.0, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "mosfet-p-enhancement-bulk"}</metadata>
+  <g id="sc-mosfet-p-enhancement-bulk-r1-medium-thick--sc-mosfet-p-enhancement-bulk-r1-medium-thick" inkscape:label="P-channel enhancement MOSFET - bulk terminal / medium / thick" data-symbol="mosfet-p-enhancement-bulk" data-revision="1" data-size="medium" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-48.414834,-51.732395)scale(0.996264,-0.996264)">
+    <g data-part="lead-gate" id="sc-mosfet-p-enhancement-bulk-r1-medium-thick--sc-mosfet-p-enhancement-bulk-r1-medium-thick--lead-gate" inkscape:label="lead-gate">
+      <path d="M-17.07156 0H-2.56071" fill="none" />
+      <desc>Electrical lead: Gate</desc>
+    </g>
+    <g data-part="lead-drain" id="sc-mosfet-p-enhancement-bulk-r1-medium-thick--sc-mosfet-p-enhancement-bulk-r1-medium-thick--lead-drain" inkscape:label="lead-drain">
+      <path d="M8.53578 17.07156V7.39769" fill="none" />
+      <desc>Electrical lead: Drain</desc>
+    </g>
+    <g data-part="lead-source" id="sc-mosfet-p-enhancement-bulk-r1-medium-thick--sc-mosfet-p-enhancement-bulk-r1-medium-thick--lead-source" inkscape:label="lead-source">
+      <path d="M8.53578-17.07156V-7.39769" fill="none" />
+      <desc>Electrical lead: Source</desc>
+    </g>
+    <g data-part="gate" id="sc-mosfet-p-enhancement-bulk-r1-medium-thick--sc-mosfet-p-enhancement-bulk-r1-medium-thick--gate" inkscape:label="gate">
+      <path d="M-2.56071-8.53578V8.53578" fill="none" />
+      <desc>Gate</desc>
+    </g>
+    <g data-part="channel" id="sc-mosfet-p-enhancement-bulk-r1-medium-thick--sc-mosfet-p-enhancement-bulk-r1-medium-thick--channel" inkscape:label="channel">
+      <path d="M1.70717-8.53578V-4.55243" fill="none" />
+      <path d="M1.70717-1.99167V1.99167" fill="none" />
+      <path d="M1.70717 4.55243V8.53578" fill="none" />
+      <desc>Channel</desc>
+    </g>
+    <g data-part="drain-branch" id="sc-mosfet-p-enhancement-bulk-r1-medium-thick--sc-mosfet-p-enhancement-bulk-r1-medium-thick--drain-branch" inkscape:label="drain-branch">
+      <path d="M1.70717 7.39769H8.53578" fill="none" />
+      <desc>Drain branch</desc>
+    </g>
+    <g data-part="source-branch" id="sc-mosfet-p-enhancement-bulk-r1-medium-thick--sc-mosfet-p-enhancement-bulk-r1-medium-thick--source-branch" inkscape:label="source-branch">
+      <path d="M1.70717-7.39769H8.53578" fill="none" />
+      <desc>Source branch</desc>
+    </g>
+    <g data-part="lead-bulk" id="sc-mosfet-p-enhancement-bulk-r1-medium-thick--sc-mosfet-p-enhancement-bulk-r1-medium-thick--lead-bulk" inkscape:label="lead-bulk">
+      <path d="M17.07156 0H1.70717" fill="none" />
+      <desc>Electrical lead: Bulk / body</desc>
+    </g>
+    <g data-part="body-arrow" id="sc-mosfet-p-enhancement-bulk-r1-medium-thick--sc-mosfet-p-enhancement-bulk-r1-medium-thick--body-arrow" inkscape:label="body-arrow">
+      <path d="M4.41017 1.5649L7.39769 0L4.41017-1.5649Z" stroke="none" />
+      <desc>Body arrow</desc>
+    </g>
+  </g>
+</svg>

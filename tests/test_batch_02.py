@@ -15,10 +15,25 @@ FAMILIES = {'resistors','capacitors','inductors-and-transformers','diodes','tran
 NUMBER = r'[-+]?(?:\d*\.\d+|\d+\.?\d*)(?:[eE][-+]?\d+)?'
 
 
+def straight_points(path):
+    """Decode the actual converter path, including its H/V optimizations."""
+    points=[];x=y=0
+    for command,values in re.findall(r'([MLHVZ])([^MLHVZ]*)',path.get('d')):
+        values=[float(n)*25.4/72.27 for n in re.findall(NUMBER,values)]
+        if command in ('M','L'):
+            for i in range(0,len(values),2):
+                x,y=values[i:i+2];points.append((x,y))
+        elif command=='H':
+            for x in values:points.append((x,y))
+        elif command=='V':
+            for y in values:points.append((x,y))
+    return points
+
+
 class Batch02(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.data=catalog();cls.new=[s for s in cls.data['symbols'] if s.get('batch','').startswith('overnight-')]
+        cls.data=catalog();cls.new=[s for s in cls.data['symbols'] if s.get('batch','').startswith('overnight-') and s['batch'].endswith('-02')]
         cls.baseline=json.loads((FIXTURES/'approved-before-batch-02.json').read_text(encoding='utf-8'))
 
     def test_previously_accepted_svg_bytes_and_approvals_unchanged(self):
@@ -91,6 +106,268 @@ class Batch02(unittest.TestCase):
                     self.assertAlmostEqual(math.dist(*s),10/3*config['settings']['size_factor'],delta=.0003)
                     shafts.append(s)
                 self.assertAlmostEqual(math.dist(shafts[0][0],shafts[1][0]),2.5*config['settings']['size_factor'],delta=.0003)
+
+    def test_transistor_terminals_channels_and_actual_arrow_polarity(self):
+        for symbol in self.new:
+            if symbol['family']!='transistors':continue
+            sid=symbol['id'];device=symbol['attributes']['device'];pchannel=symbol['attributes'].get('channel')=='p'
+            bjt=device=='bjt';igbt=device=='igbt';photo=sid=='phototransistor-npn';bulk=sid.endswith('-bulk')
+            expected=({'collector','emitter'} if photo else {'collector','emitter','base'} if bjt else
+                      {'collector','emitter','gate'} if igbt else {'drain','source','gate','bulk'} if bulk else {'drain','source','gate'})
+            self.assertEqual({p['id'] for p in symbol['pins']},expected,sid)
+            for config in symbol['configurations']:
+                pins=config['pins_mm'];upper='collector' if bjt or igbt else 'drain';lower='emitter' if bjt or igbt else 'source'
+                # CircuitikZ's P-JFET is vertically mirrored: source above, drain below.
+                sign=-1 if sid=='jfet-p' else 1
+                self.assertGreater(sign*pins[upper][1],0);self.assertLess(sign*pins[lower][1],0)
+                if not photo:self.assertLess(pins['base' if bjt else 'gate'][0],min(pins[upper][0],pins[lower][0]))
+                if bulk:self.assertGreater(pins['bulk'][0],pins[lower][0])
+                parts={g.get('data-part'):g for g in artwork(config).iter() if g.get('data-part')}
+                arrow_part='emitter-arrow' if bjt or igbt else 'gate-arrow' if device=='jfet' else 'body-arrow'
+                points=straight_points(next(parts[arrow_part].iter(f'{{{SVG}}}path')))
+                self.assertEqual(len(points),3)
+                direction=points[1][0]-(points[0][0]+points[2][0])/2
+                positive=(symbol['attributes'].get('polarity')!='pnp') if bjt else True if igbt else (not pchannel) if device=='jfet' else pchannel
+                self.assertGreater(direction if positive else -direction,0,sid)
+                if device=='mosfet':
+                    self.assertEqual(len(list(parts['channel'].iter(f'{{{SVG}}}path'))),1 if 'depletion' in sid else 3)
+                    self.assertEqual('body-source-link' in parts,not bulk)
+                if photo:
+                    rays=list(parts['light-arrows'].iter(f'{{{SVG}}}path'));self.assertEqual(len(rays),4)
+                    for shaft in rays[::2]:
+                        pts=straight_points(shaft)
+                        self.assertGreater(pts[1][0],pts[0][0]);self.assertLess(pts[1][1],pts[0][1])
+
+    def test_sources_have_explicit_polarity_and_distinct_ground_references(self):
+        ground_shapes={}
+        for symbol in self.new:
+            if symbol['family']!='sources-and-grounds':continue
+            sid=symbol['id']
+            for config in symbol['configurations']:
+                pins=config['pins_mm'];parts={g.get('data-part'):g for g in artwork(config).iter() if g.get('data-part')}
+                if sid.startswith('source-'):
+                    if 'current' in sid or sid.endswith('-ac'):self.assertEqual(set(pins),{'a','b'})
+                    else:
+                        self.assertEqual(set(pins),{'positive','negative'})
+                        self.assertGreater(pins['positive'][1],pins['negative'][1])
+                    if 'current' in sid:
+                        shaft,head=parts['current-direction'].iter(f'{{{SVG}}}path')
+                        pts=straight_points(shaft);tri=straight_points(head)
+                        self.assertGreater(pts[1][1],pts[0][1])
+                        self.assertGreater(tri[1][1],(tri[0][1]+tri[2][1])/2)
+                    if sid.endswith('-ac'):self.assertTrue('ac-wave' in parts and 'positive-mark' not in parts)
+                elif sid in ('cell','battery'):
+                    self.assertLess(pins['positive'][0],pins['negative'][0])
+                    plates=[next(g.iter(f'{{{SVG}}}path')) for pid,g in parts.items() if pid.startswith('plate-')]
+                    self.assertEqual(len(plates),4 if sid=='battery' else 2)
+                    heights=[abs(straight_points(p)[1][1]-straight_points(p)[0][1]) for p in plates]
+                    self.assertTrue(all(heights[i]>heights[i+1] for i in range(0,len(heights),2)))
+                elif sid.startswith('ground-'):
+                    self.assertEqual(set(pins),{'reference'});self.assertGreater(pins['reference'][1],0)
+                    paths=[p.get('d') for p in parts['ground-mark'].iter(f'{{{SVG}}}path')]
+                    self.assertEqual(len(paths),{'ground-earth':3,'ground-signal':1,'ground-chassis':4}[sid])
+                    if config['size']=='medium' and config['stroke']=='medium':ground_shapes[sid]=tuple(paths)
+                else:self.assertEqual(set(pins),{'net'})
+        self.assertEqual(len(set(ground_shapes.values())),len(ground_shapes))
+
+    def test_transformer_windings_stay_isolated_and_center_tap_meets_secondary(self):
+        for symbol in self.new:
+            if not symbol['id'].startswith('transformer-'):continue
+            tapped=symbol['id']=='transformer-center-tap'
+            for config in symbol['configurations']:
+                pins=config['pins_mm'];self.assertEqual(len(pins),5 if tapped else 4)
+                parts={g.get('data-part'):g for g in artwork(config).iter() if g.get('data-part')}
+                winding_points={}
+                for prefix,sign in [('primary',-1),('secondary',1)]:
+                    self.assertGreater(sign*pins[prefix+'-1'][0],0)
+                    self.assertEqual(pins[prefix+'-1'][0],pins[prefix+'-2'][0])
+                    self.assertGreater(pins[prefix+'-1'][1],0);self.assertLess(pins[prefix+'-2'][1],0)
+                    path=next(parts[prefix+'-winding'].iter(f'{{{SVG}}}path'))
+                    coords=[float(n)*25.4/72.27 for n in re.findall(NUMBER,path.get('d'))]
+                    points=list(zip(coords[::2],coords[1::2]));winding_points[prefix]=points
+                    # All cubic controls and endpoints stay on their own side of the core.
+                    self.assertTrue(all(sign*x>1.1*config['settings']['size_factor'] for x,y in points))
+                    self.assertIn(prefix+'-polarity',parts)
+                self.assertEqual('magnetic-core' in parts,symbol['id']!='transformer-air')
+                if tapped:
+                    self.assertEqual(pins['secondary-center'][1],0)
+                    path=next(parts['lead-secondary-center'].iter(f'{{{SVG}}}path'))
+                    join=straight_points(path)[-1]
+                    self.assertTrue(any(math.dist(join,p)<.0003 for p in winding_points['secondary']))
+
+    def test_analog_functional_terminal_sets_and_polarity(self):
+        expected={
+            'comparator':{'in-plus','in-minus','out'},
+            'comparator-supply':{'in-plus','in-minus','out','supply-plus','supply-minus'},
+            'amplifier-fully-differential':{'in-plus','in-minus','out-plus','out-minus'},
+            'amplifier-instrumentation':{'in-plus','in-minus','out','reference','gain-1','gain-2'},
+            'ota':{'in-plus','in-minus','out','bias'},'regulator':{'in','out','common'}}
+        for symbol in self.new:
+            if symbol['id'] not in expected:continue
+            sid=symbol['id'];self.assertEqual({p['id'] for p in symbol['pins']},expected[sid])
+            for config in symbol['configurations']:
+                pins=config['pins_mm']
+                if sid=='regulator':
+                    self.assertLess(pins['in'][0],pins['out'][0]);self.assertLess(pins['common'][1],0)
+                    continue
+                self.assertEqual(pins['in-plus'][1],3);self.assertEqual(pins['in-minus'][1],-3)
+                if sid=='amplifier-fully-differential':
+                    self.assertGreater(pins['out-plus'][1],pins['out-minus'][1])
+                    self.assertGreater(pins['out-plus'][0],pins['in-plus'][0])
+                else:self.assertGreater(pins['out'][0],pins['in-plus'][0])
+                if sid=='comparator-supply':
+                    self.assertGreater(pins['supply-plus'][1],3);self.assertLess(pins['supply-minus'][1],-3)
+                elif sid=='amplifier-instrumentation':
+                    self.assertLess(pins['reference'][1],-3)
+                    self.assertGreater(pins['gain-1'][1],3);self.assertGreater(pins['gain-2'][1],3)
+                elif sid=='ota':
+                    self.assertLess(pins['bias'][1],0)
+                    group=next(g for g in artwork(config).iter() if g.get('data-part')=='current-output')
+                    head=straight_points(next(group.iter(f'{{{SVG}}}path')))
+                    self.assertGreater(head[1][0],(head[0][0]+head[2][0])/2)
+
+    def test_logic_inversion_input_anchors_and_active_high_enable(self):
+        bodies={}
+        inverted={'nand','nor','xnor','not','schmitt-inverter','tristate-inverter'}
+        two_inputs={'and','nand','or','nor','xor','xnor'}
+        for symbol in self.new:
+            if symbol['family']!='logic':continue
+            kind=symbol['id'].removeprefix('logic-');two=kind in two_inputs;tri=kind.startswith('tristate')
+            expected=({'a','b','out'} if two else {'in','out','enable'} if tri else {'in','out'})
+            self.assertEqual({p['id'] for p in symbol['pins']},expected)
+            for config in symbol['configurations']:
+                factor=config['settings']['size_factor'];pins=config['pins_mm']
+                parts={g.get('data-part'):g for g in artwork(config).iter() if g.get('data-part')}
+                self.assertEqual('inversion' in parts,kind in inverted)
+                self.assertEqual('exclusive-mark' in parts,kind in ('xor','xnor'))
+                self.assertEqual('hysteresis' in parts,kind.startswith('schmitt'))
+                self.assertGreater(pins['out'][0],0)
+                body=next(parts['body'].iter(f'{{{SVG}}}path'))
+                bodies[kind,config['size'],config['stroke']]=body.get('d')
+                for pin in ('a','b') if two else ('in',):
+                    self.assertLess(pins[pin][0],0)
+                    endpoint=straight_points(next(parts['lead-'+pin].iter(f'{{{SVG}}}path')))[-1]
+                    if kind in ('or','nor','xor','xnor'):
+                        # XOR inputs meet the separate outer curve, OR inputs the body.
+                        offset=3.7 if kind in ('xor','xnor') else 2.5
+                        expected_x=-offset*factor-endpoint[1]**2/(8*factor)
+                        self.assertAlmostEqual(endpoint[0],expected_x,delta=.0003)
+                    else:self.assertAlmostEqual(endpoint[0],-4.5*factor,delta=.0003)
+                if two:self.assertEqual([pins['a'][1],pins['b'][1]],[2,-2])
+                if tri:
+                    self.assertEqual(symbol['attributes']['enable_active'],'high')
+                    self.assertLess(pins['enable'][1],0)
+                    endpoint=straight_points(next(parts['lead-enable'].iter(f'{{{SVG}}}path')))[-1]
+                    self.assertLess(math.dist(endpoint,(0,-2*factor)),.0003)
+        for a,b in [('and','nand'),('or','nor'),('xor','xnor'),('buffer','not'),('schmitt-buffer','schmitt-inverter'),('tristate-buffer','tristate-inverter')]:
+            for kind,size,stroke in list(bodies):
+                if kind==a:self.assertEqual(bodies[kind,size,stroke],bodies[b,size,stroke])
+
+    def test_switch_resting_connections_and_separate_relay_coil(self):
+        for symbol in self.new:
+            if symbol['family']!='switches-and-relays':continue
+            sid=symbol['id']
+            for config in symbol['configurations']:
+                parts={g.get('data-part'):g for g in artwork(config).iter() if g.get('data-part')}
+                def points(name):return straight_points(next(parts[name].iter(f'{{{SVG}}}path')))
+                pins=config['pins_mm'];factor=config['settings']['size_factor']
+                if sid.startswith('pushbutton'):
+                    self.assertEqual(set(pins),{'a','b'})
+                    bridge=points('contact-bridge')
+                    closed=sid.endswith('-nc')
+                    self.assertEqual(symbol['attributes']['resting_state'],'closed' if closed else 'open')
+                    for i,pin in enumerate(('a','b')):
+                        contact=points('lead-'+pin)[-1]
+                        if closed:self.assertLess(math.dist(bridge[i],contact),.0003)
+                        else:self.assertGreater(math.dist(bridge[i],contact),1.7*factor)
+                elif sid.startswith('relay'):
+                    self.assertEqual(set(pins),{'coil-1','coil-2'} | ({'common','nc','no'} if sid=='relay-spdt' else set()))
+                    if sid=='relay-spdt':
+                        blade=points('contact-blade')
+                        self.assertLess(math.dist(blade[0],points('lead-common')[-1]),.0003)
+                        self.assertLess(math.dist(blade[-1],points('lead-nc')[-1]),.0003)
+                        self.assertGreater(math.dist(blade[-1],points('lead-no')[-1]),3.9*factor)
+                        self.assertTrue(all(pins[p][0]<pins['common'][0] for p in ('coil-1','coil-2')))
+                else:
+                    double='-dp' in sid;changeover=sid.endswith('dt')
+                    self.assertEqual(len(pins),(2 if double else 1)*(3 if changeover else 2))
+                    self.assertEqual('mechanical-link' in parts,double)
+                    for prefix in ('pole-1-','pole-2-') if double else ('',):
+                        blade=points(prefix+'blade')
+                        self.assertLess(math.dist(blade[0],points('lead-'+prefix+'common')[-1]),.0003)
+                        target=points('lead-'+prefix+('upper' if changeover else 'out'))[-1]
+                        if changeover:self.assertLess(math.dist(blade[-1],target),.0003)
+                        else:self.assertGreater(math.dist(blade[-1],target),2*factor)
+
+
+    def test_connector_contacts_numbering_and_instrument_terminals(self):
+        for symbol in self.new:
+            if symbol['family']!='connections-and-instruments':continue
+            sid=symbol['id']
+            for config in symbol['configurations']:
+                parts={g.get('data-part'):g for g in artwork(config).iter() if g.get('data-part')}
+                pins=config['pins_mm'];factor=config['settings']['size_factor']
+                self.assertEqual(len(pins),symbol['attributes']['contact_count'])
+                def points(name):return straight_points(next(parts[name].iter(f'{{{SVG}}}path')))
+                if sid in ('connector-2pin','connector-3pin'):
+                    count=len(pins)
+                    self.assertEqual(set(pins),{'pin-'+str(i) for i in range(1,count+1)})
+                    self.assertEqual([pins['pin-'+str(i)][1] for i in range(1,count+1)],sorted([p[1] for p in pins.values()],reverse=True))
+                    for i in range(1,count+1):
+                        self.assertIn('number-'+str(i),parts);self.assertIn('contact-'+str(i),parts)
+                        endpoint=points('lead-pin-'+str(i))[-1]
+                        self.assertAlmostEqual(endpoint[0],.2*factor,delta=.0003)
+                        self.assertAlmostEqual(endpoint[1],pins['pin-'+str(i)][1],delta=.0003)
+                elif sid=='connector-coaxial':
+                    self.assertEqual(set(pins),{'center','shield'})
+                    self.assertLess(pins['center'][0],0);self.assertLess(pins['shield'][1],0)
+                    self.assertLess(math.dist(points('lead-center')[-1],(-.65*factor,0)),.0003)
+                    self.assertLess(math.dist(points('lead-shield')[-1],(0,-2.2*factor)),.0003)
+                    # Open shield arc ends straddle the center lead, leaving an actual insulating gap.
+                    arc=points('shield-contact')
+                    self.assertLess(arc[0][0],-1.8*factor);self.assertLess(arc[-1][0],-1.8*factor)
+                    self.assertGreater(arc[0][1],factor);self.assertLess(arc[-1][1],-factor)
+                elif sid in ('ammeter','voltmeter'):
+                    self.assertEqual(set(pins),{'a','b'});self.assertIn('quantity',parts)
+                    self.assertEqual(pins['a'][1],pins['b'][1]);self.assertLess(pins['a'][0],pins['b'][0])
+                else:
+                    self.assertEqual(set(pins),{'net'})
+                    if sid=='test-point':self.assertIn('test-label',parts)
+
+
+    def test_fuse_link_and_resonator_electrodes_and_common(self):
+        for symbol in self.new:
+            if symbol['family']!='protection-and-resonators':continue
+            sid=symbol['id']
+            for config in symbol['configurations']:
+                parts={g.get('data-part'):g for g in artwork(config).iter() if g.get('data-part')}
+                def points(name):return straight_points(next(parts[name].iter(f'{{{SVG}}}path')))
+                factor=config['settings']['size_factor'];pins=config['pins_mm']
+                self.assertEqual(set(pins),{'a','b','common'} if sid=='ceramic-resonator' else {'a','b'})
+                self.assertLess(pins['a'][0],pins['b'][0]);self.assertEqual(pins['a'][1],pins['b'][1])
+                if sid=='fuse':
+                    link=points('fusible-link')
+                    self.assertLess(math.dist(link[0],points('lead-a')[-1]),.0003)
+                    self.assertLess(math.dist(link[-1],points('lead-b')[-1]),.0003)
+                else:
+                    body=points('resonating-element')
+                    for pin,sign in [('a',-1),('b',1)]:
+                        electrode=points('electrode-'+pin);end=points('lead-'+pin)[-1]
+                        self.assertAlmostEqual(end[0],electrode[0][0],delta=.0003)
+                        self.assertLess(electrode[0][1],end[1]);self.assertGreater(electrode[-1][1],end[1])
+                        self.assertGreater(sign*electrode[0][0]-max(sign*x for x,y in body),factor)
+                    if sid=='ceramic-resonator':
+                        bus=points('common-bus');common=points('lead-common')[-1]
+                        self.assertAlmostEqual(common[1],bus[0][1],delta=.0003)
+                        self.assertLess(bus[0][0],common[0]);self.assertGreater(bus[1][0],common[0])
+                        self.assertLess(pins['common'][1],common[1]);self.assertIn('package',parts)
+                        for side in ('a','b'):
+                            upper=points('load-'+side+'-upper');lower=points('load-'+side+'-lower')
+                            self.assertEqual(upper[0][1],0)
+                            self.assertGreater(upper[1][1]-lower[0][1],factor)
+                            lower_paths=list(parts['load-'+side+'-lower'].iter(f'{{{SVG}}}path'))
+                            join=straight_points(lower_paths[-1])[-1]
+                            self.assertAlmostEqual(join[1],bus[0][1],delta=.0003)
 
 
 if __name__=='__main__':unittest.main()

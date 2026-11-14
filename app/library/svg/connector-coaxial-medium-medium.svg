@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000025 30.366716 27.532106" width="10.71270259mm" height="9.71271517mm">
+  <title>Coaxial connector</title>
+  <desc>Coaxial connector with independent center conductor and shield terminals. The open shield arc leaves the center lead electrically separate.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 4.4, "body-width": 4.4, "grid": 1.0}, "origin_svg": [-48.556576, -61.759172], "parts": ["lead-center", "lead-shield", "center-contact", "shield-contact"], "pins_mm": {"center": [-6.0, 0.0], "shield": [0.0, -5.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "medium", "size_factor": 1.0, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "connector-coaxial"}</metadata>
+  <g id="sc-connector-coaxial-r1-medium-medium--sc-connector-coaxial-r1-medium-medium" inkscape:label="Coaxial connector / medium / medium" data-symbol="connector-coaxial" data-revision="1" data-size="medium" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-48.556576,-61.759172)scale(0.996264,-0.996264)">
+    <g data-part="lead-center" id="sc-connector-coaxial-r1-medium-medium--sc-connector-coaxial-r1-medium-medium--lead-center" inkscape:label="lead-center">
+      <path d="M-17.07156 0H-1.8494" fill="none" />
+      <desc>Electrical lead: Center conductor</desc>
+    </g>
+    <g data-part="lead-shield" id="sc-connector-coaxial-r1-medium-medium--sc-connector-coaxial-r1-medium-medium--lead-shield" inkscape:label="lead-shield">
+      <path d="M0-14.2263V-6.25955" fill="none" />
+      <desc>Electrical lead: Shield</desc>
+    </g>
+    <g data-part="center-contact" id="sc-connector-coaxial-r1-medium-medium--sc-connector-coaxial-r1-medium-medium--center-contact" inkscape:label="center-contact">
+      <path d="M1.8494 0C1.8494 1.0214 1.0214 1.8494 0 1.8494S-1.8494 1.0214-1.8494 0S-1.0214-1.8494 0-1.8494S1.8494-1.0214 1.8494 0ZM0 0" fill="none" />
+      <desc>Center contact</desc>
+    </g>
+    <g data-part="shield-contact" id="sc-connector-coaxial-r1-medium-medium--sc-connector-coaxial-r1-medium-medium--shield-contact" inkscape:label="shield-contact">
+      <path d="M-5.42094 3.12979C-3.69244 6.12364 .13593 7.14946 3.12978 5.42096S7.14944-.13591 5.42094-3.12976S-.13593-7.14943-3.12978-5.42093C-4.08109-4.87173-4.87175-4.08107-5.42094-3.12976" fill="none" />
+      <desc>Shield contact</desc>
+    </g>
+  </g>
+</svg>

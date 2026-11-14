@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.00002 46.204514 15.873914" width="16.29992577mm" height="5.59996411mm">
+  <title>Iron-core inductor</title>
+  <desc>iron-core inductor using the accepted four-loop winding.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 1.5, "body-width": 7.5, "grid": 1.0}, "origin_svg": [-45.580203, -64.488241], "parts": ["lead-a", "lead-b", "body", "magnetic-core"], "pins_mm": {"a": [-7.0, 0.0], "b": [7.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "inductor-iron"}</metadata>
+  <g id="sc-inductor-iron-r1-small-thick--sc-inductor-iron-r1-small-thick" inkscape:label="Iron-core inductor / small / thick" data-symbol="inductor-iron" data-revision="1" data-size="small" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-45.580203,-64.488241)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="sc-inductor-iron-r1-small-thick--sc-inductor-iron-r1-small-thick--lead-a" inkscape:label="lead-a">
+      <path d="M-19.91682 0H-10.66972" fill="none" />
+      <desc>Electrical lead: A</desc>
+    </g>
+    <g data-part="lead-b" id="sc-inductor-iron-r1-small-thick--sc-inductor-iron-r1-small-thick--lead-b" inkscape:label="lead-b">
+      <path d="M19.91682 0H10.66972" fill="none" />
+      <desc>Electrical lead: B</desc>
+    </g>
+    <g data-part="body" id="sc-inductor-iron-r1-small-thick--sc-inductor-iron-r1-small-thick--body" inkscape:label="body">
+      <path d="M-10.66972 0C-10.66972 2.35712-9.4755 4.26788-8.0023 4.26788C-6.52911 4.26788-5.33488 2.35712-5.33488 0C-5.33488 2.35712-4.14066 4.26788-2.66747 4.26788C-1.19427 4.26788-.00005 2.35712-.00005 0C-.00005 2.35712 1.19418 4.26788 2.66737 4.26788S5.3348 2.35712 5.3348 0C5.3348 2.35712 6.52902 4.26788 8.00221 4.26788S10.66963 2.35712 10.66963 0" fill="none" />
+      <desc>Body</desc>
+    </g>
+    <g data-part="magnetic-core" id="sc-inductor-iron-r1-small-thick--sc-inductor-iron-r1-small-thick--magnetic-core" inkscape:label="magnetic-core">
+      <path d="M-10.66972-2.56071H10.66972" fill="none" />
+      <path d="M-10.66972-5.12143H10.66972" fill="none" />
+      <desc>Magnetic core</desc>
+    </g>
+  </g>
+</svg>

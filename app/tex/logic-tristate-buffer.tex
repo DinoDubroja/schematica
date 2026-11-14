@@ -1,0 +1,28 @@
+% Tri-state buffer; custom active-high enable added to buffer port.
+% Schematica coordinates are millimetres at Medium; pins snap outward to the 1 mm grid.
+\newcommand{\SCBatchLogicTristateBuffer}[4]{%
+  \SCresolve{#1}{#2}{#3}
+  \def\F{#2}
+  \pgfmathsetmacro{\SCorientx}{ifthenelse(mod(#4,2)==1,-1,1)}
+  \pgfmathsetmacro{\SCorienty}{ifthenelse(#4>1,-1,1)}
+  \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+    \SCdimension{body-width}{9*\F}
+    \SCdimension{body-height}{8*\F}
+    \SCdimension{grid}{1}
+    \SCpin{in}{floor(-8*\F)}{0}
+    \begin{SCpart}{lead-in}
+    \draw ({floor(-8*\F)},{0})--({-4.5*\F},{0*\F});
+    \end{SCpart}
+    \SCpin{out}{ceil(9*\F)}{0}
+    \begin{SCpart}{lead-out}
+    \draw ({ceil(9*\F)},{0})--({4.5*\F},{0*\F});
+    \end{SCpart}
+    \begin{SCpart}{body}
+    \draw ({-4.5*\F},{-4*\F})--({-4.5*\F},{4*\F})--({4.5*\F},{0*\F})--({-4.5*\F},{-4*\F});
+    \end{SCpart}
+    \SCpin{enable}{0}{floor(-6*\F)}
+    \begin{SCpart}{lead-enable}
+    \draw ({0},{floor(-6*\F)})--({0*\F},{-2*\F});
+    \end{SCpart}
+  \end{scope}
+}

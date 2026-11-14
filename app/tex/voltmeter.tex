@@ -1,0 +1,29 @@
+% Voltmeter; voltmeter.
+% Schematica coordinates are millimetres at Medium; pins snap outward to the 1 mm grid.
+\newcommand{\SCBatchVoltmeter}[4]{%
+  \SCresolve{#1}{#2}{#3}
+  \def\F{#2}
+  \pgfmathsetmacro{\SCorientx}{ifthenelse(mod(#4,2)==1,-1,1)}
+  \pgfmathsetmacro{\SCorienty}{ifthenelse(#4>1,-1,1)}
+  \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+    \SCdimension{body-width}{7.2*\F}
+    \SCdimension{body-height}{7.2*\F}
+    \SCdimension{grid}{1}
+    \SCpin{a}{floor(-7*\F)}{0}
+    \begin{SCpart}{lead-a}
+    \draw ({floor(-7*\F)},{0})--({-3.6*\F},{0*\F});
+    \end{SCpart}
+    \SCpin{b}{ceil(7*\F)}{0}
+    \begin{SCpart}{lead-b}
+    \draw ({ceil(7*\F)},{0})--({3.6*\F},{0*\F});
+    \end{SCpart}
+    \begin{SCpart}{body}
+    \draw ({0*\F},{0*\F}) circle ({3.6*\F});
+    \end{SCpart}
+    \begin{SCpart}{quantity}
+    \pgfmathsetmacro{\SCfontsize}{2.8*\F*72.27/25.4/.69444}
+    \font\SCbatchfont="[lmsans10-regular.otf]" at \SCfontsize pt
+    \node[inner sep=0pt,outer sep=0pt] at ({0*\F},{0*\F}) {\SCbatchfont V};
+    \end{SCpart}
+  \end{scope}
+}

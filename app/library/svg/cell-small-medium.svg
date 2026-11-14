@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000022 28.913247 19.842372" width="10.19995102mm" height="6.99994790mm">
+  <title>Cell</title>
+  <desc>One electrochemical cell; the long plate and plus sign identify the positive terminal.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 4.79999, "body-width": 1.65, "grid": 1.0}, "origin_svg": [-54.225837, -62.078835], "parts": ["lead-positive", "lead-negative", "plate-1", "plate-2", "polarity"], "pins_mm": {"negative": [4.0, 0.0], "positive": [-4.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "cell"}</metadata>
+  <g id="sc-cell-r1-small-medium--sc-cell-r1-small-medium" inkscape:label="Cell / small / medium" data-symbol="cell" data-revision="1" data-size="small" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-54.225837,-62.078835)scale(0.996264,-0.996264)">
+    <g data-part="lead-positive" id="sc-cell-r1-small-medium--sc-cell-r1-small-medium--lead-positive" inkscape:label="lead-positive">
+      <path d="M-11.38104 0H-2.34732" fill="none" />
+      <desc>Electrical lead: Positive</desc>
+    </g>
+    <g data-part="lead-negative" id="sc-cell-r1-small-medium--sc-cell-r1-small-medium--lead-negative" inkscape:label="lead-negative">
+      <path d="M11.38104 0H2.34732" fill="none" />
+      <desc>Electrical lead: Negative</desc>
+    </g>
+    <g data-part="plate-1" id="sc-cell-r1-small-medium--sc-cell-r1-small-medium--plate-1" inkscape:label="plate-1">
+      <path d="M-2.34732-6.8286V6.8286" fill="none" />
+      <desc>Plate 1</desc>
+    </g>
+    <g data-part="plate-2" id="sc-cell-r1-small-medium--sc-cell-r1-small-medium--plate-2" inkscape:label="plate-2">
+      <path d="M2.34732-3.62769V3.62769" fill="none" />
+      <desc>Plate 2</desc>
+    </g>
+    <g data-part="polarity" id="sc-cell-r1-small-medium--sc-cell-r1-small-medium--polarity" inkscape:label="polarity">
+      <path d="M-7.36209 5.6549H-5.01476" fill="none" />
+      <path d="M-6.1884 4.48126V6.8286" fill="none" />
+      <desc>Polarity</desc>
+    </g>
+  </g>
+</svg>

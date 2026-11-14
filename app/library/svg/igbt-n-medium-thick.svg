@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000015 32.031354 40.535244" width="11.29994988mm" height="14.29993330mm">
+  <title>N-channel IGBT</title>
+  <desc>Insulated-gate bipolar transistor with gate, collector and emitter; no antiparallel diode is shown.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 7.0, "body-width": 4.9, "grid": 1.0}, "origin_svg": [-48.414834, -51.732395], "parts": ["lead-gate", "lead-collector", "lead-emitter", "base", "collector-branch", "emitter-branch", "emitter-arrow", "insulated-gate"], "pins_mm": {"collector": [3.0, 6.0], "emitter": [3.0, -6.0], "gate": [-6.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "medium", "size_factor": 1.0, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "igbt-n"}</metadata>
+  <g id="sc-igbt-n-r1-medium-thick--sc-igbt-n-r1-medium-thick" inkscape:label="N-channel IGBT / medium / thick" data-symbol="igbt-n" data-revision="1" data-size="medium" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-48.414834,-51.732395)scale(0.996264,-0.996264)">
+    <g data-part="lead-gate" id="sc-igbt-n-r1-medium-thick--sc-igbt-n-r1-medium-thick--lead-gate" inkscape:label="lead-gate">
+      <path d="M-17.07156 0H-5.40598" fill="none" />
+      <desc>Electrical lead: Gate</desc>
+    </g>
+    <g data-part="lead-collector" id="sc-igbt-n-r1-medium-thick--sc-igbt-n-r1-medium-thick--lead-collector" inkscape:label="lead-collector">
+      <path d="M8.53578 17.07156V9.9584" fill="none" />
+      <desc>Electrical lead: Collector</desc>
+    </g>
+    <g data-part="lead-emitter" id="sc-igbt-n-r1-medium-thick--sc-igbt-n-r1-medium-thick--lead-emitter" inkscape:label="lead-emitter">
+      <path d="M8.53578-17.07156V-9.9584" fill="none" />
+      <desc>Electrical lead: Emitter</desc>
+    </g>
+    <g data-part="base" id="sc-igbt-n-r1-medium-thick--sc-igbt-n-r1-medium-thick--base" inkscape:label="base">
+      <path d="M-1.13808-6.8286V6.8286" fill="none" />
+      <desc>Base</desc>
+    </g>
+    <g data-part="collector-branch" id="sc-igbt-n-r1-medium-thick--sc-igbt-n-r1-medium-thick--collector-branch" inkscape:label="collector-branch">
+      <path d="M-1.13808 4.26788L8.53578 9.9584" fill="none" />
+      <desc>Collector branch</desc>
+    </g>
+    <g data-part="emitter-branch" id="sc-igbt-n-r1-medium-thick--sc-igbt-n-r1-medium-thick--emitter-branch" inkscape:label="emitter-branch">
+      <path d="M-1.13808-4.26788L8.53578-9.9584" fill="none" />
+      <desc>Emitter branch</desc>
+    </g>
+    <g data-part="emitter-arrow" id="sc-igbt-n-r1-medium-thick--sc-igbt-n-r1-medium-thick--emitter-arrow" inkscape:label="emitter-arrow">
+      <path d="M4.47803-5.75603L6.25955-8.61943L2.89127-8.45357Z" stroke="none" />
+      <desc>Emitter arrow</desc>
+    </g>
+    <g data-part="insulated-gate" id="sc-igbt-n-r1-medium-thick--sc-igbt-n-r1-medium-thick--insulated-gate" inkscape:label="insulated-gate">
+      <path d="M-5.40598-6.8286V6.8286" fill="none" />
+      <desc>Insulated gate</desc>
+    </g>
+  </g>
+</svg>

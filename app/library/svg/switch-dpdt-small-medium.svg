@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000019 40.251767 47.054806" width="14.19992891mm" height="16.59988989mm">
+  <title>DPDT switch</title>
+  <desc>Two mechanically linked changeover poles, each connecting common to its upper throw; the dashed link is not electrical.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 14.0, "body-width": 4.5, "grid": 1.0}, "origin_svg": [-48.556576, -48.472616], "parts": ["lead-pole-1-common", "pole-1-pivot", "lead-pole-1-upper", "pole-1-upper-contact", "lead-pole-1-lower", "pole-1-lower-contact", "pole-1-blade", "lead-pole-2-common", "pole-2-pivot", "lead-pole-2-upper", "pole-2-upper-contact", "lead-pole-2-lower", "pole-2-lower-contact", "pole-2-blade", "mechanical-link"], "pins_mm": {"pole-1-common": [-6.0, 5.0], "pole-1-lower": [6.0, 3.0], "pole-1-upper": [6.0, 7.0], "pole-2-common": [-6.0, -5.0], "pole-2-lower": [6.0, -7.0], "pole-2-upper": [6.0, -3.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "switch-dpdt"}</metadata>
+  <g id="sc-switch-dpdt-r1-small-medium--sc-switch-dpdt-r1-small-medium" inkscape:label="DPDT switch / small / medium" data-symbol="switch-dpdt" data-revision="1" data-size="small" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-48.556576,-48.472616)scale(0.996264,-0.996264)">
+    <g data-part="lead-pole-1-common" id="sc-switch-dpdt-r1-small-medium--sc-switch-dpdt-r1-small-medium--lead-pole-1-common" inkscape:label="lead-pole-1-common">
+      <path d="M-17.07156 14.2263H-6.40182" fill="none" />
+      <desc>Electrical lead: Common 1</desc>
+    </g>
+    <g data-part="pole-1-pivot" id="sc-switch-dpdt-r1-small-medium--sc-switch-dpdt-r1-small-medium--pole-1-pivot" inkscape:label="pole-1-pivot">
+      <path d="M-5.5483 14.2263C-5.5483 14.6977-5.93044 15.07983-6.40182 15.07983C-6.87321 15.07983-7.25536 14.6977-7.25536 14.2263C-7.25536 13.75491-6.87321 13.37277-6.40182 13.37277C-5.93044 13.37277-5.5483 13.75491-5.5483 14.2263ZM-6.40182 14.2263" stroke="none" />
+      <desc>Pole 1 pivot</desc>
+    </g>
+    <g data-part="lead-pole-1-upper" id="sc-switch-dpdt-r1-small-medium--sc-switch-dpdt-r1-small-medium--lead-pole-1-upper" inkscape:label="lead-pole-1-upper">
+      <path d="M17.07156 19.91682H6.40182" fill="none" />
+      <desc>Electrical lead: Upper throw 1</desc>
+    </g>
+    <g data-part="pole-1-upper-contact" id="sc-switch-dpdt-r1-small-medium--sc-switch-dpdt-r1-small-medium--pole-1-upper-contact" inkscape:label="pole-1-upper-contact">
+      <path d="M7.25536 19.91682C7.25536 20.38821 6.87321 20.77036 6.40182 20.77036C5.93044 20.77036 5.5483 20.38821 5.5483 19.91682S5.93044 19.0633 6.40182 19.0633C6.87321 19.0633 7.25536 19.44543 7.25536 19.91682ZM6.40182 19.91682" stroke="none" />
+      <desc>Pole 1 upper contact</desc>
+    </g>
+    <g data-part="lead-pole-1-lower" id="sc-switch-dpdt-r1-small-medium--sc-switch-dpdt-r1-small-medium--lead-pole-1-lower" inkscape:label="lead-pole-1-lower">
+      <path d="M17.07156 8.53578H6.40182" fill="none" />
+      <desc>Electrical lead: Lower throw 1</desc>
+    </g>
+    <g data-part="pole-1-lower-contact" id="sc-switch-dpdt-r1-small-medium--sc-switch-dpdt-r1-small-medium--pole-1-lower-contact" inkscape:label="pole-1-lower-contact">
+      <path d="M7.25536 8.53578C7.25536 9.00717 6.87321 9.38931 6.40182 9.38931C5.93044 9.38931 5.5483 9.00717 5.5483 8.53578S5.93044 7.68225 6.40182 7.68225C6.87321 7.68225 7.25536 8.06439 7.25536 8.53578ZM6.40182 8.53578" stroke="none" />
+      <desc>Pole 1 lower contact</desc>
+    </g>
+    <g data-part="pole-1-blade" id="sc-switch-dpdt-r1-small-medium--sc-switch-dpdt-r1-small-medium--pole-1-blade" inkscape:label="pole-1-blade">
+      <path d="M-6.40182 14.2263L6.40182 19.91682" fill="none" />
+      <desc>Pole 1 blade</desc>
+    </g>
+    <g data-part="lead-pole-2-common" id="sc-switch-dpdt-r1-small-medium--sc-switch-dpdt-r1-small-medium--lead-pole-2-common" inkscape:label="lead-pole-2-common">
+      <path d="M-17.07156-14.2263H-6.40182" fill="none" />
+      <desc>Electrical lead: Common 2</desc>
+    </g>
+    <g data-part="pole-2-pivot" id="sc-switch-dpdt-r1-small-medium--sc-switch-dpdt-r1-small-medium--pole-2-pivot" inkscape:label="pole-2-pivot">
+      <path d="M-5.5483-14.2263C-5.5483-13.75491-5.93044-13.37277-6.40182-13.37277C-6.87321-13.37277-7.25536-13.75491-7.25536-14.2263C-7.25536-14.6977-6.87321-15.07983-6.40182-15.07983C-5.93044-15.07983-5.5483-14.6977-5.5483-14.2263ZM-6.40182-14.2263" stroke="none" />
+      <desc>Pole 2 pivot</desc>
+    </g>
+    <g data-part="lead-pole-2-upper" id="sc-switch-dpdt-r1-small-medium--sc-switch-dpdt-r1-small-medium--lead-pole-2-upper" inkscape:label="lead-pole-2-upper">
+      <path d="M17.07156-8.53578H6.40182" fill="none" />
+      <desc>Electrical lead: Upper throw 2</desc>
+    </g>
+    <g data-part="pole-2-upper-contact" id="sc-switch-dpdt-r1-small-medium--sc-switch-dpdt-r1-small-medium--pole-2-upper-contact" inkscape:label="pole-2-upper-contact">
+      <path d="M7.25536-8.53578C7.25536-8.06439 6.87321-7.68225 6.40182-7.68225C5.93044-7.68225 5.5483-8.06439 5.5483-8.53578S5.93044-9.38931 6.40182-9.38931C6.87321-9.38931 7.25536-9.00717 7.25536-8.53578ZM6.40182-8.53578" stroke="none" />
+      <desc>Pole 2 upper contact</desc>
+    </g>
+    <g data-part="lead-pole-2-lower" id="sc-switch-dpdt-r1-small-medium--sc-switch-dpdt-r1-small-medium--lead-pole-2-lower" inkscape:label="lead-pole-2-lower">
+      <path d="M17.07156-19.91682H6.40182" fill="none" />
+      <desc>Electrical lead: Lower throw 2</desc>
+    </g>
+    <g data-part="pole-2-lower-contact" id="sc-switch-dpdt-r1-small-medium--sc-switch-dpdt-r1-small-medium--pole-2-lower-contact" inkscape:label="pole-2-lower-contact">
+      <path d="M7.25536-19.91682C7.25536-19.44543 6.87321-19.0633 6.40182-19.0633C5.93044-19.0633 5.5483-19.44543 5.5483-19.91682S5.93044-20.77036 6.40182-20.77036C6.87321-20.77036 7.25536-20.38821 7.25536-19.91682ZM6.40182-19.91682" stroke="none" />
+      <desc>Pole 2 lower contact</desc>
+    </g>
+    <g data-part="pole-2-blade" id="sc-switch-dpdt-r1-small-medium--sc-switch-dpdt-r1-small-medium--pole-2-blade" inkscape:label="pole-2-blade">
+      <path d="M-6.40182-14.2263L6.40182-8.53578" fill="none" />
+      <desc>Pole 2 blade</desc>
+    </g>
+    <g data-part="mechanical-link" id="sc-switch-dpdt-r1-small-medium--sc-switch-dpdt-r1-small-medium--mechanical-link" inkscape:label="mechanical-link">
+      <path d="M0-11.38104V17.07156" fill="none" stroke-dasharray="2.84526,1.99168" stroke-dashoffset="0.0" />
+      <desc>Mechanical link</desc>
+    </g>
+  </g>
+</svg>

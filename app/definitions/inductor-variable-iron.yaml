@@ -1,0 +1,77 @@
+schema_version: 1
+id: inductor-variable-iron
+revision: 1
+name: Variable iron-core inductor
+description: Adjustable iron-core inductor using the accepted four-loop winding. Only
+  the diagonal adjustment arrow changes orientation; winding and terminals remain
+  fixed.
+keywords:
+- inductor
+- coil
+- winding
+- passive
+- adjustable
+- iron
+- inductors transformers
+- variable
+- overnight
+- batch 02
+types:
+- inductors-and-transformers
+family: inductors-and-transformers
+batch: overnight-inductors-and-transformers-02
+attributes:
+  appearance: coil
+  core: iron
+recipe: inductor-variable-iron
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: L with core/adjustment adaptation
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: a
+  name: A
+  description: A
+  kind: passive
+  lead_part: lead-a
+- id: b
+  name: B
+  description: B
+  kind: passive
+  lead_part: lead-b
+parts:
+- id: lead-a
+  description: 'Electrical lead: A'
+- id: lead-b
+  description: 'Electrical lead: B'
+- id: body
+  description: Body
+- id: magnetic-core
+  description: Magnetic core
+- id: adjustment
+  description: Adjustment
+drawing:
+  variant: variable
+options:
+  orientation:
+    name: Arrow orientation
+    default: up-right
+    values:
+    - id: up-right
+      name: Up-right
+    - id: up-left
+      name: Up-left
+    - id: down-right
+      name: Down-right
+    - id: down-left
+      name: Down-left

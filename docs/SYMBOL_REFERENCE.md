@@ -78,3 +78,22 @@ New recipes are self-contained TeX files; accepted recipe/helper bytes are retai
 Adjustable markings use the existing four orientation values with fixed terminals.
 Dimensions and strokes remain independent; unrelated marks need visible separation
 in Small/Thick. New artwork remains Unverified after agent checks.
+
+| Family | Construction basis and deliberate adaptation |
+|---|---|
+| Capacitors | CircuitikZ `eC`, `cC`, `vC`; custom trimmer and three-terminal feedthrough |
+| Diodes | `Do`, `zDo`, `sDo`, `leDo`, `pDo`, `VC`; back-to-back avalanche pair for bidirectional TVS |
+| Transistors | `npn`, `pnp`, `njfet`, `pjfet`, enhancement/depletion IGFETs and `nigbt`; explicit bulk and optical forms. JFET revision 2 follows the native source-side gate and bent lead construction; P has source above drain |
+| Sources / grounds | `V`, `I`, `sV`, `cV`, `cI`, battery, `ground`, `sground`, `cground` |
+| Magnetics | Coil/core and transformer forms; custom filled EU bar, adjustment marks and secondary center tap |
+| Analog | Accepted op-amp and powered op-amp; the six new Batch 02 analog blocks were removed after review |
+| Logic | Distinctive AND/OR/XOR and buffer shapes, inversion circles, Schmitt mark and active-high tri-state enable |
+| Switches / relays | SPST/SPDT contacts and custom ganged DPST/DPDT poles; momentary buttons and relays were removed after review |
+| Connections / instruments | Open node, meters and coaxial-port concept; custom TP marker |
+| Protection / resonators | Fuse and quartz forms; ceramic resonator removed after review |
+
+The [TI Schmitt-buffer drawing](https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf)
+supports the hysteresis marking. The earlier ceramic construction (removed after review) followed the two internal
+load capacitors described by [Murata](https://www.murata.com/en-global/support/faqs/timingdevice/ceralock/mnt/cch0008).
+These references establish the intended meaning, not Schematica's exact dimensions.
+The [inventory](BATCH_02.md) records which families have completed validation.

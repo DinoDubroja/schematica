@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000015 21.401466 40.535244" width="7.54996162mm" height="14.29993330mm">
+  <title>Dependent voltage source</title>
+  <desc>Dependent voltage source. The upper terminal is the positive reference. The controlling relation is specified by a schematic label; control terminals are not drawn.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 6.0, "body-width": 5.25, "grid": 1.0}, "origin_svg": [-57.981726, -51.732395], "parts": ["lead-positive", "lead-negative", "body", "positive-mark", "negative-mark"], "pins_mm": {"negative": [0.0, -6.0], "positive": [0.0, 6.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "source-dependent-voltage"}</metadata>
+  <g id="sc-source-dependent-voltage-r1-small-thick--sc-source-dependent-voltage-r1-small-thick" inkscape:label="Dependent voltage source / small / thick" data-symbol="source-dependent-voltage" data-revision="1" data-size="small" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-57.981726,-51.732395)scale(0.996264,-0.996264)">
+    <g data-part="lead-positive" id="sc-source-dependent-voltage-r1-small-thick--sc-source-dependent-voltage-r1-small-thick--lead-positive" inkscape:label="lead-positive">
+      <path d="M0 17.07156V8.53578" fill="none" />
+      <desc>Electrical lead: Positive reference</desc>
+    </g>
+    <g data-part="lead-negative" id="sc-source-dependent-voltage-r1-small-thick--sc-source-dependent-voltage-r1-small-thick--lead-negative" inkscape:label="lead-negative">
+      <path d="M0-17.07156V-8.53578" fill="none" />
+      <desc>Electrical lead: Negative reference</desc>
+    </g>
+    <g data-part="body" id="sc-source-dependent-voltage-r1-small-thick--sc-source-dependent-voltage-r1-small-thick--body" inkscape:label="body">
+      <path d="M0 8.53578L7.4688 0L0-8.53578L-7.4688 0L0 8.53578" fill="none" />
+      <desc>Body</desc>
+    </g>
+    <g data-part="positive-mark" id="sc-source-dependent-voltage-r1-small-thick--sc-source-dependent-voltage-r1-small-thick--positive-mark" inkscape:label="positive-mark">
+      <path d="M-1.38702 3.30759H1.38702" fill="none" />
+      <path d="M0 1.9205V4.69466" fill="none" />
+      <desc>Positive mark</desc>
+    </g>
+    <g data-part="negative-mark" id="sc-source-dependent-voltage-r1-small-thick--sc-source-dependent-voltage-r1-small-thick--negative-mark" inkscape:label="negative-mark">
+      <path d="M-1.38702-3.30759H1.38702" fill="none" />
+      <desc>Negative mark</desc>
+    </g>
+  </g>
+</svg>

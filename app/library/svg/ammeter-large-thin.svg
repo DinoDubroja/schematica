@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-68.682458 -72.000021 57.117809 31.606118" width="20.14989373mm" height="11.14993607mm">
+  <defs>
+    <path id="sc-ammeter-r1-large-thin--g0-27" d="M9.115455 0L5.386405-9.915558H4.129101L.400051 0H1.45733L2.557471-2.91466H6.715147L7.801001 0H9.115455ZM6.400821-3.714762H2.857509C3.586174-5.757882 3.057535-4.257689 3.7862-6.300808C4.086238-7.143774 4.529152-8.358215 4.629165-8.886854H4.643453C4.672028-8.686829 4.772041-8.32964 5.100654-7.386662L6.400821-3.714762Z" />
+  </defs>
+  <title>Ammeter</title>
+  <desc>Current-measuring instrument with two terminals, intended for a series connection.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 8.99998, "body-width": 8.99998, "grid": 1.0}, "origin_svg": [-40.123554, -56.196961], "parts": ["lead-a", "lead-b", "body", "quantity"], "pins_mm": {"a": [-9.0, 0.0], "b": [9.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "thin", "stroke_mm": 0.15}, "symbol_id": "ammeter"}</metadata>
+  <g id="sc-ammeter-r1-large-thin--sc-ammeter-r1-large-thin" inkscape:label="Ammeter / large / thin" data-symbol="ammeter" data-revision="1" data-size="large" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(-40.123554,-56.196961)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="sc-ammeter-r1-large-thin--sc-ammeter-r1-large-thin--lead-a" inkscape:label="lead-a">
+      <path d="M-25.60735 0H-12.80367" fill="none" />
+      <desc>Electrical lead: A</desc>
+    </g>
+    <g data-part="lead-b" id="sc-ammeter-r1-large-thin--sc-ammeter-r1-large-thin--lead-b" inkscape:label="lead-b">
+      <path d="M25.60735 0H12.80367" fill="none" />
+      <desc>Electrical lead: B</desc>
+    </g>
+    <g data-part="body" id="sc-ammeter-r1-large-thin--sc-ammeter-r1-large-thin--body" inkscape:label="body">
+      <path d="M12.80367 0C12.80367 7.07135 7.07135 12.80367 0 12.80367S-12.80367 7.07135-12.80367 0S-7.07135-12.80367 0-12.80367S12.80367-7.07135 12.80367 0ZM0 0" fill="none" />
+      <desc>Body</desc>
+    </g>
+    <g data-part="quantity" id="sc-ammeter-r1-large-thin--sc-ammeter-r1-large-thin--quantity" inkscape:label="quantity">
+      <use x="-40.123554" y="-56.196961" xlink:href="#sc-ammeter-r1-large-thin--g0-27" stroke="none" fill="#000" transform="translate(-4.78276,-4.97636) scale(-1.00375,1.00375)translate(-40.123554,-56.196961)scale(-1,-1)" />
+      <desc>Quantity</desc>
+    </g>
+  </g>
+</svg>

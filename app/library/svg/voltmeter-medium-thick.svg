@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-68.682458 -72.000022 46.204514 26.929047" width="16.29992577mm" height="9.49996936mm">
+  <defs>
+    <path id="sc-voltmeter-r1-medium-thick--g0-111" d="M7.452385-7.932446H6.560842L5.040647-4.023373C4.857766-3.554742 4.000513-1.348744 3.897643-.822963H3.886213C3.794773-1.280164 3.303281-2.537468 3.200411-2.811789L1.223014-7.932446H.160021L3.280421 0H4.331984L7.452385-7.932446Z" />
+  </defs>
+  <title>Voltmeter</title>
+  <desc>Voltage-measuring instrument with two terminals, intended for a parallel connection.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 7.2, "body-width": 7.2, "grid": 1.0}, "origin_svg": [-45.580203, -58.535497], "parts": ["lead-a", "lead-b", "body", "quantity"], "pins_mm": {"a": [-7.0, 0.0], "b": [7.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "medium", "size_factor": 1.0, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "voltmeter"}</metadata>
+  <g id="sc-voltmeter-r1-medium-thick--sc-voltmeter-r1-medium-thick" inkscape:label="Voltmeter / medium / thick" data-symbol="voltmeter" data-revision="1" data-size="medium" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-45.580203,-58.535497)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="sc-voltmeter-r1-medium-thick--sc-voltmeter-r1-medium-thick--lead-a" inkscape:label="lead-a">
+      <path d="M-19.91682 0H-10.24295" fill="none" />
+      <desc>Electrical lead: A</desc>
+    </g>
+    <g data-part="lead-b" id="sc-voltmeter-r1-medium-thick--sc-voltmeter-r1-medium-thick--lead-b" inkscape:label="lead-b">
+      <path d="M19.91682 0H10.24295" fill="none" />
+      <desc>Electrical lead: B</desc>
+    </g>
+    <g data-part="body" id="sc-voltmeter-r1-medium-thick--sc-voltmeter-r1-medium-thick--body" inkscape:label="body">
+      <path d="M10.24295 0C10.24295 5.65709 5.65709 10.24295 0 10.24295S-10.24295 5.65709-10.24295 0S-5.65709-10.24295 0-10.24295S10.24295-5.65709 10.24295 0ZM0 0" fill="none" />
+      <desc>Body</desc>
+    </g>
+    <g data-part="quantity" id="sc-voltmeter-r1-medium-thick--sc-voltmeter-r1-medium-thick--quantity" inkscape:label="quantity">
+      <use x="-45.580203" y="-58.535497" xlink:href="#sc-voltmeter-r1-medium-thick--g0-111" stroke="none" fill="#000" transform="translate(-3.8262,-3.9811) scale(-1.00375,1.00375)translate(-45.580203,-58.535497)scale(-1,-1)" />
+      <desc>Quantity</desc>
+    </g>
+  </g>
+</svg>

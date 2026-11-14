@@ -1,0 +1,58 @@
+schema_version: 1
+id: source-voltage-ac
+revision: 1
+name: AC voltage source
+description: Independent voltage source. The sine wave identifies an alternating source
+  with no fixed polarity.
+keywords:
+- source
+- voltage
+- independent
+- AC
+- sources grounds
+- ac
+- overnight
+- batch 02
+types:
+- sources-and-grounds
+family: sources-and-grounds
+batch: overnight-sources-and-grounds-02
+attributes:
+  dependent: false
+  waveform: ac
+  quantity: voltage
+recipe: source-voltage-ac
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: sV
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: a
+  name: Upper terminal
+  description: Upper terminal
+  kind: output
+  lead_part: lead-a
+- id: b
+  name: Lower terminal
+  description: Lower terminal
+  kind: output
+  lead_part: lead-b
+parts:
+- id: lead-a
+  description: 'Electrical lead: Upper terminal'
+- id: lead-b
+  description: 'Electrical lead: Lower terminal'
+- id: body
+  description: Body
+- id: ac-wave
+  description: Ac wave

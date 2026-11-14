@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.00002 57.259548 45.921027" width="20.19989610mm" height="16.19991786mm">
+  <title>Air-core transformer</title>
+  <desc>Transformer with no magnetic core shown. Dots mark corresponding winding polarity; no turns ratio is specified.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 12.5, "body-width": 7.99998, "grid": 1.0}, "origin_svg": [-40.052683, -49.039506], "parts": ["lead-primary-1", "lead-primary-2", "primary-winding", "primary-polarity", "lead-secondary-1", "lead-secondary-2", "secondary-winding", "secondary-polarity"], "pins_mm": {"primary-1": [-9.0, 7.0], "primary-2": [-9.0, -7.0], "secondary-1": [9.0, 7.0], "secondary-2": [9.0, -7.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "transformer-air"}</metadata>
+  <g id="sc-transformer-air-r1-large-medium--sc-transformer-air-r1-large-medium" inkscape:label="Air-core transformer / large / medium" data-symbol="transformer-air" data-revision="1" data-size="large" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-40.052683,-49.039506)scale(0.996264,-0.996264)">
+    <g data-part="lead-primary-1" id="sc-transformer-air-r1-large-medium--sc-transformer-air-r1-large-medium--lead-primary-1" inkscape:label="lead-primary-1">
+      <path d="M-25.60735 19.91682V17.78287H-11.381" fill="none" />
+      <desc>Electrical lead: Primary dotted end</desc>
+    </g>
+    <g data-part="lead-primary-2" id="sc-transformer-air-r1-large-medium--sc-transformer-air-r1-large-medium--lead-primary-2" inkscape:label="lead-primary-2">
+      <path d="M-25.60735-19.91682V-17.78287H-11.381" fill="none" />
+      <desc>Electrical lead: Primary undotted end</desc>
+    </g>
+    <g data-part="primary-winding" id="sc-transformer-air-r1-large-medium--sc-transformer-air-r1-large-medium--primary-winding" inkscape:label="primary-winding">
+      <path d="M-11.381-17.78287C-4.26784-17.78287-4.26784-8.89143-11.381-8.89143C-4.26784-8.89143-4.26784 0-11.381 0C-4.26784 0-4.26784 8.89143-11.381 8.89143C-4.26784 8.89143-4.26784 17.78287-11.381 17.78287" fill="none" />
+      <desc>Primary winding</desc>
+    </g>
+    <g data-part="primary-polarity" id="sc-transformer-air-r1-large-medium--sc-transformer-air-r1-large-medium--primary-polarity" inkscape:label="primary-polarity">
+      <path d="M-14.29747 13.51498C-14.29747 14.06496-14.7433 14.51079-15.29327 14.51079C-15.84325 14.51079-16.28908 14.06496-16.28908 13.51498C-16.28908 12.96501-15.84325 12.51918-15.29327 12.51918C-14.7433 12.51918-14.29747 12.96501-14.29747 13.51498ZM-15.29327 13.51498" stroke="none" />
+      <desc>Primary polarity</desc>
+    </g>
+    <g data-part="lead-secondary-1" id="sc-transformer-air-r1-large-medium--sc-transformer-air-r1-large-medium--lead-secondary-1" inkscape:label="lead-secondary-1">
+      <path d="M25.60735 19.91682V17.78287H11.381" fill="none" />
+      <desc>Electrical lead: Secondary dotted end</desc>
+    </g>
+    <g data-part="lead-secondary-2" id="sc-transformer-air-r1-large-medium--sc-transformer-air-r1-large-medium--lead-secondary-2" inkscape:label="lead-secondary-2">
+      <path d="M25.60735-19.91682V-17.78287H11.381" fill="none" />
+      <desc>Electrical lead: Secondary undotted end</desc>
+    </g>
+    <g data-part="secondary-winding" id="sc-transformer-air-r1-large-medium--sc-transformer-air-r1-large-medium--secondary-winding" inkscape:label="secondary-winding">
+      <path d="M11.381-17.78287C4.26784-17.78287 4.26784-8.89143 11.381-8.89143C4.26784-8.89143 4.26784 0 11.381 0C4.26784 0 4.26784 8.89143 11.381 8.89143C4.26784 8.89143 4.26784 17.78287 11.381 17.78287" fill="none" />
+      <desc>Secondary winding</desc>
+    </g>
+    <g data-part="secondary-polarity" id="sc-transformer-air-r1-large-medium--sc-transformer-air-r1-large-medium--secondary-polarity" inkscape:label="secondary-polarity">
+      <path d="M16.28908 13.51498C16.28908 14.06496 15.84325 14.51079 15.29327 14.51079C14.7433 14.51079 14.29747 14.06496 14.29747 13.51498C14.29747 12.96501 14.7433 12.51918 15.29327 12.51918C15.84325 12.51918 16.28908 12.96501 16.28908 13.51498ZM15.29327 13.51498" stroke="none" />
+      <desc>Secondary polarity</desc>
+    </g>
+  </g>
+</svg>

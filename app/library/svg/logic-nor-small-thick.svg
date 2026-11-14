@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000019 43.369874 23.527463" width="15.29992777mm" height="8.29996611mm">
+  <title>NOR gate</title>
+  <desc>NOR gate. Two logic inputs and one inverted output. Supply pins are omitted.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 6.0, "body-width": 6.97499, "grid": 1.0, "inversion-diameter": 1.125}, "origin_svg": [-48.414834, -60.236287], "parts": ["lead-a", "lead-b", "lead-out", "body", "inversion"], "pins_mm": {"a": [-6.0, 2.0], "b": [-6.0, -2.0], "out": [7.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "logic-nor"}</metadata>
+  <g id="sc-logic-nor-r1-small-thick--sc-logic-nor-r1-small-thick" inkscape:label="NOR gate / small / thick" data-symbol="logic-nor" data-revision="1" data-size="small" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-48.414834,-60.236287)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="sc-logic-nor-r1-small-thick--sc-logic-nor-r1-small-thick--lead-a" inkscape:label="lead-a">
+      <path d="M-17.07156 5.69052H-7.23175" fill="none" />
+      <desc>Electrical lead: A</desc>
+    </g>
+    <g data-part="lead-b" id="sc-logic-nor-r1-small-thick--sc-logic-nor-r1-small-thick--lead-b" inkscape:label="lead-b">
+      <path d="M-17.07156-5.69052H-7.23175" fill="none" />
+      <desc>Electrical lead: B</desc>
+    </g>
+    <g data-part="lead-out" id="sc-logic-nor-r1-small-thick--sc-logic-nor-r1-small-thick--lead-out" inkscape:label="lead-out">
+      <path d="M19.91682 0H13.44382" fill="none" />
+      <desc>Electrical lead: Output</desc>
+    </g>
+    <g data-part="body" id="sc-logic-nor-r1-small-thick--sc-logic-nor-r1-small-thick--body" inkscape:label="body">
+      <path d="M-9.60275-8.53578C-3.91219-2.84521-3.91219 2.84521-9.60275 8.53578C0 8.53578 5.12143 6.40182 10.2429 0C5.12143-6.40182 0-8.53578-9.60275-8.53578" fill="none" />
+      <desc>Body</desc>
+    </g>
+    <g data-part="inversion" id="sc-logic-nor-r1-small-thick--sc-logic-nor-r1-small-thick--inversion" inkscape:label="inversion">
+      <path d="M13.44382 0C13.44382 .88391 12.72728 1.60045 11.84337 1.60045S10.24292 .88391 10.24292 0S10.95946-1.60045 11.84337-1.60045S13.44382-.88391 13.44382 0ZM11.84337 0" fill="none" />
+      <desc>Inversion</desc>
+    </g>
+  </g>
+</svg>

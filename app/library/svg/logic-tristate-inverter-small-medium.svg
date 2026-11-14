@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000023 43.086397 28.913247" width="15.19992339mm" height="10.19995102mm">
+  <title>Tri-state inverter</title>
+  <desc>Tri-state inverter. One logic input and one inverted output. The lower enable input is active high; a low enable makes the output high impedance. Supply pins are omitted.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 6.0, "body-width": 6.75, "grid": 1.0, "inversion-diameter": 1.125}, "origin_svg": [-48.556576, -60.378029], "parts": ["lead-in", "lead-out", "body", "inversion", "lead-enable"], "pins_mm": {"enable": [0.0, -5.0], "in": [-6.0, 0.0], "out": [7.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "logic-tristate-inverter"}</metadata>
+  <g id="sc-logic-tristate-inverter-r1-small-medium--sc-logic-tristate-inverter-r1-small-medium" inkscape:label="Tri-state inverter / small / medium" data-symbol="logic-tristate-inverter" data-revision="1" data-size="small" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-48.556576,-60.378029)scale(0.996264,-0.996264)">
+    <g data-part="lead-in" id="sc-logic-tristate-inverter-r1-small-medium--sc-logic-tristate-inverter-r1-small-medium--lead-in" inkscape:label="lead-in">
+      <path d="M-17.07156 0H-9.60275" fill="none" />
+      <desc>Electrical lead: Input</desc>
+    </g>
+    <g data-part="lead-out" id="sc-logic-tristate-inverter-r1-small-medium--sc-logic-tristate-inverter-r1-small-medium--lead-out" inkscape:label="lead-out">
+      <path d="M19.91682 0H12.80367" fill="none" />
+      <desc>Electrical lead: Output</desc>
+    </g>
+    <g data-part="body" id="sc-logic-tristate-inverter-r1-small-medium--sc-logic-tristate-inverter-r1-small-medium--body" inkscape:label="body">
+      <path d="M-9.60275-8.53578V8.53578L9.60275 0L-9.60275-8.53578" fill="none" />
+      <desc>Body</desc>
+    </g>
+    <g data-part="inversion" id="sc-logic-tristate-inverter-r1-small-medium--sc-logic-tristate-inverter-r1-small-medium--inversion" inkscape:label="inversion">
+      <path d="M12.80365 0C12.80365 .88391 12.08711 1.60045 11.2032 1.60045S9.60275 .88391 9.60275 0S10.31929-1.60045 11.2032-1.60045S12.80365-.88391 12.80365 0ZM11.2032 0" fill="none" />
+      <desc>Inversion</desc>
+    </g>
+    <g data-part="lead-enable" id="sc-logic-tristate-inverter-r1-small-medium--sc-logic-tristate-inverter-r1-small-medium--lead-enable" inkscape:label="lead-enable">
+      <path d="M0-14.2263V-4.26788" fill="none" />
+      <desc>Electrical lead: Enable (active high)</desc>
+    </g>
+  </g>
+</svg>

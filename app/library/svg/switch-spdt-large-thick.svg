@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000023 57.543035 19.842342" width="20.29990401mm" height="6.99993732mm">
+  <title>SPDT switch</title>
+  <desc>Single-pole changeover switch shown connecting common to the upper throw.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 4.0, "body-width": 7.5, "grid": 1.0}, "origin_svg": [-39.910942, -62.07885], "parts": ["lead-common", "pivot", "lead-upper", "upper-contact", "lead-lower", "lower-contact", "blade"], "pins_mm": {"common": [-9.0, 0.0], "lower": [9.0, -2.0], "upper": [9.0, 2.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "switch-spdt"}</metadata>
+  <g id="sc-switch-spdt-r1-large-thick--sc-switch-spdt-r1-large-thick" inkscape:label="SPDT switch / large / thick" data-symbol="switch-spdt" data-revision="1" data-size="large" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-39.910942,-62.07885)scale(0.996264,-0.996264)">
+    <g data-part="lead-common" id="sc-switch-spdt-r1-large-thick--sc-switch-spdt-r1-large-thick--lead-common" inkscape:label="lead-common">
+      <path d="M-25.60735 0H-10.66972" fill="none" />
+      <desc>Electrical lead: Common</desc>
+    </g>
+    <g data-part="pivot" id="sc-switch-spdt-r1-large-thick--sc-switch-spdt-r1-large-thick--pivot" inkscape:label="pivot">
+      <path d="M-9.24715 0C-9.24715 .78568-9.88405 1.42258-10.66972 1.42258C-11.4554 1.42258-12.0923 .78568-12.0923 0S-11.4554-1.42258-10.66972-1.42258C-9.88405-1.42258-9.24715-.78568-9.24715 0ZM-10.66972 0" stroke="none" />
+      <desc>Pivot</desc>
+    </g>
+    <g data-part="lead-upper" id="sc-switch-spdt-r1-large-thick--sc-switch-spdt-r1-large-thick--lead-upper" inkscape:label="lead-upper">
+      <path d="M25.60735 5.69052H10.66972" fill="none" />
+      <desc>Electrical lead: Upper throw</desc>
+    </g>
+    <g data-part="upper-contact" id="sc-switch-spdt-r1-large-thick--sc-switch-spdt-r1-large-thick--upper-contact" inkscape:label="upper-contact">
+      <path d="M12.0923 5.69052C12.0923 6.4762 11.4554 7.1131 10.66972 7.1131C9.88405 7.1131 9.24715 6.4762 9.24715 5.69052C9.24715 4.90485 9.88405 4.26794 10.66972 4.26794C11.4554 4.26794 12.0923 4.90485 12.0923 5.69052ZM10.66972 5.69052" stroke="none" />
+      <desc>Upper contact</desc>
+    </g>
+    <g data-part="lead-lower" id="sc-switch-spdt-r1-large-thick--sc-switch-spdt-r1-large-thick--lead-lower" inkscape:label="lead-lower">
+      <path d="M25.60735-5.69052H10.66972" fill="none" />
+      <desc>Electrical lead: Lower throw</desc>
+    </g>
+    <g data-part="lower-contact" id="sc-switch-spdt-r1-large-thick--sc-switch-spdt-r1-large-thick--lower-contact" inkscape:label="lower-contact">
+      <path d="M12.0923-5.69052C12.0923-4.90485 11.4554-4.26794 10.66972-4.26794C9.88405-4.26794 9.24715-4.90485 9.24715-5.69052C9.24715-6.4762 9.88405-7.1131 10.66972-7.1131C11.4554-7.1131 12.0923-6.4762 12.0923-5.69052ZM10.66972-5.69052" stroke="none" />
+      <desc>Lower contact</desc>
+    </g>
+    <g data-part="blade" id="sc-switch-spdt-r1-large-thick--sc-switch-spdt-r1-large-thick--blade" inkscape:label="blade">
+      <path d="M-10.66972 0L10.66972 5.69052" fill="none" />
+      <desc>Blade</desc>
+    </g>
+  </g>
+</svg>

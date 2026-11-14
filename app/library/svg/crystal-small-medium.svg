@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000022 34.582507 22.393535" width="12.19993997mm" height="7.89994151mm">
+  <title>Crystal resonator</title>
+  <desc>Two-terminal quartz crystal resonator; a schematic label specifies frequency and loading.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 5.7, "body-width": 4.04999, "grid": 1.0}, "origin_svg": [-51.391206, -60.803253], "parts": ["lead-a", "lead-b", "resonating-element", "electrode-a", "electrode-b"], "pins_mm": {"a": [-5.0, 0.0], "b": [5.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "crystal"}</metadata>
+  <g id="sc-crystal-r1-small-medium--sc-crystal-r1-small-medium" inkscape:label="Crystal resonator / small / medium" data-symbol="crystal" data-revision="1" data-size="small" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-51.391206,-60.803253)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="sc-crystal-r1-small-medium--sc-crystal-r1-small-medium--lead-a" inkscape:label="lead-a">
+      <path d="M-14.2263 0H-5.76163" fill="none" />
+      <desc>Electrical lead: Resonator terminal A</desc>
+    </g>
+    <g data-part="lead-b" id="sc-crystal-r1-small-medium--sc-crystal-r1-small-medium--lead-b" inkscape:label="lead-b">
+      <path d="M14.2263 0H5.76163" fill="none" />
+      <desc>Electrical lead: Resonator terminal B</desc>
+    </g>
+    <g data-part="resonating-element" id="sc-crystal-r1-small-medium--sc-crystal-r1-small-medium--resonating-element" inkscape:label="resonating-element">
+      <path d="M-3.20091-6.40182V6.40182H3.20091V-6.40182ZM3.20091 6.40182" fill="none" />
+      <desc>Resonating element</desc>
+    </g>
+    <g data-part="electrode-a" id="sc-crystal-r1-small-medium--sc-crystal-r1-small-medium--electrode-a" inkscape:label="electrode-a">
+      <path d="M-5.76163-8.10896V8.10896" fill="none" />
+      <desc>Electrode a</desc>
+    </g>
+    <g data-part="electrode-b" id="sc-crystal-r1-small-medium--sc-crystal-r1-small-medium--electrode-b" inkscape:label="electrode-b">
+      <path d="M5.76163-8.10896V8.10896" fill="none" />
+      <desc>Electrode b</desc>
+    </g>
+  </g>
+</svg>

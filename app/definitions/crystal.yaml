@@ -1,0 +1,60 @@
+schema_version: 1
+id: crystal
+revision: 1
+name: Crystal resonator
+description: Two-terminal quartz crystal resonator; a schematic label specifies frequency
+  and loading.
+keywords:
+- crystal
+- quartz
+- resonator
+- frequency
+- oscillator
+- passive
+- protection resonators
+- overnight
+- batch 02
+types:
+- protection-and-resonators
+family: protection-and-resonators
+batch: overnight-protection-and-resonators-02
+attributes:
+  function: resonator
+  integrated_load_capacitors: false
+recipe: crystal
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: quartz
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: a
+  name: Resonator terminal A
+  description: Resonator terminal A
+  kind: passive
+  lead_part: lead-a
+- id: b
+  name: Resonator terminal B
+  description: Resonator terminal B
+  kind: passive
+  lead_part: lead-b
+parts:
+- id: lead-a
+  description: 'Electrical lead: Resonator terminal A'
+- id: lead-b
+  description: 'Electrical lead: Resonator terminal B'
+- id: resonating-element
+  description: Resonating element
+- id: electrode-a
+  description: Electrode a
+- id: electrode-b
+  description: Electrode b

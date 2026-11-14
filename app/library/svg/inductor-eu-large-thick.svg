@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000021 63.212295 12.755847" width="22.29989296mm" height="4.49997936mm">
+  <title>Inductor - EU</title>
+  <desc>European filled-bar inductor.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 2.5, "body-width": 12.5, "grid": 1.0}, "origin_svg": [-37.076311, -65.622096], "parts": ["lead-a", "lead-b", "body"], "pins_mm": {"a": [-10.0, 0.0], "b": [10.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "inductor-eu"}</metadata>
+  <g id="sc-inductor-eu-r1-large-thick--sc-inductor-eu-r1-large-thick" inkscape:label="Inductor - EU / large / thick" data-symbol="inductor-eu" data-revision="1" data-size="large" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-37.076311,-65.622096)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="sc-inductor-eu-r1-large-thick--sc-inductor-eu-r1-large-thick--lead-a" inkscape:label="lead-a">
+      <path d="M-28.4526 0H-17.78287" fill="none" />
+      <desc>Electrical lead: A</desc>
+    </g>
+    <g data-part="lead-b" id="sc-inductor-eu-r1-large-thick--sc-inductor-eu-r1-large-thick--lead-b" inkscape:label="lead-b">
+      <path d="M28.4526 0H17.78287" fill="none" />
+      <desc>Electrical lead: B</desc>
+    </g>
+    <g data-part="body" id="sc-inductor-eu-r1-large-thick--sc-inductor-eu-r1-large-thick--body" inkscape:label="body">
+      <path d="M-17.78287-3.55656V3.55656H17.78287V-3.55656ZM17.78287 3.55656" stroke="none" />
+      <desc>Body</desc>
+    </g>
+  </g>
+</svg>

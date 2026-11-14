@@ -3,6 +3,7 @@ from support import APP, FIXTURES
 import argparse
 import hashlib
 import json
+import uuid
 from pathlib import Path
 import xml.etree.ElementTree as ET
 
@@ -26,7 +27,7 @@ def verify(downloads=None):
             actual = Path(downloads) / source.name
             assert actual.read_bytes() == source.read_bytes(), f'Download mismatch: {actual.name}'
         saved = work / source.name
-        run([tool('inkscape'), str(source), f'--export-filename={saved}'], work)
+        run([tool('inkscape'), '--app-id-tag=schematica_b_'+uuid.uuid4().hex, str(source), f'--export-filename={saved}'], work)
         root = ET.parse(saved).getroot()
         validate_svg_references(root)
         symbols = list(root.iter(f'{{{SVG}}}symbol'))
@@ -36,7 +37,7 @@ def verify(downloads=None):
         assert before == after, preset
         assert all(p.get(f'{{{INK}}}label') == p.get('data-part') for p in root.iter() if p.get('data-part'))
         pdf = work / f'{preset}.pdf'
-        run([tool('inkscape'), str(saved), f'--export-filename={pdf}'], work)
+        run([tool('inkscape'), '--app-id-tag=schematica_b_'+uuid.uuid4().hex, str(saved), f'--export-filename={pdf}'], work)
         with fitz.open(pdf) as document:
             page = document[0]
             assert abs(page.rect.width * 25.4 / 72 - float(original.get('width')[:-2])) < .01

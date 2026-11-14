@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.00002 26.64556 45.921027" width="9.39996144mm" height="16.19991786mm">
+  <title>Voltage source</title>
+  <desc>Independent voltage source. The upper terminal is the positive reference.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 7.2, "body-width": 7.2, "grid": 1.0}, "origin_svg": [-55.359677, -49.039506], "parts": ["lead-positive", "lead-negative", "body", "positive-mark", "negative-mark"], "pins_mm": {"negative": [0.0, -7.0], "positive": [0.0, 7.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "medium", "size_factor": 1.0, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "source-voltage"}</metadata>
+  <g id="sc-source-voltage-r1-medium-medium--sc-source-voltage-r1-medium-medium" inkscape:label="Voltage source / medium / medium" data-symbol="source-voltage" data-revision="1" data-size="medium" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-55.359677,-49.039506)scale(0.996264,-0.996264)">
+    <g data-part="lead-positive" id="sc-source-voltage-r1-medium-medium--sc-source-voltage-r1-medium-medium--lead-positive" inkscape:label="lead-positive">
+      <path d="M0 19.91682V10.24295" fill="none" />
+      <desc>Electrical lead: Positive reference</desc>
+    </g>
+    <g data-part="lead-negative" id="sc-source-voltage-r1-medium-medium--sc-source-voltage-r1-medium-medium--lead-negative" inkscape:label="lead-negative">
+      <path d="M0-19.91682V-10.24295" fill="none" />
+      <desc>Electrical lead: Negative reference</desc>
+    </g>
+    <g data-part="body" id="sc-source-voltage-r1-medium-medium--sc-source-voltage-r1-medium-medium--body" inkscape:label="body">
+      <path d="M10.24295 0C10.24295 5.65709 5.65709 10.24295 0 10.24295S-10.24295 5.65709-10.24295 0S-5.65709-10.24295 0-10.24295S10.24295-5.65709 10.24295 0ZM0 0" fill="none" />
+      <desc>Body</desc>
+    </g>
+    <g data-part="positive-mark" id="sc-source-voltage-r1-medium-medium--sc-source-voltage-r1-medium-medium--positive-mark" inkscape:label="positive-mark">
+      <path d="M-1.8494 4.41016H1.8494" fill="none" />
+      <path d="M0 2.56071V6.25955" fill="none" />
+      <desc>Positive mark</desc>
+    </g>
+    <g data-part="negative-mark" id="sc-source-voltage-r1-medium-medium--sc-source-voltage-r1-medium-medium--negative-mark" inkscape:label="negative-mark">
+      <path d="M-1.8494-4.41016H1.8494" fill="none" />
+      <desc>Negative mark</desc>
+    </g>
+  </g>
+</svg>

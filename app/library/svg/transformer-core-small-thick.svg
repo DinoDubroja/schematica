@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000018 40.535244 29.196723" width="14.29993330mm" height="10.29995506mm">
+  <title>Core transformer</title>
+  <desc>Transformer with a magnetic core. Dots mark corresponding winding polarity; no turns ratio is specified.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 7.5, "body-width": 4.79999, "grid": 1.0}, "origin_svg": [-48.414834, -57.401657], "parts": ["lead-primary-1", "lead-primary-2", "primary-winding", "primary-polarity", "lead-secondary-1", "lead-secondary-2", "secondary-winding", "secondary-polarity", "magnetic-core"], "pins_mm": {"primary-1": [-6.0, 4.0], "primary-2": [-6.0, -4.0], "secondary-1": [6.0, 4.0], "secondary-2": [6.0, -4.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "transformer-core"}</metadata>
+  <g id="sc-transformer-core-r1-small-thick--sc-transformer-core-r1-small-thick" inkscape:label="Core transformer / small / thick" data-symbol="transformer-core" data-revision="1" data-size="small" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-48.414834,-57.401657)scale(0.996264,-0.996264)">
+    <g data-part="lead-primary-1" id="sc-transformer-core-r1-small-thick--sc-transformer-core-r1-small-thick--lead-primary-1" inkscape:label="lead-primary-1">
+      <path d="M-17.07156 11.38104V10.66972H-6.8286" fill="none" />
+      <desc>Electrical lead: Primary dotted end</desc>
+    </g>
+    <g data-part="lead-primary-2" id="sc-transformer-core-r1-small-thick--sc-transformer-core-r1-small-thick--lead-primary-2" inkscape:label="lead-primary-2">
+      <path d="M-17.07156-11.38104V-10.66972H-6.8286" fill="none" />
+      <desc>Electrical lead: Primary undotted end</desc>
+    </g>
+    <g data-part="primary-winding" id="sc-transformer-core-r1-small-thick--sc-transformer-core-r1-small-thick--primary-winding" inkscape:label="primary-winding">
+      <path d="M-6.8286-10.66972C-2.56071-10.66972-2.56071-5.33485-6.8286-5.33485C-2.56071-5.33485-2.56071 0-6.8286 0C-2.56071 0-2.56071 5.33485-6.8286 5.33485C-2.56071 5.33485-2.56071 10.66972-6.8286 10.66972" fill="none" />
+      <desc>Primary winding</desc>
+    </g>
+    <g data-part="primary-polarity" id="sc-transformer-core-r1-small-thick--sc-transformer-core-r1-small-thick--primary-polarity" inkscape:label="primary-polarity">
+      <path d="M-8.57846 8.10896C-8.57846 8.43893-8.84596 8.70644-9.17593 8.70644S-9.7734 8.43893-9.7734 8.10896S-9.5059 7.51149-9.17593 7.51149S-8.57846 7.77899-8.57846 8.10896ZM-9.17593 8.10896" stroke="none" />
+      <desc>Primary polarity</desc>
+    </g>
+    <g data-part="lead-secondary-1" id="sc-transformer-core-r1-small-thick--sc-transformer-core-r1-small-thick--lead-secondary-1" inkscape:label="lead-secondary-1">
+      <path d="M17.07156 11.38104V10.66972H6.8286" fill="none" />
+      <desc>Electrical lead: Secondary dotted end</desc>
+    </g>
+    <g data-part="lead-secondary-2" id="sc-transformer-core-r1-small-thick--sc-transformer-core-r1-small-thick--lead-secondary-2" inkscape:label="lead-secondary-2">
+      <path d="M17.07156-11.38104V-10.66972H6.8286" fill="none" />
+      <desc>Electrical lead: Secondary undotted end</desc>
+    </g>
+    <g data-part="secondary-winding" id="sc-transformer-core-r1-small-thick--sc-transformer-core-r1-small-thick--secondary-winding" inkscape:label="secondary-winding">
+      <path d="M6.8286-10.66972C2.56071-10.66972 2.56071-5.33485 6.8286-5.33485C2.56071-5.33485 2.56071 0 6.8286 0C2.56071 0 2.56071 5.33485 6.8286 5.33485C2.56071 5.33485 2.56071 10.66972 6.8286 10.66972" fill="none" />
+      <desc>Secondary winding</desc>
+    </g>
+    <g data-part="secondary-polarity" id="sc-transformer-core-r1-small-thick--sc-transformer-core-r1-small-thick--secondary-polarity" inkscape:label="secondary-polarity">
+      <path d="M9.7734 8.10896C9.7734 8.43893 9.5059 8.70644 9.17593 8.70644S8.57846 8.43893 8.57846 8.10896S8.84596 7.51149 9.17593 7.51149S9.7734 7.77899 9.7734 8.10896ZM9.17593 8.10896" stroke="none" />
+      <desc>Secondary polarity</desc>
+    </g>
+    <g data-part="magnetic-core" id="sc-transformer-core-r1-small-thick--sc-transformer-core-r1-small-thick--magnetic-core" inkscape:label="magnetic-core">
+      <path d="M-1.28035-10.66972V10.66972" fill="none" />
+      <path d="M1.28035-10.66972V10.66972" fill="none" />
+      <desc>Magnetic core</desc>
+    </g>
+  </g>
+</svg>

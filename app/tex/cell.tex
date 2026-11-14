@@ -1,0 +1,31 @@
+% Cell; battery1.
+% Schematica coordinates are millimetres at Medium; pins snap outward to the 1 mm grid.
+\newcommand{\SCBatchCell}[4]{%
+  \SCresolve{#1}{#2}{#3}
+  \def\F{#2}
+  \pgfmathsetmacro{\SCorientx}{ifthenelse(mod(#4,2)==1,-1,1)}
+  \pgfmathsetmacro{\SCorienty}{ifthenelse(#4>1,-1,1)}
+  \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+    \SCdimension{body-width}{2.2*\F}
+    \SCdimension{body-height}{6.4*\F}
+    \SCdimension{grid}{1}
+    \SCpin{positive}{floor(-5*\F)}{0}
+    \begin{SCpart}{lead-positive}
+    \draw ({floor(-5*\F)},{0})--({-1.1*\F},{0*\F});
+    \end{SCpart}
+    \SCpin{negative}{ceil(5*\F)}{0}
+    \begin{SCpart}{lead-negative}
+    \draw ({ceil(5*\F)},{0})--({1.1*\F},{0*\F});
+    \end{SCpart}
+    \begin{SCpart}{plate-1}
+    \draw ({-1.1*\F},{-3.2*\F})--({-1.1*\F},{3.2*\F});
+    \end{SCpart}
+    \begin{SCpart}{plate-2}
+    \draw ({1.1*\F},{-1.7*\F})--({1.1*\F},{1.7*\F});
+    \end{SCpart}
+    \begin{SCpart}{polarity}
+    \draw ({-3.45*\F},{2.65*\F})--({-2.35*\F},{2.65*\F});
+    \draw ({-2.9*\F},{2.1*\F})--({-2.9*\F},{3.2*\F});
+    \end{SCpart}
+  \end{scope}
+}

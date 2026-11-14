@@ -1,0 +1,66 @@
+schema_version: 1
+id: logic-schmitt-inverter
+revision: 1
+name: Schmitt-trigger inverter
+description: Schmitt-trigger inverter. One logic input and one inverted output. The
+  internal hysteresis mark indicates distinct rising and falling thresholds. Supply
+  pins are omitted.
+keywords:
+- logic
+- digital
+- US
+- American
+- schmitt-inverter
+- Schmitt trigger
+- hysteresis
+- schmitt
+- inverter
+- overnight
+- batch 02
+types:
+- logic
+family: logic
+batch: overnight-logic-02
+attributes:
+  function: schmitt-inverter
+  input_count: 1
+  inverting: true
+  enable_active: null
+recipe: logic-schmitt-inverter
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: invschmitt
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+  secondary_url: https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: in
+  name: Input
+  description: Input
+  kind: input
+  lead_part: lead-in
+- id: out
+  name: Output
+  description: Output
+  kind: output
+  lead_part: lead-out
+parts:
+- id: lead-in
+  description: 'Electrical lead: Input'
+- id: lead-out
+  description: 'Electrical lead: Output'
+- id: body
+  description: Body
+- id: inversion
+  description: Inversion
+- id: hysteresis
+  description: Hysteresis

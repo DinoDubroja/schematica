@@ -1,0 +1,31 @@
+% CircuitikZ njfet/pjfet construction: bent D/S leads, gate at source height.
+% Source above drain for P; below drain for N. Dimensions in mm; pins on 1 mm grid.
+\newcommand{\SCBatchJfetN}[4]{%
+  \SCresolve{#1}{#2}{#3}
+  \def\F{#2}
+  \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+    \SCdimension{body-height}{6*\F}
+    \SCdimension{body-width}{3*\F}
+    \SCdimension{grid}{1}
+    \SCpin{gate}{floor(-6*\F)}{0}
+    \begin{SCpart}{lead-gate}
+    \draw ({floor(-6*\F)},0)--(0,0);
+    \end{SCpart}
+    \SCpin{drain}{ceil(3*\F)}{ceil(8*\F)}
+    \begin{SCpart}{lead-drain}
+    \draw ({ceil(3*\F)},{ceil(8*\F)})--({ceil(3*\F)},{1*4*\F})--(0,{1*4*\F});
+    \end{SCpart}
+    \SCpin{source}{ceil(3*\F)}{floor(-4*\F)}
+    \begin{SCpart}{lead-source}
+    \draw ({ceil(3*\F)},{floor(-4*\F)})--({ceil(3*\F)},0)--(0,0);
+    \end{SCpart}
+    \begin{SCpart}{channel}
+    \draw (0,{-1*\F})--(0,{1*5*\F});
+    \end{SCpart}
+    \begin{SCpart}{gate-arrow}
+    \begin{scope}[shift={({0},0)},rotate=0]
+    \fill ({-1.05*\F},{0.55*\F})--(0,0)--({-1.05*\F},{-0.55*\F})--cycle;
+    \end{scope}
+    \end{SCpart}
+  \end{scope}
+}

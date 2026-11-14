@@ -1,0 +1,65 @@
+schema_version: 1
+id: switch-spdt
+revision: 1
+name: SPDT switch
+description: Single-pole changeover switch shown connecting common to the upper throw.
+keywords:
+- switch
+- SPDT
+- contact
+- switches relays
+- spdt
+- overnight
+- batch 02
+types:
+- switches-and-relays
+family: switches-and-relays
+batch: overnight-switches-and-relays-02
+attributes:
+  resting_state: common-to-upper
+recipe: switch-spdt
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: cspst or cspdt; custom ganged contacts
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: common
+  name: Common
+  description: Common
+  kind: passive
+  lead_part: lead-common
+- id: upper
+  name: Upper throw
+  description: Upper throw
+  kind: passive
+  lead_part: lead-upper
+- id: lower
+  name: Lower throw
+  description: Lower throw
+  kind: passive
+  lead_part: lead-lower
+parts:
+- id: lead-common
+  description: 'Electrical lead: Common'
+- id: pivot
+  description: Pivot
+- id: lead-upper
+  description: 'Electrical lead: Upper throw'
+- id: upper-contact
+  description: Upper contact
+- id: lead-lower
+  description: 'Electrical lead: Lower throw'
+- id: lower-contact
+  description: Lower contact
+- id: blade
+  description: Blade

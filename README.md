@@ -1,20 +1,24 @@
 # Schematica
 
-A library for clear electronics drawings. Browse symbols, compare their variations,
-and export SVGs for Inkscape.
+Browse **91 verified electronics symbols**, compare their **1,035 configurations**,
+and download SVGs for Inkscape.
+
+[Open Schematica](https://schematica-preview.dinodubroja.workers.dev/)
+· [Windows setup](DEVELOPMENT.md#run-on-windows)
+· [Quick checks](DEVELOPMENT.md#test-on-both-windows-devices)
+· [Agent setup](docs/AGENT_INTEGRATION.md)
+· [Current status](context/CURRENT.md)
 
 ![Schematica symbol library in dark mode](docs/images/symbol-library.jpg)
 
-[Open the preview](https://schematica-preview.dinodubroja.workers.dev/)
-· [Develop and test](DEVELOPMENT.md)
-· [Use with Inkscape](docs/INKSCAPE.md)
-· [Roadmap and scope](docs/ROADMAP.md)
-· [Review symbols](docs/VERIFICATION.md)
+The website supports browsing, search, configuration comparison, dark/light mode
+and individual or complete-library SVG downloads. Local MCP integration adds a
+shared selection viewer and confirmed creation/refinement in a separate dev store.
+Actual ChatGPT/Claude embedded journeys and remote MCP connectivity remain
+unverified. Website deployment alone does not enable an agent backend.
 
-The combined local app has 38 designs and 504 configurations: 26 Verified designs
-and 12 new Unverified capacitors and diodes. Dark/light mode, Variations and SVG/library
-exports remain available. [Agent integration](docs/AGENT_INTEGRATION.md) adds search,
-the shared viewer and confirmed individual creation in an isolated dev library.
-[Embedded-host verification](docs/HOST_VERIFICATION.md) remains pending. Personal
-libraries and schematic styles are future directions. The shared preview may be
-on an earlier B-published build; this local integration has not been published.
+The consolidation is being verified before publication. `main` will be the shared
+baseline; users will not need to choose between A/B product branches.
+
+[Inkscape](docs/INKSCAPE.md) · [Symbol verification](docs/VERIFICATION.md)
+· [Roadmap and limits](docs/ROADMAP.md) · [Delivery workflow](DEVELOPMENT.md#delivery-checklist)

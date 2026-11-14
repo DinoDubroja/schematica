@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000024 34.865984 30.14152" width="12.29994436mm" height="10.63325844mm">
   <title>Polarized capacitor - curved</title>
-  <desc>Polarized capacitor - curved negative plate; the left terminal is positive.</desc>
+  <desc>Polarized capacitor with a curved negative plate; the left terminal is positive.</desc>
   <metadata>{"dimensions_mm": {"body-height": 8.33333, "body-width": 2.5, "grid": 1.0, "plate-gap": 2.5}, "origin_svg": [-51.249465, -56.929261], "parts": ["lead-positive", "lead-negative", "plate-positive", "plate-negative", "polarity"], "pins_mm": {"negative": [5.0, 0.0], "positive": [-5.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "capacitor-polarized-curved"}</metadata>
   <g id="sc-capacitor-polarized-curved-r1-large-thick--sc-capacitor-polarized-curved-r1-large-thick" inkscape:label="Polarized capacitor - curved / large / thick" data-symbol="capacitor-polarized-curved" data-revision="1" data-size="large" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-51.249465,-56.929261)scale(0.996264,-0.996264)">
     <g data-part="lead-positive" id="sc-capacitor-polarized-curved-r1-large-thick--sc-capacitor-polarized-curved-r1-large-thick--lead-positive" inkscape:label="lead-positive">

@@ -1,0 +1,51 @@
+schema_version: 1
+id: test-point
+revision: 1
+name: Test point
+description: Accessible measurement point marked TP; one electrical pin connects it
+  to the measured net.
+keywords:
+- test
+- point
+- measurement
+- instrument
+- connections instruments
+- overnight
+- batch 02
+- probe
+- TP
+types:
+- connections-and-instruments
+family: connections-and-instruments
+batch: overnight-connections-and-instruments-02
+attributes:
+  function: test-point
+  contact_count: 1
+recipe: test-point
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: custom labelled test-point marker
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: net
+  name: Measured net
+  description: Measured net
+  kind: passive
+  lead_part: lead-net
+parts:
+- id: lead-net
+  description: 'Electrical lead: Measured net'
+- id: probe-contact
+  description: Probe contact
+- id: test-label
+  description: Test label

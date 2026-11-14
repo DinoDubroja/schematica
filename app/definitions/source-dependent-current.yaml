@@ -1,0 +1,58 @@
+schema_version: 1
+id: source-dependent-current
+revision: 1
+name: Dependent current source
+description: Dependent current source. The arrow defines positive current from the
+  lower to upper terminal. The controlling relation is specified by a schematic label;
+  control terminals are not drawn.
+keywords:
+- source
+- current
+- dependent
+- controlled
+- sources grounds
+- overnight
+- batch 02
+types:
+- sources-and-grounds
+family: sources-and-grounds
+batch: overnight-sources-and-grounds-02
+attributes:
+  dependent: true
+  waveform: unspecified
+  quantity: current
+recipe: source-dependent-current
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: cI
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: a
+  name: Upper terminal
+  description: Upper terminal
+  kind: output
+  lead_part: lead-a
+- id: b
+  name: Lower terminal
+  description: Lower terminal
+  kind: output
+  lead_part: lead-b
+parts:
+- id: lead-a
+  description: 'Electrical lead: Upper terminal'
+- id: lead-b
+  description: 'Electrical lead: Lower terminal'
+- id: body
+  description: Body
+- id: current-direction
+  description: Current direction

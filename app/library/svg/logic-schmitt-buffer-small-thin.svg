@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000018 42.944659 23.102238" width="15.14992137mm" height="8.14995618mm">
+  <title>Schmitt-trigger buffer</title>
+  <desc>Schmitt-trigger buffer. One logic input and one noninverting output. The internal hysteresis mark indicates distinct rising and falling thresholds. Supply pins are omitted.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 6.0, "body-width": 6.75, "grid": 1.0}, "origin_svg": [-48.627446, -60.4489], "parts": ["lead-in", "lead-out", "body", "hysteresis"], "pins_mm": {"in": [-6.0, 0.0], "out": [7.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "thin", "stroke_mm": 0.15}, "symbol_id": "logic-schmitt-buffer"}</metadata>
+  <g id="sc-logic-schmitt-buffer-r1-small-thin--sc-logic-schmitt-buffer-r1-small-thin" inkscape:label="Schmitt-trigger buffer / small / thin" data-symbol="logic-schmitt-buffer" data-revision="1" data-size="small" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(-48.627446,-60.4489)scale(0.996264,-0.996264)">
+    <g data-part="lead-in" id="sc-logic-schmitt-buffer-r1-small-thin--sc-logic-schmitt-buffer-r1-small-thin--lead-in" inkscape:label="lead-in">
+      <path d="M-17.07156 0H-9.60275" fill="none" />
+      <desc>Electrical lead: Input</desc>
+    </g>
+    <g data-part="lead-out" id="sc-logic-schmitt-buffer-r1-small-thin--sc-logic-schmitt-buffer-r1-small-thin--lead-out" inkscape:label="lead-out">
+      <path d="M19.91682 0H9.60275" fill="none" />
+      <desc>Electrical lead: Output</desc>
+    </g>
+    <g data-part="body" id="sc-logic-schmitt-buffer-r1-small-thin--sc-logic-schmitt-buffer-r1-small-thin--body" inkscape:label="body">
+      <path d="M-9.60275-8.53578V8.53578L9.60275 0L-9.60275-8.53578" fill="none" />
+      <desc>Body</desc>
+    </g>
+    <g data-part="hysteresis" id="sc-logic-schmitt-buffer-r1-small-thin--sc-logic-schmitt-buffer-r1-small-thin--hysteresis" inkscape:label="hysteresis">
+      <path d="M-4.26788-2.56071V2.56071H-1.70712V-2.56071ZM-1.70712 2.56071" fill="none" />
+      <path d="M-6.40182-2.56071H-4.26788" fill="none" />
+      <path d="M-1.70712 2.56071H-.42676" fill="none" />
+      <desc>Hysteresis</desc>
+    </g>
+  </g>
+</svg>

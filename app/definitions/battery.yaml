@@ -1,0 +1,63 @@
+schema_version: 1
+id: battery
+revision: 1
+name: Battery
+description: Multiple electrochemical cells; the long plate and plus sign identify
+  the positive terminal.
+keywords:
+- battery
+- cell
+- DC
+- voltage
+- polarized
+- power
+- sources grounds
+- overnight
+- batch 02
+types:
+- sources-and-grounds
+family: sources-and-grounds
+batch: overnight-sources-and-grounds-02
+attributes:
+  polarized: true
+recipe: battery
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: battery
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: positive
+  name: Positive
+  description: Positive
+  kind: passive
+  lead_part: lead-positive
+- id: negative
+  name: Negative
+  description: Negative
+  kind: passive
+  lead_part: lead-negative
+parts:
+- id: lead-positive
+  description: 'Electrical lead: Positive'
+- id: lead-negative
+  description: 'Electrical lead: Negative'
+- id: plate-1
+  description: Plate 1
+- id: plate-2
+  description: Plate 2
+- id: plate-3
+  description: Plate 3
+- id: plate-4
+  description: Plate 4
+- id: polarity
+  description: Polarity

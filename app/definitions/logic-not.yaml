@@ -1,0 +1,57 @@
+schema_version: 1
+id: logic-not
+revision: 1
+name: Inverter
+description: Inverter. One logic input and one inverted output. Supply pins are omitted.
+keywords:
+- logic
+- digital
+- US
+- American
+- not
+- overnight
+- batch 02
+types:
+- logic
+family: logic
+batch: overnight-logic-02
+attributes:
+  function: not
+  input_count: 1
+  inverting: true
+  enable_active: null
+recipe: logic-not
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: not port
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: in
+  name: Input
+  description: Input
+  kind: input
+  lead_part: lead-in
+- id: out
+  name: Output
+  description: Output
+  kind: output
+  lead_part: lead-out
+parts:
+- id: lead-in
+  description: 'Electrical lead: Input'
+- id: lead-out
+  description: 'Electrical lead: Output'
+- id: body
+  description: Body
+- id: inversion
+  description: Inversion

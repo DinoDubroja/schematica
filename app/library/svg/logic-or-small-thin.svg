@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000018 42.944659 23.102238" width="15.14992137mm" height="8.14995618mm">
+  <title>OR gate</title>
+  <desc>OR gate. Two logic inputs and one output. Supply pins are omitted.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 6.0, "body-width": 6.97499, "grid": 1.0}, "origin_svg": [-48.627446, -60.4489], "parts": ["lead-a", "lead-b", "lead-out", "body"], "pins_mm": {"a": [-6.0, 2.0], "b": [-6.0, -2.0], "out": [7.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "thin", "stroke_mm": 0.15}, "symbol_id": "logic-or"}</metadata>
+  <g id="sc-logic-or-r1-small-thin--sc-logic-or-r1-small-thin" inkscape:label="OR gate / small / thin" data-symbol="logic-or" data-revision="1" data-size="small" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(-48.627446,-60.4489)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="sc-logic-or-r1-small-thin--sc-logic-or-r1-small-thin--lead-a" inkscape:label="lead-a">
+      <path d="M-17.07156 5.69052H-7.23175" fill="none" />
+      <desc>Electrical lead: A</desc>
+    </g>
+    <g data-part="lead-b" id="sc-logic-or-r1-small-thin--sc-logic-or-r1-small-thin--lead-b" inkscape:label="lead-b">
+      <path d="M-17.07156-5.69052H-7.23175" fill="none" />
+      <desc>Electrical lead: B</desc>
+    </g>
+    <g data-part="lead-out" id="sc-logic-or-r1-small-thin--sc-logic-or-r1-small-thin--lead-out" inkscape:label="lead-out">
+      <path d="M19.91682 0H10.2429" fill="none" />
+      <desc>Electrical lead: Output</desc>
+    </g>
+    <g data-part="body" id="sc-logic-or-r1-small-thin--sc-logic-or-r1-small-thin--body" inkscape:label="body">
+      <path d="M-9.60275-8.53578C-3.91219-2.84521-3.91219 2.84521-9.60275 8.53578C0 8.53578 5.12143 6.40182 10.2429 0C5.12143-6.40182 0-8.53578-9.60275-8.53578" fill="none" />
+      <desc>Body</desc>
+    </g>
+  </g>
+</svg>

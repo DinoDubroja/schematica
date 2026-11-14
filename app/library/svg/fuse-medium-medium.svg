@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.00002 45.921027 15.30704" width="16.19991786mm" height="5.39998356mm">
+  <title>Fuse</title>
+  <desc>Replaceable fuse with a continuous fusible link through a rectangular body.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 3.2, "body-width": 7.0, "grid": 1.0}, "origin_svg": [-45.721945, -64.3465], "parts": ["lead-a", "lead-b", "body", "fusible-link"], "pins_mm": {"a": [-7.0, 0.0], "b": [7.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "medium", "size_factor": 1.0, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "fuse"}</metadata>
+  <g id="sc-fuse-r1-medium-medium--sc-fuse-r1-medium-medium" inkscape:label="Fuse / medium / medium" data-symbol="fuse" data-revision="1" data-size="medium" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-45.721945,-64.3465)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="sc-fuse-r1-medium-medium--sc-fuse-r1-medium-medium--lead-a" inkscape:label="lead-a">
+      <path d="M-19.91682 0H-9.9584" fill="none" />
+      <desc>Electrical lead: A</desc>
+    </g>
+    <g data-part="lead-b" id="sc-fuse-r1-medium-medium--sc-fuse-r1-medium-medium--lead-b" inkscape:label="lead-b">
+      <path d="M19.91682 0H9.9584" fill="none" />
+      <desc>Electrical lead: B</desc>
+    </g>
+    <g data-part="body" id="sc-fuse-r1-medium-medium--sc-fuse-r1-medium-medium--body" inkscape:label="body">
+      <path d="M-9.9584-4.55243V4.55243H9.9584V-4.55243ZM9.9584 4.55243" fill="none" />
+      <desc>Body</desc>
+    </g>
+    <g data-part="fusible-link" id="sc-fuse-r1-medium-medium--sc-fuse-r1-medium-medium--fusible-link" inkscape:label="fusible-link">
+      <path d="M-9.9584 0H9.9584" fill="none" />
+      <desc>Fusible link</desc>
+    </g>
+  </g>
+</svg>

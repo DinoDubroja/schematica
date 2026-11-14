@@ -1,0 +1,57 @@
+schema_version: 1
+id: ammeter
+revision: 1
+name: Ammeter
+description: Current-measuring instrument with two terminals, intended for a series
+  connection.
+keywords:
+- ammeter
+- measurement
+- instrument
+- connections instruments
+- overnight
+- batch 02
+- current meter
+- current measurement
+types:
+- connections-and-instruments
+family: connections-and-instruments
+batch: overnight-connections-and-instruments-02
+attributes:
+  function: ammeter
+  contact_count: 2
+recipe: ammeter
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: ammeter
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: a
+  name: A
+  description: A
+  kind: passive
+  lead_part: lead-a
+- id: b
+  name: B
+  description: B
+  kind: passive
+  lead_part: lead-b
+parts:
+- id: lead-a
+  description: 'Electrical lead: A'
+- id: lead-b
+  description: 'Electrical lead: B'
+- id: body
+  description: Body
+- id: quantity
+  description: Quantity

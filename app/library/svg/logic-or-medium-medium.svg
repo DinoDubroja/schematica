@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000023 54.424918 28.913247" width="19.19990163mm" height="10.19995102mm">
+  <title>OR gate</title>
+  <desc>OR gate. Two logic inputs and one output. Supply pins are omitted.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 8.0, "body-width": 9.3, "grid": 1.0}, "origin_svg": [-42.887314, -57.543398], "parts": ["lead-a", "lead-b", "lead-out", "body"], "pins_mm": {"a": [-8.0, 2.0], "b": [-8.0, -2.0], "out": [9.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "medium", "size_factor": 1.0, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "logic-or"}</metadata>
+  <g id="sc-logic-or-r1-medium-medium--sc-logic-or-r1-medium-medium" inkscape:label="OR gate / medium / medium" data-symbol="logic-or" data-revision="1" data-size="medium" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-42.887314,-57.543398)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="sc-logic-or-r1-medium-medium--sc-logic-or-r1-medium-medium--lead-a" inkscape:label="lead-a">
+      <path d="M-22.76208 5.69052H-8.53578" fill="none" />
+      <desc>Electrical lead: A</desc>
+    </g>
+    <g data-part="lead-b" id="sc-logic-or-r1-medium-medium--sc-logic-or-r1-medium-medium--lead-b" inkscape:label="lead-b">
+      <path d="M-22.76208-5.69052H-8.53578" fill="none" />
+      <desc>Electrical lead: B</desc>
+    </g>
+    <g data-part="lead-out" id="sc-logic-or-r1-medium-medium--sc-logic-or-r1-medium-medium--lead-out" inkscape:label="lead-out">
+      <path d="M25.60735 0H13.65726" fill="none" />
+      <desc>Electrical lead: Output</desc>
+    </g>
+    <g data-part="body" id="sc-logic-or-r1-medium-medium--sc-logic-or-r1-medium-medium--body" inkscape:label="body">
+      <path d="M-12.80367-11.38104C-5.2163-3.79366-5.2163 3.79366-12.80367 11.38104C0 11.38104 6.8286 8.53578 13.65726 0C6.8286-8.53578 0-11.38104-12.80367-11.38104" fill="none" />
+      <desc>Body</desc>
+    </g>
+  </g>
+</svg>

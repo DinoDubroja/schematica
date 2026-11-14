@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000023 68.45633 42.944659" width="24.14987197mm" height="15.14992137mm">
+  <title>Tri-state buffer</title>
+  <desc>Tri-state buffer. One logic input and one noninverting output. The lower enable input is active high; a low enable makes the output high impedance. Supply pins are omitted.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 10.0, "body-width": 11.25, "grid": 1.0}, "origin_svg": [-37.288923, -54.779638], "parts": ["lead-in", "lead-out", "body", "lead-enable"], "pins_mm": {"enable": [0.0, -8.0], "in": [-10.0, 0.0], "out": [12.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "thin", "stroke_mm": 0.15}, "symbol_id": "logic-tristate-buffer"}</metadata>
+  <g id="sc-logic-tristate-buffer-r1-large-thin--sc-logic-tristate-buffer-r1-large-thin" inkscape:label="Tri-state buffer / large / thin" data-symbol="logic-tristate-buffer" data-revision="1" data-size="large" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(-37.288923,-54.779638)scale(0.996264,-0.996264)">
+    <g data-part="lead-in" id="sc-logic-tristate-buffer-r1-large-thin--sc-logic-tristate-buffer-r1-large-thin--lead-in" inkscape:label="lead-in">
+      <path d="M-28.4526 0H-16.00458" fill="none" />
+      <desc>Electrical lead: Input</desc>
+    </g>
+    <g data-part="lead-out" id="sc-logic-tristate-buffer-r1-large-thin--sc-logic-tristate-buffer-r1-large-thin--lead-out" inkscape:label="lead-out">
+      <path d="M34.14313 0H16.00458" fill="none" />
+      <desc>Electrical lead: Output</desc>
+    </g>
+    <g data-part="body" id="sc-logic-tristate-buffer-r1-large-thin--sc-logic-tristate-buffer-r1-large-thin--body" inkscape:label="body">
+      <path d="M-16.00458-14.2263V14.2263L16.00458 0L-16.00458-14.2263" fill="none" />
+      <desc>Body</desc>
+    </g>
+    <g data-part="lead-enable" id="sc-logic-tristate-buffer-r1-large-thin--sc-logic-tristate-buffer-r1-large-thin--lead-enable" inkscape:label="lead-enable">
+      <path d="M0-22.76208V-7.11314" fill="none" />
+      <desc>Electrical lead: Enable (active high)</desc>
+    </g>
+  </g>
+</svg>

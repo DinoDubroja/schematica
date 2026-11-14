@@ -391,32 +391,6 @@ verified. Paths and verification receipts are in B's local handoff.
 All accepted designs remain unchanged. No additional batch or unresolved design
 was selected. The lighter recurring Inkscape policy remains a proposal.
 
-## Agent integration milestone — 14-11-2026
-
-Source: user's attached milestone request in Agent A; original message timestamp
-unavailable, recorded 14-11-2026 Europe/Zagreb (UTC+01:00).
-
-**Authorized:** “Local environment setup, implementation, testing, task-specific
-checkpoint commits and local integration of ready work are authorized.” Preserve
-publication ownership and outstanding design choices. A uses an isolated worktree
-from B's committed baseline, and integrates only exact ready checkpoints.
-
-**Confirmed:** search, individual creation and production batches are distinct.
-Search always uses the shared viewer, including one/zero matches, with filters
-and Browse all. Use this symbol returns exact identity, revision, settings and
-SVG. Creation needs short text even with images, explains intent, waits for
-confirmation, renders TeX, presents preview and two alternatives, then saves only
-on request. Options preserve unrelated parts and connection identities. Saves
-remain Unverified; accounts and personal libraries wait.
-
-**Implemented locally:** separate skills, standard MCP Apps resource/bridge,
-stdio/HTTP server, isolated durable sessions/drafts/revisions and custom TeX
-validation. Rendering, transport and browser checks passed. The server checks
-state but cannot prove a quoted response came from a human; skills enforce the
-conversation wait. [Platform evidence](../docs/HOST_VERIFICATION.md) remains
-separate from protocol tests. B's READY capacitor checkpoint is integrated locally
-without transferring its publication ownership; combined checks are recorded in current status.
-
 ## Batch 02: broad dev-library expansion — 14-11-2026
 
 Source: user's pasted execution request in **Agent B** (original message timestamp
@@ -448,6 +422,81 @@ integration and viewer adaptation. No A implementation is assumed ready. B remai
 sole preview publisher. The batch explicitly includes command-line Inkscape checks;
 the separate long-term testing-policy proposal is not adopted by this request.
 
+
+## Batch 02 review and corrections — 14-11-2026
+
+Source: user's pasted review request and authoritative 53-record approval JSON in
+**Agent B** (original message timestamp unavailable; recorded 14-11-2026,
+Europe/Zagreb, UTC+01:00). This supersedes the previous batch's all-Unverified status
+and retention of all 80 new designs.
+
+Authorized: retain original 26 plus the union of approved IDs and correction groups;
+validate approvals against reviewed artwork before edits; correct both JFETs, four
+dot-bearing MOSFETs, three BJTs, chassis ground and XOR/XNOR; remove exactly the
+15 named remaining designs. Both bulk MOSFETs already satisfy the no-dot request.
+Apply 52 unchanged approvals; old XOR approval cannot approve its replacement.
+
+Fixed 1 mm BJT shortening applies at all sizes; move junctions/leads/pins together,
+keep base fixed, place correctly aligned arrows at the outer emitter end. Rebuild
+JFETs using CircuitikZ construction and preserve N/P terminal meaning. Trim chassis
+bar with cap-aware ends; calculate XOR inputs on the outer curve without masking.
+
+Full configuration render/visual checks, focused regressions, approval/Pending/Undo,
+exports, docs, scoped B-branch commit/push and existing-preview publication are
+authorized. Preserve A ownership and unrelated research work. Result: 91 designs,
+78 Verified and 13 Unverified; corrected revisions require fresh human review.
+This request does not approve replacement drawings or authorize another batch.
+
+
+## Final 13 symbol approvals - 14-11-2026
+
+Source: user's exact 13-record approval JSON in **Brainstorm B**. Original message
+timestamp unavailable; recorded 14-11-2026 21:53 +01:00, Europe/Zagreb.
+
+**Human acceptance confirmed; applied locally.** Both JFETs, four three-terminal
+MOSFETs, three BJTs, chassis ground and XOR/XNOR are approved at revision 2;
+P-bulk enhancement MOSFET is approved unchanged at revision 1. Every supplied
+fingerprint matches the current drawing. This supersedes the pending human review
+in the previous correction checkpoint; no approval is inferred from test results.
+
+The validator adds exactly 13 entries, preserving all 78 existing entries. Local
+build `21ee8da1455d` has 91 Verified / 0 Unverified designs, with all SVG and
+complete-library export bytes unchanged. Source and build are saved locally only;
+B retains shared-preview publication ownership. No new symbols, geometry changes,
+review-service implementation or integration are authorized by this handoff.
+
+**Verified locally:** 62 Python tests, eight JavaScript tests, 90 documentation
+links, unchanged artwork/export hashes and repeat handoff validation. Updated the
+old regression's 78/13 expectation to 91/0 while preserving rejection of the
+superseded XOR fingerprint. The test retry used a writable project temporary
+directory after default sandbox-temp permission failures. Hosted publication
+and Git synchronization remain pending Agent B.
+
+
+## Final approval delivery authorization - 14-11-2026
+
+Source: user's **Agent B** request, “Complete publication of my final 13 symbol
+approvals.” Original message timestamp unavailable; recorded 14-11-2026,
+Europe/Zagreb, UTC+01:00.
+
+Explicitly authorizes reuse of Brainstorm B's prepared changes, current-tree
+validation, status documentation, a scoped B-branch commit/push and publication
+to the existing shared preview. Supersedes the local-only delivery state above.
+Preserve earlier approvals, all artwork/export bytes, unrelated work and A's
+isolation. No new symbols, geometry or viewer changes are requested.
+
+**Delivered by Agent B:** 14-11-2026 22:06 +01:00 (verification/recording time).
+Source checkpoint `fda51cf00fc2531ec7f83987f5f66a7011ec8cb4` is pushed on
+`work/agent-b-symbols`. Cloudflare version `626b5f31-d628-46f2-8554-e26d06a0ede6`
+serves build `21ee8da1455d`: hosted catalog confirms 91 Verified / 0 Unverified,
+all 13 exact identities, 1,035 configurations and 36 library exports. All 1,079
+public assets match local hashes; all 135 removed SVG URLs return 404.
+The previous 78 approvals and every artwork/export byte are unchanged. Passed
+62 Python tests, eight JavaScript tests and 90 documentation links; real handoff
+Pending/Undo reconciliation clears all 13 published approvals. No new rendering,
+browser automation or Inkscape run was needed. Physical laptop testing remains
+unverified. A and unrelated research remain untouched; no additional batch started.
+
 ## GitHub delivery and documentation workflow — 14-11-2026
 
 Source: user's implementation request in Agent A; original message timestamp
@@ -469,3 +518,46 @@ This task updates guidance only; it does not authorize product-feature merges or
 app deployment. Installer simplification and rewriting user guides remain separate
 implementation work. [Current status](CURRENT.md#delivery-workflow-adoption) records
 branch adoption and outstanding publication/handoff items.
+
+## Agent integration milestone — 14-11-2026
+
+Source: user's attached milestone request in Agent A; original message timestamp
+unavailable, recorded 14-11-2026 Europe/Zagreb (UTC+01:00).
+
+**Authorized:** “Local environment setup, implementation, testing, task-specific
+checkpoint commits and local integration of ready work are authorized.” Preserve
+publication ownership and outstanding design choices. A uses an isolated worktree
+from B's committed baseline, and integrates only exact ready checkpoints.
+
+**Confirmed:** search, individual creation and production batches are distinct.
+Search always uses the shared viewer, including one/zero matches, with filters
+and Browse all. Use this symbol returns exact identity, revision, settings and
+SVG. Creation needs short text even with images, explains intent, waits for
+confirmation, renders TeX, presents preview and two alternatives, then saves only
+on request. Options preserve unrelated parts and connection identities. Saves
+remain Unverified; accounts and personal libraries wait.
+
+**Implemented locally:** separate skills, standard MCP Apps resource/bridge,
+stdio/HTTP server, isolated durable sessions/drafts/revisions and custom TeX
+validation. Rendering, transport and browser checks passed. The server checks
+state but cannot prove a quoted response came from a human; skills enforce the
+conversation wait. [Platform evidence](../docs/HOST_VERIFICATION.md) remains
+separate from protocol tests. B's READY capacitor checkpoint is integrated locally
+without transferring its publication ownership; combined checks are recorded in current status.
+
+## Consolidated baseline and Agent A publication — 14-11-2026
+
+Source: user's consolidation request in Agent A (attachment; original message
+time unavailable). **Authorized, in progress:** combine exact ready A integration
+`8f686fe` and B library `2fedf44`, plus inspected documentation `25d8f54`, `ddbd03f`
+and main `131d705`. Resolve integration defects, test, push A's previously local
+work, update main without force, deploy the tested combined website and verify
+its actual destination. Agent A owns delivery through publication for this task;
+this supersedes local-only A and B-only publishing restrictions.
+
+Preserve all 91 approvals, 1,035 configurations, accepted artwork/identities and
+intentional removals. Preserve uncommitted and ignored work before cleanup;
+retire only fully merged inactive branches or recoverably preserved obsolete
+worktrees, accounting for runtime paths. Future tasks branch from the consolidated
+main. No Review, website-triggered agent processing, new symbols, categorization
+or Library redesign is authorized. [Current status](CURRENT.md) records delivery.

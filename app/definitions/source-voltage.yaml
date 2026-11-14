@@ -1,0 +1,58 @@
+schema_version: 1
+id: source-voltage
+revision: 1
+name: Voltage source
+description: Independent voltage source. The upper terminal is the positive reference.
+keywords:
+- source
+- voltage
+- independent
+- DC
+- sources grounds
+- overnight
+- batch 02
+types:
+- sources-and-grounds
+family: sources-and-grounds
+batch: overnight-sources-and-grounds-02
+attributes:
+  dependent: false
+  waveform: unspecified
+  quantity: voltage
+recipe: source-voltage
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: V
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: positive
+  name: Positive reference
+  description: Positive reference
+  kind: output
+  lead_part: lead-positive
+- id: negative
+  name: Negative reference
+  description: Negative reference
+  kind: output
+  lead_part: lead-negative
+parts:
+- id: lead-positive
+  description: 'Electrical lead: Positive reference'
+- id: lead-negative
+  description: 'Electrical lead: Negative reference'
+- id: body
+  description: Body
+- id: positive-mark
+  description: Positive mark
+- id: negative-mark
+  description: Negative mark

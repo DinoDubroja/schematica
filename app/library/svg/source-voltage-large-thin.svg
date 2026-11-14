@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.00002 31.606118 57.117809" width="11.14993607mm" height="20.14989373mm">
+  <title>Voltage source</title>
+  <desc>Independent voltage source. The upper terminal is the positive reference.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 8.99998, "body-width": 8.99998, "grid": 1.0}, "origin_svg": [-52.8794, -43.441115], "parts": ["lead-positive", "lead-negative", "body", "positive-mark", "negative-mark"], "pins_mm": {"negative": [0.0, -9.0], "positive": [0.0, 9.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "thin", "stroke_mm": 0.15}, "symbol_id": "source-voltage"}</metadata>
+  <g id="sc-source-voltage-r1-large-thin--sc-source-voltage-r1-large-thin" inkscape:label="Voltage source / large / thin" data-symbol="source-voltage" data-revision="1" data-size="large" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(-52.8794,-43.441115)scale(0.996264,-0.996264)">
+    <g data-part="lead-positive" id="sc-source-voltage-r1-large-thin--sc-source-voltage-r1-large-thin--lead-positive" inkscape:label="lead-positive">
+      <path d="M0 25.60735V12.80367" fill="none" />
+      <desc>Electrical lead: Positive reference</desc>
+    </g>
+    <g data-part="lead-negative" id="sc-source-voltage-r1-large-thin--sc-source-voltage-r1-large-thin--lead-negative" inkscape:label="lead-negative">
+      <path d="M0-25.60735V-12.80367" fill="none" />
+      <desc>Electrical lead: Negative reference</desc>
+    </g>
+    <g data-part="body" id="sc-source-voltage-r1-large-thin--sc-source-voltage-r1-large-thin--body" inkscape:label="body">
+      <path d="M12.80367 0C12.80367 7.07135 7.07135 12.80367 0 12.80367S-12.80367 7.07135-12.80367 0S-7.07135-12.80367 0-12.80367S12.80367-7.07135 12.80367 0ZM0 0" fill="none" />
+      <desc>Body</desc>
+    </g>
+    <g data-part="positive-mark" id="sc-source-voltage-r1-large-thin--sc-source-voltage-r1-large-thin--positive-mark" inkscape:label="positive-mark">
+      <path d="M-2.31172 5.51268H2.31172" fill="none" />
+      <path d="M0 3.20087V7.82442" fill="none" />
+      <desc>Positive mark</desc>
+    </g>
+    <g data-part="negative-mark" id="sc-source-voltage-r1-large-thin--sc-source-voltage-r1-large-thin--negative-mark" inkscape:label="negative-mark">
+      <path d="M-2.31172-5.51268H2.31172" fill="none" />
+      <desc>Negative mark</desc>
+    </g>
+  </g>
+</svg>

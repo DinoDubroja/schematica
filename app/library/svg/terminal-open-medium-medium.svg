@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000019 19.842432 10.771618" width="6.99996907mm" height="3.79998746mm">
+  <title>Open terminal</title>
+  <desc>Open-circle connection terminal with one electrical pin.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 1.6, "body-width": 1.6, "grid": 1.0}, "origin_svg": [-54.225837, -66.61421], "parts": ["lead-net", "terminal"], "pins_mm": {"net": [-4.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "medium", "size_factor": 1.0, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "terminal-open"}</metadata>
+  <g id="sc-terminal-open-r1-medium-medium--sc-terminal-open-r1-medium-medium" inkscape:label="Open terminal / medium / medium" data-symbol="terminal-open" data-revision="1" data-size="medium" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-54.225837,-66.61421)scale(0.996264,-0.996264)">
+    <g data-part="lead-net" id="sc-terminal-open-r1-medium-medium--sc-terminal-open-r1-medium-medium--lead-net" inkscape:label="lead-net">
+      <path d="M-11.38104 0H-2.27621" fill="none" />
+      <desc>Electrical lead: Net</desc>
+    </g>
+    <g data-part="terminal" id="sc-terminal-open-r1-medium-medium--sc-terminal-open-r1-medium-medium--terminal" inkscape:label="terminal">
+      <path d="M2.27621 0C2.27621 1.25713 1.25713 2.27621 0 2.27621S-2.27621 1.25713-2.27621 0S-1.25713-2.27621 0-2.27621S2.27621-1.25713 2.27621 0ZM0 0" fill="none" />
+      <desc>Terminal</desc>
+    </g>
+  </g>
+</svg>

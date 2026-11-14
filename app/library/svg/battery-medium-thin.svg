@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000016 45.779279 24.236046" width="16.14991231mm" height="8.54993845mm">
+  <title>Battery</title>
+  <desc>Multiple electrochemical cells; the long plate and plus sign identify the positive terminal.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 6.4, "body-width": 6.0, "grid": 1.0}, "origin_svg": [-45.792816, -59.881995], "parts": ["lead-positive", "lead-negative", "plate-1", "plate-2", "plate-3", "plate-4", "polarity"], "pins_mm": {"negative": [7.0, 0.0], "positive": [-7.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "medium", "size_factor": 1.0, "stroke": "thin", "stroke_mm": 0.15}, "symbol_id": "battery"}</metadata>
+  <g id="sc-battery-r1-medium-thin--sc-battery-r1-medium-thin" inkscape:label="Battery / medium / thin" data-symbol="battery" data-revision="1" data-size="medium" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(-45.792816,-59.881995)scale(0.996264,-0.996264)">
+    <g data-part="lead-positive" id="sc-battery-r1-medium-thin--sc-battery-r1-medium-thin--lead-positive" inkscape:label="lead-positive">
+      <path d="M-19.91682 0H-8.53578" fill="none" />
+      <desc>Electrical lead: Positive</desc>
+    </g>
+    <g data-part="lead-negative" id="sc-battery-r1-medium-thin--sc-battery-r1-medium-thin--lead-negative" inkscape:label="lead-negative">
+      <path d="M19.91682 0H8.53578" fill="none" />
+      <desc>Electrical lead: Negative</desc>
+    </g>
+    <g data-part="plate-1" id="sc-battery-r1-medium-thin--sc-battery-r1-medium-thin--plate-1" inkscape:label="plate-1">
+      <path d="M-8.53578-9.10481V9.10481" fill="none" />
+      <desc>Plate 1</desc>
+    </g>
+    <g data-part="plate-2" id="sc-battery-r1-medium-thin--sc-battery-r1-medium-thin--plate-2" inkscape:label="plate-2">
+      <path d="M-2.84526-4.83693V4.83693" fill="none" />
+      <desc>Plate 2</desc>
+    </g>
+    <g data-part="plate-3" id="sc-battery-r1-medium-thin--sc-battery-r1-medium-thin--plate-3" inkscape:label="plate-3">
+      <path d="M2.84526-9.10481V9.10481" fill="none" />
+      <desc>Plate 3</desc>
+    </g>
+    <g data-part="plate-4" id="sc-battery-r1-medium-thin--sc-battery-r1-medium-thin--plate-4" inkscape:label="plate-4">
+      <path d="M8.53578-4.83693V4.83693" fill="none" />
+      <desc>Plate 4</desc>
+    </g>
+    <g data-part="polarity" id="sc-battery-r1-medium-thin--sc-battery-r1-medium-thin--polarity" inkscape:label="polarity">
+      <path d="M-15.22215 7.53992H-12.09235" fill="none" />
+      <path d="M-13.65726 5.97505V9.10481" fill="none" />
+      <desc>Polarity</desc>
+    </g>
+  </g>
+</svg>

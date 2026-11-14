@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-68.682458 -72.000015 13.911656 24.235239" width="4.90772309mm" height="8.54965376mm">
+  <defs>
+    <path id="sc-test-point-r1-small-thick--g0-83" d="M2.49457-2.108812C2.49457-2.567436 2.070236-2.974625 1.47874-2.974625H.411476V0H.792948V-1.238713H1.508744C2.040233-1.238713 2.49457-1.628757 2.49457-2.108812ZM2.147388-2.108812C2.147388-1.770202 1.877357-1.487313 1.384444-1.487313H.780089V-2.734598H1.384444C1.855926-2.734598 2.147388-2.473139 2.147388-2.108812Z" />
+    <path id="sc-test-point-r1-small-thick--g0-104" d="M2.760315-2.670305V-2.948908H.154303V-2.670305H.728655C.780089-2.670305 .831523-2.674591 .882958-2.674591H1.268716V0H1.650188V-2.674591H2.03166C2.083095-2.674591 2.134529-2.670305 2.185964-2.670305H2.760315Z" />
+  </defs>
+  <title>Test point</title>
+  <desc>Accessible measurement point marked TP; one electrical pin connects it to the measured net.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 3.15, "body-width": 1.5, "grid": 1.0}, "origin_svg": [-63.018928, -62.363138], "parts": ["lead-net", "probe-contact", "test-label"], "pins_mm": {"net": [0.0, -4.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "test-point"}</metadata>
+  <g id="sc-test-point-r1-small-thick--sc-test-point-r1-small-thick" inkscape:label="Test point / small / thick" data-symbol="test-point" data-revision="1" data-size="small" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-63.018928,-62.363138)scale(0.996264,-0.996264)">
+    <g data-part="lead-net" id="sc-test-point-r1-small-thick--sc-test-point-r1-small-thick--lead-net" inkscape:label="lead-net">
+      <path d="M0-11.38104V-2.13394" fill="none" />
+      <desc>Electrical lead: Measured net</desc>
+    </g>
+    <g data-part="probe-contact" id="sc-test-point-r1-small-thick--sc-test-point-r1-small-thick--probe-contact" inkscape:label="probe-contact">
+      <path d="M2.13394 0C2.13394 1.17856 1.17856 2.13394 0 2.13394S-2.13394 1.17856-2.13394 0S-1.17856-2.13394 0-2.13394S2.13394-1.17856 2.13394 0ZM0 0" fill="none" />
+      <desc>Probe contact</desc>
+    </g>
+    <g data-part="test-label" id="sc-test-point-r1-small-thick--sc-test-point-r1-small-thick--test-label" inkscape:label="test-label">
+      <use x="-63.018928" y="-62.363138" xlink:href="#sc-test-point-r1-small-thick--g0-104" stroke="none" fill="#000" transform="translate(-2.8395,3.84196) scale(-1.00375,1.00375)translate(-63.018928,-62.363138)scale(-1,-1)" />
+      <use x="-60.100019" y="-62.363138" xlink:href="#sc-test-point-r1-small-thick--g0-83" stroke="none" fill="#000" transform="translate(-2.8395,3.84196) scale(-1.00375,1.00375)translate(-63.018928,-62.363138)scale(-1,-1)" />
+      <desc>Test label</desc>
+    </g>
+  </g>
+</svg>

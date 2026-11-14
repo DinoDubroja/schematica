@@ -36,59 +36,49 @@ for ownership and handoffs.
 
 ## Latest changes
 
-14-11-2026 · Agent A's local integration milestone adds
-[agent setup/use](docs/AGENT_INTEGRATION.md), separate search/creation skills,
-stdio and Streamable HTTP MCP, the shared viewer adapter and an isolated,
-revisioned dev-library store. No publication is performed by A.
+Consolidation in progress: A's integration/search/creation and shared viewer are
+combined with B's 91 accepted designs. Publication follows combined verification.
+Use [agent setup](docs/AGENT_INTEGRATION.md) and [host limits](docs/HOST_VERIFICATION.md)
+for the optional local integration; static website publication does not host MCP.
 
-Combined review: 61 Python + 11 JavaScript tests passed;
-real creation/refinement and existing-symbol option proofs passed. Browser search
-follow-ups, single/empty results, Variations, exact selection and SVG download
-passed. The [platform record](docs/HOST_VERIFICATION.md) distinguishes protocol
-results from actual embedded hosts, which still require verification.
+### Earlier symbol publication
 
-- Search “normal resistors” → existing fixed designs; follow with EU, variable
-  and thicker stroke → the same session, explicit filters and matching artwork.
-- Press Use this symbol → exact ID/revision/configuration and retrievable SVG.
-- Create without description/confirmation → generation blocked. Render a
-  confirmed draft → every combination checked; unsaved material stays out of search.
-- Save on request → Unverified revision and download/viewer links; restart and
-  retrieve it. Added options preserve unrelated parts and connection identities.
+14-11-2026: **Final 13 human approvals published.** All exact revisions and
+fingerprints match. Hosted/local build **`21ee8da1455d`** has **91 Verified / 0 Unverified**
+designs. The previous 78 approvals, all 1,035 drawings and all 36 library exports
+are unchanged. Only `library/catalog.json` changed in the website asset manifest.
+The scoped source update is pushed as `fda51cf` on `work/agent-b-symbols`.
 
-Use the [integration checks](docs/AGENT_INTEGRATION.md#checks) as well as the symbol
-checks below. Test stores are ignored local data, not production symbols and not
-synchronized by checkpoint commits.
+The saved handoff validates without further changes. The regression expectation
+now reflects the user's exact approvals; stale fingerprints still fail validation.
+**Passed:** 62 Python tests, eight JavaScript tests and 90 local documentation
+links. All 1,079 public assets match locally and on the shared preview; all 135 removed SVG
+URLs return 404. The exact 13 old Pending selections clear, and Undo cannot
+restore them. Hosted catalog counts and all 13 exact approval identities are confirmed.
 
-14-11-2026: **batch 02 is in progress**. 12 of 80 new designs are complete;
-the current source library has **38 designs / 504 configurations**.
-The original 26 designs remain Verified; new designs are Unverified.
-Completed families: capacitors, diodes. See the [finite inventory](docs/BATCH_02.md).
+Reload the viewer: expect all 91 Verified, an empty Unverified filter, and matching
+old Pending selections cleared. Browser UI automation and physical second-device
+testing were not repeated for this metadata-only update.
 
-B diode checkpoint build: `7342b5918472`. The shared preview remains on the previous
-release until the tested batch is published. Family checkpoint commits are pushed
-on `work/agent-b-symbols`; B does not merge main or A's unfinished work. A integrates only exact READY checkpoints.
-
-Checks so far: 47 Python tests, eight JavaScript tests, all declared family
-configurations, Inkscape vector bounds and composite save/reopen. Actual renders
-were visually inspected at common scale and normal size, including Small/Thick
-and every adjustment orientation. All 342 approved SVG bytes and 26 approval
-records match the pre-batch baseline. No new design has human approval.
+The [accepted corrections and retained inventory](docs/BATCH_02.md) are unchanged.
+The earlier geometry run checked every configuration and all 36 exports in Inkscape;
+this approval-only update does not repeat rendering or GUI automation.
+Source belongs to `work/agent-b-symbols`; A's integration and `main` remain separate.
 
 ### Test on both Windows devices
 
-Use the shared preview after publication; during development use your local build.
-
 | Action | Expected result |
 |---|---|
-| Choose a family and its `overnight-…-02` batch | Only that family's new designs appear |
-| Open Unverified; search `overnight` | New designs awaiting your review; existing approved designs stay Verified |
-| Open Variations, then Small / Thick | All supported settings render; pin identities stay fixed |
-| Inspect polarity, arrows and terminal names | Electrical meaning matches the description; report a fix by copied symbol reference |
-| Switch dark/light; download one SVG and the library | Usable theme; clean vectors; complete library contains every current design |
-| Verify acceptable designs; copy approvals into chat | Browser selections are Pending until the exact approval handoff is applied and published |
+| Reload the preview; open [build.json](https://schematica-preview.dinodubroja.workers.dev/build.json) | Build `21ee8da1455d` on both devices |
+| Clear filters; switch All symbols / Unverified | 91 designs, all Verified; Unverified is empty |
+| Search `overnight` in All symbols | 65 retained Batch 02 designs; no removed IDs |
+| Open [the corrected symbols](docs/BATCH_02.md#what-to-inspect); compare Variations and Small / Thick | JFET shape, MOS dots, 1 mm BJT shortening, chassis ends and XOR input joins match the checklist |
+| Reload a browser with old Pending selections; press Undo if available | Pending clears to zero; Undo cannot restore published approvals, old revisions or removed designs |
+| Switch dark/light; narrow the window | Readable drawings and usable controls |
+| Export one symbol, then the library while filtered | Single SVG matches size/stroke; library contains all 91 designs |
 
-No new review sheet or comment UI is added. Review through Unverified and Variations;
-send corrections in chat. See [verification](docs/VERIFICATION.md).
+Send corrections by copied symbol reference. These exact designs are already
+human-approved. Physical testing on the second Windows device remains unverified.
 
 ## Run on Windows
 
@@ -119,32 +109,19 @@ workspace environment if available, then Python on PATH.
 
 ## Parallel work
 
-Agent B owns symbol definitions, artwork, metadata, existing-format options and
-symbol tests on `work/agent-b-symbols`. Agent A owns MCP, search, creation skills
-and shared viewer adaptation on `work/agent-a-integration` in its separate checkout.
-The collection is the **dev library**; accounts and personal libraries remain deferred.
+`main` is the shared product baseline. Start future task branches/worktrees from
+current main; keep separate working folders for parallel tasks, not separate
+long-lived product versions. Agent A coordinates exact owner-ready commits and
+checks the combined result. For this consolidation, Agent A owns publication,
+superseding the earlier B-only restriction. Later deliveries name one publisher
+within their task authorization; branch pushes and deployment remain separate.
 
-The local coordination records live outside Git in the workspace's
-`Local/parallel-work/agent-b.md` and `agent-a.md`; each agent edits only its own.
-They record actual checkout paths, ports, backups, exact tested commits and open
-questions. An absent record means that agent's setup is not yet verified.
-
-- Before work → confirm your checkout and branch, read both available records,
-  and preserve local changes. Do not let synchronization switch an owned checkout.
-- Before format, rendering, export or viewer changes → describe the proposed
-  interface change in your handoff and coordinate with the other owner first.
-- Before creation/save tests → use A's separate test library; never the accepted
-  library in B's checkout. Builds, environments and preview ports stay separate.
-- Before integration → use the exact **READY FOR INTEGRATION** commits and their
-  checks. A combines them on its integration branch; B adopts agreed shared
-  changes through B's branch. A checkpoint or passing test is not human approval.
-- Before publication → B remains the sole shared-preview publisher, within the
-  current task's explicit authorization. Keep A's experiments off that preview.
-
-To check this setup: `git branch --show-current` must match your ownership record;
-the preview's `build.json` must match your checkout's `app/dist/build.json`.
-Run the [existing checks](#test-and-review) after adopting a shared checkpoint.
-No new symbol batch or unresolved design is authorized by branch setup.
+Read the workspace's `Local/parallel-work` ownership records before shared changes.
+Preserve active work, ignored drafts and runtime/configuration paths; do not switch
+another agent's active checkout. Keep creation tests in an explicitly initialized
+isolated library. Retire only fully merged inactive branches or recoverably
+preserved obsolete worktrees. A retained runtime checkout must follow the same
+consolidated baseline. Follow the [delivery checklist](#delivery-checklist).
 
 ## Get the project on another Windows device
 
@@ -161,6 +138,12 @@ cd schematica
 
 Then follow [Run on Windows](#run-on-windows). The existing laptop checkout was
 already set up during the first batch; update that copy instead of cloning again.
+
+The current symbol batch is on **`work/agent-b-symbols`**. The default `main`
+branch does not include it until integration. In a fresh, clean clone, use
+`git switch --track origin/work/agent-b-symbols` before launching. For an existing
+checkout, inspect its branch and local/concurrent work before switching or merging;
+do not discard work just to match the preview.
 
 Before updating an existing copy, run `git status --short`. If it lists files,
 preserve and resolve that work first. If empty, run `git pull --ff-only`. Stop on
@@ -185,7 +168,7 @@ schematica/
 │   ├── tex/                # Authoritative parameterized geometry
 │   ├── core.py             # Find, inspect and render; shared TeX export
 │   ├── exports.py          # SVG, ZIP, sheet and Symbols composition
-│   ├── library/            # Catalog and 504 SVGs for immediate browsing
+│   ├── library/            # Catalog and 1035 SVGs for immediate browsing
 │   ├── verification.py     # Validate and apply chat approval handoffs
 │   ├── verification.json   # Official acceptance, tied to actual geometry
 │   ├── viewer/             # Accepted HTML/CSS/JavaScript interface
@@ -213,7 +196,7 @@ schematica/
 
 The viewer reads pre-rendered SVGs and a catalog. It never compiles TeX. The static
 builder copies the accepted artwork, reads current editorial metadata and creates
-36 complete-library exports. The website contains 551 files, with no Python, source
+36 complete-library exports. The website contains 1081 files, with no Python, source
 TeX, references or test material. Its content hashes determine `build.json`.
 
 ## Test and review
@@ -228,7 +211,7 @@ node --test tests\review.test.cjs tests\configurations.test.cjs tests\host.test.
 .\.venv\Scripts\python.exe tests\check_docs.py
 ```
 
-Expect **61 Python tests and 11 JavaScript tests**, a **551-file** website, and no
+Expect **62 Python tests and 8 JavaScript tests**, a **1081-file** website, and no
 broken documentation links. Tests cover all designs/configurations, accepted SVG
 bytes, pins, independent strokes, editable parts, exports, HTTP boundaries and
 approval validity. Compare `app/dist/build.json` with the hosted `build.json` when
@@ -236,21 +219,21 @@ checking that both devices have the same version.
 
 | Action | Expected result |
 |---|---|
-| Open the app; switch All symbols / Unverified | 38 designs / 12 unverified designs; the original 26 remain Verified |
+| Open the app; switch All symbols / Unverified | 91 designs, all Verified; Unverified is empty |
 | Choose Resistors / Batch 01; search `NTC`, then `zzzz`, then clear | Two NTCs; empty state; the filtered batch returns |
 | Select Variable resistor · US; open Variations | Stroke, Size and Arrow orientation rows; one setting varies per row, all others at defaults; no large preview |
 | Choose Small / Thick / Down-left; open Variations | Comparison rows still use defaults, independently of the main preview selection |
 | Try all orientations on variable/trimmer US/EU | Only the diagonal marking reflects; body, leads and blue pin identities stay fixed |
 | Inspect potentiometers, NTC/PTC, photos and nonlinear resistors | Wiper tip centered 1 mm above body; labels readable; arrows symmetric; diagonal S has no arrowhead; no varistors |
-| Check a design; reload | Pending in this browser; selection and exact design identity persist |
-| Verify & next, then Undo | Selects the next unreviewed design; Undo reverses the pending selection |
+| In an isolated test library, check an Unverified design; reload | Pending in this browser; selection and exact design identity persist |
+| In that test library, Verify & next, then Undo | Selects the next unreviewed design; Undo reverses the pending selection |
 | Copy approvals or Copy symbol reference | Approval JSON includes exact revision/fingerprint; reference includes name/ID/revision/link |
 | Open the reference link in another browser | Same design selected; local approvals are not transferred |
 | Switch dark/light; reload; use Small/Thick and Grid & pins | Theme persists; stroke changes keep pins fixed; preview aids toggle together |
-| Export Small/Thick/Down-left variable resistor, then the library while filtered | Single matches the selected marking; library has all 38 designs and Down-left on its six adjustable designs |
+| Export Small/Thick/Down-left variable resistor, then the library while filtered | Single matches the selected marking; library has all 91 designs and Down-left on its 8 adjustable designs |
 | Select a coil; export the library | Orientation controls disappear; adjustable designs in the library use Up-right |
 | Inspect exported artwork | Black vectors, no blue points/grid; NTC/PTC glyph outlines stay grouped as temperature-mark |
-| Open the library in Inkscape Symbols | 38 thumbnails; placed artwork can be unlinked, edited, saved and reopened |
+| Open the library in Inkscape Symbols | 91 thumbnails; placed artwork can be unlinked, edited, saved and reopened |
 | Use Tab, Enter, Escape, arrow keys on the tabs, and `/`; narrow the window | Controls remain reachable; dialogs return focus; search focuses; page does not overflow |
 
 Repeat on both Windows devices using the [shared preview](https://schematica-preview.dinodubroja.workers.dev/).
@@ -261,6 +244,9 @@ and actual result. See [Inkscape](docs/INKSCAPE.md) for export/grid details and
 ## Render and verify geometry
 
 Only geometry work needs Tectonic, dvisvgm, Inkscape and the developer requirements.
+The full-library CLI check uses two isolated Inkscape workers by default;
+`--workers 1` runs serially. Only a Windows `Gio::DBus::Error` startup failure is
+retried (up to three attempts); drawing/validation errors still stop the check.
 Build candidates separately from the browsable library:
 
 ```powershell
@@ -329,9 +315,9 @@ Creates `app/build/exports/` with a hash manifest and three ZIPs:
 
 | Package | Contents |
 |---|---|
-| `web-preview.zip` | 551 static website files, ready for Cloudflare upload |
-| `all-symbols.zip` | 441 individual SVGs |
-| `tex-bundles.zip` | 441 standalone configurations, each with `symbol.tex` and required helpers |
+| `web-preview.zip` | 1081 static website files, ready for Cloudflare upload |
+| `all-symbols.zip` | 1035 individual SVGs |
+| `tex-bundles.zip` | 1035 standalone configurations, each with `symbol.tex` and required helpers |
 
 Only the shared TeX recipes/helpers and prebuilt browser SVGs are maintained.
 Generated standalone bundles and ZIPs are not committed. To use the native TeX

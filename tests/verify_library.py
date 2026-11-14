@@ -1,6 +1,9 @@
 from support import APP, FIXTURES
 """Independent accepted-palette fidelity and full-library Inkscape checks."""
 import json
+import argparse
+import uuid
+from concurrent.futures import ThreadPoolExecutor
 import xml.etree.ElementTree as ET
 import fitz
 from core import ROOT, SVG, INK, BP_MM, run, tool, validate_svg_references
@@ -8,7 +11,19 @@ from exports import LIBRARY, catalog, export, sheet
 from geometry import segments, nearest_error
 
 
-def verify():
+def inkscape(args, work):
+    # Windows occasionally fails before opening the SVG (Gio/DBus startup).
+    # Retry only that startup failure, with a new isolated application identity.
+    for attempt in range(3):
+        try:
+            return run([tool('inkscape'),'--app-id-tag=schematica_b_'+uuid.uuid4().hex,*args],work)
+        except RuntimeError as error:
+            if "Gio::DBus::Error" not in str(error) or attempt == 2:
+                raise
+            print(f'Inkscape startup retry {attempt+1}: {args[0]}',flush=True)
+
+
+def verify(workers=2):
     data=catalog();work=ROOT/'build/library-verification';work.mkdir(parents=True,exist_ok=True)
     palette=fitz.open(FIXTURES/'accepted-palette/preset-comparison-10mm-shorter-opamp.pdf')
     drawings=[d for d in palette[0].get_drawings() if d['color'] and max(d['color'])<.01]
@@ -16,18 +31,26 @@ def verify():
     rows=[(0,'small','medium'),(23,'medium','medium'),(46,'large','medium'),(80,'medium','thin'),(103,'medium','medium'),(126,'medium','thick'),(160,'small','thick')]
     fidelity=[];margins=[]
     baseline = ('resistor-eu','resistor-us','inductor-coil','capacitor','opamp','opamp-supply')
+    def check_artwork(item):
+        symbol,c=item
+        source=LIBRARY/c['svg'];root=ET.parse(source).getroot();group=root.find(f'{{{SVG}}}g')
+        validate_svg_references(root)
+        assert {p.get('data-part') for p in group}=={p['id'] for p in symbol['parts']}
+        assert all(p.get(f'{{{INK}}}label')==p.get('data-part') for p in group)
+        assert all(not list(p.iter(f'{{{SVG}}}g'))[1:] for p in group)
+        _,output=inkscape([str(source),'--query-all',f"--export-filename={work/(c['key']+'.pdf')}"],work)
+        bounds=next(line.split(',')[1:] for line in output.splitlines() if line.startswith(group.get('id')+','))
+        x,y,w,h=[float(v)*25.4/96 for v in bounds]
+        margin=min(x,y,c['width_mm']-x-w,c['height_mm']-y-h)
+        assert margin>.9,(c['key'],margin)
+        return margin
+    # Bounded independent CLI instances, as in verify_batch; every SVG is still checked.
+    jobs=[(s,c) for s in data['symbols'] for c in s['configurations']]
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        for index,margin in enumerate(pool.map(check_artwork,jobs),1):
+            margins.append(margin)
+            if index%100==0:print(f'Checked {index}/{len(jobs)} SVGs',flush=True)
     for symbol in data['symbols']:
-        for c in symbol['configurations']:
-            source=LIBRARY/c['svg'];root=ET.parse(source).getroot();group=root.find(f'{{{SVG}}}g')
-            validate_svg_references(root)
-            assert {p.get('data-part') for p in group}=={p['id'] for p in symbol['parts']}
-            assert all(p.get(f'{{{INK}}}label')==p.get('data-part') for p in group)
-            assert all(not list(p.iter(f'{{{SVG}}}g'))[1:] for p in group)
-            _,output=run([tool('inkscape'),str(source),'--query-all',f"--export-filename={work/(c['key']+'.pdf')}"],work)
-            bounds=next(line.split(',')[1:] for line in output.splitlines() if line.startswith(group.get('id')+','))
-            x,y,w,h=[float(v)*25.4/96 for v in bounds]
-            margin=min(x,y,c['width_mm']-x-w,c['height_mm']-y-h)
-            assert margin>.9,(c['key'],margin);margins.append(margin)
         for y,size,stroke in (rows if symbol['id'] in baseline else []):
             col = baseline.index(symbol['id'])
             c=next(c for c in symbol['configurations'] if c['size']==size and c['stroke']==stroke)
@@ -47,12 +70,12 @@ def verify():
     (work/'library-symbols.svg').write_bytes(sheet(items, 6, 6, True))
     for name in ('library-sheet','library-symbols'):
         source=work/f'{name}.svg';saved=work/f'{name}-saved.svg'
-        run([tool('inkscape'),str(source),f'--export-filename={saved}'],work)
+        inkscape([str(source),f'--export-filename={saved}'],work)
         before=ET.parse(source).getroot();after=ET.parse(saved).getroot();validate_svg_references(after)
         assert [p.get('data-part') for p in before.iter() if p.get('data-part')]==[p.get('data-part') for p in after.iter() if p.get('data-part')]
         assert all(p.get(f'{{{INK}}}label')==p.get('data-part') for p in after.iter() if p.get('data-part'))
         reopened=work/f'{name}-reopened.svg'
-        run([tool('inkscape'),str(saved),f'--export-filename={reopened}'],work)
+        inkscape([str(saved),f'--export-filename={reopened}'],work)
         validate_svg_references(ET.parse(reopened).getroot())
     keys=[s['configurations'][4]['key'] for s in data['symbols']]
     for kind in ('svg','zip','sheet','symbols'):
@@ -63,4 +86,7 @@ def verify():
     print(json.dumps({k:v for k,v in results.items() if k!='palette_comparisons'},indent=2))
 
 
-if __name__=='__main__':verify()
+if __name__=='__main__':
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--workers',type=int,choices=range(1,5),default=2)
+    verify(parser.parse_args().workers)
