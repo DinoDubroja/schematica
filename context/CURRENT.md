@@ -17,6 +17,19 @@ A's viewer/integration or unresolved structural change is authorized. B remains
 sole preview publisher. This is the dev library; accounts and personal libraries
 remain deferred.
 
+## Delivery workflow adoption
+
+14-11-2026: adopted the [delivery checklist](../DEVELOPMENT.md#delivery-checklist)
+in B's four guidance documents after B completed its final-approval publication.
+`AGENTS.md` reaches the checklist; Agent A coordinates integration. This focused
+adoption preserves B's symbol work, approvals and unrelated research.
+A's matching guidance is local; its unpublished product ancestry is not included.
+Guidance on main is published separately; this delivery merges no product features
+and deploys no app. Installer simplification and user-guide rewrites remain separate.
+See the [main entry point](https://github.com/DinoDubroja/schematica) for published
+progress. B's existing exact product-ready handoff remains unchanged; B can record
+this guidance adoption in its own handoff at its next session.
+
 ## Final human approvals
 
 The exact 13-record handoff from Brainstorm B is validated against the current

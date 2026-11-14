@@ -5,6 +5,35 @@
 · [Scope and gaps](docs/ROADMAP.md)
 · [Current status](context/CURRENT.md)
 
+## Delivery checklist
+
+Complete this checklist at meaningful checkpoints and before declaring work finished.
+
+1. **Publish the branch.** Push each agent's branch at meaningful checkpoints and
+   before finishing, within the task's publication authorization. Verify the remote
+   commit. If publishing is blocked, report the reason and unpublished checkpoint.
+2. **Keep setup and testing current.** User instructions must be visual with useful
+   screenshots or extremely compact: **action → expected result**. Keep developer
+   commands separate from user instructions; state actual results and unverified limits.
+3. **Keep main discoverable.** GitHub's `main` README is the user's entry point:
+   link setup, testing and available previews, and label unfinished features and
+   limitations. Users must not need to navigate branches to discover progress.
+4. **Coordinate integration.** Agent A integrates exact commits marked READY by
+   their owners, resolves conflicts and checks the combined result before updating
+   `main`, within authorized scope. Branch pushes, merges and website deployments
+   are separate actions. Preserve checkout ownership and the current preview publisher.
+5. **Verify the delivery.** Check published documentation links at their actual
+   GitHub/preview destinations. Distinguish backend tests from actual installation,
+   setup and first-use verification; record blocked or untested checks honestly.
+6. **Report the result.** Finish with **what changed → GitHub/preview link → what to
+   test → remaining limitations**. Explicitly state whether the branch, `main` and
+   hosted app were updated; local commits alone are not a GitHub update.
+
+Use existing authorization without repeated approval pauses. The checklist does
+not grant permission for a new publication, product merge or deployment; explain
+any missing authorization or external blocker. See [parallel work](#parallel-work)
+for ownership and handoffs.
+
 ## Latest changes
 
 14-11-2026: **Final 13 human approvals published.** All exact revisions and
@@ -125,7 +154,8 @@ do not discard work just to match the preview.
 Before updating an existing copy, run `git status --short`. If it lists files,
 preserve and resolve that work first. If empty, run `git pull --ff-only`. Stop on
 divergence; do not overwrite the other device's work. Commit/push reviewed work
-before switching devices, and pull before starting on the receiving device. Use `app\launch.ps1`; the old `implementation\launch.ps1` path is gone.
+within the current publication authorization before switching devices, and pull
+before starting on the receiving device. Use `app\launch.ps1`; the old `implementation\launch.ps1` path is gone.
 If the existing preview server holds the old folder open, stop it with Ctrl+C
 before pulling, then start it from the new path.
 GitHub synchronizes source and docs; Cloudflare is a separate website deployment.
