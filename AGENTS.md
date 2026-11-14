@@ -35,11 +35,11 @@
   or connection changes require fresh review; never copy an old approval forward.
 - Check branch/index/files before changes; preserve concurrent work. Run the
   [applicable checks](DEVELOPMENT.md#test-and-review) and verify links after moves.
-- Parallel work: `work/agent-b-symbols` belongs to symbol work; Agent A uses
-  `work/agent-a-integration` in a separate checkout. Read the current ownership
-  note and [parallel-work guide](DEVELOPMENT.md#parallel-work) before editing.
-  Integrate only exact commits marked READY FOR INTEGRATION in the owner's
-  handoff, never an assumed branch tip. Do not switch another agent's checkout.
+- Parallel work starts from current `main` in separate task branches/worktrees.
+  Read the current owner handoffs and [parallel-work guide](DEVELOPMENT.md#parallel-work)
+  before shared edits. Integrate exact owner-ready commits, preserve active work
+  and ignored drafts, and check runtime paths before retiring working copies.
+  Agent A coordinates integration and owns this consolidation's publication.
 - Before declaring work finished, complete the
   [delivery checklist](DEVELOPMENT.md#delivery-checklist) and report blocked items.
   Agent A coordinates integration. Branch pushes, main updates and deployments
