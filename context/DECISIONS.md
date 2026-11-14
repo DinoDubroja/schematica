@@ -484,3 +484,15 @@ validation, status documentation, a scoped B-branch commit/push and publication
 to the existing shared preview. Supersedes the local-only delivery state above.
 Preserve earlier approvals, all artwork/export bytes, unrelated work and A's
 isolation. No new symbols, geometry or viewer changes are requested.
+
+**Delivered by Agent B:** 14-11-2026 22:06 +01:00 (verification/recording time).
+Source checkpoint `fda51cf00fc2531ec7f83987f5f66a7011ec8cb4` is pushed on
+`work/agent-b-symbols`. Cloudflare version `626b5f31-d628-46f2-8554-e26d06a0ede6`
+serves build `21ee8da1455d`: hosted catalog confirms 91 Verified / 0 Unverified,
+all 13 exact identities, 1,035 configurations and 36 library exports. All 1,079
+public assets match local hashes; all 135 removed SVG URLs return 404.
+The previous 78 approvals and every artwork/export byte are unchanged. Passed
+62 Python tests, eight JavaScript tests and 90 documentation links; real handoff
+Pending/Undo reconciliation clears all 13 published approvals. No new rendering,
+browser automation or Inkscape run was needed. Physical laptop testing remains
+unverified. A and unrelated research remain untouched; no additional batch started.

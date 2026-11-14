@@ -1,6 +1,6 @@
 # Current status
 
-14-11-2026 · **All 91 designs approved locally; publication pending.**
+14-11-2026 · **Final approvals published: 91 Verified / 0 Unverified.**
 
 ## Working ownership
 
@@ -24,7 +24,7 @@ revisions and fingerprints. All 12 corrected revision-2 designs and the unchange
 revision-1 P-bulk MOSFET are approved. The user explicitly authorized Agent B to
 complete the scoped commit, push and shared-preview publication on 14-11-2026.
 
-- Local build **`21ee8da1455d`**: **91 Verified / 0 Unverified**, 1,035 configurations.
+- Hosted/local build **`21ee8da1455d`**: **91 Verified / 0 Unverified**, 1,035 configurations.
 - All 78 earlier approval records are exact. Every SVG and all 36 complete-library
   exports are unchanged; only catalog approval metadata changes in the site assets.
 - The accepted Batch 02 corrections and 15 removals remain intact; see
@@ -32,10 +32,14 @@ complete the scoped commit, push and shared-preview publication on 14-11-2026.
   exact fingerprints. No new batch or viewer/integration change is authorized.
 - Verified external backup preserves the prepared changes, exact handoff and
   unrelated research. A's isolated checkout and runtime remain untouched.
-- Passed 62 Python tests, eight JavaScript tests, 90 documentation links and local
-  HTTP/hash checks for all 1,079 public assets. Pending/Undo clears all 13 approvals.
-- Publication is in progress. Exact ready commits and delivery
-  receipts will be recorded in B's own local handoff after hosted verification.
+- Passed 62 Python tests, eight JavaScript tests, 90 documentation links and local/
+  hosted HTTP/hash checks for all 1,079 public assets. Pending/Undo clears all 13
+  approvals; all 135 removed SVG URLs still return 404.
+- Source checkpoint `fda51cf` is pushed on B's branch and deployed. Cloudflare
+  version: `626b5f31-d628-46f2-8554-e26d06a0ede6`. Exact cumulative ready commits
+  and delivery receipts are recorded in B's own local handoff.
+- Physical second-device testing remains unverified. Rendering and GUI checks
+  were not repeated for this metadata-only update; artwork/export bytes are exact.
 
 [Decisions](DECISIONS.md) · [Verification](../docs/VERIFICATION.md)
 

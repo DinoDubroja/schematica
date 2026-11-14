@@ -7,22 +7,22 @@
 
 ## Latest changes
 
-14-11-2026: **Final 13 human approvals validated for publication.** All exact revisions and
-fingerprints match. Local build **`21ee8da1455d`** has **91 Verified / 0 Unverified**
+14-11-2026: **Final 13 human approvals published.** All exact revisions and
+fingerprints match. Hosted/local build **`21ee8da1455d`** has **91 Verified / 0 Unverified**
 designs. The previous 78 approvals, all 1,035 drawings and all 36 library exports
 are unchanged. Only `library/catalog.json` changed in the website asset manifest.
-Agent B is publishing this approval-only update to the existing shared preview.
+The scoped source update is pushed as `fda51cf` on `work/agent-b-symbols`.
 
 The saved handoff validates without further changes. The regression expectation
 now reflects the user's exact approvals; stale fingerprints still fail validation.
 **Passed:** 62 Python tests, eight JavaScript tests and 90 local documentation
-links. The local server's 1,079 public assets match the build; all 135 removed SVG
+links. All 1,079 public assets match locally and on the shared preview; all 135 removed SVG
 URLs return 404. The exact 13 old Pending selections clear, and Undo cannot
-restore them. Hosted verification is pending publication.
+restore them. Hosted catalog counts and all 13 exact approval identities are confirmed.
 
-After publication, reload the viewer: expect all 91 Verified, an empty Unverified
-filter, and matching old Pending selections cleared. Actual hosted refresh and
-second-device behavior remain unverified for this update.
+Reload the viewer: expect all 91 Verified, an empty Unverified filter, and matching
+old Pending selections cleared. Browser UI automation and physical second-device
+testing were not repeated for this metadata-only update.
 
 The [accepted corrections and retained inventory](docs/BATCH_02.md) are unchanged.
 The earlier geometry run checked every configuration and all 36 exports in Inkscape;
