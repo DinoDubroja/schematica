@@ -2,6 +2,7 @@
 from support import APP, FIXTURES
 import hashlib
 import json
+import math
 import re
 import unittest
 from core import SVG, definitions, configuration_choices
@@ -67,6 +68,29 @@ class Batch02(unittest.TestCase):
                                        for g in artwork(c).iter() if g.get('data-part') and g.get('data-part')!='adjustment'])
                         self.assertEqual(c['pins_mm'],choices[0]['pins_mm'])
                     self.assertTrue(all(s==shapes[0] for s in shapes[1:]),symbol['id'])
+
+    def test_diode_polarity_and_actual_light_arrow_direction(self):
+        for symbol in self.new:
+            if symbol['family']!='diodes':continue
+            expected={'a','b'} if symbol['id']=='diode-tvs-bidirectional' else {'a','k'}
+            self.assertEqual({p['id'] for p in symbol['pins']},expected)
+            for config in symbol['configurations']:
+                self.assertLess(config['pins_mm']['a'][0],config['pins_mm']['b' if 'b' in expected else 'k'][0])
+                if symbol['id'] not in ('diode-led','diode-photo'):continue
+                rays=next(g for g in artwork(config).iter() if g.get('data-part')=='light-arrows')
+                paths=list(rays.iter(f'{{{SVG}}}path'));self.assertEqual(len(paths),4)
+                direction=1 if symbol['id']=='diode-led' else -1
+                shafts=[]
+                for shaft,head in [(paths[0],paths[1]),(paths[2],paths[3])]:
+                    points=lambda path:list(zip(*[iter([float(n)*25.4/72.27 for n in re.findall(NUMBER,path.get('d'))])]*2))
+                    s,h=points(shaft),points(head);self.assertEqual(len(s),2);self.assertEqual(len(h),3)
+                    self.assertGreater(direction*(s[1][0]-s[0][0]),0)
+                    self.assertGreater(direction*(s[1][1]-s[0][1]),0)
+                    self.assertLess(math.dist(s[1],h[1]),.0003)
+                    self.assertAlmostEqual(math.dist(h[0],h[1]),math.dist(h[2],h[1]),delta=.0003)
+                    self.assertAlmostEqual(math.dist(*s),10/3*config['settings']['size_factor'],delta=.0003)
+                    shafts.append(s)
+                self.assertAlmostEqual(math.dist(shafts[0][0],shafts[1][0]),2.5*config['settings']['size_factor'],delta=.0003)
 
 
 if __name__=='__main__':unittest.main()

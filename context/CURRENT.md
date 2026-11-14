@@ -1,6 +1,6 @@
 # Current status
 
-14-11-2026 · **Batch 02 in progress: 5 / 80 new designs complete.**
+14-11-2026 · **Batch 02 in progress: 12 / 80 new designs complete.**
 
 ## Working ownership
 
@@ -20,13 +20,13 @@ libraries remain deferred; this is the dev library.
 
 ## Current checkpoint
 
-- Source library: **31 designs / 441 configurations**; 26 Verified,
-  5 new Unverified. Completed families: capacitors.
+- Source library: **38 designs / 504 configurations**; 26 Verified,
+  12 new Unverified. Completed families: capacitors, diodes.
 - Original 342 SVGs and 26 approval records are preserved exactly. Tapped resistors
   and varistors remain removed; selected nonlinear B revision 3 is unchanged.
-- Current local build: `0d6b41588a1a`. Shared preview still serves the prior
+- Current local build: `7342b5918472`. Shared preview still serves the prior
   `fae9ed42be9d` release until this batch is published; do not confuse local with live.
-- Latest checkpoint checks: 46 Python tests and eight JavaScript tests;
+- Latest checkpoint checks: 47 Python tests and eight JavaScript tests;
   complete-family Inkscape vector/bounds/save/reopen checks; actual Medium/Medium,
   Small/Thick and adjustment-orientation visual inspection. Technical checks do
   not confer human approval. Exact ready commits are in B's local handoff.

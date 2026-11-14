@@ -1,0 +1,59 @@
+schema_version: 1
+id: diode-varactor
+revision: 1
+name: Varactor diode
+description: Voltage-variable capacitance diode with a double-plate cathode marking.
+keywords:
+- diode
+- semiconductor
+- varactor
+- varicap
+- tuning
+- capacitance
+- diodes
+- overnight
+- batch 02
+types:
+- diodes
+family: diodes
+batch: overnight-diodes-02
+attributes:
+  variant: varactor
+  polarized: true
+recipe: diode-varactor
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: VC
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: a
+  name: Anode
+  description: Anode
+  kind: passive
+  lead_part: lead-a
+- id: k
+  name: Cathode
+  description: Cathode
+  kind: passive
+  lead_part: lead-k
+parts:
+- id: lead-a
+  description: 'Electrical lead: Anode'
+- id: lead-k
+  description: 'Electrical lead: Cathode'
+- id: junction
+  description: Junction
+- id: cathode
+  description: Cathode
+- id: capacitance-plate
+  description: Capacitance plate

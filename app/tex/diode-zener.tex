@@ -1,0 +1,27 @@
+% Zener diode; zDo.
+% Schematica coordinates are millimetres at Medium; pins snap outward to the 1 mm grid.
+\newcommand{\SCBatchDiodeZener}[4]{%
+  \SCresolve{#1}{#2}{#3}
+  \def\F{#2}
+  \pgfmathsetmacro{\SCorientx}{ifthenelse(mod(#4,2)==1,-1,1)}
+  \pgfmathsetmacro{\SCorienty}{ifthenelse(#4>1,-1,1)}
+  \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+    \SCdimension{body-width}{3.5*\F}
+    \SCdimension{body-height}{5*\F}
+    \SCdimension{grid}{1}
+    \SCpin{a}{floor(-6*\F)}{0}
+    \begin{SCpart}{lead-a}
+    \draw ({floor(-6*\F)},{0})--({-2*\F},{0*\F});
+    \end{SCpart}
+    \SCpin{k}{ceil(6*\F)}{0}
+    \begin{SCpart}{lead-k}
+    \draw ({ceil(6*\F)},{0})--({1.5*\F},{0*\F});
+    \end{SCpart}
+    \begin{SCpart}{junction}
+    \draw ({-2*\F},{-2.5*\F})--({1.5*\F},{0*\F})--({-2*\F},{2.5*\F})--({-2*\F},{-2.5*\F});
+    \end{SCpart}
+    \begin{SCpart}{cathode}
+    \draw ({0.65*\F},{-3.1*\F})--({1.5*\F},{-2.5*\F})--({1.5*\F},{2.5*\F})--({2.35*\F},{3.1*\F});
+    \end{SCpart}
+  \end{scope}
+}

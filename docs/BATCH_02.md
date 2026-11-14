@@ -23,7 +23,7 @@ Status: complete — 5 designs / 99 configurations; Unverified.
 
 ### Diodes
 
-Status: planned.
+Status: complete — 7 designs / 63 configurations; Unverified.
 
 `diode`, `diode-zener`, `diode-schottky`, `diode-led`, `diode-photo`, `diode-varactor`, `diode-tvs-bidirectional`.
 

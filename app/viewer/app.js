@@ -8,7 +8,7 @@ const state = { data: null, symbol: null, size: "medium", stroke: "medium", view
 const cache = new Map();
 let review, svgSerial = 0;
 function notify(message) { $("#notice").textContent = message; $("#notice").hidden = !message; }
-function titleCase(value) { return value[0].toUpperCase() + value.slice(1); }
+function titleCase(value) { return value[0].toUpperCase() + value.slice(1).replaceAll("-", " "); }
 function activeSymbol() { return state.data.symbols.find(s => s.id === state.symbol); }
 function configFor(symbol) { return Configurations.find(symbol, state.size, state.stroke, symbol.id === state.symbol ? state.options : {}); }
 function status(symbol) { return Review.official(symbol) ? "Verified" : review.has(symbol) ? "Pending" : "Unverified"; }

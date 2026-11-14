@@ -21089,7 +21089,7 @@
       "schema_version": 1,
       "id": "capacitor-polarized-curved",
       "revision": 1,
-      "name": "Polarized capacitor \u00c3\u201a\u00c2\u00b7 curved",
+      "name": "Polarized capacitor - curved",
       "description": "Polarized capacitor with a curved negative plate; the left terminal is positive.",
       "keywords": [
         "capacitor",
@@ -21171,7 +21171,7 @@
         {
           "key": "capacitor-polarized-curved-small-thin",
           "symbol_id": "capacitor-polarized-curved",
-          "name": "Polarized capacitor \u00c3\u201a\u00c2\u00b7 curved",
+          "name": "Polarized capacitor - curved",
           "revision": 1,
           "size": "small",
           "stroke": "thin",
@@ -21209,7 +21209,7 @@
             "plate-negative",
             "polarity"
           ],
-          "svg_bytes": 2793,
+          "svg_bytes": 2772,
           "settings": {
             "size": "small",
             "stroke": "thin",
@@ -21221,7 +21221,7 @@
         {
           "key": "capacitor-polarized-curved-small-medium",
           "symbol_id": "capacitor-polarized-curved",
-          "name": "Polarized capacitor \u00c3\u201a\u00c2\u00b7 curved",
+          "name": "Polarized capacitor - curved",
           "revision": 1,
           "size": "small",
           "stroke": "medium",
@@ -21259,7 +21259,7 @@
             "plate-negative",
             "polarity"
           ],
-          "svg_bytes": 2822,
+          "svg_bytes": 2801,
           "settings": {
             "size": "small",
             "stroke": "medium",
@@ -21271,7 +21271,7 @@
         {
           "key": "capacitor-polarized-curved-small-thick",
           "symbol_id": "capacitor-polarized-curved",
-          "name": "Polarized capacitor \u00c3\u201a\u00c2\u00b7 curved",
+          "name": "Polarized capacitor - curved",
           "revision": 1,
           "size": "small",
           "stroke": "thick",
@@ -21309,7 +21309,7 @@
             "plate-negative",
             "polarity"
           ],
-          "svg_bytes": 2807,
+          "svg_bytes": 2786,
           "settings": {
             "size": "small",
             "stroke": "thick",
@@ -21321,7 +21321,7 @@
         {
           "key": "capacitor-polarized-curved-medium-thin",
           "symbol_id": "capacitor-polarized-curved",
-          "name": "Polarized capacitor \u00c3\u201a\u00c2\u00b7 curved",
+          "name": "Polarized capacitor - curved",
           "revision": 1,
           "size": "medium",
           "stroke": "thin",
@@ -21359,7 +21359,7 @@
             "plate-negative",
             "polarity"
           ],
-          "svg_bytes": 2819,
+          "svg_bytes": 2798,
           "settings": {
             "size": "medium",
             "stroke": "thin",
@@ -21371,7 +21371,7 @@
         {
           "key": "capacitor-polarized-curved-medium-medium",
           "symbol_id": "capacitor-polarized-curved",
-          "name": "Polarized capacitor \u00c3\u201a\u00c2\u00b7 curved",
+          "name": "Polarized capacitor - curved",
           "revision": 1,
           "size": "medium",
           "stroke": "medium",
@@ -21409,7 +21409,7 @@
             "plate-negative",
             "polarity"
           ],
-          "svg_bytes": 2847,
+          "svg_bytes": 2826,
           "settings": {
             "size": "medium",
             "stroke": "medium",
@@ -21421,7 +21421,7 @@
         {
           "key": "capacitor-polarized-curved-medium-thick",
           "symbol_id": "capacitor-polarized-curved",
-          "name": "Polarized capacitor \u00c3\u201a\u00c2\u00b7 curved",
+          "name": "Polarized capacitor - curved",
           "revision": 1,
           "size": "medium",
           "stroke": "thick",
@@ -21459,7 +21459,7 @@
             "plate-negative",
             "polarity"
           ],
-          "svg_bytes": 2833,
+          "svg_bytes": 2812,
           "settings": {
             "size": "medium",
             "stroke": "thick",
@@ -21471,7 +21471,7 @@
         {
           "key": "capacitor-polarized-curved-large-thin",
           "symbol_id": "capacitor-polarized-curved",
-          "name": "Polarized capacitor \u00c3\u201a\u00c2\u00b7 curved",
+          "name": "Polarized capacitor - curved",
           "revision": 1,
           "size": "large",
           "stroke": "thin",
@@ -21509,7 +21509,7 @@
             "plate-negative",
             "polarity"
           ],
-          "svg_bytes": 2804,
+          "svg_bytes": 2783,
           "settings": {
             "size": "large",
             "stroke": "thin",
@@ -21521,7 +21521,7 @@
         {
           "key": "capacitor-polarized-curved-large-medium",
           "symbol_id": "capacitor-polarized-curved",
-          "name": "Polarized capacitor \u00c3\u201a\u00c2\u00b7 curved",
+          "name": "Polarized capacitor - curved",
           "revision": 1,
           "size": "large",
           "stroke": "medium",
@@ -21559,7 +21559,7 @@
             "plate-negative",
             "polarity"
           ],
-          "svg_bytes": 2832,
+          "svg_bytes": 2811,
           "settings": {
             "size": "large",
             "stroke": "medium",
@@ -21571,7 +21571,7 @@
         {
           "key": "capacitor-polarized-curved-large-thick",
           "symbol_id": "capacitor-polarized-curved",
-          "name": "Polarized capacitor \u00c3\u201a\u00c2\u00b7 curved",
+          "name": "Polarized capacitor - curved",
           "revision": 1,
           "size": "large",
           "stroke": "thick",
@@ -21609,7 +21609,7 @@
             "plate-negative",
             "polarity"
           ],
-          "svg_bytes": 2817,
+          "svg_bytes": 2796,
           "settings": {
             "size": "large",
             "stroke": "thick",
@@ -25876,6 +25876,3689 @@
         }
       ],
       "source_fingerprint": "5f692c4e74d28bde10892ddcb29e3538ec9f9d67fe3f98f7a692515d123e9e4e"
+    },
+    {
+      "schema_version": 1,
+      "id": "diode",
+      "revision": 1,
+      "name": "Diode",
+      "description": "Rectifying diode; the bar marks the cathode.",
+      "keywords": [
+        "diode",
+        "semiconductor",
+        "standard",
+        "diodes",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "diodes"
+      ],
+      "family": "diodes",
+      "batch": "overnight-diodes-02",
+      "attributes": {
+        "variant": "standard",
+        "polarized": true
+      },
+      "recipe": "diode",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "Do",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "Anode",
+          "description": "Anode",
+          "kind": "passive",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "k",
+          "name": "Cathode",
+          "description": "Cathode",
+          "kind": "passive",
+          "lead_part": "lead-k"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-a",
+          "description": "Electrical lead: Anode"
+        },
+        {
+          "id": "lead-k",
+          "description": "Electrical lead: Cathode"
+        },
+        {
+          "id": "junction",
+          "description": "Junction"
+        },
+        {
+          "id": "cathode",
+          "description": "Cathode"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "diode-small-thin",
+          "symbol_id": "diode",
+          "name": "Diode",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/diode-small-thin.svg",
+          "width_mm": 12.14993407,
+          "height_mm": 5.89996315,
+          "origin_svg": [
+            -51.462077,
+            -63.637869
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "k": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.625,
+            "body-height": 3.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 1960,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-small-medium",
+          "symbol_id": "diode",
+          "name": "Diode",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/diode-small-medium.svg",
+          "width_mm": 12.19993997,
+          "height_mm": 5.94996552,
+          "origin_svg": [
+            -51.391206,
+            -63.566998
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666653306492e-07,
+            -2.5066368733759088e-15
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "k": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.625,
+            "body-height": 3.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 1984,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-small-thick",
+          "symbol_id": "diode",
+          "name": "Diode",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/diode-small-thick.svg",
+          "width_mm": 12.29994436,
+          "height_mm": 6.04996956,
+          "origin_svg": [
+            -51.249465,
+            -63.425256
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "k": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.625,
+            "body-height": 3.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 1971,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-medium-thin",
+          "symbol_id": "diode",
+          "name": "Diode",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/diode-medium-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 7.14995818,
+          "origin_svg": [
+            -48.627446,
+            -61.866222
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -1.0583333331679353e-06
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "k": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.5,
+            "body-height": 5.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 1971,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-medium-medium",
+          "symbol_id": "diode",
+          "name": "Diode",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/diode-medium-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 7.1999602,
+          "origin_svg": [
+            -48.556576,
+            -61.795352
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "k": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.5,
+            "body-height": 5.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 1996,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-medium-thick",
+          "symbol_id": "diode",
+          "name": "Diode",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/diode-medium-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 7.29996459,
+          "origin_svg": [
+            -48.414834,
+            -61.65361
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "k": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.5,
+            "body-height": 5.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 1981,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-large-thin",
+          "symbol_id": "diode",
+          "name": "Diode",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/diode-large-thin.svg",
+          "width_mm": 18.14990479,
+          "height_mm": 8.39995286,
+          "origin_svg": [
+            -42.958185,
+            -60.094576
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -1.0583333306612984e-06
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "k": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.375,
+            "body-height": 6.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 1961,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-large-medium",
+          "symbol_id": "diode",
+          "name": "Diode",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/diode-large-medium.svg",
+          "width_mm": 18.19990716,
+          "height_mm": 8.44995523,
+          "origin_svg": [
+            -42.887314,
+            -60.023706
+          ],
+          "visual_center_from_origin_mm": [
+            2.5066368733759088e-15,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "k": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.375,
+            "body-height": 6.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 1987,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-large-thick",
+          "symbol_id": "diode",
+          "name": "Diode",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/diode-large-thick.svg",
+          "width_mm": 18.29991507,
+          "height_mm": 8.54995962,
+          "origin_svg": [
+            -42.745573,
+            -59.881964
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "k": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.375,
+            "body-height": 6.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 1974,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "b691e2d44c15028ef15d6eff4571b28d1788c5cee8479938db30085cddf52288"
+    },
+    {
+      "schema_version": 1,
+      "id": "diode-led",
+      "revision": 1,
+      "name": "LED",
+      "description": "Light-emitting diode; two arrows point outward to indicate emitted light.",
+      "keywords": [
+        "diode",
+        "semiconductor",
+        "led",
+        "optical",
+        "light-emitting",
+        "LED",
+        "diodes",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "diodes"
+      ],
+      "family": "diodes",
+      "batch": "overnight-diodes-02",
+      "attributes": {
+        "variant": "led",
+        "polarized": true
+      },
+      "recipe": "diode-led",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "leDo",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "Anode",
+          "description": "Anode",
+          "kind": "passive",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "k",
+          "name": "Cathode",
+          "description": "Cathode",
+          "kind": "passive",
+          "lead_part": "lead-k"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-a",
+          "description": "Electrical lead: Anode"
+        },
+        {
+          "id": "lead-k",
+          "description": "Electrical lead: Cathode"
+        },
+        {
+          "id": "junction",
+          "description": "Junction"
+        },
+        {
+          "id": "cathode",
+          "description": "Cathode"
+        },
+        {
+          "id": "light-arrows",
+          "description": "Two outward light arrows"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "diode-led-small-thin",
+          "symbol_id": "diode-led",
+          "name": "LED",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/diode-led-small-thin.svg",
+          "width_mm": 12.14993407,
+          "height_mm": 9.43020473,
+          "origin_svg": [
+            -51.462077,
+            -53.630885
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -1.7651213180555545
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "k": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.625,
+            "body-height": 3.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "light-arrows"
+          ],
+          "svg_bytes": 2535,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-led-small-medium",
+          "symbol_id": "diode-led",
+          "name": "LED",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/diode-led-small-medium.svg",
+          "width_mm": 12.19993997,
+          "height_mm": 9.48020675,
+          "origin_svg": [
+            -51.391206,
+            -53.560014
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666653306492e-07,
+            -1.7651209652777777
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "k": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.625,
+            "body-height": 3.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "light-arrows"
+          ],
+          "svg_bytes": 2563,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-led-small-thick",
+          "symbol_id": "diode-led",
+          "name": "LED",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/diode-led-small-thick.svg",
+          "width_mm": 12.29994436,
+          "height_mm": 9.58021466,
+          "origin_svg": [
+            -51.249465,
+            -53.418273
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            -1.7651214944444429
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "k": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.625,
+            "body-height": 3.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "light-arrows"
+          ],
+          "svg_bytes": 2549,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-led-medium-thin",
+          "symbol_id": "diode-led",
+          "name": "LED",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/diode-led-medium-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 11.85694684,
+          "origin_svg": [
+            -48.627446,
+            -48.523572
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -2.35349538472222
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "k": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.5,
+            "body-height": 5.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "light-arrows"
+          ],
+          "svg_bytes": 2551,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-led-medium-medium",
+          "symbol_id": "diode-led",
+          "name": "LED",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/diode-led-medium-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 11.90694885,
+          "origin_svg": [
+            -48.556576,
+            -48.452702
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -2.3534946791666664
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "k": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.5,
+            "body-height": 5.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "light-arrows"
+          ],
+          "svg_bytes": 2580,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-led-medium-thick",
+          "symbol_id": "diode-led",
+          "name": "LED",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/diode-led-medium-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 12.00695677,
+          "origin_svg": [
+            -48.414834,
+            -48.31096
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -2.353495561111111
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "k": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.5,
+            "body-height": 5.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "light-arrows"
+          ],
+          "svg_bytes": 2562,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-led-large-thin",
+          "symbol_id": "diode-led",
+          "name": "LED",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/diode-led-large-thin.svg",
+          "width_mm": 18.14990479,
+          "height_mm": 14.28367836,
+          "origin_svg": [
+            -42.958185,
+            -43.41629
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -2.9418634541666635
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "k": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.375,
+            "body-height": 6.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "light-arrows"
+          ],
+          "svg_bytes": 2540,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-led-large-medium",
+          "symbol_id": "diode-led",
+          "name": "LED",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/diode-led-large-medium.svg",
+          "width_mm": 18.19990716,
+          "height_mm": 14.3336839,
+          "origin_svg": [
+            -42.887314,
+            -43.34542
+          ],
+          "visual_center_from_origin_mm": [
+            2.5066368733759088e-15,
+            -2.9418648652777786
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "k": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.375,
+            "body-height": 6.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "light-arrows"
+          ],
+          "svg_bytes": 2569,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-led-large-thick",
+          "symbol_id": "diode-led",
+          "name": "LED",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/diode-led-large-thick.svg",
+          "width_mm": 18.29991507,
+          "height_mm": 14.43368829,
+          "origin_svg": [
+            -42.745573,
+            -43.203678
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -2.9418639833333367
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "k": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.375,
+            "body-height": 6.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "light-arrows"
+          ],
+          "svg_bytes": 2556,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "7464c7f25f9dc59caebde7916a0b79cb1acf74729ea53256e4e766cbf89f92e0"
+    },
+    {
+      "schema_version": 1,
+      "id": "diode-photo",
+      "revision": 1,
+      "name": "Photodiode",
+      "description": "Light-sensitive photodiode; two arrows point toward the junction.",
+      "keywords": [
+        "diode",
+        "semiconductor",
+        "photo",
+        "optical",
+        "light-sensitive",
+        "photodetector",
+        "diodes",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "diodes"
+      ],
+      "family": "diodes",
+      "batch": "overnight-diodes-02",
+      "attributes": {
+        "variant": "photo",
+        "polarized": true
+      },
+      "recipe": "diode-photo",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "pDo",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "Anode",
+          "description": "Anode",
+          "kind": "passive",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "k",
+          "name": "Cathode",
+          "description": "Cathode",
+          "kind": "passive",
+          "lead_part": "lead-k"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-a",
+          "description": "Electrical lead: Anode"
+        },
+        {
+          "id": "lead-k",
+          "description": "Electrical lead: Cathode"
+        },
+        {
+          "id": "junction",
+          "description": "Junction"
+        },
+        {
+          "id": "cathode",
+          "description": "Cathode"
+        },
+        {
+          "id": "light-arrows",
+          "description": "Two incoming light arrows"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "diode-photo-small-thin",
+          "symbol_id": "diode-photo",
+          "name": "Photodiode",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/diode-photo-small-thin.svg",
+          "width_mm": 12.14993407,
+          "height_mm": 9.43020473,
+          "origin_svg": [
+            -51.462077,
+            -53.630885
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -1.7651213180555545
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "k": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.625,
+            "body-height": 3.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "light-arrows"
+          ],
+          "svg_bytes": 2568,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-photo-small-medium",
+          "symbol_id": "diode-photo",
+          "name": "Photodiode",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/diode-photo-small-medium.svg",
+          "width_mm": 12.19993997,
+          "height_mm": 9.48020675,
+          "origin_svg": [
+            -51.391206,
+            -53.560014
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666653306492e-07,
+            -1.7651209652777777
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "k": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.625,
+            "body-height": 3.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "light-arrows"
+          ],
+          "svg_bytes": 2596,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-photo-small-thick",
+          "symbol_id": "diode-photo",
+          "name": "Photodiode",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/diode-photo-small-thick.svg",
+          "width_mm": 12.29994436,
+          "height_mm": 9.58021466,
+          "origin_svg": [
+            -51.249465,
+            -53.418273
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            -1.7651214944444429
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "k": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.625,
+            "body-height": 3.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "light-arrows"
+          ],
+          "svg_bytes": 2582,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-photo-medium-thin",
+          "symbol_id": "diode-photo",
+          "name": "Photodiode",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/diode-photo-medium-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 11.85694684,
+          "origin_svg": [
+            -48.627446,
+            -48.523572
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -2.35349538472222
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "k": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.5,
+            "body-height": 5.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "light-arrows"
+          ],
+          "svg_bytes": 2584,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-photo-medium-medium",
+          "symbol_id": "diode-photo",
+          "name": "Photodiode",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/diode-photo-medium-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 11.90694885,
+          "origin_svg": [
+            -48.556576,
+            -48.452702
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -2.3534946791666664
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "k": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.5,
+            "body-height": 5.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "light-arrows"
+          ],
+          "svg_bytes": 2613,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-photo-medium-thick",
+          "symbol_id": "diode-photo",
+          "name": "Photodiode",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/diode-photo-medium-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 12.00695677,
+          "origin_svg": [
+            -48.414834,
+            -48.31096
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -2.353495561111111
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "k": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.5,
+            "body-height": 5.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "light-arrows"
+          ],
+          "svg_bytes": 2595,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-photo-large-thin",
+          "symbol_id": "diode-photo",
+          "name": "Photodiode",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/diode-photo-large-thin.svg",
+          "width_mm": 18.14990479,
+          "height_mm": 14.28367836,
+          "origin_svg": [
+            -42.958185,
+            -43.41629
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -2.9418634541666635
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "k": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.375,
+            "body-height": 6.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "light-arrows"
+          ],
+          "svg_bytes": 2576,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-photo-large-medium",
+          "symbol_id": "diode-photo",
+          "name": "Photodiode",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/diode-photo-large-medium.svg",
+          "width_mm": 18.19990716,
+          "height_mm": 14.3336839,
+          "origin_svg": [
+            -42.887314,
+            -43.34542
+          ],
+          "visual_center_from_origin_mm": [
+            2.5066368733759088e-15,
+            -2.9418648652777786
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "k": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.375,
+            "body-height": 6.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "light-arrows"
+          ],
+          "svg_bytes": 2605,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-photo-large-thick",
+          "symbol_id": "diode-photo",
+          "name": "Photodiode",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/diode-photo-large-thick.svg",
+          "width_mm": 18.29991507,
+          "height_mm": 14.43368829,
+          "origin_svg": [
+            -42.745573,
+            -43.203678
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -2.9418639833333367
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "k": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.375,
+            "body-height": 6.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "light-arrows"
+          ],
+          "svg_bytes": 2592,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "b06dee6319d18af4501bdd6a83d0c39a4f091ffd86cdafca207e5fbedb8a02b9"
+    },
+    {
+      "schema_version": 1,
+      "id": "diode-schottky",
+      "revision": 1,
+      "name": "Schottky diode",
+      "description": "Schottky diode with hooked cathode marking.",
+      "keywords": [
+        "diode",
+        "semiconductor",
+        "schottky",
+        "diodes",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "diodes"
+      ],
+      "family": "diodes",
+      "batch": "overnight-diodes-02",
+      "attributes": {
+        "variant": "schottky",
+        "polarized": true
+      },
+      "recipe": "diode-schottky",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "sDo",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "Anode",
+          "description": "Anode",
+          "kind": "passive",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "k",
+          "name": "Cathode",
+          "description": "Cathode",
+          "kind": "passive",
+          "lead_part": "lead-k"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-a",
+          "description": "Electrical lead: Anode"
+        },
+        {
+          "id": "lead-k",
+          "description": "Electrical lead: Cathode"
+        },
+        {
+          "id": "junction",
+          "description": "Junction"
+        },
+        {
+          "id": "cathode",
+          "description": "Cathode"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "diode-schottky-small-thin",
+          "symbol_id": "diode-schottky",
+          "name": "Schottky diode",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/diode-schottky-small-thin.svg",
+          "width_mm": 12.14993407,
+          "height_mm": 5.89996315,
+          "origin_svg": [
+            -51.462077,
+            -63.637869
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "k": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.625,
+            "body-height": 3.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 2118,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-schottky-small-medium",
+          "symbol_id": "diode-schottky",
+          "name": "Schottky diode",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/diode-schottky-small-medium.svg",
+          "width_mm": 12.19993997,
+          "height_mm": 5.94996552,
+          "origin_svg": [
+            -51.391206,
+            -63.566998
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666653306492e-07,
+            -2.5066368733759088e-15
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "k": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.625,
+            "body-height": 3.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 2142,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-schottky-small-thick",
+          "symbol_id": "diode-schottky",
+          "name": "Schottky diode",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/diode-schottky-small-thick.svg",
+          "width_mm": 12.29994436,
+          "height_mm": 6.04996956,
+          "origin_svg": [
+            -51.249465,
+            -63.425256
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "k": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.625,
+            "body-height": 3.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 2129,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-schottky-medium-thin",
+          "symbol_id": "diode-schottky",
+          "name": "Schottky diode",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/diode-schottky-medium-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 7.14995818,
+          "origin_svg": [
+            -48.627446,
+            -61.866222
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -1.0583333331679353e-06
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "k": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.5,
+            "body-height": 5.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 2128,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-schottky-medium-medium",
+          "symbol_id": "diode-schottky",
+          "name": "Schottky diode",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/diode-schottky-medium-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 7.1999602,
+          "origin_svg": [
+            -48.556576,
+            -61.795352
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "k": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.5,
+            "body-height": 5.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 2153,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-schottky-medium-thick",
+          "symbol_id": "diode-schottky",
+          "name": "Schottky diode",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/diode-schottky-medium-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 7.29996459,
+          "origin_svg": [
+            -48.414834,
+            -61.65361
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "k": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.5,
+            "body-height": 5.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 2138,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-schottky-large-thin",
+          "symbol_id": "diode-schottky",
+          "name": "Schottky diode",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/diode-schottky-large-thin.svg",
+          "width_mm": 18.14990479,
+          "height_mm": 8.39995286,
+          "origin_svg": [
+            -42.958185,
+            -60.094576
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -1.0583333306612984e-06
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "k": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.375,
+            "body-height": 6.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 2119,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-schottky-large-medium",
+          "symbol_id": "diode-schottky",
+          "name": "Schottky diode",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/diode-schottky-large-medium.svg",
+          "width_mm": 18.19990716,
+          "height_mm": 8.44995523,
+          "origin_svg": [
+            -42.887314,
+            -60.023706
+          ],
+          "visual_center_from_origin_mm": [
+            2.5066368733759088e-15,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "k": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.375,
+            "body-height": 6.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 2145,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-schottky-large-thick",
+          "symbol_id": "diode-schottky",
+          "name": "Schottky diode",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/diode-schottky-large-thick.svg",
+          "width_mm": 18.29991507,
+          "height_mm": 8.54995962,
+          "origin_svg": [
+            -42.745573,
+            -59.881964
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "k": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.375,
+            "body-height": 6.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 2132,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "1b99ef61a9128452d06b7652ec8c412e26d0d53a851fce3a138cc4f54bfb94f3"
+    },
+    {
+      "schema_version": 1,
+      "id": "diode-tvs-bidirectional",
+      "revision": 1,
+      "name": "Bidirectional TVS",
+      "description": "Bidirectional transient-voltage suppressor shown as two opposed avalanche junctions; the terminals are interchangeable.",
+      "keywords": [
+        "diode",
+        "semiconductor",
+        "tvs-bidirectional",
+        "protection",
+        "transient suppression",
+        "TVS",
+        "avalanche",
+        "diodes",
+        "tvs",
+        "bidirectional",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "diodes"
+      ],
+      "family": "diodes",
+      "batch": "overnight-diodes-02",
+      "attributes": {
+        "variant": "tvs-bidirectional",
+        "polarized": false
+      },
+      "recipe": "diode-tvs-bidirectional",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "custom back-to-back avalanche pair",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "A",
+          "description": "A",
+          "kind": "passive",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "b",
+          "name": "B",
+          "description": "B",
+          "kind": "passive",
+          "lead_part": "lead-b"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-a",
+          "description": "Electrical lead: A"
+        },
+        {
+          "id": "lead-b",
+          "description": "Electrical lead: B"
+        },
+        {
+          "id": "left-junction",
+          "description": "Left junction"
+        },
+        {
+          "id": "left-cathode",
+          "description": "Left cathode"
+        },
+        {
+          "id": "right-junction",
+          "description": "Right junction"
+        },
+        {
+          "id": "right-cathode",
+          "description": "Right cathode"
+        },
+        {
+          "id": "junction-link",
+          "description": "Junction link"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "diode-tvs-bidirectional-small-thin",
+          "symbol_id": "diode-tvs-bidirectional",
+          "name": "Bidirectional TVS",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/diode-tvs-bidirectional-small-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 6.64995742,
+          "origin_svg": [
+            -48.627446,
+            -62.574884
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "b": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.7,
+            "body-height": 3.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "left-junction",
+            "left-cathode",
+            "right-junction",
+            "right-cathode",
+            "junction-link"
+          ],
+          "svg_bytes": 3259,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-tvs-bidirectional-small-medium",
+          "symbol_id": "diode-tvs-bidirectional",
+          "name": "Bidirectional TVS",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/diode-tvs-bidirectional-small-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 6.69995944,
+          "origin_svg": [
+            -48.556576,
+            -62.504013
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -1.7638888593691287e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "b": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.7,
+            "body-height": 3.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "left-junction",
+            "left-cathode",
+            "right-junction",
+            "right-cathode",
+            "junction-link"
+          ],
+          "svg_bytes": 3296,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-tvs-bidirectional-small-thick",
+          "symbol_id": "diode-tvs-bidirectional",
+          "name": "Bidirectional TVS",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/diode-tvs-bidirectional-small-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 6.79996735,
+          "origin_svg": [
+            -48.414834,
+            -62.362272
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "b": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.7,
+            "body-height": 3.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "left-junction",
+            "left-cathode",
+            "right-junction",
+            "right-cathode",
+            "junction-link"
+          ],
+          "svg_bytes": 3277,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-tvs-bidirectional-medium-thin",
+          "symbol_id": "diode-tvs-bidirectional",
+          "name": "Bidirectional TVS",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/diode-tvs-bidirectional-medium-thin.svg",
+          "width_mm": 16.14991231,
+          "height_mm": 8.14995618,
+          "origin_svg": [
+            -45.792816,
+            -60.4489
+          ],
+          "visual_center_from_origin_mm": [
+            -8.819444422177487e-07,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.6,
+            "body-height": 5.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "left-junction",
+            "left-cathode",
+            "right-junction",
+            "right-cathode",
+            "junction-link"
+          ],
+          "svg_bytes": 3264,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-tvs-bidirectional-medium-medium",
+          "symbol_id": "diode-tvs-bidirectional",
+          "name": "Bidirectional TVS",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/diode-tvs-bidirectional-medium-medium.svg",
+          "width_mm": 16.19991786,
+          "height_mm": 8.19996173,
+          "origin_svg": [
+            -45.721945,
+            -60.378029
+          ],
+          "visual_center_from_origin_mm": [
+            1.763888909501866e-07,
+            -1.0583333306612984e-06
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.6,
+            "body-height": 5.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "left-junction",
+            "left-cathode",
+            "right-junction",
+            "right-cathode",
+            "junction-link"
+          ],
+          "svg_bytes": 3305,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-tvs-bidirectional-medium-thick",
+          "symbol_id": "diode-tvs-bidirectional",
+          "name": "Bidirectional TVS",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/diode-tvs-bidirectional-medium-thick.svg",
+          "width_mm": 16.29992577,
+          "height_mm": 8.29996611,
+          "origin_svg": [
+            -45.580203,
+            -60.236287
+          ],
+          "visual_center_from_origin_mm": [
+            7.055555562808358e-07,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.6,
+            "body-height": 5.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "left-junction",
+            "left-cathode",
+            "right-junction",
+            "right-cathode",
+            "junction-link"
+          ],
+          "svg_bytes": 3286,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-tvs-bidirectional-large-thin",
+          "symbol_id": "diode-tvs-bidirectional",
+          "name": "Bidirectional TVS",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/diode-tvs-bidirectional-large-thin.svg",
+          "width_mm": 20.14989373,
+          "height_mm": 9.64994436,
+          "origin_svg": [
+            -40.123554,
+            -58.32293
+          ],
+          "visual_center_from_origin_mm": [
+            1.7638888844354975e-07,
+            8.819444472310225e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -9.0,
+              0.0
+            ],
+            "b": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.5,
+            "body-height": 6.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "left-junction",
+            "left-cathode",
+            "right-junction",
+            "right-cathode",
+            "junction-link"
+          ],
+          "svg_bytes": 3267,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-tvs-bidirectional-large-medium",
+          "symbol_id": "diode-tvs-bidirectional",
+          "name": "Bidirectional TVS",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/diode-tvs-bidirectional-large-medium.svg",
+          "width_mm": 20.1998961,
+          "height_mm": 9.69994991,
+          "origin_svg": [
+            -40.052683,
+            -58.25206
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -9.0,
+              0.0
+            ],
+            "b": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.5,
+            "body-height": 6.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "left-junction",
+            "left-cathode",
+            "right-junction",
+            "right-cathode",
+            "junction-link"
+          ],
+          "svg_bytes": 3304,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-tvs-bidirectional-large-thick",
+          "symbol_id": "diode-tvs-bidirectional",
+          "name": "Bidirectional TVS",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/diode-tvs-bidirectional-large-thick.svg",
+          "width_mm": 20.29990401,
+          "height_mm": 9.79995429,
+          "origin_svg": [
+            -39.910942,
+            -58.110318
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -9.0,
+              0.0
+            ],
+            "b": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 9.5,
+            "body-height": 6.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "left-junction",
+            "left-cathode",
+            "right-junction",
+            "right-cathode",
+            "junction-link"
+          ],
+          "svg_bytes": 3287,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "2f413b36160b81a7998c14ba4c5e6fca6bdc474d8d473af96527adef14712970"
+    },
+    {
+      "schema_version": 1,
+      "id": "diode-varactor",
+      "revision": 1,
+      "name": "Varactor diode",
+      "description": "Voltage-variable capacitance diode with a double-plate cathode marking.",
+      "keywords": [
+        "diode",
+        "semiconductor",
+        "varactor",
+        "varicap",
+        "tuning",
+        "capacitance",
+        "diodes",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "diodes"
+      ],
+      "family": "diodes",
+      "batch": "overnight-diodes-02",
+      "attributes": {
+        "variant": "varactor",
+        "polarized": true
+      },
+      "recipe": "diode-varactor",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "VC",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "Anode",
+          "description": "Anode",
+          "kind": "passive",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "k",
+          "name": "Cathode",
+          "description": "Cathode",
+          "kind": "passive",
+          "lead_part": "lead-k"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-a",
+          "description": "Electrical lead: Anode"
+        },
+        {
+          "id": "lead-k",
+          "description": "Electrical lead: Cathode"
+        },
+        {
+          "id": "junction",
+          "description": "Junction"
+        },
+        {
+          "id": "cathode",
+          "description": "Cathode"
+        },
+        {
+          "id": "capacitance-plate",
+          "description": "Capacitance plate"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "diode-varactor-small-thin",
+          "symbol_id": "diode-varactor",
+          "name": "Varactor diode",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/diode-varactor-small-thin.svg",
+          "width_mm": 12.14993407,
+          "height_mm": 5.89996315,
+          "origin_svg": [
+            -51.462077,
+            -63.637869
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "k": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.29999,
+            "body-height": 3.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "capacitance-plate"
+          ],
+          "svg_bytes": 2400,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-varactor-small-medium",
+          "symbol_id": "diode-varactor",
+          "name": "Varactor diode",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/diode-varactor-small-medium.svg",
+          "width_mm": 12.19993997,
+          "height_mm": 5.94996552,
+          "origin_svg": [
+            -51.391206,
+            -63.566998
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666653306492e-07,
+            -2.5066368733759088e-15
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "k": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.29999,
+            "body-height": 3.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "capacitance-plate"
+          ],
+          "svg_bytes": 2428,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-varactor-small-thick",
+          "symbol_id": "diode-varactor",
+          "name": "Varactor diode",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/diode-varactor-small-thick.svg",
+          "width_mm": 12.29994436,
+          "height_mm": 6.04996956,
+          "origin_svg": [
+            -51.249465,
+            -63.425256
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "k": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.29999,
+            "body-height": 3.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "capacitance-plate"
+          ],
+          "svg_bytes": 2413,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-varactor-medium-thin",
+          "symbol_id": "diode-varactor",
+          "name": "Varactor diode",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/diode-varactor-medium-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 7.14995818,
+          "origin_svg": [
+            -48.627446,
+            -61.866222
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -1.0583333331679353e-06
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "k": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.4,
+            "body-height": 5.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "capacitance-plate"
+          ],
+          "svg_bytes": 2409,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-varactor-medium-medium",
+          "symbol_id": "diode-varactor",
+          "name": "Varactor diode",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/diode-varactor-medium-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 7.1999602,
+          "origin_svg": [
+            -48.556576,
+            -61.795352
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "k": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.4,
+            "body-height": 5.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "capacitance-plate"
+          ],
+          "svg_bytes": 2438,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-varactor-medium-thick",
+          "symbol_id": "diode-varactor",
+          "name": "Varactor diode",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/diode-varactor-medium-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 7.29996459,
+          "origin_svg": [
+            -48.414834,
+            -61.65361
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "k": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.4,
+            "body-height": 5.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "capacitance-plate"
+          ],
+          "svg_bytes": 2421,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-varactor-large-thin",
+          "symbol_id": "diode-varactor",
+          "name": "Varactor diode",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/diode-varactor-large-thin.svg",
+          "width_mm": 18.14990479,
+          "height_mm": 8.39995286,
+          "origin_svg": [
+            -42.958185,
+            -60.094576
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -1.0583333306612984e-06
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "k": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.49998,
+            "body-height": 6.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "capacitance-plate"
+          ],
+          "svg_bytes": 2401,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-varactor-large-medium",
+          "symbol_id": "diode-varactor",
+          "name": "Varactor diode",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/diode-varactor-large-medium.svg",
+          "width_mm": 18.19990716,
+          "height_mm": 8.44995523,
+          "origin_svg": [
+            -42.887314,
+            -60.023706
+          ],
+          "visual_center_from_origin_mm": [
+            2.5066368733759088e-15,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "k": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.49998,
+            "body-height": 6.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "capacitance-plate"
+          ],
+          "svg_bytes": 2431,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-varactor-large-thick",
+          "symbol_id": "diode-varactor",
+          "name": "Varactor diode",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/diode-varactor-large-thick.svg",
+          "width_mm": 18.29991507,
+          "height_mm": 8.54995962,
+          "origin_svg": [
+            -42.745573,
+            -59.881964
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "k": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.49998,
+            "body-height": 6.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode",
+            "capacitance-plate"
+          ],
+          "svg_bytes": 2416,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "44e19570b491554bf670fd580a521aa2dcbba6483da85e212a4746487966fba7"
+    },
+    {
+      "schema_version": 1,
+      "id": "diode-zener",
+      "revision": 1,
+      "name": "Zener diode",
+      "description": "Zener or avalanche diode, also usable for a unidirectional TVS; the bent bar marks the cathode.",
+      "keywords": [
+        "diode",
+        "semiconductor",
+        "zener",
+        "protection",
+        "transient suppression",
+        "TVS",
+        "avalanche",
+        "unidirectional TVS",
+        "voltage clamp",
+        "diodes",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "diodes"
+      ],
+      "family": "diodes",
+      "batch": "overnight-diodes-02",
+      "attributes": {
+        "variant": "zener",
+        "polarized": true
+      },
+      "recipe": "diode-zener",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "zDo",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "Anode",
+          "description": "Anode",
+          "kind": "passive",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "k",
+          "name": "Cathode",
+          "description": "Cathode",
+          "kind": "passive",
+          "lead_part": "lead-k"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-a",
+          "description": "Electrical lead: Anode"
+        },
+        {
+          "id": "lead-k",
+          "description": "Electrical lead: Cathode"
+        },
+        {
+          "id": "junction",
+          "description": "Junction"
+        },
+        {
+          "id": "cathode",
+          "description": "Cathode"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "diode-zener-small-thin",
+          "symbol_id": "diode-zener",
+          "name": "Zener diode",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/diode-zener-small-thin.svg",
+          "width_mm": 12.14993407,
+          "height_mm": 6.79995677,
+          "origin_svg": [
+            -51.462077,
+            -62.362287
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "k": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.625,
+            "body-height": 3.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 2127,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-zener-small-medium",
+          "symbol_id": "diode-zener",
+          "name": "Zener diode",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/diode-zener-small-medium.svg",
+          "width_mm": 12.19993997,
+          "height_mm": 6.84995914,
+          "origin_svg": [
+            -51.391206,
+            -62.291416
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666653306492e-07,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "k": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.625,
+            "body-height": 3.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 2151,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-zener-small-thick",
+          "symbol_id": "diode-zener",
+          "name": "Zener diode",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/diode-zener-small-thick.svg",
+          "width_mm": 12.29994436,
+          "height_mm": 6.94996352,
+          "origin_svg": [
+            -51.249465,
+            -62.149675
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            1.0583333356745722e-06
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "k": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.625,
+            "body-height": 3.75,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 2139,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-zener-medium-thin",
+          "symbol_id": "diode-zener",
+          "name": "Zener diode",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/diode-zener-medium-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 8.3499579,
+          "origin_svg": [
+            -48.627446,
+            -60.165432
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "k": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.5,
+            "body-height": 5.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 2137,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-zener-medium-medium",
+          "symbol_id": "diode-zener",
+          "name": "Zener diode",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/diode-zener-medium-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 8.39996344,
+          "origin_svg": [
+            -48.556576,
+            -60.094561
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "k": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.5,
+            "body-height": 5.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 2161,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-zener-medium-thick",
+          "symbol_id": "diode-zener",
+          "name": "Zener diode",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/diode-zener-medium-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 8.49996783,
+          "origin_svg": [
+            -48.414834,
+            -59.95282
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -6.0,
+              0.0
+            ],
+            "k": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.5,
+            "body-height": 5.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 2147,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-zener-large-thin",
+          "symbol_id": "diode-zener",
+          "name": "Zener diode",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/diode-zener-large-thin.svg",
+          "width_mm": 18.14990479,
+          "height_mm": 9.89994139,
+          "origin_svg": [
+            -42.958185,
+            -57.968607
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "k": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.375,
+            "body-height": 6.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 2131,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-zener-large-medium",
+          "symbol_id": "diode-zener",
+          "name": "Zener diode",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/diode-zener-large-medium.svg",
+          "width_mm": 18.19990716,
+          "height_mm": 9.94994341,
+          "origin_svg": [
+            -42.887314,
+            -57.897736
+          ],
+          "visual_center_from_origin_mm": [
+            2.5066368733759088e-15,
+            2.5066368733759088e-15
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "k": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.375,
+            "body-height": 6.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 2156,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "diode-zener-large-thick",
+          "symbol_id": "diode-zener",
+          "name": "Zener diode",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/diode-zener-large-thick.svg",
+          "width_mm": 18.29991507,
+          "height_mm": 10.04995132,
+          "origin_svg": [
+            -42.745573,
+            -57.755995
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -8.0,
+              0.0
+            ],
+            "k": [
+              8.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.375,
+            "body-height": 6.25,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-k",
+            "junction",
+            "cathode"
+          ],
+          "svg_bytes": 2144,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "7f0bcca5c98ffab902b2bc9f7bf9bbe1f164a90bfeeffdbc3a7fe201c6c5ed0a"
     }
   ]
 }

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000021 40.251767 20.409336" width="14.19992891mm" height="7.19996020mm">
+  <title>Diode</title>
+  <desc>Rectifying diode; the bar marks the cathode.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 5.0, "body-width": 3.5, "grid": 1.0}, "origin_svg": [-48.556576, -61.795352], "parts": ["lead-a", "lead-k", "junction", "cathode"], "pins_mm": {"a": [-6.0, 0.0], "k": [6.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "medium", "size_factor": 1.0, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "diode"}</metadata>
+  <g id="sc-diode-r1-medium-medium--sc-diode-r1-medium-medium" inkscape:label="Diode / medium / medium" data-symbol="diode" data-revision="1" data-size="medium" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-48.556576,-61.795352)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="sc-diode-r1-medium-medium--sc-diode-r1-medium-medium--lead-a" inkscape:label="lead-a">
+      <path d="M-17.07156 0H-5.69052" fill="none" />
+      <desc>Electrical lead: Anode</desc>
+    </g>
+    <g data-part="lead-k" id="sc-diode-r1-medium-medium--sc-diode-r1-medium-medium--lead-k" inkscape:label="lead-k">
+      <path d="M17.07156 0H4.26788" fill="none" />
+      <desc>Electrical lead: Cathode</desc>
+    </g>
+    <g data-part="junction" id="sc-diode-r1-medium-medium--sc-diode-r1-medium-medium--junction" inkscape:label="junction">
+      <path d="M-5.69052-7.11314L4.26788 0L-5.69052 7.11314V-7.11314" fill="none" />
+      <desc>Junction</desc>
+    </g>
+    <g data-part="cathode" id="sc-diode-r1-medium-medium--sc-diode-r1-medium-medium--cathode" inkscape:label="cathode">
+      <path d="M4.26788-7.11314V7.11314" fill="none" />
+      <desc>Cathode</desc>
+    </g>
+  </g>
+</svg>

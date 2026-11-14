@@ -7,16 +7,16 @@
 
 ## Latest changes
 
-14-11-2026: **batch 02 is in progress**. 5 of 80 new designs are complete;
-the current source library has **31 designs / 441 configurations**.
+14-11-2026: **batch 02 is in progress**. 12 of 80 new designs are complete;
+the current source library has **38 designs / 504 configurations**.
 The original 26 designs remain Verified; new designs are Unverified.
-Completed families: capacitors. See the [finite inventory](docs/BATCH_02.md).
+Completed families: capacitors, diodes. See the [finite inventory](docs/BATCH_02.md).
 
-Local build: `0d6b41588a1a`. The shared preview remains on the previous
+Local build: `7342b5918472`. The shared preview remains on the previous
 release until the tested batch is published. Family checkpoint commits are pushed
 on `work/agent-b-symbols`; main and A's work are not merged by this task.
 
-Checks so far: 46 Python tests, eight JavaScript tests, all declared family
+Checks so far: 47 Python tests, eight JavaScript tests, all declared family
 configurations, Inkscape vector bounds and composite save/reopen. Actual renders
 were visually inspected at common scale and normal size, including Small/Thick
 and every adjustment orientation. All 342 approved SVG bytes and 26 approval
@@ -175,7 +175,7 @@ node --test tests\review.test.cjs tests\configurations.test.cjs
 .\.venv\Scripts\python.exe tests\check_docs.py
 ```
 
-Expect **46 Python tests and 8 JavaScript tests**, a **487-file** website, and no
+Expect **47 Python tests and 8 JavaScript tests**, a **550-file** website, and no
 broken documentation links. Tests cover all designs/configurations, accepted SVG
 bytes, pins, independent strokes, editable parts, exports, HTTP boundaries and
 approval validity. Compare `app/dist/build.json` with the hosted `build.json` when
@@ -194,10 +194,10 @@ checking that both devices have the same version.
 | Copy approvals or Copy symbol reference | Approval JSON includes exact revision/fingerprint; reference includes name/ID/revision/link |
 | Open the reference link in another browser | Same design selected; local approvals are not transferred |
 | Switch dark/light; reload; use Small/Thick and Grid & pins | Theme persists; stroke changes keep pins fixed; preview aids toggle together |
-| Export Small/Thick/Down-left variable resistor, then the library while filtered | Single matches the selected marking; library has all 31 designs and Down-left on its four adjustable designs |
+| Export Small/Thick/Down-left variable resistor, then the library while filtered | Single matches the selected marking; library has all 38 designs and Down-left on its four adjustable designs |
 | Select a coil; export the library | Orientation controls disappear; adjustable designs in the library use Up-right |
 | Inspect exported artwork | Black vectors, no blue points/grid; NTC/PTC glyph outlines stay grouped as temperature-mark |
-| Open the library in Inkscape Symbols | 31 thumbnails; placed artwork can be unlinked, edited, saved and reopened |
+| Open the library in Inkscape Symbols | 38 thumbnails; placed artwork can be unlinked, edited, saved and reopened |
 | Use Tab, Enter, Escape, arrow keys on the tabs, and `/`; narrow the window | Controls remain reachable; dialogs return focus; search focuses; page does not overflow |
 
 Repeat on both Windows devices using the [shared preview](https://schematica-preview.dinodubroja.workers.dev/).
@@ -276,9 +276,9 @@ Creates `app/build/exports/` with a hash manifest and three ZIPs:
 
 | Package | Contents |
 |---|---|
-| `web-preview.zip` | 487 static website files, ready for Cloudflare upload |
-| `all-symbols.zip` | 441 individual SVGs |
-| `tex-bundles.zip` | 441 standalone configurations, each with `symbol.tex` and required helpers |
+| `web-preview.zip` | 550 static website files, ready for Cloudflare upload |
+| `all-symbols.zip` | 504 individual SVGs |
+| `tex-bundles.zip` | 504 standalone configurations, each with `symbol.tex` and required helpers |
 
 Only the shared TeX recipes/helpers and prebuilt browser SVGs are maintained.
 Generated standalone bundles and ZIPs are not committed. To use the native TeX
