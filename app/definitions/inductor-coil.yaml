@@ -3,7 +3,12 @@ id: inductor-coil
 revision: 1
 name: Coil inductor
 description: Inductor drawn as a coil, without a core marking.
-keywords: [inductor, coil, elliptical, no core, passive]
+keywords:
+- inductor
+- coil
+- elliptical
+- no core
+- passive
 types:
 - passive
 - inductor
@@ -39,3 +44,5 @@ parts:
   description: Lead from terminal A to body
 - id: lead-b
   description: Lead from body to terminal B
+family: inductors-and-transformers
+batch: starter

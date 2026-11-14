@@ -516,7 +516,9 @@
           }
         }
       ],
-      "source_fingerprint": "5ec5fe7a0adf90d34dd71ffed5eecab8cbd722dc76f2a31ea8ae96040884680c"
+      "source_fingerprint": "5ec5fe7a0adf90d34dd71ffed5eecab8cbd722dc76f2a31ea8ae96040884680c",
+      "family": "resistors",
+      "batch": "starter"
     },
     {
       "schema_version": 1,
@@ -999,7 +1001,9 @@
           }
         }
       ],
-      "source_fingerprint": "7de9886bea0b5421e771858d8d2d9e476d1b336a2ada5b7c3439b6abf7c63e25"
+      "source_fingerprint": "7de9886bea0b5421e771858d8d2d9e476d1b336a2ada5b7c3439b6abf7c63e25",
+      "family": "resistors",
+      "batch": "starter"
     },
     {
       "schema_version": 1,
@@ -1482,7 +1486,9 @@
           }
         }
       ],
-      "source_fingerprint": "cd1756eef7cf3100e94ef7a4a67de39a521e967ab796e60f46e929956f8282ec"
+      "source_fingerprint": "cd1756eef7cf3100e94ef7a4a67de39a521e967ab796e60f46e929956f8282ec",
+      "family": "inductors-and-transformers",
+      "batch": "starter"
     },
     {
       "schema_version": 1,
@@ -1976,7 +1982,9 @@
           }
         }
       ],
-      "source_fingerprint": "ef8713a7725e344d84e2c812110464f34e6ea05c746f0779971d8cec8e967536"
+      "source_fingerprint": "ef8713a7725e344d84e2c812110464f34e6ea05c746f0779971d8cec8e967536",
+      "family": "capacitors",
+      "batch": "starter"
     },
     {
       "schema_version": 1,
@@ -2543,7 +2551,9 @@
           }
         }
       ],
-      "source_fingerprint": "969d9d95fc865a2c53cff2bfdbef18d7d344824f46f80f39384c5e1add45a1ac"
+      "source_fingerprint": "969d9d95fc865a2c53cff2bfdbef18d7d344824f46f80f39384c5e1add45a1ac",
+      "family": "analog",
+      "batch": "starter"
     },
     {
       "schema_version": 1,
@@ -3222,7 +3232,9 @@
           }
         }
       ],
-      "source_fingerprint": "1b2f29fbcd7c49d291725d5930a0bbc286beb9f4e25da9d9d7bab60fe0b2cf31"
+      "source_fingerprint": "1b2f29fbcd7c49d291725d5930a0bbc286beb9f4e25da9d9d7bab60fe0b2cf31",
+      "family": "analog",
+      "batch": "starter"
     },
     {
       "schema_version": 1,
@@ -19947,6 +19959,5923 @@
         }
       ],
       "source_fingerprint": "82dfa59f3b6a769a60df018b62736ab088444e62a81588c8da5ff0a7621357f0"
+    },
+    {
+      "schema_version": 1,
+      "id": "capacitor-feedthrough",
+      "revision": 1,
+      "name": "Feedthrough capacitor",
+      "description": "Three-terminal feedthrough capacitor: the input and output share a through conductor, capacitively coupled to the case terminal.",
+      "keywords": [
+        "capacitor",
+        "passive",
+        "feedthrough",
+        "capacitors",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "capacitors"
+      ],
+      "family": "capacitors",
+      "batch": "overnight-capacitors-02",
+      "attributes": {
+        "polarized": false,
+        "variant": "feedthrough"
+      },
+      "recipe": "capacitor-feedthrough",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "custom three-terminal feedthrough form",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "in",
+          "name": "Through input",
+          "description": "Through input",
+          "kind": "passive",
+          "lead_part": "lead-in"
+        },
+        {
+          "id": "out",
+          "name": "Through output",
+          "description": "Through output",
+          "kind": "passive",
+          "lead_part": "lead-out"
+        },
+        {
+          "id": "case",
+          "name": "Case",
+          "description": "Case",
+          "kind": "passive",
+          "lead_part": "lead-case"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-in",
+          "description": "Electrical lead: Through input"
+        },
+        {
+          "id": "lead-out",
+          "description": "Electrical lead: Through output"
+        },
+        {
+          "id": "lead-case",
+          "description": "Electrical lead: Case"
+        },
+        {
+          "id": "through-conductor",
+          "description": "Through conductor"
+        },
+        {
+          "id": "case-plate",
+          "description": "Case plate"
+        },
+        {
+          "id": "enclosure",
+          "description": "Enclosure"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "capacitor-feedthrough-small-thin",
+          "symbol_id": "capacitor-feedthrough",
+          "name": "Feedthrough capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/capacitor-feedthrough-small-thin.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 7.42495446,
+          "origin_svg": [
+            -54.296708,
+            -65.338659
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777743804626e-07,
+            1.3624960402777815
+          ],
+          "pins_mm": {
+            "in": [
+              -4.0,
+              0.0
+            ],
+            "out": [
+              4.0,
+              0.0
+            ],
+            "case": [
+              0.0,
+              -4.0
+            ]
+          },
+          "dimensions_mm": {
+            "plate-gap": 0.97499,
+            "body-width": 4.5,
+            "body-height": 3.15,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "lead-case",
+            "through-conductor",
+            "case-plate",
+            "enclosure"
+          ],
+          "svg_bytes": 2927,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-feedthrough-small-medium",
+          "symbol_id": "capacitor-feedthrough",
+          "name": "Feedthrough capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/capacitor-feedthrough-small-medium.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 7.47495647,
+          "origin_svg": [
+            -54.225837,
+            -65.267789
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            1.3624967458333277
+          ],
+          "pins_mm": {
+            "in": [
+              -4.0,
+              0.0
+            ],
+            "out": [
+              4.0,
+              0.0
+            ],
+            "case": [
+              0.0,
+              -4.0
+            ]
+          },
+          "dimensions_mm": {
+            "plate-gap": 0.97499,
+            "body-width": 4.5,
+            "body-height": 3.15,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "lead-case",
+            "through-conductor",
+            "case-plate",
+            "enclosure"
+          ],
+          "svg_bytes": 2959,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-feedthrough-small-thick",
+          "symbol_id": "capacitor-feedthrough",
+          "name": "Feedthrough capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/capacitor-feedthrough-small-thick.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 7.57496086,
+          "origin_svg": [
+            -54.084096,
+            -65.126047
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            1.362497274999998
+          ],
+          "pins_mm": {
+            "in": [
+              -4.0,
+              0.0
+            ],
+            "out": [
+              4.0,
+              0.0
+            ],
+            "case": [
+              0.0,
+              -4.0
+            ]
+          },
+          "dimensions_mm": {
+            "plate-gap": 0.97499,
+            "body-width": 4.5,
+            "body-height": 3.15,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "lead-case",
+            "through-conductor",
+            "case-plate",
+            "enclosure"
+          ],
+          "svg_bytes": 2942,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-feedthrough-medium-thin",
+          "symbol_id": "capacitor-feedthrough",
+          "name": "Feedthrough capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/capacitor-feedthrough-medium-thin.svg",
+          "width_mm": 12.14993407,
+          "height_mm": 8.84994808,
+          "origin_svg": [
+            -51.462077,
+            -64.133933
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            1.6499937013888901
+          ],
+          "pins_mm": {
+            "in": [
+              -5.0,
+              0.0
+            ],
+            "out": [
+              5.0,
+              0.0
+            ],
+            "case": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "plate-gap": 1.3,
+            "body-width": 6.0,
+            "body-height": 4.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "lead-case",
+            "through-conductor",
+            "case-plate",
+            "enclosure"
+          ],
+          "svg_bytes": 2937,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-feedthrough-medium-medium",
+          "symbol_id": "capacitor-feedthrough",
+          "name": "Feedthrough capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/capacitor-feedthrough-medium-medium.svg",
+          "width_mm": 12.19993997,
+          "height_mm": 8.8999501,
+          "origin_svg": [
+            -51.391206,
+            -64.063062
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666653306492e-07,
+            1.649994054166667
+          ],
+          "pins_mm": {
+            "in": [
+              -5.0,
+              0.0
+            ],
+            "out": [
+              5.0,
+              0.0
+            ],
+            "case": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "plate-gap": 1.3,
+            "body-width": 6.0,
+            "body-height": 4.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "lead-case",
+            "through-conductor",
+            "case-plate",
+            "enclosure"
+          ],
+          "svg_bytes": 2970,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-feedthrough-medium-thick",
+          "symbol_id": "capacitor-feedthrough",
+          "name": "Feedthrough capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/capacitor-feedthrough-medium-thick.svg",
+          "width_mm": 12.29994436,
+          "height_mm": 8.99995801,
+          "origin_svg": [
+            -51.249465,
+            -63.921321
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            1.6499935249999966
+          ],
+          "pins_mm": {
+            "in": [
+              -5.0,
+              0.0
+            ],
+            "out": [
+              5.0,
+              0.0
+            ],
+            "case": [
+              0.0,
+              -5.0
+            ]
+          },
+          "dimensions_mm": {
+            "plate-gap": 1.3,
+            "body-width": 6.0,
+            "body-height": 4.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "lead-case",
+            "through-conductor",
+            "case-plate",
+            "enclosure"
+          ],
+          "svg_bytes": 2952,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-feedthrough-large-thin",
+          "symbol_id": "capacitor-feedthrough",
+          "name": "Feedthrough capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/capacitor-feedthrough-large-thin.svg",
+          "width_mm": 16.14991231,
+          "height_mm": 11.27492242,
+          "origin_svg": [
+            -45.792816,
+            -62.929253
+          ],
+          "visual_center_from_origin_mm": [
+            -8.819444422177487e-07,
+            2.437496183333331
+          ],
+          "pins_mm": {
+            "in": [
+              -7.0,
+              0.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ],
+            "case": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "plate-gap": 1.625,
+            "body-width": 7.5,
+            "body-height": 5.24998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "lead-case",
+            "through-conductor",
+            "case-plate",
+            "enclosure"
+          ],
+          "svg_bytes": 2932,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-feedthrough-large-medium",
+          "symbol_id": "capacitor-feedthrough",
+          "name": "Feedthrough capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/capacitor-feedthrough-large-medium.svg",
+          "width_mm": 16.19991786,
+          "height_mm": 11.32492443,
+          "origin_svg": [
+            -45.721945,
+            -62.858382
+          ],
+          "visual_center_from_origin_mm": [
+            1.763888909501866e-07,
+            2.4374965361111105
+          ],
+          "pins_mm": {
+            "in": [
+              -7.0,
+              0.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ],
+            "case": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "plate-gap": 1.625,
+            "body-width": 7.5,
+            "body-height": 5.24998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "lead-case",
+            "through-conductor",
+            "case-plate",
+            "enclosure"
+          ],
+          "svg_bytes": 2967,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-feedthrough-large-thick",
+          "symbol_id": "capacitor-feedthrough",
+          "name": "Feedthrough capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/capacitor-feedthrough-large-thick.svg",
+          "width_mm": 16.29992577,
+          "height_mm": 11.42493235,
+          "origin_svg": [
+            -45.580203,
+            -62.716641
+          ],
+          "visual_center_from_origin_mm": [
+            7.055555562808358e-07,
+            2.4374960069444453
+          ],
+          "pins_mm": {
+            "in": [
+              -7.0,
+              0.0
+            ],
+            "out": [
+              7.0,
+              0.0
+            ],
+            "case": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "plate-gap": 1.625,
+            "body-width": 7.5,
+            "body-height": 5.24998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-in",
+            "lead-out",
+            "lead-case",
+            "through-conductor",
+            "case-plate",
+            "enclosure"
+          ],
+          "svg_bytes": 2950,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "2912fc608fb7dcf0568c11cb2ce56367ac425cd7fdfa1acc3121953a040d363d"
+    },
+    {
+      "schema_version": 1,
+      "id": "capacitor-polarized",
+      "revision": 1,
+      "name": "Polarized capacitor",
+      "description": "Polarized capacitor with straight plates; the left terminal is positive.",
+      "keywords": [
+        "capacitor",
+        "passive",
+        "polarized",
+        "electrolytic",
+        "capacitors",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "capacitors"
+      ],
+      "family": "capacitors",
+      "batch": "overnight-capacitors-02",
+      "attributes": {
+        "polarized": true,
+        "variant": "polarized"
+      },
+      "recipe": "capacitor-polarized",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "eC",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "positive",
+          "name": "Positive",
+          "description": "Positive",
+          "kind": "passive",
+          "lead_part": "lead-positive"
+        },
+        {
+          "id": "negative",
+          "name": "Negative",
+          "description": "Negative",
+          "kind": "passive",
+          "lead_part": "lead-negative"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-positive",
+          "description": "Electrical lead: Positive"
+        },
+        {
+          "id": "lead-negative",
+          "description": "Electrical lead: Negative"
+        },
+        {
+          "id": "plate-positive",
+          "description": "Plate positive"
+        },
+        {
+          "id": "plate-negative",
+          "description": "Plate negative"
+        },
+        {
+          "id": "polarity",
+          "description": "Polarity"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "capacitor-polarized-small-thin",
+          "symbol_id": "capacitor-polarized",
+          "name": "Polarized capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/capacitor-polarized-small-thin.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 7.14992291,
+          "origin_svg": [
+            -54.296708,
+            -61.866268
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777743804626e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -4.0,
+              0.0
+            ],
+            "negative": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-positive",
+            "plate-negative",
+            "polarity"
+          ],
+          "svg_bytes": 2613,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-polarized-small-medium",
+          "symbol_id": "capacitor-polarized",
+          "name": "Polarized capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/capacitor-polarized-small-medium.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 7.1999288,
+          "origin_svg": [
+            -54.225837,
+            -61.795397
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -4.0,
+              0.0
+            ],
+            "negative": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-positive",
+            "plate-negative",
+            "polarity"
+          ],
+          "svg_bytes": 2642,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-polarized-small-thick",
+          "symbol_id": "capacitor-polarized",
+          "name": "Polarized capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/capacitor-polarized-small-thick.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 7.29993284,
+          "origin_svg": [
+            -54.084096,
+            -61.653656
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -4.0,
+              0.0
+            ],
+            "negative": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-positive",
+            "plate-negative",
+            "polarity"
+          ],
+          "svg_bytes": 2627,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-polarized-medium-thin",
+          "symbol_id": "capacitor-polarized",
+          "name": "Polarized capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/capacitor-polarized-medium-thin.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 8.81660141,
+          "origin_svg": [
+            -54.296708,
+            -59.504048
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777743804626e-07,
+            1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -4.0,
+              0.0
+            ],
+            "negative": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-positive",
+            "plate-negative",
+            "polarity"
+          ],
+          "svg_bytes": 2639,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-polarized-medium-medium",
+          "symbol_id": "capacitor-polarized",
+          "name": "Polarized capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/capacitor-polarized-medium-medium.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 8.86660378,
+          "origin_svg": [
+            -54.225837,
+            -59.433177
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -4.0,
+              0.0
+            ],
+            "negative": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-positive",
+            "plate-negative",
+            "polarity"
+          ],
+          "svg_bytes": 2667,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-polarized-medium-thick",
+          "symbol_id": "capacitor-polarized",
+          "name": "Polarized capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/capacitor-polarized-medium-thick.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 8.96661169,
+          "origin_svg": [
+            -54.084096,
+            -59.291436
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -4.0,
+              0.0
+            ],
+            "negative": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-positive",
+            "plate-negative",
+            "polarity"
+          ],
+          "svg_bytes": 2653,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-polarized-large-thin",
+          "symbol_id": "capacitor-polarized",
+          "name": "Polarized capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/capacitor-polarized-large-thin.svg",
+          "width_mm": 12.14993407,
+          "height_mm": 10.48324851,
+          "origin_svg": [
+            -51.462077,
+            -57.141873
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -5.0,
+              0.0
+            ],
+            "negative": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-positive",
+            "plate-negative",
+            "polarity"
+          ],
+          "svg_bytes": 2624,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-polarized-large-medium",
+          "symbol_id": "capacitor-polarized",
+          "name": "Polarized capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/capacitor-polarized-large-medium.svg",
+          "width_mm": 12.19993997,
+          "height_mm": 10.53325088,
+          "origin_svg": [
+            -51.391206,
+            -57.071003
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666653306492e-07,
+            -2.5066368733759088e-15
+          ],
+          "pins_mm": {
+            "positive": [
+              -5.0,
+              0.0
+            ],
+            "negative": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-positive",
+            "plate-negative",
+            "polarity"
+          ],
+          "svg_bytes": 2652,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-polarized-large-thick",
+          "symbol_id": "capacitor-polarized",
+          "name": "Polarized capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/capacitor-polarized-large-thick.svg",
+          "width_mm": 12.29994436,
+          "height_mm": 10.63325844,
+          "origin_svg": [
+            -51.249465,
+            -56.929261
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            -1.0583333331679353e-06
+          ],
+          "pins_mm": {
+            "positive": [
+              -5.0,
+              0.0
+            ],
+            "negative": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-positive",
+            "plate-negative",
+            "polarity"
+          ],
+          "svg_bytes": 2637,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "cfc3bdae980cb50ff96862763e7c297cc3ccfdfbdb3056c6782e1fcc9ad904c4"
+    },
+    {
+      "schema_version": 1,
+      "id": "capacitor-polarized-curved",
+      "revision": 1,
+      "name": "Polarized capacitor \u00c3\u201a\u00c2\u00b7 curved",
+      "description": "Polarized capacitor with a curved negative plate; the left terminal is positive.",
+      "keywords": [
+        "capacitor",
+        "passive",
+        "polarized",
+        "electrolytic",
+        "capacitors",
+        "curved",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "capacitors"
+      ],
+      "family": "capacitors",
+      "batch": "overnight-capacitors-02",
+      "attributes": {
+        "polarized": true,
+        "variant": "polarized-curved"
+      },
+      "recipe": "capacitor-polarized-curved",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "cC",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "positive",
+          "name": "Positive",
+          "description": "Positive",
+          "kind": "passive",
+          "lead_part": "lead-positive"
+        },
+        {
+          "id": "negative",
+          "name": "Negative",
+          "description": "Negative",
+          "kind": "passive",
+          "lead_part": "lead-negative"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-positive",
+          "description": "Electrical lead: Positive"
+        },
+        {
+          "id": "lead-negative",
+          "description": "Electrical lead: Negative"
+        },
+        {
+          "id": "plate-positive",
+          "description": "Plate positive"
+        },
+        {
+          "id": "plate-negative",
+          "description": "Plate negative"
+        },
+        {
+          "id": "polarity",
+          "description": "Polarity"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "capacitor-polarized-curved-small-thin",
+          "symbol_id": "capacitor-polarized-curved",
+          "name": "Polarized capacitor \u00c3\u201a\u00c2\u00b7 curved",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/capacitor-polarized-curved-small-thin.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 7.14992291,
+          "origin_svg": [
+            -54.296708,
+            -61.866268
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777743804626e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -4.0,
+              0.0
+            ],
+            "negative": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-positive",
+            "plate-negative",
+            "polarity"
+          ],
+          "svg_bytes": 2793,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-polarized-curved-small-medium",
+          "symbol_id": "capacitor-polarized-curved",
+          "name": "Polarized capacitor \u00c3\u201a\u00c2\u00b7 curved",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/capacitor-polarized-curved-small-medium.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 7.1999288,
+          "origin_svg": [
+            -54.225837,
+            -61.795397
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -4.0,
+              0.0
+            ],
+            "negative": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-positive",
+            "plate-negative",
+            "polarity"
+          ],
+          "svg_bytes": 2822,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-polarized-curved-small-thick",
+          "symbol_id": "capacitor-polarized-curved",
+          "name": "Polarized capacitor \u00c3\u201a\u00c2\u00b7 curved",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/capacitor-polarized-curved-small-thick.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 7.29993284,
+          "origin_svg": [
+            -54.084096,
+            -61.653656
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -4.0,
+              0.0
+            ],
+            "negative": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-positive",
+            "plate-negative",
+            "polarity"
+          ],
+          "svg_bytes": 2807,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-polarized-curved-medium-thin",
+          "symbol_id": "capacitor-polarized-curved",
+          "name": "Polarized capacitor \u00c3\u201a\u00c2\u00b7 curved",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/capacitor-polarized-curved-medium-thin.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 8.81660141,
+          "origin_svg": [
+            -54.296708,
+            -59.504048
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777743804626e-07,
+            1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -4.0,
+              0.0
+            ],
+            "negative": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-positive",
+            "plate-negative",
+            "polarity"
+          ],
+          "svg_bytes": 2819,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-polarized-curved-medium-medium",
+          "symbol_id": "capacitor-polarized-curved",
+          "name": "Polarized capacitor \u00c3\u201a\u00c2\u00b7 curved",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/capacitor-polarized-curved-medium-medium.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 8.86660378,
+          "origin_svg": [
+            -54.225837,
+            -59.433177
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -4.0,
+              0.0
+            ],
+            "negative": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-positive",
+            "plate-negative",
+            "polarity"
+          ],
+          "svg_bytes": 2847,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-polarized-curved-medium-thick",
+          "symbol_id": "capacitor-polarized-curved",
+          "name": "Polarized capacitor \u00c3\u201a\u00c2\u00b7 curved",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/capacitor-polarized-curved-medium-thick.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 8.96661169,
+          "origin_svg": [
+            -54.084096,
+            -59.291436
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -4.0,
+              0.0
+            ],
+            "negative": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-positive",
+            "plate-negative",
+            "polarity"
+          ],
+          "svg_bytes": 2833,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-polarized-curved-large-thin",
+          "symbol_id": "capacitor-polarized-curved",
+          "name": "Polarized capacitor \u00c3\u201a\u00c2\u00b7 curved",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/capacitor-polarized-curved-large-thin.svg",
+          "width_mm": 12.14993407,
+          "height_mm": 10.48324851,
+          "origin_svg": [
+            -51.462077,
+            -57.141873
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -5.0,
+              0.0
+            ],
+            "negative": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-positive",
+            "plate-negative",
+            "polarity"
+          ],
+          "svg_bytes": 2804,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-polarized-curved-large-medium",
+          "symbol_id": "capacitor-polarized-curved",
+          "name": "Polarized capacitor \u00c3\u201a\u00c2\u00b7 curved",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/capacitor-polarized-curved-large-medium.svg",
+          "width_mm": 12.19993997,
+          "height_mm": 10.53325088,
+          "origin_svg": [
+            -51.391206,
+            -57.071003
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666653306492e-07,
+            -2.5066368733759088e-15
+          ],
+          "pins_mm": {
+            "positive": [
+              -5.0,
+              0.0
+            ],
+            "negative": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-positive",
+            "plate-negative",
+            "polarity"
+          ],
+          "svg_bytes": 2832,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "capacitor-polarized-curved-large-thick",
+          "symbol_id": "capacitor-polarized-curved",
+          "name": "Polarized capacitor \u00c3\u201a\u00c2\u00b7 curved",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/capacitor-polarized-curved-large-thick.svg",
+          "width_mm": 12.29994436,
+          "height_mm": 10.63325844,
+          "origin_svg": [
+            -51.249465,
+            -56.929261
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            -1.0583333331679353e-06
+          ],
+          "pins_mm": {
+            "positive": [
+              -5.0,
+              0.0
+            ],
+            "negative": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-positive",
+            "plate-negative",
+            "polarity"
+          ],
+          "svg_bytes": 2817,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "87a81e92942acea84e95d29e1d4c386d7cb7f9f937adce140ffb119fa026b697"
+    },
+    {
+      "schema_version": 1,
+      "id": "capacitor-trimmer",
+      "revision": 1,
+      "name": "Trimmer capacitor",
+      "description": "Preset adjustable capacitor with a diagonal trimming bar; two electrical terminals.",
+      "keywords": [
+        "capacitor",
+        "passive",
+        "adjustable",
+        "capacitors",
+        "trimmer",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "capacitors"
+      ],
+      "family": "capacitors",
+      "batch": "overnight-capacitors-02",
+      "attributes": {
+        "polarized": false,
+        "variant": "trimmer"
+      },
+      "recipe": "capacitor-trimmer",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "vC preset-mark adaptation",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "A",
+          "description": "A",
+          "kind": "passive",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "b",
+          "name": "B",
+          "description": "B",
+          "kind": "passive",
+          "lead_part": "lead-b"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-a",
+          "description": "Electrical lead: A"
+        },
+        {
+          "id": "lead-b",
+          "description": "Electrical lead: B"
+        },
+        {
+          "id": "plate-a",
+          "description": "Plate a"
+        },
+        {
+          "id": "plate-b",
+          "description": "Plate b"
+        },
+        {
+          "id": "adjustment",
+          "description": "Adjustment"
+        }
+      ],
+      "drawing": {
+        "variant": "trimmer"
+      },
+      "options": {
+        "orientation": {
+          "name": "Arrow orientation",
+          "default": "up-right",
+          "values": [
+            {
+              "id": "up-right",
+              "name": "Up-right"
+            },
+            {
+              "id": "up-left",
+              "name": "Up-left"
+            },
+            {
+              "id": "down-right",
+              "name": "Down-right"
+            },
+            {
+              "id": "down-left",
+              "name": "Down-left"
+            }
+          ]
+        }
+      },
+      "configurations": [
+        {
+          "key": "capacitor-trimmer-small-thin-orientation-up-right",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/capacitor-trimmer-small-thin-orientation-up-right.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 9.13242677,
+          "origin_svg": [
+            -54.296708,
+            -58.51429
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777743804626e-07,
+            -0.19125353333333306
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2792,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-right"
+            }
+          },
+          "options": {
+            "orientation": "up-right"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-small-thin-orientation-up-left",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/capacitor-trimmer-small-thin-orientation-up-left.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 9.13242677,
+          "origin_svg": [
+            -54.296708,
+            -58.51429
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777743804626e-07,
+            -0.19125353333333306
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2780,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-left"
+            }
+          },
+          "options": {
+            "orientation": "up-left"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-small-thin-orientation-down-right",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/capacitor-trimmer-small-thin-orientation-down-right.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 9.13242677,
+          "origin_svg": [
+            -54.296708,
+            -59.598557
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777743804626e-07,
+            0.1912517694444436
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2822,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-right"
+            }
+          },
+          "options": {
+            "orientation": "down-right"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-small-thin-orientation-down-left",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/capacitor-trimmer-small-thin-orientation-down-left.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 9.13242677,
+          "origin_svg": [
+            -54.296708,
+            -59.598557
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777743804626e-07,
+            0.1912517694444436
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2810,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-left"
+            }
+          },
+          "options": {
+            "orientation": "down-left"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-small-medium-orientation-up-right",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/capacitor-trimmer-small-medium-orientation-up-right.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 9.18242914,
+          "origin_svg": [
+            -54.225837,
+            -58.44342
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -0.19125265138889086
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2820,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-right"
+            }
+          },
+          "options": {
+            "orientation": "up-right"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-small-medium-orientation-up-left",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/capacitor-trimmer-small-medium-orientation-up-left.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 9.18242914,
+          "origin_svg": [
+            -54.225837,
+            -58.44342
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -0.19125265138889086
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2808,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-left"
+            }
+          },
+          "options": {
+            "orientation": "up-left"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-small-medium-orientation-down-right",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/capacitor-trimmer-small-medium-orientation-down-right.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 9.18242914,
+          "origin_svg": [
+            -54.225837,
+            -59.527687
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            0.19125265138888584
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2850,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-right"
+            }
+          },
+          "options": {
+            "orientation": "down-right"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-small-medium-orientation-down-left",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/capacitor-trimmer-small-medium-orientation-down-left.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 9.18242914,
+          "origin_svg": [
+            -54.225837,
+            -59.527687
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            0.19125265138888584
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2838,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-left"
+            }
+          },
+          "options": {
+            "orientation": "down-left"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-small-thick-orientation-up-right",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/capacitor-trimmer-small-thick-orientation-up-right.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 9.28243706,
+          "origin_svg": [
+            -54.084096,
+            -58.301678
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            -0.19125353333333056
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2807,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-right"
+            }
+          },
+          "options": {
+            "orientation": "up-right"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-small-thick-orientation-up-left",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/capacitor-trimmer-small-thick-orientation-up-left.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 9.28243706,
+          "origin_svg": [
+            -54.084096,
+            -58.301678
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            -0.19125353333333056
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2795,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-left"
+            }
+          },
+          "options": {
+            "orientation": "up-left"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-small-thick-orientation-down-right",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/capacitor-trimmer-small-thick-orientation-down-right.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 9.28243706,
+          "origin_svg": [
+            -54.084096,
+            -59.385945
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            0.19125176944444613
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2835,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-right"
+            }
+          },
+          "options": {
+            "orientation": "down-right"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-small-thick-orientation-down-left",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/capacitor-trimmer-small-thick-orientation-down-left.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 9.28243706,
+          "origin_svg": [
+            -54.084096,
+            -59.385945
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            0.19125176944444613
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2823,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-left"
+            }
+          },
+          "options": {
+            "orientation": "down-left"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-medium-thin-orientation-up-right",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/capacitor-trimmer-medium-thin-orientation-up-right.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 11.4599272,
+          "origin_svg": [
+            -54.296708,
+            -55.034754
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777743804626e-07,
+            -0.25500241805555346
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2821,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-right"
+            }
+          },
+          "options": {
+            "orientation": "up-right"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-medium-thin-orientation-up-left",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/capacitor-trimmer-medium-thin-orientation-up-left.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 11.4599272,
+          "origin_svg": [
+            -54.296708,
+            -55.034754
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777743804626e-07,
+            -0.25500241805555346
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2809,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-left"
+            }
+          },
+          "options": {
+            "orientation": "up-left"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-medium-thin-orientation-down-right",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/capacitor-trimmer-medium-thin-orientation-down-right.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 11.4599272,
+          "origin_svg": [
+            -54.296708,
+            -56.480444
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777743804626e-07,
+            0.2550048875000017
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2849,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-right"
+            }
+          },
+          "options": {
+            "orientation": "down-right"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-medium-thin-orientation-down-left",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/capacitor-trimmer-medium-thin-orientation-down-left.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 11.4599272,
+          "origin_svg": [
+            -54.296708,
+            -56.480444
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777743804626e-07,
+            0.2550048875000017
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2837,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-left"
+            }
+          },
+          "options": {
+            "orientation": "down-left"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-medium-medium-orientation-up-right",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/capacitor-trimmer-medium-medium-orientation-up-right.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 11.50993309,
+          "origin_svg": [
+            -54.225837,
+            -54.963884
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -0.2550032999999982
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2850,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-right"
+            }
+          },
+          "options": {
+            "orientation": "up-right"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-medium-medium-orientation-up-left",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/capacitor-trimmer-medium-medium-orientation-up-left.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 11.50993309,
+          "origin_svg": [
+            -54.225837,
+            -54.963884
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -0.2550032999999982
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2838,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-left"
+            }
+          },
+          "options": {
+            "orientation": "up-left"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-medium-medium-orientation-down-right",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/capacitor-trimmer-medium-medium-orientation-down-right.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 11.50993309,
+          "origin_svg": [
+            -54.225837,
+            -56.409573
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            0.2550036527777801
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2878,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-right"
+            }
+          },
+          "options": {
+            "orientation": "down-right"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-medium-medium-orientation-down-left",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/capacitor-trimmer-medium-medium-orientation-down-left.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 11.50993309,
+          "origin_svg": [
+            -54.225837,
+            -56.409573
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            0.2550036527777801
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2866,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-left"
+            }
+          },
+          "options": {
+            "orientation": "down-left"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-medium-thick-orientation-up-right",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/capacitor-trimmer-medium-thick-orientation-up-right.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 11.60994066,
+          "origin_svg": [
+            -54.084096,
+            -54.822142
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            -0.25500435833333385
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2835,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-right"
+            }
+          },
+          "options": {
+            "orientation": "up-right"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-medium-thick-orientation-up-left",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/capacitor-trimmer-medium-thick-orientation-up-left.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 11.60994066,
+          "origin_svg": [
+            -54.084096,
+            -54.822142
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            -0.25500435833333385
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2823,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-left"
+            }
+          },
+          "options": {
+            "orientation": "up-left"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-medium-thick-orientation-down-right",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/capacitor-trimmer-medium-thick-orientation-down-right.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 11.60994066,
+          "origin_svg": [
+            -54.084096,
+            -56.267832
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            0.2550029472222213
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2863,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-right"
+            }
+          },
+          "options": {
+            "orientation": "down-right"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-medium-thick-orientation-down-left",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/capacitor-trimmer-medium-thick-orientation-down-left.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 11.60994066,
+          "origin_svg": [
+            -54.084096,
+            -56.267832
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            0.2550029472222213
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2851,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-left"
+            }
+          },
+          "options": {
+            "orientation": "down-left"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-large-thin-orientation-up-right",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/capacitor-trimmer-large-thin-orientation-up-right.svg",
+          "width_mm": 12.14993407,
+          "height_mm": 13.7873994,
+          "origin_svg": [
+            -51.462077,
+            -51.555264
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -0.3187534194444427
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2811,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-right"
+            }
+          },
+          "options": {
+            "orientation": "up-right"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-large-thin-orientation-up-left",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/capacitor-trimmer-large-thin-orientation-up-left.svg",
+          "width_mm": 12.14993407,
+          "height_mm": 13.7873994,
+          "origin_svg": [
+            -51.462077,
+            -51.555264
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -0.3187534194444427
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2799,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-left"
+            }
+          },
+          "options": {
+            "orientation": "up-left"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-large-thin-orientation-down-right",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/capacitor-trimmer-large-thin-orientation-down-right.svg",
+          "width_mm": 12.14993407,
+          "height_mm": 13.7873994,
+          "origin_svg": [
+            -51.462077,
+            -53.362376
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            0.31875553611111157
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2839,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-right"
+            }
+          },
+          "options": {
+            "orientation": "down-right"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-large-thin-orientation-down-left",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/capacitor-trimmer-large-thin-orientation-down-left.svg",
+          "width_mm": 12.14993407,
+          "height_mm": 13.7873994,
+          "origin_svg": [
+            -51.462077,
+            -53.362376
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            0.31875553611111157
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2827,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-left"
+            }
+          },
+          "options": {
+            "orientation": "down-left"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-large-medium-orientation-up-right",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/capacitor-trimmer-large-medium-orientation-up-right.svg",
+          "width_mm": 12.19993997,
+          "height_mm": 13.8374053,
+          "origin_svg": [
+            -51.391206,
+            -51.484393
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666653306492e-07,
+            -0.3187546541666693
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2839,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-right"
+            }
+          },
+          "options": {
+            "orientation": "up-right"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-large-medium-orientation-up-left",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/capacitor-trimmer-large-medium-orientation-up-left.svg",
+          "width_mm": 12.19993997,
+          "height_mm": 13.8374053,
+          "origin_svg": [
+            -51.391206,
+            -51.484393
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666653306492e-07,
+            -0.3187546541666693
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2827,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-left"
+            }
+          },
+          "options": {
+            "orientation": "up-left"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-large-medium-orientation-down-right",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/capacitor-trimmer-large-medium-orientation-down-right.svg",
+          "width_mm": 12.19993997,
+          "height_mm": 13.8374053,
+          "origin_svg": [
+            -51.391206,
+            -53.291505
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666653306492e-07,
+            0.31875430138888744
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2867,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-right"
+            }
+          },
+          "options": {
+            "orientation": "down-right"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-large-medium-orientation-down-left",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/capacitor-trimmer-large-medium-orientation-down-left.svg",
+          "width_mm": 12.19993997,
+          "height_mm": 13.8374053,
+          "origin_svg": [
+            -51.391206,
+            -53.291505
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666653306492e-07,
+            0.31875430138888744
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2855,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-left"
+            }
+          },
+          "options": {
+            "orientation": "down-left"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-large-thick-orientation-up-right",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/capacitor-trimmer-large-thick-orientation-up-right.svg",
+          "width_mm": 12.29994436,
+          "height_mm": 13.93741321,
+          "origin_svg": [
+            -51.249465,
+            -51.342652
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            -0.31875518333333214
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2825,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-right"
+            }
+          },
+          "options": {
+            "orientation": "up-right"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-large-thick-orientation-up-left",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/capacitor-trimmer-large-thick-orientation-up-left.svg",
+          "width_mm": 12.29994436,
+          "height_mm": 13.93741321,
+          "origin_svg": [
+            -51.249465,
+            -51.342652
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            -0.31875518333333214
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2813,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-left"
+            }
+          },
+          "options": {
+            "orientation": "up-left"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-large-thick-orientation-down-right",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/capacitor-trimmer-large-thick-orientation-down-right.svg",
+          "width_mm": 12.29994436,
+          "height_mm": 13.93741321,
+          "origin_svg": [
+            -51.249465,
+            -53.149764
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            0.3187537722222221
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2853,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-right"
+            }
+          },
+          "options": {
+            "orientation": "down-right"
+          }
+        },
+        {
+          "key": "capacitor-trimmer-large-thick-orientation-down-left",
+          "symbol_id": "capacitor-trimmer",
+          "name": "Trimmer capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/capacitor-trimmer-large-thick-orientation-down-left.svg",
+          "width_mm": 12.29994436,
+          "height_mm": 13.93741321,
+          "origin_svg": [
+            -51.249465,
+            -53.149764
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            0.3187537722222221
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2841,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-left"
+            }
+          },
+          "options": {
+            "orientation": "down-left"
+          }
+        }
+      ],
+      "source_fingerprint": "cec89966a1675f390cbd56444804655ab9fb0a371c8a1319507c46f96462efcc"
+    },
+    {
+      "schema_version": 1,
+      "id": "capacitor-variable",
+      "revision": 1,
+      "name": "Variable capacitor",
+      "description": "Continuously adjustable two-terminal capacitor; only the diagonal adjustment marking changes orientation.",
+      "keywords": [
+        "capacitor",
+        "passive",
+        "adjustable",
+        "capacitors",
+        "variable",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "capacitors"
+      ],
+      "family": "capacitors",
+      "batch": "overnight-capacitors-02",
+      "attributes": {
+        "polarized": false,
+        "variant": "variable"
+      },
+      "recipe": "capacitor-variable",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "vC",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "A",
+          "description": "A",
+          "kind": "passive",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "b",
+          "name": "B",
+          "description": "B",
+          "kind": "passive",
+          "lead_part": "lead-b"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-a",
+          "description": "Electrical lead: A"
+        },
+        {
+          "id": "lead-b",
+          "description": "Electrical lead: B"
+        },
+        {
+          "id": "plate-a",
+          "description": "Plate a"
+        },
+        {
+          "id": "plate-b",
+          "description": "Plate b"
+        },
+        {
+          "id": "adjustment",
+          "description": "Adjustment"
+        }
+      ],
+      "drawing": {
+        "variant": "variable"
+      },
+      "options": {
+        "orientation": {
+          "name": "Arrow orientation",
+          "default": "up-right",
+          "values": [
+            {
+              "id": "up-right",
+              "name": "Up-right"
+            },
+            {
+              "id": "up-left",
+              "name": "Up-left"
+            },
+            {
+              "id": "down-right",
+              "name": "Down-right"
+            },
+            {
+              "id": "down-left",
+              "name": "Down-left"
+            }
+          ]
+        }
+      },
+      "configurations": [
+        {
+          "key": "capacitor-variable-small-thin-orientation-up-right",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/capacitor-variable-small-thin-orientation-up-right.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 9.34992768,
+          "origin_svg": [
+            -54.296708,
+            -58.748155
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777743804626e-07,
+            -3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2845,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-right"
+            }
+          },
+          "options": {
+            "orientation": "up-right"
+          }
+        },
+        {
+          "key": "capacitor-variable-small-thin-orientation-up-left",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/capacitor-variable-small-thin-orientation-up-left.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 9.34992768,
+          "origin_svg": [
+            -54.296708,
+            -58.748155
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777743804626e-07,
+            -3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2834,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-left"
+            }
+          },
+          "options": {
+            "orientation": "up-left"
+          }
+        },
+        {
+          "key": "capacitor-variable-small-thin-orientation-down-right",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/capacitor-variable-small-thin-orientation-down-right.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 9.34992768,
+          "origin_svg": [
+            -54.296708,
+            -58.748155
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777743804626e-07,
+            -3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2873,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-right"
+            }
+          },
+          "options": {
+            "orientation": "down-right"
+          }
+        },
+        {
+          "key": "capacitor-variable-small-thin-orientation-down-left",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/capacitor-variable-small-thin-orientation-down-left.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 9.34992768,
+          "origin_svg": [
+            -54.296708,
+            -58.748155
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777743804626e-07,
+            -3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2862,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-left"
+            }
+          },
+          "options": {
+            "orientation": "down-left"
+          }
+        },
+        {
+          "key": "capacitor-variable-small-medium-orientation-up-right",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/capacitor-variable-small-medium-orientation-up-right.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 9.39993005,
+          "origin_svg": [
+            -54.225837,
+            -58.677284
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2874,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-right"
+            }
+          },
+          "options": {
+            "orientation": "up-right"
+          }
+        },
+        {
+          "key": "capacitor-variable-small-medium-orientation-up-left",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/capacitor-variable-small-medium-orientation-up-left.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 9.39993005,
+          "origin_svg": [
+            -54.225837,
+            -58.677284
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2863,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-left"
+            }
+          },
+          "options": {
+            "orientation": "up-left"
+          }
+        },
+        {
+          "key": "capacitor-variable-small-medium-orientation-down-right",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/capacitor-variable-small-medium-orientation-down-right.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 9.39993005,
+          "origin_svg": [
+            -54.225837,
+            -58.677284
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2902,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-right"
+            }
+          },
+          "options": {
+            "orientation": "down-right"
+          }
+        },
+        {
+          "key": "capacitor-variable-small-medium-orientation-down-left",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/capacitor-variable-small-medium-orientation-down-left.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 9.39993005,
+          "origin_svg": [
+            -54.225837,
+            -58.677284
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2891,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-left"
+            }
+          },
+          "options": {
+            "orientation": "down-left"
+          }
+        },
+        {
+          "key": "capacitor-variable-small-thick-orientation-up-right",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/capacitor-variable-small-thick-orientation-up-right.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 9.49993796,
+          "origin_svg": [
+            -54.084096,
+            -58.535542
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            -7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2859,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-right"
+            }
+          },
+          "options": {
+            "orientation": "up-right"
+          }
+        },
+        {
+          "key": "capacitor-variable-small-thick-orientation-up-left",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/capacitor-variable-small-thick-orientation-up-left.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 9.49993796,
+          "origin_svg": [
+            -54.084096,
+            -58.535542
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            -7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2848,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-left"
+            }
+          },
+          "options": {
+            "orientation": "up-left"
+          }
+        },
+        {
+          "key": "capacitor-variable-small-thick-orientation-down-right",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/capacitor-variable-small-thick-orientation-down-right.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 9.49993796,
+          "origin_svg": [
+            -54.084096,
+            -58.535542
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            -7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2887,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-right"
+            }
+          },
+          "options": {
+            "orientation": "down-right"
+          }
+        },
+        {
+          "key": "capacitor-variable-small-thick-orientation-down-left",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/capacitor-variable-small-thick-orientation-down-left.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 9.49993796,
+          "origin_svg": [
+            -54.084096,
+            -58.535542
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            -7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.5,
+            "body-height": 5.0,
+            "plate-gap": 1.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2876,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-left"
+            }
+          },
+          "options": {
+            "orientation": "down-left"
+          }
+        },
+        {
+          "key": "capacitor-variable-medium-thin-orientation-up-right",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/capacitor-variable-medium-thin-orientation-up-right.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 11.74994122,
+          "origin_svg": [
+            -54.296708,
+            -55.346558
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777743804626e-07,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2871,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-right"
+            }
+          },
+          "options": {
+            "orientation": "up-right"
+          }
+        },
+        {
+          "key": "capacitor-variable-medium-thin-orientation-up-left",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/capacitor-variable-medium-thin-orientation-up-left.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 11.74994122,
+          "origin_svg": [
+            -54.296708,
+            -55.346558
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777743804626e-07,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2860,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-left"
+            }
+          },
+          "options": {
+            "orientation": "up-left"
+          }
+        },
+        {
+          "key": "capacitor-variable-medium-thin-orientation-down-right",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/capacitor-variable-medium-thin-orientation-down-right.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 11.74994122,
+          "origin_svg": [
+            -54.296708,
+            -55.346558
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777743804626e-07,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2899,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-right"
+            }
+          },
+          "options": {
+            "orientation": "down-right"
+          }
+        },
+        {
+          "key": "capacitor-variable-medium-thin-orientation-down-left",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/capacitor-variable-medium-thin-orientation-down-left.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 11.74994122,
+          "origin_svg": [
+            -54.296708,
+            -55.346558
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777743804626e-07,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2888,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-left"
+            }
+          },
+          "options": {
+            "orientation": "down-left"
+          }
+        },
+        {
+          "key": "capacitor-variable-medium-medium-orientation-up-right",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/capacitor-variable-medium-medium-orientation-up-right.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 11.79994359,
+          "origin_svg": [
+            -54.225837,
+            -55.275687
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2901,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-right"
+            }
+          },
+          "options": {
+            "orientation": "up-right"
+          }
+        },
+        {
+          "key": "capacitor-variable-medium-medium-orientation-up-left",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/capacitor-variable-medium-medium-orientation-up-left.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 11.79994359,
+          "origin_svg": [
+            -54.225837,
+            -55.275687
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2890,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-left"
+            }
+          },
+          "options": {
+            "orientation": "up-left"
+          }
+        },
+        {
+          "key": "capacitor-variable-medium-medium-orientation-down-right",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/capacitor-variable-medium-medium-orientation-down-right.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 11.79994359,
+          "origin_svg": [
+            -54.225837,
+            -55.275687
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2929,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-right"
+            }
+          },
+          "options": {
+            "orientation": "down-right"
+          }
+        },
+        {
+          "key": "capacitor-variable-medium-medium-orientation-down-left",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/capacitor-variable-medium-medium-orientation-down-left.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 11.79994359,
+          "origin_svg": [
+            -54.225837,
+            -55.275687
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2918,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-left"
+            }
+          },
+          "options": {
+            "orientation": "down-left"
+          }
+        },
+        {
+          "key": "capacitor-variable-medium-thick-orientation-up-right",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/capacitor-variable-medium-thick-orientation-up-right.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 11.89995151,
+          "origin_svg": [
+            -54.084096,
+            -55.133946
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2886,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-right"
+            }
+          },
+          "options": {
+            "orientation": "up-right"
+          }
+        },
+        {
+          "key": "capacitor-variable-medium-thick-orientation-up-left",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/capacitor-variable-medium-thick-orientation-up-left.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 11.89995151,
+          "origin_svg": [
+            -54.084096,
+            -55.133946
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2875,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-left"
+            }
+          },
+          "options": {
+            "orientation": "up-left"
+          }
+        },
+        {
+          "key": "capacitor-variable-medium-thick-orientation-down-right",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/capacitor-variable-medium-thick-orientation-down-right.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 11.89995151,
+          "origin_svg": [
+            -54.084096,
+            -55.133946
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2914,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-right"
+            }
+          },
+          "options": {
+            "orientation": "down-right"
+          }
+        },
+        {
+          "key": "capacitor-variable-medium-thick-orientation-down-left",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/capacitor-variable-medium-thick-orientation-down-left.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 11.89995151,
+          "origin_svg": [
+            -54.084096,
+            -55.133946
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -4.0,
+              0.0
+            ],
+            "b": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.0,
+            "body-height": 6.66667,
+            "plate-gap": 2.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2903,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-left"
+            }
+          },
+          "options": {
+            "orientation": "down-left"
+          }
+        },
+        {
+          "key": "capacitor-variable-large-thin-orientation-up-right",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/capacitor-variable-large-thin-orientation-up-right.svg",
+          "width_mm": 12.14993407,
+          "height_mm": 14.1499269,
+          "origin_svg": [
+            -51.462077,
+            -51.945007
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2863,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-right"
+            }
+          },
+          "options": {
+            "orientation": "up-right"
+          }
+        },
+        {
+          "key": "capacitor-variable-large-thin-orientation-up-left",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/capacitor-variable-large-thin-orientation-up-left.svg",
+          "width_mm": 12.14993407,
+          "height_mm": 14.1499269,
+          "origin_svg": [
+            -51.462077,
+            -51.945007
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2852,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-left"
+            }
+          },
+          "options": {
+            "orientation": "up-left"
+          }
+        },
+        {
+          "key": "capacitor-variable-large-thin-orientation-down-right",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/capacitor-variable-large-thin-orientation-down-right.svg",
+          "width_mm": 12.14993407,
+          "height_mm": 14.1499269,
+          "origin_svg": [
+            -51.462077,
+            -51.945007
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2891,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-right"
+            }
+          },
+          "options": {
+            "orientation": "down-right"
+          }
+        },
+        {
+          "key": "capacitor-variable-large-thin-orientation-down-left",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/capacitor-variable-large-thin-orientation-down-left.svg",
+          "width_mm": 12.14993407,
+          "height_mm": 14.1499269,
+          "origin_svg": [
+            -51.462077,
+            -51.945007
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2880,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-left"
+            }
+          },
+          "options": {
+            "orientation": "down-left"
+          }
+        },
+        {
+          "key": "capacitor-variable-large-medium-orientation-up-right",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/capacitor-variable-large-medium-orientation-up-right.svg",
+          "width_mm": 12.19993997,
+          "height_mm": 14.19992891,
+          "origin_svg": [
+            -51.391206,
+            -51.874137
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666653306492e-07,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2892,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-right"
+            }
+          },
+          "options": {
+            "orientation": "up-right"
+          }
+        },
+        {
+          "key": "capacitor-variable-large-medium-orientation-up-left",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/capacitor-variable-large-medium-orientation-up-left.svg",
+          "width_mm": 12.19993997,
+          "height_mm": 14.19992891,
+          "origin_svg": [
+            -51.391206,
+            -51.874137
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666653306492e-07,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2881,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-left"
+            }
+          },
+          "options": {
+            "orientation": "up-left"
+          }
+        },
+        {
+          "key": "capacitor-variable-large-medium-orientation-down-right",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/capacitor-variable-large-medium-orientation-down-right.svg",
+          "width_mm": 12.19993997,
+          "height_mm": 14.19992891,
+          "origin_svg": [
+            -51.391206,
+            -51.874137
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666653306492e-07,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2920,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-right"
+            }
+          },
+          "options": {
+            "orientation": "down-right"
+          }
+        },
+        {
+          "key": "capacitor-variable-large-medium-orientation-down-left",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/capacitor-variable-large-medium-orientation-down-left.svg",
+          "width_mm": 12.19993997,
+          "height_mm": 14.19992891,
+          "origin_svg": [
+            -51.391206,
+            -51.874137
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666653306492e-07,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2909,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-left"
+            }
+          },
+          "options": {
+            "orientation": "down-left"
+          }
+        },
+        {
+          "key": "capacitor-variable-large-thick-orientation-up-right",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/capacitor-variable-large-thick-orientation-up-right.svg",
+          "width_mm": 12.29994436,
+          "height_mm": 14.2999333,
+          "origin_svg": [
+            -51.249465,
+            -51.732395
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2877,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-right"
+            }
+          },
+          "options": {
+            "orientation": "up-right"
+          }
+        },
+        {
+          "key": "capacitor-variable-large-thick-orientation-up-left",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/capacitor-variable-large-thick-orientation-up-left.svg",
+          "width_mm": 12.29994436,
+          "height_mm": 14.2999333,
+          "origin_svg": [
+            -51.249465,
+            -51.732395
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2866,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "up-left"
+            }
+          },
+          "options": {
+            "orientation": "up-left"
+          }
+        },
+        {
+          "key": "capacitor-variable-large-thick-orientation-down-right",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/capacitor-variable-large-thick-orientation-down-right.svg",
+          "width_mm": 12.29994436,
+          "height_mm": 14.2999333,
+          "origin_svg": [
+            -51.249465,
+            -51.732395
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2905,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-right"
+            }
+          },
+          "options": {
+            "orientation": "down-right"
+          }
+        },
+        {
+          "key": "capacitor-variable-large-thick-orientation-down-left",
+          "symbol_id": "capacitor-variable",
+          "name": "Variable capacitor",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/capacitor-variable-large-thick-orientation-down-left.svg",
+          "width_mm": 12.29994436,
+          "height_mm": 14.2999333,
+          "origin_svg": [
+            -51.249465,
+            -51.732395
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "a": [
+              -5.0,
+              0.0
+            ],
+            "b": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.5,
+            "body-height": 8.33333,
+            "plate-gap": 2.5,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "plate-a",
+            "plate-b",
+            "adjustment"
+          ],
+          "svg_bytes": 2894,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1,
+            "options": {
+              "orientation": "down-left"
+            }
+          },
+          "options": {
+            "orientation": "down-left"
+          }
+        }
+      ],
+      "source_fingerprint": "5f692c4e74d28bde10892ddcb29e3538ec9f9d67fe3f98f7a692515d123e9e4e"
     }
   ]
 }

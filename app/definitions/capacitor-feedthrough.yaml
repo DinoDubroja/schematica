@@ -1,0 +1,64 @@
+schema_version: 1
+id: capacitor-feedthrough
+revision: 1
+name: Feedthrough capacitor
+description: 'Three-terminal feedthrough capacitor: the input and output share a through
+  conductor, capacitively coupled to the case terminal.'
+keywords:
+- capacitor
+- passive
+- feedthrough
+- capacitors
+- overnight
+- batch 02
+types:
+- capacitors
+family: capacitors
+batch: overnight-capacitors-02
+attributes:
+  polarized: false
+  variant: feedthrough
+recipe: capacitor-feedthrough
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: custom three-terminal feedthrough form
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: in
+  name: Through input
+  description: Through input
+  kind: passive
+  lead_part: lead-in
+- id: out
+  name: Through output
+  description: Through output
+  kind: passive
+  lead_part: lead-out
+- id: case
+  name: Case
+  description: Case
+  kind: passive
+  lead_part: lead-case
+parts:
+- id: lead-in
+  description: 'Electrical lead: Through input'
+- id: lead-out
+  description: 'Electrical lead: Through output'
+- id: lead-case
+  description: 'Electrical lead: Case'
+- id: through-conductor
+  description: Through conductor
+- id: case-plate
+  description: Case plate
+- id: enclosure
+  description: Enclosure

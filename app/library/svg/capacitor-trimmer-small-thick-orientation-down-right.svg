@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000024 29.196723 26.31242" width="10.29995506mm" height="9.28243706mm">
+  <title>Trimmer capacitor</title>
+  <desc>Preset adjustable capacitor with a diagonal trimming bar; two electrical terminals.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 5.0, "body-width": 1.5, "grid": 1.0, "plate-gap": 1.5}, "origin_svg": [-54.084096, -59.385945], "parts": ["lead-a", "lead-b", "plate-a", "plate-b", "adjustment"], "pins_mm": {"a": [-4.0, 0.0], "b": [4.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "options": {"orientation": "down-right"}, "size": "small", "size_factor": 0.75, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "capacitor-trimmer"}</metadata>
+  <g id="sc-capacitor-trimmer-r1-small-thick-orientation-down-right--sc-capacitor-trimmer-r1-small-thick-orientation-down-right" inkscape:label="Trimmer capacitor / small / thick" data-symbol="capacitor-trimmer" data-revision="1" data-size="small" data-stroke="thick" data-option-orientation="down-right" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-54.084096,-59.385945)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="sc-capacitor-trimmer-r1-small-thick-orientation-down-right--sc-capacitor-trimmer-r1-small-thick-orientation-down-right--lead-a" inkscape:label="lead-a">
+      <path d="M-11.38104 0H-2.13394" fill="none" />
+      <desc>Electrical lead: A</desc>
+    </g>
+    <g data-part="lead-b" id="sc-capacitor-trimmer-r1-small-thick-orientation-down-right--sc-capacitor-trimmer-r1-small-thick-orientation-down-right--lead-b" inkscape:label="lead-b">
+      <path d="M11.38104 0H2.13394" fill="none" />
+      <desc>Electrical lead: B</desc>
+    </g>
+    <g data-part="plate-a" id="sc-capacitor-trimmer-r1-small-thick-orientation-down-right--sc-capacitor-trimmer-r1-small-thick-orientation-down-right--plate-a" inkscape:label="plate-a">
+      <path d="M-2.13394-7.1131V7.1131" fill="none" />
+      <desc>Plate a</desc>
+    </g>
+    <g data-part="plate-b" id="sc-capacitor-trimmer-r1-small-thick-orientation-down-right--sc-capacitor-trimmer-r1-small-thick-orientation-down-right--plate-b" inkscape:label="plate-b">
+      <path d="M2.13394-7.1131V7.1131" fill="none" />
+      <desc>Plate b</desc>
+    </g>
+    <g data-part="adjustment" id="sc-capacitor-trimmer-r1-small-thick-orientation-down-right--sc-capacitor-trimmer-r1-small-thick-orientation-down-right--adjustment" inkscape:label="adjustment">
+      <path d="M-6.40182 9.38931L6.40182-9.38931" fill="none" />
+      <path d="M4.80138-10.47765L8.00229-8.30103" fill="none" />
+      <desc>Adjustment</desc>
+    </g>
+  </g>
+</svg>

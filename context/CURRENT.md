@@ -1,57 +1,45 @@
 # Current status
 
-14-11-2026 · **Parallel symbol-work setup; all 26 designs remain Verified.**
+14-11-2026 · **Batch 02 in progress: 5 / 80 new designs complete.**
 
 ## Working ownership
 
-This checkout is Agent B's `work/agent-b-symbols`, starting from committed baseline
-`477f679c51c699573f0e28f31cfe63f7e4bc01b1`. A verified external backup preserves the
-complete pre-switch checkout, ignored review work and Git history. The local
-`Local/parallel-work/agent-b.md` record in the parent workspace holds machine paths,
-preview ownership, current checks and exact integration-ready commits.
+Agent B owns this checkout on `work/agent-b-symbols`. Agent A works separately on
+`work/agent-a-integration`; both started this batch at common commit
+`89dbd3efe40a8b79eeb7cfe99f25f32a4cb849d1`. Read the available local ownership
+records in the parent workspace's `Local/parallel-work` before shared changes.
+See [parallel work](../DEVELOPMENT.md#parallel-work).
 
-Agent A is assigned a separate `work/agent-a-integration` checkout. At B's setup,
-A's path, branch and handoff did not yet exist; no shared baseline with an actual
-A checkout is claimed. Read A's record and verify the merge base when it exists.
-See the [parallel-work guide](../DEVELOPMENT.md#parallel-work).
-
-**Authorized:** local preservation, branch setup, verification and focused local
-checkpoint commits; symbol work only within agreed batches and decisions.
-**No new symbol batch is specified.** The accepted resistor scope is complete.
-No new shape choice is pending; the proposed lighter recurring Inkscape policy
-is still unresolved. Setup grants no new push or preview-publication permission.
-Keep B the sole shared-preview publisher; accounts/personal libraries are deferred.
+**Current authorization:** execute the finite [80-design batch](../docs/BATCH_02.md),
+test and document it, save focused family commits, push B's branch and publish the
+tested B library to the existing preview. This supersedes the earlier setup-only
+push/publication hold. New artwork remains Unverified for the user's later review.
+Do not expand the inventory, merge unfinished A work or change shared interfaces
+without coordination. B remains sole preview publisher. Accounts/personal
+libraries remain deferred; this is the dev library.
 
 ## Current checkpoint
 
-- **26 designs / 342 configurations**, all officially Verified. The original six,
-  the 18 pasted approvals and the two explicitly selected B designs are recorded
-  against their exact revisions/fingerprints. No new design approval is pending.
-- Nonlinear EU/US revision 3 uses the smooth selected B curve; tapped resistors
-  are removed. Geometry and UI are unchanged since the checked B implementation.
-- Live build **`fae9ed42be9d`**, Cloudflare version
-  **`5cc8f4f6-8343-47d4-9dea-d0f562cc4f69`**. Publication used Wrangler, with user
-  authorization and no browser automation.
-- The hosted manifest and all 386 served assets match local hashes. All 342
-  individual SVGs and 36 complete libraries are included; removed taps return 404.
-- Eight approval Python tests and eight JavaScript tests pass. With the actual live
-  catalog, saved Pending approvals clear to zero and Undo cannot restore them.
-- Earlier B checks remain valid: 42 Python + eight JavaScript tests, exact match
-  to selected B across 18 configurations, 324 unrelated SVGs byte-identical.
+- Source library: **31 designs / 441 configurations**; 26 Verified,
+  5 new Unverified. Completed families: capacitors.
+- Original 342 SVGs and 26 approval records are preserved exactly. Tapped resistors
+  and varistors remain removed; selected nonlinear B revision 3 is unchanged.
+- Current local build: `0d6b41588a1a`. Shared preview still serves the prior
+  `fae9ed42be9d` release until this batch is published; do not confuse local with live.
+- Latest checkpoint checks: 46 Python tests and eight JavaScript tests;
+  complete-family Inkscape vector/bounds/save/reopen checks; actual Medium/Medium,
+  Small/Thick and adjustment-orientation visual inspection. Technical checks do
+  not confer human approval. Exact ready commits are in B's local handoff.
 
 ## Next step
 
-Human testing on both Windows devices: open the
-[shared preview](https://schematica-preview.dinodubroja.workers.dev/), press Ctrl+F5
-once, and follow the [short testing checklist](../DEVELOPMENT.md#test-on-both-windows-devices).
-All symbols should be Verified, with no Pending selections or unverified designs.
+Continue the remaining authorized families, then publish and stop for visual review.
+Use [the inventory](../docs/BATCH_02.md) for completed versus pending items and
+[developer review steps](../DEVELOPMENT.md#latest-changes) for action → expected result.
+The recurring lighter Inkscape policy remains a separate proposal; this request
+explicitly includes applicable Inkscape checks, performed through the command line.
 
-The user authorized publication and correction of accepted components left pending.
-This supersedes the earlier Cloudflare hold and the request for a second B handoff.
-Future drawing changes still require explicit human acceptance. Command-line
-publishing is configured locally; keep credentials out of the repository.
-
-[Develop and test](../DEVELOPMENT.md) · [Decisions](DECISIONS.md)
+[Decisions](DECISIONS.md) · [Verification](../docs/VERIFICATION.md)
 
 ## Latest planning context
 

@@ -4,7 +4,11 @@ revision: 1
 name: Capacitor
 description: Non-polarized capacitor with two parallel plates and interchangeable
   terminals.
-keywords: [capacitor, parallel plates, non-polarized, passive]
+keywords:
+- capacitor
+- parallel plates
+- non-polarized
+- passive
 types:
 - passive
 - capacitor
@@ -41,3 +45,5 @@ parts:
   description: Lead to first plate
 - id: lead-b
   description: Lead to second plate
+family: capacitors
+batch: starter

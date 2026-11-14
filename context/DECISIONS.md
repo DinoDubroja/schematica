@@ -390,3 +390,34 @@ were absent at inspection, so A's setup and actual common baseline remain to be
 verified. Paths and verification receipts are in B's local handoff.
 All accepted designs remain unchanged. No additional batch or unresolved design
 was selected. The lighter recurring Inkscape policy remains a proposal.
+
+## Batch 02: broad dev-library expansion — 14-11-2026
+
+Source: user's pasted execution request in **Agent B** (original message timestamp
+unavailable; recorded 14-11-2026, Europe/Zagreb, UTC+01:00).
+
+**Authorized:** approximately 80 new designs across the ten named component
+families, with a 6–8 hour working budget. Finalize a finite inventory, prioritize
+capacitors/diodes/transistors/sources/magnetics, refine representatives, render and
+check all combinations, then save completed families. Implementation, tests, docs,
+focused commits, pushing B's branch and publishing the tested B library to the
+existing shared preview are authorized without further in-scope approval pauses.
+This supersedes the setup-only push/publication hold for this batch.
+
+All new designs remain Unverified until human review. Preserve the original 26
+approvals and 342 SVGs, accepted UI, and removal of tapped resistors and varistors.
+Use current family/batch filters and Variations; do not add review sheets or comment
+fields. Each family gets its own stable overnight batch ID. Categorization changes
+to existing definitions are editorial and must preserve their geometry approvals.
+
+**Inventory resolution:** 80 new designs / 828 planned configurations. A separate
+unidirectional TVS drawing would duplicate the selected Zener form, so the Zener
+entry carries that alias; sources/grounds includes 11 distinct requested forms.
+See [the inventory](../docs/BATCH_02.md) for IDs, progress and remaining items.
+
+A's isolated checkout now exists and has adopted B's setup commits; the verified
+common baseline is `89dbd3efe40a8b79eeb7cfe99f25f32a4cb849d1`. B adds only explicit
+recipe registrations and isolated TeX recipes through existing interfaces; A owns
+integration and viewer adaptation. No A implementation is assumed ready. B remains
+sole preview publisher. The batch explicitly includes command-line Inkscape checks;
+the separate long-term testing-policy proposal is not adopted by this request.

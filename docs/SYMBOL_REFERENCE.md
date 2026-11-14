@@ -67,3 +67,14 @@ on the viewer's installed fonts. Labels remain a named editable vector part.
 5. Promote only passing designs as Unverified. Keep the user's approval separate.
 
 See [batch inventory and workflow](RESISTOR_BATCH.md) and [verification](VERIFICATION.md).
+
+## Broader component families
+
+[Batch 02](BATCH_02.md) extends this baseline. Each new definition records a
+CircuitikZ symbol/reference or a custom-construction rationale. Capacitor polarity,
+diode light-arrow direction, transistor terminal identities, switch resting state,
+transformer winding connections and ground meanings are checked explicitly.
+New recipes are self-contained TeX files; accepted recipe/helper bytes are retained.
+Adjustable markings use the existing four orientation values with fixed terminals.
+Dimensions and strokes remain independent; unrelated marks need visible separation
+in Small/Thick. New artwork remains Unverified after agent checks.

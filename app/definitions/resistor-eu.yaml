@@ -3,17 +3,46 @@ id: resistor-eu
 revision: 1
 name: EU resistor
 description: European resistor drawn as a rectangle, with a terminal at each end.
-keywords: [resistor, European, rectangle, passive, non-polarized]
-types: [passive, resistor]
-attributes: {appearance: european, body: rectangle, polarized: false}
+keywords:
+- resistor
+- European
+- rectangle
+- passive
+- non-polarized
+types:
+- passive
+- resistor
+attributes:
+  appearance: european
+  body: rectangle
+  polarized: false
 recipe: resistor-eu
 presets:
-  sizes: [small, medium, large]
-  strokes: [thin, medium, thick]
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
 pins:
-  - {id: a, name: A, description: First interchangeable resistor terminal, kind: passive, lead_part: lead-a}
-  - {id: b, name: B, description: Second interchangeable resistor terminal, kind: passive, lead_part: lead-b}
+- id: a
+  name: A
+  description: First interchangeable resistor terminal
+  kind: passive
+  lead_part: lead-a
+- id: b
+  name: B
+  description: Second interchangeable resistor terminal
+  kind: passive
+  lead_part: lead-b
 parts:
-  - {id: body, description: Rectangular resistor body}
-  - {id: lead-a, description: Lead from terminal A to body}
-  - {id: lead-b, description: Lead from body to terminal B}
+- id: body
+  description: Rectangular resistor body
+- id: lead-a
+  description: Lead from terminal A to body
+- id: lead-b
+  description: Lead from body to terminal B
+family: resistors
+batch: starter

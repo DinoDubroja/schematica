@@ -2,7 +2,7 @@
 
 Current inventory: **22 resistor designs**, including the two original fixed
 resistors and **20 additional designs**. Including the four non-resistor originals,
-the library has **26 designs / 342 configurations**. Four adjustable designs have
+the library before [batch 02](BATCH_02.md) had **26 designs / 342 configurations**. Four adjustable designs have
 36 configurations each; the other 22 designs have nine.
 
 Arrays and networks are excluded. Varistors were replaced by nonlinear resistors;

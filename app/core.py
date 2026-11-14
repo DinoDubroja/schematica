@@ -19,6 +19,7 @@ import time
 import xml.etree.ElementTree as ET
 
 import yaml
+from recipe_registry import BATCH_MACROS, BATCH_LABEL_RECIPES
 
 ROOT = Path(__file__).resolve().parent
 SVG = "http://www.w3.org/2000/svg"
@@ -30,6 +31,7 @@ ET.register_namespace("xlink", XLINK)
 MACROS = {"resistor-eu": "SCResistorEU", "resistor-us": "SCResistorUS",
           "inductor-coil": "SCInductorCoil", "capacitor": "SCCapacitor",
           "opamp": "SCOpamp", "opamp-supply": "SCOpampSupply", "resistor-variant": "SCResistorVariant"}
+MACROS.update(BATCH_MACROS)
 RESISTOR_VARIANTS = ("variable", "potentiometer", "trimmer", "trimmer-potentiometer",
                     "thermistor", "ntc", "ptc", "nonlinear", "photo", "photo-enclosed")
 ORIENTATIONS = ("up-right", "up-left", "down-right", "down-left")
@@ -207,6 +209,10 @@ def tex_document(definition, settings, instance, svg=True):
     driver = r"\def\pgfsysdriver{pgfsys-dvisvgm.def}" if svg else ""
     export = r"\SCsvgtrueexport" if svg else ""
     arguments = ""
+    recipe_input = ""
+    if definition["recipe"] in BATCH_MACROS:
+        recipe_input = rf"\input{{{definition['recipe']}.tex}}"
+        arguments = "{%d}" % ORIENTATIONS.index(settings.get("options", {}).get("orientation", "up-right"))
     if definition["recipe"] == "resistor-variant":
         drawing = definition["drawing"]
         arguments = "{%s}{%s}{%s}" % (0 if drawing["body"] == "eu" else 1,
@@ -217,6 +223,7 @@ def tex_document(definition, settings, instance, svg=True):
 \documentclass[border=1mm]{{standalone}}
 {driver}
 \usepackage{{schematica}}
+{recipe_input}
 {export}
 \begin{{document}}
 \SCrecordto{{symbol.scmeta}}
@@ -404,7 +411,7 @@ def render_symbol(symbol_id, size="medium", stroke="medium", output=None, option
     # Tectonic and a standalone dvisvgm do not necessarily share a font search
     # path. Retrieve the font already used by TeX from the same cached bundle.
     # Keep it only in generated output; SVG downloads contain vector outlines.
-    if definition.get("drawing", {}).get("variant") in ("ntc", "ptc"):
+    if definition.get("drawing", {}).get("variant") in ("ntc", "ptc") or definition["recipe"] in BATCH_LABEL_RECIPES:
         font = subprocess.run([tool("tectonic"), "-X", "bundle", "cat", "--only-cached",
                                "lmsans10-regular.otf"], capture_output=True, timeout=120)
         if font.returncode or not font.stdout.startswith(b"OTTO"):
