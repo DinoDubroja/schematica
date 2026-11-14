@@ -39,6 +39,24 @@ class AgentTests(unittest.TestCase):
         self.assertEqual(thick["filters"]["stroke"], "thick")
         self.assertEqual(self.service.search("Browse the whole library.", sid)["count"], len(self.service.catalog()["symbols"]))
 
+    def test_host_structured_family_aliases_keep_results_and_session(self):
+        first = self.service.search("normal resistor", filters={"family": "resistor", "variant": "fixed"})
+        self.assertEqual(first["match_ids"], ["resistor-eu", "resistor-us"])
+        self.assertEqual(first["filters"]["family"], "resistors")
+        session = first["session_id"]
+        following = self.service.search("Only European ones", session, {"family": " Resistor "})
+        self.assertEqual(following["session_id"], session)
+        self.assertEqual(following["match_ids"], ["resistor-eu"])
+        self.assertEqual(following["sequence"], 2)
+        for singular, plural in (("capacitor", "capacitors"), ("diode", "diodes"),
+                                 ("transistor", "transistors"), ("inductor", "inductors"),
+                                 ("amplifier", "amplifiers")):
+            with self.subTest(family=singular):
+                aliased = self.service.search(filters={"family": singular})
+                canonical = self.service.search(filters={"family": plural})
+                self.assertEqual(aliased["match_ids"], canonical["match_ids"])
+                self.assertGreater(aliased["count"], 0)
+
     def test_unknown_search_never_substitutes_or_creates(self):
         result = self.service.search("quantum unicorn")
         self.assertEqual(result["count"], 0)

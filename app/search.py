@@ -71,6 +71,12 @@ def interpret(query="", previous=None, filters=None):
             if value is None:
                 result.pop(key, None)
             else:
+                # Hosts may supply the same singular family names they use in
+                # natural language. Do not let that override a valid query with
+                # a filter that silently hides the whole family.
+                if key == "family" and isinstance(value, str):
+                    value = value.strip().lower()
+                    value = FAMILIES.get(value, value)
                 result[key] = value
     for key in ("terms", "ids"):
         if key in result and (not isinstance(result[key], list) or any(not isinstance(s, str) for s in result[key])):
