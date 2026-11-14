@@ -20,24 +20,32 @@ The collection is the dev library; accounts and personal libraries remain deferr
 
 ## Delivery workflow adoption
 
-14-11-2026: adopted the [delivery checklist](../DEVELOPMENT.md#delivery-checklist)
-in A's guidance; `AGENTS.md` requires it before finishing. Agent A coordinates
-integration. This guidance-only task does not merge product features or deploy.
-Installer simplification and user-guide rewrites remain separate work.
+14-11-2026: the [delivery checklist](../DEVELOPMENT.md#delivery-checklist) is adopted
+in A, B and main; every AGENTS.md reaches the same six-item checklist. Agent A
+coordinates integration. Installer simplification and user-guide rewrites remain
+separate work. This delivery merges no product features and deploys no app.
 
-B is actively reviewing symbols. Exact READY guidance-only commit:
-`b722d22e28b1dedbd2b2834df6f8c264faef0190` (only the four requested documents).
-Adopt that single commit at B's safe checkpoint, preserving B's current status;
-do not merge A's product ancestry. A's owner handoff also contains the patch.
-B's `AGENTS.md` still lacks the checklist route; adoption/verification is pending. A's previously unpushed
-feature ancestry still lacks publication authorization, so A's branch and `main`
-remain unpublished/unchanged by this task; no hosted-app update is performed.
-GitHub's current `main` README still describes the earlier library. Updating that
-entry point to reflect later work remains a publication handoff, not a feature merge.
+- **Main and documentation branch published:**
+  [`131d705`](https://github.com/DinoDubroja/schematica/commit/131d705f0ea0fa19db7fb2e10dda43dacdf18367)
+  on `main` and `docs/delivery-workflow`; five documentation files only. The main
+  README links setup, testing, preview, progress and the checklist, and separates
+  main's older source snapshot from B's published preview and A's unfinished work.
+- **B adopted and published:**
+  [`ddbd03f`](https://github.com/DinoDubroja/schematica/commit/ddbd03f0b5350019eb3ff3c8609268b7bc105780),
+  after its final approvals completed at `2fedf44`. Four guidance files only;
+  B's product work, approvals, own handoff and unrelated research were preserved.
+  B can acknowledge this adoption in its own handoff at its next session.
+- **A adopted locally:** original guidance-only commit `b722d22`, plus status
+  receipts. A's product branch remains unpublished: pushing it would publish
+  earlier product ancestry outside that task's local-only authorization. The
+  guidance was published independently from main without including that ancestry.
 
-Checks: 109 local links/anchors and A's checklist route pass; the independent
-repository recovery audit passes. Existing main README targets resolve on GitHub.
-The hosted-preview link check returned HTTP 403 here; first-use behavior was not tested.
+GitHub remote heads, changed-file scope and published document targets were read
+back successfully. Local link checks: A 109, B 96, main 86; identical checklist and
+all AGENTS routes pass. The independent recovery audit passed for the shared
+workflow. The preview link check returned HTTP 403 here; this delivery performed
+no installation, actual first-use or embedded-host verification. Earlier local-only
+publication holds and pending B-adoption notes are superseded by this receipt.
 
 ## Delivered locally
 
