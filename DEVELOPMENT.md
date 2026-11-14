@@ -12,7 +12,7 @@ ten component families. The dev library now has **106 designs / 1,170 configurat
 The original 26 designs remain Verified; all 80 new designs are Unverified.
 No deferred or failed inventory items. See [the inventory and review focus](docs/BATCH_02.md).
 
-Tested local build: **`a65905389281`**. Publication is the remaining delivery step; the shared preview still serves the earlier release.
+Published preview and local build: **`a65905389281`**. Hosted assets and downloads match the tested output.
 Source is pushed on `work/agent-b-symbols`; A's integration work and `main` remain separate.
 
 **Passed:** 55 Python tests, eight JavaScript tests, all 1,170 SVGs in Inkscape,

@@ -22,7 +22,7 @@ publisher. This is the dev library; accounts and personal libraries remain defer
   All ten [inventory families](../docs/BATCH_02.md) completed; no failed/deferred items.
 - Original 342 SVG bytes and 26 approval records preserved exactly. Tapped
   resistors and varistors remain removed; accepted nonlinear B revision 3 is unchanged.
-- Tested local build: **`a65905389281`**. Publication is the remaining delivery step; the shared preview still serves the earlier release.
+- Published preview and local build: **`a65905389281`**. Hosted assets and downloads match the tested output.
 - Passed 55 Python and eight JavaScript tests, all individual/configured library
   exports, 42 accepted-palette comparisons, native TeX and packaging checks.
   Actual rendered artwork and browser layouts were inspected; tests do not confer
