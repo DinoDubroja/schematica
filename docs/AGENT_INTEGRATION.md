@@ -64,9 +64,12 @@ Claude's generated JSON fragment is a local launch description. In the observed
 Windows 5.11492.5 app, **Settings → Desktop app → Extensions → Local MCP servers →
 Edit config** locates the actual configuration; it is not necessarily under the
 older Roaming/Claude path. A namespaced `schematica-integration-a` entry was merged
-on this machine after backup, preserving all existing settings. The running app
-still showed no loaded servers, so restart/reload it before the checklist. No real
-embedded journey is established by editing this configuration.
+on this machine after backup, preserving all existing settings. **File → Exit,
+then reopen Claude → the connection loads.** Closing only its window left the
+old process running. Allow the requested tool in Claude, then ask **“Show me normal
+resistor symbols” → two fixed resistor designs in the embedded viewer.** This
+search was observed after the family-filter repair; creation/save checks remain
+separate in [host evidence](HOST_VERIFICATION.md).
 
 Cloud-hosted Chat/Work/Codex and remote Claude connectors cannot assume access to
 this machine's loopback. They need an approved reachable endpoint/private tunnel

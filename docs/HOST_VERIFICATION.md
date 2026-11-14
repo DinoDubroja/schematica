@@ -1,10 +1,33 @@
 # Host verification
 
-Checked 14-11-2026. **Protocol and local browser behavior are verified; embedded
-application journeys are not yet verified.** A browser fallback is not evidence
-of embedded UI support. No remote endpoint, tunnel or public plugin was published.
+Checked 14–15-11-2026. **Live search is verified through local Codex with the browser
+fallback and through Claude Desktop's embedded viewer. Full creation/save journeys
+remain unverified.** A browser fallback is not evidence of embedded UI support.
+No remote endpoint, tunnel or public plugin was published.
 
 ## Evidence
+
+Live host testing exposed a structured-filter defect: `family: resistor` overrode
+the natural-language parser's `resistors`, producing false empty results. The repair
+normalizes known family aliases. Search text now includes the session, active filters
+and bounded symbol summaries because Claude's model only received the earlier
+count/link text. This second repair still needs a fresh host reload/retest.
+
+- Local Codex: normal → European → variable → thick searches, browser selection
+  feedback and an actual SVG download passed. The downloaded EU variable resistor,
+  revision 2, Small/Thick/Down-left matched the returned SHA-256 exactly.
+- Claude 5.11492.5: a full exit/reopen loaded the configured server. After the user
+  allowed the tool and the filter repair was loaded, the original call returned two
+  fixed resistors in an actual embedded viewer; Small/Thick controls and **Use this
+  symbol** responded. Model feedback and embedded downloads remain under test.
+- ChatGPT Chat: the user reported zero results followed by all symbols. The test
+  chat labeled all 91 designs as resistors; stored state showed the family filter
+  had been cleared. Retest after reloading the corrected connection is pending.
+- Creation: interpretation reached the real connected tool. The user requested a
+  different test symbol; its description and confirmation are pending. No live test
+  drawing was rendered or saved. Earlier synthetic creation evidence stays separate.
+- Focused repair checks: 15 agent tests and the MCP transport/resource test passed,
+  including aliases, exact identities and session reuse through text-only results.
 
 The consolidation reran stdio/HTTP and isolated creation/refinement proofs (18 +
 36 rendered configurations), complete-library search follow-ups, targeted browser
@@ -39,12 +62,12 @@ verified. A failed feature must be recorded separately from a connectivity block
 
 | Environment | Status | Current evidence / next dependency |
 |---|---|---|
-| ChatGPT Desktop · Chat | Untested | Current docs support MCP Apps; actual installed connector and embedded journey need testing |
+| ChatGPT Desktop · Chat | Retest pending | Actual chat connected but returned incorrect filtering before the repair; reload and repeat. Embedded rendering not verified |
 | ChatGPT Desktop · Work local | Untested | Local launch configuration prepared; reload connection and run the checklist |
 | ChatGPT Desktop · Work cloud | Blocked | No approved reachable MCP endpoint/private tunnel; local-computer bridging is workspace-dependent |
-| ChatGPT Desktop · Codex local | Unverified | Namespaced local connection configured; reload after the consolidated source update. Protocol checks do not establish an embedded journey |
+| ChatGPT Desktop · Codex local | Partial | Actual connected search, browser selection feedback and exact SVG download passed. No embedded panel observed; creation/save pending |
 | ChatGPT Desktop · Codex cloud | Blocked | No approved cloud connector and persistent dev-library destination |
-| Claude Desktop | Blocked | Version 5.11492.5 observed: Settings → Desktop app → Extensions exposes Local MCP servers/Edit config. Namespaced isolated entry added with existing settings preserved; the running app still shows no servers until reload. Embedded journey untested. |
+| Claude Desktop | Partial | Version 5.11492.5: connection loaded after full exit/reopen; corrected search, embedded artwork and configuration controls observed. Selection feedback, embedded download and creation/save require completion |
 
 Windows Computer Use guidance in this development session prohibits automation of
 the ChatGPT desktop app UI. Therefore its manual interaction checks were not

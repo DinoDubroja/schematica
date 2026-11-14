@@ -574,3 +574,17 @@ worktrees were retired after preservation. The integration folder remains at the
 same baseline for installed host paths/stores; the canonical checkout is on main.
 Unrelated research and the unmerged historical review branch are retained. See
 [current status](CURRENT.md) for future task routing and remaining limitations.
+## Live host verification follow-up — 15-11-2026
+
+Source: **Agent A**, chat `01a1d784-a02a-7eb1-9e76-e4a3d2b4692e`, user turn
+14-11-2026 23:44:07 +01:00: “Now verify the ChatGPT and Claude integrations so I can
+actually search for and create symbols from chat.” Reviewed 15-11-2026 +01:00.
+
+**In progress:** verify actual host use and repair demonstrated integration defects.
+Claude required a full exit/reopen; its embedded search exposed singular family
+filters returning zero results. The repair normalizes those aliases and includes
+session/identity details in model-readable search text. The user reported the same
+empty/broadened-result problem in ChatGPT Chat. Corrected host retests remain required.
+The user declined the proposed ground test and requested a different symbol; wait
+for its description and confirmation. A host tool permission is not drawing or save
+approval. Existing synthetic tests do not establish live creation or human acceptance.

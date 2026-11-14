@@ -1,6 +1,6 @@
 # Current status
 
-14-11-2026 · **Consolidated main and website published and verified.**
+15-11-2026 · **Consolidated main/website published; live host verification in progress.**
 
 ## Objective and authorization
 
@@ -24,6 +24,27 @@ categorization or redesign was implemented; those remain separate work.
   records match B's ready collection exactly. Test creations remain isolated and
   Unverified. All intentional removals remain absent.
 
+## Active host verification
+
+The user requested actual ChatGPT/Claude search and creation verification after
+consolidation. Live testing exposed and repaired singular family filters returning
+zero results, and search text omitting identities/session details needed by Claude.
+The focused [repair branch](https://github.com/DinoDubroja/schematica/tree/fix/chat-host-verification)
+is pushed; main and the static website still contain the consolidated baseline.
+The retained local integration checkout runs the repair; existing host processes
+must reload to pick up source changes.
+
+Local Codex search/follow-ups, browser selection feedback and exact SVG download
+passed. Claude's connection loaded after a full exit/reopen, and its embedded
+viewer displayed the corrected two-result search and Small/Thick controls. The
+user's ChatGPT Chat test initially failed filtering; its corrected retest is pending.
+Fifteen agent tests and the MCP test pass. See [host evidence](../docs/HOST_VERIFICATION.md).
+
+Creation is waiting for the user's alternative test-symbol description, then actual
+interpretation confirmation. No live test drawing was rendered or saved. Finish
+selection/download and creation/save/fresh-retrieval checks per host before claiming
+complete integration. Cloud hosting and production-library changes are outside this check.
+
 ## Verification
 
 Passed **77 Python and 11 JavaScript tests**, documentation links and reproducible
@@ -45,9 +66,9 @@ uses the same consolidated source. Backend/browser checks are not host or laptop
 Retired the fully merged A/B task branches, delivery-documentation branch and old
 publication branch; removed the two obsolete publication worktrees after verified
 preservation and runtime checks. Stale synthetic/test preview servers were stopped.
-The canonical checkout is on main. The extra integration working folder is retained
-at the same revision because installed host configurations, its environment and
-ignored stores depend on that path; it is not a separate product version.
+The canonical checkout now holds the focused host-verification branch. The extra
+integration working folder is retained because installed host configurations, its
+environment and ignored stores depend on that path; it follows that repair checkpoint.
 
 A verified local history bundle and SHA-256/CRC-checked archive preserve prior source,
 ignored drafts, handoffs and unrelated research. Research remains untracked and
@@ -65,8 +86,8 @@ current main, with separate task branches/worktrees when needed. Agent A coordin
 exact ready commits; each delivery names its publisher within authorized scope.
 No further A/B product handoff is required for this consolidation.
 
-Actual ChatGPT/Claude embedded journeys, remote MCP connectivity and physical laptop
-setup remain unverified. Reload existing host connections after this source update.
+Complete ChatGPT/Claude creation journeys, remote MCP connectivity and physical laptop
+setup remain unverified. Reload existing host connections after source updates.
 Accounts, personal libraries and production storage remain outside the current baseline.
 
 [Setup and quick checks](../DEVELOPMENT.md) · [Agent setup](../docs/AGENT_INTEGRATION.md)
