@@ -91,8 +91,10 @@ class ApprovalWorkflow(unittest.TestCase):
 
     def test_existing_accepted_designs_have_matching_official_records(self):
         published = publication_catalog(catalog(), definitions(), LIBRARY, read_ledger())
+        approvals = read_ledger()['approvals']
+        self.assertLessEqual(set(approvals), {s['id'] for s in published['symbols']})
         for symbol in published['symbols']:
-            if symbol['id'] in {'resistor-eu','resistor-us','inductor-coil','capacitor','opamp','opamp-supply'}:
+            if symbol['id'] in approvals:
                 self.assertEqual(symbol['verification']['status'], 'verified')
             else:
                 self.assertEqual(symbol['verification']['status'], 'unverified')

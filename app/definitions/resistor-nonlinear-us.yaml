@@ -1,6 +1,6 @@
 schema_version: 1
 id: resistor-nonlinear-us
-revision: 1
+revision: 3
 name: Nonlinear resistor (US)
 description: Two-terminal nonlinear resistor with a diagonal S-shaped marking, without
   an arrowhead. This generic form does not specify a voltage or temperature dependence.

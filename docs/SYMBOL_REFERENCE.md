@@ -37,7 +37,7 @@ coordinate unit. A gap is measured between construction centre-lines unless stat
 | Adjustment orientation | Up-right default; reflect only the marking to obtain up-left, down-right, down-left. No body/pin reflection |
 | Variable arrow clearance | Shaft runs from `(−2s, −2s)` to `(2.4s, 2.4s)` before reflection. The head clears the EU body by at least 0.38 mm of visible space in Small/Thick |
 | NTC / PTC labels | Latin Modern Sans, identical cap height `0.84s` (1.4 mm at medium), common left edge and baseline, clear of the dependency mark; vector glyphs in SVG |
-| Nonlinear marking | One continuous diagonal S-shaped curve across the body; no arrowhead or voltage label |
+| Nonlinear marking | Selected B: one cubic, no centre join, arrowhead or voltage label. Axial half-length `5.6f` mm; lateral control offsets `±3.4f` mm at axial coordinates `∓5.6f/3` mm; rotated 45° across the body |
 | Clearance and crop | At least 0.9 mm measured page margin. Keep unrelated marks separated by at least one thick stroke (0.30 mm) of visible space in Small/Thick; check letter counters and intended crossings visually |
 
 NTC identifies a negative temperature coefficient; PTC identifies a positive one.
@@ -46,8 +46,9 @@ terminals; diagonal adjustment marks on two-terminal resistors add no terminal.
 
 ## Current constructions
 
-These are Schematica's reviewed agent outputs, awaiting the user's design approval.
-The source TeX supplies the dimensions above; these images are the actual exports.
+Potentiometer, thermistor and photoresistor examples are user-approved. The smooth
+nonlinear revision 3 implements selected B and awaits final rendered-design verification.
+These images use the actual current exports.
 
 ![Centered wiper, NTC lettering, symmetric light arrows and nonlinear S from current exports](images/resistor-constructions.svg)
 

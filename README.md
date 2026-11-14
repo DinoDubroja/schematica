@@ -11,6 +11,6 @@ and export SVGs for Inkscape.
 · [Roadmap and scope](docs/ROADMAP.md)
 · [Review symbols](docs/VERIFICATION.md)
 
-The current app has 28 designs and 360 configurations, dark/light mode, design
+The current app has 26 designs and 342 configurations, dark/light mode, design
 verification and single-symbol or complete-library export. Agent-assisted creation,
 personal variants and schematic styles are next directions.

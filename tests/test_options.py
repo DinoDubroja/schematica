@@ -95,7 +95,16 @@ class SymbolOptions(unittest.TestCase):
                 if variant == 'nonlinear':
                     mark = paths(config, 'nonlinear-mark')
                     self.assertEqual(len(mark), 1)
-                    self.assertIn('C', mark[0])
+                    # The user selected B: one smooth cubic, not two joined lobes.
+                    self.assertEqual(re.findall(r'[A-Za-z]', mark[0]), ['M', 'C'])
+                    actual = points(mark[0])
+                    self.assertEqual(len(actual), 4)
+                    f = config['settings']['size_factor']
+                    expected = [(-5.6, 0), (-5.6/3, 3.4), (5.6/3, -3.4), (5.6, 0)]
+                    for (x, y), (u, v) in zip(actual, expected):
+                        # Stored paths use y-up TeX points; the chat proof used mm.
+                        self.assertAlmostEqual(x*25.4/72.27, f*(u+v)/math.sqrt(2), delta=.0002)
+                        self.assertAlmostEqual(y*25.4/72.27, f*(u-v)/math.sqrt(2), delta=.0002)
                 if variant in ('ntc','ptc'):
                     root = artwork(config)
                     part = next(e for e in root.iter() if e.get('data-part') == 'temperature-mark')

@@ -1,46 +1,52 @@
 # Develop Schematica
 
 [Preview](https://schematica-preview.dinodubroja.workers.dev/)
-· [Inkscape](docs/INKSCAPE.md)
-· [Scope and gaps](docs/ROADMAP.md)
-· [Current status](context/CURRENT.md)
+Â· [Inkscape](docs/INKSCAPE.md)
+Â· [Scope and gaps](docs/ROADMAP.md)
+Â· [Current status](context/CURRENT.md)
 
 ## Latest changes
 
-14-11-2026: **resistor corrections and Variations**, with **28 designs / 360
-configurations**. The six accepted originals retain their geometry and verification.
-The other 22 designs remain **Unverified** pending human review.
+14-11-2026: **selected nonlinear option B, 18 approvals applied, tapped resistors
+removed**. The library has **26 designs / 342 configurations**: **24 Verified** and
+two revised nonlinear designs **Unverified**. Those two are revision 3.
 
-| Change | Where to inspect |
-|---|---|
-| Centered wipers; NTC/PTC lettering; symmetric light arrows; nonlinear S replaces varistors | [Reference guide and examples](docs/SYMBOL_REFERENCE.md), [batch inventory](docs/RESISTOR_BATCH.md) |
-| Four adjustment orientations; exact individual and deterministic library exports | Variable/trimmer settings in the preview; [Inkscape guide](docs/INKSCAPE.md) |
-| Compact Variations rows for Stroke, Size and applicable options | [Review guide](docs/VERIFICATION.md) |
-| Representative-first production and mandatory family visual review | [Batch workflow](docs/RESISTOR_BATCH.md#repeatable-creation-workflow) |
-| Options/defaults and all drawings included in verification | [verification.py](app/verification.py), [official record](app/verification.json) |
+Option B uses one smooth cubic curve, with no centre join. Both body appearances
+match the option selected in chat at every size/stroke. Bodies, leads and pins stay
+fixed; every retained approved SVG is byte-identical to the previous library.
 
-**Validated build: `601a9624a06d`.**
+![Selected option B in the actual EU and US exports](docs/images/nonlinear-option-b.png)
+
+**Build: `ee70ffede6be`.** Source synchronization to GitHub is authorized for this
+update. Cloudflare deployment is separate: the shared preview still serves
+`601a9624a06d` with the earlier inventory and approval record.
 
 | Check | Result |
 |---|---|
-| Unit/regression tests | 42 Python + 8 JavaScript passed; original 54 SVGs byte-identical |
-| Complete rendering | All 360 configurations; four adjustable designs × 36 |
-| Inkscape | All 360 pass bounds, parts and save/reopen; minimum margin 0.99998 mm |
-| Accepted palette | 42 comparisons; maximum coordinate deviation 0.00124 mm |
-| Library exports | All 36 profiles pass references, page sizing and clipping |
-| Actual local downloads | 36 libraries + 21 individual SVGs byte-identical |
-| Browser review | All 28 Variations windows; dark/light, 360 px narrow view, keyboard, search and pending/Undo |
-| Native TeX | CircuitikZ, NTC/PTC and reflected variable resistor compile; bounded editable-label roundtrip passes |
-| Published preview | Build `601a9624a06d`, deployment `e6505edb`; manifest + 404 assets match; three actual live downloads match |
-| Documentation | 77 local links/anchors pass; illustrated guides rendered; independent repository-context recovery passes |
+| Approval handoff | All 18 IDs, revisions and fingerprints matched; original six approvals retained |
+| Selected B geometry | All 18 changed configurations match the chat curve within 0.00007 mm; fixed bodies/pins and at least 1.00 mm page margin |
+| Shared recipe | 270 unchanged configurations regenerated for source freshness; all 324 retained approved SVGs preserved byte for byte |
+| Tests and exports | 42 Python + 8 JavaScript tests passed; all 36 library profiles contain 26 designs, and all 342 individual SVGs match the library |
+| Documentation | 73 local links/anchors checked, no failures |
+| Interface | Viewer code unchanged; no browser automation in this run |
+| Inkscape | No Inkscape GUI, export or save/reopen checks rerun; compatibility is not freshly verified |
 
-Use the [action → expected-result checklist](#test-and-review) on both devices.
-Publication checks are recorded in [current status](context/CURRENT.md).
-A fresh Git-index checkout produces the same build. Its server test encountered
-one Windows connection abort (10053); the focused four-test rerun passed.
-New SVG output now uses consistent line endings; the six original designs retain
-their exact historical bytes. The laptop's current build, profile-wide Symbols installation, fresh GUI grid
-snapping and clean-machine/offline TeX setup remain unverified.
+### Review this update
+
+Start the local app using [Run on Windows](#run-on-windows).
+
+| Action | Expected result |
+|---|---|
+| Open All symbols, then Unverified | 26 designs total; only Nonlinear resistor EU and US remain Unverified |
+| Search `tapped` | No results |
+| Open each nonlinear resistor; inspect Medium/Medium and Small/Thick | Selected B: one smooth S with no central join or arrowhead; same body and two terminals |
+| Check an approved photoresistor, potentiometer or thermistor | Verified; its geometry is unchanged |
+| Optionally download the complete library | 26 symbols at the selected settings, with no tapped resistors |
+
+The user selected B for implementation. Final rendered-design verification still
+uses the [approval handoff](docs/VERIFICATION.md); the two revised designs have no
+official approval fingerprints yet. The laptop and hosted update remain untested
+for this build. Earlier broad Inkscape/browser results belong to `601a9624a06d`.
 
 ## Run on Windows
 
@@ -98,28 +104,28 @@ Downloaded SVGs and Inkscape drawings remain local unless separately synchronize
 
 ```text
 schematica/
-├── README.md               # Product overview and screenshot
-├── DEVELOPMENT.md          # Setup, editing, checks and packaging
-├── AGENTS.md               # Instructions for new Schematica
-├── app/
-│   ├── definitions/        # Names, descriptions, keywords, pins and parts
-│   ├── presets.yaml        # Three sizes and three stroke weights
-│   ├── tex/                # Authoritative parameterized geometry
-│   ├── core.py             # Find, inspect and render; shared TeX export
-│   ├── exports.py          # SVG, ZIP, sheet and Symbols composition
-│   ├── library/            # Catalog and 360 SVGs for immediate browsing
-│   ├── verification.py     # Validate and apply chat approval handoffs
-│   ├── verification.json   # Official acceptance, tied to actual geometry
-│   ├── viewer/             # Accepted HTML/CSS/JavaScript interface
-│   ├── build_site.py       # Portable website builder
-│   ├── build_library.py    # Render candidates before promotion
-│   ├── package.py          # Generate distributable ZIPs
-│   ├── launch.ps1          # Windows entry point
-│   ├── server.py           # Local static server
-│   └── wrangler.jsonc      # Cloudflare static-asset settings
-├── tests/                  # Automated checks, render checks and fixtures
-├── docs/                   # Inkscape, roadmap and documentation images
-└── context/                # Current status and new-project decisions
+â”œâ”€â”€ README.md               # Product overview and screenshot
+â”œâ”€â”€ DEVELOPMENT.md          # Setup, editing, checks and packaging
+â”œâ”€â”€ AGENTS.md               # Instructions for new Schematica
+â”œâ”€â”€ app/
+â”‚   â”œâ”€â”€ definitions/        # Names, descriptions, keywords, pins and parts
+â”‚   â”œâ”€â”€ presets.yaml        # Three sizes and three stroke weights
+â”‚   â”œâ”€â”€ tex/                # Authoritative parameterized geometry
+â”‚   â”œâ”€â”€ core.py             # Find, inspect and render; shared TeX export
+â”‚   â”œâ”€â”€ exports.py          # SVG, ZIP, sheet and Symbols composition
+â”‚   â”œâ”€â”€ library/            # Catalog and 342 SVGs for immediate browsing
+â”‚   â”œâ”€â”€ verification.py     # Validate and apply chat approval handoffs
+â”‚   â”œâ”€â”€ verification.json   # Official acceptance, tied to actual geometry
+â”‚   â”œâ”€â”€ viewer/             # Accepted HTML/CSS/JavaScript interface
+â”‚   â”œâ”€â”€ build_site.py       # Portable website builder
+â”‚   â”œâ”€â”€ build_library.py    # Render candidates before promotion
+â”‚   â”œâ”€â”€ package.py          # Generate distributable ZIPs
+â”‚   â”œâ”€â”€ launch.ps1          # Windows entry point
+â”‚   â”œâ”€â”€ server.py           # Local static server
+â”‚   â””â”€â”€ wrangler.jsonc      # Cloudflare static-asset settings
+â”œâ”€â”€ tests/                  # Automated checks, render checks and fixtures
+â”œâ”€â”€ docs/                   # Inkscape, roadmap and documentation images
+â””â”€â”€ context/                # Current status and new-project decisions
 ```
 
 | Edit | Source | Then |
@@ -135,7 +141,7 @@ schematica/
 
 The viewer reads pre-rendered SVGs and a catalog. It never compiles TeX. The static
 builder copies the accepted artwork, reads current editorial metadata and creates
-36 complete-library exports. The website contains 406 files, with no Python, source
+36 complete-library exports. The website contains 388 files, with no Python, source
 TeX, references or test material. Its content hashes determine `build.json`.
 
 ## Test and review
@@ -150,7 +156,7 @@ node --test tests\review.test.cjs tests\configurations.test.cjs
 .\.venv\Scripts\python.exe tests\check_docs.py
 ```
 
-Expect **42 Python tests and 8 JavaScript tests**, a **406-file** website, and no
+Expect **42 Python tests and 8 JavaScript tests**, a **388-file** website, and no
 broken documentation links. Tests cover all designs/configurations, accepted SVG
 bytes, pins, independent strokes, editable parts, exports, HTTP boundaries and
 approval validity. Compare `app/dist/build.json` with the hosted `build.json` when
@@ -158,9 +164,9 @@ checking that both devices have the same version.
 
 | Action | Expected result |
 |---|---|
-| Open the app; switch All symbols / Unverified | 28 designs / 22 new designs; the original six remain Verified |
+| Open the app; switch All symbols / Unverified | 26 designs / two nonlinear designs; 24 designs are Verified |
 | Choose Resistors / Batch 01; search `NTC`, then `zzzz`, then clear | Two NTCs; empty state; the filtered batch returns |
-| Select Variable resistor · US; open Variations | Stroke, Size and Arrow orientation rows; one setting varies per row, all others at defaults; no large preview |
+| Select Variable resistor Â· US; open Variations | Stroke, Size and Arrow orientation rows; one setting varies per row, all others at defaults; no large preview |
 | Choose Small / Thick / Down-left; open Variations | Comparison rows still use defaults, independently of the main preview selection |
 | Try all orientations on variable/trimmer US/EU | Only the diagonal marking reflects; body, leads and blue pin identities stay fixed |
 | Inspect potentiometers, NTC/PTC, photos and nonlinear resistors | Wiper tip centered 1 mm above body; labels readable; arrows symmetric; diagonal S has no arrowhead; no varistors |
@@ -169,10 +175,10 @@ checking that both devices have the same version.
 | Copy approvals or Copy symbol reference | Approval JSON includes exact revision/fingerprint; reference includes name/ID/revision/link |
 | Open the reference link in another browser | Same design selected; local approvals are not transferred |
 | Switch dark/light; reload; use Small/Thick and Grid & pins | Theme persists; stroke changes keep pins fixed; preview aids toggle together |
-| Export Small/Thick/Down-left variable resistor, then the library while filtered | Single matches the selected marking; library has all 28 designs and Down-left on its four adjustable designs |
+| Export Small/Thick/Down-left variable resistor, then the library while filtered | Single matches the selected marking; library has all 26 designs and Down-left on its four adjustable designs |
 | Select a coil; export the library | Orientation controls disappear; adjustable designs in the library use Up-right |
 | Inspect exported artwork | Black vectors, no blue points/grid; NTC/PTC glyph outlines stay grouped as temperature-mark |
-| Open the library in Inkscape Symbols | 28 thumbnails; placed artwork can be unlinked, edited, saved and reopened |
+| Open the library in Inkscape Symbols | 26 thumbnails; placed artwork can be unlinked, edited, saved and reopened |
 | Use Tab, Enter, Escape, arrow keys on the tabs, and `/`; narrow the window | Controls remain reachable; dialogs return focus; search focuses; page does not overflow |
 
 Repeat on both Windows devices using the [shared preview](https://schematica-preview.dinodubroja.workers.dev/).
@@ -251,9 +257,9 @@ Creates `app/build/exports/` with a hash manifest and three ZIPs:
 
 | Package | Contents |
 |---|---|
-| `web-preview.zip` | 406 static website files, ready for Cloudflare upload |
-| `all-symbols.zip` | 360 individual SVGs |
-| `tex-bundles.zip` | 360 standalone configurations, each with `symbol.tex` and required helpers |
+| `web-preview.zip` | 388 static website files, ready for Cloudflare upload |
+| `all-symbols.zip` | 342 individual SVGs |
+| `tex-bundles.zip` | 342 standalone configurations, each with `symbol.tex` and required helpers |
 
 Only the shared TeX recipes/helpers and prebuilt browser SVGs are maintained.
 Generated standalone bundles and ZIPs are not committed. To use the native TeX

@@ -31,7 +31,7 @@ MACROS = {"resistor-eu": "SCResistorEU", "resistor-us": "SCResistorUS",
           "inductor-coil": "SCInductorCoil", "capacitor": "SCCapacitor",
           "opamp": "SCOpamp", "opamp-supply": "SCOpampSupply", "resistor-variant": "SCResistorVariant"}
 RESISTOR_VARIANTS = ("variable", "potentiometer", "trimmer", "trimmer-potentiometer",
-                    "thermistor", "ntc", "ptc", "nonlinear", "photo", "photo-enclosed", "tapped")
+                    "thermistor", "ntc", "ptc", "nonlinear", "photo", "photo-enclosed")
 ORIENTATIONS = ("up-right", "up-left", "down-right", "down-left")
 BP_MM = 25.4 / 72
 ID_RE = re.compile(r"[a-z][a-z0-9-]*\Z")

@@ -5,9 +5,6 @@
   \SCresolve{#1}{#2}{#3}%
   \pgfmathsetmacro{\SCend}{ceil(3*\SCscale+2)+1}%
   \pgfmathsetmacro{\SCwiperend}{ceil(3*\SCscale)+1}%
-  \pgfmathsetmacro{\SCcontact}{\SCscale}%
-  % A tap touches the old US peak; the potentiometer wiper is separately centered.
-  \pgfmathsetmacro{\SCcontactx}{-.5*#4*\SCscale}%
   \pgfmathsetmacro{\SCorientx}{ifthenelse(mod(#6,2)==1,-1,1)}%
   \pgfmathsetmacro{\SCorienty}{ifthenelse(#6>1,-1,1)}%
   \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
@@ -50,9 +47,11 @@
     \or
       \begin{SCpart}{nonlinear-mark}
         \begin{scope}[rotate=-45]
-          \draw ({-.5*\SCscale},{-3*\SCscale})
-            .. controls ({1.4*\SCscale},{-3*\SCscale}) and ({1.4*\SCscale},{-.7*\SCscale}) .. (0,0)
-            .. controls ({-1.4*\SCscale},{.7*\SCscale}) and ({-1.4*\SCscale},{3*\SCscale}) .. ({.5*\SCscale},{3*\SCscale});
+          % Selected option B: one cubic, with no internal join.
+          % At medium size: axial half-length 5.6 mm, lateral controls 3.4 mm.
+          \draw (0,{-3.36*\SCscale})
+            .. controls ({2.04*\SCscale},{-1.12*\SCscale})
+            and ({-2.04*\SCscale},{1.12*\SCscale}) .. (0,{3.36*\SCscale});
         \end{scope}
       \end{SCpart}
     \or
@@ -61,9 +60,6 @@
       \SCdimension{enclosure-diameter}{7.6*\SCscale}
       \begin{SCpart}{enclosure}\draw (0,0) circle ({3.8*\SCscale});\end{SCpart}
       \SCphotoArrows{3.1}{3.1}
-    \or
-      \SCpin{tap}{0}{\SCwiperend}
-      \begin{SCpart}{lead-tap}\draw (0,\SCwiperend)--(\SCcontactx,\SCcontact);\end{SCpart}
     \fi
   \end{scope}%
 }

@@ -30,6 +30,96 @@
       "revision": 1,
       "fingerprint": "66ef95f5cea68d0aefbd3dcaa8dbd45dde33b7b54f2796bbc15c22cccc870a5b",
       "evidence": "Accepted first-batch rendering and viewer reviews, preserved baseline 22387d3"
+    },
+    "thermistor-eu": {
+      "revision": 1,
+      "fingerprint": "6af2965019ed835c43b9358b169848d901ba458eaee2836cef8248c2d636834f",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "photoresistor-enclosed-eu": {
+      "revision": 2,
+      "fingerprint": "e09f6ff2c7b0f572e16a46051a6e6753da4ca1fc276bfc0a8c84f1caadd01288",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "photoresistor-enclosed-us": {
+      "revision": 2,
+      "fingerprint": "c035acb8f205bcde7bb90f1b1b0ffb8c4930405c1afe552916fc83308db853a7",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "photoresistor-eu": {
+      "revision": 2,
+      "fingerprint": "b91f16e7e2f382f533227be4b40dda3e53083651e41c8f752db83f4ccb2a5cb9",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "photoresistor-us": {
+      "revision": 2,
+      "fingerprint": "a91b6fbd9abf9e7ef890167bd3c97df2d7bd67ca880b70d9376e1878adbbafae",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "potentiometer-eu": {
+      "revision": 2,
+      "fingerprint": "a232a2cc72d08003873c85b86a4495ffa66f94b4e47c2ce0ec08697168179d8e",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "potentiometer-trimmer-eu": {
+      "revision": 2,
+      "fingerprint": "e3fa0a4e32c63418c92abe822543b80de8898a1f26418c73c0cfb7556da80667",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "potentiometer-trimmer-us": {
+      "revision": 2,
+      "fingerprint": "9342b10a447d522703012787d8c172e144319a85786bf98dd37b32b75b8136c4",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "potentiometer-us": {
+      "revision": 2,
+      "fingerprint": "dd103f0fd755a0e65ef310d6b35ac4bb960c6592828b3b1cea8fe0ec5e7841b5",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "resistor-trimmer-eu": {
+      "revision": 2,
+      "fingerprint": "f322c747bc13771c93a47860b72644d3dddd3106d43ccf558add641d364a8772",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "resistor-trimmer-us": {
+      "revision": 2,
+      "fingerprint": "a09733dd8438c04c2d494f2e5c0f18d6e48aa6ad029eace9c37b6fd2d8fddf08",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "resistor-variable-eu": {
+      "revision": 2,
+      "fingerprint": "c244b05b03c3331cf622005e0a8d0373f84c4b98c0080f1f3119b8cfd52a5263",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "resistor-variable-us": {
+      "revision": 2,
+      "fingerprint": "8e1fe703977e05fc39dd02724cfe6ca1f6bb6602d66d7b47bd3c0fa1527210c9",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "thermistor-ntc-eu": {
+      "revision": 2,
+      "fingerprint": "0aea76935c78d9e1b422221dc57a7048e2c6c869af81393d7f5ee13b0f907ea3",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "thermistor-ntc-us": {
+      "revision": 2,
+      "fingerprint": "825753dc2db6b0b212b3ef0762fae88ee45808de513276bd2382c92a4324acd2",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "thermistor-ptc-eu": {
+      "revision": 2,
+      "fingerprint": "b0d71832626c94efa63763eca48d90baf5390e82e8f349634723ca3adc2f5f25",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "thermistor-ptc-us": {
+      "revision": 2,
+      "fingerprint": "bf4d19d189d510abf0f4d8648e25b8f1fe13ba9b2404781bbaac83ee472776b1",
+      "evidence": "User approval supplied through the chat handoff"
+    },
+    "thermistor-us": {
+      "revision": 1,
+      "fingerprint": "c1d9f24d65d1f27265b26b72835883a88bedf4294abe925485f7b9696b707533",
+      "evidence": "User approval supplied through the chat handoff"
     }
   }
 }

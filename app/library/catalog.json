@@ -3757,7 +3757,7 @@
           }
         }
       ],
-      "source_fingerprint": "edc8cf53c1eb56c5052d92d519e6beeecde50ca1246f05bd1d367aa8e78db760"
+      "source_fingerprint": "67142971e2a0d71cd3b06aa574eeb23095a8c28d82c3cc931ed1b1d9fbb01914"
     },
     {
       "schema_version": 1,
@@ -4292,7 +4292,7 @@
           }
         }
       ],
-      "source_fingerprint": "15ee3144e7a04d5c1066bb6708ff46f56a055c208baa4f0f82d46752f277a9fd"
+      "source_fingerprint": "1f1bc818ff774558cd85ac3d772dc92a99ca3027fffc4b12f8cc96b00e032785"
     },
     {
       "schema_version": 1,
@@ -4804,7 +4804,7 @@
           }
         }
       ],
-      "source_fingerprint": "c2d9089b585772aa8c219c6159de15cbebb0c4d72858429fcff8836729971ae5"
+      "source_fingerprint": "7ea80c01627393950bef3f397eac8b6924c15154f9079e6f2e9342b5a2f57e99"
     },
     {
       "schema_version": 1,
@@ -5316,7 +5316,7 @@
           }
         }
       ],
-      "source_fingerprint": "d5e1e9aa572a05f5a043a6e013a072ae8126205bc83aca0009e18356cb8f1e68"
+      "source_fingerprint": "770ee199bd3233739f05f69e00ad77eb05e56d041a1daa4b363024188bac93f4"
     },
     {
       "schema_version": 1,
@@ -5911,7 +5911,7 @@
           }
         }
       ],
-      "source_fingerprint": "3b2b2893b51ab421a2c6be5aa4e6f34effe7df5864eaefcf2626811ab4278b0c"
+      "source_fingerprint": "805e7df12ac650a9d34c34066156c585bf24ab29bdd397e6977c97f6d24ec186"
     },
     {
       "schema_version": 1,
@@ -6519,7 +6519,7 @@
           }
         }
       ],
-      "source_fingerprint": "f931024f50c10432337666b033caa0e6344f51b977b7f1c48b888b2a5403cf4c"
+      "source_fingerprint": "b318acfd051f0fdc7cb6971dc78cc33fee8a31f3fcdf52597d4d6dee98096728"
     },
     {
       "schema_version": 1,
@@ -7127,7 +7127,7 @@
           }
         }
       ],
-      "source_fingerprint": "63bd2998db68a572018141d160ef7cc7f719fa3f34e37f2d80731b01663be232"
+      "source_fingerprint": "5fafbe754a33f9d3dbd429d856ebd8dbdaa1fd91237e5fef106c67433cf95d45"
     },
     {
       "schema_version": 1,
@@ -7722,12 +7722,12 @@
           }
         }
       ],
-      "source_fingerprint": "1d048faca30b4f72efcae41da12faae402b2a28d78c8203fc2cdeea38d62c922"
+      "source_fingerprint": "b1bc36940f738baaf85090f20a55c416117985f56d9b3e5972aa675322333098"
     },
     {
       "schema_version": 1,
       "id": "resistor-nonlinear-eu",
-      "revision": 1,
+      "revision": 3,
       "name": "Nonlinear resistor (EU)",
       "description": "Two-terminal nonlinear resistor with a diagonal S-shaped marking, without an arrowhead. This generic form does not specify a voltage or temperature dependence.",
       "keywords": [
@@ -7813,65 +7813,18 @@
           "key": "resistor-nonlinear-eu-small-thin",
           "symbol_id": "resistor-nonlinear-eu",
           "name": "Nonlinear resistor (EU)",
-          "revision": 1,
+          "revision": 3,
           "size": "small",
           "stroke": "thin",
           "svg": "svg/resistor-nonlinear-eu-small-thin.svg",
           "width_mm": 16.14991231,
-          "height_mm": 9.92809659,
+          "height_mm": 8.08964565,
           "origin_svg": [
             -45.792816,
-            -57.928702
+            -60.534379
           ],
           "visual_center_from_origin_mm": [
             -8.819444422177487e-07,
-            -7.055555562808358e-07
-          ],
-          "pins_mm": {
-            "a": [
-              -7.0,
-              0.0
-            ],
-            "b": [
-              7.0,
-              0.0
-            ]
-          },
-          "dimensions_mm": {
-            "body-width": 7.5,
-            "body-height": 2.5
-          },
-          "parts": [
-            "body",
-            "lead-a",
-            "lead-b",
-            "nonlinear-mark"
-          ],
-          "svg_bytes": 2451,
-          "settings": {
-            "size": "small",
-            "stroke": "thin",
-            "size_factor": 0.75,
-            "stroke_mm": 0.15,
-            "grid_mm": 1
-          }
-        },
-        {
-          "key": "resistor-nonlinear-eu-small-medium",
-          "symbol_id": "resistor-nonlinear-eu",
-          "name": "Nonlinear resistor (EU)",
-          "revision": 1,
-          "size": "small",
-          "stroke": "medium",
-          "svg": "svg/resistor-nonlinear-eu-small-medium.svg",
-          "width_mm": 16.19991786,
-          "height_mm": 9.97809896,
-          "origin_svg": [
-            -45.721945,
-            -57.857832
-          ],
-          "visual_center_from_origin_mm": [
-            1.763888909501866e-07,
             1.763888909501866e-07
           ],
           "pins_mm": {
@@ -7894,32 +7847,32 @@
             "lead-b",
             "nonlinear-mark"
           ],
-          "svg_bytes": 2476,
+          "svg_bytes": 2430,
           "settings": {
             "size": "small",
-            "stroke": "medium",
+            "stroke": "thin",
             "size_factor": 0.75,
-            "stroke_mm": 0.2,
+            "stroke_mm": 0.15,
             "grid_mm": 1
           }
         },
         {
-          "key": "resistor-nonlinear-eu-small-thick",
+          "key": "resistor-nonlinear-eu-small-medium",
           "symbol_id": "resistor-nonlinear-eu",
           "name": "Nonlinear resistor (EU)",
-          "revision": 1,
+          "revision": 3,
           "size": "small",
-          "stroke": "thick",
-          "svg": "svg/resistor-nonlinear-eu-small-thick.svg",
-          "width_mm": 16.29992577,
-          "height_mm": 10.07810687,
+          "stroke": "medium",
+          "svg": "svg/resistor-nonlinear-eu-small-medium.svg",
+          "width_mm": 16.19991786,
+          "height_mm": 8.13965119,
           "origin_svg": [
-            -45.580203,
-            -57.71609
+            -45.721945,
+            -60.463508
           ],
           "visual_center_from_origin_mm": [
-            7.055555562808358e-07,
-            -7.05555553774199e-07
+            1.763888909501866e-07,
+            -1.234722221611485e-06
           ],
           "pins_mm": {
             "a": [
@@ -7941,7 +7894,54 @@
             "lead-b",
             "nonlinear-mark"
           ],
-          "svg_bytes": 2462,
+          "svg_bytes": 2455,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "resistor-nonlinear-eu-small-thick",
+          "symbol_id": "resistor-nonlinear-eu",
+          "name": "Nonlinear resistor (EU)",
+          "revision": 3,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/resistor-nonlinear-eu-small-thick.svg",
+          "width_mm": 16.29992577,
+          "height_mm": 8.23965558,
+          "origin_svg": [
+            -45.580203,
+            -60.321767
+          ],
+          "visual_center_from_origin_mm": [
+            7.055555562808358e-07,
+            2.5066368733759088e-15
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 2.5
+          },
+          "parts": [
+            "body",
+            "lead-a",
+            "lead-b",
+            "nonlinear-mark"
+          ],
+          "svg_bytes": 2442,
           "settings": {
             "size": "small",
             "stroke": "thick",
@@ -7954,19 +7954,19 @@
           "key": "resistor-nonlinear-eu-medium-thin",
           "symbol_id": "resistor-nonlinear-eu",
           "name": "Nonlinear resistor (EU)",
-          "revision": 1,
+          "revision": 3,
           "size": "medium",
           "stroke": "thin",
           "svg": "svg/resistor-nonlinear-eu-medium-thin.svg",
           "width_mm": 18.14990479,
-          "height_mm": 12.52073491,
+          "height_mm": 10.06948181,
           "origin_svg": [
             -42.958185,
-            -54.254097
+            -57.728313
           ],
           "visual_center_from_origin_mm": [
             5.291666678372861e-07,
-            -5.291666653306492e-07
+            1.763888909501866e-07
           ],
           "pins_mm": {
             "a": [
@@ -7988,7 +7988,7 @@
             "lead-b",
             "nonlinear-mark"
           ],
-          "svg_bytes": 2475,
+          "svg_bytes": 2455,
           "settings": {
             "size": "medium",
             "stroke": "thin",
@@ -8001,19 +8001,19 @@
           "key": "resistor-nonlinear-eu-medium-medium",
           "symbol_id": "resistor-nonlinear-eu",
           "name": "Nonlinear resistor (EU)",
-          "revision": 1,
+          "revision": 3,
           "size": "medium",
           "stroke": "medium",
           "svg": "svg/resistor-nonlinear-eu-medium-medium.svg",
           "width_mm": 18.19990716,
-          "height_mm": 12.57073693,
+          "height_mm": 10.11948418,
           "origin_svg": [
             -42.887314,
-            -54.183226
+            -57.657442
           ],
           "visual_center_from_origin_mm": [
             2.5066368733759088e-15,
-            -1.7638888844354975e-07
+            7.055555562808358e-07
           ],
           "pins_mm": {
             "a": [
@@ -8035,7 +8035,7 @@
             "lead-b",
             "nonlinear-mark"
           ],
-          "svg_bytes": 2500,
+          "svg_bytes": 2480,
           "settings": {
             "size": "medium",
             "stroke": "medium",
@@ -8048,19 +8048,19 @@
           "key": "resistor-nonlinear-eu-medium-thick",
           "symbol_id": "resistor-nonlinear-eu",
           "name": "Nonlinear resistor (EU)",
-          "revision": 1,
+          "revision": 3,
           "size": "medium",
           "stroke": "thick",
           "svg": "svg/resistor-nonlinear-eu-medium-thick.svg",
           "width_mm": 18.29991507,
-          "height_mm": 12.67074132,
+          "height_mm": 10.21949209,
           "origin_svg": [
             -42.745573,
-            -54.041485
+            -57.5157
           ],
           "visual_center_from_origin_mm": [
             8.819444447243856e-07,
-            1.0583333356745722e-06
+            -1.763888909501866e-07
           ],
           "pins_mm": {
             "a": [
@@ -8082,7 +8082,7 @@
             "lead-b",
             "nonlinear-mark"
           ],
-          "svg_bytes": 2487,
+          "svg_bytes": 2462,
           "settings": {
             "size": "medium",
             "stroke": "thick",
@@ -8095,19 +8095,19 @@
           "key": "resistor-nonlinear-eu-large-thin",
           "symbol_id": "resistor-nonlinear-eu",
           "name": "Nonlinear resistor (EU)",
-          "revision": 1,
+          "revision": 3,
           "size": "large",
           "stroke": "thin",
           "svg": "svg/resistor-nonlinear-eu-large-thin.svg",
           "width_mm": 22.14988303,
-          "height_mm": 15.11347837,
+          "height_mm": 12.04939205,
           "origin_svg": [
             -37.288923,
-            -50.57934
+            -54.92214
           ],
           "visual_center_from_origin_mm": [
             0.0,
-            3.527777768870995e-07
+            5.291666653306492e-07
           ],
           "pins_mm": {
             "a": [
@@ -8129,7 +8129,7 @@
             "lead-b",
             "nonlinear-mark"
           ],
-          "svg_bytes": 2460,
+          "svg_bytes": 2437,
           "settings": {
             "size": "large",
             "stroke": "thin",
@@ -8142,19 +8142,19 @@
           "key": "resistor-nonlinear-eu-large-medium",
           "symbol_id": "resistor-nonlinear-eu",
           "name": "Nonlinear resistor (EU)",
-          "revision": 1,
+          "revision": 3,
           "size": "large",
           "stroke": "medium",
           "svg": "svg/resistor-nonlinear-eu-large-medium.svg",
           "width_mm": 22.19988504,
-          "height_mm": 15.16348426,
+          "height_mm": 12.09939795,
           "origin_svg": [
             -37.218053,
-            -50.508469
+            -54.851269
           ],
           "visual_center_from_origin_mm": [
             -3.527777768870995e-07,
-            -8.819444447243856e-07
+            -7.05555553774199e-07
           ],
           "pins_mm": {
             "a": [
@@ -8176,7 +8176,7 @@
             "lead-b",
             "nonlinear-mark"
           ],
-          "svg_bytes": 2488,
+          "svg_bytes": 2465,
           "settings": {
             "size": "large",
             "stroke": "medium",
@@ -8189,19 +8189,19 @@
           "key": "resistor-nonlinear-eu-large-thick",
           "symbol_id": "resistor-nonlinear-eu",
           "name": "Nonlinear resistor (EU)",
-          "revision": 1,
+          "revision": 3,
           "size": "large",
           "stroke": "thick",
           "svg": "svg/resistor-nonlinear-eu-large-thick.svg",
           "width_mm": 22.29989296,
-          "height_mm": 15.26348865,
+          "height_mm": 12.19940198,
           "origin_svg": [
             -37.076311,
-            -50.366728
+            -54.709527
           ],
           "visual_center_from_origin_mm": [
             1.7638888844354975e-07,
-            3.5277777939373633e-07
+            2.5066368733759088e-15
           ],
           "pins_mm": {
             "a": [
@@ -8223,7 +8223,7 @@
             "lead-b",
             "nonlinear-mark"
           ],
-          "svg_bytes": 2475,
+          "svg_bytes": 2452,
           "settings": {
             "size": "large",
             "stroke": "thick",
@@ -8233,12 +8233,12 @@
           }
         }
       ],
-      "source_fingerprint": "1ba075f43a85b3f81b932d5c48c517e53c3109335edf6b9c0e08398b4ef5b424"
+      "source_fingerprint": "959f7b609466e586bf682d4cef67f4e44d2a653e91101f045fd410d4acfa6ec0"
     },
     {
       "schema_version": 1,
       "id": "resistor-nonlinear-us",
-      "revision": 1,
+      "revision": 3,
       "name": "Nonlinear resistor (US)",
       "description": "Two-terminal nonlinear resistor with a diagonal S-shaped marking, without an arrowhead. This generic form does not specify a voltage or temperature dependence.",
       "keywords": [
@@ -8324,65 +8324,18 @@
           "key": "resistor-nonlinear-us-small-thin",
           "symbol_id": "resistor-nonlinear-us",
           "name": "Nonlinear resistor (US)",
-          "revision": 1,
+          "revision": 3,
           "size": "small",
           "stroke": "thin",
           "svg": "svg/resistor-nonlinear-us-small-thin.svg",
           "width_mm": 16.14991231,
-          "height_mm": 9.92809659,
+          "height_mm": 8.08964565,
           "origin_svg": [
             -45.792816,
-            -57.928702
+            -60.534379
           ],
           "visual_center_from_origin_mm": [
             -8.819444422177487e-07,
-            -7.055555562808358e-07
-          ],
-          "pins_mm": {
-            "a": [
-              -7.0,
-              0.0
-            ],
-            "b": [
-              7.0,
-              0.0
-            ]
-          },
-          "dimensions_mm": {
-            "body-width": 7.5,
-            "body-height": 2.5
-          },
-          "parts": [
-            "body",
-            "lead-a",
-            "lead-b",
-            "nonlinear-mark"
-          ],
-          "svg_bytes": 2506,
-          "settings": {
-            "size": "small",
-            "stroke": "thin",
-            "size_factor": 0.75,
-            "stroke_mm": 0.15,
-            "grid_mm": 1
-          }
-        },
-        {
-          "key": "resistor-nonlinear-us-small-medium",
-          "symbol_id": "resistor-nonlinear-us",
-          "name": "Nonlinear resistor (US)",
-          "revision": 1,
-          "size": "small",
-          "stroke": "medium",
-          "svg": "svg/resistor-nonlinear-us-small-medium.svg",
-          "width_mm": 16.19991786,
-          "height_mm": 9.97809896,
-          "origin_svg": [
-            -45.721945,
-            -57.857832
-          ],
-          "visual_center_from_origin_mm": [
-            1.763888909501866e-07,
             1.763888909501866e-07
           ],
           "pins_mm": {
@@ -8405,7 +8358,54 @@
             "lead-b",
             "nonlinear-mark"
           ],
-          "svg_bytes": 2531,
+          "svg_bytes": 2485,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "resistor-nonlinear-us-small-medium",
+          "symbol_id": "resistor-nonlinear-us",
+          "name": "Nonlinear resistor (US)",
+          "revision": 3,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/resistor-nonlinear-us-small-medium.svg",
+          "width_mm": 16.19991786,
+          "height_mm": 8.13965119,
+          "origin_svg": [
+            -45.721945,
+            -60.463508
+          ],
+          "visual_center_from_origin_mm": [
+            1.763888909501866e-07,
+            -1.234722221611485e-06
+          ],
+          "pins_mm": {
+            "a": [
+              -7.0,
+              0.0
+            ],
+            "b": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 2.5
+          },
+          "parts": [
+            "body",
+            "lead-a",
+            "lead-b",
+            "nonlinear-mark"
+          ],
+          "svg_bytes": 2510,
           "settings": {
             "size": "small",
             "stroke": "medium",
@@ -8418,19 +8418,19 @@
           "key": "resistor-nonlinear-us-small-thick",
           "symbol_id": "resistor-nonlinear-us",
           "name": "Nonlinear resistor (US)",
-          "revision": 1,
+          "revision": 3,
           "size": "small",
           "stroke": "thick",
           "svg": "svg/resistor-nonlinear-us-small-thick.svg",
           "width_mm": 16.29992577,
-          "height_mm": 10.07810687,
+          "height_mm": 8.23965558,
           "origin_svg": [
             -45.580203,
-            -57.71609
+            -60.321767
           ],
           "visual_center_from_origin_mm": [
             7.055555562808358e-07,
-            -7.05555553774199e-07
+            2.5066368733759088e-15
           ],
           "pins_mm": {
             "a": [
@@ -8452,7 +8452,7 @@
             "lead-b",
             "nonlinear-mark"
           ],
-          "svg_bytes": 2517,
+          "svg_bytes": 2497,
           "settings": {
             "size": "small",
             "stroke": "thick",
@@ -8465,19 +8465,19 @@
           "key": "resistor-nonlinear-us-medium-thin",
           "symbol_id": "resistor-nonlinear-us",
           "name": "Nonlinear resistor (US)",
-          "revision": 1,
+          "revision": 3,
           "size": "medium",
           "stroke": "thin",
           "svg": "svg/resistor-nonlinear-us-medium-thin.svg",
           "width_mm": 18.14990479,
-          "height_mm": 12.52073491,
+          "height_mm": 10.06948181,
           "origin_svg": [
             -42.958185,
-            -54.254097
+            -57.728313
           ],
           "visual_center_from_origin_mm": [
             5.291666678372861e-07,
-            -5.291666653306492e-07
+            1.763888909501866e-07
           ],
           "pins_mm": {
             "a": [
@@ -8499,7 +8499,7 @@
             "lead-b",
             "nonlinear-mark"
           ],
-          "svg_bytes": 2530,
+          "svg_bytes": 2510,
           "settings": {
             "size": "medium",
             "stroke": "thin",
@@ -8512,19 +8512,19 @@
           "key": "resistor-nonlinear-us-medium-medium",
           "symbol_id": "resistor-nonlinear-us",
           "name": "Nonlinear resistor (US)",
-          "revision": 1,
+          "revision": 3,
           "size": "medium",
           "stroke": "medium",
           "svg": "svg/resistor-nonlinear-us-medium-medium.svg",
           "width_mm": 18.19990716,
-          "height_mm": 12.57073693,
+          "height_mm": 10.11948418,
           "origin_svg": [
             -42.887314,
-            -54.183226
+            -57.657442
           ],
           "visual_center_from_origin_mm": [
             2.5066368733759088e-15,
-            -1.7638888844354975e-07
+            7.055555562808358e-07
           ],
           "pins_mm": {
             "a": [
@@ -8546,7 +8546,7 @@
             "lead-b",
             "nonlinear-mark"
           ],
-          "svg_bytes": 2555,
+          "svg_bytes": 2535,
           "settings": {
             "size": "medium",
             "stroke": "medium",
@@ -8559,19 +8559,19 @@
           "key": "resistor-nonlinear-us-medium-thick",
           "symbol_id": "resistor-nonlinear-us",
           "name": "Nonlinear resistor (US)",
-          "revision": 1,
+          "revision": 3,
           "size": "medium",
           "stroke": "thick",
           "svg": "svg/resistor-nonlinear-us-medium-thick.svg",
           "width_mm": 18.29991507,
-          "height_mm": 12.67074132,
+          "height_mm": 10.21949209,
           "origin_svg": [
             -42.745573,
-            -54.041485
+            -57.5157
           ],
           "visual_center_from_origin_mm": [
             8.819444447243856e-07,
-            1.0583333356745722e-06
+            -1.763888909501866e-07
           ],
           "pins_mm": {
             "a": [
@@ -8593,7 +8593,7 @@
             "lead-b",
             "nonlinear-mark"
           ],
-          "svg_bytes": 2542,
+          "svg_bytes": 2517,
           "settings": {
             "size": "medium",
             "stroke": "thick",
@@ -8606,19 +8606,19 @@
           "key": "resistor-nonlinear-us-large-thin",
           "symbol_id": "resistor-nonlinear-us",
           "name": "Nonlinear resistor (US)",
-          "revision": 1,
+          "revision": 3,
           "size": "large",
           "stroke": "thin",
           "svg": "svg/resistor-nonlinear-us-large-thin.svg",
           "width_mm": 22.14988303,
-          "height_mm": 15.11347837,
+          "height_mm": 12.04939205,
           "origin_svg": [
             -37.288923,
-            -50.57934
+            -54.92214
           ],
           "visual_center_from_origin_mm": [
             0.0,
-            3.527777768870995e-07
+            5.291666653306492e-07
           ],
           "pins_mm": {
             "a": [
@@ -8640,7 +8640,7 @@
             "lead-b",
             "nonlinear-mark"
           ],
-          "svg_bytes": 2511,
+          "svg_bytes": 2488,
           "settings": {
             "size": "large",
             "stroke": "thin",
@@ -8653,19 +8653,19 @@
           "key": "resistor-nonlinear-us-large-medium",
           "symbol_id": "resistor-nonlinear-us",
           "name": "Nonlinear resistor (US)",
-          "revision": 1,
+          "revision": 3,
           "size": "large",
           "stroke": "medium",
           "svg": "svg/resistor-nonlinear-us-large-medium.svg",
           "width_mm": 22.19988504,
-          "height_mm": 15.16348426,
+          "height_mm": 12.09939795,
           "origin_svg": [
             -37.218053,
-            -50.508469
+            -54.851269
           ],
           "visual_center_from_origin_mm": [
             -3.527777768870995e-07,
-            -8.819444447243856e-07
+            -7.05555553774199e-07
           ],
           "pins_mm": {
             "a": [
@@ -8687,7 +8687,7 @@
             "lead-b",
             "nonlinear-mark"
           ],
-          "svg_bytes": 2539,
+          "svg_bytes": 2516,
           "settings": {
             "size": "large",
             "stroke": "medium",
@@ -8700,19 +8700,19 @@
           "key": "resistor-nonlinear-us-large-thick",
           "symbol_id": "resistor-nonlinear-us",
           "name": "Nonlinear resistor (US)",
-          "revision": 1,
+          "revision": 3,
           "size": "large",
           "stroke": "thick",
           "svg": "svg/resistor-nonlinear-us-large-thick.svg",
           "width_mm": 22.29989296,
-          "height_mm": 15.26348865,
+          "height_mm": 12.19940198,
           "origin_svg": [
             -37.076311,
-            -50.366728
+            -54.709527
           ],
           "visual_center_from_origin_mm": [
             1.7638888844354975e-07,
-            3.5277777939373633e-07
+            2.5066368733759088e-15
           ],
           "pins_mm": {
             "a": [
@@ -8734,7 +8734,7 @@
             "lead-b",
             "nonlinear-mark"
           ],
-          "svg_bytes": 2526,
+          "svg_bytes": 2503,
           "settings": {
             "size": "large",
             "stroke": "thick",
@@ -8744,1117 +8744,7 @@
           }
         }
       ],
-      "source_fingerprint": "c2077a45a0416828f569d5d804cfc57baf905751d0f6a99d8b380746dc20c789"
-    },
-    {
-      "schema_version": 1,
-      "id": "resistor-tapped-eu",
-      "revision": 1,
-      "name": "Tapped resistor (EU)",
-      "description": "Three-terminal resistor with one fixed central tap. The straight tap has no arrow and is not adjustable.",
-      "keywords": [
-        "resistor",
-        "European",
-        "rectangle",
-        "passive",
-        "tapped",
-        "fixed",
-        "tap",
-        "three-terminal"
-      ],
-      "types": [
-        "passive",
-        "resistor"
-      ],
-      "family": "resistors",
-      "batch": "resistors-01",
-      "attributes": {
-        "appearance": "european",
-        "body": "rectangle",
-        "polarized": false,
-        "variant": "tapped"
-      },
-      "recipe": "resistor-variant",
-      "drawing": {
-        "body": "eu",
-        "variant": "tapped"
-      },
-      "reference": {
-        "source": "CircuitikZ components list, sections 4.2 and 4.2.1",
-        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
-        "symbol": "pR (fixed-tap adaptation)",
-        "approach": "adapted; see docs/RESISTOR_BATCH.md"
-      },
-      "presets": {
-        "sizes": [
-          "small",
-          "medium",
-          "large"
-        ],
-        "strokes": [
-          "thin",
-          "medium",
-          "thick"
-        ]
-      },
-      "pins": [
-        {
-          "id": "a",
-          "name": "A",
-          "description": "Resistance element terminal A",
-          "kind": "passive",
-          "lead_part": "lead-a"
-        },
-        {
-          "id": "b",
-          "name": "B",
-          "description": "Resistance element terminal B",
-          "kind": "passive",
-          "lead_part": "lead-b"
-        },
-        {
-          "id": "tap",
-          "name": "Tap",
-          "description": "Fixed contact with the resistance element",
-          "kind": "passive",
-          "lead_part": "lead-tap"
-        }
-      ],
-      "parts": [
-        {
-          "id": "body",
-          "description": "Rectangular resistor body"
-        },
-        {
-          "id": "lead-a",
-          "description": "Lead from terminal A to body"
-        },
-        {
-          "id": "lead-b",
-          "description": "Lead from body to terminal B"
-        },
-        {
-          "id": "lead-tap",
-          "description": "Lead from the fixed tap terminal to the resistance element"
-        }
-      ],
-      "configurations": [
-        {
-          "key": "resistor-tapped-eu-small-thin",
-          "symbol_id": "resistor-tapped-eu",
-          "name": "Tapped resistor (EU)",
-          "revision": 1,
-          "size": "small",
-          "stroke": "thin",
-          "svg": "svg/resistor-tapped-eu-small-thin.svg",
-          "width_mm": 16.14991231,
-          "height_mm": 8.39995286,
-          "origin_svg": [
-            -45.792816,
-            -54.779638
-          ],
-          "visual_center_from_origin_mm": [
-            -8.819444422177487e-07,
-            -1.874993074999999
-          ],
-          "pins_mm": {
-            "a": [
-              -7.0,
-              0.0
-            ],
-            "b": [
-              7.0,
-              0.0
-            ],
-            "tap": [
-              0.0,
-              5.0
-            ]
-          },
-          "dimensions_mm": {
-            "body-width": 7.5,
-            "body-height": 2.5
-          },
-          "parts": [
-            "body",
-            "lead-a",
-            "lead-b",
-            "lead-tap"
-          ],
-          "svg_bytes": 2304,
-          "settings": {
-            "size": "small",
-            "stroke": "thin",
-            "size_factor": 0.75,
-            "stroke_mm": 0.15,
-            "grid_mm": 1
-          }
-        },
-        {
-          "key": "resistor-tapped-eu-small-medium",
-          "symbol_id": "resistor-tapped-eu",
-          "name": "Tapped resistor (EU)",
-          "revision": 1,
-          "size": "small",
-          "stroke": "medium",
-          "svg": "svg/resistor-tapped-eu-small-medium.svg",
-          "width_mm": 16.19991786,
-          "height_mm": 8.44995523,
-          "origin_svg": [
-            -45.721945,
-            -54.708767
-          ],
-          "visual_center_from_origin_mm": [
-            1.763888909501866e-07,
-            -1.8749925458333336
-          ],
-          "pins_mm": {
-            "a": [
-              -7.0,
-              0.0
-            ],
-            "b": [
-              7.0,
-              0.0
-            ],
-            "tap": [
-              0.0,
-              5.0
-            ]
-          },
-          "dimensions_mm": {
-            "body-width": 7.5,
-            "body-height": 2.5
-          },
-          "parts": [
-            "body",
-            "lead-a",
-            "lead-b",
-            "lead-tap"
-          ],
-          "svg_bytes": 2330,
-          "settings": {
-            "size": "small",
-            "stroke": "medium",
-            "size_factor": 0.75,
-            "stroke_mm": 0.2,
-            "grid_mm": 1
-          }
-        },
-        {
-          "key": "resistor-tapped-eu-small-thick",
-          "symbol_id": "resistor-tapped-eu",
-          "name": "Tapped resistor (EU)",
-          "revision": 1,
-          "size": "small",
-          "stroke": "thick",
-          "svg": "svg/resistor-tapped-eu-small-thick.svg",
-          "width_mm": 16.29992577,
-          "height_mm": 8.54995962,
-          "origin_svg": [
-            -45.580203,
-            -54.567026
-          ],
-          "visual_center_from_origin_mm": [
-            7.055555562808358e-07,
-            -1.874991311111112
-          ],
-          "pins_mm": {
-            "a": [
-              -7.0,
-              0.0
-            ],
-            "b": [
-              7.0,
-              0.0
-            ],
-            "tap": [
-              0.0,
-              5.0
-            ]
-          },
-          "dimensions_mm": {
-            "body-width": 7.5,
-            "body-height": 2.5
-          },
-          "parts": [
-            "body",
-            "lead-a",
-            "lead-b",
-            "lead-tap"
-          ],
-          "svg_bytes": 2317,
-          "settings": {
-            "size": "small",
-            "stroke": "thick",
-            "size_factor": 0.75,
-            "stroke_mm": 0.3,
-            "grid_mm": 1
-          }
-        },
-        {
-          "key": "resistor-tapped-eu-medium-thin",
-          "symbol_id": "resistor-tapped-eu",
-          "name": "Tapped resistor (EU)",
-          "revision": 1,
-          "size": "medium",
-          "stroke": "thin",
-          "svg": "svg/resistor-tapped-eu-medium-thin.svg",
-          "width_mm": 18.14990479,
-          "height_mm": 9.81660294,
-          "origin_svg": [
-            -42.958185,
-            -51.945007
-          ],
-          "visual_center_from_origin_mm": [
-            5.291666678372861e-07,
-            -2.1666621569444446
-          ],
-          "pins_mm": {
-            "a": [
-              -8.0,
-              0.0
-            ],
-            "b": [
-              8.0,
-              0.0
-            ],
-            "tap": [
-              0.0,
-              6.0
-            ]
-          },
-          "dimensions_mm": {
-            "body-width": 9.99994,
-            "body-height": 3.33331
-          },
-          "parts": [
-            "body",
-            "lead-a",
-            "lead-b",
-            "lead-tap"
-          ],
-          "svg_bytes": 2326,
-          "settings": {
-            "size": "medium",
-            "stroke": "thin",
-            "size_factor": 1.0,
-            "stroke_mm": 0.15,
-            "grid_mm": 1
-          }
-        },
-        {
-          "key": "resistor-tapped-eu-medium-medium",
-          "symbol_id": "resistor-tapped-eu",
-          "name": "Tapped resistor (EU)",
-          "revision": 1,
-          "size": "medium",
-          "stroke": "medium",
-          "svg": "svg/resistor-tapped-eu-medium-medium.svg",
-          "width_mm": 18.19990716,
-          "height_mm": 9.86660531,
-          "origin_svg": [
-            -42.887314,
-            -51.874137
-          ],
-          "visual_center_from_origin_mm": [
-            2.5066368733759088e-15,
-            -2.1666612749999974
-          ],
-          "pins_mm": {
-            "a": [
-              -8.0,
-              0.0
-            ],
-            "b": [
-              8.0,
-              0.0
-            ],
-            "tap": [
-              0.0,
-              6.0
-            ]
-          },
-          "dimensions_mm": {
-            "body-width": 9.99994,
-            "body-height": 3.33331
-          },
-          "parts": [
-            "body",
-            "lead-a",
-            "lead-b",
-            "lead-tap"
-          ],
-          "svg_bytes": 2350,
-          "settings": {
-            "size": "medium",
-            "stroke": "medium",
-            "size_factor": 1.0,
-            "stroke_mm": 0.2,
-            "grid_mm": 1
-          }
-        },
-        {
-          "key": "resistor-tapped-eu-medium-thick",
-          "symbol_id": "resistor-tapped-eu",
-          "name": "Tapped resistor (EU)",
-          "revision": 1,
-          "size": "medium",
-          "stroke": "thick",
-          "svg": "svg/resistor-tapped-eu-medium-thick.svg",
-          "width_mm": 18.29991507,
-          "height_mm": 9.96660969,
-          "origin_svg": [
-            -42.745573,
-            -51.732395
-          ],
-          "visual_center_from_origin_mm": [
-            8.819444447243856e-07,
-            -2.166660393055555
-          ],
-          "pins_mm": {
-            "a": [
-              -8.0,
-              0.0
-            ],
-            "b": [
-              8.0,
-              0.0
-            ],
-            "tap": [
-              0.0,
-              6.0
-            ]
-          },
-          "dimensions_mm": {
-            "body-width": 9.99994,
-            "body-height": 3.33331
-          },
-          "parts": [
-            "body",
-            "lead-a",
-            "lead-b",
-            "lead-tap"
-          ],
-          "svg_bytes": 2338,
-          "settings": {
-            "size": "medium",
-            "stroke": "thick",
-            "size_factor": 1.0,
-            "stroke_mm": 0.3,
-            "grid_mm": 1
-          }
-        },
-        {
-          "key": "resistor-tapped-eu-large-thin",
-          "symbol_id": "resistor-tapped-eu",
-          "name": "Tapped resistor (EU)",
-          "revision": 1,
-          "size": "large",
-          "stroke": "thin",
-          "svg": "svg/resistor-tapped-eu-large-thin.svg",
-          "width_mm": 22.14988303,
-          "height_mm": 12.23325842,
-          "origin_svg": [
-            -37.288923,
-            -46.275746
-          ],
-          "visual_center_from_origin_mm": [
-            0.0,
-            -2.9583226541666656
-          ],
-          "pins_mm": {
-            "a": [
-              -10.0,
-              0.0
-            ],
-            "b": [
-              10.0,
-              0.0
-            ],
-            "tap": [
-              0.0,
-              8.0
-            ]
-          },
-          "dimensions_mm": {
-            "body-width": 12.49997,
-            "body-height": 4.16666
-          },
-          "parts": [
-            "body",
-            "lead-a",
-            "lead-b",
-            "lead-tap"
-          ],
-          "svg_bytes": 2310,
-          "settings": {
-            "size": "large",
-            "stroke": "thin",
-            "size_factor": 1.25,
-            "stroke_mm": 0.15,
-            "grid_mm": 1
-          }
-        },
-        {
-          "key": "resistor-tapped-eu-large-medium",
-          "symbol_id": "resistor-tapped-eu",
-          "name": "Tapped resistor (EU)",
-          "revision": 1,
-          "size": "large",
-          "stroke": "medium",
-          "svg": "svg/resistor-tapped-eu-large-medium.svg",
-          "width_mm": 22.19988504,
-          "height_mm": 12.28326044,
-          "origin_svg": [
-            -37.218053,
-            -46.204875
-          ],
-          "visual_center_from_origin_mm": [
-            -3.527777768870995e-07,
-            -2.958322301388889
-          ],
-          "pins_mm": {
-            "a": [
-              -10.0,
-              0.0
-            ],
-            "b": [
-              10.0,
-              0.0
-            ],
-            "tap": [
-              0.0,
-              8.0
-            ]
-          },
-          "dimensions_mm": {
-            "body-width": 12.49997,
-            "body-height": 4.16666
-          },
-          "parts": [
-            "body",
-            "lead-a",
-            "lead-b",
-            "lead-tap"
-          ],
-          "svg_bytes": 2336,
-          "settings": {
-            "size": "large",
-            "stroke": "medium",
-            "size_factor": 1.25,
-            "stroke_mm": 0.2,
-            "grid_mm": 1
-          }
-        },
-        {
-          "key": "resistor-tapped-eu-large-thick",
-          "symbol_id": "resistor-tapped-eu",
-          "name": "Tapped resistor (EU)",
-          "revision": 1,
-          "size": "large",
-          "stroke": "thick",
-          "svg": "svg/resistor-tapped-eu-large-thick.svg",
-          "width_mm": 22.29989296,
-          "height_mm": 12.38326835,
-          "origin_svg": [
-            -37.076311,
-            -46.063134
-          ],
-          "visual_center_from_origin_mm": [
-            1.7638888844354975e-07,
-            -2.9583228305555567
-          ],
-          "pins_mm": {
-            "a": [
-              -10.0,
-              0.0
-            ],
-            "b": [
-              10.0,
-              0.0
-            ],
-            "tap": [
-              0.0,
-              8.0
-            ]
-          },
-          "dimensions_mm": {
-            "body-width": 12.49997,
-            "body-height": 4.16666
-          },
-          "parts": [
-            "body",
-            "lead-a",
-            "lead-b",
-            "lead-tap"
-          ],
-          "svg_bytes": 2322,
-          "settings": {
-            "size": "large",
-            "stroke": "thick",
-            "size_factor": 1.25,
-            "stroke_mm": 0.3,
-            "grid_mm": 1
-          }
-        }
-      ],
-      "source_fingerprint": "a8ff2fd07349351ad8502aaf606de2abc74de14136e63a21d0c82c880857d6d2"
-    },
-    {
-      "schema_version": 1,
-      "id": "resistor-tapped-us",
-      "revision": 1,
-      "name": "Tapped resistor (US)",
-      "description": "Three-terminal resistor with one fixed central tap. The straight tap has no arrow and is not adjustable.",
-      "keywords": [
-        "resistor",
-        "American",
-        "zigzag",
-        "passive",
-        "tapped",
-        "fixed",
-        "tap",
-        "three-terminal"
-      ],
-      "types": [
-        "passive",
-        "resistor"
-      ],
-      "family": "resistors",
-      "batch": "resistors-01",
-      "attributes": {
-        "appearance": "american",
-        "body": "zigzag",
-        "polarized": false,
-        "variant": "tapped"
-      },
-      "recipe": "resistor-variant",
-      "drawing": {
-        "body": "us",
-        "variant": "tapped"
-      },
-      "reference": {
-        "source": "CircuitikZ components list, sections 4.2 and 4.2.1",
-        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
-        "symbol": "pR (fixed-tap adaptation)",
-        "approach": "adapted; see docs/RESISTOR_BATCH.md"
-      },
-      "presets": {
-        "sizes": [
-          "small",
-          "medium",
-          "large"
-        ],
-        "strokes": [
-          "thin",
-          "medium",
-          "thick"
-        ]
-      },
-      "pins": [
-        {
-          "id": "a",
-          "name": "A",
-          "description": "Resistance element terminal A",
-          "kind": "passive",
-          "lead_part": "lead-a"
-        },
-        {
-          "id": "b",
-          "name": "B",
-          "description": "Resistance element terminal B",
-          "kind": "passive",
-          "lead_part": "lead-b"
-        },
-        {
-          "id": "tap",
-          "name": "Tap",
-          "description": "Fixed contact with the resistance element",
-          "kind": "passive",
-          "lead_part": "lead-tap"
-        }
-      ],
-      "parts": [
-        {
-          "id": "body",
-          "description": "Zigzag resistor body"
-        },
-        {
-          "id": "lead-a",
-          "description": "Lead from terminal A to body"
-        },
-        {
-          "id": "lead-b",
-          "description": "Lead from body to terminal B"
-        },
-        {
-          "id": "lead-tap",
-          "description": "Lead from the fixed tap terminal to the resistance element"
-        }
-      ],
-      "configurations": [
-        {
-          "key": "resistor-tapped-us-small-thin",
-          "symbol_id": "resistor-tapped-us",
-          "name": "Tapped resistor (US)",
-          "revision": 1,
-          "size": "small",
-          "stroke": "thin",
-          "svg": "svg/resistor-tapped-us-small-thin.svg",
-          "width_mm": 16.14991231,
-          "height_mm": 8.39995286,
-          "origin_svg": [
-            -45.792816,
-            -54.779638
-          ],
-          "visual_center_from_origin_mm": [
-            -8.819444422177487e-07,
-            -1.874993074999999
-          ],
-          "pins_mm": {
-            "a": [
-              -7.0,
-              0.0
-            ],
-            "b": [
-              7.0,
-              0.0
-            ],
-            "tap": [
-              0.0,
-              5.0
-            ]
-          },
-          "dimensions_mm": {
-            "body-width": 7.5,
-            "body-height": 2.5
-          },
-          "parts": [
-            "body",
-            "lead-a",
-            "lead-b",
-            "lead-tap"
-          ],
-          "svg_bytes": 2368,
-          "settings": {
-            "size": "small",
-            "stroke": "thin",
-            "size_factor": 0.75,
-            "stroke_mm": 0.15,
-            "grid_mm": 1
-          }
-        },
-        {
-          "key": "resistor-tapped-us-small-medium",
-          "symbol_id": "resistor-tapped-us",
-          "name": "Tapped resistor (US)",
-          "revision": 1,
-          "size": "small",
-          "stroke": "medium",
-          "svg": "svg/resistor-tapped-us-small-medium.svg",
-          "width_mm": 16.19991786,
-          "height_mm": 8.44995523,
-          "origin_svg": [
-            -45.721945,
-            -54.708767
-          ],
-          "visual_center_from_origin_mm": [
-            1.763888909501866e-07,
-            -1.8749925458333336
-          ],
-          "pins_mm": {
-            "a": [
-              -7.0,
-              0.0
-            ],
-            "b": [
-              7.0,
-              0.0
-            ],
-            "tap": [
-              0.0,
-              5.0
-            ]
-          },
-          "dimensions_mm": {
-            "body-width": 7.5,
-            "body-height": 2.5
-          },
-          "parts": [
-            "body",
-            "lead-a",
-            "lead-b",
-            "lead-tap"
-          ],
-          "svg_bytes": 2394,
-          "settings": {
-            "size": "small",
-            "stroke": "medium",
-            "size_factor": 0.75,
-            "stroke_mm": 0.2,
-            "grid_mm": 1
-          }
-        },
-        {
-          "key": "resistor-tapped-us-small-thick",
-          "symbol_id": "resistor-tapped-us",
-          "name": "Tapped resistor (US)",
-          "revision": 1,
-          "size": "small",
-          "stroke": "thick",
-          "svg": "svg/resistor-tapped-us-small-thick.svg",
-          "width_mm": 16.29992577,
-          "height_mm": 8.54995962,
-          "origin_svg": [
-            -45.580203,
-            -54.567026
-          ],
-          "visual_center_from_origin_mm": [
-            7.055555562808358e-07,
-            -1.874991311111112
-          ],
-          "pins_mm": {
-            "a": [
-              -7.0,
-              0.0
-            ],
-            "b": [
-              7.0,
-              0.0
-            ],
-            "tap": [
-              0.0,
-              5.0
-            ]
-          },
-          "dimensions_mm": {
-            "body-width": 7.5,
-            "body-height": 2.5
-          },
-          "parts": [
-            "body",
-            "lead-a",
-            "lead-b",
-            "lead-tap"
-          ],
-          "svg_bytes": 2381,
-          "settings": {
-            "size": "small",
-            "stroke": "thick",
-            "size_factor": 0.75,
-            "stroke_mm": 0.3,
-            "grid_mm": 1
-          }
-        },
-        {
-          "key": "resistor-tapped-us-medium-thin",
-          "symbol_id": "resistor-tapped-us",
-          "name": "Tapped resistor (US)",
-          "revision": 1,
-          "size": "medium",
-          "stroke": "thin",
-          "svg": "svg/resistor-tapped-us-medium-thin.svg",
-          "width_mm": 18.14990479,
-          "height_mm": 9.81660294,
-          "origin_svg": [
-            -42.958185,
-            -51.945007
-          ],
-          "visual_center_from_origin_mm": [
-            5.291666678372861e-07,
-            -2.1666621569444446
-          ],
-          "pins_mm": {
-            "a": [
-              -8.0,
-              0.0
-            ],
-            "b": [
-              8.0,
-              0.0
-            ],
-            "tap": [
-              0.0,
-              6.0
-            ]
-          },
-          "dimensions_mm": {
-            "body-width": 9.99994,
-            "body-height": 3.33331
-          },
-          "parts": [
-            "body",
-            "lead-a",
-            "lead-b",
-            "lead-tap"
-          ],
-          "svg_bytes": 2390,
-          "settings": {
-            "size": "medium",
-            "stroke": "thin",
-            "size_factor": 1.0,
-            "stroke_mm": 0.15,
-            "grid_mm": 1
-          }
-        },
-        {
-          "key": "resistor-tapped-us-medium-medium",
-          "symbol_id": "resistor-tapped-us",
-          "name": "Tapped resistor (US)",
-          "revision": 1,
-          "size": "medium",
-          "stroke": "medium",
-          "svg": "svg/resistor-tapped-us-medium-medium.svg",
-          "width_mm": 18.19990716,
-          "height_mm": 9.86660531,
-          "origin_svg": [
-            -42.887314,
-            -51.874137
-          ],
-          "visual_center_from_origin_mm": [
-            2.5066368733759088e-15,
-            -2.1666612749999974
-          ],
-          "pins_mm": {
-            "a": [
-              -8.0,
-              0.0
-            ],
-            "b": [
-              8.0,
-              0.0
-            ],
-            "tap": [
-              0.0,
-              6.0
-            ]
-          },
-          "dimensions_mm": {
-            "body-width": 9.99994,
-            "body-height": 3.33331
-          },
-          "parts": [
-            "body",
-            "lead-a",
-            "lead-b",
-            "lead-tap"
-          ],
-          "svg_bytes": 2414,
-          "settings": {
-            "size": "medium",
-            "stroke": "medium",
-            "size_factor": 1.0,
-            "stroke_mm": 0.2,
-            "grid_mm": 1
-          }
-        },
-        {
-          "key": "resistor-tapped-us-medium-thick",
-          "symbol_id": "resistor-tapped-us",
-          "name": "Tapped resistor (US)",
-          "revision": 1,
-          "size": "medium",
-          "stroke": "thick",
-          "svg": "svg/resistor-tapped-us-medium-thick.svg",
-          "width_mm": 18.29991507,
-          "height_mm": 9.96660969,
-          "origin_svg": [
-            -42.745573,
-            -51.732395
-          ],
-          "visual_center_from_origin_mm": [
-            8.819444447243856e-07,
-            -2.166660393055555
-          ],
-          "pins_mm": {
-            "a": [
-              -8.0,
-              0.0
-            ],
-            "b": [
-              8.0,
-              0.0
-            ],
-            "tap": [
-              0.0,
-              6.0
-            ]
-          },
-          "dimensions_mm": {
-            "body-width": 9.99994,
-            "body-height": 3.33331
-          },
-          "parts": [
-            "body",
-            "lead-a",
-            "lead-b",
-            "lead-tap"
-          ],
-          "svg_bytes": 2402,
-          "settings": {
-            "size": "medium",
-            "stroke": "thick",
-            "size_factor": 1.0,
-            "stroke_mm": 0.3,
-            "grid_mm": 1
-          }
-        },
-        {
-          "key": "resistor-tapped-us-large-thin",
-          "symbol_id": "resistor-tapped-us",
-          "name": "Tapped resistor (US)",
-          "revision": 1,
-          "size": "large",
-          "stroke": "thin",
-          "svg": "svg/resistor-tapped-us-large-thin.svg",
-          "width_mm": 22.14988303,
-          "height_mm": 12.23325842,
-          "origin_svg": [
-            -37.288923,
-            -46.275746
-          ],
-          "visual_center_from_origin_mm": [
-            0.0,
-            -2.9583226541666656
-          ],
-          "pins_mm": {
-            "a": [
-              -10.0,
-              0.0
-            ],
-            "b": [
-              10.0,
-              0.0
-            ],
-            "tap": [
-              0.0,
-              8.0
-            ]
-          },
-          "dimensions_mm": {
-            "body-width": 12.49997,
-            "body-height": 4.16666
-          },
-          "parts": [
-            "body",
-            "lead-a",
-            "lead-b",
-            "lead-tap"
-          ],
-          "svg_bytes": 2370,
-          "settings": {
-            "size": "large",
-            "stroke": "thin",
-            "size_factor": 1.25,
-            "stroke_mm": 0.15,
-            "grid_mm": 1
-          }
-        },
-        {
-          "key": "resistor-tapped-us-large-medium",
-          "symbol_id": "resistor-tapped-us",
-          "name": "Tapped resistor (US)",
-          "revision": 1,
-          "size": "large",
-          "stroke": "medium",
-          "svg": "svg/resistor-tapped-us-large-medium.svg",
-          "width_mm": 22.19988504,
-          "height_mm": 12.28326044,
-          "origin_svg": [
-            -37.218053,
-            -46.204875
-          ],
-          "visual_center_from_origin_mm": [
-            -3.527777768870995e-07,
-            -2.958322301388889
-          ],
-          "pins_mm": {
-            "a": [
-              -10.0,
-              0.0
-            ],
-            "b": [
-              10.0,
-              0.0
-            ],
-            "tap": [
-              0.0,
-              8.0
-            ]
-          },
-          "dimensions_mm": {
-            "body-width": 12.49997,
-            "body-height": 4.16666
-          },
-          "parts": [
-            "body",
-            "lead-a",
-            "lead-b",
-            "lead-tap"
-          ],
-          "svg_bytes": 2396,
-          "settings": {
-            "size": "large",
-            "stroke": "medium",
-            "size_factor": 1.25,
-            "stroke_mm": 0.2,
-            "grid_mm": 1
-          }
-        },
-        {
-          "key": "resistor-tapped-us-large-thick",
-          "symbol_id": "resistor-tapped-us",
-          "name": "Tapped resistor (US)",
-          "revision": 1,
-          "size": "large",
-          "stroke": "thick",
-          "svg": "svg/resistor-tapped-us-large-thick.svg",
-          "width_mm": 22.29989296,
-          "height_mm": 12.38326835,
-          "origin_svg": [
-            -37.076311,
-            -46.063134
-          ],
-          "visual_center_from_origin_mm": [
-            1.7638888844354975e-07,
-            -2.9583228305555567
-          ],
-          "pins_mm": {
-            "a": [
-              -10.0,
-              0.0
-            ],
-            "b": [
-              10.0,
-              0.0
-            ],
-            "tap": [
-              0.0,
-              8.0
-            ]
-          },
-          "dimensions_mm": {
-            "body-width": 12.49997,
-            "body-height": 4.16666
-          },
-          "parts": [
-            "body",
-            "lead-a",
-            "lead-b",
-            "lead-tap"
-          ],
-          "svg_bytes": 2382,
-          "settings": {
-            "size": "large",
-            "stroke": "thick",
-            "size_factor": 1.25,
-            "stroke_mm": 0.3,
-            "grid_mm": 1
-          }
-        }
-      ],
-      "source_fingerprint": "17c8ef5d91a73c9265106e3eb4cb4b063fc0612db73d8238338ed3a87eb21fdb"
+      "source_fingerprint": "8a340bf7fcb79d92f28979f89593dc256f9f602e3fe7a17b8e8eb3971bacd625"
     },
     {
       "schema_version": 1,
@@ -11874,7 +10764,7 @@
           }
         }
       ],
-      "source_fingerprint": "a0b01e99398004325de836c335e2da442c26d0d3e4fd57b7efa8bbad6b6751fe"
+      "source_fingerprint": "9661749eeec63c582c54f85df211bbcfcce3e7ea66331112d1e702c3d2d9f2b8"
     },
     {
       "schema_version": 1,
@@ -13894,7 +12784,7 @@
           }
         }
       ],
-      "source_fingerprint": "a7171716d61026b370533f6942d427638c7e815d90fc6b4a2eaa84f68a0f9624"
+      "source_fingerprint": "403645dc4204c4883b1c37ced12489644a03832f2f0fac4f9e153e67867f0746"
     },
     {
       "schema_version": 1,
@@ -15914,7 +14804,7 @@
           }
         }
       ],
-      "source_fingerprint": "6a3639462dc70cbb07320b6e5484dc4c9e59fda67074214c6ee5a0cd86678e07"
+      "source_fingerprint": "b1ec3bcdc3d8a466de1e416b0526ff4b8b6c1a054a93fdcdbdd6730d0b407883"
     },
     {
       "schema_version": 1,
@@ -17934,7 +16824,7 @@
           }
         }
       ],
-      "source_fingerprint": "71a556047d41c5b857f6dd9e37a92dfc6729a46ccf89b40e0aecf80d5f89e462"
+      "source_fingerprint": "9d76d253cc3acda7fb8343a09448dd1b006443e53b96cdc6af23642fa103c4d2"
     },
     {
       "schema_version": 1,
@@ -18445,7 +17335,7 @@
           }
         }
       ],
-      "source_fingerprint": "32c9b42ef5195acccbef842e28cf30d3844bd7a569236d4df3db4eb8e2e4703f"
+      "source_fingerprint": "e6ecff2ebc6548f4585f83d86a6fe8b419b9165694b29c82034ea6dfb068410c"
     },
     {
       "schema_version": 1,
@@ -18970,7 +17860,7 @@
           }
         }
       ],
-      "source_fingerprint": "d906368110f0ff4582d682866f5f9d3999da63ed09d98d964cb460f63cc22a63"
+      "source_fingerprint": "4a41911bf2cac5ca4a15089dcedfcadd2c0f7c3c1967bf7570be711d3be96031"
     },
     {
       "schema_version": 1,
@@ -19495,7 +18385,7 @@
           }
         }
       ],
-      "source_fingerprint": "e47c351fc8154811618f5d6fe367ac81753c7498a347d0f8e73f4db6fe1a8ea3"
+      "source_fingerprint": "962ac4ca3ea69f88901575e2ac0f5a0b47c5ea48376c1edb7f8e2b26a612b358"
     },
     {
       "schema_version": 1,
@@ -20020,7 +18910,7 @@
           }
         }
       ],
-      "source_fingerprint": "7874679d9b8fc97f3dbc29324cfa9b8918e302d0cd18aef3c1a2f8f7791e318c"
+      "source_fingerprint": "01aa0718d976c2e2f31ab24bcc7d087fa060747990485d452bf91e7317084c11"
     },
     {
       "schema_version": 1,
@@ -20545,7 +19435,7 @@
           }
         }
       ],
-      "source_fingerprint": "4d96f81c62fb8c7c36249e46f21cfeebf0c0a1f346ad85f27dde0abf038532e9"
+      "source_fingerprint": "99567d3964d999bb28a3e0713128b6f96f04c65b6a7a4a0c8e91458aa869b0b7"
     },
     {
       "schema_version": 1,
@@ -21056,7 +19946,7 @@
           }
         }
       ],
-      "source_fingerprint": "e01e5899e212782ba5b8069b6ecd159b18805b20890d8c0bdff89cf57b139f85"
+      "source_fingerprint": "82dfa59f3b6a769a60df018b62736ab088444e62a81588c8da5ff0a7621357f0"
     }
   ]
 }

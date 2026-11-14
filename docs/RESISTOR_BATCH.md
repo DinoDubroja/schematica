@@ -1,11 +1,13 @@
 # Resistor batch 01
 
-Preparation was fixed before production: **24 resistor designs**, including two
-existing fixed resistors and **22 additional designs**. Four adjustable designs
-have 36 configurations each; the other 24 designs have nine. Including the four
-non-resistor originals, the library has **28 designs / 360 configurations**.
-Arrays and networks are excluded. Varistors were replaced by nonlinear resistors
-in the user-authorized correction run.
+Current inventory: **22 resistor designs**, including the two original fixed
+resistors and **20 additional designs**. Including the four non-resistor originals,
+the library has **26 designs / 342 configurations**. Four adjustable designs have
+36 configurations each; the other 22 designs have nine.
+
+Arrays and networks are excluded. Varistors were replaced by nonlinear resistors;
+the user subsequently removed both tapped resistors. Eighteen additional designs
+are now approved; only the revised nonlinear EU/US curves await approval.
 
 ## Inventory and references
 
@@ -26,11 +28,10 @@ The guide separates accessible sources, unavailable standard records and our sty
 | `resistor-nonlinear-eu`, `resistor-nonlinear-us` | User-confirmed diagonal S-shaped marking; custom curve, no arrowhead; two terminals |
 | `photoresistor-eu`, `photoresistor-us` | Adapt `phR`: two incoming light arrows; no extra electrical pins |
 | `photoresistor-enclosed-eu`, `photoresistor-enclosed-us` | Adapt `ldR`: circular enclosure and incoming light arrows |
-| `resistor-tapped-eu`, `resistor-tapped-us` | Custom fixed central tap derived from the `pR` connection arrangement, with no movable-wiper arrow |
 
 EU and US indicate rectangular and zigzag body appearances. For miscellaneous
 components where CircuitikZ offers a rectangular form, the zigzag companion is an
-explicit Schematica adaptation. Preset/trimmer and tapped forms are custom TeX
+explicit Schematica adaptation. Preset/trimmer forms are custom TeX
 designs, not invented names for built-in CircuitikZ symbols.
 
 ### Deliberate adaptations
@@ -40,9 +41,9 @@ designs, not invented names for built-in CircuitikZ symbols.
   indicators and wipers remain named editable parts. A monolithic stock glyph
   would lose that structure; it is a starting reference, not the final SVG asset.
 - Keep diagonal adjustment/dependency marks distinct from electrical connections.
-  Only three-terminal potentiometers and tapped resistors receive a third pin.
+  Only potentiometers, including their trimmer forms, receive a third pin.
 - Center the potentiometer wiper vertically; its tip is 1 mm above the upper body
-  edge. This applies to both body forms and trimmers. Fixed taps remain unchanged.
+  edge. This applies to both body forms and trimmers.
 - Share symmetric arrowhead construction across variable resistors, potentiometers
   and photoresistors. Photo shafts also share angle, length and perpendicular spacing.
 - NTC/PTC use the same font, cap height and placement; outlines are kept in one named part.
@@ -86,17 +87,14 @@ sheets or comment fields are maintained.
 
 ## Results — 14-11-2026
 
-The representative review passed before full production: centered US/EU wipers,
-trimmer wiper, NTC/PTC, enclosed/unenclosed photoresistors, nonlinear US/EU and
-variable/trimmer marks. Medium/Medium and Small/Thick were compared together.
-The font-conversion issue found in this step was corrected before production.
-The full-family Small/Thick review also exposed arrowhead/body contact on variable
-resistors; extending the tip to 2.4s restored at least 0.38 mm visible clearance.
-The final candidates were regenerated and checked after that correction.
+The 18-design approval handoff matched the existing revisions and fingerprints.
+Both tapped designs and their 18 configurations were removed. Nonlinear EU/US
+revision 3 implements the user's selected **B**: one smooth cubic with no centre
+join. All 18 configurations match its independent chat-preview coordinates within
+0.00007 mm, preserve bodies/pins, and have at least 1.00 mm page margin. The proof
+shows Medium/Medium and Small/Thick from the actual exports.
 
-All 360 configurations passed Inkscape bounds/parts/save-reopen checks; all 36
-complete-library profiles passed, including actual browser download comparison.
-Detailed validation and publication results are recorded in
-[the developer review](../DEVELOPMENT.md#latest-changes) and
-[current status](../context/CURRENT.md). Technical validation does not substitute
-for the user's visual approval or establish standards compliance.
+The shared recipe was regenerated for source freshness; all 324 unchanged approved
+SVGs were preserved byte for byte. See [test results and review steps](../DEVELOPMENT.md#latest-changes).
+No Inkscape or browser automation was rerun. Commit/push is authorized; Cloudflare
+deployment is outside this request. Its earlier build remains `601a9624a06d`.

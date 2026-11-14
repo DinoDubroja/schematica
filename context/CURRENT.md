@@ -1,58 +1,42 @@
 # Current status
 
-14-11-2026 · **Resistor corrections and Variations ready for human review.**
-
-The user authorized implementation, testing, documentation, commit/push and the
-existing-preview deployment. Creation skills and accounts/profiles remain outside
-this run. See [decisions](DECISIONS.md) for confirmed versus deferred scope.
+14-11-2026 Â· **Option B implemented; source update authorized for GitHub.**
 
 ## Current checkpoint
 
-- **28 designs / 360 configurations**, promoted after technical and family visual
-  checks. Four variable/trimmer designs have 36 combinations; the other 24 have nine.
-- Centered vertical potentiometer wipers, NTC/PTC lettering, symmetric light arrows,
-  nonlinear S instead of varistors, and four adjustment orientations are implemented.
-- Compact **Variations** compares Stroke, Size and applicable options at common scale.
-  Exact single exports and all 36 deterministic library profiles are implemented.
-- Six original designs retain approval and byte-identical SVGs. The other 22 remain
-  **Unverified**. Browser test approvals were undone; the official record is unchanged.
-- Build **`601a9624a06d`**: 42 Python + 8 JavaScript tests, all 360 Inkscape checks,
-  36 library exports, 57 actual local downloads and native TeX checks pass.
-  See [actual results and review steps](../DEVELOPMENT.md#latest-changes).
-- The [reference guide](../docs/SYMBOL_REFERENCE.md) was established before redrawing.
-  Detailed IEC/ISO records were inaccessible; no unreviewed compliance is claimed.
+- The user's "B, implement and push" selects the balanced single-cubic alternative
+  and authorizes implementation plus Git commit/push of the pending review fixes.
+- **26 designs / 342 configurations: 24 Verified, two Unverified.** The 18 pasted
+  approvals matched; the original six remain. Both tapped resistors are removed.
+- Nonlinear EU/US revision 3 implements B with no centre join. All 18 configurations
+  match the chat option within 0.00007 mm; bodies/pins and 1.00 mm margins pass.
+- Shared recipe regenerated; all 324 retained approved SVGs remain byte-identical.
+- Build **`ee70ffede6be`**. 42 Python + 8 JavaScript tests passed; all 36 library profiles contain 26 designs, and all 342 individual SVGs match the library.
+- No viewer-code changes, browser automation or Inkscape roundtrip checks this run.
+  See [latest checks and rendered proof](../DEVELOPMENT.md#latest-changes).
 
-## Published preview
+## Publication and next step
 
-Cloudflare deployment **`e6505edb`** serves build **`601a9624a06d`**. The hosted
-manifest and all 404 served assets match local hashes. Actual selected-orientation
-single and library downloads, plus a default-orientation library download, match
-byte for byte. Live search, Variations, themes and pending/reload/Undo passed.
-An independent read-only session recovered the scope, boundaries and next step
-from the repository alone without contradictions or edits.
+This update is authorized for commit/push to the existing GitHub repository.
+Verify the resulting revision there before handing off; the commit history is the
+revision record. No Cloudflare deployment is authorized in this request.
 
-A fresh Git-index checkout reproduces build `601a9624a06d`. SVG output uses
-consistent line endings; the six originals retain their historical bytes.
+The [shared preview](https://schematica-preview.dinodubroja.workers.dev/) still serves
+build **`601a9624a06d`**, deployment **`e6505edb`**, with the earlier 28-design inventory
+and six approvals. Pull GitHub and launch locally to see the current 26-design build.
 
-## Next step
+Next: check the actual B exports on the laptop. The two new revision-3 fingerprints
+remain Unverified until the standard [approval handoff](../docs/VERIFICATION.md).
+The selected design direction is confirmed; no further shape choice is pending.
 
-Human visual review on both Windows devices: follow the short checks in
-[DEVELOPMENT.md](../DEVELOPMENT.md#test-and-review). Fix requests remain in chat;
-design approval uses the existing [verification handoff](../docs/VERIFICATION.md).
-This run's publication authorization covers the completed update only. Further
-features and publishing new human approvals require their own user instruction.
+The user requested less computer use. A permanent lighter testing policy remains
+a proposal; this targeted run used automated checks and a static proof only.
 
-[Develop and test](../DEVELOPMENT.md) · [Batch workflow](../docs/RESISTOR_BATCH.md)
-· [Preview](https://schematica-preview.dinodubroja.workers.dev/)
-
-The laptop, profile-wide Inkscape installation, fresh GUI grid snapping and
-clean-machine/offline TeX setup remain unverified. Inkscape roundtrip results in
-this run are command-line checks. The broader milestone interview is unfinished;
-see [roadmap](../docs/ROADMAP.md). Future wishes do not authorize new implementation.
+[Develop and test](../DEVELOPMENT.md) Â· [Decisions](DECISIONS.md)
 
 ## Latest planning context
 
-The implementation report above completed in **Agent B** on
+The earlier published implementation completed in **Agent B** on
 14-11-2026 00:54 +01:00; its source revision is
 [`3a09af9`](https://github.com/DinoDubroja/schematica/commit/3a09af969818ad0f637759ae0dfd0d02fae2065d).
 

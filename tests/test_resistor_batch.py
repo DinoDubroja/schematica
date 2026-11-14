@@ -12,15 +12,16 @@ class ResistorBatch(unittest.TestCase):
         cls.batch = [s for s in cls.symbols.values() if s.get('batch') == 'resistors-01']
 
     def test_inventory_has_both_appearances_without_duplicate_fixed_symbols(self):
-        self.assertEqual(len(self.batch), 22)
+        self.assertEqual(len(self.batch), 20)
         self.assertEqual({(s['drawing']['body'], s['drawing']['variant']) for s in self.batch},
                          {(body, variant) for body in ('eu','us') for variant in RESISTOR_VARIANTS})
-        self.assertEqual(sum('resistor' in s['types'] for s in self.symbols.values()), 24)
+        self.assertEqual(sum('resistor' in s['types'] for s in self.symbols.values()), 22)
+        self.assertFalse(any('tapped' in sid for sid in self.symbols))
 
     def test_electrical_terminals_and_accepted_body_geometry(self):
         for symbol in self.batch:
             variant = symbol['drawing']['variant']
-            third = 'tap' if variant == 'tapped' else 'wiper' if variant in ('potentiometer','trimmer-potentiometer') else None
+            third = 'wiper' if variant in ('potentiometer','trimmer-potentiometer') else None
             expected = {'a','b'} | ({third} if third else set())
             self.assertEqual({p['id'] for p in symbol['pins']}, expected)
             base = self.symbols['resistor-' + symbol['drawing']['body']]
@@ -41,7 +42,6 @@ class ResistorBatch(unittest.TestCase):
             if variant == 'nonlinear': self.assertIn('nonlinear-mark', parts)
             if variant.startswith('photo'): self.assertIn('light-arrows', parts)
             if variant == 'photo-enclosed': self.assertIn('enclosure', parts)
-            if variant == 'tapped': self.assertNotIn('wiper-arrow', parts)
             for config in symbol['configurations']:
                 actual = [p.get('data-part') for p in artwork(config).iter() if p.get('data-part')]
                 self.assertEqual(set(actual), parts)

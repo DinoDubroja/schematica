@@ -16,11 +16,11 @@ the export canvas includes a 1 mm margin around the artwork.
 ## Use the Symbols panel
 
 1. Choose size and stroke, then **Export library → Download SVG**. The file contains
-   all 28 symbols at those settings, regardless of the search/filter. If the selected
+   all 26 symbols at those settings, regardless of the search/filter. If the selected
    design has an orientation control, that orientation is applied to the four designs
    supporting it. Otherwise they use **Up-right**. Other options use each design's defaults.
 2. Open the downloaded file in Inkscape. Open **Object → Symbols** (`Ctrl+Shift+Y`)
-   and select **Current document**. Expect 28 thumbnails.
+   and select **Current document**. Expect 26 thumbnails.
 3. Click a thumbnail to copy it. Create or switch to your drawing, click its canvas
    and paste (`Ctrl+V`). Do not press Ctrl+C on an empty canvas: that can replace the
    symbol clipboard. Dragging a thumbnail onto the current document also works.

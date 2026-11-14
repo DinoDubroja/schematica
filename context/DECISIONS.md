@@ -317,3 +317,31 @@ State chat coverage and repository synchronization separately. Saving on this PC
 or pushing to GitHub does not prove that the laptop has updated. Newer source
 evidence supersedes older notes explicitly; review time must never masquerade as
 a new decision date.
+
+## Approval handoff and nonlinear option B — 14-11-2026
+
+Source: user in **Agent B**, this chat, 14-11-2026 (Europe/Zagreb, UTC+01:00;
+original message times were not exposed). The sequence below preserves order,
+without substituting recording time for a source timestamp.
+
+- **Confirmed:** the pasted 18-design approval handoff matched exact revisions and
+  fingerprints. The original six approvals remain. The user also requested removal
+  of both tapped resistors and a less curved nonlinear S.
+- **Superseded/rejected:** the first local revision 2 reduced the bend by 29% but
+  was rejected as "ugly and discontinuos". The user requested alternatives in chat.
+- **Selected and authorized:** "B, implement and push" chose the balanced alternative
+  and released the implementation/commit/push hold for these pending fixes. Revision
+  3 uses one cubic: at medium size, axial half-length 5.6 mm and lateral controls
+  ±3.4 mm at axial coordinates ∓5.6/3 mm, rotated 45°. The renderer matches the chat
+  preview across all 18 configurations. Bodies, pins and unrelated artwork stay fixed.
+
+The current inventory has 26 designs / 342 configurations. Twenty-four designs
+have official approval fingerprints; B is the confirmed design choice, while its
+new rendered revision 3 still uses the normal verification handoff. No further
+shape choice is pending. GitHub synchronization is authorized; Cloudflare deployment
+is outside this request. Earlier preview publication permission covered its own run.
+
+**Testing discussion, still proposed:** the user requested less computer use and
+asked whether repeated Inkscape exports/tests could be dropped. The proposed
+permanent policy keeps exports and focuses checks on affected behavior; a policy
+edit is not yet approved. This correction run uses no Inkscape or browser automation.
