@@ -363,3 +363,30 @@ Wrangler 4.162.0 published build `fae9ed42be9d`; the user authorized OAuth once.
 No browser automation or Inkscape rerun was used. The live catalog clears saved
 Pending entries on reload; the manifest and all 386 served assets match locally.
 See [current status](CURRENT.md) for the deployment and two-device review steps.
+
+## Separate symbol and integration work — 14-11-2026
+
+Source: user in **Agent B**, this chat (original message timestamp unavailable;
+recorded 14-11-2026, Europe/Zagreb, UTC+01:00).
+
+**Confirmed and authorized:** preserve and claim the existing checkout for B on
+`work/agent-b-symbols`; A works separately on `work/agent-a-integration`. Local
+backups, branch setup, verification and task-specific checkpoint commits are
+authorized. Retain unfinished work in place and preserve ignored evidence.
+Each agent owns its handoff record; exact tested commits, not branch tips, signal
+integration readiness. A combines ready checkpoints; B adopts agreed shared changes.
+
+B owns symbols and their tests; A owns integration infrastructure, skills, MCP,
+search and shared viewer adaptation. Structural format/render/export/viewer
+changes require coordination first. Creation tests use A's separate test library.
+B remains the sole publisher of the shared preview within current authorization;
+this setup does not authorize deployment or pushing new commits. The collection
+is the dev library; accounts/personal libraries remain deferred.
+
+**Execution:** a verified external backup preceded B's branch creation at
+`477f679c51c699573f0e28f31cfe63f7e4bc01b1`. The source tree was clean; all ignored
+candidate, approval and review files were preserved. A's checkout/branch/handoff
+were absent at inspection, so A's setup and actual common baseline remain to be
+verified. Paths and verification receipts are in B's local handoff.
+All accepted designs remain unchanged. No additional batch or unresolved design
+was selected. The lighter recurring Inkscape policy remains a proposal.

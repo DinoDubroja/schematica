@@ -7,6 +7,13 @@
 
 ## Latest changes
 
+14-11-2026: [parallel work](#parallel-work) separates B's symbols from A's
+integration work. B's checkout and ignored review evidence are backed up; the
+accepted app is unchanged. Setup checks: 42 Python tests, eight JavaScript tests,
+and the same 388-file build `fae9ed42be9d`. Machine-specific ownership and exact
+ready commits are in the local handoff; A's setup remains unverified until its
+checkout and handoff exist. This setup is local only, with no push or deployment.
+
 14-11-2026: **option B and all approvals are live**. The library has **26 designs /
 342 configurations**, all **Verified**. Tapped resistors are removed. Both nonlinear
 designs use the selected smooth B curve, revision 3.
@@ -66,6 +73,35 @@ Browsing and packaging existing artwork require only Python and PyYAML. No TeX,
 Inkscape, Node.js or Cloudflare account is needed. Open the served address rather
 than the HTML file itself. The launcher uses the root `.venv`, then an existing
 workspace environment if available, then Python on PATH.
+
+## Parallel work
+
+Agent B owns symbol definitions, artwork, metadata, existing-format options and
+symbol tests on `work/agent-b-symbols`. Agent A owns MCP, search, creation skills
+and shared viewer adaptation on `work/agent-a-integration` in its separate checkout.
+The collection is the **dev library**; accounts and personal libraries remain deferred.
+
+The local coordination records live outside Git in the workspace's
+`Local/parallel-work/agent-b.md` and `agent-a.md`; each agent edits only its own.
+They record actual checkout paths, ports, backups, exact tested commits and open
+questions. An absent record means that agent's setup is not yet verified.
+
+- Before work → confirm your checkout and branch, read both available records,
+  and preserve local changes. Do not let synchronization switch an owned checkout.
+- Before format, rendering, export or viewer changes → describe the proposed
+  interface change in your handoff and coordinate with the other owner first.
+- Before creation/save tests → use A's separate test library; never the accepted
+  library in B's checkout. Builds, environments and preview ports stay separate.
+- Before integration → use the exact **READY FOR INTEGRATION** commits and their
+  checks. A combines them on its integration branch; B adopts agreed shared
+  changes through B's branch. A checkpoint or passing test is not human approval.
+- Before publication → B remains the sole shared-preview publisher, within the
+  current task's explicit authorization. Keep A's experiments off that preview.
+
+To check this setup: `git branch --show-current` must match your ownership record;
+the preview's `build.json` must match your checkout's `app/dist/build.json`.
+Run the [existing checks](#test-and-review) after adopting a shared checkpoint.
+No new symbol batch or unresolved design is authorized by branch setup.
 
 ## Get the project on another Windows device
 

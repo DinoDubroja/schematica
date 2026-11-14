@@ -30,6 +30,11 @@
   or connection changes require fresh review; never copy an old approval forward.
 - Check branch/index/files before changes; preserve concurrent work. Run the
   [applicable checks](DEVELOPMENT.md#test-and-review) and verify links after moves.
+- Parallel work: `work/agent-b-symbols` belongs to symbol work; Agent A uses
+  `work/agent-a-integration` in a separate checkout. Read the current ownership
+  note and [parallel-work guide](DEVELOPMENT.md#parallel-work) before editing.
+  Integrate only exact commits marked READY FOR INTEGRATION in the owner's
+  handoff, never an assumed branch tip. Do not switch another agent's checkout.
 - Commit, push and deploy only within the user's current authorization. Source
   synchronization and website deployment are separate actions. Missing capabilities
   in the roadmap are not authorization to implement them.
