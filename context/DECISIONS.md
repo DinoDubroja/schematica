@@ -421,3 +421,28 @@ recipe registrations and isolated TeX recipes through existing interfaces; A own
 integration and viewer adaptation. No A implementation is assumed ready. B remains
 sole preview publisher. The batch explicitly includes command-line Inkscape checks;
 the separate long-term testing-policy proposal is not adopted by this request.
+
+
+## Batch 02 review and corrections — 14-11-2026
+
+Source: user's pasted review request and authoritative 53-record approval JSON in
+**Agent B** (original message timestamp unavailable; recorded 14-11-2026,
+Europe/Zagreb, UTC+01:00). This supersedes the previous batch's all-Unverified status
+and retention of all 80 new designs.
+
+Authorized: retain original 26 plus the union of approved IDs and correction groups;
+validate approvals against reviewed artwork before edits; correct both JFETs, four
+dot-bearing MOSFETs, three BJTs, chassis ground and XOR/XNOR; remove exactly the
+15 named remaining designs. Both bulk MOSFETs already satisfy the no-dot request.
+Apply 52 unchanged approvals; old XOR approval cannot approve its replacement.
+
+Fixed 1 mm BJT shortening applies at all sizes; move junctions/leads/pins together,
+keep base fixed, place correctly aligned arrows at the outer emitter end. Rebuild
+JFETs using CircuitikZ construction and preserve N/P terminal meaning. Trim chassis
+bar with cap-aware ends; calculate XOR inputs on the outer curve without masking.
+
+Full configuration render/visual checks, focused regressions, approval/Pending/Undo,
+exports, docs, scoped B-branch commit/push and existing-preview publication are
+authorized. Preserve A ownership and unrelated research work. Result: 91 designs,
+78 Verified and 13 Unverified; corrected revisions require fresh human review.
+This request does not approve replacement drawings or authorize another batch.

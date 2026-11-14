@@ -7,42 +7,41 @@
 
 ## Latest changes
 
-14-11-2026: **batch 02 complete** — 80 new designs / 828 configurations across
-ten component families. The dev library now has **106 designs / 1,170 configurations**.
-The original 26 designs remain Verified; all 80 new designs are Unverified.
-No deferred or failed inventory items. See [the inventory and review focus](docs/BATCH_02.md).
+14-11-2026: **Batch 02 review applied** — 12 corrected designs, 52 unchanged
+approvals applied and 15 designs removed. The dev library has **91 designs /
+1,035 configurations: 78 Verified, 13 Unverified**. All 53 supplied approvals
+matched before editing; corrected XOR remains Unverified. See
+[the corrections and retained inventory](docs/BATCH_02.md).
 
-Published preview and local build: **`a65905389281`**. Hosted assets and downloads match the tested output.
-Source is pushed on `work/agent-b-symbols`; A's integration work and `main` remain separate.
+Published and local build: **`612e2ec4f95b`**. All 1,079 public assets match;
+all 135 removed SVG URLs return 404.
+Source belongs to `work/agent-b-symbols`; A's integration and `main` remain separate.
 
-**Passed:** 55 Python tests, eight JavaScript tests, all 1,170 SVGs in Inkscape,
-42 accepted-palette comparisons, all 36 complete-library exports, named-part
-save/reopen, fresh/native TeX fixtures and three byte-checked ZIP packages.
-Actual family renders were inspected at common scale and normal size, including
-Small/Thick and all adjustment directions. All original 342 SVG bytes and 26
-approval records match the saved baseline.
-
-Browser checks passed at 1440, 1366 and 800 px widths: filters, Unverified,
-Variations, themes, search, keyboard shortcuts and actual SVG/library downloads.
-The Windows launcher serves this same build. Physical laptop testing, human design
-acceptance and fresh-machine/offline TeX setup remain unverified. Inkscape checks
-used the command line; they do not establish GUI/profile installation behavior.
+**Passed:** 62 Python and eight JavaScript tests; all 36 complete-library exports;
+all 108 corrected configurations visually inspected; 12 native Small/Thick TeX
+comparisons; three byte-checked ZIPs. All 927 unaffected SVGs and original 26
+approval records are exact. Browser filters, Variations, both themes and actual
+single/library downloads pass. Inkscape passed all 1,035 SVGs, 42 accepted-palette
+comparisons and editable-part/Symbols save/reopen. A full rerun resolved one
+Windows process-start failure; no drawing check was skipped.
+Corrected artwork remains Unverified until human review.
 
 ### Test on both Windows devices
 
 | Action | Expected result |
 |---|---|
-| Open the preview and check `build.json` | Build `a65905389281` on both devices |
-| Choose All families / All batches; open Unverified; search `overnight` | 80 new designs; the original 26 remain Verified |
-| Choose a family and its `overnight-…-02` batch, then select a symbol | Only that family's new designs appear; inspect the selected design |
-| Open Variations; then try Small / Thick in the main preview | Comparison rows vary one setting from defaults; main preview applies your chosen settings |
-| Inspect polarity, arrows, terminal names and labels | Meaning matches the description; use the [family checklist](docs/BATCH_02.md#what-to-inspect) |
-| Switch dark/light; reload; narrow the window | Theme persists and controls remain usable without horizontal overflow |
-| Download one symbol, then the library while filtered | Selected SVG matches the preset; library includes all 106 designs |
-| Verify acceptable designs; copy approvals into chat | Browser selections are Pending until the exact handoff is applied and published |
+| Reload the preview; open [build.json](https://schematica-preview.dinodubroja.workers.dev/build.json) | Build `612e2ec4f95b` on both devices |
+| Clear filters; switch All symbols / Unverified | 91 designs / 13 Unverified; 78 Verified |
+| Search `overnight` in All symbols | 65 retained Batch 02 designs; no removed IDs |
+| Open [the corrected symbols](docs/BATCH_02.md#what-to-inspect); compare Variations and Small / Thick | JFET shape, MOS dots, 1 mm BJT shortening, chassis ends and XOR input joins match the checklist |
+| Reload a browser with old Pending selections; press Undo | Published approvals, old corrected revisions and removed designs cannot reappear as Pending; unchanged valid selections remain |
+| Switch dark/light; narrow the window | Readable drawings and usable controls |
+| Export one symbol, then the library while filtered | Single SVG matches size/stroke; library contains all 91 designs |
+| Verify replacements you accept; copy approvals into chat | Only browser-local Pending until the exact handoff is applied and published |
 
-Send fixes by copied symbol reference. Review stays in Unverified and Variations;
-there is no new review sheet or comment UI. See [verification](docs/VERIFICATION.md).
+Send corrections by copied symbol reference. Actual testing on the second Windows
+device and human acceptance remain yours; automated checks do not establish either.
+Inkscape checks use the command line, not GUI/profile installation.
 
 ## Run on Windows
 
@@ -144,7 +143,7 @@ schematica/
 │   ├── tex/                # Authoritative parameterized geometry
 │   ├── core.py             # Find, inspect and render; shared TeX export
 │   ├── exports.py          # SVG, ZIP, sheet and Symbols composition
-│   ├── library/            # Catalog and 1170 SVGs for immediate browsing
+│   ├── library/            # Catalog and 1035 SVGs for immediate browsing
 │   ├── verification.py     # Validate and apply chat approval handoffs
 │   ├── verification.json   # Official acceptance, tied to actual geometry
 │   ├── viewer/             # Accepted HTML/CSS/JavaScript interface
@@ -172,7 +171,7 @@ schematica/
 
 The viewer reads pre-rendered SVGs and a catalog. It never compiles TeX. The static
 builder copies the accepted artwork, reads current editorial metadata and creates
-36 complete-library exports. The website contains 1216 files, with no Python, source
+36 complete-library exports. The website contains 1081 files, with no Python, source
 TeX, references or test material. Its content hashes determine `build.json`.
 
 ## Test and review
@@ -187,7 +186,7 @@ node --test tests\review.test.cjs tests\configurations.test.cjs
 .\.venv\Scripts\python.exe tests\check_docs.py
 ```
 
-Expect **55 Python tests and 8 JavaScript tests**, a **1216-file** website, and no
+Expect **62 Python tests and 8 JavaScript tests**, a **1081-file** website, and no
 broken documentation links. Tests cover all designs/configurations, accepted SVG
 bytes, pins, independent strokes, editable parts, exports, HTTP boundaries and
 approval validity. Compare `app/dist/build.json` with the hosted `build.json` when
@@ -195,7 +194,7 @@ checking that both devices have the same version.
 
 | Action | Expected result |
 |---|---|
-| Open the app; switch All symbols / Unverified | 106 designs / 80 unverified designs; the original 26 remain Verified |
+| Open the app; switch All symbols / Unverified | 91 designs / 13 unverified designs; 78 are Verified |
 | Choose Resistors / Batch 01; search `NTC`, then `zzzz`, then clear | Two NTCs; empty state; the filtered batch returns |
 | Select Variable resistor · US; open Variations | Stroke, Size and Arrow orientation rows; one setting varies per row, all others at defaults; no large preview |
 | Choose Small / Thick / Down-left; open Variations | Comparison rows still use defaults, independently of the main preview selection |
@@ -206,10 +205,10 @@ checking that both devices have the same version.
 | Copy approvals or Copy symbol reference | Approval JSON includes exact revision/fingerprint; reference includes name/ID/revision/link |
 | Open the reference link in another browser | Same design selected; local approvals are not transferred |
 | Switch dark/light; reload; use Small/Thick and Grid & pins | Theme persists; stroke changes keep pins fixed; preview aids toggle together |
-| Export Small/Thick/Down-left variable resistor, then the library while filtered | Single matches the selected marking; library has all 106 designs and Down-left on its 8 adjustable designs |
+| Export Small/Thick/Down-left variable resistor, then the library while filtered | Single matches the selected marking; library has all 91 designs and Down-left on its 8 adjustable designs |
 | Select a coil; export the library | Orientation controls disappear; adjustable designs in the library use Up-right |
 | Inspect exported artwork | Black vectors, no blue points/grid; NTC/PTC glyph outlines stay grouped as temperature-mark |
-| Open the library in Inkscape Symbols | 106 thumbnails; placed artwork can be unlinked, edited, saved and reopened |
+| Open the library in Inkscape Symbols | 91 thumbnails; placed artwork can be unlinked, edited, saved and reopened |
 | Use Tab, Enter, Escape, arrow keys on the tabs, and `/`; narrow the window | Controls remain reachable; dialogs return focus; search focuses; page does not overflow |
 
 Repeat on both Windows devices using the [shared preview](https://schematica-preview.dinodubroja.workers.dev/).
@@ -220,6 +219,9 @@ and actual result. See [Inkscape](docs/INKSCAPE.md) for export/grid details and
 ## Render and verify geometry
 
 Only geometry work needs Tectonic, dvisvgm, Inkscape and the developer requirements.
+The full-library CLI check uses two isolated Inkscape workers by default;
+`--workers 1` runs serially. Only a Windows `Gio::DBus::Error` startup failure is
+retried (up to three attempts); drawing/validation errors still stop the check.
 Build candidates separately from the browsable library:
 
 ```powershell
@@ -288,9 +290,9 @@ Creates `app/build/exports/` with a hash manifest and three ZIPs:
 
 | Package | Contents |
 |---|---|
-| `web-preview.zip` | 1216 static website files, ready for Cloudflare upload |
-| `all-symbols.zip` | 1170 individual SVGs |
-| `tex-bundles.zip` | 1170 standalone configurations, each with `symbol.tex` and required helpers |
+| `web-preview.zip` | 1081 static website files, ready for Cloudflare upload |
+| `all-symbols.zip` | 1035 individual SVGs |
+| `tex-bundles.zip` | 1035 standalone configurations, each with `symbol.tex` and required helpers |
 
 Only the shared TeX recipes/helpers and prebuilt browser SVGs are maintained.
 Generated standalone bundles and ZIPs are not committed. To use the native TeX

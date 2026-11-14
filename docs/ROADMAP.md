@@ -14,7 +14,7 @@ This page states desired capabilities; implementation status comes from
 | Outcome | Status | What it means |
 |---|---|---|
 | Minimal symbol library in the web app | Implemented | Browse, search, compare variations, use dark/light mode and export one symbol or the whole Inkscape library |
-| Grow the dev library with agent-run batches | Two batches implemented | Resistors plus 80 new designs across ten component families; repeatable creation, validation and human verification. New artwork awaits review |
+| Grow the dev library with agent-run batches | Two batches implemented | Resistors plus 65 retained Batch 02 designs; repeatable creation, validation and human verification. Corrected artwork awaits review |
 | Create symbols interactively with an agent | Near term · missing | Create one symbol from text, images, sketches or PDFs: interpret → confirm → create → preview/refine → offer download/save to the dev library; shares formats and checks with batches |
 | Search and reuse symbols through agent apps | Near term · planning | Separate search skill; proposed shared interactive web/chat viewer with filtered results, configuration controls and an explicit selection handoff |
 | Connect Schematica through MCP | Near term · missing | Required: ChatGPT Desktop across its environments and Claude Desktop; verify each complete journey, including previews, downloads and fresh-chat retrieval |
@@ -23,7 +23,7 @@ This page states desired capabilities; implementation status comes from
 | Schematic styles and examples in the library | Future · deferred | Browse styles and visible references with captions, including mixed circuits/plots/equations; compare symbols in circuits and test style generalization on realistic examples |
 | Create and revisit complete schematics | Future · deferred | Turn text, paper-sketch photos, tablet exports and PDFs into circuits or system diagrams; reuse/create symbols, refine connections and layout, then revisit saved work; general CircuitikZ import/round-trip comes later |
 
-The [second batch](BATCH_02.md) expands the symbol branch to 106 designs. Status on
+The [second batch](BATCH_02.md) leaves the symbol branch at 91 designs after review. Status on
 this page describes the symbol preview; Agent A's separate integration work is not
 deployed here. Individual creation and search are separate
 workstreams that may be developed alongside it after their own scope is authorized.

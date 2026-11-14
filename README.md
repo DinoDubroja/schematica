@@ -11,7 +11,7 @@ and export SVGs for Inkscape.
 · [Roadmap and scope](docs/ROADMAP.md)
 · [Review symbols](docs/VERIFICATION.md)
 
-The dev library has 106 designs and 1,170 configurations, with dark/light mode,
+The dev library has 91 designs and 1,035 configurations, with dark/light mode,
 variations, human verification and single-symbol or complete-library export.
-The [80 new designs](docs/BATCH_02.md) await review; the original 26 remain Verified.
+[Batch 02 review](docs/BATCH_02.md) leaves 78 Verified and 13 Unverified designs.
 Agent-assisted creation, personal variants and schematic styles are future directions.

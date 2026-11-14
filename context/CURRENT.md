@@ -1,6 +1,6 @@
 # Current status
 
-14-11-2026 · **Batch 02 complete; human review pending.**
+14-11-2026 · **Batch 02 corrections; replacement review pending.**
 
 ## Working ownership
 
@@ -11,30 +11,36 @@ A's experimental integration is not deployed. Read both available local ownershi
 records in the parent workspace's `Local/parallel-work` before shared changes.
 See [parallel work](../DEVELOPMENT.md#parallel-work).
 
-The user authorized this finite 80-design batch, checks, docs, focused commits,
-branch push and publication. That work does not authorize another batch, adoption
-of A's viewer/integration, or unresolved structural changes. B remains sole preview
-publisher. This is the dev library; accounts and personal libraries remain deferred.
+The user authorized the Batch 02 corrections, exact approvals, 15 removals, checks,
+docs, focused commits, B-branch push and publication. No new batch, adoption of
+A's viewer/integration or unresolved structural change is authorized. B remains
+sole preview publisher. This is the dev library; accounts and personal libraries
+remain deferred.
 
-## Delivered library
+## Current review
 
-- **106 designs / 1,170 configurations:** original 26 Verified; 80 new Unverified.
-  All ten [inventory families](../docs/BATCH_02.md) completed; no failed/deferred items.
-- Original 342 SVG bytes and 26 approval records preserved exactly. Tapped
-  resistors and varistors remain removed; accepted nonlinear B revision 3 is unchanged.
-- Published preview and local build: **`a65905389281`**. Hosted assets and downloads match the tested output.
-- Passed 55 Python and eight JavaScript tests, all individual/configured library
-  exports, 42 accepted-palette comparisons, native TeX and packaging checks.
-  Actual rendered artwork and browser layouts were inspected; tests do not confer
-  human approval. Exact ready family/cumulative commits are in B's local handoff.
+- **91 designs / 1,035 configurations; 78 Verified / 13 Unverified.** All 53 supplied
+  approvals matched the old artwork. Applied 52 unchanged approvals; corrected XOR's
+  old approval is superseded. N-bulk MOSFET remains unchanged and Verified.
+- Exactly 12 corrected revision-2 designs and 15 removals; see
+  [the inventory and review links](../docs/BATCH_02.md). Unchanged P-bulk MOSFET is
+  revision 1 and still Unverified. No new batch is authorized.
+- All 927 unaffected SVG bytes and original 26 approval records are exact.
+  Accepted nonlinear B revision 3 remains; tapped resistors/varistors stay removed.
+- Published/local build **`612e2ec4f95b`**; 1,079 public assets byte-match, all 135
+  removed SVG URLs return 404. Passed 62 Python + eight JavaScript tests, all 1,035
+  Inkscape configurations and 36 library exports; all 108 corrected configurations
+  actually inspected. A's integration, processes and test library remain untouched.
+- Verified full backup precedes changes; unrelated `docs/research/` is preserved.
+  Exact ready commits, runtime and receipts belong in B's local handoff.
 
 ## Review next
 
-Use **Unverified**, an overnight family/batch and **Variations**. Check Small/Thick,
-electrical meaning and labels; report corrections by copied symbol reference.
-Review on both Windows devices using [the action checklist](../DEVELOPMENT.md#latest-changes).
-No new implementation follows until the user's review/request. The recurring
-lighter Inkscape policy remains a separate proposal; this batch's checks used CLI.
+Open **Unverified → Variations**, then **Small / Thick**. Follow
+[action → expected result checks](../DEVELOPMENT.md#latest-changes) on both devices.
+All replacements need fresh human approval; tests or commits do not confer it.
+The lighter recurring Inkscape policy remains a proposal; this correction run uses
+the requested command-line checks. No viewer/interface or integration changes.
 
 [Decisions](DECISIONS.md) · [Verification](../docs/VERIFICATION.md)
 

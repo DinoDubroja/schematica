@@ -1,116 +1,114 @@
 # Dev-library batch 02
 
-**Complete 14-11-2026:** 80 new designs / 828 configurations; all ten families
-completed, no deferred or failed items. The full dev library has 106 designs /
-1,170 configurations. All new designs remain Unverified for human review;
-the original 26 approvals and 342 SVG bytes are unchanged.
+**Review applied 14-11-2026:** 65 retained designs / 693 configurations from the
+original 80-design batch. **52 Verified; 13 Unverified.** Exactly 15 designs removed.
+The complete dev library has **91 designs / 1,035 configurations: 78 Verified,
+13 Unverified**. The original 26 approvals and 342 SVGs are unchanged.
 
-Use the existing family/batch filters, Unverified and Variations. Every new
-family uses `overnight-<family>-02`; searching `overnight` finds this whole run.
-No additional review UI is introduced.
+All 53 supplied approvals matched the reviewed revisions before editing. XOR's
+approval applied to its old drawing and was superseded by the requested correction.
+The N-channel bulk MOSFET was already dot-free: its unchanged revision 1 is Verified.
+The P-channel bulk MOSFET is also unchanged but has no supplied approval.
 
 ## What to inspect
 
-Open **Unverified**, choose a family and its overnight batch, then use **Variations**
-and **Small / Thick**. Copy the symbol reference when reporting a correction.
+Open **Unverified → Variations**, then try **Small / Thick** in the main preview.
+The 12 corrected designs are revision 2 and require fresh review. The remaining
+Unverified design is the unchanged P-channel bulk MOSFET, revision 1.
 
-| Family | Look for |
+| Review | Expected drawing |
 |---|---|
-| Capacitors | Positive terminal, curved negative plate, feedthrough case pin; adjustment marks clear of the plates |
-| Diodes | Cathode marking, outward LED versus inward photo arrows, separate varactor plates and opposed TVS junctions |
-| Transistors | Base/gate and collector/drain/source identities; N/P arrows, broken/continuous channels and independent bulk terminals |
-| Sources / grounds | Voltage polarity, current direction, long positive battery plates; earth, signal and chassis meanings |
-| Magnetics | Core marks, winding isolation, corresponding polarity dots and secondary center tap; all adjustment directions |
-| Analog | Input/output polarity, gain/reference/bias terminals and readable labels; generic blocks are not specific IC pinouts |
-| Logic | Inversion bubbles, separate XOR curve, Schmitt mark and lower active-high tri-state enable |
-| Switches / relays | Open/closed resting state, selected throw, mechanically linked poles and isolated relay coil |
-| Connections / instruments | Contact numbers, separate coax center/shield, TP marking and A/V meter labels |
-| Protection / resonators | Fusible link, crystal plates and the ceramic resonator's two load capacitors/common terminal |
+| [N-JFET](https://schematica-preview.dinodubroja.workers.dev/#symbol=jfet-n), [P-JFET](https://schematica-preview.dinodubroja.workers.dev/#symbol=jfet-p) | Bent drain/source leads, gate at source-side branch; N arrow inward, P outward. P source is above drain, following CircuitikZ |
+| [N enhancement](https://schematica-preview.dinodubroja.workers.dev/#symbol=mosfet-n-enhancement), [P enhancement](https://schematica-preview.dinodubroja.workers.dev/#symbol=mosfet-p-enhancement), [N depletion](https://schematica-preview.dinodubroja.workers.dev/#symbol=mosfet-n-depletion), [P depletion](https://schematica-preview.dinodubroja.workers.dev/#symbol=mosfet-p-depletion) | No filled junction dots; connecting lines and body arrows intact |
+| [NPN](https://schematica-preview.dinodubroja.workers.dev/#symbol=transistor-npn), [PNP](https://schematica-preview.dinodubroja.workers.dev/#symbol=transistor-pnp), [phototransistor](https://schematica-preview.dinodubroja.workers.dev/#symbol=phototransistor-npn) | Collector/emitter junctions and pins 1 mm left; base unchanged. Arrow at outer emitter end, pointing outward for NPN and inward for PNP |
+| [Chassis ground](https://schematica-preview.dinodubroja.workers.dev/#symbol=ground-chassis) | Bar stops at first/third hatch attachments, including Thick; no horizontal overhang |
+| [XOR](https://schematica-preview.dinodubroja.workers.dev/#symbol=logic-xor), [XNOR](https://schematica-preview.dinodubroja.workers.dev/#symbol=logic-xnor) | Inputs end on the separate outer curve; no lead in the gap. XNOR bubble remains |
+| [P-channel bulk MOSFET](https://schematica-preview.dinodubroja.workers.dev/#symbol=mosfet-p-enhancement-bulk) | Unchanged four-terminal drawing, still awaiting its first approval |
 
-Verify acceptable designs and copy approvals into chat. Technical completion below
-does not mark a design Verified; see the [approval handoff](VERIFICATION.md).
+Copy the symbol reference when reporting a correction. Technical checks do not
+approve designs; use the [verification handoff](VERIFICATION.md).
 
-## Finite inventory
+## Retained inventory
 
-Status below describes production, never human acceptance. Unidirectional TVS
-is intentionally covered by the Zener drawing and aliases; adding identical
-artwork under a second name would inflate the inventory. Sources/grounds has
-11 designs so all requested electrical forms are represented.
+Existing family/batch filters remain. Each retained design keeps its
+`overnight-<family>-02` batch; searching `overnight` finds all 65 retained designs.
+Unidirectional TVS remains covered by the Zener drawing/aliases.
 
 ### Capacitors
 
-Status: complete — 5 designs / 99 configurations; Unverified.
+5 designs / 99 configurations · 5 Verified / 0 Unverified.
 
-`capacitor-polarized`, `capacitor-polarized-curved`, `capacitor-variable`, `capacitor-trimmer`, `capacitor-feedthrough`.
+`capacitor-feedthrough`, `capacitor-polarized`, `capacitor-polarized-curved`, `capacitor-trimmer`, `capacitor-variable`.
 
 ### Diodes
 
-Status: complete — 7 designs / 63 configurations; Unverified.
+7 designs / 63 configurations · 7 Verified / 0 Unverified.
 
-`diode`, `diode-zener`, `diode-schottky`, `diode-led`, `diode-photo`, `diode-varactor`, `diode-tvs-bidirectional`.
+`diode`, `diode-led`, `diode-photo`, `diode-schottky`, `diode-tvs-bidirectional`, `diode-varactor`, `diode-zener`.
 
 ### Transistors
 
-Status: complete — 12 designs / 108 configurations; Unverified.
+12 designs / 108 configurations · 2 Verified / 10 Unverified.
 
-`transistor-npn`, `transistor-pnp`, `jfet-n`, `jfet-p`, `mosfet-n-enhancement`, `mosfet-p-enhancement`, `mosfet-n-depletion`, `mosfet-p-depletion`, `mosfet-n-enhancement-bulk`, `mosfet-p-enhancement-bulk`, `phototransistor-npn`, `igbt-n`.
+`igbt-n`, `jfet-n`, `jfet-p`, `mosfet-n-depletion`, `mosfet-n-enhancement`, `mosfet-n-enhancement-bulk`, `mosfet-p-depletion`, `mosfet-p-enhancement`, `mosfet-p-enhancement-bulk`, `phototransistor-npn`, `transistor-npn`, `transistor-pnp`.
 
-### Sources And Grounds
+### Sources and grounds
 
-Status: complete — 11 designs / 99 configurations; Unverified.
+10 designs / 90 configurations · 9 Verified / 1 Unverified.
 
-`source-voltage`, `source-current`, `source-voltage-ac`, `source-dependent-voltage`, `source-dependent-current`, `cell`, `battery`, `supply-port`, `ground-earth`, `ground-signal`, `ground-chassis`.
+`battery`, `cell`, `ground-chassis`, `ground-earth`, `ground-signal`, `source-current`, `source-dependent-current`, `source-dependent-voltage`, `source-voltage`, `source-voltage-ac`.
 
-### Inductors And Transformers
+### Inductors and transformers
 
-Status: complete — 8 designs / 126 configurations; Unverified.
+8 designs / 126 configurations · 8 Verified / 0 Unverified.
 
-`inductor-eu`, `inductor-iron`, `inductor-ferrite`, `inductor-variable`, `inductor-variable-iron`, `transformer-air`, `transformer-core`, `transformer-center-tap`.
-
-### Analog
-
-Status: complete — 6 designs / 54 configurations; Unverified.
-
-`comparator`, `comparator-supply`, `amplifier-fully-differential`, `amplifier-instrumentation`, `ota`, `regulator`.
+`inductor-eu`, `inductor-ferrite`, `inductor-iron`, `inductor-variable`, `inductor-variable-iron`, `transformer-air`, `transformer-center-tap`, `transformer-core`.
 
 ### Logic
 
-Status: complete — 12 designs / 108 configurations; Unverified.
+12 designs / 108 configurations · 10 Verified / 2 Unverified.
 
-`logic-and`, `logic-nand`, `logic-or`, `logic-nor`, `logic-xor`, `logic-xnor`, `logic-not`, `logic-buffer`, `logic-schmitt-buffer`, `logic-schmitt-inverter`, `logic-tristate-buffer`, `logic-tristate-inverter`.
+`logic-and`, `logic-buffer`, `logic-nand`, `logic-nor`, `logic-not`, `logic-or`, `logic-schmitt-buffer`, `logic-schmitt-inverter`, `logic-tristate-buffer`, `logic-tristate-inverter`, `logic-xnor`, `logic-xor`.
 
-### Switches And Relays
+### Switches and relays
 
-Status: complete — 8 designs / 72 configurations; Unverified.
+4 designs / 36 configurations · 4 Verified / 0 Unverified.
 
-`switch-spst`, `switch-spdt`, `switch-dpst`, `switch-dpdt`, `pushbutton-no`, `pushbutton-nc`, `relay-coil`, `relay-spdt`.
+`switch-dpdt`, `switch-dpst`, `switch-spdt`, `switch-spst`.
 
-### Connections And Instruments
+### Connections and instruments
 
-Status: complete — 8 designs / 72 configurations; Unverified.
+5 designs / 45 configurations · 5 Verified / 0 Unverified.
 
-`terminal-open`, `terminal-filled`, `test-point`, `connector-2pin`, `connector-3pin`, `connector-coaxial`, `ammeter`, `voltmeter`.
+`ammeter`, `connector-coaxial`, `terminal-open`, `test-point`, `voltmeter`.
 
-### Protection And Resonators
+### Protection and resonators
 
-Status: complete — 3 designs / 27 configurations; Unverified.
+2 designs / 18 configurations · 2 Verified / 0 Unverified.
 
-`fuse`, `crystal`, `ceramic-resonator`.
+`crystal`, `fuse`.
 
-## Construction and verification
+## Removed after review
 
-[Construction reference](SYMBOL_REFERENCE.md) remains authoritative for styling
-and source-access limits. Each YAML definition names its CircuitikZ reference
-or explains its custom construction. Detailed IEC/ISO records remain inaccessible;
-no standards compliance is claimed. Native TeX remains drawing authority.
+The six new analog blocks were removed; the original op-amp designs remain.
+These 15 IDs have no active definition, recipe registration, catalog entry or SVG:
 
-Prioritize capacitors, diodes, transistors, sources/grounds and magnetics, then
-analog, logic, switches/relays, connections/instruments and protection/resonators.
-Render and visually refine representatives before all configurations of each
-family. Inspect actual Medium/Medium, Small/Thick and adjustment orientations at
-common scale and normal size. Check electrical meaning, named parts, grid,
-clearances, Inkscape bounds/save/reopen and export references. Promote only passing
-complete designs. Candidate failures remain outside the active catalog.
+`amplifier-fully-differential`, `amplifier-instrumentation`, `ceramic-resonator`, `comparator`, `comparator-supply`, `connector-2pin`, `connector-3pin`, `ota`, `pushbutton-nc`, `pushbutton-no`, `regulator`, `relay-coil`, `relay-spdt`, `supply-port`, `terminal-filled`.
 
-[Developer checks](../DEVELOPMENT.md#test-and-review) ·
-[Human verification](VERIFICATION.md)
+Their earlier artwork remains in Git history and the verified external backup.
+
+## Construction and checks
+
+[Construction reference](SYMBOL_REFERENCE.md) and parameterized TeX remain the
+authority. The JFET rebuild follows CircuitikZ `njfet`/`pjfet` with arrows at the
+gate end, translated and sized for Schematica's 1 mm connection grid. P-JFET's
+source/drain placement mirrors N-JFET. The BJT shift is a fixed 1 mm at every size;
+the PNP arrow's back edge sits at the outer junction and its tip points inward.
+Chassis uses a butt cap on the trimmed bar. XOR/XNOR leads use the outer curve at
+each input height; no masking shapes are used.
+
+All 108 changed configurations were rendered and visually inspected. Regression checks
+cover the reported defects, 927 unchanged SVG bytes, exact supplied approvals,
+stale approval rejection and the retained/removed inventory. Full SVG bounds,
+editable-parts save/reopen and all 36 complete-library exports are checked separately.
+See [the latest results and device checklist](../DEVELOPMENT.md#latest-changes).
