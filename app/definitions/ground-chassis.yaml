@@ -1,0 +1,46 @@
+schema_version: 1
+id: ground-chassis
+revision: 1
+name: Chassis ground
+description: Chassis or frame connection with three oblique strokes; it does not by
+  itself specify protective earth.
+keywords:
+- ground
+- reference
+- chassis
+- frame
+- sources grounds
+- overnight
+- batch 02
+types:
+- sources-and-grounds
+family: sources-and-grounds
+batch: overnight-sources-and-grounds-02
+attributes:
+  reference: chassis
+recipe: ground-chassis
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: cground
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: reference
+  name: Chassis ground
+  description: Chassis ground
+  kind: power
+  lead_part: lead-reference
+parts:
+- id: lead-reference
+  description: 'Electrical lead: Chassis ground'
+- id: ground-mark
+  description: Ground mark

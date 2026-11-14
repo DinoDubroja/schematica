@@ -1,0 +1,49 @@
+schema_version: 1
+id: supply-port
+revision: 1
+name: Supply port
+description: One-terminal supply-net port; the net name and voltage are supplied by
+  the schematic.
+keywords:
+- power
+- supply
+- VCC
+- VDD
+- rail
+- net port
+- sources grounds
+- port
+- overnight
+- batch 02
+types:
+- sources-and-grounds
+family: sources-and-grounds
+batch: overnight-sources-and-grounds-02
+attributes:
+  reference: supply
+recipe: supply-port
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: vcc
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: net
+  name: Supply net
+  description: Supply net
+  kind: power
+  lead_part: lead-net
+parts:
+- id: lead-net
+  description: 'Electrical lead: Supply net'
+- id: port
+  description: Port

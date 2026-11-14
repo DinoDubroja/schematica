@@ -36958,6 +36958,5458 @@
         }
       ],
       "source_fingerprint": "58408156e1cdb14013e9280157c41a1f24471894dd5949f4294a92e2ddb30fab"
+    },
+    {
+      "schema_version": 1,
+      "id": "battery",
+      "revision": 1,
+      "name": "Battery",
+      "description": "Multiple electrochemical cells; the long plate and plus sign identify the positive terminal.",
+      "keywords": [
+        "battery",
+        "cell",
+        "DC",
+        "voltage",
+        "polarized",
+        "power",
+        "sources grounds",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "sources-and-grounds"
+      ],
+      "family": "sources-and-grounds",
+      "batch": "overnight-sources-and-grounds-02",
+      "attributes": {
+        "polarized": true
+      },
+      "recipe": "battery",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "battery",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "positive",
+          "name": "Positive",
+          "description": "Positive",
+          "kind": "passive",
+          "lead_part": "lead-positive"
+        },
+        {
+          "id": "negative",
+          "name": "Negative",
+          "description": "Negative",
+          "kind": "passive",
+          "lead_part": "lead-negative"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-positive",
+          "description": "Electrical lead: Positive"
+        },
+        {
+          "id": "lead-negative",
+          "description": "Electrical lead: Negative"
+        },
+        {
+          "id": "plate-1",
+          "description": "Plate 1"
+        },
+        {
+          "id": "plate-2",
+          "description": "Plate 2"
+        },
+        {
+          "id": "plate-3",
+          "description": "Plate 3"
+        },
+        {
+          "id": "plate-4",
+          "description": "Plate 4"
+        },
+        {
+          "id": "polarity",
+          "description": "Polarity"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "battery-small-thin",
+          "symbol_id": "battery",
+          "name": "Battery",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/battery-small-thin.svg",
+          "width_mm": 14.1499269,
+          "height_mm": 6.94994236,
+          "origin_svg": [
+            -48.627446,
+            -62.149705
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -6.0,
+              0.0
+            ],
+            "negative": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 4.79999,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-1",
+            "plate-2",
+            "plate-3",
+            "plate-4",
+            "polarity"
+          ],
+          "svg_bytes": 2802,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "battery-small-medium",
+          "symbol_id": "battery",
+          "name": "Battery",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/battery-small-medium.svg",
+          "width_mm": 14.19992891,
+          "height_mm": 6.9999479,
+          "origin_svg": [
+            -48.556576,
+            -62.078835
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -6.0,
+              0.0
+            ],
+            "negative": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 4.79999,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-1",
+            "plate-2",
+            "plate-3",
+            "plate-4",
+            "polarity"
+          ],
+          "svg_bytes": 2839,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "battery-small-thick",
+          "symbol_id": "battery",
+          "name": "Battery",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/battery-small-thick.svg",
+          "width_mm": 14.2999333,
+          "height_mm": 7.09995229,
+          "origin_svg": [
+            -48.414834,
+            -61.937093
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -6.0,
+              0.0
+            ],
+            "negative": [
+              6.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.5,
+            "body-height": 4.79999,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-1",
+            "plate-2",
+            "plate-3",
+            "plate-4",
+            "polarity"
+          ],
+          "svg_bytes": 2820,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "battery-medium-thin",
+          "symbol_id": "battery",
+          "name": "Battery",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/battery-medium-thin.svg",
+          "width_mm": 16.14991231,
+          "height_mm": 8.54993845,
+          "origin_svg": [
+            -45.792816,
+            -59.881995
+          ],
+          "visual_center_from_origin_mm": [
+            -8.819444422177487e-07,
+            7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -7.0,
+              0.0
+            ],
+            "negative": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 6.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-1",
+            "plate-2",
+            "plate-3",
+            "plate-4",
+            "polarity"
+          ],
+          "svg_bytes": 2825,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "battery-medium-medium",
+          "symbol_id": "battery",
+          "name": "Battery",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/battery-medium-medium.svg",
+          "width_mm": 16.19991786,
+          "height_mm": 8.59994399,
+          "origin_svg": [
+            -45.721945,
+            -59.811124
+          ],
+          "visual_center_from_origin_mm": [
+            1.763888909501866e-07,
+            -7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -7.0,
+              0.0
+            ],
+            "negative": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 6.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-1",
+            "plate-2",
+            "plate-3",
+            "plate-4",
+            "polarity"
+          ],
+          "svg_bytes": 2862,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "battery-medium-thick",
+          "symbol_id": "battery",
+          "name": "Battery",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/battery-medium-thick.svg",
+          "width_mm": 16.29992577,
+          "height_mm": 8.69994838,
+          "origin_svg": [
+            -45.580203,
+            -59.669383
+          ],
+          "visual_center_from_origin_mm": [
+            7.055555562808358e-07,
+            5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -7.0,
+              0.0
+            ],
+            "negative": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.0,
+            "body-height": 6.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-1",
+            "plate-2",
+            "plate-3",
+            "plate-4",
+            "polarity"
+          ],
+          "svg_bytes": 2843,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "battery-large-thin",
+          "symbol_id": "battery",
+          "name": "Battery",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/battery-large-thin.svg",
+          "width_mm": 20.14989373,
+          "height_mm": 10.14991338,
+          "origin_svg": [
+            -40.123554,
+            -57.614314
+          ],
+          "visual_center_from_origin_mm": [
+            1.7638888844354975e-07,
+            2.5066368733759088e-15
+          ],
+          "pins_mm": {
+            "positive": [
+              -9.0,
+              0.0
+            ],
+            "negative": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 7.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-1",
+            "plate-2",
+            "plate-3",
+            "plate-4",
+            "polarity"
+          ],
+          "svg_bytes": 2810,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "battery-large-medium",
+          "symbol_id": "battery",
+          "name": "Battery",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/battery-large-medium.svg",
+          "width_mm": 20.1998961,
+          "height_mm": 10.19991575,
+          "origin_svg": [
+            -40.052683,
+            -57.543444
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            8.819444422177487e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -9.0,
+              0.0
+            ],
+            "negative": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 7.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-1",
+            "plate-2",
+            "plate-3",
+            "plate-4",
+            "polarity"
+          ],
+          "svg_bytes": 2847,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "battery-large-thick",
+          "symbol_id": "battery",
+          "name": "Battery",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/battery-large-thick.svg",
+          "width_mm": 20.29990401,
+          "height_mm": 10.29992366,
+          "origin_svg": [
+            -39.910942,
+            -57.401702
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            2.5066368733759088e-15
+          ],
+          "pins_mm": {
+            "positive": [
+              -9.0,
+              0.0
+            ],
+            "negative": [
+              9.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.5,
+            "body-height": 7.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-1",
+            "plate-2",
+            "plate-3",
+            "plate-4",
+            "polarity"
+          ],
+          "svg_bytes": 2828,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "2eb6e2de461538cdef2fd386b916444a9c34d3324e7cfcd84bbdc972380dc4be"
+    },
+    {
+      "schema_version": 1,
+      "id": "cell",
+      "revision": 1,
+      "name": "Cell",
+      "description": "One electrochemical cell; the long plate and plus sign identify the positive terminal.",
+      "keywords": [
+        "battery",
+        "cell",
+        "DC",
+        "voltage",
+        "polarized",
+        "power",
+        "sources grounds",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "sources-and-grounds"
+      ],
+      "family": "sources-and-grounds",
+      "batch": "overnight-sources-and-grounds-02",
+      "attributes": {
+        "polarized": true
+      },
+      "recipe": "cell",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "battery1",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "positive",
+          "name": "Positive",
+          "description": "Positive",
+          "kind": "passive",
+          "lead_part": "lead-positive"
+        },
+        {
+          "id": "negative",
+          "name": "Negative",
+          "description": "Negative",
+          "kind": "passive",
+          "lead_part": "lead-negative"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-positive",
+          "description": "Electrical lead: Positive"
+        },
+        {
+          "id": "lead-negative",
+          "description": "Electrical lead: Negative"
+        },
+        {
+          "id": "plate-1",
+          "description": "Plate 1"
+        },
+        {
+          "id": "plate-2",
+          "description": "Plate 2"
+        },
+        {
+          "id": "polarity",
+          "description": "Polarity"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "cell-small-thin",
+          "symbol_id": "cell",
+          "name": "Cell",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/cell-small-thin.svg",
+          "width_mm": 10.14994513,
+          "height_mm": 6.94994236,
+          "origin_svg": [
+            -54.296708,
+            -62.149705
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777743804626e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -4.0,
+              0.0
+            ],
+            "negative": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.65,
+            "body-height": 4.79999,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-1",
+            "plate-2",
+            "polarity"
+          ],
+          "svg_bytes": 2307,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "cell-small-medium",
+          "symbol_id": "cell",
+          "name": "Cell",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/cell-small-medium.svg",
+          "width_mm": 10.19995102,
+          "height_mm": 6.9999479,
+          "origin_svg": [
+            -54.225837,
+            -62.078835
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -3.5277777939373633e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -4.0,
+              0.0
+            ],
+            "negative": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.65,
+            "body-height": 4.79999,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-1",
+            "plate-2",
+            "polarity"
+          ],
+          "svg_bytes": 2336,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "cell-small-thick",
+          "symbol_id": "cell",
+          "name": "Cell",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/cell-small-thick.svg",
+          "width_mm": 10.29995506,
+          "height_mm": 7.09995229,
+          "origin_svg": [
+            -54.084096,
+            -61.937093
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            5.291666653306492e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -4.0,
+              0.0
+            ],
+            "negative": [
+              4.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 1.65,
+            "body-height": 4.79999,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-1",
+            "plate-2",
+            "polarity"
+          ],
+          "svg_bytes": 2321,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "cell-medium-thin",
+          "symbol_id": "cell",
+          "name": "Cell",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/cell-medium-thin.svg",
+          "width_mm": 12.14993407,
+          "height_mm": 8.54993845,
+          "origin_svg": [
+            -51.462077,
+            -59.881995
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -5.0,
+              0.0
+            ],
+            "negative": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.2,
+            "body-height": 6.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-1",
+            "plate-2",
+            "polarity"
+          ],
+          "svg_bytes": 2319,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "cell-medium-medium",
+          "symbol_id": "cell",
+          "name": "Cell",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/cell-medium-medium.svg",
+          "width_mm": 12.19993997,
+          "height_mm": 8.59994399,
+          "origin_svg": [
+            -51.391206,
+            -59.811124
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666653306492e-07,
+            -7.055555562808358e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -5.0,
+              0.0
+            ],
+            "negative": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.2,
+            "body-height": 6.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-1",
+            "plate-2",
+            "polarity"
+          ],
+          "svg_bytes": 2348,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "cell-medium-thick",
+          "symbol_id": "cell",
+          "name": "Cell",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/cell-medium-thick.svg",
+          "width_mm": 12.29994436,
+          "height_mm": 8.69994838,
+          "origin_svg": [
+            -51.249465,
+            -59.669383
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            5.291666678372861e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -5.0,
+              0.0
+            ],
+            "negative": [
+              5.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.2,
+            "body-height": 6.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-1",
+            "plate-2",
+            "polarity"
+          ],
+          "svg_bytes": 2333,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "cell-large-thin",
+          "symbol_id": "cell",
+          "name": "Cell",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/cell-large-thin.svg",
+          "width_mm": 16.14991231,
+          "height_mm": 10.14991338,
+          "origin_svg": [
+            -45.792816,
+            -57.614314
+          ],
+          "visual_center_from_origin_mm": [
+            -8.819444422177487e-07,
+            2.5066368733759088e-15
+          ],
+          "pins_mm": {
+            "positive": [
+              -7.0,
+              0.0
+            ],
+            "negative": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.74998,
+            "body-height": 7.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-1",
+            "plate-2",
+            "polarity"
+          ],
+          "svg_bytes": 2314,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "cell-large-medium",
+          "symbol_id": "cell",
+          "name": "Cell",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/cell-large-medium.svg",
+          "width_mm": 16.19991786,
+          "height_mm": 10.19991575,
+          "origin_svg": [
+            -45.721945,
+            -57.543444
+          ],
+          "visual_center_from_origin_mm": [
+            1.763888909501866e-07,
+            8.819444422177487e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              -7.0,
+              0.0
+            ],
+            "negative": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.74998,
+            "body-height": 7.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-1",
+            "plate-2",
+            "polarity"
+          ],
+          "svg_bytes": 2343,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "cell-large-thick",
+          "symbol_id": "cell",
+          "name": "Cell",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/cell-large-thick.svg",
+          "width_mm": 16.29992577,
+          "height_mm": 10.29992366,
+          "origin_svg": [
+            -45.580203,
+            -57.401702
+          ],
+          "visual_center_from_origin_mm": [
+            7.055555562808358e-07,
+            2.5066368733759088e-15
+          ],
+          "pins_mm": {
+            "positive": [
+              -7.0,
+              0.0
+            ],
+            "negative": [
+              7.0,
+              0.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.74998,
+            "body-height": 7.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "plate-1",
+            "plate-2",
+            "polarity"
+          ],
+          "svg_bytes": 2328,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "fbe4f1ac2cc8ef8718050f14a94812ea0f736a072bb98fd9f26f3f89031d79c9"
+    },
+    {
+      "schema_version": 1,
+      "id": "ground-chassis",
+      "revision": 1,
+      "name": "Chassis ground",
+      "description": "Chassis or frame connection with three oblique strokes; it does not by itself specify protective earth.",
+      "keywords": [
+        "ground",
+        "reference",
+        "chassis",
+        "frame",
+        "sources grounds",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "sources-and-grounds"
+      ],
+      "family": "sources-and-grounds",
+      "batch": "overnight-sources-and-grounds-02",
+      "attributes": {
+        "reference": "chassis"
+      },
+      "recipe": "ground-chassis",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "cground",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "reference",
+          "name": "Chassis ground",
+          "description": "Chassis ground",
+          "kind": "power",
+          "lead_part": "lead-reference"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-reference",
+          "description": "Electrical lead: Chassis ground"
+        },
+        {
+          "id": "ground-mark",
+          "description": "Ground mark"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "ground-chassis-small-thin",
+          "symbol_id": "ground-chassis",
+          "name": "Chassis ground",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/ground-chassis-small-thin.svg",
+          "width_mm": 6.34994426,
+          "height_mm": 6.19995514,
+          "origin_svg": [
+            -59.46995,
+            -60.4489
+          ],
+          "visual_center_from_origin_mm": [
+            -0.07499596944444416,
+            -0.9750015777777781
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.04999,
+            "body-height": 1.79999,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1840,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ground-chassis-small-medium",
+          "symbol_id": "ground-chassis",
+          "name": "Chassis ground",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/ground-chassis-small-medium.svg",
+          "width_mm": 6.39994628,
+          "height_mm": 6.24995751,
+          "origin_svg": [
+            -59.39908,
+            -60.378029
+          ],
+          "visual_center_from_origin_mm": [
+            -0.07499632222222104,
+            -0.9750010486111103
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.04999,
+            "body-height": 1.79999,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1860,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ground-chassis-small-thick",
+          "symbol_id": "ground-chassis",
+          "name": "Chassis ground",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/ground-chassis-small-thick.svg",
+          "width_mm": 6.49995066,
+          "height_mm": 6.34996543,
+          "origin_svg": [
+            -59.257338,
+            -60.236287
+          ],
+          "visual_center_from_origin_mm": [
+            -0.07499755694444515,
+            -0.9750019305555575
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.04999,
+            "body-height": 1.79999,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1854,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ground-chassis-medium-thin",
+          "symbol_id": "ground-chassis",
+          "name": "Chassis ground",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/ground-chassis-medium-thin.svg",
+          "width_mm": 7.74994569,
+          "height_mm": 6.54995656,
+          "origin_svg": [
+            -57.414821,
+            -60.4489
+          ],
+          "visual_center_from_origin_mm": [
+            -0.09999909444444197,
+            -0.8000008694444443
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 2.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1842,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ground-chassis-medium-medium",
+          "symbol_id": "ground-chassis",
+          "name": "Chassis ground",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/ground-chassis-medium-medium.svg",
+          "width_mm": 7.79995124,
+          "height_mm": 6.59995858,
+          "origin_svg": [
+            -57.343951,
+            -60.378029
+          ],
+          "visual_center_from_origin_mm": [
+            -0.09999768333333442,
+            -0.8000005166666648
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 2.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1864,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ground-chassis-medium-thick",
+          "symbol_id": "ground-chassis",
+          "name": "Chassis ground",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/ground-chassis-medium-thick.svg",
+          "width_mm": 7.89995562,
+          "height_mm": 6.69996649,
+          "origin_svg": [
+            -57.202209,
+            -60.236287
+          ],
+          "visual_center_from_origin_mm": [
+            -0.09999891805555353,
+            -0.8000013986111121
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 2.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1855,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ground-chassis-large-thin",
+          "symbol_id": "ground-chassis",
+          "name": "Chassis ground",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/ground-chassis-large-thin.svg",
+          "width_mm": 9.14991891,
+          "height_mm": 7.89994151,
+          "origin_svg": [
+            -55.359738,
+            -57.614269
+          ],
+          "visual_center_from_origin_mm": [
+            -0.12500010277777596,
+            -1.1250032180555558
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.74998,
+            "body-height": 2.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1847,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ground-chassis-large-medium",
+          "symbol_id": "ground-chassis",
+          "name": "Chassis ground",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/ground-chassis-large-medium.svg",
+          "width_mm": 9.19992127,
+          "height_mm": 7.94994388,
+          "origin_svg": [
+            -55.288867,
+            -57.543398
+          ],
+          "visual_center_from_origin_mm": [
+            -0.12500063194444128,
+            -1.1250026888888855
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.74998,
+            "body-height": 2.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1864,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ground-chassis-large-thick",
+          "symbol_id": "ground-chassis",
+          "name": "Chassis ground",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/ground-chassis-large-thick.svg",
+          "width_mm": 9.29992919,
+          "height_mm": 8.0499518,
+          "origin_svg": [
+            -55.147126,
+            -57.401657
+          ],
+          "visual_center_from_origin_mm": [
+            -0.12499974999999906,
+            -1.1250035708333328
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.74998,
+            "body-height": 2.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1855,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "853e3febb329921ac5f2a9d5ce2c1222875c476d3afe30c7457243d944a5b030"
+    },
+    {
+      "schema_version": 1,
+      "id": "ground-earth",
+      "revision": 1,
+      "name": "Earth ground",
+      "description": "Earth connection, distinguished by three horizontal bars of decreasing width.",
+      "keywords": [
+        "ground",
+        "reference",
+        "earth",
+        "PE",
+        "sources grounds",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "sources-and-grounds"
+      ],
+      "family": "sources-and-grounds",
+      "batch": "overnight-sources-and-grounds-02",
+      "attributes": {
+        "reference": "earth"
+      },
+      "recipe": "ground-earth",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "ground",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "reference",
+          "name": "Earth ground",
+          "description": "Earth ground",
+          "kind": "power",
+          "lead_part": "lead-reference"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-reference",
+          "description": "Electrical lead: Earth ground"
+        },
+        {
+          "id": "ground-mark",
+          "description": "Ground mark"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "ground-earth-small-thin",
+          "symbol_id": "ground-earth",
+          "name": "Earth ground",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/ground-earth-small-thin.svg",
+          "width_mm": 6.19994809,
+          "height_mm": 6.64996095,
+          "origin_svg": [
+            -59.895129,
+            -60.4489
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            -0.7499965597222215
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.04999,
+            "body-height": 1.79999,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1738,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ground-earth-small-medium",
+          "symbol_id": "ground-earth",
+          "name": "Earth ground",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/ground-earth-small-medium.svg",
+          "width_mm": 6.24995399,
+          "height_mm": 6.69996649,
+          "origin_svg": [
+            -59.824258,
+            -60.378029
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444472310225e-07,
+            -0.7499979708333341
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.04999,
+            "body-height": 1.79999,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1759,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ground-earth-small-thick",
+          "symbol_id": "ground-earth",
+          "name": "Earth ground",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/ground-earth-small-thick.svg",
+          "width_mm": 6.34995837,
+          "height_mm": 6.79997088,
+          "origin_svg": [
+            -59.682517,
+            -60.236287
+          ],
+          "visual_center_from_origin_mm": [
+            0.0,
+            -0.7499970888888893
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.04999,
+            "body-height": 1.79999,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1750,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ground-earth-medium-thin",
+          "symbol_id": "ground-earth",
+          "name": "Earth ground",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/ground-earth-medium-thin.svg",
+          "width_mm": 7.54995103,
+          "height_mm": 7.14996171,
+          "origin_svg": [
+            -57.981741,
+            -60.4489
+          ],
+          "visual_center_from_origin_mm": [
+            3.5277777939373633e-07,
+            -0.4999968833333324
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 2.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1738,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ground-earth-medium-medium",
+          "symbol_id": "ground-earth",
+          "name": "Earth ground",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/ground-earth-medium-medium.svg",
+          "width_mm": 7.59995305,
+          "height_mm": 7.19996373,
+          "origin_svg": [
+            -57.910871,
+            -60.378029
+          ],
+          "visual_center_from_origin_mm": [
+            0.0,
+            -0.49999653055555804
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 2.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1759,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ground-earth-medium-thick",
+          "symbol_id": "ground-earth",
+          "name": "Earth ground",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/ground-earth-medium-thick.svg",
+          "width_mm": 7.69996096,
+          "height_mm": 7.29997164,
+          "origin_svg": [
+            -57.769129,
+            -60.236287
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -0.49999741249999774
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 2.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1750,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ground-earth-large-thin",
+          "symbol_id": "ground-earth",
+          "name": "Earth ground",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/ground-earth-large-thin.svg",
+          "width_mm": 8.8999187,
+          "height_mm": 8.64994989,
+          "origin_svg": [
+            -56.0684,
+            -57.614269
+          ],
+          "visual_center_from_origin_mm": [
+            0.0,
+            -0.749996559722224
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.74998,
+            "body-height": 2.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1737,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ground-earth-large-medium",
+          "symbol_id": "ground-earth",
+          "name": "Earth ground",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/ground-earth-large-medium.svg",
+          "width_mm": 8.94992072,
+          "height_mm": 8.69995544,
+          "origin_svg": [
+            -55.997529,
+            -57.543398
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -0.7499979708333315
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.74998,
+            "body-height": 2.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1758,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ground-earth-large-thick",
+          "symbol_id": "ground-earth",
+          "name": "Earth ground",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/ground-earth-large-thick.svg",
+          "width_mm": 9.04992863,
+          "height_mm": 8.79995982,
+          "origin_svg": [
+            -55.855787,
+            -57.401657
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            -0.7499967361111124
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.74998,
+            "body-height": 2.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1749,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "e5f6ca19bbe87243fe985eef898a3db59a928c2b2944a1caee864afaf3df07c8"
+    },
+    {
+      "schema_version": 1,
+      "id": "ground-signal",
+      "revision": 1,
+      "name": "Signal ground",
+      "description": "Signal-reference ground with an open triangle; it does not imply a protective-earth bond.",
+      "keywords": [
+        "ground",
+        "reference",
+        "signal",
+        "GND",
+        "sources grounds",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "sources-and-grounds"
+      ],
+      "family": "sources-and-grounds",
+      "batch": "overnight-sources-and-grounds-02",
+      "attributes": {
+        "reference": "signal"
+      },
+      "recipe": "ground-signal",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "sground",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "reference",
+          "name": "Signal ground",
+          "description": "Signal ground",
+          "kind": "power",
+          "lead_part": "lead-reference"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-reference",
+          "description": "Electrical lead: Signal ground"
+        },
+        {
+          "id": "ground-mark",
+          "description": "Ground mark"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "ground-signal-small-thin",
+          "symbol_id": "ground-signal",
+          "name": "Signal ground",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/ground-signal-small-thin.svg",
+          "width_mm": 6.19994809,
+          "height_mm": 6.94994941,
+          "origin_svg": [
+            -59.895129,
+            -60.4489
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            -0.6000037388888909
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.04999,
+            "body-height": 1.79999,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1667,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ground-signal-small-medium",
+          "symbol_id": "ground-signal",
+          "name": "Signal ground",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/ground-signal-small-medium.svg",
+          "width_mm": 6.24995399,
+          "height_mm": 6.99995143,
+          "origin_svg": [
+            -59.824258,
+            -60.378029
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444472310225e-07,
+            -0.6000033861111116
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.04999,
+            "body-height": 1.79999,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1689,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ground-signal-small-thick",
+          "symbol_id": "ground-signal",
+          "name": "Signal ground",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/ground-signal-small-thick.svg",
+          "width_mm": 6.34995837,
+          "height_mm": 7.09995934,
+          "origin_svg": [
+            -59.682517,
+            -60.236287
+          ],
+          "visual_center_from_origin_mm": [
+            0.0,
+            -0.6000042680555588
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 4.04999,
+            "body-height": 1.79999,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1680,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ground-signal-medium-thin",
+          "symbol_id": "ground-signal",
+          "name": "Signal ground",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/ground-signal-medium-thin.svg",
+          "width_mm": 7.54995103,
+          "height_mm": 7.54995103,
+          "origin_svg": [
+            -57.981741,
+            -60.4489
+          ],
+          "visual_center_from_origin_mm": [
+            3.5277777939373633e-07,
+            -0.30000328055555553
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 2.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1667,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ground-signal-medium-medium",
+          "symbol_id": "ground-signal",
+          "name": "Signal ground",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/ground-signal-medium-medium.svg",
+          "width_mm": 7.59995305,
+          "height_mm": 7.59995305,
+          "origin_svg": [
+            -57.910871,
+            -60.378029
+          ],
+          "visual_center_from_origin_mm": [
+            0.0,
+            -0.30000328055555553
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 2.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1688,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ground-signal-medium-thick",
+          "symbol_id": "ground-signal",
+          "name": "Signal ground",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/ground-signal-medium-thick.svg",
+          "width_mm": 7.69996096,
+          "height_mm": 7.69996096,
+          "origin_svg": [
+            -57.769129,
+            -60.236287
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -0.3000041625000003
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 2.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1679,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ground-signal-large-thin",
+          "symbol_id": "ground-signal",
+          "name": "Signal ground",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/ground-signal-large-thin.svg",
+          "width_mm": 8.8999187,
+          "height_mm": 9.14993654,
+          "origin_svg": [
+            -56.0684,
+            -57.614269
+          ],
+          "visual_center_from_origin_mm": [
+            0.0,
+            -0.5000060555555566
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.74998,
+            "body-height": 2.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1666,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ground-signal-large-medium",
+          "symbol_id": "ground-signal",
+          "name": "Signal ground",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/ground-signal-large-medium.svg",
+          "width_mm": 8.94992072,
+          "height_mm": 9.19993891,
+          "origin_svg": [
+            -55.997529,
+            -57.543398
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -0.5000055263888912
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.74998,
+            "body-height": 2.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1686,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "ground-signal-large-thick",
+          "symbol_id": "ground-signal",
+          "name": "Signal ground",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/ground-signal-large-thick.svg",
+          "width_mm": 9.04992863,
+          "height_mm": 9.29994647,
+          "origin_svg": [
+            -55.855787,
+            -57.401657
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            -0.5000062319444425
+          ],
+          "pins_mm": {
+            "reference": [
+              0.0,
+              4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 6.74998,
+            "body-height": 2.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-reference",
+            "ground-mark"
+          ],
+          "svg_bytes": 1678,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "6a4dbcec0b63dcde26c37799a8420a305ecd3c6263185f7d58aca29001260fe4"
+    },
+    {
+      "schema_version": 1,
+      "id": "source-current",
+      "revision": 1,
+      "name": "Current source",
+      "description": "Independent current source. The arrow defines positive current from the lower to upper terminal.",
+      "keywords": [
+        "source",
+        "current",
+        "independent",
+        "DC",
+        "sources grounds",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "sources-and-grounds"
+      ],
+      "family": "sources-and-grounds",
+      "batch": "overnight-sources-and-grounds-02",
+      "attributes": {
+        "dependent": false,
+        "waveform": "unspecified",
+        "quantity": "current"
+      },
+      "recipe": "source-current",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "I",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "Upper terminal",
+          "description": "Upper terminal",
+          "kind": "output",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "b",
+          "name": "Lower terminal",
+          "description": "Lower terminal",
+          "kind": "output",
+          "lead_part": "lead-b"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-a",
+          "description": "Electrical lead: Upper terminal"
+        },
+        {
+          "id": "lead-b",
+          "description": "Electrical lead: Lower terminal"
+        },
+        {
+          "id": "body",
+          "description": "Body"
+        },
+        {
+          "id": "current-direction",
+          "description": "Current direction"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "source-current-small-thin",
+          "symbol_id": "source-current",
+          "name": "Current source",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/source-current-small-thin.svg",
+          "width_mm": 7.54995103,
+          "height_mm": 14.1499269,
+          "origin_svg": [
+            -57.981741,
+            -51.945007
+          ],
+          "visual_center_from_origin_mm": [
+            3.5277777939373633e-07,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              6.0
+            ],
+            "b": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 5.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "current-direction"
+          ],
+          "svg_bytes": 2333,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-current-small-medium",
+          "symbol_id": "source-current",
+          "name": "Current source",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/source-current-small-medium.svg",
+          "width_mm": 7.59995305,
+          "height_mm": 14.19992891,
+          "origin_svg": [
+            -57.910871,
+            -51.874137
+          ],
+          "visual_center_from_origin_mm": [
+            0.0,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              6.0
+            ],
+            "b": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 5.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "current-direction"
+          ],
+          "svg_bytes": 2358,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-current-small-thick",
+          "symbol_id": "source-current",
+          "name": "Current source",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/source-current-small-thick.svg",
+          "width_mm": 7.69996096,
+          "height_mm": 14.2999333,
+          "origin_svg": [
+            -57.769129,
+            -51.732395
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              6.0
+            ],
+            "b": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 5.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "current-direction"
+          ],
+          "svg_bytes": 2345,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-current-medium-thin",
+          "symbol_id": "source-current",
+          "name": "Current source",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/source-current-medium-thin.svg",
+          "width_mm": 9.34995943,
+          "height_mm": 16.14991231,
+          "origin_svg": [
+            -55.430548,
+            -49.110376
+          ],
+          "visual_center_from_origin_mm": [
+            3.5277777939373633e-07,
+            8.819444472310225e-07
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              7.0
+            ],
+            "b": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.2,
+            "body-height": 7.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "current-direction"
+          ],
+          "svg_bytes": 2360,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-current-medium-medium",
+          "symbol_id": "source-current",
+          "name": "Current source",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/source-current-medium-medium.svg",
+          "width_mm": 9.39996144,
+          "height_mm": 16.19991786,
+          "origin_svg": [
+            -55.359677,
+            -49.039506
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              7.0
+            ],
+            "b": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.2,
+            "body-height": 7.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "current-direction"
+          ],
+          "svg_bytes": 2383,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-current-medium-thick",
+          "symbol_id": "source-current",
+          "name": "Current source",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/source-current-medium-thick.svg",
+          "width_mm": 9.49996936,
+          "height_mm": 16.29992577,
+          "origin_svg": [
+            -55.217936,
+            -48.897764
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -1.0583333306612984e-06
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              7.0
+            ],
+            "b": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.2,
+            "body-height": 7.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "current-direction"
+          ],
+          "svg_bytes": 2372,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-current-large-thin",
+          "symbol_id": "source-current",
+          "name": "Current source",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/source-current-large-thin.svg",
+          "width_mm": 11.14993607,
+          "height_mm": 20.14989373,
+          "origin_svg": [
+            -52.8794,
+            -43.441115
+          ],
+          "visual_center_from_origin_mm": [
+            3.527777768870995e-07,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              9.0
+            ],
+            "b": [
+              0.0,
+              -9.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.99998,
+            "body-height": 8.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "current-direction"
+          ],
+          "svg_bytes": 2354,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-current-large-medium",
+          "symbol_id": "source-current",
+          "name": "Current source",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/source-current-large-medium.svg",
+          "width_mm": 11.19993844,
+          "height_mm": 20.1998961,
+          "origin_svg": [
+            -52.808529,
+            -43.370244
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              9.0
+            ],
+            "b": [
+              0.0,
+              -9.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.99998,
+            "body-height": 8.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "current-direction"
+          ],
+          "svg_bytes": 2384,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-current-large-thick",
+          "symbol_id": "source-current",
+          "name": "Current source",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/source-current-large-thick.svg",
+          "width_mm": 11.29994283,
+          "height_mm": 20.29990401,
+          "origin_svg": [
+            -52.666788,
+            -43.228503
+          ],
+          "visual_center_from_origin_mm": [
+            -1.0583333331679353e-06,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              9.0
+            ],
+            "b": [
+              0.0,
+              -9.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.99998,
+            "body-height": 8.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "current-direction"
+          ],
+          "svg_bytes": 2371,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "5dd2fd24f843bd8d3699ac1d09a9f47a436090aecf1f82d5ea27d5d3fd7c4755"
+    },
+    {
+      "schema_version": 1,
+      "id": "source-dependent-current",
+      "revision": 1,
+      "name": "Dependent current source",
+      "description": "Dependent current source. The arrow defines positive current from the lower to upper terminal. The controlling relation is specified by a schematic label; control terminals are not drawn.",
+      "keywords": [
+        "source",
+        "current",
+        "dependent",
+        "controlled",
+        "sources grounds",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "sources-and-grounds"
+      ],
+      "family": "sources-and-grounds",
+      "batch": "overnight-sources-and-grounds-02",
+      "attributes": {
+        "dependent": true,
+        "waveform": "unspecified",
+        "quantity": "current"
+      },
+      "recipe": "source-dependent-current",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "cI",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "Upper terminal",
+          "description": "Upper terminal",
+          "kind": "output",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "b",
+          "name": "Lower terminal",
+          "description": "Lower terminal",
+          "kind": "output",
+          "lead_part": "lead-b"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-a",
+          "description": "Electrical lead: Upper terminal"
+        },
+        {
+          "id": "lead-b",
+          "description": "Electrical lead: Lower terminal"
+        },
+        {
+          "id": "body",
+          "description": "Body"
+        },
+        {
+          "id": "current-direction",
+          "description": "Current direction"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "source-dependent-current-small-thin",
+          "symbol_id": "source-dependent-current",
+          "name": "Dependent current source",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/source-dependent-current-small-thin.svg",
+          "width_mm": 7.39995133,
+          "height_mm": 14.1499269,
+          "origin_svg": [
+            -58.194338,
+            -51.945007
+          ],
+          "visual_center_from_origin_mm": [
+            2.5066368733759088e-15,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              6.0
+            ],
+            "b": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.25,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "current-direction"
+          ],
+          "svg_bytes": 2481,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-dependent-current-small-medium",
+          "symbol_id": "source-dependent-current",
+          "name": "Dependent current source",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/source-dependent-current-small-medium.svg",
+          "width_mm": 7.4499537,
+          "height_mm": 14.19992891,
+          "origin_svg": [
+            -58.123468,
+            -51.874137
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              6.0
+            ],
+            "b": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.25,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "current-direction"
+          ],
+          "svg_bytes": 2507,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-dependent-current-small-thick",
+          "symbol_id": "source-dependent-current",
+          "name": "Dependent current source",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/source-dependent-current-small-thick.svg",
+          "width_mm": 7.54996162,
+          "height_mm": 14.2999333,
+          "origin_svg": [
+            -57.981726,
+            -51.732395
+          ],
+          "visual_center_from_origin_mm": [
+            3.5277777939373633e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              6.0
+            ],
+            "b": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.25,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "current-direction"
+          ],
+          "svg_bytes": 2494,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-dependent-current-medium-thin",
+          "symbol_id": "source-dependent-current",
+          "name": "Dependent current source",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/source-dependent-current-medium-thin.svg",
+          "width_mm": 9.14994713,
+          "height_mm": 16.14991231,
+          "origin_svg": [
+            -55.714031,
+            -49.110376
+          ],
+          "visual_center_from_origin_mm": [
+            7.055555562808358e-07,
+            8.819444472310225e-07
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              7.0
+            ],
+            "b": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.0,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "current-direction"
+          ],
+          "svg_bytes": 2496,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-dependent-current-medium-medium",
+          "symbol_id": "source-dependent-current",
+          "name": "Dependent current source",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/source-dependent-current-medium-medium.svg",
+          "width_mm": 9.19994914,
+          "height_mm": 16.19991786,
+          "origin_svg": [
+            -55.64316,
+            -49.039506
+          ],
+          "visual_center_from_origin_mm": [
+            2.5066368733759088e-15,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              7.0
+            ],
+            "b": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.0,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "current-direction"
+          ],
+          "svg_bytes": 2518,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-dependent-current-medium-thick",
+          "symbol_id": "source-dependent-current",
+          "name": "Dependent current source",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/source-dependent-current-medium-thick.svg",
+          "width_mm": 9.29995706,
+          "height_mm": 16.29992577,
+          "origin_svg": [
+            -55.501419,
+            -48.897764
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -1.0583333306612984e-06
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              7.0
+            ],
+            "b": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.0,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "current-direction"
+          ],
+          "svg_bytes": 2508,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-dependent-current-large-thin",
+          "symbol_id": "source-dependent-current",
+          "name": "Dependent current source",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/source-dependent-current-large-thin.svg",
+          "width_mm": 10.89993939,
+          "height_mm": 20.14989373,
+          "origin_svg": [
+            -53.233723,
+            -43.441115
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              9.0
+            ],
+            "b": [
+              0.0,
+              -9.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.75,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "current-direction"
+          ],
+          "svg_bytes": 2487,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-dependent-current-large-medium",
+          "symbol_id": "source-dependent-current",
+          "name": "Dependent current source",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/source-dependent-current-large-medium.svg",
+          "width_mm": 10.94994494,
+          "height_mm": 20.1998961,
+          "origin_svg": [
+            -53.162852,
+            -43.370244
+          ],
+          "visual_center_from_origin_mm": [
+            3.5277777939373633e-07,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              9.0
+            ],
+            "b": [
+              0.0,
+              -9.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.75,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "current-direction"
+          ],
+          "svg_bytes": 2513,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-dependent-current-large-thick",
+          "symbol_id": "source-dependent-current",
+          "name": "Dependent current source",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/source-dependent-current-large-thick.svg",
+          "width_mm": 11.04994932,
+          "height_mm": 20.29990401,
+          "origin_svg": [
+            -53.021111,
+            -43.228503
+          ],
+          "visual_center_from_origin_mm": [
+            -5.291666678372861e-07,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              9.0
+            ],
+            "b": [
+              0.0,
+              -9.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.75,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "current-direction"
+          ],
+          "svg_bytes": 2500,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "c76d9b8d1fef6a1794deeb840cdf93fee123259f88b95f33d519e6e513015b88"
+    },
+    {
+      "schema_version": 1,
+      "id": "source-dependent-voltage",
+      "revision": 1,
+      "name": "Dependent voltage source",
+      "description": "Dependent voltage source. The upper terminal is the positive reference. The controlling relation is specified by a schematic label; control terminals are not drawn.",
+      "keywords": [
+        "source",
+        "voltage",
+        "dependent",
+        "controlled",
+        "sources grounds",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "sources-and-grounds"
+      ],
+      "family": "sources-and-grounds",
+      "batch": "overnight-sources-and-grounds-02",
+      "attributes": {
+        "dependent": true,
+        "waveform": "unspecified",
+        "quantity": "voltage"
+      },
+      "recipe": "source-dependent-voltage",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "cV",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "positive",
+          "name": "Positive reference",
+          "description": "Positive reference",
+          "kind": "output",
+          "lead_part": "lead-positive"
+        },
+        {
+          "id": "negative",
+          "name": "Negative reference",
+          "description": "Negative reference",
+          "kind": "output",
+          "lead_part": "lead-negative"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-positive",
+          "description": "Electrical lead: Positive reference"
+        },
+        {
+          "id": "lead-negative",
+          "description": "Electrical lead: Negative reference"
+        },
+        {
+          "id": "body",
+          "description": "Body"
+        },
+        {
+          "id": "positive-mark",
+          "description": "Positive mark"
+        },
+        {
+          "id": "negative-mark",
+          "description": "Negative mark"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "source-dependent-voltage-small-thin",
+          "symbol_id": "source-dependent-voltage",
+          "name": "Dependent voltage source",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/source-dependent-voltage-small-thin.svg",
+          "width_mm": 7.39995133,
+          "height_mm": 14.1499269,
+          "origin_svg": [
+            -58.194338,
+            -51.945007
+          ],
+          "visual_center_from_origin_mm": [
+            2.5066368733759088e-15,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              0.0,
+              6.0
+            ],
+            "negative": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.25,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "body",
+            "positive-mark",
+            "negative-mark"
+          ],
+          "svg_bytes": 2780,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-dependent-voltage-small-medium",
+          "symbol_id": "source-dependent-voltage",
+          "name": "Dependent voltage source",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/source-dependent-voltage-small-medium.svg",
+          "width_mm": 7.4499537,
+          "height_mm": 14.19992891,
+          "origin_svg": [
+            -58.123468,
+            -51.874137
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              0.0,
+              6.0
+            ],
+            "negative": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.25,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "body",
+            "positive-mark",
+            "negative-mark"
+          ],
+          "svg_bytes": 2810,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-dependent-voltage-small-thick",
+          "symbol_id": "source-dependent-voltage",
+          "name": "Dependent voltage source",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/source-dependent-voltage-small-thick.svg",
+          "width_mm": 7.54996162,
+          "height_mm": 14.2999333,
+          "origin_svg": [
+            -57.981726,
+            -51.732395
+          ],
+          "visual_center_from_origin_mm": [
+            3.5277777939373633e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              0.0,
+              6.0
+            ],
+            "negative": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.25,
+            "body-height": 6.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "body",
+            "positive-mark",
+            "negative-mark"
+          ],
+          "svg_bytes": 2795,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-dependent-voltage-medium-thin",
+          "symbol_id": "source-dependent-voltage",
+          "name": "Dependent voltage source",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/source-dependent-voltage-medium-thin.svg",
+          "width_mm": 9.14994713,
+          "height_mm": 16.14991231,
+          "origin_svg": [
+            -55.714031,
+            -49.110376
+          ],
+          "visual_center_from_origin_mm": [
+            7.055555562808358e-07,
+            8.819444472310225e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              0.0,
+              7.0
+            ],
+            "negative": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.0,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "body",
+            "positive-mark",
+            "negative-mark"
+          ],
+          "svg_bytes": 2796,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-dependent-voltage-medium-medium",
+          "symbol_id": "source-dependent-voltage",
+          "name": "Dependent voltage source",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/source-dependent-voltage-medium-medium.svg",
+          "width_mm": 9.19994914,
+          "height_mm": 16.19991786,
+          "origin_svg": [
+            -55.64316,
+            -49.039506
+          ],
+          "visual_center_from_origin_mm": [
+            2.5066368733759088e-15,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              0.0,
+              7.0
+            ],
+            "negative": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.0,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "body",
+            "positive-mark",
+            "negative-mark"
+          ],
+          "svg_bytes": 2822,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-dependent-voltage-medium-thick",
+          "symbol_id": "source-dependent-voltage",
+          "name": "Dependent voltage source",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/source-dependent-voltage-medium-thick.svg",
+          "width_mm": 9.29995706,
+          "height_mm": 16.29992577,
+          "origin_svg": [
+            -55.501419,
+            -48.897764
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            -1.0583333306612984e-06
+          ],
+          "pins_mm": {
+            "positive": [
+              0.0,
+              7.0
+            ],
+            "negative": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.0,
+            "body-height": 8.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "body",
+            "positive-mark",
+            "negative-mark"
+          ],
+          "svg_bytes": 2810,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-dependent-voltage-large-thin",
+          "symbol_id": "source-dependent-voltage",
+          "name": "Dependent voltage source",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/source-dependent-voltage-large-thin.svg",
+          "width_mm": 10.89993939,
+          "height_mm": 20.14989373,
+          "origin_svg": [
+            -53.233723,
+            -43.441115
+          ],
+          "visual_center_from_origin_mm": [
+            -7.05555553774199e-07,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              0.0,
+              9.0
+            ],
+            "negative": [
+              0.0,
+              -9.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.75,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "body",
+            "positive-mark",
+            "negative-mark"
+          ],
+          "svg_bytes": 2787,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-dependent-voltage-large-medium",
+          "symbol_id": "source-dependent-voltage",
+          "name": "Dependent voltage source",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/source-dependent-voltage-large-medium.svg",
+          "width_mm": 10.94994494,
+          "height_mm": 20.1998961,
+          "origin_svg": [
+            -53.162852,
+            -43.370244
+          ],
+          "visual_center_from_origin_mm": [
+            3.5277777939373633e-07,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              0.0,
+              9.0
+            ],
+            "negative": [
+              0.0,
+              -9.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.75,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "body",
+            "positive-mark",
+            "negative-mark"
+          ],
+          "svg_bytes": 2817,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-dependent-voltage-large-thick",
+          "symbol_id": "source-dependent-voltage",
+          "name": "Dependent voltage source",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/source-dependent-voltage-large-thick.svg",
+          "width_mm": 11.04994932,
+          "height_mm": 20.29990401,
+          "origin_svg": [
+            -53.021111,
+            -43.228503
+          ],
+          "visual_center_from_origin_mm": [
+            -5.291666678372861e-07,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              0.0,
+              9.0
+            ],
+            "negative": [
+              0.0,
+              -9.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.75,
+            "body-height": 10.0,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "body",
+            "positive-mark",
+            "negative-mark"
+          ],
+          "svg_bytes": 2802,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "554a4c126cf0bbf9f460752fb1d7b45276edb11965c49023af5a8cbfd0bd5d4b"
+    },
+    {
+      "schema_version": 1,
+      "id": "source-voltage",
+      "revision": 1,
+      "name": "Voltage source",
+      "description": "Independent voltage source. The upper terminal is the positive reference.",
+      "keywords": [
+        "source",
+        "voltage",
+        "independent",
+        "DC",
+        "sources grounds",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "sources-and-grounds"
+      ],
+      "family": "sources-and-grounds",
+      "batch": "overnight-sources-and-grounds-02",
+      "attributes": {
+        "dependent": false,
+        "waveform": "unspecified",
+        "quantity": "voltage"
+      },
+      "recipe": "source-voltage",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "V",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "positive",
+          "name": "Positive reference",
+          "description": "Positive reference",
+          "kind": "output",
+          "lead_part": "lead-positive"
+        },
+        {
+          "id": "negative",
+          "name": "Negative reference",
+          "description": "Negative reference",
+          "kind": "output",
+          "lead_part": "lead-negative"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-positive",
+          "description": "Electrical lead: Positive reference"
+        },
+        {
+          "id": "lead-negative",
+          "description": "Electrical lead: Negative reference"
+        },
+        {
+          "id": "body",
+          "description": "Body"
+        },
+        {
+          "id": "positive-mark",
+          "description": "Positive mark"
+        },
+        {
+          "id": "negative-mark",
+          "description": "Negative mark"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "source-voltage-small-thin",
+          "symbol_id": "source-voltage",
+          "name": "Voltage source",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/source-voltage-small-thin.svg",
+          "width_mm": 7.54995103,
+          "height_mm": 14.1499269,
+          "origin_svg": [
+            -57.981741,
+            -51.945007
+          ],
+          "visual_center_from_origin_mm": [
+            3.5277777939373633e-07,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              0.0,
+              6.0
+            ],
+            "negative": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 5.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "body",
+            "positive-mark",
+            "negative-mark"
+          ],
+          "svg_bytes": 2612,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-voltage-small-medium",
+          "symbol_id": "source-voltage",
+          "name": "Voltage source",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/source-voltage-small-medium.svg",
+          "width_mm": 7.59995305,
+          "height_mm": 14.19992891,
+          "origin_svg": [
+            -57.910871,
+            -51.874137
+          ],
+          "visual_center_from_origin_mm": [
+            0.0,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              0.0,
+              6.0
+            ],
+            "negative": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 5.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "body",
+            "positive-mark",
+            "negative-mark"
+          ],
+          "svg_bytes": 2641,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-voltage-small-thick",
+          "symbol_id": "source-voltage",
+          "name": "Voltage source",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/source-voltage-small-thick.svg",
+          "width_mm": 7.69996096,
+          "height_mm": 14.2999333,
+          "origin_svg": [
+            -57.769129,
+            -51.732395
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              0.0,
+              6.0
+            ],
+            "negative": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 5.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "body",
+            "positive-mark",
+            "negative-mark"
+          ],
+          "svg_bytes": 2626,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-voltage-medium-thin",
+          "symbol_id": "source-voltage",
+          "name": "Voltage source",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/source-voltage-medium-thin.svg",
+          "width_mm": 9.34995943,
+          "height_mm": 16.14991231,
+          "origin_svg": [
+            -55.430548,
+            -49.110376
+          ],
+          "visual_center_from_origin_mm": [
+            3.5277777939373633e-07,
+            8.819444472310225e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              0.0,
+              7.0
+            ],
+            "negative": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.2,
+            "body-height": 7.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "body",
+            "positive-mark",
+            "negative-mark"
+          ],
+          "svg_bytes": 2640,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-voltage-medium-medium",
+          "symbol_id": "source-voltage",
+          "name": "Voltage source",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/source-voltage-medium-medium.svg",
+          "width_mm": 9.39996144,
+          "height_mm": 16.19991786,
+          "origin_svg": [
+            -55.359677,
+            -49.039506
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              0.0,
+              7.0
+            ],
+            "negative": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.2,
+            "body-height": 7.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "body",
+            "positive-mark",
+            "negative-mark"
+          ],
+          "svg_bytes": 2667,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-voltage-medium-thick",
+          "symbol_id": "source-voltage",
+          "name": "Voltage source",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/source-voltage-medium-thick.svg",
+          "width_mm": 9.49996936,
+          "height_mm": 16.29992577,
+          "origin_svg": [
+            -55.217936,
+            -48.897764
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -1.0583333306612984e-06
+          ],
+          "pins_mm": {
+            "positive": [
+              0.0,
+              7.0
+            ],
+            "negative": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.2,
+            "body-height": 7.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "body",
+            "positive-mark",
+            "negative-mark"
+          ],
+          "svg_bytes": 2654,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-voltage-large-thin",
+          "symbol_id": "source-voltage",
+          "name": "Voltage source",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/source-voltage-large-thin.svg",
+          "width_mm": 11.14993607,
+          "height_mm": 20.14989373,
+          "origin_svg": [
+            -52.8794,
+            -43.441115
+          ],
+          "visual_center_from_origin_mm": [
+            3.527777768870995e-07,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              0.0,
+              9.0
+            ],
+            "negative": [
+              0.0,
+              -9.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.99998,
+            "body-height": 8.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "body",
+            "positive-mark",
+            "negative-mark"
+          ],
+          "svg_bytes": 2634,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-voltage-large-medium",
+          "symbol_id": "source-voltage",
+          "name": "Voltage source",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/source-voltage-large-medium.svg",
+          "width_mm": 11.19993844,
+          "height_mm": 20.1998961,
+          "origin_svg": [
+            -52.808529,
+            -43.370244
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              0.0,
+              9.0
+            ],
+            "negative": [
+              0.0,
+              -9.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.99998,
+            "body-height": 8.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "body",
+            "positive-mark",
+            "negative-mark"
+          ],
+          "svg_bytes": 2668,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-voltage-large-thick",
+          "symbol_id": "source-voltage",
+          "name": "Voltage source",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/source-voltage-large-thick.svg",
+          "width_mm": 11.29994283,
+          "height_mm": 20.29990401,
+          "origin_svg": [
+            -52.666788,
+            -43.228503
+          ],
+          "visual_center_from_origin_mm": [
+            -1.0583333331679353e-06,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "positive": [
+              0.0,
+              9.0
+            ],
+            "negative": [
+              0.0,
+              -9.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.99998,
+            "body-height": 8.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-positive",
+            "lead-negative",
+            "body",
+            "positive-mark",
+            "negative-mark"
+          ],
+          "svg_bytes": 2653,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "1633a91d03234f540dd1fb865e8e5533becc48f8a996cc70a7744eb38b615133"
+    },
+    {
+      "schema_version": 1,
+      "id": "source-voltage-ac",
+      "revision": 1,
+      "name": "AC voltage source",
+      "description": "Independent voltage source. The sine wave identifies an alternating source with no fixed polarity.",
+      "keywords": [
+        "source",
+        "voltage",
+        "independent",
+        "AC",
+        "sources grounds",
+        "ac",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "sources-and-grounds"
+      ],
+      "family": "sources-and-grounds",
+      "batch": "overnight-sources-and-grounds-02",
+      "attributes": {
+        "dependent": false,
+        "waveform": "ac",
+        "quantity": "voltage"
+      },
+      "recipe": "source-voltage-ac",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "sV",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "a",
+          "name": "Upper terminal",
+          "description": "Upper terminal",
+          "kind": "output",
+          "lead_part": "lead-a"
+        },
+        {
+          "id": "b",
+          "name": "Lower terminal",
+          "description": "Lower terminal",
+          "kind": "output",
+          "lead_part": "lead-b"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-a",
+          "description": "Electrical lead: Upper terminal"
+        },
+        {
+          "id": "lead-b",
+          "description": "Electrical lead: Lower terminal"
+        },
+        {
+          "id": "body",
+          "description": "Body"
+        },
+        {
+          "id": "ac-wave",
+          "description": "Ac wave"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "source-voltage-ac-small-thin",
+          "symbol_id": "source-voltage-ac",
+          "name": "AC voltage source",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/source-voltage-ac-small-thin.svg",
+          "width_mm": 7.54995103,
+          "height_mm": 14.1499269,
+          "origin_svg": [
+            -57.981741,
+            -51.945007
+          ],
+          "visual_center_from_origin_mm": [
+            3.5277777939373633e-07,
+            -8.819444447243856e-07
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              6.0
+            ],
+            "b": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 5.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "ac-wave"
+          ],
+          "svg_bytes": 2305,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-voltage-ac-small-medium",
+          "symbol_id": "source-voltage-ac",
+          "name": "AC voltage source",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/source-voltage-ac-small-medium.svg",
+          "width_mm": 7.59995305,
+          "height_mm": 14.19992891,
+          "origin_svg": [
+            -57.910871,
+            -51.874137
+          ],
+          "visual_center_from_origin_mm": [
+            0.0,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              6.0
+            ],
+            "b": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 5.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "ac-wave"
+          ],
+          "svg_bytes": 2330,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-voltage-ac-small-thick",
+          "symbol_id": "source-voltage-ac",
+          "name": "AC voltage source",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/source-voltage-ac-small-thick.svg",
+          "width_mm": 7.69996096,
+          "height_mm": 14.2999333,
+          "origin_svg": [
+            -57.769129,
+            -51.732395
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            7.05555553774199e-07
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              6.0
+            ],
+            "b": [
+              0.0,
+              -6.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 5.4,
+            "body-height": 5.4,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "ac-wave"
+          ],
+          "svg_bytes": 2317,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-voltage-ac-medium-thin",
+          "symbol_id": "source-voltage-ac",
+          "name": "AC voltage source",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/source-voltage-ac-medium-thin.svg",
+          "width_mm": 9.34995943,
+          "height_mm": 16.14991231,
+          "origin_svg": [
+            -55.430548,
+            -49.110376
+          ],
+          "visual_center_from_origin_mm": [
+            3.5277777939373633e-07,
+            8.819444472310225e-07
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              7.0
+            ],
+            "b": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.2,
+            "body-height": 7.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "ac-wave"
+          ],
+          "svg_bytes": 2332,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-voltage-ac-medium-medium",
+          "symbol_id": "source-voltage-ac",
+          "name": "AC voltage source",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/source-voltage-ac-medium-medium.svg",
+          "width_mm": 9.39996144,
+          "height_mm": 16.19991786,
+          "origin_svg": [
+            -55.359677,
+            -49.039506
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              7.0
+            ],
+            "b": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.2,
+            "body-height": 7.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "ac-wave"
+          ],
+          "svg_bytes": 2355,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-voltage-ac-medium-thick",
+          "symbol_id": "source-voltage-ac",
+          "name": "AC voltage source",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/source-voltage-ac-medium-thick.svg",
+          "width_mm": 9.49996936,
+          "height_mm": 16.29992577,
+          "origin_svg": [
+            -55.217936,
+            -48.897764
+          ],
+          "visual_center_from_origin_mm": [
+            5.291666678372861e-07,
+            -1.0583333306612984e-06
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              7.0
+            ],
+            "b": [
+              0.0,
+              -7.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 7.2,
+            "body-height": 7.2,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "ac-wave"
+          ],
+          "svg_bytes": 2344,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-voltage-ac-large-thin",
+          "symbol_id": "source-voltage-ac",
+          "name": "AC voltage source",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/source-voltage-ac-large-thin.svg",
+          "width_mm": 11.14993607,
+          "height_mm": 20.14989373,
+          "origin_svg": [
+            -52.8794,
+            -43.441115
+          ],
+          "visual_center_from_origin_mm": [
+            3.527777768870995e-07,
+            -1.763888909501866e-07
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              9.0
+            ],
+            "b": [
+              0.0,
+              -9.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.99998,
+            "body-height": 8.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "ac-wave"
+          ],
+          "svg_bytes": 2326,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-voltage-ac-large-medium",
+          "symbol_id": "source-voltage-ac",
+          "name": "AC voltage source",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/source-voltage-ac-large-medium.svg",
+          "width_mm": 11.19993844,
+          "height_mm": 20.1998961,
+          "origin_svg": [
+            -52.808529,
+            -43.370244
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            3.527777768870995e-07
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              9.0
+            ],
+            "b": [
+              0.0,
+              -9.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.99998,
+            "body-height": 8.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "ac-wave"
+          ],
+          "svg_bytes": 2356,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "source-voltage-ac-large-thick",
+          "symbol_id": "source-voltage-ac",
+          "name": "AC voltage source",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/source-voltage-ac-large-thick.svg",
+          "width_mm": 11.29994283,
+          "height_mm": 20.29990401,
+          "origin_svg": [
+            -52.666788,
+            -43.228503
+          ],
+          "visual_center_from_origin_mm": [
+            -1.0583333331679353e-06,
+            -1.7638888844354975e-07
+          ],
+          "pins_mm": {
+            "a": [
+              0.0,
+              9.0
+            ],
+            "b": [
+              0.0,
+              -9.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 8.99998,
+            "body-height": 8.99998,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-a",
+            "lead-b",
+            "body",
+            "ac-wave"
+          ],
+          "svg_bytes": 2343,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "7f73ce4c439fd5efdbdfc8023ac4ffec1fa86a9f15d3866f0787b78f874c2492"
+    },
+    {
+      "schema_version": 1,
+      "id": "supply-port",
+      "revision": 1,
+      "name": "Supply port",
+      "description": "One-terminal supply-net port; the net name and voltage are supplied by the schematic.",
+      "keywords": [
+        "power",
+        "supply",
+        "VCC",
+        "VDD",
+        "rail",
+        "net port",
+        "sources grounds",
+        "port",
+        "overnight",
+        "batch 02"
+      ],
+      "types": [
+        "sources-and-grounds"
+      ],
+      "family": "sources-and-grounds",
+      "batch": "overnight-sources-and-grounds-02",
+      "attributes": {
+        "reference": "supply"
+      },
+      "recipe": "supply-port",
+      "reference": {
+        "source": "CircuitikZ components list; Schematica construction adaptation",
+        "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+        "symbol": "vcc",
+        "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+      },
+      "presets": {
+        "sizes": [
+          "small",
+          "medium",
+          "large"
+        ],
+        "strokes": [
+          "thin",
+          "medium",
+          "thick"
+        ]
+      },
+      "pins": [
+        {
+          "id": "net",
+          "name": "Supply net",
+          "description": "Supply net",
+          "kind": "power",
+          "lead_part": "lead-net"
+        }
+      ],
+      "parts": [
+        {
+          "id": "lead-net",
+          "description": "Electrical lead: Supply net"
+        },
+        {
+          "id": "port",
+          "description": "Port"
+        }
+      ],
+      "configurations": [
+        {
+          "key": "supply-port-small-thin",
+          "symbol_id": "supply-port",
+          "name": "Supply port",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thin",
+          "svg": "svg/supply-port-small-thin.svg",
+          "width_mm": 4.39997144,
+          "height_mm": 7.24994846,
+          "origin_svg": [
+            -62.446277,
+            -63.000108
+          ],
+          "visual_center_from_origin_mm": [
+            -3.527777768870995e-07,
+            0.450004215277777
+          ],
+          "pins_mm": {
+            "net": [
+              0.0,
+              -3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.25,
+            "body-height": 1.72499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "port"
+          ],
+          "svg_bytes": 1593,
+          "settings": {
+            "size": "small",
+            "stroke": "thin",
+            "size_factor": 0.75,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "supply-port-small-medium",
+          "symbol_id": "supply-port",
+          "name": "Supply port",
+          "revision": 1,
+          "size": "small",
+          "stroke": "medium",
+          "svg": "svg/supply-port-small-medium.svg",
+          "width_mm": 4.44997699,
+          "height_mm": 7.29995047,
+          "origin_svg": [
+            -62.375406,
+            -62.929238
+          ],
+          "visual_center_from_origin_mm": [
+            7.055555562808358e-07,
+            0.4500049208333308
+          ],
+          "pins_mm": {
+            "net": [
+              0.0,
+              -3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.25,
+            "body-height": 1.72499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "port"
+          ],
+          "svg_bytes": 1610,
+          "settings": {
+            "size": "small",
+            "stroke": "medium",
+            "size_factor": 0.75,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "supply-port-small-thick",
+          "symbol_id": "supply-port",
+          "name": "Supply port",
+          "revision": 1,
+          "size": "small",
+          "stroke": "thick",
+          "svg": "svg/supply-port-small-thick.svg",
+          "width_mm": 4.54998137,
+          "height_mm": 7.39995486,
+          "origin_svg": [
+            -62.233665,
+            -62.787496
+          ],
+          "visual_center_from_origin_mm": [
+            -1.7638888844354975e-07,
+            0.45000544999999614
+          ],
+          "pins_mm": {
+            "net": [
+              0.0,
+              -3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 2.25,
+            "body-height": 1.72499,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "port"
+          ],
+          "svg_bytes": 1601,
+          "settings": {
+            "size": "small",
+            "stroke": "thick",
+            "size_factor": 0.75,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "supply-port-medium-thin",
+          "symbol_id": "supply-port",
+          "name": "Supply port",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thin",
+          "svg": "svg/supply-port-medium-thin.svg",
+          "width_mm": 5.14996536,
+          "height_mm": 7.94996152,
+          "origin_svg": [
+            -61.383292,
+            -61.01582
+          ],
+          "visual_center_from_origin_mm": [
+            -8.819444447243856e-07,
+            0.09999768333333442
+          ],
+          "pins_mm": {
+            "net": [
+              0.0,
+              -3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.0,
+            "body-height": 2.3,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "port"
+          ],
+          "svg_bytes": 1597,
+          "settings": {
+            "size": "medium",
+            "stroke": "thin",
+            "size_factor": 1.0,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "supply-port-medium-medium",
+          "symbol_id": "supply-port",
+          "name": "Supply port",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "medium",
+          "svg": "svg/supply-port-medium-medium.svg",
+          "width_mm": 5.19997126,
+          "height_mm": 7.99996354,
+          "origin_svg": [
+            -61.312422,
+            -60.944949
+          ],
+          "visual_center_from_origin_mm": [
+            7.055555562808358e-07,
+            0.0999980361111113
+          ],
+          "pins_mm": {
+            "net": [
+              0.0,
+              -3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.0,
+            "body-height": 2.3,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "port"
+          ],
+          "svg_bytes": 1616,
+          "settings": {
+            "size": "medium",
+            "stroke": "medium",
+            "size_factor": 1.0,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "supply-port-medium-thick",
+          "symbol_id": "supply-port",
+          "name": "Supply port",
+          "revision": 1,
+          "size": "medium",
+          "stroke": "thick",
+          "svg": "svg/supply-port-medium-thick.svg",
+          "width_mm": 5.29997564,
+          "height_mm": 8.09997145,
+          "origin_svg": [
+            -61.17068,
+            -60.803207
+          ],
+          "visual_center_from_origin_mm": [
+            -5.291666678372861e-07,
+            0.09999715416666909
+          ],
+          "pins_mm": {
+            "net": [
+              0.0,
+              -3.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.0,
+            "body-height": 2.3,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "port"
+          ],
+          "svg_bytes": 1605,
+          "settings": {
+            "size": "medium",
+            "stroke": "thick",
+            "size_factor": 1.0,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "supply-port-large-thin",
+          "symbol_id": "supply-port",
+          "name": "Supply port",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thin",
+          "svg": "svg/supply-port-large-thin.svg",
+          "width_mm": 5.89996315,
+          "height_mm": 9.64994436,
+          "origin_svg": [
+            -60.320308,
+            -59.031592
+          ],
+          "visual_center_from_origin_mm": [
+            8.819444447243856e-07,
+            0.25000108750000416
+          ],
+          "pins_mm": {
+            "net": [
+              0.0,
+              -4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.75,
+            "body-height": 2.875,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "port"
+          ],
+          "svg_bytes": 1594,
+          "settings": {
+            "size": "large",
+            "stroke": "thin",
+            "size_factor": 1.25,
+            "stroke_mm": 0.15,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "supply-port-large-medium",
+          "symbol_id": "supply-port",
+          "name": "Supply port",
+          "revision": 1,
+          "size": "large",
+          "stroke": "medium",
+          "svg": "svg/supply-port-large-medium.svg",
+          "width_mm": 5.94996552,
+          "height_mm": 9.69994991,
+          "origin_svg": [
+            -60.249437,
+            -58.960721
+          ],
+          "visual_center_from_origin_mm": [
+            3.5277777939373633e-07,
+            0.24999967638888657
+          ],
+          "pins_mm": {
+            "net": [
+              0.0,
+              -4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.75,
+            "body-height": 2.875,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "port"
+          ],
+          "svg_bytes": 1611,
+          "settings": {
+            "size": "large",
+            "stroke": "medium",
+            "size_factor": 1.25,
+            "stroke_mm": 0.2,
+            "grid_mm": 1
+          }
+        },
+        {
+          "key": "supply-port-large-thick",
+          "symbol_id": "supply-port",
+          "name": "Supply port",
+          "revision": 1,
+          "size": "large",
+          "stroke": "thick",
+          "svg": "svg/supply-port-large-thick.svg",
+          "width_mm": 6.04996956,
+          "height_mm": 9.79995429,
+          "origin_svg": [
+            -60.107696,
+            -58.81898
+          ],
+          "visual_center_from_origin_mm": [
+            -7.055555562808358e-07,
+            0.2500005583333338
+          ],
+          "pins_mm": {
+            "net": [
+              0.0,
+              -4.0
+            ]
+          },
+          "dimensions_mm": {
+            "body-width": 3.75,
+            "body-height": 2.875,
+            "grid": 1.0
+          },
+          "parts": [
+            "lead-net",
+            "port"
+          ],
+          "svg_bytes": 1599,
+          "settings": {
+            "size": "large",
+            "stroke": "thick",
+            "size_factor": 1.25,
+            "stroke_mm": 0.3,
+            "grid_mm": 1
+          }
+        }
+      ],
+      "source_fingerprint": "f258a1c1577b3ae1e4d5fa5539914b7cc6d5aa90abc5677f7692145b2624c638"
     }
   ]
 }

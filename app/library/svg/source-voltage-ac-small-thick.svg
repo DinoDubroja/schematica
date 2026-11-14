@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000015 21.826661 40.535244" width="7.69996096mm" height="14.29993330mm">
+  <title>AC voltage source</title>
+  <desc>Independent voltage source. The sine wave identifies an alternating source with no fixed polarity.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 5.4, "body-width": 5.4, "grid": 1.0}, "origin_svg": [-57.769129, -51.732395], "parts": ["lead-a", "lead-b", "body", "ac-wave"], "pins_mm": {"a": [0.0, 6.0], "b": [0.0, -6.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "source-voltage-ac"}</metadata>
+  <g id="sc-source-voltage-ac-r1-small-thick--sc-source-voltage-ac-r1-small-thick" inkscape:label="AC voltage source / small / thick" data-symbol="source-voltage-ac" data-revision="1" data-size="small" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-57.769129,-51.732395)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="sc-source-voltage-ac-r1-small-thick--sc-source-voltage-ac-r1-small-thick--lead-a" inkscape:label="lead-a">
+      <path d="M0 17.07156V7.68219" fill="none" />
+      <desc>Electrical lead: Upper terminal</desc>
+    </g>
+    <g data-part="lead-b" id="sc-source-voltage-ac-r1-small-thick--sc-source-voltage-ac-r1-small-thick--lead-b" inkscape:label="lead-b">
+      <path d="M0-17.07156V-7.68219" fill="none" />
+      <desc>Electrical lead: Lower terminal</desc>
+    </g>
+    <g data-part="body" id="sc-source-voltage-ac-r1-small-thick--sc-source-voltage-ac-r1-small-thick--body" inkscape:label="body">
+      <path d="M7.68219 0C7.68219 4.2428 4.2428 7.68219 0 7.68219S-7.68219 4.2428-7.68219 0S-4.2428-7.68219 0-7.68219S7.68219-4.2428 7.68219 0ZM0 0" fill="none" />
+      <desc>Body</desc>
+    </g>
+    <g data-part="ac-wave" id="sc-source-voltage-ac-r1-small-thick--sc-source-voltage-ac-r1-small-thick--ac-wave" inkscape:label="ac-wave">
+      <path d="M-4.90804 0C-3.20091 4.26788-1.70712 4.26788 0 0S3.20091-4.26788 4.90804 0" fill="none" />
+      <desc>Ac wave</desc>
+    </g>
+  </g>
+</svg>

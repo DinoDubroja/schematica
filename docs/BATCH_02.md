@@ -35,7 +35,7 @@ Status: complete — 12 designs / 108 configurations; Unverified.
 
 ### Sources And Grounds
 
-Status: planned.
+Status: complete — 11 designs / 99 configurations; Unverified.
 
 `source-voltage`, `source-current`, `source-voltage-ac`, `source-dependent-voltage`, `source-dependent-current`, `cell`, `battery`, `supply-port`, `ground-earth`, `ground-signal`, `ground-chassis`.
 

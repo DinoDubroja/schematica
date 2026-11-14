@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.00002 12.614108 20.692773" width="4.44997699mm" height="7.29995047mm">
+  <title>Supply port</title>
+  <desc>One-terminal supply-net port; the net name and voltage are supplied by the schematic.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 1.72499, "body-width": 2.25, "grid": 1.0}, "origin_svg": [-62.375406, -62.929238], "parts": ["lead-net", "port"], "pins_mm": {"net": [0.0, -3.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "supply-port"}</metadata>
+  <g id="sc-supply-port-r1-small-medium--sc-supply-port-r1-small-medium" inkscape:label="Supply port / small / medium" data-symbol="supply-port" data-revision="1" data-size="small" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-62.375406,-62.929238)scale(0.996264,-0.996264)">
+    <g data-part="lead-net" id="sc-supply-port-r1-small-medium--sc-supply-port-r1-small-medium--lead-net" inkscape:label="lead-net">
+      <path d="M0-8.53578V1.06697" fill="none" />
+      <desc>Electrical lead: Supply net</desc>
+    </g>
+    <g data-part="port" id="sc-supply-port-r1-small-medium--sc-supply-port-r1-small-medium--port" inkscape:label="port">
+      <path d="M-3.20091 1.06697L0 5.975L3.20091 1.06697H-3.20091" fill="none" />
+      <desc>Port</desc>
+    </g>
+  </g>
+</svg>

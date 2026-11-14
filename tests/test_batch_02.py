@@ -136,5 +136,37 @@ class Batch02(unittest.TestCase):
                         pts=straight_points(shaft)
                         self.assertGreater(pts[1][0],pts[0][0]);self.assertLess(pts[1][1],pts[0][1])
 
+    def test_sources_have_explicit_polarity_and_distinct_ground_references(self):
+        ground_shapes={}
+        for symbol in self.new:
+            if symbol['family']!='sources-and-grounds':continue
+            sid=symbol['id']
+            for config in symbol['configurations']:
+                pins=config['pins_mm'];parts={g.get('data-part'):g for g in artwork(config).iter() if g.get('data-part')}
+                if sid.startswith('source-'):
+                    if 'current' in sid or sid.endswith('-ac'):self.assertEqual(set(pins),{'a','b'})
+                    else:
+                        self.assertEqual(set(pins),{'positive','negative'})
+                        self.assertGreater(pins['positive'][1],pins['negative'][1])
+                    if 'current' in sid:
+                        shaft,head=parts['current-direction'].iter(f'{{{SVG}}}path')
+                        pts=straight_points(shaft);tri=straight_points(head)
+                        self.assertGreater(pts[1][1],pts[0][1])
+                        self.assertGreater(tri[1][1],(tri[0][1]+tri[2][1])/2)
+                    if sid.endswith('-ac'):self.assertTrue('ac-wave' in parts and 'positive-mark' not in parts)
+                elif sid in ('cell','battery'):
+                    self.assertLess(pins['positive'][0],pins['negative'][0])
+                    plates=[next(g.iter(f'{{{SVG}}}path')) for pid,g in parts.items() if pid.startswith('plate-')]
+                    self.assertEqual(len(plates),4 if sid=='battery' else 2)
+                    heights=[abs(straight_points(p)[1][1]-straight_points(p)[0][1]) for p in plates]
+                    self.assertTrue(all(heights[i]>heights[i+1] for i in range(0,len(heights),2)))
+                elif sid.startswith('ground-'):
+                    self.assertEqual(set(pins),{'reference'});self.assertGreater(pins['reference'][1],0)
+                    paths=[p.get('d') for p in parts['ground-mark'].iter(f'{{{SVG}}}path')]
+                    self.assertEqual(len(paths),{'ground-earth':3,'ground-signal':1,'ground-chassis':4}[sid])
+                    if config['size']=='medium' and config['stroke']=='medium':ground_shapes[sid]=tuple(paths)
+                else:self.assertEqual(set(pins),{'net'})
+        self.assertEqual(len(set(ground_shapes.values())),len(ground_shapes))
+
 
 if __name__=='__main__':unittest.main()

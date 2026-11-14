@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000019 22.110098 18.708544" width="7.79995124mm" height="6.59995858mm">
+  <title>Chassis ground</title>
+  <desc>Chassis or frame connection with three oblique strokes; it does not by itself specify protective earth.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 2.4, "body-width": 5.4, "grid": 1.0}, "origin_svg": [-57.343951, -60.378029], "parts": ["lead-reference", "ground-mark"], "pins_mm": {"reference": [0.0, 3.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "medium", "size_factor": 1.0, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "ground-chassis"}</metadata>
+  <g id="sc-ground-chassis-r1-medium-medium--sc-ground-chassis-r1-medium-medium" inkscape:label="Chassis ground / medium / medium" data-symbol="ground-chassis" data-revision="1" data-size="medium" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-57.343951,-60.378029)scale(0.996264,-0.996264)">
+    <g data-part="lead-reference" id="sc-ground-chassis-r1-medium-medium--sc-ground-chassis-r1-medium-medium--lead-reference" inkscape:label="lead-reference">
+      <path d="M0 8.53578V0" fill="none" />
+      <desc>Electrical lead: Chassis ground</desc>
+    </g>
+    <g data-part="ground-mark" id="sc-ground-chassis-r1-medium-medium--sc-ground-chassis-r1-medium-medium--ground-mark" inkscape:label="ground-mark">
+      <path d="M-7.68219 0H7.68219" fill="none" />
+      <path d="M-5.12148 0L-8.25124-3.98334" fill="none" />
+      <path d="M0 0L-3.12979-3.98334" fill="none" />
+      <path d="M5.12148 0L1.99167-3.98334" fill="none" />
+      <desc>Ground mark</desc>
+    </g>
+  </g>
+</svg>

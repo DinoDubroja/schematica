@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000024 26.362083 46.204514" width="9.29995706mm" height="16.29992577mm">
+  <title>Dependent current source</title>
+  <desc>Dependent current source. The arrow defines positive current from the lower to upper terminal. The controlling relation is specified by a schematic label; control terminals are not drawn.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 8.0, "body-width": 7.0, "grid": 1.0}, "origin_svg": [-55.501419, -48.897764], "parts": ["lead-a", "lead-b", "body", "current-direction"], "pins_mm": {"a": [0.0, 7.0], "b": [0.0, -7.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "medium", "size_factor": 1.0, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "source-dependent-current"}</metadata>
+  <g id="sc-source-dependent-current-r1-medium-thick--sc-source-dependent-current-r1-medium-thick" inkscape:label="Dependent current source / medium / thick" data-symbol="source-dependent-current" data-revision="1" data-size="medium" data-stroke="thick" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-55.501419,-48.897764)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="sc-source-dependent-current-r1-medium-thick--sc-source-dependent-current-r1-medium-thick--lead-a" inkscape:label="lead-a">
+      <path d="M0 19.91682V11.38104" fill="none" />
+      <desc>Electrical lead: Upper terminal</desc>
+    </g>
+    <g data-part="lead-b" id="sc-source-dependent-current-r1-medium-thick--sc-source-dependent-current-r1-medium-thick--lead-b" inkscape:label="lead-b">
+      <path d="M0-19.91682V-11.38104" fill="none" />
+      <desc>Electrical lead: Lower terminal</desc>
+    </g>
+    <g data-part="body" id="sc-source-dependent-current-r1-medium-thick--sc-source-dependent-current-r1-medium-thick--body" inkscape:label="body">
+      <path d="M0 11.38104L9.9584 0L0-11.38104L-9.9584 0L0 11.38104" fill="none" />
+      <desc>Body</desc>
+    </g>
+    <g data-part="current-direction" id="sc-source-dependent-current-r1-medium-thick--sc-source-dependent-current-r1-medium-thick--current-direction" inkscape:label="current-direction">
+      <path d="M0-5.40598V5.40598" fill="none" />
+      <path d="M-1.8494 1.70714L0 5.40598L1.8494 1.70714Z" stroke="none" />
+      <desc>Current direction</desc>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,46 @@
+schema_version: 1
+id: ground-earth
+revision: 1
+name: Earth ground
+description: Earth connection, distinguished by three horizontal bars of decreasing
+  width.
+keywords:
+- ground
+- reference
+- earth
+- PE
+- sources grounds
+- overnight
+- batch 02
+types:
+- sources-and-grounds
+family: sources-and-grounds
+batch: overnight-sources-and-grounds-02
+attributes:
+  reference: earth
+recipe: ground-earth
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: ground
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: reference
+  name: Earth ground
+  description: Earth ground
+  kind: power
+  lead_part: lead-reference
+parts:
+- id: lead-reference
+  description: 'Electrical lead: Earth ground'
+- id: ground-mark
+  description: Ground mark

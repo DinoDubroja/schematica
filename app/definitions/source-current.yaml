@@ -1,0 +1,57 @@
+schema_version: 1
+id: source-current
+revision: 1
+name: Current source
+description: Independent current source. The arrow defines positive current from the
+  lower to upper terminal.
+keywords:
+- source
+- current
+- independent
+- DC
+- sources grounds
+- overnight
+- batch 02
+types:
+- sources-and-grounds
+family: sources-and-grounds
+batch: overnight-sources-and-grounds-02
+attributes:
+  dependent: false
+  waveform: unspecified
+  quantity: current
+recipe: source-current
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: I
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: a
+  name: Upper terminal
+  description: Upper terminal
+  kind: output
+  lead_part: lead-a
+- id: b
+  name: Lower terminal
+  description: Lower terminal
+  kind: output
+  lead_part: lead-b
+parts:
+- id: lead-a
+  description: 'Electrical lead: Upper terminal'
+- id: lead-b
+  description: 'Electrical lead: Lower terminal'
+- id: body
+  description: Body
+- id: current-direction
+  description: Current direction

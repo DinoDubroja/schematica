@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.00002 31.606118 57.117809" width="11.14993607mm" height="20.14989373mm">
+  <title>Current source</title>
+  <desc>Independent current source. The arrow defines positive current from the lower to upper terminal.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 8.99998, "body-width": 8.99998, "grid": 1.0}, "origin_svg": [-52.8794, -43.441115], "parts": ["lead-a", "lead-b", "body", "current-direction"], "pins_mm": {"a": [0.0, 9.0], "b": [0.0, -9.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "thin", "stroke_mm": 0.15}, "symbol_id": "source-current"}</metadata>
+  <g id="sc-source-current-r1-large-thin--sc-source-current-r1-large-thin" inkscape:label="Current source / large / thin" data-symbol="source-current" data-revision="1" data-size="large" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(-52.8794,-43.441115)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="sc-source-current-r1-large-thin--sc-source-current-r1-large-thin--lead-a" inkscape:label="lead-a">
+      <path d="M0 25.60735V12.80367" fill="none" />
+      <desc>Electrical lead: Upper terminal</desc>
+    </g>
+    <g data-part="lead-b" id="sc-source-current-r1-large-thin--sc-source-current-r1-large-thin--lead-b" inkscape:label="lead-b">
+      <path d="M0-25.60735V-12.80367" fill="none" />
+      <desc>Electrical lead: Lower terminal</desc>
+    </g>
+    <g data-part="body" id="sc-source-current-r1-large-thin--sc-source-current-r1-large-thin--body" inkscape:label="body">
+      <path d="M12.80367 0C12.80367 7.07135 7.07135 12.80367 0 12.80367S-12.80367 7.07135-12.80367 0S-7.07135-12.80367 0-12.80367S12.80367-7.07135 12.80367 0ZM0 0" fill="none" />
+      <desc>Body</desc>
+    </g>
+    <g data-part="current-direction" id="sc-source-current-r1-large-thin--sc-source-current-r1-large-thin--current-direction" inkscape:label="current-direction">
+      <path d="M0-6.75745V6.75745" fill="none" />
+      <path d="M-2.31172 2.13391L0 6.75745L2.31172 2.13391Z" stroke="none" />
+      <desc>Current direction</desc>
+    </g>
+  </g>
+</svg>

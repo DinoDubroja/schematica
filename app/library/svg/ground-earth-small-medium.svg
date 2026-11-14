@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000023 17.716405 18.992031" width="6.24995399mm" height="6.69996649mm">
+  <title>Earth ground</title>
+  <desc>Earth connection, distinguished by three horizontal bars of decreasing width.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 1.79999, "body-width": 4.04999, "grid": 1.0}, "origin_svg": [-59.824258, -60.378029], "parts": ["lead-reference", "ground-mark"], "pins_mm": {"reference": [0.0, 3.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "small", "size_factor": 0.75, "stroke": "medium", "stroke_mm": 0.2}, "symbol_id": "ground-earth"}</metadata>
+  <g id="sc-ground-earth-r1-small-medium--sc-ground-earth-r1-small-medium" inkscape:label="Earth ground / small / medium" data-symbol="ground-earth" data-revision="1" data-size="small" data-stroke="medium" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.56905" stroke-linecap="round" stroke-linejoin="round" transform="translate(-59.824258,-60.378029)scale(0.996264,-0.996264)">
+    <g data-part="lead-reference" id="sc-ground-earth-r1-small-medium--sc-ground-earth-r1-small-medium--lead-reference" inkscape:label="lead-reference">
+      <path d="M0 8.53578V0" fill="none" />
+      <desc>Electrical lead: Earth ground</desc>
+    </g>
+    <g data-part="ground-mark" id="sc-ground-earth-r1-small-medium--sc-ground-earth-r1-small-medium--ground-mark" inkscape:label="ground-mark">
+      <path d="M-5.76163 0H5.76163" fill="none" />
+      <path d="M-3.84106-2.13394H3.84106" fill="none" />
+      <path d="M-1.70712-4.26788H1.70712" fill="none" />
+      <desc>Ground mark</desc>
+    </g>
+  </g>
+</svg>

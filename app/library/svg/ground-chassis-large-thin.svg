@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000022 25.936778 22.393535" width="9.14991891mm" height="7.89994151mm">
+  <title>Chassis ground</title>
+  <desc>Chassis or frame connection with three oblique strokes; it does not by itself specify protective earth.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 2.99998, "body-width": 6.74998, "grid": 1.0}, "origin_svg": [-55.359738, -57.614269], "parts": ["lead-reference", "ground-mark"], "pins_mm": {"reference": [0.0, 4.0]}, "revision": 1, "settings": {"grid_mm": 1, "size": "large", "size_factor": 1.25, "stroke": "thin", "stroke_mm": 0.15}, "symbol_id": "ground-chassis"}</metadata>
+  <g id="sc-ground-chassis-r1-large-thin--sc-ground-chassis-r1-large-thin" inkscape:label="Chassis ground / large / thin" data-symbol="ground-chassis" data-revision="1" data-size="large" data-stroke="thin" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.42677" stroke-linecap="round" stroke-linejoin="round" transform="translate(-55.359738,-57.614269)scale(0.996264,-0.996264)">
+    <g data-part="lead-reference" id="sc-ground-chassis-r1-large-thin--sc-ground-chassis-r1-large-thin--lead-reference" inkscape:label="lead-reference">
+      <path d="M0 11.38104V0" fill="none" />
+      <desc>Electrical lead: Chassis ground</desc>
+    </g>
+    <g data-part="ground-mark" id="sc-ground-chassis-r1-large-thin--sc-ground-chassis-r1-large-thin--ground-mark" inkscape:label="ground-mark">
+      <path d="M-9.6027 0H9.6027" fill="none" />
+      <path d="M-6.40182 0L-10.31403-4.97916" fill="none" />
+      <path d="M0 0L-3.91223-4.97916" fill="none" />
+      <path d="M6.40182 0L2.48955-4.97916" fill="none" />
+      <desc>Ground mark</desc>
+    </g>
+  </g>
+</svg>

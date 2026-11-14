@@ -1,11 +1,13 @@
 """Explicit registrations for reviewed batch-02 TeX recipes. No schema changes."""
 
 BATCH_MACROS = {
+    'battery': 'SCBatchBattery',
     'capacitor-feedthrough': 'SCBatchCapacitorFeedthrough',
     'capacitor-polarized': 'SCBatchCapacitorPolarized',
     'capacitor-polarized-curved': 'SCBatchCapacitorPolarizedCurved',
     'capacitor-trimmer': 'SCBatchCapacitorTrimmer',
     'capacitor-variable': 'SCBatchCapacitorVariable',
+    'cell': 'SCBatchCell',
     'diode': 'SCBatchDiode',
     'diode-led': 'SCBatchDiodeLed',
     'diode-photo': 'SCBatchDiodePhoto',
@@ -13,6 +15,9 @@ BATCH_MACROS = {
     'diode-tvs-bidirectional': 'SCBatchDiodeTvsBidirectional',
     'diode-varactor': 'SCBatchDiodeVaractor',
     'diode-zener': 'SCBatchDiodeZener',
+    'ground-chassis': 'SCBatchGroundChassis',
+    'ground-earth': 'SCBatchGroundEarth',
+    'ground-signal': 'SCBatchGroundSignal',
     'igbt-n': 'SCBatchIgbtN',
     'jfet-n': 'SCBatchJfetN',
     'jfet-p': 'SCBatchJfetP',
@@ -23,6 +28,12 @@ BATCH_MACROS = {
     'mosfet-p-enhancement': 'SCBatchMosfetPEnhancement',
     'mosfet-p-enhancement-bulk': 'SCBatchMosfetPEnhancementBulk',
     'phototransistor-npn': 'SCBatchPhototransistorNpn',
+    'source-current': 'SCBatchSourceCurrent',
+    'source-dependent-current': 'SCBatchSourceDependentCurrent',
+    'source-dependent-voltage': 'SCBatchSourceDependentVoltage',
+    'source-voltage': 'SCBatchSourceVoltage',
+    'source-voltage-ac': 'SCBatchSourceVoltageAc',
+    'supply-port': 'SCBatchSupplyPort',
     'transistor-npn': 'SCBatchTransistorNpn',
     'transistor-pnp': 'SCBatchTransistorPnp',
 }

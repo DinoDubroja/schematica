@@ -1,0 +1,20 @@
+% Supply port; vcc.
+% Schematica coordinates are millimetres at Medium; pins snap outward to the 1 mm grid.
+\newcommand{\SCBatchSupplyPort}[4]{%
+  \SCresolve{#1}{#2}{#3}
+  \def\F{#2}
+  \pgfmathsetmacro{\SCorientx}{ifthenelse(mod(#4,2)==1,-1,1)}
+  \pgfmathsetmacro{\SCorienty}{ifthenelse(#4>1,-1,1)}
+  \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+    \SCdimension{body-width}{3*\F}
+    \SCdimension{body-height}{2.3*\F}
+    \SCdimension{grid}{1}
+    \SCpin{net}{0}{floor(-3*\F)}
+    \begin{SCpart}{lead-net}
+    \draw ({0},{floor(-3*\F)})--({0*\F},{0.5*\F});
+    \end{SCpart}
+    \begin{SCpart}{port}
+    \draw ({-1.5*\F},{0.5*\F})--({0*\F},{2.8*\F})--({1.5*\F},{0.5*\F})--({-1.5*\F},{0.5*\F});
+    \end{SCpart}
+  \end{scope}
+}
