@@ -10,12 +10,28 @@ and has integrated exact READY capacitor `51a101c` and diode `9c70fc6` checkpoin
 paths, ports, data and ready commits are in `Local/parallel-work/agent-a.md`.
 B owns its own handoff and checkout. See [parallel work](../DEVELOPMENT.md#parallel-work).
 
-A is authorized for local setup, implementation, tests, checkpoint commits and
-integration of exact ready B work. **No A push or deployment is authorized.**
+A's integration milestone authorized local setup, implementation, tests, checkpoint
+commits and integration of exact ready B work. Its unpublished product ancestry
+has no push/deployment authorization; the guidance adoption below adds no such grant.
 B's separate [batch-02 request](../docs/BATCH_02.md) authorizes its finite 80-design
 batch, family commits, pushing B's branch and publishing its tested library.
 B remains sole shared-preview publisher. Never treat its moving branch tip as ready.
 The collection is the dev library; accounts and personal libraries remain deferred.
+
+## Delivery workflow adoption
+
+14-11-2026: adopted the [delivery checklist](../DEVELOPMENT.md#delivery-checklist)
+in A's guidance; `AGENTS.md` requires it before finishing. Agent A coordinates
+integration. This guidance-only task does not merge product features or deploy.
+Installer simplification and user-guide rewrites remain separate work.
+
+B is actively reviewing symbols. Adoption of the focused documentation change is
+handed off through A's existing owner record; B's checkout is not overwritten.
+Verify B's `AGENTS.md` route after it adopts the change. A's previously unpushed
+feature ancestry still lacks publication authorization, so A's branch and `main`
+remain unpublished/unchanged by this task; no hosted-app update is performed.
+GitHub's current `main` README still describes the earlier library. Updating that
+entry point to reflect later work remains a publication handoff, not a feature merge.
 
 ## Delivered locally
 

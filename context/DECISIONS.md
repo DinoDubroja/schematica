@@ -447,3 +447,25 @@ recipe registrations and isolated TeX recipes through existing interfaces; A own
 integration and viewer adaptation. No A implementation is assumed ready. B remains
 sole preview publisher. The batch explicitly includes command-line Inkscape checks;
 the separate long-term testing-policy proposal is not adopted by this request.
+
+## GitHub delivery and documentation workflow — 14-11-2026
+
+Source: user's implementation request in Agent A; original message timestamp
+unavailable, recorded 14-11-2026 Europe/Zagreb (UTC+01:00).
+
+**Confirmed; adoption authorized:** the [delivery checklist](../DEVELOPMENT.md#delivery-checklist)
+is authoritative. Every agent must reach it from `AGENTS.md` before declaring work
+finished. Keep authorized branch checkpoints pushed, user setup/tests compact or
+visual, and GitHub's `main` README the discoverable entry point. Verify published
+links and distinguish backend checks from setup/first-use evidence.
+
+**Agent A is the integration coordinator:** adopt exact ready commits, resolve
+conflicts and check the combined result before an authorized `main` update.
+Branch pushes, merges and website deployments remain separate actions. Honor
+existing authorization without blanket approval pauses; preserve B's active work
+and coordinate guidance adoption through the existing owner handoffs.
+
+This task updates guidance only; it does not authorize product-feature merges or
+app deployment. Installer simplification and rewriting user guides remain separate
+implementation work. [Current status](CURRENT.md#delivery-workflow-adoption) records
+branch adoption and outstanding publication/handoff items.
