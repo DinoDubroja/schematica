@@ -41,7 +41,7 @@ Status: complete — 11 designs / 99 configurations; Unverified.
 
 ### Inductors And Transformers
 
-Status: planned.
+Status: complete — 8 designs / 126 configurations; Unverified.
 
 `inductor-eu`, `inductor-iron`, `inductor-ferrite`, `inductor-variable`, `inductor-variable-iron`, `transformer-air`, `transformer-core`, `transformer-center-tap`.
 

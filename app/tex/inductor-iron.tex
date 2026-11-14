@@ -1,0 +1,28 @@
+% Iron-core inductor; L with core/adjustment adaptation.
+% Schematica coordinates are millimetres at Medium; pins snap outward to the 1 mm grid.
+\newcommand{\SCBatchInductorIron}[4]{%
+  \SCresolve{#1}{#2}{#3}
+  \def\F{#2}
+  \pgfmathsetmacro{\SCorientx}{ifthenelse(mod(#4,2)==1,-1,1)}
+  \pgfmathsetmacro{\SCorienty}{ifthenelse(#4>1,-1,1)}
+  \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+    \SCdimension{body-width}{10*\F}
+    \SCdimension{body-height}{2*\F}
+    \SCdimension{grid}{1}
+    \SCpin{a}{-ceil(5*\F+2)-1}{0}
+    \begin{SCpart}{lead-a}
+    \draw ({-ceil(5*\F+2)-1},{0})--({-5*\F},{0*\F});
+    \end{SCpart}
+    \SCpin{b}{ceil(5*\F+2)+1}{0}
+    \begin{SCpart}{lead-b}
+    \draw ({ceil(5*\F+2)+1},{0})--({5*\F},{0*\F});
+    \end{SCpart}
+    \begin{SCpart}{body}
+    \draw ({-5*\F},{0*\F}) arc[start angle=180,end angle=0,x radius={1.25*\F},y radius={2*\F}] arc[start angle=180,end angle=0,x radius={1.25*\F},y radius={2*\F}] arc[start angle=180,end angle=0,x radius={1.25*\F},y radius={2*\F}] arc[start angle=180,end angle=0,x radius={1.25*\F},y radius={2*\F}];
+    \end{SCpart}
+    \begin{SCpart}{magnetic-core}
+    \draw ({-5*\F},{-1.2*\F})--({5*\F},{-1.2*\F});
+    \draw ({-5*\F},{-2.4*\F})--({5*\F},{-2.4*\F});
+    \end{SCpart}
+  \end{scope}
+}

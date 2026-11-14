@@ -1,0 +1,88 @@
+schema_version: 1
+id: transformer-center-tap
+revision: 1
+name: Center-tapped transformer
+description: Transformer with a center tap on its secondary winding. Dots mark corresponding
+  winding polarity; no turns ratio is specified.
+keywords:
+- transformer
+- coupled inductors
+- windings
+- passive
+- magnetic core
+- center tapped
+- inductors transformers
+- center
+- tap
+- overnight
+- batch 02
+types:
+- inductors-and-transformers
+family: inductors-and-transformers
+batch: overnight-inductors-and-transformers-02
+attributes:
+  core: magnetic
+  secondary_center_tap: true
+  polarity_dots: true
+recipe: transformer-center-tap
+reference:
+  source: CircuitikZ components list; Schematica construction adaptation
+  url: https://rmano.github.io/circuitikz/node-The-components-list.html
+  symbol: transformer core
+  approach: custom parameterized TeX with named parts; see docs/BATCH_02.md
+presets:
+  sizes:
+  - small
+  - medium
+  - large
+  strokes:
+  - thin
+  - medium
+  - thick
+pins:
+- id: primary-1
+  name: Primary dotted end
+  description: Primary dotted end
+  kind: passive
+  lead_part: lead-primary-1
+- id: primary-2
+  name: Primary undotted end
+  description: Primary undotted end
+  kind: passive
+  lead_part: lead-primary-2
+- id: secondary-1
+  name: Secondary dotted end
+  description: Secondary dotted end
+  kind: passive
+  lead_part: lead-secondary-1
+- id: secondary-2
+  name: Secondary undotted end
+  description: Secondary undotted end
+  kind: passive
+  lead_part: lead-secondary-2
+- id: secondary-center
+  name: Secondary center tap
+  description: Secondary center tap
+  kind: passive
+  lead_part: lead-secondary-center
+parts:
+- id: lead-primary-1
+  description: 'Electrical lead: Primary dotted end'
+- id: lead-primary-2
+  description: 'Electrical lead: Primary undotted end'
+- id: primary-winding
+  description: Primary winding
+- id: primary-polarity
+  description: Primary polarity
+- id: lead-secondary-1
+  description: 'Electrical lead: Secondary dotted end'
+- id: lead-secondary-2
+  description: 'Electrical lead: Secondary undotted end'
+- id: secondary-winding
+  description: Secondary winding
+- id: secondary-polarity
+  description: Secondary polarity
+- id: magnetic-core
+  description: Magnetic core
+- id: lead-secondary-center
+  description: 'Electrical lead: Secondary center tap'

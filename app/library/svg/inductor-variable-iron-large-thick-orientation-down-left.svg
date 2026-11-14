@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="-68.682458 -72.000021 63.212295 35.220205" width="22.29989296mm" height="12.42490565mm">
+  <title>Variable iron-core inductor</title>
+  <desc>Adjustable iron-core inductor using the accepted four-loop winding. Only the diagonal adjustment arrow changes orientation; winding and terminals remain fixed.</desc>
+  <metadata>{"dimensions_mm": {"body-height": 2.5, "body-width": 12.5, "grid": 1.0}, "origin_svg": [-37.076311, -56.693056], "parts": ["lead-a", "lead-b", "body", "magnetic-core", "adjustment"], "pins_mm": {"a": [-10.0, 0.0], "b": [10.0, 0.0]}, "revision": 1, "settings": {"grid_mm": 1, "options": {"orientation": "down-left"}, "size": "large", "size_factor": 1.25, "stroke": "thick", "stroke_mm": 0.3}, "symbol_id": "inductor-variable-iron"}</metadata>
+  <g id="sc-inductor-variable-iron-r1-large-thick-orientation-down-left--sc-inductor-variable-iron-r1-large-thick-orientation-down-left" inkscape:label="Variable iron-core inductor / large / thick" data-symbol="inductor-variable-iron" data-revision="1" data-size="large" data-stroke="thick" data-option-orientation="down-left" stroke-miterlimit="10" fill="#000" stroke="#000" stroke-width="0.85358" stroke-linecap="round" stroke-linejoin="round" transform="translate(-37.076311,-56.693056)scale(0.996264,-0.996264)">
+    <g data-part="lead-a" id="sc-inductor-variable-iron-r1-large-thick-orientation-down-left--sc-inductor-variable-iron-r1-large-thick-orientation-down-left--lead-a" inkscape:label="lead-a">
+      <path d="M-28.4526 0H-17.78287" fill="none" />
+      <desc>Electrical lead: A</desc>
+    </g>
+    <g data-part="lead-b" id="sc-inductor-variable-iron-r1-large-thick-orientation-down-left--sc-inductor-variable-iron-r1-large-thick-orientation-down-left--lead-b" inkscape:label="lead-b">
+      <path d="M28.4526 0H17.78287" fill="none" />
+      <desc>Electrical lead: B</desc>
+    </g>
+    <g data-part="body" id="sc-inductor-variable-iron-r1-large-thick-orientation-down-left--sc-inductor-variable-iron-r1-large-thick-orientation-down-left--body" inkscape:label="body">
+      <path d="M-17.78287 0C-17.78287 3.92853-15.79248 7.11314-13.33716 7.11314S-8.89145 3.92853-8.89145 0C-8.89145 3.92853-6.90106 7.11314-4.44574 7.11314S-.00003 3.92853-.00003 0C-.00003 3.92853 1.99036 7.11314 4.44568 7.11314S8.89139 3.92853 8.89139 0C8.89139 3.92853 10.88177 7.11314 13.3371 7.11314C15.79242 7.11314 17.7828 3.92853 17.7828 0" fill="none" />
+      <desc>Body</desc>
+    </g>
+    <g data-part="magnetic-core" id="sc-inductor-variable-iron-r1-large-thick-orientation-down-left--sc-inductor-variable-iron-r1-large-thick-orientation-down-left--magnetic-core" inkscape:label="magnetic-core">
+      <path d="M-17.78287-4.26784H17.78287" fill="none" />
+      <path d="M-17.78287-8.53574H17.78287" fill="none" />
+      <desc>Magnetic core</desc>
+    </g>
+    <g data-part="adjustment" id="sc-inductor-variable-iron-r1-large-thick-orientation-down-left--sc-inductor-variable-iron-r1-large-thick-orientation-down-left--adjustment" inkscape:label="adjustment">
+      <path d="M11.7367 12.0923L-11.7367-16.71585" fill="none" />
+      <path d="M-6.86087-14.9544L-11.7367-16.71585L-10.99637-11.58475" fill="none" />
+      <desc>Adjustment</desc>
+    </g>
+  </g>
+</svg>

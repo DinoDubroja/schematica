@@ -168,5 +168,30 @@ class Batch02(unittest.TestCase):
                 else:self.assertEqual(set(pins),{'net'})
         self.assertEqual(len(set(ground_shapes.values())),len(ground_shapes))
 
+    def test_transformer_windings_stay_isolated_and_center_tap_meets_secondary(self):
+        for symbol in self.new:
+            if not symbol['id'].startswith('transformer-'):continue
+            tapped=symbol['id']=='transformer-center-tap'
+            for config in symbol['configurations']:
+                pins=config['pins_mm'];self.assertEqual(len(pins),5 if tapped else 4)
+                parts={g.get('data-part'):g for g in artwork(config).iter() if g.get('data-part')}
+                winding_points={}
+                for prefix,sign in [('primary',-1),('secondary',1)]:
+                    self.assertGreater(sign*pins[prefix+'-1'][0],0)
+                    self.assertEqual(pins[prefix+'-1'][0],pins[prefix+'-2'][0])
+                    self.assertGreater(pins[prefix+'-1'][1],0);self.assertLess(pins[prefix+'-2'][1],0)
+                    path=next(parts[prefix+'-winding'].iter(f'{{{SVG}}}path'))
+                    coords=[float(n)*25.4/72.27 for n in re.findall(NUMBER,path.get('d'))]
+                    points=list(zip(coords[::2],coords[1::2]));winding_points[prefix]=points
+                    # All cubic controls and endpoints stay on their own side of the core.
+                    self.assertTrue(all(sign*x>1.1*config['settings']['size_factor'] for x,y in points))
+                    self.assertIn(prefix+'-polarity',parts)
+                self.assertEqual('magnetic-core' in parts,symbol['id']!='transformer-air')
+                if tapped:
+                    self.assertEqual(pins['secondary-center'][1],0)
+                    path=next(parts['lead-secondary-center'].iter(f'{{{SVG}}}path'))
+                    join=straight_points(path)[-1]
+                    self.assertTrue(any(math.dist(join,p)<.0003 for p in winding_points['secondary']))
+
 
 if __name__=='__main__':unittest.main()

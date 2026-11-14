@@ -34,7 +34,9 @@ class LibraryChecks(unittest.TestCase):
         zigzags = find_symbols('zigzag')
         self.assertIn('resistor-us',[s['id'] for s in zigzags])
         self.assertTrue(all(s['attributes']['body']=='zigzag' for s in zigzags))
-        self.assertEqual([s['id'] for s in find_symbols('coil')],['inductor-coil'])
+        coil_matches={s['id'] for s in find_symbols('coil')}
+        self.assertIn('inductor-coil',coil_matches)
+        self.assertTrue({'inductor-iron','inductor-ferrite'}<=coil_matches)
         amp=next(s for s in self.data['symbols'] if s['id']=='opamp')
         self.assertEqual({p['id'] for p in amp['pins']},{'in-plus','in-minus','out'})
 
