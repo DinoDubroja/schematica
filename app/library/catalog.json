@@ -21209,7 +21209,7 @@
             "plate-negative",
             "polarity"
           ],
-          "svg_bytes": 2772,
+          "svg_bytes": 2777,
           "settings": {
             "size": "small",
             "stroke": "thin",
@@ -21259,7 +21259,7 @@
             "plate-negative",
             "polarity"
           ],
-          "svg_bytes": 2801,
+          "svg_bytes": 2806,
           "settings": {
             "size": "small",
             "stroke": "medium",
@@ -21309,7 +21309,7 @@
             "plate-negative",
             "polarity"
           ],
-          "svg_bytes": 2786,
+          "svg_bytes": 2791,
           "settings": {
             "size": "small",
             "stroke": "thick",
@@ -21359,7 +21359,7 @@
             "plate-negative",
             "polarity"
           ],
-          "svg_bytes": 2798,
+          "svg_bytes": 2803,
           "settings": {
             "size": "medium",
             "stroke": "thin",
@@ -21409,7 +21409,7 @@
             "plate-negative",
             "polarity"
           ],
-          "svg_bytes": 2826,
+          "svg_bytes": 2831,
           "settings": {
             "size": "medium",
             "stroke": "medium",
@@ -21459,7 +21459,7 @@
             "plate-negative",
             "polarity"
           ],
-          "svg_bytes": 2812,
+          "svg_bytes": 2817,
           "settings": {
             "size": "medium",
             "stroke": "thick",
@@ -21509,7 +21509,7 @@
             "plate-negative",
             "polarity"
           ],
-          "svg_bytes": 2783,
+          "svg_bytes": 2788,
           "settings": {
             "size": "large",
             "stroke": "thin",
@@ -21559,7 +21559,7 @@
             "plate-negative",
             "polarity"
           ],
-          "svg_bytes": 2811,
+          "svg_bytes": 2816,
           "settings": {
             "size": "large",
             "stroke": "medium",
@@ -21609,7 +21609,7 @@
             "plate-negative",
             "polarity"
           ],
-          "svg_bytes": 2796,
+          "svg_bytes": 2801,
           "settings": {
             "size": "large",
             "stroke": "thick",
@@ -21619,7 +21619,7 @@
           }
         }
       ],
-      "source_fingerprint": "87a81e92942acea84e95d29e1d4c386d7cb7f9f937adce140ffb119fa026b697"
+      "source_fingerprint": "f5ce91aced71fc5dc27d1e0a5f88c6451167908b403bbd3afb929d4fa584b9e2"
     },
     {
       "schema_version": 1,
@@ -29578,7 +29578,8 @@
         "igbt",
         "n",
         "overnight",
-        "batch 02"
+        "batch 02",
+        "semiconductor"
       ],
       "types": [
         "transistors"
@@ -30191,7 +30192,8 @@
         "jfet",
         "n",
         "overnight",
-        "batch 02"
+        "batch 02",
+        "semiconductor"
       ],
       "types": [
         "transistors"
@@ -30765,7 +30767,8 @@
         "jfet",
         "p",
         "overnight",
-        "batch 02"
+        "batch 02",
+        "semiconductor"
       ],
       "types": [
         "transistors"
@@ -31342,7 +31345,8 @@
         "mosfet",
         "n",
         "overnight",
-        "batch 02"
+        "batch 02",
+        "semiconductor"
       ],
       "types": [
         "transistors"
@@ -31971,7 +31975,8 @@
         "mosfet",
         "n",
         "overnight",
-        "batch 02"
+        "batch 02",
+        "semiconductor"
       ],
       "types": [
         "transistors"
@@ -32601,7 +32606,8 @@
         "n",
         "bulk",
         "overnight",
-        "batch 02"
+        "batch 02",
+        "semiconductor"
       ],
       "types": [
         "transistors"
@@ -33273,7 +33279,8 @@
         "mosfet",
         "p",
         "overnight",
-        "batch 02"
+        "batch 02",
+        "semiconductor"
       ],
       "types": [
         "transistors"
@@ -33902,7 +33909,8 @@
         "mosfet",
         "p",
         "overnight",
-        "batch 02"
+        "batch 02",
+        "semiconductor"
       ],
       "types": [
         "transistors"
@@ -34532,7 +34540,8 @@
         "p",
         "bulk",
         "overnight",
-        "batch 02"
+        "batch 02",
+        "semiconductor"
       ],
       "types": [
         "transistors"
@@ -35203,7 +35212,8 @@
         "transistors",
         "npn",
         "overnight",
-        "batch 02"
+        "batch 02",
+        "semiconductor"
       ],
       "types": [
         "transistors"
@@ -35779,7 +35789,8 @@
         "NPN",
         "transistors",
         "overnight",
-        "batch 02"
+        "batch 02",
+        "semiconductor"
       ],
       "types": [
         "transistors"
@@ -36376,7 +36387,8 @@
         "PNP",
         "transistors",
         "overnight",
-        "batch 02"
+        "batch 02",
+        "semiconductor"
       ],
       "types": [
         "transistors"

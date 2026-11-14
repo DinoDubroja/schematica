@@ -7,36 +7,42 @@
 
 ## Latest changes
 
-14-11-2026: **batch 02 is in progress**. 80 of 80 new designs are complete;
-the current source library has **106 designs / 1170 configurations**.
-The original 26 designs remain Verified; new designs are Unverified.
-Completed families: capacitors, diodes, transistors, sources-and-grounds, inductors-and-transformers, analog, logic, switches-and-relays, connections-and-instruments, protection-and-resonators. See the [finite inventory](docs/BATCH_02.md).
+14-11-2026: **batch 02 complete** — 80 new designs / 828 configurations across
+ten component families. The dev library now has **106 designs / 1,170 configurations**.
+The original 26 designs remain Verified; all 80 new designs are Unverified.
+No deferred or failed inventory items. See [the inventory and review focus](docs/BATCH_02.md).
 
-Local build: `bd9007f494e3`. The shared preview remains on the previous
-release until the tested batch is published. Family checkpoint commits are pushed
-on `work/agent-b-symbols`; main and A's work are not merged by this task.
+Tested local build: **`a65905389281`**. Publication is the remaining delivery step; the shared preview still serves the earlier release.
+Source is pushed on `work/agent-b-symbols`; A's integration work and `main` remain separate.
 
-Checks so far: 55 Python tests, eight JavaScript tests, all declared family
-configurations, Inkscape vector bounds and composite save/reopen. Actual renders
-were visually inspected at common scale and normal size, including Small/Thick
-and every adjustment orientation. All 342 approved SVG bytes and 26 approval
-records match the pre-batch baseline. No new design has human approval.
+**Passed:** 55 Python tests, eight JavaScript tests, all 1,170 SVGs in Inkscape,
+42 accepted-palette comparisons, all 36 complete-library exports, named-part
+save/reopen, fresh/native TeX fixtures and three byte-checked ZIP packages.
+Actual family renders were inspected at common scale and normal size, including
+Small/Thick and all adjustment directions. All original 342 SVG bytes and 26
+approval records match the saved baseline.
+
+Browser checks passed at 1440, 1366 and 800 px widths: filters, Unverified,
+Variations, themes, search, keyboard shortcuts and actual SVG/library downloads.
+The Windows launcher serves this same build. Physical laptop testing, human design
+acceptance and fresh-machine/offline TeX setup remain unverified. Inkscape checks
+used the command line; they do not establish GUI/profile installation behavior.
 
 ### Test on both Windows devices
 
-Use the shared preview after publication; during development use your local build.
-
 | Action | Expected result |
 |---|---|
-| Choose a family and its `overnight-…-02` batch | Only that family's new designs appear |
-| Open Unverified; search `overnight` | New designs awaiting your review; existing approved designs stay Verified |
-| Open Variations, then Small / Thick | All supported settings render; pin identities stay fixed |
-| Inspect polarity, arrows and terminal names | Electrical meaning matches the description; report a fix by copied symbol reference |
-| Switch dark/light; download one SVG and the library | Usable theme; clean vectors; complete library contains every current design |
-| Verify acceptable designs; copy approvals into chat | Browser selections are Pending until the exact approval handoff is applied and published |
+| Open the preview and check `build.json` | Build `a65905389281` on both devices |
+| Choose All families / All batches; open Unverified; search `overnight` | 80 new designs; the original 26 remain Verified |
+| Choose a family and its `overnight-…-02` batch, then select a symbol | Only that family's new designs appear; inspect the selected design |
+| Open Variations; then try Small / Thick in the main preview | Comparison rows vary one setting from defaults; main preview applies your chosen settings |
+| Inspect polarity, arrows, terminal names and labels | Meaning matches the description; use the [family checklist](docs/BATCH_02.md#what-to-inspect) |
+| Switch dark/light; reload; narrow the window | Theme persists and controls remain usable without horizontal overflow |
+| Download one symbol, then the library while filtered | Selected SVG matches the preset; library includes all 106 designs |
+| Verify acceptable designs; copy approvals into chat | Browser selections are Pending until the exact handoff is applied and published |
 
-No new review sheet or comment UI is added. Review through Unverified and Variations;
-send corrections in chat. See [verification](docs/VERIFICATION.md).
+Send fixes by copied symbol reference. Review stays in Unverified and Variations;
+there is no new review sheet or comment UI. See [verification](docs/VERIFICATION.md).
 
 ## Run on Windows
 
@@ -109,6 +115,12 @@ cd schematica
 
 Then follow [Run on Windows](#run-on-windows). The existing laptop checkout was
 already set up during the first batch; update that copy instead of cloning again.
+
+The current symbol batch is on **`work/agent-b-symbols`**. The default `main`
+branch does not include it until integration. In a fresh, clean clone, use
+`git switch --track origin/work/agent-b-symbols` before launching. For an existing
+checkout, inspect its branch and local/concurrent work before switching or merging;
+do not discard work just to match the preview.
 
 Before updating an existing copy, run `git status --short`. If it lists files,
 preserve and resolve that work first. If empty, run `git pull --ff-only`. Stop on

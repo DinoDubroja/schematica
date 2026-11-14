@@ -1,43 +1,40 @@
 # Current status
 
-14-11-2026 · **Batch 02 in progress: 80 / 80 new designs complete.**
+14-11-2026 · **Batch 02 complete; human review pending.**
 
 ## Working ownership
 
 Agent B owns this checkout on `work/agent-b-symbols`. Agent A works separately on
-`work/agent-a-integration`; both started this batch at common commit
-`89dbd3efe40a8b79eeb7cfe99f25f32a4cb849d1`. Read the available local ownership
+`work/agent-a-integration`. Starting shared baseline:
+`89dbd3efe40a8b79eeb7cfe99f25f32a4cb849d1`. B depends only on the symbol branch;
+A's experimental integration is not deployed. Read both available local ownership
 records in the parent workspace's `Local/parallel-work` before shared changes.
 See [parallel work](../DEVELOPMENT.md#parallel-work).
 
-**Current authorization:** execute the finite [80-design batch](../docs/BATCH_02.md),
-test and document it, save focused family commits, push B's branch and publish the
-tested B library to the existing preview. This supersedes the earlier setup-only
-push/publication hold. New artwork remains Unverified for the user's later review.
-Do not expand the inventory, merge unfinished A work or change shared interfaces
-without coordination. B remains sole preview publisher. Accounts/personal
-libraries remain deferred; this is the dev library.
+The user authorized this finite 80-design batch, checks, docs, focused commits,
+branch push and publication. That work does not authorize another batch, adoption
+of A's viewer/integration, or unresolved structural changes. B remains sole preview
+publisher. This is the dev library; accounts and personal libraries remain deferred.
 
-## Current checkpoint
+## Delivered library
 
-- Source library: **106 designs / 1170 configurations**; 26 Verified,
-  80 new Unverified. Completed families: capacitors, diodes, transistors, sources-and-grounds, inductors-and-transformers, analog, logic, switches-and-relays, connections-and-instruments, protection-and-resonators.
-- Original 342 SVGs and 26 approval records are preserved exactly. Tapped resistors
-  and varistors remain removed; selected nonlinear B revision 3 is unchanged.
-- Current local build: `bd9007f494e3`. Shared preview still serves the prior
-  `fae9ed42be9d` release until this batch is published; do not confuse local with live.
-- Latest checkpoint checks: 55 Python tests and eight JavaScript tests;
-  complete-family Inkscape vector/bounds/save/reopen checks; actual Medium/Medium,
-  Small/Thick and adjustment-orientation visual inspection. Technical checks do
-  not confer human approval. Exact ready commits are in B's local handoff.
+- **106 designs / 1,170 configurations:** original 26 Verified; 80 new Unverified.
+  All ten [inventory families](../docs/BATCH_02.md) completed; no failed/deferred items.
+- Original 342 SVG bytes and 26 approval records preserved exactly. Tapped
+  resistors and varistors remain removed; accepted nonlinear B revision 3 is unchanged.
+- Tested local build: **`a65905389281`**. Publication is the remaining delivery step; the shared preview still serves the earlier release.
+- Passed 55 Python and eight JavaScript tests, all individual/configured library
+  exports, 42 accepted-palette comparisons, native TeX and packaging checks.
+  Actual rendered artwork and browser layouts were inspected; tests do not confer
+  human approval. Exact ready family/cumulative commits are in B's local handoff.
 
-## Next step
+## Review next
 
-Continue the remaining authorized families, then publish and stop for visual review.
-Use [the inventory](../docs/BATCH_02.md) for completed versus pending items and
-[developer review steps](../DEVELOPMENT.md#latest-changes) for action → expected result.
-The recurring lighter Inkscape policy remains a separate proposal; this request
-explicitly includes applicable Inkscape checks, performed through the command line.
+Use **Unverified**, an overnight family/batch and **Variations**. Check Small/Thick,
+electrical meaning and labels; report corrections by copied symbol reference.
+Review on both Windows devices using [the action checklist](../DEVELOPMENT.md#latest-changes).
+No new implementation follows until the user's review/request. The recurring
+lighter Inkscape policy remains a separate proposal; this batch's checks used CLI.
 
 [Decisions](DECISIONS.md) · [Verification](../docs/VERIFICATION.md)
 

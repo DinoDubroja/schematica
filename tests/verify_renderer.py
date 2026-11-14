@@ -1,6 +1,7 @@
 """Recheck the bounded renderer, native CircuitikZ and editable-label proof."""
 from support import APP, FIXTURES
 import json
+import uuid
 from pathlib import Path
 import shutil
 import xml.etree.ElementTree as ET
@@ -42,7 +43,7 @@ def verify():
     write_svg(label, edited)
     for name in ["editable-label-saved.svg", "editable-label-reopened.svg"]:
         saved = work / name
-        run([tool("inkscape"), str(edited), f"--export-filename={saved}"], work)
+        run([tool("inkscape"), "--app-id-tag=schematica_b_"+uuid.uuid4().hex, str(edited), f"--export-filename={saved}"], work)
         again = ET.parse(saved).getroot()
         assert next(again.iter(f"{{{SVG}}}text")).text == "Label B"
         assert any(p.get("data-original-text") == original["label"] for p in again.iter())

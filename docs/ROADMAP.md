@@ -14,7 +14,7 @@ This page states desired capabilities; implementation status comes from
 | Outcome | Status | What it means |
 |---|---|---|
 | Minimal symbol library in the web app | Implemented | Browse, search, compare variations, use dark/light mode and export one symbol or the whole Inkscape library |
-| Grow the dev library with agent-run batches | First batch implemented | A finite resistor inventory, repeatable creation and validation, and human verification; more component families remain to be planned |
+| Grow the dev library with agent-run batches | Two batches implemented | Resistors plus 80 new designs across ten component families; repeatable creation, validation and human verification. New artwork awaits review |
 | Create symbols interactively with an agent | Near term · missing | Create one symbol from text, images, sketches or PDFs: interpret → confirm → create → preview/refine → offer download/save to the dev library; shares formats and checks with batches |
 | Search and reuse symbols through agent apps | Near term · planning | Separate search skill; proposed shared interactive web/chat viewer with filtered results, configuration controls and an explicit selection handoff |
 | Connect Schematica through MCP | Near term · missing | Required: ChatGPT Desktop across its environments and Claude Desktop; verify each complete journey, including previews, downloads and fresh-chat retrieval |
@@ -23,7 +23,9 @@ This page states desired capabilities; implementation status comes from
 | Schematic styles and examples in the library | Future · deferred | Browse styles and visible references with captions, including mixed circuits/plots/equations; compare symbols in circuits and test style generalization on realistic examples |
 | Create and revisit complete schematics | Future · deferred | Turn text, paper-sketch photos, tablet exports and PDFs into circuits or system diagrams; reuse/create symbols, refine connections and layout, then revisit saved work; general CircuitikZ import/round-trip comes later |
 
-Library expansion is underway; individual creation and search are separate
+The [second batch](BATCH_02.md) expands the symbol branch to 106 designs. Status on
+this page describes the symbol preview; Agent A's separate integration work is not
+deployed here. Individual creation and search are separate
 workstreams that may be developed alongside it after their own scope is authorized.
 The remaining interview must settle retrieval behavior (including single matches),
 save/version semantics, concrete host acceptance tests and the next delivery order.
@@ -53,7 +55,7 @@ not authorize a new batch or publication.
   text or technical details. Descriptions and keywords remain read-only for now.
 - **Batch creation and interactive creation are separate workflows** built on
   shared TeX drawing tools, semantic definitions and validation rules.
-- **Beautiful drawings come first.** The current resistor run does not implement
+- **Beautiful drawings come first.** The current symbol library does not implement
   sketch/PDF interpretation, simulation, automatic routing or component sourcing.
   Sketch interpretation is an explicit future priority, not a rejected goal.
 - **Test usefulness for newcomers.** Use realistic tasks, with/without-Schematica
@@ -70,7 +72,7 @@ decisions take precedence.
 
 | Area | What remains |
 |---|---|
-| Human verification | All 26 current designs are Verified; new or changed designs require explicit human acceptance |
+| Human verification | Original 26 designs remain Verified; all 80 batch-02 designs await explicit human acceptance |
 | Temporary approvals | Browser-local pending selections and a chat-mediated publish step; no accounts or cross-device selection sync |
 | Text editing | Bounded editable-label proof only; no general mathematical-text round trip |
 | Device readiness | Repeat the current hosted and local checklist on the laptop; desktop results do not establish laptop behavior |

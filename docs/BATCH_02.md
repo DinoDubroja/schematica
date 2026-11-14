@@ -1,8 +1,9 @@
 # Dev-library batch 02
 
-**Authorized 14-11-2026:** 80 new designs, expected 828 configurations. Family
-checkpoints, branch push and publication are authorized; all new designs remain
-Unverified for human review. Existing 26 approvals and 342 SVGs stay unchanged.
+**Complete 14-11-2026:** 80 new designs / 828 configurations; all ten families
+completed, no deferred or failed items. The full dev library has 106 designs /
+1,170 configurations. All new designs remain Unverified for human review;
+the original 26 approvals and 342 SVG bytes are unchanged.
 
 Use the existing family/batch filters, Unverified and Variations. Every new
 family uses `overnight-<family>-02`; searching `overnight` finds this whole run.
