@@ -120,6 +120,16 @@
       "revision": 1,
       "fingerprint": "c1d9f24d65d1f27265b26b72835883a88bedf4294abe925485f7b9696b707533",
       "evidence": "User approval supplied through the chat handoff"
+    },
+    "resistor-nonlinear-eu": {
+      "revision": 3,
+      "fingerprint": "b60dca0f0e52e795617556554922f2ec8dcb156aa212072f396a9d8626d47678",
+      "evidence": "User selected option B in chat, then explicitly requested accepted designs no longer remain pending; all rendered configurations matched selected B."
+    },
+    "resistor-nonlinear-us": {
+      "revision": 3,
+      "fingerprint": "0fbdf49e9a76193c86e1b04fd1d656bff7aa0755dcf3125eef2dacb4c58ec9c0",
+      "evidence": "User selected option B in chat, then explicitly requested accepted designs no longer remain pending; all rendered configurations matched selected B."
     }
   }
 }

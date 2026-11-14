@@ -335,7 +335,7 @@ without substituting recording time for a source timestamp.
   ±3.4 mm at axial coordinates ∓5.6/3 mm, rotated 45°. The renderer matches the chat
   preview across all 18 configurations. Bodies, pins and unrelated artwork stay fixed.
 
-The current inventory has 26 designs / 342 configurations. Twenty-four designs
+At this earlier checkpoint, the inventory had 26 designs / 342 configurations. Twenty-four designs
 have official approval fingerprints; B is the confirmed design choice, while its
 new rendered revision 3 still uses the normal verification handoff. No further
 shape choice is pending. GitHub synchronization is authorized; Cloudflare deployment
@@ -345,3 +345,21 @@ is outside this request. Earlier preview publication permission covered its own 
 asked whether repeated Inkscape exports/tests could be dropped. The proposed
 permanent policy keeps exports and focuses checks on affected behavior; a policy
 edit is not yet approved. This correction run uses no Inkscape or browser automation.
+
+## Preview publication and completed approvals — 14-11-2026
+
+Source: subsequent user messages in Agent B (original times unavailable):
+"Publish the Cloudflare preview too ... Avoid browser automation if possible",
+then "Why are verfied componennts still pending, resolve that too".
+
+**Confirmed and completed:** publish the existing B implementation and resolve the
+approval status. The 18 pasted approvals must be present on the live site. The
+explicit selection of B, followed by the status-correction request, is human
+acceptance of the two corrected nonlinear designs; record their exact revision-3
+fingerprints rather than require a second browser handoff. All 26 designs are now
+Verified. This supersedes the preceding publication hold and B verification gap.
+
+Wrangler 4.162.0 published build `fae9ed42be9d`; the user authorized OAuth once.
+No browser automation or Inkscape rerun was used. The live catalog clears saved
+Pending entries on reload; the manifest and all 386 served assets match locally.
+See [current status](CURRENT.md) for the deployment and two-device review steps.

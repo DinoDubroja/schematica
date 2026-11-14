@@ -28,7 +28,13 @@ copies its name, stable ID, revision and link. Describe the change in chat.
 
 ## Agent handoff
 
-Save the pasted JSON to an ignored file such as `app/build/approvals.json`. Then,
+An explicit approval of an identified design or option in chat also counts as
+human acceptance. Resolve it to the current revision and fingerprint, record that
+evidence and use the same validator below. Do not require a second browser handoff
+when the user's acceptance is already clear. Passing technical checks alone is
+never human approval.
+
+Save the pasted or resolved approval JSON to an ignored file such as `app/build/approvals.json`. Then,
 from the repository root:
 
 ```powershell

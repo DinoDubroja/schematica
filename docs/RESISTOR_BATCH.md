@@ -6,8 +6,8 @@ the library has **26 designs / 342 configurations**. Four adjustable designs hav
 36 configurations each; the other 22 designs have nine.
 
 Arrays and networks are excluded. Varistors were replaced by nonlinear resistors;
-the user subsequently removed both tapped resistors. Eighteen additional designs
-are now approved; only the revised nonlinear EU/US curves await approval.
+the user subsequently removed both tapped resistors. All 20 additional designs,
+including the selected nonlinear EU/US option B, are now approved.
 
 ## Inventory and references
 
@@ -96,5 +96,6 @@ shows Medium/Medium and Small/Thick from the actual exports.
 
 The shared recipe was regenerated for source freshness; all 324 unchanged approved
 SVGs were preserved byte for byte. See [test results and review steps](../DEVELOPMENT.md#latest-changes).
-No Inkscape or browser automation was rerun. Commit/push is authorized; Cloudflare
-deployment is outside this request. Its earlier build remains `601a9624a06d`.
+No Inkscape or browser automation was rerun. The user subsequently authorized
+Cloudflare publication and completion of approval status. Build `fae9ed42be9d` is
+live with all 26 designs Verified; saved Pending entries clear on reload.

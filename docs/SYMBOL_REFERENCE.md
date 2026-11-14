@@ -46,9 +46,8 @@ terminals; diagonal adjustment marks on two-terminal resistors add no terminal.
 
 ## Current constructions
 
-Potentiometer, thermistor and photoresistor examples are user-approved. The smooth
-nonlinear revision 3 implements selected B and awaits final rendered-design verification.
-These images use the actual current exports.
+All shown designs are user-approved, including nonlinear revision 3 with selected
+option B. These images use the actual current exports.
 
 ![Centered wiper, NTC lettering, symmetric light arrows and nonlinear S from current exports](images/resistor-constructions.svg)
 

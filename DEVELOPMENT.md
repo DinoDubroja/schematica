@@ -1,52 +1,44 @@
 # Develop Schematica
 
 [Preview](https://schematica-preview.dinodubroja.workers.dev/)
-Â· [Inkscape](docs/INKSCAPE.md)
-Â· [Scope and gaps](docs/ROADMAP.md)
-Â· [Current status](context/CURRENT.md)
+· [Inkscape](docs/INKSCAPE.md)
+· [Scope and gaps](docs/ROADMAP.md)
+· [Current status](context/CURRENT.md)
 
 ## Latest changes
 
-14-11-2026: **selected nonlinear option B, 18 approvals applied, tapped resistors
-removed**. The library has **26 designs / 342 configurations**: **24 Verified** and
-two revised nonlinear designs **Unverified**. Those two are revision 3.
-
-Option B uses one smooth cubic curve, with no centre join. Both body appearances
-match the option selected in chat at every size/stroke. Bodies, leads and pins stay
-fixed; every retained approved SVG is byte-identical to the previous library.
+14-11-2026: **option B and all approvals are live**. The library has **26 designs /
+342 configurations**, all **Verified**. Tapped resistors are removed. Both nonlinear
+designs use the selected smooth B curve, revision 3.
 
 ![Selected option B in the actual EU and US exports](docs/images/nonlinear-option-b.png)
 
-**Build: `ee70ffede6be`.** Source synchronization to GitHub is authorized for this
-update. Cloudflare deployment is separate: the shared preview still serves
-`601a9624a06d` with the earlier inventory and approval record.
+**Live build: `fae9ed42be9d`.** [Open the shared preview](https://schematica-preview.dinodubroja.workers.dev/).
+Cloudflare version `5cc8f4f6-8343-47d4-9dea-d0f562cc4f69` was published using Wrangler.
+The user completed one authorization step; no browser automation was used.
 
 | Check | Result |
 |---|---|
-| Approval handoff | All 18 IDs, revisions and fingerprints matched; original six approvals retained |
-| Selected B geometry | All 18 changed configurations match the chat curve within 0.00007 mm; fixed bodies/pins and at least 1.00 mm page margin |
-| Shared recipe | 270 unchanged configurations regenerated for source freshness; all 324 retained approved SVGs preserved byte for byte |
-| Tests and exports | 42 Python + 8 JavaScript tests passed; all 36 library profiles contain 26 designs, and all 342 individual SVGs match the library |
-| Documentation | 73 local links/anchors checked, no failures |
-| Interface | Viewer code unchanged; no browser automation in this run |
-| Inkscape | No Inkscape GUI, export or save/reopen checks rerun; compatibility is not freshly verified |
+| Approval status | Original six + 18 pasted approvals + two selected B designs = 26 Verified |
+| Pending cleanup | Actual live catalog clears the 18 supplied pending selections; Undo does not restore them |
+| Hosted files | Build manifest and all 386 served assets match local hashes, including 342 SVGs and 36 libraries |
+| Focused approval tests | Eight Python + eight JavaScript tests pass; all 386 non-catalog assets unchanged |
+| Prior geometry checks | 42 Python + eight JavaScript tests passed for B; 18 changed configurations match the chosen curve within 0.00007 mm; 324 other SVGs byte-identical |
+| Documentation | 71 local links/anchors checked |
+| Scope | No new rendering, Inkscape checks or browser automation; device interaction remains for human review |
 
-### Review this update
-
-Start the local app using [Run on Windows](#run-on-windows).
+### Test on both Windows devices
 
 | Action | Expected result |
 |---|---|
-| Open All symbols, then Unverified | 26 designs total; only Nonlinear resistor EU and US remain Unverified |
+| Open the shared preview and press Ctrl+F5 once | Current library loads; prior Pending selections clear |
+| Open All symbols, then Unverified | 26 Verified designs; Unverified is empty; no Pending approvals |
 | Search `tapped` | No results |
-| Open each nonlinear resistor; inspect Medium/Medium and Small/Thick | Selected B: one smooth S with no central join or arrowhead; same body and two terminals |
-| Check an approved photoresistor, potentiometer or thermistor | Verified; its geometry is unchanged |
-| Optionally download the complete library | 26 symbols at the selected settings, with no tapped resistors |
+| Inspect nonlinear EU and US at Medium/Medium and Small/Thick | Smooth selected B with no centre join or arrowhead |
+| Switch dark/light and optionally download a symbol/library | Usable theme; single SVG matches selection; complete library contains 26 symbols |
 
-The user selected B for implementation. Final rendered-design verification still
-uses the [approval handoff](docs/VERIFICATION.md); the two revised designs have no
-official approval fingerprints yet. The laptop and hosted update remain untested
-for this build. Earlier broad Inkscape/browser results belong to `601a9624a06d`.
+Report device/browser, selected symbol and failed action if results differ.
+The same link works on both devices; the GitHub README also links to it.
 
 ## Run on Windows
 
@@ -104,28 +96,28 @@ Downloaded SVGs and Inkscape drawings remain local unless separately synchronize
 
 ```text
 schematica/
-â”œâ”€â”€ README.md               # Product overview and screenshot
-â”œâ”€â”€ DEVELOPMENT.md          # Setup, editing, checks and packaging
-â”œâ”€â”€ AGENTS.md               # Instructions for new Schematica
-â”œâ”€â”€ app/
-â”‚   â”œâ”€â”€ definitions/        # Names, descriptions, keywords, pins and parts
-â”‚   â”œâ”€â”€ presets.yaml        # Three sizes and three stroke weights
-â”‚   â”œâ”€â”€ tex/                # Authoritative parameterized geometry
-â”‚   â”œâ”€â”€ core.py             # Find, inspect and render; shared TeX export
-â”‚   â”œâ”€â”€ exports.py          # SVG, ZIP, sheet and Symbols composition
-â”‚   â”œâ”€â”€ library/            # Catalog and 342 SVGs for immediate browsing
-â”‚   â”œâ”€â”€ verification.py     # Validate and apply chat approval handoffs
-â”‚   â”œâ”€â”€ verification.json   # Official acceptance, tied to actual geometry
-â”‚   â”œâ”€â”€ viewer/             # Accepted HTML/CSS/JavaScript interface
-â”‚   â”œâ”€â”€ build_site.py       # Portable website builder
-â”‚   â”œâ”€â”€ build_library.py    # Render candidates before promotion
-â”‚   â”œâ”€â”€ package.py          # Generate distributable ZIPs
-â”‚   â”œâ”€â”€ launch.ps1          # Windows entry point
-â”‚   â”œâ”€â”€ server.py           # Local static server
-â”‚   â””â”€â”€ wrangler.jsonc      # Cloudflare static-asset settings
-â”œâ”€â”€ tests/                  # Automated checks, render checks and fixtures
-â”œâ”€â”€ docs/                   # Inkscape, roadmap and documentation images
-â””â”€â”€ context/                # Current status and new-project decisions
+├── README.md               # Product overview and screenshot
+├── DEVELOPMENT.md          # Setup, editing, checks and packaging
+├── AGENTS.md               # Instructions for new Schematica
+├── app/
+│   ├── definitions/        # Names, descriptions, keywords, pins and parts
+│   ├── presets.yaml        # Three sizes and three stroke weights
+│   ├── tex/                # Authoritative parameterized geometry
+│   ├── core.py             # Find, inspect and render; shared TeX export
+│   ├── exports.py          # SVG, ZIP, sheet and Symbols composition
+│   ├── library/            # Catalog and 342 SVGs for immediate browsing
+│   ├── verification.py     # Validate and apply chat approval handoffs
+│   ├── verification.json   # Official acceptance, tied to actual geometry
+│   ├── viewer/             # Accepted HTML/CSS/JavaScript interface
+│   ├── build_site.py       # Portable website builder
+│   ├── build_library.py    # Render candidates before promotion
+│   ├── package.py          # Generate distributable ZIPs
+│   ├── launch.ps1          # Windows entry point
+│   ├── server.py           # Local static server
+│   └── wrangler.jsonc      # Cloudflare static-asset settings
+├── tests/                  # Automated checks, render checks and fixtures
+├── docs/                   # Inkscape, roadmap and documentation images
+└── context/                # Current status and new-project decisions
 ```
 
 | Edit | Source | Then |
@@ -164,9 +156,9 @@ checking that both devices have the same version.
 
 | Action | Expected result |
 |---|---|
-| Open the app; switch All symbols / Unverified | 26 designs / two nonlinear designs; 24 designs are Verified |
+| Open the app; switch All symbols / Unverified | 26 designs / no unverified designs; all 26 are Verified |
 | Choose Resistors / Batch 01; search `NTC`, then `zzzz`, then clear | Two NTCs; empty state; the filtered batch returns |
-| Select Variable resistor Â· US; open Variations | Stroke, Size and Arrow orientation rows; one setting varies per row, all others at defaults; no large preview |
+| Select Variable resistor · US; open Variations | Stroke, Size and Arrow orientation rows; one setting varies per row, all others at defaults; no large preview |
 | Choose Small / Thick / Down-left; open Variations | Comparison rows still use defaults, independently of the main preview selection |
 | Try all orientations on variable/trimmer US/EU | Only the diagonal marking reflects; body, leads and blue pin identities stay fixed |
 | Inspect potentiometers, NTC/PTC, photos and nonlinear resistors | Wiper tip centered 1 mm above body; labels readable; arrows symmetric; diagonal S has no arrowhead; no varistors |
@@ -285,11 +277,31 @@ option values are rejected. `exports.export(kind, keys, columns=3, spacing=6)` s
 
 ## Hosting and documentation previews
 
-The live Cloudflare preview is a separate static upload. No Git auto-deploy is
-configured. For an authorized update, build/package/test, then upload
-`web-preview.zip` to the existing `schematica-preview` Worker. Record its version
-URL and build ID and repeat browser/download checks. The [Wrangler settings](app/wrangler.jsonc)
-describe equivalent CLI settings; the dashboard upload does not read that file.
+The shared preview is a separate static deployment; Git pushes do not deploy it.
+Prefer [Wrangler](https://developers.cloudflare.com/workers/wrangler/commands/general/)
+for authorized publications. Build once, deploy, then compare the hosted `build.json`,
+catalog and downloads against the local build. Routine publishing needs no automated
+browser session or repeated Inkscape export checks.
+
+This workstation has a portable Wrangler 4.162.0 installation outside the repository:
+
+```powershell
+.\.venv\Scripts\python.exe app\build_site.py
+node ..\Local\tools\cloudflare\wrangler\node_modules\wrangler\bin\wrangler.js deploy --config app\wrangler.jsonc
+```
+
+On another publishing workstation, install Node.js 22.12 or newer with npm, then:
+
+```powershell
+npx wrangler@4.162.0 login --use-keyring --scopes account:read user:read workers:write workers_scripts:write
+npx wrangler@4.162.0 deploy --config app\wrangler.jsonc
+```
+
+Login opens Cloudflare for the user to authorize. Credentials stay in Wrangler's
+encrypted store with its key in Windows Credential Manager; do not put tokens in
+chat or Git. The laptop needs no Cloudflare login merely to browse or run locally.
+The [configuration](app/wrangler.jsonc) targets the existing `schematica-preview`
+Worker; keep its name and preview URL. Record the deployed version and build ID.
 
 To render these Markdown guides locally, install the developer requirements and run:
 

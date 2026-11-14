@@ -67,7 +67,7 @@ decisions take precedence.
 
 | Area | What remains |
 |---|---|
-| Human verification | The two revised nonlinear resistors await review; 24 designs are accepted locally. The published preview still shows the previous approval record |
+| Human verification | All 26 current designs are Verified; new or changed designs require explicit human acceptance |
 | Temporary approvals | Browser-local pending selections and a chat-mediated publish step; no accounts or cross-device selection sync |
 | Text editing | Bounded editable-label proof only; no general mathematical-text round trip |
 | Device readiness | Repeat the current hosted and local checklist on the laptop; desktop results do not establish laptop behavior |
