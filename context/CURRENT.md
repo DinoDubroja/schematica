@@ -42,11 +42,12 @@ follow-up passed. The user confirmed ChatGPT Chat now returns exactly two fixed
 resistors after reload. Fifteen agent tests, the MCP test and all 14 JavaScript tests
 pass. See [host evidence](../docs/HOST_VERIFICATION.md).
 
-The user confirmed a band-pass draft and three refinements: a narrower box and flat
-top, removal of lower tails, then broader curved shoulders. The latest artwork keeps
-sloping stop-band ends with no noise-floor plateau. All four sets of 27 configurations
-rendered through this chat's real connection; terminal positions stayed fixed and
-browser previews were inspected. The last two refinements changed only the response.
+The latest confirmed band-pass draft uses straight slopes and a flat passband joined
+by tangent circular fillets; lower endpoints turn horizontal without straight tails.
+It supersedes the earlier curved-slope interpretations. Five sets of 27 configurations
+have rendered through this chat's real connection. The latest SVGs also pass explicit
+straight-segment and tangency checks (maximum angular mismatch below 0.002 degrees).
+Box, leads and terminal positions remain unchanged in the last three refinements.
 The revised draft remains unsaved pending review and an explicit save request.
 
 Claude's embedded download produced no file; the host-mediated repair and a new

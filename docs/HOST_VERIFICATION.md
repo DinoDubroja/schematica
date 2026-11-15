@@ -38,6 +38,10 @@ retrieval and a European-only follow-up without broadening the result.
   Terminal identities/coordinates were preserved; all browser previews were inspected.
   The latter refinements preserved the box/leads exactly. The user chose revision
   before saving. All drafts remain unsaved; no production symbol changed.
+  The latest confirmed correction adds exactly straight slopes with tangent circular
+  fillets (27 further configurations). All exported paths have three straight sections,
+  four fillets and no lower straight tails; worst tangent mismatch is under 0.002 degrees.
+  The box, leads and pins remain exact; earlier curve-only slopes are superseded.
 - Claude prepared interpretations but could not read the resource-only drawing
   guide. A new `get_creation_guide` tool exposes the guide and complete schema/TeX
   example. Reload and actual Claude rendering remain pending; no success is inferred.

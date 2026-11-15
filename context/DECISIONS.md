@@ -612,3 +612,13 @@ broad curved shoulders and sloping lower ends, with no noise-floor plateau.
 Each refinement rendered 27 configurations; the box, leads and terminal positions
 match the prior draft exactly. Reviewed 15-11-2026 +01:00; remains unsaved, with
 earlier drafts recoverable. This is a qualitative symbol, not a calibrated response.
+
+**Straight slopes and tangent joins — 15-11-2026:** same source chat, turn starting
+15-11-2026 19:03:48 +01:00. User message `01a1e062-0eee-7a20-abab-3869551c53e1`
+requires separate straight slopes and a flat top, smoothly joined by tangent curves
+of moderate radius. Confirmation `01a1e063-d225-7f62-b202-38e75bacc7f0` authorized
+that construction, including rounded lower endpoints without straight tails.
+This supersedes the earlier sloped-end/curve-only interpretations. Rendered 27
+configurations with explicit line/circular-arc construction; exported SVG tangency
+mismatch is below 0.002 degrees. Unrelated geometry is exact. Reviewed 15-11-2026
++01:00; visual review and saving remain pending, with all earlier drafts recoverable.
