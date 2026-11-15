@@ -36,52 +36,34 @@ for ownership and handoffs.
 
 ## Latest changes
 
-15-11-2026: the [host-verification branch](https://github.com/DinoDubroja/schematica/tree/fix/chat-host-verification)
-repairs family aliases, model-readable search results, Claude's selection argument,
-embedded downloads and drawing-guide access. Search and selection passed live checks;
-download/Claude creation retests remain pending. The latest band-pass revision is
-saved locally as Unverified with all 27 configurations; fresh search/retrieval and
-the saved browser viewer passed. See
-[host evidence](docs/HOST_VERIFICATION.md). Main and the hosted website remain at the
-consolidated baseline below; these test drawings are isolated from the accepted library.
-The ADC's nine unsaved configurations now use matching ADC/n font outlines,
-op-amp polarity marks and shorter leads with an unchanged body. General text font
-export and explicit terminal relocation through the refinement API remain limitations.
+Schematica Review adds private, persistent comments and exact-revision decisions,
+History comparison, shared feedback, recoverable discard, and a desktop connector
+using the existing ChatGPT subscription. Library keeps its presentation and exports;
+verification controls move to Review. All 91 accepted designs and 1,035 drawings
+remain unchanged. Agent A's exact ready host fixes are included; its experimental
+symbols and runtime remain isolated.
 
-14-11-2026: combined A's integration/search/creation/shared viewer with B's complete
-**91 Verified designs / 1,035 configurations**. Reproducible build **`c30dfe980c04`**
-contains 1,082 files. The official ledger, catalog, all drawings and all 36 complete
-SVG library exports match B's accepted checkpoint exactly; intentional removals
-remain absent. Only four website assets change: app.js, host.js, index.html and style.css.
-
-Passed **77 Python tests and 11 JavaScript tests**, documentation checks, real
-stdio/HTTP transport with 18 rendered configurations, and 36-configuration isolated
-creation/refinement with save and fresh retrieval. New-family search follow-ups
-clear obsolete filters; umbrella family tags no longer make sources match grounds.
-Targeted browser checks cover filtering, NPN Small/Thick, Variations, exact downloads
-and the integration selection handoff for chassis ground revision 2.
-Unchanged artwork reuses earlier rendering/Inkscape evidence, confirmed by hashes.
-
-GitHub main and the canonical website are published and verified at this build.
-The live manifest/catalog, 22 representative assets across all 11 families and
-135 removed SVG URLs were checked. Cleanup receipts are in [current status](context/CURRENT.md).
-The [agent setup](docs/AGENT_INTEGRATION.md) is optional local functionality;
-[actual embedded-host journeys](docs/HOST_VERIFICATION.md) and physical laptop
-setup remain unverified. Static website publication does not host an MCP backend.
+[Review workflow](docs/REVIEW.md) · [Setup, API and recovery](docs/REVIEW_SETUP.md)
+· [Delivery evidence and limits](context/CURRENT.md)
 
 ### Test on both Windows devices
 
 | Action | Expected result |
 |---|---|
-| Open the [website](https://schematica-preview.dinodubroja.workers.dev/); check [build.json](https://schematica-preview.dinodubroja.workers.dev/build.json) | Build `c30dfe980c04` |
-| Clear filters; select Unverified | No matches; all 91 designs are Verified |
-| Return to All symbols; search `NPN`; select NPN transistor | The correct accepted drawing appears |
-| Choose Small / Thick; open Variations; download the symbol | Selected SVG matches Small/Thick; comparison rows vary one setting at a time |
-| Export the library while filtered | All 91 designs in the selected preset |
-| Reload with old Pending selections | Accepted entries clear; Undo cannot restore obsolete approvals |
+| Open Library; search NPN; choose Small / Thick | Accepted drawing, working dark/light mode and exact SVG download |
+| Open Variations; export the library while filtered | Comparison rows; complete library at the chosen settings |
+| Open Review and sign in on both devices | Same candidates, saved feedback and progress |
+| Save a comment on one device; reload on the other | The exact comment appears |
+| Verify an older History revision | That revision is selected; Library is unchanged until processing |
+| Discard and restore | Candidate is recoverable; published predecessor stays visible |
+| Process with the desktop stopped, then start it | Waiting for desktop changes to Working; proposals require approval |
+| Approve a correction | New revision returns unverified; old source and feedback remain in History |
 
-Developer commands are below. Report build ID, device/browser, symbol and failed
-action if results differ. The second physical Windows device still needs this check.
+The initial production queue is empty: accepted symbols are already published.
+Use a real submitted candidate for the Review checks. Synthetic fixtures remain
+on the separate validation site. Physical phone and second-device testing remain
+user checks. Each delivery records the actual build and hosted verification in
+[current status](context/CURRENT.md).
 
 ## Run on Windows
 

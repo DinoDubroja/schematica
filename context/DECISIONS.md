@@ -5,6 +5,29 @@ when it was reconciled. Times use Europe/Zagreb with an explicit UTC offset.
 Later applicable user decisions supersede earlier proposals; a newer import date
 does not. See [current status](CURRENT.md) for the implementation checkpoint.
 
+## Hosted Review implementation
+
+Source: user-attached **Implement Schematica Review** brief in the Agent B chat;
+original attachment-turn timestamp is not exposed in the current transcript.
+Recorded 15-11-2026 23:45 +01:00. Status: authorized implementation and publication.
+
+- Reuse the approved phone/desktop mockup. One password, remembered sessions,
+  centralized private storage, no accounts/roles and no paid API usage.
+- Ordinary Library displays published content. Review retains candidates,
+  comments, exact verification choices, Variations and immutable History.
+- Verify selects a revision; Process Review publishes it and prepares correction
+  proposals. Approve changes authorizes only that proposal. Changed drawings
+  return unverified. Older published and verified choices are never replaced by upload.
+- The desktop uses the existing ChatGPT subscription through Codex. Browsers
+  continue reviewing with the desktop off. No chat-click automation.
+- Preserve the full private evidence chain for future proposals; no automatic
+  adoption of design rules. Source receipts remain reproducible without writing
+  into another agent's checkout.
+- The user authorized isolated implementation, testing, desktop setup, normal Git
+  delivery and deployment. Agent A handed off exact ready head `5efa3a8` and
+  delegated integration/publication coordination for this delivery to B. Its
+  runtime and experimental saved/unsaved symbols remain separate.
+
 ## Symbols and rendering
 
 Sources: **Brainstorm A**, 13-11-2026 01:17 +01:00 (palette);
@@ -516,7 +539,7 @@ and coordinate guidance adoption through the existing owner handoffs.
 
 This task updates guidance only; it does not authorize product-feature merges or
 app deployment. Installer simplification and rewriting user guides remain separate
-implementation work. [Current status](CURRENT.md#delivery-workflow-adoption) records
+implementation work. [Current status](../DEVELOPMENT.md#delivery-checklist) records
 branch adoption and outstanding publication/handoff items.
 
 ## Agent integration milestone — 14-11-2026

@@ -1,11 +1,23 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "schematica-preview",
+  "main": "review/worker.mjs",
   "compatibility_date": "2026-11-13",
   "workers_dev": true,
   "preview_urls": true,
   "assets": {
+    "binding": "ASSETS",
+    "run_worker_first": true,
     "directory": "./dist",
     "not_found_handling": "none"
+  },
+  "d1_databases": [{"binding": "DB", "database_name": "schematica-review", "database_id": "22d65637-03a2-4dc7-8700-8e97ba54a3a3"}],
+  "vars": {"MIGRATION_ENABLED": "false"},
+  "env": {
+    "validation": {
+      "name": "schematica-review-validation",
+      "d1_databases": [{"binding": "DB", "database_name": "schematica-review-validation", "database_id": "8ee21ce8-addd-4ff4-b5b9-7d49b31e265e"}],
+      "vars": {"MIGRATION_ENABLED": "true"}
+    }
   }
 }

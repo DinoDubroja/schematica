@@ -1,115 +1,65 @@
 # Current status
 
-15-11-2026 · **Consolidated main/website published; live host verification in progress.**
+15-11-2026 · **Review implementation: final validation and production delivery in progress.**
 
-## Objective and authorization
+## Current work
 
-Completed the user's authorized consolidation of A's integration/search/creation/
-shared viewer and B's complete accepted library, including later delivery guidance.
-Agent A owned integration, normal GitHub publication, website deployment and safe
-cleanup. Earlier local-only A and B-only publishing restrictions are superseded
-for this delivery. No Review, website-triggered processing, new symbols, Library
-categorization or redesign was implemented; those remain separate work.
+The user authorized complete hosted Review, desktop setup, tests, documentation,
+normal Git publication and deployment. Agent B implements in the isolated
+`feat/review` worktree. Agent A supplied exact ready commit
+`5efa3a806c942f1cc49d51ed060e58f83aeca1ba` and delegated this delivery's integration
+and publication coordination. Its host runtime, saved band-pass symbol, unsaved
+ADC draft and unrelated `docs/research` remain untouched.
 
-## Published baseline
+[Using Review](../docs/REVIEW.md) · [Setup/API/recovery](../docs/REVIEW_SETUP.md)
+· [Library](https://schematica-preview.dinodubroja.workers.dev/)
+· [Review](https://schematica-preview.dinodubroja.workers.dev/review)
 
-- [GitHub main](https://github.com/DinoDubroja/schematica): complete combined source.
-  Tested product checkpoint
-  [`2e2f820`](https://github.com/DinoDubroja/schematica/commit/2e2f82047177df6223c99d57c8112747bbbfa5ef).
-  Subsequent documentation receipts do not change the website payload.
-- [Canonical website](https://schematica-preview.dinodubroja.workers.dev/): build
-  **`c30dfe980c04`**, Cloudflare version `f04f7e02-6c66-4a2b-ba2e-1c03ab11ef6b`.
-  **91 Verified / 0 Unverified designs**, 1,035 configurations and 36 library exports.
-- All accepted source recipes, definitions, artwork, catalog, IDs and approval
-  records match B's ready collection exactly. Test creations remain isolated and
-  Unverified. All intentional removals remain absent.
+## Implemented
 
-## Active host verification
+- Password-protected Review, central D1 storage, remembered sessions and logout.
+- Exact revision verification, comments and edits, explicit shared targets,
+  recoverable discard, Variations, History comparison and cross-device progress.
+- Durable desktop jobs, stale-proposal checks, explicit correction approval,
+  subscription-authenticated Codex execution and immediate corrected uploads.
+- Atomic published catalog/assets, real Library retrieval confirmation and
+  source/artwork receipts independent of application deployments.
+- Private immutable source, drawing, feedback, proposal and decision evidence;
+  portable backup with checksum-verified recovery.
+- Public Library retains its design and exports, with verification controls moved
+  to Review. No new production symbols or geometry changes.
 
-The user requested actual ChatGPT/Claude search and creation verification after
-consolidation. Live testing exposed and repaired singular family filters returning
-zero results, and search text omitting identities/session details needed by Claude.
-The focused [repair branch](https://github.com/DinoDubroja/schematica/tree/fix/chat-host-verification)
-is pushed; main and the static website still contain the consolidated baseline.
-The retained local integration checkout runs the repair; existing host processes
-must reload to pick up source changes.
+## Validation evidence so far
 
-Local Codex search/follow-ups, browser selection feedback and exact SVG download
-passed. Claude's connection loaded after a full exit/reopen, and its embedded
-viewer displayed the corrected two-result search and Small/Thick controls. Claude
-then retrieved the exact stored selection using `search_session`; European-only
-follow-up passed. The user confirmed ChatGPT Chat now returns exactly two fixed
-resistors after reload. Fifteen agent tests, the MCP test and all 14 JavaScript tests
-pass. See [host evidence](../docs/HOST_VERIFICATION.md).
+- Existing suite: **78 Python tests, 25 JavaScript tests** passed. Three new Python
+  packaging/recovery tests also pass; the complete combined rerun is pending.
+- Hosted validation: nine grouped checks passed, using two independent authenticated
+  sessions. Includes shared feedback/edits, exact revision selection, discard,
+  stale proposals, job exclusion, server authentication and complete-library exports.
+- Real ChatGPT-subscription correction: a synthetic ground fixture changed only
+  its approved top bar, rendered all 18 configurations, passed visual readiness,
+  returned unverified, then published the exact selected revision on validation.
+  Original feedback, before/after drawings, source diff and approvals remain retrievable.
+- Browser: 13 focused interaction checks passed, including phone-size independent
+  session, History, Variations, failed-save/reload draft retention and Undo.
+  A live new upload preserved the selected drawing and unfinished text; notification
+  count repair awaits its final targeted check.
+- Backup: restored into a fresh local SQLite database; all rows matched and all
+  2,179 asset hashes were verified. This is a recovery-format check, not a Cloudflare
+  disaster-recovery exercise or physical-device test.
 
-The latest band-pass draft uses straight slopes and a flat passband, with tangent
-circular fillets only at the two top joins. The user explicitly removed the lower
-arcs: both ends stop on straight slopes. All 27 configurations pass SVG straightness,
-upper-geometry preservation and tangency checks (mismatch below 0.002 degrees).
-Box, leads and terminal positions remain unchanged; earlier drafts are recoverable.
-On the user's explicit save request, the latest version was saved as
-`bandpass-two-port`, revision 1, in the isolated dev library, retaining all three
-widths and 27 configurations. Fresh search, exact retrieval and the browser viewer
-passed; it remains Unverified and local-only, outside the production library.
+All synthetic approvals belong to the separate validation database. They are not
+human acceptance of production artwork. The 91 accepted production designs,
+1,035 configurations and existing approval ledger remain unchanged.
 
-The latest unsaved ADC preview uses matching Latin Modern Sans outlines for ADC/n,
-op-amp-sized polarity marks, and shorter leads. The user chose to preserve the body
-and move endpoints inward. All nine configurations preserve the exact body and
-match the op-amp mark widths; endpoints use the nearest 1 mm grid positions to the
-two-port lead lengths. Medium/Medium and Small/Thick previews passed. The previous
-draft is retained separately because the current refinement API locks terminals.
-Font outlines are embedded in TeX; general text font export remains unresolved.
+## Remaining delivery checks
 
-Claude's embedded download produced no file; the host-mediated repair and a new
-tool-accessible drawing guide are pushed but need a full host reload/retest. The
-user stopped native computer control, so Claude creation/download verification is
-on hold. Do not claim complete integration. Cloud hosting and production-library
-changes remain outside this check.
+Production deployment/migration, final source/host checks, desktop start/stop,
+documentation screenshots and Git/main publication remain in progress. This status
+must be updated with actual commit, build and deployment receipts before completion.
 
-## Verification
-
-Passed **77 Python and 11 JavaScript tests**, documentation links and reproducible
-build. Real stdio/HTTP checks include 18 creation configurations and fresh retrieval;
-36 further configurations verify isolated creation/refinement, explicit save,
-unchanged pins and recoverable revisions. Search covers all complete-library families
-and clears obsolete follow-up filters.
-
-Targeted browser checks passed for search, NPN Small/Thick, Variations, two actual
-SVG downloads and exact chassis-ground selection. On the live destination, the
-manifest/catalog match, 22 representative assets across all 11 families match
-hashes, all 135 removed SVG URLs and two private-source paths return 404. Existing
-artwork/Inkscape evidence was reused after byte-for-byte checks, without a broad GUI rerun.
-The canonical local launcher serves the same build; the retained integration viewer
-uses the same consolidated source. Backend/browser checks are not host or laptop proof.
-
-## Cleanup and future work
-
-Retired the fully merged A/B task branches, delivery-documentation branch and old
-publication branch; removed the two obsolete publication worktrees after verified
-preservation and runtime checks. Stale synthetic/test preview servers were stopped.
-The canonical checkout now holds the focused host-verification branch. The extra
-integration working folder is retained because installed host configurations, its
-environment and ignored stores depend on that path; it follows that repair checkpoint.
-
-A verified local history bundle and SHA-256/CRC-checked archive preserve prior source,
-ignored drafts, handoffs and unrelated research. Research remains untracked and
-unchanged in the canonical checkout. The unmerged historical
-`docs/mcp-transition-review` branch is deliberately retained. Exact local paths,
-backup and process receipts are in the workspace's owner handoffs; inspect them
-before future machine-local cleanup. A stale Claude compiler path was repaired
-with its original configuration backed up and unrelated settings preserved.
-
-## Delivery workflow adoption
-
-[AGENTS.md](../AGENTS.md) requires the authoritative
-[delivery checklist](../DEVELOPMENT.md#delivery-checklist). Future tasks begin from
-current main, with separate task branches/worktrees when needed. Agent A coordinates
-exact ready commits; each delivery names its publisher within authorized scope.
-No further A/B product handoff is required for this consolidation.
-
-Complete ChatGPT/Claude creation journeys, remote MCP connectivity and physical laptop
-setup remain unverified. Reload existing host connections after source updates.
-Accounts, personal libraries and production storage remain outside the current baseline.
-
-[Setup and quick checks](../DEVELOPMENT.md) · [Agent setup](../docs/AGENT_INTEGRATION.md)
-· [Host evidence](../docs/HOST_VERIFICATION.md) · [Decisions](DECISIONS.md)
+Physical phone and second Windows device testing remains unperformed. Agent A's
+existing host limitations remain: Claude embedded download/creation retests,
+fresh-chat retrieval, general text-font export and refinement terminal movement.
+See [host evidence](../docs/HOST_VERIFICATION.md). Review does not publish A's test
+symbols or turn comments into active design rules.

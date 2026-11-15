@@ -17,15 +17,16 @@
   <header class="topbar">
     <a class="brand" href="./" aria-label="Schematica home"><span class="brand-mark" aria-hidden="true">S</span>schematica</a>
     <div class="topbar-actions">
+      <a id="review-link" class="quiet-button" href="/review">Review</a>
       <button id="open-exports" class="quiet-button" disabled>Export library<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v5h14v-5"/></svg></button>
       <button id="theme-toggle" class="icon-button" aria-label="Switch to light mode" title="Switch to light mode"><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14A9 9 0 0 1 10 3.5 9 9 0 1 0 20.5 14Z"/></svg></button>
     </div>
   </header>
   <main>
     <section class="catalogue" aria-labelledby="library-heading">
-      <div class="catalogue-heading"><h1 id="library-heading" tabindex="-1">Symbols</h1><button id="copy-approvals" class="quiet-button" disabled>Copy approvals</button></div>
+      <div class="catalogue-heading"><h1 id="library-heading" tabindex="-1">Symbols</h1><button id="copy-approvals" class="quiet-button" disabled hidden>Copy approvals</button></div>
       <label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><input id="search" type="search" placeholder="Search symbols" aria-label="Search symbols" autocomplete="off" disabled><kbd>/</kbd></label>
-      <div class="filters" role="tablist" aria-label="Library view"><button id="all-tab" data-view="all" role="tab" aria-selected="true" aria-controls="cards" class="active" disabled>All symbols</button><button id="unverified-tab" data-view="unverified" role="tab" aria-selected="false" aria-controls="cards" tabindex="-1" disabled>Unverified</button></div>
+      <div class="filters" hidden role="tablist" aria-label="Library view"><button id="all-tab" data-view="all" role="tab" aria-selected="true" aria-controls="cards" class="active" disabled>All symbols</button><button id="unverified-tab" data-view="unverified" role="tab" aria-selected="false" aria-controls="cards" tabindex="-1" disabled>Unverified</button></div>
       <div class="library-filters"><label><span class="sr-only">Family</span><select id="family-filter" aria-label="Family" disabled><option value="all">All families</option></select></label><label><span class="sr-only">Batch</span><select id="batch-filter" aria-label="Batch" disabled><option value="all">All batches</option></select></label><span id="review-count" aria-live="polite"></span></div>
       <div id="agent-filters" class="agent-filters" hidden><span id="active-filters" aria-live="polite"></span><button id="browse-all" class="quiet-button">Browse all</button></div>
       <div class="cards" id="cards" aria-label="Symbols" aria-busy="true"></div>
@@ -41,7 +42,7 @@
         <fieldset disabled><legend>Stroke</legend><div class="segmented strokes" id="strokes"><button data-stroke="thin"><i class="thin" aria-hidden="true"></i>Thin</button><button data-stroke="medium" class="active"><i class="medium" aria-hidden="true"></i>Medium</button><button data-stroke="thick"><i class="thick" aria-hidden="true"></i>Thick</button></div></fieldset>
       </div>
       <div id="symbol-options" class="symbol-options" hidden></div>
-      <div class="review-tools"><label class="toggle"><input id="approve-design" type="checkbox" disabled><span id="approval-label">Unverified</span></label><button id="show-configurations" class="quiet-button" disabled>Variations</button><button id="verify-next" class="verify-button" disabled>Verify &amp; next</button><button id="undo-approval" class="quiet-button" disabled>Undo</button></div>
+      <div class="review-tools"><label class="toggle" hidden><input id="approve-design" type="checkbox" disabled><span id="approval-label">Unverified</span></label><button id="show-configurations" class="quiet-button" disabled>Variations</button><button id="verify-next" class="verify-button" disabled hidden>Verify &amp; next</button><button id="undo-approval" class="quiet-button" disabled hidden>Undo</button></div>
       <p id="pending-note" class="pending-note" hidden>Pending in this browser. Copy approvals to publish.</p>
       <button id="use-symbol" class="verify-button" hidden>Use this symbol</button>
       <p id="draft-note" class="pending-note" hidden>Unsaved draft · saving does not verify a design.</p>

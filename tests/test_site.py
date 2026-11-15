@@ -5,7 +5,7 @@ import json
 import unittest
 import xml.etree.ElementTree as ET
 
-from build_site import payload, VIEWER_FILES
+from build_site import payload, VIEWER_FILES, REVIEW_FILES
 from core import SVG, validate_svg_references, configuration_choices
 from exports import LIBRARY
 
@@ -49,7 +49,7 @@ class StaticSiteTests(unittest.TestCase):
 
     def test_repeatable_build_and_publish_allowlist(self):
         self.assertEqual(self.files, payload())
-        self.assertEqual(len(self.files), len(VIEWER_FILES) + 2 + len(self.catalog['exports']) +
+        self.assertEqual(len(self.files), len(VIEWER_FILES) + len(REVIEW_FILES) + 2 + len(self.catalog['exports']) +
                          sum(len(s['configurations']) for s in self.catalog['symbols']))
         manifest = json.loads(self.files['build.json'])
         for name, expected in manifest['files'].items():

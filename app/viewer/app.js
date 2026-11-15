@@ -58,10 +58,12 @@ function renderCards() {
     button.append(thumb, el("span", symbol.name, "card-name"));
     const label = el("label", undefined, "card-review"), checkbox = el("input"); checkbox.type = "checkbox"; checkbox.dataset.approval = symbol.id;
     checkbox.checked = Review.official(symbol) || review.has(symbol); checkbox.disabled = Review.official(symbol); checkbox.setAttribute("aria-label", `Verify ${symbol.name}`);
-    label.append(checkbox, el("span", status(symbol))); card.append(button, label); cards.append(card);
+    label.append(checkbox, el("span", status(symbol))); card.append(button);
+    if (Host.active) card.append(label);
+    cards.append(card);
   }
   $("#empty").hidden = symbols.length > 0; cards.setAttribute("aria-busy", "false"); cards.setAttribute("aria-labelledby", state.view === "all" ? "all-tab" : "unverified-tab");
-  $("#review-count").textContent = Host.active ? `${symbols.length} symbols` : `${symbols.filter(s => !Review.official(s) && !review.has(s)).length} remaining`;
+  $("#review-count").textContent = `${symbols.length} symbols`;
   const count = review.count(); $("#copy-approvals").textContent = count ? `Copy approvals (${count})` : "Copy approvals"; $("#copy-approvals").disabled = !count;
   if (focus) cards.querySelector(`input[data-approval="${CSS.escape(focus)}"]`)?.focus({ preventScroll: true });
   else if (cardFocus) cards.querySelector(`button[data-symbol="${CSS.escape(cardFocus)}"]`)?.focus({ preventScroll: true });
@@ -171,7 +173,9 @@ async function showConfigurations() {
 async function init() {
   try {
     const loaded = await Host.load(); state.data = loaded.catalog;
-    review = Review.create(state.data.symbols, { getItem: key => localStorage.getItem(key), setItem: (key, value) => localStorage.setItem(key, value) });
+    // Review decisions belong to the authenticated central workspace. This helper
+    // remains for embedded host compatibility; the public Library has no draft approvals.
+    review = Review.create(state.data.symbols, { getItem: () => null, setItem: () => {} });
     state.size = state.data.presets.default_size; state.stroke = state.data.presets.default_stroke;
     state.symbol = state.data.symbols.some(s => s.id === linkedSymbol()) ? linkedSymbol() : state.data.symbols[0].id;
     state.options = Configurations.defaults(activeSymbol());
@@ -179,6 +183,11 @@ async function init() {
       const option = el("option", value === "starter" ? "Starter library" : value === "resistors-01" ? "Resistors · Batch 01" : titleCase(value)); option.value = value; $(`#${kind}-filter`).append(option);
     }
     document.querySelectorAll("[disabled]").forEach(control => control.disabled = false);
+    $("#copy-approvals").hidden = true;
+    $("#unverified-tab").hidden = true;
+    document.querySelectorAll(".review-tools > :not(#show-configurations)").forEach(node => node.hidden = true);
+    if (!Host.active) $(".filters").hidden = true;
+    if (Host.active) $("#review-link").hidden = true;
     if (Host.active) {
       document.body.classList.add("agent-viewer");
       $("#use-symbol").hidden = false; $("#agent-filters").hidden = false;
@@ -192,8 +201,6 @@ async function init() {
       Host.startUpdates();
     }
     renderCards(); renderInspector(); $(".inspector").setAttribute("aria-busy", "false");
-    if (review.discarded()) notify("Outdated or officially published selections were cleared.");
-    if (!review.storageAvailable()) notify("Browser storage is unavailable. Copy approvals before leaving this page.");
   } catch (_) { $("#load-error").textContent = "Library unavailable. Reload to try again."; $("#load-error").hidden = false; $("#cards").setAttribute("aria-busy", "false"); $(".inspector").setAttribute("aria-busy", "false"); return; }
   $("#search").addEventListener("input", () => { renderCards(); if (Host.active) syncVisibleSelection(); });
   $("#search").addEventListener("keydown", async event => {

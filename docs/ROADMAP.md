@@ -18,6 +18,7 @@ This page states desired capabilities; implementation status comes from
 | Create symbols interactively with an agent | Local prototype · host checks pending | Create one symbol from text plus PNG/JPEG/WebP photos, screenshots or sketches (PDF needs host conversion): interpret → confirm → create → preview/refine → offer download/save to the dev library; shares formats and checks with batches |
 | Search and reuse symbols through agent apps | Local prototype · host checks pending | Separate search skill; shared interactive web/chat viewer with filtered results, configuration controls and an explicit selection handoff |
 | Connect Schematica through MCP | Local protocol verified · hosts pending | Required: ChatGPT Desktop across its environments and Claude Desktop; verify each complete journey, including previews, downloads and fresh-chat retrieval |
+| Review and process the dev library across devices | Implemented; final hosted delivery checks in progress | Private shared feedback, exact-revision verification, proposal approval, desktop correction jobs and independent symbol publication; [Review guide](REVIEW.md) |
 | Select the first default library | Planned · not released | Review material from the dev library for the first Schematica default library |
 | Personal libraries alongside supplied originals | Deferred from the immediate prototype | Later sign-in, account-linked preferences/designs and separate personal variants; admin privileges for supplied originals |
 | Schematic styles and examples in the library | Future · deferred | Browse styles and visible references with captions, including mixed circuits/plots/equations; compare symbols in circuits and test style generalization on realistic examples |
@@ -30,7 +31,7 @@ and concrete host acceptance tests. Embedded-host verification remains outstandi
 The latest decision defers accounts until after the dev-library prototype.
 The completed resistor work covered corrections, declared options, Variations,
 batch checks and its authorized publication. Current authorization is recorded in
-[current status](../context/CURRENT.md#objective-and-authorization); roadmap milestones do
+[current status](../context/CURRENT.md#current-work); roadmap milestones do
 not authorize a new batch or publication.
 
 ## Decisions that guide the work
@@ -71,7 +72,7 @@ decisions take precedence.
 | Area | What remains |
 |---|---|
 | Human verification | All 91 retained designs are explicitly approved; every new or changed design requires fresh human acceptance |
-| Temporary approvals | Browser-local pending selections and a chat-mediated publish step; no accounts or cross-device selection sync |
+| Review on physical devices | Hosted decisions and jobs are implemented; final phone and second-Windows-device checks remain |
 | Text editing | Bounded editable-label proof only; no general mathematical-text round trip |
 | Device readiness | Repeat the current hosted and local checklist on the laptop; desktop results do not establish laptop behavior |
 | Rendering setup | Clean-machine/offline TeX setup is not demonstrated |

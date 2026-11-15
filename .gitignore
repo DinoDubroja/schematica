@@ -7,3 +7,6 @@ app/dist/
 node_modules/
 output/
 .codex/config.toml
+.dev.vars*
+app/.dev.vars*
+.playwright-cli/

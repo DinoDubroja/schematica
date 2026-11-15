@@ -11,12 +11,15 @@ from verification import publication_catalog, read_ledger
 
 DIST = ROOT / "dist"
 VIEWER_FILES = ("index.html", "style.css", "app.js", "configurations.js", "host.js", "review.js", "theme.js", "_headers", "robots.txt")
+REVIEW_FILES = ("index.html", "review.css", "review-app.js")
 
 
 def payload():
     data = publication_catalog(catalog(), definitions(), LIBRARY, read_ledger())
     definitions_by_id = {symbol["id"]: symbol for symbol in definitions()}
     files = {name: (ROOT / "viewer" / name).read_bytes() for name in VIEWER_FILES}
+    for name in REVIEW_FILES:
+        files[f"review/{name}"] = (ROOT / "review" / name).read_bytes()
     data["exports"] = {}
     data["export_settings"] = {}
     specs, profiles = library_options(data)
@@ -44,8 +47,10 @@ def payload():
                 data["export_settings"][key] = {"size": size, "stroke": stroke, "options": options}
     files["library/catalog.json"] = (json.dumps(data, indent=2) + "\n").encode()
     hashes = {name: hashlib.sha256(body).hexdigest() for name, body in sorted(files.items())}
-    build_id = hashlib.sha256(json.dumps(hashes, sort_keys=True).encode()).hexdigest()[:12]
-    files["build.json"] = (json.dumps({"build_id": build_id, "files": hashes}, indent=2) + "\n").encode()
+    server_hashes = {name: hashlib.sha256((ROOT / "review" / name).read_bytes()).hexdigest()
+                     for name in ("worker.mjs", "domain.mjs", "schema.sql")}
+    build_id = hashlib.sha256(json.dumps({"files": hashes, "server": server_hashes}, sort_keys=True).encode()).hexdigest()[:12]
+    files["build.json"] = (json.dumps({"build_id": build_id, "files": hashes, "server_sources": server_hashes}, indent=2) + "\n").encode()
     return files
 
 

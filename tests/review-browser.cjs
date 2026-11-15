@@ -1,0 +1,60 @@
+// Run with playwright-cli run-code --filename=tests/review-browser.cjs.
+// Only the isolated validation site; private browser session files stay outside Git.
+async page => {
+  if (!page.url().includes('schematica-review-validation.')) throw Error('Validation site required');
+  page.on('dialog',dialog=>dialog.accept());
+  const checks=[];
+  const assert=(value,message)=>{if(!value)throw Error(message);checks.push(message);};
+  const state=async(p=page)=>p.evaluate(async()=>{const r=await fetch('/api/review/state');return r.json();});
+  const clickSave=async(name,action)=>{
+    const response=page.waitForResponse(r=>r.url().includes('/api/review/actions/'+action)&&r.request().method()==='POST');
+    await page.getByRole('button',{name,exact:true}).click();const r=await response;if(!r.ok())throw Error(await r.text());
+    await page.waitForFunction(()=>document.querySelector('#r-save')?.textContent==='Saved');
+  };
+  await page.context().setStorageState('C:/Projects/Schematica/Local/review-private/validation/checks/browser-a.json');
+  if(await page.locator('dialog[open]').count())await page.getByRole('button',{name:'Close',exact:true}).click();
+  await page.setViewportSize({width:1440,height:1000});await page.reload();
+  await page.getByRole('heading',{name:/^Test ground/}).waitFor();
+  await page.getByRole('tab',{name:'Variations',exact:true}).click();
+  assert(await page.locator('.variation-row').count()===3,'Named variation rows include Size, Stroke and the independent option');
+  assert(JSON.stringify(await page.locator('.variation-examples').evaluateAll(rows=>rows.map(r=>r.children.length)))==='[3,3,2]','Variations compare one setting at a time');
+  await page.getByRole('tab',{name:'History',exact:true}).click();await page.locator('.history-card').nth(1).waitFor();
+  await page.locator('.history-card').nth(1).getByRole('button',{name:'Compare'}).click();
+  assert(await page.locator('dialog .comparison svg').count()===2,'History compares real saved drawings');
+  await page.getByRole('button',{name:'Close',exact:true}).click();
+  await page.locator('.history-card').nth(1).getByRole('button',{name:/^View/}).click();
+  const before=await state();await clickSave('Verify','verify');
+  let saved=await state();assert(saved.symbols['test-ground'].selected===saved.symbols['test-ground'].revisions[0],'Older revision verification is exact');
+  await clickSave('Undo','unverify');saved=await state();assert(saved.symbols['test-ground'].selected===before.symbols['test-ground'].selected,'Undo restores the prior verified choice');
+  const draft='Browser recovery check: keep this exact unfinished text. '+Date.now();
+  await page.getByRole('textbox',{name:'Comment on this revision'}).fill(draft);
+  await page.route('**/api/review/actions/comment',route=>route.abort());
+  await page.getByRole('button',{name:'Save comment',exact:true}).click();
+  await page.waitForFunction(()=>document.querySelector('#r-save')?.textContent.includes('Save failed'));
+  assert(await page.getByRole('textbox',{name:'Comment on this revision'}).inputValue()===draft,'Failed save retains the exact draft');
+  await page.reload();await page.getByRole('textbox',{name:'Comment on this revision'}).waitFor();
+  assert(await page.getByRole('textbox',{name:'Comment on this revision'}).inputValue()===draft,'Unsent draft survives browser reload');
+  await page.unroute('**/api/review/actions/comment');await clickSave('Save comment','comment');
+  const browser=page.context().browser();
+  const second=await browser.newContext({viewport:{width:390,height:844},storageState:'C:/Projects/Schematica/Local/review-private/validation/checks/browser-b.json'});
+  const phone=await second.newPage();await phone.goto(page.url());await phone.getByRole('heading',{name:/^Test ground/}).waitFor();
+  await phone.getByRole('button',{name:'Comment',exact:true}).click();
+  await phone.getByText(draft,{exact:true}).waitFor();
+  assert(true,'Saved feedback appears in an independent authenticated phone-size browser session');
+  assert(await phone.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Phone layout has no horizontal overflow');
+  await phone.screenshot({path:'C:/Projects/Schematica/Local/review-implementation/output/playwright/review-phone.png',fullPage:true});
+  await second.close();
+  await page.getByRole('button',{name:'Comment on batch',exact:true}).click();
+  assert(await page.locator('dialog [data-target="test-ground"]').count()===0,'Shared comments exclude verified symbols by default');
+  await page.getByRole('checkbox',{name:'Include verified symbols'}).check();
+  assert(await page.locator('dialog [data-target="test-ground"]').count()===1,'Including verified symbols is explicit');
+  await page.getByRole('button',{name:'Close',exact:true}).click();
+  await clickSave('Discard','discard');assert((await state()).symbols['test-ground'].discarded,'Discard is durable');
+  await clickSave('Undo','restore');assert(!(await state()).symbols['test-ground'].discarded,'Undo restores a discarded candidate');
+  await page.getByRole('tab',{name:'Drawing',exact:true}).click();
+  await page.screenshot({path:'C:/Projects/Schematica/Local/review-implementation/output/playwright/review-desktop.png',fullPage:true});
+  await page.getByRole('textbox',{name:'Comment on this revision'}).fill('Unfinished feedback during an incoming upload');
+  const result={passed:checks.length,checks,arrival_check:'Draft ready; upload a new fixture, then confirm it remains unchanged.'};
+  await page.evaluate(result=>window.reviewBrowserChecks=result,result);
+  return result;
+}
