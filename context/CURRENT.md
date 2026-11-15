@@ -1,65 +1,78 @@
 # Current status
 
-15-11-2026 · **Review implementation: final validation and production delivery in progress.**
+16-11-2026 · **Schematica Review is deployed and the desktop connector is running.**
+
+[Library](https://schematica-preview.dinodubroja.workers.dev/)
+· [Private Review](https://schematica-preview.dinodubroja.workers.dev/review)
+· [Using Review](../docs/REVIEW.md)
+· [Setup, API and recovery](../docs/REVIEW_SETUP.md)
 
 ## Current work
 
-The user authorized complete hosted Review, desktop setup, tests, documentation,
-normal Git publication and deployment. Agent B implements in the isolated
-`feat/review` worktree. Agent A supplied exact ready commit
-`5efa3a806c942f1cc49d51ed060e58f83aeca1ba` and delegated this delivery's integration
-and publication coordination. Its host runtime, saved band-pass symbol, unsaved
-ADC draft and unrelated `docs/research` remain untouched.
+The authorized Review delivery is complete. It adds persistent private feedback,
+exact-revision decisions, Variations, History, recoverable discard, explicit proposal
+approval, subscription-authenticated desktop correction jobs and atomic publication.
+The public Library retains its presentation and exports; verification lives in Review.
 
-[Using Review](../docs/REVIEW.md) · [Setup/API/recovery](../docs/REVIEW_SETUP.md)
-· [Library](https://schematica-preview.dinodubroja.workers.dev/)
-· [Review](https://schematica-preview.dinodubroja.workers.dev/review)
+**91 published / 91 Verified / 0 Unverified**, with all **1,035 configurations** and
+36 library exports preserved. Production has no test candidates. Its Review queue is
+empty until an agent submits a real candidate; accepted symbols are already published.
 
-## Implemented
+## Tested delivery
 
-- Password-protected Review, central D1 storage, remembered sessions and logout.
-- Exact revision verification, comments and edits, explicit shared targets,
-  recoverable discard, Variations, History comparison and cross-device progress.
-- Durable desktop jobs, stale-proposal checks, explicit correction approval,
-  subscription-authenticated Codex execution and immediate corrected uploads.
-- Atomic published catalog/assets, real Library retrieval confirmation and
-  source/artwork receipts independent of application deployments.
-- Private immutable source, drawing, feedback, proposal and decision evidence;
-  portable backup with checksum-verified recovery.
-- Public Library retains its design and exports, with verification controls moved
-  to Review. No new production symbols or geometry changes.
+| Receipt | Result |
+|---|---|
+| Product source | `72d128797d765e64dbfe999e3de200646e22cc4d` |
+| Build | `826fc3ddf903` |
+| Production Worker version | `a05fe7ce-32ca-427e-9ce1-6f9dbe433bf8` |
+| GitHub delivery | `feat/review` and `main`; this receipt accompanies the final documentation commit |
+| Production migration | 91 exact historical fingerprints; 2,070 private artwork/fragment assets; migration switch closed |
+| Source checks | 81 Python and 26 JavaScript tests passed; documentation links checked |
+| Hosted file checks | 1,079 public file hashes matched, including every accepted drawing and library export |
+| Desktop | ChatGPT subscription authenticated; Check, Start, repeat Start, Stop and restart passed |
 
-## Validation evidence so far
+## Workflow evidence
 
-- Existing suite: **78 Python tests, 25 JavaScript tests** passed. Three new Python
-  packaging/recovery tests also pass; the complete combined rerun is pending.
-- Hosted validation: nine grouped checks passed, using two independent authenticated
-  sessions. Includes shared feedback/edits, exact revision selection, discard,
-  stale proposals, job exclusion, server authentication and complete-library exports.
-- Real ChatGPT-subscription correction: a synthetic ground fixture changed only
-  its approved top bar, rendered all 18 configurations, passed visual readiness,
-  returned unverified, then published the exact selected revision on validation.
-  Original feedback, before/after drawings, source diff and approvals remain retrievable.
-- Browser: 13 focused interaction checks passed, including phone-size independent
-  session, History, Variations, failed-save/reload draft retention and Undo.
-  A live new upload preserved the selected drawing and unfinished text; notification
-  count repair awaits its final targeted check.
-- Backup: restored into a fresh local SQLite database; all rows matched and all
-  2,179 asset hashes were verified. This is a recovery-format check, not a Cloudflare
-  disaster-recovery exercise or physical-device test.
+- Nine hosted validation groups passed with independent authenticated sessions:
+  comments/edits/shared targets, exact revision selection, discard/restore, stale
+  proposals, duplicate requests/uploads, access protection, exports and evidence.
+- A real subscription-backed correction changed one synthetic ground bar, rendered
+  all 18 supported configurations, passed visual readiness and returned unverified.
+  The separately approved test revision then published exactly; every returned
+  public SVG matched. Original feedback, drawings, source diff and decisions remain.
+- Thirteen browser interaction checks passed, including failed-save/reload draft
+  retention, History comparison, Undo and independent phone-size sessions.
+  A live arrival preserved the selected drawing and unfinished comment.
+- An abandoned hosted job lease expired and was reclaimed once, with a new lease
+  and incremented attempt count. Local connector stop/restart also passed.
+- Production login and Library search, Small/Thick, light mode, Variations and both
+  real browser downloads passed. Downloads matched the accepted files byte for byte.
+- Validation backup restored into fresh local SQLite: all rows and 2,179 asset
+  hashes matched. Production backup is consistent and checksummed: 91 revisions,
+  2,070 assets. This is not a live Cloudflare disaster-recovery exercise.
 
-All synthetic approvals belong to the separate validation database. They are not
-human acceptance of production artwork. The 91 accepted production designs,
-1,035 configurations and existing approval ledger remain unchanged.
+All synthetic decisions belong to the separate validation database. They are not
+human acceptance of production artwork. Review does not turn comments into rules.
 
-## Remaining delivery checks
+## Desktop operation
 
-Production deployment/migration, final source/host checks, desktop start/stop,
-documentation screenshots and Git/main publication remain in progress. This status
-must be updated with actual commit, build and deployment receipts before completion.
+The implementation runs from the isolated `Local/review-implementation` checkout.
+This desktop's `Local/review-desktop` folder has **Start Review**, **Stop Review**
+and **Status Review** shortcuts. Start it again after Windows restarts. The one-time
+password is in the private local `Review access.txt`; it is not in Git. Other devices
+need only the Review link and password, never the desktop token.
 
-Physical phone and second Windows device testing remains unperformed. Agent A's
-existing host limitations remain: Claude embedded download/creation retests,
+Agent B integrated A's exact ready `5efa3a8` under the delegated publication scope.
+The canonical checkout and A's active runtime/store, saved band-pass symbol, unsaved
+ADC draft, port 8793 and unrelated `docs/research` remain untouched.
+
+## Remaining checks and limits
+
+Physical phone and second Windows device testing remain user checks. Use the short
+[action → expected result checklist](../DEVELOPMENT.md#test-on-both-windows-devices)
+once a real candidate is submitted. Processing needs this desktop online; reviewing
+and saving feedback do not.
+
+A's separate host limitations remain: Claude embedded download/creation retests,
 fresh-chat retrieval, general text-font export and refinement terminal movement.
-See [host evidence](../docs/HOST_VERIFICATION.md). Review does not publish A's test
-symbols or turn comments into active design rules.
+See [host evidence](../docs/HOST_VERIFICATION.md). No A test symbols were promoted.

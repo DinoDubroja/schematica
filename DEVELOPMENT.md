@@ -162,7 +162,10 @@ schematica/
 │   ├── package.py          # Generate distributable ZIPs
 │   ├── launch.ps1          # Windows entry point
 │   ├── server.py           # Local static server
-│   └── wrangler.jsonc      # Cloudflare static-asset settings
+│   ├── review/             # Private Review and hosted storage API
+│   ├── review_client.py     # Candidate submission and evidence export
+│   ├── review_desktop.py    # Subscription-backed desktop processing
+│   └── wrangler.jsonc      # Worker, assets and database binding
 ├── tests/                  # Automated checks, render checks and fixtures
 ├── docs/                   # Inkscape, roadmap and documentation images
 └── context/                # Current status and new-project decisions
@@ -181,22 +184,24 @@ schematica/
 
 The viewer reads pre-rendered SVGs and a catalog. It never compiles TeX. The static
 builder copies the accepted artwork, reads current editorial metadata and creates
-36 complete-library exports. The website contains 1082 files, with no Python, source
-TeX, references or test material. Its content hashes determine `build.json`.
+36 complete-library exports. The build contains 1085 asset files; the Worker gates
+private Review assets and serves published revisions from D1. No private source or
+credentials are in the assets. Asset and server-source hashes determine `build.json`.
 
 ## Test and review
 
 Run from the repository root. Node.js **20 or newer** is needed only for the
-browser-state tests; the app itself has no Node dependency.
+JavaScript checks. Local Library browsing needs only Python; hosted Review runs
+on the Cloudflare Worker with D1.
 
 ```powershell
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
-node --test tests\review.test.cjs tests\configurations.test.cjs tests\host.test.cjs
+node --test tests/*.test.cjs tests/*.test.mjs
 .\.venv\Scripts\python.exe app\build_site.py
 .\.venv\Scripts\python.exe tests\check_docs.py
 ```
 
-Expect **77 Python tests and 11 JavaScript tests**, a **1082-file** website, and no
+Expect **81 Python tests and 26 JavaScript tests**, **1085 built assets**, and no
 broken documentation links. Tests cover all designs/configurations, accepted SVG
 bytes, pins, independent strokes, editable parts, exports, HTTP boundaries and
 approval validity. Compare `app/dist/build.json` with the hosted `build.json` when
@@ -204,16 +209,14 @@ checking that both devices have the same version.
 
 | Action | Expected result |
 |---|---|
-| Open the app; switch All symbols / Unverified | 91 designs, all Verified; Unverified is empty |
+| Open Library | 91 published designs; verification controls are in private Review |
 | Choose Resistors / Batch 01; search `NTC`, then `zzzz`, then clear | Two NTCs; empty state; the filtered batch returns |
 | Select Variable resistor · US; open Variations | Stroke, Size and Arrow orientation rows; one setting varies per row, all others at defaults; no large preview |
 | Choose Small / Thick / Down-left; open Variations | Comparison rows still use defaults, independently of the main preview selection |
 | Try all orientations on variable/trimmer US/EU | Only the diagonal marking reflects; body, leads and blue pin identities stay fixed |
 | Inspect potentiometers, NTC/PTC, photos and nonlinear resistors | Wiper tip centered 1 mm above body; labels readable; arrows symmetric; diagonal S has no arrowhead; no varistors |
-| In an isolated test library, check an Unverified design; reload | Pending in this browser; selection and exact design identity persist |
-| In that test library, Verify & next, then Undo | Selects the next unreviewed design; Undo reverses the pending selection |
-| Copy approvals or Copy symbol reference | Approval JSON includes exact revision/fingerprint; reference includes name/ID/revision/link |
-| Open the reference link in another browser | Same design selected; local approvals are not transferred |
+| Copy symbol reference | Reference includes name/ID/revision/link |
+| Open the reference link in another browser | Same published design selected |
 | Switch dark/light; reload; use Small/Thick and Grid & pins | Theme persists; stroke changes keep pins fixed; preview aids toggle together |
 | Export Small/Thick/Down-left variable resistor, then the library while filtered | Single matches the selected marking; library has all 91 designs and Down-left on its 8 adjustable designs |
 | Select a coil; export the library | Orientation controls disappear; adjustable designs in the library use Up-right |
@@ -224,7 +227,8 @@ checking that both devices have the same version.
 Repeat on both Windows devices using the [shared preview](https://schematica-preview.dinodubroja.workers.dev/).
 Record device/browser, build ID, design reference, selected preset, failed action
 and actual result. See [Inkscape](docs/INKSCAPE.md) for export/grid details and
-[verification](docs/VERIFICATION.md) for approval handoff and clipboard fallback.
+[Review](docs/REVIEW.md) for hosted decisions. The older
+[verification handoff](docs/VERIFICATION.md) remains available for explicit chat-led batches.
 
 ## Render and verify geometry
 
@@ -300,7 +304,7 @@ Creates `app/build/exports/` with a hash manifest and three ZIPs:
 
 | Package | Contents |
 |---|---|
-| `web-preview.zip` | 1082 static website files, ready for Cloudflare upload |
+| `web-preview.zip` | 1085 built assets; hosted Review also requires its Worker and D1 binding |
 | `all-symbols.zip` | 1035 individual SVGs |
 | `tex-bundles.zip` | 1035 standalone configurations, each with `symbol.tex` and required helpers |
 
@@ -328,7 +332,8 @@ option values are rejected. `exports.export(kind, keys, columns=3, spacing=6)` s
 
 ## Hosting and documentation previews
 
-The shared preview is a separate static deployment; Git pushes do not deploy it.
+The shared preview is a separate Worker deployment with assets and D1; Git pushes
+do not deploy it. Follow [Review setup](docs/REVIEW_SETUP.md) for storage and secrets.
 Prefer [Wrangler](https://developers.cloudflare.com/workers/wrangler/commands/general/)
 for authorized publications. Build once, deploy, then compare the hosted `build.json`,
 catalog and downloads against the local build. Routine publishing needs no automated
@@ -346,7 +351,7 @@ node ..\Local\tools\cloudflare\wrangler\node_modules\wrangler\bin\wrangler.js de
 On another publishing workstation, install Node.js 22.12 or newer with npm, then:
 
 ```powershell
-npx wrangler@4.162.0 login --use-keyring --scopes account:read user:read workers:write workers_scripts:write
+npx wrangler@4.162.0 login --use-keyring --scopes account:read user:read workers:write workers_scripts:write d1:write
 npx wrangler@4.162.0 deploy --config app\wrangler.jsonc
 ```
 

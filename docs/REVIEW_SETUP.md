@@ -156,7 +156,7 @@ seven days of Time Travel on the free plan. Test recovery before depending on it
 
 ```powershell
 python -m unittest discover -s tests -p "test_*.py"
-node --test tests/*.test.cjs tests/review-domain.test.mjs
+node --test tests/*.test.cjs tests/*.test.mjs
 python tests\check_docs.py
 python tests\verify_review_hosted.py --config C:\private\validation.json --output C:\private\validation-checks
 ```
