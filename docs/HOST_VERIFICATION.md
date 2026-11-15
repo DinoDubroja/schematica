@@ -33,9 +33,11 @@ retrieval and a European-only follow-up without broadening the result.
   resistors.” Embedded UI, selection, download and creation still need host evidence.
 - Creation in this local Codex chat: actual user interpretation/confirmation,
   27 rendered band-pass configurations, then a confirmed 27-configuration refinement
-  with flat tops, rounded edges and a narrower box passed. Terminal identities and
-  coordinates were preserved; both browser previews were inspected. The user chose
-  revision before saving. Both drafts remain unsaved; no production symbol changed.
+  with flat tops, rounded edges and a narrower box passed. Two further confirmed
+  refinements removed the lower tails and broadened the curved shoulders (27 each).
+  Terminal identities/coordinates were preserved; all browser previews were inspected.
+  The latter refinements preserved the box/leads exactly. The user chose revision
+  before saving. All drafts remain unsaved; no production symbol changed.
 - Claude prepared interpretations but could not read the resource-only drawing
   guide. A new `get_creation_guide` tool exposes the guide and complete schema/TeX
   example. Reload and actual Claude rendering remain pending; no success is inferred.

@@ -602,3 +602,13 @@ The user reported successful ChatGPT search after reload; actual Claude search,
 follow-up and selected-identity retrieval passed. Native control was stopped by the
 user before the repaired download and creation-guide retest. Record those as pending,
 not completed host journeys; source publication remains the focused repair branch.
+
+**Frequency-response artwork correction — 15-11-2026:** same source chat, turn
+starting 15-11-2026 18:55:20 +01:00. User message
+`01a1e059-72fb-7681-b99b-2721498799d6` requested removal of the lower flat tails;
+`01a1e05c-52f0-7623-8ce8-80acca0ac20b` then requested more curved edges. Actual
+confirmation replies authorized each render. The latest draft has a flat passband,
+broad curved shoulders and sloping lower ends, with no noise-floor plateau.
+Each refinement rendered 27 configurations; the box, leads and terminal positions
+match the prior draft exactly. Reviewed 15-11-2026 +01:00; remains unsaved, with
+earlier drafts recoverable. This is a qualitative symbol, not a calibrated response.
