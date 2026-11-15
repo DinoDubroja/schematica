@@ -47,7 +47,10 @@ circular fillets only at the two top joins. The user explicitly removed the lowe
 arcs: both ends stop on straight slopes. All 27 configurations pass SVG straightness,
 upper-geometry preservation and tangency checks (mismatch below 0.002 degrees).
 Box, leads and terminal positions remain unchanged; earlier drafts are recoverable.
-The revised draft remains unsaved pending review and an explicit save request.
+On the user's explicit save request, the latest version was saved as
+`bandpass-two-port`, revision 1, in the isolated dev library, retaining all three
+widths and 27 configurations. Fresh search, exact retrieval and the browser viewer
+passed; it remains Unverified and local-only, outside the production library.
 
 Claude's embedded download produced no file; the host-mediated repair and a new
 tool-accessible drawing guide are pushed but need a full host reload/retest. The

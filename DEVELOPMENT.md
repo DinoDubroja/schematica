@@ -39,8 +39,9 @@ for ownership and handoffs.
 15-11-2026: the [host-verification branch](https://github.com/DinoDubroja/schematica/tree/fix/chat-host-verification)
 repairs family aliases, model-readable search results, Claude's selection argument,
 embedded downloads and drawing-guide access. Search and selection passed live checks;
-download/Claude creation retests remain pending. The confirmed local band-pass draft
-and refinement each rendered 27 configurations and remain unsaved. See
+download/Claude creation retests remain pending. The latest band-pass revision is
+saved locally as Unverified with all 27 configurations; fresh search/retrieval and
+the saved browser viewer passed. See
 [host evidence](docs/HOST_VERIFICATION.md). Main and the hosted website remain at the
 consolidated baseline below; these test drawings are isolated from the accepted library.
 

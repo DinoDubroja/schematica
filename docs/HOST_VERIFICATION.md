@@ -2,7 +2,8 @@
 
 Checked 14–15-11-2026. **Live search is verified through local Codex with the browser
 fallback and through Claude Desktop's embedded viewer. The user also confirmed
-corrected ChatGPT Chat filtering. Local creation/refinement passed; full per-host
+corrected ChatGPT Chat filtering. Local creation/refinement/save and fresh tool
+retrieval passed; full per-host
 creation/save journeys remain incomplete.** A browser fallback is not embedded UI proof.
 No remote endpoint, tunnel or public plugin was published.
 
@@ -37,12 +38,20 @@ retrieval and a European-only follow-up without broadening the result.
   refinements removed the lower tails and broadened the curved shoulders (27 each).
   Terminal identities/coordinates were preserved; all browser previews were inspected.
   The latter refinements preserved the box/leads exactly. The user chose revision
-  before saving. All drafts remain unsaved; no production symbol changed.
+  before saving; the subsequent explicit save request is recorded below.
+  No production symbol changed.
   A further correction established straight slopes with tangent circular fillets;
   the user's latest explicit removal request eliminated both lower arcs. The current
   27 exported paths have three straight sections, two upper fillets, and straight
   sloping endpoints. Upper geometry is preserved; worst tangent mismatch is under
   0.002 degrees. Box, leads and pins remain exact. Earlier end-rounding is superseded.
+- The user then requested "Save the symbol." The latest band-pass version is saved
+  as `bandpass-two-port`, revision 1, Unverified in the isolated dev library, with
+  narrow/medium/wide options and all 27 configurations. A fresh search session
+  returned exactly that symbol; exact revision retrieval and the saved browser
+  viewer passed. The save tool verified durable retrieval and returned the SVG link.
+  This proves same-chat tools and browser fallback, not a new-chat or embedded-host
+  save journey. Saved artwork remains local-only and is not included in Git pushes.
 - Claude prepared interpretations but could not read the resource-only drawing
   guide. A new `get_creation_guide` tool exposes the guide and complete schema/TeX
   example. Reload and actual Claude rendering remain pending; no success is inferred.
@@ -86,7 +95,7 @@ verified. A failed feature must be recorded separately from a connectivity block
 | ChatGPT Desktop · Chat | Partial, user-reported | After reload, user confirmed exactly two fixed resistors. Embedded rendering and the remaining journey are unverified |
 | ChatGPT Desktop · Work local | Untested | Local launch configuration prepared; reload connection and run the checklist |
 | ChatGPT Desktop · Work cloud | Blocked | No approved reachable MCP endpoint/private tunnel; local-computer bridging is workspace-dependent |
-| ChatGPT Desktop · Codex local | Partial | Actual search, browser selection/export and confirmed 27 + 27 creation/refinement configurations passed. No embedded panel; saving/fresh saved retrieval pending user request |
+| ChatGPT Desktop · Codex local | Partial | Actual search, browser selection/export, creation/refinements, explicit save, fresh search/exact revision retrieval and saved viewer passed. No embedded panel; fresh-chat retrieval untested |
 | ChatGPT Desktop · Codex cloud | Blocked | No approved cloud connector and persistent dev-library destination |
 | Claude Desktop | Partial | Version 5.11492.5: embedded search/follow-up, controls and stored selection retrieval passed. Download repair and tool-accessible creation guide require reload/retest; creation/save remain incomplete |
 

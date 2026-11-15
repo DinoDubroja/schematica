@@ -631,3 +631,12 @@ slopes to the same lower height; the two upper fillets and flat top are unchange
 All 27 configurations pass exported-path checks: three straight sections, two upper
 arcs, no lower arcs/tails, and upper-join tangency below 0.002 degrees. Reviewed
 15-11-2026 +01:00. Still an unsaved draft; no design acceptance or library save inferred.
+
+**Explicit save completed — 15-11-2026:** same source chat, user message
+`01a1e06f-3f3b-73c0-85ec-651055455a35`, turn starting 19:19:09 +01:00:
+"Save the symbol." Saved the latest upper-fillets-only version as
+`bandpass-two-port`, revision 1, with all three widths and 27 configurations in the
+isolated dev library. Fresh search, exact revision retrieval and the saved browser
+viewer passed. Reviewed 15-11-2026 +01:00. This supersedes the pending-save status;
+it does not grant official verification, production promotion or deployment.
+The symbol remains Unverified and local-only; native Claude tests remain on hold.
