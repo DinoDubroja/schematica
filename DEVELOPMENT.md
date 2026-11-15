@@ -44,6 +44,8 @@ saved locally as Unverified with all 27 configurations; fresh search/retrieval a
 the saved browser viewer passed. See
 [host evidence](docs/HOST_VERIFICATION.md). Main and the hosted website remain at the
 consolidated baseline below; these test drawings are isolated from the accepted library.
+The confirmed sketch-derived differential ADC has nine unsaved preview configurations;
+its labels use vector strokes because general text font export failed locally.
 
 14-11-2026: combined A's integration/search/creation/shared viewer with B's complete
 **91 Verified designs / 1,035 configurations**. Reproducible build **`c30dfe980c04`**

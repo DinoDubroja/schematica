@@ -52,6 +52,12 @@ On the user's explicit save request, the latest version was saved as
 widths and 27 configurations. Fresh search, exact retrieval and the browser viewer
 passed; it remains Unverified and local-only, outside the production library.
 
+The user's differential ADC sketch was interpreted and explicitly confirmed for
+an unsaved preview. All nine size/stroke configurations rendered with three pins,
+the tapered body, polarity marks, A/D and an n-bit bus marker. Medium/Medium and
+Small/Thick browser previews passed. Text font export failed; this draft uses
+TeX vector-stroke labels. General font export remains an integration limitation.
+
 Claude's embedded download produced no file; the host-mediated repair and a new
 tool-accessible drawing guide are pushed but need a full host reload/retest. The
 user stopped native computer control, so Claude creation/download verification is

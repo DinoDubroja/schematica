@@ -52,6 +52,13 @@ retrieval and a European-only follow-up without broadening the result.
   viewer passed. The save tool verified durable retrieval and returned the SVG link.
   This proves same-chat tools and browser fallback, not a new-chat or embedded-host
   save journey. Saved artwork remains local-only and is not included in Git pushes.
+- Sketch-derived ADC: inspected the user's image and text, attached the reference,
+  and rendered after explicit interpretation confirmation. All nine size/stroke
+  configurations retain three terminals and independent stroke choices; Medium/Medium
+  and Small/Thick browser previews were inspected. The draft remains unsaved.
+  Text-node rendering exposed missing-font SVG references. The delivered preview
+  uses labels drawn as vector strokes in the authoritative TeX; general font export
+  remains unresolved. No renderer code, production artwork or host installation changed.
 - Claude prepared interpretations but could not read the resource-only drawing
   guide. A new `get_creation_guide` tool exposes the guide and complete schema/TeX
   example. Reload and actual Claude rendering remain pending; no success is inferred.

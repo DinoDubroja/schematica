@@ -640,3 +640,12 @@ isolated dev library. Fresh search, exact revision retrieval and the saved brows
 viewer passed. Reviewed 15-11-2026 +01:00. This supersedes the pending-save status;
 it does not grant official verification, production promotion or deployment.
 The symbol remains Unverified and local-only; native Claude tests remain on hold.
+
+**Sketch-derived ADC preview — 15-11-2026:** same source chat, confirmation message
+`01a1e07a-185d-7371-97a4-a51106e080da`, turn starting 19:31:00 +01:00:
+"Yes, render it as an unsaved preview." The confirmed interpretation uses a tall-left,
+short-right trapezoid, A/D, two left inputs marked +/− and a right n-bit output bus;
+no supply, reference or clock pins. All nine configurations rendered and the browser
+preview was reviewed, including Small/Thick. Font export failed, so labels are TeX
+vector strokes; this is a draft construction choice, not a new typography default.
+Reviewed 15-11-2026 +01:00. Saving and official verification remain unrequested.
