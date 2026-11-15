@@ -111,6 +111,9 @@ def run(config_path, output):
         svg = client.request("/" + catalog["exports"][key], authenticated=False)
         root = ET.fromstring(svg); validate_svg_references(root)
         assert len(root.findall(f"{{{SVG}}}defs/{{{SVG}}}symbol")) == len(catalog["symbols"])
+        metadata = [json.loads(s.find(f"{{{SVG}}}metadata").text) for s in root.findall(f"{{{SVG}}}defs/{{{SVG}}}symbol")]
+        assert {m['symbol_id'] for m in metadata} == {s['id'] for s in catalog['symbols']}
+        assert all(m['pins_mm'] and m['size'] == catalog['export_settings'][key]['size'] for m in metadata)
         assert "test-ground-companion" not in svg.decode()
     checks.append("Whole-library exports include exactly published symbols and independent custom options")
     events, after = [], 0

@@ -193,7 +193,8 @@ async function libraryExport(request,env,key) {
     const c=items[i],row=Math.floor(i/columns),col=i%columns,fragment=byHash.get(c.fragment);need(fragment,'Missing published export asset',503);
     // Fragments already have stable per-symbol/configuration ID namespaces and millimetre origins.
     const id=`library-${c.key}`,inner=fragment.replace(/^[\s\S]*?<svg[^>]*>/,'').replace(/<\/svg>\s*$/,'');
-    defs.push(`<symbol id="${xml(id)}" overflow="visible"><title>${xml(c.name)}</title>${inner}</symbol>`);
+    const metadata=Object.fromEntries(['symbol_id','revision','size','stroke','pins_mm','options'].filter(k=>k in c).map(k=>[k,c[k]]));
+    defs.push(`<symbol id="${xml(id)}" overflow="visible"><title>${xml(c.name)}</title><desc>Unlink the placed instance to edit its named parts.</desc><metadata>${xml(JSON.stringify(metadata))}</metadata>${inner}</symbol>`);
     const [dx,dy]=c.visual_center_from_origin_mm;
     uses.push(`<use href="#${xml(id)}" xlink:href="#${xml(id)}" transform="translate(${4+widths.slice(0,col).reduce((a,b)=>a+b,0)+6*col+widths[col]/2-dx},${4+heights.slice(0,row).reduce((a,b)=>a+b,0)+6*row+heights[row]/2-dy})"/>`);
   }
@@ -215,7 +216,7 @@ async function main(request,env) {
     return new Response(asset.body,{headers:{'Content-Type':'image/svg+xml','Cache-Control':'no-cache','Content-Security-Policy':"sandbox; default-src 'none'; style-src 'unsafe-inline'",'X-Content-Type-Options':'nosniff'}});
   }
   if(path.startsWith('/exports/schematica-')&&path.endsWith('.svg'))return libraryExport(request,env,path.slice('/exports/schematica-'.length,-4));
-  if(!path.startsWith('/review') && !path.startsWith('/api/review'))return env.ASSETS.fetch(request);
+  if(path!=='/review' && !path.startsWith('/review/') && path!=='/api/review' && !path.startsWith('/api/review/'))return env.ASSETS.fetch(request);
   if(path==='/review/login' && request.method==='POST') {
     sameOrigin(request);const data=await body(request,2048),ip=await hash(request.headers.get('CF-Connecting-IP')||'local'),now=Date.now();
     const attempt=await env.DB.prepare('SELECT * FROM attempts WHERE key=?').bind(ip).first();
