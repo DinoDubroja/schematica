@@ -622,3 +622,12 @@ This supersedes the earlier sloped-end/curve-only interpretations. Rendered 27
 configurations with explicit line/circular-arc construction; exported SVG tangency
 mismatch is below 0.002 degrees. Unrelated geometry is exact. Reviewed 15-11-2026
 +01:00; visual review and saving remain pending, with all earlier drafts recoverable.
+
+**Remove lower arcs — 15-11-2026:** same source chat, user message
+`01a1e068-a554-7403-bf4d-23721a1e4516`, turn starting 19:11:56 +01:00, explicitly
+requests removal of the radii at the lower ends. This supersedes the preceding lower-
+tangent interpretation. Removed both lower arcs and continued the existing straight
+slopes to the same lower height; the two upper fillets and flat top are unchanged.
+All 27 configurations pass exported-path checks: three straight sections, two upper
+arcs, no lower arcs/tails, and upper-join tangency below 0.002 degrees. Reviewed
+15-11-2026 +01:00. Still an unsaved draft; no design acceptance or library save inferred.
