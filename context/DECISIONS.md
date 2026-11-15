@@ -649,3 +649,14 @@ no supply, reference or clock pins. All nine configurations rendered and the bro
 preview was reviewed, including Small/Thick. Font export failed, so labels are TeX
 vector strokes; this is a draft construction choice, not a new typography default.
 Reviewed 15-11-2026 +01:00. Saving and official verification remain unrequested.
+
+**ADC typography and lead revision — 15-11-2026:** same source chat, user choice
+`01a1e087-3442-7c91-a8e1-e52d461e58ba`, turn starting 19:45:19 +01:00:
+"Keep body; move connection points inward." This confirms matching ADC/n typography,
+the existing op-amp's polarity-mark dimensions and shorter leads. Retained the exact
+body, used Latin Modern Sans glyph outlines in TeX, and moved endpoints inward to
+the nearest 1 mm grid positions for the two-port's lead lengths. All nine configurations
+and Medium/Medium plus Small/Thick browser previews passed. A separate unsaved draft
+preserves the original because the refinement API currently forbids all terminal
+movement; that API limitation and general text font export are still unresolved.
+Reviewed 15-11-2026 +01:00; no save, official verification or deployment authorized.

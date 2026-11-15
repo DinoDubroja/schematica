@@ -52,11 +52,13 @@ On the user's explicit save request, the latest version was saved as
 widths and 27 configurations. Fresh search, exact retrieval and the browser viewer
 passed; it remains Unverified and local-only, outside the production library.
 
-The user's differential ADC sketch was interpreted and explicitly confirmed for
-an unsaved preview. All nine size/stroke configurations rendered with three pins,
-the tapered body, polarity marks, A/D and an n-bit bus marker. Medium/Medium and
-Small/Thick browser previews passed. Text font export failed; this draft uses
-TeX vector-stroke labels. General font export remains an integration limitation.
+The latest unsaved ADC preview uses matching Latin Modern Sans outlines for ADC/n,
+op-amp-sized polarity marks, and shorter leads. The user chose to preserve the body
+and move endpoints inward. All nine configurations preserve the exact body and
+match the op-amp mark widths; endpoints use the nearest 1 mm grid positions to the
+two-port lead lengths. Medium/Medium and Small/Thick previews passed. The previous
+draft is retained separately because the current refinement API locks terminals.
+Font outlines are embedded in TeX; general text font export remains unresolved.
 
 Claude's embedded download produced no file; the host-mediated repair and a new
 tool-accessible drawing guide are pushed but need a full host reload/retest. The

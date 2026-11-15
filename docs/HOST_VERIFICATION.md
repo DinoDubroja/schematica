@@ -59,6 +59,14 @@ retrieval and a European-only follow-up without broadening the result.
   Text-node rendering exposed missing-font SVG references. The delivered preview
   uses labels drawn as vector strokes in the authoritative TeX; general font export
   remains unresolved. No renderer code, production artwork or host installation changed.
+- The user then chose matching ADC/n typography, op-amp mark dimensions and shorter
+  leads, explicitly keeping the body and moving terminal endpoints inward. A separate
+  unsaved preview retains the original because the refinement API rejects terminal
+  movement. All nine configurations preserve the exact body, match op-amp mark widths
+  and keep stroke-independent terminal positions. Latin Modern Sans glyph outlines
+  are embedded in parameterized TeX; the font-export defect itself is not repaired.
+  Lead lengths approximate the two-port reference at the nearest 1 mm grid endpoint
+  (maximum difference 0.5 mm). Medium/Medium and Small/Thick previews passed.
 - Claude prepared interpretations but could not read the resource-only drawing
   guide. A new `get_creation_guide` tool exposes the guide and complete schema/TeX
   example. Reload and actual Claude rendering remain pending; no success is inferred.
