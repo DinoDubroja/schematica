@@ -10,8 +10,8 @@ does not. See [current status](CURRENT.md) for the implementation checkpoint.
 Source: user message `01a1e4c6-71c2-7652-bb68-b9e8f383443b`, attached brief
 `579d8948-478b-4556-b268-a04a3f647e3d`, turn starting 16-11-2026 15:32:52 +01:00
 (Europe/Zagreb). Reconciled 16-11-2026. Status: implementation, isolated verification,
-focused Git/main delivery and deployment authorized; implementation validated,
-delivery in progress.
+focused Git/main delivery and deployment authorized; implemented, independently
+integrated and hosted verification completed. [Delivery receipt](CURRENT.md#latest-delivery).
 
 - Two panes with adjustable, remembered candidate width; Feedback below the drawing.
   Thumbnails, alias/typo search, pinned actions and selection persist across filters.
