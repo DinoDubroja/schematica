@@ -11,7 +11,7 @@ Before, from the actual hosted Review:
 
 ![Before: decorative grid misses the ADC terminals](images/review-grid-before.png)
 
-After, from Review with the corrected coordinates:
+After, from the deployed Review with the corrected coordinates:
 
 ![After: each ADC terminal sits on a 1 mm grid point](images/review-grid-after.png)
 
@@ -27,11 +27,15 @@ After, from Review with the corrected coordinates:
 
 ## Verification and limits
 
+Verified on the deployed interface on 16-11-2026: build `343e43998afa`, product
+commit `e55e7d4`, Worker version `01c75da8-90e7-4b62-899d-90b505fed0da`.
+
 - Actual Review tested with 108 configurations across seven designs: resistor,
   variable resistor (all orientations), PNP, differential ADC, 4:1 multiplexer,
   DPDT relay and tunable band-pass (all widths).
-- 324 configuration/viewport checks at desktop, tablet and phone widths, plus
-  continuous resizing without recreating the SVG and 24 real Chrome zoom checks.
+- All 324 hosted configuration/viewport checks passed at desktop, tablet and phone
+  widths, plus four continuous resizes without recreating the SVG and 24 real Chrome
+  zoom checks. The hosted screenshots above match the tested local fix byte for byte.
 - Terminal centres were compared with endpoints read from the saved SVG paths.
   Maximum measured error was below 0.002 CSS pixels; no source-geometry defects
   were found in the tested configurations. These samples do not certify every design.
@@ -45,6 +49,8 @@ After, from Review with the corrected coordinates:
 
 No symbol artwork, metadata, saved revision, comment, decision or approval is changed
 by this fix. Browser checks use read-only service access and do not publish candidates.
+Fresh hosted readback retained all 175 Review entries and their saved state, plus
+all 91 published designs, 1,035 SVGs and 36 library exports unchanged.
 
 ## Developer checks
 

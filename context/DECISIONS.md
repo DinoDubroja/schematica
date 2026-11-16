@@ -7,9 +7,10 @@ does not. See [current status](CURRENT.md) for the implementation checkpoint.
 
 ## Review grid alignment
 
-Source: user message `01a1e3f8-47a1-7461-b779-58cd40cf6b3f` in Agent B's chat;
-the original message time is not exposed here. Reconciled 16-11-2026, Europe/Zagreb
-(UTC+01:00). Status: focused fix, checks, Git/main delivery and deployment authorized.
+Source: user message `01a1e3f8-47a1-7461-b779-58cd40cf6b3f` in Agent B's chat,
+16-11-2026 11:47:40 +01:00 (Europe/Zagreb), recovered by Agent A from the original
+chat. Reconciled 16-11-2026. Status: focused fix, checks, Git/main delivery and
+deployment authorized.
 
 - Replace the independent CSS grid with a real 1 mm grid sharing artwork/terminal
   coordinates. Reuse Library preview conversion; preserve the existing controls.
@@ -17,7 +18,7 @@ the original message time is not exposed here. Reconciled 16-11-2026, Europe/Zag
   relevant options, resizing and browser zoom. Capture actual Review before/after.
 - Preserve symbol source, saved revisions, comments, decisions and approvals. Report
   source-geometry defects separately; no unapproved symbol publication.
-- A confirmed no conflicting viewer work and will integrate B's exact tested commit.
+- A confirmed no conflicting viewer work and integrated B's exact tested commit.
   B remains the sole deployer for this fix; A's runtime/store and drafts stay isolated.
 
 ## Batch 03 private review candidates

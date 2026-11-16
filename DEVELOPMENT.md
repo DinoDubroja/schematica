@@ -191,7 +191,7 @@ schematica/
 
 The viewer reads pre-rendered SVGs and a catalog. It never compiles TeX. The static
 builder copies the accepted artwork, reads current editorial metadata and creates
-36 complete-library exports. The build contains 1085 asset files; the Worker gates
+36 complete-library exports. The build contains 1086 asset files; the Worker gates
 private Review assets and serves published revisions from D1. No private source or
 credentials are in the assets. Asset and server-source hashes determine `build.json`.
 
@@ -208,7 +208,7 @@ node --test tests/*.test.cjs tests/*.test.mjs
 .\.venv\Scripts\python.exe tests\check_docs.py
 ```
 
-Expect **81 Python tests and 26 JavaScript tests**, **1085 built assets**, and no
+Expect **87 Python tests and 30 JavaScript tests**, **1086 built assets**, and no
 broken documentation links. Tests cover all designs/configurations, accepted SVG
 bytes, pins, independent strokes, editable parts, exports, HTTP boundaries and
 approval validity. Compare `app/dist/build.json` with the hosted `build.json` when

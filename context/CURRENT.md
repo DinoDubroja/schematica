@@ -1,6 +1,6 @@
 # Current status
 
-16-11-2026 · **Review grid alignment fix prepared; Batch 03 remains available for review.**
+16-11-2026 · **Review grid alignment fix deployed; Batch 03 remains available for review.**
 
 [Library](https://schematica-preview.dinodubroja.workers.dev/)
 · [Private Review](https://schematica-preview.dinodubroja.workers.dev/review)
@@ -13,8 +13,15 @@ Review now uses a genuine 1 mm SVG grid with the same origin/scale as its drawin
 and terminals. Shared Library/Review coordinate helpers prevent separate conversion
 rules. [Evidence and checks](../docs/REVIEW_GRID.md) include saved-path endpoint
 comparisons, asymmetric cropping, continuous resize and real browser zoom.
-No artwork, revisions, comments or decisions were changed. Deployment receipt follows
-the tested code checkpoint; do not confuse prepared UI checks with hosted delivery.
+No artwork, revisions, comments or decisions were changed. Product commit `e55e7d4`
+is on GitHub `main` and deployed as build `343e43998afa`, Worker version
+`01c75da8-90e7-4b62-899d-90b505fed0da`. Hosted asset hashes match the tested build;
+all 175 Review symbol entries, comments, choices and cursor match the pre-task snapshot.
+All 1,035 published SVGs and 36 library exports remain byte-identical. No candidate
+was published by this deployment.
+Hosted checks passed: 324 configuration/layout cases, 24 real browser zoom cases,
+four continuous resizes, Connections visibility and ordinary Library preview.
+Actual saved lead endpoints agree with markers within 0.002 CSS pixels in the samples.
 
 **84 submitted / 792 configurations / 0 deferred / 0 blocked.** All were Unverified
 at the delivery readback. The next step is human feedback in **Review → Batch 03**.
@@ -24,7 +31,8 @@ and [validation receipt](../app/batches/batch-03/validation.json).
 The published Library remains **91 designs / 1,035 configurations**. Its catalog
 and every SVG hash match the live before-task snapshot. The settled PNP correction
 was already published before this batch and is the enclosed PNP's parent.
-No new design was approved/published by the agent; no website redeployment occurred.
+No new design was approved/published by the agent. Batch 03 delivery made no website
+redeployment; the subsequent grid fix above changes only the interface.
 
 Agent A integrated the exact READY source checkpoint
 [`2bff9bf`](https://github.com/DinoDubroja/schematica/commit/2bff9bf2f84e8ca21e596ea6cf7c0c625fe6bf9e)
@@ -39,11 +47,10 @@ reused ADC/band-pass SVGs. All local configurations passed metadata, named-part,
 reference, grid, bounds and stroke/option independence checks. Medium/Medium and
 Small/Thick were inspected and related designs compared at a common scale.
 
-Source checks cover 87 Python and 26 JavaScript tests. One Windows socket abort
-interrupted the first Python run; the affected four server tests passed on a
-focused rerun. No application code was changed to bypass that interruption.
+Current source checks pass all 87 Python and 30 JavaScript tests, with 138 local
+documentation links checked. The grid fix changed no symbol source or approval ledger.
 
-## Review service delivery receipt
+## Original Review service delivery receipt
 
 | Receipt | Result |
 |---|---|

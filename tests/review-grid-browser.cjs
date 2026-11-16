@@ -34,8 +34,10 @@ fs.mkdirSync(output,{recursive:true});
   }
   const measure=()=>page.evaluate(async()=>{
             const c=config(),svg=document.querySelector('.drawing-canvas>svg'),pattern=svg.querySelector('pattern'),matrix=svg.getScreenCTM();
-            const canvas=svg.parentElement,box=svg.viewBox.baseVal;
-            if(Math.abs(box.width/box.height-canvas.clientWidth/canvas.clientHeight)>1e-7)throw Error('Resize left a stale grid viewport');
+            // SVGRect rounds to float32; read the exact authored viewport for
+            // the resize assertion, then test actual screen transforms below.
+            const canvas=svg.parentElement,box=svg.getAttribute('viewBox').trim().split(/\s+/).map(Number);
+            if(Math.abs(box[2]/box[3]-canvas.clientWidth/canvas.clientHeight)>1e-7)throw Error('Resize left a stale grid viewport: '+JSON.stringify({symbol:current().symbol.id,key:c.key,box,canvas:[canvas.clientWidth,canvas.clientHeight]}));
             if(pattern.getAttribute('patternUnits')!=='userSpaceOnUse'||+pattern.getAttribute('width')!==1||+pattern.getAttribute('height')!==1)throw Error('Grid is not one millimetre');
             const dot=pattern.querySelector('circle');
             if(+pattern.getAttribute('x')+ +dot.getAttribute('cx')!==0||+pattern.getAttribute('y')+ +dot.getAttribute('cy')!==0)throw Error('Grid origin differs from terminals');
@@ -135,6 +137,7 @@ fs.mkdirSync(output,{recursive:true});
   const receipt={source:localFiles?'local fix against live read-only data':'hosted Review',before,configurations:results.length,
     maximumEndpointErrorPixels:Math.max(0,...[...results,...zoomResults,...resizeResults].map(r=>r.maximumEndpointErrorPixels)),defects:[...results,...zoomResults,...resizeResults].filter(r=>r.defects.length),serviceWrites:0,librarySmoke,zoomChecks:zoomResults.length,resizeChecks:resizeResults.length,resizeResults,zoomResults,results};
   fs.writeFileSync(path.join(output,'results.json'),JSON.stringify(receipt,null,2));
+  assert.deepEqual(receipt.defects,[],'Drawn lead endpoints must coincide with terminal markers');
   console.log(JSON.stringify({...receipt,results:undefined,zoomResults:undefined,resizeResults:undefined,defects:receipt.defects.slice(0,8)}));
   await context.close();
 })().catch(e=>{console.error(e);process.exit(1);});
