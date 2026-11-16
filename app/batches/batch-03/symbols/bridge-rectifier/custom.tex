@@ -1,0 +1,39 @@
+\newcommand{\SCCustom}[3]{%
+\SCresolve{#1}{#2}{#3}
+\pgfmathsetmacro{\SCF}{#2}
+
+\begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+\SCdimension{grid}{1}
+\SCpin{ac1}{floor(-10*\SCF)}{0}
+\SCpin{ac2}{ceil(10*\SCF)}{0}
+\SCpin{positive}{0}{ceil(10*\SCF)}
+\SCpin{negative}{0}{floor(-10*\SCF)}
+\begin{SCpart}{lead-ac1}
+\draw ({floor(-10*\SCF)},{0})--({-6*\SCF},{0})--({-6*\SCF},{0*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-ac2}
+\draw ({ceil(10*\SCF)},{0})--({6*\SCF},{0})--({6*\SCF},{0*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-positive}
+\draw ({0},{ceil(10*\SCF)})--({0},{6*\SCF})--({0*\SCF},{6*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-negative}
+\draw ({0},{floor(-10*\SCF)})--({0},{-6*\SCF})--({0*\SCF},{-6*\SCF});
+\end{SCpart}
+\begin{SCpart}{diode-1}
+\draw ({-6*\SCF},{0*\SCF})--({-3.81317279836453*\SCF},{2.18682720163547*\SCF});\draw ({-4.555634918610405*\SCF},{2.9292893218813454*\SCF})--({-2.18682720163547*\SCF},{3.81317279836453*\SCF})--({-3.0707106781186546*\SCF},{1.4443650813895952*\SCF})--cycle;\draw ({-2.9292893218813454*\SCF},{4.555634918610405*\SCF})--({-1.4443650813895952*\SCF},{3.0707106781186546*\SCF});\draw ({-2.18682720163547*\SCF},{3.81317279836453*\SCF})--({0*\SCF},{6*\SCF});
+\end{SCpart}
+\begin{SCpart}{diode-2}
+\draw ({6*\SCF},{0*\SCF})--({3.81317279836453*\SCF},{2.18682720163547*\SCF});\draw ({3.0707106781186546*\SCF},{1.4443650813895952*\SCF})--({2.18682720163547*\SCF},{3.81317279836453*\SCF})--({4.555634918610405*\SCF},{2.9292893218813454*\SCF})--cycle;\draw ({1.4443650813895952*\SCF},{3.0707106781186546*\SCF})--({2.9292893218813454*\SCF},{4.555634918610405*\SCF});\draw ({2.18682720163547*\SCF},{3.81317279836453*\SCF})--({0*\SCF},{6*\SCF});
+\end{SCpart}
+\begin{SCpart}{diode-3}
+\draw ({0*\SCF},{-6*\SCF})--({-2.18682720163547*\SCF},{-3.81317279836453*\SCF});\draw ({-2.9292893218813454*\SCF},{-4.555634918610405*\SCF})--({-3.81317279836453*\SCF},{-2.18682720163547*\SCF})--({-1.4443650813895952*\SCF},{-3.0707106781186546*\SCF})--cycle;\draw ({-4.555634918610405*\SCF},{-2.9292893218813454*\SCF})--({-3.0707106781186546*\SCF},{-1.4443650813895952*\SCF});\draw ({-3.81317279836453*\SCF},{-2.18682720163547*\SCF})--({-6*\SCF},{0*\SCF});
+\end{SCpart}
+\begin{SCpart}{diode-4}
+\draw ({0*\SCF},{-6*\SCF})--({2.18682720163547*\SCF},{-3.81317279836453*\SCF});\draw ({1.4443650813895952*\SCF},{-3.0707106781186546*\SCF})--({3.81317279836453*\SCF},{-2.18682720163547*\SCF})--({2.9292893218813454*\SCF},{-4.555634918610405*\SCF})--cycle;\draw ({3.0707106781186546*\SCF},{-1.4443650813895952*\SCF})--({4.555634918610405*\SCF},{-2.9292893218813454*\SCF});\draw ({3.81317279836453*\SCF},{-2.18682720163547*\SCF})--({6*\SCF},{0*\SCF});
+\end{SCpart}
+\begin{SCpart}{polarity}
+\draw ({1.4*\SCF},{7*\SCF})--({2.6*\SCF},{7*\SCF});\draw ({2*\SCF},{6.4*\SCF})--({2*\SCF},{7.6*\SCF});\draw ({1.4*\SCF},{-7*\SCF})--({2.6*\SCF},{-7*\SCF});\draw ({-8.7*\SCF},{2*\SCF}) .. controls ({-8.0*\SCF},{3.2*\SCF}) and ({-7.0*\SCF},{0.8*\SCF}) .. ({-6.3*\SCF},{2*\SCF});\draw ({6.3*\SCF},{2*\SCF}) .. controls ({7.0*\SCF},{3.2*\SCF}) and ({8.0*\SCF},{0.8*\SCF}) .. ({8.7*\SCF},{2*\SCF});
+\end{SCpart}
+\end{scope}
+}

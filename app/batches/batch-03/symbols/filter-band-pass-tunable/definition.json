@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "id": "filter-band-pass-tunable",
+  "revision": 1,
+  "name": "Tunable band-pass filter",
+  "description": "Two-port band-pass network with a centre-frequency control input; three response-width choices retained from the saved draft.",
+  "family": "networks",
+  "keywords": [
+    "two-port",
+    "bandpass",
+    "band-pass",
+    "filter",
+    "network",
+    "Batch 03"
+  ],
+  "types": [
+    "network",
+    "band-pass"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "in-upper",
+      "name": "in-upper",
+      "description": "Input port upper terminal",
+      "kind": "passive",
+      "lead_part": "lead-in-upper"
+    },
+    {
+      "id": "in-lower",
+      "name": "in-lower",
+      "description": "Input port lower terminal",
+      "kind": "passive",
+      "lead_part": "lead-in-lower"
+    },
+    {
+      "id": "out-upper",
+      "name": "out-upper",
+      "description": "Output port upper terminal",
+      "kind": "passive",
+      "lead_part": "lead-out-upper"
+    },
+    {
+      "id": "out-lower",
+      "name": "out-lower",
+      "description": "Output port lower terminal",
+      "kind": "passive",
+      "lead_part": "lead-out-lower"
+    },
+    {
+      "id": "tune",
+      "name": "Tuning control",
+      "description": "Centre-frequency control input",
+      "kind": "input",
+      "lead_part": "lead-tune"
+    }
+  ],
+  "parts": [
+    {
+      "id": "lead-in-upper",
+      "description": "Input port upper terminal lead"
+    },
+    {
+      "id": "lead-in-lower",
+      "description": "Input port lower terminal lead"
+    },
+    {
+      "id": "lead-out-upper",
+      "description": "Output port upper terminal lead"
+    },
+    {
+      "id": "lead-out-lower",
+      "description": "Output port lower terminal lead"
+    },
+    {
+      "id": "body",
+      "description": "Rectangular network block"
+    },
+    {
+      "id": "response",
+      "description": "Flat passband and straight slopes with upper tangent fillets only"
+    },
+    {
+      "id": "lead-tune",
+      "description": "Tuning input lead"
+    },
+    {
+      "id": "tuning-label",
+      "description": "Centre-frequency control label"
+    }
+  ],
+  "options": {
+    "response-width": {
+      "name": "Response width",
+      "default": "medium",
+      "affected_parts": [
+        "response"
+      ],
+      "values": [
+        {
+          "id": "narrow",
+          "name": "Narrow"
+        },
+        {
+          "id": "medium",
+          "name": "Medium"
+        },
+        {
+          "id": "wide",
+          "name": "Wide"
+        }
+      ]
+    }
+  },
+  "batch": "Batch 03",
+  "lineage": {
+    "symbol": "bandpass-two-port",
+    "basis": "Retained network and response, added separate tuning input.",
+    "human_verified": false
+  }
+}

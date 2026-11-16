@@ -1,0 +1,69 @@
+\newcommand{\SCCustom}[3]{%
+  \SCresolve{#1}{#2}{#3}%
+  \pgfmathsetmacro{\SCend}{ceil(6*\SCscale+2)}%
+  \pgfmathsetmacro{\SCport}{ceil(2*\SCscale)}%
+  \pgfmathsetmacro{\SCradius}{0.65*\SCscale}%
+  \pgfmathsetmacro{\SCarcx}{\SCradius*sin(70)}%
+  \pgfmathsetmacro{\SCarcy}{\SCradius*(1-cos(70))}%
+  \pgfmathsetmacro{\SCedge}{\SCarcx+(3.3*\SCscale-\SCarcy)/tan(70)}%
+  \ifcase\SCoption{response-width}
+    \pgfmathsetmacro{\SChalf}{0.55*\SCscale}%
+  \or
+    \pgfmathsetmacro{\SChalf}{1.1*\SCscale}%
+  \or
+    \pgfmathsetmacro{\SChalf}{1.65*\SCscale}%
+  \fi
+  \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+    \SCpin{tune}{0}{-ceil(7*\SCscale)}
+\SCpin{in-upper}{-\SCend}{\SCport}
+    \SCpin{in-lower}{-\SCend}{-\SCport}
+    \SCpin{out-upper}{\SCend}{\SCport}
+    \SCpin{out-lower}{\SCend}{-\SCport}
+    \SCdimension{body-width}{10*\SCscale}
+    \SCdimension{body-height}{8*\SCscale}
+    \begin{SCpart}{lead-in-upper}\draw (-\SCend,\SCport)--({-5*\SCscale},\SCport);\end{SCpart}
+    \begin{SCpart}{lead-in-lower}\draw (-\SCend,-\SCport)--({-5*\SCscale},-\SCport);\end{SCpart}
+    \begin{SCpart}{lead-out-upper}\draw (\SCend,\SCport)--({5*\SCscale},\SCport);\end{SCpart}
+    \begin{SCpart}{lead-out-lower}\draw (\SCend,-\SCport)--({5*\SCscale},-\SCport);\end{SCpart}
+    \begin{SCpart}{body}\draw ({-5*\SCscale},{-4*\SCscale}) rectangle ({5*\SCscale},{4*\SCscale});\end{SCpart}
+    \begin{SCpart}{response}
+      \draw ({-\SChalf-\SCedge},{-1.5*\SCscale})
+        --({-\SChalf-\SCarcx},{1.8*\SCscale-\SCarcy})
+        arc[start angle=160,end angle=90,radius=\SCradius mm]
+        --(\SChalf,{1.8*\SCscale})
+        arc[start angle=90,end angle=20,radius=\SCradius mm]
+        --({\SChalf+\SCedge},{-1.5*\SCscale});
+    \end{SCpart}
+\begin{SCpart}{lead-tune}\draw (0,{-ceil(7*\SCscale)})--(0,{-4*\SCscale});\end{SCpart}
+\begin{SCpart}{tuning-label}\fill[even odd rule] ({-0.04438*\SCscale},{-2.556196*\SCscale})
+--({-0.04438*\SCscale},{-2.45*\SCscale})
+.. controls ({-0.063401*\SCscale},{-2.445245*\SCscale}) and ({-0.112536*\SCscale},{-2.432565*\SCscale}) ..({-0.171182*\SCscale},{-2.432565*\SCscale})
+.. controls ({-0.320173*\SCscale},{-2.432565*\SCscale}) and ({-0.434294*\SCscale},{-2.545101*\SCscale}) ..({-0.434294*\SCscale},{-2.703602*\SCscale})
+--({-0.434294*\SCscale},{-2.846254*\SCscale})
+--({-0.551585*\SCscale},{-2.846254*\SCscale})
+--({-0.551585*\SCscale},{-2.938184*\SCscale})
+--({-0.434294*\SCscale},{-2.938184*\SCscale})
+--({-0.434294*\SCscale},{-3.55*\SCscale})
+--({-0.315418*\SCscale},{-3.55*\SCscale})
+--({-0.315418*\SCscale},{-2.938184*\SCscale})
+--({-0.141066*\SCscale},{-2.938184*\SCscale})
+--({-0.141066*\SCscale},{-2.846254*\SCscale})
+--({-0.320173*\SCscale},{-2.846254*\SCscale})
+--({-0.320173*\SCscale},{-2.657637*\SCscale})
+.. controls ({-0.320173*\SCscale},{-2.540346*\SCscale}) and ({-0.213977*\SCscale},{-2.529251*\SCscale}) ..({-0.172767*\SCscale},{-2.529251*\SCscale})
+.. controls ({-0.141066*\SCscale},{-2.529251*\SCscale}) and ({-0.098271*\SCscale},{-2.532421*\SCscale}) ..({-0.04438*\SCscale},{-2.556196*\SCscale})
+--cycle;
+\fill[even odd rule] ({0.548415*\SCscale},{-3.486599*\SCscale})
+--({0.538905*\SCscale},{-3.380403*\SCscale})
+.. controls ({0.458069*\SCscale},{-3.443804*\SCscale}) and ({0.372478*\SCscale},{-3.465994*\SCscale}) ..({0.291643*\SCscale},{-3.465994*\SCscale})
+.. controls ({0.160086*\SCscale},{-3.465994*\SCscale}) and ({0.071326*\SCscale},{-3.351873*\SCscale}) ..({0.071326*\SCscale},{-3.196542*\SCscale})
+.. controls ({0.071326*\SCscale},{-3.072911*\SCscale}) and ({0.129971*\SCscale},{-2.920749*\SCscale}) ..({0.297983*\SCscale},{-2.920749*\SCscale})
+.. controls ({0.380403*\SCscale},{-2.920749*\SCscale}) and ({0.434294*\SCscale},{-2.933429*\SCscale}) ..({0.52147*\SCscale},{-2.99049*\SCscale})
+--({0.54049*\SCscale},{-2.887464*\SCscale})
+.. controls ({0.446974*\SCscale},{-2.833573*\SCscale}) and ({0.393084*\SCscale},{-2.819308*\SCscale}) ..({0.296398*\SCscale},{-2.819308*\SCscale})
+.. controls ({0.076081*\SCscale},{-2.819308*\SCscale}) and ({-0.052305*\SCscale},{-3.011095*\SCscale}) ..({-0.052305*\SCscale},{-3.198127*\SCscale})
+.. controls ({-0.052305*\SCscale},{-3.394669*\SCscale}) and ({0.091931*\SCscale},{-3.567435*\SCscale}) ..({0.290058*\SCscale},{-3.567435*\SCscale})
+.. controls ({0.375648*\SCscale},{-3.567435*\SCscale}) and ({0.462824*\SCscale},{-3.545245*\SCscale}) ..({0.548415*\SCscale},{-3.486599*\SCscale})
+--cycle;\end{SCpart}
+  \end{scope}%
+}

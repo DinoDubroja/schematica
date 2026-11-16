@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "id": "latch-d",
+  "revision": 1,
+  "name": "D latch",
+  "description": "Level-sensitive D latch, active-high controls; no edge clock. Enable high tracks D.",
+  "family": "logic",
+  "batch": "Batch 03",
+  "keywords": [
+    "latch-d",
+    "D latch",
+    "Digital building blocks",
+    "Batch 03",
+    "logic"
+  ],
+  "types": [
+    "logic"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "data",
+      "name": "D",
+      "description": "D",
+      "kind": "input",
+      "lead_part": "lead-data"
+    },
+    {
+      "id": "enable",
+      "name": "EN",
+      "description": "EN",
+      "kind": "input",
+      "lead_part": "lead-enable"
+    },
+    {
+      "id": "q",
+      "name": "Q",
+      "description": "Q",
+      "kind": "output",
+      "lead_part": "lead-q"
+    },
+    {
+      "id": "q-bar",
+      "name": "Q",
+      "description": "Q",
+      "kind": "output",
+      "lead_part": "lead-q-bar"
+    }
+  ],
+  "parts": [
+    {
+      "id": "body",
+      "description": "Body"
+    },
+    {
+      "id": "lead-data",
+      "description": "Lead data"
+    },
+    {
+      "id": "label-data",
+      "description": "Label data"
+    },
+    {
+      "id": "lead-enable",
+      "description": "Lead enable"
+    },
+    {
+      "id": "label-enable",
+      "description": "Label enable"
+    },
+    {
+      "id": "lead-q",
+      "description": "Lead q"
+    },
+    {
+      "id": "label-q",
+      "description": "Label q"
+    },
+    {
+      "id": "lead-q-bar",
+      "description": "Lead q bar"
+    },
+    {
+      "id": "label-q-bar",
+      "description": "Label q bar"
+    },
+    {
+      "id": "function",
+      "description": "Function"
+    },
+    {
+      "id": "output-inversion",
+      "description": "Output inversion"
+    }
+  ],
+  "reference": {
+    "source": "Generic functional construction, adapted to Schematica; not a claim of standards compliance.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

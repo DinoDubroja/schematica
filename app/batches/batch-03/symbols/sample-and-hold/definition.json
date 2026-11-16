@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "sample-and-hold",
+  "revision": 1,
+  "name": "Sample-and-hold",
+  "description": "Generic sample-and-hold: analog input/output and sample command. Holding is implied when inactive.",
+  "family": "analog",
+  "batch": "Batch 03",
+  "keywords": [
+    "sample-and-hold",
+    "Sample-and-hold",
+    "Data conversion",
+    "Batch 03",
+    "analog"
+  ],
+  "types": [
+    "analog"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "in",
+      "name": "IN",
+      "description": "IN",
+      "kind": "input",
+      "lead_part": "lead-in"
+    },
+    {
+      "id": "out",
+      "name": "OUT",
+      "description": "OUT",
+      "kind": "output",
+      "lead_part": "lead-out"
+    },
+    {
+      "id": "control",
+      "name": "S",
+      "description": "S",
+      "kind": "input",
+      "lead_part": "lead-control"
+    }
+  ],
+  "parts": [
+    {
+      "id": "body",
+      "description": "Body"
+    },
+    {
+      "id": "lead-in",
+      "description": "Lead in"
+    },
+    {
+      "id": "label-in",
+      "description": "Label in"
+    },
+    {
+      "id": "lead-out",
+      "description": "Lead out"
+    },
+    {
+      "id": "label-out",
+      "description": "Label out"
+    },
+    {
+      "id": "lead-control",
+      "description": "Lead control"
+    },
+    {
+      "id": "label-control",
+      "description": "Label control"
+    },
+    {
+      "id": "function",
+      "description": "Function"
+    }
+  ],
+  "reference": {
+    "source": "Generic functional construction, adapted to Schematica; not a claim of standards compliance.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

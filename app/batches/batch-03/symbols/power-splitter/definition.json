@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "power-splitter",
+  "revision": 1,
+  "name": "Power splitter",
+  "description": "One input and two outputs; generic RF power division. Output phase and ratio unspecified.",
+  "family": "analog",
+  "batch": "Batch 03",
+  "keywords": [
+    "power-splitter",
+    "Power splitter",
+    "RF",
+    "Batch 03",
+    "analog"
+  ],
+  "types": [
+    "analog"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "in",
+      "name": "Input",
+      "description": "Input",
+      "kind": "input",
+      "lead_part": "lead-in"
+    },
+    {
+      "id": "out1",
+      "name": "Output 1",
+      "description": "Output 1",
+      "kind": "output",
+      "lead_part": "lead-out1"
+    },
+    {
+      "id": "out2",
+      "name": "Output 2",
+      "description": "Output 2",
+      "kind": "output",
+      "lead_part": "lead-out2"
+    }
+  ],
+  "parts": [
+    {
+      "id": "body",
+      "description": "Body"
+    },
+    {
+      "id": "lead-in",
+      "description": "Lead in"
+    },
+    {
+      "id": "lead-out1",
+      "description": "Lead out1"
+    },
+    {
+      "id": "lead-out2",
+      "description": "Lead out2"
+    },
+    {
+      "id": "division",
+      "description": "Division"
+    }
+  ],
+  "reference": {
+    "source": "Generic functional construction, adapted to Schematica; not a claim of standards compliance.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

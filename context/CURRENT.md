@@ -1,6 +1,6 @@
 # Current status
 
-16-11-2026 · **Schematica Review is deployed and the desktop connector is running.**
+16-11-2026 · **Batch 03: all 84 designs are saved in private Review.**
 
 [Library](https://schematica-preview.dinodubroja.workers.dev/)
 · [Private Review](https://schematica-preview.dinodubroja.workers.dev/review)
@@ -9,16 +9,31 @@
 
 ## Current work
 
-The authorized Review delivery is complete. It adds persistent private feedback,
-exact-revision decisions, Variations, History, recoverable discard, explicit proposal
-approval, subscription-authenticated desktop correction jobs and atomic publication.
-The public Library retains its presentation and exports; verification lives in Review.
+**84 submitted / 792 configurations / 0 deferred / 0 blocked.** All were Unverified
+at the delivery readback. The next step is human feedback in **Review → Batch 03**.
+See the [short review checklist](../docs/BATCH_03.md), [completion manifest](../app/batches/batch-03/manifest.json)
+and [validation receipt](../app/batches/batch-03/validation.json).
 
-**91 published / 91 Verified / 0 Unverified**, with all **1,035 configurations** and
-36 library exports preserved. Production has no test candidates. Its Review queue is
-empty until an agent submits a real candidate; accepted symbols are already published.
+The published Library remains **91 designs / 1,035 configurations**. Its catalog
+and every SVG hash match the live before-task snapshot. The settled PNP correction
+was already published before this batch and is the enclosed PNP's parent.
+No new design was approved/published by the agent; no website redeployment occurred.
 
-## Tested delivery
+Batch source is on `work/batch-03`, from `0e151283f4b85ea47278665d56f37024cc04d4de`.
+Agent A receives the exact tested checkpoint for integration. Sources, metadata,
+tests and documentation are separate from the public catalog and approval ledger.
+
+Hosted readback: 84 exact sources/opening events; 1,584 candidate SVG/fragment
+hashes plus 72 parent SVGs; 594 identical inherited-part comparisons; 36 byte-identical
+reused ADC/band-pass SVGs. All local configurations passed metadata, named-part,
+reference, grid, bounds and stroke/option independence checks. Medium/Medium and
+Small/Thick were inspected and related designs compared at a common scale.
+
+Source checks cover 87 Python and 26 JavaScript tests. One Windows socket abort
+interrupted the first Python run; the affected four server tests passed on a
+focused rerun. No application code was changed to bypass that interruption.
+
+## Review service delivery receipt
 
 | Receipt | Result |
 |---|---|
@@ -70,7 +85,7 @@ ADC draft, port 8793 and unrelated `docs/research` remain untouched.
 
 Physical phone and second Windows device testing remain user checks. Use the short
 [action → expected result checklist](../DEVELOPMENT.md#test-on-both-windows-devices)
-once a real candidate is submitted. Processing needs this desktop online; reviewing
+with Batch 03 candidates. Processing needs this desktop online; reviewing
 and saving feedback do not.
 
 A's separate host limitations remain: Claude embedded download/creation retests,

@@ -1,0 +1,845 @@
+{
+  "batch": "Batch 03",
+  "targets": [
+    {
+      "id": "adc-differential-n-bit",
+      "name": "Differential n-bit ADC",
+      "group": "Data conversion",
+      "status": "submitted",
+      "revision_id": "36c3d9a4-3118-5480-a6dc-3a71a5103da5",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "74667a0d61f53143ae160d148216ba23aea385cd3581c572021401fdde828e1f"
+    },
+    {
+      "id": "bandpass-two-port",
+      "name": "Two-port band-pass network",
+      "group": "Filters",
+      "status": "submitted",
+      "revision_id": "b1770b38-c86f-5541-8b34-0dd9063260b0",
+      "revision": 1,
+      "configurations": 27,
+      "fingerprint": "f6147671987f848d36f82b8ce6388f08903d5fea104e69f9da3399c6c292e197"
+    },
+    {
+      "id": "flipflop-d",
+      "name": "D flip-flop",
+      "group": "Digital building blocks",
+      "status": "submitted",
+      "revision_id": "b3adb8e1-e6a1-5c20-a4ae-110c0ac8c582",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "98bf80075f8510c1cd94fa043eef0c4cac98c6c14764ee61b9de233e0d1e8fb6"
+    },
+    {
+      "id": "optocoupler-transistor",
+      "name": "Transistor-output optocoupler",
+      "group": "Optoelectronics",
+      "status": "submitted",
+      "revision_id": "e41cc625-adcc-5c0e-8684-4a8319e84a33",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "41fdc8bc398a69e78f760f2b2b1dafbb96f51cafce4ab599bec898ee7391f333"
+    },
+    {
+      "id": "transistor-npn-enclosed",
+      "name": "NPN transistor (enclosed)",
+      "group": "Additional transistor styles",
+      "status": "submitted",
+      "revision_id": "7b563eb7-a779-5bb4-bd63-9b73b91b6fab",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "40098a7158c2b4f5d284153d68669652a6c4731d043f31cfd04256b82ded2443"
+    },
+    {
+      "id": "relay-spdt",
+      "name": "SPDT relay",
+      "group": "Relays and contactors",
+      "status": "submitted",
+      "revision_id": "cdcb83ab-6320-5eae-9762-54d7cfe76856",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "1b971f06cb711b16d87d3ba03207cd696e11cb78f6fd482eaad28688721ab934"
+    },
+    {
+      "id": "motor-dc",
+      "name": "DC motor",
+      "group": "Transducers and basic motors",
+      "status": "submitted",
+      "revision_id": "e565fc0e-13ca-5e64-b8f1-02680fd15086",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "5930c297a0f29fd6bee66d214a91d494d7a8c018d08c48a3f0f07aa6e80d340f"
+    },
+    {
+      "id": "adc-single-ended",
+      "name": "Single-ended ADC",
+      "group": "Data conversion",
+      "status": "submitted",
+      "revision_id": "5092477a-6066-5843-8332-9b2563045536",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "3e854eecc789ff63441b36d5775e89de8bd420d61887521604c817eeaa698622"
+    },
+    {
+      "id": "dac-voltage-output",
+      "name": "Voltage-output DAC",
+      "group": "Data conversion",
+      "status": "submitted",
+      "revision_id": "9a1f59eb-1508-5d0d-ac01-ccc4ca2f8e9c",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "fb079d787882a9ea59f8df7b67130539f7f834a93bee1a398bad6eb79e8f5b7c"
+    },
+    {
+      "id": "dac-current-output",
+      "name": "Current-output DAC",
+      "group": "Data conversion",
+      "status": "submitted",
+      "revision_id": "1fda5dc1-6a32-5db2-937e-587d38117298",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "909f2c78baab27ce121d319468633bec3568d1d6f46d53aaa4065edd0db5d286"
+    },
+    {
+      "id": "sample-and-hold",
+      "name": "Sample-and-hold",
+      "group": "Data conversion",
+      "status": "submitted",
+      "revision_id": "919b67e2-9eda-56fc-9b9a-88ef6f1f3761",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "2cc8bb992a1b6bf01b414195328f911025b9d3b6bbb1ee78f61f690f4eb969e9"
+    },
+    {
+      "id": "track-and-hold",
+      "name": "Track-and-hold",
+      "group": "Data conversion",
+      "status": "submitted",
+      "revision_id": "99c8fa63-c082-54c3-9cd8-5eeef56d1287",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "da1c92055a7028f5cba65fafdb7fd63a606146b361fa12b4d1754ccfb65a6da7"
+    },
+    {
+      "id": "filter-low-pass",
+      "name": "Low-Pass filter",
+      "group": "Filters",
+      "status": "submitted",
+      "revision_id": "b7105920-d190-5f17-8d86-e3b72f6e6f5c",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "e0bea3fd4cb72ba9f3214215847e92ed535b8beb4bb7c751279886627515236a"
+    },
+    {
+      "id": "filter-high-pass",
+      "name": "High-Pass filter",
+      "group": "Filters",
+      "status": "submitted",
+      "revision_id": "98d10cd6-1146-5c76-95f8-91ed49b6ae07",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "96b5332b26eadad31e1d55f5b361d2a5ff5525ffea526ca5e3371993dac60b9f"
+    },
+    {
+      "id": "filter-band-stop",
+      "name": "Band-Stop filter",
+      "group": "Filters",
+      "status": "submitted",
+      "revision_id": "1169fb64-d334-567d-8f26-9722c8098cc7",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "ab9008f2a5f3f94694e15fcc9b86679aa1065bee7f6d7763ee44f80c5a52ad36"
+    },
+    {
+      "id": "filter-all-pass",
+      "name": "All-Pass filter",
+      "group": "Filters",
+      "status": "submitted",
+      "revision_id": "9d7d8a31-a423-53be-9487-c67847733076",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "33c1f4d570142beb6d71ab49603be29651b137b5c668b96c1688c1038533b6d8"
+    },
+    {
+      "id": "filter-band-pass-tunable",
+      "name": "Tunable band-pass filter",
+      "group": "Filters",
+      "status": "submitted",
+      "revision_id": "05a95b3e-a39d-5873-9f92-337b5881cec7",
+      "revision": 1,
+      "configurations": 27,
+      "fingerprint": "97eb2f007a95d88e926c5c87b42cb807e8181c6dddd68143deeecfa1f4368474"
+    },
+    {
+      "id": "integrator",
+      "name": "Integrator",
+      "group": "Signal processing",
+      "status": "submitted",
+      "revision_id": "773676a4-6868-5669-a895-e718d0c7cf39",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "29118d6ee2bd067c73e1cc2fcfc5fc0db6766295ce5fdf8c743c8fe9fb4965e6"
+    },
+    {
+      "id": "differentiator",
+      "name": "Differentiator",
+      "group": "Signal processing",
+      "status": "submitted",
+      "revision_id": "4a6fa0bd-7b75-535d-af2c-613e81159bc2",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "d675620a06edeee66250bef722406ae68be256da4287ef034a0f076090524979"
+    },
+    {
+      "id": "summing-block",
+      "name": "Summing block",
+      "group": "Signal processing",
+      "status": "submitted",
+      "revision_id": "8cfc75cc-02a1-5f8b-bd58-94f4fc9f3381",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "88c35f29f0c6eae0dc67d59ea77a7c8765a1cf321e95f9eee8af9c66f6c33903"
+    },
+    {
+      "id": "subtractor",
+      "name": "Subtractor",
+      "group": "Signal processing",
+      "status": "submitted",
+      "revision_id": "1e040867-110d-599e-845d-20767a538c54",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "0c83d1d320888c8fade8ccacb5f8ec5ba67fc5e663cce022e94f1dc3b1926576"
+    },
+    {
+      "id": "multiplier",
+      "name": "Multiplier",
+      "group": "Signal processing",
+      "status": "submitted",
+      "revision_id": "e09f04b2-cea0-5166-8f7e-82d0536540ca",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "03c790d64b21d4d1632f3500d8f3b7b7cb39df3e6f7e5b16f73d1be61de89c6b"
+    },
+    {
+      "id": "limiter",
+      "name": "Limiter",
+      "group": "Signal processing",
+      "status": "submitted",
+      "revision_id": "3c9d6dfb-3c3a-5457-9fa6-09e5fb61bf1d",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "80624c113af75af44b9386a81b25a11644cdc71a36fc140236295e58df647c9d"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "group": "Signal processing",
+      "status": "submitted",
+      "revision_id": "b61ee334-61f3-5217-8e50-d6b44a46bce0",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "d9309c621f8ea6d77176a362d05527ed2dc659523df72fd4e7f2a0edee9cd2d4"
+    },
+    {
+      "id": "amplifier-variable-gain",
+      "name": "Variable-gain amplifier",
+      "group": "Signal processing",
+      "status": "submitted",
+      "revision_id": "72b83fc3-8e1a-5944-a3cd-d2621cb5814d",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "bde5f8e6133e9aa4b6cefc45b201b15676bbe2ea0b7d37878a708c4d58f63dd2"
+    },
+    {
+      "id": "flipflop-jk",
+      "name": "JK flip-flop",
+      "group": "Digital building blocks",
+      "status": "submitted",
+      "revision_id": "8fb14572-f87d-5999-9dbd-0edfcca9d0d5",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "5b254933c537704bc4341db04c5ee2cc375a4b35e5fbd056fd8658f7fed3ecf8"
+    },
+    {
+      "id": "flipflop-t",
+      "name": "T flip-flop",
+      "group": "Digital building blocks",
+      "status": "submitted",
+      "revision_id": "0296d6d9-a310-530c-9599-8ca825c78321",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "b29397ef326a978b8cbc88e00b8ebc4f42dc93c69c2c4cd522a02816a95c44ef"
+    },
+    {
+      "id": "latch-sr",
+      "name": "SR latch",
+      "group": "Digital building blocks",
+      "status": "submitted",
+      "revision_id": "cbb2cb42-c41f-53e3-9e09-edb29fba9d3a",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "2156fa1733ea74fe6652dcc2f002bde3f183d6dab4edf845ac3ef8466cb300c3"
+    },
+    {
+      "id": "latch-d",
+      "name": "D latch",
+      "group": "Digital building blocks",
+      "status": "submitted",
+      "revision_id": "ccb326ea-6a9e-540b-a546-bcef7157b393",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "150ebce0962ed15b45cfd01a09f19dc34139c9555a0a0708f31817cf09a3cef9"
+    },
+    {
+      "id": "shift-register",
+      "name": "Shift register",
+      "group": "Digital building blocks",
+      "status": "submitted",
+      "revision_id": "57801e32-361d-5803-930d-c0b7eeb6dc22",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "148633e8377c8067608148582e9d4a8fe19d9a75dfe424fdfb4a969244a9c29c"
+    },
+    {
+      "id": "counter",
+      "name": "Counter",
+      "group": "Digital building blocks",
+      "status": "submitted",
+      "revision_id": "3d94abcc-b31f-5ef5-ab68-a43cecccfa2e",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "364a465d85f3049c171488224b8903f8b9e67819fc21fb765efb5b5abddd0372"
+    },
+    {
+      "id": "multiplexer-2to1",
+      "name": "2:1 multiplexer",
+      "group": "Digital building blocks",
+      "status": "submitted",
+      "revision_id": "544346d4-aac3-584d-8a82-b6cfd22fc28d",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "487009357f2d08e2c4c8091267fafe8edf54f0431928e29e8450e09463b2bcd3"
+    },
+    {
+      "id": "multiplexer-4to1",
+      "name": "4:1 multiplexer",
+      "group": "Digital building blocks",
+      "status": "submitted",
+      "revision_id": "7fb1ac9c-5322-57fe-8966-4f3256588599",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "0f1ddb10f5d5f137c0b5619dcc2c31d337da80cb6235e37a2382f0212a247679"
+    },
+    {
+      "id": "demultiplexer-1to4",
+      "name": "1:4 demultiplexer",
+      "group": "Digital building blocks",
+      "status": "submitted",
+      "revision_id": "d476cf25-f41f-58cc-820e-50bf072b1425",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "3b2b0d5381b411d7735c7801ed9b334fd9cda184f76523b9303b99169eec5628"
+    },
+    {
+      "id": "antenna-monopole",
+      "name": "Monopole antenna",
+      "group": "RF",
+      "status": "submitted",
+      "revision_id": "4a42271c-54ac-5129-ad26-ebb964a09c21",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "94577d0d169b1a240080064180236b2728bd9af458f836ac595792694f1b4cc4"
+    },
+    {
+      "id": "antenna-dipole",
+      "name": "Dipole antenna",
+      "group": "RF",
+      "status": "submitted",
+      "revision_id": "20276a6f-23d2-5f19-83ca-db5ae0c0e297",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "4d9d7b623a81ae530516a4d95cc1a38fe5ba354fe7a65853ed75ea67841940f3"
+    },
+    {
+      "id": "antenna-loop",
+      "name": "Loop antenna",
+      "group": "RF",
+      "status": "submitted",
+      "revision_id": "169bc0f0-3d63-5217-b0bd-f96b16b8a4c2",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "e1c4ed0036ca4508901513c4b3995766dd5b589019356f4c24fdd7e5ada2ce25"
+    },
+    {
+      "id": "mixer",
+      "name": "RF mixer",
+      "group": "RF",
+      "status": "submitted",
+      "revision_id": "182599d6-8f35-545e-8c0b-0b7e620e4a71",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "accc991b781d0c4fc7e8b3e0fae5febad18c51915a041f9bcefa62110a7fabce"
+    },
+    {
+      "id": "attenuator",
+      "name": "Attenuator",
+      "group": "RF",
+      "status": "submitted",
+      "revision_id": "1ef68637-47cc-58c0-8d19-cdf8fe3de466",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "76c212a4a8b4fd15251958ece3246a8bf5223555e2848900600bbe2380f63e55"
+    },
+    {
+      "id": "phase-shifter",
+      "name": "Phase shifter",
+      "group": "RF",
+      "status": "submitted",
+      "revision_id": "739b416b-7f18-5c8c-a6ba-c36b22fc83c4",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "f0f5bba410e7f0985c87f15910324123d2ab15a128aa8cd0a1c0c3299bc68b48"
+    },
+    {
+      "id": "power-splitter",
+      "name": "Power splitter",
+      "group": "RF",
+      "status": "submitted",
+      "revision_id": "394bc8a9-742f-59d3-87c0-78d1b4118c40",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "b9afeb43533b44367f74bce31bcc2a024d4370de8988914f9e9ca6aad1916486"
+    },
+    {
+      "id": "directional-coupler",
+      "name": "Directional coupler",
+      "group": "RF",
+      "status": "submitted",
+      "revision_id": "f48b9cc8-f698-5a80-8d89-1cf715009505",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "6b628fb320055a20b8aa425546b59e5002be5050ece1700bca74d0af99ed941c"
+    },
+    {
+      "id": "phototransistor-pnp",
+      "name": "PNP phototransistor",
+      "group": "Optoelectronics",
+      "status": "submitted",
+      "revision_id": "0e50a0ed-7bae-583e-967f-5fb4217107c0",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "239d257f4ed985e4dd3f6f13e41b862f11d8e000cba1fd5688fddb887b1d0514"
+    },
+    {
+      "id": "optocoupler-darlington",
+      "name": "Darlington-output optocoupler",
+      "group": "Optoelectronics",
+      "status": "submitted",
+      "revision_id": "426987d6-0818-5242-9c8c-b2f47ce5f66b",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "a665bfc69bef2a1cafaede91663e571b363fd4cbcdc69926db6f64c098030a0c"
+    },
+    {
+      "id": "optotriac",
+      "name": "Optotriac",
+      "group": "Optoelectronics",
+      "status": "submitted",
+      "revision_id": "566b0db5-a908-51b5-9c5b-9f26ede22f89",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "5e14303b11a23c57aa662495c31e893e462b7c06c37c8116a15ebd39959523a1"
+    },
+    {
+      "id": "photovoltaic-cell",
+      "name": "Photovoltaic cell",
+      "group": "Optoelectronics",
+      "status": "submitted",
+      "revision_id": "2386b7af-5405-560e-a057-d33ab2e99685",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "98e5e2e2f1d4e250e1c2f2a32e6bca753dfce7034d936989c38afcedbfe7705d"
+    },
+    {
+      "id": "laser-diode",
+      "name": "Laser diode",
+      "group": "Optoelectronics",
+      "status": "submitted",
+      "revision_id": "0a91b558-3755-54df-af86-b5dbf813b75f",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "63b8973fbd159298e52c5f183c58c6db7c8710ed1eabcbda88be23ab184331cc"
+    },
+    {
+      "id": "led-bicolour-2pin",
+      "name": "Bicolour LED (two terminals)",
+      "group": "Optoelectronics",
+      "status": "submitted",
+      "revision_id": "edbf84f8-d67c-5508-9798-25b8c1eb7cc8",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "200e05a686987a6ea3dcc345cb29b8ec74e868c564c2d32adc7b4143190d6019"
+    },
+    {
+      "id": "led-bicolour-common-anode",
+      "name": "Bicolour LED (common anode)",
+      "group": "Optoelectronics",
+      "status": "submitted",
+      "revision_id": "3f0a221c-1d03-5ac4-96b5-579b4fb94ca0",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "e1d041afa68c5d91f7da4ea66b582fffcfbbda215de8c770db70db4dd33c3479"
+    },
+    {
+      "id": "thyristor-scr",
+      "name": "SCR thyristor",
+      "group": "Power semiconductors",
+      "status": "submitted",
+      "revision_id": "561b1e45-4fab-5266-9b15-f9218cdc8dfe",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "fb32b11d2f33e48fec16f4ac9dd3454e09449a784744dfe73b4057091c8a629c"
+    },
+    {
+      "id": "triac",
+      "name": "TRIAC",
+      "group": "Power semiconductors",
+      "status": "submitted",
+      "revision_id": "9f52c807-0709-5c2a-a5b7-aec7ed562077",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "040bfc0fa05b28028352fad3c516d259f4e6bf3b8b0ba38d285ff2123e290ba7"
+    },
+    {
+      "id": "diac",
+      "name": "DIAC",
+      "group": "Power semiconductors",
+      "status": "submitted",
+      "revision_id": "f0e809a8-e50b-5dcd-b97b-1de5e43fdfc7",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "1ac037cd8744d034bf14c5e05a51c812ae06071b7d1cda131fd2826bee738670"
+    },
+    {
+      "id": "darlington-npn",
+      "name": "NPN Darlington",
+      "group": "Power semiconductors",
+      "status": "submitted",
+      "revision_id": "529c3ab7-1410-5e93-a94a-04e7bb545a8c",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "5faf60a804af72d06660cc8a12c9756ebb9b5e673d939741c9e0e7040303e9c1"
+    },
+    {
+      "id": "darlington-pnp",
+      "name": "PNP Darlington",
+      "group": "Power semiconductors",
+      "status": "submitted",
+      "revision_id": "994e340d-2260-532f-881b-0eef5830b6b1",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "2e5ab8574bc4df688a7830708e772414266352e58a0fd39f3677d13d6338d5f1"
+    },
+    {
+      "id": "bridge-rectifier",
+      "name": "Bridge rectifier",
+      "group": "Power semiconductors",
+      "status": "submitted",
+      "revision_id": "4fb72771-01e4-549e-b06b-aff0df1382fa",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "528e39fcffdedd4220324f1ca26555eb8de749309e81576940f5de365baebb0d"
+    },
+    {
+      "id": "microphone",
+      "name": "Microphone",
+      "group": "Transducers and basic motors",
+      "status": "submitted",
+      "revision_id": "40618060-6373-5e39-83bc-a4fbdc1485ee",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "896cbb1bea80296dd8d34aa9d5d3edc41f30ca062fcd90f60a4e3986e2ad101c"
+    },
+    {
+      "id": "loudspeaker",
+      "name": "Loudspeaker",
+      "group": "Transducers and basic motors",
+      "status": "submitted",
+      "revision_id": "7e588db3-6d0e-57a5-889e-dbb0f3187eda",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "c844d76d0b7b041ca824249cb0c3ef73974c6ec06e4142a1ef8f63b6478be45b"
+    },
+    {
+      "id": "piezo-transducer",
+      "name": "Piezoelectric transducer",
+      "group": "Transducers and basic motors",
+      "status": "submitted",
+      "revision_id": "946c8ae5-7cc4-5bce-b01a-440ae196c543",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "56c271761337504068ccd18d008c694af737542e31035170e2a62d17efcb50a5"
+    },
+    {
+      "id": "buzzer",
+      "name": "Buzzer",
+      "group": "Transducers and basic motors",
+      "status": "submitted",
+      "revision_id": "b28993b5-29ae-5f02-8706-8b5c90bd8801",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "dd6967c55ff8ed8b0ee3a56aebc84807457d27e4b311341c58a6586c56f903a2"
+    },
+    {
+      "id": "motor-ac",
+      "name": "AC motor",
+      "group": "Transducers and basic motors",
+      "status": "submitted",
+      "revision_id": "652cef0d-c411-512b-abda-2ae8528064df",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "72524ffd1b9e6c7b28212765120d699a7f0aee46ff19f002b4c95ca7065cfeb9"
+    },
+    {
+      "id": "jfet-n-enclosed",
+      "name": "N-channel JFET (enclosed)",
+      "group": "Additional transistor styles",
+      "status": "submitted",
+      "revision_id": "8caaf4a4-b999-5326-be01-e3d1ed87d92a",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "4ee5aaf12137698a257922efeda6f5cde45d14b97ec5b3b7f8b9678bcebc79f3"
+    },
+    {
+      "id": "jfet-p-enclosed",
+      "name": "P-channel JFET (enclosed)",
+      "group": "Additional transistor styles",
+      "status": "submitted",
+      "revision_id": "13235185-dcd4-52b4-9132-cfd8bf36e149",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "d8525f4208f92a0ea7a5e7069ecbb57cfbcd367d342285ec01d523916062b910"
+    },
+    {
+      "id": "mosfet-n-simplified",
+      "name": "Simplified NMOS",
+      "group": "Additional transistor styles",
+      "status": "submitted",
+      "revision_id": "c01da229-fcc2-5317-84de-7b6ca5491e24",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "d05afbba6d6c6ae59091359332f20bb865d9cba8dc608efc26f8982ff32cfb7d"
+    },
+    {
+      "id": "mosfet-p-simplified",
+      "name": "Simplified PMOS",
+      "group": "Additional transistor styles",
+      "status": "submitted",
+      "revision_id": "058b9a14-8036-5806-bd9f-df548cd7c43e",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "efa6e3fab7c29bc503372a49527468dcc99e97859afc0a572ff4bc980adb52db"
+    },
+    {
+      "id": "mosfet-n-enhancement-enclosed",
+      "name": "N-channel enhancement MOSFET (enclosed)",
+      "group": "Additional transistor styles",
+      "status": "submitted",
+      "revision_id": "364e4b4a-d283-5662-9923-bacd497af0d6",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "4b42da9e0e8f105df363eb723bc698525eb21ce64a06f52d635333d5c374acbd"
+    },
+    {
+      "id": "mosfet-p-enhancement-enclosed",
+      "name": "P-channel enhancement MOSFET (enclosed)",
+      "group": "Additional transistor styles",
+      "status": "submitted",
+      "revision_id": "aca59654-857c-5fe3-a52c-63164894bffe",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "3c3e4f2f844b0897c8d92205a3d6db7b4cd66ef000f0adb4c4c7834fcc986da1"
+    },
+    {
+      "id": "mosfet-n-depletion-enclosed",
+      "name": "N-channel depletion MOSFET (enclosed)",
+      "group": "Additional transistor styles",
+      "status": "submitted",
+      "revision_id": "3aed50a4-f154-585c-be48-2370ed502d8d",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "6595d4e5f6d33dffbf55327be3df59ad2c808fdfcea6f6bf66e7bc175a545691"
+    },
+    {
+      "id": "mosfet-p-depletion-enclosed",
+      "name": "P-channel depletion MOSFET (enclosed)",
+      "group": "Additional transistor styles",
+      "status": "submitted",
+      "revision_id": "84f8a5da-d97f-5ee0-91d4-800a01b0bf9d",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "7018a8d3d460ee835efdf013f795f9242213da41dba8df58046400ec9a9a4a63"
+    },
+    {
+      "id": "mosfet-n-enhancement-bulk-enclosed",
+      "name": "N-channel enhancement MOSFET - bulk terminal (enclosed)",
+      "group": "Additional transistor styles",
+      "status": "submitted",
+      "revision_id": "9504f587-9764-5e01-854b-cc08780df7c6",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "eceb842cc1333a9af076d9c8f3300e84cb4b39e24e36bbfcebd96c52b866ebec"
+    },
+    {
+      "id": "mosfet-p-enhancement-bulk-enclosed",
+      "name": "P-channel enhancement MOSFET - bulk terminal (enclosed)",
+      "group": "Additional transistor styles",
+      "status": "submitted",
+      "revision_id": "2fcdac67-b5e3-5e85-97fd-ff5a06d223c4",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "661c2763c06584318db2487fefbf9739b917bc3f5a40244d8280ee3f1e7bb8c8"
+    },
+    {
+      "id": "transistor-pnp-enclosed",
+      "name": "PNP transistor (enclosed)",
+      "group": "Additional transistor styles",
+      "status": "submitted",
+      "revision_id": "e1c95c8d-c949-5690-9cde-218723b98d25",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "04c12d944b4542da50720ee16f68a2971f9b56648907e3230a9e141f1ae4ab10"
+    },
+    {
+      "id": "motor-bldc",
+      "name": "BLDC motor",
+      "group": "Additional motors",
+      "status": "submitted",
+      "revision_id": "297b3b6b-9a9e-52cb-9488-e970ffadcf3e",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "80ee88d227c7c6f8a89682dc204cad4eea78b63e10c854ddf22e3069981074b4"
+    },
+    {
+      "id": "motor-ac-3phase",
+      "name": "Three-phase AC motor",
+      "group": "Additional motors",
+      "status": "submitted",
+      "revision_id": "f9302b78-5e91-5f7b-a553-9189b803620e",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "f48f4a5c76305029e75f2c56137fc3040024b451966e65e29d75cb60182d0f8e"
+    },
+    {
+      "id": "motor-stepper-bipolar",
+      "name": "Bipolar stepper motor",
+      "group": "Additional motors",
+      "status": "submitted",
+      "revision_id": "dcbc28f7-07fb-52e1-9ca3-09a535f67388",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "01bc12760faee519ec808dd8a836babee72a3250cf20ca2bed3ad0298b3915b3"
+    },
+    {
+      "id": "motor-stepper-unipolar",
+      "name": "Unipolar stepper motor",
+      "group": "Additional motors",
+      "status": "submitted",
+      "revision_id": "080b91a9-3476-5799-a9d6-d070506d0f52",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "4f98601797f746aa29a2dbf5d4254925b5553df5c0645cbc105ca76900ac229f"
+    },
+    {
+      "id": "generator-dc",
+      "name": "DC generator",
+      "group": "Generators",
+      "status": "submitted",
+      "revision_id": "243d8e92-401d-58d1-b175-78c1b0991917",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "888d7926b90ee727110ac1499ca827b488cba339f100e5d16b13962ee04c00ee"
+    },
+    {
+      "id": "generator-ac",
+      "name": "AC generator",
+      "group": "Generators",
+      "status": "submitted",
+      "revision_id": "2e66a651-8feb-550c-b696-a60cceed6f91",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "20e5225a54d290268b4f5d67d2ea82597779a147d0e7ae603aa405ac671ab982"
+    },
+    {
+      "id": "relay-coil",
+      "name": "Relay coil",
+      "group": "Relays and contactors",
+      "status": "submitted",
+      "revision_id": "6afbcf01-03ff-5621-8bd8-7fd844f2f779",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "b8d19c74108af993555650fe88a1e0af7f6ee8f35b0104dfe27b18ce507fb681"
+    },
+    {
+      "id": "relay-spst-no",
+      "name": "SPST-NO relay",
+      "group": "Relays and contactors",
+      "status": "submitted",
+      "revision_id": "df5c4c57-5bad-581c-9acb-a015cd6723cf",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "5375f730aaff8e04f0796a0e383e526432125850561eda9502004a87e09397c5"
+    },
+    {
+      "id": "relay-spst-nc",
+      "name": "SPST-NC relay",
+      "group": "Relays and contactors",
+      "status": "submitted",
+      "revision_id": "dd14e504-0183-588b-bf73-79e0d30d1108",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "94e3b44583cf31ebbd5557c1dcde87e7b9d8e5e77f79223b346ba7a805ebedc0"
+    },
+    {
+      "id": "relay-dpdt",
+      "name": "DPDT relay",
+      "group": "Relays and contactors",
+      "status": "submitted",
+      "revision_id": "3afd55c0-2165-5ced-bc58-6328c98de84b",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "d337f99925809e23c9ecb04533c43e794c33efa0c3c93b78163eca6231b4db5a"
+    },
+    {
+      "id": "contactor-3pole",
+      "name": "Three-pole contactor",
+      "group": "Relays and contactors",
+      "status": "submitted",
+      "revision_id": "46833e98-e7c6-58ed-a8c1-fa7a69e8ed3a",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "402998daecdb0774650e0d51f4afef7533015de7271ee5b6eca6bf3d0c0c0f4b"
+    },
+    {
+      "id": "pushbutton-no",
+      "name": "Pushbutton (NO)",
+      "group": "Pushbuttons",
+      "status": "submitted",
+      "revision_id": "576cc59d-8579-57d1-afec-54f574eb715d",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "bda41022aa292fe8558badfd5894d2131d86666089e1b9d94ff5115c7f12475e"
+    },
+    {
+      "id": "pushbutton-nc",
+      "name": "Pushbutton (NC)",
+      "group": "Pushbuttons",
+      "status": "submitted",
+      "revision_id": "f11fcb5f-b499-5652-b489-b0e2e856e29e",
+      "revision": 1,
+      "configurations": 9,
+      "fingerprint": "a663b91af85fd0ddba4c5015710674fc3594e86cbb4711d661a738dee5bf88b7"
+    }
+  ]
+}

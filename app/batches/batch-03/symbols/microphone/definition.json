@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "microphone",
+  "revision": 1,
+  "name": "Microphone",
+  "description": "Generic two-terminal microphone transducer. Acoustic diaphragm faces left; biasing and polarity are unspecified.",
+  "family": "sources",
+  "batch": "Batch 03",
+  "keywords": [
+    "microphone",
+    "Microphone",
+    "Transducers and basic motors",
+    "Batch 03",
+    "sources"
+  ],
+  "types": [
+    "sources"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "signal",
+      "name": "Signal",
+      "description": "Signal",
+      "kind": "passive",
+      "lead_part": "lead-signal"
+    },
+    {
+      "id": "return",
+      "name": "Return",
+      "description": "Return",
+      "kind": "passive",
+      "lead_part": "lead-return"
+    }
+  ],
+  "parts": [
+    {
+      "id": "body",
+      "description": "Body"
+    },
+    {
+      "id": "diaphragm",
+      "description": "Diaphragm"
+    },
+    {
+      "id": "lead-signal",
+      "description": "Lead signal"
+    },
+    {
+      "id": "lead-return",
+      "description": "Lead return"
+    }
+  ],
+  "reference": {
+    "source": "Generic functional construction, adapted to Schematica; not a claim of standards compliance.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

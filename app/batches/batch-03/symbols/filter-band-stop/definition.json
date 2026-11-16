@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "filter-band-stop",
+  "revision": 1,
+  "name": "Band-Stop filter",
+  "description": "Generic two-port band-stop filter. Internal response mark is qualitative, not a measured transfer function.",
+  "family": "networks",
+  "keywords": [
+    "band-stop",
+    "bandstop",
+    "filter",
+    "two-port",
+    "Batch 03"
+  ],
+  "types": [
+    "network",
+    "band-pass"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "in-upper",
+      "name": "in-upper",
+      "description": "Input port upper terminal",
+      "kind": "passive",
+      "lead_part": "lead-in-upper"
+    },
+    {
+      "id": "in-lower",
+      "name": "in-lower",
+      "description": "Input port lower terminal",
+      "kind": "passive",
+      "lead_part": "lead-in-lower"
+    },
+    {
+      "id": "out-upper",
+      "name": "out-upper",
+      "description": "Output port upper terminal",
+      "kind": "passive",
+      "lead_part": "lead-out-upper"
+    },
+    {
+      "id": "out-lower",
+      "name": "out-lower",
+      "description": "Output port lower terminal",
+      "kind": "passive",
+      "lead_part": "lead-out-lower"
+    }
+  ],
+  "parts": [
+    {
+      "id": "lead-in-upper",
+      "description": "Input port upper terminal lead"
+    },
+    {
+      "id": "lead-in-lower",
+      "description": "Input port lower terminal lead"
+    },
+    {
+      "id": "lead-out-upper",
+      "description": "Output port upper terminal lead"
+    },
+    {
+      "id": "lead-out-lower",
+      "description": "Output port lower terminal lead"
+    },
+    {
+      "id": "body",
+      "description": "Rectangular network block"
+    },
+    {
+      "id": "response",
+      "description": "Flat passband and straight slopes with upper tangent fillets only"
+    }
+  ],
+  "batch": "Batch 03",
+  "reference": {
+    "source": "Derived from the saved Schematica two-port band-pass body; qualitative response icon.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

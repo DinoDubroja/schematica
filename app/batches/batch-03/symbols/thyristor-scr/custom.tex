@@ -1,0 +1,29 @@
+\newcommand{\SCCustom}[3]{%
+\SCresolve{#1}{#2}{#3}
+\pgfmathsetmacro{\SCF}{#2}
+
+\begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+\SCdimension{grid}{1}
+\SCpin{anode}{floor(-8*\SCF)}{0}
+\SCpin{cathode}{ceil(8*\SCF)}{0}
+\SCpin{gate}{0}{floor(-8*\SCF)}
+\begin{SCpart}{lead-anode}
+\draw ({floor(-8*\SCF)},{0})--({-2*\SCF},{0})--({-2*\SCF},{0*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-cathode}
+\draw ({ceil(8*\SCF)},{0})--({1.5*\SCF},{0})--({1.5*\SCF},{0*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-gate}
+\draw ({0},{floor(-8*\SCF)})--({0},{-4*\SCF})--({0*\SCF},{-4*\SCF});
+\end{SCpart}
+\begin{SCpart}{junction}
+\draw ({-2*\SCF},{-2.5*\SCF})--({1.5*\SCF},{0*\SCF})--({-2*\SCF},{2.5*\SCF})--cycle;
+\end{SCpart}
+\begin{SCpart}{cathode}
+\draw ({1.5*\SCF},{-2.5*\SCF})--({1.5*\SCF},{2.5*\SCF});
+\end{SCpart}
+\begin{SCpart}{gate-branch}
+\draw ({0*\SCF},{-4*\SCF})--({1.5*\SCF},{-2.5*\SCF});
+\end{SCpart}
+\end{scope}
+}

@@ -1,0 +1,15 @@
+\newcommand{\SCCustom}[3]{%
+\SCresolve{#1}{#2}{#3}
+\pgfmathsetmacro{\SCF}{#2}
+
+\begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+\SCdimension{grid}{1}
+\SCpin{feed}{0}{floor(-8*\SCF)}
+\begin{SCpart}{lead-feed}
+\draw ({0},{floor(-8*\SCF)})--({0},{2*\SCF})--({0*\SCF},{2*\SCF});
+\end{SCpart}
+\begin{SCpart}{radiator}
+\draw ({0*\SCF},{2*\SCF})--({0*\SCF},{5*\SCF});\draw ({-3*\SCF},{5*\SCF})--({0*\SCF},{2*\SCF})--({3*\SCF},{5*\SCF});
+\end{SCpart}
+\end{scope}
+}

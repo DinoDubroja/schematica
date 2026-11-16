@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "id": "adc-differential-n-bit",
+  "revision": 1,
+  "name": "Differential n-bit ADC",
+  "description": "Differential n-bit ADC with unchanged tapered body, Latin Modern Sans ADC/n labels, op-amp-matched polarity marks and shorter grid-aligned leads. Supply, reference and clock terminals are omitted.",
+  "family": "analog",
+  "keywords": [
+    "adc",
+    "analog-to-digital",
+    "converter",
+    "differential",
+    "n-bit",
+    "bus",
+    "Batch 03"
+  ],
+  "types": [
+    "converter",
+    "adc",
+    "differential"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "in-plus",
+      "name": "+",
+      "description": "Positive differential analog input",
+      "kind": "input",
+      "lead_part": "lead-in-plus"
+    },
+    {
+      "id": "in-minus",
+      "name": "−",
+      "description": "Negative differential analog input",
+      "kind": "input",
+      "lead_part": "lead-in-minus"
+    },
+    {
+      "id": "digital-out",
+      "name": "n-bit output",
+      "description": "Parallel digital output bus of symbolic width n",
+      "kind": "output",
+      "lead_part": "lead-digital-out"
+    }
+  ],
+  "parts": [
+    {
+      "id": "body",
+      "description": "Tapered converter outline"
+    },
+    {
+      "id": "lead-in-plus",
+      "description": "Positive input lead"
+    },
+    {
+      "id": "lead-in-minus",
+      "description": "Negative input lead"
+    },
+    {
+      "id": "lead-digital-out",
+      "description": "Digital bus lead"
+    },
+    {
+      "id": "sign-plus",
+      "description": "Positive input polarity"
+    },
+    {
+      "id": "sign-minus",
+      "description": "Negative input polarity"
+    },
+    {
+      "id": "conversion-label",
+      "description": "ADC in Latin Modern Sans"
+    },
+    {
+      "id": "bus-slash",
+      "description": "Diagonal bus-width marker"
+    },
+    {
+      "id": "bus-width-label",
+      "description": "n in matching Latin Modern Sans"
+    }
+  ],
+  "batch": "Batch 03",
+  "lineage": {
+    "origin": "existing local unsaved ADC draft",
+    "render_id": "970bb08780df4efbb95b0ff06ab0b921",
+    "drawing_changes": false,
+    "human_verified": false
+  }
+}

@@ -1,0 +1,47 @@
+\newcommand{\SCCustom}[3]{%
+\SCresolve{#1}{#2}{#3}
+\pgfmathsetmacro{\SCF}{#2}
+
+\begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+\SCdimension{grid}{1}
+\SCpin{a}{floor(-8*\SCF)}{0}
+\SCpin{b}{ceil(8*\SCF)}{0}
+\begin{SCpart}{body}
+\draw ({0*\SCF},{0*\SCF}) circle ({4*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-a}
+\draw ({floor(-8*\SCF)},{0})--({-4*\SCF},{0})--({-4*\SCF},{0*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-b}
+\draw ({ceil(8*\SCF)},{0})--({4*\SCF},{0})--({4*\SCF},{0*\SCF});
+\end{SCpart}
+\begin{SCpart}{machine}
+\fill[even odd rule] ({1.260663*\SCF},{-0.5*\SCF})
+--({1.260663*\SCF},{2.1*\SCF})
+--({0.833573*\SCF},{2.1*\SCF})
+--({0.346542*\SCF},{0.829971*\SCF})
+.. controls ({0.215418*\SCF},{0.489049*\SCF}) and ({0.039337*\SCF},{0.024496*\SCF}) ..({-0.001873*\SCF},{-0.151585*\SCF})
+--({-0.00562*\SCF},{-0.151585*\SCF})
+.. controls ({-0.024352*\SCF},{-0.072911*\SCF}) and ({-0.069308*\SCF},{0.065706*\SCF}) ..({-0.125504*\SCF},{0.223055*\SCF})
+--({-0.713689*\SCF},{1.774063*\SCF})
+--({-0.841066*\SCF},{2.1*\SCF})
+--({-1.264409*\SCF},{2.1*\SCF})
+--({-1.264409*\SCF},{-0.5*\SCF})
+--({-0.97219*\SCF},{-0.5*\SCF})
+--({-0.97219*\SCF},{1.822767*\SCF})
+--({-0.968444*\SCF},{1.822767*\SCF})
+.. controls ({-0.945965*\SCF},{1.702882*\SCF}) and ({-0.79611*\SCF},{1.294524*\SCF}) ..({-0.698703*\SCF},{1.039769*\SCF})
+--({-0.144236*\SCF},{-0.417579*\SCF})
+--({0.129251*\SCF},{-0.417579*\SCF})
+--({0.627522*\SCF},{0.886167*\SCF})
+--({0.807349*\SCF},{1.36196*\SCF})
+.. controls ({0.844813*\SCF},{1.470605*\SCF}) and ({0.945965*\SCF},{1.740346*\SCF}) ..({0.964697*\SCF},{1.826513*\SCF})
+--({0.968444*\SCF},{1.822767*\SCF})
+--({0.968444*\SCF},{-0.5*\SCF})
+--cycle;
+\end{SCpart}
+\begin{SCpart}{supply-kind}
+\draw ({-1.5*\SCF},{-1.5*\SCF})--({1.5*\SCF},{-1.5*\SCF});\draw ({-1.5*\SCF},{-2.3*\SCF})--({-0.8*\SCF},{-2.3*\SCF});\draw ({-0.35*\SCF},{-2.3*\SCF})--({0.35*\SCF},{-2.3*\SCF});\draw ({0.8*\SCF},{-2.3*\SCF})--({1.5*\SCF},{-2.3*\SCF});
+\end{SCpart}
+\end{scope}
+}

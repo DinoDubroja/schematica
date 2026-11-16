@@ -1,0 +1,26 @@
+\newcommand{\SCCustom}[3]{%
+\SCresolve{#1}{#2}{#3}
+\pgfmathsetmacro{\SCF}{#2}
+
+\begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+\SCdimension{grid}{1}
+\SCpin{in}{floor(-12*\SCF)}{0}
+\SCpin{out1}{ceil(12*\SCF)}{ceil(4*\SCF)}
+\SCpin{out2}{ceil(12*\SCF)}{floor(-4*\SCF)}
+\begin{SCpart}{body}
+\draw ({-8*\SCF},{-6*\SCF})--({-8*\SCF},{6*\SCF})--({8*\SCF},{6*\SCF})--({8*\SCF},{-6*\SCF})--cycle;
+\end{SCpart}
+\begin{SCpart}{lead-in}
+\draw ({floor(-12*\SCF)},{0})--({-8*\SCF},{0})--({-8*\SCF},{0*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-out1}
+\draw ({ceil(12*\SCF)},{ceil(4*\SCF)})--({8*\SCF},{ceil(4*\SCF)})--({8*\SCF},{4*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-out2}
+\draw ({ceil(12*\SCF)},{floor(-4*\SCF)})--({8*\SCF},{floor(-4*\SCF)})--({8*\SCF},{-4*\SCF});
+\end{SCpart}
+\begin{SCpart}{division}
+\draw ({-8*\SCF},{0*\SCF})--({-2*\SCF},{0*\SCF})--({3*\SCF},{4*\SCF})--({8*\SCF},{4*\SCF});\draw ({-2*\SCF},{0*\SCF})--({3*\SCF},{-4*\SCF})--({8*\SCF},{-4*\SCF});
+\end{SCpart}
+\end{scope}
+}

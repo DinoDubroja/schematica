@@ -1,0 +1,26 @@
+\newcommand{\SCCustom}[3]{%
+\SCresolve{#1}{#2}{#3}
+\pgfmathsetmacro{\SCF}{#2}
+
+\begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+\SCdimension{grid}{1}
+\SCpin{a}{floor(-8*\SCF)}{0}
+\SCpin{b}{0}{floor(-8*\SCF)}
+\SCpin{out}{ceil(8*\SCF)}{0}
+\begin{SCpart}{body}
+\draw ({0*\SCF},{0*\SCF}) circle ({4*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-a}
+\draw ({floor(-8*\SCF)},{0})--({-4*\SCF},{0})--({-4*\SCF},{0*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-b}
+\draw ({0},{floor(-8*\SCF)})--({0},{-4*\SCF})--({0*\SCF},{-4*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-out}
+\draw ({ceil(8*\SCF)},{0})--({4*\SCF},{0})--({4*\SCF},{0*\SCF});
+\end{SCpart}
+\begin{SCpart}{input-signs}
+\draw ({-2.8*\SCF},{0*\SCF})--({-1.6*\SCF},{0*\SCF});\draw ({-2.2*\SCF},{-0.6*\SCF})--({-2.2*\SCF},{0.6*\SCF});\draw ({-0.6*\SCF},{-2.2*\SCF})--({0.6*\SCF},{-2.2*\SCF});\draw ({0*\SCF},{-2.8*\SCF})--({0*\SCF},{-1.6*\SCF});
+\end{SCpart}
+\end{scope}
+}

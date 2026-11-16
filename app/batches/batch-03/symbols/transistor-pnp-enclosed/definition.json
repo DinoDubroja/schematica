@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "id": "transistor-pnp-enclosed",
+  "revision": 1,
+  "name": "PNP transistor (enclosed)",
+  "description": "PNP bipolar transistor; the emitter arrow points toward the base. Circular enclosure; accepted internal geometry retained.",
+  "keywords": [
+    "transistor",
+    "active",
+    "pnp",
+    "BJT",
+    "PNP",
+    "transistors",
+    "overnight",
+    "batch 02",
+    "semiconductor",
+    "enclosed",
+    "Batch 03"
+  ],
+  "types": [
+    "transistors"
+  ],
+  "family": "transistors",
+  "batch": "Batch 03",
+  "attributes": {
+    "polarity": "pnp",
+    "device": "bjt",
+    "enclosed": false
+  },
+  "recipe": "custom",
+  "reference": {
+    "source": "CircuitikZ components list; Schematica construction adaptation",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+    "symbol": "pnp",
+    "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+  },
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "base",
+      "name": "Base",
+      "description": "Base",
+      "kind": "input",
+      "lead_part": "lead-base"
+    },
+    {
+      "id": "collector",
+      "name": "Collector",
+      "description": "Collector",
+      "kind": "passive",
+      "lead_part": "lead-collector"
+    },
+    {
+      "id": "emitter",
+      "name": "Emitter",
+      "description": "Emitter",
+      "kind": "passive",
+      "lead_part": "lead-emitter"
+    }
+  ],
+  "parts": [
+    {
+      "id": "lead-base",
+      "description": "Electrical lead: Base"
+    },
+    {
+      "id": "lead-collector",
+      "description": "Electrical lead: Collector"
+    },
+    {
+      "id": "lead-emitter",
+      "description": "Electrical lead: Emitter"
+    },
+    {
+      "id": "base",
+      "description": "Base"
+    },
+    {
+      "id": "collector-branch",
+      "description": "Collector branch"
+    },
+    {
+      "id": "emitter-branch",
+      "description": "Emitter branch"
+    },
+    {
+      "id": "emitter-arrow",
+      "description": "Emitter arrow"
+    },
+    {
+      "id": "enclosure",
+      "description": "Circular enclosure"
+    }
+  ],
+  "lineage": {
+    "symbol": "transistor-pnp",
+    "revision_id": "aade4544-ddc3-50f3-b89e-6510eb114858",
+    "internal_drawing_changes": false,
+    "human_verified": false
+  }
+}

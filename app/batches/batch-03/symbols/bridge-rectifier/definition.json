@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "bridge-rectifier",
+  "revision": 1,
+  "name": "Bridge rectifier",
+  "description": "Four-diode full-wave bridge with two AC terminals and positive/negative DC outputs. No capacitor, regulator or voltage rating implied.",
+  "family": "diodes",
+  "batch": "Batch 03",
+  "keywords": [
+    "bridge-rectifier",
+    "Bridge rectifier",
+    "Power semiconductors",
+    "Batch 03",
+    "diodes"
+  ],
+  "types": [
+    "diodes"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "ac1",
+      "name": "AC1",
+      "description": "AC1",
+      "kind": "passive",
+      "lead_part": "lead-ac1"
+    },
+    {
+      "id": "ac2",
+      "name": "AC2",
+      "description": "AC2",
+      "kind": "passive",
+      "lead_part": "lead-ac2"
+    },
+    {
+      "id": "positive",
+      "name": "Positive",
+      "description": "Positive",
+      "kind": "passive",
+      "lead_part": "lead-positive"
+    },
+    {
+      "id": "negative",
+      "name": "Negative",
+      "description": "Negative",
+      "kind": "passive",
+      "lead_part": "lead-negative"
+    }
+  ],
+  "parts": [
+    {
+      "id": "lead-ac1",
+      "description": "Lead ac1"
+    },
+    {
+      "id": "lead-ac2",
+      "description": "Lead ac2"
+    },
+    {
+      "id": "lead-positive",
+      "description": "Lead positive"
+    },
+    {
+      "id": "lead-negative",
+      "description": "Lead negative"
+    },
+    {
+      "id": "diode-1",
+      "description": "Diode 1"
+    },
+    {
+      "id": "diode-2",
+      "description": "Diode 2"
+    },
+    {
+      "id": "diode-3",
+      "description": "Diode 3"
+    },
+    {
+      "id": "diode-4",
+      "description": "Diode 4"
+    },
+    {
+      "id": "polarity",
+      "description": "Polarity"
+    }
+  ],
+  "reference": {
+    "source": "Generic functional construction, adapted to Schematica; not a claim of standards compliance.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

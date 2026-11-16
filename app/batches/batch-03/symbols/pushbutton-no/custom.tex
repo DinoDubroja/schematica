@@ -1,0 +1,25 @@
+\newcommand{\SCCustom}[3]{%
+\SCresolve{#1}{#2}{#3}
+\pgfmathsetmacro{\SCF}{#2}
+
+\begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+\SCdimension{grid}{1}
+\SCpin{a}{floor(-8*\SCF)}{0}
+\SCpin{b}{ceil(8*\SCF)}{0}
+\begin{SCpart}{lead-a}
+\draw ({floor(-8*\SCF)},{0})--({-3*\SCF},{0})--({-3*\SCF},{0*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-b}
+\draw ({ceil(8*\SCF)},{0})--({3*\SCF},{0})--({3*\SCF},{0*\SCF});
+\end{SCpart}
+\begin{SCpart}{contacts}
+\draw ({-3*\SCF},{0*\SCF}) circle ({0.35*\SCF});\draw ({3*\SCF},{0*\SCF}) circle ({0.35*\SCF});
+\end{SCpart}
+\begin{SCpart}{contact-bridge}
+\draw ({-3*\SCF},{2*\SCF})--({3*\SCF},{2*\SCF});
+\end{SCpart}
+\begin{SCpart}{actuator}
+\draw[dash pattern=on 0.65mm off 0.55mm] ({0*\SCF},{2*\SCF})--({0*\SCF},{5*\SCF});\draw ({-2*\SCF},{5*\SCF})--({2*\SCF},{5*\SCF});
+\end{SCpart}
+\end{scope}
+}

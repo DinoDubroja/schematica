@@ -1,0 +1,49 @@
+{
+  "designs": 84,
+  "configurations": 792,
+  "groups": {
+    "Data conversion": 6,
+    "Filters": 6,
+    "Digital building blocks": 10,
+    "Optoelectronics": 8,
+    "Additional transistor styles": 12,
+    "Relays and contactors": 6,
+    "Transducers and basic motors": 6,
+    "Signal processing": 8,
+    "RF": 8,
+    "Power semiconductors": 6,
+    "Additional motors": 4,
+    "Generators": 2,
+    "Pushbuttons": 2
+  },
+  "source_metadata_and_grid": "passed",
+  "hosted_private_assets": 1656,
+  "accepted_part_comparisons": 594,
+  "reused_draft_svg_bytes": 36,
+  "opening_events": 84,
+  "published_designs_unchanged": 91,
+  "public_svg_hashes": 1035,
+  "website_build": "826fc3ddf903",
+  "agent_approved": 0,
+  "agent_published": 0,
+  "deferred": 0,
+  "blocked": 0,
+  "candidate_human_decisions": {
+    "unverified": 84
+  },
+  "checked_at": "2026-11-16T01:27:01Z",
+  "candidate_asset_hashes": 1584,
+  "parent_asset_hashes": 72,
+  "python_tests": {
+    "distinct_checks": 87,
+    "initial_passed": 86,
+    "initial_error": "Windows socket aborted (10053)",
+    "affected_server_group_rerun": "4/4 passed"
+  },
+  "javascript_tests": {
+    "passed": 26
+  },
+  "manifest_sha256": "4aa6a6a3838e1c8928a91f025f31b0067f6bae6f54edafa93e1072656fdd5f0c",
+  "human_acceptance": false,
+  "documentation_links": 133
+}

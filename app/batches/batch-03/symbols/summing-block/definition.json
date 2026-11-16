@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "summing-block",
+  "revision": 1,
+  "name": "Summing block",
+  "description": "Generic summing block with two inputs and one output; input/output roles are explicit.",
+  "family": "analog",
+  "batch": "Batch 03",
+  "keywords": [
+    "summing-block",
+    "Summing block",
+    "Signal processing",
+    "Batch 03",
+    "analog"
+  ],
+  "types": [
+    "analog"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "a",
+      "name": "A",
+      "description": "A",
+      "kind": "input",
+      "lead_part": "lead-a"
+    },
+    {
+      "id": "b",
+      "name": "B",
+      "description": "B",
+      "kind": "input",
+      "lead_part": "lead-b"
+    },
+    {
+      "id": "out",
+      "name": "Output",
+      "description": "Output",
+      "kind": "output",
+      "lead_part": "lead-out"
+    }
+  ],
+  "parts": [
+    {
+      "id": "body",
+      "description": "Body"
+    },
+    {
+      "id": "lead-a",
+      "description": "Lead a"
+    },
+    {
+      "id": "lead-b",
+      "description": "Lead b"
+    },
+    {
+      "id": "lead-out",
+      "description": "Lead out"
+    },
+    {
+      "id": "input-signs",
+      "description": "Input signs"
+    }
+  ],
+  "reference": {
+    "source": "Generic functional construction, adapted to Schematica; not a claim of standards compliance.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

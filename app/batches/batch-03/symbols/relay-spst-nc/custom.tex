@@ -1,0 +1,100 @@
+\newcommand{\SCCustom}[3]{%
+\SCresolve{#1}{#2}{#3}
+\pgfmathsetmacro{\SCF}{#2}
+
+\begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+\SCdimension{grid}{1}
+\SCpin{a1}{floor(-8*\SCF)}{ceil(8*\SCF)}
+\SCpin{a2}{floor(-8*\SCF)}{floor(-8*\SCF)}
+\SCpin{contact1}{ceil(4*\SCF)}{floor(-8*\SCF)}
+\SCpin{contact2}{ceil(4*\SCF)}{ceil(8*\SCF)}
+\begin{SCpart}{coil}
+\draw ({-9.5*\SCF},{-2*\SCF})--({-9.5*\SCF},{2*\SCF})--({-6.5*\SCF},{2*\SCF})--({-6.5*\SCF},{-2*\SCF})--cycle;
+\end{SCpart}
+\begin{SCpart}{lead-a1}
+\draw ({floor(-8*\SCF)},{ceil(8*\SCF)})--({floor(-8*\SCF)},{2*\SCF})--({-8*\SCF},{2*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-a2}
+\draw ({floor(-8*\SCF)},{floor(-8*\SCF)})--({floor(-8*\SCF)},{-2*\SCF})--({-8*\SCF},{-2*\SCF});
+\end{SCpart}
+\begin{SCpart}{coil-labels}
+\fill[even odd rule] ({-6.205764*\SCF},{3.9*\SCF})
+--({-6.657061*\SCF},{5.1*\SCF})
+--({-6.809222*\SCF},{5.1*\SCF})
+--({-7.260519*\SCF},{3.9*\SCF})
+--({-7.132565*\SCF},{3.9*\SCF})
+--({-6.999424*\SCF},{4.252738*\SCF})
+--({-6.496254*\SCF},{4.252738*\SCF})
+--({-6.364841*\SCF},{3.9*\SCF})
+--cycle
+({-6.534294*\SCF},{4.349568*\SCF})
+--({-6.963112*\SCF},{4.349568*\SCF})
+.. controls ({-6.874928*\SCF},{4.59683*\SCF}) and ({-6.938905*\SCF},{4.415274*\SCF}) ..({-6.85072*\SCF},{4.662536*\SCF})
+.. controls ({-6.814409*\SCF},{4.764553*\SCF}) and ({-6.760807*\SCF},{4.911527*\SCF}) ..({-6.748703*\SCF},{4.975504*\SCF})
+--({-6.746974*\SCF},{4.975504*\SCF})
+.. controls ({-6.743516*\SCF},{4.951297*\SCF}) and ({-6.731412*\SCF},{4.908069*\SCF}) ..({-6.691643*\SCF},{4.793948*\SCF})
+--cycle;
+\fill[even odd rule] ({-5.422478*\SCF},{3.9*\SCF})
+--({-5.422478*\SCF},{4.000288*\SCF})
+--({-5.638617*\SCF},{4.000288*\SCF})
+--({-5.638617*\SCF},{5.072334*\SCF})
+--({-5.673199*\SCF},{5.072334*\SCF})
+.. controls ({-5.775216*\SCF},{4.966859*\SCF}) and ({-5.918732*\SCF},{4.961671*\SCF}) ..({-6.001729*\SCF},{4.958213*\SCF})
+--({-6.001729*\SCF},{4.857925*\SCF})
+.. controls ({-5.944669*\SCF},{4.859654*\SCF}) and ({-5.861671*\SCF},{4.863112*\SCF}) ..({-5.775216*\SCF},{4.899424*\SCF})
+--({-5.775216*\SCF},{4.000288*\SCF})
+--({-5.991354*\SCF},{4.000288*\SCF})
+--({-5.991354*\SCF},{3.9*\SCF})
+--cycle;\fill[even odd rule] ({-6.205764*\SCF},{-5.1*\SCF})
+--({-6.657061*\SCF},{-3.9*\SCF})
+--({-6.809222*\SCF},{-3.9*\SCF})
+--({-7.260519*\SCF},{-5.1*\SCF})
+--({-7.132565*\SCF},{-5.1*\SCF})
+--({-6.999424*\SCF},{-4.747262*\SCF})
+--({-6.496254*\SCF},{-4.747262*\SCF})
+--({-6.364841*\SCF},{-5.1*\SCF})
+--cycle
+({-6.534294*\SCF},{-4.650432*\SCF})
+--({-6.963112*\SCF},{-4.650432*\SCF})
+.. controls ({-6.874928*\SCF},{-4.40317*\SCF}) and ({-6.938905*\SCF},{-4.584726*\SCF}) ..({-6.85072*\SCF},{-4.337464*\SCF})
+.. controls ({-6.814409*\SCF},{-4.235447*\SCF}) and ({-6.760807*\SCF},{-4.088473*\SCF}) ..({-6.748703*\SCF},{-4.024496*\SCF})
+--({-6.746974*\SCF},{-4.024496*\SCF})
+.. controls ({-6.743516*\SCF},{-4.048703*\SCF}) and ({-6.731412*\SCF},{-4.091931*\SCF}) ..({-6.691643*\SCF},{-4.206052*\SCF})
+--cycle;
+\fill[even odd rule] ({-5.379251*\SCF},{-5.1*\SCF})
+--({-5.379251*\SCF},{-4.977233*\SCF})
+--({-5.693948*\SCF},{-4.977233*\SCF})
+.. controls ({-5.714697*\SCF},{-4.977233*\SCF}) and ({-5.735447*\SCF},{-4.978963*\SCF}) ..({-5.756196*\SCF},{-4.978963*\SCF})
+--({-5.944669*\SCF},{-4.978963*\SCF})
+.. controls ({-5.889337*\SCF},{-4.930548*\SCF}) and ({-5.757925*\SCF},{-4.800865*\SCF}) ..({-5.704323*\SCF},{-4.75072*\SCF})
+.. controls ({-5.67147*\SCF},{-4.719597*\SCF}) and ({-5.583285*\SCF},{-4.646974*\SCF}) ..({-5.550432*\SCF},{-4.61585*\SCF})
+.. controls ({-5.472622*\SCF},{-4.53804*\SCF}) and ({-5.379251*\SCF},{-4.446398*\SCF}) ..({-5.379251*\SCF},{-4.299424*\SCF})
+.. controls ({-5.379251*\SCF},{-4.100576*\SCF}) and ({-5.519308*\SCF},{-3.927666*\SCF}) ..({-5.74755*\SCF},{-3.927666*\SCF})
+.. controls ({-5.944669*\SCF},{-3.927666*\SCF}) and ({-6.041499*\SCF},{-4.062536*\SCF}) ..({-6.082997*\SCF},{-4.211239*\SCF})
+.. controls ({-6.062248*\SCF},{-4.240634*\SCF}) and ({-6.053602*\SCF},{-4.251009*\SCF}) ..({-6.050144*\SCF},{-4.256196*\SCF})
+.. controls ({-6.046686*\SCF},{-4.259654*\SCF}) and ({-6.029395*\SCF},{-4.282133*\SCF}) ..({-6.012104*\SCF},{-4.30634*\SCF})
+.. controls ({-5.977522*\SCF},{-4.173199*\SCF}) and ({-5.929107*\SCF},{-4.038329*\SCF}) ..({-5.771758*\SCF},{-4.038329*\SCF})
+.. controls ({-5.609222*\SCF},{-4.038329*\SCF}) and ({-5.521037*\SCF},{-4.168012*\SCF}) ..({-5.521037*\SCF},{-4.302882*\SCF})
+.. controls ({-5.521037*\SCF},{-4.449856*\SCF}) and ({-5.619597*\SCF},{-4.548415*\SCF}) ..({-5.721614*\SCF},{-4.652161*\SCF})
+--({-5.854755*\SCF},{-4.774928*\SCF})
+--({-6.069164*\SCF},{-4.989337*\SCF})
+--({-6.069164*\SCF},{-5.1*\SCF})
+--cycle;
+\end{SCpart}
+\begin{SCpart}{lead-contact1}
+\draw ({ceil(4*\SCF)},{floor(-8*\SCF)})--({ceil(4*\SCF)},{-3*\SCF})--({4*\SCF},{-3*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-contact2}
+\draw ({ceil(4*\SCF)},{ceil(8*\SCF)})--({ceil(4*\SCF)},{3*\SCF})--({4*\SCF},{3*\SCF});
+\end{SCpart}
+\begin{SCpart}{contacts}
+\draw ({4*\SCF},{-3*\SCF}) circle ({0.35*\SCF});\draw ({4*\SCF},{3*\SCF}) circle ({0.35*\SCF});
+\end{SCpart}
+\begin{SCpart}{blade}
+\draw ({4*\SCF},{-3*\SCF})--({4*\SCF},{3*\SCF});
+\end{SCpart}
+\begin{SCpart}{mechanical-coupling}
+\draw[dash pattern=on 0.65mm off 0.55mm] ({-6.5*\SCF},{0*\SCF})--({4*\SCF},{0*\SCF});
+\end{SCpart}
+\end{scope}
+}

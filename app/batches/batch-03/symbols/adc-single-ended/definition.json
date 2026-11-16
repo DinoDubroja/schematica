@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "id": "adc-single-ended",
+  "revision": 1,
+  "name": "Single-ended ADC",
+  "description": "Generic single-ended analog-to-n-bit digital converter; the bus width is symbolic, not an IC pinout.",
+  "family": "analog",
+  "keywords": [
+    "adc",
+    "analog-to-digital",
+    "converter",
+    "differential",
+    "n-bit",
+    "bus",
+    "Batch 03"
+  ],
+  "types": [
+    "converter",
+    "adc",
+    "differential"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "analog-in",
+      "name": "Analog input",
+      "description": "Single-ended analog input",
+      "kind": "input",
+      "lead_part": "lead-analog-in"
+    },
+    {
+      "id": "digital-out",
+      "name": "n-bit output",
+      "description": "Parallel digital output bus of symbolic width n",
+      "kind": "output",
+      "lead_part": "lead-digital-out"
+    }
+  ],
+  "parts": [
+    {
+      "id": "body",
+      "description": "Tapered converter outline"
+    },
+    {
+      "id": "lead-digital-out",
+      "description": "Digital bus lead"
+    },
+    {
+      "id": "conversion-label",
+      "description": "ADC in Latin Modern Sans"
+    },
+    {
+      "id": "bus-slash",
+      "description": "Diagonal bus-width marker"
+    },
+    {
+      "id": "bus-width-label",
+      "description": "n in matching Latin Modern Sans"
+    },
+    {
+      "id": "lead-analog-in",
+      "description": "Centred analog input lead"
+    }
+  ],
+  "batch": "Batch 03",
+  "lineage": {
+    "symbol": "adc-differential-n-bit",
+    "basis": "Same body, outlined label and n-bit bus as the reused draft; one centred analog input replaces the differential pair.",
+    "human_verified": false
+  }
+}

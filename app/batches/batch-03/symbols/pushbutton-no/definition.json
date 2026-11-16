@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "pushbutton-no",
+  "revision": 1,
+  "name": "Pushbutton (NO)",
+  "description": "Momentary normally open pushbutton, shown released. Push actuator closes the contact; no latching or emergency-stop function.",
+  "family": "switches",
+  "batch": "Batch 03",
+  "keywords": [
+    "pushbutton-no",
+    "Pushbutton (NO)",
+    "Pushbuttons",
+    "Batch 03",
+    "switches"
+  ],
+  "types": [
+    "switches"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "a",
+      "name": "Contact A",
+      "description": "Contact A",
+      "kind": "passive",
+      "lead_part": "lead-a"
+    },
+    {
+      "id": "b",
+      "name": "Contact B",
+      "description": "Contact B",
+      "kind": "passive",
+      "lead_part": "lead-b"
+    }
+  ],
+  "parts": [
+    {
+      "id": "lead-a",
+      "description": "Lead a"
+    },
+    {
+      "id": "lead-b",
+      "description": "Lead b"
+    },
+    {
+      "id": "contacts",
+      "description": "Contacts"
+    },
+    {
+      "id": "contact-bridge",
+      "description": "Contact bridge"
+    },
+    {
+      "id": "actuator",
+      "description": "Actuator"
+    }
+  ],
+  "reference": {
+    "source": "Fresh pushbutton redesign; spring-return released-state convention, not restored removed artwork.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

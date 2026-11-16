@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "photovoltaic-cell",
+  "revision": 1,
+  "name": "Photovoltaic cell",
+  "description": "Two-terminal photovoltaic source: long positive and short negative plate, incoming light arrows. A generic cell, without a diode model or module wiring.",
+  "family": "sources",
+  "batch": "Batch 03",
+  "keywords": [
+    "photovoltaic-cell",
+    "Photovoltaic cell",
+    "Optoelectronics",
+    "Batch 03",
+    "sources"
+  ],
+  "types": [
+    "sources"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "positive",
+      "name": "Positive",
+      "description": "Positive",
+      "kind": "passive",
+      "lead_part": "lead-positive"
+    },
+    {
+      "id": "negative",
+      "name": "Negative",
+      "description": "Negative",
+      "kind": "passive",
+      "lead_part": "lead-negative"
+    }
+  ],
+  "parts": [
+    {
+      "id": "lead-positive",
+      "description": "Lead positive"
+    },
+    {
+      "id": "lead-negative",
+      "description": "Lead negative"
+    },
+    {
+      "id": "cell",
+      "description": "Cell"
+    },
+    {
+      "id": "light",
+      "description": "Light"
+    },
+    {
+      "id": "polarity",
+      "description": "Polarity"
+    }
+  ],
+  "reference": {
+    "source": "Generic functional construction, adapted to Schematica; not a claim of standards compliance.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

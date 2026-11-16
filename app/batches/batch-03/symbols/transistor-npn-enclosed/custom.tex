@@ -1,0 +1,44 @@
+\newcommand{\SCCustom}[3]{%
+  \SCresolve{#1}{#2}{#3}
+  \pgfmathsetmacro{\SCF}{#2}
+  % A fixed 1 mm left shift at every size; recompute the emitter direction.
+  \pgfmathsetmacro{\SCbranchangle}{atan2(-2*\SCF,4.5*\SCF-1)}
+  \pgfmathsetmacro{\SCorientx}{ifthenelse(mod(0,2)==1,-1,1)}
+  \pgfmathsetmacro{\SCorienty}{ifthenelse(0>1,-1,1)}
+  \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+    \SCdimension{body-height}{7*\SCF}
+    \SCdimension{body-width}{4.5*\SCF-1}
+    \SCdimension{grid}{1}
+    \SCpin{base}{floor(-6*\SCF)}{0}
+    \begin{SCpart}{lead-base}
+    \draw ({floor(-6*\SCF)},{0})--({-1.5*\SCF},{0*\SCF});
+    \end{SCpart}
+    \SCpin{collector}{ceil(3*\SCF)-1}{ceil(6*\SCF)}
+    \begin{SCpart}{lead-collector}
+    \draw ({ceil(3*\SCF)-1},{ceil(6*\SCF)})--({ceil(3*\SCF)-1},{3.5*\SCF})--({3*\SCF-1},{3.5*\SCF});
+    \end{SCpart}
+    \SCpin{emitter}{ceil(3*\SCF)-1}{floor(-6*\SCF)}
+    \begin{SCpart}{lead-emitter}
+    \draw ({ceil(3*\SCF)-1},{floor(-6*\SCF)})--({ceil(3*\SCF)-1},{-3.5*\SCF})--({3*\SCF-1},{-3.5*\SCF});
+    \end{SCpart}
+    \begin{SCpart}{base}
+    \draw ({-1.5*\SCF},{-2.4*\SCF})--({-1.5*\SCF},{2.4*\SCF});
+    \end{SCpart}
+    \begin{SCpart}{collector-branch}
+    \draw ({-1.5*\SCF},{1.5*\SCF})--({3*\SCF-1},{3.5*\SCF});
+    \end{SCpart}
+    \begin{SCpart}{emitter-branch}
+    \draw ({-1.5*\SCF},{-1.5*\SCF})--({3*\SCF-1},{-3.5*\SCF});
+    \end{SCpart}
+    \begin{SCpart}{emitter-arrow}
+    \begin{scope}[shift={({3*\SCF-1},{-3.5*\SCF})},rotate=\SCbranchangle]
+    \fill ({-1.05*\SCF},{0.55*\SCF})--({0*\SCF},{0*\SCF})--({-1.05*\SCF},{-0.55*\SCF})--cycle;
+    \end{scope}
+    \end{SCpart}
+  \end{scope}
+\begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm]
+\begin{SCpart}{enclosure}
+\draw ({0.5*#2},0) circle ({5.6*#2});
+\end{SCpart}
+\end{scope}
+}

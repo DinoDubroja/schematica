@@ -1,0 +1,55 @@
+\newcommand{\SCCustom}[3]{%
+\SCresolve{#1}{#2}{#3}
+\pgfmathsetmacro{\SCF}{#2}
+
+\begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+\SCdimension{grid}{1}
+\SCpin{a}{floor(-8*\SCF)}{0}
+\SCpin{b}{ceil(8*\SCF)}{0}
+\begin{SCpart}{lead-a}
+\draw ({floor(-8*\SCF)},{0})--({-2*\SCF},{0})--({-2*\SCF},{0*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-b}
+\draw ({ceil(8*\SCF)},{0})--({2*\SCF},{0})--({2*\SCF},{0*\SCF});
+\end{SCpart}
+\begin{SCpart}{piezo}
+\draw ({-2*\SCF},{-2.5*\SCF})--({-2*\SCF},{2.5*\SCF});\draw ({2*\SCF},{-2.5*\SCF})--({2*\SCF},{2.5*\SCF});\draw ({-0.8*\SCF},{-2.5*\SCF})--({-0.8*\SCF},{2.5*\SCF})--({0.8*\SCF},{2.5*\SCF})--({0.8*\SCF},{-2.5*\SCF})--cycle;
+\end{SCpart}
+\begin{SCpart}{acoustic}
+\draw ({-2*\SCF},{4*\SCF}) .. controls ({-1*\SCF},{5*\SCF}) and ({1*\SCF},{5*\SCF}) .. ({2*\SCF},{4*\SCF});\draw ({-3*\SCF},{5.5*\SCF}) .. controls ({-1.5*\SCF},{7*\SCF}) and ({1.5*\SCF},{7*\SCF}) .. ({3*\SCF},{5.5*\SCF});
+\end{SCpart}
+\begin{SCpart}{identifier}
+\fill[even odd rule] ({-0.086744*\SCF},{-3.907493*\SCF})
+.. controls ({-0.086744*\SCF},{-3.691643*\SCF}) and ({-0.286455*\SCF},{-3.5*\SCF}) ..({-0.564841*\SCF},{-3.5*\SCF})
+--({-1.067147*\SCF},{-3.5*\SCF})
+--({-1.067147*\SCF},{-4.9*\SCF})
+--({-0.887608*\SCF},{-4.9*\SCF})
+--({-0.887608*\SCF},{-4.317003*\SCF})
+--({-0.55072*\SCF},{-4.317003*\SCF})
+.. controls ({-0.300576*\SCF},{-4.317003*\SCF}) and ({-0.086744*\SCF},{-4.133429*\SCF}) ..({-0.086744*\SCF},{-3.907493*\SCF})
+--cycle
+({-0.250144*\SCF},{-3.907493*\SCF})
+.. controls ({-0.250144*\SCF},{-4.066859*\SCF}) and ({-0.377233*\SCF},{-4.2*\SCF}) ..({-0.609222*\SCF},{-4.2*\SCF})
+--({-0.89366*\SCF},{-4.2*\SCF})
+--({-0.89366*\SCF},{-3.612968*\SCF})
+--({-0.609222*\SCF},{-3.612968*\SCF})
+.. controls ({-0.38732*\SCF},{-3.612968*\SCF}) and ({-0.250144*\SCF},{-3.736023*\SCF}) ..({-0.250144*\SCF},{-3.907493*\SCF})
+--cycle;
+\fill[even odd rule] ({1.157925*\SCF},{-4.9*\SCF})
+--({1.157925*\SCF},{-4.766859*\SCF})
+--({0.964265*\SCF},{-4.766859*\SCF})
+--({0.433718*\SCF},{-4.770893*\SCF})
+--({0.369164*\SCF},{-4.770893*\SCF})
+--({1.145821*\SCF},{-3.582709*\SCF})
+--({1.145821*\SCF},{-3.5*\SCF})
+--({0.167435*\SCF},{-3.5*\SCF})
+--({0.167435*\SCF},{-3.625072*\SCF})
+--({0.570893*\SCF},{-3.625072*\SCF})
+.. controls ({0.595101*\SCF},{-3.625072*\SCF}) and ({0.619308*\SCF},{-3.623055*\SCF}) ..({0.643516*\SCF},{-3.623055*\SCF})
+--({0.917867*\SCF},{-3.623055*\SCF})
+--({0.14121*\SCF},{-4.813256*\SCF})
+--({0.14121*\SCF},{-4.9*\SCF})
+--cycle;
+\end{SCpart}
+\end{scope}
+}

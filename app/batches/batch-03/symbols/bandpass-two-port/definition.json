@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "id": "bandpass-two-port",
+  "revision": 1,
+  "name": "Two-port band-pass network",
+  "description": "Two-port band-pass icon with a flat passband and exactly straight slopes. Moderate-radius circular fillets join only the upper slope/passband corners. The lower ends stop directly on straight slopes, without lower arcs or horizontal tails.",
+  "family": "networks",
+  "keywords": [
+    "two-port",
+    "bandpass",
+    "band-pass",
+    "filter",
+    "network",
+    "Batch 03"
+  ],
+  "types": [
+    "network",
+    "band-pass"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "in-upper",
+      "name": "in-upper",
+      "description": "Input port upper terminal",
+      "kind": "passive",
+      "lead_part": "lead-in-upper"
+    },
+    {
+      "id": "in-lower",
+      "name": "in-lower",
+      "description": "Input port lower terminal",
+      "kind": "passive",
+      "lead_part": "lead-in-lower"
+    },
+    {
+      "id": "out-upper",
+      "name": "out-upper",
+      "description": "Output port upper terminal",
+      "kind": "passive",
+      "lead_part": "lead-out-upper"
+    },
+    {
+      "id": "out-lower",
+      "name": "out-lower",
+      "description": "Output port lower terminal",
+      "kind": "passive",
+      "lead_part": "lead-out-lower"
+    }
+  ],
+  "parts": [
+    {
+      "id": "lead-in-upper",
+      "description": "Input port upper terminal lead"
+    },
+    {
+      "id": "lead-in-lower",
+      "description": "Input port lower terminal lead"
+    },
+    {
+      "id": "lead-out-upper",
+      "description": "Output port upper terminal lead"
+    },
+    {
+      "id": "lead-out-lower",
+      "description": "Output port lower terminal lead"
+    },
+    {
+      "id": "body",
+      "description": "Rectangular network block"
+    },
+    {
+      "id": "response",
+      "description": "Flat passband and straight slopes with upper tangent fillets only"
+    }
+  ],
+  "options": {
+    "response-width": {
+      "name": "Response width",
+      "default": "medium",
+      "affected_parts": [
+        "response"
+      ],
+      "values": [
+        {
+          "id": "narrow",
+          "name": "Narrow"
+        },
+        {
+          "id": "medium",
+          "name": "Medium"
+        },
+        {
+          "id": "wide",
+          "name": "Wide"
+        }
+      ]
+    }
+  },
+  "batch": "Batch 03",
+  "lineage": {
+    "origin": "existing local saved Unverified band-pass",
+    "render_id": "6323455d1341416792f4142f253ece7e",
+    "drawing_changes": false,
+    "human_verified": false
+  }
+}

@@ -5,6 +5,24 @@ when it was reconciled. Times use Europe/Zagreb with an explicit UTC offset.
 Later applicable user decisions supersede earlier proposals; a newer import date
 does not. See [current status](CURRENT.md) for the implementation checkpoint.
 
+## Batch 03 private review candidates
+
+Source: user-attached **Implement Batch 03: 84 symbol designs** in Agent B's chat;
+original attachment-turn timestamp is not exposed in the supplied transcript.
+Reconciled 16-11-2026 02:31 +01:00. Status: authorized implementation, complete
+private submission, awaiting human review. [Inventory and checks](../docs/BATCH_03.md).
+
+- 84 explicitly listed designs; all three sizes and independent strokes. Reuse
+  ADC/band-pass drafts and accepted transistor internals, retaining actual history
+  and acceptance status. The PNP dependency was settled live before construction.
+- Relays and NO/NC pushbuttons are fresh redraws. Other removed categories and
+  the brief's explicit exclusions remain excluded. No replacement designs added.
+- Progressive private uploads, exact source/evidence retention and Git delivery
+  are authorized. No automatic verification, public Library addition, app redesign,
+  paid API use, website redeployment or automatic design-rule adoption.
+- Geometry changes requested through Review require linked feedback/proposals and
+  new immutable revisions. Agent readiness checks are not human acceptance.
+
 ## Hosted Review implementation
 
 Source: user-attached **Implement Schematica Review** brief in the Agent B chat;

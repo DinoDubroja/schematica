@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "id": "directional-coupler",
+  "revision": 1,
+  "name": "Directional coupler",
+  "description": "Four-port directional coupler. Upper path input to through; lower-left isolated and lower-right coupled for indicated forward direction. Coupling ratio unspecified.",
+  "family": "analog",
+  "batch": "Batch 03",
+  "keywords": [
+    "directional-coupler",
+    "Directional coupler",
+    "RF",
+    "Batch 03",
+    "analog"
+  ],
+  "types": [
+    "analog"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "in",
+      "name": "IN",
+      "description": "IN",
+      "kind": "passive",
+      "lead_part": "lead-in"
+    },
+    {
+      "id": "through",
+      "name": "THRU",
+      "description": "THRU",
+      "kind": "passive",
+      "lead_part": "lead-through"
+    },
+    {
+      "id": "isolated",
+      "name": "ISO",
+      "description": "ISO",
+      "kind": "passive",
+      "lead_part": "lead-isolated"
+    },
+    {
+      "id": "coupled",
+      "name": "CPL",
+      "description": "CPL",
+      "kind": "passive",
+      "lead_part": "lead-coupled"
+    }
+  ],
+  "parts": [
+    {
+      "id": "body",
+      "description": "Body"
+    },
+    {
+      "id": "lead-in",
+      "description": "Lead in"
+    },
+    {
+      "id": "label-in",
+      "description": "Label in"
+    },
+    {
+      "id": "lead-through",
+      "description": "Lead through"
+    },
+    {
+      "id": "label-through",
+      "description": "Label through"
+    },
+    {
+      "id": "lead-isolated",
+      "description": "Lead isolated"
+    },
+    {
+      "id": "label-isolated",
+      "description": "Label isolated"
+    },
+    {
+      "id": "lead-coupled",
+      "description": "Lead coupled"
+    },
+    {
+      "id": "label-coupled",
+      "description": "Label coupled"
+    },
+    {
+      "id": "paths",
+      "description": "Paths"
+    },
+    {
+      "id": "coupling",
+      "description": "Coupling"
+    }
+  ],
+  "reference": {
+    "source": "Generic functional construction, adapted to Schematica; not a claim of standards compliance.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

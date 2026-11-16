@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "motor-ac-3phase",
+  "revision": 1,
+  "name": "Three-phase AC motor",
+  "description": "Three phase terminals U/V/W. Generic three-phase AC motor. Star/delta winding connection and sensors are not implied.",
+  "family": "sources",
+  "batch": "Batch 03",
+  "keywords": [
+    "motor-ac-3phase",
+    "Three-phase AC motor",
+    "Additional motors",
+    "Batch 03",
+    "sources"
+  ],
+  "types": [
+    "sources"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "u",
+      "name": "U",
+      "description": "U",
+      "kind": "passive",
+      "lead_part": "lead-u"
+    },
+    {
+      "id": "v",
+      "name": "V",
+      "description": "V",
+      "kind": "passive",
+      "lead_part": "lead-v"
+    },
+    {
+      "id": "w",
+      "name": "W",
+      "description": "W",
+      "kind": "passive",
+      "lead_part": "lead-w"
+    }
+  ],
+  "parts": [
+    {
+      "id": "body",
+      "description": "Body"
+    },
+    {
+      "id": "identifier",
+      "description": "Identifier"
+    },
+    {
+      "id": "lead-u",
+      "description": "Lead u"
+    },
+    {
+      "id": "label-u",
+      "description": "Label u"
+    },
+    {
+      "id": "lead-v",
+      "description": "Lead v"
+    },
+    {
+      "id": "label-v",
+      "description": "Label v"
+    },
+    {
+      "id": "lead-w",
+      "description": "Lead w"
+    },
+    {
+      "id": "label-w",
+      "description": "Label w"
+    }
+  ],
+  "reference": {
+    "source": "Generic functional construction, adapted to Schematica; not a claim of standards compliance.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

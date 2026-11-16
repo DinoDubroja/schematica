@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "thyristor-scr",
+  "revision": 1,
+  "name": "SCR thyristor",
+  "description": "Gate-controlled unidirectional thyristor with anode, cathode and gate; generic SCR without turn-off capability implied.",
+  "family": "diodes",
+  "batch": "Batch 03",
+  "keywords": [
+    "thyristor-scr",
+    "SCR thyristor",
+    "Power semiconductors",
+    "Batch 03",
+    "diodes"
+  ],
+  "types": [
+    "diodes"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "anode",
+      "name": "Anode",
+      "description": "Anode",
+      "kind": "passive",
+      "lead_part": "lead-anode"
+    },
+    {
+      "id": "cathode",
+      "name": "Cathode",
+      "description": "Cathode",
+      "kind": "passive",
+      "lead_part": "lead-cathode"
+    },
+    {
+      "id": "gate",
+      "name": "Gate",
+      "description": "Gate",
+      "kind": "input",
+      "lead_part": "lead-gate"
+    }
+  ],
+  "parts": [
+    {
+      "id": "lead-anode",
+      "description": "Lead anode"
+    },
+    {
+      "id": "lead-cathode",
+      "description": "Lead cathode"
+    },
+    {
+      "id": "lead-gate",
+      "description": "Lead gate"
+    },
+    {
+      "id": "junction",
+      "description": "Junction"
+    },
+    {
+      "id": "cathode",
+      "description": "Cathode"
+    },
+    {
+      "id": "gate-branch",
+      "description": "Gate branch"
+    }
+  ],
+  "reference": {
+    "source": "CircuitikZ thyristor construction; adapted accepted diode geometry.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

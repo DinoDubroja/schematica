@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "id": "optocoupler-transistor",
+  "revision": 1,
+  "name": "Transistor-output optocoupler",
+  "description": "Optically isolated LED input and transistor output; the two sides have no electrical connection.",
+  "family": "transistors",
+  "batch": "Batch 03",
+  "keywords": [
+    "optocoupler-transistor",
+    "Transistor-output optocoupler",
+    "Optoelectronics",
+    "Batch 03",
+    "transistors"
+  ],
+  "types": [
+    "transistors"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "anode",
+      "name": "Anode",
+      "description": "Anode",
+      "kind": "passive",
+      "lead_part": "lead-anode"
+    },
+    {
+      "id": "cathode",
+      "name": "Cathode",
+      "description": "Cathode",
+      "kind": "passive",
+      "lead_part": "lead-cathode"
+    },
+    {
+      "id": "collector",
+      "name": "Collector",
+      "description": "Collector",
+      "kind": "passive",
+      "lead_part": "lead-collector"
+    },
+    {
+      "id": "emitter",
+      "name": "Emitter",
+      "description": "Emitter",
+      "kind": "passive",
+      "lead_part": "lead-emitter"
+    }
+  ],
+  "parts": [
+    {
+      "id": "enclosure",
+      "description": "Enclosure"
+    },
+    {
+      "id": "lead-anode",
+      "description": "Lead anode"
+    },
+    {
+      "id": "lead-cathode",
+      "description": "Lead cathode"
+    },
+    {
+      "id": "input-diode",
+      "description": "Input diode"
+    },
+    {
+      "id": "light",
+      "description": "Light"
+    },
+    {
+      "id": "lead-collector",
+      "description": "Lead collector"
+    },
+    {
+      "id": "lead-emitter",
+      "description": "Lead emitter"
+    },
+    {
+      "id": "base",
+      "description": "Base"
+    },
+    {
+      "id": "collector-branch",
+      "description": "Collector branch"
+    },
+    {
+      "id": "emitter-branch",
+      "description": "Emitter branch"
+    }
+  ],
+  "reference": {
+    "source": "CircuitikZ optical devices and onsemi MOC3023 functional diagram; Schematica geometry.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

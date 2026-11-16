@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "relay-coil",
+  "revision": 1,
+  "name": "Relay coil",
+  "description": "Relay/contactor coil with A1/A2 terminals; no contact set or supply type implied.",
+  "family": "switches",
+  "batch": "Batch 03",
+  "keywords": [
+    "relay-coil",
+    "Relay coil",
+    "Relays and contactors",
+    "Batch 03",
+    "switches"
+  ],
+  "types": [
+    "switches"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "a1",
+      "name": "A1",
+      "description": "A1",
+      "kind": "passive",
+      "lead_part": "lead-a1"
+    },
+    {
+      "id": "a2",
+      "name": "A2",
+      "description": "A2",
+      "kind": "passive",
+      "lead_part": "lead-a2"
+    }
+  ],
+  "parts": [
+    {
+      "id": "coil",
+      "description": "Coil"
+    },
+    {
+      "id": "lead-a1",
+      "description": "Lead a1"
+    },
+    {
+      "id": "lead-a2",
+      "description": "Lead a2"
+    },
+    {
+      "id": "coil-labels",
+      "description": "Coil labels"
+    }
+  ],
+  "reference": {
+    "source": "Fresh rectangular coil redesign; generic electromechanical relay conventions.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

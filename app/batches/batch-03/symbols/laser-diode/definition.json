@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "laser-diode",
+  "revision": 1,
+  "name": "Laser diode",
+  "description": "Laser diode with anode/cathode, outward emission arrows and LD identifier. No monitor diode or package pinout implied.",
+  "family": "diodes",
+  "batch": "Batch 03",
+  "keywords": [
+    "laser-diode",
+    "Laser diode",
+    "Optoelectronics",
+    "Batch 03",
+    "diodes"
+  ],
+  "types": [
+    "diodes"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "anode",
+      "name": "Anode",
+      "description": "Anode",
+      "kind": "passive",
+      "lead_part": "lead-anode"
+    },
+    {
+      "id": "cathode",
+      "name": "Cathode",
+      "description": "Cathode",
+      "kind": "passive",
+      "lead_part": "lead-cathode"
+    }
+  ],
+  "parts": [
+    {
+      "id": "lead-anode",
+      "description": "Lead anode"
+    },
+    {
+      "id": "lead-cathode",
+      "description": "Lead cathode"
+    },
+    {
+      "id": "diode",
+      "description": "Diode"
+    },
+    {
+      "id": "laser-emission",
+      "description": "Laser emission"
+    },
+    {
+      "id": "identifier",
+      "description": "Identifier"
+    }
+  ],
+  "reference": {
+    "source": "Generic functional construction, adapted to Schematica; not a claim of standards compliance.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "id": "optocoupler-darlington",
+  "revision": 1,
+  "name": "Darlington-output optocoupler",
+  "description": "Optically isolated LED input and darlington output. No electrical link between sides; no bias resistors, zero-cross circuit or external gate implied.",
+  "family": "transistors",
+  "batch": "Batch 03",
+  "keywords": [
+    "optocoupler-darlington",
+    "Darlington-output optocoupler",
+    "Optoelectronics",
+    "Batch 03",
+    "transistors"
+  ],
+  "types": [
+    "transistors"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "anode",
+      "name": "Anode",
+      "description": "Anode",
+      "kind": "passive",
+      "lead_part": "lead-anode"
+    },
+    {
+      "id": "cathode",
+      "name": "Cathode",
+      "description": "Cathode",
+      "kind": "passive",
+      "lead_part": "lead-cathode"
+    },
+    {
+      "id": "collector",
+      "name": "Collector",
+      "description": "Collector",
+      "kind": "passive",
+      "lead_part": "lead-collector"
+    },
+    {
+      "id": "emitter",
+      "name": "Emitter",
+      "description": "Emitter",
+      "kind": "passive",
+      "lead_part": "lead-emitter"
+    }
+  ],
+  "parts": [
+    {
+      "id": "enclosure",
+      "description": "Enclosure"
+    },
+    {
+      "id": "lead-anode",
+      "description": "Lead anode"
+    },
+    {
+      "id": "lead-cathode",
+      "description": "Lead cathode"
+    },
+    {
+      "id": "input-diode",
+      "description": "Input diode"
+    },
+    {
+      "id": "light",
+      "description": "Light"
+    },
+    {
+      "id": "lead-collector",
+      "description": "Lead collector"
+    },
+    {
+      "id": "lead-emitter",
+      "description": "Lead emitter"
+    },
+    {
+      "id": "darlington-output",
+      "description": "Darlington output"
+    }
+  ],
+  "reference": {
+    "source": "Generic optocoupler; onsemi MOC3023 functional isolation diagram for optotriac, conventional Darlington pair for photodarlington.",
+    "url": "https://www.onsemi.com/download/data-sheet/pdf/moc3023m-d.pdf"
+  }
+}

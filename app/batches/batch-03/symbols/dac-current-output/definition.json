@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "dac-current-output",
+  "revision": 1,
+  "name": "Current-output DAC",
+  "description": "Generic n-bit digital-to-analog converter with current output. Supply and reference pins are outside this functional block.",
+  "family": "analog",
+  "batch": "Batch 03",
+  "keywords": [
+    "dac-current-output",
+    "Current-output DAC",
+    "Data conversion",
+    "Batch 03",
+    "analog"
+  ],
+  "types": [
+    "analog"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "digital-in",
+      "name": "n-bit input",
+      "description": "n-bit input",
+      "kind": "input",
+      "lead_part": "lead-digital-in"
+    },
+    {
+      "id": "analog-out",
+      "name": "current output",
+      "description": "current output",
+      "kind": "output",
+      "lead_part": "lead-analog-out"
+    }
+  ],
+  "parts": [
+    {
+      "id": "body",
+      "description": "Body"
+    },
+    {
+      "id": "lead-digital-in",
+      "description": "Lead digital in"
+    },
+    {
+      "id": "lead-analog-out",
+      "description": "Lead analog out"
+    },
+    {
+      "id": "conversion-label",
+      "description": "Conversion label"
+    },
+    {
+      "id": "input-bus",
+      "description": "Input bus"
+    },
+    {
+      "id": "output-kind",
+      "description": "Output kind"
+    }
+  ],
+  "reference": {
+    "source": "Generic functional construction, adapted to Schematica; not a claim of standards compliance.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

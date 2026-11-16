@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "id": "motor-stepper-unipolar",
+  "revision": 1,
+  "name": "Unipolar stepper motor",
+  "description": "Two separate phase windings A/B with individual centre taps A0/B0: six terminals, no common connection assumed. Generic stepper, no step angle specified.",
+  "family": "sources",
+  "batch": "Batch 03",
+  "keywords": [
+    "motor-stepper-unipolar",
+    "Unipolar stepper motor",
+    "Additional motors",
+    "Batch 03",
+    "sources"
+  ],
+  "types": [
+    "sources"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "a1",
+      "name": "A1",
+      "description": "A1",
+      "kind": "passive",
+      "lead_part": "lead-a1"
+    },
+    {
+      "id": "a2",
+      "name": "A2",
+      "description": "A2",
+      "kind": "passive",
+      "lead_part": "lead-a2"
+    },
+    {
+      "id": "a0",
+      "name": "A0",
+      "description": "A0",
+      "kind": "passive",
+      "lead_part": "lead-a0"
+    },
+    {
+      "id": "b1",
+      "name": "B1",
+      "description": "B1",
+      "kind": "passive",
+      "lead_part": "lead-b1"
+    },
+    {
+      "id": "b2",
+      "name": "B2",
+      "description": "B2",
+      "kind": "passive",
+      "lead_part": "lead-b2"
+    },
+    {
+      "id": "b0",
+      "name": "B0",
+      "description": "B0",
+      "kind": "passive",
+      "lead_part": "lead-b0"
+    }
+  ],
+  "parts": [
+    {
+      "id": "body",
+      "description": "Body"
+    },
+    {
+      "id": "identifier",
+      "description": "Identifier"
+    },
+    {
+      "id": "winding-a",
+      "description": "Winding a"
+    },
+    {
+      "id": "lead-a1",
+      "description": "Lead a1"
+    },
+    {
+      "id": "lead-a2",
+      "description": "Lead a2"
+    },
+    {
+      "id": "label-a",
+      "description": "Label a"
+    },
+    {
+      "id": "lead-a0",
+      "description": "Lead a0"
+    },
+    {
+      "id": "tap-a",
+      "description": "Tap a"
+    },
+    {
+      "id": "winding-b",
+      "description": "Winding b"
+    },
+    {
+      "id": "lead-b1",
+      "description": "Lead b1"
+    },
+    {
+      "id": "lead-b2",
+      "description": "Lead b2"
+    },
+    {
+      "id": "label-b",
+      "description": "Label b"
+    },
+    {
+      "id": "lead-b0",
+      "description": "Lead b0"
+    },
+    {
+      "id": "tap-b",
+      "description": "Tap b"
+    }
+  ],
+  "reference": {
+    "source": "Generic winding diagram, TI six-wire unipolar and Oriental Motor two-phase connection references.",
+    "url": "https://www.orientalmotor.com/stepper-motors/technology/unipolar-bipolar-connections.html"
+  }
+}

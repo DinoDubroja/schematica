@@ -1,0 +1,96 @@
+\newcommand{\SCCustom}[3]{%
+  \SCresolve{#1}{#2}{#3}%
+  \pgfmathsetmacro{\SCend}{round(ceil(6*\SCscale+2)-2*\SCscale)}%
+  \pgfmathsetmacro{\SCport}{round(3.5*\SCscale)}%
+  \pgfmathsetmacro{\SCmarkx}{-2*\SCscale}%
+  \pgfmathsetmacro{\SCbusx}{(3*\SCscale+\SCend)/2}%
+  \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+    \SCpin{analog-in}{-\SCend}{0}
+\begin{SCpart}{lead-analog-in}\draw (-\SCend,0)--({-3*\SCscale},0);\end{SCpart}
+\SCpin{digital-out}{\SCend}{0}
+    \SCdimension{body-width}{6*\SCscale}
+    \SCdimension{body-height}{12*\SCscale}
+    \begin{SCpart}{body}
+      \draw ({-3*\SCscale},{-6*\SCscale})--({-3*\SCscale},{6*\SCscale})
+        --({3*\SCscale},{4*\SCscale})--({3*\SCscale},{-4*\SCscale})--cycle;
+    \end{SCpart}
+    
+    
+    \begin{SCpart}{lead-digital-out}
+      \draw ({3*\SCscale},0)--(\SCend,0);
+    \end{SCpart}
+    
+    
+    \begin{SCpart}{conversion-label}
+      % Latin Modern Sans 10 Regular glyph outlines; layout and scaling are TeX.
+      \fill[even odd rule] ({-0.8122734*\SCscale},{-0.7754533*\SCscale})
+      --({-1.3947001*\SCscale},{0.7732218*\SCscale})
+      --({-1.5910739*\SCscale},{0.7732218*\SCscale})
+      --({-2.1735007*\SCscale},{-0.7754533*\SCscale})
+      --({-2.0083682*\SCscale},{-0.7754533*\SCscale})
+      --({-1.8365411*\SCscale},{-0.3202232*\SCscale})
+      --({-1.1871688*\SCscale},{-0.3202232*\SCscale})
+      --({-1.0175732*\SCscale},{-0.7754533*\SCscale})
+      --cycle
+      ({-1.2362622*\SCscale},{-0.1952580*\SCscale})
+      --({-1.7896792*\SCscale},{-0.1952580*\SCscale})
+      ..controls ({-1.6758717*\SCscale},{0.1238494*\SCscale}) and ({-1.7584379*\SCscale},{-0.1104603*\SCscale})..({-1.6446304*\SCscale},{0.2086471*\SCscale})
+      ..controls ({-1.5977685*\SCscale},{0.3403068*\SCscale}) and ({-1.5285914*\SCscale},{0.5299861*\SCscale})..({-1.5129707*\SCscale},{0.6125523*\SCscale})
+      --({-1.5107392*\SCscale},{0.6125523*\SCscale})
+      ..controls ({-1.5062762*\SCscale},{0.5813110*\SCscale}) and ({-1.4906555*\SCscale},{0.5255230*\SCscale})..({-1.4393305*\SCscale},{0.3782427*\SCscale})
+      --cycle
+      ({0.7364017*\SCscale},{-0.0145049*\SCscale})
+      ..controls ({0.7364017*\SCscale},{0.4184100*\SCscale}) and ({0.4351464*\SCscale},{0.7732218*\SCscale})..({0.0513250*\SCscale},{0.7732218*\SCscale})
+      --({-0.5333333*\SCscale},{0.7732218*\SCscale})
+      --({-0.5333333*\SCscale},{-0.7754533*\SCscale})
+      --({0.0535565*\SCscale},{-0.7754533*\SCscale})
+      ..controls ({0.4329149*\SCscale},{-0.7754533*\SCscale}) and ({0.7364017*\SCscale},{-0.4362622*\SCscale})..({0.7364017*\SCscale},{-0.0145049*\SCscale})
+      --cycle
+      ({0.5444909*\SCscale},{-0.0145049*\SCscale})
+      ..controls ({0.5444909*\SCscale},{-0.3938633*\SCscale}) and ({0.3124128*\SCscale},{-0.6504881*\SCscale})..({0.0000000*\SCscale},{-0.6504881*\SCscale})
+      --({-0.3414226*\SCscale},{-0.6504881*\SCscale})
+      --({-0.3414226*\SCscale},{0.6482566*\SCscale})
+      --({0.0000000*\SCscale},{0.6482566*\SCscale})
+      ..controls ({0.3124128*\SCscale},{0.6482566*\SCscale}) and ({0.5444909*\SCscale},{0.3782427*\SCscale})..({0.5444909*\SCscale},{-0.0145049*\SCscale})
+      --cycle
+      ({2.1735007*\SCscale},{-0.6750349*\SCscale})
+      --({2.1601116*\SCscale},{-0.5210600*\SCscale})
+      ..controls ({2.0953975*\SCscale},{-0.5656904*\SCscale}) and ({2.0306834*\SCscale},{-0.6080893*\SCscale})..({1.9548117*\SCscale},{-0.6304045*\SCscale})
+      ..controls ({1.8834031*\SCscale},{-0.6549512*\SCscale}) and ({1.8052999*\SCscale},{-0.6571827*\SCscale})..({1.7294282*\SCscale},{-0.6571827*\SCscale})
+      ..controls ({1.5843794*\SCscale},{-0.6571827*\SCscale}) and ({1.4527197*\SCscale},{-0.5790795*\SCscale})..({1.3612273*\SCscale},{-0.4652720*\SCscale})
+      ..controls ({1.2585774*\SCscale},{-0.3336123*\SCscale}) and ({1.2094840*\SCscale},{-0.1684798*\SCscale})..({1.2094840*\SCscale},{-0.0011158*\SCscale})
+      ..controls ({1.2094840*\SCscale},{0.1662483*\SCscale}) and ({1.2585774*\SCscale},{0.3336123*\SCscale})..({1.3612273*\SCscale},{0.4652720*\SCscale})
+      ..controls ({1.4527197*\SCscale},{0.5790795*\SCscale}) and ({1.5843794*\SCscale},{0.6571827*\SCscale})..({1.7294282*\SCscale},{0.6571827*\SCscale})
+      ..controls ({1.7963738*\SCscale},{0.6571827*\SCscale}) and ({1.8655509*\SCscale},{0.6504881*\SCscale})..({1.9302650*\SCscale},{0.6304045*\SCscale})
+      ..controls ({1.9972106*\SCscale},{0.6103208*\SCscale}) and ({2.0596932*\SCscale},{0.5768480*\SCscale})..({2.1177127*\SCscale},{0.5366806*\SCscale})
+      --({2.1489540*\SCscale},{0.7196653*\SCscale})
+      ..controls ({2.0820084*\SCscale},{0.7464435*\SCscale}) and ({2.0128312*\SCscale},{0.7687587*\SCscale})..({1.9414226*\SCscale},{0.7821478*\SCscale})
+      ..controls ({1.8722455*\SCscale},{0.7955370*\SCscale}) and ({1.8008368*\SCscale},{0.8000000*\SCscale})..({1.7294282*\SCscale},{0.8000000*\SCscale})
+      ..controls ({1.5330544*\SCscale},{0.8000000*\SCscale}) and ({1.3523013*\SCscale},{0.7107392*\SCscale})..({1.2206416*\SCscale},{0.5656904*\SCscale})
+      ..controls ({1.0822873*\SCscale},{0.4094840*\SCscale}) and ({1.0108787*\SCscale},{0.2064156*\SCscale})..({1.0108787*\SCscale},{-0.0011158*\SCscale})
+      ..controls ({1.0108787*\SCscale},{-0.2086471*\SCscale}) and ({1.0822873*\SCscale},{-0.4117155*\SCscale})..({1.2206416*\SCscale},{-0.5656904*\SCscale})
+      ..controls ({1.3523013*\SCscale},{-0.7107392*\SCscale}) and ({1.5330544*\SCscale},{-0.8000000*\SCscale})..({1.7294282*\SCscale},{-0.8000000*\SCscale})
+      ..controls ({1.8075314*\SCscale},{-0.8000000*\SCscale}) and ({1.8856346*\SCscale},{-0.7977685*\SCscale})..({1.9615063*\SCscale},{-0.7754533*\SCscale})
+      ..controls ({2.0373780*\SCscale},{-0.7553696*\SCscale}) and ({2.1065551*\SCscale},{-0.7152022*\SCscale})..({2.1735007*\SCscale},{-0.6750349*\SCscale})
+      --cycle;
+    \end{SCpart}
+    \begin{SCpart}{bus-slash}
+      \draw ({\SCbusx-0.55*\SCscale},{-0.7*\SCscale})--({\SCbusx+0.55*\SCscale},{0.7*\SCscale});
+    \end{SCpart}
+    \begin{SCpart}{bus-width-label}
+      \fill[even odd rule] ({\SCbusx+0.3949791*\SCscale},{1.2000000*\SCscale})
+      --({\SCbusx+0.3949791*\SCscale},{1.8649930*\SCscale})
+      ..controls ({\SCbusx+0.3949791*\SCscale},{2.0122734*\SCscale}) and ({\SCbusx+0.3615063*\SCscale},{2.2153417*\SCscale})..({\SCbusx+0.0892608*\SCscale},{2.2153417*\SCscale})
+      ..controls ({\SCbusx+-0.1115760*\SCscale},{2.2153417*\SCscale}) and ({\SCbusx+-0.2209205*\SCscale},{2.0635983*\SCscale})..({\SCbusx+-0.2343096*\SCscale},{2.0457462*\SCscale})
+      --({\SCbusx+-0.2343096*\SCscale},{2.2041841*\SCscale})
+      --({\SCbusx+-0.3949791*\SCscale},{2.2041841*\SCscale})
+      --({\SCbusx+-0.3949791*\SCscale},{1.2000000*\SCscale})
+      --({\SCbusx+-0.2209205*\SCscale},{1.2000000*\SCscale})
+      --({\SCbusx+-0.2209205*\SCscale},{1.7467225*\SCscale})
+      ..controls ({\SCbusx+-0.2209205*\SCscale},{1.8940028*\SCscale}) and ({\SCbusx+-0.1651325*\SCscale},{2.0792190*\SCscale})..({\SCbusx+0.0044630*\SCscale},{2.0792190*\SCscale})
+      ..controls ({\SCbusx+0.2186890*\SCscale},{2.0792190*\SCscale}) and ({\SCbusx+0.2209205*\SCscale},{1.9207810*\SCscale})..({\SCbusx+0.2209205*\SCscale},{1.8493724*\SCscale})
+      --({\SCbusx+0.2209205*\SCscale},{1.2000000*\SCscale})
+      --cycle;
+    \end{SCpart}
+  \end{scope}%
+}

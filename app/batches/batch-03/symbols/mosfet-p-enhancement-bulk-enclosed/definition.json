@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "id": "mosfet-p-enhancement-bulk-enclosed",
+  "revision": 1,
+  "name": "P-channel enhancement MOSFET - bulk terminal (enclosed)",
+  "description": "P-channel enhancement MOSFET - bulk terminal. The body has its own fourth terminal. A broken channel indicates enhancement mode. Circular enclosure; accepted internal geometry retained.",
+  "keywords": [
+    "transistor",
+    "active",
+    "pigfete",
+    "P-channel",
+    "MOSFET",
+    "MOS",
+    "field effect",
+    "enhancement",
+    "explicit bulk",
+    "transistors",
+    "mosfet",
+    "p",
+    "bulk",
+    "overnight",
+    "batch 02",
+    "semiconductor",
+    "enclosed",
+    "Batch 03"
+  ],
+  "types": [
+    "transistors"
+  ],
+  "family": "transistors",
+  "batch": "Batch 03",
+  "attributes": {
+    "channel": "p",
+    "device": "mosfet",
+    "enclosed": false
+  },
+  "recipe": "custom",
+  "reference": {
+    "source": "CircuitikZ components list; Schematica construction adaptation",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html",
+    "symbol": "pigfete",
+    "approach": "custom parameterized TeX with named parts; see docs/BATCH_02.md"
+  },
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "gate",
+      "name": "Gate",
+      "description": "Gate",
+      "kind": "input",
+      "lead_part": "lead-gate"
+    },
+    {
+      "id": "drain",
+      "name": "Drain",
+      "description": "Drain",
+      "kind": "passive",
+      "lead_part": "lead-drain"
+    },
+    {
+      "id": "source",
+      "name": "Source",
+      "description": "Source",
+      "kind": "passive",
+      "lead_part": "lead-source"
+    },
+    {
+      "id": "bulk",
+      "name": "Bulk / body",
+      "description": "Independent substrate terminal",
+      "kind": "passive",
+      "lead_part": "lead-bulk"
+    }
+  ],
+  "parts": [
+    {
+      "id": "lead-gate",
+      "description": "Electrical lead: Gate"
+    },
+    {
+      "id": "lead-drain",
+      "description": "Electrical lead: Drain"
+    },
+    {
+      "id": "lead-source",
+      "description": "Electrical lead: Source"
+    },
+    {
+      "id": "gate",
+      "description": "Gate"
+    },
+    {
+      "id": "channel",
+      "description": "Channel"
+    },
+    {
+      "id": "drain-branch",
+      "description": "Drain branch"
+    },
+    {
+      "id": "source-branch",
+      "description": "Source branch"
+    },
+    {
+      "id": "lead-bulk",
+      "description": "Electrical lead: Bulk / body"
+    },
+    {
+      "id": "body-arrow",
+      "description": "Body arrow"
+    },
+    {
+      "id": "enclosure",
+      "description": "Circular enclosure"
+    }
+  ],
+  "lineage": {
+    "symbol": "mosfet-p-enhancement-bulk",
+    "revision_id": "2364c1e0-bd8b-4c03-b62e-973a95713d15",
+    "internal_drawing_changes": false,
+    "human_verified": false,
+    "terminal_change": "Bulk lead extended to ceil(8*size) mm to clear the enclosure; other terminals unchanged."
+  }
+}

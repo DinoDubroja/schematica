@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "id": "contactor-3pole",
+  "revision": 1,
+  "name": "Three-pole contactor",
+  "description": "Complete de-energized contactor: coil A1/A2 and three normally open power poles L1/T1, L2/T2, L3/T3. Dashed line mechanically couples poles.",
+  "family": "switches",
+  "batch": "Batch 03",
+  "keywords": [
+    "contactor-3pole",
+    "Three-pole contactor",
+    "Relays and contactors",
+    "Batch 03",
+    "switches"
+  ],
+  "types": [
+    "switches"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "a1",
+      "name": "A1",
+      "description": "A1",
+      "kind": "passive",
+      "lead_part": "lead-a1"
+    },
+    {
+      "id": "a2",
+      "name": "A2",
+      "description": "A2",
+      "kind": "passive",
+      "lead_part": "lead-a2"
+    },
+    {
+      "id": "l1",
+      "name": "L1",
+      "description": "L1",
+      "kind": "passive",
+      "lead_part": "lead-l1"
+    },
+    {
+      "id": "t1",
+      "name": "T1",
+      "description": "T1",
+      "kind": "passive",
+      "lead_part": "lead-t1"
+    },
+    {
+      "id": "l2",
+      "name": "L2",
+      "description": "L2",
+      "kind": "passive",
+      "lead_part": "lead-l2"
+    },
+    {
+      "id": "t2",
+      "name": "T2",
+      "description": "T2",
+      "kind": "passive",
+      "lead_part": "lead-t2"
+    },
+    {
+      "id": "l3",
+      "name": "L3",
+      "description": "L3",
+      "kind": "passive",
+      "lead_part": "lead-l3"
+    },
+    {
+      "id": "t3",
+      "name": "T3",
+      "description": "T3",
+      "kind": "passive",
+      "lead_part": "lead-t3"
+    }
+  ],
+  "parts": [
+    {
+      "id": "coil",
+      "description": "Coil"
+    },
+    {
+      "id": "lead-a1",
+      "description": "Lead a1"
+    },
+    {
+      "id": "lead-a2",
+      "description": "Lead a2"
+    },
+    {
+      "id": "coil-labels",
+      "description": "Coil labels"
+    },
+    {
+      "id": "lead-l1",
+      "description": "Lead l1"
+    },
+    {
+      "id": "lead-t1",
+      "description": "Lead t1"
+    },
+    {
+      "id": "contacts-1",
+      "description": "Contacts 1"
+    },
+    {
+      "id": "blade-1",
+      "description": "Blade 1"
+    },
+    {
+      "id": "labels-1",
+      "description": "Labels 1"
+    },
+    {
+      "id": "lead-l2",
+      "description": "Lead l2"
+    },
+    {
+      "id": "lead-t2",
+      "description": "Lead t2"
+    },
+    {
+      "id": "contacts-2",
+      "description": "Contacts 2"
+    },
+    {
+      "id": "blade-2",
+      "description": "Blade 2"
+    },
+    {
+      "id": "labels-2",
+      "description": "Labels 2"
+    },
+    {
+      "id": "lead-l3",
+      "description": "Lead l3"
+    },
+    {
+      "id": "lead-t3",
+      "description": "Lead t3"
+    },
+    {
+      "id": "contacts-3",
+      "description": "Contacts 3"
+    },
+    {
+      "id": "blade-3",
+      "description": "Blade 3"
+    },
+    {
+      "id": "labels-3",
+      "description": "Labels 3"
+    },
+    {
+      "id": "mechanical-coupling",
+      "description": "Mechanical coupling"
+    }
+  ],
+  "reference": {
+    "source": "Fresh three-pole contactor redesign; generic NO power-contact convention.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

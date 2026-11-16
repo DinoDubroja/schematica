@@ -1,0 +1,42 @@
+\newcommand{\SCCustom}[3]{%
+\SCresolve{#1}{#2}{#3}
+\pgfmathsetmacro{\SCF}{#2}
+
+\begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+\SCdimension{grid}{1}
+\SCpin{anode}{floor(-4*\SCF)}{ceil(8*\SCF)}
+\SCpin{cathode}{floor(-4*\SCF)}{floor(-8*\SCF)}
+\SCpin{collector}{ceil(4*\SCF)}{ceil(8*\SCF)}
+\SCpin{emitter}{ceil(4*\SCF)}{floor(-8*\SCF)}
+\begin{SCpart}{enclosure}
+\draw ({-7*\SCF},{-6*\SCF})--({-7*\SCF},{6*\SCF})--({7*\SCF},{6*\SCF})--({7*\SCF},{-6*\SCF})--cycle;
+\end{SCpart}
+\begin{SCpart}{lead-anode}
+\draw ({floor(-4*\SCF)},{ceil(8*\SCF)})--({floor(-4*\SCF)},{1.2*\SCF})--({-4*\SCF},{1.2*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-cathode}
+\draw ({floor(-4*\SCF)},{floor(-8*\SCF)})--({floor(-4*\SCF)},{-1.2*\SCF})--({-4*\SCF},{-1.2*\SCF});
+\end{SCpart}
+\begin{SCpart}{input-diode}
+\draw ({-5.2*\SCF},{1.2*\SCF})--({-2.8*\SCF},{1.2*\SCF})--({-4*\SCF},{-1.2*\SCF})--cycle;\draw ({-5.3*\SCF},{-1.2*\SCF})--({-2.7*\SCF},{-1.2*\SCF});
+\end{SCpart}
+\begin{SCpart}{light}
+\draw ({-2.4*\SCF},{0.9*\SCF})--({0.1*\SCF},{2.1*\SCF});\fill ({-0.7943836957549647*\SCF},{2.108820701088405*\SCF})--({0.1*\SCF},{2.1*\SCF})--({-0.44368677832370274*\SCF},{1.3897854640490712*\SCF})--cycle;\draw ({-2.4*\SCF},{-1*\SCF})--({0.1*\SCF},{0.2*\SCF});\fill ({-0.7943836957549647*\SCF},{0.2088207010884049*\SCF})--({0.1*\SCF},{0.2*\SCF})--({-0.44368677832370274*\SCF},{-0.5102145359509288*\SCF})--cycle;
+\end{SCpart}
+\begin{SCpart}{lead-collector}
+\draw ({ceil(4*\SCF)},{ceil(8*\SCF)})--({ceil(4*\SCF)},{4*\SCF})--({4*\SCF},{4*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-emitter}
+\draw ({ceil(4*\SCF)},{floor(-8*\SCF)})--({ceil(4*\SCF)},{-4*\SCF})--({4*\SCF},{-4*\SCF});
+\end{SCpart}
+\begin{SCpart}{base}
+\draw ({1.4*\SCF},{-2.4*\SCF})--({1.4*\SCF},{2.4*\SCF});
+\end{SCpart}
+\begin{SCpart}{collector-branch}
+\draw ({1.4*\SCF},{1.3*\SCF})--({4*\SCF},{4*\SCF});
+\end{SCpart}
+\begin{SCpart}{emitter-branch}
+\draw ({1.4*\SCF},{-1.3*\SCF})--({4*\SCF},{-4*\SCF});\fill ({3.6650115297103283*\SCF},{-2.9333310144318503*\SCF})--({4*\SCF},{-4*\SCF})--({2.945671729371677*\SCF},{-3.6279893848908475*\SCF})--cycle;
+\end{SCpart}
+\end{scope}
+}

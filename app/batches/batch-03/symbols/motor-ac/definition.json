@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "motor-ac",
+  "revision": 1,
+  "name": "AC motor",
+  "description": "Generic two-terminal AC motor. Internal winding and field connections are not implied.",
+  "family": "sources",
+  "batch": "Batch 03",
+  "keywords": [
+    "motor-ac",
+    "AC motor",
+    "Transducers and basic motors",
+    "Batch 03",
+    "sources"
+  ],
+  "types": [
+    "sources"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "a",
+      "name": "A",
+      "description": "A",
+      "kind": "passive",
+      "lead_part": "lead-a"
+    },
+    {
+      "id": "b",
+      "name": "B",
+      "description": "B",
+      "kind": "passive",
+      "lead_part": "lead-b"
+    }
+  ],
+  "parts": [
+    {
+      "id": "body",
+      "description": "Body"
+    },
+    {
+      "id": "lead-a",
+      "description": "Lead a"
+    },
+    {
+      "id": "lead-b",
+      "description": "Lead b"
+    },
+    {
+      "id": "machine",
+      "description": "Machine"
+    },
+    {
+      "id": "supply-kind",
+      "description": "Supply kind"
+    }
+  ],
+  "reference": {
+    "source": "Generic functional construction, adapted to Schematica; not a claim of standards compliance.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

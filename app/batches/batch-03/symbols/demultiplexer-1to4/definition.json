@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "id": "demultiplexer-1to4",
+  "revision": 1,
+  "name": "1:4 demultiplexer",
+  "description": "Generic 1:4 demultiplexer. Binary select input S0/S1; no enable or manufacturer pinout.",
+  "family": "logic",
+  "batch": "Batch 03",
+  "keywords": [
+    "demultiplexer-1to4",
+    "1:4 demultiplexer",
+    "Digital building blocks",
+    "Batch 03",
+    "logic"
+  ],
+  "types": [
+    "logic"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "out0",
+      "name": "Y0",
+      "description": "Y0",
+      "kind": "output",
+      "lead_part": "lead-out0"
+    },
+    {
+      "id": "out1",
+      "name": "Y1",
+      "description": "Y1",
+      "kind": "output",
+      "lead_part": "lead-out1"
+    },
+    {
+      "id": "out2",
+      "name": "Y2",
+      "description": "Y2",
+      "kind": "output",
+      "lead_part": "lead-out2"
+    },
+    {
+      "id": "out3",
+      "name": "Y3",
+      "description": "Y3",
+      "kind": "output",
+      "lead_part": "lead-out3"
+    },
+    {
+      "id": "in",
+      "name": "Input",
+      "description": "Input",
+      "kind": "input",
+      "lead_part": "lead-in"
+    },
+    {
+      "id": "select0",
+      "name": "S0",
+      "description": "S0",
+      "kind": "input",
+      "lead_part": "lead-select0"
+    },
+    {
+      "id": "select1",
+      "name": "S1",
+      "description": "S1",
+      "kind": "input",
+      "lead_part": "lead-select1"
+    }
+  ],
+  "parts": [
+    {
+      "id": "body",
+      "description": "Body"
+    },
+    {
+      "id": "lead-out0",
+      "description": "Lead out0"
+    },
+    {
+      "id": "label-0",
+      "description": "Label 0"
+    },
+    {
+      "id": "lead-out1",
+      "description": "Lead out1"
+    },
+    {
+      "id": "label-1",
+      "description": "Label 1"
+    },
+    {
+      "id": "lead-out2",
+      "description": "Lead out2"
+    },
+    {
+      "id": "label-2",
+      "description": "Label 2"
+    },
+    {
+      "id": "lead-out3",
+      "description": "Lead out3"
+    },
+    {
+      "id": "label-3",
+      "description": "Label 3"
+    },
+    {
+      "id": "lead-in",
+      "description": "Lead in"
+    },
+    {
+      "id": "lead-select0",
+      "description": "Lead select0"
+    },
+    {
+      "id": "select-label0",
+      "description": "Select label0"
+    },
+    {
+      "id": "lead-select1",
+      "description": "Lead select1"
+    },
+    {
+      "id": "select-label1",
+      "description": "Select label1"
+    },
+    {
+      "id": "function",
+      "description": "Function"
+    }
+  ],
+  "reference": {
+    "source": "Generic functional construction, adapted to Schematica; not a claim of standards compliance.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

@@ -36,12 +36,15 @@ for ownership and handoffs.
 
 ## Latest changes
 
-Schematica Review adds private, persistent comments and exact-revision decisions,
-History comparison, shared feedback, recoverable discard, and a desktop connector
-using the existing ChatGPT subscription. Library keeps its presentation and exports;
-verification controls move to Review. All 91 accepted designs and 1,035 drawings
-remain unchanged. Agent A's exact ready host fixes are included; its experimental
-symbols and runtime remain isolated.
+**Batch 03 is ready in private Review: 84 designs / 792 configurations.**
+Open Review, select **Batch 03**, then inspect Medium/Medium and Small/Thick before
+leaving feedback. [Batch checklist, counts and source](docs/BATCH_03.md) include the
+electrical details to review and commands to reproduce/check one candidate.
+
+The 91 published designs and all 1,035 public drawings are unchanged by this batch.
+No candidate was verified or published by the agent, and no website redeployment
+was needed. The reused ADC/band-pass drafts retain their history and Unverified
+status; A's original store and runtime remain isolated.
 
 [Review workflow](docs/REVIEW.md) · [Setup, API and recovery](docs/REVIEW_SETUP.md)
 · [Delivery evidence and limits](context/CURRENT.md)
@@ -59,8 +62,7 @@ symbols and runtime remain isolated.
 | Process with the desktop stopped, then start it | Waiting for desktop changes to Working; proposals require approval |
 | Approve a correction | New revision returns unverified; old source and feedback remain in History |
 
-The initial production queue is empty: accepted symbols are already published.
-Use a real submitted candidate for the Review checks. Synthetic fixtures remain
+Batch 03 supplies real candidates for these Review checks. Synthetic fixtures remain
 on the separate validation site. Physical phone and second-device testing remain
 user checks. Each delivery records the actual build and hosted verification in
 [current status](context/CURRENT.md).

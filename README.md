@@ -16,6 +16,8 @@ and download SVGs for Inkscape.
 The website supports browsing, search, configuration comparison, dark/light mode
 and individual or complete-library SVG downloads. Private Review saves feedback and
 exact drawing approvals across devices, with subscription-backed desktop processing.
+**[Batch 03](docs/BATCH_03.md): 84 new candidates are ready in private Review.**
+They remain separate from the published library while awaiting feedback.
 Local MCP integration adds a
 shared selection viewer and confirmed creation/refinement in a separate dev store.
 Actual ChatGPT/Claude embedded journeys and remote MCP connectivity remain

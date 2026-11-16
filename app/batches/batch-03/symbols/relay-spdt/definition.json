@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "id": "relay-spdt",
+  "revision": 1,
+  "name": "SPDT relay",
+  "description": "Complete de-energized relay: coil A1/A2, common C, normally closed NC and normally open NO. Dashed line is mechanical coupling, not a wire.",
+  "family": "switches",
+  "batch": "Batch 03",
+  "keywords": [
+    "relay-spdt",
+    "SPDT relay",
+    "Relays and contactors",
+    "Batch 03",
+    "switches"
+  ],
+  "types": [
+    "switches"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "a1",
+      "name": "A1",
+      "description": "A1",
+      "kind": "passive",
+      "lead_part": "lead-a1"
+    },
+    {
+      "id": "a2",
+      "name": "A2",
+      "description": "A2",
+      "kind": "passive",
+      "lead_part": "lead-a2"
+    },
+    {
+      "id": "common",
+      "name": "C",
+      "description": "C",
+      "kind": "passive",
+      "lead_part": "lead-common"
+    },
+    {
+      "id": "nc",
+      "name": "NC",
+      "description": "NC",
+      "kind": "passive",
+      "lead_part": "lead-nc"
+    },
+    {
+      "id": "no",
+      "name": "NO",
+      "description": "NO",
+      "kind": "passive",
+      "lead_part": "lead-no"
+    }
+  ],
+  "parts": [
+    {
+      "id": "coil",
+      "description": "Coil"
+    },
+    {
+      "id": "lead-a1",
+      "description": "Lead a1"
+    },
+    {
+      "id": "lead-a2",
+      "description": "Lead a2"
+    },
+    {
+      "id": "lead-common",
+      "description": "Lead common"
+    },
+    {
+      "id": "lead-nc",
+      "description": "Lead nc"
+    },
+    {
+      "id": "lead-no",
+      "description": "Lead no"
+    },
+    {
+      "id": "contacts",
+      "description": "Contacts"
+    },
+    {
+      "id": "blade",
+      "description": "Blade"
+    },
+    {
+      "id": "mechanical-coupling",
+      "description": "Mechanical coupling"
+    },
+    {
+      "id": "labels",
+      "description": "Labels"
+    }
+  ],
+  "reference": {
+    "source": "Fresh redesign using generic relay coil/contact conventions; not a restoration of removed artwork.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

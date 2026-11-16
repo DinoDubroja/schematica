@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "led-bicolour-2pin",
+  "revision": 1,
+  "name": "Bicolour LED (two terminals)",
+  "description": "Two LED dies in antiparallel sharing two terminals. Current direction selects die; actual emission colours unspecified.",
+  "family": "diodes",
+  "batch": "Batch 03",
+  "keywords": [
+    "led-bicolour-2pin",
+    "Bicolour LED (two terminals)",
+    "Optoelectronics",
+    "Batch 03",
+    "diodes"
+  ],
+  "types": [
+    "diodes"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "a",
+      "name": "Terminal A",
+      "description": "Terminal A",
+      "kind": "passive",
+      "lead_part": "lead-a"
+    },
+    {
+      "id": "b",
+      "name": "Terminal B",
+      "description": "Terminal B",
+      "kind": "passive",
+      "lead_part": "lead-b"
+    }
+  ],
+  "parts": [
+    {
+      "id": "lead-a",
+      "description": "Lead a"
+    },
+    {
+      "id": "lead-b",
+      "description": "Lead b"
+    },
+    {
+      "id": "branches",
+      "description": "Branches"
+    },
+    {
+      "id": "led-1",
+      "description": "Led 1"
+    },
+    {
+      "id": "led-2",
+      "description": "Led 2"
+    },
+    {
+      "id": "light",
+      "description": "Light"
+    }
+  ],
+  "reference": {
+    "source": "Generic functional construction, adapted to Schematica; not a claim of standards compliance.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

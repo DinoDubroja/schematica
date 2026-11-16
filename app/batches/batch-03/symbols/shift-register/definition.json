@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "id": "shift-register",
+  "revision": 1,
+  "name": "Shift register",
+  "description": "Generic positive-edge shift register. Serial data in, n-bit parallel output.",
+  "family": "logic",
+  "batch": "Batch 03",
+  "keywords": [
+    "shift-register",
+    "Shift register",
+    "Digital building blocks",
+    "Batch 03",
+    "logic"
+  ],
+  "types": [
+    "logic"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "serial-in",
+      "name": "D",
+      "description": "D",
+      "kind": "input",
+      "lead_part": "lead-serial-in"
+    },
+    {
+      "id": "clock",
+      "name": "clock",
+      "description": "clock",
+      "kind": "input",
+      "lead_part": "lead-clock"
+    },
+    {
+      "id": "parallel-out",
+      "name": "Q",
+      "description": "Q",
+      "kind": "output",
+      "lead_part": "lead-parallel-out"
+    }
+  ],
+  "parts": [
+    {
+      "id": "body",
+      "description": "Body"
+    },
+    {
+      "id": "lead-serial-in",
+      "description": "Lead serial in"
+    },
+    {
+      "id": "label-serial-in",
+      "description": "Label serial in"
+    },
+    {
+      "id": "lead-clock",
+      "description": "Lead clock"
+    },
+    {
+      "id": "lead-parallel-out",
+      "description": "Lead parallel out"
+    },
+    {
+      "id": "label-parallel-out",
+      "description": "Label parallel out"
+    },
+    {
+      "id": "function",
+      "description": "Function"
+    },
+    {
+      "id": "clock-edge",
+      "description": "Clock edge"
+    },
+    {
+      "id": "bus-width",
+      "description": "Bus width"
+    }
+  ],
+  "reference": {
+    "source": "Generic functional construction, adapted to Schematica; not a claim of standards compliance.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

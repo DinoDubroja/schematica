@@ -1,0 +1,26 @@
+\newcommand{\SCCustom}[3]{%
+  \SCresolve{#1}{#2}{#3}%
+  \pgfmathsetmacro{\SCend}{ceil(6*\SCscale+2)}%
+  \pgfmathsetmacro{\SCport}{ceil(2*\SCscale)}%
+  \pgfmathsetmacro{\SCradius}{0.65*\SCscale}%
+  \pgfmathsetmacro{\SCarcx}{\SCradius*sin(70)}%
+  \pgfmathsetmacro{\SCarcy}{\SCradius*(1-cos(70))}%
+  \pgfmathsetmacro{\SCedge}{\SCarcx+(3.3*\SCscale-\SCarcy)/tan(70)}%
+  
+  \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+    \SCpin{in-upper}{-\SCend}{\SCport}
+    \SCpin{in-lower}{-\SCend}{-\SCport}
+    \SCpin{out-upper}{\SCend}{\SCport}
+    \SCpin{out-lower}{\SCend}{-\SCport}
+    \SCdimension{body-width}{10*\SCscale}
+    \SCdimension{body-height}{8*\SCscale}
+    \begin{SCpart}{lead-in-upper}\draw (-\SCend,\SCport)--({-5*\SCscale},\SCport);\end{SCpart}
+    \begin{SCpart}{lead-in-lower}\draw (-\SCend,-\SCport)--({-5*\SCscale},-\SCport);\end{SCpart}
+    \begin{SCpart}{lead-out-upper}\draw (\SCend,\SCport)--({5*\SCscale},\SCport);\end{SCpart}
+    \begin{SCpart}{lead-out-lower}\draw (\SCend,-\SCport)--({5*\SCscale},-\SCport);\end{SCpart}
+    \begin{SCpart}{body}\draw ({-5*\SCscale},{-4*\SCscale}) rectangle ({5*\SCscale},{4*\SCscale});\end{SCpart}
+    \begin{SCpart}{response}
+\draw ({-3*\SCscale},{1.5*\SCscale})--({-0.5*\SCscale},{1.5*\SCscale})--({2*\SCscale},{-1.5*\SCscale})--({3*\SCscale},{-1.5*\SCscale});
+\end{SCpart}
+  \end{scope}%
+}

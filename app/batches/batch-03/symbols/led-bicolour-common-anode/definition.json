@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "led-bicolour-common-anode",
+  "revision": 1,
+  "name": "Bicolour LED (common anode)",
+  "description": "Two LED dies with a shared anode and separate cathodes K1/K2. Three terminals; actual emission colours unspecified.",
+  "family": "diodes",
+  "batch": "Batch 03",
+  "keywords": [
+    "led-bicolour-common-anode",
+    "Bicolour LED (common anode)",
+    "Optoelectronics",
+    "Batch 03",
+    "diodes"
+  ],
+  "types": [
+    "diodes"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "anode",
+      "name": "Common anode",
+      "description": "Common anode",
+      "kind": "passive",
+      "lead_part": "lead-anode"
+    },
+    {
+      "id": "cathode1",
+      "name": "K1",
+      "description": "K1",
+      "kind": "passive",
+      "lead_part": "lead-cathode1"
+    },
+    {
+      "id": "cathode2",
+      "name": "K2",
+      "description": "K2",
+      "kind": "passive",
+      "lead_part": "lead-cathode2"
+    }
+  ],
+  "parts": [
+    {
+      "id": "lead-anode",
+      "description": "Lead anode"
+    },
+    {
+      "id": "lead-cathode1",
+      "description": "Lead cathode1"
+    },
+    {
+      "id": "lead-cathode2",
+      "description": "Lead cathode2"
+    },
+    {
+      "id": "common-anode",
+      "description": "Common anode"
+    },
+    {
+      "id": "led-1",
+      "description": "Led 1"
+    },
+    {
+      "id": "led-2",
+      "description": "Led 2"
+    },
+    {
+      "id": "light",
+      "description": "Light"
+    },
+    {
+      "id": "labels",
+      "description": "Labels"
+    }
+  ],
+  "reference": {
+    "source": "Generic functional construction, adapted to Schematica; not a claim of standards compliance.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

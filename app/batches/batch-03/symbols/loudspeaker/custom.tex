@@ -1,0 +1,22 @@
+\newcommand{\SCCustom}[3]{%
+\SCresolve{#1}{#2}{#3}
+\pgfmathsetmacro{\SCF}{#2}
+
+\begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+\SCdimension{grid}{1}
+\SCpin{a}{floor(-8*\SCF)}{ceil(4*\SCF)}
+\SCpin{b}{floor(-8*\SCF)}{floor(-4*\SCF)}
+\begin{SCpart}{coil}
+\draw ({-3*\SCF},{-1.8*\SCF})--({-3*\SCF},{1.8*\SCF})--({-1*\SCF},{1.8*\SCF})--({-1*\SCF},{-1.8*\SCF})--cycle;
+\end{SCpart}
+\begin{SCpart}{cone}
+\draw ({-1*\SCF},{-1.8*\SCF})--({3*\SCF},{-4*\SCF})--({3*\SCF},{4*\SCF})--({-1*\SCF},{1.8*\SCF})--cycle;
+\end{SCpart}
+\begin{SCpart}{lead-a}
+\draw ({floor(-8*\SCF)},{ceil(4*\SCF)})--({-5*\SCF},{4*\SCF})--({-5*\SCF},{1*\SCF})--({-3*\SCF},{1*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-b}
+\draw ({floor(-8*\SCF)},{floor(-4*\SCF)})--({-5*\SCF},{-4*\SCF})--({-5*\SCF},{-1*\SCF})--({-3*\SCF},{-1*\SCF});
+\end{SCpart}
+\end{scope}
+}

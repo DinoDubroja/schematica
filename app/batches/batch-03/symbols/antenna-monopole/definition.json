@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "antenna-monopole",
+  "revision": 1,
+  "name": "Monopole antenna",
+  "description": "Single-ended antenna feed; return/reference is external. Generic monopole antenna, no tuned dimensions specified.",
+  "family": "connections",
+  "batch": "Batch 03",
+  "keywords": [
+    "antenna-monopole",
+    "Monopole antenna",
+    "RF",
+    "Batch 03",
+    "connections"
+  ],
+  "types": [
+    "connections"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "feed",
+      "name": "Feed",
+      "description": "Feed",
+      "kind": "passive",
+      "lead_part": "lead-feed"
+    }
+  ],
+  "parts": [
+    {
+      "id": "lead-feed",
+      "description": "Lead feed"
+    },
+    {
+      "id": "radiator",
+      "description": "Radiator"
+    }
+  ],
+  "reference": {
+    "source": "Generic functional construction, adapted to Schematica; not a claim of standards compliance.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

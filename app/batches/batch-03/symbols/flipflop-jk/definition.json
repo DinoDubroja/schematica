@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "id": "flipflop-jk",
+  "revision": 1,
+  "name": "JK flip-flop",
+  "description": "Positive-edge JK flip-flop with Q and complementary output. No asynchronous set/reset.",
+  "family": "logic",
+  "batch": "Batch 03",
+  "keywords": [
+    "flipflop-jk",
+    "JK flip-flop",
+    "Digital building blocks",
+    "Batch 03",
+    "logic"
+  ],
+  "types": [
+    "logic"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "j",
+      "name": "J",
+      "description": "J",
+      "kind": "input",
+      "lead_part": "lead-j"
+    },
+    {
+      "id": "k",
+      "name": "K",
+      "description": "K",
+      "kind": "input",
+      "lead_part": "lead-k"
+    },
+    {
+      "id": "clock",
+      "name": "clock",
+      "description": "clock",
+      "kind": "input",
+      "lead_part": "lead-clock"
+    },
+    {
+      "id": "q",
+      "name": "Q",
+      "description": "Q",
+      "kind": "output",
+      "lead_part": "lead-q"
+    },
+    {
+      "id": "q-bar",
+      "name": "Q",
+      "description": "Q",
+      "kind": "output",
+      "lead_part": "lead-q-bar"
+    }
+  ],
+  "parts": [
+    {
+      "id": "body",
+      "description": "Body"
+    },
+    {
+      "id": "lead-j",
+      "description": "Lead j"
+    },
+    {
+      "id": "label-j",
+      "description": "Label j"
+    },
+    {
+      "id": "lead-k",
+      "description": "Lead k"
+    },
+    {
+      "id": "label-k",
+      "description": "Label k"
+    },
+    {
+      "id": "lead-clock",
+      "description": "Lead clock"
+    },
+    {
+      "id": "lead-q",
+      "description": "Lead q"
+    },
+    {
+      "id": "label-q",
+      "description": "Label q"
+    },
+    {
+      "id": "lead-q-bar",
+      "description": "Lead q bar"
+    },
+    {
+      "id": "label-q-bar",
+      "description": "Label q bar"
+    },
+    {
+      "id": "function",
+      "description": "Function"
+    },
+    {
+      "id": "clock-edge",
+      "description": "Clock edge"
+    },
+    {
+      "id": "output-inversion",
+      "description": "Output inversion"
+    }
+  ],
+  "reference": {
+    "source": "Generic functional construction, adapted to Schematica; not a claim of standards compliance.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

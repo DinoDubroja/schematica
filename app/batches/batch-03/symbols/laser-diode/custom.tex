@@ -1,0 +1,46 @@
+\newcommand{\SCCustom}[3]{%
+\SCresolve{#1}{#2}{#3}
+\pgfmathsetmacro{\SCF}{#2}
+
+\begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+\SCdimension{grid}{1}
+\SCpin{anode}{floor(-8*\SCF)}{0}
+\SCpin{cathode}{ceil(8*\SCF)}{0}
+\begin{SCpart}{lead-anode}
+\draw ({floor(-8*\SCF)},{0})--({-3*\SCF},{0})--({-3*\SCF},{0*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-cathode}
+\draw ({ceil(8*\SCF)},{0})--({3*\SCF},{0})--({3*\SCF},{0*\SCF});
+\end{SCpart}
+\begin{SCpart}{diode}
+\draw ({-3*\SCF},{0*\SCF})--({-1.5*\SCF},{0.0*\SCF});\draw ({-1.5*\SCF},{2.0*\SCF})--({1.5*\SCF},{0.0*\SCF})--({-1.5*\SCF},{-2.0*\SCF})--cycle;\draw ({1.5*\SCF},{2.0*\SCF})--({1.5*\SCF},{-2.0*\SCF});\draw ({1.5*\SCF},{0.0*\SCF})--({3*\SCF},{0*\SCF});
+\end{SCpart}
+\begin{SCpart}{laser-emission}
+\draw ({0.4*\SCF},{3.2*\SCF})--({2.6*\SCF},{5.4*\SCF});\draw ({1.5039844891608514*\SCF},{5.081801948466054*\SCF})--({2.6*\SCF},{5.4*\SCF})--({2.281801948466054*\SCF},{4.303984489160851*\SCF});\draw ({2.2*\SCF},{3.2*\SCF})--({4.4*\SCF},{5.4*\SCF});\draw ({3.3039844891608516*\SCF},{5.081801948466054*\SCF})--({4.4*\SCF},{5.4*\SCF})--({4.081801948466054*\SCF},{4.303984489160851*\SCF});
+\end{SCpart}
+\begin{SCpart}{identifier}
+\fill[even odd rule] ({-0.287464*\SCF},{-4.55*\SCF})
+--({-0.287464*\SCF},{-4.407349*\SCF})
+--({-0.864553*\SCF},{-4.411671*\SCF})
+--({-0.970461*\SCF},{-4.411671*\SCF})
+--({-0.970461*\SCF},{-3.05*\SCF})
+--({-1.162824*\SCF},{-3.05*\SCF})
+--({-1.162824*\SCF},{-4.55*\SCF})
+--cycle;
+\fill[even odd rule] ({1.242795*\SCF},{-3.812968*\SCF})
+.. controls ({1.242795*\SCF},{-3.39366*\SCF}) and ({0.951009*\SCF},{-3.05*\SCF}) ..({0.579251*\SCF},{-3.05*\SCF})
+--({0.012968*\SCF},{-3.05*\SCF})
+--({0.012968*\SCF},{-4.55*\SCF})
+--({0.581412*\SCF},{-4.55*\SCF})
+.. controls ({0.948847*\SCF},{-4.55*\SCF}) and ({1.242795*\SCF},{-4.22147*\SCF}) ..({1.242795*\SCF},{-3.812968*\SCF})
+--cycle
+({1.056916*\SCF},{-3.812968*\SCF})
+.. controls ({1.056916*\SCF},{-4.180403*\SCF}) and ({0.832133*\SCF},{-4.428963*\SCF}) ..({0.529539*\SCF},{-4.428963*\SCF})
+--({0.198847*\SCF},{-4.428963*\SCF})
+--({0.198847*\SCF},{-3.171037*\SCF})
+--({0.529539*\SCF},{-3.171037*\SCF})
+.. controls ({0.832133*\SCF},{-3.171037*\SCF}) and ({1.056916*\SCF},{-3.432565*\SCF}) ..({1.056916*\SCF},{-3.812968*\SCF})
+--cycle;
+\end{SCpart}
+\end{scope}
+}

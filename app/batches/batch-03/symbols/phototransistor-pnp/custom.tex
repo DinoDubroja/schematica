@@ -1,0 +1,49 @@
+\newcommand{\SCCustom}[3]{%
+  \SCresolve{#1}{#2}{#3}
+  \pgfmathsetmacro{\SCF}{#2}
+  % A fixed 1 mm left shift at every size; recompute the emitter direction.
+  \pgfmathsetmacro{\SCbranchangle}{atan2(-2*\SCF,4.5*\SCF-1)}
+  \pgfmathsetmacro{\SCorientx}{ifthenelse(mod(0,2)==1,-1,1)}
+  \pgfmathsetmacro{\SCorienty}{ifthenelse(0>1,-1,1)}
+  \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+    \SCdimension{body-height}{7*\SCF}
+    \SCdimension{body-width}{4.5*\SCF-1}
+    \SCdimension{enclosure-diameter}{11.2*\SCF}
+    \SCdimension{grid}{1}
+    \SCpin{collector}{ceil(3*\SCF)-1}{ceil(6*\SCF)}
+    \begin{SCpart}{lead-collector}
+    \draw ({ceil(3*\SCF)-1},{ceil(6*\SCF)})--({ceil(3*\SCF)-1},{3.5*\SCF})--({3*\SCF-1},{3.5*\SCF});
+    \end{SCpart}
+    \SCpin{emitter}{ceil(3*\SCF)-1}{floor(-6*\SCF)}
+    \begin{SCpart}{lead-emitter}
+    \draw ({ceil(3*\SCF)-1},{floor(-6*\SCF)})--({ceil(3*\SCF)-1},{-3.5*\SCF})--({3*\SCF-1},{-3.5*\SCF});
+    \end{SCpart}
+    \begin{SCpart}{base}
+    \draw ({-1.5*\SCF},{-2.4*\SCF})--({-1.5*\SCF},{2.4*\SCF});
+    \end{SCpart}
+    \begin{SCpart}{collector-branch}
+    \draw ({-1.5*\SCF},{1.5*\SCF})--({3*\SCF-1},{3.5*\SCF});
+    \end{SCpart}
+    \begin{SCpart}{emitter-branch}
+    \draw ({-1.5*\SCF},{-1.5*\SCF})--({3*\SCF-1},{-3.5*\SCF});
+    \end{SCpart}
+    \begin{SCpart}{emitter-arrow}
+      \begin{scope}[shift={({-1.5*\SCF},{-1.5*\SCF})},rotate={\SCbranchangle+180}]
+        \fill ({-1.05*\SCF},{0.55*\SCF})--({0*\SCF},{0*\SCF})--({-1.05*\SCF},{-0.55*\SCF})--cycle;
+      \end{scope}
+    \end{SCpart}
+    \begin{SCpart}{enclosure}
+    \draw ({0.5*\SCF},{0*\SCF}) circle ({5.6*\SCF});
+    \end{SCpart}
+    \begin{SCpart}{light-arrows}
+    \draw ({-8.65702*\SCF},{5.15702*\SCF})--({-6.3*\SCF},{2.8*\SCF});
+    \begin{scope}[shift={({-6.3*\SCF},{2.8*\SCF})},rotate=-45]
+    \draw ({-1.25*\SCF},{0.75*\SCF})--({0*\SCF},{0*\SCF})--({-1.25*\SCF},{-0.75*\SCF});
+    \end{scope}
+    \draw ({-6.88926*\SCF},{6.92479*\SCF})--({-4.53223*\SCF},{4.56777*\SCF});
+    \begin{scope}[shift={({-4.53223*\SCF},{4.56777*\SCF})},rotate=-45]
+    \draw ({-1.25*\SCF},{0.75*\SCF})--({0*\SCF},{0*\SCF})--({-1.25*\SCF},{-0.75*\SCF});
+    \end{scope}
+    \end{SCpart}
+  \end{scope}
+}

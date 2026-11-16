@@ -1,0 +1,19 @@
+\newcommand{\SCCustom}[3]{%
+\SCresolve{#1}{#2}{#3}
+\pgfmathsetmacro{\SCF}{#2}
+
+\begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+\SCdimension{grid}{1}
+\SCpin{feed-a}{floor(-2*\SCF)}{floor(-8*\SCF)}
+\SCpin{feed-b}{ceil(2*\SCF)}{floor(-8*\SCF)}
+\begin{SCpart}{lead-feed-a}
+\draw ({floor(-2*\SCF)},{floor(-8*\SCF)})--({floor(-2*\SCF)},{-3.464102*\SCF})--({-2*\SCF},{-3.464102*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-feed-b}
+\draw ({ceil(2*\SCF)},{floor(-8*\SCF)})--({ceil(2*\SCF)},{-3.464102*\SCF})--({2*\SCF},{-3.464102*\SCF});
+\end{SCpart}
+\begin{SCpart}{loop}
+\draw ({-2*\SCF},{-3.464102*\SCF}) arc[start angle=240,end angle=-60,radius={4*\SCF mm}];
+\end{SCpart}
+\end{scope}
+}

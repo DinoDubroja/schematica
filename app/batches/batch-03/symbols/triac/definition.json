@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "triac",
+  "revision": 1,
+  "name": "TRIAC",
+  "description": "Bidirectional gate-controlled thyristor, MT2 upper and MT1 lower; gate referenced to MT1.",
+  "family": "diodes",
+  "batch": "Batch 03",
+  "keywords": [
+    "triac",
+    "TRIAC",
+    "Power semiconductors",
+    "Batch 03",
+    "diodes"
+  ],
+  "types": [
+    "diodes"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "mt2",
+      "name": "MT2",
+      "description": "MT2",
+      "kind": "passive",
+      "lead_part": "lead-mt2"
+    },
+    {
+      "id": "mt1",
+      "name": "MT1",
+      "description": "MT1",
+      "kind": "passive",
+      "lead_part": "lead-mt1"
+    },
+    {
+      "id": "gate",
+      "name": "Gate",
+      "description": "Gate",
+      "kind": "input",
+      "lead_part": "lead-gate"
+    }
+  ],
+  "parts": [
+    {
+      "id": "lead-mt2",
+      "description": "Lead mt2"
+    },
+    {
+      "id": "lead-mt1",
+      "description": "Lead mt1"
+    },
+    {
+      "id": "bidirectional-junction",
+      "description": "Bidirectional junction"
+    },
+    {
+      "id": "lead-gate",
+      "description": "Lead gate"
+    },
+    {
+      "id": "gate-branch",
+      "description": "Gate branch"
+    }
+  ],
+  "reference": {
+    "source": "Generic bidirectional switching symbol; ST DB3 / BTA16 diagrams used for electrical distinctions.",
+    "url": "https://www.st.com/resource/en/datasheet/bta16.pdf"
+  }
+}

@@ -1,0 +1,50 @@
+\newcommand{\SCCustom}[3]{%
+  \SCresolve{#1}{#2}{#3}
+  \pgfmathsetmacro{\SCF}{#2}
+  \pgfmathsetmacro{\SCorientx}{ifthenelse(mod(0,2)==1,-1,1)}
+  \pgfmathsetmacro{\SCorienty}{ifthenelse(0>1,-1,1)}
+  \begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+    \SCdimension{body-height}{6*\SCF}
+    \SCdimension{body-width}{3.9*\SCF}
+    \SCdimension{grid}{1}
+    \SCpin{gate}{floor(-6*\SCF)}{0}
+    \begin{SCpart}{lead-gate}
+    \draw ({floor(-6*\SCF)},{0})--({-0.9*\SCF},{0*\SCF});
+    \end{SCpart}
+    \SCpin{drain}{ceil(3*\SCF)}{ceil(6*\SCF)}
+    \begin{SCpart}{lead-drain}
+    \draw ({ceil(3*\SCF)},{ceil(6*\SCF)})--({ceil(3*\SCF)},{2.6*\SCF})--({3*\SCF},{2.6*\SCF});
+    \end{SCpart}
+    \SCpin{source}{ceil(3*\SCF)}{floor(-6*\SCF)}
+    \begin{SCpart}{lead-source}
+    \draw ({ceil(3*\SCF)},{floor(-6*\SCF)})--({ceil(3*\SCF)},{-2.6*\SCF})--({3*\SCF},{-2.6*\SCF});
+    \end{SCpart}
+    \begin{SCpart}{gate}
+    \draw ({-0.9*\SCF},{-3*\SCF})--({-0.9*\SCF},{3*\SCF});
+    \end{SCpart}
+    \begin{SCpart}{channel}
+    \draw ({0.6*\SCF},{-3*\SCF})--({0.6*\SCF},{-1.6*\SCF});
+    \draw ({0.6*\SCF},{-0.7*\SCF})--({0.6*\SCF},{0.7*\SCF});
+    \draw ({0.6*\SCF},{1.6*\SCF})--({0.6*\SCF},{3*\SCF});
+    \end{SCpart}
+    \begin{SCpart}{drain-branch}
+    \draw ({0.6*\SCF},{2.6*\SCF})--({3*\SCF},{2.6*\SCF});
+    \end{SCpart}
+    \begin{SCpart}{source-branch}
+    \draw ({0.6*\SCF},{-2.6*\SCF})--({3*\SCF},{-2.6*\SCF});
+    \end{SCpart}
+    \begin{SCpart}{body-source-link}
+    \draw ({0.6*\SCF},{0*\SCF})--({3*\SCF},{0*\SCF})--({3*\SCF},{-2.6*\SCF});
+    \end{SCpart}
+    \begin{SCpart}{body-arrow}
+    \begin{scope}[shift={({0.6*\SCF},{0*\SCF})},rotate=180]
+    \fill ({-1.05*\SCF},{0.55*\SCF})--({0*\SCF},{0*\SCF})--({-1.05*\SCF},{-0.55*\SCF})--cycle;
+    \end{scope}
+    \end{SCpart}
+  \end{scope}
+\begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm]
+\begin{SCpart}{enclosure}
+\draw ({0.5*#2},0) circle ({5.6*#2});
+\end{SCpart}
+\end{scope}
+}

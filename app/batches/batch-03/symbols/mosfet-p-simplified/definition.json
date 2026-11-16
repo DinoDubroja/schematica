@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "mosfet-p-simplified",
+  "revision": 1,
+  "name": "Simplified PMOS",
+  "description": "Three-terminal simplified P MOSFET: insulated gate, continuous channel, bent upper/lower connections and gate bubble. No body arrow or bulk terminal.",
+  "family": "transistors",
+  "batch": "Batch 03",
+  "keywords": [
+    "mosfet-p-simplified",
+    "Simplified PMOS",
+    "Additional transistor styles",
+    "Batch 03",
+    "transistors"
+  ],
+  "types": [
+    "transistors"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "gate",
+      "name": "Gate",
+      "description": "Gate",
+      "kind": "input",
+      "lead_part": "lead-gate"
+    },
+    {
+      "id": "drain",
+      "name": "Drain",
+      "description": "Drain",
+      "kind": "passive",
+      "lead_part": "lead-drain"
+    },
+    {
+      "id": "source",
+      "name": "Source",
+      "description": "Source",
+      "kind": "passive",
+      "lead_part": "lead-source"
+    }
+  ],
+  "parts": [
+    {
+      "id": "gate",
+      "description": "Gate"
+    },
+    {
+      "id": "channel",
+      "description": "Channel"
+    },
+    {
+      "id": "lead-gate",
+      "description": "Lead gate"
+    },
+    {
+      "id": "lead-drain",
+      "description": "Lead drain"
+    },
+    {
+      "id": "lead-source",
+      "description": "Lead source"
+    },
+    {
+      "id": "drain-branch",
+      "description": "Drain branch"
+    },
+    {
+      "id": "source-branch",
+      "description": "Source branch"
+    },
+    {
+      "id": "gate-bubble",
+      "description": "Gate bubble"
+    }
+  ],
+  "reference": {
+    "source": "User Batch 03 simplified MOS reference requirements; preserve separately selectable accepted detailed variants.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

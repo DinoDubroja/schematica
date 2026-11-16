@@ -1,0 +1,26 @@
+\newcommand{\SCCustom}[3]{%
+\SCresolve{#1}{#2}{#3}
+\pgfmathsetmacro{\SCF}{#2}
+
+\begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+\SCdimension{grid}{1}
+\SCpin{mt2}{0}{ceil(8*\SCF)}
+\SCpin{mt1}{0}{floor(-8*\SCF)}
+\SCpin{gate}{floor(-8*\SCF)}{floor(-4*\SCF)}
+\begin{SCpart}{lead-mt2}
+\draw ({0},{ceil(8*\SCF)})--({0},{2*\SCF})--({0*\SCF},{2*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-mt1}
+\draw ({0},{floor(-8*\SCF)})--({0},{-2*\SCF})--({0*\SCF},{-2*\SCF});
+\end{SCpart}
+\begin{SCpart}{bidirectional-junction}
+\draw ({-2.8*\SCF},{2*\SCF})--({2.8*\SCF},{2*\SCF});\draw ({-2.8*\SCF},{-2*\SCF})--({2.8*\SCF},{-2*\SCF});\draw ({-2.8*\SCF},{2*\SCF})--({0*\SCF},{2*\SCF})--({-1.4*\SCF},{-2*\SCF})--cycle;\draw ({0*\SCF},{-2*\SCF})--({2.8*\SCF},{-2*\SCF})--({1.4*\SCF},{2*\SCF})--cycle;
+\end{SCpart}
+\begin{SCpart}{lead-gate}
+\draw ({floor(-8*\SCF)},{floor(-4*\SCF)})--({-4*\SCF},{floor(-4*\SCF)})--({-4*\SCF},{-4*\SCF});
+\end{SCpart}
+\begin{SCpart}{gate-branch}
+\draw ({-4*\SCF},{-4*\SCF})--({-2.8*\SCF},{-2*\SCF});
+\end{SCpart}
+\end{scope}
+}

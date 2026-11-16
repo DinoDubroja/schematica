@@ -1,0 +1,25 @@
+\newcommand{\SCCustom}[3]{%
+\SCresolve{#1}{#2}{#3}
+\pgfmathsetmacro{\SCF}{#2}
+
+\begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+\SCdimension{grid}{1}
+\SCpin{positive}{floor(-8*\SCF)}{0}
+\SCpin{negative}{ceil(8*\SCF)}{0}
+\begin{SCpart}{lead-positive}
+\draw ({floor(-8*\SCF)},{0})--({-1*\SCF},{0})--({-1*\SCF},{0*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-negative}
+\draw ({ceil(8*\SCF)},{0})--({1*\SCF},{0})--({1*\SCF},{0*\SCF});
+\end{SCpart}
+\begin{SCpart}{cell}
+\draw ({-1*\SCF},{-3*\SCF})--({-1*\SCF},{3*\SCF});\draw ({1*\SCF},{-1.8*\SCF})--({1*\SCF},{1.8*\SCF});
+\end{SCpart}
+\begin{SCpart}{light}
+\draw ({-5*\SCF},{6*\SCF})--({-2.5*\SCF},{3.5*\SCF});\draw ({-2.818198051533946*\SCF},{4.596015510839149*\SCF})--({-2.5*\SCF},{3.5*\SCF})--({-3.5960155108391487*\SCF},{3.8181980515339466*\SCF});\draw ({-2.5*\SCF},{7*\SCF})--({0*\SCF},{4.5*\SCF});\draw ({-0.31819805153394637*\SCF},{5.596015510839149*\SCF})--({0*\SCF},{4.5*\SCF})--({-1.0960155108391487*\SCF},{4.818198051533947*\SCF});
+\end{SCpart}
+\begin{SCpart}{polarity}
+\draw ({-3*\SCF},{-4.5*\SCF})--({-1.8*\SCF},{-4.5*\SCF});\draw ({-2.4*\SCF},{-5.1*\SCF})--({-2.4*\SCF},{-3.9*\SCF});\draw ({1.8*\SCF},{-4.5*\SCF})--({3*\SCF},{-4.5*\SCF});
+\end{SCpart}
+\end{scope}
+}

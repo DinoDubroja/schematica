@@ -1,0 +1,38 @@
+\newcommand{\SCCustom}[3]{%
+\SCresolve{#1}{#2}{#3}
+\pgfmathsetmacro{\SCF}{#2}
+
+\begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+\SCdimension{grid}{1}
+\SCpin{anode}{floor(-5*\SCF)}{ceil(8*\SCF)}
+\SCpin{cathode}{floor(-5*\SCF)}{floor(-8*\SCF)}
+\SCpin{collector}{ceil(7*\SCF)}{ceil(8*\SCF)}
+\SCpin{emitter}{ceil(7*\SCF)}{floor(-8*\SCF)}
+\begin{SCpart}{enclosure}
+\draw ({-8*\SCF},{-6*\SCF})--({-8*\SCF},{6*\SCF})--({9*\SCF},{6*\SCF})--({9*\SCF},{-6*\SCF})--cycle;
+\end{SCpart}
+\begin{SCpart}{lead-anode}
+\draw ({floor(-5*\SCF)},{ceil(8*\SCF)})--({floor(-5*\SCF)},{1.2*\SCF})--({-5*\SCF},{1.2*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-cathode}
+\draw ({floor(-5*\SCF)},{floor(-8*\SCF)})--({floor(-5*\SCF)},{-1.2*\SCF})--({-5*\SCF},{-1.2*\SCF});
+\end{SCpart}
+\begin{SCpart}{input-diode}
+\draw ({-6.2*\SCF},{1.2*\SCF})--({-3.8*\SCF},{1.2*\SCF})--({-5*\SCF},{-1.2*\SCF})--cycle;\draw ({-6.3*\SCF},{-1.2*\SCF})--({-3.7*\SCF},{-1.2*\SCF});
+\end{SCpart}
+\begin{SCpart}{light}
+\draw ({-3.2*\SCF},{0.9*\SCF})--({-0.5*\SCF},{2.1*\SCF});\fill ({-1.3935028601764736*\SCF},{2.140652661123979*\SCF})--({-0.5*\SCF},{2.1*\SCF})--({-1.0686238450050671*\SCF},{1.4095893085332083*\SCF})--cycle;\draw ({-3.2*\SCF},{-1*\SCF})--({-0.5*\SCF},{0.2*\SCF});\fill ({-1.3935028601764736*\SCF},{0.2406526611239787*\SCF})--({-0.5*\SCF},{0.2*\SCF})--({-1.0686238450050671*\SCF},{-0.49041069146679167*\SCF})--cycle;
+\end{SCpart}
+\begin{SCpart}{lead-collector}
+\draw ({ceil(7*\SCF)},{ceil(8*\SCF)})--({ceil(7*\SCF)},{3.75*\SCF})--({7*\SCF},{3.75*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-emitter}
+\draw ({ceil(7*\SCF)},{floor(-8*\SCF)})--({ceil(7*\SCF)},{-3.75*\SCF})--({7*\SCF},{-3.75*\SCF});
+\end{SCpart}
+\begin{SCpart}{darlington-output}
+\begin{scope}[shift={({3.25*\SCF},{0*\SCF})},scale=0.75]
+\draw ({-3*\SCF},{0*\SCF})--({-3*\SCF},{4*\SCF});\draw ({1*\SCF},{-4*\SCF})--({1*\SCF},{0*\SCF});\draw ({-3*\SCF},{3*\SCF})--({0*\SCF},{5*\SCF})--({5*\SCF},{5*\SCF})--({5*\SCF},{2*\SCF})--({1*\SCF},{-1*\SCF});\draw ({-3*\SCF},{1*\SCF})--({0*\SCF},{-1*\SCF})--({0*\SCF},{-2*\SCF})--({1*\SCF},{-2*\SCF});\draw ({1*\SCF},{-3*\SCF})--({5*\SCF},{-5*\SCF});\fill ({-0.5685689268972631*\SCF},{0.040062197835732616*\SCF})--({0*\SCF},{-1*\SCF})--({-1.178738064069809*\SCF},{-0.8751938450517814*\SCF})--cycle;\fill ({4.306818068147113*\SCF},{-4.038491388830709*\SCF})--({5*\SCF},{-5*\SCF})--({3.814883991898334*\SCF},{-5.022361738330714*\SCF})--cycle;
+\end{scope}
+\end{SCpart}
+\end{scope}
+}

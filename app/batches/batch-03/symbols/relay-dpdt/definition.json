@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "id": "relay-dpdt",
+  "revision": 1,
+  "name": "DPDT relay",
+  "description": "Complete de-energized relay with coil A1/A2 and two mechanically coupled changeover poles. Both commons connect to their NC throws at rest.",
+  "family": "switches",
+  "batch": "Batch 03",
+  "keywords": [
+    "relay-dpdt",
+    "DPDT relay",
+    "Relays and contactors",
+    "Batch 03",
+    "switches"
+  ],
+  "types": [
+    "switches"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "a1",
+      "name": "A1",
+      "description": "A1",
+      "kind": "passive",
+      "lead_part": "lead-a1"
+    },
+    {
+      "id": "a2",
+      "name": "A2",
+      "description": "A2",
+      "kind": "passive",
+      "lead_part": "lead-a2"
+    },
+    {
+      "id": "c1",
+      "name": "C1",
+      "description": "C1",
+      "kind": "passive",
+      "lead_part": "lead-c1"
+    },
+    {
+      "id": "nc1",
+      "name": "NC1",
+      "description": "NC1",
+      "kind": "passive",
+      "lead_part": "lead-nc1"
+    },
+    {
+      "id": "no1",
+      "name": "NO1",
+      "description": "NO1",
+      "kind": "passive",
+      "lead_part": "lead-no1"
+    },
+    {
+      "id": "c2",
+      "name": "C2",
+      "description": "C2",
+      "kind": "passive",
+      "lead_part": "lead-c2"
+    },
+    {
+      "id": "nc2",
+      "name": "NC2",
+      "description": "NC2",
+      "kind": "passive",
+      "lead_part": "lead-nc2"
+    },
+    {
+      "id": "no2",
+      "name": "NO2",
+      "description": "NO2",
+      "kind": "passive",
+      "lead_part": "lead-no2"
+    }
+  ],
+  "parts": [
+    {
+      "id": "coil",
+      "description": "Coil"
+    },
+    {
+      "id": "lead-a1",
+      "description": "Lead a1"
+    },
+    {
+      "id": "lead-a2",
+      "description": "Lead a2"
+    },
+    {
+      "id": "coil-labels",
+      "description": "Coil labels"
+    },
+    {
+      "id": "lead-c1",
+      "description": "Lead c1"
+    },
+    {
+      "id": "lead-nc1",
+      "description": "Lead nc1"
+    },
+    {
+      "id": "lead-no1",
+      "description": "Lead no1"
+    },
+    {
+      "id": "contacts-1",
+      "description": "Contacts 1"
+    },
+    {
+      "id": "blade-1",
+      "description": "Blade 1"
+    },
+    {
+      "id": "labels-1",
+      "description": "Labels 1"
+    },
+    {
+      "id": "lead-c2",
+      "description": "Lead c2"
+    },
+    {
+      "id": "lead-nc2",
+      "description": "Lead nc2"
+    },
+    {
+      "id": "lead-no2",
+      "description": "Lead no2"
+    },
+    {
+      "id": "contacts-2",
+      "description": "Contacts 2"
+    },
+    {
+      "id": "blade-2",
+      "description": "Blade 2"
+    },
+    {
+      "id": "labels-2",
+      "description": "Labels 2"
+    },
+    {
+      "id": "mechanical-coupling",
+      "description": "Mechanical coupling"
+    }
+  ],
+  "reference": {
+    "source": "Fresh relay redesign; generic double-pole changeover arrangement and Omron resting-state convention.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "relay-spst-no",
+  "revision": 1,
+  "name": "SPST-NO relay",
+  "description": "Complete de-energized relay: coil A1/A2 and one open contact. Dashed mechanical coupling is not an electrical connection.",
+  "family": "switches",
+  "batch": "Batch 03",
+  "keywords": [
+    "relay-spst-no",
+    "SPST-NO relay",
+    "Relays and contactors",
+    "Batch 03",
+    "switches"
+  ],
+  "types": [
+    "switches"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "a1",
+      "name": "A1",
+      "description": "A1",
+      "kind": "passive",
+      "lead_part": "lead-a1"
+    },
+    {
+      "id": "a2",
+      "name": "A2",
+      "description": "A2",
+      "kind": "passive",
+      "lead_part": "lead-a2"
+    },
+    {
+      "id": "contact1",
+      "name": "Contact 1",
+      "description": "Contact 1",
+      "kind": "passive",
+      "lead_part": "lead-contact1"
+    },
+    {
+      "id": "contact2",
+      "name": "Contact 2",
+      "description": "Contact 2",
+      "kind": "passive",
+      "lead_part": "lead-contact2"
+    }
+  ],
+  "parts": [
+    {
+      "id": "coil",
+      "description": "Coil"
+    },
+    {
+      "id": "lead-a1",
+      "description": "Lead a1"
+    },
+    {
+      "id": "lead-a2",
+      "description": "Lead a2"
+    },
+    {
+      "id": "coil-labels",
+      "description": "Coil labels"
+    },
+    {
+      "id": "lead-contact1",
+      "description": "Lead contact1"
+    },
+    {
+      "id": "lead-contact2",
+      "description": "Lead contact2"
+    },
+    {
+      "id": "contacts",
+      "description": "Contacts"
+    },
+    {
+      "id": "blade",
+      "description": "Blade"
+    },
+    {
+      "id": "mechanical-coupling",
+      "description": "Mechanical coupling"
+    }
+  ],
+  "reference": {
+    "source": "Fresh relay redesign; Omron de-energized contact definitions.",
+    "url": "https://www.ia.omron.com/support/guide/36/introduction.html"
+  }
+}

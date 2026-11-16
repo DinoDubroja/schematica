@@ -1,0 +1,22 @@
+\newcommand{\SCCustom}[3]{%
+\SCresolve{#1}{#2}{#3}
+\pgfmathsetmacro{\SCF}{#2}
+
+\begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+\SCdimension{grid}{1}
+\SCpin{signal}{ceil(8*\SCF)}{0}
+\SCpin{return}{0}{floor(-8*\SCF)}
+\begin{SCpart}{body}
+\draw ({0*\SCF},{0*\SCF}) circle ({3*\SCF});
+\end{SCpart}
+\begin{SCpart}{diaphragm}
+\draw ({-3.8*\SCF},{-3*\SCF})--({-3.8*\SCF},{3*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-signal}
+\draw ({ceil(8*\SCF)},{0})--({3*\SCF},{0})--({3*\SCF},{0*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-return}
+\draw ({0},{floor(-8*\SCF)})--({0},{-3*\SCF})--({0*\SCF},{-3*\SCF});
+\end{SCpart}
+\end{scope}
+}

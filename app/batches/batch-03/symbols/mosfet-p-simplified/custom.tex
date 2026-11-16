@@ -1,0 +1,35 @@
+\newcommand{\SCCustom}[3]{%
+\SCresolve{#1}{#2}{#3}
+\pgfmathsetmacro{\SCF}{#2}
+
+\begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+\SCdimension{grid}{1}
+\SCpin{gate}{floor(-6*\SCF)}{0}
+\SCpin{drain}{ceil(3*\SCF)}{ceil(6*\SCF)}
+\SCpin{source}{ceil(3*\SCF)}{floor(-6*\SCF)}
+\begin{SCpart}{gate}
+\draw ({-0.9*\SCF},{-3*\SCF})--({-0.9*\SCF},{3*\SCF});
+\end{SCpart}
+\begin{SCpart}{channel}
+\draw ({0.6*\SCF},{-3*\SCF})--({0.6*\SCF},{3*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-gate}
+\draw ({floor(-6*\SCF)},{0})--({-2.2*\SCF},{0})--({-2.2*\SCF},{0*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-drain}
+\draw ({ceil(3*\SCF)},{ceil(6*\SCF)})--({ceil(3*\SCF)},{2.6*\SCF})--({3*\SCF},{2.6*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-source}
+\draw ({ceil(3*\SCF)},{floor(-6*\SCF)})--({ceil(3*\SCF)},{-2.6*\SCF})--({3*\SCF},{-2.6*\SCF});
+\end{SCpart}
+\begin{SCpart}{drain-branch}
+\draw ({0.6*\SCF},{2.6*\SCF})--({3*\SCF},{2.6*\SCF});
+\end{SCpart}
+\begin{SCpart}{source-branch}
+\draw ({0.6*\SCF},{-2.6*\SCF})--({3*\SCF},{-2.6*\SCF});
+\end{SCpart}
+\begin{SCpart}{gate-bubble}
+\draw ({-1.55*\SCF},{0*\SCF}) circle ({0.65*\SCF});
+\end{SCpart}
+\end{scope}
+}

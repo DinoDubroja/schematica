@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "jfet-n-enclosed",
+  "revision": 1,
+  "name": "N-channel JFET (enclosed)",
+  "description": "Enclosed N-channel JFET with centred gate, drain above and source below. Gate arrow toward the channel.",
+  "family": "transistors",
+  "batch": "Batch 03",
+  "keywords": [
+    "jfet-n-enclosed",
+    "N-channel JFET (enclosed)",
+    "Additional transistor styles",
+    "Batch 03",
+    "transistors"
+  ],
+  "types": [
+    "transistors"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "gate",
+      "name": "Gate",
+      "description": "Gate",
+      "kind": "input",
+      "lead_part": "lead-gate"
+    },
+    {
+      "id": "drain",
+      "name": "Drain",
+      "description": "Drain",
+      "kind": "passive",
+      "lead_part": "lead-drain"
+    },
+    {
+      "id": "source",
+      "name": "Source",
+      "description": "Source",
+      "kind": "passive",
+      "lead_part": "lead-source"
+    }
+  ],
+  "parts": [
+    {
+      "id": "enclosure",
+      "description": "Enclosure"
+    },
+    {
+      "id": "channel",
+      "description": "Channel"
+    },
+    {
+      "id": "lead-gate",
+      "description": "Lead gate"
+    },
+    {
+      "id": "lead-drain",
+      "description": "Lead drain"
+    },
+    {
+      "id": "lead-source",
+      "description": "Lead source"
+    },
+    {
+      "id": "drain-branch",
+      "description": "Drain branch"
+    },
+    {
+      "id": "source-branch",
+      "description": "Source branch"
+    },
+    {
+      "id": "gate-arrow",
+      "description": "Gate arrow"
+    }
+  ],
+  "reference": {
+    "source": "User Batch 03 reference requirements: centred gate, continuous channel, bent D/S, circular enclosure.",
+    "url": "https://rmano.github.io/circuitikz/node-The-components-list.html"
+  }
+}

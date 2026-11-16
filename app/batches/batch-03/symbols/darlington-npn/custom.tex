@@ -1,0 +1,23 @@
+\newcommand{\SCCustom}[3]{%
+\SCresolve{#1}{#2}{#3}
+\pgfmathsetmacro{\SCF}{#2}
+
+\begin{scope}[x=1mm,y=1mm,line width=\SCstroke mm,line cap=round,line join=round]
+\SCdimension{grid}{1}
+\SCpin{base}{floor(-8*\SCF)}{ceil(2*\SCF)}
+\SCpin{collector}{ceil(5*\SCF)}{ceil(8*\SCF)}
+\SCpin{emitter}{ceil(5*\SCF)}{floor(-8*\SCF)}
+\begin{SCpart}{lead-base}
+\draw ({floor(-8*\SCF)},{ceil(2*\SCF)})--({-3*\SCF},{ceil(2*\SCF)})--({-3*\SCF},{2*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-collector}
+\draw ({ceil(5*\SCF)},{ceil(8*\SCF)})--({ceil(5*\SCF)},{5*\SCF})--({5*\SCF},{5*\SCF});
+\end{SCpart}
+\begin{SCpart}{lead-emitter}
+\draw ({ceil(5*\SCF)},{floor(-8*\SCF)})--({ceil(5*\SCF)},{-5*\SCF})--({5*\SCF},{-5*\SCF});
+\end{SCpart}
+\begin{SCpart}{darlington-pair}
+\draw ({-3*\SCF},{0*\SCF})--({-3*\SCF},{4*\SCF});\draw ({1*\SCF},{-4*\SCF})--({1*\SCF},{0*\SCF});\draw ({-3*\SCF},{3*\SCF})--({0*\SCF},{5*\SCF})--({5*\SCF},{5*\SCF})--({5*\SCF},{2*\SCF})--({1*\SCF},{-1*\SCF});\draw ({-3*\SCF},{1*\SCF})--({0*\SCF},{-1*\SCF})--({0*\SCF},{-2*\SCF})--({1*\SCF},{-2*\SCF});\draw ({1*\SCF},{-3*\SCF})--({5*\SCF},{-5*\SCF});\fill ({-0.5685689268972631*\SCF},{0.040062197835732616*\SCF})--({0*\SCF},{-1*\SCF})--({-1.178738064069809*\SCF},{-0.8751938450517814*\SCF})--cycle;\fill ({4.306818068147113*\SCF},{-4.038491388830709*\SCF})--({5*\SCF},{-5*\SCF})--({3.814883991898334*\SCF},{-5.022361738330714*\SCF})--cycle;
+\end{SCpart}
+\end{scope}
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "id": "motor-stepper-bipolar",
+  "revision": 1,
+  "name": "Bipolar stepper motor",
+  "description": "Two separate phase windings A/B with four terminals; no centre taps. Generic stepper, no step angle specified.",
+  "family": "sources",
+  "batch": "Batch 03",
+  "keywords": [
+    "motor-stepper-bipolar",
+    "Bipolar stepper motor",
+    "Additional motors",
+    "Batch 03",
+    "sources"
+  ],
+  "types": [
+    "sources"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "a1",
+      "name": "A1",
+      "description": "A1",
+      "kind": "passive",
+      "lead_part": "lead-a1"
+    },
+    {
+      "id": "a2",
+      "name": "A2",
+      "description": "A2",
+      "kind": "passive",
+      "lead_part": "lead-a2"
+    },
+    {
+      "id": "b1",
+      "name": "B1",
+      "description": "B1",
+      "kind": "passive",
+      "lead_part": "lead-b1"
+    },
+    {
+      "id": "b2",
+      "name": "B2",
+      "description": "B2",
+      "kind": "passive",
+      "lead_part": "lead-b2"
+    }
+  ],
+  "parts": [
+    {
+      "id": "body",
+      "description": "Body"
+    },
+    {
+      "id": "identifier",
+      "description": "Identifier"
+    },
+    {
+      "id": "winding-a",
+      "description": "Winding a"
+    },
+    {
+      "id": "lead-a1",
+      "description": "Lead a1"
+    },
+    {
+      "id": "lead-a2",
+      "description": "Lead a2"
+    },
+    {
+      "id": "label-a",
+      "description": "Label a"
+    },
+    {
+      "id": "winding-b",
+      "description": "Winding b"
+    },
+    {
+      "id": "lead-b1",
+      "description": "Lead b1"
+    },
+    {
+      "id": "lead-b2",
+      "description": "Lead b2"
+    },
+    {
+      "id": "label-b",
+      "description": "Label b"
+    }
+  ],
+  "reference": {
+    "source": "Generic winding diagram, TI six-wire unipolar and Oriental Motor two-phase connection references.",
+    "url": "https://www.orientalmotor.com/stepper-motors/technology/unipolar-bipolar-connections.html"
+  }
+}

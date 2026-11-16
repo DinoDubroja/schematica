@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "diac",
+  "revision": 1,
+  "name": "DIAC",
+  "description": "Bidirectional trigger diode with two main terminals; no gate terminal.",
+  "family": "diodes",
+  "batch": "Batch 03",
+  "keywords": [
+    "diac",
+    "DIAC",
+    "Power semiconductors",
+    "Batch 03",
+    "diodes"
+  ],
+  "types": [
+    "diodes"
+  ],
+  "recipe": "custom",
+  "presets": {
+    "sizes": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "strokes": [
+      "thin",
+      "medium",
+      "thick"
+    ]
+  },
+  "pins": [
+    {
+      "id": "a2",
+      "name": "A2",
+      "description": "A2",
+      "kind": "passive",
+      "lead_part": "lead-a2"
+    },
+    {
+      "id": "a1",
+      "name": "A1",
+      "description": "A1",
+      "kind": "passive",
+      "lead_part": "lead-a1"
+    }
+  ],
+  "parts": [
+    {
+      "id": "lead-a2",
+      "description": "Lead a2"
+    },
+    {
+      "id": "lead-a1",
+      "description": "Lead a1"
+    },
+    {
+      "id": "bidirectional-junction",
+      "description": "Bidirectional junction"
+    }
+  ],
+  "reference": {
+    "source": "Generic bidirectional switching symbol; ST DB3 / BTA16 diagrams used for electrical distinctions.",
+    "url": "https://www.st.com/resource/en/datasheet/db3.pdf"
+  }
+}
