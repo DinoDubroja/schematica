@@ -1,6 +1,6 @@
 # Current status
 
-16-11-2026 · **Review usability implemented and validated; delivery in progress.**
+16-11-2026 · **Review usability deployed and verified.**
 
 [Library](https://schematica-preview.dinodubroja.workers.dev/)
 · [Private Review](https://schematica-preview.dinodubroja.workers.dev/review)
@@ -20,9 +20,8 @@ questions; independent jobs continue. Updates groups returned drawings, queued w
 and questions/failures. Seen status is persistent and separate from verification.
 Old unapproved proposals remain inert. Individual creation in chat is unchanged.
 
-Validation: all 91 Python tests, 39 JavaScript tests, 143 documentation links,
-32 browser interaction
-checks and 14 Updates/history checks. The grid passed 324 configuration/layout cases,
+Validation: all 91 Python tests, 39 JavaScript tests, 32 hosted browser interaction
+checks and 14 Updates/history checks. The deployed grid passed 324 configuration/layout cases,
 24 real browser zoom checks and four continuous resizes, with no alignment defects.
 Two actual subscription-backed corrections returned 18 configurations each,
 Unverified; one independent ambiguous fixture asked a focused question. The agent
@@ -30,10 +29,19 @@ identified the number visible only in the attached image. Its private receipt re
 the observation. Synthetic tests made no production writes or test publications.
 The additive image schema preserves existing rows and supports old backup formats.
 
-Delivery remains in progress on `feat/review-usability`; A integrates exact READY
-commits and B alone deploys. Production remains on the earlier grid build until the
-final deployment receipt replaces this paragraph. Its desktop connector is stopped
-for the upgrade. No real pending feedback is used for validation.
+Product [`5e383c5`](https://github.com/DinoDubroja/schematica/commit/5e383c59df9d73093d4db811fea0aaadaeb79ba5)
+is verified on GitHub `main` and `feat/review-usability`; A integrated and B deployed.
+Live build **`2c54ba517f0c`**, Worker **`ef3d3cce-415f-4d14-8cb3-816347e7f1bc`**.
+Five hosted UI hashes match the tested source. The connector restarted successfully,
+reports Ready with protocol 2 and has no queued work. No real feedback was processed.
+Older browsers preserve saved images when editing text without an attachments field;
+this compatibility guard also passed an actual hosted validation request.
+
+Fresh readback preserves all 175 symbol entries, two comments, three completed jobs,
+cursor and exact choices. Database comparison preserves all 178 revision rows,
+3,701 artwork rows and 1,585 earlier events/requests byte for byte. SQLite integrity
+passes; the only schema additions are private image storage and a history lookup index.
+This is preservation evidence, not a live disaster-recovery exercise.
 
 ## Library and batch status
 
@@ -51,41 +59,9 @@ coordinates for the 1 mm grid, artwork and blue terminals; its behavior is prese
 Batch 03 source checkpoint `2bff9bf` and grid product `e55e7d4` are already on main.
 The saved PNP correction predates Batch 03 and remains its enclosed PNP's parent.
 
-## Original Review service delivery receipt
-
-| Receipt | Result |
-|---|---|
-| Product source | `72d128797d765e64dbfe999e3de200646e22cc4d` |
-| Build | `826fc3ddf903` |
-| Production Worker version | `a05fe7ce-32ca-427e-9ce1-6f9dbe433bf8` |
-| GitHub delivery | `feat/review` and `main`; this receipt accompanies the final documentation commit |
-| Production migration | 91 exact historical fingerprints; 2,070 private artwork/fragment assets; migration switch closed |
-| Source checks | 81 Python and 26 JavaScript tests passed; documentation links checked |
-| Hosted file checks | 1,079 public file hashes matched, including every accepted drawing and library export |
-| Desktop | ChatGPT subscription authenticated; Check, Start, repeat Start, Stop and restart passed |
-
-## Workflow evidence
-
-- Nine hosted validation groups passed with independent authenticated sessions:
-  comments/edits/shared targets, exact revision selection, discard/restore, stale
-  proposals, duplicate requests/uploads, access protection, exports and evidence.
-- A real subscription-backed correction changed one synthetic ground bar, rendered
-  all 18 supported configurations, passed visual readiness and returned unverified.
-  The separately approved test revision then published exactly; every returned
-  public SVG matched. Original feedback, drawings, source diff and decisions remain.
-- Thirteen browser interaction checks passed, including failed-save/reload draft
-  retention, History comparison, Undo and independent phone-size sessions.
-  A live arrival preserved the selected drawing and unfinished comment.
-- An abandoned hosted job lease expired and was reclaimed once, with a new lease
-  and incremented attempt count. Local connector stop/restart also passed.
-- Production login and Library search, Small/Thick, light mode, Variations and both
-  real browser downloads passed. Downloads matched the accepted files byte for byte.
-- Validation backup restored into fresh local SQLite: all rows and 2,179 asset
-  hashes matched. Production backup is consistent and checksummed: 91 revisions,
-  2,070 assets. This is not a live Cloudflare disaster-recovery exercise.
-
-All synthetic decisions belong to the separate validation database. They are not
-human acceptance of production artwork. Review does not turn comments into rules.
+Earlier delivery receipts remain in Git history and the
+[original Review decision](DECISIONS.md#hosted-review-implementation).
+Synthetic decisions belong only to validation, never human acceptance of production artwork.
 
 ## Desktop operation
 
@@ -95,7 +71,6 @@ and **Status Review** shortcuts. Start it again after Windows restarts. The one-
 password is in the private local `Review access.txt`; it is not in Git. Other devices
 need only the Review link and password, never the desktop token.
 
-Agent B integrated A's exact ready `5efa3a8` under the delegated publication scope.
 The canonical checkout and A's active runtime/store, saved band-pass symbol, unsaved
 ADC draft, port 8793 and unrelated `docs/research` remain untouched.
 
@@ -105,6 +80,11 @@ Physical phone and second Windows device testing remain user checks. Use the sho
 [action → expected result checklist](../DEVELOPMENT.md#test-on-both-windows-devices)
 with Batch 03 candidates. Processing needs this desktop online; reviewing
 and saving feedback do not.
+
+At 200% browser zoom in a 390-pixel window (195 CSS pixels), the existing narrow
+layout can scroll horizontally; grid/terminal alignment remains correct. Normal
+390-pixel phone layout passed without horizontal overflow. HEIC/GIF must be converted
+to PNG/JPEG/WebP; four images per comment, up to 10 MB input and 1 MB stored each.
 
 A's separate host limitations remain: Claude embedded download/creation retests,
 fresh-chat retrieval, general text-font export and refinement terminal movement.

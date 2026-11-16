@@ -70,6 +70,7 @@ Ordinary Library has search, dark/light mode, Variations and SVG exports. It doe
 not contain verification controls, private comments or unpublished candidates.
 Phone layout is checked in a browser at phone dimensions; testing on your physical
 phone and second Windows device remains your final check.
+Very narrow windows at 200% browser zoom can scroll horizontally; the grid stays aligned.
 
 ## What is preserved
 
