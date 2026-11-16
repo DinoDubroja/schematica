@@ -7,8 +7,10 @@ does not. See [current status](CURRENT.md) for the implementation checkpoint.
 
 ## Batch 03 private review candidates
 
-Source: user-attached **Implement Batch 03: 84 symbol designs** in Agent B's chat;
-original attachment-turn timestamp is not exposed in the supplied transcript.
+Source: user-attached **Implement Batch 03: 84 symbol designs** in Agent B's chat
+`01a1d267-c084-7691-b803-73c171635447`, user message
+`01a1e1d0-7d41-7df3-934c-6f655c72a24b`, turn starting 16-11-2026 01:44:59 +01:00.
+Agent A recovered that original timestamp from the chat during integration.
 Reconciled 16-11-2026 02:31 +01:00. Status: authorized implementation, complete
 private submission, awaiting human review. [Inventory and checks](../docs/BATCH_03.md).
 
@@ -22,6 +24,14 @@ private submission, awaiting human review. [Inventory and checks](../docs/BATCH_
   paid API use, website redeployment or automatic design-rule adoption.
 - Geometry changes requested through Review require linked feedback/proposals and
   new immutable revisions. Agent readiness checks are not human acceptance.
+
+**Source/docs integration — 16-11-2026:** Agent A adopted B's exact READY
+`2bff9bf2f84e8ca21e596ea6cf7c0c625fe6bf9e` from `0e151283` through a fast-forward
+of `main`, retaining the submitted sources unchanged. Independent integration checks
+passed all six focused batch tests and 133 local documentation links. Eight existing
+whitespace-only TeX lines are intentionally preserved for exact hosted-source matching.
+No deployment, public Library change, candidate upload or review-decision change is
+part of this integration. Both installed runtimes and A's original drafts remain intact.
 
 ## Hosted Review implementation
 

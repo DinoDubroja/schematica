@@ -19,9 +19,12 @@ and every SVG hash match the live before-task snapshot. The settled PNP correcti
 was already published before this batch and is the enclosed PNP's parent.
 No new design was approved/published by the agent; no website redeployment occurred.
 
-Batch source is on `work/batch-03`, from `0e151283f4b85ea47278665d56f37024cc04d4de`.
-Agent A receives the exact tested checkpoint for integration. Sources, metadata,
-tests and documentation are separate from the public catalog and approval ledger.
+Agent A integrated the exact READY source checkpoint
+[`2bff9bf`](https://github.com/DinoDubroja/schematica/commit/2bff9bf2f84e8ca21e596ea6cf7c0c625fe6bf9e)
+from `work/batch-03` into GitHub `main`, with this documentation receipt.
+Six focused batch tests and 133 documentation links passed in an isolated checkout.
+Sources, metadata, tests and documentation remain separate from the public catalog
+and approval ledger. Integration made no hosted service, candidate or decision writes.
 
 Hosted readback: 84 exact sources/opening events; 1,584 candidate SVG/fragment
 hashes plus 72 parent SVGs; 594 identical inherited-part comparisons; 36 byte-identical
