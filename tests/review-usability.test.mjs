@@ -40,6 +40,10 @@ test('image edits invalidate work; stale work cannot overwrite a new source or s
   const c=Object.values(s.comments).find(c=>c.targets[0].symbol==='one');
   s=(await act(s,'comment',{comment:c.id,expected:c.edit,text:'Use this instead',attachments:[{...image,hash:'b'.repeat(64)}],targets:c.targets})).state;
   assert.notEqual(await signature(s,'one','one-1'),before);assert.deepEqual(s.comments[c.id].originalAttachments,[image]);
+  const edited=s.comments[c.id];const legacyEdit=await act(s,'comment',{comment:c.id,expected:edited.edit,text:'Text edit from an older browser',targets:c.targets});
+  assert.deepEqual(legacyEdit.state.comments[c.id].attachments,edited.attachments,'Old image-unaware browsers preserve saved attachments');
+  const removed=await act(legacyEdit.state,'comment',{comment:c.id,expected:legacyEdit.state.comments[c.id].edit,text:'Explicitly removed',targets:c.targets,attachments:[]});
+  assert.deepEqual(removed.state.comments[c.id].attachments,[]);
   await assert.rejects(act(s,'upload',{job:job.id,lease:job.lease,revision:rev('one','one-2','one-1')},'desktop'),/stale/);
   claim=await act(s,'claim',{protocol:2},'desktop','2026-11-16T12:04:00Z');
   assert.equal(claim.result.job.corrections[0].symbol,'two');assert.equal(claim.state.jobs[job.id].status,'Stale');

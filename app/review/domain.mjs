@@ -77,7 +77,10 @@ export async function transition(original,action,input,ctx) {
       break;
     }
     case 'comment': {
-      const ts=targets(state,input.targets),{content,images}=commentContent(input),existing=input.comment?state.comments[input.comment]:null;
+      const ts=targets(state,input.targets),existing=input.comment?state.comments[input.comment]:null;
+      // A browser left open before image support cannot express image removal.
+      // Only an explicit attachments array edits the saved image selection.
+      const {content,images}=commentContent({...input,attachments:input.attachments===undefined?existing?.attachments:input.attachments});
       need(!input.comment || existing,'Unknown comment',404);
       if(existing) need(input.expected===existing.edit,'Comment changed on another device; your draft is retained',409);
       const id=existing?.id||uid;
