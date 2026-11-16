@@ -10,7 +10,7 @@ fs.mkdirSync(output,{recursive:true});
   const check=(ok,message)=>{assert.ok(ok,message);checks.push(message);};
   async function session(viewport){const context=await browser.newContext({viewport});
     const login=await context.request.post(config.url+'/review/login',{headers:{Origin:config.url},data:{password:config.password}});assert.equal(login.status(),200);
-    if(args.includes('--local'))await context.route('**/*',route=>{const url=new URL(route.request().url()),files={'/review':'app/review/index.html','/review/review-app.js':'app/review/review-app.js','/review/review.css':'app/review/review.css','/review/review-tools.js':'app/review/review-tools.js','/preview-coordinates.js':'app/viewer/preview-coordinates.js'};return url.origin===config.url&&files[url.pathname]?route.fulfill({path:path.resolve(files[url.pathname])}):route.continue();});
+    if(args.includes('--local'))await context.route('**/*',route=>{const url=new URL(route.request().url()),files={'/review':'app/review/index.html','/review/review-app.js':'app/review/review-app.js','/review/review.css':'app/review/review.css','/review/review-tools.js':'app/review/review-tools.js','/review/review-workflow.js':'app/review/review-workflow.js','/preview-coordinates.js':'app/viewer/preview-coordinates.js'};return url.origin===config.url&&files[url.pathname]?route.fulfill({path:path.resolve(files[url.pathname])}):route.continue();});
     const page=await context.newPage();page.on('pageerror',e=>errors.push(e.stack));await page.goto(config.url+'/review');await page.locator('.symbol-top h2').waitFor();return {context,page};}
   const {context,page}=await session({width:1440,height:1000});
   const state=async(p=page)=>(await p.request.get(config.url+'/api/review/state')).json();

@@ -1,10 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {initial,transition,signature,stale} from '../app/review/domain.mjs';
+import {initial,transition,signature,stale,processingSummary} from '../app/review/domain.mjs';
 import {validateSVG} from '../app/review/worker.mjs';
 let serial=0;
 const now='2026-11-15T23:00:00Z';
-const change=(s,a,i={},actor='user',at=now)=>transition(s,a,a==='claim'?{protocol:2,...i}:i,{actor,now:at,id:`event-${++serial}`});
+const change=async(s,a,i={},actor='user',at=now)=>{if(a==='process'&&!i.snapshot){const plan=await processingSummary(s);i={snapshot:plan.snapshot,included:[...plan.corrections,...plan.publications].map(t=>t.key)};}return transition(s,a,a==='claim'?{protocol:2,...i}:i,{actor,now:at,id:`event-${++serial}`});};
 const rev=(id,parent=null,migration=false)=>({id,parent,migration,fingerprint:'test',symbol:{id:'fixture',name:'Fixture',family:'Tests'},batch:'Validation'});
 async function fixture(){return (await change(initial(),'upload',{revision:rev('r1')},'desktop')).state;}
 test('new uploads preserve exact older verification and published predecessor',async()=>{

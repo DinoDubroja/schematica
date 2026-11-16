@@ -1,10 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {initial,transition,signature} from '../app/review/domain.mjs';
+import {initial,transition,signature,processingSummary} from '../app/review/domain.mjs';
 import {validateImage} from '../app/review/images.mjs';
 let serial=0;
 const at='2026-11-16T12:00:00Z';
-const act=(s,a,v={},actor='user',now=at)=>transition(s,a,v,{actor,now,id:`event-${++serial}`});
+const act=async(s,a,v={},actor='user',now=at)=>{if(a==='process'&&!v.snapshot){const plan=await processingSummary(s);v={snapshot:plan.snapshot,included:[...plan.corrections,...plan.publications].map(t=>t.key)};}return transition(s,a,v,{actor,now,id:`event-${++serial}`});};
 const rev=(symbol,id,parent=null)=>({id,parent,fingerprint:'test',symbol:{id:symbol,name:symbol},change:{why:'Shortened the top bar'}});
 async function fixture(){let s=initial();for(const id of ['one','two','three'])s=(await act(s,'upload',{revision:rev(id,id+'-1')},'desktop')).state;return s;}
 const comment=(s,id,text='Shorten the top bar',attachments=[])=>act(s,'comment',{text,attachments,targets:[{symbol:id,revision:id+'-1'}]});
@@ -13,7 +13,7 @@ test('Process Review directly authorizes separate jobs and suppresses duplicate 
   let queued=await act(s,'process');s=queued.state;assert.equal(queued.result.ids.length,2);
   assert.ok(queued.result.ids.every(id=>!/[<>:"/\\|?*]/.test(id)),'Job IDs must be safe on Windows');
   assert.ok(queued.result.ids.every(id=>s.jobs[id].workflow===2&&s.jobs[id].authorized&&s.jobs[id].phase==='correct'));
-  assert.equal((await act(s,'process')).result.ids.length,0);
+  await assert.rejects(act(s,'process'),/Nothing/);
   assert.equal((await act(s,'claim',{},'desktop')).result.job,null,'Old desktop cannot claim the new protocol');
   let claim=await act(s,'claim',{protocol:2},'desktop');s=claim.state;let job=claim.result.job;
   s=(await act(s,'upload',{job:job.id,lease:job.lease,revision:rev('one','one-2','one-1')},'desktop')).state;
@@ -59,8 +59,7 @@ test('failures stay retryable, while old queued proposals remain inert',async()=
   let s=await fixture();s=(await comment(s,'one')).state;s=(await act(s,'process')).state;
   let claim=await act(s,'claim',{protocol:2},'desktop');s=claim.state;const j=claim.result.job;
   s=(await act(s,'fail',{job:j.id,lease:j.lease,error:'Temporary renderer failure'},'desktop')).state;
-  assert.equal((await act(s,'process')).result.ids.length,0);
-  s=(await act(s,'retry',{job:j.id})).state;assert.equal(s.jobs[j.id].status,'Waiting for desktop');
+  const retry=await act(s,'process');assert.equal(retry.result.ids.length,0);s=retry.state;assert.equal(s.jobs[j.id].status,'Waiting for desktop');
   delete s.jobs[j.id].workflow;delete s.jobs[j.id].authorized;s.jobs[j.id].phase='prepare';
   assert.equal((await act(s,'claim',{protocol:2},'desktop')).result.job,null);
 });

@@ -31,7 +31,7 @@ and concrete host acceptance tests. Embedded-host verification remains outstandi
 The latest decision defers accounts until after the dev-library prototype.
 The completed resistor work covered corrections, declared options, Variations,
 batch checks and its authorized publication. Current authorization is recorded in
-[current status](../context/CURRENT.md#current-work); roadmap milestones do
+[current status](../context/CURRENT.md#latest-delivery); roadmap milestones do
 not authorize a new batch or publication.
 
 ## Decisions that guide the work

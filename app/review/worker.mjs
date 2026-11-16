@@ -1,4 +1,4 @@
-import {Problem,need,hash,canonical,transition} from './domain.mjs';
+import {Problem,need,hash,canonical,transition,processingSummary,allCommentProgress} from './domain.mjs';
 import {validateImage} from './images.mjs';
 
 const PRIVATE={'Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'same-origin'};
@@ -38,6 +38,16 @@ async function readState(env) {
 async function getRevision(env,id) {
   const row=await env.DB.prepare('SELECT body FROM revisions WHERE id=?').bind(id).first();need(row,'Unknown revision',404);
   const revision=JSON.parse(row.body);await completeGeometry(env,revision.symbol.configurations);return revision;
+}
+async function candidatePreviews(env,state) {
+  const ids=[...new Set(Object.values(state.symbols).map(s=>s.latest))],items={};
+  for(let i=0;i<ids.length;i+=90){const group=ids.slice(i,i+90);
+    const rows=(await env.DB.prepare(`SELECT id,public FROM revisions WHERE id IN (${group.map(()=>'?').join(',')})`).bind(...group).all()).results;
+    for(const row of rows){const s=JSON.parse(row.public),options=Object.fromEntries(Object.entries(s.options||{}).map(([k,v])=>[k,v.default]));
+      const c=s.configurations.find(c=>c.size==='medium'&&c.stroke==='medium'&&canonical(c.options||{})===canonical(options))||s.configurations[0];
+      items[s.id]={id:s.id,revision:row.id,number:s.revision,name:s.name,aliases:[...new Set([...(s.aliases||[]),...(s.keywords||[])])],family:s.family,attributes:s.attributes||{},thumbnail:c.sha256};
+    }
+  }return items;
 }
 async function completeGeometry(env,configs) {
   const missing=configs.filter(c=>!c.visual_center_from_origin_mm),hashes=[...new Set(missing.map(c=>c.sha256))],art=new Map();
@@ -113,7 +123,7 @@ async function mutate(request,env,actor,action) {
       need(input.revision.symbol.revision===parent.symbol.revision+1,'Increment the drawing revision for a new saved revision');
     }
   }
-  if(action==='comment')for(const target of input.targets||[]) {
+  if(['comment','comment-extend'].includes(action))for(const target of input.targets||[]) {
     const rev=await getRevision(env,target.revision);
     need((target.configurations||[]).every(key=>rev.symbol.configurations.some(c=>c.key===key)),'Unknown target configuration');
   }
@@ -245,7 +255,14 @@ async function main(request,env) {
   }
   if(path==='/api/review/state'&&request.method==='GET') {
     const row=await readState(env);const value=structuredClone(row.value);for(const j of Object.values(value.jobs))delete j.lease;
-    return json({version:row.version,...value});
+    return json({version:row.version,...value,comment_progress:allCommentProgress(value)});
+  }
+  if(path==='/api/review/candidate-previews'&&request.method==='GET'){const row=await readState(env);return json({items:await candidatePreviews(env,row.value)});}
+  if(path==='/api/review/processing-summary'&&request.method==='GET'){const row=await readState(env);return json(await processingSummary(row.value));}
+  if(path.startsWith('/api/review/timeline/')&&request.method==='GET'){
+    const id=path.slice('/api/review/timeline/'.length);need(/^[a-z][a-z0-9-]{0,79}$/.test(id),'Invalid symbol');
+    const rows=(await env.DB.prepare("SELECT sequence,action,at,body FROM events WHERE action IN ('upload','verify','unverify','publication','published','discard','restore') AND (json_extract(body,'$.symbol')=? OR json_extract(body,'$.input.symbol')=? OR EXISTS (SELECT 1 FROM json_each(json_extract(body,'$.input.symbols')) WHERE value=?)) ORDER BY sequence").bind(id,id,id).all()).results;
+    return json({events:rows.map(e=>({...e,body:JSON.parse(e.body)}))});
   }
   if(path==='/api/review/assets'&&request.method==='POST') {
     need(actor==='desktop','Desktop authentication required',403);const data=await body(request,1000000);validateSVG(data.body);
@@ -277,7 +294,7 @@ async function main(request,env) {
   if(path.startsWith('/api/review/comment-history/')&&request.method==='GET') {
     const id=path.slice('/api/review/comment-history/'.length),after=Number(url.searchParams.get('after')||0);
     need(/^[a-f0-9-]{36}$/.test(id)&&Number.isInteger(after)&&after>=0,'Invalid comment history');
-    const events=(await env.DB.prepare("SELECT sequence,id,at,body FROM events WHERE action='comment' AND sequence>? AND (id=? OR json_extract(body,'$.input.comment')=?) ORDER BY sequence LIMIT 100").bind(after,id,id).all()).results.map(e=>({sequence:e.sequence,id:e.id,at:e.at,...JSON.parse(e.body).input}));
+    const events=(await env.DB.prepare("SELECT sequence,id,at,action,body FROM events WHERE action IN ('comment','comment-extend') AND sequence>? AND (id=? OR json_extract(body,'$.input.comment')=?) ORDER BY sequence LIMIT 100").bind(after,id,id).all()).results.map(e=>{const body=JSON.parse(e.body);return {...(body.saved||body.input),sequence:e.sequence,eventId:e.id,at:e.at,action:e.action,eventType:e.action==='comment-extend'?'Targets added':body.original?'Comment edited':'Comment added'};});
     return json({events,next:events.at(-1)?.sequence||after});
   }
   if(path==='/api/review/backup'&&request.method==='GET') {
@@ -288,9 +305,14 @@ async function main(request,env) {
     const rows=(await env.DB.prepare(`SELECT * FROM ${table} WHERE ${key}>? ORDER BY ${key} LIMIT 10`).bind(numeric?Number(after||0):after).all()).results;
     return json({rows,next:rows.at(-1)?.[key]??null});
   }
-  if(path==='/review'||path==='/review/'||['/review/review.css','/review/review-app.js','/review/review-tools.js'].includes(path)) {
+  if(path==='/review'||path==='/review/'||['/review/review.css','/review/review-app.js','/review/review-tools.js','/review/review-workflow.js'].includes(path)) {
     const target=path.endsWith('.css')||path.endsWith('.js')?path:'/review/index.html';
-    const response=await env.ASSETS.fetch(new Request(new URL(target,request.url)));return new Response(response.body,{status:response.status,headers:{...Object.fromEntries(response.headers),...PRIVATE,'Content-Security-Policy':CSP}});
+    const response=await env.ASSETS.fetch(new Request(new URL(target,request.url))),headers=new Headers(response.headers);
+    for(const [name,value] of Object.entries(PRIVATE))headers.set(name,value);
+    // Replace the public asset policy; differently cased object keys otherwise
+    // combine two policies and block private data/blob image draft previews.
+    headers.set('Content-Security-Policy',CSP);
+    return new Response(response.body,{status:response.status,headers});
   }
   throw new Problem('Not found',404);
 }

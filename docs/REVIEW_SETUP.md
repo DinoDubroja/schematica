@@ -42,6 +42,7 @@ app/
 │   ├── schema.sql          # persistent storage
 │   ├── images.mjs          # private raster validation
 │   ├── review-tools.js     # navigation, updates and local image drafts
+│   ├── review-workflow.js  # candidate search, target editor and processing summary
 │   ├── index.html
 │   ├── review.css          # approved responsive layout
 │   └── review-app.js       # browser interactions and retained drafts
@@ -86,6 +87,9 @@ without overwriting another device's work.
 | Endpoint | Purpose |
 |---|---|
 | `GET /api/review/state` | Candidates, decisions, comments, cursor and processing status |
+| `GET /api/review/candidate-previews` | Compact latest-revision thumbnail/name/alias index; artwork loads lazily |
+| `GET /api/review/processing-summary` | Read-only exact correction/publication snapshot; creates no jobs |
+| `GET /api/review/timeline/{symbol}` | Actual Created/Revised/Verified/Published events, without inferred dates |
 | `GET /api/review/revisions/{uuid}` | Exact source, metadata, configurations and readiness evidence |
 | `GET /review/assets/{sha256}` | Private immutable drawing or comparison proof |
 | `POST /api/review/images` | Upload private `{hash, mime, body}`; body is base64 PNG/JPEG/WebP, at most 1 MiB decoded |
@@ -97,12 +101,24 @@ without overwriting another device's work.
 | `GET /api/review/evidence?after={sequence}` | Append-only event pages, including original comments and edits |
 | `GET /api/review/backup?table={name}&after={cursor}` | Desktop-only complete storage export in bounded pages |
 
-Browser actions: `cursor`, `seen`, `comment`, `verify`, `unverify`, `discard`, `restore`,
+Browser actions: `cursor`, `seen`, `comment`, `comment-extend`, `verify`, `unverify`, `discard`, `restore`,
 `process`, `answer`, `reject`, `retry`. Desktop actions: `heartbeat`, `claim`,
 `renew`, `question`, `publication`, `published`, `fail`, `complete`, `upload`.
 Legacy `proposal`/`approve` actions remain for retained history/previously approved
-jobs. New `workflow: 2` jobs record direct Process authorization, one symbol per job.
+jobs. New `workflow: 2` jobs record final summary confirmation, one symbol per job.
 The desktop claims with `{protocol: 2}`; an older desktop cannot claim new jobs.
+
+`process` requires `{snapshot, included}` from the read-only summary. `included` is
+an explicit subset of its card keys. Changed pending work returns 409; show a fresh
+summary and require confirmation again. Reuse the same idempotency key and payload
+after network uncertainty. An old browser calling `process` without a summary fails
+safely and must reload.
+
+`comment-extend` accepts `{comment, expected, targets}` with only the new exact targets.
+It preserves saved text/images. Per-target feedback tokens keep completed targets
+completed and avoid invalidating an independent working target. State includes
+`comment_progress`: `revision` is the original target; `resultRevision` links its
+returned drawing. No database migration or geometry change is needed for this update.
 Old unapproved proposals cannot be claimed automatically. Answers refresh only the
 question's exact target/signature. Changed source or feedback invalidates in-flight work.
 
@@ -181,31 +197,44 @@ seven days of Time Travel on the free plan. Test recovery before depending on it
 ```powershell
 python -m unittest discover -s tests -p "test_*.py"
 node --test tests/*.test.cjs tests/*.test.mjs
-python tests\check_docs.py
-python tests\verify_review_hosted.py --config C:\private\validation.json --output C:\private\validation-checks
-python tests\prepare_review_usability.py --help
-python tests\verify_review_usability.py --help
-node tests/review-usability-browser.cjs --config C:/private/validation.json --fixtures C:/private/fixtures --output output/playwright/review-usability
-node tests/review-updates-browser.cjs --config C:/private/validation.json --fixtures C:/private/fixtures/fixtures.json --output output/playwright/review-updates
+python tests\check_docs.py --render
 ```
 
-The hosted check refuses production URLs. It checks independent sessions, edits,
-shared targets, revision selection, discard/restore, retained proposals,
-authentication, exact exports and retained evidence. It expects the two isolated
-ground fixtures and a real completed subscription correction. Reuse unchanged
-rendering evidence for comments and decisions; no full-library render is required.
+For an interface change, use the separate validation service with its connector
+stopped. Choose a fresh fixture prefix/output folder for each complete run. The
+preparer reads published source and writes only isolated, unpublished fixture copies.
+It never renders the entire library or changes production decisions.
 
-The new workflow check uses eight isolated synthetic fixtures and a separate desktop
-work directory. Run the interaction harness first, the actual subscription-backed
-corrections second, then Updates/history checks. They are sequential, stateful checks:
-the Updates check answers a question and retries a synthetic failure; do not leave
-that test connector running afterward. No production Process action or test publication
-is needed. Browser checks require an available Playwright installation; `--local`
-tests current UI files against the validation API. The older `review-browser.cjs`
-records the original interface and is superseded by these two harnesses.
+```powershell
+python tests\prepare_review_workflow.py --source-config C:\private\desktop.json --config C:\private\validation.json --output C:\private\workflow-run\fixtures --prefix review-flow-run01-
+node tests/review-workflow-browser.cjs --config C:/private/validation.json --fixtures C:/private/workflow-run/fixtures --image C:/private/reference.png --output output/playwright/workflow-run
+python tests\verify_review_workflow.py --config C:\private\validation.json --root C:\private\workflow-run --stage prepare
+node tests/review-workflow-results-browser.cjs --config C:/private/validation.json --root C:/private/workflow-run --output output/playwright/workflow-run
+python tests\verify_review_workflow.py --config C:\private\validation.json --root C:\private\workflow-run --stage finish
+```
 
-Targeted browser checks additionally cover phone/desktop layout, failed-save draft
-retention, noninterrupting arrivals, History comparison and existing Library controls.
-Record actual hosted checks separately from state-machine simulations and physical
-phone/laptop testing. [Current delivery status](../context/CURRENT.md) names the tested
-build, deployment and remaining limits.
+Run these five steps in order. Browser checks need Playwright and Chrome available
+on that device. Supply a non-private PNG/JPEG/WebP reference image. The test simulator
+returns unchanged drawings with new fixture revisions, deliberately fails one target,
+and checks extension/retry without reapplying successful work. No real agent call or
+test publication is needed. Discard only the run's fixtures afterward; retain history.
+
+| Check | Expected result |
+|---|---|
+| Shared NPN/PNP image comment, failure and reload | Text, image, exact targets and independent scopes survive |
+| Search, multiselect, pane drag/keyboard resize, filtered verification | No lost selection, hidden controls or skipped candidates |
+| Open/exclude/stale/double-click processing summary | No jobs before final confirmation; exact included snapshot, no duplicates |
+| One success, one failure, then extend/retry | Completed targets stay completed; only new/failed targets run |
+| History, image edits, comparison, Undo, Discard and arrivals | Evidence stays accessible; current draft/focus/scroll are undisturbed |
+
+For coordinate changes, also run the read-only
+[grid/zoom browser checks](../tests/review-grid-browser.cjs); they block every service
+write. [Earlier agent/image checks](../tests/verify_review_usability.py) and
+[retained API checks](../tests/verify_review_hosted.py) cover the existing subscription
+processor and recovery contracts. Rerun those when those components change, not for
+every layout edit. The original browser harnesses document prior interface versions.
+
+Inspect the actual screenshots: desktop, phone drawing/editor/drawer and processing
+summary. Check that images load and controls remain reachable at zoom. Report browser
+viewport checks separately from physical keyboard/camera and second-device testing.
+[Current delivery status](../context/CURRENT.md) records the tested build and limits.

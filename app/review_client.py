@@ -180,8 +180,8 @@ class Client:
         comments = [c for c in self.state()["comments"].values() if any(t["revision"] == revision_id for t in c["targets"])]
         # Retain images from older comment edits as well as today's comment.
         for event in events:
-            if event["action"] == "comment":
-                for item in (event["body"].get("input"), event["body"].get("original")):
+            if event["action"] in ("comment", "comment-extend"):
+                for item in (event["body"].get("saved"), event["body"].get("input"), event["body"].get("original")):
                     if item and any(t["revision"] == revision_id for t in item.get("targets", [])):
                         comments.append({"id": item.get("id", event["id"]), **item})
         self.comment_images(comments, output / "comment-images")

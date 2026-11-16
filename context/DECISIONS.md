@@ -5,6 +5,29 @@ when it was reconciled. Times use Europe/Zagreb with an explicit UTC offset.
 Later applicable user decisions supersede earlier proposals; a newer import date
 does not. See [current status](CURRENT.md) for the implementation checkpoint.
 
+## Review layout, shared feedback and exact processing summary
+
+Source: user message `01a1e4c6-71c2-7652-bb68-b9e8f383443b`, attached brief
+`579d8948-478b-4556-b268-a04a3f647e3d`, turn starting 16-11-2026 15:32:52 +01:00
+(Europe/Zagreb). Reconciled 16-11-2026. Status: implementation, isolated verification,
+focused Git/main delivery and deployment authorized; implementation validated,
+delivery in progress.
+
+- Two panes with adjustable, remembered candidate width; Feedback below the drawing.
+  Thumbnails, alias/typo search, pinned actions and selection persist across filters.
+  Previous/Next and Verify & next follow the exact filtered queue without skipping.
+- One editor exposes exact symbol/revision targets for individual, shared and batch
+  feedback. Images and draft targets survive navigation and failures. Adding a target
+  to an already processed comment must not repeat its successful targets.
+- **Process Review → visual summary → Confirm & process** supersedes immediate
+  execution. Only exact included feedback and verified publication choices may start;
+  stale summaries require renewed confirmation. Exclusion affects only that run.
+- After confirmation, correction remains direct; only essential questions interrupt
+  their target. Per-symbol results and Retry failed preserve successful work.
+- Keep revisions, approvals, published predecessors, private attachments, grid alignment
+  and chat creation confirmation unchanged. No production feedback or test publication
+  for validation. A coordinates tested integration; B implements and deploys.
+
 ## Review usability and direct processing
 
 Source: user message `01a1e420-5525-7580-a5f0-5a78e87130f0` in Agent B's chat,

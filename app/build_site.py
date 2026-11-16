@@ -11,7 +11,7 @@ from verification import publication_catalog, read_ledger
 
 DIST = ROOT / "dist"
 VIEWER_FILES = ("index.html", "style.css", "app.js", "configurations.js", "preview-coordinates.js", "host.js", "review.js", "theme.js", "_headers", "robots.txt")
-REVIEW_FILES = ("index.html", "review.css", "review-tools.js", "review-app.js")
+REVIEW_FILES = ("index.html", "review.css", "review-tools.js", "review-workflow.js", "review-app.js")
 
 
 def payload():

@@ -36,6 +36,11 @@ class BrowserSession:
     def action(self, name, value, **kwargs):
         return self.request("/api/review/actions/" + name, value, **kwargs)
 
+    def confirm_process(self):
+        """Explicit test-only confirmation of a freshly read complete summary."""
+        summary=self.request('/api/review/processing-summary')
+        return self.action('process',{'snapshot':summary['snapshot'],'included':[item['key'] for item in summary['corrections']+summary['publications']]})
+
     def storage_state(self):
         return {"cookies": [{"name": c.name, "value": c.value, "domain": c.domain, "path": c.path,
                              "expires": c.expires, "httpOnly": True, "secure": True, "sameSite": "Strict"} for c in self.cookies], "origins": []}

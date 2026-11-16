@@ -15,7 +15,8 @@ for Inkscape. [Current counts and delivery status](context/CURRENT.md).
 
 The website supports browsing, search, configuration comparison, dark/light mode
 and individual or complete-library SVG downloads. Private Review saves image feedback
-and exact drawing approvals across devices, with subscription-backed desktop processing.
+and exact drawing approvals across devices. Preview shared corrections and publication
+choices before confirming subscription-backed desktop processing.
 **[Batch 03](docs/BATCH_03.md): 84 designs submitted to private Review.**
 Unverified candidates stay private; only explicitly verified revisions are published.
 Local MCP integration adds a

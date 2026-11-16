@@ -33,14 +33,14 @@ def run(config_path,fixtures_path,output,resume=False):
     question_text='Make the top bar shorter, and do not change the length of any bar. These two requirements are equally mandatory; ask which one should apply.'
     if not any(c['text']==question_text and any(t['symbol']==ids['question'] and t['revision']==question_revision for t in c['targets']) for c in client.state()['comments'].values()):
         user.action('comment',{'text':question_text,'targets':[{'symbol':ids['question'],'revision':question_revision}]})
-    question_job=next(j['id'] for j in client.state()['jobs'].values() if j['status']=='Needs your answer' and any(t['symbol']==ids['question'] for t in j['corrections'])) if resume else user.action('process',{})['id']
+    question_job=next(j['id'] for j in client.state()['jobs'].values() if j['status']=='Needs your answer' and any(t['symbol']==ids['question'] for t in j['corrections'])) if resume else user.confirm_process()['id']
     if not resume:user.action('restore',{'symbols':[ids['image-a'],ids['image-b'],ids['stale'],ids['failure']]})
     for key in ([] if resume else ['stale','failure']):
         s=client.state()['symbols'][ids[key]]
         user.action('comment',{'text':'Synthetic request: shorten only the top bar.','targets':[{'symbol':s['id'],'revision':s['latest']}]})
     if not resume:
-        queued=user.action('process',{});count=len(client.state()['jobs'])
-        duplicate=user.action('process',{});assert not duplicate['ids'] and len(client.state()['jobs'])==count
+        queued=user.confirm_process();count=len(client.state()['jobs'])
+        duplicate=user.confirm_process();assert not duplicate['ids'] and len(client.state()['jobs'])==count
     checks.append('Repeated Process Review does not duplicate a queued correction')
     stale_revision=client.state()['symbols'][ids['stale']]['latest']
     if not resume:user.action('comment',{'text':'Later feedback: leave the top bar unchanged.','targets':[{'symbol':ids['stale'],'revision':stale_revision}]})

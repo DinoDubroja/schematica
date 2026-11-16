@@ -11,6 +11,17 @@ from review_desktop import Connector
 
 
 class ReviewImageTests(unittest.TestCase):
+    def test_extended_target_source_export_retains_earlier_image_evidence(self):
+        image={'hash':'a'*64,'mime':'image/png','bytes':10,'name':'reference.png'}
+        revision={'id':'r2','source':{'definition':{},'recipe':'exact source'},'symbol':{'configurations':[]},'fingerprint':'f'}
+        saved={'id':'comment','targets':[{'symbol':'pnp','revision':'r2'}],'attachments':[image]}
+        events=[{'id':'event','action':'comment-extend','body':{'saved':saved,'input':{'comment':'comment','targets':saved['targets']}}}]
+        client=Client({'url':'https://example.test','token':'test'})
+        with tempfile.TemporaryDirectory() as directory, patch.object(client,'revision',return_value=revision),patch.object(client,'state',return_value={'comments':{}}),patch.object(client,'request',side_effect=[{'events':events,'next':1},{'events':[]}]),patch.object(client,'comment_images') as images:
+            client.source_export('r2',Path(directory)/'source')
+            self.assertTrue(any(c.get('attachments')==[image] for c in images.call_args.args[0]))
+            self.assertEqual((Path(directory)/'source/recipe.tex').read_text(),'exact source')
+
     def test_private_image_backup_restores_exact_large_bytes(self):
         raw=bytes(range(256))*3072
         with tempfile.TemporaryDirectory() as directory:

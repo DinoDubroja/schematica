@@ -17,8 +17,51 @@ export async function signature(state,id,revision) {
   return hash({revision, latest:state.symbols[id]?.latest, discarded:state.symbols[id]?.discarded,
     feedback:feedback(state,id,revision).map(c=>({id:c.id,edit:c.edit,text:c.text,targets:c.targets,...(c.attachments?.length?{attachments:c.attachments}:{})})).sort((a,b)=>a.id.localeCompare(b.id))});
 }
+export const targetKey=t=>`${t.symbol}:${t.revision}`;
+export const commentToken=(comment,target)=>comment.targetEdits?.[targetKey(target)]||comment.edit;
+export function targetComment(comment,target){return {...clone(comment),targets:[clone(target)],targetEdits:{[targetKey(target)]:commentToken(comment,target)}};}
+export function commentProgress(state,comment,target) {
+  const matches=[];
+  for(const job of Object.values(state.jobs))for(const item of job.corrections||[]) {
+    if(item.symbol!==target.symbol||item.revision!==target.revision)continue;
+    if(!item.comments?.some(c=>c.id===comment.id&&commentToken(c,target)===commentToken(comment,target)))continue;
+    const result=job.results?.find(r=>r.symbol===target.symbol);
+    matches.push({job:job.id,status:result?'Updated':job.status==='Waiting for desktop'?'Queued':job.status,revision:result?.revision||target.revision,at:result?.at||null});
+  }
+  return matches.find(x=>x.status==='Updated')||matches.reverse().find(x=>['Working','Queued','Needs your answer','Failed'].includes(x.status))||{status:state.symbols[target.symbol]?.latest===target.revision?'Pending':'Earlier revision',revision:target.revision};
+}
+export function allCommentProgress(state){return Object.fromEntries(Object.values(state.comments).map(c=>[c.id,c.targets.map(t=>{const progress=commentProgress(state,c,t);return {...progress,...t,resultRevision:progress.revision};})]));}
+export async function correctionSignature(state,id,revision) {
+  const s=state.symbols[id];
+  return hash({revision,latest:s?.latest,discarded:!!s?.discarded,selected:s?.selected||null,
+    feedback:feedback(state,id,revision).map(c=>{const target=c.targets.find(t=>t.symbol===id&&t.revision===revision);return {id:c.id,version:commentToken(c,target),text:c.text,attachments:c.attachments||[],configurations:target.configurations||[]};}).sort((a,b)=>a.id.localeCompare(b.id))});
+}
+const currentSignature=(state,item)=>item.feedback_version===3?correctionSignature(state,item.symbol,item.revision):signature(state,item.symbol,item.revision);
+export async function processingSummary(state) {
+  const corrections=[],publications=[];
+  for(const s of Object.values(state.symbols)) {
+    if(!s.candidate||s.discarded)continue;
+    if(s.selected&&(s.selected!==s.published||!s.confirmed)) {
+      const matching=Object.values(state.jobs).filter(j=>(j.workflow===2||j.approved)&&j.publications?.some(t=>t.symbol===s.id&&t.revision===s.selected));
+      const active=matching.some(j=>['Waiting for desktop','Working'].includes(j.status));
+      if(!active)publications.push({key:`publish:${s.id}:${s.selected}`,symbol:s.id,revision:s.selected,verifiedAt:s.verifications?.[s.selected]||null,decisionAt:s.decisionAt||null,retry:matching.find(j=>j.status==='Failed')?.id||null});
+    }
+    const comments=feedback(state,s.id,s.latest).filter(c=>commentProgress(state,c,{symbol:s.id,revision:s.latest}).status!=='Updated').map(c=>targetComment(c,c.targets.find(t=>t.symbol===s.id&&t.revision===s.latest)));
+    if(!comments.length)continue;
+    let active=false,retry=null;
+    for(const job of Object.values(state.jobs)) {
+      if(job.workflow!==2||job.results?.some(r=>r.symbol===s.id))continue;
+      const item=job.corrections?.find(t=>t.symbol===s.id&&t.revision===s.latest);
+      if(!item||item.signature!==await currentSignature(state,item))continue;
+      if(['Waiting for desktop','Working','Needs your answer'].includes(job.status))active=true;
+      if(job.status==='Failed')retry=job.id;
+    }
+    if(!active)corrections.push({key:`correct:${s.id}:${s.latest}`,symbol:s.id,revision:s.latest,signature:await correctionSignature(state,s.id,s.latest),feedback_version:3,comments,retry});
+  }
+  const plan={version:1,corrections,publications};return {...plan,snapshot:await hash(plan)};
+}
 export async function stale(state,job) {
-  for (const item of job.corrections) if(!job.results?.some(r=>r.symbol===item.symbol) && await signature(state,item.symbol,item.revision)!==item.signature) return true;
+  for (const item of job.corrections) if(!job.results?.some(r=>r.symbol===item.symbol) && await currentSignature(state,item)!==item.signature) return true;
   return false;
 }
 function symbol(state,id) { need(state.symbols[id],'Unknown symbol',404); return state.symbols[id]; }
@@ -62,7 +105,7 @@ export async function transition(original,action,input,ctx) {
     }
     case 'verify': {
       const s=symbol(state,input.symbol); revision(state,input.symbol,input.revision); need(!s.discarded,'Restore this candidate first');
-      evidence.previous=s.selected; s.selected=input.revision; s.decision='verified'; s.decisionAt=now; break;
+      evidence.previous=s.selected; s.selected=input.revision; s.decision='verified'; s.decisionAt=now;(s.verifications??={})[input.revision]=now; break;
     }
     case 'unverify': {
       const s=symbol(state,input.symbol); need(s.selected===input.expected,'Selection changed on another device',409);
@@ -76,38 +119,46 @@ export async function transition(original,action,input,ctx) {
         s.discarded=action==='discard'; s.decisionAt=now; }
       break;
     }
-    case 'comment': {
-      const ts=targets(state,input.targets),existing=input.comment?state.comments[input.comment]:null;
+    case 'comment': case 'comment-extend': {
+      const existing=input.comment?state.comments[input.comment]:null;
+      need(action!=='comment-extend'||existing,'Choose a saved comment');
+      need(Array.isArray(input.targets),'Choose explicit targets');
+      const ts=targets(state,action==='comment-extend'?[...existing.targets,...input.targets]:input.targets);
       // A browser left open before image support cannot express image removal.
       // Only an explicit attachments array edits the saved image selection.
-      const {content,images}=commentContent({...input,attachments:input.attachments===undefined?existing?.attachments:input.attachments});
+      const {content,images}=commentContent(action==='comment-extend'?existing:{...input,attachments:input.attachments===undefined?existing?.attachments:input.attachments});
       need(!input.comment || existing,'Unknown comment',404);
       if(existing) need(input.expected===existing.edit,'Comment changed on another device; your draft is retained',409);
       const id=existing?.id||uid;
       evidence.original=existing?clone(existing):null;
+      const sameContent=existing&&existing.text===content&&canonical(existing.attachments||[])===canonical(images),targetEdits={};
+      for(const target of ts){const old=existing?.targets.find(t=>targetKey(t)===targetKey(target));targetEdits[targetKey(target)]=sameContent&&old&&canonical(old.configurations||[])===canonical(target.configurations)?commentToken(existing,old):uid;}
       state.comments[id]={id,text:content,attachments:images,targets:ts,originalTargets:existing?.originalTargets||ts,
         originalText:existing?.originalText??content,originalAttachments:existing?.originalAttachments||existing?.attachments||images,
-        created:existing?.created||now,at:now,edit:uid,author:'user'};
+        created:existing?.created||now,at:now,edit:uid,author:'user',targetEdits};
+      evidence.saved=clone(state.comments[id]);
+      for(const target of ts)state.symbols[target.symbol].candidate=true;
       result={id}; break;
     }
     case 'process': {
-      const publications=[],corrections=[];
-      for(const [id,s] of Object.entries(state.symbols)) {
-        if(s.discarded || !s.candidate) continue;
-        if(s.selected && (s.published!==s.selected || !s.confirmed)) publications.push({symbol:id,revision:s.selected});
-        else if(feedback(state,id,s.latest).length) corrections.push({symbol:id,revision:s.latest,signature:await signature(state,id,s.latest),comments:clone(feedback(state,id,s.latest))});
-      }
+      need(input.snapshot&&Array.isArray(input.included),'Open the processing summary, then Confirm & process. Reload Review if needed.',409);
+      const plan=await processingSummary(state);
+      need(input.snapshot===plan.snapshot,'Review changed. Refresh the summary and confirm its updated contents.',409);
+      need(new Set(input.included).size===input.included.length,'Duplicate summary choice');
+      const available=[...plan.corrections,...plan.publications];need(input.included.every(k=>available.some(t=>t.key===k)),'Unknown summary choice',409);
+      const corrections=plan.corrections.filter(t=>input.included.includes(t.key)),publications=plan.publications.filter(t=>input.included.includes(t.key));
       need(publications.length+corrections.length,'Nothing to process yet');
       const ids=[],existing=[];
       for(const [index,target] of [...publications,...corrections].entries()) {
         const correction=!!target.signature;
+        if(target.retry){const job=state.jobs[target.retry];need(job?.status==='Failed'&&!(await stale(state,job)),'Retry changed',409);job.status='Waiting for desktop';job.error=null;existing.push(job.id);continue;}
         if(correction)for(const job of Object.values(state.jobs))if(job.workflow===2&&['Waiting for desktop','Working','Needs your answer','Failed'].includes(job.status)&&job.corrections.some(t=>t.symbol===target.symbol&&t.signature!==target.signature)&&!job.results.length)job.status='Stale';
         const active=Object.values(state.jobs).find(j=>j.workflow===2&&['Waiting for desktop','Working','Needs your answer','Failed'].includes(j.status)&&
           (correction?j.corrections.some(t=>t.symbol===target.symbol&&t.signature===target.signature):j.publications.some(t=>t.symbol===target.symbol&&t.revision===target.revision)));
         if(active){existing.push(active.id);continue;}
         const id=index===0?uid:`${uid}-${index}`;
         state.jobs[id]={id,workflow:2,created:now,status:'Waiting for desktop',phase:'correct',
-          authorized:{at:now,actor:'user',action:'process'},publications:correction?[]:[target],corrections:correction?[target]:[],results:[],attempts:0};
+          authorized:{at:now,actor:'user',action:'confirm-process',snapshot:plan.snapshot,included:clone(input.included)},publications:correction?[]:[target],corrections:correction?[target]:[],results:[],attempts:0};
         ids.push(id);
       }
       result={id:ids[0]||existing[0],ids,existing};break;
@@ -172,7 +223,7 @@ export async function transition(original,action,input,ctx) {
       const target=job.corrections[0],content=text(input.text),ts=[{symbol:target.symbol,revision:target.revision,configurations:[]}];
       state.comments[uid]={id:uid,text:content,attachments:[],targets:ts,originalTargets:ts,originalText:content,originalAttachments:[],created:now,at:now,edit:uid,author:'user',question:job.question.id};
       job.answers=[...(job.answers||[]),{question:clone(job.question),comment:uid,at:now}];
-      target.comments=clone(feedback(state,target.symbol,target.revision));target.signature=await signature(state,target.symbol,target.revision);
+      target.comments=feedback(state,target.symbol,target.revision).map(c=>target.feedback_version===3?targetComment(c,c.targets.find(t=>t.symbol===target.symbol&&t.revision===target.revision)):clone(c));target.signature=await currentSignature(state,target);
       job.question=null;job.status='Waiting for desktop';break;
     }
     case 'publication': {
@@ -204,7 +255,7 @@ export async function transition(original,action,input,ctx) {
         need(job.phase==='correct' && (job.workflow===2?job.authorized:job.approved),'Correction is not authorized');
         const target=job.corrections.find(t=>t.symbol===id && t.revision===r.parent);
         need(target && !job.results.some(x=>x.symbol===id),'Unexpected correction target');
-        need(await signature(state,id,r.parent)===target.signature,'Correction is stale',409);
+        need(await currentSignature(state,target)===target.signature,'Correction is stale',409);
         job.results.push({symbol:id,revision:r.id,parent:r.parent,proposal:job.proposal?.id||null,summary:String(r.change?.why||'Updated drawing').slice(0,2000),at:now});
       }
       if(!s) state.symbols[id]=s={id,name:r.symbol.name,family:r.symbol.family||r.symbol.types?.[0]||'Symbols',batch:r.batch||'Individual',revisions:[],selected:null,published:null};

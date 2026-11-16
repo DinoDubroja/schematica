@@ -1,5 +1,20 @@
 const test=require('node:test'),assert=require('node:assert/strict');
 const {needsReview,nextCandidate,updates}=require('../app/review/review-tools.js');
+const {searchMatch,nextAfterSave}=require('../app/review/review-tools.js');
+test('search matches names, aliases and a small transposition without accepting unrelated symbols',()=>{
+  const s={id:'darlington-npn',name:'Darlington NPN'},p={aliases:['BJT','bipolar transistor']};
+  assert.equal(searchMatch(s,'Darlingotn',p).match,true);
+  assert.equal(searchMatch(s,'BJT',p).match,true);
+  assert.equal(searchMatch(s,'darlington PNP',p).match,false);
+  assert.deepEqual(searchMatch(s,'NPN',p).ranges,[[11,14]]);
+});
+test('filtered verify keeps the pre-save position when the verified row disappears',()=>{
+  const s=fixture(),order=['a','b','c'];s.symbols.a.selected='a2';
+  assert.equal(nextAfterSave(s,order,'a',['b','c']),'b');s.symbols.b.selected='b2';
+  assert.equal(nextAfterSave(s,['b','c'],'b',['c']),'c');s.symbols.c.selected='c2';
+  assert.equal(nextAfterSave(s,['c'],'c',[]),null);
+  assert.equal(nextAfterSave(s,order,'a',['d']),null,'Outside-filter work is never selected');
+});
 const fixture=()=>({symbols:Object.fromEntries(['a','b','c','d'].map(id=>[id,{id,name:id,candidate:true,latest:id+'2',selected:null,updateRevision:id+'2'}])),comments:{},jobs:{}});
 test('quick review skips verified, commented and discarded candidates, then completes',()=>{
   const s=fixture(),pool=Object.values(s.symbols);s.symbols.b.selected='b2';s.symbols.c.discarded=true;

@@ -36,11 +36,12 @@ for ownership and handoffs.
 
 ## Latest changes
 
-**Faster phone Review, private image feedback and direct corrections.** Verify & next
-and Save comment & next keep the drawing in view. Updates groups returned drawings,
-queued work and essential questions; opening a correction does not verify it.
-Process Review now applies feedback without a routine plan approval. Images stay
-private, survive failed saves and reach the processing agent as actual image input.
+**Two-pane Review and explicit shared feedback.** Resize Candidates, search names/aliases
+with typo tolerance, and review within the filtered results. One editor keeps exact
+targets and image drafts across navigation and reload. Process Review opens a read-only
+summary; only **Confirm & process** starts the included corrections/publications.
+Each target has its own result; extending a comment or retrying a failure leaves
+successful targets completed. History labels actual events and compares at one scale.
 [Compact guide and five review checks](docs/REVIEW.md) · [API/test setup](docs/REVIEW_SETUP.md).
 
 **Review's grid follows the drawing.** The 1 mm grid, artwork and blue terminal
@@ -72,7 +73,8 @@ status; A's original store and runtime remain isolated.
 | Save an image comment on one device; reload on the other | Exact text, target and enlarged image appear |
 | Verify an older History revision | That revision is selected; Library is unchanged until processing |
 | Discard and restore | Candidate is recoverable; published predecessor stays visible |
-| Process with the desktop stopped, then start it | Waiting for desktop changes to Working; submitted feedback is applied directly |
+| Open Process Review, inspect/exclude items, then return | No jobs or publications start |
+| Confirm only the intended summary items | Included work queues; the desktop applies corrections directly |
 | Open a returned correction in Updates | New revision stays unverified; old source, feedback and image edits remain in History |
 
 Batch 03 supplies real candidates for these Review checks. Synthetic fixtures remain

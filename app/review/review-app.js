@@ -8,8 +8,8 @@ try{descriptionOpen=localStorage.getItem('schematica-review-description')==='ope
 let data=null,revisions=new Map(),undo=null,busy=false,modal=null,editing=null,selectionSerial=0,refreshPending=null,cursorSave=Promise.resolve();
 let artSerial=0;
 const canvasObserver=new ResizeObserver(()=>fitDrawing());
-function remember(){try{localStorage.setItem('schematica-review-drafts',JSON.stringify(local.drafts));localStorage.setItem('schematica-review-requests',JSON.stringify(draftRequests));localStorage.setItem('schematica-review-targets',JSON.stringify(draftTargets));}catch{imageError='Draft storage is unavailable. Keep this page open until your comment is saved.';}}
-const draftKey=()=>`${local.selected}:${local.revision}${editing?':edit:'+editing:''}`;
+function remember(){keepEditors();try{localStorage.setItem('schematica-review-drafts',JSON.stringify(local.drafts));localStorage.setItem('schematica-review-requests',JSON.stringify(draftRequests));localStorage.setItem('schematica-review-targets',JSON.stringify(draftTargets));}catch{imageError='Draft storage is unavailable. Keep this page open until your comment is saved.';}}
+const draftKey=()=>activeEditor||`${local.selected}:${local.revision}`;
 async function api(path,method='GET',value,key=crypto.randomUUID()) {
   const response=await fetch('/api/review/'+path,{method,headers:method==='GET'?{}:{'Content-Type':'application/json','Idempotency-Key':key},body:method==='GET'?undefined:JSON.stringify(value),signal:AbortSignal.timeout(30000)});
   const result=await response.json();
@@ -30,14 +30,14 @@ async function save(name,value,message='Saved',key) {
   finally{busy=false;locked.forEach(([node,disabled])=>node.disabled=disabled);render();}
 }
 async function refreshSaved(){try{await refresh(true);local.refreshNeeded=false;}catch{local.refreshNeeded=true;notify('Saved on the server. Reconnect to refresh the drawing; your review has not advanced.');}}
-function saveLabel(){for(const id of ['r-save','phone-save'])if($('#'+id)){$('#'+id).textContent=local.save;$('#'+id).className=local.save.includes('failed')?'status-error':local.save==='Unsaved'?'status-attention':'status-success';}for(const id of ['r-undo','phone-undo'])if($('#'+id)){$('#'+id).hidden=!undo;$('#'+id).disabled=busy;}}
+function saveLabel(){for(const id of ['r-save','phone-save'])if($('#'+id)){$('#'+id).textContent=local.save;$('#'+id).className=local.save.includes('failed')?'status-error':local.save==='Draft on this device'?'status-attention':'status-success';}for(const id of ['r-undo','phone-undo'])if($('#'+id)){$('#'+id).hidden=!undo;$('#'+id).disabled=busy;}}
 const selected=()=>data?.symbols[local.selected];
 const current=()=>revisions.get(local.revision);
 const list=()=>Object.values(data?.symbols||{}).filter(s=>s.candidate);
 const comments=(id=local.selected,rev=local.revision)=>Object.values(data?.comments||{}).filter(c=>!c.deleted&&c.targets.some(t=>t.symbol===id&&t.revision===rev));
 const reviewed=s=>!ReviewTools.needsReview(data,s);
 function label(s){if(s.discarded)return 'Discarded';if(s.published===s.latest&&s.confirmed)return 'Published';if(s.selected)return s.selected===s.latest?'Verified':'Earlier revision verified';if(comments(s.id,s.latest).length)return 'Feedback saved';return 'Needs review';}
-function filtered(){return list().filter(s=>(local.filter==='discarded'?s.discarded:!s.discarded)&&(local.filter!=='needs'||!reviewed(s))&&(local.filter!=='feedback'||comments(s.id,s.latest).length)&&(local.filter!=='verified'||s.selected&&s.selected!==s.published)&&(local.filter!=='published'||s.confirmed)&&(local.filter!=='new'||local.arrivals.includes(s.id))&&(local.batch==='all'||s.batch===local.batch)&&s.name.toLowerCase().includes(local.search.toLowerCase()));}
+function filtered(){return list().filter(s=>(local.filter==='discarded'?s.discarded:!s.discarded)&&(local.filter!=='needs'||!reviewed(s))&&(local.filter!=='feedback'||comments(s.id,s.latest).length)&&(local.filter!=='verified'||s.selected&&s.selected!==s.published)&&(local.filter!=='published'||s.confirmed)&&(local.filter!=='new'||local.arrivals.includes(s.id))&&(local.batch==='all'||s.batch===local.batch)&&ReviewTools.searchMatch(s,local.search,previews[s.id]).match);}
 async function loadRevision(id){if(!revisions.has(id))revisions.set(id,await api('revisions/'+id));return revisions.get(id);}
 function refresh(force=false){if(refreshPending)return force?refreshPending.then(()=>refresh(true)):refreshPending;refreshPending=readState(force).finally(()=>{refreshPending=null;});return refreshPending;}
 async function readState(force) {
@@ -51,8 +51,8 @@ async function readState(force) {
     if(local.revision)await loadRevision(local.revision);
     // Polls update the badge/status only. Arrivals never replace the drawing,
     // reset an open editor, change focus or move the user's scroll position.
-    if(!first&&!force){renderStatus();if(modal==='updates'&&updatesChanged){const scroll=$('#dialog').scrollTop,opened=[...$('#dialog').querySelectorAll('details')].map(d=>d.open);jobsDialog();$('#dialog').querySelectorAll('details').forEach((d,i)=>d.open=!!opened[i]);$('#dialog').scrollTop=scroll;}return;}
-    local.refreshNeeded=false;render();if(first&&(local.drafts[draftKey()]||draftImages[draftKey()]?.length)){local.save='Unsaved';saveLabel();}
+    if(!first&&!force){renderStatus();if($('.comments'))$('.comments').innerHTML=commentsHTML(comments());loadPreviews();if(modal==='updates'&&updatesChanged){const scroll=$('#dialog').scrollTop,opened=[...$('#dialog').querySelectorAll('details')].map(d=>d.open);jobsDialog();$('#dialog').querySelectorAll('details').forEach((d,i)=>d.open=!!opened[i]);$('#dialog').scrollTop=scroll;}return;}
+    local.refreshNeeded=false;render();loadPreviews();if(first&&(local.drafts[draftKey()]||draftImages[draftKey()]?.length)){local.save='Draft on this device';saveLabel();}
   }catch(e){if(!data)$('#r-app').innerHTML=`<div class="toolbar"><p>${esc(e.message)}</p><a href="/review">Sign in / retry</a></div>`;else if(force)throw e;}
 }
 async function select(id,rev) {
@@ -60,12 +60,12 @@ async function select(id,rev) {
   // Keep a complete current drawing until the requested revision is available.
   // A later navigation supersedes an earlier request without mixing their IDs.
   await loadRevision(revision);if(serial!==selectionSerial)return;
-  local.selected=id;local.revision=revision;local.options={};local.tab='drawing';local.queue=false;local.feedback=false;local.queueComplete=false;editing=null;imageError='';
+  local.selected=id;local.revision=revision;local.options={};local.tab='drawing';local.queue=false;local.feedback=false;local.queueComplete=false;imageError='';
   render();cursorSave=cursorSave.catch(()=>{}).then(()=>serial===selectionSerial?action('cursor',{symbol:id,revision}):null).catch(e=>notify(e.message));
-  if(local.drafts[draftKey()]||draftImages[draftKey()]?.length){local.save='Unsaved';saveLabel();}
+  if(local.drafts[draftKey()]||draftImages[draftKey()]?.length){local.save='Draft on this device';saveLabel();}
 }
 function config(r=current(),overrides={}) {
-  if(!r)return null;const options=Object.fromEntries(Object.entries(r.symbol.options||{}).map(([key,spec])=>[key,local.options[key]||spec.default]));
+  if(!r)return null;const options=Object.fromEntries(Object.entries(r.symbol.options||{}).map(([key,spec])=>[key,spec.values.some(v=>v.id===local.options[key])?local.options[key]:spec.default]));
   Object.assign(options,overrides.options||{});return r.symbol.configurations.find(c=>c.size===(overrides.size||local.size)&&c.stroke===(overrides.stroke||local.stroke)&&JSON.stringify(Object.entries(c.options||{}).sort())===JSON.stringify(Object.entries(options).sort()));
 }
 function art(r=current(),overrides={},small=false,inspection=false) {
@@ -94,41 +94,41 @@ function desktopLabel(){return Date.now()-Date.parse(data.desktop.at||0)<75000&&
 function reviewButton(s,r){return s.discarded?'<button class="primary" data-action="restore">Restore</button>':`<button class="primary" data-action="verify-next" ${local.queueComplete?'disabled':''}>${local.queueComplete?'Review complete':s.selected===r.id?'Next needing review':'Verify &amp; next'}</button>`;}
 function render() {
   if(!data)return;const scroll=[scrollX,scrollY];canvasObserver.disconnect();
-  const s=selected(),r=current(),done=list().filter(reviewed).length;
+  const s=selected(),r=current(),done=list().filter(reviewed).length; if(s)ensureEditor();const queueScroll=$('#queue-items')?.scrollTop||0;
   $('#r-app').innerHTML=`
-    <div class="toolbar"><div><h1>Review</h1><p class="subtitle">Private workspace</p></div>
+    <div class="toolbar"><div><h1>Review</h1></div>
       <div class="actions"><span id="desktop-status" class="availability">${esc(desktopLabel())}</span>
       <button class="primary" data-action="process">Process Review</button><button class="outline" id="updates-button" data-action="updates">Updates</button></div></div>
     <div class="progress-line"><span id="review-progress">${done} of ${list().length} reviewed</span><progress max="${list().length||1}" value="${done}" aria-label="Review decisions"></progress>
       <span id="r-save" role="status"></span><button id="r-undo" class="quiet" data-action="undo" ${undo?'':'hidden'}>Undo</button></div>
     ${!s?'<main class="empty-review"><h2>Ready for new symbols</h2><p>Finished candidates will appear here as they arrive.</p></main>':`
     <main class="workspace"><aside class="queue ${local.queue?'open':''}" aria-label="Candidate queue">
-      <div class="row between queue-title"><h3>Candidates</h3><button class="quiet" data-action="select-mode">${local.selecting?'Done':'Select'}</button></div>
+      <div class="row between queue-title"><h3>Candidates</h3><button class="quiet" data-action="select-mode">${local.selecting?'Done':'Select multiple'}</button></div>
       <div class="queue-filters"><input type="search" id="search" aria-label="Find a candidate" placeholder="Find a symbol" value="${esc(local.search)}">
         <div class="filter-pair"><select id="filter" aria-label="Review status">${[['all','All candidates'],['needs','Needs review'],['feedback','Feedback'],['verified','Verified'],['published','Published'],['new','New arrivals'],['discarded','Discarded']].map(([v,n])=>`<option value="${v}" ${v===local.filter?'selected':''}>${n}</option>`).join('')}</select>
         <select id="batch" aria-label="Batch"><option value="all">All batches</option>${[...new Set(list().map(s=>s.batch))].map(b=>`<option ${local.batch===b?'selected':''}>${esc(b)}</option>`).join('')}</select></div></div>
-      <div id="queue-items">${queueHTML()}</div><div class="queue-bottom"><button class="outline" data-action="shared">${local.selection.length?'Comment on selected':'Comment on batch'}</button>
-        ${local.selection.length?'<button class="quiet danger" data-action="discard-many">Discard selected</button>':''}<button data-action="discarded" class="quiet">Discarded</button><button data-action="close-queue" class="mobile-only">Back to drawing</button></div></aside>
+      <div id="queue-controls">${queueControls()}</div><div id="queue-items">${queueHTML()}</div></aside>
+      <div id="pane-divider" role="separator" tabindex="0" aria-label="Resize Candidates pane" aria-orientation="vertical" aria-valuemin="240" aria-valuemax="480" aria-valuenow="300"><span></span></div>
       <section class="inspector" aria-label="Symbol inspection">
         <div class="mobile-top mobile-only"><button class="outline" data-action="queue">Candidates</button></div>
         <div class="symbol-top"><div class="row between"><span class="small muted">${esc(s.family)}</span><div class="row navigation">
-          <button class="outline" data-action="previous" aria-label="Previous symbol">‹</button><span>${list().findIndex(x=>x.id===s.id)+1} / ${list().length}</span><button class="outline" data-action="next" aria-label="Next symbol">›</button></div></div>
+          <button class="outline" data-action="previous" aria-label="Previous symbol">‹</button><span id="queue-position">${positionLabel()}</span><button class="outline" data-action="next" aria-label="Next symbol">›</button></div></div>
           <h2>${esc(r.symbol.name)} <span class="tag">r${r.symbol.revision}</span></h2><p class="status ${s.selected===r.id?'status-success':'status-attention'}">${esc(s.discarded?'Discarded':s.published===r.id&&s.confirmed?'Published':s.selected===r.id?'Verified · awaiting publication':comments().length?'Feedback saved':'Needs review')}</p>
           <div class="decision-bar desktop-review-actions">${reviewButton(s,r)}<button class="outline" data-action="comment">Comment</button><button class="quiet danger" data-action="discard">Discard</button></div></div>
-        ${local.queueComplete?'<div class="queue-complete" role="status">✓ This queue is reviewed.</div>':''}
+        ${local.queueComplete?'<div class="queue-complete" role="status">✓ No more candidates need review in these results.</div>':''}
         ${s.selected&&s.selected!==r.id?'<div class="pinned-revision">Your verified revision stays selected.</div>':''}
+        ${r.parent?`<div class="revision-summary"><p class="small">${esc(r.change?.why||'Revised drawing')}</p><button class="outline" data-action="compare" data-value="${esc(r.parent)}">Compare with previous</button></div>`:''}
         <div class="tabs" role="tablist" aria-label="Symbol view">${['drawing','variations','history'].map(t=>`<button role="tab" aria-selected="${local.tab===t}" class="${local.tab===t?'active':''}" data-action="tab" data-value="${t}">${t[0].toUpperCase()+t.slice(1)}</button>`).join('')}</div>
         <div id="panel" role="tabpanel">${panelHTML()}</div>
         <div class="mobile-only secondary-review-actions"><button class="quiet danger" data-action="discard">Discard</button></div>
-      </section>
-      <aside class="feedback ${local.feedback?'open':''}" aria-label="Feedback"><div id="feedback-content">${feedbackHTML()}</div></aside>
+      <section class="feedback ${local.feedback?'open':''}" aria-label="Feedback"><div id="feedback-content">${feedbackHTML()}</div></section></section>
     </main><nav class="phone-action-bar" aria-label="Review actions"><div class="phone-save-line"><span id="phone-save" role="status"></span><button id="phone-undo" class="quiet" data-action="undo" ${undo?'':'hidden'}>Undo</button></div><button class="outline" data-action="previous">Previous</button><button class="outline" data-action="comment">Comment</button>${reviewButton(s,r)}</nav>`}`;
-  if(local.tab==='history')loadHistory();
+  if(local.tab==='history')loadHistory().catch(e=>notify(e.message));
   const canvas=$('.drawing-canvas');if(canvas){fitDrawing();canvasObserver.observe(canvas);}
   if(busy)document.querySelectorAll('#r-app button,#r-app textarea,#r-app input,#r-app select').forEach(n=>n.disabled=true);
-  document.body.classList.toggle('feedback-open',local.feedback);document.body.classList.toggle('queue-open',local.queue);renderStatus();window.scrollTo(...scroll);
+  document.body.classList.toggle('feedback-open',local.feedback);document.body.classList.toggle('queue-open',local.queue);renderStatus();restorePane();if($('#queue-items'))$('#queue-items').scrollTop=queueScroll;window.scrollTo(...scroll);
 }
-function queueHTML(){return filtered().map(s=>`<div class="queue-item ${s.id===local.selected?'active':''}">${local.selecting?`<input type="checkbox" aria-label="Select ${esc(s.name)}" data-select="${esc(s.id)}" ${local.selection.includes(s.id)?'checked':''}>`:''}<button class="queue-entry" data-action="select" data-value="${esc(s.id)}"><span>${esc(s.name)}</span><small>${esc(label(s))}</small></button></div>`).join('')||'<p class="muted small">No matching candidates.</p>';}
+function queueHTML(){return filtered().map(s=>`<div class="queue-item ${s.id===local.selected?'active':''}">${local.selecting?`<input type="checkbox" aria-label="Select ${esc(s.name)}" data-select="${esc(s.id)}" ${local.selection.includes(s.id)?'checked':''}>`:''}<button class="queue-entry" data-action="select" data-value="${esc(s.id)}" ${s.id===local.selected?'aria-current="true"':''}>${thumb(s.id)}<span><span>${highlighted(s,local.search)}</span>${aliasMatch(s,local.search)}<small>${esc(label(s))}</small></span></button></div>`).join('')||'<p class="muted small">No matching candidates.</p>';}
 function settingsHTML(){const r=current();return `<div class="settings">${[['size','Size',r.symbol.presets.sizes],['stroke','Stroke',r.symbol.presets.strokes],...Object.entries(r.symbol.options||{}).map(([key,spec])=>[key,spec.name,spec.values.map(v=>v.id)])].map(([key,name,values])=>`<fieldset><legend>${esc(name)}</legend><div class="segmented">${values.map(v=>`<button class="${(local[key]||local.options[key]||r.symbol.options?.[key]?.default)===v?'active':''}" data-setting="${esc(key)}" data-value="${esc(v)}">${esc(r.symbol.options?.[key]?.values.find(x=>x.id===v)?.name||v[0].toUpperCase()+v.slice(1))}</button>`).join('')}</div></fieldset>`).join('')}</div>`;}
 function panelHTML() {
   const r=current();
@@ -138,24 +138,24 @@ function panelHTML() {
   const rows=[['Size','size',r.symbol.presets.sizes.map(id=>({id,name:id}))],['Stroke','stroke',r.symbol.presets.strokes.map(id=>({id,name:id}))],...Object.entries(r.symbol.options||{}).map(([k,s])=>[s.name,k,s.values])];
   return `<div class="variation-rows">${rows.map(([name,key,values])=>`<section class="variation-row"><h3>${esc(name)}</h3><div class="variation-examples">${values.map(v=>`<figure>${art(r,{...defaults,...(['size','stroke'].includes(key)?{[key]:v.id}:{options:{...defaults.options,[key]:v.id}})},true)}<figcaption>${esc(v.name[0].toUpperCase()+v.name.slice(1))}</figcaption></figure>`).join('')}</div></section>`).join('')}</div>`;
 }
-async function loadHistory(){const id=local.selected;await Promise.all(selected().revisions.map(loadRevision));if(local.tab!=='history'||local.selected!==id||!$('#history-list'))return;
-  $('#history-list').innerHTML=selected().revisions.slice().reverse().map(rev=>{const r=revisions.get(rev);return `<article class="history-card"><div class="row between"><h3>Revision ${r.symbol.revision}</h3><span class="small muted">${esc(new Date(r.at).toLocaleString())}</span></div>${art(r,{},true)}<p>${esc(r.change?.why||r.readiness?.visual?.summary||'Saved drawing')}</p><div class="row"><button class="outline" data-action="revision" data-value="${rev}">View${rev===local.revision?' · current':''}</button><button class="quiet" data-action="compare" data-value="${rev}">Compare</button></div>${commentsHTML(comments(id,rev),false)}</article>`;}).join('');}
+async function loadHistory(){const id=local.selected;const [,timeline]=await Promise.all([Promise.all(selected().revisions.map(loadRevision)),api('timeline/'+id)]);if(local.tab!=='history'||local.selected!==id||!$('#history-list'))return;
+  const names={upload:'Created',verify:'Verified',unverify:'Verification undone',publication:'Publication started',published:'Published'};
+  $('#history-list').innerHTML=selected().revisions.slice().reverse().map(rev=>{const r=revisions.get(rev),events=timeline.events.filter(e=>(e.body.revision||e.body.input?.revision)===rev&&names[e.action]);return `<article class="history-card"><h3>Revision ${r.symbol.revision}</h3>${art(r,{},true)}<p>${esc(r.change?.why||r.readiness?.visual?.summary||'Saved drawing')}</p><ul class="event-times">${events.map(e=>`<li>${e.action==='upload'?(e.body.migration?'Imported':e.body.parent?'Revised':'Created'):names[e.action]} · ${esc(new Date(e.at).toLocaleString())}</li>`).join('')}</ul><div class="row"><button class="outline" data-action="revision" data-value="${rev}">View${rev===local.revision?' · current':''}</button><button class="quiet" data-action="compare" data-value="${rev}">Compare</button></div>${commentsHTML(comments(id,rev),false)}<details><summary>Revision details</summary><code>${esc(rev)}</code><p class="small muted">${esc(r.fingerprint||'')}</p></details></article>`;}).join('');}
 function imageURL(a){return a.body?`data:${a.mime};base64,${a.body}`:`/review/images/${a.hash}`;}
 function imageHTML(images,draft=false,context=draftKey()){return `<div class="image-thumbnails">${images.map(a=>`<figure class="comment-image"><button class="image-open" data-action="image" data-value="${a.hash}" data-key="${esc(context)}" ${draft?'data-draft="true"':''} aria-label="Enlarge ${esc(a.name)}"><img src="${imageURL(a)}" alt="${esc(a.name)}"></button>${draft?`<figcaption class="small ${a.status==='Upload failed'?'status-error':''}">${esc(a.status||'Uploaded')}</figcaption><button class="remove-image" data-action="remove-image" data-key="${esc(context)}" data-value="${a.hash}" aria-label="Remove ${esc(a.name)}">×</button>`:''}</figure>`).join('')}</div>`;}
-function commentsHTML(items,editable=true){return items.map(c=>`<article class="comment-card"><p>${esc(c.text)}</p>${imageHTML(c.attachments||[])}<small class="muted">${c.targets.length>1?`${c.targets.length} symbols · `:''}${esc(new Date(c.at).toLocaleString())}</small>${editable?`<button class="quiet" data-action="edit-comment" data-value="${c.id}">Edit</button>`:''}${c.edit!==c.id?`<button class="quiet" data-action="comment-history" data-value="${c.id}">Earlier edits</button>`:''}</article>`).join('');}
-function feedbackHTML(){return `<div class="row between"><h3>Feedback</h3><button class="mobile-only" data-action="close-feedback" aria-label="Close feedback">Close</button></div>
-  <label class="sr-only" for="comment">Comment on this revision</label><textarea id="comment" rows="4" placeholder="What should change?">${esc(local.drafts[draftKey()]||'')}</textarea>
-  <div id="image-drafts">${imageHTML(draftImages[draftKey()]||[],true)}</div>
-  <div class="image-picker row"><label class="outline picker-button">Add images<input id="image-picker" class="sr-only" type="file" accept="image/png,image/jpeg,image/webp" multiple ${!imagesReady?'disabled':''}></label>
-    <label class="outline picker-button mobile-only">Take photo<input id="photo-picker" class="sr-only" type="file" accept="image/jpeg,image/png,image/webp" capture="environment" ${!imagesReady?'disabled':''}></label></div>
-  <p class="small muted image-help">Up to 4 PNG, JPEG or WebP images. Photos are resized to 1 MB. Paste or drop images here.</p>
+function commentsHTML(items,editable=true){return items.map(c=>`<article class="comment-card"><p>${esc(c.text)}</p>${imageHTML(c.attachments||[])}${targetResults(c)}<small class="muted">Comment ${c.at===c.created?'added':'edited'} · ${esc(new Date(c.at).toLocaleString())}</small>${editable?`<button class="quiet" data-action="edit-comment" data-value="${c.id}">Edit</button><button class="quiet" data-action="extend-comment" data-value="${c.id}">Apply this comment to another symbol…</button>`:''}${c.edit!==c.id?`<button class="quiet" data-action="comment-history" data-value="${c.id}">Earlier edits</button>`:''}</article>`).join('');}
+function feedbackHTML(){const record=editorRecord(),extend=record.mode==='extend',target=record.targets.find(t=>t.symbol===local.selected&&t.revision===local.revision),draft=hasDraft(),count=record.targets.length;return `<div class="row between"><h3>Feedback</h3><div class="row"><button class="quiet" data-action="drafts">Drafts</button><button class="mobile-only" data-action="close-feedback" aria-label="Close feedback">Close</button></div></div>
+  ${targetChips()}${suggestion()}<div class="row between small"><span class="${draft?'status-attention':'muted'}" id="editor-state">${draft?'Draft on this device':'New comment'}</span><span>${count} ${count===1?'target':'targets'}</span></div>
+  ${extend?'<p class="small muted">Saved comment · adding targets only</p>':''}<label class="sr-only" for="comment">Comment on selected revisions</label><textarea id="comment" rows="4" placeholder="What should change?" ${extend?'readonly':''}>${esc(local.drafts[draftKey()]||'')}</textarea>
+  <div id="image-drafts">${imageHTML(draftImages[draftKey()]||[],!extend)}</div>
+  ${extend?'':`<div class="image-picker row"><label class="outline picker-button">Add images<input id="image-picker" class="sr-only" type="file" accept="image/png,image/jpeg,image/webp" multiple ${!imagesReady?'disabled':''}></label><label class="outline picker-button mobile-only">Take photo<input id="photo-picker" class="sr-only" type="file" accept="image/jpeg,image/png,image/webp" capture="environment" ${!imagesReady?'disabled':''}></label><small class="muted">Up to 4 images · paste or drop</small></div>`}
   <p id="image-error" class="status-error small" role="alert">${esc(imageError)}</p>
-  ${editing?'':`<label class="small"><input id="this-config" type="checkbox" ${draftTargets[draftKey()]?.length?'checked':''}> This configuration only</label>${draftTargets[draftKey()]?.length&&draftTargets[draftKey()][0]!==config().key?`<p class="small muted">Saved target: ${esc(draftTargets[draftKey()][0])}</p>`:''}`}
-  <div class="comment-actions"><button class="primary" data-action="save-comment-next">Save comment &amp; next</button><button class="outline" data-action="save-comment">${editing?'Save edit':'Save comment'}</button></div>
-  <div class="comments">${commentsHTML(comments())}</div>`;}
+  ${!extend&&target?`<label class="small config-scope"><input id="this-config" type="checkbox" ${target.configurations?.length?'checked':''}> This configuration only · ${esc(targetLabel(target))}</label>`:''}
+  ${record.targets.filter(t=>t.configurations?.length).map(t=>`<p class="small muted">${esc(targetLabel(t))}: ${esc(scopeLabel(t))}</p>`).join('')}
+  <div class="comment-actions"><button class="primary" data-action="save-comment" ${!count?'disabled':''}>${extend?'Save added targets':record.editId?'Save edit':'Save comment'}</button><button class="outline" data-action="save-comment-next" ${!count?'disabled':''}>Save comment &amp; next</button></div>
+  ${receipt?`<p class="receipt status-success" role="status">${esc(receipt)}</p>`:''}<div class="comments">${commentsHTML(comments())}</div>`;}
 function openDialog(title,html,kind){modal=kind;$('#dialog').innerHTML=`<div class="row between"><h2 id="dialog-title">${esc(title)}</h2><button data-action="close-dialog" aria-label="Close">×</button></div>${html}`;if(!$('#dialog').open)$('#dialog').showModal();}
-function shareDialog(include=false){const pool=local.selection.length?list().filter(s=>local.selection.includes(s.id)):list().filter(s=>local.batch==='all'?s.batch===selected().batch:s.batch===local.batch);const targets=pool.filter(s=>!s.discarded&&(include||!s.selected));
-  openDialog('Shared comment',`<label class="small"><input id="include-verified" type="checkbox" ${include?'checked':''}> Include verified symbols</label><div class="target-list">${targets.map(s=>`<label><input type="checkbox" data-target="${s.id}" data-revision="${s.latest}" checked> ${esc(s.name)} · r${s.revisions.length}</label>`).join('')||'<p>No unverified targets. Choose another batch or include verified symbols.</p>'}</div><textarea id="shared-text" rows="5" placeholder="What should change?">${esc(local.drafts.shared||'')}</textarea><div id="shared-image-drafts">${imageHTML(draftImages.shared||[],true,'shared')}</div><label class="outline picker-button">Add images<input id="shared-image-picker" type="file" class="sr-only" accept="image/png,image/jpeg,image/webp" multiple></label><p id="shared-image-error" class="small status-error" role="alert">${esc(imageError)}</p><button class="primary" data-action="save-shared">Save shared comment</button>`,'shared');}
+function shareDialog(){const pool=local.selection.length?Object.values(data.symbols).filter(s=>local.selection.includes(s.id)):list().filter(s=>local.batch==='all'?s.batch===selected().batch:s.batch===local.batch);return openEditor(pool.filter(s=>!s.discarded).map(s=>({symbol:s.id,revision:s.latest,configurations:[]})));}
 function jobTarget(job){return job.corrections[0]||job.publications[0];}
 function jobCard(job,attention=false){const t=jobTarget(job),name=data.symbols[t?.symbol]?.name||'Review',legacy=job.workflow!==2&&!job.approved;
   return `<article class="job-card"><div class="row between"><strong>${esc(name)}</strong><span class="small ${attention?(job.status==='Failed'?'status-error':'status-attention'):''}">${esc(legacy?'Previous proposal · not started':job.status==='Waiting for desktop'?'Queued · '+desktopLabel():job.status)}</span></div>
@@ -170,29 +170,30 @@ function jobsDialog(){const u=ReviewTools.updates(data);openDialog('Updates',`
   <section><h3>Working / queued</h3>${u.working.map(j=>jobCard(j)).join('')||'<p class="small muted">Nothing queued.</p>'}</section>
   <section><h3>Needs your answer / failed</h3>${u.attention.map(j=>jobCard(j,true)).join('')||'<p class="small muted">Nothing needs action.</p>'}</section>
   <details><summary>Completed job history</summary>${Object.values(data.jobs).filter(j=>['Ready to review','Closed'].includes(j.status)).reverse().map(j=>`<article class="history-card"><strong>${esc(data.symbols[jobTarget(j)?.symbol]?.name||'Review')}</strong><p class="small">${esc(j.status)} · ${esc(new Date(j.created).toLocaleString())}</p><details><summary>Details</summary><pre>${esc(JSON.stringify(j,null,2))}</pre></details></article>`).join('')||'<p>No completed jobs yet.</p>'}</details>`,'updates');}
-function navigationPool(){return list().filter(s=>!s.discarded&&(local.batch==='all'||s.batch===local.batch)&&s.name.toLowerCase().includes(local.search.toLowerCase()));}
-async function advance(){if(local.refreshNeeded)return;const next=ReviewTools.nextCandidate(data,navigationPool(),local.selected);if(next)await select(next);else{local.queueComplete=true;local.feedback=false;render();}$('#comment')?.blur();document.querySelector('.symbol-top')?.scrollIntoView({block:'start'});}
+function navigationPool(){return filtered();}
+async function advance(order=navigationPool().map(s=>s.id),from=local.selected){if(local.refreshNeeded)return;const next=ReviewTools.nextAfterSave(data,order,from,navigationPool().map(s=>s.id));if(next)await select(next);else{local.queueComplete=true;local.feedback=false;render();}$('#comment')?.blur();document.querySelector('.symbol-top')?.scrollIntoView({block:'start'});}
+
 async function persistImages(key){try{if(draftImages[key]?.length)await ReviewTools.drafts.put(key,draftImages[key]);else await ReviewTools.drafts.remove(key);}catch{imageError='Image draft storage is unavailable. Keep this page open until saved.';}if($('#image-error'))$('#image-error').textContent=imageError;}
 function renderImageDrafts(){if($('#image-drafts'))$('#image-drafts').innerHTML=imageHTML(draftImages[draftKey()]||[],true);if($('#shared-image-drafts'))$('#shared-image-drafts').innerHTML=imageHTML(draftImages.shared||[],true,'shared');for(const id of ['image-error','shared-image-error'])if($('#'+id))$('#'+id).textContent=preparingImages?'Preparing image…':imageError;document.querySelectorAll('[data-action=save-comment],[data-action=save-comment-next],[data-action=save-shared]').forEach(node=>node.disabled=busy||!!preparingImages);}
-async function addImages(files,key=modal==='shared'?'shared':draftKey()){if(busy||!imagesReady)return;imageError='';
+async function addImages(files,key=draftKey()){if(busy||!imagesReady||editorRecord().mode==='extend')return;imageError='';
   preparingImages++;local.save='Preparing image…';saveLabel();renderImageDrafts();
-  try{for(const file of files){try{if((draftImages[key]||[]).length>=4)throw Error('Use up to four images per comment.');const image=await ReviewTools.prepareImage(file);if(!(draftImages[key]||[]).some(a=>a.hash===image.hash)){if((draftImages[key]||[]).length>=4)throw Error('Use up to four images per comment.');(draftImages[key]??=[]).push(image);}await persistImages(key);local.save='Unsaved';saveLabel();}catch(e){imageError=e.message;}renderImageDrafts();}}finally{preparingImages--;renderImageDrafts();}}
-async function saveComment(next,shared=false){if(busy||preparingImages||!imagesReady)return;const key=shared?'shared':draftKey(),content=local.drafts[key]||'',edit=!shared&&editing?data.comments[editing]:null;
-  const targets=shared?[...document.querySelectorAll('[data-target]:checked')].map(n=>({symbol:n.dataset.target,revision:n.dataset.revision,configurations:[]})):edit?edit.targets:[{symbol:local.selected,revision:local.revision,configurations:draftTargets[key]||[]}];
-  const images=draftImages[key]||[];if(!content.trim()&&!images.length){imageError='Add text or an image.';renderImageDrafts();return;}
+  try{for(const file of files){try{if((draftImages[key]||[]).length>=4)throw Error('Use up to four images per comment.');const image=await ReviewTools.prepareImage(file);if(!(draftImages[key]||[]).some(a=>a.hash===image.hash)){if((draftImages[key]||[]).length>=4)throw Error('Use up to four images per comment.');(draftImages[key]??=[]).push(image);}await persistImages(key);dirtyEditor();}catch(e){imageError=e.message;}renderImageDrafts();}}finally{preparingImages--;renderImageDrafts();}}
+async function saveComment(next){if(busy||preparingImages||!imagesReady)return false;const key=draftKey(),record=editorRecord(),content=local.drafts[key]||'',edit=record.editId?data.comments[record.editId]:null,extend=record.mode==='extend',targets=structuredClone(record.targets),order=navigationPool().map(s=>s.id),from=local.selected;
+  const images=draftImages[key]||[];if((!content.trim()&&!images.length)||!targets.length){imageError='Add feedback and at least one target.';renderImageDrafts();return false;}
   busy=true;imageError='';local.save=images.some(a=>!a.uploaded)?'Uploading images…':'Saving…';saveLabel();render();
-  const locked=[...document.querySelectorAll('#dialog button,#dialog input,#dialog textarea')].map(node=>[node,node.disabled]);locked.forEach(([node])=>node.disabled=true);
   try{for(const image of images){if(image.uploaded)continue;image.status='Uploading…';renderImageDrafts();try{const saved=await api('images','POST',{hash:image.hash,mime:image.mime,body:image.body});Object.assign(image,saved,{uploaded:true,status:'Uploaded'});await persistImages(key);}catch(e){image.status='Upload failed';await persistImages(key);throw e;}renderImageDrafts();}
-    const value={text:content,attachments:images.map(({hash,mime,bytes,name})=>({hash,mime,bytes,name})),targets,...(edit?{comment:edit.id,expected:edit.edit}:{})};
-    const payload=JSON.stringify(value);if(draftRequests[key]?.payload!==payload)draftRequests[key]={payload,id:crypto.randomUUID()};remember();
-    await action('comment',value,draftRequests[key].id);
-    delete local.drafts[key];delete draftImages[key];delete draftRequests[key];delete draftTargets[key];remember();await persistImages(key);editing=null;local.save='Saved';$('#r-toast').hidden=true;await refreshSaved();if(shared){$('#dialog').close();modal=null;}
-  }catch(e){local.save='Save failed · draft kept';imageError=e.message;notify(e.message);return;}
-  finally{busy=false;locked.forEach(([node,disabled])=>node.disabled=disabled);render();}
-  if(next)await advance();
+    const value=extend?{comment:edit.id,expected:record.expected,targets:targets.filter(t=>!edit.targets.some(o=>sameTarget(o,t)))}:{text:content,attachments:images.map(({hash,mime,bytes,name})=>({hash,mime,bytes,name})),targets,...(edit?{comment:edit.id,expected:record.expected}:{})};
+    if(extend&&!value.targets.length)throw Error('Add a new target before saving.');const payload=JSON.stringify(value);if(draftRequests[key]?.payload!==payload)draftRequests[key]={payload,id:crypto.randomUUID()};remember();
+    await action(extend?'comment-extend':'comment',value,draftRequests[key].id);
+    receipt=`Saved · ${targets.length} ${targets.length===1?'target':'targets'}: ${targets.map(targetLabel).join(', ')}`;
+    delete local.drafts[key];delete draftImages[key];delete draftRequests[key];delete draftTargets[key];delete editorRecords[key];activeEditor=null;remember();await persistImages(key);editing=null;local.save='Saved';$('#r-toast').hidden=true;await refreshSaved();
+  }catch(e){local.save='Save failed · draft kept';imageError=e.message;notify(e.message);return false;}
+  finally{busy=false;render();}
+  if(next)await advance(order,from);return true;
 }
-document.addEventListener('input',e=>{if(e.target.id==='comment'){local.drafts[draftKey()]=e.target.value;remember();local.save='Unsaved';saveLabel();}if(e.target.id==='shared-text'){local.drafts.shared=e.target.value;remember();}if(e.target.id==='question-answer'){local.drafts['answer:'+e.target.dataset.job]=e.target.value;remember();}if(e.target.id==='search'){local.search=e.target.value;$('#queue-items').innerHTML=queueHTML();}});
-document.addEventListener('change',e=>{if(e.target.id==='this-config'){draftTargets[draftKey()]=e.target.checked?[config().key]:[];remember();}if(e.target.id==='pins-toggle'){local.pins=e.target.checked;render();}if(e.target.id==='filter'||e.target.id==='batch'){local[e.target.id]=e.target.value;render();}if(e.target.dataset.select){const id=e.target.dataset.select;local.selection=e.target.checked?[...new Set([...local.selection,id])]:local.selection.filter(x=>x!==id);render();}if(e.target.id==='include-verified')shareDialog(e.target.checked);});
+
+document.addEventListener('input',e=>{if(e.target.id==='comment'){local.drafts[draftKey()]=e.target.value;dirtyEditor();if($('#editor-state'))$('#editor-state').textContent='Draft on this device';}if(e.target.id==='shared-text'){local.drafts.shared=e.target.value;remember();}if(e.target.id==='question-answer'){local.drafts['answer:'+e.target.dataset.job]=e.target.value;remember();}if(e.target.id==='search'){local.search=e.target.value;updateQueue();}});
+document.addEventListener('change',e=>{if(e.target.id==='this-config'){const target=editorRecord().targets.find(t=>t.symbol===local.selected&&t.revision===local.revision);if(target){target.configurations=e.target.checked?[config().key]:[];dirtyEditor();render();}}if(e.target.id==='pins-toggle'){local.pins=e.target.checked;render();}if(e.target.id==='filter'||e.target.id==='batch'){local[e.target.id]=e.target.value;render();}if(e.target.dataset.select){const id=e.target.dataset.select;local.selection=e.target.checked?[...new Set([...local.selection,id])]:local.selection.filter(x=>x!==id);render();}if(e.target.id==='include-verified')shareDialog(e.target.checked);});
 document.addEventListener('click',async e=>{
   const button=e.target.closest('button');if(!button)return;
   if(busy||preparingImages)return;
@@ -200,41 +201,42 @@ document.addEventListener('click',async e=>{
   if(button.dataset.setting){const key=button.dataset.setting;if(['size','stroke'].includes(key))local[key]=button.dataset.value;else local.options[key]=button.dataset.value;render();return;}
   const act=button.dataset.action,value=button.dataset.value,s=selected();
   try {
+    if(await workflowAction(act,value,button))return;
     if(act==='select')return select(value);
     if(act==='revision')return select(local.selected,value);
     if(act==='tab'){local.tab=value;render();return;}
     if(act==='queue'||act==='close-queue'){local.queue=act==='queue';render();return;}
-    if(act==='comment'||act==='close-feedback'){local.feedback=act==='comment';render();if(local.feedback)$('#comment').focus();return;}
-    if(act==='select-mode'){local.selecting=!local.selecting;if(!local.selecting)local.selection=[];render();return;}
+    if(act==='comment'||act==='close-feedback'){local.feedback=act==='comment';render();if(local.feedback){$('#comment').focus();$('.feedback')?.scrollIntoView({block:'start'});}return;}
+    if(act==='select-mode'){local.selecting=!local.selecting;render();return;}
     if(act==='arrivals'||act==='discarded'){local.filter=act==='arrivals'?'new':'discarded';local.queue=true;render();return;}
     if(act==='previous'||act==='next'){const pool=navigationPool(),idx=pool.findIndex(x=>x.id===s.id);if(pool.length)await select(pool[(idx+(act==='next'?1:pool.length-1))%pool.length].id);document.querySelector('.symbol-top')?.scrollIntoView({block:'start'});return;}
-    if(act==='verify-next'){const revision=local.revision,previous=s.selected;if(s.selected===revision){await advance();return;}if(await save('verify',{symbol:s.id,revision},'Verified')){undo={action:'unverify',value:{symbol:s.id,expected:revision,previous}};await advance();renderStatus();}return;}
+    if(act==='verify-next'){const revision=local.revision,previous=s.selected,order=navigationPool().map(s=>s.id),from=s.id;if(s.selected===revision){await advance();return;}if(await save('verify',{symbol:s.id,revision},'Verified')){undo={action:'unverify',value:{symbol:s.id,expected:revision,previous}};await advance(order,from);renderStatus();}return;}
     if(act==='discard'||act==='discard-many'){const ids=act==='discard-many'?[...local.selection]:[s.id],changed=ids.filter(id=>!data.symbols[id].discarded);if(await save('discard',{symbols:ids},'Discarded · recoverable')){undo=changed.length?{action:'restore',value:{symbols:changed}}:null;local.selection=[];render();}return;}
     if(act==='restore'){await save('restore',{symbols:[s.id]},'Symbol restored');return;}
     if(act==='undo'&&undo){const op=undo;if(await save(op.action,op.value,'Undone')){undo=null;local.queueComplete=false;render();}return;}
     if(act==='dismiss'){$('#r-toast').hidden=true;return;}
     if(act==='save-comment'||act==='save-comment-next'){await saveComment(act==='save-comment-next');return;}
-    if(act==='edit-comment'){editing=value;const c=data.comments[value],key=draftKey();local.drafts[key]??=c.text;draftImages[key]??=(c.attachments||[]).map(a=>({...a,uploaded:true,status:'Uploaded'}));await persistImages(key);local.feedback=true;remember();render();$('#comment').focus();return;}
-    if(act==='remove-image'){const key=button.dataset.key||draftKey();draftImages[key]=(draftImages[key]||[]).filter(a=>a.hash!==value);await persistImages(key);local.save='Unsaved';saveLabel();renderImageDrafts();return;}
+    if(act==='edit-comment'||act==='extend-comment'){const c=data.comments[value];await openEditor(c.targets,{comment:c,extend:act==='extend-comment'});if(act==='extend-comment'){pickerQuery='';renderPicker();}return;}
+    if(act==='remove-image'){const key=button.dataset.key||draftKey();draftImages[key]=(draftImages[key]||[]).filter(a=>a.hash!==value);await persistImages(key);local.save='Draft on this device';saveLabel();renderImageDrafts();return;}
     if(act==='image'){const image=button.dataset.draft?(draftImages[button.dataset.key]||[]).find(a=>a.hash===value):Object.values(data.comments).flatMap(c=>c.attachments||[]).find(a=>a.hash===value)||historicImages.get(value);if(image){let dialog=$('#image-dialog');if(!dialog){dialog=document.createElement('dialog');dialog.id='image-dialog';$('#schematica-review-demo').append(dialog);}dialog.innerHTML=`<div class="row between"><h2>Comment image</h2><button data-action="close-image" aria-label="Close image">×</button></div><img class="enlarged-image" src="${imageURL(image)}" alt="${esc(image.name)}">`;dialog.showModal();}return;}
-    if(act==='comment-history'){let after=0,events=[];while(true){const page=await api(`comment-history/${value}?after=${after}`);events.push(...page.events);if(page.events.length<100)break;after=page.next;}for(const event of events)for(const image of event.attachments||[])historicImages.set(image.hash,image);openDialog('Comment history',events.map(event=>`<article class="comment-card"><p>${esc(event.text)}</p>${imageHTML(event.attachments||[])}<small class="muted">${esc(new Date(event.at).toLocaleString())}</small></article>`).join(''),'comment-history');return;}
+    if(act==='comment-history'){let after=0,events=[];while(true){const page=await api(`comment-history/${value}?after=${after}`);events.push(...page.events);if(page.events.length<100)break;after=page.next;}for(const event of events)for(const image of event.attachments||[])historicImages.set(image.hash,image);openDialog('Comment history',events.map(event=>`<article class="comment-card"><p>${esc(event.text)}</p>${imageHTML(event.attachments||[])}<small class="muted">${event.eventType||'Comment added'} · ${esc(new Date(event.at).toLocaleString())}</small></article>`).join(''),'comment-history');return;}
     if(act==='close-image'){$('#image-dialog').close();return;}
     if(act==='shared'){shareDialog();return;}
     if(act==='save-shared'){await saveComment(false,true);return;}
-    if(act==='process'){if(await save('process',{},'Queued'))jobsDialog();return;}
+    if(act==='process'){await processingDialog();return;}
     if(act==='updates'||act==='jobs'){await refresh(true);jobsDialog();return;}
     if(act==='open-update'){const revision=button.dataset.revision;$('#dialog').close();modal=null;await select(value,revision);await action('seen',{symbol:value,revision});data.symbols[value].seenRevision=revision;document.querySelector('.symbol-top')?.scrollIntoView({block:'start'});return;}
     if(act==='open-job'){const target=jobTarget(data.jobs[value]);$('#dialog').close();modal=null;await select(target.symbol,target.revision);document.querySelector('.symbol-top')?.scrollIntoView({block:'start'});return;}
     if(act==='answer'){const job=data.jobs[value];openDialog('Your answer',`<p>${esc(job.question.text)}</p><label class="sr-only" for="question-answer">Answer</label><textarea id="question-answer" data-job="${value}" rows="4">${esc(local.drafts['answer:'+value]||'')}</textarea><button class="primary" data-action="save-answer" data-value="${value}" data-question="${job.question.id}">Send answer</button>`,'answer');return;}
     if(act==='save-answer'){if(await save('answer',{job:value,question:button.dataset.question,text:local.drafts['answer:'+value]||''},'Answer saved')){delete local.drafts['answer:'+value];remember();jobsDialog();}return;}
     if(act==='approve'){if(await save('approve',{job:value,proposal:data.jobs[value].proposal.id}))jobsDialog();return;}
-    if(act==='reject'||act==='retry'){if(await save(act,{job:value}))jobsDialog();return;}
-    if(act==='compare'){const older=await loadRevision(value);openDialog('Compare revisions',`<div class="comparison"><section><h3>Revision ${current().symbol.revision}</h3>${art(current())}</section><section><h3>Revision ${older.symbol.revision}</h3>${art(older)}</section></div><p>${esc(older.change?.why||'Saved drawing')}</p>`,'compare');return;}
+    if(act==='retry'){await processingDialog({only:value});return;}if(act==='reject'){if(await save(act,{job:value}))jobsDialog();return;}
+    if(act==='compare'){const older=await loadRevision(value);openDialog('Compare revisions',`<div class="comparison"><section><h3>Revision ${current().symbol.revision}</h3>${comparisonArt(current(),older)}</section><section><h3>Revision ${older.symbol.revision}</h3>${comparisonArt(older,current())}</section></div><p>${esc(older.change?.why||'Saved drawing')}</p>`,'compare');return;}
     if(act==='close-dialog'){$('#dialog').close();modal=null;}
   }catch(error){notify(error.message);}
 });
 window.addEventListener('online',()=>refresh(true));
-window.addEventListener('beforeunload',e=>{if(preparingImages||busy||local.save==='Unsaved'||local.save.startsWith('Save failed')){e.preventDefault();e.returnValue='';}});
+window.addEventListener('beforeunload',e=>{if(preparingImages||busy||local.save==='Draft on this device'||local.save.startsWith('Save failed')){e.preventDefault();e.returnValue='';}});
 document.addEventListener('change',e=>{if(['image-picker','photo-picker','shared-image-picker'].includes(e.target.id))addImages([...e.target.files]);});
 const imageEditor=target=>target.closest('.feedback')||modal==='shared'&&target.closest('#dialog');
 document.addEventListener('paste',e=>{if(!imageEditor(e.target))return;const files=[...e.clipboardData.items].filter(x=>x.kind==='file').map(x=>x.getAsFile()).filter(Boolean);if(files.length){e.preventDefault();addImages(files);}});

@@ -76,3 +76,79 @@ html,body{margin:0;background:#111914}#schematica-review-demo{min-height:100vh;b
 }
 #schematica-review-demo .mm-grid{fill:#34503b}
 #schematica-review-demo .grid-surface{pointer-events:none}
+
+/* One candidate pane, one reviewing pane. The list scrolls independently. */
+#schematica-review-demo .workspace{grid-template-columns:var(--candidate-width,300px) 12px minmax(0,1fr);align-items:start}
+#schematica-review-demo .queue{grid-row:auto;border:0;position:sticky;top:0;max-height:100dvh;display:flex;flex-direction:column;padding:16px 12px;min-height:0}
+#schematica-review-demo #queue-items{overflow-y:auto;overscroll-behavior:contain;min-height:100px;flex:1;padding-right:3px}
+#schematica-review-demo .queue-filters{margin-bottom:6px}
+#schematica-review-demo .queue-actions{display:flex;flex-wrap:wrap;align-items:center;gap:4px;padding:6px 0 10px;border-bottom:1px solid var(--r-line);margin-bottom:5px}
+#schematica-review-demo .queue-actions button{min-height:36px;font-size:12px;padding:6px 8px}
+#schematica-review-demo .queue-actions>.outline{flex-basis:100%}
+#schematica-review-demo .filter-chips{display:flex;flex-wrap:wrap;gap:4px}
+#schematica-review-demo .filter-chips button{font-size:11px;min-height:30px;background:var(--r-hover);padding:4px 7px}
+#schematica-review-demo .queue-entry{flex-direction:row;align-items:center;gap:10px}
+#schematica-review-demo .queue-entry>span{min-width:0;font-size:13px}
+#schematica-review-demo .queue-entry small{display:block;font-size:11px;margin-top:5px}
+#schematica-review-demo .candidate-thumb{display:block;width:46px;height:46px;object-fit:contain;flex:none;padding:4px;filter:invert(.88) sepia(.12)}
+#schematica-review-demo .candidate-thumb.placeholder{display:grid;place-items:center;filter:none;color:var(--r-muted)}
+#schematica-review-demo mark{background:#516443;color:#eff8e8;border-radius:2px}
+#pane-divider{align-self:stretch;position:relative;cursor:col-resize;touch-action:none;background:#141e18;border-inline:1px solid #344639;min-height:100%}
+#pane-divider span{position:sticky;top:48dvh;display:block;width:4px;height:42px;border-radius:3px;margin:30px auto;background:#6c8b61}
+#pane-divider:hover,#pane-divider:focus-visible{background:#344639}
+#schematica-review-demo .inspector{padding:22px clamp(16px,3vw,48px);width:100%;max-width:1150px;margin:auto}
+#schematica-review-demo .feedback{display:block;padding:22px 20px;border:0;border-top:1px solid var(--r-line);background:transparent;margin-top:12px;grid-column:auto}
+#schematica-review-demo .feedback textarea{margin-top:8px}
+#schematica-review-demo .target-chips{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin:16px 0 10px}
+#schematica-review-demo .target-chip{display:inline-flex;align-items:center;gap:5px;border:1px solid #526948;border-radius:8px;padding:3px 4px 3px 10px;background:var(--r-selected);font-size:12px;max-width:100%}
+#schematica-review-demo .target-chip small{color:var(--r-muted)}
+#schematica-review-demo .target-chip button{min-height:32px;min-width:32px;padding:3px;font-size:20px}
+#schematica-review-demo .target-chips>.outline{font-size:12px;min-height:38px}
+#schematica-review-demo .suggestion{font-size:12px;margin-bottom:10px;color:#bedba9}
+#schematica-review-demo .comment-actions{grid-template-columns:1fr 1fr}
+#schematica-review-demo .target-results{list-style:none;margin:12px 0;padding:0;display:grid;gap:6px;font-size:12px}
+#schematica-review-demo .target-results li{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+#schematica-review-demo .target-results li>span:first-child{flex:1;min-width:180px}
+#schematica-review-demo .target-results small{display:block;color:var(--r-muted);font-size:11px}
+#schematica-review-demo .target-results button{min-height:32px;padding:3px 6px}
+#schematica-review-demo .receipt{font-size:12px;margin:12px 0}
+#schematica-review-demo .revision-summary{padding:12px;border-left:2px solid #bedba9;background:var(--r-top);margin-bottom:18px}
+#schematica-review-demo .revision-summary button{font-size:12px;margin-top:10px}
+#schematica-review-demo .picker-result{width:100%;justify-content:flex-start;text-align:left;margin:4px 0;border:1px solid var(--r-line)}
+#schematica-review-demo .picker-result>span:nth-child(2){flex:1;min-width:0}
+#schematica-review-demo .picker-result strong{font-size:13px;font-weight:500}
+#schematica-review-demo .picker-result small{display:block;font-size:11px;color:var(--r-muted);margin-top:5px}
+#schematica-review-demo #target-results{max-height:50dvh;overflow-y:auto;margin:10px 0}
+#schematica-review-demo #target-count{margin-top:10px}
+#schematica-review-demo .draft-row{display:flex;flex-direction:column;align-items:flex-start;width:100%;margin:12px 0}
+#schematica-review-demo .draft-row small{color:var(--r-muted)}
+#schematica-review-demo .summary-counts{display:grid;gap:8px;margin:18px 0;font-size:14px}
+#schematica-review-demo .processing-card{border:1px solid var(--r-line);border-radius:10px;padding:14px;margin:12px 0}
+#schematica-review-demo .processing-card.excluded{opacity:.6}
+#schematica-review-demo .processing-card>.row{flex-wrap:wrap}
+#schematica-review-demo .processing-card button{font-size:12px}
+#schematica-review-demo .summary-feedback{border-top:1px solid var(--r-line);margin-top:12px;padding-top:12px;white-space:pre-wrap;overflow-wrap:anywhere}
+#schematica-review-demo .summary-feedback>small{display:block}
+#schematica-review-demo .summary-actions{display:flex;gap:10px;justify-content:flex-end;position:sticky;bottom:-22px;background:var(--r-panel);padding:14px 0;border-top:1px solid var(--r-line)}
+#schematica-review-demo .notice{border:1px solid #846f44;border-radius:8px;padding:12px;margin:14px 0;font-size:13px}
+#schematica-review-demo .notice p{margin:7px 0}
+#schematica-review-demo .notice label{display:block;margin-top:8px}
+#schematica-review-demo .empty-summary{padding:18px 0;color:var(--r-muted)}
+@media(max-width:720px){
+  #schematica-review-demo .workspace{display:block;padding-bottom:140px}
+  #schematica-review-demo #pane-divider{display:none}
+  #schematica-review-demo .queue{display:none}
+  #schematica-review-demo .queue.open{display:flex;position:fixed;inset:0;z-index:35;height:100dvh;max-height:100dvh;padding:16px;background:var(--r-top)}
+  #schematica-review-demo .queue.open~.inspector{display:none}
+  #schematica-review-demo .mobile-top,#schematica-review-demo .mobile-only{display:inline-flex}
+  #schematica-review-demo .inspector{padding:16px 12px}
+  #schematica-review-demo .feedback{padding:20px 12px}
+  #schematica-review-demo .availability{display:none}
+  #schematica-review-demo .target-chip{font-size:12px}
+  #schematica-review-demo .comment-actions{grid-template-columns:1fr}
+  #schematica-review-demo .summary-actions{bottom:-18px;flex-wrap:wrap}
+  #schematica-review-demo .summary-actions button{flex:1;min-height:48px}
+}
+@media(max-width:600px){
+  #schematica-review-demo .feedback.open{background:var(--r-top);margin:0}
+}
