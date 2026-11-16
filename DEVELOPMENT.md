@@ -36,6 +36,13 @@ for ownership and handoffs.
 
 ## Latest changes
 
+**Faster phone Review, private image feedback and direct corrections.** Verify & next
+and Save comment & next keep the drawing in view. Updates groups returned drawings,
+queued work and essential questions; opening a correction does not verify it.
+Process Review now applies feedback without a routine plan approval. Images stay
+private, survive failed saves and reach the processing agent as actual image input.
+[Compact guide and five review checks](docs/REVIEW.md) · [API/test setup](docs/REVIEW_SETUP.md).
+
 **Review's grid follows the drawing.** The 1 mm grid, artwork and blue terminal
 markers now share the same SVG coordinates. [Before/after and quick checks](docs/REVIEW_GRID.md)
 cover size/stroke changes, resizing, zoom and the remaining narrow-header limit.
@@ -46,7 +53,8 @@ Open Review, select **Batch 03**, then inspect Medium/Medium and Small/Thick bef
 leaving feedback. [Batch checklist, counts and source](docs/BATCH_03.md) include the
 electrical details to review and commands to reproduce/check one candidate.
 
-The 91 published designs and all 1,035 public drawings are unchanged by this batch.
+The bundled catalog remains 91 designs and 1,035 drawings. The live service also
+contains revisions explicitly published through Review; see [current counts](context/CURRENT.md).
 No candidate was verified or published by the agent, and no website redeployment
 was needed. The reused ADC/band-pass drafts retain their history and Unverified
 status; A's original store and runtime remain isolated.
@@ -61,11 +69,11 @@ status; A's original store and runtime remain isolated.
 | Open Library; search NPN; choose Small / Thick | Accepted drawing, working dark/light mode and exact SVG download |
 | Open Variations; export the library while filtered | Comparison rows; complete library at the chosen settings |
 | Open Review and sign in on both devices | Same candidates, saved feedback and progress |
-| Save a comment on one device; reload on the other | The exact comment appears |
+| Save an image comment on one device; reload on the other | Exact text, target and enlarged image appear |
 | Verify an older History revision | That revision is selected; Library is unchanged until processing |
 | Discard and restore | Candidate is recoverable; published predecessor stays visible |
-| Process with the desktop stopped, then start it | Waiting for desktop changes to Working; proposals require approval |
-| Approve a correction | New revision returns unverified; old source and feedback remain in History |
+| Process with the desktop stopped, then start it | Waiting for desktop changes to Working; submitted feedback is applied directly |
+| Open a returned correction in Updates | New revision stays unverified; old source, feedback and image edits remain in History |
 
 Batch 03 supplies real candidates for these Review checks. Synthetic fixtures remain
 on the separate validation site. Physical phone and second-device testing remain
@@ -191,7 +199,7 @@ schematica/
 
 The viewer reads pre-rendered SVGs and a catalog. It never compiles TeX. The static
 builder copies the accepted artwork, reads current editorial metadata and creates
-36 complete-library exports. The build contains 1086 asset files; the Worker gates
+36 complete-library exports. The build contains 1087 asset files; the Worker gates
 private Review assets and serves published revisions from D1. No private source or
 credentials are in the assets. Asset and server-source hashes determine `build.json`.
 
@@ -208,7 +216,7 @@ node --test tests/*.test.cjs tests/*.test.mjs
 .\.venv\Scripts\python.exe tests\check_docs.py
 ```
 
-Expect **87 Python tests and 30 JavaScript tests**, **1086 built assets**, and no
+Expect **91 Python tests and 39 JavaScript tests**, **1087 built assets**, and no
 broken documentation links. Tests cover all designs/configurations, accepted SVG
 bytes, pins, independent strokes, editable parts, exports, HTTP boundaries and
 approval validity. Compare `app/dist/build.json` with the hosted `build.json` when
@@ -311,7 +319,7 @@ Creates `app/build/exports/` with a hash manifest and three ZIPs:
 
 | Package | Contents |
 |---|---|
-| `web-preview.zip` | 1086 built assets; hosted Review also requires its Worker and D1 binding |
+| `web-preview.zip` | 1087 built assets; hosted Review also requires its Worker and D1 binding |
 | `all-symbols.zip` | 1035 individual SVGs |
 | `tex-bundles.zip` | 1035 standalone configurations, each with `symbol.tex` and required helpers |
 

@@ -5,6 +5,28 @@ when it was reconciled. Times use Europe/Zagreb with an explicit UTC offset.
 Later applicable user decisions supersede earlier proposals; a newer import date
 does not. See [current status](CURRENT.md) for the implementation checkpoint.
 
+## Review usability and direct processing
+
+Source: user message `01a1e420-5525-7580-a5f0-5a78e87130f0` in Agent B's chat,
+16-11-2026 12:31:26 +01:00 (Europe/Zagreb), attached brief
+`df36349a-9995-4321-9735-a55633a894bf`. Reconciled 16-11-2026. Status: implementation,
+isolated checks, focused Git/main delivery and deployment authorized; in progress.
+
+- Verify & next, separate comment/save-and-next, phone action bar, quiet inline
+  save states, remembered Description and recoverable decisions preserve the style.
+- Private image comments persist across devices/history and reach the agent as
+  inspected image content. Failed uploads/saves retain drafts and exact targets.
+- **Process Review authorizes applying feedback directly** for new jobs. This
+  supersedes routine proposal approval only in Review. Essential clarification
+  blocks only its symbol; independent corrections continue. Chat creation keeps
+  its interpretation-confirmation workflow unchanged.
+- Corrected drawings remain Unverified. Preserve exact-version approvals, saved
+  source/history and explicit publication. Old unapproved proposals stay inert.
+- Updates counts revised symbols awaiting review; seen is separate from verified.
+  New arrivals preserve the current drawing, draft and scroll position.
+- A confirmed ownership/integration; B alone deploys. Validation stays isolated;
+  no real feedback processing, test publication, accounts or geometry edits.
+
 ## Review grid alignment
 
 Source: user message `01a1e3f8-47a1-7461-b779-58cd40cf6b3f` in Agent B's chat,

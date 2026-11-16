@@ -4,7 +4,7 @@ import {initial,transition,signature,stale} from '../app/review/domain.mjs';
 import {validateSVG} from '../app/review/worker.mjs';
 let serial=0;
 const now='2026-11-15T23:00:00Z';
-const change=(s,a,i={},actor='user',at=now)=>transition(s,a,i,{actor,now:at,id:`event-${++serial}`});
+const change=(s,a,i={},actor='user',at=now)=>transition(s,a,a==='claim'?{protocol:2,...i}:i,{actor,now:at,id:`event-${++serial}`});
 const rev=(id,parent=null,migration=false)=>({id,parent,migration,fingerprint:'test',symbol:{id:'fixture',name:'Fixture',family:'Tests'},batch:'Validation'});
 async function fixture(){return (await change(initial(),'upload',{revision:rev('r1')},'desktop')).state;}
 test('new uploads preserve exact older verification and published predecessor',async()=>{
@@ -32,11 +32,14 @@ test('shared targets are explicit, unique and tied to saved revisions',async()=>
   await assert.rejects(change(s,'comment',{text:'x',targets:[{symbol:'fixture',revision:'r1'},{symbol:'fixture',revision:'r1'}]}),/Duplicate/);
 });
 async function proposal(){let s=await fixture();s=(await change(s,'comment',{text:'Shorten bars',targets:[{symbol:'fixture',revision:'r1'}]})).state;
-  const queued=await change(s,'process');s=queued.state;const claim=await change(s,'claim',{},'desktop');s=claim.state;const job=claim.result.job;
+  const queued=await change(s,'process');s=queued.state;const job=s.jobs[queued.result.id];
+  // A preserved legacy proposal which was already being prepared before upgrade.
+  delete job.workflow;delete job.authorized;job.phase='prepare';job.status='Working';job.lease='legacy';job.until='2026-11-15T23:03:00Z';
   s=(await change(s,'proposal',{job:job.id,lease:job.lease,changes:[{symbol:'fixture',revision:'r1',intent:'Shorten outer bars only'}]},'desktop')).state;return {s,id:job.id};}
 test('Process Review leaves uncommented and discarded candidates unchanged',async()=>{
   const s=await fixture();await assert.rejects(change(s,'process'),/Nothing/);
   const {s:p,id}=await proposal();assert.equal(p.jobs[id].status,'Waiting for approval');assert.equal(p.symbols.fixture.latest,'r1');
+  assert.equal((await change(p,'claim',{},'desktop')).result.job,null,'Old pending proposals must not execute');
 });
 test('feedback changes make proposal stale before approval',async()=>{
   let {s,id}=await proposal();s=(await change(s,'comment',{text:'Keep outer bars',targets:[{symbol:'fixture',revision:'r1'}]})).state;

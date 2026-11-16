@@ -57,7 +57,7 @@ def run(config_path, output):
     r1, r2 = first["revisions"][0], first["latest"]
     assert r1 != r2 and client.revision(r2)["parent"] == r1
     assert client.revision(r2)["change"]["source_diff"]
-    assert any(j["results"] and j["approved"] for j in state["jobs"].values())
+    assert any(j["results"] and j.get("approved") for j in state["jobs"].values())
     checks.append("Real subscription correction, source diff, proposal approval and returned revision retained")
     target = [{"symbol": first["id"], "revision": r1, "configurations": []},
               {"symbol": second["id"], "revision": second["latest"], "configurations": []}]
@@ -84,15 +84,11 @@ def run(config_path, output):
     assert state["symbols"][first["id"]]["published"] == first["published"]
     a.action("verify", {"symbol": first["id"], "revision": r2})
     checks.append("Older exact revision can be verified without immediate publication")
-    job_id = a.action("process", {})["id"]; claim = client.action("claim", {})["job"]
-    assert claim["id"] == job_id and client.action("claim", {})["job"] is None
-    changes = [{"symbol": t["symbol"], "revision": t["revision"], "intent": "Synthetic proposal: shorten the top bar only"} for t in claim["corrections"]]
-    client.action("proposal", {"job": job_id, "lease": claim["lease"], "changes": changes})
-    a.action("comment", {"text": "Synthetic later feedback: leave the top bar as it is.", "targets": [target[1]]})
-    proposal = client.state()["jobs"][job_id]["proposal"]["id"]
-    rejected(lambda: a.action("approve", {"job": job_id, "proposal": proposal}), 409)
-    a.action("reject", {"job": job_id})
-    checks.append("Authenticated lease excludes duplicate worker; feedback invalidates proposal (synthetic proposal check)")
+    # Historical proposals remain evidence. New direct jobs and stale/duplicate
+    # processing are exercised by verify_review_usability.py, never recreated
+    # through the superseded routine approval workflow here.
+    assert any(j.get("proposal") and j.get("approved") for j in state["jobs"].values())
+    checks.append("Legacy proposal and explicit approval history remains retained")
     rejected(lambda: a.action("heartbeat", {"status": "impersonation"}), 403)
     rejected(lambda: a.action("discard", {"symbols": [second["id"]]}, origin=False), 403)
     raw = urllib.request.build_opener()

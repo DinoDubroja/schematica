@@ -9,7 +9,7 @@ test('public Library review.js remains a public script while private Review asse
   assert.equal(publicScript.status,200);
   assert.equal(await publicScript.text(),'public script');
   assert.deepEqual(calls,['/review.js']);
-  for(const path of ['/review/review-app.js','/review/review.css','/api/review/state']) {
+  for(const path of ['/review/review-app.js','/review/review.css','/review/review-tools.js','/api/review/state','/review/images/'+'a'.repeat(64),'/api/review/images']) {
     const response=await worker.fetch(new Request('https://example.test'+path),env);
     assert.equal(response.status,401,path);
   }

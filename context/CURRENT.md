@@ -1,54 +1,55 @@
 # Current status
 
-16-11-2026 · **Review grid alignment fix deployed; Batch 03 remains available for review.**
+16-11-2026 · **Review usability implemented and validated; delivery in progress.**
 
 [Library](https://schematica-preview.dinodubroja.workers.dev/)
 · [Private Review](https://schematica-preview.dinodubroja.workers.dev/review)
-· [Using Review](../docs/REVIEW.md)
+· [Using Review and five checks](../docs/REVIEW.md)
 · [Setup, API and recovery](../docs/REVIEW_SETUP.md)
 
 ## Current work
 
-Review now uses a genuine 1 mm SVG grid with the same origin/scale as its drawing
-and terminals. Shared Library/Review coordinate helpers prevent separate conversion
-rules. [Evidence and checks](../docs/REVIEW_GRID.md) include saved-path endpoint
-comparisons, asymmetric cropping, continuous resize and real browser zoom.
-No artwork, revisions, comments or decisions were changed. Product commit `e55e7d4`
-is on GitHub `main` and deployed as build `343e43998afa`, Worker version
-`01c75da8-90e7-4b62-899d-90b505fed0da`. Hosted asset hashes match the tested build;
-all 175 Review symbol entries, comments, choices and cursor match the pre-task snapshot.
-All 1,035 published SVGs and 36 library exports remain byte-identical. No candidate
-was published by this deployment.
-Hosted checks passed: 324 configuration/layout cases, 24 real browser zoom cases,
-four continuous resizes, Connections visibility and ordinary Library preview.
-Actual saved lead endpoints agree with markers within 0.002 CSS pixels in the samples.
+Verify & next and separate comment/save-and-next actions keep the drawing in view.
+Phone actions stay at the bottom and clear the keyboard. Saved/Verified feedback
+is inline; Description remembers its state. Private image comments support photo/
+file selection, paste/drop, retained drafts, earlier edits and cross-device viewing.
 
-**84 submitted / 792 configurations / 0 deferred / 0 blocked.** All were Unverified
-at the delivery readback. The next step is human feedback in **Review → Batch 03**.
-See the [short review checklist](../docs/BATCH_03.md), [completion manifest](../app/batches/batch-03/manifest.json)
-and [validation receipt](../app/batches/batch-03/validation.json).
+Process Review directly authorizes new per-symbol corrections. The connector reads
+actual attached images, returns a new Unverified revision and asks only essential
+questions; independent jobs continue. Updates groups returned drawings, queued work
+and questions/failures. Seen status is persistent and separate from verification.
+Old unapproved proposals remain inert. Individual creation in chat is unchanged.
 
-The published Library remains **91 designs / 1,035 configurations**. Its catalog
-and every SVG hash match the live before-task snapshot. The settled PNP correction
-was already published before this batch and is the enclosed PNP's parent.
-No new design was approved/published by the agent. Batch 03 delivery made no website
-redeployment; the subsequent grid fix above changes only the interface.
+Validation: all 91 Python tests, 39 JavaScript tests, 143 documentation links,
+31 hosted browser interaction
+checks and 14 Updates/history checks. The grid passed 324 configuration/layout cases,
+24 real browser zoom checks and four continuous resizes, with no alignment defects.
+Two actual subscription-backed corrections returned 18 configurations each,
+Unverified; one independent ambiguous fixture asked a focused question. The agent
+identified the number visible only in the attached image. Its private receipt retains
+the observation. Synthetic tests made no production writes or test publications.
+The additive image schema preserves existing rows and supports old backup formats.
 
-Agent A integrated the exact READY source checkpoint
-[`2bff9bf`](https://github.com/DinoDubroja/schematica/commit/2bff9bf2f84e8ca21e596ea6cf7c0c625fe6bf9e)
-from `work/batch-03` into GitHub `main`, with this documentation receipt.
-Six focused batch tests and 133 documentation links passed in an isolated checkout.
-Sources, metadata, tests and documentation remain separate from the public catalog
-and approval ledger. Integration made no hosted service, candidate or decision writes.
+Delivery remains in progress on `feat/review-usability`; A integrates exact READY
+commits and B alone deploys. Production remains on the earlier grid build until the
+final deployment receipt replaces this paragraph. Its desktop connector is stopped
+for the upgrade. No real pending feedback is used for validation.
 
-Hosted readback: 84 exact sources/opening events; 1,584 candidate SVG/fragment
-hashes plus 72 parent SVGs; 594 identical inherited-part comparisons; 36 byte-identical
-reused ADC/band-pass SVGs. All local configurations passed metadata, named-part,
-reference, grid, bounds and stroke/option independence checks. Medium/Medium and
-Small/Thick were inspected and related designs compared at a common scale.
+## Library and batch status
 
-Current source checks pass all 87 Python and 30 JavaScript tests, with 138 local
-documentation links checked. The grid fix changed no symbol source or approval ledger.
+**84 Batch 03 candidates / 792 configurations** remain available for human review.
+[Batch checklist](../docs/BATCH_03.md) · [source inventory](../app/batches/batch-03/manifest.json)
+· [validation receipt](../app/batches/batch-03/validation.json).
+The hosted Library already had **98 designs / 1,098 configurations** at this task's
+start: seven Batch 03 designs had been explicitly published through Review. All
+1,098 hosted SVGs and 36 exports match that snapshot. The repository's bundled
+catalog remains 91 designs / 1,035 configurations. No symbol geometry, approval
+or public Library addition is part of this usability delivery.
+
+The previous [grid alignment fix](../docs/REVIEW_GRID.md) uses shared Library/Review
+coordinates for the 1 mm grid, artwork and blue terminals; its behavior is preserved.
+Batch 03 source checkpoint `2bff9bf` and grid product `e55e7d4` are already on main.
+The saved PNP correction predates Batch 03 and remains its enclosed PNP's parent.
 
 ## Original Review service delivery receipt
 

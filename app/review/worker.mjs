@@ -1,7 +1,8 @@
 import {Problem,need,hash,canonical,transition} from './domain.mjs';
+import {validateImage} from './images.mjs';
 
 const PRIVATE={'Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'same-origin'};
-const CSP="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'";
+const CSP="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'";
 const json=(body,status=200,headers={})=>new Response(JSON.stringify(body),{status,headers:{'Content-Type':'application/json',...PRIVATE,...headers}});
 const stamp=()=>new Date().toISOString();
 const random=()=>crypto.randomUUID();
@@ -115,6 +116,11 @@ async function mutate(request,env,actor,action) {
   if(action==='comment')for(const target of input.targets||[]) {
     const rev=await getRevision(env,target.revision);
     need((target.configurations||[]).every(key=>rev.symbol.configurations.some(c=>c.key===key)),'Unknown target configuration');
+  }
+  if(action==='comment')need(Array.isArray(input.attachments||[])&&(input.attachments||[]).length<=4,'Use up to four images per comment');
+  if(action==='comment')for(const image of input.attachments||[]) {
+    const saved=await env.DB.prepare('SELECT mime,bytes FROM images WHERE hash=?').bind(String(image.hash||'')).first();
+    need(saved&&saved.mime===image.mime&&saved.bytes===image.bytes,'Finish uploading every image before saving the comment');
   }
   if(action==='published') {
     const rev=await getRevision(env,input.revision);
@@ -246,6 +252,16 @@ async function main(request,env) {
     need(data.hash===await hash(data.body),'Artwork checksum mismatch');
     await env.DB.prepare('INSERT OR IGNORE INTO assets(hash,mime,body) VALUES(?,?,?)').bind(data.hash,'image/svg+xml',data.body).run();return json({hash:data.hash});
   }
+  if(path==='/api/review/images'&&request.method==='POST') {
+    const image=await validateImage(await body(request,1450000));
+    await env.DB.prepare('INSERT OR IGNORE INTO images(hash,mime,bytes,width,height,body) VALUES(?,?,?,?,?,?)').bind(image.hash,image.mime,image.bytes,image.width,image.height,image.body).run();
+    return json({hash:image.hash,mime:image.mime,bytes:image.bytes});
+  }
+  if(path.startsWith('/review/images/')&&request.method==='GET') {
+    const h=path.slice('/review/images/'.length);need(/^[a-f0-9]{64}$/.test(h),'Invalid image hash');
+    const image=await env.DB.prepare('SELECT body,mime FROM images WHERE hash=?').bind(h).first();need(image,'Unknown image',404);
+    return new Response(Uint8Array.from(atob(image.body),c=>c.charCodeAt(0)),{headers:{'Content-Type':image.mime,...PRIVATE,'Content-Security-Policy':"sandbox; default-src 'none'"}});
+  }
   if(path.startsWith('/api/review/actions/')&&request.method==='POST')return mutate(request,env,actor,path.slice('/api/review/actions/'.length));
   if(path.startsWith('/api/review/revisions/')&&request.method==='GET')return json(await getRevision(env,path.slice('/api/review/revisions/'.length)));
   if(path.startsWith('/review/assets/')&&request.method==='GET') {
@@ -258,15 +274,21 @@ async function main(request,env) {
     const events=(await env.DB.prepare('SELECT * FROM events WHERE sequence>? ORDER BY sequence LIMIT 100').bind(after).all()).results.map(e=>({...e,body:JSON.parse(e.body)}));
     return json({events,next:events.at(-1)?.sequence||after});
   }
+  if(path.startsWith('/api/review/comment-history/')&&request.method==='GET') {
+    const id=path.slice('/api/review/comment-history/'.length),after=Number(url.searchParams.get('after')||0);
+    need(/^[a-f0-9-]{36}$/.test(id)&&Number.isInteger(after)&&after>=0,'Invalid comment history');
+    const events=(await env.DB.prepare("SELECT sequence,id,at,body FROM events WHERE action='comment' AND sequence>? AND (id=? OR json_extract(body,'$.input.comment')=?) ORDER BY sequence LIMIT 100").bind(after,id,id).all()).results.map(e=>({sequence:e.sequence,id:e.id,at:e.at,...JSON.parse(e.body).input}));
+    return json({events,next:events.at(-1)?.sequence||after});
+  }
   if(path==='/api/review/backup'&&request.method==='GET') {
     need(actor==='desktop','Desktop authentication required',403);
     const table=url.searchParams.get('table')||'state',after=url.searchParams.get('after')||'';
-    need(['state','events','revisions','assets','requests','publication'].includes(table),'Unknown backup collection');
-    const key={state:'id',events:'sequence',revisions:'id',assets:'hash',requests:'id',publication:'id'}[table],numeric=['state','events','publication'].includes(table);
+    need(['state','events','revisions','assets','images','requests','publication'].includes(table),'Unknown backup collection');
+    const key={state:'id',events:'sequence',revisions:'id',assets:'hash',images:'hash',requests:'id',publication:'id'}[table],numeric=['state','events','publication'].includes(table);
     const rows=(await env.DB.prepare(`SELECT * FROM ${table} WHERE ${key}>? ORDER BY ${key} LIMIT 10`).bind(numeric?Number(after||0):after).all()).results;
     return json({rows,next:rows.at(-1)?.[key]??null});
   }
-  if(path==='/review'||path==='/review/'||['/review/review.css','/review/review-app.js'].includes(path)) {
+  if(path==='/review'||path==='/review/'||['/review/review.css','/review/review-app.js','/review/review-tools.js'].includes(path)) {
     const target=path.endsWith('.css')||path.endsWith('.js')?path:'/review/index.html';
     const response=await env.ASSETS.fetch(new Request(new URL(target,request.url)));return new Response(response.body,{status:response.status,headers:{...Object.fromEntries(response.headers),...PRIVATE,'Content-Security-Policy':CSP}});
   }

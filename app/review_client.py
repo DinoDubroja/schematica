@@ -87,6 +87,28 @@ class Client:
     def revision(self, revision_id):
         return self.request("/api/review/revisions/" + revision_id)
 
+    def comment_images(self, comments, output):
+        """Fetch exact authenticated image bytes for Codex --image and evidence."""
+        output = Path(output); output.mkdir(parents=True, exist_ok=True)
+        paths, manifest, seen = [], [], set()
+        for comment in comments:
+            for image in comment.get("attachments", []):
+                h = image["hash"]
+                if len(h) != 64 or any(c not in "0123456789abcdef" for c in h):
+                    raise ValueError("Invalid comment image identity")
+                extension = {"image/png": ".png", "image/jpeg": ".jpg", "image/webp": ".webp"}.get(image["mime"])
+                if not extension:
+                    raise ValueError("Unsupported comment image")
+                path = output / (h + extension)
+                if h not in seen:
+                    raw = self.request("/review/images/" + h)
+                    if not isinstance(raw, bytes) or digest(raw) != h or len(raw) != image["bytes"]:
+                        raise ValueError("Comment image failed its checksum")
+                    path.write_bytes(raw); paths.append(path); seen.add(h)
+                manifest.append({"comment": comment["id"], "targets": comment["targets"], "image": image, "file": path.name})
+        write_json(output / "manifest.json", manifest)
+        return paths
+
     def upload(self, package, job=None):
         package = Path(package)
         revision = json.loads((package / "revision.json").read_text(encoding="utf-8"))
@@ -112,7 +134,7 @@ class Client:
         output.mkdir(parents=True, exist_ok=False)
         version = self.state()["version"]
         manifest = {}
-        for table in ("state", "events", "revisions", "assets", "requests", "publication"):
+        for table in ("state", "events", "revisions", "assets", "images", "requests", "publication"):
             rows, after = [], ""
             while True:
                 page = self.request(f"/api/review/backup?table={table}&after={after}")
@@ -155,6 +177,14 @@ class Client:
             events.extend(page["events"]); after = page["next"]
         # The full private event chain retains shared-target context and proposal decisions.
         write_json(output / "review-events.json", events)
+        comments = [c for c in self.state()["comments"].values() if any(t["revision"] == revision_id for t in c["targets"])]
+        # Retain images from older comment edits as well as today's comment.
+        for event in events:
+            if event["action"] == "comment":
+                for item in (event["body"].get("input"), event["body"].get("original")):
+                    if item and any(t["revision"] == revision_id for t in item.get("targets", [])):
+                        comments.append({"id": item.get("id", event["id"]), **item})
+        self.comment_images(comments, output / "comment-images")
         write_json(output / "checksums.json", {str(p.relative_to(output)): digest(p.read_bytes()) for p in output.rglob("*") if p.is_file()})
         return {"revision": revision_id, "fingerprint": revision["fingerprint"], "directory": str(output)}
 
@@ -168,7 +198,7 @@ def recovery_sql(backup, output):
     if not manifest.get("consistent"):
         raise ValueError("Backup was not a consistent restore point")
     tables = {"state", "events", "revisions", "assets", "requests", "publication"}
-    if set(manifest["collections"]) != tables:
+    if set(manifest["collections"]) not in (tables, tables | {"images"}):
         raise ValueError("Backup is incomplete")
     statements = [(core.ROOT / "review/schema.sql").read_text()]
     def literal(value):
@@ -176,14 +206,16 @@ def recovery_sql(backup, output):
         if isinstance(value, (int, float)): return str(value)
         # Hex preserves exact UTF-8 bytes and CRLF through Windows text-file IO.
         return "CAST(X'" + str(value).encode("utf-8").hex() + "' AS TEXT)"
-    for table in ("assets", "revisions", "events", "requests", "publication", "state"):
+    for table in ("assets", "images", "revisions", "events", "requests", "publication", "state"):
+        if table not in manifest["collections"]:
+            continue  # Older backups predate image comments.
         path = backup / (table + ".json")
         if digest(path.read_bytes()) != manifest["collections"][table]["sha256"]:
             raise ValueError("Backup checksum failed: " + table)
         for row in json.loads(path.read_text(encoding="utf-8")):
             first = {k: v[:4096] if isinstance(v, str) else v for k, v in row.items()}
             statements.append(f"INSERT {'OR REPLACE ' if table == 'state' else ''}INTO {table} ({','.join(row)}) VALUES ({','.join(literal(v) for v in first.values())});")
-            key = {"assets": "hash", "events": "sequence"}.get(table, "id")
+            key = {"assets": "hash", "images": "hash", "events": "sequence"}.get(table, "id")
             for column, value in row.items():
                 if isinstance(value, str):
                     for offset in range(4096, len(value), 4096):

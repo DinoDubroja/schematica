@@ -13,5 +13,66 @@ html,body{margin:0;background:#111914}#schematica-review-demo{min-height:100vh;b
 
 /* Grid, artwork and connections share one millimetre SVG viewport. */
 #schematica-review-demo .drawing-canvas>.symbol-art{width:100%;height:100%;max-width:none;max-height:none}
+
+/* Review actions, private image feedback and quiet state indicators. */
+#schematica-review-demo .phone-action-bar{display:none}
+#schematica-review-demo .status-attention{color:#ebc886}
+#schematica-review-demo .status-error{color:#f2aaa5}
+#schematica-review-demo .status-success{color:#bedba9}
+#schematica-review-demo .queue-complete{margin:0 20px 14px;padding:10px 12px;border:1px solid #526948;border-radius:8px;color:#bedba9;background:#233522}
+#schematica-review-demo .navigation button{min-width:44px;min-height:44px;font-size:22px;padding:3px 10px}
+#schematica-review-demo .navigation span{min-width:48px;text-align:center}
+#schematica-review-demo .progress-line{flex-wrap:wrap}
+#schematica-review-demo #r-undo{min-height:36px;padding:4px 10px}
+#schematica-review-demo .description-text{margin:0 20px;padding:0 0 12px}
+#schematica-review-demo .description-text summary{cursor:pointer;min-height:44px;align-content:center;font-size:13px;color:var(--r-muted)}
+#schematica-review-demo .description-text p{margin:0;padding:0}
+#schematica-review-demo .symbol-top{scroll-margin-top:12px}
+#schematica-review-demo .update-badge{display:inline-grid;place-items:center;min-width:23px;min-height:23px;margin-left:5px;border-radius:12px;background:var(--r-selected);color:var(--r-accent);font-size:12px}
+#schematica-review-demo .job-card>.primary,#schematica-review-demo .job-card>.outline{margin:10px 6px 0 0;min-height:44px}
+#schematica-review-demo .job-card>.row{flex-wrap:wrap;gap:8px}
+#schematica-review-demo dialog section{margin:22px 0}
+#schematica-review-demo dialog details{margin-top:12px;font-size:12px;color:var(--r-muted)}
+#schematica-review-demo dialog summary{cursor:pointer;min-height:36px;align-content:center}
+#schematica-review-demo dialog pre{white-space:pre-wrap;overflow-wrap:anywhere}
+#schematica-review-demo .image-thumbnails{display:flex;flex-wrap:wrap;gap:12px;margin:14px 0}
+#schematica-review-demo .comment-image{position:relative;padding:0;border:0;width:80px;text-align:center}
+#schematica-review-demo .image-open{width:80px;height:80px;padding:0;overflow:hidden;border:1px solid var(--r-line);border-radius:7px}
+#schematica-review-demo .image-open img{display:block;width:100%;height:100%;object-fit:cover}
+#schematica-review-demo .remove-image{position:absolute;right:-10px;top:-12px;width:36px;height:36px;padding:0;border:1px solid var(--r-line);border-radius:18px;background:var(--r-panel);font-size:22px}
+#schematica-review-demo .image-picker{flex-wrap:wrap;gap:8px}
+#schematica-review-demo .picker-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;border:1px solid var(--r-line);border-radius:7px;padding:8px 12px;font-size:13px;cursor:pointer}
+#schematica-review-demo .picker-button:focus-within{outline:2px solid var(--r-accent);outline-offset:2px}
+#schematica-review-demo .picker-button.mobile-only{display:none}
+#schematica-review-demo .image-help{font-size:11px;line-height:1.5;margin:8px 0}
+#schematica-review-demo #image-error:empty{display:none}
+#schematica-review-demo .comment-actions{display:grid;gap:8px;margin:14px 0}
+#schematica-review-demo .comment-actions .primary{margin:0}
+#schematica-review-demo .comment-actions button{min-height:44px;width:100%}
+#schematica-review-demo .enlarged-image{display:block;max-width:100%;max-height:72dvh;object-fit:contain;margin:16px auto}
+#schematica-review-demo .toast.error{border-color:#955852;color:#f2aaa5;z-index:60}
+#schematica-review-demo button:disabled{opacity:.6;cursor:wait}
+#schematica-review-demo .phone-action-bar button:disabled{cursor:default}
+@media(max-width:600px){
+  #schematica-review-demo .header{gap:8px;flex-wrap:wrap;padding-block:8px}
+  #schematica-review-demo .brand{min-width:0}
+  #schematica-review-demo .workspace{padding-bottom:calc(132px + env(safe-area-inset-bottom,0px))}
+  #schematica-review-demo .desktop-review-actions{display:none}
+  #schematica-review-demo .secondary-review-actions{display:flex;justify-content:flex-end;padding:0 20px}
+  #schematica-review-demo .secondary-review-actions button{min-height:44px}
+  #schematica-review-demo .phone-action-bar{display:grid;grid-template-columns:auto auto minmax(0,1fr);gap:7px;position:fixed;bottom:0;left:0;right:0;z-index:20;background:var(--r-top);border-top:1px solid var(--r-line);padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));box-shadow:0 -5px 20px #0003}
+  #schematica-review-demo .phone-action-bar button{min-height:48px;padding:7px 10px;font-size:13px}
+  #schematica-review-demo .phone-save-line{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;min-height:28px;font-size:12px}
+  #schematica-review-demo .phone-save-line button{min-height:32px;padding:2px 8px}
+  body.keyboard-open #schematica-review-demo .phone-action-bar,body.feedback-open #schematica-review-demo .phone-action-bar,body.queue-open #schematica-review-demo .phone-action-bar{display:none}
+  body.feedback-open{overflow:hidden}
+  #schematica-review-demo .feedback.open{position:fixed;inset:0 0 auto;z-index:40;height:var(--review-viewport-height,100dvh);overflow-y:auto;overscroll-behavior:contain;padding:16px 20px calc(24px + env(safe-area-inset-bottom,0px));border:0;box-shadow:0 0 0 100vmax #0008}
+  #schematica-review-demo .feedback.open>div>.row:first-child{position:sticky;top:-16px;background:var(--r-top);z-index:2;padding-block:8px}
+  #schematica-review-demo .feedback.open [data-action=close-feedback]{min-height:44px}
+  #schematica-review-demo .picker-button.mobile-only{display:inline-flex}
+  #schematica-review-demo .toast{bottom:calc(88px + env(safe-area-inset-bottom,0px));width:calc(100vw - 24px)}
+  #schematica-review-demo dialog{padding:18px;max-height:calc(var(--review-viewport-height,100dvh) - 24px)}
+  #schematica-review-demo .description-text{margin-inline:16px}
+}
 #schematica-review-demo .mm-grid{fill:#34503b}
 #schematica-review-demo .grid-surface{pointer-events:none}

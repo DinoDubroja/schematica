@@ -1,7 +1,7 @@
 # Schematica
 
-Browse **91 published electronics symbols**, compare their **1,035 configurations**,
-and download SVGs for Inkscape.
+Browse electronics symbols, compare sizes, strokes and options, and download SVGs
+for Inkscape. [Current counts and delivery status](context/CURRENT.md).
 
 [Open Schematica](https://schematica-preview.dinodubroja.workers.dev/)
 · [Private Review](https://schematica-preview.dinodubroja.workers.dev/review)
@@ -14,10 +14,10 @@ and download SVGs for Inkscape.
 ![Schematica symbol library in dark mode](docs/images/symbol-library.jpg)
 
 The website supports browsing, search, configuration comparison, dark/light mode
-and individual or complete-library SVG downloads. Private Review saves feedback and
-exact drawing approvals across devices, with subscription-backed desktop processing.
-**[Batch 03](docs/BATCH_03.md): 84 new candidates are ready in private Review.**
-They remain separate from the published library while awaiting feedback.
+and individual or complete-library SVG downloads. Private Review saves image feedback
+and exact drawing approvals across devices, with subscription-backed desktop processing.
+**[Batch 03](docs/BATCH_03.md): 84 designs submitted to private Review.**
+Unverified candidates stay private; only explicitly verified revisions are published.
 Local MCP integration adds a
 shared selection viewer and confirmed creation/refinement in a separate dev store.
 Actual ChatGPT/Claude embedded journeys and remote MCP connectivity remain

@@ -40,6 +40,8 @@ app/
 │   ├── domain.mjs          # decisions, job leases and exact revision transitions
 │   ├── worker.mjs          # authentication, D1 transactions and publication
 │   ├── schema.sql          # persistent storage
+│   ├── images.mjs          # private raster validation
+│   ├── review-tools.js     # navigation, updates and local image drafts
 │   ├── index.html
 │   ├── review.css          # approved responsive layout
 │   └── review-app.js       # browser interactions and retained drafts
@@ -86,16 +88,30 @@ without overwriting another device's work.
 | `GET /api/review/state` | Candidates, decisions, comments, cursor and processing status |
 | `GET /api/review/revisions/{uuid}` | Exact source, metadata, configurations and readiness evidence |
 | `GET /review/assets/{sha256}` | Private immutable drawing or comparison proof |
+| `POST /api/review/images` | Upload private `{hash, mime, body}`; body is base64 PNG/JPEG/WebP, at most 1 MiB decoded |
+| `GET /review/images/{sha256}` | Authenticated image bytes; never public/cacheable |
+| `GET /api/review/comment-history/{uuid}?after={sequence}` | Earlier text, targets and images for one comment |
 | `POST /api/review/assets` | Stage validated SVG `{hash, body}`; never makes it public |
 | `POST /api/review/actions/upload` | Finalize a complete `{revision}` after every asset exists |
 | `POST /api/review/actions/{action}` | Browser decisions or authenticated desktop job transitions |
 | `GET /api/review/evidence?after={sequence}` | Append-only event pages, including original comments and edits |
 | `GET /api/review/backup?table={name}&after={cursor}` | Desktop-only complete storage export in bounded pages |
 
-Browser actions: `cursor`, `comment`, `verify`, `unverify`, `discard`, `restore`,
-`process`, `approve`, `reject`, `retry`. Desktop actions: `heartbeat`, `claim`,
-`renew`, `proposal`, `publication`, `published`, `fail`, `complete`, `upload`.
-The executable request examples are in [hosted checks](../tests/verify_review_hosted.py).
+Browser actions: `cursor`, `seen`, `comment`, `verify`, `unverify`, `discard`, `restore`,
+`process`, `answer`, `reject`, `retry`. Desktop actions: `heartbeat`, `claim`,
+`renew`, `question`, `publication`, `published`, `fail`, `complete`, `upload`.
+Legacy `proposal`/`approve` actions remain for retained history/previously approved
+jobs. New `workflow: 2` jobs record direct Process authorization, one symbol per job.
+The desktop claims with `{protocol: 2}`; an older desktop cannot claim new jobs.
+Old unapproved proposals cannot be claimed automatically. Answers refresh only the
+question's exact target/signature. Changed source or feedback invalidates in-flight work.
+
+Comments accept `attachments: [{hash, mime, bytes, name}]`, up to four uploaded images.
+The server checks type, dimensions, size, hash and upload presence. The desktop
+retrieves and verifies actual bytes, passes files to Codex's image input, and retains
+image observations in its private work receipt. Image URLs alone are insufficient.
+See [direct workflow checks](../tests/verify_review_usability.py) and
+[retained API checks](../tests/verify_review_hosted.py).
 
 Source/evidence export is independent of Git checkout state:
 
@@ -103,7 +119,8 @@ Source/evidence export is independent of Git checkout state:
 python app\review_client.py --config C:\private\desktop.json source REVISION-UUID C:\exports\revision
 ```
 
-It exports source, helpers, exact SVGs, fingerprints and the private event chain.
+It exports source, helpers, exact SVGs, fingerprints, comment images (including
+earlier edits) and the private event chain.
 The desktop also keeps a source/artwork receipt in its `published/{revision}`
 directory after each publication. Rendering hashes and the source repository commit
 identify the implementation used. Bring approved source into future repository
@@ -127,8 +144,10 @@ also require clearing the `sessions` table to revoke existing sessions.
 
 ```powershell
 python app\build_site.py
+wrangler d1 execute schematica-review-validation --remote --file app\review\schema.sql --config app\wrangler.jsonc --env validation
 wrangler deploy --config app\wrangler.jsonc --env validation
 # After the isolated checks pass:
+wrangler d1 execute schematica-review --remote --file app\review\schema.sql --config app\wrangler.jsonc
 wrangler deploy --config app\wrangler.jsonc
 ```
 
@@ -136,6 +155,11 @@ Initial migration reuses the exact accepted artwork and existing approval eviden
 It requires temporary `MIGRATION_ENABLED=true`, the desktop token and the `migrate`
 client command. Close that switch afterward. Imported historical comments are
 explicitly unknown; no earlier review story is fabricated. Removed designs stay absent.
+
+The usability upgrade is additive: an `images` table and event lookup index, with
+no revision/decision rewrite. Back up first, stop the desktop connector, apply the
+schema, deploy and restart the updated connector. Keep migration closed. Backup and
+recovery include private image bytes; older image-free backups remain readable.
 
 For a portable backup, stop the connector and avoid review writes during export:
 
@@ -159,13 +183,26 @@ python -m unittest discover -s tests -p "test_*.py"
 node --test tests/*.test.cjs tests/*.test.mjs
 python tests\check_docs.py
 python tests\verify_review_hosted.py --config C:\private\validation.json --output C:\private\validation-checks
+python tests\prepare_review_usability.py --help
+python tests\verify_review_usability.py --help
+node tests/review-usability-browser.cjs --config C:/private/validation.json --fixtures C:/private/fixtures --output output/playwright/review-usability
+node tests/review-updates-browser.cjs --config C:/private/validation.json --fixtures C:/private/fixtures/fixtures.json --output output/playwright/review-updates
 ```
 
 The hosted check refuses production URLs. It checks independent sessions, edits,
-shared targets, revision selection, discard/restore, stale proposals, job exclusion,
+shared targets, revision selection, discard/restore, retained proposals,
 authentication, exact exports and retained evidence. It expects the two isolated
 ground fixtures and a real completed subscription correction. Reuse unchanged
 rendering evidence for comments and decisions; no full-library render is required.
+
+The new workflow check uses eight isolated synthetic fixtures and a separate desktop
+work directory. Run the interaction harness first, the actual subscription-backed
+corrections second, then Updates/history checks. They are sequential, stateful checks:
+the Updates check answers a question and retries a synthetic failure; do not leave
+that test connector running afterward. No production Process action or test publication
+is needed. Browser checks require an available Playwright installation; `--local`
+tests current UI files against the validation API. The older `review-browser.cjs`
+records the original interface and is superseded by these two harnesses.
 
 Targeted browser checks additionally cover phone/desktop layout, failed-save draft
 retention, noninterrupting arrivals, History comparison and existing Library controls.

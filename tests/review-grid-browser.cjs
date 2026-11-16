@@ -14,7 +14,7 @@ fs.mkdirSync(output,{recursive:true});
     const request=route.request(),url=new URL(request.url());
     if(url.origin!==new URL(connection.url).origin)return route.abort();
     if(!['GET','HEAD'].includes(request.method())){preventedWrites++;return route.abort();}
-    const files={'/review':'app/review/index.html','/review/review-app.js':'app/review/review-app.js','/review/review.css':'app/review/review.css','/preview-coordinates.js':'app/viewer/preview-coordinates.js','/':'app/viewer/index.html','/app.js':'app/viewer/app.js'};
+    const files={'/review':'app/review/index.html','/review/review-app.js':'app/review/review-app.js','/review/review-tools.js':'app/review/review-tools.js','/review/review.css':'app/review/review.css','/preview-coordinates.js':'app/viewer/preview-coordinates.js','/':'app/viewer/index.html','/app.js':'app/viewer/app.js'};
     if(localFiles&&files[url.pathname])return route.fulfill({path:path.join(repo,files[url.pathname])});
     return route.continue();
   });
