@@ -43,6 +43,7 @@ function refresh(force=false){if(refreshPending)return force?refreshPending.then
 async function readState(force) {
   try {
     const next=await api('state');
+    force=force||local.refreshNeeded;
     if(data&&next.version===data.version&&!force)return;
     if(data)for(const s of Object.values(next.symbols))if(s.candidate&&data.symbols[s.id]?.latest!==s.latest&&!local.arrivals.includes(s.id))local.arrivals.push(s.id);
     const first=!data,updatesChanged=data&&JSON.stringify(ReviewTools.updates(data))!==JSON.stringify(ReviewTools.updates(next));data=next;

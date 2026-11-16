@@ -19,6 +19,7 @@ fs.mkdirSync(output,{recursive:true});
     const response=page.waitForResponse(r=>r.url().endsWith('/actions/cursor')&&r.request().method()==='POST'&&r.status()===200&&r.request().postDataJSON().symbol===fixtures[key].symbol);await page.locator(`[data-action=select][data-value="${fixtures[key].symbol}"]`).click();await response;await page.locator('.drawing-canvas image').waitFor();}
   // Reset only these three synthetic decisions, retaining their history.
   for(const key of ['fast-a','fast-b','fast-c']){const s=(await state()).symbols[fixtures[key].symbol];if(s.selected)await userAction('unverify',{symbol:s.id,expected:s.selected,previous:null});if(s.discarded)await userAction('restore',{symbols:[s.id]});}
+  for(const key of ['image-a','image-b']){const s=(await state()).symbols[fixtures[key].symbol];if(s.discarded)await userAction('restore',{symbols:[s.id]});}
   await page.reload();await page.locator('.symbol-top h2').waitFor();await choose('fast-a');await page.locator('#batch').selectOption('Usability navigation');await page.setViewportSize({width:390,height:844});
   await page.locator('.symbol-top').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(output,'phone.png')});
   for(const [index,key] of ['fast-a','fast-b','fast-c'].entries()){
@@ -51,7 +52,8 @@ fs.mkdirSync(output,{recursive:true});
   await page.unroute('**/api/review/images');await page.route('**/api/review/actions/comment',route=>route.abort());await page.locator('[data-action=save-comment-next]').click();await page.waitForFunction(()=>local.save.includes('failed'));
   check(await page.locator('#comment').inputValue()===text&&await page.locator('#image-drafts img').count()===1,'Comment failure after upload retains the complete draft');
   await page.unroute('**/api/review/actions/comment');await page.route('**/api/review/state',route=>route.abort());await page.locator('[data-action=save-comment]').click();await page.waitForFunction(()=>local.save==='Saved'&&!busy);
-  check(await page.locator('#r-toast').innerText().then(t=>t.includes('Saved on the server')),'A failed refresh after acknowledgement does not misreport a failed save');await page.unroute('**/api/review/state');await page.evaluate(()=>refresh(true));
+  check(await page.locator('#r-toast').innerText().then(t=>t.includes('Saved on the server')),'A failed refresh after acknowledgement does not misreport a failed save');await page.unroute('**/api/review/state');await page.evaluate(()=>refresh());
+  check(await page.evaluate(()=>!local.refreshNeeded),'Normal polling recovers an acknowledged save after reconnection');
   const saved=(await state()).comments,comment=Object.values(saved).find(c=>c.text===text&&c.targets[0].symbol===fixtures['image-a'].symbol);
   check(comment?.attachments.length===1,'Saved comment links its private image to the exact target');
   assert.deepEqual(comment.targets,[target]);check(true,'Retry preserves the exact revision and original Small/Thick target');
