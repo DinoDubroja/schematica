@@ -91,18 +91,17 @@ async function previewSvg(symbol, config, inspection) {
   const root = svgEl("svg", { viewBox: inspection ? "-18 -12 36 24" : "-12 -12 24 24", role: "img", "aria-label": `${symbol.name}, ${config.size} size, ${config.stroke} stroke${config.options?.orientation ? `, ${config.options.orientation}` : ""}` });
   if (inspection) {
     const grid = svgEl("g", { class: "inspection-grid grid-lines", fill: "none", "stroke-width": ".025" });
-    for (let x = -18; x <= 18; x++) grid.append(svgEl("path", { d: `M${x},-12v24` }));
-    for (let y = -12; y <= 12; y++) grid.append(svgEl("path", { d: `M-18,${y}h36` }));
+    for (const d of SchematicaPreview.gridLines([-18, -12, 36, 24])) grid.append(svgEl("path", { d }));
     grid.append(svgEl("path", { class: "grid-axes", d: "M-18,0h36M0,-12v24", "stroke-width": ".045" })); root.append(grid);
   }
-  const [ox, oy] = config.origin_svg;
-  const wrapper = svgEl("g", { class: "symbol-artwork", transform: `scale(${25.4 / 72}) translate(${-ox},${-oy})` });
+  const wrapper = svgEl("g", { class: "symbol-artwork", transform: SchematicaPreview.artworkTransform(config) });
   for (const child of source.documentElement.children) if (child.localName === "g" || child.localName === "defs") wrapper.append(document.importNode(child, true));
   root.append(wrapper);
   if (inspection) {
     const pins = svgEl("g", { class: "inspection-grid pin-markers" });
-    for (const [id, [x, y]] of Object.entries(config.pins_mm)) {
-      const circle = svgEl("circle", { cx: x, cy: -y, r: .20 }), title = svgEl("title", {}); title.textContent = symbol.pins.find(pin => pin.id === id)?.name || id; circle.append(title); pins.append(circle);
+    for (const [id, point] of Object.entries(config.pins_mm)) {
+      const [x, y] = SchematicaPreview.pinPosition(point);
+      const circle = svgEl("circle", { cx: x, cy: y, r: .20 }), title = svgEl("title", {}); title.textContent = symbol.pins.find(pin => pin.id === id)?.name || id; circle.append(title); pins.append(circle);
     } root.append(pins);
   } return root;
 }

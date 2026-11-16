@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28.2222222222mm" height="14.1111111111mm" viewBox="10 20 80 40">
+  <g>
+    <g data-part="lead-a"><path d="M18.661417323 50H25" fill="none" stroke="black"/></g>
+    <g data-part="lead-b"><path d="M52.677165354 44.330708661H35" fill="none" stroke="black"/></g>
+    <rect x="25" y="40" width="10" height="15" fill="none" stroke="black"/>
+  </g>
+</svg>

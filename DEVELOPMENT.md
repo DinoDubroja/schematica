@@ -36,6 +36,11 @@ for ownership and handoffs.
 
 ## Latest changes
 
+**Review's grid follows the drawing.** The 1 mm grid, artwork and blue terminal
+markers now share the same SVG coordinates. [Before/after and quick checks](docs/REVIEW_GRID.md)
+cover size/stroke changes, resizing, zoom and the remaining narrow-header limit.
+No symbol source or Review decision changes are part of this fix.
+
 **Batch 03 is ready in private Review: 84 designs / 792 configurations.**
 Open Review, select **Batch 03**, then inspect Medium/Medium and Small/Thick before
 leaving feedback. [Batch checklist, counts and source](docs/BATCH_03.md) include the
@@ -306,7 +311,7 @@ Creates `app/build/exports/` with a hash manifest and three ZIPs:
 
 | Package | Contents |
 |---|---|
-| `web-preview.zip` | 1085 built assets; hosted Review also requires its Worker and D1 binding |
+| `web-preview.zip` | 1086 built assets; hosted Review also requires its Worker and D1 binding |
 | `all-symbols.zip` | 1035 individual SVGs |
 | `tex-bundles.zip` | 1035 standalone configurations, each with `symbol.tex` and required helpers |
 

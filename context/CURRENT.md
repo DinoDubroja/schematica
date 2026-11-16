@@ -1,6 +1,6 @@
 # Current status
 
-16-11-2026 · **Batch 03: all 84 designs are saved in private Review.**
+16-11-2026 · **Review grid alignment fix prepared; Batch 03 remains available for review.**
 
 [Library](https://schematica-preview.dinodubroja.workers.dev/)
 · [Private Review](https://schematica-preview.dinodubroja.workers.dev/review)
@@ -8,6 +8,13 @@
 · [Setup, API and recovery](../docs/REVIEW_SETUP.md)
 
 ## Current work
+
+Review now uses a genuine 1 mm SVG grid with the same origin/scale as its drawing
+and terminals. Shared Library/Review coordinate helpers prevent separate conversion
+rules. [Evidence and checks](../docs/REVIEW_GRID.md) include saved-path endpoint
+comparisons, asymmetric cropping, continuous resize and real browser zoom.
+No artwork, revisions, comments or decisions were changed. Deployment receipt follows
+the tested code checkpoint; do not confuse prepared UI checks with hosted delivery.
 
 **84 submitted / 792 configurations / 0 deferred / 0 blocked.** All were Unverified
 at the delivery readback. The next step is human feedback in **Review → Batch 03**.

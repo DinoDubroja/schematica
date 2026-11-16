@@ -5,6 +5,21 @@ when it was reconciled. Times use Europe/Zagreb with an explicit UTC offset.
 Later applicable user decisions supersede earlier proposals; a newer import date
 does not. See [current status](CURRENT.md) for the implementation checkpoint.
 
+## Review grid alignment
+
+Source: user message `01a1e3f8-47a1-7461-b779-58cd40cf6b3f` in Agent B's chat;
+the original message time is not exposed here. Reconciled 16-11-2026, Europe/Zagreb
+(UTC+01:00). Status: focused fix, checks, Git/main delivery and deployment authorized.
+
+- Replace the independent CSS grid with a real 1 mm grid sharing artwork/terminal
+  coordinates. Reuse Library preview conversion; preserve the existing controls.
+- Verify actual drawn lead endpoints, asymmetric cropping, all size/stroke settings,
+  relevant options, resizing and browser zoom. Capture actual Review before/after.
+- Preserve symbol source, saved revisions, comments, decisions and approvals. Report
+  source-geometry defects separately; no unapproved symbol publication.
+- A confirmed no conflicting viewer work and will integrate B's exact tested commit.
+  B remains the sole deployer for this fix; A's runtime/store and drafts stay isolated.
+
 ## Batch 03 private review candidates
 
 Source: user-attached **Implement Batch 03: 84 symbol designs** in Agent B's chat
